@@ -7,7 +7,7 @@ Dowsing for Math Answers - the MathDowsers team's submission for ARQMath @ CLEF
 
 MathDowsers is a team of researchers from the University of  *Waterloo* who are interested in *dowsing* for answers to *math* questions. 
 
-The team produces the best participant run of the Answer Retrieval task in the [ARQMath (**A**nswer **R**etrieval for **Q**uestions on **Math**) Lab](/https://www.cs.rit.edu/~dprl/ARQMath/) in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
+The team produces the best participant run of the Answer Retrieval task in the [ARQMath (**A**nswer **R**etrieval for **Q**uestions on **Math**) Lab](https://www.cs.rit.edu/~dprl/ARQMath/) in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
 
 
 
