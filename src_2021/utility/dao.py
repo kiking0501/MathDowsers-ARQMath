@@ -65,6 +65,16 @@ def escape_html(text):
 
 
 def load_json(file_path, keys=None, verbose=False):
+    """
+        Load the json file as a Python dictionary object
+        Additionally, convert the dictionary keys to types declared in the keys parameter
+        (by default, all dict keys would be in str type)
+
+        keys should be a list of types, corresponding to each layer of key in a dictionary object
+        e.g. keys=[int]: convert the first layer of key to int type {key(int) -> content}
+             keys=[int, int]: convert the first and second layer of key to int type {key(int) -> key(int) -> content}
+
+    """
     def convert_keys(d, remain_keys):
         if not isinstance(d, dict) or not remain_keys:
             return d

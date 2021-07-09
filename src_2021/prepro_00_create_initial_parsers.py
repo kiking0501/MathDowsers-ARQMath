@@ -1,7 +1,14 @@
 """
-Creates initial parser for each MSE entity in pkl format. These pkl files stores selected information from the raw XML file.
+Create initial parsers for each MSE entity in pkl format.
+These pkl files store selected information from the raw XML files.
 
-Run py "python 01_create_initial_parsers.py"
+Prerequisite:
+    data xml files are downloaded at the designated path
+
+Effect:
+    parser pkl files are created at the prepro folder
+
+Run by "python <name of this python file>.py"
 """
 
 from Entity_Parser_Record.comment_parser_record import CommentParser
