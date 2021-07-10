@@ -21,7 +21,15 @@ ARQM_THREADS_YEAR_PATH = os.path.join(ARQM_THREADS_PATH, "Collection_By_Year")
 ### generated data
 ARQM_PREPRO_PATH = os.path.join(ARQM_DATA_PATH, "prepro_2021")
 ARQM_EXPERIMENTS_PATH = os.path.join(ARQM_DATA_PATH, "experiments")
+
 MAP_RAW_PATH = os.path.join(ARQM_PREPRO_PATH, "map_raw")
+PKL_PATH = os.path.join(ARQM_PREPRO_PATH, "pkl")
+
+
+ARQM_OUTPUT_HTML_FOLDER = os.path.join(ARQM_DATA_PATH, "html_minimal_2021")
+ARQM_OUTPUT_HTML_MINIMAL_PATH = os.path.join(ARQM_OUTPUT_HTML_FOLDER, "2010-2018_local")
+ARQM_OUTPUT_FORMULAS_PATH = os.path.join(ARQM_OUTPUT_HTML_FOLDER, "formulas_2010-2018_local")
+ARQM_FINAL_HTML_MINIMAL_PATH = os.path.join(ARQM_OUTPUT_HTML_FOLDER, "2010-2018")
 
 
 ### Formula folders
@@ -50,7 +58,7 @@ TASK_FORMULA_FOLDER_CONFIG = {
 ### for generating parser pkl
 
 def CACHE(name):
-    return _CACHE(name, dir_path=ARQM_PREPRO_PATH)
+    return _CACHE(name, dir_path=PKL_PATH)
 
 RECORD_NUM = {
     'comment': None,
@@ -66,12 +74,12 @@ COLLECTION_VERSION = "V1.2"
 COMMENT_FILE_VERSION = "V1.0"
 
 PARSER_PKL = {
-    'comment': os.path.join(ARQM_PREPRO_PATH, "comment_parser.%s.pkl" % COMMENT_FILE_VERSION),
-    'post_history': os.path.join(ARQM_PREPRO_PATH, "post_history_parser.%s.pkl" % COLLECTION_VERSION),  # ignore by default
-    'post_link': os.path.join(ARQM_PREPRO_PATH, "post_link_parser.%s.pkl" % COLLECTION_VERSION),
-    'post': os.path.join(ARQM_PREPRO_PATH, "post_parser.%s.pkl" % COLLECTION_VERSION),
-    'user': os.path.join(ARQM_PREPRO_PATH, "user_parser.%s.pkl" % COLLECTION_VERSION),
-    'vote': os.path.join(ARQM_PREPRO_PATH, "vote_parser.%s.pkl" % COLLECTION_VERSION),
+    'comment': "comment_parser.%s.pkl" % COMMENT_FILE_VERSION,
+    'post_history': "post_history_parser.%s.pkl" % COLLECTION_VERSION,  # ignore by default
+    'post_link': "post_link_parser.%s.pkl" % COLLECTION_VERSION,
+    'post': "post_parser.%s.pkl" % COLLECTION_VERSION,
+    'user': "user_parser.%s.pkl" % COLLECTION_VERSION,
+    'vote': "vote_parser.%s.pkl" % COLLECTION_VERSION,
 }
 
 DATA_VERSIONS = {

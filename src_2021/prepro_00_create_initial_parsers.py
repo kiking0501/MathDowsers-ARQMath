@@ -7,6 +7,7 @@ Prerequisite:
 
 Effect:
     parser pkl files are created at the prepro folder
+    ("<XXX>_parser.pkl" for Comment, PostLink, Vote, User and Post)
 
 Run by "python <name of this python file>.py"
 """

@@ -181,7 +181,7 @@ class FormulaConvertByLatex2MathML:
             return update_items
 
         latex_tsv = read_formula_tsv(
-            "latex_tsv", [tsv_name], groupby_list=["id"]
+            "latex", [tsv_name], groupby_list=["id"]
         )
         custom_items = _get_html_escaped_items(latex_tsv)
         custom_items = _add_unescaped_formulas(custom_items)
@@ -201,6 +201,7 @@ def create_custom_formula_convert_map(formulaConvertClass):
     """
 
     CUSTOM_MAP_FOLDER = os.path.join(ARQM_FORMULAS_PATH, FORMULA_FOLDER_CONFIG["slt_convert_map"][0])
+    os.makedirs(CUSTOM_MAP_FOLDER, exist_ok=True)
 
     _, ind_list = FORMULA_FOLDER_CONFIG["original_slt"]
 
@@ -238,10 +239,11 @@ def create_final_converted_slt_representation():
             and save the overall converted formula represntation tsvs to a new folder
     """
     CONVERTED_FOLDER = os.path.join(ARQM_FORMULAS_PATH, FORMULA_FOLDER_CONFIG["slt"][0])
+    os.makedirs(CONVERTED_FOLDER, exist_ok=True)
 
     _, ind_list = FORMULA_FOLDER_CONFIG["original_slt"]
 
-    num_updated, total = 0
+    num_updated = 0
     total = 0
     for ind in tqdm(ind_list):
         tsv_name = "%s.tsv" % ind

@@ -6,7 +6,7 @@
         Thread HTML files by year has been downloaded at the designated path
 
     Effect:
-        a manifest file for the HTML files will be created
+        a manifest file for the HTML files will be created ("html-manifest.txt")
 
     Run by "python <name of this python file>.py"
 """

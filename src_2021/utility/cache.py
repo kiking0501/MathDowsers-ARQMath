@@ -11,6 +11,7 @@ def load_cache(cache_path):
 
 
 def CACHE(name, dir_path):
+    os.makedirs(dir_path, exist_ok=True)
     cache_path = os.path.join(dir_path, name)
 
     def _INNER_CACHE(func):

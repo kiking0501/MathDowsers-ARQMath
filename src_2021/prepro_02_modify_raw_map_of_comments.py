@@ -39,10 +39,14 @@ def create_extra_map_of_comments(version="V1.2"):
     from Entity_Parser_Record.comment_parser_record import CommentParser
     from config import ARQM_XML_PATH
     extra_comment_parser = CommentParser(
-        os.path.join(ARQM_XML_PATH, "Comment.%s.xml" % version)
+        os.path.join(ARQM_XML_PATH, "Comments.%s.xml" % version)
     )
+    map_of_comments_for_post = {}
+    for k, v in extra_comment_parser.map_of_comments_for_post.items():
+        map_of_comments_for_post[k] = [vv.__dict__ for vv in v]
+
     dump_json(
-        extra_comment_parser.map_of_comments_for_post,
+        map_of_comments_for_post,
         os.path.join(MAP_RAW_PATH, "map_of_comments_for_post_%s.json" % version)
     )
 

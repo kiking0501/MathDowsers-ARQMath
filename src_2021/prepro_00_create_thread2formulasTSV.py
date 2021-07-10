@@ -6,6 +6,7 @@ Prerequisite:
 
 Effect:
     thread2formula-related jsons are created
+    ("thread2formulasTSV.json", "thread2formulasIds.json")
 
 Run by "python <name of this python file>.py"
 """
@@ -35,7 +36,8 @@ def create_thread2formulasTSV(folder_config=FORMULA_FOLDER_CONFIG):
     thread2formulasTSV = {}
 
     print("[create_thread2formulasTSV] Start:")
-    for formula_type, (folder_name, ind_list) in folder_config.items():
+    for formula_type in ["latex", "opt", "slt"]:
+        folder_name, ind_list = folder_config[formula_type]
         print("[%s]: " % formula_type)
         folder_path = os.path.join(ARQM_FORMULAS_PATH, folder_name)
 
