@@ -6,7 +6,15 @@ Prerequisite:
     parser pkl files have been created at the prepro folder
 
 Effect:
-    raw map-related json files are created at the "map_raw" folder
+    raw map-related json files are created at the "map_raw" folder:
+        - map_of_comments_for_post.json
+        - map_related_posts.json
+        - map_duplicate_posts.json
+        - map_of_votes.json
+        - creation_year_map.json
+        - map_questions.json
+        - map_answers.json
+        - map_just_answers.json
 
 Run by "python <name of this python file>.py"
 """

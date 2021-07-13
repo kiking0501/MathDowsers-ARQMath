@@ -6,6 +6,7 @@ Prerequisite:
 
 Effect:
     thread2formula-related jsons are created
+    ("thread2formulasTSV.json", "thread2formulasIds.json")
 
 Run by "python <name of this python file>.py"
 """

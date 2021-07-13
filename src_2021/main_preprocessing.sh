@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#############
+# A main script to run all preprocessing files (python files with prefix "prepro") at once
+# See individual prepro files for the expected outcome.
+
+# Run by "./main_preprocessing.sh"
+#############
+
 task_counter=0
 declare -a files=(
     "prepro_00_create_html_manifest.py"

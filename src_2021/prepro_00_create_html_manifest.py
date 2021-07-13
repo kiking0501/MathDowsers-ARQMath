@@ -6,7 +6,7 @@
         Thread HTML files by year has been downloaded at <ARQM_THREADS_YEAR_PATH>
 
     Effect:
-        a manifest file for the HTML files will be created
+        a manifest file for the HTML files will be created ("html-manifest.txt")
 
     Run by "python <name of this python file>.py"
 """

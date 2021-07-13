@@ -1,19 +1,19 @@
 """
-    The main file to genereate html pages to be indexed by the search engine.
-        All formulas in the html page is represented in the Presentation MathML formate.
+    The main file to genereate the document corpus (html pages that are to be indexed by the search engine).
+        All formulas in each html page is represented in the Presentation MathML format.
 
         Two style of html pages can be generated:
             - [thread] Each html page is a thread, with a single question and all its answers)
             - [minimal] Each html page is a question-answer pair with enriched details
 
-        The [minimal] style is used for for the MathDowser team's submissions.
+        The [minimal] style is used for the MathDowsers' submissions.
 
 
     Prerequisite:
-         Thread HTML files by year has been downloaded at <ARQM_THREADS_YEAR_PATH>.
+         Original thread HTML files has been downloaded at <ARQM_THREADS_YEAR_PATH>.
 
          To run style [thread],
-            html_minifest.txt at the prepro folder is required (see prepro_00_create_html_manifest.py)
+            "html_minifest.txt" at the prepro folder is required (see prepro_00_create_html_manifest.py)
          To run style [minimal],
             all prepro files are required to run beforehand (see main_preprocessing.sh)
 

@@ -7,11 +7,13 @@ Prerequisite:
 
 Effect:
     parser pkl files are created at the prepro folder
+    ("<XXX>_parser.pkl" for Comment, PostLink, Vote, User and Post)
 
 Run by "python <name of this python file>.py"
 """
 
 from Entity_Parser_Record.comment_parser_record import CommentParser
+from Entity_Parser_Record.post_history_parser_record import PostHistoryParser
 from Entity_Parser_Record.post_link_parser_record import PostLinkParser
 from Entity_Parser_Record.post_parser_record import PostParser
 from Entity_Parser_Record.user_parser_record import UserParser

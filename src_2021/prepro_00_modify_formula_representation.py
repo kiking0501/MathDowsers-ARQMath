@@ -9,10 +9,10 @@ Prerequisite:
     formula representation tsvs are downloaded at <ARQM_FORMULAS_PATH>
 
 Effect:
-    A new folder of formula representation tsvs for Presentation Mathml (the slt folder),
+    A new folder of formula representation tsvs for Presentation Mathml ("custom_slt_convert_map_v2_patterns"),
         that contains only the adjusted items, will be created
 
-    A final folder of formula representation tsvs for Presentation Mathml (the slt folder),
+    A final folder of formula representation tsvs for Presentation Mathml ("slt_representation_v2_converted"),
         that contains all the items most updated, will be created
 
 ** NOTE **
