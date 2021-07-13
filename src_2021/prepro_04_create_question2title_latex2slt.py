@@ -25,7 +25,7 @@ import os
 from config import ARQM_PREPRO_PATH
 from tqdm import tqdm
 from utility.dao import load_json, dump_json
-from dao_replace_formula import FormulaHTMLConverter
+from dao_replace_formula import FormulaHTMLConvertor
 
 
 VERBOSE = True
@@ -42,13 +42,13 @@ def create_question2title_latex2slt(output_file):
     question2title = load_json(
         os.path.join(ARQM_PREPRO_PATH, "question2title.json"), keys=[int], verbose=VERBOSE)
 
-    convertor = FormulaHTMLConverter(verbose=VERBOSE)
+    convertor = FormulaHTMLConvertor(verbose=VERBOSE)
     question2title_latex2slt = {}
 
     for thread_id in tqdm(sorted(question2title.keys())):
         title = question2title[thread_id]
 
-        convertor.update_with_thread_id(thread_id)
+        convertor.lazy_update(thread_id)
         if not convertor.has_formula_convert_map():
             question2title_latex2slt[thread_id] = title
             continue

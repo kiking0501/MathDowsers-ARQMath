@@ -1,5 +1,15 @@
 """
     Functions to process formulas and text that contains formulas
+
+    Major classes:
+
+    - FormulaProcessor:
+        a collection of helper functions to process formulas
+
+    - FormulaHTMLConvertor:
+        help convert latex formulas in a html file to their Presentatino MathML representation
+            using the Lab-provided formula representation tsv files
+
 """
 
 from bs4 import BeautifulSoup
@@ -83,7 +93,15 @@ class FormulaProcessor:
         return text
 
 
-class FormulaHTMLConverter:
+class FormulaHTMLConvertor:
+    """
+        This class helps convert latex formulas in a html file to their Presentatino MathML representation
+            using the provided formula representation tsv files
+
+        The convertor object stores the content of a formula representation tsv file one at a time,
+            performs an lazy update of the content of the tsv file
+            only when the target thread_id does not exist
+    """
 
     def __init__(self, verbose=True):
         self.formula_types = ["latex", "slt"]
@@ -96,7 +114,7 @@ class FormulaHTMLConverter:
         self.latex2slt_formulas = None
         self.thread_id = None
 
-    def update_with_thread_id(self, thread_id):
+    def lazy_update(self, thread_id):
         update_formulaTSVs(
             thread_id,
             self.formula_types,
@@ -108,16 +126,21 @@ class FormulaHTMLConverter:
         self.latex2slt_formulas = create_formula_map(
             self.formulaTSVs["latex"].get(thread_id, {}), self.formulaTSVs["slt"].get(thread_id, {})
         )
+        self.thread_id = thread_id
         return self.has_formula_convert_map()
 
     def has_formula_convert_map(self):
         return bool(self.latex2slt_formulas)
 
-    def latex2slt(self, html):
+    def latex2slt(self, html, replace_by_RE=True, replace_by_bs4=True):
         if not self.has_formula_convert_map:
-            raise ValueError("No formula convert map is founded; is 'update_with_thread_id' being runned properly?")
+            raise ValueError(
+                "No formula convert map is founded for this html file;"
+                " either 'lazy_update' of the target thread-id has not been called"
+                " or this html does not have any formulas to be converted!")
         return html_latex2slt(
-            html, self.thread_id, self.formulaTSVs, self.latex2slt_formulas
+            html, self.thread_id, self.formulaTSVs, self.latex2slt_formulas,
+            replace_by_RE=replace_by_RE, replace_by_bs4=replace_by_bs4
         )
 
 

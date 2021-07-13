@@ -3,17 +3,15 @@ Create initial parsers for each MSE entity in pkl format.
 These pkl files store selected information from the raw XML files.
 
 Prerequisite:
-    data xml files are downloaded at the designated path
+    data xml files are downloaded at <ARQM_XML_PATH>
 
 Effect:
     parser pkl files are created at the prepro folder
-    ("<XXX>_parser.pkl" for Comment, PostLink, Vote, User and Post)
 
 Run by "python <name of this python file>.py"
 """
 
 from Entity_Parser_Record.comment_parser_record import CommentParser
-from Entity_Parser_Record.post_history_parser_record import PostHistoryParser
 from Entity_Parser_Record.post_link_parser_record import PostLinkParser
 from Entity_Parser_Record.post_parser_record import PostParser
 from Entity_Parser_Record.user_parser_record import UserParser

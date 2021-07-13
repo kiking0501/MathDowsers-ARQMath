@@ -11,7 +11,45 @@ The team produces the best participant run of the Answer Retrieval task in the <
 
 
 
+### Create a document corpus for the Answer Retrieval task
+
+The template for the document corpus is the file `template_minimal_v2.html`, which is an HTML page that stores an answer together with its parent math question (that is, a question-answer pair) and other meta information. 
+
+To create the document corpus, 
+
+
+- First, download this repository followed by the Lab-provided *Math Stack Exchange* (MSE) collection at the designated paths. (Check individual README in the data folder)
+
+  
+
+- Next, create all preprocessing files by running
+
+  ```shell
+  ./main_preprocessing.sh
+  ```
+
+  The expected files to be created are documented at each individual python file with the `prepro`-prefix .
+  
+
+- Then, demo documents can be created by running
+
+  ```bash
+  python main_generate_htmls_for_indexing.py -style minimal
+  ```
+
+  To create all documents (MSE questions from year 2010 to year 2018)
+
+  ```shell
+  python main_generate_htmls_for_indexing.py -style minimal -year all
+  ```
+
+  See the file `main_generate_htmls_for_indexing.py` for more available options.
+
+
+
 ### Changes
+
+*2021-07-12*: Add instructions to create the document corpus for the Answer Retrieval task.
 
 *2021-07-04*: Initialize the repository with basic configuration.
 

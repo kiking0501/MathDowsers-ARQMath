@@ -6,7 +6,7 @@ This is done because of the problems of the Lab-provided formula representation 
 It can be skipped if the Lab-provided files have become bug-free in the future version.
 
 Prerequisite:
-    formula representation tsvs are downloaded at the designated path
+    formula representation tsvs are downloaded at <ARQM_FORMULAS_PATH>
 
 Effect:
     A new folder of formula representation tsvs for Presentation Mathml (the slt folder),

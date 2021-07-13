@@ -2,11 +2,10 @@
 Create mappings for thread_id-formulas related information
 
 Prerequisite:
-    formula representation tsvs are downloaded at the designated path
+    formula representation tsvs are downloaded at <ARQM_FORMULAS_PATH>
 
 Effect:
     thread2formula-related jsons are created
-    ("thread2formulasTSV.json", "thread2formulasIds.json")
 
 Run by "python <name of this python file>.py"
 """

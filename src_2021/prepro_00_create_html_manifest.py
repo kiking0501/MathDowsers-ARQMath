@@ -3,10 +3,10 @@
         according to the thread creation date
 
     Prerequisite:
-        Thread HTML files by year has been downloaded at the designated path
+        Thread HTML files by year has been downloaded at <ARQM_THREADS_YEAR_PATH>
 
     Effect:
-        a manifest file for the HTML files will be created ("html-manifest.txt")
+        a manifest file for the HTML files will be created
 
     Run by "python <name of this python file>.py"
 """
