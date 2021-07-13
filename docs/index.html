@@ -12,64 +12,16 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
+        <link rel="shortcut icon"
+         href="img/MathDowsersIcon.ico">
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="main.js"></script>
+
+
         <style>
             body,html {
                 height: 100%;
                 margin: 0;
-            }
-            body /*{
-                background-image: url('img/BookDowserLight.jpg');
-
-                filter: blur(8px);
-                -webkit-filter: blur(8px);
-
-                height:100%;
-                margin: 0;
-                background-position: center;
-
-                background-repeat: no-repeat;
-                background-size: cover;
-            }*/
-            .bg-image {
-                background-image: url('img/BookDowserLight.jpg');
-
-                filter: blur(1px);
-                -webkit-filter: blur(1px);
-
-                height:100%;
-
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            .bg-text{
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-                color: white;
-                font-weight: bold;
-                border: 3px solid #f1f1f1;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 2;
-                width: 80%;
-                padding: 20px;
-                text-align: center;
-            }
-            .footer {
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-                color: white;
-                font-weight: bold;
-
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                padding: 10px;
-                text-align: center;
             }
         </style>
 
@@ -80,10 +32,19 @@
         <div class="bg-text">
             <h1> Dowsing for Math Answers </h1>
             <h3> The MathDowser team's submission at ARQMath</h3>
-            In construction
+            <h3 class="button-text" onclick="askQuestion()"> Ask a Math Question </h3>
         </div>
+
+        <div class="q-text" style="display:none">
+            <div class="row">
+                <div class="col-sm-12">
+                    In Construction
+                </div>
+            </div>
+        </div>
+
         <div class="footer">
-            Powered by the <a style="color:orange" href="https://www.scg.uwaterloo.ca/brushsearch/"> BrushSearch </a> project
+            Powered by the <a style="color:orange" href="https://www.scg.uwaterloo.ca/brushsearch/"> BrushSearch</a> project from the University of Waterloo
         </div>
     </body>
 </html>
