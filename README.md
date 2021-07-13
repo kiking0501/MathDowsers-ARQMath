@@ -33,16 +33,16 @@ To create the document corpus,
 - Then, demo documents can be created by running
 
   ```bash
-  python main_generate_htmls_for_indexing.py -style minimal
+  python main_generate_document_corpus.py --style minimal
   ```
 
   To create all documents (MSE question-answer pairs from year 2010 to year 2018)
 
   ```shell
-  python main_generate_htmls_for_indexing.py -style minimal -year all
+  python main_generate_document_corpus.py --style minimal --year all
   ```
 
-  The generated files will be stored at `data/ARQMath/html_minimal_2021`. See the file `main_generate_htmls_for_indexing.py` for more available options.
+  The generated files will be stored at `data/ARQMath/html_minimal_2021`. See the file `main_generate_document_corpus.py` for more available options.
 
 
 

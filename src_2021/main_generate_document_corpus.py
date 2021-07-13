@@ -1,6 +1,6 @@
 """
     The main file to genereate the document corpus (html pages that are to be indexed by the search engine).
-        All formulas in each html page is represented in the Presentation MathML format.
+        All formulas in each html page is converted to  their Presentation MathML format (by default)
 
         Two style of html pages can be generated:
             - [thread] Each html page is a thread, with a single question and all its answers)
@@ -20,25 +20,28 @@
     Examples:
 
         Create demo pages for style [thread]:
-            $ python main_generate_htmls_for_indexing.py -style thread
+            $ python main_generate_docment_corpus.py --style thread
 
         Create demo pages for style [minimal]:
-            $ python main_generate_htmls_for_indexing.py -style minimal
+            $ python main_generate_docment_corpus.py  --style minimal
 
         Create pages for year 2010 and 2011:
-            $ python main_generate_htmls_for_indexing.py -style <style> -year 2010,2011
+            $ python main_generate_docment_corpus.py  --style <style> --year 2010,2011
 
         Create pages for all available years:
-            $ python main_generate_htmls_for_indexing.py -style <style> -year all
+            $ python main_generate_docment_corpus.py  --style <style> --year all
 
         Create pages for selected thread ids 1 & 5:
-            $ python main_generate_htmls_for_indexing.py -style <style> -thread_id 1,5"
+            $ python main_generate_docment_corpus.py  --style <style> --thread_id 1,5"
 
         Specify output folder other than the default path:
-            add "-output_folder <path of output_folder>"
+            add "--output_folder <path of output_folder>"
+
+        Keep latex formulas instead of converting to Presentation MathML:
+            add "--keep_latex"
 
         See all options:
-            $ python main_generate_htmls_for_indexing.py -h
+            $ python main_generate_docment_corpus.py  -h
 """
 
 from config import (
@@ -71,12 +74,13 @@ def read_html(html_template):
 
 
 class HTMLThreadCreator:
-    def __init__(self, source_folder=ARQM_THREADS_YEAR_PATH, verbose=True):
+    def __init__(self, source_folder=ARQM_THREADS_YEAR_PATH, keep_latex=False, verbose=True):
         if not os.path.exists(source_folder):
             raise IOError("The source folder for html conversion %s is missing!" % source_folder)
         self.source_folder = source_folder
         self.verbose = verbose
         self.formula_convertor = FormulaHTMLConvertor(verbose=verbose)
+        self.keep_latex = keep_latex
 
     def convert_thread_html(self, thread_id, html_path):
         """
@@ -116,6 +120,9 @@ class HTMLThreadCreator:
         original_thread_html = read_html(html_path)
         html = _clean_html(original_thread_html)
         html = _remove_arqmath_header(html)
+        if self.keep_latex:
+            return html
+
         html = _remove_mathjax(html)
         html = _replace_TexAMS(html)
         latex_title = _get_title_string(html)
@@ -182,7 +189,7 @@ class HTMLThreadCreator:
 
 class HTMLMinimalCreator:
 
-    def __init__(self, verbose=True):
+    def __init__(self, keep_latex=False, verbose=True):
         self.verbose = verbose
 
         self.creation_year_map = load_json(
@@ -205,9 +212,14 @@ class HTMLMinimalCreator:
         self.duplicate_post_bimap = load_json(
             os.path.join(ARQM_PREPRO_PATH, "duplicate_post_bimap.json"), keys=[int], verbose=verbose
         )
-        self.question2title_latex2slt = load_json(
-            os.path.join(ARQM_PREPRO_PATH, "question2title_latex2slt.json"), keys=[int], verbose=verbose
-        )
+        if keep_latex:
+            self.question2title = load_json(
+                os.path.join(ARQM_PREPRO_PATH, "question2title.json"), keys=[int], verbose=verbose
+            )
+        else:
+            self.question2title = load_json(
+                os.path.join(ARQM_PREPRO_PATH, "question2title_latex2slt.json"), keys=[int], verbose=verbose
+            )
 
         self.transform_functions = {
             'latex_title': lambda title: FormulaProcessor.remove_math_container(title),
@@ -225,12 +237,12 @@ class HTMLMinimalCreator:
 
             'duplicate_posts': lambda duplicate_posts:
                 ''.join(['<tr><td post_id="%d"> %s </td></tr>' % (
-                    post_id, self.question2title_latex2slt[post_id])
+                    post_id, self.question2title[post_id])
                     for post_id in duplicate_posts]),
 
             'related_posts': lambda related_posts:
                 ''.join(['<tr><td post_id="%d"> %s </td></tr>' % (
-                    post_id, self.question2title_latex2slt[post_id])
+                    post_id, self.question2title[post_id])
                     for post_id in related_posts]),
 
             'answer': lambda answer: answer['body'],
@@ -243,6 +255,7 @@ class HTMLMinimalCreator:
         self.map_questions = {}
         self.map_answers = {}
         self.formula_convertor = FormulaHTMLConvertor(verbose=verbose)
+        self.keep_latex = keep_latex
 
     def lazy_update(self, thread_id=None, map_questions=None, map_answers=None):
         if map_questions is not None:
@@ -311,7 +324,7 @@ class HTMLMinimalCreator:
                         "#%s#" % a_field.upper(),
                         self.transform_functions[a_field](answer))
 
-                if self.formula_convertor.has_formula_convert_map():
+                if not self.keep_latex and self.formula_convertor.has_formula_convert_map():
                     new_html = self.formula_convertor.latex2slt(new_html)
 
                 new_html = new_html.replace(
@@ -412,10 +425,15 @@ if __name__ == '__main__':
         "--thread_id", default=None,
         help="Generate the htmls by their thread id. The thread_ids should be a list separated by commas, e.g. [1,2]. Default is None (creating demo pages instead)."
     )
+    argparser.add_argument(
+        "--keep_latex", action="store_true",
+        help="Do not convert latex formulas to their Presentation MathML format."
+    )
+
     args = argparser.parse_args()
 
     if args.style == "minimal":
-        html_creator = HTMLMinimalCreator(verbose=VERBOSE)
+        html_creator = HTMLMinimalCreator(keep_latex=args.keep_latex, verbose=VERBOSE)
         if args.output_folder is None:
             if args.year:
                 output_folder = ARQM_OUTPUT_HTML_MINIMAL_PATH
@@ -426,7 +444,7 @@ if __name__ == '__main__':
         else:
             output_folder = args.output_folder
     elif args.style == "thread":
-        html_creator = HTMLThreadCreator(verbose=VERBOSE)
+        html_creator = HTMLThreadCreator(keep_latex=args.keep_latex, verbose=VERBOSE)
         if args.output_folder is None:
             if args.year:
                 output_folder = os.path.join(ARQM_DATA_PATH, "html_thread_2021", "2010-2018_local")
@@ -437,7 +455,7 @@ if __name__ == '__main__':
         else:
             output_folder = args.output_folder
 
-    print("Succesfully load HTML creator for style [%s]." % args.style)
+    print("Succesfully load HTML creator for style [%s] (keep_latex=%s)" % (args.style, str(args.keep_latex)))
     print("Output Folder: %s" % output_folder)
 
     if args.year:
@@ -460,7 +478,7 @@ if __name__ == '__main__':
         thread_ids = sorted([int(tid) for tid in args.thread_id.split(",")])
         html_creator.generate_htmls(thread_ids, output_folder=output_folder)
     else:
-        print("Generating demo html pages for the style [%s]..." % (args.style))
+        print("Generating demo html pages for the style [%s] (keep_latex=%s)..." % (args.style, str(args.keep_latex)))
         demo_ids = [5]
         try:
             demo_folder = output_folder + "/demo"
