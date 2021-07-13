@@ -30,7 +30,6 @@ To create the document corpus,
 
   The expected files to be created are documented at each individual python file with the `prepro`-prefix .
   
-
 - Then, demo documents can be created by running
 
   ```bash
@@ -43,7 +42,7 @@ To create the document corpus,
   python main_generate_htmls_for_indexing.py -style minimal -year all
   ```
 
-  The generated files will be stored at `data/html_minimal_2021`. See the file `main_generate_htmls_for_indexing.py` for more available options.
+  The generated files will be stored at `data/ARQMath/html_minimal_2021`. See the file `main_generate_htmls_for_indexing.py` for more available options.
 
 
 
