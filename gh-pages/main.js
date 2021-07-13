@@ -1,7 +1,7 @@
 function askQuestion() {
     var question_data;
     function getQuestion(callback){
-        $.getJSON('../../data/ARQMath/experiments/topics/task1-topics-2021.json', function(data) {
+        $.getJSON('../data/ARQMath/experiments/topics/task1-topics-2021.json', function(data) {
             callback(data);
         });
     }
