@@ -63,9 +63,11 @@ To create the document corpus,
 
 ### Bibliography
 
-Y. K. Ng, D. J. Fraser, B. Kassaie, F. W. Tompa, Dowsing for math answers, in: CLEF 2021, volume 12880 of LNCS, 2021 (to appear)
+Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. Dowsing for Answers to Math Questions: Ongoing Viability of Traditional MathIR, in: CLEF 2021, 2021 (to appear)
 
-Y. K. Ng,  D. J. Fraser,  B. Kassaie,  G. Labahn,  M. S. Marzouk,  F. W. Tompa,  K. Wang, <a href="http://ceur-ws.org/Vol-2696/paper_167.pdf" target="_blank">Dowsing for math answers with Tangent-L</a>, in: CLEF 2020, volume 2696 of CEUR Workshop Proceedings, 2020
+Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. Dowsing for Math Answers, in: CLEF 2021, volume 12880 of LNCS, 2021 (to appear)
+
+Yin Ki NG, Dallas J. Fraser, Besat Kassaie, George Labahn, Mirette S. Marzouk, Frank Wm Tompa, and Kevin Wang. <a href="http://ceur-ws.org/Vol-2696/paper_167.pdf" target="_blank">Dowsing for Math Answers with Tangent-L</a>, in: CLEF 2020, volume 2696 of CEUR Workshop Proceedings, 2020
 
 
 

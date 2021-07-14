@@ -39,6 +39,15 @@
     padding: 10px;
     text-align: center;
 }
+.description {
+    text-align:left;
+    font-weight:normal;
+    /*font-style:italic;*/
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.2);
+    padding: 10px 30px 10px 30px;
+
+}
 .button-text {
     color: orange;
     font-family: 'Courier New', monospace;
@@ -51,7 +60,15 @@
 hr.qbox {
     border-top: 1px dotted orange;
 }
-
+a {
+    color:orange;
+}
+a:hover{
+    color:orange;
+}
+a:visited{
+    color:orange;
+}
 .q-text{
     background-color: rgb(255,255,255); /* Fallback color */
     background-color: rgba(255,255,255, 0.9); /* Black w/opacity/see-through */
@@ -95,17 +112,19 @@ hr.qbox {
     color: orange;
 }
 
-.qtopic-id{
-    color: orange;
+.qtopic{
+    font-weight: bold;
+    color: grey;
 }
 
 .qbox-body{
     text-align: left;
+    padding:30px;
 }
 .qbox-footer{
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
-    color: white;
+    color: orange;
     margin-top: 30px;
     margin-left: -20px;
     margin-right: -20px;
@@ -114,3 +133,32 @@ hr.qbox {
     padding-bottom: 10px;
     font-family:'Open Sans', sans-serif;
 }
+
+.rbox-title{
+    font-weight: bold;
+    color: lightgrey;
+    font-family: 'Courier New', monospace;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.rbox-keywords{
+    font-family: 'Courier New', monospace;
+    font-weight: normal;
+    column-count: 2;
+}
+.rbox-q-text{
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.9);
+    font-weight: normal;
+    overflow: auto;
+    height: fit-content;
+    max-height: 80%;
+    text-align: center;
+    width: 80%;
+}
+/*ul {
+  columns: 5;
+  -webkit-columns: 5;
+  -moz-columns: 5;
+}*/

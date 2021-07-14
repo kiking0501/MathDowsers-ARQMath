@@ -41,7 +41,6 @@
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
-
         <!-- Custom -->
         <link rel="shortcut icon"
          href="gh-pages/img/MathDowsersIcon.ico">
@@ -60,12 +59,42 @@
     </head>
 
     <body>
-        <i class="fas fa-sync"></i>
         <div class="bg-image"></div>
         <div class="bg-text">
             <h1> Dowsing for Math Answers </h1>
             <h3> The MathDowser team's submission at ARQMath</h3>
-            <h3 class="button-text action-text" onclick="askQuestion()"> Ask a Math Question! </h3>
+            <h2 class="button-text action-text" onclick="askQuestion()"> Ask a Math Question! </h2>
+
+            <hr>
+<!--             <div class="description">
+                <h3> About </h3>
+
+                <p> MathDowsers is a team of researchers from the University of <em>Waterloo</em> who are interested in <em>dowsing</em> for answers to <em>math</em> questions. </p>
+
+                <p>
+                The team produces the best participant run of the Answer Retrieval task in the <a href="https://www.cs.rit.edu/~dprl/ARQMath/" target="_blank">ARQMath</a> (Answer Retrieval for Questions on Math) Lab in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
+                </p>
+
+            </div> -->
+
+
+            <div class="description">
+                <h3> Bibliography </h3>
+                <em>
+                <p>
+                Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. Dowsing for Answers to Math Questions: Ongoing Viability of Traditional MathIR, in: CLEF 2021, 2021 (to appear)
+                </p>
+
+                <p>
+                Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. Dowsing for Math Answers, in: CLEF 2021, volume 12880 of LNCS, 2021 (to appear)
+                </p>
+
+                <p>
+                Yin Ki NG, Dallas J. Fraser, Besat Kassaie, George Labahn, Mirette S. Marzouk, Frank Wm Tompa, and Kevin Wang. <a href="http://ceur-ws.org/Vol-2696/paper_167.pdf" target="_blank">Dowsing for Math Answers with Tangent-L</a>, in: CLEF 2020, volume 2696 of CEUR Workshop Proceedings, 2020
+                </p>
+                </em>
+            </div>
+
         </div>
 
         <div id="qbox" class="q-text" style="display:none">
@@ -82,9 +111,10 @@
                     <span class="action-text" onclick="closeQuestion()"><i style="float:right; margin-right: 20px;" class="fa fa-times-circle"></i>
                 </h3>
             </div>
-            <h4 class="qbox-title">
-                <span class="qtopic-id"> </span> <span class="qtopic-text"></span>
-            </h4>
+            <h3 class="qbox-title">
+                <span class="qtopic"> [ARQMath <span class="qyear"></span>][<span class="qtopic-id"></span>]</span>
+                <span class="qtopic-text"></span>
+            </h3>
             <div class="qbox-tags">
             </div>
             <hr class="qbox">
@@ -92,7 +122,7 @@
             </div>
             <div class="qbox-footer">
                 <h3>
-                    <span class="action-text"> Get Answers <i class="fa fa-search-plus" aria-hidden="true"></i> (in construction) </span>
+                    <span class="action-text" onclick="searchQuestion()"> Get Answers <i class="fa fa-search-plus" aria-hidden="true"></i> </span>
 
                 </h3>
             </div>
@@ -100,7 +130,7 @@
         </div>
 
         <div class="footer">
-            Powered by the <a style="color:orange" href="https://www.scg.uwaterloo.ca/brushsearch/"> BrushSearch</a> project from the University of Waterloo
+            Powered by the <a style="color:orange" href="https://www.scg.uwaterloo.ca/brushsearch/"> BrushSearch</a> project
         </div>
     </body>
 </html>
