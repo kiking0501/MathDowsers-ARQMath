@@ -42,7 +42,7 @@ function closeQuestion() {
 function searchQuestion() {
     var arqmath_year = $("#qbox").find(".qyear").text();
     var topic_id = $("#qbox").find(".qtopic-id").text();
-    window.open("/gh-pages/result.html?ARQMath_year=" + arqmath_year + "&topic_id=" + topic_id);
+    window.open("gh-pages/result.html?ARQMath_year=" + arqmath_year + "&topic_id=" + topic_id);
 }
 
 function reloadMathJax() {
