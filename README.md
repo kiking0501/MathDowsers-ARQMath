@@ -18,11 +18,18 @@ The template for the document corpus is `src_2021/template_minimal_v2.html`, whi
 To create the document corpus, 
 
 
-- First, download this repository followed by the Lab-provided *Math Stack Exchange* (MSE) collection at the designated paths. (Check individual README in the `data` folder)
+- First, download the two folders from this repository
 
-  
+  ```shell
+  /data
+  /src_2021
+  ```
 
-- Next, navigate to the source code folder `src_2021`. Create all preprocessing files by running
+  followed by the Lab-provided *Math Stack Exchange* (MSE) collection at the designated paths. (Check individual README in the `data` folder)
+
+- Next, navigate to the source code folder `src_2021`.
+
+- Create all preprocessing files by running
 
   ```shell
   ./main_preprocessing.sh
@@ -42,7 +49,7 @@ To create the document corpus,
   python main_generate_document_corpus.py --style minimal --year all
   ```
 
-  The generated files will be stored at `data/ARQMath/html_minimal_2021`. See the file `main_generate_document_corpus.py` for more available options.
+  The generated files will be stored at `/data/ARQMath/html_minimal_2021`. See the file `main_generate_document_corpus.py` for more available options.
 
 
 

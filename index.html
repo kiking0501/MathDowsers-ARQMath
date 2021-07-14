@@ -12,6 +12,37 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <!-- Display MathML -->
+<!--         <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+ -->
+        <!-- Display Latex -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            "Common-HTML": {
+            preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+                tex2jax: { inlineMath: [ ["$", "$"], ["\\\\(","\\\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+                TeX: {
+                    extensions: ["begingroup.js"],
+                    noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+                    Macros: { href: "{}" }
+                },
+                messageStyle: "none",
+
+                styles: { ".MathJax_Display, .MathJax_Preview, .MathJax_Preview > *": { "background": "inherit" } },
+                SEEditor: "mathjaxEditing"
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+
+        <!-- Custom -->
         <link rel="shortcut icon"
          href="gh-pages/img/MathDowsersIcon.ico">
         <link rel="stylesheet" href="gh-pages/main.css">
@@ -22,25 +53,50 @@
             body,html {
                 height: 100%;
                 margin: 0;
+                font-family:'Open Sans', sans-serif;
             }
         </style>
 
     </head>
 
     <body>
+        <i class="fas fa-sync"></i>
         <div class="bg-image"></div>
         <div class="bg-text">
             <h1> Dowsing for Math Answers </h1>
             <h3> The MathDowser team's submission at ARQMath</h3>
-            <h3 class="button-text" onclick="askQuestion()"> Ask a Math Question </h3>
+            <h3 class="button-text action-text" onclick="askQuestion()"> Ask a Math Question! </h3>
         </div>
 
-        <div class="q-text" style="display:none">
-            <div class="row">
-                <div class="col-sm-12">
-                    In Construction
-                </div>
+        <div id="qbox" class="q-text" style="display:none">
+            <div class="placeholder">
+                In Construction
             </div>
+
+        </div>
+
+        <div id="qbox-template" class="qbox" style="display:none">
+            <div class="qbox-header">
+                <h3>
+                    <span class="action-text" onclick="askQuestion()"> Random <i class="fa fa-refresh" aria-hidden="true"></i> </span>
+                    <span class="action-text" onclick="closeQuestion()"><i style="float:right; margin-right: 20px;" class="fa fa-times-circle"></i>
+                </h3>
+            </div>
+            <h4 class="qbox-title">
+                <span class="qtopic-id"> </span> <span class="qtopic-text"></span>
+            </h4>
+            <div class="qbox-tags">
+            </div>
+            <hr class="qbox">
+            <div class="qbox-body">
+            </div>
+            <div class="qbox-footer">
+                <h3>
+                    <span class="action-text"> Get Answers <i class="fa fa-search-plus" aria-hidden="true"></i> (in construction) </span>
+
+                </h3>
+            </div>
+
         </div>
 
         <div class="footer">
