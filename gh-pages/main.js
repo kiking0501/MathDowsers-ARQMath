@@ -1,12 +1,25 @@
+var request_type = "get";
+
+function accessJson(url, callback) {
+    if (request_type === "get") {
+        $.getJSON(url, function(data) {
+            callback(data);
+        });
+    } else if (request_type === "post") {
+        $.post(url, "{}", function(data) {
+            callback(data);
+        }, "json");
+    }
+}
+
 function askQuestion() {
     var question_data;
     var topic_id;
     var arqmath_year;
     function getQuestion(callback){
-        arqmath_year = 2020 + Math.floor(Math.random() * 2);
-        $.getJSON('data/ARQMath/experiments/topics/ARQMath_2021/task1-topics-' + arqmath_year + '.json', function(data) {
-            callback(data);
-        });
+        arqmath_year = 2021;
+        // arqmath_year += Math.floor(Math.random() * 2);
+        accessJson('data/ARQMath/experiments/topics/ARQMath_2021/task1-topics-' + arqmath_year + '.json', callback);
     }
     getQuestion(function (data) {
         question_data = data;
@@ -54,8 +67,10 @@ $(document).ready(function() {
 })
 
 function cleanMathML(text) {
+    console.log(text);
+    console.log(text.replace('display=\"block\"', 'display=\"inline\"'));
     return text.replace(
-        'display="block"', 'display="inline"').replace(
+        'display=\"block\"', 'display=\"inline\"').replace(
         '<merror class="ltx_error undefined undefined">', "").replace(
         "</merror>", "").replace(
         '<merror class="ltx_ERROR undefined undefined">', "");
@@ -68,18 +83,18 @@ function writeResult(arqmath_year, topic_id) {
     rbox.find(".rbox-title").find(".qtopic-id").text(topic_id);
 
     function getResultQuestion(callback){
-        $.getJSON('../data/ARQMath/experiments/topics/ARQMath_2021/task1-topics-' + arqmath_year + '-slt.json', function(data) {
-            callback(data);
-        });
+        accessJson('../data/ARQMath/experiments/topics/ARQMath_2021/task1-topics-' + arqmath_year + '-slt.json', callback);
     }
-    // getResultQuestion(function (data) {
-    //     writeResultQuestion(data);
-    // });
+    getResultQuestion(function (data) {
+        writeResultQuestion(data);
+    });
 
     function writeResultQuestion(question_data) {
         var qbox = $("#qbox-template").clone();
         qbox.removeAttr("id");
         qbox.find(".qbox-title").find(".qtopic-text").html(cleanMathML(question_data[topic_id]["Title"]));
+        qbox.find(".qbox-title").find(".qyear").text(arqmath_year);
+        qbox.find(".qbox-title").find(".qtopic-id").text(topic_id);
         qbox.find(".qbox-body").html(cleanMathML(question_data[topic_id]["Question"]));
         qbox.find(".qbox-tags").text(question_data[topic_id]["Tags"]);
         qbox.show();
@@ -88,12 +103,10 @@ function writeResult(arqmath_year, topic_id) {
     }
 
     function getTerms(callback) {
-        $.getJSON('../data/ARQMath/experiments/topics/ARQMath_2021/task1-termCount-' + arqmath_year + '-rewrite.json', function(data) {
-            callback(data[topic_id]);
-        });
+        accessJson('../data/ARQMath/experiments/topics/ARQMath_2021/task1-termCount-' + arqmath_year + '-rewrite.json', callback);
     }
     getTerms(function (data) {
-        var terms = getSortedItems(data);
+        var terms = getSortedItems(data[topic_id]);
         var html = "";
         for (let i = 0; i < terms.length; i++) {
             html += "<ul>";

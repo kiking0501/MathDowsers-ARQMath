@@ -58,7 +58,7 @@
 }
 
 hr.qbox {
-    border-top: 1px dotted orange;
+    border-top: 1px solid orange;
 }
 a {
     color:orange;
@@ -93,14 +93,15 @@ a:visited{
 
 }
 .qbox-header{
-    background-color: orange;
-    color: white;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+    color: orange;
     margin-top: -30px;
     margin-left: -20px;
     margin-right: -20px;
     margin-bottom: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-family:'Open Sans', sans-serif;
 }
 .qbox-title{
@@ -109,7 +110,7 @@ a:visited{
 }
 .qbox-tags{
     font-weight: bold;
-    color: orange;
+    color: grey;
 }
 
 .qtopic{
@@ -135,17 +136,24 @@ a:visited{
 }
 
 .rbox-title{
-    font-weight: bold;
-    color: lightgrey;
+    color: orange;
     font-family: 'Courier New', monospace;
-    text-align: left;
+    text-align: center;
     padding-left: 10px;
     padding-right: 10px;
 }
 .rbox-keywords{
     font-family: 'Courier New', monospace;
     font-weight: normal;
-    column-count: 2;
+    column-count: 3;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.9);
+    padding: 30px;
+    color: black;
+    max-height: 500px;
+    height: fit-content;
+    overflow: auto;
+    /*text-align: center;*/
 }
 .rbox-q-text{
     background-color: rgb(255,255,255);
@@ -153,9 +161,9 @@ a:visited{
     font-weight: normal;
     overflow: auto;
     height: fit-content;
-    max-height: 80%;
+    max-height: 500px;
     text-align: center;
-    width: 80%;
+    width: auto;
 }
 /*ul {
   columns: 5;
