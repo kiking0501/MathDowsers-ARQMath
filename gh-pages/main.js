@@ -1,4 +1,4 @@
-var request_type = "post";
+var request_type = "get";
 
 function accessJson(url, callback) {
     if (request_type === "get") {
