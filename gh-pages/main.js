@@ -137,6 +137,7 @@ function writeSelectPanel(arqmath_year, q_data, q_keys, callback) {
         select.append(option)
     }
     select.attr("size", Math.min(Math.max(q_keys.length,2),  20));
+    $("#num-topics").text(q_keys.length);
     callback();
 }
 
