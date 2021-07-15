@@ -50,7 +50,8 @@
 }
 .button-text {
     color: orange;
-    font-family: 'Courier New', monospace;
+    font-family:'Open Sans', sans-serif;
+    /*font-family: 'Courier New', monospace;*/
 }
 .action-text:hover {
     font-weight:bold;
@@ -74,7 +75,7 @@ a:visited{
     background-color: rgba(255,255,255, 0.9); /* Black w/opacity/see-through */
     color: black;
     /*border: 3px solid #f1f1f1;*/
-    border: 3px solid orange;
+    border: 5px solid orange;
 
     position: absolute;
     top: 50%;
@@ -89,8 +90,81 @@ a:visited{
     font-family: 'Courier New', monospace;
     overflow: auto;
     height: fit-content;
-    max-height: 80%;
+    height: 80%;
+    max-height: 800px;
 
+}
+.qpanel-placeholder{
+    border-right: 5px solid white;
+    font-family:'Open Sans', sans-serif;
+    color: #253529;
+
+}
+.qpanel-dropdown{
+    overflow:auto;
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+}
+.qpanel-dropdown.select{
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:100%;
+}
+
+.qpanel-breakdown{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+.grid-label {
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.grid-item {
+ /* background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);*/
+  text-align: center;
+  padding: 5px;
+}
+
+button.btn-default{
+    font-family:'Open Sans', sans-serif;
+}
+button.btn-default:hover,active{
+    border: 3px solid orange;
+    /*background: orange;
+    color: white;
+    font-weight: normal;*/
+}
+button.btn-default.selected{
+    background: orange;
+    color: white;
+    font-weight: normal;
+}
+
+
+select option:hover,
+select option:focus,
+select option:active {
+    cursor: pointer;
+    color: orange;
+}
+select option:checked {
+    background: linear-gradient(orange, orange);
+    background-color: orange !important; /* for IE */
+    color: orange !important;
+}
+
+.qbox-placeholder{
+    /*border-left: 5px solid white;*/
+    height: fit-content;
 }
 .qbox-header{
     background-color: rgb(0,0,0);
@@ -100,9 +174,13 @@ a:visited{
     margin-left: -20px;
     margin-right: -20px;
     margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family:'Open Sans', sans-serif;
+}
+.qcategory{
+    font-family:'Open Sans', sans-serif;
+    color: grey;
 }
 .qbox-title{
     font-weight: bold;
@@ -114,7 +192,6 @@ a:visited{
 }
 
 .qtopic{
-    font-weight: bold;
     color: grey;
 }
 
@@ -145,7 +222,6 @@ a:visited{
 .rbox-keywords{
     font-family: 'Courier New', monospace;
     font-weight: normal;
-    column-count: 2;
     background-color: rgb(255,255,255);
     background-color: rgba(255,255,255, 0.9);
     padding-top: 20px;
@@ -153,6 +229,7 @@ a:visited{
     max-height: 200px;
     height: fit-content;
     overflow: auto;
+    column-count:3;
     /*text-align: center;*/
 }
 .rbox-q-text{
@@ -165,6 +242,7 @@ a:visited{
     text-align: center;
     width: auto;
     margin: 5px;
+
 }
 /*ul {
   columns: 5;
