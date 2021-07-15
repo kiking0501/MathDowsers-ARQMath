@@ -11,6 +11,13 @@ The team produces the best participant run of the Answer Retrieval task in the <
 
 
 
+### Demo ###
+
+
+A demo page to answer math questions using old MathStackExchange answers (from the year 2010 to 2018) is at https://kiking0501.github.io/MathDowsers-ARQMath/.  It demonstrates the answer retrieval results of the MathDowsers' submissions in ARQMath Lab 2020 and 2021. To make a custom search, visit the interface of the <a href="http://mathbrush.cs.uwaterloo.ca/" target="_blank">math-aware search engine</a> in use (which supports a pen-based input).
+
+
+
 ### Create a document corpus for the Answer Retrieval task
 
 The template for the document corpus is `src_2021/template_minimal_v2.html`, which is an HTML page that stores an answer together with its parent math question (that is, a question-answer pair) and other meta information. 
@@ -54,6 +61,8 @@ To create the document corpus,
 
 
 ### Changes
+
+*2021-07-15*: Initialize a demo page.
 
 *2021-07-12*: Add instructions to create the document corpus for the Answer Retrieval task.
 
