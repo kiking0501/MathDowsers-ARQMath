@@ -237,15 +237,15 @@ function cleanMathML(text) {
 function writeResult(arqmath_year, topic_id) {
 
     var rbox = $(".rbox");
-    rbox.find(".rbox-title").find(".qyear").text(arqmath_year);
-    rbox.find(".rbox-title").find(".qtopic-id").text(topic_id);
+    rbox.find(".qyear").text(arqmath_year);
+    rbox.find(".qtopic-id").text(topic_id);
 
     function getResultQuestion(callback){
         accessJson('../data/ARQMath/experiments/topics/ARQMath_2021/task1-topics-' + arqmath_year + '-slt.json', callback);
     }
-    getResultQuestion(function (data) {
-        writeResultQuestion(data);
-    });
+    // getResultQuestion(function (data) {
+    //     writeResultQuestion(data);
+    // });
 
     function writeResultQuestion(question_data) {
         var qbox = $("#qbox-template").clone();
