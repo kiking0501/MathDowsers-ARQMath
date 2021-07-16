@@ -3,20 +3,27 @@ Dowsing for Math Answers - the MathDowsers team's submission for ARQMath @ CLEF
 
 
 
-### About
+## About 
 
-MathDowsers is a team of researchers from the University of  *Waterloo* who are interested in *dowsing for answers to math questions*. 
+MathDowsers is a team of researchers from the University of  *Water*loo who are interested in *dowsing for answers to math questions*:
+
+>Given a math question, look for potential answers to this math question from an existing math answer database.
 
 The team produces the best participant run of the Answer Retrieval task in the <a href="https://www.cs.rit.edu/~dprl/ARQMath/" target="_blank">ARQMath (**A**nswer **R**etrieval for **Q**uestions on **Math**) Lab</a> in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
 
 
 
-### Demo ###
+## Demo
+
+<a href="https://kiking0501.github.io/MathDowsers-ARQMath/" target="_blank">Click here for the Demo.</a>
+
+This demo displays the MathDowsers team's submission runs in the ARQMath Lab 2020 and 2021, where the math answer database is the <a href="https://math.stackexchange.com/" target="_blank">MathStackExchange</a> corpus from year 2010 to 2018, and math questions are selected from the same corpus from year 2019 to 2020.
+
+This demo displays the team's submission runs only. To make a custom search, visit the interface of the <a href="http://mathbrush.cs.uwaterloo.ca/" target="_blank">math-aware search engine</a> in use (which supports a pen-based input).
 
 
-A demo page to answer math questions using old MathStackExchange answers (from the year 2010 to 2018) is at https://kiking0501.github.io/MathDowsers-ARQMath/.  It demonstrates the answer retrieval results of the MathDowsers' submissions in ARQMath Lab 2020 and 2021. To make a custom search, visit the interface of the <a href="http://mathbrush.cs.uwaterloo.ca/" target="_blank">math-aware search engine</a> in use (which supports a pen-based input).
 
-
+## Resources
 
 ### Create a document corpus for the Answer Retrieval task
 
@@ -60,7 +67,7 @@ To create the document corpus,
 
 
 
-### Changes
+## Changes
 
 *2021-07-15*: Initialize a demo page.
 
@@ -70,7 +77,7 @@ To create the document corpus,
 
 
 
-### Bibliography
+## Bibliography
 
 Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. Dowsing for Answers to Math Questions: Ongoing Viability of Traditional MathIR, in: CLEF 2021, 2021 (to appear)
 

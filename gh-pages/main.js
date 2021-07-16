@@ -268,13 +268,15 @@ function writeResult(arqmath_year, topic_id) {
         var terms = getSortedItems(data[topic_id]);
         var html = "";
         for (let i = 0; i < terms.length; i++) {
-            html += "<ul>";
+            // html += "<ul>";
+            html += "<div>";
             html += cleanMathML(terms[i][0]);
 
             if (terms[i][1] > 1) {
                 html += " <span class='badge'>" + terms[i][1] + "</span>";
             }
-            html += "</ul>";
+            html += "</div>";
+            // html += "</ul>";
             // if (i !== terms.length - 1) {
             //     html += ", ";
             // }

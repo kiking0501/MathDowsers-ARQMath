@@ -66,25 +66,30 @@
         <div class="bg-image"></div>
         <div class="bg-text">
             <h1> Dowsing for Math Answers </h1>
-            <h3> The MathDowser team's submission at ARQMath</h3>
-            <h2 class="button-text action-text" onclick="askQuestion(true)"> Answer Math Questions <i class="fa fa-external-link" aria-hidden="true"></i> </h2>
+            <h3> The MathDowsers team's submission at ARQMath</h3>
+            <h2 class="button-text action-text" onclick="askQuestion(true)"> Start Dowsing <i class="fa fa-play-circle" aria-hidden="true"></i> </h2>
 
             <hr>
             <div class="description">
-                <p> A demo page to answer math questions using old MathStackExchange answers (from the year 2010 to 2018).</p>
-                <p> Click "<span class="button-text action-text" onclick="askQuestion(true)">Answer Math Questions</span>" to start! </p>
+                <p> A demo page to demonstrate <em> dowing for math answers</em>:
+                <blockquote>Given a math question, look for potential answers to this math question from an existing math answer database.</blockquote></p>
+                <p> This demo displays the MathDowsers team's submission runs in the <a href="https://www.cs.rit.edu/~dprl/ARQMath/" target="_blank">ARQMath Lab</a> (Answer Retrieval for Questions on Math) 2020 and 2021: </p>
+                <p> where the math answer database is the <a href="https://math.stackexchange.com/" target="_blank">MathStackExchange</a> corpus from year 2010 to 2018, and math questions are selected from the same corpus from year 2019 to 2020.</p>
+                <p> <span class="button-text action-text" onclick="askQuestion(true)">Start Dowsing <i class="fa fa-play-circle" aria-hidden="true"></i></span> </p>
             </div>
             <div class="description">
 
                 <h3> About </h3>
 
-                <p> MathDowsers is a team of researchers from the University of <em>Waterloo</em> who are interested in <em>dowsing</em> for answers to <em>math</em> questions. </p>
+                <p> MathDowsers is a team of researchers from the University of <em>Water</em>loo who are interested in <em>dowsing</em> for answers to <em>math</em> questions. </p>
 
                 <p>
-                The team produces the best participant run of the Answer Retrieval task in the <a href="https://www.cs.rit.edu/~dprl/ARQMath/" target="_blank">ARQMath</a> (Answer Retrieval for Questions on Math) Lab in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
+                The team produces the best participant run of the Answer Retrieval task in the ARQMath Lab in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
                 </p>
 
-                This demo displays the answer retrieval results of the submission runs in ARQMath Lab 2020 and 2021 only. To make a custom search, visit the interface of the <a href="http://mathbrush.cs.uwaterloo.ca/" target="_blank">math-aware search engine</a> in use (which supports a pen-based input).
+                <p> This demo displays the team's submission runs only. To make a custom search, visit the interface of the <a href="http://mathbrush.cs.uwaterloo.ca/" target="_blank">math-aware search engine</a> in use (which supports a pen-based input). </p>
+
+                <p> The team's code repository can be found <a href="https://github.com/kiking0501/MathDowsers-ARQMath" target="_blank">here</a>. <p>
 
             </div>
 
@@ -110,9 +115,9 @@
 
         <div id="qbox" class="q-text" style="display:none">
             <div class="row">
-                <div class="qpanel-placeholder col-sm-6 col-xs-12">
+                <div class="qpanel-placeholder col-md-6 col-sm-12">
                     <h3>
-                        Select an ARQMath Question <span class="button-text action-text" onclick="askQuestion(false)"> or Random <i class="fa fa-refresh" aria-hidden="true"></i> </span>
+                        [Step 1] Select a Math Question <span class="button-text action-text" onclick="askQuestion(false)"> or Random <i class="fa fa-refresh" aria-hidden="true"></i> </span>
                     </h3>
                     <hr class="qbox">
 
@@ -128,44 +133,42 @@
 
                             </form>
                         </div>
-                        <div class="grid-container">
-                            <div>
-                            <div class="grid-label">Dependency</div>
-                            <div class="grid-item">
+                        <div class="grid-containers">
+                            <div class="grid-container">
+                            <span class="grid-label">Dependency</span>
+                            <span class="grid-item">
                                 <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Text</button>
-                            </div>
-                            <div class="grid-item">
+                            </span>
+                            <span class="grid-item">
                                 <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Formula</button>
-                            </div>
-                            <div class="grid-item">
+                            </span>
+                            <span class="grid-item">
                                 <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Both</button>
+                            </span>
                             </div>
-                            </div>
-
-                            <div>
-                            <div class="grid-label">Topic Type</div>
-                                <div class="grid-item">
+                            <div class="grid-container">
+                            <span class="grid-label">Topic Type</span>
+                                <span class="grid-item">
                                     <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Computation</button>
-                                </div>
-                                <div class="grid-item">
+                                </span>
+                                <span class="grid-item">
                                     <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Concept</button>
-                                </div>
-                                <div class="grid-item">
+                                </span>
+                                <span class="grid-item">
                                     <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Proof</button>
-                                </div>
+                                </span>
                             </div>
-
-                            <div>
-                            <div class="grid-label">Difficulty</div>
-                                <div class="grid-item">
+                            <div class="grid-container">
+                            <span class="grid-label">Difficulty</span>
+                                <span class="grid-item">
                                     <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Easy</button>
-                                </div>
-                                <div class="grid-item">
+                                </span>
+                                <span class="grid-item">
                                     <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Medium</button>
-                                </div>
-                                <div class="grid-item">
+                                </span>
+                                <span class="grid-item">
                                     <button type="button" class="btn btn-default" onclick="filterQuestion(this)">High</button>
-                                </div>
+                                </span>
                             </div>
 
                         </div>
@@ -191,7 +194,7 @@
                     <!-- h3 class="button-text action-text" onclick="searchQuestion()"> Get Answers <i class="fa fa-external-link" aria-hidden="true"></i> </h3> -->
                 </div>
 
-                <div class="qbox-placeholder col-sm-6 col-xs-12">
+                <div class="qbox-placeholder col-md-6 col-sm-12">
                     In Construction
                 </div>
 
@@ -202,7 +205,8 @@
         <div id="qbox-template" class="qbox" style="display:none">
             <div class="qbox-header">
                 <h3>
-                    <span class="action-text" onclick="searchQuestion()"> Preview & Search Answers <i class="fa fa-external-link" aria-hidden="true"></i> </span>
+                    <span style="color:white; padding-right:20px"> [Step 2] Preview <i class="fa fa-angle-double-down" aria-hidden="true"></i> </span>
+                    <span class="action-text" onclick="searchQuestion()"> [Step 3] Search Potential Answers <i class="fa fa-external-link" aria-hidden="true"></i> </span>
 
                     <span class="action-text" onclick="closeQuestion()"><i style="float:right; margin-right: 20px;" class="fa fa-times-circle"></i>
                 </h3>
