@@ -732,7 +732,6 @@ function filterByRelevance(relevancy_score) {
         $("#answer-rows").find(".answer-abstract-panel").each(function(ind, div) {
 
             var ind_score = parseInt($($(div).find(".relevancy-score")).text());
-            console.log(ind_score);
 
             if ((ind_score >= 0) && checkTextBoolean($("#" + labels[ind_score]).attr("active"))) {
                 $(div).show();
