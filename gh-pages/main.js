@@ -721,7 +721,6 @@ function filterByRelevance(relevancy_score) {
     for (var i = 0; i < labels; i++) {
         totalActive |= checkTextBoolean($("#" + labels[i]).attr("active"));
     }
-    console.log(totalActive);
 
     if (!totalActive) {
         $("#answer-rows").find(".answer-abstract-panel").each(function(ind, div) {
@@ -730,9 +729,9 @@ function filterByRelevance(relevancy_score) {
     } else {
 
         $("#answer-rows").find(".answer-abstract-panel").each(function(ind, div) {
-            console.log("hye")
+
             var ind_score = parseInt($($(div).find(".relevancy-score")).text());
-            console.log(ind, ind_score);
+
             if (ind_score >= 0 && checkTextBoolean($("#" + labels[ind_score]).attr("active"))) {
                 $(div).css("display", "inherit");
             } else {
