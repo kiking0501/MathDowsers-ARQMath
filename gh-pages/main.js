@@ -310,9 +310,12 @@ function writeResult(arqmath_year, topic_id) {
     var rbox = $(".rbox");
     rbox.find(".qyear").text(arqmath_year);
     rbox.find(".qtopic-id").text(topic_id);
+
+    var qcategory = $($("#qbox").find(".qcategory")[0]).text();
     rbox.find(".qcategory").text(
-        $($("#qbox").find(".qcategory")[0]).text()
+        qcategory
     );
+
     rbox.find(".topic-title").html(
         $($("#qbox").find(".qtopic-text")[0]).html()
     )
@@ -522,6 +525,9 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results) {
 
 
 function resultIsLoaded(flag) {
+    var labels = ["label-IR", "label-LR", "label-R", "label-HR"];
+    for (var i = 0; i < labels.length; i++)
+        updateRelevanceLabel($("#" + labels[i]), false);
     if (!flag) {
         $("#resultIsLoaded").html("");
         $("#btn_view_separate_answers").prop("disabled", true);
@@ -682,6 +688,58 @@ function viewSeperateAnswers(){
         body.html(list_answers.html());
     });
 
+}
+
+
+function updateRelevanceLabel(label, update_active) {
+    if (update_active) {
+        label.find(".badge").css("color", "orange");
+        // label.css("outline", "3px solid orange");
+        // label.css("background-color", "#f1f1f1");
+        label.css("color", "rgb(255,229,180)");
+    } else {
+        label.find(".badge").css("color", "");
+        // label.css("outline", "");
+        // label.css("background-color", "");
+        label.css("color", "");
+    }
+    label.attr("active", update_active.toString());
+}
+function filterByRelevance(relevancy_score) {
+    function checkTextBoolean(text) {
+        if (text == "false") return false;
+        return true;
+    }
+    var labels = ["label-IR", "label-LR", "label-R", "label-HR"];
+
+    var update_active = !(checkTextBoolean($("#" + labels[relevancy_score]).attr("active")));
+    updateRelevanceLabel($("#" + labels[relevancy_score]), update_active);
+
+
+
+    var totalActive = update_active;
+    for (var i = 0; i < labels; i++) {
+        totalActive |= checkTextBoolean($("#" + labels[i]).attr("active"));
+    }
+    console.log(totalActive);
+
+    if (!totalActive) {
+        $("#answer-rows").find(".answer-abstract-panel").each(function(ind, div) {
+            $(div).css("display", "inherit");
+        });
+    } else {
+
+        $("#answer-rows").find(".answer-abstract-panel").each(function(ind, div) {
+            console.log("hye")
+            var ind_score = parseInt($($(div).find(".relevancy-score")).text());
+            console.log(ind, ind_score);
+            if (ind_score >= 0 && checkTextBoolean($("#" + labels[ind_score]).attr("active"))) {
+                $(div).css("display", "inherit");
+            } else {
+                $(div).hide();
+            }
+        });
+    }
 }
 
 function toggleExpand(container, target) {

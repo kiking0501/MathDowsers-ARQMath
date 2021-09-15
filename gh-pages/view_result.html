@@ -8,7 +8,7 @@
             <div align="center">
                 <span  style="color:orange; float: left; font-weight: bold"> Selected Question: </span>
                 <span class="qtopic" > [ARQMath <span class="qyear"></span>, <span class="qtopic-id"></span>]</span>
-
+                <h5>  <span class="qcategory"></span>  </h5>
 
                 <h5>
                     <div class="panel panel-default">
@@ -54,11 +54,11 @@
                 <h4 style="color:dimgrey; display: inline-block;"> Showing
                 <span class="num-results" style="color:#212529"> </span><img class="ajax-loader-gif" src="gh-pages/img/ajax-loader.gif">
                 results. </h4>
-                <span class="display-counts relevancy-label" style="display:none;">
-                    <span class="label label-success" id="label-HR"> High Relevance <span class="badge badge-warning" style="display:none"></span> </span>
-                    <span class="label label-info" id="label-R"> Medium Relevance <span class="badge badge-warning" style="display: none"></span></span>
-                    <span class="label label-primary" id="label-LR"> Low Relevance <span class="badge badge-warning" style="display: none"></span></span>
-                    <span class="label label-default" id="label-IR"> Irrelevant <span class="badge badge-warning" style="display: none"></span></span>
+                <span class="display-counts relevancy-label" style="display:none; cursor: pointer;">
+                    <span class="label label-success" id="label-HR" onclick="filterByRelevance(3)" active=false> High Relevance <span class="badge badge-warning" style="display:none"></span></span>
+                    <span class="label label-info" id="label-R" onclick="filterByRelevance(2)" active=false> Medium Relevance <span class="badge badge-warning" style="display: none"></span></span>
+                    <span class="label label-primary" id="label-LR" onclick="filterByRelevance(1)" active=false> Low Relevance <span class="badge badge-warning" style="display: none"></span></span>
+                    <span class="label label-default" id="label-IR" onclick="filterByRelevance(0)" active=false> Irrelevant <span class="badge badge-warning" style="display: none"></span></span>
                 </span>
             </div>
 
@@ -73,7 +73,7 @@
 </div>
 
 <div id="answer-abstract-template" style="display:none">
-    <div class="panel panel-default">
+    <div class="panel panel-default answer-abstract-panel">
         <div class="panel-heading" style="cursor: pointer" onclick="selectAnswerDocument(this)">
             <h5>
                 <span class="isViewing" style="color: dimgrey; font-weight: bold"> <i class="fa fa-eye" aria-hidden="true" > </i>
@@ -94,8 +94,7 @@
                 <hr>
                     <div class="panel-body answer-body"> Answer Content ... </div>
                     <span style="float: right"> View in <a href="" class="mse-link" target="_blank">Math StackExchange <i class="fa fa-external-link" aria-hidden="true" > </i></a> </span>
-             </div>
-        </div>
+            </div>
         <div class="original-document" style="display:none"> </div>
     </div>
 </div>
