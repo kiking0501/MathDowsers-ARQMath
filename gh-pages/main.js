@@ -711,29 +711,31 @@ function filterByRelevance(relevancy_score) {
         return true;
     }
     var labels = ["label-IR", "label-LR", "label-R", "label-HR"];
-
-    var update_active = !(checkTextBoolean($("#" + labels[relevancy_score]).attr("active")));
-    updateRelevanceLabel($("#" + labels[relevancy_score]), update_active);
-
-
-
-    var totalActive = update_active;
-    for (var i = 0; i < labels; i++) {
-        totalActive |= checkTextBoolean($("#" + labels[i]).attr("active"));
+    if (relevancy_score < 0) {
+        for (var i = 0; i < labels.length; i++)
+            updateRelevanceLabel($("#" + labels[i]), false);
+    } else {
+        var update_active = !(checkTextBoolean($("#" + labels[relevancy_score]).attr("active")));
+        updateRelevanceLabel($("#" + labels[relevancy_score]), update_active);
     }
 
+    var totalActive = false;
+    for (var i = 0; i < labels.length; i++) {
+        totalActive |= checkTextBoolean($("#" + labels[i]).attr("active"));
+    }
     if (!totalActive) {
         $("#answer-rows").find(".answer-abstract-panel").each(function(ind, div) {
-            $(div).css("display", "inherit");
+            $(div).show();
         });
     } else {
 
         $("#answer-rows").find(".answer-abstract-panel").each(function(ind, div) {
 
             var ind_score = parseInt($($(div).find(".relevancy-score")).text());
+            console.log(ind_score);
 
-            if (ind_score >= 0 && checkTextBoolean($("#" + labels[ind_score]).attr("active"))) {
-                $(div).css("display", "inherit");
+            if ((ind_score >= 0) && checkTextBoolean($("#" + labels[ind_score]).attr("active"))) {
+                $(div).show();
             } else {
                 $(div).hide();
             }
