@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta property = "og:title" content = "Dowsing for Math Answers - the MathDowsers team at ARQMath"/>
+        <meta property = "og:type" content = "website" />
+        <meta property = "og:url" content = "https://kiking0501.github.io/MathDowsers-ARQMath" />
+        <meta property = "og:image" content="https://raw.githubusercontent.com/kiking0501/MathDowsers-ARQMath/master/gh-pages/img/MathDowsersLight.jpg" />
+
+        <title> Dowsing for Math Answers - the MathDowsers team at ARQMath </title>
+
+        <!-- Bootstrap 3-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <!-- Display MathML -->
+<!--         <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+ -->
+        <!-- Display Latex -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            "Common-HTML": {
+            preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+                tex2jax: { inlineMath: [ ["$", "$"], ["\\\\(","\\\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+                TeX: {
+                    extensions: ["begingroup.js"],
+                    noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+                    Macros: { href: "{}" }
+                },
+                messageStyle: "none",
+
+                styles: { ".MathJax_Display, .MathJax_Preview, .MathJax_Preview > *": { "background": "inherit" } },
+                SEEditor: "mathjaxEditing"
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+        <!-- Custom -->
+        <link rel="shortcut icon"
+         href="gh-pages/img/MathDowsersIcon.ico">
+        <link rel="stylesheet" href="gh-pages/main.css">
+        <script type="text/javascript" src="gh-pages/main.js"></script>
+
+
+        <style>
+            body,html {
+                height: 100%;
+                margin: 0;
+                font-family:'Open Sans', sans-serif;
+            }
+        </style>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                loadQuestionPanel("latex");
+            })
+
+        </script>
+
+    </head>
+
+    <body>
+        <div class="bg-image"></div>
+        <div class="bg-text">
+            <h1> Dowsing for Math Answers </h1>
+            <h3> The MathDowsers team's submission at ARQMath</h3>
+            <h2 class="button-text action-text" onclick="askQuestion(true)"> Start Dowsing <i class="fa fa-play-circle" aria-hidden="true"></i> </h2>
+
+            <hr>
+            <div class="description">
+                <p> A demo page to demonstrate <em> dowing for math answers</em>:
+                <blockquote>Given a math question, look for potential answers to this math question from an existing math answer database.</blockquote></p>
+                <p> This demo displays the MathDowsers team's submission runs in the <a href="https://www.cs.rit.edu/~dprl/ARQMath/" target="_blank">ARQMath Lab</a> (Answer Retrieval for Questions on Math) 2020 and 2021: </p>
+                <p> where the math answer database is the <a href="https://math.stackexchange.com/" target="_blank">MathStackExchange</a> corpus from year 2010 to 2018, and math questions are selected from the same corpus from year 2019 to 2020.</p>
+                <p> <span class="button-text action-text" onclick="askQuestion(true)">Start Dowsing <i class="fa fa-play-circle" aria-hidden="true"></i></span> </p>
+            </div>
+            <div class="description">
+
+                <h3> About </h3>
+
+                <p> MathDowsers is a team of researchers from the University of <em>Water</em>loo who are interested in <em>dowsing</em> for answers to <em>math</em> questions. </p>
+
+                <p>
+                The team produces the best participant run of the Answer Retrieval task in the ARQMath Lab in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
+                </p>
+
+                <p> This demo displays the team's submission runs only. To make a custom search, visit the interface of the <a href="http://mathbrush.cs.uwaterloo.ca/" target="_blank">math-aware search engine</a> in use (which supports a pen-based input). </p>
+
+                <p> The team's code repository can be found <a href="https://github.com/kiking0501/MathDowsers-ARQMath" target="_blank">here</a>. <p>
+
+            </div>
+
+
+            <div class="description">
+                <h3> Bibliography </h3>
+                <em>
+                <p>
+                Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. Dowsing for Answers to Math Questions: Ongoing Viability of Traditional MathIR, in: CLEF 2021, 2021 (to appear)
+                </p>
+
+                <p>
+                Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. Dowsing for Math Answers, in: (Best of Lab) CLEF 2021, volume 12880 of LNCS, 2021 (to appear)
+                </p>
+
+                <p>
+                Yin Ki NG, Dallas J. Fraser, Besat Kassaie, George Labahn, Mirette S. Marzouk, Frank Wm Tompa, and Kevin Wang. <a href="http://ceur-ws.org/Vol-2696/paper_167.pdf" target="_blank">Dowsing for Math Answers with Tangent-L</a>, in: CLEF 2020, volume 2696 of CEUR Workshop Proceedings, 2020
+                </p>
+                </em>
+            </div>
+
+        </div>
+        <div id="question-panel">
+        </div>
+
+
+        <div class="footer">
+            Powered by the <a style="color:orange" href="https://www.scg.uwaterloo.ca/brushsearch/"> BrushSearch</a> project
+        </div>
+    </body>
+</html>
+
+
+

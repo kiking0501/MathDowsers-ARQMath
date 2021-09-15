@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-        <!-- Display Latex -->
+        <!-- Display Latex & MathML-->
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             "Common-HTML": {
@@ -37,8 +37,6 @@
                 SEEditor: "mathjaxEditing"
             });
         </script>
-
-        <!-- Display MathML -->
         <script type="text/javascript" async
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
         </script>
@@ -69,6 +67,11 @@
                             hasLoadTab[tabName] = true;
                             if (tabName == "question_panel") {
                                 askQuestion();
+                            }
+                            if (tabName == "guide") {
+                                if ($("#resultIsLoaded").html()=="") {
+                                    $(".btn_view_result").prop("disabled", true);
+                                }
                             }
                         });
                 }

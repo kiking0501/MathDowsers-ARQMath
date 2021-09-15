@@ -36,7 +36,6 @@ function checkisLimitSize() {
     } else {
         return false;
     }
-
 }
 
 /*
@@ -112,7 +111,7 @@ function askQuestion(target) {
         qbox.find(".qtopic-id").text(topic_id);
         qbox.find(".qtopic-text").html(cleanFormula(question_data["Title"]));
         qbox.find(".qbox-body").html(cleanFormula(question_data["Question"]));
-        qbox.find(".qbox-tags").text(question_data["Tags"]);
+        qbox.find(".qbox-tags").text(question_data["Tags"].split(",").join(" , "));
         qbox.show();
         $("#qbox").find(".qbox-placeholder").html(qbox);
         accessJson(
@@ -264,19 +263,21 @@ function questionSelected(flag) {
     if (!flag) {
         $("#questionIsSelected").html("");
         $(".qbox-placeholder").html("<h4 style='color:dimgrey'> No Selected Question. </h4>");
-        $("#btn_view_question_run").prop("disabled", true);
-        $("#btn_view_result").prop("disabled", true);
+        $(".btn_view_question_run").prop("disabled", true);
+
 
         // initial state
+        $("#btn_view_result").prop("disabled", true);
+        $("#btn_view_separate_answers").prop("disabled", true);
         $("#resultIsLoaded").html("");
         $(".ajax-loader-gif").hide();
 
     } else {
         $("#questionIsSelected").html("<i class='fa fa-check'></i>");
-        $("#btn_view_question_run").prop("disabled", false);
 
-
-        $("#btn_view_result").prop("disabled", true);  // question changed, need to disable
+        // question changed, need to disable
+        $("#btn_view_result").prop("disabled", true);
+        $("#btn_view_separate_answers").prop("disabled", true);
         $("#resultIsLoaded").html("");
     }
 }
@@ -312,6 +313,12 @@ function writeResult(arqmath_year, topic_id) {
     rbox.find(".qcategory").text(
         $($("#qbox").find(".qcategory")[0]).text()
     );
+    rbox.find(".topic-title").html(
+        $($("#qbox").find(".qtopic-text")[0]).html()
+    )
+    rbox.find(".topic-tags").html(
+        $($("#qbox").find(".qbox-tags")[0]).html()
+    )
     $("#ajax-loader-gif").show();
 
     function getResultTSV(callback) {
@@ -456,19 +463,19 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results) {
             );
         } else if (relevancy == 0) {
             answer.find(".relevancy-label").html(
-                '<span class="label label-default">IR</span>'
+                '<span class="label label-default">Irrelevant</span>'
             );
         } else if (relevancy == 1) {
             answer.find(".relevancy-label").html(
-                '<span class="label label-primary">LR</span>'
+                '<span class="label label-primary">Low Relevance</span>'
             );
         } else if (relevancy == 2) {
             answer.find(".relevancy-label").html(
-                '<span class="label label-info">R</span>'
+                '<span class="label label-info">Medium Relevance</span>'
             );
         } else if (relevancy == 3) {
             answer.find(".relevancy-label").html(
-                '<span class="label label-success">HR</span>'
+                '<span class="label label-success">High Relevance</span>'
             );
         }
 
@@ -477,6 +484,23 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results) {
         answer.find(".answer-body").html(
             $(doc_html.find('#answer')[0]).html()
         );
+        answer.find(".mse-link").attr(
+            "href", "https://math.stackexchange.com/questions/" +
+            doc_html.find("#question").attr("question_id")
+        )
+
+        answer.find(".answer-question-title").html(
+            $(doc_html.find("#question-title").find("h1")[0]).html()
+        )
+        var tags = $(doc_html.find("#tags")[0]).find("span");
+        for (var i = 0; i < tags.length; i++) {
+            if (i == 0) {
+                answer.find(".answer-question-tags").html($(tags[i]).html());
+            } else {
+                answer.find(".answer-question-tags").append("," + $(tags[i]).html())
+            }
+        }
+
         answer.find(".original-document").html(
             $(doc_html.find("#question-title").parent()).html()
         );
@@ -500,6 +524,7 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results) {
 function resultIsLoaded(flag) {
     if (!flag) {
         $("#resultIsLoaded").html("");
+        $("#btn_view_separate_answers").prop("disabled", true);
         $(".ajax-loader-gif").show();
         $(".document-placeholder").html("");
         $(".display-counts").find(".label").find(".badge").hide();
@@ -507,18 +532,59 @@ function resultIsLoaded(flag) {
 
     } else {
         $("#resultIsLoaded").html("<i class='fa fa-check'></i>");
+        $("#btn_view_separate_answers").prop("disabled", false);
         $(".ajax-loader-gif").hide();
         $(".num-results").text(topK.toString());
 
+        // can only view tab after result loading
+        $(".btn_view_result").prop("disabled", false);
         reloadMathJax();
     }
 }
 
 
 function selectAnswerDocument(btn) {
+    function writeComment(src, target) {
+        if ($.trim($(target.find("table").find("tbody")[0]).html()) == "") {
+            src.html("N/A");
+        } else {
+            src.html(target);
+        }
+    }
+
+    function writePostLink(src, target) {
+
+        if ($.trim($(target.find("table").find("tbody")[0]).html()) == "") {
+            src.html("N/A");
+        } else {
+            target.find("tr").each(function(ind, ele) {
+                var td = $(ele).find("td:eq(0)")
+                var original = td.html();
+                td.html(
+                    "<a href='https://math.stackexchange.com/questions/"
+                    + td.attr("post_id")
+                    + "' target='_blank'>"
+                    + original
+                    + "</a>"
+                )
+            });
+            src.html(target);
+        }
+    }
+
+    function numberRows($t) {
+        $t.find("tr").each(function(ind, ele) {
+            var original = $(ele).find("td:eq(0)").html();
+            var number = "<span style='color:dimgrey'>[ " + (ind + 1) + " ]</span>"
+            $(ele).find("td:eq(0)").html(number + original);
+        });
+    }
+
     $(".isViewing").css("color", "dimgrey");
 
     $(btn).find(".isViewing").css("color", "orange");
+
+    // *** write Header ***
     var ans_doc = $("#document-template").clone();
     ans_doc.removeAttr("id");
     ans_doc.find(".answer-rank").text(
@@ -538,44 +604,52 @@ function selectAnswerDocument(btn) {
         $($(btn).find(".relevancy-score")).text()
     );
 
-    var doc_node = $($(btn).parent().find(".original-document"));
-    ans_doc.find(".question-title").html(
-        $(doc_node.find("#question-title").find("h1")).html()
-    );
-    ans_doc.find(".question-body").html(
-        $(doc_node.find("#question")).html()
-    );
-    ans_doc.find(".question-tags").html(
-        $(doc_node.find("#tags")).html()
-    );
-    ans_doc.find(".question-comments").html(
-        $(doc_node.find("#question-comments")[0]).html()
-    );
+    // *** write Body ***
+    var doc_node = $($(btn).parent().parent().find(".original-document"));
+
 
     ans_doc.find(".answer-full-body").html(
         $($(btn).parent().find(".answer-body")[0]).html()
     );
-    ans_doc.find(".answer-comments").html(
-        $(doc_node.find("#answer-comments")[0]).html()
-    );
+    writeComment(
+        ans_doc.find(".answer-comments"),
+        $(doc_node.find("#answer-comments")[0])
+    )
+    numberRows(ans_doc.find(".answer-comments"));
 
-    ans_doc.find(".duplicate-posts").find("tbody").html(
-        $(doc_node.find("#duplicate")[0]).html()
-    );
 
-    ans_doc.find(".related-posts").find("tbody").html(
-        $(doc_node.find("#related")[0]).html()
+    ans_doc.find(".question-title").html(
+        $(doc_node.find("#question-title").find("h1")[0]).html()
     );
+    ans_doc.find(".question-body").html(
+        $(doc_node.find("#question")[0]).html()
+    );
+    ans_doc.find(".question-tags").html(
+        $(doc_node.find("#tags")[0]).html()
+    );
+    writeComment(
+        ans_doc.find(".question-comments"),
+        $(doc_node.find("#question-comments")[0])
+    );
+    numberRows(ans_doc.find(".question-comments"));
+
+
+    writePostLink(
+        ans_doc.find(".duplicate-posts"),
+       $(doc_node.find("#duplicate")[0])
+    )
+    numberRows(ans_doc.find(".duplicate-posts"));
+
+    writePostLink(
+        ans_doc.find(".related-posts"),
+        $(doc_node.find("#related")[0])
+    )
+    numberRows(ans_doc.find(".related-posts"));
 
     ans_doc.show();
     $(".document-placeholder").html(ans_doc.html());
 }
 
-
-function toggleExpand(container, target) {
-    $(target).toggle("fast");
-    $(container).find("i").toggleClass("fa-plus-circle fa-minus-circle");
-}
 
 function toggleRelevance(btn) {
     $(".switch input").prop("checked", !$(".switch input").is(":checked"));
@@ -586,4 +660,31 @@ function toggleRelevance(btn) {
         $(btn).parent().find(".switch-text").text("OFF");
         $(".relevancy-label").hide();
     }
+}
+
+
+function viewSeperateAnswers(){
+    var w = window.open(
+            "gh-pages/popup_answers.html",
+            "popUpAnswerLists?_=" + (new Date().getTime()),
+            "width=" + Math.max(600, Math.round(screen.width * 0.3)) + ", height=" + Math.round(screen.height * 0.8)+ ", scrollbars=yes");
+    var arqmath_year = $($("#qbox").find(".qyear")[0]).text();
+    var topic_id = $($("#qbox").find(".qtopic-id")[0]).text();
+    var runName = $(".rbox-dropdown").val();
+
+    w.document.title = "[ARQMath " + arqmath_year + ", " + topic_id + "] " + runName;
+    $(w).on('load', function(){
+        w.document.title = "[ARQMath " + arqmath_year + ", " + topic_id + "] " + runName;
+        var body = $(w.document.body);
+        var list_answers = $("#answer-rows").clone();
+        list_answers.find(".answer-details").show();
+        list_answers.find(".panel-heading").attr("onclick", "");
+        body.html(list_answers.html());
+    });
+
+}
+
+function toggleExpand(container, target) {
+    $(target).toggle("fast");
+    $(container).find("i").toggleClass("fa-plus-circle fa-minus-circle");
 }
