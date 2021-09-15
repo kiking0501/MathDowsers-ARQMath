@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Resolve an equation that uses remainders</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Resolve an equation that uses remainders </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2418230">
+<p>I wan to know how to solve this equation where <span class="math-container" id="22395229" visual_id="524"><math alttext="\rm\ D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="5pt" width="+5pt"><mi mathvariant="normal">D</mi></mpadded></semantics></math></span> and <span class="math-container" id="22395230" visual_id="83"><math alttext="\rm\ k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="5pt" width="+5pt"><mi mathvariant="normal">k</mi></mpadded></semantics></math></span> values are know and I want to find <span class="math-container" id="22395231" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>:</p> <p><span class="math-container" id="22395232" visual_id="4683798"><math alttext="x(x\ mod\ k\ )^{2}\rm\ mod\ k=D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mpadded width="+5pt"><msup><mrow><mo stretchy="false">(</mo><mrow><mpadded width="+5pt"><mi>x</mi></mpadded><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mpadded width="+5pt"><mi>d</mi></mpadded><mo>⁢</mo><mpadded width="+5pt"><mi>k</mi></mpadded></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mpadded><mo>⁢</mo><mpadded width="+5pt"><mi>mod</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">k</mi></mrow><mo>=</mo><mi mathvariant="normal">D</mi></mrow></semantics></math></span> </p> <p>And I dont know  how to start and how to exactly the problem is expressed in math notation. I using the mod of remainder operation no the congruences.</p> <p>I extract the equation analizing some ofuscated source code the code that looks like </p> <p><code>if (x*((x % k) * (x % k))) % k == D  ...</code></p> <p>I put the code if i made a mistake traslating to math notation .</p> <h1>update</h1> <p>Maybe is not computable after all. But i want to know the teory for the great good. The values are very big:</p> <p><span class="math-container" id="22395233" visual_id="161868"><math alttext="\ k=" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="5pt" width="+5pt"><mi>k</mi></mpadded><mo>=</mo><mi></mi></mrow></semantics></math></span>     134908246421120481758163246661992595636170321686448474706440739628688109783740860298237556469237969452644490512779389250731193716102265810626226010445308778149257733945246516748118415698788521821626025173366644769118674263043277444473840006708507357109944794039692095527291233717252207868936434225226739116901</p> <p><span class="math-container" id="22395234" visual_id="22191"><math alttext="\ D=" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="5pt" width="+5pt"><mi>D</mi></mpadded><mo>=</mo><mi></mi></mrow></semantics></math></span></p> <p>5486124068793688683255936251187209270074392635932332070112001988456197381759672947165175699536362793613284725337872111744958183862744647903224103718245670299614498700710006264535590197791934024641512541262359795191593953928908168990292758500391456212260079471274317399924646987873523990414169975398570173</p>
+</div>
+<hr/>
+<div id="tags">
+<span> modular-arithmetic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4994100"> What is the order of precedence for the <span class="math-container" id="22395235" visual_id="303327"><math alttext="\%" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>%</mo></semantics></math></span> sign versus multiplication? </td></tr><tr><td comment_id="4994104"> In other words, is <span class="math-container" id="22395236" visual_id="4683799"><math alttext="a*b\%c*d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>*</mo><mrow><mi>b</mi><mo>%</mo></mrow></mrow><mo>⁢</mo><mi>c</mi></mrow><mo>*</mo><mi>d</mi></mrow></semantics></math></span> interpreted as <span class="math-container" id="22395237" visual_id="4683800"><math alttext="(a*b)\%(c*d)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>*</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>%</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>c</mi><mo>*</mo><mi>d</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> or as <span class="math-container" id="22395238" visual_id="4683801"><math alttext="a*(b\%c)*d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>*</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>b</mi><mo>%</mo></mrow><mo>⁢</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>d</mi></mrow></semantics></math></span>, or as <span class="math-container" id="22395239" visual_id="4683802"><math alttext="((a*b)\%c)*d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>*</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>%</mo></mrow><mo>⁢</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>d</mi></mrow></semantics></math></span>? </td></tr><tr><td comment_id="4994108"> is the same  that x*((x % k) * (x % k)) % k i edit </td></tr><tr><td comment_id="4994112"> Still, is the middle parenthetical multiplied by the <span class="math-container" id="22395267" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> on the left first, or remainder-divided with the <span class="math-container" id="22395266" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> on the right first? </td></tr><tr><td comment_id="4994114"> aja i think the correct is the same precedence and left to rigth, know i edit again , this is in python and i check against the values, but better is to not use parentesis because this code is valid in many languajes and maybe not have the same precedence </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2418251" id="answer">
+<p>There isn't a single solution, but instead very many solutions. But it is possible to give a partial description.</p> <p>Firstly, the inner <span class="math-container" id="22395260" visual_id="403275"><math alttext="\bmod k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>k</mi></mrow></semantics></math></span> is actually redundant. This is because if we replace the inner mod by <span class="math-container" id="22395261" visual_id="2149847"><math alttext="x+ky" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mrow><mi>k</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></semantics></math></span> for any multiple <span class="math-container" id="22395262" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> of <span class="math-container" id="22395263" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, then we have <span class="math-container" id="22395264" visual_id="4683806"><math alttext="\begin{aligned} \displaystyle x(x\bmod k)^{2}\bmod k&amp;\displaystyle amp;=x(x+ky% )^{2}\bmod k=x^{3}+2x^{2}ky+xk^{2}y^{2}\bmod k\\ &amp;\displaystyle amp;x^{3}+k(2x^{2}y+xky^{2})\bmod k=x^{3}\bmod k.\end{aligned}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>k</mi></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mi>x</mi><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>k</mi><mi>y</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>k</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mi>k</mi><mi>y</mi><mo>+</mo><mi>x</mi><msup><mi>k</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>k</mi></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>k</mi></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>k</mi></mrow></mrow><mo>.</mo></mrow></mtd></mtr></mtable></semantics></math></span></p> <p>So adding or removing multiples to the inner mod doesn't change anything, and what you're really trying to do is solve <span class="math-container" id="22395265" visual_id="4683807"><math alttext="x^{3}\equiv D\bmod k." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>≡</mo><mrow><mi>D</mi><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>k</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span> The bad news is that actually solving this is a bit nontrivial, and not something that I know how to do well. Generically, the thought would be to factor <span class="math-container" id="22395266" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> and solve the cubic for each prime power factor. <a href="https://math.stackexchange.com/questions/673418/cube-roots-modulo-p">This other question and answer</a> is exactly this problem for primes.</p> <hr/> <p>I will also note that there might be a good reason to computer inner mods <em>in the context of computers</em>, because multiplication is quicker on small numbers and large numbers might exceed limits of finite precision arithmetic. For example, if <span class="math-container" id="22395267" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> might have <span class="math-container" id="22395268" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> digits and one only has <span class="math-container" id="22395269" visual_id="8287"><math alttext="15" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>15</mn></semantics></math></span> digits of accuracy, then computing <span class="math-container" id="22395270" visual_id="513"><math alttext="x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>2</mn></msup></semantics></math></span> and then modding out by a <span class="math-container" id="22395271" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span> digit number would be much lossier than modding first, squaring, and then modding again. Finite precision arithmetic is tremendously annoying.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="673418"> Cube roots modulo <span class="math-container" id="6776299" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove that the set of all open intervals with rational endpoints are countable.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove that the set of all open intervals with rational endpoints are countable. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2207432">
+<p>Prove that the set of all open intervals with rational endpoints are countable, I do not know exactly what shall I do, Could anyone help me please?  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> elementary-set-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4541417"> This cardinality will be less than or equal to the cardinality of <span class="math-container" id="20397245" visual_id="6866"><math alttext="\mathbb{Q}\times\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℚ</mi><mo>×</mo><mi>ℚ</mi></mrow></semantics></math></span> and greater than or equal to the cardinality of <span class="math-container" id="20397249" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span>.  So it suffices to show that <span class="math-container" id="20397247" visual_id="4867862"><math alttext="|\mathbb{Q}\times\mathbb{Q}|=|\mathbb{Q}|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>ℚ</mi><mo>×</mo><mi>ℚ</mi></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>ℚ</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4541424"> All comments and answers from this other recent question [What will be <span class="math-container" id="20397248" visual_id="4867687"><math alttext="|\mathbb{Q}^{2}|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><msup><mi>ℚ</mi><mn>2</mn></msup><mo stretchy="false">|</mo></mrow></semantics></math></span>?](http://math.stackexchange.com/questions/2207355/what-will-be-mathbb-q2) apply. </td></tr><tr><td comment_id="4541491"> Then interval (a,b) is uniquely determined by the ordered pair <a,b> where a &lt; b.  the set of all <a,b> were b&gt;a and a,b are rational is a subset of Q x Q.  which is countable. </a,b></a,b></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2207440" id="answer">
+<p>The set of rational numbers <span class="math-container" id="20397249" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span> is countable. Furthermore, you should know that a finite product of countable sets is countable, so <span class="math-container" id="20397250" visual_id="6866"><math alttext="\mathbb{Q}\times\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℚ</mi><mo>×</mo><mi>ℚ</mi></mrow></semantics></math></span> is countable. (If you don't know this, prove it!) You can construct a bijection from your set to <span class="math-container" id="20397251" visual_id="6866"><math alttext="\mathbb{Q}\times\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℚ</mi><mo>×</mo><mi>ℚ</mi></mrow></semantics></math></span> the natural way, so that set will also be countable.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4570813"> you that the bijection is constructed in the natural way? </td></tr><tr><td comment_id="4570938"> By natural, I just mean the easiest way to do it? In this case, as fleablood described in the comments, you map an open interval <span class="math-container" id="20397252" visual_id="2239"><math alttext="(a,b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> with rational endpoints to the ordered pair <span class="math-container" id="20397253" visual_id="4813778"><math alttext="(a,b)\in\mathbb{Q}\times\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mrow><mi>ℚ</mi><mo>×</mo><mi>ℚ</mi></mrow></mrow></semantics></math></span>. You can show fairly easily that this is an injection, so <span class="math-container" id="20397254" visual_id="4867863"><math alttext="|\mathbb{Q}\times\mathbb{Q}|\geq|I|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>ℚ</mi><mo>×</mo><mi>ℚ</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≥</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> where <span class="math-container" id="20397255" visual_id="989"><math alttext="I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi></semantics></math></span> is the set of open intervals with rational endpoints. (This isn't a bijection, since if <span class="math-container" id="20397256" visual_id="4867864"><math alttext="a&gt;b,(a,b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mrow><mi>b</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is not an interval (or, at best, it's a degenerate interval). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2207355"> What will be <span class="math-container" id="20396731" visual_id="4867687"><math alttext="|\mathbb{Q}^{2}|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><msup><mi>ℚ</mi><mn>2</mn></msup><mo stretchy="false">|</mo></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

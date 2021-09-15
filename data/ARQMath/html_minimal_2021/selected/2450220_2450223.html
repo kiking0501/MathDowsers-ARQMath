@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Determining $ \lim_{a\rightarrow \infty}\int_{0}^{a}\exp({-x}) dx $</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Determining <span class="math-container" id="22684646" visual_id="5851871"><math alttext="\lim_{a\rightarrow\infty}\int_{0}^{a}\exp({-x})dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>a</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2450220">
+<p>I know how to calculate the limit of a function and I also know how to integrate but why are the correct steps of working out when the integral is changing e.g.</p> <p>Determine</p> <p><span class="math-container" id="22684647" visual_id="5851871"><math alttext="\lim_{a\rightarrow\infty}\int_{0}^{a}\exp({-x})dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>a</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>Any ideas?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5061989"> Evaluate <span class="math-container" id="22684648" visual_id="5851872"><math alttext="\int_{0}^{a}e^{-x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span>.  It will be a function of <span class="math-container" id="22684649" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>.  Now take the limit of that function. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2450223" id="answer">
+<p><strong>Hint:</strong> To find <span class="math-container" id="22684650" visual_id="5851873"><math alttext="\lim_{a\to\infty}\int_{0}^{a}f(x)\,\mathrm{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>a</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span>, you can find <span class="math-container" id="22684651" visual_id="5851874"><math alttext="\lim_{a\to\infty}F(a)-F(0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>a</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, where <span class="math-container" id="22684652" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is the <a href="https://www.google.co.uk/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwi485juisrWAhWELlAKHfaADGkQFggwMAI&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAntiderivative&amp;usg=AFQjCNH1HM2ecQ9UAhysZYyzIxpY6l9x6g" rel="nofollow noreferrer">antiderivative</a> of <span class="math-container" id="22684653" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>. In other words, you can find the antiderivative of <span class="math-container" id="22684654" visual_id="39967"><math alttext="e^{-x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></semantics></math></span> and then subtract its value at <span class="math-container" id="22684655" visual_id="16952"><math alttext="a\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> from its value at <span class="math-container" id="22684656" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5061993"> Well, it is usually called "calculate the integral"... </td></tr><tr><td comment_id="5061994"> @zwim What's your point? </td></tr><tr><td comment_id="5061995"> I just prefer Aaron point of view, than this one which is a bit overcomplicated imho. </td></tr><tr><td comment_id="5062001"> Both answers are saying the same thing. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

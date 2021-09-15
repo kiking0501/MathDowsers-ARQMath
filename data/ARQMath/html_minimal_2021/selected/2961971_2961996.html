@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Does the series $\sum_{n=1}^\infty\frac{(2n)!}{2^{2n}(n!)^2}$ converge or diverge.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Does the series <span class="math-container" id="27422269" visual_id="877514"><math alttext="\sum_{n=1}^{\infty}\frac{(2n)!}{2^{2n}(n!)^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mrow><msup><mn>2</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></semantics></math></span> converge or diverge. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2961971">
+<blockquote> <p><span class="math-container" id="27422270" visual_id="877514"><math alttext="\sum_{n=1}^{\infty}\frac{(2n)!}{2^{2n}(n!)^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mrow><msup><mn>2</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></semantics></math></span></p> </blockquote> <p>Can I have a hint for whether this series converges or diverges using the comparison tests (direct and limit) or the integral test or the ratio test?</p> <p>I tried using the ratio test but it failed because I got 1 as the ratio. The integral test seems impossible to use here.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6114841"> Your sum does not converge! </td></tr><tr><td comment_id="6114858"> @Dr.SonnhardGraubner That doesn't seem to be a very helpful hint or answer... </td></tr><tr><td comment_id="6114882"> Hint: Use Stirling's approximation on the factorials </td></tr><tr><td comment_id="6114924"> Ronald Blaak this was what I was discussing with my friends but since we haven't been taught it, I doubt we are allowed to use it. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2961996" id="answer">
+<p><strong>HINT</strong></p> <p>We have that</p> <p><span class="math-container" id="27422279" visual_id="4660554"><math alttext="f(x)=(1+x^{7})-{1\over 4}(1+x)=x^{7}-{1\over 4}x+{3\over 4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>7</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>x</mi><mn>7</mn></msup><mo>-</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></mrow></semantics></math></span></p> <p>indeed recall that by <a href="https://en.wikipedia.org/wiki/Binomial_coefficient#Bounds_and_asymptotic_formulas" rel="nofollow noreferrer">bounds and asymptotic formulas </a> for the binomial coefficient</p> <p><span class="math-container" id="27422280" visual_id="4660555"><math alttext="\binom{2n}{n}\sim\frac{4^{n}}{\sqrt{2\pi n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mo>∼</mo><mfrac><msup><mn>4</mn><mi>n</mi></msup><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>n</mi></mrow></msqrt></mfrac></mrow></semantics></math></span></p> <p>then we can refer to limit comparison test.</p> <p>Refer also to the related</p> <ul> <li><a href="https://math.stackexchange.com/q/320846/505767">Show that that <span class="math-container" id="27422281" visual_id="1366642"><math alttext="\lim_{n\to\infty}\sqrt[n]{\binom{2n}{n}}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mroot><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mi>n</mi></mroot></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math></span></a></li> </ul>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="320846"> Show that that <span class="math-container" id="3469286" visual_id="1366642"><math alttext="\lim_{n\to\infty}\sqrt[n]{\binom{2n}{n}}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mroot><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mi>n</mi></mroot></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

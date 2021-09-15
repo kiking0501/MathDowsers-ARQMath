@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>The general solutions of ODE for matrix</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> The general solutions of ODE for matrix </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="225850">
+<p>If <span class="math-container" id="2538666" visual_id="76"><math alttext="p(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a polynomial with real coefficients, consider the following ODE:</p> <p><span class="math-container" id="2538667" visual_id="5222540"><math alttext="A^{\prime}(t)=p(A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="2538668" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is an <span class="math-container" id="2538669" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrix.</p> <p>My question is, can we have a general solutions for this kind of ODE? (For example, if <span class="math-container" id="2538670" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> we can definitely use the separation of variables)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> ordinary-differential-equations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="263093" id="answer">
+<p>The solutions we get in the case <span class="math-container" id="2538671" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> tend to be implicit (not solved for <span class="math-container" id="2538672" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>), and usually do not exist for all times. If this does not bother you, you can get something similar for general <span class="math-container" id="2538673" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. Indeed, let <span class="math-container" id="2538674" visual_id="5222541"><math alttext="F(z)=\int\frac{1}{p(z)}\,dz" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mpadded width="+1.7pt"><mfrac><mn>1</mn><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>z</mi></mrow></mrow></mrow></mrow></semantics></math></span> (this makes sense locally; in a larger scale one has to worry about branches of logarithms). Since <span class="math-container" id="2538675" visual_id="8635"><math alttext="A^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mo>′</mo></msup></semantics></math></span> is of the form <span class="math-container" id="2538676" visual_id="124488"><math alttext="p(A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, it commutes with <span class="math-container" id="2538677" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>. This justifies carrying out the usual chain rule: <span class="math-container" id="2538678" visual_id="5222542"><math alttext="\frac{d}{dt}\,F(A)=F^{\prime}(A)\,A^{\prime}=(p(A))^{-1}\,p(A)=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+1.7pt"><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mpadded><mo>⁢</mo><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>F</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>A</mi><mo>′</mo></msup></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><msup><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mpadded><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span>. Therefore, <span class="math-container" id="2538679" visual_id="5222543"><math alttext="F(A)=tI+F(A_{0})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>t</mi><mo>⁢</mo><mi>I</mi></mrow><mo>+</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> gives the solution of the IVP <span class="math-container" id="2538680" visual_id="5222544"><math alttext="A^{\prime}=p(A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, <span class="math-container" id="2538681" visual_id="1162669"><math alttext="A(0)=A_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub></mrow></semantics></math></span>. </p> <p>Illustrating on a simple example: <span class="math-container" id="2538682" visual_id="5222545"><math alttext="A^{\prime}=A^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>=</mo><msup><mi>A</mi><mn>2</mn></msup></mrow></semantics></math></span>. Here <span class="math-container" id="2538683" visual_id="5222546"><math alttext="F(A)=-A^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span>, hence <span class="math-container" id="2538684" visual_id="5222547"><math alttext="A(t)=(A_{0}^{-1}-tI)^{-1}=A_{0}(I-tA_{0})^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>A</mi><mn>0</mn><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><mi>I</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><msub><mi>A</mi><mn>0</mn></msub><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><msub><mi>A</mi><mn>0</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span>. (The latter version works even if <span class="math-container" id="2538685" visual_id="14877"><math alttext="A_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>0</mn></msub></semantics></math></span> is noninvertible).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

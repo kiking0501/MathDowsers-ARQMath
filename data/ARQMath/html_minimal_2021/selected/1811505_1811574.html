@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <title>Poisson vs Binomial for Voting</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be">
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js"> </script>
+
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+
+        <style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <div class="row" id="question-title">
+                <h1> Poisson vs Binomial for Voting </h1>
+                <hr>
+            </div>
+
+
+            <div class="row">
+                <div class="question">
+
+                    <div question_id="1811505"  id="question">
+                        <p>(this is my first post so I apologise if I am asking wrongly) </p>  <p>I am trying to determine whether I should use poisson or binomial distribution to model american poll votes for the coming election. My knowledge is a little maths deficient so I am not exactly sure what each entail, but I read somewhere that binomial may not be appropriate as votes are not independent, but then again I am not using the average probability, I am using the actual probabilities determined from a poll so poisson may not be appropriate (doesn't poisson use average probabilities?).</p>  <p>Bit of background: I am doing my internal and planned to just use conditional probability to work out the probabilities, but as you can probably imagine this is the simplest thing ever and I will not pass if I only do that level of maths. I need to of something more difficult, so from google I got that I can do either binomial or poisson to find expected probabilities. Is there is anything else anyone thinks I could do that would be more interesting (and fun pls I need enjoyment or I procrastinate) then please help me out.</p>  <p>Thanks so much :)</p>  <p>Also I'm a little worried about putting data that I have or anything up because of turn-it-in when I finish my internal so hopefully that's not needed to help answer this question</p> 
+                    </div>
+                    <hr>
+
+                    <div id="tags">
+                        <span> poisson-distribution </span><span> binomial-distribution </span><span> voting-theory </span>
+                    </div>
+                    <hr>
+
+                    <div id="question-comments">
+                        <table>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div class="answer">
+
+
+                    <div answer_id="1811574" id="answer">
+                        <p>To give some insight into the Poisson distribution, it is most popularly used for modeling the number of times an event occurs over a time interval. This could be anything from </p>  <ul> <li>the number of DNA mutations on a strand of DNA per unit of time</li> <li>to number of arrivals of people who stand in line to get onto a bus</li> <li><em>or even the number of arrivals of people at a voting booth</em></li> <li><a href="http://www.aabri.com/SA12Manuscripts/SA12083.pdf" rel="nofollow">more examples and explanations</a></li> </ul>  <p>In fact, we can also have a Poisson approximation of the binomial distribution.</p>  <p>I am not quite sure what is meant by saying whether votes are not independent (are the decisions made when voting not independent?), but if you have reason to believe so, then the binomial distribution would not be ideal for you model.</p>  <p>If you are measuring the likelihood of a person to vote, then there are <a href="http://www.pewresearch.org/2016/01/07/measuring-the-likelihood-to-vote/" rel="nofollow">some probabilistic models presented here</a> and you can decide which are pertinent to you.</p> 
+                    </div>
+                    <hr>
+
+
+                    <div id="answer-comments">
+                        <table>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div id="duplicate">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+
+                <div id="related">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+</html>

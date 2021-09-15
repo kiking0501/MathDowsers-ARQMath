@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>About sheaf cohomology in algebraic geometry</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> About sheaf cohomology in algebraic geometry </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="180299">
+<p>In algebraic geometry, why is much more interesting to work with injective resolutions? Why is the main functor of global sections of a sheaf? I am reading Hartshorne's book Algebraic Geometry, and it seems to treat only injective resolutions and global sections functor? Why are we motivated to work with them?</p> <p>Thank you!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebraic-geometry </span><span> homology-cohomology </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="415380"> What do you know about homological algebra? </td></tr><tr><td comment_id="415394"> I know very little about it. My first contact with this subject was the book cited. For homology I have as reference Vermani's book An Elementary Approach to Homological Algebra. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="180318" id="answer">
+<p>These are notes I typed up in an e-mail to a friend once, I just copy and pasted them; forgive informality and lack of capitalization. The theme is "you could have invented injective resolutions" along the lines of the famous expository article "you could have invented spectral sequences." It assumes some background in singular cohomology and an understanding of why Cech (for the constant sheaf <span class="math-container" id="2093797" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>) and simplicial cohomology agree.</p> <ol> <li><p>Claim: Cech cohomology makes geometric sense. It generalizes the cohomology groups of a simplicial complex. It might be confusing how to define the higher cech cohomology groups, but cech <span class="math-container" id="2093798" visual_id="625854"><math alttext="h^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>h</mi><mn>1</mn></msup></semantics></math></span> is something you would just write down when you were trying to express the global/local problem inherent in a sheaf and on a good day you would imitate the sign conventions from singular homology to get the sign conventions for the higher cech cohomology groups. The dependence on the choice of open cover would be confusing; you might not come up with the direct limit trick, but at least you could come up with "sufficiently fine" covers.</p></li> <li><p>Claim: cech cohomology vanishes on flasques. I want to argue that you'd know your theory was wrong if this didn't happen.</p></li> <li><p>Claim: a short exact sequence of sheaves induces a long exact sequence of cech cohomology. You'd suspect this if you'd done enough singular cohomology, and then you would just sit down and prove it.</p></li> <li><p>Claim: Cech cohomology can be computed via flasque resolutions. This follows formally from 2 and 3 and is something you would do all the time if you actually wanted to compute cech cohomology.</p></li> <li><p>It's hard to prove anything about cech cohomology straight from the definition (e.g. why does it vanish on affines?) Why not try to define coh. in terms of flasque resolutions? </p></li> <li><p>Oh, here's why: given a flasque resolution of <span class="math-container" id="2093799" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> and a flasque resolution of <span class="math-container" id="2093800" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>, there's no guarantee that one resolution maps to the other. So it's  a. not immediate that what you'd define would be independent of the choice of the flasque res. b. even if you proved that (by translating everything back to your cech-theoretic definition) you wouldn't get the desired maps <span class="math-container" id="2093801" visual_id="5968157"><math alttext="H^{i}(X,F)\to H^{i}(X,G)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>H</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi>H</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p></li> <li><p>are there any special kinds of flasque resolutions which do have functoriality properties? answers: </p></li> </ol> <p>a. yes, this is how godement defined sheaf coh - he constructed a canonical flasque res for any sheaf.</p> <p>b. better, injective sheaves are flasque, and have good functoriality properties, which follow from the definition of injectives. plus injective resolutions always exist. so why not just use those?</p> <p>then the miracle seems to be that this geometric intuition actually lets us define right derived functors for any left exact functor out of any abelian category, which i like better than when the miracle was the other way around (abstract nonsense defined something with geometric content.)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

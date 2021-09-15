@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to plot multinomial beta from Dirichlet Distribution</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to plot multinomial beta from Dirichlet Distribution </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="370365">
+<p>I would like to plot the multinomial beta from the <a href="http://en.wikipedia.org/wiki/Dirichlet_distribution" rel="nofollow">Dirichlet Distribution wiki page</a>.</p> <p><span class="math-container" id="3945738" visual_id="1517571"><math alttext="\mathrm{B}(\alpha)=\frac{\prod_{i=1}^{K}\Gamma(\alpha_{i})}{\Gamma\bigl{(}\sum% _{i=1}^{K}\alpha_{i}\bigr{)}},\qquad\alpha=(\alpha_{1},\dots,\alpha_{K})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi mathvariant="normal">B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mstyle displaystyle="false"><msubsup><mo largeop="true" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>K</mi></msubsup></mstyle><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo maxsize="171%" minsize="171%">(</mo><mrow><mstyle displaystyle="false"><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>K</mi></msubsup></mstyle><msub><mi>α</mi><mi>i</mi></msub></mrow><mo maxsize="171%" minsize="171%">)</mo></mrow></mrow></mfrac></mrow><mo rspace="22.5pt">,</mo><mrow><mi>α</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>α</mi><mi>K</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Looking at the equation, the only input should be a vector of alphas of size <span class="math-container" id="3945739" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span>.</p> <p>What Octave/Matlab function(s) should I use?  I found the following <a href="http://www.mathworks.com/help/matlab/ref/beta.html" rel="nofollow">Matlab beta function</a>, but it seems to be only for <span class="math-container" id="3945740" visual_id="56582"><math alttext="K=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability-distributions </span><span> matlab </span><span> math-software </span><span> octave </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="370370" id="answer">
+<p>You can use the <code>gamma</code> and <code>gammaln</code> in MATLAB to directly compute the expression you have. I would recommend <code>gammaln</code> since you will have very big numbers, and the logarithmic form avoids computing the ratio of big numbers.</p> <p>Also, if you want to sample from Dirichlet, you can generate bunch of gamma random variables using <code>gamrnd</code> (in statistics toolbox) and then normalize.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Meaning of the Corollary 31.29 of the Chinese Remainder Theorem</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Meaning of the Corollary 31.29 of the Chinese Remainder Theorem </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1574415">
+<p>I was reading CLRS and it had the following Corollary:</p> <blockquote> <p>If <span class="math-container" id="14539978" visual_id="4573"><math alttext="n_{1},n_{2},...,n_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>n</mi><mi>k</mi></msub></mrow></semantics></math></span> are pairwise relatively prime and <span class="math-container" id="14539979" visual_id="5256084"><math alttext="n=n_{1}n_{2}...n_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>n</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>n</mi><mi>k</mi></msub></mrow></mrow></semantics></math></span> then for all integers <span class="math-container" id="14539980" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="14539981" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>,</p> <p><span class="math-container" id="14539982" visual_id="5256085"><math alttext="x\equiv a\pmod{n_{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mi>a</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><msub><mi>n</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>for <span class="math-container" id="14539983" visual_id="236992"><math alttext="i=1,2,...,k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>k</mi></mrow></mrow></semantics></math></span> if and only if </p> <p><span class="math-container" id="14539984" visual_id="414720"><math alttext="x\equiv a\pmod{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mi>a</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> </blockquote> <p>There seems to be some words missing in the theorem/corollary. Should it read:</p> <p>For all integers <span class="math-container" id="14539985" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="14539986" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> that satisfy the equation:</p> <p><span class="math-container" id="14539987" visual_id="5256085"><math alttext="x\equiv a\pmod{n_{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mi>a</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><msub><mi>n</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>we have that it implies that:</p> <p><span class="math-container" id="14539988" visual_id="414720"><math alttext="x\equiv a\pmod{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mi>a</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>is also true. Furthermore, the converse is true too.</p> <p>In other words, if: <span class="math-container" id="14539989" visual_id="5256085"><math alttext="x\equiv a\pmod{n_{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mi>a</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><msub><mi>n</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> for some integer <span class="math-container" id="14539990" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="14539991" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, then it implies that <span class="math-container" id="14539992" visual_id="414720"><math alttext="x\equiv a\pmod{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mi>a</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and visa versa. i.e. If <span class="math-container" id="14539993" visual_id="414720"><math alttext="x\equiv a\pmod{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mi>a</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is true then <span class="math-container" id="14539994" visual_id="5256085"><math alttext="x\equiv a\pmod{n_{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mi>a</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><msub><mi>n</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>Is that correct?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3209275"> Yes, the meaning is exactly that you mentioned. "If and only if" means that the implication is true in both directions. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1576164" id="answer">
+<p>It means something like <span class="math-container" id="14539995" visual_id="59755"><math alttext="x\equiv 2\pmod{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mn>2</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="14539996" visual_id="70101"><math alttext="x\equiv 2\pmod{7}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mn>2</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>7</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> if and only if <span class="math-container" id="14539997" visual_id="5256086"><math alttext="x\equiv 2\pmod{35}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≡</mo><mrow><mn>2</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>35</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Logic Question: How does $(P\to R )\vee (Q\to R) \equiv (P \wedge Q)\to R$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Logic Question: How does <span class="math-container" id="3862260" visual_id="1488961"><math alttext="(P\to R)\vee(Q\to R)\equiv(P\wedge Q)\to R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>∨</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>≡</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>∧</mo><mi>Q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>R</mi></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="361610">
+<p>I can prove that these two statements are equivalent, but I can't make sense of them logically.  For instance, if P = "have a cold", Q = "have a headache", and R = "go see a doctor" then the statement:</p> <p>If you have a cold then go see a doctor or if you have a headache then go see a doctor.</p> <p>Is equivalent to:</p> <p>If you have a cold and a headache then go see a doctor?</p> <p>This to me does not make sense because the left side is saying if you have a cold OR a headache see a doctor, but the right side of the equation is saying if you have a cold AND a headache go see a doctor.</p> <p>Can someone help clarify this for me?</p> <p>EDIT:   </p> <p>I forgot to add that this is from the book "How to Prove It" by Daniel Velleman, of which I double checked and the equivalence is written in the book just as I wrote it. </p> <p>Also, I think the author is trying to make me see a contrast between the two statements:</p> <p>(i) (P→R)∧(Q→R)≡(P∨Q)→R [I understand this statement]</p> <p>(ii) (P→R)∨(Q→R)≡(P∧Q)→R [I don't understand this statement]. </p> <p>Both statements, at least as written in the book, are true.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="777056"> In light of your edit, I've given a counterexample in my post. </td></tr><tr><td comment_id="777088"> Oh, sorry, let me completely revise this, and give a completely new answer. There is a huge subtlety in the notion of implication which comes up here. </td></tr><tr><td comment_id="777120"> I've added a much expanded answer. </td></tr><tr><td comment_id="778354"> The problem with translating propositions like these into English and testing their "real world sense" is that mathematics is not 100% compatible with the real world. When you harass little kids with "Who do you love more, mommy or daddy?" the answer "Yes." is not the one you'd expect, but mathematically it is a correct one. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="361617" id="answer">
+<p>(edited because I can't symbolic logic)</p> <p><s>They aren't equivalent, but the left implies the right.</s> They are equivalent. The left side means "If you have a cold, go to the doctor" or "If you have a headache, go to the doctor". The right is, "If you have both, no matter which one implies "go to the doctor", go to the doctor".</p> <p>You can demonstrate this with truth tables, or use some identities: <span class="math-container" id="3862315" visual_id="1488965"><math alttext="(P\implies R)\vee(Q\implies R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>⟹</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>∨</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>⟹</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> <span class="math-container" id="3862316" visual_id="1488966"><math alttext="(\lnot P\vee R)\vee(\lnot Q\vee R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow><mo>∨</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∨</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>Q</mi></mrow><mo>∨</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> <span class="math-container" id="3862317" visual_id="1488973"><math alttext="(\lnot P\vee\lnot Q)\vee R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow><mo>∨</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>Q</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>∨</mo><mi>R</mi></mrow></semantics></math></span> <span class="math-container" id="3862318" visual_id="1488974"><math alttext="\lnot(P\wedge Q)\vee R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>∧</mo><mi>Q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>∨</mo><mi>R</mi></mrow></semantics></math></span> <span class="math-container" id="3862319" visual_id="655086"><math alttext="(P\wedge Q)\implies R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>∧</mo><mi>Q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⟹</mo><mi>R</mi></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="777926"> If you bother to work out the truth tables, you will see that the statements in the question are equivalent. On the other hand <span class="math-container" id="3862320" visual_id="1488975"><math alttext="(P\to R)\vee(Q\to R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>∨</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is *not* equivalent to <span class="math-container" id="3862321" visual_id="1488976"><math alttext="(P\vee Q)\to R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>∨</mo><mi>Q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>R</mi></mrow></semantics></math></span>, and <span class="math-container" id="3862322" visual_id="1488977"><math alttext="(P\to R)\land(Q\to R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is *not* equivalent to <span class="math-container" id="3862323" visual_id="1488978"><math alttext="(P\land Q)\to R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>∧</mo><mi>Q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>R</mi></mrow></semantics></math></span>. You derserve an F, but I will let you of with a downvote this time. </td></tr><tr><td comment_id="778339"> Ah, I see what I did wrong now. Not the _most_ polite way of putting it, but thanks! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

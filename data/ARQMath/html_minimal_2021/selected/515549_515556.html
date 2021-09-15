@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding normal vector of point $(x,y)$ given $f(x, y)$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding normal vector of point <span class="math-container" id="5385816" visual_id="66"><math alttext="(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> given <span class="math-container" id="5385817" visual_id="626"><math alttext="f(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="515549">
+<p><img alt="enter image description here" src="https://i.stack.imgur.com/IU8Ro.png"/></p> <p>Ignoring the codes, this is more or less a calculus question. Given an equation of a surface <span class="math-container" id="5385818" visual_id="9610"><math alttext="z=x^{2}+y^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span>, I need to find normal vector of a point. I am not good at maths ... so ... </p> <p>For (a), I believe the <span class="math-container" id="5385819" visual_id="94533"><math alttext="\frac{\partial z}{\partial x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></semantics></math></span> is equation of tangent of curve created by plane <span class="math-container" id="5385820" visual_id="69760"><math alttext="y=c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>c</mi></mrow></semantics></math></span> (probably wrong strictly speaking but you get the idea) with surface <span class="math-container" id="5385821" visual_id="626"><math alttext="f(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. Similarly for <span class="math-container" id="5385822" visual_id="108738"><math alttext="\frac{\partial z}{\partial y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></semantics></math></span> is equation of tangent of curve created by plane <span class="math-container" id="5385823" visual_id="4156"><math alttext="x=c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>c</mi></mrow></semantics></math></span> with surface <span class="math-container" id="5385824" visual_id="626"><math alttext="f(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p>For (b) is tangent vector the same as the equations found in (a)? </p> <p>For (c), do I do a cross product of the partial derivatives? If so, what I don't understand is how do I map the equations to a <a href="http://en.wikipedia.org/wiki/Cross_product#Matrix_notation" rel="nofollow noreferrer">"matrix notation form"</a> that I am familiar to do cross product? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> differential-geometry </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="515556" id="answer">
+<p>For (a), your thinking is correct.</p> <p>For part (b), the tangent vector corresponding to <span class="math-container" id="5385825" visual_id="94533"><math alttext="\frac{\partial z}{\partial x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></semantics></math></span> is  <span class="math-container" id="5385826" visual_id="1525858"><math alttext="z_{x}=\left(1,0,\frac{\partial z}{\partial x}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>x</mi></msub><mo>=</mo><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> Similarly, the tangent vector corresponding to <span class="math-container" id="5385827" visual_id="108738"><math alttext="\frac{\partial z}{\partial y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></semantics></math></span> is  <span class="math-container" id="5385828" visual_id="1525859"><math alttext="z_{y}=\left(0,1,\frac{\partial z}{\partial y}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>y</mi></msub><mo>=</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span></p> <p>For part (c), your idea of taking a cross product is correct. The surface normal is <span class="math-container" id="5385829" visual_id="1525860"><math alttext="z_{x}\times z_{y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>x</mi></msub><mo>×</mo><msub><mi>z</mi><mi>y</mi></msub></mrow></semantics></math></span>. You may have to unitize this vector before passing it to OpenGL.</p> <p>In computer graphics, it's more common for a surface to be given by parametric equations <span class="math-container" id="5385830" visual_id="1525861"><math alttext="\mathbf{S}=\mathbf{S}(u,v)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐒</mi><mo>=</mo><mrow><mi>𝐒</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, rather than in the form <span class="math-container" id="5385831" visual_id="13148"><math alttext="z=f(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Then the surface normal is simply the cross product of the partial derivative vectors: <span class="math-container" id="5385832" visual_id="1525862"><math alttext="\mathbf{N}=\frac{\partial\mathbf{S}}{\partial u}\times\frac{\partial\mathbf{S}% }{\partial v}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐍</mi><mo>=</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>𝐒</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow></mfrac><mo>×</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>𝐒</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>v</mi></mrow></mfrac></mrow></mrow></semantics></math></span> What we have here can be considered a special case where <span class="math-container" id="5385833" visual_id="23257"><math alttext="u=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>x</mi></mrow></semantics></math></span>, <span class="math-container" id="5385834" visual_id="77070"><math alttext="v=y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>y</mi></mrow></semantics></math></span>, and <span class="math-container" id="5385835" visual_id="1525863"><math alttext="\mathbf{S}(x,y)=(x,y,z(x,y))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝐒</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mrow><mi>z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

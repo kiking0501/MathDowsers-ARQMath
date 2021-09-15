@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Using random walks to predict behavior rather than matrix decomposition</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Using random walks to predict behavior rather than matrix decomposition </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="266602">
+<p>I want to create a model that tries to predict a user's behavior based on the random walks of similar users. The problem is similar to Netflix's recommendation challenge. One of the popular solutions was to use singular value decomposition to find movies that user would most likely like to see. </p> <p>My question is more like this: what genre of a movie would a user like to see on a particular day? You move to each state with a probability, and one state could be "watching no movie". Does it make sense or even is it even feasible to approach the problem as a Markov process? How has this been done before?</p> <p>I took only one class on Markov chains in college.  Thanks.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> stochastic-processes </span><span> markov-chains </span><span> random-walk </span><span> svd </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="266728" id="answer">
+<p>The issue with treating this approach is that in a Markov process the probabilities of the user's potential films tomorrow would depend on the user's film today, and not on what happened before today, something called the <a href="http://en.wikipedia.org/wiki/Markov_property" rel="nofollow">Markov property</a>.</p> <p>So your model would throw away all previous information except for the current state.  This does not seem likely to be a particularly successful approach.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

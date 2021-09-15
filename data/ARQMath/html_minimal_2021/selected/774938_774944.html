@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find $y'$ if $y = \arcsin(x^{\frac{3}{2}})$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find <span class="math-container" id="7646992" visual_id="516"><math alttext="y^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>y</mi><mo>′</mo></msup></semantics></math></span> if <span class="math-container" id="7646993" visual_id="797568"><math alttext="y=\arcsin(x^{\frac{3}{2}})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mfrac><mn>3</mn><mn>2</mn></mfrac></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="774938">
+<p>Why is the answer <span class="math-container" id="7646994" visual_id="797569"><math alttext="\dfrac{3x^{1/2}}{2\sqrt{1-x^{3}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></msqrt></mrow></mfrac></mstyle></semantics></math></span>? I solved this and I ended up getting <span class="math-container" id="7646995" visual_id="797570"><math alttext="\dfrac{3x^{2}}{2\sqrt{1-x^{2}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mstyle></semantics></math></span>. I'm studying for my final exam and while I have the answer to this question, I'm interested in knowing how to solve the problem so I can learn. Can someone please guide/explain this problem to me?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="774944" id="answer">
+<p>I'm sure you've learned that <span class="math-container" id="7647002" visual_id="797575"><math alttext="\dfrac{d}{dx}\arcsin x=\dfrac{1}{\sqrt{1-x^{2}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mstyle></mrow></semantics></math></span> By the chain rule, <span class="math-container" id="7647003" visual_id="797576"><math alttext="\dfrac{d}{dx}\arcsin\left(x^{3/2}\right)=\dfrac{d}{d(x^{3/2})}\arcsin\left(x^{% 3/2}\right)\times\dfrac{3x^{1/2}}{2}\\ \implies\dfrac{d}{dx}\arcsin\left(x^{3/2}\right)=\dfrac{3x^{1/2}}{2\sqrt{1-x^{% 3/2}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi>x</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi>x</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>)</mo></mrow></mrow></mrow><mo>×</mo><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mn>2</mn></mfrac></mstyle></mrow><mo>⟹</mo><mrow><mstyle displaystyle="true"><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi>x</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></msqrt></mrow></mfrac></mstyle></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1608167"> In case you haven't seen the derivative of <span class="math-container" id="7647004" visual_id="66289"><math alttext="\arcsin" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>arcsin</mi></semantics></math></span> before or (like me) can't remember it every time, I find it really useful to remember the general rule <span class="math-container" id="7647005" visual_id="797577"><math alttext="[f^{-1}]^{\prime}(x)=\frac{1}{f^{\prime}(f^{-1}(x))}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">[</mo><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">]</mo></mrow><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></semantics></math></span> which you can derive without too much ado by differentiating both sides of the equation <span class="math-container" id="7647006" visual_id="27895"><math alttext="f(f^{-1}(x))=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math></span> Certainly, remembering is more efficient in exam situations but in a tight scrape these things can be quickly derived or checked (probably at the end of the exam when you have already answered all the questions you feel confident with ;) ) </td></tr><tr><td comment_id="1608186"> @Shai That's what I do in any test! :-<span class="math-container" id="14867545">P</span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

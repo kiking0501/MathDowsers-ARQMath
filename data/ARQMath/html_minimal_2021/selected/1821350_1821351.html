@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>A specific example of transfinite induction</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> A specific example of transfinite induction </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1821350">
+<p>I am trying to understand better how transfinite induction can be applied in different concrete problems. Here is an example that seems relevant, but I am stuck on it. Consider a couple of points <span class="math-container" id="16840896" visual_id="321894"><math alttext="p,q\in\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow><mo>∈</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow></semantics></math></span>. I am trying to prove the rather obvious statement that there is an "increasing" neighborhood chain <span class="math-container" id="16840897" visual_id="10480"><math alttext="U_{\alpha}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>U</mi><mi>α</mi></msub></semantics></math></span> containing <span class="math-container" id="16840898" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> many neighborhoods, ordered by strict inclusion, such that <span class="math-container" id="16840899" visual_id="3606050"><math alttext="q\in U_{\alpha}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>∈</mo><msub><mi>U</mi><mi>α</mi></msub></mrow></semantics></math></span>, and <span class="math-container" id="16840900" visual_id="3606051"><math alttext="p\notin U_{\alpha}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∉</mo><msub><mi>U</mi><mi>α</mi></msub></mrow></semantics></math></span> for all <span class="math-container" id="16840901" visual_id="93"><math alttext="\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi></semantics></math></span>. Here <span class="math-container" id="16840902" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> is the cardinality of <span class="math-container" id="16840903" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span>.</p> <p>I have started reading ordinals and transfinite inductions, so a little help would be highly appreciated. Thanks!</p> <p>Edit: As pointed out by Porton, the statement I am trying to prove does not require the transfinite induction. I wish to explicitly mention that I know that this statement is rather trivial, I am just trying to understand more about about the principle of transfinite induction and how it applies in different situations.</p> <p>Further edit: As pointed out by Brian M. Scott, I was wrong in requiring a well-ordered chain. So my question now is, could I construct just a chain of <span class="math-container" id="16840904" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> many elements using transfinite induction? My main curiousity is how to make the jump at the limit ordinal using as little of the topological properties of <span class="math-container" id="16840905" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> reference-request </span><span> set-theory </span><span> cardinals </span><span> ordinals </span><span> transfinite-induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1821351" id="answer">
+<p>No need for transfinite induction to prove this statement.</p> <p>Just consider the set of (open or closed dependently on your mood) discs with center <span class="math-container" id="16840936" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> and radiuses <span class="math-container" id="16840937" visual_id="3606061"><math alttext="]0;|q-p|[" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">]</mo><mn>0</mn><mo>;</mo><mo stretchy="false">|</mo><mi>q</mi><mo>-</mo><mi>p</mi><mo stretchy="false">|</mo><mo stretchy="false">[</mo></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3722191"> Thanks, I know that. I am trying to understand how the transfinite induction applies in this situation, using as little topological information about <span class="math-container" id="16840938" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="278838"> Prove that any function can be represented as a sum of two injections </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

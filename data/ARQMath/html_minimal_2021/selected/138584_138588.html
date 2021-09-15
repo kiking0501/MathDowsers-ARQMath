@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Multiplication of Taylor series - expanding $2x\sin(x)$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Multiplication of Taylor series - expanding <span class="math-container" id="1607384" visual_id="793421"><math alttext="2x\sin(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="138584">
+<p>I'm working on a problem for university Calculus 2. We're talking about Taylor series right now and I need to approximate an integral using one of a function that I think it should be easy to produce a series for, but I'm not 100% sure. This is the function:</p> <p><span class="math-container" id="1607385" visual_id="5731803"><math alttext="f(x)=2x\sin(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>I know the expansion for <span class="math-container" id="1607386" visual_id="691"><math alttext="\sin(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, which is in a reference table in the book. To give the first few terms it looks like this:</p> <p><span class="math-container" id="1607387" visual_id="311827"><math alttext="x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-\frac{x^{7}}{7!}+\;\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>x</mi><mo>-</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mo>!</mo></mrow></mfrac></mrow><mo>+</mo><mfrac><msup><mi>x</mi><mn>5</mn></msup><mrow><mn>5</mn><mo>!</mo></mrow></mfrac></mrow><mo>-</mo><mfrac><msup><mi>x</mi><mn>7</mn></msup><mrow><mn>7</mn><mo>!</mo></mrow></mfrac></mrow><mo rspace="5.3pt">+</mo><mi mathvariant="normal">⋯</mi></mrow></semantics></math></span></p> <p>I'm pretty sure I can just multiply the whole polynomial by <span class="math-container" id="1607388" visual_id="2111"><math alttext="2x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></semantics></math></span>, giving:</p> <p><span class="math-container" id="1607389" visual_id="5731804"><math alttext="2x^{2}-\frac{2x^{4}}{3!}+\frac{2x^{6}}{5!}-\frac{2x^{8}}{7!}+\;\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>-</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mrow><mn>3</mn><mo>!</mo></mrow></mfrac></mrow><mo>+</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>6</mn></msup></mrow><mrow><mn>5</mn><mo>!</mo></mrow></mfrac></mrow><mo>-</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>8</mn></msup></mrow><mrow><mn>7</mn><mo>!</mo></mrow></mfrac></mrow><mo rspace="5.3pt">+</mo><mi mathvariant="normal">⋯</mi></mrow></semantics></math></span></p> <p>What's odd is that I can't find any examples quite like this in either of the textbooks or on the internet... which makes me wonder if this isn't actually a valid manipulation. Additionally, I can't seem to get an answer that matches this from Wolfram Alpha.</p> <p>I could work out the Taylor series by hand, but the derivatives of the function start getting a bit ugly (by which I mean long), so I think I'm supposed to manipulate a known series since this should be an easy problem.</p> <p>So, am I doing this right or am I on the wrong track?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> taylor-expansion </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="138588" id="answer">
+<p>In order to estimate the integral of  <span class="math-container" id="1607390" visual_id="188627"><math alttext="2x\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></semantics></math></span>, you use the series for <span class="math-container" id="1607391" visual_id="694"><math alttext="\sin" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>sin</mi></semantics></math></span> as you wrote above, multiplied by <span class="math-container" id="1607392" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> and <span class="math-container" id="1607393" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> as you did.</p> <p>Thus</p> <p><span class="math-container" id="1607394" visual_id="5731805"><math alttext="2x\sin x=2\sum_{n=0}^{\infty}\frac{(-1)^{n}x^{2n+2}}{(2n+1)!}=2x^{2}-\frac{2x^% {4}}{3!}+\frac{2x^{6}}{5!}-\frac{2x^{8}}{7!}\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>-</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mrow><mn>3</mn><mo>!</mo></mrow></mfrac></mrow><mo>+</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>6</mn></msup></mrow><mrow><mn>5</mn><mo>!</mo></mrow></mfrac></mrow><mo>-</mo><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>8</mn></msup></mrow><mrow><mn>7</mn><mo>!</mo></mrow></mfrac><mo>⁢</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></mrow></semantics></math></span></p> <p>We then integrate the summand or term-by-term to get</p> <p><span class="math-container" id="1607395" visual_id="5731806"><math alttext="2\int x\sin x\,dx=2\sum_{n=0}^{\infty}\int\frac{(-1)^{n}x^{2n+2}}{(2n+1)!}\,dx% =2\sum_{n=0}^{\infty}\frac{(-1)^{n}x^{2n+2}}{(2n+1)!}\int x^{2n+2}\,dx=2\sum_{% n=0}^{\infty}\frac{(-1)^{n}x^{3+2n}}{(3+2n)(1+2n)!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mpadded width="+1.7pt"><mi>x</mi></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mpadded width="+1.7pt"><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac><mo>⁢</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mpadded width="+1.7pt"><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mn>3</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p>This sum can be used to estimate the integral of <span class="math-container" id="1607396" visual_id="188627"><math alttext="2x\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></semantics></math></span> to a desired accuracy.</p> <p>To check your result, </p> <p><span class="math-container" id="1607397" visual_id="5731807"><math alttext="2\int x\sin x=-2(x\cos(x)-\sin(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="319030"> It is important to  note that you can integrate termwise because the series is **absolutely convergent** in <span class="math-container" id="1607398" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

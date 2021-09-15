@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>History of the predicate calculus</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> History of the predicate calculus </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1900206">
+<p><b>My situation.</b> Recently I began to study logic. In particular, I want to understand the "classical results": completeness theorem, compactness theorem, Löwenheim-Skolem, and maybe the incompleteness theorem. In order to understand these theorems, one first needs to grasp some concepts. For example, one needs to know what a model for a given language is, what a first-order formula is, and so on.</p> <p>Right now I am dealing with the concept of a <a href="https://en.wikipedia.org/wiki/Hilbert_system#Formal_deductions">formal deduction in a Hilbert-style calculus</a>. More precisely, I try to understand the <a href="https://en.wikipedia.org/wiki/Hilbert_system#Logical_axioms">logical axioms</a> of this calculus. These are the following (as given in the wikipedia article I linked to):</p> <p><b>1. Propositional axioms (axiom schemes)</b></p> <ul> <li>P1. <span class="math-container" id="17612377" visual_id="2231850"><math alttext="{\displaystyle\phi\to\phi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>→</mo><mi>ϕ</mi></mrow></semantics></math></span></li> <li>P2. <span class="math-container" id="17612378" visual_id="167543"><math alttext="\displaystyle\phi\to\left(\psi\to\phi\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>→</mo><mrow><mo>(</mo><mi>ψ</mi><mo>→</mo><mi>ϕ</mi><mo>)</mo></mrow></mrow></semantics></math></span></li> <li>P3. <span class="math-container" id="17612379" visual_id="2231851"><math alttext="\displaystyle\left(\phi\to\left(\psi\rightarrow\xi\right)\right)\to\left(\left% (\phi\to\psi\right)\to\left(\phi\to\xi\right)\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mi>ϕ</mi><mo>→</mo><mrow><mo>(</mo><mi>ψ</mi><mo>→</mo><mi>ξ</mi><mo>)</mo></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mo>(</mo><mi>ϕ</mi><mo>→</mo><mi>ψ</mi><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mi>ϕ</mi><mo>→</mo><mi>ξ</mi><mo>)</mo></mrow><mo>)</mo></mrow></mrow></semantics></math></span></li> <li>P4. <span class="math-container" id="17612380" visual_id="1274025"><math alttext="\displaystyle\left(\lnot\phi\to\lnot\psi\right)\to\left(\psi\to\phi\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mi mathvariant="normal">¬</mi><mi>ϕ</mi><mo>→</mo><mi mathvariant="normal">¬</mi><mi>ψ</mi><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mi>ψ</mi><mo>→</mo><mi>ϕ</mi><mo>)</mo></mrow></mrow></semantics></math></span></li> </ul> <p><b>2. Quantifier axioms (axiom schemes)</b></p> <ul> <li>Q5. <span class="math-container" id="17612381" visual_id="7810276"><math alttext="\displaystyle\forall x\left(\phi\right)\to\phi[x:=t]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mrow><mo>(</mo><mi>ϕ</mi><mo>)</mo></mrow><mo>→</mo><mi>ϕ</mi><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>:=</mo><mi>t</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> where <span class="math-container" id="17612382" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> may be substituted for <span class="math-container" id="17612383" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> in <span class="math-container" id="17612384" visual_id="2716"><math alttext="\displaystyle\,\!\phi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi></semantics></math></span></li> <li>Q6. <span class="math-container" id="17612385" visual_id="7304319"><math alttext="\displaystyle\forall x\left(\phi\to\psi\right)\to\left(\forall x\left(\phi% \right)\to\forall x\left(\psi\right)\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mrow><mo>(</mo><mi>ϕ</mi><mo>→</mo><mi>ψ</mi><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mo>∀</mo><mi>x</mi><mrow><mo>(</mo><mi>ϕ</mi><mo>)</mo></mrow><mo>→</mo><mo>∀</mo><mi>x</mi><mrow><mo>(</mo><mi>ψ</mi><mo>)</mo></mrow><mo>)</mo></mrow></mrow></semantics></math></span></li> <li>Q7. <span class="math-container" id="17612386" visual_id="7810277"><math alttext="\displaystyle\phi\to\forall x\left(\phi\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>→</mo><mrow><mo>∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo>(</mo><mi>ϕ</mi><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="17612387" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is not a free variable of <span class="math-container" id="17612388" visual_id="2716"><math alttext="\displaystyle\,\!\phi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi></semantics></math></span></li> </ul> <p><b>3. Equality axioms (I9 is also an axiom scheme)</b></p> <ul> <li>I8. <span class="math-container" id="17612389" visual_id="40165"><math alttext="\displaystyle x=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>x</mi></mrow></semantics></math></span> for every variable <span class="math-container" id="17612390" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>.</li> <li>I9. <span class="math-container" id="17612391" visual_id="7810278"><math alttext="\displaystyle\left(x=y\right)\to\left(\phi[z:=x]\to\phi[z:=y]\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mi>ϕ</mi><mrow><mo stretchy="false">[</mo><mi>z</mi><mo>:=</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ϕ</mi><mrow><mo stretchy="false">[</mo><mi>z</mi><mo>:=</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>)</mo></mrow></mrow></semantics></math></span></li> </ul> <p>Modus-ponens can be used as the rule of inference (deduction rule).</p> <p><em>For me, as a beginner, the rules and axioms of this calculus seem very unnatural and artificial. I wonder how somebody can invent such a calculus. I mean, how did somebody get the idea to use exactly these axioms? I am curious about the development process of this calculus. Could somebody of you give a brief introduction in the history of how it came that the predicate calculus has the above axioms and rules?</em></p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> math-history </span><span> foundations </span><span> proof-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3899156"> The predicate calculus *of Wikipedia* has that axiom set. So, I would talk to the editors at Wikipedia. In terms of the study of modern logic, there exist many distinct axiom sets for a predicate calculus *with equality* all of which have the same theorems.  For example, the *non-independent* pure propositional calculus axioms you have cited in Polish notation are Cpp, CpCqp, CCpCqrCCpqCpr, CCNpNqCqp.  Another axiom set is {CCpqCCqrCpr, CCNppp, CpCNpq}, another is {CpCqp, CCpCqrCCpqCpr, CpCCNqNpq}, another is {CCCCCpqCNrNsrtCCtpCsp}, another is {CpCqp, CCpqCCpCqrCpr, CNNpp, CpNNp, CCpqCNqNp}. </td></tr><tr><td comment_id="3899169"> Historically speaking, in a much different notation which I can't express here, P2 and P3 got used by Frege in his "Concept Script".  In Polish notation his axiom set was {CpCqp, CCpCqrCCpqCpr, CCpCqrCqCpr, CNNpp, CpNNp, CCpqCNqNp}.  Lukasiweicz found out that CCpCqrCqCpr could get derived from {CpCqp and CCpCqrCCpqCpr}, if I recall correctly in a 1921 paper called "Two-Valued Logic".  He also proclaimed or demonstrated (and it holds true either way) that {CpCqp, CCpCqrCCpqCpr, CCNpNqCqp} suffices as an axiom set for the pure propositional calculus.  It wasn't his preferred axiom set. </td></tr><tr><td comment_id="3899180"> But, {CpCqp, CCpCqrCCpqCpr, CCNpNqCqp} often seems preferred today in part because with CpCqp and CCpCqrCCpqCpr the deduction meta-theorem, first proved by Jacques Herbrand, requires minimal formal work to prove.  Why CCNpNqCqp gets preferred by authors seems less clear. </td></tr><tr><td comment_id="3901281"> Note for the OP: Doug Spoonwood is using [Polish notation](https://en.wikipedia.org/wiki/Polish_notation#Polish_notation_for_logic), in which e.g. "Cab" translates to "<span class="math-container" id="17612392" visual_id="654828"><math alttext="a\implies b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⟹</mo><mi>b</mi></mrow></semantics></math></span>". This notation has a number of advantages, but also a number of disadvantages; general opinion these days tends to favor infix notation. (Certainly I find it vastly easier to read.) </td></tr><tr><td comment_id="3901408"> P1 is actually redundant.  It is implied by P2 and P3. </td></tr><tr><td comment_id="3902634"> Relevant comment by [Conifold](http://philosophy.stackexchange.com/users/9148/conifold) on [cross-posted question](http://philosophy.stackexchange.com/q/37420/2953): The original formalization of predicate calculus was done by Peirce and Frege, and little resembled Hilbert's, who paid more attention to technical convenience than intuition, see Bonevac's History of Quantification http://bonevac.info/papers/HistoryofQuantification.pdf </td></tr><tr><td comment_id="3902637"> Relevant comment by [Mauro ALLEGRANZA](http://philosophy.stackexchange.com/users/4752/mauro-allegranza) on [cross-posted question](http://philosophy.stackexchange.com/q/37420/2953): See e.g. Paolo Mancosu, [The Adventure of Reason: Interplay Between Philosophy of Mathematics and Mathematical Logic, 1900-1940](https://books.google.it/books?id=LZzFAgAAQBAJ&amp;pg=PR11) (2010) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1902290" id="answer">
+<p>Your question has a somewhat false premise. The particular set of rules you have mentioned is not the only possible set, and there are very different alternative deductive systems for first-order logic, including Fitch-style natural deduction, tree-style natural deduction, sequent calculus, and finally Hilbert-style systems (including the one you mentioned).</p> <p>The real reason for each deductive system is that they suffice. What does this mean? Well, we want to be able to prove every logically necessary sentence, given some set of axioms. This means that if every model satisfies some sentence, we want our deductive system to be able to prove it. It turns out that each of these systems can do so! This is known as the completeness theorem for first-order logic. Now you may complain that this means that the completeness theorem is tied to the choice of deductive system. In a way, yes, but it in fact provides a way for us to figure out what deductive rules we need, because at every step of the completeness theorem we just need to include enough sound deductive rules that let the proof of the completeness theorem go through. If you look at the proof, you will realize that for any reasonable kind of deductive system that we wish to design, we would always be able to add such rules. In that sense the completeness theorem is a foregone fact!</p> <p>There is another way to arrive at any one of these deductive systems. We can start with any other, such as a natural deduction system, which we find most intuitive, and then we can see that we need certain kind of rules to be able to 'implement' the natural deduction rules in the new system. For example:</p> <ul> <li><p>P1: restatement.</p></li> <li><p>P2: restatement under an assumption.</p></li> <li><p>P3: modus ponens under an assumption.</p></li> <li><p>P4: somewhat like proof by contradiction.</p></li> <li><p>and so on...</p></li> </ul> <p>There may not be direct parallels, but as long as the new system has only sound rules and can implement each rule of natural deduction (suitably translated), we automatically have that the new system is complete too.</p> <p>Hilbert-style systems have a major advantage in that its only inference rule is modus ponens, and so it is easier to prove meta-theorems about it. But they have a major disadvantage in that they are totally unusable in actual mathematical practice. But the translation between Hilbert-style systems and other more intuitive systems means that all the meta-theorems for Hilbert-style systems that are not sensitive to proof length also hold for the more intuitive systems! (Actually it turns out that Hilbert-style systems tend to be terribly inefficient because of the repetition.)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3906036"> +0.5. The other half is good will, not that I agree with everything you say. </td></tr><tr><td comment_id="3906920"> @GeorgeChen: Thanks, but feel free to point out if I stated anything wrong. I guess what people may disagree with is the intuitiveness of natural deduction (in which case I'm referring specifically to Fitch-style calculii). But I think I can justify all the rest. See http://mathoverflow.net/a/9317 that says the same about the inevitability of the completeness theorem, but I'll add that it's crucial that the proof is not sensitive to the inference rules or axioms, which is why we can add them if we need to. </td></tr><tr><td comment_id="3907877"> I have the impression that you agree that all these deductive systems aimed to deduce an existing body of propositions from a small number of axioms or primitive ideas, and being sufficient is reason enough to justify a particular set of axioms - this is the part I completely agree. The rest of the answer speaks the language of formalists; I'm not even sure I comprehend those words the way formalists meant them, but thanks for increasing my horizon. </td></tr><tr><td comment_id="3907916"> @GeorgeChen: I see. Yes my answer was partly about sufficiency of the deductive system, which as you say is the main goal of designing the system in the first place, and also partly about the efficiency of the various deductive systems, which is kind of the second goal because a system that is too inefficient cannot be used in practice but only as a mathematical object. The trade-off between efficiency and simplicity of meta-logical analysis in my opinion goes to the heart of the question: "how it came that the predicate calculus has the above axioms and rules?". But thanks for your feedback! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1937943"> Is ZFC not foundation of mathematics? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Technique in the demonstration</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Technique in the demonstration </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2110385">
+<p>Let's say I want to prove that:</p> <p><span class="math-container" id="19513486" visual_id="73540"><math alttext="A\Rightarrow B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⇒</mo><mi>B</mi></mrow></semantics></math></span> or <span class="math-container" id="19513487" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>. </p> <p>I would like to know if the following approach to demonstrate the implication above is legitimate (correct):</p> <p>Assume that <span class="math-container" id="19513488" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is false and use this and the assumptions (<span class="math-container" id="19513489" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>) to arrive at <span class="math-container" id="19513490" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>. </p> <p>What do you think?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> proof-verification </span><span> proof-writing </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4339894"> I think it's fundamentally important that you add parentheses to this expression. </td></tr><tr><td comment_id="4339902"> <span class="math-container" id="19513491" visual_id="7785084"><math alttext="A\implies(B\text{or}C)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⟹</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>⁢</mo><mtext>or</mtext><mo>⁢</mo><mi>C</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>? </td></tr><tr><td comment_id="4339906"> See here: https://www.physicsforums.com/threads/proving-an-or-statement.366427/ </td></tr><tr><td comment_id="4339910"> You should probably proceed along the lines, "If <span class="math-container" id="19513506" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is true, then (<span class="math-container" id="19513506" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> or <span class="math-container" id="19513510" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>) is true, so the implication <span class="math-container" id="19513495" visual_id="59920"><math alttext="A\implies" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⟹</mo><mi></mi></mrow></semantics></math></span>(<span class="math-container" id="19513506" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> or <span class="math-container" id="19513510" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>) is true. If <span class="math-container" id="19513506" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is false, then ...", arriving at the desired implication in either case. You should explicitly show the implication holds whether <span class="math-container" id="19513506" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is true or false. </td></tr><tr><td comment_id="4339919"> See the post [conditionals involving disjunctions](http://math.stackexchange.com/questions/2104937/conditionals-involving-disjunctions). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2110392" id="answer">
+<p>Assuming you mean <span class="math-container" id="19513500" visual_id="2779726"><math alttext="A\Rightarrow(B\lor C)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⇒</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>∨</mo><mi>C</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p>Yes, that is precisely the right approach. If either of your assumptions don't hold, then the statement is true by assumption, since <span class="math-container" id="19513501" visual_id="1686270"><math alttext="F\Rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⇒</mo><mi></mi></mrow></semantics></math></span>_____ is always true, independent of the ____, and <span class="math-container" id="19513502" visual_id="7785085"><math alttext="T\Rightarrow(T\lor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>⇒</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>∨</mo></mrow></mrow></semantics></math></span> ____<span class="math-container" id="19513503" visual_id="6908"><math alttext=")" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo stretchy="false">)</mo></semantics></math></span> is always true, independent of the ____, since it simplifies to <span class="math-container" id="19513504" visual_id="829385"><math alttext="T\Rightarrow T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>⇒</mo><mi>T</mi></mrow></semantics></math></span>. Therefore the case you specify is the only case that needs to be proven to prove that the theorem is true.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4339915"> But see my comment on the original question. Some detail is missing. </td></tr><tr><td comment_id="4339929"> @MPW I disagree, see my expanded answer. </td></tr><tr><td comment_id="4339957"> What I mean is that in presenting the proof, OP should at least state something like "If <span class="math-container" id="19513506" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is true, the implication follows immediately" or perhaps "Without loss of generality, we may assume <span class="math-container" id="19513506" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is false" to indicate that the alternative has at least been considered. Note that your expanded answer is in fact going through this step. It really can't be omitted if the proof is to be considered complete. </td></tr><tr><td comment_id="4340018"> @MPW oh this is an interesting little confusion. I'm reading the OP as asking if, for a theorem of mathematics of the form <span class="math-container" id="19513507" visual_id="2779726"><math alttext="A\Rightarrow(B\lor C)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⇒</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>∨</mo><mi>C</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, is it sufficient to assume <span class="math-container" id="19513508" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="19513509" visual_id="59925"><math alttext="\neg B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> and prove <span class="math-container" id="19513510" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>. You're reading the OP as asking about proving a logical formula. Whether my expansion is needed for the proof, or an explanation of why the metatechnique works depends on which understanding of the OP one takes. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2104937"> Conditionals involving disjunctions </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

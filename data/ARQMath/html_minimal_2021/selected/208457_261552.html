@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Flip a fair coin until three consecutive heads or tails appear</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Flip a fair coin until three consecutive heads or tails appear </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="208457">
+<p>What is the expected number of flips until three consecutive heads or tails appear?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="473094"> Try to do an easier case first, then you might get the idea.  What is the expected number of flips until 1 consecutive heads or tails appears?  What is the expected number of flips until 2 consecutive heads or tails appears?  Can you get a formula for <span class="math-container" id="2382101" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> consecutive heads or tails? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="261552" id="answer">
+<p>Here is probably another way and hope this can be easier to understand. Let us assume to get HHH for X number of times, then for {HHH, TTT} is just X/2.</p> <p>1)first time get T, then just waste one time, everything turns to be same as before, plus this event chance is 1/2. Then to get HHH is 1/2*(X+1)</p> <p>2)first time get H 2.1)second time get T, then waste two times plus 1/4 probability of this event. Then total number is 1/4*(X+2) 2.2)second time get H 2.2.1) third time get T, then waste 3 times plus 1/8 prob of this event. Then total number is 1/8*(X+3) 2.2.2) third time get H, this is perfect and prob is 1/8. So total number is 1/8*3.</p> <p>Now, everything sum together should converge to X. we have: 1/2*(X+1) + 1/4*(X+2) + 1/8*(X+3) + 1/8*3 = X =&gt; X = 14.</p> <p>So to get {HHH, TTT} is X/2 = 7.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="238313"> Why does P(HH) differ from P(TH)? </td></tr><tr><td post_id="2653852"> Analysing probability </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Calculate cosh 1 correct to 6 decimal places.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Calculate cosh 1 correct to 6 decimal places. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="406585">
+<p>Can anyone help me with this problem?</p> <p>Calculate <span class="math-container" id="4299749" visual_id="1935594"><math alttext="\cosh 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>cosh</mi><mo>⁡</mo><mn>1</mn></mrow></semantics></math></span> correct to 6 decimal places.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> trigonometry </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="870090"> Are you supposed to use Taylor series? What have you tried? </td></tr><tr><td comment_id="870091"> Have you tried using the Taylor series? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="406592" id="answer">
+<p>If you are aware of the Taylor series, try using the taylor series for <span class="math-container" id="4299758" visual_id="55691"><math alttext="\cosh" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>cosh</mi></semantics></math></span> which is: </p> <p><span class="math-container" id="4299759" visual_id="12997"><math alttext="\sum^{\infty}_{n=0}\frac{x^{2n}}{(2n)!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow></semantics></math></span></p> <p>Then you can expand the summation and you will have something like the following:</p> <p><span class="math-container" id="4299760" visual_id="7981808"><math alttext="\sum^{\infty}_{n=0}\frac{x^{2n}}{(2n)!}=1+\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+% \frac{x^{6}}{6!}\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mrow><mn>4</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mrow><mfrac><msup><mi>x</mi><mn>6</mn></msup><mrow><mn>6</mn><mo>!</mo></mrow></mfrac><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow></semantics></math></span></p> <p>Then you can simply sub in "<span class="math-container" id="4299761" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>" for <span class="math-container" id="4299762" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and you will have your approximation.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="870105"> `\sum` gives a <span class="math-container" id="4299763" visual_id="7690"><math alttext="\sum" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo largeop="true" symmetric="true">∑</mo></semantics></math></span> that admits super- and subscripts at the natural places. </td></tr><tr><td comment_id="870110"> @Lord_Farin Fixed! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1801363"> How to prove that your approximation using Newton's Method is correct to <span class="math-container" id="16649791" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> decimal places? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

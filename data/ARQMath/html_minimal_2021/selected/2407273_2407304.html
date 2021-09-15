@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Laurent series and residue for functions of the form f(f(z))</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Laurent series and residue for functions of the form f(f(z)) </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2407273">
+<p>In working through problems for my complex analysis class, I've come across a couple of problems about Laurent series and residue where the function to be expanded, <span class="math-container" id="22289026" visual_id="14938"><math alttext="g(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, is of the form <span class="math-container" id="22289027" visual_id="428599"><math alttext="f(f(z))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> where <span class="math-container" id="22289028" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is some function like <span class="math-container" id="22289029" visual_id="5878"><math alttext="\cos(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> or <span class="math-container" id="22289030" visual_id="5877"><math alttext="\sin(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> that we already know the expansion for.</p> <p>I've tried to construct the expansions from what I know about trigonometric expansions, but it just seems really messy and I can never quite get a clean expression for the expansion and in the case of residues it feels like there has to be an easier way. </p> <p>So my question is, given something similar to,  \begin{align} g(z) = \frac{\sin(\sin(\frac{1}{z}))}{z^5} \end{align} how do I go about constructing the expansion and/or calculating the residue at the singularity? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> complex-analysis </span><span> residue-calculus </span><span> laurent-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4969542"> A nice trick regarding <span class="math-container" id="22289031" visual_id="14938"><math alttext="g(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>: notice that it's an even function and thus the residue at <span class="math-container" id="22289032" visual_id="868"><math alttext="z=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> is zero. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2407304" id="answer">
+<p>It seems to me that in general, it would be rather messy. For instance, for the composition of just two power series the general form is not necessarily beautiful... there is not even a nice form for the composition of polynomials. </p> <p>However, when <span class="math-container" id="22289033" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>'s Laurent series only has finitely many <span class="math-container" id="22289034" visual_id="14726"><math alttext="a_{n}\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> for <span class="math-container" id="22289035" visual_id="1533"><math alttext="n&amp;lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>&lt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>, it seems that there is an easier method of doing this. If <span class="math-container" id="22289036" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> is the least <span class="math-container" id="22289037" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> such that <span class="math-container" id="22289038" visual_id="14726"><math alttext="a_{n}\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>, then you can write express your function as <span class="math-container" id="22289039" visual_id="6532625"><math alttext="f(1/z^{N})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><msup><mi>z</mi><mi>N</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, where <span class="math-container" id="22289040" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is holomorphic at <span class="math-container" id="22289041" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>. Then you can calculate the relevant coefficient like you would for a normal power series starting at <span class="math-container" id="22289042" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>.</p> <p>For instance, in your function, there is no residue since the greatest power term that you will have is <span class="math-container" id="22289043" visual_id="5897871"><math alttext="1/z^{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><msup><mi>z</mi><mn>5</mn></msup></mrow></semantics></math></span>, so I suppose that you were interested in instead <span class="math-container" id="22289044" visual_id="6532626"><math alttext="z^{5}\sin(\sin(1/z))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>z</mi><mn>5</mn></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

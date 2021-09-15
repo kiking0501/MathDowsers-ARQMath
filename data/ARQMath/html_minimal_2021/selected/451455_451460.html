@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>show that $\int_{0}^{\infty } \frac {\cos (ax) -\cos (bx)} {x^2}dx=\pi \frac {b-a} {2}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> show that <span class="math-container" id="4753150" visual_id="343045"><math alttext="\int_{0}^{\infty}\frac{\cos(ax)-\cos(bx)}{x^{2}}dx=\pi\frac{b-a}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi>π</mi><mo>⁢</mo><mfrac><mrow><mi>b</mi><mo>-</mo><mi>a</mi></mrow><mn>2</mn></mfrac></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="451455">
+<p>show that </p> <p><span class="math-container" id="4753151" visual_id="343045"><math alttext="\int_{0}^{\infty}\frac{\cos(ax)-\cos(bx)}{x^{2}}dx=\pi\frac{b-a}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi>π</mi><mo>⁢</mo><mfrac><mrow><mi>b</mi><mo>-</mo><mi>a</mi></mrow><mn>2</mn></mfrac></mrow></mrow></semantics></math></span> for <span class="math-container" id="4753152" visual_id="1951"><math alttext="a,b\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>≥</mo><mn>0</mn></mrow></semantics></math></span></p> <p>I would like someone solve it using contour integrals, also I would like to see different solutions using different ways to solve it.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> contour-integration </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="970679"> For the contour method: write the integral as <span class="math-container" id="4753153" visual_id="343046"><math alttext="\frac{1}{2}\int_{-\infty}^{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup></mrow></semantics></math></span> and then deform the contour to run slightly below the real axis. Next express cosines in terms of exponentials. Then (for <span class="math-container" id="4753154" visual_id="7175"><math alttext="a,b&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>) the integrals containing <span class="math-container" id="4753174" visual_id="302035"><math alttext="e^{-iax}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></semantics></math></span>, <span class="math-container" id="4753175" visual_id="343047"><math alttext="e^{-ibx}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></semantics></math></span> can be closed in the lower half plane and therefore give zero. The integrals containing <span class="math-container" id="4753176" visual_id="302034"><math alttext="e^{iax}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msup></semantics></math></span>, <span class="math-container" id="4753177" visual_id="343048"><math alttext="e^{ibx}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></msup></semantics></math></span> can only be closed in the upper half plane and are therefore given by the residues of <span class="math-container" id="4753159" visual_id="343049"><math alttext="e^{iax}/(2x^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msup><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, <span class="math-container" id="4753160" visual_id="343050"><math alttext="e^{ibx}/(2x^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></msup><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> at <span class="math-container" id="4753178" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. These are easy to compute. </td></tr><tr><td comment_id="970683"> @O.L. thanks for you but can you posted as an answer because Iam beginner In complex integratine </td></tr><tr><td comment_id="970717"> A [related problem](http://math.stackexchange.com/questions/378587/integration-using-residues/378596#378596). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="451460" id="answer">
+<p><span class="math-container" id="4753167" visual_id="343052"><math alttext="\begin{aligned} \displaystyle\int_{0}^{\infty}\frac{\cos ax-\cos bx}{x^{2}}\,% dx&amp;\displaystyle amp;=\int_{0}^{\infty}\int_{a}^{b}\frac{\sin tx}{x}\,dt\,dx\\ &amp;\displaystyle amp;=\int_{a}^{b}\int_{0}^{\infty}\frac{\sin tx}{x}\,dx\,dt\\ &amp;\displaystyle amp;=\int_{a}^{b}\frac{\pi}{2}\,dt\\ &amp;\displaystyle amp;=\frac{(b-a)\pi}{2}\end{aligned}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>-</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></mstyle></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mi>x</mi></mfrac></mstyle></mpadded><mi>d</mi><mpadded width="+1.7pt"><mi>t</mi></mpadded><mi>d</mi><mi>x</mi></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mi>x</mi></mfrac></mstyle></mpadded><mi>d</mi><mpadded width="+1.7pt"><mi>x</mi></mpadded><mi>d</mi><mi>t</mi></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></mpadded><mi>d</mi><mi>t</mi></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>-</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></mstyle></mrow></mtd></mtr></mtable></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1176408"> How do I integrate <span class="math-container" id="11035012" visual_id="2401180"><math alttext="\int_{0}^{\infty}\frac{\cos(ax)-\cos(bx)}{x^{2}}\text{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mtext>d</mtext><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="1199777"> Is there a novel way to integrate this without using complex numbers? </td></tr><tr><td post_id="378587"> Integration using residues </td></tr><tr><td post_id="1157772"> Integral <span class="math-container" id="10876020" visual_id="2346613"><math alttext="\int_{-\infty}^{\infty}\frac{\sin^{2}x}{x^{2}}e^{ix}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

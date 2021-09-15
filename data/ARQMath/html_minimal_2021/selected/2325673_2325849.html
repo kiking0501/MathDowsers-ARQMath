@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Shortest distance between an ellipse and a hyperbola.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Shortest distance between an ellipse and a hyperbola. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2325673">
+<blockquote> <p>Suppose we have a hyperbola <span class="math-container" id="21498650" visual_id="188460"><math alttext="xy=c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mi>c</mi></mrow></semantics></math></span> <span class="math-container" id="21498651" visual_id="8598580"><math alttext="(c\neq 0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>c</mi><mo>≠</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> and an ellipse <span class="math-container" id="21498652" visual_id="172673"><math alttext="x^{2}/a^{2}+y^{2}/b^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>/</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> <span class="math-container" id="21498653" visual_id="1246706"><math alttext="(a&amp;gt;b&amp;gt;0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>&gt;</mo></mrow><mrow><mi>b</mi><mo>&gt;</mo></mrow><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> that do not intersect. What is a quick way to calculate the shortest distance between these two curves?</p> </blockquote> <p>I thought of setting a point <span class="math-container" id="21498654" visual_id="129546"><math alttext="(a\cos\theta,b\sin\theta)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> on the ellipse and a point <span class="math-container" id="21498655" visual_id="8983060"><math alttext="(t,c/t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mrow><mi>c</mi><mo>/</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> on the hyperbola, then the distance is given by <span class="math-container" id="21498656" visual_id="8983061"><math alttext="\sqrt{(a\cos\theta-t)^{2}+(b\sin\theta-\frac{c}{t})^{2}}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo>-</mo><mfrac><mi>c</mi><mi>t</mi></mfrac></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mo>,</mo></mrow></semantics></math></span> whose minimum may be found by calculus methods. But the computations look tedious and difficult to carry out. What are some easier ways to do this?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> analytic-geometry </span><span> conic-sections </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4787616"> I don’t know if this is going to end up being any easier, but you can eliminate one parameter by finding the points on the hyperbola at which the tangents are parallel to the ellipse’s tangent at <span class="math-container" id="21498657" visual_id="129546"><math alttext="(a\cos\theta,b\sin\theta)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4787631"> https://math.stackexchange.com/questions/1209893/minimum-distance-between-two-parabolas  https://math.stackexchange.com/questions/1510981/shortest-distance-between-two-general-curves-using-matlab </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2325849" id="answer">
+<p>There's easy draft solution to this problem:</p> <ol> <li>First scale the ellipse so that it becomes a circle -- this allows calculating the distance from the "circle", since <span class="math-container" id="21498690" visual_id="8983074"><math alttext="|d(p)-r|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mi>r</mi></mrow><mo stretchy="false">|</mo></mrow></semantics></math></span> is the distance.</li> <li>Then build a distance space, <span class="math-container" id="21498691" visual_id="8983075"><math alttext="f::(x,y)\rightarrow(d)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mo>:</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> which contains the distance values to the circle. <span class="math-container" id="21498692" visual_id="8983076"><math alttext="f(x,y)=|\sqrt{x^{2}+y^{2}}-r|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt><mo>-</mo><mi>r</mi></mrow><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span>.</li> <li>Then create <span class="math-container" id="21498693" visual_id="8983077"><math alttext="g::(x)\rightarrow(x_{0},y_{0})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mo>:</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> from the hyperbola via <span class="math-container" id="21498694" visual_id="8983078"><math alttext="g(x)=(x,c/x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mrow><mi>c</mi><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></li> <li>Use scaling function <span class="math-container" id="21498695" visual_id="8983079"><math alttext="s::(x_{1},y_{1})\rightarrow(x_{2},y_{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>:</mo><mo>:</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> which matches the scaling used in step (1).</li> <li>Use function composition of the three funtions to get <span class="math-container" id="21498696" visual_id="8983080"><math alttext="f\circ s\circ g::(x)\rightarrow(d)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>s</mi><mo>∘</mo><mi>g</mi><mo>:</mo><mo>:</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.</li> <li>Use derivative <span class="math-container" id="21498697" visual_id="3420"><math alttext="=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> to find point where (d) is smallest.</li> </ol> <p>Most difficult part is getting the scaling right, since values of (d) depends on how the scaling is being done.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1209893"> Minimum distance between two parabolas </td></tr><tr><td post_id="1510981"> Shortest distance between two general curves using matlab </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

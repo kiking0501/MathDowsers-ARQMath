@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Decreasing subsequence</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Decreasing subsequence </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="156769">
+<p>Let <span class="math-container" id="1824430" visual_id="6575"><math alttext="\{a_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> be a sequence  of real numbers, where <span class="math-container" id="1824431" visual_id="22140"><math alttext="0&amp;lt;a_{n}&amp;lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>&lt;</mo></mrow><mn>1</mn></mrow></semantics></math></span>,  such that <span class="math-container" id="1824432" visual_id="23691"><math alttext="\lim_{n\to\infty}a_{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, (then every subsequence will converges to zero). Is there any way to find a subsequence of <span class="math-container" id="1824433" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span> which is decreasing to 0?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="156771" id="answer">
+<p>Yes: since the sequence converges to <span class="math-container" id="1824434" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>, for every <span class="math-container" id="1824435" visual_id="19912"><math alttext="\epsilon\gt 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mn>0</mn></mrow></semantics></math></span> there exists <span class="math-container" id="1824436" visual_id="8217"><math alttext="N\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> such that for all <span class="math-container" id="1824437" visual_id="5540"><math alttext="n\geq N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mi>N</mi></mrow></semantics></math></span>, we have <span class="math-container" id="1824438" visual_id="7569526"><math alttext="0\lt a_{n}\lt\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>ϵ</mi></mrow></semantics></math></span>.</p> <p>So define the sequence recursively: take <span class="math-container" id="1824439" visual_id="8686"><math alttext="a_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>1</mn></msub></semantics></math></span>. Then let <span class="math-container" id="1824440" visual_id="7569527"><math alttext="\epsilon=\frac{a_{1}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>=</mo><mfrac><msub><mi>a</mi><mn>1</mn></msub><mn>2</mn></mfrac></mrow></semantics></math></span>; we know there is an <span class="math-container" id="1824441" visual_id="5836820"><math alttext="n_{1}\gt 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mn>1</mn></mrow></semantics></math></span> such that <span class="math-container" id="1824442" visual_id="7569528"><math alttext="a_{n_{1}}\lt\frac{a_{1}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><msub><mi>n</mi><mn>1</mn></msub></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mfrac><msub><mi>a</mi><mn>1</mn></msub><mn>2</mn></mfrac></mrow></semantics></math></span>. Now take <span class="math-container" id="1824443" visual_id="7569529"><math alttext="\epsilon=\frac{a_{n_{1}}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>=</mo><mfrac><msub><mi>a</mi><msub><mi>n</mi><mn>1</mn></msub></msub><mn>2</mn></mfrac></mrow></semantics></math></span>; we know there exists <span class="math-container" id="1824444" visual_id="19049"><math alttext="n_{2}\gt n_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><msub><mi>n</mi><mn>1</mn></msub></mrow></semantics></math></span> such that <span class="math-container" id="1824445" visual_id="7569530"><math alttext="a_{n_{2}}\lt\frac{a_{n_{1}}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><msub><mi>n</mi><mn>2</mn></msub></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mfrac><msub><mi>a</mi><msub><mi>n</mi><mn>1</mn></msub></msub><mn>2</mn></mfrac></mrow></semantics></math></span>. </p> <p>Lather, rinse, and repeat.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="361594"> According to your proof this result is true for any sequence <span class="math-container" id="1824446" visual_id="7569531"><math alttext="\{a_{n}\}\subset(0,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">{</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mo>⊂</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> which converges to 0, not just because <span class="math-container" id="1824447" visual_id="573388"><math alttext="a_{n}\in(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, I'm right!? </td></tr><tr><td comment_id="361609"> Tiny variable name fix (it is not letting me edit it because the edit is not long enough). Where you say "... we know there is an <span class="math-container" id="1824448" visual_id="7569532"><math alttext="n_{2}&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span> such ...", that supposed to be <span class="math-container" id="1824449" visual_id="4457630"><math alttext="n_{1}&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span> rather than <span class="math-container" id="1824450" visual_id="7569533"><math alttext="n_{2}&gt;1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>&gt;</mo><mn>1</mn></mrow><mo>.</mo></mrow></semantics></math></span> </td></tr><tr><td comment_id="361753"> @Stanley: Yes, you are right. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

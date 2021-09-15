@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Probability of A given B given C</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Probability of A given B given C </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1207041">
+<p>How would I find P ((A|B)|C)? Do I substitute the formula for P (A|B), P=(A ∩ B))/(P (B)), and then redo the function to get (P (A ∩ B ∩ C))/(P (C)^2)?</p> <p>I heard that P=(A|B ∩ C) can be used, but why would that be equivalent, unless you assume that C is independent of A?  Given a three-circle Venn diagram, the initial sample size would be too restricted.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1207063" id="answer">
+<p>The notation <span class="math-container" id="11297845" visual_id="1083280"><math alttext="\mathsf{P}((A\mid B)\mid C)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝖯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>C</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is not standard.   There should only be one bar between the event being measured and the condition.   When conditioning over two events, take the conjunction.</p> <p>Both <span class="math-container" id="11297846" visual_id="2196330"><math alttext="\mathsf{P}(A\mid B,C)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝖯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mi>B</mi><mo>,</mo><mi>C</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="11297847" visual_id="2196331"><math alttext="\mathsf{P}(A\mid B\cap C)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝖯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mi>B</mi><mo>∩</mo><mi>C</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> mean the conditional probability of <span class="math-container" id="11297848" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> given <span class="math-container" id="11297849" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> and <span class="math-container" id="11297850" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>.</p> <p><span class="math-container" id="11297851" visual_id="2196332"><math alttext="\mathsf{P}(A\mid B\cap C)=\frac{\mathsf{P}(A\cap B\mid C)}{\mathsf{P}(B\mid C)% }=\frac{\mathsf{P}(A\cap B\cap C)}{\mathsf{P}(B\cap C)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝖯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mi>B</mi><mo>∩</mo><mi>C</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>𝖯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mrow><mi>B</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>C</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>𝖯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>C</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>𝖯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>𝖯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>∩</mo><mi>C</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

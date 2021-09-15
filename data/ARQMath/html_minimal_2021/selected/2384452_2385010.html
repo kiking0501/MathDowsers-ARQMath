@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why is there a "maximal" intermediate field?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why is there a "maximal" intermediate field? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2384452">
+<p>It seems from <a href="https://math.stackexchange.com/a/1785416/360858">this answer</a> that the following is true (possibly without the finiteness assumption, I have no idea):</p> <blockquote> <p>If <span class="math-container" id="22061996" visual_id="40041"><math alttext="E/F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>/</mo><mi>F</mi></mrow></semantics></math></span> is a finite field extension, then there exists a maximal intermediate field <span class="math-container" id="22061997" visual_id="40608"><math alttext="E^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>E</mi><mo>′</mo></msup></semantics></math></span>.</p> </blockquote> <p>Presumably this means that <span class="math-container" id="22061998" visual_id="40608"><math alttext="E^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>E</mi><mo>′</mo></msup></semantics></math></span> is an intermediate field and if <span class="math-container" id="22061999" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span> is an intermediate field and <span class="math-container" id="22062000" visual_id="3268981"><math alttext="E^{\prime}\subset K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>E</mi><mo>′</mo></msup><mo>⊂</mo><mi>K</mi></mrow></semantics></math></span>, then <span class="math-container" id="22062001" visual_id="912348"><math alttext="K=E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>E</mi></mrow></semantics></math></span> (am I right?)</p> <p>How to prove this?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> field-theory </span><span> extension-field </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4916957"> For the finite situation, you can consider embedding the finite extension into a finite Galois extension. By Galois Theory, there are finite intermediate fields, including those which are subfields of the original finite extension. Getting rid of the finiteness condition, I have not found any counter examples yet but I could not think about a proof. </td></tr><tr><td comment_id="4917005"> You might also use some knowledge in infinite Galois theory to work on it, in my view. I'm not very sure. </td></tr><tr><td comment_id="4917823"> Presumably you mean to require <span class="math-container" id="22062030" visual_id="1177820"><math alttext="E\neq F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>≠</mo><mi>F</mi></mrow></semantics></math></span> and by "intermediate field" you mean <span class="math-container" id="22062013" visual_id="40608"><math alttext="E^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>E</mi><mo>′</mo></msup></semantics></math></span> such that <span class="math-container" id="22062014" visual_id="3268982"><math alttext="F\subseteq E^{\prime}\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⊆</mo><msup><mi>E</mi><mo>′</mo></msup><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4918061"> It is not necesseraly unique, see <span class="math-container" id="22062005" visual_id="1224161"><math alttext="\mathbb{Q}(\sqrt{3},\sqrt{5})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mn>3</mn></msqrt><mo>,</mo><msqrt><mn>5</mn></msqrt><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> having <span class="math-container" id="22062006" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> maximal subfields : <span class="math-container" id="22062007" visual_id="3268983"><math alttext="\mathbb{Q}(\sqrt{3}),\mathbb{Q}(\sqrt{5}),\mathbb{Q}(\sqrt{15})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mn>3</mn></msqrt><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mn>5</mn></msqrt><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mn>15</mn></msqrt><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. You should show that <span class="math-container" id="22062015" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span> is a maximal subfield of <span class="math-container" id="22062009" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> iff <span class="math-container" id="22062010" visual_id="790483"><math alttext="[E:K]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mi>E</mi><mo>:</mo><mi>K</mi></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span> is prime. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2385010" id="answer">
+<p>The correct statement is:</p> <blockquote> <p>Let <span class="math-container" id="22062011" visual_id="40041"><math alttext="E/F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>/</mo><mi>F</mi></mrow></semantics></math></span> be a finite field extension such that <span class="math-container" id="22062012" visual_id="1177820"><math alttext="E\neq F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>≠</mo><mi>F</mi></mrow></semantics></math></span>.  Then there is a field <span class="math-container" id="22062013" visual_id="40608"><math alttext="E^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>E</mi><mo>′</mo></msup></semantics></math></span> such that <span class="math-container" id="22062014" visual_id="3268982"><math alttext="F\subseteq E^{\prime}\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⊆</mo><msup><mi>E</mi><mo>′</mo></msup><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span> and there is no field <span class="math-container" id="22062015" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span> such that <span class="math-container" id="22062016" visual_id="3268984"><math alttext="E^{\prime}\subset K\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>E</mi><mo>′</mo></msup><mo>⊂</mo><mi>K</mi><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span>.</p> </blockquote> <p>To prove it, consider the set <span class="math-container" id="22062017" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> of all degrees <span class="math-container" id="22062018" visual_id="2341144"><math alttext="[E^{\prime}:F]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><msup><mi>E</mi><mo>′</mo></msup><mo>:</mo><mi>F</mi></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span> of intermediate fields <span class="math-container" id="22062019" visual_id="736696"><math alttext="E^{\prime}\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>E</mi><mo>′</mo></msup><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span>.  Then <span class="math-container" id="22062020" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> is a nonempty set of natural numbers, all of which are less than <span class="math-container" id="22062021" visual_id="37237"><math alttext="[E:F]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mi>E</mi><mo>:</mo><mi>F</mi></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span>.  Let <span class="math-container" id="22062022" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> be the greatest element of <span class="math-container" id="22062023" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>, and choose <span class="math-container" id="22062024" visual_id="736696"><math alttext="E^{\prime}\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>E</mi><mo>′</mo></msup><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span> such that <span class="math-container" id="22062025" visual_id="3268985"><math alttext="[E^{\prime}:F]=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><msup><mi>E</mi><mo>′</mo></msup><mo>:</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mi>n</mi></mrow></semantics></math></span>.  Then if <span class="math-container" id="22062026" visual_id="3268984"><math alttext="E^{\prime}\subset K\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>E</mi><mo>′</mo></msup><mo>⊂</mo><mi>K</mi><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span> we would have <span class="math-container" id="22062027" visual_id="3268986"><math alttext="[K:F]=[K:E^{\prime}][E^{\prime}:F]&amp;gt;[E^{\prime}:F]=n," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mi>K</mi><mo>:</mo><msup><mi>E</mi><mo>′</mo></msup><mo stretchy="false">]</mo></mrow><mrow><mo stretchy="false">[</mo><msup><mi>E</mi><mo>′</mo></msup><mo>:</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><mi mathvariant="normal">&amp;</mi><mi>g</mi><mi>t</mi><mo>;</mo><mrow><mo stretchy="false">[</mo><msup><mi>E</mi><mo>′</mo></msup><mo>:</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mi>n</mi><mo>,</mo></mrow></semantics></math></span> which is a contradiction since <span class="math-container" id="22062028" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is the greatest element of <span class="math-container" id="22062029" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4918165"> Thank you. Though, I don't see how your statement is any different than mine. Could you please point out the difference? </td></tr><tr><td comment_id="4918170"> The assumption that <span class="math-container" id="22062030" visual_id="1177820"><math alttext="E\neq F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>≠</mo><mi>F</mi></mrow></semantics></math></span>, and the requirement that <span class="math-container" id="22062031" visual_id="3268987"><math alttext="E^{\prime}\neq E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>E</mi><mo>′</mo></msup><mo>≠</mo><mi>E</mi></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1155681"> Field extensions and monomorphism </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

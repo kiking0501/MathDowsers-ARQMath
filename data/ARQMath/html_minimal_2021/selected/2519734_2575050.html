@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Commuting zero divisors of matrices</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Commuting zero divisors of matrices </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2519734">
+<p>I  recently thought of a problem in linear algebra that seems relatively straightforward:</p> <blockquote> <p>Suppose we have an <span class="math-container" id="23302893" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrix <span class="math-container" id="23302894" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> over a field <span class="math-container" id="23302895" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, which is a zero divisor in the matrix ring <span class="math-container" id="23302896" visual_id="478631"><math alttext="M_{n}(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. Does there exist a matrix <span class="math-container" id="23302897" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> that is a two-sided zero divisor of <span class="math-container" id="23302898" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, i.e. <span class="math-container" id="23302899" visual_id="394363"><math alttext="AB=BA=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>?</p> </blockquote> <p>The answer to this is yes, which I proved using ring theory as follows:</p> <p>If we let <span class="math-container" id="23302900" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> be the centraliser of <span class="math-container" id="23302901" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> in <span class="math-container" id="23302902" visual_id="478631"><math alttext="M_{n}(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, then <span class="math-container" id="23302903" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is a <span class="math-container" id="23302904" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>-subspace of <span class="math-container" id="23302905" visual_id="478631"><math alttext="M_{n}(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, and also a subring, containing the identity <span class="math-container" id="23302906" visual_id="4095"><math alttext="I_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>n</mi></msub></semantics></math></span>. So since <span class="math-container" id="23302907" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is a finite dimensional, associative, unital <span class="math-container" id="23302908" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>-algebra, it follows that <span class="math-container" id="23302909" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is artinian, and hence every element of <span class="math-container" id="23302910" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is either a unit or a zero divisor. </p> <p>Clearly <span class="math-container" id="23302911" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> lies in <span class="math-container" id="23302912" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>, since <span class="math-container" id="23302913" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> commutes with itself, and since <span class="math-container" id="23302914" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is not a unit in <span class="math-container" id="23302915" visual_id="478631"><math alttext="M_{n}(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="23302916" visual_id="1350602"><math alttext="I_{n}\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>n</mi></msub><mo>∈</mo><mi>R</mi></mrow></semantics></math></span>, it follows that <span class="math-container" id="23302917" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is not a unit in <span class="math-container" id="23302918" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>, and hence is a zero divisor in <span class="math-container" id="23302919" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>. Therefore there exists a matrix <span class="math-container" id="23302920" visual_id="401383"><math alttext="B\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> with <span class="math-container" id="23302921" visual_id="121552"><math alttext="AB=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, and by the definition of the centraliser, <span class="math-container" id="23302922" visual_id="5084"><math alttext="AB=BA" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></semantics></math></span>, so we are done.</p> <p>This proof can be extended to the case where <span class="math-container" id="23302923" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> is a non-commutative division ring, finite dimensional over its centre.</p> <p>However, this proof is not accessible to anyone who doesn't have knowledge of ring theory, even though the problem itself is grounded in standard linear algebra. </p> <blockquote> <p>Can anyone think of a proof that only involves techniques in linear algebra?</p> </blockquote>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> abstract-algebra </span><span> matrices </span><span> ring-theory </span><span> alternative-proof </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5203721"> The adjugate matrix is a two sided zero divisor. The proof is accessible to anyone knowing Cramer's Rule. </td></tr><tr><td comment_id="5203748"> That's true, I hadn't considered that. Thanks. </td></tr><tr><td comment_id="5314600"> @Dune Most likely the OP wanted <span class="math-container" id="23302924" visual_id="14072"><math alttext="B\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>, (which is consistent with the property of being zerodivisor for <span class="math-container" id="23302925" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>) and in this case there is no guarantee that the classical adjoint is non-zero. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2575050" id="answer">
+<p>Not sure why this old question has to be bumped up, but for sake of having an answer, let <span class="math-container" id="23302926" visual_id="1350603"><math alttext="A=MDN" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mi>M</mi><mo>⁢</mo><mi>D</mi><mo>⁢</mo><mi>N</mi></mrow></mrow></semantics></math></span>, where <span class="math-container" id="23302927" visual_id="5892"><math alttext="M,N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>,</mo><mi>N</mi></mrow></semantics></math></span> are invertible and <span class="math-container" id="23302928" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is diagonal (one may obtain this decomposition using Smith normal form or even elementary row/column operations). Let <span class="math-container" id="23302929" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> be any nonzero diagonal matrix such that <span class="math-container" id="23302930" visual_id="1350604"><math alttext="DS=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>D</mi><mo>⁢</mo><mi>S</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. Then <span class="math-container" id="23302931" visual_id="1350605"><math alttext="B=N^{-1}SM^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><msup><mi>N</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>S</mi><mo>⁢</mo><msup><mi>M</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span> is a nonzero solution to <span class="math-container" id="23302932" visual_id="394363"><math alttext="AB=BA=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

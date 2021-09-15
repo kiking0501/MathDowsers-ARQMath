@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why is this relation not Symmetric</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why is this relation not Symmetric </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1190452">
+<p><span class="math-container" id="11157570" visual_id="35971"><math alttext="R_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>1</mn></msub></semantics></math></span> = {(2,2),(2,3),(2,4),(3,2),(3,3),(3,4)}</p> <p>Is this not symmetric ONLY due to the ordered pair (2,4) not having symmetry with (3,4)? I can't seem to find a lot of information on how to deal with a relation being not a "property" and I'm not sure if my logic is right in how to deal with them (not symmetric, not transitive, not reflexive). Should I be looking for only one missing element?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> relations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2423771"> symmetric means if x is related to y, then y is related to x. If (x,y) is in there, then (y,x) is in there. Well, (2,4) is in there but (4,2) is not, so it is not symmetric. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1190456" id="answer">
+<p>Symmetry requires that if <span class="math-container" id="11157571" visual_id="97320"><math alttext="\langle a,b\rangle\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">⟩</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span>, then <span class="math-container" id="11157572" visual_id="1720112"><math alttext="\langle b,a\rangle\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo stretchy="false">⟩</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> as well. In this case there are two violations of symmetry: <span class="math-container" id="11157573" visual_id="1670458"><math alttext="\langle 2,4\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> is in <span class="math-container" id="11157574" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> while <span class="math-container" id="11157575" visual_id="360916"><math alttext="\langle 4,2\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>4</mn><mo>,</mo><mn>2</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> is not, and <span class="math-container" id="11157576" visual_id="95638"><math alttext="\langle 3,4\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> is in <span class="math-container" id="11157577" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> while <span class="math-container" id="11157578" visual_id="360924"><math alttext="\langle 4,3\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> is not. These two violations are unrelated. It’s not that <span class="math-container" id="11157579" visual_id="1670458"><math alttext="\langle 2,4\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> doesn’t ‘have symmetry with’ <span class="math-container" id="11157580" visual_id="95638"><math alttext="\langle 3,4\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span>: <span class="math-container" id="11157581" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> would still not be symmetric even if we removed <span class="math-container" id="11157582" visual_id="95638"><math alttext="\langle 3,4\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> from it, because it would still contain <span class="math-container" id="11157583" visual_id="1670458"><math alttext="\langle 2,4\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> but not <span class="math-container" id="11157584" visual_id="360916"><math alttext="\langle 4,2\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>4</mn><mo>,</mo><mn>2</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span>.</p> <p>To show that a relation does <em>not</em> have one of these properties you need only find one failure of the property. Here, for instance, the moment you find that <span class="math-container" id="11157585" visual_id="2147390"><math alttext="\langle 2,4\rangle\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo stretchy="false">⟩</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> and <span class="math-container" id="11157586" visual_id="2147391"><math alttext="\langle 4,2\rangle\notin R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mn>4</mn><mo>,</mo><mn>2</mn><mo stretchy="false">⟩</mo></mrow><mo>∉</mo><mi>R</mi></mrow></semantics></math></span>, you’ve shown that <span class="math-container" id="11157587" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is not symmetric. You also know that <span class="math-container" id="11157588" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is not reflexive: the ordered pair <span class="math-container" id="11157589" visual_id="95638"><math alttext="\langle 3,4\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> shows that <span class="math-container" id="11157590" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> is in the field of the relation, but the pair <span class="math-container" id="11157591" visual_id="360925"><math alttext="\langle 4,4\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>4</mn><mo>,</mo><mn>4</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> is not in <span class="math-container" id="11157592" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2423778"> So then wouldn't this also be antisymmetric? </td></tr><tr><td comment_id="2423788"> @jc707270: No, it’s not antisymmetric, because it contains both <span class="math-container" id="11157593" visual_id="422228"><math alttext="\langle 3,2\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> and <span class="math-container" id="11157594" visual_id="422229"><math alttext="\langle 2,3\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span>. An antisymmetric relation is one that never has both <span class="math-container" id="11157595" visual_id="34144"><math alttext="\langle a,b\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">⟩</mo></mrow></semantics></math></span> and <span class="math-container" id="11157596" visual_id="385809"><math alttext="\langle b,a\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo stretchy="false">⟩</mo></mrow></semantics></math></span> unless <span class="math-container" id="11157597" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="11157598" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> are actually the same element. </td></tr><tr><td comment_id="2423791"> Ahhhh yes ok, forgot about that for a minute. Ok, thanks Brian </td></tr><tr><td comment_id="2423792"> @jc707270: You’re welcome. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

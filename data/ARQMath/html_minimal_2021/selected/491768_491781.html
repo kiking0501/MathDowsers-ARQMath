@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>The set of polynomial functions is finitely generated</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> The set of polynomial functions is finitely generated </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="491768">
+<p>Let <span class="math-container" id="5161761" visual_id="194468"><math alttext="P(\mathbb{R})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be the set of all polynomial functions in <span class="math-container" id="5161762" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>. How do i show that this vector space is finitely generated. I know that i need to show that <span class="math-container" id="5161763" visual_id="2819373"><math alttext="P(\mathbb{R})=spanV" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>s</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>V</mi></mrow></mrow></semantics></math></span> where V is a set of some vectors in <span class="math-container" id="5161764" visual_id="194468"><math alttext="P(\mathbb{R})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.</p> <p>I am trying to show that this is true by justifying that they are subsets of each other. I'm having truble picking the vector, and understand how one vector can fit it <span class="math-container" id="5161765" visual_id="2819374"><math alttext="spanV" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>V</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> vector-spaces </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1058068"> The big problem you're facing is that <span class="math-container" id="5161766" visual_id="194468"><math alttext="P(\mathbb{R})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is infinite-dimensional. Is there perhaps a bound on the degree? </td></tr><tr><td comment_id="1058086"> It would also be good to point out here that "sets" aren't finitely generated, vector spaces, rings, groups algebras etc are finitely generated. If you don't specify which, then you are at the mercy of readers' imagnations. Presumably here you had "vector space" in mind, but didn't say so, and now you can see why "set" wasn't very informative :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="491781" id="answer">
+<p>Hints: As a <em>vector space</em>, <span class="math-container" id="5161769" visual_id="2819375"><math alttext="\{1,x,x^{2},x^{3}\dots\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi>x</mi><mo>,</mo><msup><mi>x</mi><mn>2</mn></msup><mo>,</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span> can be used as a basis for the real polynomials. All bases of the space have the same size... what's the size of this basis?</p> <p>As an <em><span class="math-container" id="5161770" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>-algebra</em>, you can produce any polynomial just starting with the two-element set <span class="math-container" id="5161771" visual_id="59129"><math alttext="\{1,x\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi>x</mi><mo stretchy="false">}</mo></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

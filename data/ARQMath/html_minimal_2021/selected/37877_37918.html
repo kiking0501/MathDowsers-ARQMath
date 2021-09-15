@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is there any mathematical operation on Integers that yields the same result as doing bitwise "AND"?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is there any mathematical operation on Integers that yields the same result as doing bitwise "AND"? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="37877">
+<p>I'll provide a little bit of a background so you guys can better understand my question:</p> <p>Let's say I have two positive, non-zero <strong>Binary Numbers</strong>.(Which can, obviously, be mapped to integers)</p> <p>I will then proceed onto doing an "AND" operation for each bit, (I think that's called a <em>bitwise operation</em>) which will yield yet another binary number.</p> <p>Ok. Now <strong>this</strong> new Binary number can, in turn, also be mapped to an Integer.</p> <blockquote> <p>My question is: <strong>Is there any Integer operation I can do on the mapped Integer values of the two original binary numbers that would yield the same result?</strong></p> </blockquote> <p>Thanks in advance.</p> <p><strong>EDIT       :</strong> I forgot to mention that What I'm looking for is a mathematical expression using things like +,-,/,pow(base,exp) and the like. I'm not 100% sure (I'm a compuer scientist) but I think what I'm looking for is an <em>isomorphism</em>.</p> <p><strong>LAST EDIT</strong>: I think this will clear any doubts as to what sort of mathematical expression I'm looking for. I wanted something like:</p> <pre><code>The bitwise AND of two Integers A and B is always equal to (AB)X(B)X(3). </code></pre> <p>The general feeling I got is that it's not possible or extremely difficult to prove(either its validity or non-validity)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> computer-science </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="83170"> Bitwise AND is already a mathematical operation. </td></tr><tr><td comment_id="83172"> Yeah I know but I want an operation that works directly on Integers </td></tr><tr><td comment_id="83174"> Are you sure you want integers and not natural numbers instead? </td></tr><tr><td comment_id="83175"> Bitwise AND already works directly on integers. </td></tr><tr><td comment_id="83177"> Unless you define a grammar of "integer operations" you can just dismiss any answer given. </td></tr><tr><td comment_id="83178"> Yeah. Good point. I'm sorry, if we puts negative numbers into this we have to deal with 2's complement, and I don't think I need that. Thanks. </td></tr><tr><td comment_id="83179"> I feel that this question should do better on a programming related site, perhaps SO. I'm voting to close as off topic. </td></tr><tr><td comment_id="83188"> I want to say that while the OP has some confusion on the definition of a mathematical operation, it is a valid question to ask for a "simpler" description and I think that it can be productive to answer this kind of question as it is the kind of question that can lead to better understanding. </td></tr><tr><td comment_id="83193"> @Asaf Karagila: I doubt it. If there *were* the kind of "basis-free" formula the OP is looking for, we would probably know it. </td></tr><tr><td comment_id="83194"> @Felipe, You have given a grammar "+,-,/,pow(base,exp)" which includes formulas like "x+y/pow(x+x,y)" and excludes things like "sin(x)+y" (and a trillion other things..) so potentially you could prove that <span class="math-container" id="392001" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> I defined cannot be realized as a function of this grammar but as I said that would probably be extremely different (I see no obvious way to prove it). </td></tr><tr><td comment_id="83195"> @Felipe, that "sharper" version of this question might be worth asking but I would be surprised if anyone could answer it. </td></tr><tr><td comment_id="83196"> (and you probably know this by now but "mathematical expression" is not a good term for the sort of grammar you gave, "calculator expression" would make more sense) </td></tr><tr><td comment_id="83197"> @Felipe, one might be able to show a certain set of numbers is "definable" in terms of <span class="math-container" id="392001" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> and the grammar, which is not definable just by the grammar. The definition of "definable" comes from model theory (part of logic). </td></tr><tr><td comment_id="83198"> @Felipe, for example an extremely fast growing function is definable using exponentials that is not definable using just addition and multiplication -- so exponentials can't be defined using addition and multiplication (you need something like recursion too). Perhaps some aspect of <span class="math-container" id="392001" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> could be found that is not definable in terms of the grammar. </td></tr><tr><td comment_id="83202"> possible duplicate of [Expressing bitwise operations in terms of other functions](http://math.stackexchange.com/questions/15141/expressing-bitwise-operations-in-terms-of-other-functions) </td></tr><tr><td comment_id="83206"> @quanta: "What I'm looking for is a mathematical expression using things like +,-,/,pow(base,exp) and the like." - more or less what I was asking in the other question. Anyway... </td></tr><tr><td comment_id="83246"> I vote against closing. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="37918" id="answer">
+<p>If you have a bound on the size of the integers involved then you can find some polynomial whose values equal bitwise AND using Lagrange interpolation.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="15141"> Expressing bitwise operations in terms of other functions </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

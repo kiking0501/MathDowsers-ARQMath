@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>About theory of convex cones</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> About theory of convex cones </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2847796">
+<p>Working with positive semidefinite matrices I discovered the concept of convex cone. That is, a subset <span class="math-container" id="26319503" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> of a vector space <span class="math-container" id="26319504" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span> that is closed under positive linear combinations. I had never read about them before, and now, with the few things I have learned about them, I find them really interesting.</p> <p>The main feature I have learned about convex cones is that, when <span class="math-container" id="26319505" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> is a convex cone verifying certain conditions (like <span class="math-container" id="26319506" visual_id="389997"><math alttext="0\in C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>∈</mo><mi>C</mi></mrow></semantics></math></span>, closed and <span class="math-container" id="26319507" visual_id="843490"><math alttext="C\cap(-C)=\{0\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>C</mi><mo>∩</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>C</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>) we can define an order in <span class="math-container" id="26319508" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span>, <span class="math-container" id="26319509" visual_id="7432"><math alttext="\preceq" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⪯</mo></semantics></math></span>, such that <span class="math-container" id="26319510" visual_id="7427"><math alttext="x\preceq y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⪯</mo><mi>y</mi></mrow></semantics></math></span> if and only if <span class="math-container" id="26319511" visual_id="3370382"><math alttext="y-x\in C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>-</mo><mi>x</mi></mrow><mo>∈</mo><mi>C</mi></mrow></semantics></math></span>. I like a lot this feature, because I see these cones as a generalization of the non-negative numbers, <span class="math-container" id="26319512" visual_id="193479"><math alttext="\mathbb{R}^{+}_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>ℝ</mi><mn>0</mn><mo>+</mo></msubsup></semantics></math></span>, to any vector space that allows a cone in the previous conditions.</p> <p>In the case of the positive semidefinite (PSD) cone over the space of symmetric (real) matrices, we can even define, for a symmetric matrix <span class="math-container" id="26319513" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, a positive part <span class="math-container" id="26319514" visual_id="113252"><math alttext="A^{+}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mo>+</mo></msup></semantics></math></span> and a negative part <span class="math-container" id="26319515" visual_id="3361"><math alttext="A^{-}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mo>-</mo></msup></semantics></math></span> by taking the projections onto the PSD cone and the NSD (=-PSD) cone, respectively. Furthermore, we can decompose <span class="math-container" id="26319516" visual_id="3370383"><math alttext="A=A^{+}+A^{-}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><msup><mi>A</mi><mo>+</mo></msup><mo>+</mo><msup><mi>A</mi><mo>-</mo></msup></mrow></mrow></semantics></math></span>, and even define an absolute value for <span class="math-container" id="26319517" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, <span class="math-container" id="26319518" visual_id="6459"><math alttext="|A|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow></semantics></math></span>, that belongs to the PSD cone. But I don't know if these properties are developed in the general cone theory.</p> <p>My problem is that I have found very little bibliography about convex cones. Many of the books of convex analysis define them and talk about the ordering, but no more. I would like to find a good book about this topic, or information in general about convex cones, specially about additional properties of their ordering, about cone projections (the additional properties with respect to simple convex projections) and anything about PSD matrices that can be generalized to convex cones under certain hypothesis.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> order-theory </span><span> convex-geometry </span><span> positive-semidefinite </span><span> projection </span><span> convex-cone </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5873954"> Convex cones (in particular the PSD cone and the second-order cone) are crucial in convex optimization (conic optimization). See books on convex optimization, for example http://web.stanford.edu/~boyd/cvxbook/ </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2847817" id="answer">
+<p>It was not clear from your question the context that you have been studying positive-semidefinite matrices, however this area is intimately conected with optimization (conic and convex). The best references that I know are:</p> <p>"Handbook on Semidefinite, Conic, and Polynomial Optimization", from Miguel F. Anjos et al</p> <p>"Lectures on Modern Convex Optimization", from Ben-Tal and Nemirovsky</p> <p>You can also look at "Convex Optimization" from Stephen Boyd, "Convex Analysis" from Rockafellar or "Convex Analysis and Optimization" from Bertsekas or "A Course in Convexity" by Alexander Barvinok.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

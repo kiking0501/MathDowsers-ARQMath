@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How come that $\int_{0}^{1}\frac{1}{\sqrt{x}}\mathrm dx$ converges?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How come that <span class="math-container" id="19649327" visual_id="424573"><math alttext="\int_{0}^{1}\frac{1}{\sqrt{x}}\mathrm{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mfrac><mn>1</mn><msqrt><mi>x</mi></msqrt></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> converges? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2125699">
+<p>I cant understand why this integral converges <span class="math-container" id="19649328" visual_id="424573"><math alttext="\int_{0}^{1}\frac{1}{\sqrt{x}}\mathrm{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mfrac><mn>1</mn><msqrt><mi>x</mi></msqrt></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span>. </p> <p>If you take a look at the graph of <span class="math-container" id="19649329" visual_id="19371"><math alttext="\frac{1}{\sqrt{x}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msqrt><mi>x</mi></msqrt></mfrac></semantics></math></span> between <span class="math-container" id="19649330" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> and <span class="math-container" id="19649331" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> it never gets a value for <span class="math-container" id="19649332" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. So I thought that the line continues into infinity without touching the y-axis, so that'd make it that the surface area is infinite. However when solving the integral, I get a real number?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4371427"> It is the same principle behind the convergence of an infinite series. Think about <span class="math-container" id="19649333" visual_id="125487"><math alttext="\sum_{n=1}^{\infty}1/n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mn>1</mn><mo>/</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span>: you are constantly adding strictly positive numbers to it, so you would expect the sum to be infinite. Yet it converges to <span class="math-container" id="19649334" visual_id="17311"><math alttext="\pi/6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>/</mo><mn>6</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4371438"> @John So If I understand correctly, it is because the numbers you are adding when coming close to 0 are so small, that it doesnt really have an impact on the total value of the integral? </td></tr><tr><td comment_id="4371447"> Exactly! You can actually see it from the definition of integral based on Riemann sums (or Darboux sums) </td></tr><tr><td comment_id="4371461"> @John a little typo - it sould be <span class="math-container" id="19649335" visual_id="79439"><math alttext="\pi^{2}/6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>π</mi><mn>2</mn></msup><mo>/</mo><mn>6</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4371620"> @TZakrevskiy thanks! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2125726" id="answer">
+<p>One way to understand this phenomena is by doing the following change of variable: Let <span class="math-container" id="19649336" visual_id="38305"><math alttext="u=\frac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math></span>. Then <span class="math-container" id="19649337" visual_id="838306"><math alttext="du=-\frac{1}{x^{2}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> and we have <span class="math-container" id="19649338" visual_id="2737720"><math alttext="\int_{0}^{1}\frac{1}{\sqrt{x}}dx=\int_{+\infty}^{1}\sqrt{u}\bigg{(}-\frac{1}{u% ^{2}}\bigg{)}du=\int^{+\infty}_{1}\frac{1}{u^{3/2}}du." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mfrac><mn>1</mn><msqrt><mi>x</mi></msqrt></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mn>1</mn></msubsup><mrow><msqrt><mi>u</mi></msqrt><mo>⁢</mo><mrow><mo maxsize="210%" minsize="210%">(</mo><mrow><mo>-</mo><mfrac><mn>1</mn><msup><mi>u</mi><mn>2</mn></msup></mfrac></mrow><mo maxsize="210%" minsize="210%">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mfrac><mn>1</mn><msup><mi>u</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> The integrant on the right  <span class="math-container" id="19649339" visual_id="2737721"><math alttext="\frac{1}{u^{3/2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mi>u</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mfrac></semantics></math></span> is finite in every point of the interval <span class="math-container" id="19649340" visual_id="654793"><math alttext="I=[1,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. The difference here is the the domain of integration is infinite. However this integral on the right is still finite because of the some similar reasons the sum <span class="math-container" id="19649341" visual_id="2737722"><math alttext="\sum_{k=1}^{n}\frac{1}{n^{3/2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><msup><mi>n</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mfrac></mrow></semantics></math></span> is finite. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4371545"> You mean <span class="math-container" id="19649342" visual_id="144716"><math alttext="\sum_{n=1}^{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup></semantics></math></span> at the end, not <span class="math-container" id="19649343" visual_id="560604"><math alttext="\sum_{k=1}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></semantics></math></span>. (Also, _why_ is it finite?) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2497671"> When does something "go to zero fast enough"? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

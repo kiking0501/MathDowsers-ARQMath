@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Combinatorial identity's algebraic proof without induction.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Combinatorial identity's algebraic proof without induction. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1868416">
+<p>How would you prove this combinatorial idenetity algebraically without induction?</p> <p><span class="math-container" id="17305072" visual_id="1019077"><math alttext="\sum_{k=0}^{n}{x+k\choose k}={x+n+1\choose n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span></p> <p>Thanks.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> binomial-coefficients </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1868422" id="answer">
+<p>Hint: The R.H.S counts how many ways you can arrange <span class="math-container" id="17305080" visual_id="4547"><math alttext="x+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> <span class="math-container" id="17305081" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>s and <span class="math-container" id="17305082" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> <span class="math-container" id="17305083" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>s in a <span class="math-container" id="17305084" visual_id="1019079"><math alttext="x+n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> long sequence. As for the L.H.S, consider how many of these such sequences end in <strong>exactly</strong> <span class="math-container" id="17305085" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span> <span class="math-container" id="17305086" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>s as <span class="math-container" id="17305087" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span> varies from <span class="math-container" id="17305088" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> to <span class="math-container" id="17305089" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. Hope this helps! Feel free to ask for extra clarification.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3827290"> This is not an algebraic proof, but it seems to be combinatorial. </td></tr><tr><td comment_id="3827300"> +1. A remark: it suffices to assume <span class="math-container" id="17305092" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is a nonnegative integer, since both sides of the identitiy are polynomials in <span class="math-container" id="17305092" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, and if two polynomials agree for infinitely many values, they are the same. (So the identity holds for all <span class="math-container" id="17305092" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, not just integers.) </td></tr><tr><td comment_id="3827304"> I think I can prove it with the the identity: <span class="math-container" id="17305093" visual_id="1019080"><math alttext="{x+n+1\choose n}={x+n\choose n}+{x+n\choose n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>n</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>n</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></semantics></math></span> and repeating this identity. </td></tr><tr><td comment_id="3827305"> An alegebraic proof of this identity would be horrible - the point is that induction overcomes this problem by simplifying the calculation at each step (this becomes the inductive assumption). It is possible to battle through algebraically but it won't be nice! </td></tr><tr><td comment_id="3827308"> Yes! Good idea - you can try to turn it into a telescoping sum. I forgot about that trick :) </td></tr><tr><td comment_id="3827310"> Yes I forgot about this trick also, until I saw it in one excerise I am grading. :-D </td></tr><tr><td comment_id="3827312"> I find marking work useful for that reason too! :) </td></tr><tr><td comment_id="3827481"> @Zestylemonzi: An algebraic proof is not *that* horrible. Regards, </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1490794"> Proof of the Hockey-Stick Identity: <span class="math-container" id="13788700" visual_id="678404"><math alttext="\sum\limits_{t=0}^{n}\binom{t}{k}=\binom{n+1}{k+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>t</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1868044"> The number of <span class="math-container" id="17301330" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>-tuples of nonnegative integers <span class="math-container" id="17301331" visual_id="10551"><math alttext="(x_{1},\ldots,x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> satisfying the equation <span class="math-container" id="17301332" visual_id="773922"><math alttext="x_{1}+\cdots+x_{n}=r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>r</mi></mrow></semantics></math></span> </td></tr><tr><td post_id="834829"> Prove summation related to cycles </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

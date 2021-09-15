@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that if $F \subset D \subset E$ then D is a field</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that if <span class="math-container" id="18542168" visual_id="4037324"><math alttext="F\subset D\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⊂</mo><mi>D</mi><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span> then D is a field </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2002147">
+<p>Exercise: Let <span class="math-container" id="18542169" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> be a finite extension field of <span class="math-container" id="18542170" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>, and <span class="math-container" id="18542171" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> an integral domain such that <span class="math-container" id="18542172" visual_id="4037324"><math alttext="F\subset D\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⊂</mo><mi>D</mi><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span>. Show that <span class="math-container" id="18542173" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is a field.</p> <p>Attempt: All of the field axioms for D are inherited by the inclusion relationship and ring axioms except for the existence of multiplicative inverse. <span class="math-container" id="18542174" visual_id="9294043"><math alttext="\alpha\in D\cap F\implies\alpha^{-1}\in F\implies\alpha^{-1}\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>∈</mo><mrow><mi>D</mi><mo>∩</mo><mi>F</mi></mrow><mo>⟹</mo><msup><mi>α</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>∈</mo><mi>F</mi><mo>⟹</mo><msup><mi>α</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>∈</mo><mi>D</mi></mrow></semantics></math></span>, so consider <span class="math-container" id="18542175" visual_id="9294044"><math alttext="\beta\in D\backslash F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>∈</mo><mrow><mi>D</mi><mo>\</mo><mi>F</mi></mrow></mrow></semantics></math></span>.</p> <p>Since <span class="math-container" id="18542176" visual_id="40041"><math alttext="E/F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>/</mo><mi>F</mi></mrow></semantics></math></span> is finite it's also algebraic, but then <span class="math-container" id="18542177" visual_id="9294045"><math alttext="F[\beta]=F(\beta)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>β</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and so <span class="math-container" id="18542178" visual_id="9294046"><math alttext="\beta^{-1}\in F(\beta)\subset D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>β</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>∈</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mi>D</mi></mrow></semantics></math></span>.</p> <p>I'm not really sure this proof is correct, but in case it is there are two things that bug me:</p> <ul> <li>If we just ask <span class="math-container" id="18542179" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> to be a ring then from <span class="math-container" id="18542180" visual_id="673660"><math alttext="D\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span> follows <span class="math-container" id="18542181" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is an integral domain.</li> <li>We only used the fact that <span class="math-container" id="18542182" visual_id="40041"><math alttext="E/F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>/</mo><mi>F</mi></mrow></semantics></math></span> is an algebraic extension in the proof.</li> </ul> <p>Thanks for your help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> field-theory </span><span> galois-theory </span><span> extension-field </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4110986"> <span class="math-container" id="18542183" visual_id="338379"><math alttext="D\setminus E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>∖</mo><mi>E</mi></mrow></semantics></math></span> is empty, perhaps you mean <span class="math-container" id="18542184" visual_id="22189"><math alttext="D\setminus F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>∖</mo><mi>F</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4110996"> Yes, I tend to mix them </td></tr><tr><td comment_id="4110999"> Since <span class="math-container" id="18542185" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> has no zero divisors, also <span class="math-container" id="18542186" visual_id="673660"><math alttext="D\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span> has no zero divisors. For the multiplicative inverse, compare also with [this question](http://math.stackexchange.com/questions/390126/proving-an-integral-domain-is-a-field). </td></tr><tr><td comment_id="4111089"> @Bill Dubuque thanks, didn't find that one </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2002177" id="answer">
+<p>It's already an integral domain, all you're missing is inverses. Let <span class="math-container" id="18542187" visual_id="9294047"><math alttext="p_{\beta}(x)=a_{0}+a_{1}x+\ldots+a_{n}x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>p</mi><mi>β</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow></semantics></math></span> be the minimal polynomial for <span class="math-container" id="18542188" visual_id="57"><math alttext="\beta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi></semantics></math></span> over <span class="math-container" id="18542189" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>. Then note</p> <blockquote> <p><span class="math-container" id="18542190" visual_id="9294048"><math alttext="-a_{0}^{-1}(a_{1}+a_{2}\beta+a_{3}\beta^{2}+\ldots+a_{n}\beta^{n-1})\cdot\beta=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mrow><mrow><msubsup><mi>a</mi><mn>0</mn><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>⁢</mo><mi>β</mi></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>⁢</mo><msup><mi>β</mi><mn>2</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msup><mi>β</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mi>β</mi></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p> </blockquote> <p>So <span class="math-container" id="18542191" visual_id="9294049"><math alttext="\beta^{-1}\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>β</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>∈</mo><mi>D</mi></mrow></semantics></math></span>, showing inverses. Here we use that all such <span class="math-container" id="18542192" visual_id="74332"><math alttext="\beta\in E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>∈</mo><mi>E</mi></mrow></semantics></math></span> which is finite, so that there is a minimal polynomial for it over <span class="math-container" id="18542193" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4111082"> Yes, that's the kind of argument I was thinking of. But, again, we're only using <span class="math-container" id="18542195" visual_id="40041"><math alttext="E/F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>/</mo><mi>F</mi></mrow></semantics></math></span> is algebraic, not necessarily finite, am I right? </td></tr><tr><td comment_id="4111122"> @cronos2 it doesn't matter if <span class="math-container" id="18542195" visual_id="40041"><math alttext="E/F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>/</mo><mi>F</mi></mrow></semantics></math></span> is globally finite, true, each element just needs to be contained in **some** finite extension. But there are plenty of examples of theorems not 100% as sharp as possible, usually this is because the form you use them in is not the most general one. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="44374"> Intermediate ring between a field and an algebraic extension. </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="390126"> Proving an Integral domain is a field. </td></tr><tr><td post_id="2573061"> How to show this is a field? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

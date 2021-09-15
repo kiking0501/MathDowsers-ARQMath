@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving reflexivity from transivity and symmetry.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving reflexivity from transivity and symmetry. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1360992">
+<p>Property 2 of an equivalence relation states that if <span class="math-container" id="12649441" visual_id="66260"><math alttext="a\sim b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∼</mo><mi>b</mi></mrow></semantics></math></span> and <span class="math-container" id="12649442" visual_id="247715"><math alttext="b\sim c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>∼</mo><mi>c</mi></mrow></semantics></math></span> then <span class="math-container" id="12649443" visual_id="247718"><math alttext="a\sim c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∼</mo><mi>c</mi></mrow></semantics></math></span>. </p> <p>What is wrong with the following proof that properties 2(symmetry) &amp; 3 (transitivity) imply reflexivity.</p> <blockquote> <p>Let <span class="math-container" id="12649444" visual_id="66260"><math alttext="a\sim b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∼</mo><mi>b</mi></mrow></semantics></math></span>, then <span class="math-container" id="12649445" visual_id="66261"><math alttext="b\sim a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>∼</mo><mi>a</mi></mrow></semantics></math></span>, whence by property 3 (using <span class="math-container" id="12649446" visual_id="374"><math alttext="a=c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>c</mi></mrow></semantics></math></span>), <span class="math-container" id="12649447" visual_id="247706"><math alttext="a\sim a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∼</mo><mi>a</mi></mrow></semantics></math></span>.</p> </blockquote>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> equivalence-relations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2768283"> Perhaps there is no element b equivalent to a. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1361013" id="answer">
+<p><span class="math-container" id="12649448" visual_id="1014"><math alttext="\varnothing" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><merror class="ltx_ERROR undefined undefined"><mtext>\varnothing</mtext></merror></semantics></math></span> is a symmetric and transitive relation on any set. But it is only reflexive as a relation on <span class="math-container" id="12649449" visual_id="1014"><math alttext="\varnothing" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><merror class="ltx_ERROR undefined undefined"><mtext>\varnothing</mtext></merror></semantics></math></span> itself.</p> <p>More generally, being symmetric and transitive are intrinsic properties of the relation, and do not depend what is the set that the relation is "on". Reflexivity depends on an external information, which is an additional set over which the relation is defined. </p> <p>This means that by enlarging the set over which we define the relation, without adding new ordered pairs, we preserve both symmetry and transitivity, but we will easily destroy reflexivity.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

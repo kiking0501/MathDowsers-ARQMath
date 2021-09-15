@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Ways for a continuous function to not be smooth</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Ways for a continuous function to not be smooth </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3138">
+<p>I am interested in continuous functions which are not smooth, i.e. which have only finitely many derivatives (for now just taking the case <span class="math-container" id="23789" visual_id="3106"><math alttext="f:\mathbb{R}\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span>).  As far as I can tell, there are only 2 features or properties of such a function which can make it non-smooth.</p> <ol> <li><p>The derivative of some order diverges to infinity at one or more points.</p></li> <li><p>The derivative of some order oscillates like <span class="math-container" id="23790" visual_id="9766"><math alttext="\sin(1/x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> does at <span class="math-container" id="23791" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> at one or more points.</p></li> </ol> <p>Q1: Are there any other ways for a continuous function to be non-smooth?</p> <p>Q2: What are some example's of non-smooth functions which satisfy a differential equation?</p> <p>Edit:</p> <p>In response to Qiaochu comment:</p> <p>A simple "description of a limit failing to exist which is better than "the limit fails to exist" is to specify, for example, if the limit of a sequence of natural numbers diverges to infinity or not. for example:  <span class="math-container" id="23792" visual_id="40493"><math alttext="1,2,3,..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span> and <span class="math-container" id="23793" visual_id="708840"><math alttext="1,2,1,2,1,..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span></p> <p>These two examples are similar to my 1. and 2., i.e. the derivative diverges to infinity or it oscillates around without settling down.</p> <p>I don't see the problem with trying to classify the ways continuous functions cannot be smooth by looking at their graphs.  One example of a non smooth function is <span class="math-container" id="23794" visual_id="9766"><math alttext="\sin(1/x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, it has a certain property at <span class="math-container" id="23795" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, another non-smooth function is <span class="math-container" id="23796" visual_id="4404"><math alttext="|x|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></semantics></math></span> and it has another property at <span class="math-container" id="23797" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.  </p> <p>I understand you feel the question is not well defined because "being like <span class="math-container" id="23798" visual_id="9766"><math alttext="\sin(1/x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>" is an intuitive concept.</p> <p>Ok, so what are examples of non-smooth continuous functions without "kinks" like <span class="math-container" id="23799" visual_id="9766"><math alttext="\sin(1/x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> has at <span class="math-container" id="23800" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>?  </p> <p>There are two that I can think of, <span class="math-container" id="23801" visual_id="9766"><math alttext="\sin(1/x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and the Weierstrass function.  But if you think about the self similarity of the graph of the Weirstrauss function, then it's clear that the derivative of this function osscilates rapidly at every point like <span class="math-container" id="23802" visual_id="9766"><math alttext="\sin(1/x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> does at <span class="math-container" id="23803" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.  </p> <p>Regardless of whether or not it's well-defined to say the Weierstrass function is like <span class="math-container" id="23804" visual_id="9766"><math alttext="\sin(1/x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> in some sense, I am just curious to know of some other examples of non-smooth continuous functions without kinks in their graph, can someone please help?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6264"> The absolute value function seems to be not covered in your "list". </td></tr><tr><td comment_id="6279"> I don't know that this is a well-defined question.  It is not clear to me what the second example means rigorously, and I don't know what kind of answers you are expecting.  A derivative fails to exist when a certain limit fails to exist, and I don't know of any description of a limit failing to exist which is better than "the limit fails to exist." </td></tr><tr><td comment_id="6282"> To emphasize Qiaochu's comment: given any sequence of real numbers <span class="math-container" id="23805" visual_id="4141"><math alttext="(a_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span>, you can find a continuous function <span class="math-container" id="23806" visual_id="3106"><math alttext="f\colon\mathbb{R}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> and a decreasing sequence <span class="math-container" id="23807" visual_id="69369"><math alttext="(t_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> of positive real numbers such that for every <span class="math-container" id="23808" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> we have <span class="math-container" id="23809" visual_id="8235669"><math alttext="\frac{f(t_{n})-f(0)}{t_{n}}=a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><msub><mi>t</mi><mi>n</mi></msub></mfrac><mo>=</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></semantics></math></span>. In particular, the limit defining the derivative may be "as bad as you want it to be". You can even make sure that <span class="math-container" id="23810" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is smooth away from the origin. </td></tr><tr><td comment_id="6301"> How about fractals (eg Weiner process) which are nowhere smooth? </td></tr><tr><td comment_id="6391"> @Qiaochu: See the edit to my OP for my response. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3572" id="answer">
+<p>One thing you might be interested in is Darboux's Theorem, which tells you that derivatives have the intermediate value property.  There's a decent  Wikipedia page  on the topic and there was also a nice proof given by Sam B. Nadler, Jr. in the Math Monthly a little while back (Feb. 2010). </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="3249"> What are some examples of non smooth continuous functions without "kinks"? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

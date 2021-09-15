@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Question about generating functions</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Question about generating functions </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="158199">
+<p>I have question about generating functions.</p> <p>I need to make this equation: <span class="math-container" id="1841186" visual_id="7574250"><math alttext="(\frac{1}{1+x})^{n}\centerdot(1+x)^{2n}=(1+x)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\centerdot</mtext></merror><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></semantics></math></span></p> <p>in this form: <span class="math-container" id="1841187" visual_id="7574251"><math alttext="\sum\limits_{i=0}^{k}(-1)^{i}D(\qvar@construct{,}\qvar@construct{)}\binom{% \qvar@construct{missing}}{\qvar@construct{missing}}=\binom{n}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>k</mi></munderover><msup><mrow><mo stretchy="false">(</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mi>i</mi></msup><mi>D</mi><mrow><mo stretchy="false">(</mo><mi mathcolor="red" mathvariant="italic">qvar_,</mi><mi mathcolor="red" mathvariant="italic">qvar_)</mi><mrow><mo>(</mo><mfrac linethickness="0pt"><mi mathcolor="red" mathvariant="italic">qvar_missing</mi><mi mathcolor="red" mathvariant="italic">qvar_missing</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>How can I do this?</p> <p>Thanks in advance</p>
+</div>
+<hr/>
+<div id="tags">
+<span> generating-functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="364871"> <span class="math-container" id="1841188" visual_id="7574252"><math alttext="\frac{1}{1+x}\centerdot(1+x)^{2n}=(1+x)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\centerdot</mtext></merror><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></semantics></math></span> iff <span class="math-container" id="1841189" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>; are you sure that you wrote down the right equation? </td></tr><tr><td comment_id="364873"> no, sorry. i corrected it... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="158202" id="answer">
+<p>Expand <span class="math-container" id="1841205" visual_id="388103"><math alttext="(1+x)^{-n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mi>n</mi></mrow></msup></semantics></math></span> from the left hand side using the <a href="http://en.wikipedia.org/wiki/Binomial_series" rel="nofollow">binomial series</a> and <span class="math-container" id="1841206" visual_id="8480"><math alttext="(1+x)^{2n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup></semantics></math></span> using the ordinary binomial formula; ditto on the right hand side. Multiply the factors on the left, collect equal powers of <span class="math-container" id="1841207" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and compare coefficients.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

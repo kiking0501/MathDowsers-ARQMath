@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Correlation of three values</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Correlation of three values </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1624273">
+<p>I have a data set that considers three values, <span class="math-container" id="15019627" visual_id="1462"><math alttext="x,y,z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow></semantics></math></span>. And I have three questions:</p> <ol> <li>What's the relationship between <span class="math-container" id="15019628" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="15019629" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span>?</li> <li>What's the relationship between <span class="math-container" id="15019630" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span> and <span class="math-container" id="15019631" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span>?</li> <li>What's the relationship between <span class="math-container" id="15019632" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="15019633" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> <em>controled</em> by <span class="math-container" id="15019634" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span>?*</li> </ol> <p>For the first two questions I did pretty much the same thing, I made an scatterd graph and saw that they hold a positive and negative correlation. I don't know if I should do more... what else can I show? I mean, knowing if it is a positive or negative correlation already answers the questions, right?</p> <p>On the other hand I'm not completely sure what <em>controled by</em> means. I belive it sounds like a condition, but I'm not sure what to do here.</p> <p><br/> <br/> <br/>* in spanish the question is: <em>¿Cuál es la relación entre <span class="math-container" id="15019635" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> y <span class="math-container" id="15019636" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> controlado por <span class="math-container" id="15019637" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span>?</em></p>
+</div>
+<hr/>
+<div id="tags">
+<span> statistics </span><span> correlation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1625011" id="answer">
+<p>3) Assuming that <span class="math-container" id="15019638" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> and <span class="math-container" id="15019639" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> are continuous, you probably expected to estimate the regression model  <span class="math-container" id="15019640" visual_id="5409167"><math alttext="y=\beta_{0}+\beta_{1}x+\beta_{2}z+\epsilon," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mrow><msub><mi>β</mi><mn>0</mn></msub><mo>+</mo><mrow><msub><mi>β</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><msub><mi>β</mi><mn>2</mn></msub><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mi>ϵ</mi></mrow></mrow><mo>,</mo></mrow></semantics></math></span> and report the <span class="math-container" id="15019641" visual_id="206845"><math alttext="\beta_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>β</mi><mn>1</mn></msub></semantics></math></span> with its standard error, while "controlling" for <span class="math-container" id="15019642" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span>, i.e., (probably), by estimating the model you are addressing the effect of <span class="math-container" id="15019643" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> on <span class="math-container" id="15019644" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> in the presence of <span class="math-container" id="15019645" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span>. And when interpreting <span class="math-container" id="15019646" visual_id="206845"><math alttext="\beta_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>β</mi><mn>1</mn></msub></semantics></math></span> you assume that you do it ceteris paribus, namely, <span class="math-container" id="15019647" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span> is hold constant.      </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3313866"> Oh! I see. Btw, <span class="math-container" id="15019648" visual_id="921"><math alttext="x,y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></semantics></math></span> and <span class="math-container" id="15019649" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span>, are discrete, I assume the formula <span class="math-container" id="15019650" visual_id="5409168"><math alttext="y=\beta_{0}+\beta_{1}x+\beta_{2}z+\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><msub><mi>β</mi><mn>0</mn></msub><mo>+</mo><mrow><msub><mi>β</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><msub><mi>β</mi><mn>2</mn></msub><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mi>ϵ</mi></mrow></mrow></semantics></math></span> doesn't changes. Also, where can I find examples with three values, because the book that I'm following considers two values, and I'm not sure what to do. </td></tr><tr><td comment_id="3314190"> Are you assuming that your sample of <span class="math-container" id="15019651" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="15019652" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> came from discrete variables? Regarding the examples - any standard book on regression analysis will provide plenty examples of that kind. </td></tr><tr><td comment_id="3316771"> Oh, don't mind that, I got confused with another word. Thank you. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

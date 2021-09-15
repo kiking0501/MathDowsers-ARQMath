@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Arithmetic Progressions with a Finite Number of Primes</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Arithmetic Progressions with a Finite Number of Primes </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1720982">
+<p>Is there an arithmetic progression that includes {1} that also includes only a finite number of prime numbers? Or will all progressions including {1} have infinite primes?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> prime-numbers </span><span> arithmetic-progressions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3513613"> Maybe it would help if I said why I was asking this. I'm trying to show that the set of integers Z is not compact under the arithmetic progression topology. So I have the collection of progressions {0+kp} where k is an integer and p is prime. The union of those progressions covers Z\{-1,1}. So I only need a progression with 1 and a progression with -1 to cover Z. But since 1 is coprime with all integers, the Dirichlet Theorem says those progressions will contain infinitely many integers. That opens up the possibility of finite sub-collections covering Z, which is what I'm trying to avoid. </td></tr><tr><td comment_id="3513619"> Are you trying to recreate Furstenburg's (sp?) proof? </td></tr><tr><td comment_id="3513723"> @abiessu no, but the concept is related. </td></tr><tr><td comment_id="3513740"> By "a finite sub-collection covering <span class="math-container" id="15898365" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>", do you mean something like <span class="math-container" id="15898366" visual_id="918465"><math alttext="\{2a\},\{3a\},\{6a-1\},\{6a+1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">{</mo><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mrow><mn>3</mn><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mn>6</mn><mo>⁢</mo><mi>a</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mn>6</mn><mo>⁢</mo><mi>a</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>? </td></tr><tr><td comment_id="3513788"> @abiessu a finite collection of progressions, yeah </td></tr><tr><td comment_id="3514807"> @user324636: Instead of working with different primes, you can partition <span class="math-container" id="15898367" visual_id="220476"><math alttext="\mathbb{Z}\setminus\{0\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> according to the highest power of <span class="math-container" id="15898368" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> that divides each number. Each equivalence class turns out to be an arithmetic progression, and there's an infinity of them. Then take, for example, <span class="math-container" id="15898369" visual_id="64233"><math alttext="3\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>⁢</mo><mi>ℤ</mi></mrow></semantics></math></span> to cover <span class="math-container" id="15898370" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> too; that intersects each of the other progressions but does not contain any of them. </td></tr><tr><td comment_id="3515805"> Consider http://math.stackexchange.com/q/1504635/86846 for more information. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1720999" id="answer">
+<p><a href="https://en.wikipedia.org/wiki/Dirichlet%27s_theorem_on_arithmetic_progressions" rel="nofollow">Dirichlet's theorem on arithmetic progressions</a> says (among other cases) that every integer arithmetic progression that starts at <span class="math-container" id="15898371" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> contains infinitely many primes.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1504635"> Primes and arithmetic progressions </td></tr><tr><td post_id="1412254"> Dirichlet theorem </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

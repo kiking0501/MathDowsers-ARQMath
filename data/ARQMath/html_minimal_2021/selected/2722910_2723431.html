@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Formally what is a mathematical construction?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Formally what is a mathematical construction? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2722910">
+<p>More formally (though not too formal, as I am pretty under-educated in mathematical logic) what does it mean when one "constructs" another mathematical object from another within the context of introducing a new theory or new definitions. </p> <p>For example I've found when one writes of lets say "constructions of the real numbers" what they mean is they are going to use some deductive system that has no notion of a real number to define an algebraic structure that is isomorphic to the field of real numbers.</p> <p>Likewise I've seen this done in "constructions of the integers" where they might take lets say ordered pairs of natural numbers (the point being as before never to reference or use anything about the objects we are going to "construct") to create the integers</p> <p>Again I've seen this also done in "constructions of the rationals" where they might take lets say ordered pairs of integers (again never referencing/using anything involving rational numbers) to create the rationals.</p> <p>So to re-iterate what does "construction" mean formally in this context of introducing new objects?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> terminology </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5620885"> See [Construction of the real numbers](https://en.wikipedia.org/wiki/Construction_of_the_real_numbers): compared to the *axiomatic definition* of the real number system as a complete ordered field, the *construction* of the reals assume a pre-existing *structure* (basically: the *naturals*) and define progressively new objects (the rational, the reals) in terms of the previous ones. Having defined how to "contsruct" them, the procedure prove that the new defined objects satisfy the corersponding axioms. </td></tr><tr><td comment_id="5620890"> @Mauro ALLEGRANZA So in general a "construction of x" in these sorts of contexts is just a proof of the existence of a mathematical structure isomorphic to x? </td></tr><tr><td comment_id="5620921"> Not exactly, IMO: is the proof that there is a strucure satisfying a specified set of axioms (the structure <span class="math-container" id="25131525" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> satisfying the axioms for complete ordered fileds, in my example) ... **provided that** the "initial" structure (<span class="math-container" id="25131526" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> in my exanple) exists. </td></tr><tr><td comment_id="5620957"> You can refer to the "construction of straightedge and compass" of Euclidean geometry: it is a way to prove that, provided that straight lines and circles exist, also other geometrical figures: angles, triangles, etc. exist because we can define procedures (algorithms) to  build them up from pre-existing entities. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2723431" id="answer">
+<blockquote> <p>What does "construction" mean formally in this context of introducing new objects?</p> </blockquote> <p>If you were to set out to formally "construct," say, the set of real numbers, from scratch, you would have to begin with a list of axioms and rules of inference that would have to include at least one axiom that postulates the existence of some object, usually some set X with certain properties. </p> <p>Your axioms and rules of inference should allow you to infer the existence of (i.e. construct) new sets given the existence of others. So, starting with set X, you would <em>construct</em> one set after another in this way until you have the set of real numbers. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2808804"> Does the existence of a mathematical object imply that it is possible to construct the object? </td></tr><tr><td post_id="2782078"> What is a construction (in mathematics)? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

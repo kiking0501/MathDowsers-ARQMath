@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that there exist $x\in X$ such that $x\notin\bigcup_{n=1}^{\infty}{A_n}$.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that there exist <span class="math-container" id="21693904" visual_id="875"><math alttext="x\in X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></semantics></math></span> such that <span class="math-container" id="21693905" visual_id="5106665"><math alttext="x\notin\bigcup_{n=1}^{\infty}{A_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∉</mo><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2345611">
+<p>Let <span class="math-container" id="21693906" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> a compact Hausdorff topological space. Let <span class="math-container" id="21693907" visual_id="5803804"><math alttext="\{A_{n}\}_{n\in\mathbb{Z}^{+}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">{</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>∈</mo><msup><mi>ℤ</mi><mo>+</mo></msup></mrow></msub></semantics></math></span> a collection of countable closed, such that the interior of <span class="math-container" id="21693908" visual_id="1584"><math alttext="A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub></semantics></math></span> is empty, for all <span class="math-container" id="21693909" visual_id="13194"><math alttext="n\in\mathbb{Z}^{+}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><msup><mi>ℤ</mi><mo>+</mo></msup></mrow></semantics></math></span>. Show that, there exist  <span class="math-container" id="21693910" visual_id="875"><math alttext="x\in X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></semantics></math></span> such that <span class="math-container" id="21693911" visual_id="5106665"><math alttext="x\notin\bigcup_{n=1}^{\infty}{A_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∉</mo><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>.</p> <p>So, I know this union has empty interior, <a href="https://math.stackexchange.com/questions/1296634/prob-5-sec-27-in-munkres-topology-2nd-ed-every-compact-hausdorff-space-is">Prob. 5, Sec. 27 in Munkres</a>. But, if the interior of the union is empty, maybe there exist a point in the boundary of <span class="math-container" id="21693912" visual_id="154315"><math alttext="\bigcup_{n=1}^{\infty}{A_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow></semantics></math></span>. </p> <p>Can give me some hint, or any idea to prove this, pls. Thanks! </p>
+</div>
+<hr/>
+<div id="tags">
+<span> general-topology </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4830041"> If the interior of the union is empty, any neighbourhood of a point in the union contains a suitable <span class="math-container" id="21693939" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>. </td></tr><tr><td comment_id="4830124"> To say there is no such <span class="math-container" id="21693939" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is to say <span class="math-container" id="21693915" visual_id="2545836"><math alttext="X=\bigcup\limits_{n=1}^{\infty}A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mrow><munderover><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>. Does <span class="math-container" id="21693951" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> have empty interior? </td></tr><tr><td comment_id="4830406"> What do you refer with a suitable <span class="math-container" id="21693939" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>???, Thanks for your answer! @RobertIsrael </td></tr><tr><td comment_id="4830439"> I mean an <span class="math-container" id="21693939" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> that is not in <span class="math-container" id="21693919" visual_id="154315"><math alttext="\bigcup_{n=1}^{\infty}A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4831089"> why would a point in the boundary be an issue? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2345660" id="answer">
+<p>Any Compact Hausdorff space is a Baire space. And any non-empty open set in a baire space is of the second category, that is it cannot be written as countable union of nowhere dense sets.</p> <p>The sets <span class="math-container" id="21693920" visual_id="1584"><math alttext="A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub></semantics></math></span> are all nowhere dense as they are closed and has an empty interior, and since <span class="math-container" id="21693921" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is open in itself so <span class="math-container" id="21693922" visual_id="6872579"><math alttext="X\neq\bigcup_{n=1}^{\infty}{A_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>≠</mo><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>, hence there exists <span class="math-container" id="21693923" visual_id="875"><math alttext="x\in X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></semantics></math></span> such that <span class="math-container" id="21693924" visual_id="5106665"><math alttext="x\notin\bigcup_{n=1}^{\infty}{A_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∉</mo><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4830415"> Thanks for your answer, but I don't see why <span class="math-container" id="21693925" visual_id="6872579"><math alttext="X\neq\bigcup_{n=1}^{\infty}{A_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>≠</mo><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>... Thanks! </td></tr><tr><td comment_id="4830660"> Because <span class="math-container" id="21693934" visual_id="154312"><math alttext="\cup_{n=1}^{\infty}A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∪</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>n</mi></msub></mrow></semantics></math></span> is a countable union of nowhere dense subsets. </td></tr><tr><td comment_id="4831212"> Nice and concise :D </td></tr><tr><td comment_id="4832392"> Thanks! @Arpan1729 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1296634"> Prob. 5, Sec. 27 in Munkres' TOPOLOGY, 2nd ed: Every compact Hausdorff space is a Baire space </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

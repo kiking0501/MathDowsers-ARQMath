@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove using the ε-δ definition that f(x) is continuous at the following points?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove using the ε-δ definition that f(x) is continuous at the following points? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1400341">
+<p>How can I use the <span class="math-container" id="13006286" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span>-<span class="math-container" id="13006287" visual_id="41"><math alttext="\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi></semantics></math></span> definition to do this for  <span class="math-container" id="13006288" visual_id="9073193"><math alttext="f(x)=\frac{x+2}{x^{2}+x+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span> at <span class="math-container" id="13006289" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and for  <span class="math-container" id="13006290" visual_id="9073194"><math alttext="f(x)=\log(x^{2}+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> at <span class="math-container" id="13006291" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>? I can do it for a normal function but I get confused when it gets to the stage of <span class="math-container" id="13006292" visual_id="126616"><math alttext="|f(x)-f(a)|&amp;lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo></mrow><mi>ϵ</mi></mrow></semantics></math></span> and I have to restrict this in terms of <span class="math-container" id="13006293" visual_id="218414"><math alttext="|x-0|&amp;lt;\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>-</mo><mn>0</mn></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo></mrow><mi>δ</mi></mrow></semantics></math></span> or <span class="math-container" id="13006294" visual_id="38121"><math alttext="|x-1|&amp;lt;\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo></mrow><mi>δ</mi></mrow></semantics></math></span>. Thanks</p>
+</div>
+<hr/>
+<div id="tags">
+<span> analysis </span><span> continuity </span><span> epsilon-delta </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1400437" id="answer">
+<p>For the second function, recalling that <span class="math-container" id="13006303" visual_id="2610"><math alttext="f(0)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and that <span class="math-container" id="13006304" visual_id="26399"><math alttext="f(x)\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> since <span class="math-container" id="13006305" visual_id="484924"><math alttext="1+x^{2}\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>, you pick <span class="math-container" id="13006306" visual_id="2946"><math alttext="\varepsilon&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ε</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> and start with the inequality <span class="math-container" id="13006307" visual_id="9073195"><math alttext="|f(x)-f(0)|&amp;lt;\varepsilon," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo></mrow><mi>ε</mi></mrow><mo>,</mo></mrow></semantics></math></span> namely <span class="math-container" id="13006308" visual_id="9073196"><math alttext="\log(1+x^{2})&amp;lt;\varepsilon." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo></mrow><mi>ε</mi></mrow><mo>.</mo></mrow></semantics></math></span> Since log is a strictly increasing function, your last inequality is equivalent to <span class="math-container" id="13006309" visual_id="9073197"><math alttext="1+x^{2}&amp;lt;e^{\varepsilon}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>1</mn><mo>+</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>&lt;</mo></mrow></mrow><msup><mi>e</mi><mi>ε</mi></msup></mrow><mo>.</mo></mrow></semantics></math></span> Hence <span class="math-container" id="13006310" visual_id="9073198"><math alttext="-\sqrt{e^{\varepsilon}-1}&amp;lt;x&amp;lt;\sqrt{e^{\varepsilon}-1}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>-</mo><mrow><msqrt><mrow><msup><mi>e</mi><mi>ε</mi></msup><mo>-</mo><mn>1</mn></mrow></msqrt><mo>&lt;</mo></mrow></mrow><mrow><mi>x</mi><mo>&lt;</mo></mrow><msqrt><mrow><msup><mi>e</mi><mi>ε</mi></msup><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo>,</mo></mrow></semantics></math></span> and you can define <span class="math-container" id="13006311" visual_id="9073199"><math alttext="\delta=\sqrt{e^{\varepsilon}-1}&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mrow><mrow><msqrt><mrow><msup><mi>e</mi><mi>ε</mi></msup><mo>-</mo><mn>1</mn></mrow></msqrt><mo>&gt;</mo></mrow><mn>0</mn></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2851721"> thank you so much for your help, i finally get it...i forgot about taking exponentials of both sides </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

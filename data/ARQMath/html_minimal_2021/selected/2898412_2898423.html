@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <title>Advantage of Dual(Lagrangian) decomposition of a LP Relaxed problem???</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be">
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js"> </script>
+
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+
+        <style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <div class="row" id="question-title">
+                <h1> Advantage of Dual(Lagrangian) decomposition of a LP Relaxed problem??? </h1>
+                <hr>
+            </div>
+
+
+            <div class="row">
+                <div class="question">
+
+                    <div question_id="2898412"  id="question">
+                        <p>I am a beginner to optimization and graphical models. What I understand is that a Linear Program constitutes a relaxation and hence is a lower bound of a given Integer Linear Program. I also understand that a Lagrangian relaxation is another way of relaxing and hence yields another lower bound. I understand that the Lagrangian lower bound is always at least as good as the Linear Program relaxation lower bound (Correction made after comments).  What I don't understand is the following:</p>  <p>Is there any advantage of doing a dual decomposition of a Linear Program? I came across this tutorial/set of slides <a href="http://www.cs.cityu.edu.hk/~cheewtan/CS8292Class/Lec13.pdf" rel="nofollow noreferrer">http://www.cs.cityu.edu.hk/~cheewtan/CS8292Class/Lec13.pdf</a>  where the dual (Lagrangean)decomposition of LP is done. </p>  <p>What is the advantage of doing so? I am thinking if I have an ILP, would it make sense to first do LP relaxation and then dual decomposition of LP? If yes, why? Why wouldn't doing a dual(Lagrangian) decomposition from an ILP directly be more beneficial as it gives a tighter lower bound?</p>  <p>Sorry, if the question is silly, but I seem to be confused.</p> 
+                    </div>
+                    <hr>
+
+                    <div id="tags">
+                        <span> optimization </span><span> convex-optimization </span><span> linear-programming </span><span> lagrange-multiplier </span><span> duality-theorems </span>
+                    </div>
+                    <hr>
+
+                    <div id="question-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="5986595"> There are many circumstances in which the Lagrangean dual of an integer programming problem gives the same lower bound as the LP relaxation- where did you get the idea that "the Lagrangean lower bound is tigher"? </td></tr><tr><td comment_id="5986605"> @Brian: Sorry for the confusion but that's what I meant. I know that both the relaxations will give the same lower bound, if the Lagrangian satisfies the integrality property. I will edit my post </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div class="answer">
+
+
+                    <div answer_id="2898423" id="answer">
+                        <p>First of all, the Lagrangian relaxation does not necessarily yield a tighter bound than the Linear relaxation. In some cases both relaxations yield equivalent bounds (e.g., if the matrix of constraints that are not relaxed is totally unimodular). What you can say is that the Lagrangean relaxation is always as least as good as the linear one.</p>  <p>On a practical level, Lagrangian relaxation is harder to implement. </p>  <p>This being said, the advantage of doing a Lagrangian relaxation is that, if done correctly (if relaxing the right set of constraints), it will yield a better bound and thus potentially speed up convergence. </p>  <p>Such decomposition methods are typically used for integer programs as you mentioned, but they also work for pure linear programs. I am not sure why you would want to do that though, as linear programs are easy to solve as they are. Perhaps it is interesting from a pure theoretical perspective.</p> 
+                    </div>
+                    <hr>
+
+
+                    <div id="answer-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="5986599"> I totally agree with everything you said. However, while I was going through this paper from a very respectable conference, I found this in Page 3 https://papers.nips.cc/paper/5159-global-map-optimality-by-shrinking-the-combinatorial-search-area-with-convex-relaxation.pdf I don't understand why LP relaxation of ILP has been followed by Lagrangian relaxation of LP relaxation </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div id="duplicate">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+
+                <div id="related">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+</html>

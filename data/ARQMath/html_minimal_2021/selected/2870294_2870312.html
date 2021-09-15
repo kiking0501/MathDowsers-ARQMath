@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Invertible matrix implies square matrix</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Invertible matrix implies square matrix </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2870294">
+<p>Given an <span class="math-container" id="26535139" visual_id="787"><math alttext="m\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrix <span class="math-container" id="26535140" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and an <span class="math-container" id="26535141" visual_id="15627"><math alttext="n\times m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>m</mi></mrow></semantics></math></span> matrix <span class="math-container" id="26535142" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> such that <span class="math-container" id="26535143" visual_id="260351"><math alttext="AB=I_{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><msub><mi>I</mi><mi>m</mi></msub></mrow></semantics></math></span> and <span class="math-container" id="26535144" visual_id="117218"><math alttext="BA=I_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><msub><mi>I</mi><mi>n</mi></msub></mrow></semantics></math></span>, I would like to show that, in fact, <span class="math-container" id="26535145" visual_id="25993"><math alttext="m=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mi>n</mi></mrow></semantics></math></span>. </p> <p>(The <span class="math-container" id="26535146" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> and <span class="math-container" id="26535147" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> may be the other way around. They should be such that <span class="math-container" id="26535148" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="26535149" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> are inverses, as per the title of the question)</p> <p>I know this can be done easily by seeing <span class="math-container" id="26535150" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="26535151" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> as linear transformations between vector spaces, but I am wondering if anyone is aware of a proof that only involves matrix algebra. That is, a proof that would work even if the entries of <span class="math-container" id="26535152" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="26535153" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> were merely from a unital ring rather than a field (although I am not even sure that the statement would be true in that case, but I haven't been able to find a counterexample).</p>
+</div>
+<hr/>
+<div id="tags">
+<span> matrices </span><span> inverse </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5923526"> It's true for commutative rings, but there are counterexamples over non-commutative rings. </td></tr><tr><td comment_id="5923533"> @Bernard: yes, that was a typo in my question. </td></tr><tr><td comment_id="5923543"> @LordSharktheUnknown could you elaborate on that? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2870312" id="answer">
+<p>Here is another way: if <span class="math-container" id="26535154" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="26535155" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> are any two matrices that can be multiplied from both sides then <span class="math-container" id="26535156" visual_id="12078"><math alttext="tr(AB)=tr(BA)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>t</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>t</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. You can easily prove it using the definition of matrix multiplication. Hence if <span class="math-container" id="26535157" visual_id="260351"><math alttext="AB=I_{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><msub><mi>I</mi><mi>m</mi></msub></mrow></semantics></math></span> and <span class="math-container" id="26535158" visual_id="117218"><math alttext="BA=I_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><msub><mi>I</mi><mi>n</mi></msub></mrow></semantics></math></span> then <span class="math-container" id="26535159" visual_id="7148999"><math alttext="m=tr(I_{m})=tr(AB)=tr(BA)=tr(I_{n})=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mi>t</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>I</mi><mi>m</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>t</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>t</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>t</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>I</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>n</mi></mrow></semantics></math></span>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5923578"> Thanks. And I see that for <span class="math-container" id="26535160" visual_id="12078"><math alttext="tr(AB)=tr(BA)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>t</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>t</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> to hold the entries of <span class="math-container" id="26535175" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="26535162" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> must be in at least a commutative ring </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

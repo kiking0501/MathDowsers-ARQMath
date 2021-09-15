@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find $f(x)$ for $f(f(x))=\sin x$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find <span class="math-container" id="17764745" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for <span class="math-container" id="17764746" visual_id="451085"><math alttext="f(f(x))=\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1916184">
+<p>Find all (if that's possible) functions <span class="math-container" id="17764747" visual_id="3106"><math alttext="f:\mathbb{R}\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> such that <span class="math-container" id="17764748" visual_id="409331"><math alttext="f(f(x))=\sin x." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>This is a problem a friend gave me. He said he saw it on a book a long time ago, but he couldn't remember what book. I literally have no idea how to solve this so I can't post my attempt here.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> functional-equations </span><span> function-and-relation-composition </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3933477"> Do we require that <span class="math-container" id="17764784" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> should be continuous? </td></tr><tr><td comment_id="3933481"> @Omnomnomnom No, I think. </td></tr><tr><td comment_id="3933490"> **Thoughts:** First, find <span class="math-container" id="17764750" visual_id="7857935"><math alttext="\tilde{f}:[-\pi/2,\pi/2]\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>f</mi><mo stretchy="false">~</mo></mover><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo>,</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> such that <span class="math-container" id="17764751" visual_id="7857936"><math alttext="\tilde{f}(\tilde{f}(x))=\sin(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mover accent="true"><mi>f</mi><mo stretchy="false">~</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mover accent="true"><mi>f</mi><mo stretchy="false">~</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.  Intuitively this should be possible, since on this interval <span class="math-container" id="17764752" visual_id="691"><math alttext="\sin(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a strictly increasing function.  From there, it suffices to define <span class="math-container" id="17764753" visual_id="7857937"><math alttext="f(x)=\tilde{f}([x]_{\pi})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mover accent="true"><mi>f</mi><mo stretchy="false">~</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mi>π</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="17764754" visual_id="7857938"><math alttext="[x]_{\pi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mi>π</mi></msub></semantics></math></span> denotes the unique value in <span class="math-container" id="17764755" visual_id="65129"><math alttext="[-\pi/2,\pi/2]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo>,</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span> such that <span class="math-container" id="17764756" visual_id="7857939"><math alttext="x=2\pi k+[x]_{\pi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><msub><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mi>π</mi></msub></mrow></mrow></semantics></math></span> **or** <span class="math-container" id="17764757" visual_id="7857940"><math alttext="x=2\pi k+\pi-[x]_{\pi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mi>π</mi></mrow><mo>-</mo><msub><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mi>π</mi></msub></mrow></mrow></semantics></math></span> for some <span class="math-container" id="17764758" visual_id="7571"><math alttext="k\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3933737"> With <span class="math-container" id="17764790" visual_id="451085"><math alttext="f(f(x))=\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></semantics></math></span> we get <span class="math-container" id="17764788" visual_id="7857941"><math alttext="f(\sin x)=\sin f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Are you sure that your question makes sense ? Is the question just for fun or have a purpose ? </td></tr><tr><td comment_id="3933745"> The question was discussed in much detail in the math-overvlow thread http://mathoverflow.net/q/45608/7710 *(Perhaps we should mark this question as duplicate?)* </td></tr><tr><td comment_id="3933749"> @Gottfried Helms : Thanks for the hint. It's duplicate, yes, but here are posted other answers. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1916981" id="answer">
+<p>Now, given a specific <span class="math-container" id="17764811" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> with <span class="math-container" id="17764812" visual_id="4372124"><math alttext="x_{1}=\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="17764813" visual_id="2386304"><math alttext="x_{n+1}=\sin x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> it is a result of Jean Ecalle at Orsay that we may take <span class="math-container" id="17764814" visual_id="7857966"><math alttext="\alpha(x)=\lim_{n\rightarrow\infty}\;\;\;\frac{3}{x_{n}^{2}}\;+\;\frac{6\log x% _{n}}{5}\;+\;\frac{79x_{n}^{2}}{1050}\;+\;\frac{29x_{n}^{4}}{2625}\;-\;n." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mpadded width="+8.3pt"><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub></mpadded><mo>⁡</mo><mpadded width="+2.8pt"><mfrac><mn>3</mn><msubsup><mi>x</mi><mi>n</mi><mn>2</mn></msubsup></mfrac></mpadded></mrow><mo rspace="5.3pt">+</mo><mpadded width="+2.8pt"><mfrac><mrow><mn>6</mn><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mn>5</mn></mfrac></mpadded><mo rspace="5.3pt">+</mo><mpadded width="+2.8pt"><mfrac><mrow><mn>79</mn><mo>⁢</mo><msubsup><mi>x</mi><mi>n</mi><mn>2</mn></msubsup></mrow><mn>1050</mn></mfrac></mpadded><mo rspace="5.3pt">+</mo><mpadded width="+2.8pt"><mfrac><mrow><mn>29</mn><mo>⁢</mo><msubsup><mi>x</mi><mi>n</mi><mn>4</mn></msubsup></mrow><mn>2625</mn></mfrac></mpadded></mrow><mo rspace="5.3pt">-</mo><mi>n</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Note that <span class="math-container" id="17764815" visual_id="93"><math alttext="\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi></semantics></math></span> actually is defined on  <span class="math-container" id="17764816" visual_id="2319"><math alttext="0&amp;lt;x&amp;lt;\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mrow><mi>x</mi><mo>&lt;</mo></mrow><mi>π</mi></mrow></semantics></math></span> with <span class="math-container" id="17764817" visual_id="4372127"><math alttext="\alpha(\pi-x)=\alpha(x)," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> but the symmetry also means that the inverse function returns to the interval  <span class="math-container" id="17764818" visual_id="4372128"><math alttext="0&amp;lt;x\leq\frac{\pi}{2}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mi>x</mi></mrow><mo>≤</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>.</mo></mrow></semantics></math></span> You can see how this cannot be extended around the origin as a meromorphic function because of the evident logarithm term.</p> <p>Before going on, the limit technique in the previous paragraph is given in pages 346-353 of <em>Iterative Functional Equations</em> by Marek Kuczma, Bogdan Choczewski, and Roman Ger. The solution is specifically Theorem 8.5.8 of subsection 8.5D, bottom of page 351 to top of page 353. Subsection 8.5A, pages 346-347, about Julia's equation, is part of the development.</p> <p>We define ( at least for <span class="math-container" id="17764819" visual_id="1663039"><math alttext="0&amp;lt;x\leq\frac{\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mi>x</mi></mrow><mo>≤</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math></span>)  <span class="math-container" id="17764820" visual_id="4372130"><math alttext="f(x)=\alpha^{-1}\left(\frac{1}{2}+\alpha(x)\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>α</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span> That's the short version. In Milnor's book, <span class="math-container" id="17764821" visual_id="93"><math alttext="\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi></semantics></math></span> is called a Fatou coordinate.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1916241"> formal solution of <span class="math-container" id="17765301" visual_id="4388054"><math alttext="f(f(z))=g(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is analytic? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

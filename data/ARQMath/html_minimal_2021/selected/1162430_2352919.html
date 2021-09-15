@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove the following summation inequality: $\sum_{i=1}^n(a_i)\sum_{i=1}^n(\frac{1}{a_i})\ge n^2$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove the following summation inequality: <span class="math-container" id="10913519" visual_id="2359504"><math alttext="\sum_{i=1}^{n}(a_{i})\sum_{i=1}^{n}(\frac{1}{a_{i}})\geq n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><msub><mi>a</mi><mi>i</mi></msub></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>≥</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1162430">
+<p><span class="math-container" id="10913520" visual_id="2359504"><math alttext="\sum_{i=1}^{n}(a_{i})\sum_{i=1}^{n}(\frac{1}{a_{i}})\geq n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><msub><mi>a</mi><mi>i</mi></msub></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>≥</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span> is what I want to prove, where <span class="math-container" id="10913521" visual_id="160"><math alttext="a_{i}&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> and I need to showwhen equality holds.  I have tried using Cauchy-Schwarz, where inside the sums I multiply each value by 1 to do it but it doesn't work out.  I have also done</p> <p><span class="math-container" id="10913522" visual_id="2359505"><math alttext="\sum_{i=1}^{n}(a_{i})\sum_{i=1}^{n}(\frac{1}{a_{i}})=\sum_{i=1}^{n}\sum_{i=1}^% {n}(\frac{a_{i}}{a_{i}})=\sum_{i=1}^{n}\sum_{i=1}^{n}(1)=\sum_{i=1}^{n}(n)=n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><msub><mi>a</mi><mi>i</mi></msub></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mo stretchy="false">(</mo><mfrac><msub><mi>a</mi><mi>i</mi></msub><msub><mi>a</mi><mi>i</mi></msub></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span>, but this proves an equality.</p> <p>Am I not allowed to do the first step I did in my work?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> linear-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2352919" id="answer">
+<p>(<em>Late answer, but I just flagged a recent question as a duplicate of this one, and thought I'd leave yet another way to solve it here</em>.)</p> <p>The given inequality <span class="math-container" id="10913534" visual_id="2359509"><math alttext="\displaystyle\,\left(\sum_{i=1}^{n}a_{i}\right)\left(\sum_{i=1}^{n}\frac{1}{a_% {i}}\right)\geq n^{2}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo lspace="4.2pt">(</mo><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><msub><mi>a</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mn>1</mn><msub><mi>a</mi><mi>i</mi></msub></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>≥</mo><mpadded width="+1.7pt"><msup><mi>n</mi><mn>2</mn></msup></mpadded></mrow></semantics></math></span> is equivalent to <span class="math-container" id="10913535" visual_id="2359510"><math alttext="\;\displaystyle\,\frac{\displaystyle\;\sum_{i=1}^{n}a_{i}\;}{n}\geq\frac{n}{% \displaystyle\;\sum_{i=1}^{n}\frac{1}{a_{i}}\;}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="4.4pt" width="+4.4pt"><mstyle displaystyle="true"><mfrac><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" lspace="5.3pt" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mpadded width="+2.8pt"><msub><mi>a</mi><mi>i</mi></msub></mpadded></mrow><mi>n</mi></mfrac></mstyle></mpadded><mo>≥</mo><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mi>n</mi><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" lspace="5.3pt" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mpadded width="+2.8pt"><mstyle displaystyle="true"><mfrac><mn>1</mn><msub><mi>a</mi><mi>i</mi></msub></mfrac></mstyle></mpadded></mrow></mfrac></mstyle></mpadded></mrow></semantics></math></span>.</p> <p>The latter is the <span class="math-container" id="10913536" visual_id="2359511"><math alttext="\text{AM}\geq\text{HM}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>AM</mtext><mo>≥</mo><mtext>HM</mtext></mrow></semantics></math></span> inequality between the arithmetic and harmonic means of <span class="math-container" id="10913537" visual_id="177"><math alttext="\,n\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="1.7pt" width="+3.4pt"><mi>n</mi></mpadded></semantics></math></span> positive numbers, which holds true by the <a href="https://en.wikipedia.org/wiki/Generalized_mean#Special_cases" rel="nofollow noreferrer">generalized mean inequality</a>, with equality iff all <span class="math-container" id="10913538" visual_id="164"><math alttext="\,a_{i}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded width="+1.7pt"><msub><mpadded lspace="1.7pt" width="+1.7pt"><mi>a</mi></mpadded><mi>i</mi></msub></mpadded></semantics></math></span> are equal.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1686455"> Inequality <span class="math-container" id="15585866" visual_id="2359509"><math alttext="(\sum_{i=1}^{n}a_{i})(\sum_{i=1}^{n}\frac{1}{a_{i}})\geq n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>a</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><msub><mi>a</mi><mi>i</mi></msub></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

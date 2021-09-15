@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why is establishing absolute consistency of ZFC impossible?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why is establishing absolute consistency of ZFC impossible? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1746563">
+<p>Why is establishing the absolute consistency of ZFC impossible? What are the fundamental limitations that prohibit us with coming up with a proof?</p> <p><strong>EDIT:</strong> <a href="https://mathoverflow.net/q/24919">This</a> post seems to make the most sense. In short: if we were to come up with a mathematical proof of the consistency of ZFC, we would be able to mimic that proof inside ZFC. Ergo, if ZFC is consistent, there can be no proof that it is.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> set-theory </span><span> formal-systems </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3564063"> Gödel's second incompleteness theorem </td></tr><tr><td comment_id="3564074"> and the lack of a stronger commonly accepted system in which to conduct the consistency proof — one that a consensus of mathematicians accepts as true, which incorporates some principle or axiom not already present in first order logic + ZFC. </td></tr><tr><td comment_id="3564415"> Every proof exists inside some axiomatic system - but why should you trust whatever axioms prove ZFC to be consistent? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1785913" id="answer">
+<p>To add to Carl Mummert's answer...</p> <h2>Confusing point 0: No formal system can be shown to be absolutely consistent.</h2> <p>Yes you read that right. Perhaps you might say, how about the formal system consisting of just first-order logic and not a single axiom, namely the pure identity theory, or maybe even without equality? Sorry, but that doesn't work. How do you state the claim that this system is absolutely consistent? You would need to work in a meta-system that is powerful enough to reason about sentences that are provable over the formal system. To do so, your meta-system already needs string manipulation capability, which turns out to be more or less equivalent to first-order PA. Hence before you can even <strong>assert</strong> that any formal system is consistent, you need to believe the consistency of the meta-system, which is likely going to be essentially PA, which then means that you <strong>do not ever have</strong> absolute consistency.</p> <p>Of course, if you <strong>assume</strong> that PA is consistent, then you have some other options, but even then it's not so simple. For example you may try defining "absolute consistent" as "provably consistent within PA as the meta-system". This flops on its face because then you cannot even claim that PA itself is absolutely consistent, otherwise it contradicts Godel's incompleteness theorem. So ok you try again, this time defining "T is absolutely consistent" to mean "PA proves that Con(PA) implies Con(T)". Alright this is better; at least we can now show that PA is absolutely consistent, though it is trivial! </p> <p>However, note that even with the assumption of consistency of some formal system such as PA, as above, you are still working in some meta-system, and by doing so you are already accepting the consistency of that meta-system without being able to affirm it <a href="https://math.stackexchange.com/a/1334753/21820">non-circularly</a>. Therefore any attempt to define any truly absolute notion of consistency is doomed from the start.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1334678"> Does mathematics become circular at the bottom? What is at the bottom of mathematics? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

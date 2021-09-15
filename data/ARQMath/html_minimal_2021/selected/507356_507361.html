@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding the monotonicity and bound of a series</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding the monotonicity and bound of a series </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="507356">
+<p>How would you find the bound  of the following.</p> <p><span class="math-container" id="5311990" visual_id="2867887"><math alttext="\frac{\sqrt{n+1}}{\sqrt{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><msqrt><mi>n</mi></msqrt></mfrac></semantics></math></span></p> <p>I did<br/> <span class="math-container" id="5311991" visual_id="2867887"><math alttext="\frac{\sqrt{n+1}}{\sqrt{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><msqrt><mi>n</mi></msqrt></mfrac></semantics></math></span>&gt;<span class="math-container" id="5311992" visual_id="2867888"><math alttext="\frac{\sqrt{n+1+1}}{\sqrt{n+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></mrow></msqrt><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac></semantics></math></span></p> <p><span class="math-container" id="5311993" visual_id="2867889"><math alttext="\sqrt{2}&amp;gt;\frac{\sqrt{3}}{\sqrt{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msqrt><mn>2</mn></msqrt><mo>&gt;</mo></mrow><mfrac><msqrt><mn>3</mn></msqrt><msqrt><mn>2</mn></msqrt></mfrac></mrow></semantics></math></span> making it decreasing</p> <p>Then I figured bound above by <span class="math-container" id="5311994" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> and bound below by 1.</p> <p>But would I be correct.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="507361" id="answer">
+<p><span class="math-container" id="5311995" visual_id="2867890"><math alttext="\frac{\sqrt{n+1}}{\sqrt{n}}=\sqrt{\frac{n+1}{n}}\leq\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><msqrt><mi>n</mi></msqrt></mfrac><mo>=</mo><msqrt><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac></msqrt><mo>≤</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math></span></p> <p>since we know (I hope...) that</p> <p><span class="math-container" id="5311996" visual_id="2867891"><math alttext="\frac{n+1}{n}\leq 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>≤</mo><mn>2</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1088723"> Yes yes it is true if n=1 </td></tr><tr><td comment_id="1088726"> I don't get it: what is that is "true"? </td></tr><tr><td comment_id="1088730"> Never mind I made a mistake, what I mean is that if n=1 and then n=2 then n=3 and you keep going then <span class="math-container" id="5311997" visual_id="2867892"><math alttext="\frac{n+1}{n}=&lt;2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>=</mo><mo>&lt;</mo><mn>2</mn></mrow></semantics></math></span> will be true making it a decreasing series. </td></tr><tr><td comment_id="1088737"> Well, yes....but can you prove it? </td></tr><tr><td comment_id="1089031"> Hmm I guess with a graph it could be proved </td></tr><tr><td comment_id="1089324"> Also observing that <span class="math-container" id="5311998" visual_id="2867893"><math alttext="\frac{n+1}{n}\leq 2\iff n+1\leq 2n\iff n\geq 1\;\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>≤</mo><mn>2</mn></mrow><mo>⇔</mo><mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>⇔</mo><mrow><mi>n</mi><mo>≥</mo><mrow><mpadded width="+2.8pt"><mn>1</mn></mpadded><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

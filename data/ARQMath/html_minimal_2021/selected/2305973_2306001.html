@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Cannot understand why do we need to split $x$ variables into $x^+$ and $x^-$ in Linear Programming</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Cannot understand why do we need to split <span class="math-container" id="21308414" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> variables into <span class="math-container" id="21308415" visual_id="59975"><math alttext="x^{+}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>+</mo></msup></semantics></math></span> and <span class="math-container" id="21308416" visual_id="188783"><math alttext="x^{-}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>-</mo></msup></semantics></math></span> in Linear Programming </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2305973">
+<p>In <a href="https://www.youtube.com/watch?v=IOQApuleqvg&amp;t=1429s" rel="nofollow noreferrer">this</a> video MIT professor says that you need to split <span class="math-container" id="21308417" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> into <span class="math-container" id="21308418" visual_id="59975"><math alttext="x^{+}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>+</mo></msup></semantics></math></span> and <span class="math-container" id="21308419" visual_id="188783"><math alttext="x^{-}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>-</mo></msup></semantics></math></span> such that <span class="math-container" id="21308420" visual_id="741478"><math alttext="x=x^{+}-x^{-}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><msup><mi>x</mi><mo>+</mo></msup><mo>-</mo><msup><mi>x</mi><mo>-</mo></msup></mrow></mrow></semantics></math></span> (at 53:42) to convert any LP to standard form.</p> <p>Standard LP form is:</p> <p><span class="math-container" id="21308421" visual_id="8358561"><math alttext="max\ c^{T}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mpadded width="+5pt"><mi>x</mi></mpadded><mo>⁢</mo><msup><mi>c</mi><mi>T</mi></msup><mo>⁢</mo><mi>x</mi></mrow></semantics></math></span></p> <p><span class="math-container" id="21308422" visual_id="10813"><math alttext="Ax=b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mi>b</mi></mrow></semantics></math></span></p> <p><span class="math-container" id="21308423" visual_id="2019"><math alttext="x\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span></p> <p>It does not make any sense to me. I do not understand what is happening.  I will appreciate if you can explain.</p> <p>thank you </p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-programming </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2306001" id="answer">
+<p>When you're converting an optimisation problem from general form to standard form, this is how you deal with variables which have no sign constraints.  <br/> If <span class="math-container" id="21308424" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is a variable without a sign constraint, that means that <span class="math-container" id="21308425" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> can take on both positive and negative values. So both <span class="math-container" id="21308426" visual_id="2019"><math alttext="x\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="21308427" visual_id="2021"><math alttext="x&amp;lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>&lt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> are possible. But in standard form, we want all our variables to be non-negative. To deal with this problem, we introduce two variables in place of <span class="math-container" id="21308428" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, both of which are positive such that <span class="math-container" id="21308429" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> could take the whole spectrum of positive and negative values. <br/> If we write <span class="math-container" id="21308430" visual_id="741478"><math alttext="x=x^{+}-x^{-}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><msup><mi>x</mi><mo>+</mo></msup><mo>-</mo><msup><mi>x</mi><mo>-</mo></msup></mrow></mrow></semantics></math></span> where both <span class="math-container" id="21308431" visual_id="2444066"><math alttext="x^{+},x^{-}\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mo>+</mo></msup><mo>,</mo><msup><mi>x</mi><mo>-</mo></msup></mrow><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> are non negative,  then if <span class="math-container" id="21308432" visual_id="8922586"><math alttext="x^{+}\geq x^{-}\ ,x\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mo>+</mo></msup><mo>≥</mo><mpadded width="+5pt"><msup><mi>x</mi><mo>-</mo></msup></mpadded></mrow><mo>,</mo><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></mrow></semantics></math></span> and if <span class="math-container" id="21308433" visual_id="8922587"><math alttext="x^{-}&amp;lt;x^{+}\ ,x&amp;lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mo>-</mo></msup><mo>&lt;</mo></mrow><mpadded width="+5pt"><msup><mi>x</mi><mo>+</mo></msup></mpadded><mo>,</mo><mrow><mi>x</mi><mo>&lt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>. This way we meet the criteria for converting our variable (variables) into standard form. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4745893"> so I still don't get what is the problem of writing it as x &gt;= 0 </td></tr><tr><td comment_id="4745899"> You're removing valid possibilities from your feasible set. When there is no sign constraint on <span class="math-container" id="21308434" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, there could be feasible points with <span class="math-container" id="21308435" visual_id="13252"><math alttext="x&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span> and maybe one of them is optimal.  In that case, if you try to solve the linear program with just <span class="math-container" id="21308436" visual_id="2019"><math alttext="x\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> then you will not find the best solution. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

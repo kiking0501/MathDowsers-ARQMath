@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that any two consecutive odd integers are relatively prime</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that any two consecutive odd integers are relatively prime </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1658655">
+<p>I've selected two integers <span class="math-container" id="15331237" visual_id="20262"><math alttext="m=2k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> and <span class="math-container" id="15331238" visual_id="20263"><math alttext="n=2k+3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>3</mn></mrow></mrow></semantics></math></span> and I've tried to make a linear combination of the two such that it equals 1, but I'm sort of stuck and am not sure if this is a dead end or not. Any pointers or alternative ideas?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> divisibility </span><span> gcd-and-lcm </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1659963" id="answer">
+<p>A=2n+1=c*a , where c is a common divisor</p> <p>B=2n-1=c*b</p> <p>A-B=c(a-b)=2</p> <p>A&gt;B hence a&gt;b hence a-b&gt;0.</p> <p>If a-b=1 then c=2, and then A and B (since A=c<em>a, B=c</em>b) are not odd, which is a contradiction. Hence a-b is not 1.</p> <p>If a-b=2 then c=1.</p> <p>If a-b&gt;2 then c*(a-b)&gt;2 which is a contradiction.</p> <p>Hence c=1 is the only option for a common divisor c.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3385588"> Try to use MathJax. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

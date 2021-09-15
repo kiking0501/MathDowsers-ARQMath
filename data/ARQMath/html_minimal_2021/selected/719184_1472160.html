@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is every Riemann-integrable function lebesgue integrable?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is every Riemann-integrable function lebesgue integrable? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="719184">
+<p>I thought every Riemann integrable function is lebesgue integrable. But <a href="https://math.stackexchange.com/a/364185">here</a>, a user comments that the statement is not correct.  I'm confused.  Can someone clarify?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> integration </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1503844"> @SanathDevalapurkar But that's not a Riemann integral after all. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1472160" id="answer">
+<p>No. This does not have to always hold on unbounded intervals. </p> <p><span class="math-container" id="7176239" visual_id="374727"><math alttext="\int_{0}^{\infty}\frac{\sin{x}}{x}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> exists in the sense of Riemann, but does not exist in the sense of Lebesgue as </p> <p><span class="math-container" id="7176240" visual_id="725991"><math alttext="\int_{(0,\infty)}\frac{\sin{x}}{x}\,d\mu." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></msub><mrow><mpadded width="+1.7pt"><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>μ</mi></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>This has to do with the fact that there is no "conditional convergence" in Lebesgue Integration.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="364184"> Lebesgue Integral but not a Riemann integral </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

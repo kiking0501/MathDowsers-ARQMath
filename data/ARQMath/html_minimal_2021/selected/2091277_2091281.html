@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Ratio of number of rectangles and number of squares in a chess board</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Ratio of number of rectangles and number of squares in a chess board </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2091277">
+<p>We have to find the Ratio of number of rectangles (not squares) and number of squares in a chess board.</p> <p>For this type of question do we have to manually count the squares and rectangles or is there any other method?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> permutations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2091281" id="answer">
+<p>The number of squares is <span class="math-container" id="19340064" visual_id="7729657"><math alttext="1^{2}+2^{2}+\dots+8^{2}=\frac{8\times 9\times 17}{6}=204" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msup><mn>8</mn><mn>2</mn></msup></mrow><mo>=</mo><mfrac><mrow><mn>8</mn><mo>×</mo><mn>9</mn><mo>×</mo><mn>17</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mn>204</mn></mrow></semantics></math></span> and the number of rectangles is <span class="math-container" id="19340065" visual_id="5292639"><math alttext="\binom{9}{2}^{2}=36^{2}=1296" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>9</mn><mn>2</mn></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mn>36</mn><mn>2</mn></msup><mo>=</mo><mn>1296</mn></mrow></semantics></math></span>. So the answer is <span class="math-container" id="19340066" visual_id="7729658"><math alttext="\frac{204}{1296-204}=\frac{17}{91}\approx 0.1868" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>204</mn><mrow><mn>1296</mn><mo>-</mo><mn>204</mn></mrow></mfrac><mo>=</mo><mfrac><mn>17</mn><mn>91</mn></mfrac><mo>≈</mo><mn>0.1868</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4298370"> Can you please explain , how do you get the sum of square terms and <span class="math-container" id="19340067" visual_id="1186838"><math alttext="{}^{9}C_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mmultiscripts><mi>C</mi><mn>2</mn><none></none><mprescripts></mprescripts><none></none><mn>9</mn></mmultiscripts></semantics></math></span> </td></tr><tr><td comment_id="4298374"> for the sum of squares you use the formula <span class="math-container" id="19340068" visual_id="61930"><math alttext="\sum\limits_{i=1}^{n}i^{2}=\frac{n(n+1)(2n+1)}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>i</mi><mn>2</mn></msup></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></mrow></semantics></math></span> and for the binomial squared notice that selecting a rectangle is equivalent to selecting two vertical lines and selecting two horizontal lines. There are <span class="math-container" id="19340069" visual_id="3052"><math alttext="9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn></semantics></math></span> options for each orientation. </td></tr><tr><td comment_id="4298378"> For sum of squares, I want to know why you have used it . </td></tr><tr><td comment_id="4298382"> oh, because there are <span class="math-container" id="19340070" visual_id="293781"><math alttext="8^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>8</mn><mn>2</mn></msup></semantics></math></span> squares of size <span class="math-container" id="19340071" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, <span class="math-container" id="19340072" visual_id="171"><math alttext="7^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>7</mn><mn>2</mn></msup></semantics></math></span> squares of size <span class="math-container" id="19340073" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> etc. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

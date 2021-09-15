@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proof of inequality $2(\sqrt{n+1}-\sqrt{n}) < \frac{1}{\sqrt{n}} < 2(\sqrt{n} - \sqrt{n-1})$ using induction</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proof of inequality <span class="math-container" id="2913864" visual_id="2090115"><math alttext="2(\sqrt{n+1}-\sqrt{n})&lt;\frac{1}{\sqrt{n}}&lt;2(\sqrt{n}-\sqrt{n-1})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>-</mo><msqrt><mi>n</mi></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mi>n</mi></msqrt><mo>-</mo><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> using induction </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="263115">
+<p>Prove that <span class="math-container" id="2913865" visual_id="5044487"><math alttext="2(\sqrt{n+1}-\sqrt{n})&amp;lt;\frac{1}{\sqrt{n}}&amp;lt;2(\sqrt{n}-\sqrt{n-1})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>-</mo><msqrt><mi>n</mi></msqrt></mrow><mo stretchy="false">)</mo></mrow><mo>&lt;</mo></mrow><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>&lt;</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mi>n</mi></msqrt><mo>-</mo><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> if <span class="math-container" id="2913866" visual_id="967"><math alttext="n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span> using induction.</p> <p>Can someone help me with this problem please. Base case is easily shown, and for the inductive step I know I have to use the inequality for <span class="math-container" id="2913867" visual_id="7984"><math alttext="n\gt 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mn>1</mn></mrow></semantics></math></span> to show that it is true for <span class="math-container" id="2913868" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>, but I am not quite sure how to. </p> <p>Thanks.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> inequality </span><span> induction </span><span> radicals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="574868"> I would try to make 2 inductions: left to middle, and middle to right </td></tr><tr><td comment_id="574892"> This inequality is a hint for a problem in the book of Richard A. Silverman. Page 61. </td></tr><tr><td comment_id="3810070"> Related question: http://math.stackexchange.com/questions/1139563/proof-by-induction-2-sqrtn1-sqrtn-frac1-sqrtn-2-sqrtn </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="263126" id="answer">
+<p>Let's only concentrate on the middle to right inequality. </p> <p>This can be easily proven without induction. Indeed,</p> <p><span class="math-container" id="2913871" visual_id="5781515"><math alttext="\frac{1}{\sqrt{n}}&amp;lt;2(\sqrt{n}-\sqrt{n-1})\iff\frac{1}{2}&amp;lt;n-\sqrt{n^{2}-n% }\iff\\ \sqrt{n^{2}-n}&amp;lt;n-\frac{1}{2}\iff n^{2}-n&amp;lt;n^{2}-n+\frac{1}{4}\iff 0&amp;lt;% \frac{1}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>&lt;</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mi>n</mi></msqrt><mo>-</mo><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>⇔</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&lt;</mo></mrow><mrow><mi>n</mi><mo>-</mo><msqrt><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mi>n</mi></mrow></msqrt></mrow></mrow><mo>⇔</mo><mrow><mrow><msqrt><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mi>n</mi></mrow></msqrt><mo>&lt;</mo></mrow><mrow><mi>n</mi><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mrow><mo>⇔</mo><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>n</mi><mo>&lt;</mo></mrow></mrow><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mi>n</mi></mrow><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></mrow><mo>⇔</mo><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></mrow></semantics></math></span> which holds. Induction would complicate things a lot as you will see:</p> <p>Assume <span class="math-container" id="2913872" visual_id="5781516"><math alttext="\frac{1}{\sqrt{n}}&amp;lt;2(\sqrt{n}-\sqrt{n-1})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>&lt;</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mi>n</mi></msqrt><mo>-</mo><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> for some <span class="math-container" id="2913873" visual_id="967"><math alttext="n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>. We must prove that <span class="math-container" id="2913874" visual_id="4416636"><math alttext="\frac{1}{\sqrt{n+1}}&amp;lt;2(\sqrt{n+1}-\sqrt{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac><mo>&lt;</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>-</mo><msqrt><mi>n</mi></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> or equivalently that <span class="math-container" id="2913875" visual_id="5781517"><math alttext="\frac{1}{\sqrt{n}}&amp;lt;2\frac{(\sqrt{n+1}-\sqrt{n})\sqrt{n+1}}{\sqrt{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>&lt;</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>-</mo><msqrt><mi>n</mi></msqrt></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mrow><msqrt><mi>n</mi></msqrt></mfrac></mrow></mrow></semantics></math></span> In order to use our assumption, it seems natural to try and show that <span class="math-container" id="2913876" visual_id="5781518"><math alttext="2(\sqrt{n}-\sqrt{n-1})&amp;lt;2\frac{(\sqrt{n+1}-\sqrt{n})\sqrt{n+1}}{\sqrt{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mi>n</mi></msqrt><mo>-</mo><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow><mo>&lt;</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>-</mo><msqrt><mi>n</mi></msqrt></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mrow><msqrt><mi>n</mi></msqrt></mfrac></mrow></mrow></semantics></math></span></p> <p>This is only sufficient and not neccessary. Unfortunately however, not only does this not hold, but proving that it is wrong will be harder than showing the whole thing without induction!:</p> <p><span class="math-container" id="2913877" visual_id="5781519"><math alttext="\sqrt{n}-\sqrt{n-1}&amp;lt;\frac{(\sqrt{n+1}-\sqrt{n})\sqrt{n+1}}{\sqrt{n}}\iff n-% \sqrt{n^{2}-n}&amp;lt;n+1-\sqrt{n^{2}+n}\iff\\ \sqrt{n^{2}+n}&amp;lt;1+\sqrt{n^{2}-n}\iff n^{2}+n&amp;lt;1+2\sqrt{n^{2}-n}+n^{2}-n% \iff\\ 2n-1&amp;lt;2\sqrt{n^{2}-n}\iff 4n^{2}-4n+1&amp;lt;4n^{2}-4n\iff 1&amp;lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msqrt><mi>n</mi></msqrt><mo>-</mo><mrow><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt><mo>&lt;</mo></mrow></mrow><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>-</mo><msqrt><mi>n</mi></msqrt></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mrow><msqrt><mi>n</mi></msqrt></mfrac></mrow><mo>⇔</mo><mrow><mrow><mi>n</mi><mo>-</mo><mrow><msqrt><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mi>n</mi></mrow></msqrt><mo>&lt;</mo></mrow></mrow><mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>-</mo><msqrt><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow></msqrt></mrow></mrow><mo>⇔</mo><mrow><mrow><msqrt><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow></msqrt><mo>&lt;</mo></mrow><mrow><mn>1</mn><mo>+</mo><msqrt><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mi>n</mi></mrow></msqrt></mrow></mrow><mo>⇔</mo><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>n</mi><mo>&lt;</mo></mrow></mrow><mrow><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mi>n</mi></mrow></msqrt></mrow><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>-</mo><mi>n</mi></mrow></mrow><mo>⇔</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mrow><mn>1</mn><mo>&lt;</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mi>n</mi></mrow></msqrt></mrow></mrow><mo>⇔</mo><mrow><mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>+</mo><mrow><mn>1</mn><mo>&lt;</mo></mrow></mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></mrow><mo>⇔</mo><mrow><mrow><mn>1</mn><mo>&lt;</mo></mrow><mn>0</mn></mrow></mrow></semantics></math></span> which is absurd. So, unless I have done a mistake in my calculations (very likely) , induction isn't a shortcut to solve this problem (unless of course you use the assumption in a different and smarter way)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1860187"> Proof of the square root inequality <span class="math-container" id="17224073" visual_id="2090111"><math alttext="2\sqrt{n+1}-2\sqrt{n}&lt;\frac{1}{\sqrt{n}}&lt;2\sqrt{n}-2\sqrt{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></mrow><mo>&lt;</mo><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>&lt;</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2331915"> Need a hint to start prove an inequality </td></tr><tr><td post_id="1139563"> Proof by Induction: <span class="math-container" id="10727874" visual_id="2090115"><math alttext="2(\sqrt{n+1}-\sqrt{n})&lt;\frac{1}{\sqrt{n}}&lt;2(\sqrt{n}-\sqrt{n-1})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>-</mo><msqrt><mi>n</mi></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msqrt><mi>n</mi></msqrt><mo>-</mo><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1953739"> Properties of the sequence <span class="math-container" id="18110244" visual_id="367185"><math alttext="x_{n}=\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><msqrt><mi>n</mi></msqrt></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

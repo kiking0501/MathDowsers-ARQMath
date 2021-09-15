@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Question on logical inferences</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Question on logical inferences </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="193977">
+<p>The instruction of this question is:</p> <blockquote> <p>Encode the following arguments and show whether they are valid or not.   If not valid give countermodels i.e., truth assignments to the   propositions which make them false.</p> <p>If the investigation continues, then new evidence is brought to light.   If new evidence is brought to light, then several leading citizens are   implicated. If several leading citizens are implicated, then the   newspapers stop publicizing the case. If continuation of the   investigation implies that the newspapers stop publicizing the case,   then bringing to light of new evidence implies that the investigation   continues. The investigation does not continue. Therefore, new   evidence is not brought to light.</p> </blockquote> <p><strong>My attempt</strong>:</p> <p>Let <span class="math-container" id="2249493" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> denote "the investigation continues"<br/> <span class="math-container" id="2249494" visual_id="625"><math alttext="\quad q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="10pt" width="+10pt"><mi>q</mi></mpadded></semantics></math></span> denote "new evidence is brought to light"<br/> <span class="math-container" id="2249495" visual_id="180"><math alttext="\quad r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="10pt" width="+10pt"><mi>r</mi></mpadded></semantics></math></span> denote "several leading citizens are implicated"<br/> <span class="math-container" id="2249496" visual_id="706"><math alttext="\quad s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="10pt" width="+10pt"><mi>s</mi></mpadded></semantics></math></span> denote "the newspapers stop publicizing the case"  </p> <p>So, the premises are:<br/> <span class="math-container" id="2249497" visual_id="23296"><math alttext="p\to q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></semantics></math></span><br/> <span class="math-container" id="2249498" visual_id="431559"><math alttext="q\to r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>→</mo><mi>r</mi></mrow></semantics></math></span><br/> <span class="math-container" id="2249499" visual_id="674647"><math alttext="r\to s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>→</mo><mi>s</mi></mrow></semantics></math></span><br/> <span class="math-container" id="2249500" visual_id="6013282"><math alttext="(p\to s)\to(q\to p)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>→</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span><br/> <span class="math-container" id="2249501" visual_id="23293"><math alttext="\neg p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow></semantics></math></span></p> <p><span class="math-container" id="2249502" visual_id="1605129"><math alttext="\therefore\neg q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\therefore</mtext></merror><mo>⁢</mo><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>q</mi></mrow></semantics></math></span></p> <p>I am very much a beginner in logic so I am not sure if this is correct so far or how to prove or disprove this using the standard <a href="http://en.wikipedia.org/wiki/List_of_rules_of_inference" rel="nofollow">rules of inference</a>. Any ideas?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> propositional-calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="194073" id="answer">
+<p>Here's a simplification of Zhen Lin's argument. We know <span class="math-container" id="2249510" visual_id="6013282"><math alttext="(p\to s)\to(q\to p)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>→</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> Contrapose this: <span class="math-container" id="2249511" visual_id="6013284"><math alttext="(q\land\neg p)\to(p\land\neg s)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>q</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>s</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> Now I'm going to prove <span class="math-container" id="2249512" visual_id="82937"><math alttext="q\to p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow></semantics></math></span> by contradiction. We assume its negation  <span class="math-container" id="2249513" visual_id="4821643"><math alttext="q\land\neg p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow></mrow></semantics></math></span> and from this and (B) by modus ponens we can then conclude <span class="math-container" id="2249514" visual_id="6013285"><math alttext="p\land\neg s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>s</mi></mrow></mrow></semantics></math></span> and in particular <span class="math-container" id="2249515" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>. However (C) also trivially implies <span class="math-container" id="2249516" visual_id="23293"><math alttext="\neg p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow></semantics></math></span> which is a contradiction.</p> <p>Thus, given (A) I have proved  <span class="math-container" id="2249517" visual_id="82937"><math alttext="q\to p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow></semantics></math></span> (And in contrast to Zhen I didn't even need the <span class="math-container" id="2249518" visual_id="23293"><math alttext="\neg p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow></semantics></math></span> premise to do so. On the other hand, my proof is not intuitionistically valid).</p> <p>Now the story explicitly tells us <span class="math-container" id="2249519" visual_id="23293"><math alttext="\neg p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow></semantics></math></span>. Therefore, by modus tollens and (D), we have <span class="math-container" id="2249520" visual_id="23294"><math alttext="\neg q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>q</mi></mrow></semantics></math></span>. Q.E.D.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Combinatorial Proof for Binomial Identity: $\sum_{k = 0}^n \binom{k}{p} = \binom{n+1}{p+1}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Combinatorial Proof for Binomial Identity: <span class="math-container" id="13085336" visual_id="3429559"><math alttext="\sum_{k=0}^{n}\binom{k}{p}=\binom{n+1}{p+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>p</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1408642">
+<p>I am studying combinatorics and I came across the identity <span class="math-container" id="13085337" visual_id="5334103"><math alttext="\sum\limits_{k=0}^{n}\binom{k}{p}=\binom{n+1}{p+1}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>p</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span> I have read the algebraic proof and it does not appeal to me. Is there an elegant counting trick we can use to arrive at this identity? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> discrete-mathematics </span><span> summation </span><span> combinations </span><span> combinatorial-proofs </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2869540"> In case <span class="math-container" id="13085338" visual_id="848"><math alttext="p=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>? More than one question mark reads as an insulting tone. @WillJagy </td></tr><tr><td comment_id="2869545"> @WillJagy I do realize that <span class="math-container" id="13085339" visual_id="4137084"><math alttext="\binom{k}{p}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>p</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> if <span class="math-container" id="13085340" visual_id="1566510"><math alttext="k&lt;p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&lt;</mo><mi>p</mi></mrow></semantics></math></span> <span class="math-container" id="13085341" visual_id="209921"><math alttext="(k\in\mathbb{Z})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>. I guess it is more elegant to write it that way. And everything is well defined so there is no issues. </td></tr><tr><td comment_id="2872719"> @GeorgeSimpson: I disagree with this duplication mark. This question is explicitly asking for a combinatorial proof contrary to the referred question. So, two of three answers of the referred question are to exlude as proper answer for this question. The combinatorial answers here which are quite ok for this question do hardly answer the referred binomial identity. </td></tr><tr><td comment_id="2879730"> @MarkusScheuer Looking among [linked](http://math.stackexchange.com/questions/linked/833451) and related questions it seems that there are several other questions about combinatorial proof of the same identity. For example: [321022](http://math.stackexchange.com/q/321022), [497413](http://math.stackexchange.com/q/497413) [1332282](http://math.stackexchange.com/q/1332282). If needed, we can discuss this further [in chat](http://chat.stackexchange.com/transcript/2165). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1408650" id="answer">
+<p>What do you get when you take a sequence of ones and zeros of length <span class="math-container" id="13085342" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>  that has <span class="math-container" id="13085343" visual_id="407"><math alttext="k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> ones and remove the rightmost <span class="math-container" id="13085344" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> and everything to its right?</p> <p>Example: <span class="math-container" id="13085345" visual_id="5334104"><math alttext="100100\rightarrow 100" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100100</mn><mo>→</mo><mn>100</mn></mrow></semantics></math></span></p> <p>You get a sequence that has <span class="math-container" id="13085346" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> ones, the length varies between <span class="math-container" id="13085347" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> and <span class="math-container" id="13085348" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> depending on the actual sequence.</p> <p>In fact this function is a bijection between the sequences of length <span class="math-container" id="13085349" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="13085350" visual_id="407"><math alttext="k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> ones and the sequences of length <span class="math-container" id="13085351" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> or less and <span class="math-container" id="13085352" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> ones.</p> <p>This establishes <span class="math-container" id="13085353" visual_id="5334105"><math alttext="\binom{n+1}{k+1}=\sum\limits_{j=k}^{n}\binom{j}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mi>k</mi></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>j</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1522826"> Prove combinatorial Identity using a combinatorial argument. </td></tr><tr><td post_id="833451"> Prove <span class="math-container" id="8135802" visual_id="1618769"><math alttext="\sum\limits_{i=0}^{n}\binom{i+k-1}{k-1}=\binom{n+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>i</mi><mo>+</mo><mi>k</mi></mrow><mo>-</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> (a.k.a. Hockey-Stick Identity) </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1449829"> Prove <span class="math-container" id="13442250" visual_id="750397"><math alttext="\sum_{k=m}^{n}{k\choose m}={n+1\choose m+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mi>m</mi></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>m</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="497413"> Fermat's Combinatorial Identity: How to prove combinatorially? </td></tr><tr><td post_id="1332282"> Combinatorial proof for <span class="math-container" id="12383239" visual_id="7678316"><math alttext="\sum_{k=0}^{n}\binom{r+k}{k}=\binom{r+n+1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>r</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>r</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="321022"> Give the combinatorial proof of the identity <span class="math-container" id="3470966" visual_id="3775840"><math alttext="\sum\limits_{i=0}^{n}\binom{k-1+i}{k-1}=\binom{n+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mi>i</mi></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

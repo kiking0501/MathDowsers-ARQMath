@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Help proving there is a sequence of rational numbers</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Help proving there is a sequence of rational numbers </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3032608">
+<p>I'm trying to prove the following: </p> <p>Let <span class="math-container" id="28086467" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span> be the countable set of rational numbers and <span class="math-container" id="28086468" visual_id="12767"><math alttext="\{x_{n}\}_{n=1}^{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup></semantics></math></span> be a sequence such that for every q <span class="math-container" id="28086469" visual_id="824"><math alttext="\in" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∈</mo></semantics></math></span> <span class="math-container" id="28086470" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span> there is a <span class="math-container" id="28086471" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> with <span class="math-container" id="28086472" visual_id="195960"><math alttext="x_{n}=q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mi>q</mi></mrow></semantics></math></span>. Prove that there is such a sequence <span class="math-container" id="28086473" visual_id="9007"><math alttext="\{x_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span>. </p> <p>My initial thoughts for an attempt at a solution:</p> <p>We know that <span class="math-container" id="28086474" visual_id="1072200"><math alttext="|\mathbb{Q}|=|\mathbb{N}|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>ℚ</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>ℕ</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> by the Cantor Theorem. Further, I can show that there is a bijection between   <span class="math-container" id="28086475" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span> and <span class="math-container" id="28086476" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>. </p> <p>If I define <span class="math-container" id="28086477" visual_id="12767"><math alttext="\{x_{n}\}_{n=1}^{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup></semantics></math></span> as some relation between <span class="math-container" id="28086478" visual_id="678318"><math alttext="(p,q)\in\mathbb{Z}\times\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mrow><mi>ℤ</mi><mo>×</mo><mi>ℤ</mi></mrow></mrow></semantics></math></span>, will ths properly prove that such a sequence exists?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> proof-writing </span><span> rational-numbers </span><span> natural-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6253182"> For an explicit bijection, see -https://math.stackexchange.com/questions/7643/produce-an-explicit-bijection-between-rationals-and-naturals </td></tr><tr><td comment_id="6253196"> Thanks Thomas! This is wonderful to see! </td></tr><tr><td comment_id="6253687"> What is the definition of an infinite sequence <span class="math-container" id="28086479" visual_id="124078"><math alttext="\{x_{n}\}_{n\in\mathbb{N}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub></semantics></math></span>? It's a function <span class="math-container" id="28086480" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> with domain <span class="math-container" id="28086481" visual_id="99067"><math alttext="\mathbb{N}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℕ</mi><mo>,</mo></mrow></semantics></math></span> except we write <span class="math-container" id="28086482" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> for <span class="math-container" id="28086483" visual_id="9133"><math alttext="f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>..... And <span class="math-container" id="28086484" visual_id="8153766"><math alttext="|\mathbb{Q}|=|\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>ℚ</mi><mo stretchy="false">|</mo><mo>=</mo><mo stretchy="false">|</mo><mi>ℕ</mi></mrow></semantics></math></span>| is an abbreviation for, or an equivalent to, the statement that there exists a bijection <span class="math-container" id="28086485" visual_id="8153767"><math alttext="f:\mathbb{N}\to\mathbb{Q}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℕ</mi><mo>→</mo><mi>ℚ</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span> And that's all there is to it. </td></tr><tr><td comment_id="6253700"> You may enjoy the small book Stories About Sets, by Vilenkin. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3032621" id="answer">
+<p>It is actually quit easy once you know that <span class="math-container" id="28086486" visual_id="1072200"><math alttext="|\mathbb{Q}|=|\mathbb{N}|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>ℚ</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>ℕ</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> as this implies that there exists a bijection <span class="math-container" id="28086487" visual_id="308465"><math alttext="f:\mathbb{N}\rightarrow\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℕ</mi><mo>→</mo><mi>ℚ</mi></mrow></mrow></semantics></math></span>. Now simply let <span class="math-container" id="28086488" visual_id="305636"><math alttext="x_{n}=f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="6253203"> Thank you! This makes sense! I didn't know if much more was needed other than defining the bijective mapping, but it seems that this is about it. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="7643"> Produce an explicit bijection between rationals and naturals? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

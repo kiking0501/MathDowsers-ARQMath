@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>abelian finite groups - basic</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> abelian finite groups - basic </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="265834">
+<p>G is the set of all subset of A. (For example - Say <span class="math-container" id="2942213" visual_id="2154"><math alttext="A=\{1,2,3\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> than <span class="math-container" id="2942214" visual_id="5789725"><math alttext="G=(\{1\},\{2\},\{3\},\{1,2\}...)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. (<span class="math-container" id="2942215" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is at east two different elements).</p> <p>the binary operation <span class="math-container" id="2942216" visual_id="241"><math alttext="*" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>*</mo></semantics></math></span> is intersection. I need to prove this is a group .</p> <p>Identity element - will be the empty set.</p> <p>Associative-Yes</p> <p>Inverse element - Yes . I need that For each <span class="math-container" id="2942217" visual_id="1639"><math alttext="g\in G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow></semantics></math></span>, there must be an element <span class="math-container" id="2942218" visual_id="608978"><math alttext="g^{-1}\in G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>∈</mo><mi>G</mi></mrow></semantics></math></span> so that <span class="math-container" id="2942219" visual_id="5789726"><math alttext="g^{-1}*g=g*g^{-1}=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>*</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>g</mi><mo>*</mo><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>=</mo><mi>e</mi></mrow></semantics></math></span>. I think the empty set do that as well.</p> <p>until here I hope I was right.</p> <p>Now I want to show if this is finite or abelian.</p> <p>Abelian - Yes- easy to show.</p> <p>But now Im not sure if this is finite and how to show that...</p>
+</div>
+<hr/>
+<div id="tags">
+<span> group-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="580500"> Don't you need any further assumptions on the set <span class="math-container" id="2942236" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>? Otherwise <span class="math-container" id="2942239" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> will be infinite if <span class="math-container" id="2942236" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is infinite. Furthermore you should rethink whether intersecting a set with the empty set gives you the same set again. </td></tr><tr><td comment_id="580502"> If <span class="math-container" id="2942227" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span> is the identity element then <span class="math-container" id="2942224" visual_id="5789727"><math alttext="A*e=A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>*</mo><mi>e</mi></mrow><mo>=</mo><mi>A</mi></mrow></semantics></math></span> but <span class="math-container" id="2942225" visual_id="5789728"><math alttext="A\cap\emptyset=\emptyset=e\neq A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>∩</mo><mi mathvariant="normal">∅</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi><mo>=</mo><mi>e</mi><mo>≠</mo><mi>A</mi></mrow></semantics></math></span> </td></tr><tr><td comment_id="580504"> thats right. so what is the identity element? is it even a group??? </td></tr><tr><td comment_id="580505"> This is not a group when <span class="math-container" id="2942226" visual_id="241"><math alttext="*" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>*</mo></semantics></math></span> is the intersection. I would try the symmetric difference of two subsets as the operation. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="265838" id="answer">
+<p>Intersection in the power set of a set = the set of the set's subsets, does <em>not</em> make the power set into a group, as if the set has more than one element then there is no inverse for some element.</p> <p>What you can do is to define the symmetric difference on the power set:</p> <p><span class="math-container" id="2942240" visual_id="5789732"><math alttext="\forall\,H,K\in G=P(A)\,\,,\,\,H\Delta K:=(H\cup K)\setminus(H\cap K)=(H% \setminus K)\cup(K\setminus H)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mo rspace="4.2pt">∀</mo><mi>H</mi></mrow><mo>,</mo><mi>K</mi></mrow><mo>∈</mo><mi>G</mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo rspace="5.8pt" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="5.8pt">,</mo><mrow><mrow><mi>H</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>K</mi></mrow><mo>:=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>H</mi><mo>∪</mo><mi>K</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∖</mo><mrow><mo stretchy="false">(</mo><mrow><mi>H</mi><mo>∩</mo><mi>K</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>H</mi><mo>∖</mo><mi>K</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">(</mo><mrow><mi>K</mi><mo>∖</mo><mi>H</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>With the above operation the power set <span class="math-container" id="2942241" visual_id="673"><math alttext="\,G\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="1.7pt" width="+3.4pt"><mi>G</mi></mpadded></semantics></math></span> does become an (elementary) abelian group of order <span class="math-container" id="2942242" visual_id="268"><math alttext="\,2^{n}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded width="+1.7pt"><msup><mn> 2</mn><mi>n</mi></msup></mpadded></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="580507"> +1: This is the only (easy) way to turn the power set into a group that I <span class="math-container" id="5957569">k</span>now of. It may be that the real question is to show that the power set is not a group w.r.t. intersection. Let's wait for the OP to comment. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="338021"> a powerset define a group? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

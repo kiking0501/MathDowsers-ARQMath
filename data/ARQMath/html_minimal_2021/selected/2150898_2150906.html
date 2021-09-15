@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why can't Russell's Paradox be solved with references to sets instead of containment?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why can't Russell's Paradox be solved with references to sets instead of containment? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2150898">
+<p>My background is in computer science, and I'm keeping the <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" rel="noreferrer">Java implementation</a> in my mind as a model. Included in the Java language is the notion of <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" rel="noreferrer">sets</a>.</p> <p>Now I understand that this is different from the model <a href="https://en.wikipedia.org/wiki/Bertrand_Russell" rel="noreferrer">Russell</a> and <a href="https://en.wikipedia.org/wiki/Alfred_North_Whitehead" rel="noreferrer">Whitehead</a> had in their minds when they were writing <a href="https://en.wikipedia.org/wiki/Principia_Mathematica" rel="noreferrer">Principia Mathematica</a>, but I don't completely understand why it is different. </p> <p>To me, when you say "a set that contains a set," you have three ways you can "implement" this. You can say that it is "physically inside" (and draw it inside). You can say "it is just a logical concept" (which is what I think Russell was getting at). And you can say "it is a physical concept, but not physically inside — we link them together with pointers" (like in computer programming).</p> <p>Taking this further into <a href="https://en.wikipedia.org/wiki/Russell's_paradox" rel="noreferrer">Russell's paradox</a>: "The set of all sets that don't contain themselves," when talking about computer programming, is a relatively easy concept to implement (within the domain of the sets in a computer program).</p> <p>I'm guessing there is a philosophical difference between sets in Java and Russell's sets. (I imagine there must be a name for Russell's sets, but I don't know what they are called.)</p> <p>I can see that mathematics has other theories of sets like <a href="https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory" rel="noreferrer">Zermelo–Fraenkel set theory</a> and <a href="https://en.wikipedia.org/wiki/New_Foundations#Quinean_set_theory" rel="noreferrer">Quine's New Foundations</a>. </p> <p>My question is: <strong>Why can't Russell's Paradox be solved with references to sets instead of containment?</strong></p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> elementary-set-theory </span><span> paradoxes </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4424153"> Good question. It has to do with [the axiom that allows you to construct subsets](https://en.wikipedia.org/wiki/Axiom_schema_of_specification), but it's not obvious how this paradox presents itself from the coding perspective. </td></tr><tr><td comment_id="4424155"> I think you are mistaken in believing "The set of all sets that do not contain themselves" is "a relatively easy concept to implement".  To begin with, try to implement simply "the set of all sets". </td></tr><tr><td comment_id="4424172"> [Fuzzy Russell](http://imgur.com/a/3ljYS). </td></tr><tr><td comment_id="4424270"> Firstly, the Russell paradox is talking about membership (<span class="math-container" id="19878501" visual_id="824"><math alttext="\in" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∈</mo></semantics></math></span>) not containment (<span class="math-container" id="19878489" visual_id="2198"><math alttext="\subseteq" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊆</mo></semantics></math></span>); every set contains itself (as a subset), so in that sense there is no point in talking about the set of sets that do not contain themselves (which would be the empty set). Secondly, membership in set theory is just a relation between two values (i.e., two sets) that may or may not hold for a given pair; there is no need to implement anything. The question is just whether a certain list of axioms about this relation can simultaneously be satisfied, and Russell's paradox proves that they cannot. </td></tr><tr><td comment_id="4424407"> @MarcvanLeeuwen Unfortunately, I'm not sure there is a consensus among mathematicians, and I'm pretty sure there is no unanimity, as to whether a set **contains its subsets** and **includes its elements** or whether it **contains its subsets** and **includes its elements**. </td></tr><tr><td comment_id="4424425"> @bof: You probably meant to reverse the terms in the second version. But yea often we say "the set <span class="math-container" id="19878490" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> **contains** the zero-vector" or "Sets ordered under **inclusion**". Very inconsistent! </td></tr><tr><td comment_id="4424764"> You say it's a relatively easy concept to implement - I'd like to see your implementation. </td></tr><tr><td comment_id="4425152"> @hardmath: I've in fact shown in my answer that there is a meaningful interpretation of sets in computability terms where there is a set of all sets, namely the program that accepts all programs. What goes wrong isn't in any single notion but in combining incompatible notions. Many programming languages have a universal type as I mentioned in my answer, and don't face contradiction simply because they don't have strong specification axioms. For example Java interfaces and Generics are a very weak type system that is supposedly proven to be decidable. </td></tr><tr><td comment_id="4428806"> Infinite sets are where all the weirdness starts to happen. Like all physical computer artifices, Java does not handle sets of infinite size. </td></tr><tr><td comment_id="4557738"> Russell's view stated in PM is actually that <span class="math-container" id="19878491" visual_id="57337"><math alttext="x\in x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>x</mi></mrow></semantics></math></span> is *meaningless* as is also <span class="math-container" id="19878492" visual_id="49443"><math alttext="x\notin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∉</mo><mi>x</mi></mrow></semantics></math></span>.. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2150906" id="answer">
+<p>On the contrary, Russell's set - interpreted <em>in</em> your computer-programming model - is not easily implemented (let alone possible). Actual "containment" is not an issue - in principle, mathematicians would be perfectly happy with a set that contained itself.</p> <p>The issue is this: consider a (Java) <code>Set</code> that contains in it references to exactly those <code>Set</code>s currently in memory which do not contain references to themselves. Call this <code>Set&lt;Set&gt;</code> R. Suppose R contains a reference to itself. Then R does not meet the requirement for being referenced by a member of R, so R cannot be referenced by anything in R, contradicting our supposition. So suppose instead that R does <em>not</em> contain a reference to itself. Then R meets the requirement for being referenced in R (that is, it is a <code>Set</code> which does not contain a reference to itself) so it must have a reference in R, contradicting our supposition.</p> <p>Again, whether or not containment actually means "containment" isn't relevant. In fact, modern set theory formally treats membership abstractly - the symbol <span class="math-container" id="19878493" visual_id="824"><math alttext="\in" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∈</mo></semantics></math></span> doesn't have any canonical meaning, it's just an arbitrary relationship that obeys certain axioms. It's helpful to visualize it as actual containment or as a system of Java-like references, because those visualizations obey the axioms, but the "physical" implementation isn't relevant to any of the logic.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4424376"> Brilliantly well said, and very enlightening. </td></tr><tr><td comment_id="4424952"> To rephrase your last paragraph, given *any* collection of objects (even real-world objects) and any predicate <span class="math-container" id="19878498" visual_id="132065"><math alttext="P(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, there is no object <span class="math-container" id="19878495" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> such that <span class="math-container" id="19878496" visual_id="6394973"><math alttext="P(x,R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> if and only if <span class="math-container" id="19878497" visual_id="3861323"><math alttext="\neg P(x,x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. Here the collection of objects is the collection of Java sets in memory and <span class="math-container" id="19878498" visual_id="132065"><math alttext="P(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is "<span class="math-container" id="19878518" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> contains a reference to <span class="math-container" id="19878500" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span>". </td></tr><tr><td comment_id="4425096"> Typical mathematics - you think something's trivially easy to understand and that you understand it, and then: 'In fact, modern set theory formally treats membership abstractly - the symbol <span class="math-container" id="19878501" visual_id="824"><math alttext="\in" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∈</mo></semantics></math></span> doesn't have any canonical meaning, it's just an arbitrary relationship that obeys certain axioms.' </td></tr><tr><td comment_id="4429087"> What's funny is making sets manifest provides an unexpected and completely rational resolution of the paradox. Let R = the set of all sets that contain themselves (R contains itself). We then construct Russel by taking (U - R). Whether or not Russel contains itself depends on how *exactly* U works; that is whether or not it can get a reference to a half-constructed Russel or not. </td></tr><tr><td comment_id="4429259"> @Joshua Interesting idea, but the <span class="math-container" id="19878504" visual_id="6394974"><math alttext="U-R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>-</mo><mi>R</mi></mrow></semantics></math></span> you specify can't be Russell's set. If it includes <span class="math-container" id="19878504" visual_id="6394974"><math alttext="U-R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>-</mo><mi>R</mi></mrow></semantics></math></span>, then it can't be Russell's set because it contains at least one set that contains itself. If it does not include <span class="math-container" id="19878504" visual_id="6394974"><math alttext="U-R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>-</mo><mi>R</mi></mrow></semantics></math></span>, then it can't be Russell's set because it does not include all sets that do not contain themselves. Russell's paradox is about one particular point in time; it doesn't matter whether the set contains what Russell's set "used to" be, only whether it contains it *now*. </td></tr><tr><td comment_id="4429417"> @Reese: This is typical of attempting to materialize paradoxes. The paradox usually resolves by leaking an implementation detail. If you actually wanted, as you argue, projected sets rather than manifest sets, you cannot avoid failure without specifying the result. </td></tr><tr><td comment_id="4429532"> @Joshua I don't think I understand what you mean by "projected" versus "manifest" sets. If a structure <span class="math-container" id="19878507" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> does not satisfy the claim "<span class="math-container" id="19878507" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> contains all sets that do not contain themselves", then <span class="math-container" id="19878507" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is not the set of all sets that do not contain themselves, manifest or otherwise. If you tried to "manifest" this situation, you would simply fail to create the desired set, supporting the conclusion that Russell's set does not exist. You *can* produce something similar with fuzzy sets, but then you're not talking about sets. </td></tr><tr><td comment_id="4429677"> A manifest set is a true collection populated once and not changed. A projected set is a computation over its source (in this case U) on every evaluation. The setup basically forces the distinction normally relevant only to performance to become the heart of the matter. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1807800"> Are sets and symbols the building blocks of mathematics? </td></tr><tr><td post_id="1888042"> Is Gödel's modified liar an illogical statement? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

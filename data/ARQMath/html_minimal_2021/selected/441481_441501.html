@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why does $\sum_{n = 0}^\infty \frac{n}{2^n}$ converge to 2?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why does <span class="math-container" id="4648892" visual_id="302225"><math alttext="\sum_{n=0}^{\infty}\frac{n}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></semantics></math></span> converge to 2? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="441481">
+<p>Apparently, </p> <p><span class="math-container" id="4648893" visual_id="302225"><math alttext="\sum_{n=0}^{\infty}\frac{n}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></semantics></math></span></p> <p>converges to 2. I'm trying to figure out why. I've tried viewing it as a geometric series, but it's not quite a geometric series since the numerator increases by 1 every term.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="946361"> If you're not too worried about rigor, here's a nice trick: take the geometric series formula <span class="math-container" id="4648894" visual_id="302226"><math alttext="(1-\alpha)^{-1}=\sum_{0}^{\infty}\alpha^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><msup><mi>α</mi><mi>k</mi></msup></mrow></mrow></semantics></math></span> and differentiate in <span class="math-container" id="4648895" visual_id="93"><math alttext="\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi></semantics></math></span> once on either side. Now evaluate at <span class="math-container" id="4648896" visual_id="33641"><math alttext="\alpha=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="946368"> @ABlumenthal , is your reasoning only possible if <span class="math-container" id="4648897" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span> converges uniformly?  I don't remember the exact condition for taking the derivative on both sides of the equation. </td></tr><tr><td comment_id="946370"> It's enough for the derivative series to converge uniformly, and the original series to converge somewhere. </td></tr><tr><td comment_id="946378"> see http://math.stackexchange.com/questions/92224/ </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="441501" id="answer">
+<p>Hint: <span class="math-container" id="4648902" visual_id="302229"><math alttext="\begin{aligned} \displaystyle\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+% \dots&amp;\displaystyle amp;=\color{red}{1}\\ \displaystyle\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\dots&amp;\displaystyle amp;=% \color{red}{\frac{1}{2}}\\ \displaystyle\frac{1}{8}+\frac{1}{16}+\dots&amp;\displaystyle amp;=\color{red}{% \frac{1}{4}}\\ \displaystyle\frac{1}{16}+\dots&amp;\displaystyle amp;=\color{red}{\frac{1}{8}}\\ \hline\displaystyle\frac{1}{2}+\frac{2}{4}+\frac{3}{8}+\frac{4}{16}+\dots&amp;% \displaystyle amp;=2\end{aligned}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>8</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>16</mn></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>8</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>16</mn></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>8</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>16</mn></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>16</mn></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>8</mn></mfrac></mstyle></mrow></mtd></mtr><mtr><mtd class="ltx_border_t" columnalign="right"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>4</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>8</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>4</mn><mn>16</mn></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mn>2</mn></mrow></mtd></mtr></mtable></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="949829"> Thanks for your support. :+) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="2394328"> How to compute this infinite sum? </td></tr><tr><td post_id="763969"> How to evaluate the following series </td></tr><tr><td post_id="758962"> Compute infinite sum of a arithmetico-geometric series <span class="math-container" id="7512959" visual_id="4539493"><math alttext="\sum_{i=0}^{\infty}\frac{i}{2^{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>i</mi><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow></semantics></math></span> </td></tr><tr><td post_id="30732"> How can I evaluate <span class="math-container" id="317570" visual_id="52656"><math alttext="\sum_{n=0}^{\infty}(n+1)x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="458836"> Show that <span class="math-container" id="4826737" visual_id="4317797"><math alttext="\sum_{n=1}^{+\infty}\frac{n}{2^{n}}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1103011"> Evaluate to find the sum of an infinite series </td></tr><tr><td post_id="1031722"> Show that <span class="math-container" id="9794484" visual_id="5827486"><math alttext="\sum_{n=0}^{\infty}\dfrac{n}{2^{n+1}}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mstyle displaystyle="true"><mfrac><mi>n</mi><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mstyle></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="1788459"> Sum of the series <span class="math-container" id="16522766" visual_id="1071113"><math alttext="\sum\frac{n}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></semantics></math></span> </td></tr><tr><td post_id="1730413"> Find the value of sum (n/2^n) </td></tr><tr><td post_id="938669"> How to prove <span class="math-container" id="9039543" visual_id="1819709"><math alttext="\sum\limits_{i=1}^{\infty}\frac{i}{2^{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mi>i</mi><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow></semantics></math></span> converges? </td></tr><tr><td post_id="2012468"> Prove limit of <span class="math-container" id="18633130" visual_id="9321969"><math alttext="\sum_{n=1}^{\infty}n/(2^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>n</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1102135"> Sum <span class="math-container" id="10397689" visual_id="6710435"><math alttext="\sum_{x=0}^{\infty}\frac{x}{2^{x}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>x</mi><msup><mn>2</mn><mi>x</mi></msup></mfrac></mrow></semantics></math></span> </td></tr><tr><td post_id="2442937"> Sum of <span class="math-container" id="22620420" visual_id="448948"><math alttext="\sum_{n=1}^{\infty}\frac{n}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></semantics></math></span>. </td></tr><tr><td post_id="1155422"> Evaluate <span class="math-container" id="10857692" visual_id="185603"><math alttext="\sum\limits_{k=1}^{n}\frac{k}{2^{k}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mi>k</mi><msup><mn>2</mn><mi>k</mi></msup></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

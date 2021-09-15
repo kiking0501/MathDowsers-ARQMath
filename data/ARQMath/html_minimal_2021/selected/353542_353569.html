@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>$AB$ and $BA$ have the same characteristic polynomial</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> <span class="math-container" id="3782394" visual_id="3318"><math alttext="AB" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> and <span class="math-container" id="3782395" visual_id="3319"><math alttext="BA" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></semantics></math></span> have the same characteristic polynomial </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="353542">
+<p>Can someone please help me with this proof. </p> <p>For <span class="math-container" id="3782396" visual_id="4205"><math alttext="A,B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math></span> ∈ <span class="math-container" id="3782397" visual_id="1460947"><math alttext="F^{n×n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>F</mi><mrow><mi>n</mi><mo>⁢</mo><mi mathvariant="normal">×</mi><mo>⁢</mo><mi>n</mi></mrow></msup></semantics></math></span>, show that <span class="math-container" id="3782398" visual_id="3318"><math alttext="AB" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> and <span class="math-container" id="3782399" visual_id="3319"><math alttext="BA" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></semantics></math></span> have the same characteristic polynomial.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> matrices </span><span> determinant </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="759738"> May I suggest that you make your title more explicit? </td></tr><tr><td comment_id="802582"> It would be a good idea, since you seem to find the site useful, to indicate this by <span class="math-container" id="3782400" visual_id="749"><math alttext="(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> upvoting helpful answers, and <span class="math-container" id="3782401" visual_id="1757"><math alttext="(2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> accepting helpful answers. You can upvote as many answers as you'd like, but you can accept only one answer per question asked. To accept an answer, just click on the <span class="math-container" id="3782402" visual_id="137531"><math alttext="\large\checkmark" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathsize="120%" mathvariant="normal">✓</mi></semantics></math></span> to the left of the answer you want to accept. It then becomes *green*. You receive two reputation points whenever you accept an answer. But more importantly, it's a way to show appreciation for the time users take to answer questions that you find helpful. </td></tr><tr><td comment_id="3217068"> Related: http://math.stackexchange.com/questions/311342/do-ab-and-ba-have-same-minimal-and-characteristic-polynomials/311362#311362 </td></tr><tr><td comment_id="3217130"> When asking a question like this, I suggest that you include your ideas or some steps that you tried in order to solve the problem (and where you're stuck) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="353569" id="answer">
+<p>In the case <span class="math-container" id="3782403" visual_id="75192"><math alttext="F=\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>ℂ</mi></mrow></semantics></math></span> or <span class="math-container" id="3782404" visual_id="215311"><math alttext="F=\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math></span>:</p> <p>First if <span class="math-container" id="3782405" visual_id="1460948"><math alttext="A\in\mathrm{GL}_{n}(F)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><mrow><msub><mi>GL</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> then we have  <span class="math-container" id="3782406" visual_id="1460949"><math alttext="\chi_{AB}(x)=\det(xI-AB)=\det(A(xI-BA)A^{-1})=\det(xI-BA)=\chi_{BA}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>χ</mi><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>det</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>I</mi></mrow><mo>-</mo><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>det</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>I</mi></mrow><mo>-</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>det</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>I</mi></mrow><mo>-</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>χ</mi><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> Now by the density of <span class="math-container" id="3782407" visual_id="1460950"><math alttext="\mathrm{GL}_{n}(F)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>GL</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> in <span class="math-container" id="3782408" visual_id="1460951"><math alttext="\mathcal{M}_{n}(F)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi class="ltx_font_mathcaligraphic">ℳ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and the continuity of the <span class="math-container" id="3782409" visual_id="94983"><math alttext="\det" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>det</mo></semantics></math></span> function we have the desired result.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="759788"> You should specify for what fields your argument works. </td></tr><tr><td comment_id="759798"> @julien You're right I have a bad habit of thinking often for <span class="math-container" id="3782414" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> or <span class="math-container" id="3782413" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>. </td></tr><tr><td comment_id="759811"> Well, that's the case most of the time that we are in <span class="math-container" id="3782414" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> or <span class="math-container" id="3782413" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> when we do linear algebra. At least at this level. So it is not a real problem, +1. </td></tr><tr><td comment_id="760219"> Shouldn't this not be a problem? Since both of them are polynomials and proving this on <span class="math-container" id="3782414" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> proves a polynomial identity, and polynomial identity should hold regardless of rings. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="311342"> Do <span class="math-container" id="3371176" visual_id="3318"><math alttext="AB" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> and <span class="math-container" id="3371177" visual_id="3319"><math alttext="BA" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></semantics></math></span> have same minimal and characteristic polynomials? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

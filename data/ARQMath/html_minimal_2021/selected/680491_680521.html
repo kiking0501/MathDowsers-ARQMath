@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why $\sum\limits_{i=1}^n \frac{1}{i} =\mathcal O(\ln(n))$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why <span class="math-container" id="6838519" visual_id="5454543"><math alttext="\sum\limits_{i=1}^{n}\frac{1}{i}=\mathcal{O}(\ln(n))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mn>1</mn><mi>i</mi></mfrac></mrow><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="680491">
+<p>I am reading textbook proof on algorithms that uses this fact:</p> <p><span class="math-container" id="6838520" visual_id="5600181"><math alttext="\sum_{i=1}^{n}\frac{1}{i}=\mathcal{O}(\ln(n))." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><mi>i</mi></mfrac></mrow><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Why is that true? I'm trying to use Taylor series to find out why, but I'm not making much progress.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> summation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1428609"> ln(x) is the integral of the function 1/x, bounding the sum </td></tr><tr><td comment_id="1428614"> http://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant </td></tr><tr><td comment_id="1428619"> Here is a [technique](http://math.stackexchange.com/questions/655492/showing-summation-is-bounded/655638#655638). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="680521" id="answer">
+<p>Using Taylor series is working too hard! Recall the definition of <span class="math-container" id="6838535" visual_id="1386"><math alttext="\ln" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ln</mi></semantics></math></span> (or, at least, a property): <span class="math-container" id="6838536" visual_id="5600187"><math alttext="\ln(x)=\int_{1}^{x}\frac{1}{x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi>x</mi></msubsup><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span>  If <span class="math-container" id="6838537" visual_id="5898"><math alttext="x\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span>, we also have from the definition of the integral <span class="math-container" id="6838538" visual_id="5600188"><math alttext="\int_{1}^{x}\frac{1}{x}dx\geq\sum_{n=2}^{x}\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi>x</mi></msubsup><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>≥</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi>x</mi></msubsup><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></mrow></semantics></math></span></p> <p>You can see that pictorially here (picture stolen from <a href="http://tutorial.math.lamar.edu/Classes/CalcII/IntegralTest.aspx" rel="nofollow noreferrer">Paul's Online Math Notes</a>):</p> <p><img alt="enter image description here" src="https://i.stack.imgur.com/WpX1n.gif"/></p> <p>We also have <span class="math-container" id="6838539" visual_id="5600189"><math alttext="\sum_{n=2}^{x}\frac{3}{n}\geq\sum_{n=1}^{x}\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi>x</mi></msubsup><mfrac><mn>3</mn><mi>n</mi></mfrac></mrow><mo>≥</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>x</mi></msubsup><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></mrow></semantics></math></span> for <span class="math-container" id="6838540" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> (which you can prove by induction or otherwise), so that <span class="math-container" id="6838541" visual_id="5600190"><math alttext="3\ln(x)\geq\sum_{n=1}^{x}\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>3</mn><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≥</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>x</mi></msubsup><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></mrow></semantics></math></span> and thus <span class="math-container" id="6838542" visual_id="5600191"><math alttext="\sum_{n=1}^{x}\frac{1}{n}=O(\ln(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>x</mi></msubsup><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>=</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> as desired.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1261723"> Explain this inequality, related to logarithms </td></tr><tr><td post_id="655492"> Showing summation is bounded </td></tr><tr><td post_id="1639471"> Does <span class="math-container" id="15162605" visual_id="5454542"><math alttext="\sum_{i=1}^{n}\frac{1}{i^{2}}=O(\ln(n))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><msup><mi>i</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

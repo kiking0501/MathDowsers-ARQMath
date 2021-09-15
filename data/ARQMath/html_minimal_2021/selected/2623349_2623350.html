@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is the inverse of bijective continuous functions always continuous?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is the inverse of bijective continuous functions always continuous? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2623349">
+<p>Let <span class="math-container" id="24256838" visual_id="9515"><math alttext="X,~{}Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo rspace="5.8pt">,</mo><mi>Y</mi></mrow></semantics></math></span> be two metric spaces, <span class="math-container" id="24256839" visual_id="36892"><math alttext="E\subseteq X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>⊆</mo><mi>X</mi></mrow></semantics></math></span>, <span class="math-container" id="24256840" visual_id="304691"><math alttext="f:E\to Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>E</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span>. I have a question that is lingering in my mind long. If <span class="math-container" id="24256841" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous and one-to-one, then does <span class="math-container" id="24256842" visual_id="2357903"><math alttext="f^{-1}:f(E)\to E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>:</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mi>E</mi></mrow></mrow></semantics></math></span> continuous? I think the answer is true, is it? Is there counterexample? However, I read several books, some of them just prove that if <span class="math-container" id="24256843" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> is compact, then it is so. Why don't they more generally discuss it?</p> <p>PS: The definition of continuity is: <span class="math-container" id="24256844" visual_id="304691"><math alttext="f:E\to Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>E</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span> is called continuous iff the preimage <span class="math-container" id="24256845" visual_id="39488"><math alttext="f^{-1}(U)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is open in <span class="math-container" id="24256846" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> for all open set <span class="math-container" id="24256847" visual_id="7"><math alttext="U" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi></semantics></math></span> in <span class="math-container" id="24256848" visual_id="375"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> metric-spaces </span><span> continuity </span><span> inverse </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2623350" id="answer">
+<p>It is not true in general. Just take the identity from <span class="math-container" id="24256849" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> endowed with the discrete metric into <span class="math-container" id="24256850" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> endowed with the usual metric. It is continuous, but its inverse isn't.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5417907"> Thanks. But is there any counterexample from  <span class="math-container" id="24256851" visual_id="3999440"><math alttext="(\mathbb{R}^{n},~{}d_{\ell^{2}})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo rspace="5.8pt">,</mo><msub><mi>d</mi><msup><mi mathvariant="normal">ℓ</mi><mn>2</mn></msup></msub><mo stretchy="false">)</mo></mrow></semantics></math></span>  to  <span class="math-container" id="24256852" visual_id="3999441"><math alttext="(\mathbb{R}^{m},~{}d_{\ell^{2}})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>m</mi></msup><mo rspace="5.8pt">,</mo><msub><mi>d</mi><msup><mi mathvariant="normal">ℓ</mi><mn>2</mn></msup></msub><mo stretchy="false">)</mo></mrow></semantics></math></span>? Is it possible to find one? I roughly guess that maybe in such "good enough space" it is true? </td></tr><tr><td comment_id="5417913"> @Eric No, by [invariance of domain](https://en.wikipedia.org/wiki/Invariance_of_domain). </td></tr><tr><td comment_id="5417915"> @Eric But there **are** counterexamples with subspaces of <span class="math-container" id="24256853" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> endowed with the usual metric. </td></tr><tr><td comment_id="5417923"> Wow!! I haven't heard about this!! So indeed, let me check if I understand correctly: let <span class="math-container" id="24256854" visual_id="401869"><math alttext="E\subseteq\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>⊆</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></semantics></math></span> be open and <span class="math-container" id="24256855" visual_id="616032"><math alttext="f:E\to\mathbb{R}^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>E</mi><mo>→</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow></mrow></semantics></math></span> be injective continuous function, then <span class="math-container" id="24256856" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> must be a *homeomorphism* (namely <span class="math-container" id="24256862" visual_id="2"><math alttext="f^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> must be continous). Why does such theorem not appear in traditional real analysis books? Is it because the proof requires the materials beyond the scope? </td></tr><tr><td comment_id="5417925"> @Eric I suppose so. It takes some amount of Topology to prove it. </td></tr><tr><td comment_id="5417928"> I just see your second comment. Well, the wikipedia doesn't say it clearly. What does you mean "there are counterexamples with subspaces of <span class="math-container" id="24256858" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> endowed with the usual metric"? Do you mean when <span class="math-container" id="24256859" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> is too bad? </td></tr><tr><td comment_id="5417930"> @Eric There are examples of continuous functios <span class="math-container" id="24256860" visual_id="61426"><math alttext="f\colon A\longrightarrow B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>A</mi><mo>⟶</mo><mi>B</mi></mrow></mrow></semantics></math></span>, where <span class="math-container" id="24256861" visual_id="196689"><math alttext="A,B\subset\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><mo>⊂</mo><mi>ℝ</mi></mrow></semantics></math></span> endowed with its usual distance, such that <span class="math-container" id="24256862" visual_id="2"><math alttext="f^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is discontinuous. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

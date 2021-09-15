@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to fastest approximate definite integrals</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to fastest approximate definite integrals </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1243700">
+<p>I know that a definite integral is a limit of Riemann sums. So if one wanted to estimate a definite integral (because one might not be able to find an antiderivative), then one can just take enough subintervals.</p> <p>I have recently learnt that one can also write the function considered as a power series (Taylor series or Maclaurin series). Then it is easy to find an antiderivative power series that one can then use to estimate the definite integral.</p> <p>My question is: <strong>Which of these two methods is in general fastest?</strong></p> <p>As an example I considered <span class="math-container" id="11610997" visual_id="8736101"><math alttext="f(x)=x^{3}\arctan(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>⁢</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> and the integral <span class="math-container" id="11610998" visual_id="8736102"><math alttext="\int_{0}^{1/2}f(x)dx." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> I get that <span class="math-container" id="11610999" visual_id="8736103"><math alttext="\int_{0}^{1/2}f(x)dx=\sum_{n=0}^{\infty}(-1)^{n}\frac{(1/2)^{2n+5}}{(2n+1)(2n+% 5)}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>5</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> The first three terms alone give an estimate of <span class="math-container" id="11611000" visual_id="8736104"><math alttext="0.0059" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.0059</mn></semantics></math></span>.</p> <p>Using three left rectangles, I get <span class="math-container" id="11611001" visual_id="8736105"><math alttext="0.1211" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.1211</mn></semantics></math></span> and the real answer is <span class="math-container" id="11611002" visual_id="8736106"><math alttext="0.00591592" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.00591592</mn></semantics></math></span>. It looks like it is faster to use the Taylor series approach. Is this in general true?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span><span> definite-integrals </span><span> taylor-expansion </span><span> estimation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2528391"> Not sure many people know the answer, as definite integrals are computed numerically with well-established methods like Simpson, Romberg or Gaussian quadrature. </td></tr><tr><td comment_id="2528580"> http://en.wikipedia.org/wiki/Numerical_integration is a well established area of numerical analysis. I suggest you start there. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1243769" id="answer">
+<p>Taylor series don't always converge.  The Taylor series method can be very good if the interval of integration is inside the radius of convergence of the series, otherwise it may not converge at all.</p> <p>But as Yves Daoust mentioned, you should be comparing this to more sophisticated numerical methods, not to Riemann sums.  In practice, Riemann sums are almost never used for numerical integration.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2528645"> Thanks. I only know calculus. So I was just wondering how the two methods above might be compared. I am not trying to actually compute anything, just curious. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

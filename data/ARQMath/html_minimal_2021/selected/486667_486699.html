@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving that if $\bar{R}$ transitive (where $R$ equivalence relation), $|A/R|=1$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving that if <span class="math-container" id="5112438" visual_id="12351"><math alttext="\bar{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><mi>R</mi><mo stretchy="false">¯</mo></mover></semantics></math></span> transitive (where <span class="math-container" id="5112439" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> equivalence relation), <span class="math-container" id="5112440" visual_id="2803055"><math alttext="|A/R|=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>A</mi><mo>/</mo><mi>R</mi></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="486667">
+<blockquote> <p>Let <span class="math-container" id="5112441" visual_id="10897"><math alttext="A\neq\emptyset" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≠</mo><mi mathvariant="normal">∅</mi></mrow></semantics></math></span> a set and <span class="math-container" id="5112442" visual_id="97138"><math alttext="R\subseteq A\times A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⊆</mo><mrow><mi>A</mi><mo>×</mo><mi>A</mi></mrow></mrow></semantics></math></span> equivalence relation s.t the complementary relation <span class="math-container" id="5112443" visual_id="2803056"><math alttext="\bar{R}=(A\times A)\setminus R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>R</mi><mo stretchy="false">¯</mo></mover><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>×</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∖</mo><mi>R</mi></mrow></mrow></semantics></math></span> is transitive. Prove that <span class="math-container" id="5112444" visual_id="2803055"><math alttext="|A/R|=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>A</mi><mo>/</mo><mi>R</mi></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> (cardinality of quotient set is 1).</p> </blockquote> <p>There has to be a contradiction if the cardinality is bigger then 1 but I haven't found it yet. I'll be glad for any hint. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span><span> discrete-mathematics </span><span> relations </span><span> equivalence-relations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="486699" id="answer">
+<p>If I am not mistaken, the quotient set is the set of equivalence classes under <span class="math-container" id="5112445" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>.  Thus the assumption <span class="math-container" id="5112446" visual_id="2803055"><math alttext="|A/R|=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>A</mi><mo>/</mo><mi>R</mi></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> means there is exactly one such class, i.e. any two elements <span class="math-container" id="5112447" visual_id="1828"><math alttext="a,b\in A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>A</mi></mrow></semantics></math></span> satisfy <span class="math-container" id="5112448" visual_id="92552"><math alttext="(a,b)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span>.  So that's what we need to prove.  Now, I will write <span class="math-container" id="5112449" visual_id="16677"><math alttext="aRb" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>b</mi></mrow></semantics></math></span> for <span class="math-container" id="5112450" visual_id="92552"><math alttext="(a,b)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> from here on out.  Suppose then that there are more than one class.  Then there exists <span class="math-container" id="5112451" visual_id="40700"><math alttext="c\in A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>A</mi></mrow></semantics></math></span> such that <span class="math-container" id="5112452" visual_id="16497"><math alttext="aRc" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>c</mi></mrow></semantics></math></span> is false.  Thus <span class="math-container" id="5112453" visual_id="2803057"><math alttext="(a,c)\in\bar{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mover accent="true"><mi>R</mi><mo stretchy="false">¯</mo></mover></mrow></semantics></math></span>, or <span class="math-container" id="5112454" visual_id="2803058"><math alttext="a\bar{R}c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mover accent="true"><mi>R</mi><mo stretchy="false">¯</mo></mover><mo>⁢</mo><mi>c</mi></mrow></semantics></math></span>.  I claim that we then have <span class="math-container" id="5112455" visual_id="2803059"><math alttext="c\bar{R}a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>⁢</mo><mover accent="true"><mi>R</mi><mo stretchy="false">¯</mo></mover><mo>⁢</mo><mi>a</mi></mrow></semantics></math></span> as well.  For if not, then <span class="math-container" id="5112456" visual_id="2803060"><math alttext="cRa" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>a</mi></mrow></semantics></math></span>, and by the symmetry of <span class="math-container" id="5112457" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>, <span class="math-container" id="5112458" visual_id="16497"><math alttext="aRc" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>c</mi></mrow></semantics></math></span>, a contradiction.  So now the transitivity of <span class="math-container" id="5112459" visual_id="12351"><math alttext="\bar{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><mi>R</mi><mo stretchy="false">¯</mo></mover></semantics></math></span> implies both <span class="math-container" id="5112460" visual_id="2803061"><math alttext="a\bar{R}a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mover accent="true"><mi>R</mi><mo stretchy="false">¯</mo></mover><mo>⁢</mo><mi>a</mi></mrow></semantics></math></span> and <span class="math-container" id="5112461" visual_id="2803062"><math alttext="c\bar{R}c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>⁢</mo><mover accent="true"><mi>R</mi><mo stretchy="false">¯</mo></mover><mo>⁢</mo><mi>c</mi></mrow></semantics></math></span>, contradicting the reflexitivity of <span class="math-container" id="5112462" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>, I.e. that <span class="math-container" id="5112463" visual_id="16489"><math alttext="xRx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>x</mi></mrow></semantics></math></span> for all <span class="math-container" id="5112464" visual_id="1839"><math alttext="x\in A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>A</mi></mrow></semantics></math></span>.  Thus there is but one equivalence class under <span class="math-container" id="5112465" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>.  QED.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Bisection Method to compute an approx.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Bisection Method to compute an approx. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1967730">
+<p>I don't want the answer, I would just like a little push in the right direction for the problem. </p> <p>Starting with the initial bracket [a,b], predict the smallest number of iterations need by the bisection method to compute an approximation x* of x that has an error less than epsilon. </p> <p>(I did change the problem, to make it more general. Again, I don't want the answer, just a push. I am not sure how to do this without a given function.)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> numerical-methods </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4039032"> _Hint_: the interval of bisection always halves at each step and it forms an effective error estimate. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1967846" id="answer">
+<p>Just as  Parcly Taxel commented, if you look <a href="https://en.wikipedia.org/w/index.php?title=Bisection_method" rel="nofollow">here</a>, you will see that, searching for a root <span class="math-container" id="18234690" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> located between <span class="math-container" id="18234691" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="18234692" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> and starting iterations at <span class="math-container" id="18234693" visual_id="846983"><math alttext="x_{0}=\frac{a+b}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mn>2</mn></mfrac></mrow></semantics></math></span>,  <span class="math-container" id="18234694" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> being the solution, you have  <span class="math-container" id="18234695" visual_id="3122718"><math alttext="|x_{n}-x|\leq\frac{|b-a|}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mfrac><mrow><mo stretchy="false">|</mo><mrow><mi>b</mi><mo>-</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></semantics></math></span> This means that, if you want <span class="math-container" id="18234696" visual_id="1191281"><math alttext="|x_{n}-x|\leq\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>ϵ</mi></mrow></semantics></math></span>, the number of required iterations is given by <span class="math-container" id="18234697" visual_id="3122719"><math alttext="n=\log_{2}\left(\frac{|b-a|}{\epsilon}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><msub><mi>log</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mo stretchy="false">|</mo><mrow><mi>b</mi><mo>-</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mi>ϵ</mi></mfrac><mo>)</mo></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

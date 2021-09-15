@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Differential equation $y=xy' + \frac{1}{2}(y')^2$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Differential equation <span class="math-container" id="20769089" visual_id="2633696"><math alttext="y=xy^{\prime}+\frac{1}{2}(y^{\prime})^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>y</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2248737">
+<p>In one of my exams, there has been an equation that looks like this <span class="math-container" id="20769090" visual_id="2633696"><math alttext="y=xy^{\prime}+\frac{1}{2}(y^{\prime})^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>y</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span></p> <p>I have tried to solve it, but couldn't figure out how, since we haven't really learned that particular method.</p> <p>So, I would really appreciate if someone could give me an idea or an explanation on how to approach this problem. Thanks</p>
+</div>
+<hr/>
+<div id="tags">
+<span> analysis </span><span> ordinary-differential-equations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4624462"> Use the quadratic formula to solve for y'. </td></tr><tr><td comment_id="4624480"> @user247327 Do you mean that I should substitute y' with for example t, (y')^2 with t^2 and y with 1? </td></tr><tr><td comment_id="4624494"> @ivana14 why would <span class="math-container" id="20769101" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> become <span class="math-container" id="20769100" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>? </td></tr><tr><td comment_id="4624568"> It's something we usually did when solving some equations. y' gets substituted by t, and y gets substituted by 1. I have never really been sure why, though </td></tr><tr><td comment_id="4624667"> @ivana14 I think I see what you mean. I think you're thinking of when you have an equation such as <span class="math-container" id="20769093" visual_id="2633697"><math alttext="y^{\prime\prime}-2y^{\prime}-2y=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>y</mi><mo>′′</mo></msup><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, and you 'guess' a solution of the form <span class="math-container" id="20769094" visual_id="159481"><math alttext="y=e^{mx}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>e</mi><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></semantics></math></span> which, after you substitute it and divide everything by <span class="math-container" id="20769095" visual_id="159482"><math alttext="e^{mx}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow></msup></semantics></math></span>, is equivalent to substituting <span class="math-container" id="20769096" visual_id="48617"><math alttext="m^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>m</mi><mn>2</mn></msup></semantics></math></span> for <span class="math-container" id="20769097" visual_id="30581"><math alttext="y^{\prime\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>y</mi><mo>′′</mo></msup></semantics></math></span>, <span class="math-container" id="20769098" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> for <span class="math-container" id="20769099" visual_id="516"><math alttext="y^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>y</mi><mo>′</mo></msup></semantics></math></span> and <span class="math-container" id="20769100" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> for <span class="math-container" id="20769101" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2248947" id="answer">
+<p><span class="math-container" id="20769131" visual_id="2633718"><math alttext="\ (y^{\prime})^{2}=t=&amp;gt;y^{\prime}=\sqrt{t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo lspace="7.5pt" stretchy="false">(</mo><msup><mi>y</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mi>t</mi><mo>=</mo><mrow><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>;</mo><mrow><msup><mi>y</mi><mo>′</mo></msup><mo>=</mo><msqrt><mi>t</mi></msqrt></mrow></mrow></semantics></math></span> </p> <p><span class="math-container" id="20769132" visual_id="2633719"><math alttext="\ y^{\prime}=\dfrac{dy}{dx}=&amp;gt;\dfrac{dy}{dx}=\sqrt{t}=&amp;gt;dy=\sqrt{t}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mpadded lspace="5pt" width="+5pt"><mi>y</mi></mpadded><mo>′</mo></msup><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>y</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>=</mo><mrow><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>;</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>y</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>=</mo><msqrt><mi>t</mi></msqrt><mo>=</mo><mrow><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>;</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mrow><msqrt><mi>t</mi></msqrt><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="20769133" visual_id="2633720"><math alttext="\ y=\int{\sqrt{t}dx}=&amp;gt;y=\sqrt{t}x+C,\ C\in{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded lspace="5pt" width="+5pt"><mi>y</mi></mpadded><mo>=</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><msqrt><mi>t</mi></msqrt><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>;</mo><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mrow><msqrt><mi>t</mi></msqrt><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>C</mi></mrow></mrow><mo rspace="7.5pt">,</mo><mrow><mi>C</mi><mo>∈</mo><mi>R</mi></mrow></mrow></mrow></semantics></math></span></p> <p>All off this we put in the equation and get the following</p> <p><span class="math-container" id="20769134" visual_id="2633721"><math alttext="\ \sqrt{t}x+C=\sqrt{t}x+\dfrac{t}{2}=&amp;gt;t=2C=&amp;gt;\sqrt{t}=\sqrt{2C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mpadded lspace="5pt" width="+5pt"><msqrt><mi>t</mi></msqrt></mpadded><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>C</mi></mrow><mo>=</mo><mrow><mrow><msqrt><mi>t</mi></msqrt><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>t</mi><mn>2</mn></mfrac></mstyle></mrow><mo>=</mo><mrow><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>;</mo><mrow><mi>t</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>C</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>;</mo><mrow><msqrt><mi>t</mi></msqrt><mo>=</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>C</mi></mrow></msqrt></mrow></mrow></semantics></math></span></p> <p>Inserting (2) in (1) we get <span class="math-container" id="20769135" visual_id="2633722"><math alttext="\ y=\sqrt{2C}x+C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="5pt" width="+5pt"><mi>y</mi></mpadded><mo>=</mo><mrow><mrow><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>C</mi></mrow></msqrt><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>C</mi></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4632931"> I think you've missed out one solution: <span class="math-container" id="20769136" visual_id="2633705"><math alttext="y(x)=-\frac{x^{2}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></mrow></semantics></math></span> Please see my answer. </td></tr><tr><td comment_id="4633359"> @projectilemotion yes, yes. you have a point. I've overseen the exceptonal solution. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2420056"> How to solve differential equation <span class="math-container" id="22412100" visual_id="2711888"><math alttext="y=xy^{\prime}+\frac{1}{2}y^{\prime 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi>y</mi><mrow><mo mathsize="142%" stretchy="false">′</mo><mo>⁣</mo><mn>2</mn></mrow></msup></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

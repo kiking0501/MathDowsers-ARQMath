@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving that the exponential inequality $e^x \ge x^e$ holds for all $x \ge 0$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving that the exponential inequality <span class="math-container" id="15184734" visual_id="1821616"><math alttext="e^{x}\geq x^{e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>≥</mo><msup><mi>x</mi><mi>e</mi></msup></mrow></semantics></math></span> holds for all <span class="math-container" id="15184735" visual_id="2019"><math alttext="x\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1641851">
+<blockquote> <p>How does one prove that <span class="math-container" id="15184736" visual_id="1821616"><math alttext="e^{x}\geq x^{e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>≥</mo><msup><mi>x</mi><mi>e</mi></msup></mrow></semantics></math></span> for all <span class="math-container" id="15184737" visual_id="2019"><math alttext="x\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span>?</p> </blockquote> <p>I tried to do this by setting <span class="math-container" id="15184738" visual_id="1838077"><math alttext="f(x)=e^{x}-x^{e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><msup><mi>x</mi><mi>e</mi></msup></mrow></mrow></semantics></math></span></p> <p>Plotting this function shows this easily, as seen <a href="http://www.wolframalpha.com/input/?i=e%5Ex-x%5Ee" rel="nofollow">here</a>. </p> <p>However, when I tried to prove this, it proved quite difficult. It seems to be increasing for <span class="math-container" id="15184739" visual_id="67112"><math alttext="0\leq x\leq e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>e</mi></mrow></semantics></math></span>, and seems to be increasing for all <span class="math-container" id="15184740" visual_id="11705"><math alttext="x\geq e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mi>e</mi></mrow></semantics></math></span>. </p> <p>I tried to use that <span class="math-container" id="15184741" visual_id="5461717"><math alttext="f^{\prime}(x)=e^{x}-ex^{e-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mrow><mi>e</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>e</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow></semantics></math></span> but was not able to. </p> <p>Any help would be appreciated. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> derivatives </span><span> inequality </span><span> exponential-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3348255"> Note that this is equivalent to <span class="math-container" id="15184742" visual_id="5461718"><math alttext="e^{1/e}\geq x^{1/x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mn>1</mn><mo>/</mo><mi>e</mi></mrow></msup><mo>≥</mo><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></msup></mrow></semantics></math></span> and then show the function <span class="math-container" id="15184743" visual_id="1914"><math alttext="x^{1/x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></msup></semantics></math></span> has a maximum at <span class="math-container" id="15184779" visual_id="11704"><math alttext="x=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>e</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3348285"> Many answers to the same question at http://math.stackexchange.com/questions/1619911/why-ex-is-always-greater-than-xe . </td></tr><tr><td comment_id="3348408"> Your attempt would probably carry through if you consider the for these purposes equivalent function <span class="math-container" id="15184745" visual_id="5461719"><math alttext="f(x)=e^{\frac{x}{e}}-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>e</mi><mfrac><mi>x</mi><mi>e</mi></mfrac></msup><mo>-</mo><mi>x</mi></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1641954" id="answer">
+<p>The graph <span class="math-container" id="15184786" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span> of <span class="math-container" id="15184787" visual_id="1385"><math alttext="\log" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>log</mi></semantics></math></span> is concave, hence <span class="math-container" id="15184788" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span> stays below the tangent to <span class="math-container" id="15184789" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span> at <span class="math-container" id="15184790" visual_id="5461731"><math alttext="(e,\log e)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>e</mi><mo>,</mo><mrow><mi>log</mi><mo>⁡</mo><mi>e</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>: <span class="math-container" id="15184791" visual_id="5461732"><math alttext="\log x\leq\log e+{1\over e}(x-e)\qquad(x&amp;gt;0)\ ." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo>≤</mo><mrow><mrow><mrow><mi>log</mi><mo>⁡</mo><mi>e</mi></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mi>e</mi></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>e</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo mathvariant="italic" separator="true">  </mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>&gt;</mo></mrow><mn>0</mn><mo rspace="7.5pt" stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> This simplifies to <span class="math-container" id="15184792" visual_id="5461733"><math alttext="\log x\leq{x\over e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo>≤</mo><mfrac><mi>x</mi><mi>e</mi></mfrac></mrow></semantics></math></span>, and exponentiation gives <span class="math-container" id="15184793" visual_id="5461734"><math alttext="x^{e}\leq e^{x}\qquad(x&amp;gt;0)\ ." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mi>e</mi></msup><mo>≤</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo mathvariant="italic" separator="true">  </mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>&gt;</mo></mrow><mn>0</mn><mo rspace="7.5pt" stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> The case <span class="math-container" id="15184794" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> is obvious.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1619911"> Why <span class="math-container" id="14978883" visual_id="1301"><math alttext="e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mi>x</mi></msup></semantics></math></span> is always greater than <span class="math-container" id="14978884" visual_id="1142670"><math alttext="x^{e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mi>e</mi></msup></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Compute $\int_{-\infty}^{\infty} \frac{e^{-2ix}}{x^2 + 4}dx$ using contour integration</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Compute <span class="math-container" id="21822069" visual_id="3186611"><math alttext="\int_{-\infty}^{\infty}\frac{e^{-2ix}}{x^{2}+4}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> using contour integration </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2359386">
+<p>I'm studying for an applied mathematics qualifying exam, and have the following practice problem:</p> <blockquote> <p>Compute the integral <span class="math-container" id="21822070" visual_id="3186611"><math alttext="\int_{-\infty}^{\infty}\frac{e^{-2ix}}{x^{2}+4}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> using contour integration.</p> </blockquote> <p>I'm considering a contour that is a half-circle of radius <span class="math-container" id="21822071" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> that includes a segment of the real line (<span class="math-container" id="21822072" visual_id="14922"><math alttext="[-R,R]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mi>R</mi></mrow><mo>,</mo><mi>R</mi><mo stretchy="false">]</mo></mrow></semantics></math></span>) and within the path includes the pole at <span class="math-container" id="21822073" visual_id="27164"><math alttext="2i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi></mrow></semantics></math></span>. Using the Cauchy integral formula I can evaluate this integral and determine that it equals <span class="math-container" id="21822074" visual_id="3186612"><math alttext="\frac{e^{4}\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>e</mi><mn>4</mn></msup><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac></semantics></math></span>.</p> <p>The next step is to show that the complex part of the path of integration is negligible, and I have tried to bound <span class="math-container" id="21822075" visual_id="3186613"><math alttext="\left|\int_{Re^{i[0,\pi]}}\frac{e^{-2iz}}{z^{2}+4}dz\right|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>|</mo><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mi>R</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow></mrow></msup></mrow></msub><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></msup><mrow><msup><mi>z</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>z</mi></mrow></mrow></mrow><mo>|</mo></mrow></semantics></math></span> but it doesn't seem to work.</p> <p>Help?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> complex-analysis </span><span> complex-numbers </span><span> contour-integration </span><span> cauchy-integral-formula </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2359397" id="answer">
+<p><span class="math-container" id="21822081" visual_id="3186617"><math alttext="\int\limits_{-\infty}^{+\infty}\frac{e^{-2xi}}{x^{2}+4}dx=\int\limits_{-\infty% }^{+\infty}\frac{\cos 2x-i\sin 2x}{x^{2}+4}dx=\int\limits_{-\infty}^{+\infty}% \frac{\cos 2x}{x^{2}+4}dx=" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></munderover><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>i</mi></mrow></mrow></msup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></munderover><mrow><mfrac><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></munderover><mrow><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mi></mi></mrow></semantics></math></span> <span class="math-container" id="21822082" visual_id="3186618"><math alttext="=2\int\limits_{0}^{+\infty}\frac{\cos 2x}{x^{2}+4}dx=\frac{\pi}{2e^{4}}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></munderover><mrow><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>=</mo><mfrac><mi>π</mi><mrow><mn>2</mn><mo>⁢</mo><msup><mi>e</mi><mn>4</mn></msup></mrow></mfrac></mrow><mo>,</mo></mrow></semantics></math></span> where the last integral it's just the Laplace's integral. For <span class="math-container" id="21822083" visual_id="9086"><math alttext="a&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="21822084" visual_id="18847"><math alttext="b&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>b</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> we have: <span class="math-container" id="21822085" visual_id="3186619"><math alttext="\int\limits_{0}^{+\infty}\frac{\cos{bx}}{x^{2}+a^{2}}dx=\frac{\pi e^{-ab}}{2a}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></munderover><mrow><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mfrac><mrow><mi>π</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></msup></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is being a right triangle both necessary and sufficient for the Pythagorean Theorem to hold?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is being a right triangle both necessary and sufficient for the Pythagorean Theorem to hold? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2345327">
+<p>I recently encountered a Stack Overflow question (since closed) in which the OP was testing for whether a triangle was right by whether or not it "met" the criteria of the Pythagorean Theorem (i.e. whether or not the square of the hypotenuse is equal to the square of the two sides). The code was to this effect:</p> <pre><code>public void Test(int a, int b, int c) {    if ((c * c) == ((a * a) + (b * b)) {      System.out.println("This is a right triangle");    }    else {      System.out.println("This is not a right triangle");    } } </code></pre> <p>(There are obviously some other problems with this code, like the fact that it doesn't validate the input to make sure that the inputs are positive and the fact that it only accepts integers).</p> <p>The question was asking about something completely different in the code and never directly addressed the test, but I got to thinking: <em>is</em> this a valid test for whether a triangle is a right triangle?</p> <p>Obviously, the Pythagorean Theorem states that, for all right triangles, <span class="math-container" id="21691349" visual_id="5981"><math alttext="a^{2}+b^{2}=c^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></semantics></math></span> (where <span class="math-container" id="21691350" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="21691351" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> are sides and <span class="math-container" id="21691352" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> is the hypotenuse). This will hold for all right triangles, so being a right triangle is a sufficient condition for the Pythagorean Theorem to hold.</p> <p>Is it also a necessary condition? I.e. if <span class="math-container" id="21691353" visual_id="94450"><math alttext="c^{2}=a^{2}+b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> for some arbitrary triangle, is the triangle <em>necessarily</em> a right triangle? Or are there counterexamples?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> geometry </span><span> trigonometry </span><span> euclidean-geometry </span><span> triangles </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4833355"> For what it is worth, I think the biggest problem with the code is that it is liable to overflow in many (most?) languages. </td></tr><tr><td comment_id="4834921"> I assume you're asking about Euclidean Geometry... </td></tr><tr><td comment_id="4834927"> @user121330 Yes, I do tag Euclidean geometry. </td></tr><tr><td comment_id="4835802"> Many great questions to a specific special case of this theorem (from some you can deduce the general case) are given in this old matheducators.se post:  https://matheducators.stackexchange.com/q/9847/5778 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2345335" id="answer">
+<p>The law of cosines states that  <span class="math-container" id="21691389" visual_id="6871757"><math alttext="c^{2}=a^{2}+b^{2}-2ab\cos(C)," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> where <span class="math-container" id="21691390" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> is the angle opposite the side of length <span class="math-container" id="21691391" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>. When does <span class="math-container" id="21691392" visual_id="1595868"><math alttext="\cos(C)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1500691"> Examples of bi-implications (<span class="math-container" id="13877878" visual_id="1183"><math alttext="\Leftrightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇔</mo></semantics></math></span>) where the <span class="math-container" id="13877879" visual_id="6076"><math alttext="\Rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇒</mo></semantics></math></span> direction is used in the proof of the <span class="math-container" id="13877880" visual_id="6349"><math alttext="\Leftarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇐</mo></semantics></math></span> direction. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

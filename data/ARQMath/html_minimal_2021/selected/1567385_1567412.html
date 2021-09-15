@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Probability problem for independent events</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Probability problem for independent events </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1567385">
+<p>I have tried to solve a  probability  problem which is: </p> <blockquote> <p>In a certain game, you perform three tasks.  You flip a quarter, and   success would be heads.  You roll a single die, and success would be a   six.  You pick a card from a full playing-card deck, and success would   be picking a spades card.   If any of these task are successful, then   you win the game.  What is the probability of winning?</p> </blockquote> <p>The way I have solved is: </p> <p>Probability of getting head +  Probability of getting six on the dice +Probability of getting spades card = <span class="math-container" id="14475847" visual_id="5235964"><math alttext="1/2+1/6+13/52=11/12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>6</mn></mrow><mo>+</mo><mrow><mn>13</mn><mo>/</mo><mn>52</mn></mrow></mrow><mo>=</mo><mrow><mn>11</mn><mo>/</mo><mn>12</mn></mrow></mrow></semantics></math></span></p> <p>Have I done it correctly? </p> <p>If that correct then I see the violation of the probability theory in my method of the calculation, because if I had opportunity to throw more dice or coins, the probability could exceed 1.  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> algebra-precalculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3191199"> They key to evaluate the correct probability is that any of the tasks is successful... ie. you may get heads and not get six and spades. But you may get both heads and spades but not get six. </td></tr><tr><td comment_id="3191204"> That does not work because of overlap. For a discussion on the formula provided by AnalysisStudento414, you may want to read about the inclusion-exclusion formula. https://en.wikipedia.org/wiki/Inclusion-exclusion_principle </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1567412" id="answer">
+<p>A much simpler way is to take the complement of  <span class="math-container" id="14475848" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span>(none of the events occur)</p> <p><span class="math-container" id="14475849" visual_id="5235965"><math alttext="1-\dfrac{1}{2}\cdot\dfrac{5}{6}\cdot\dfrac{3}{4}=\dfrac{11}{16}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⋅</mo><mstyle displaystyle="true"><mfrac><mn>5</mn><mn>6</mn></mfrac></mstyle><mo>⋅</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>11</mn><mn>16</mn></mfrac></mstyle></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to solve exponential inequality with $x$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to solve exponential inequality with <span class="math-container" id="8793774" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="910173">
+<p>I need to solve the following inequality.</p> <p><span class="math-container" id="8793775" visual_id="6291827"><math alttext="\ln(x)-x&amp;gt;0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>x</mi><mo>&gt;</mo></mrow></mrow><mn>0</mn></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>I oddly remember that it can only be done by using the graph... Is it true?</p> <p>I have the same problem with </p> <p><span class="math-container" id="8793776" visual_id="6291828"><math alttext="e^{x}(x-1)&amp;gt;-2." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>&gt;</mo></mrow><mrow><mo>-</mo><mn>2</mn></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> inequality </span><span> logarithms </span><span> exponential-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1006071" id="answer">
+<p>These are both consequences of the standard inequality <span class="math-container" id="8793806" visual_id="69627"><math alttext="1+x\leq e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo>≤</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></semantics></math></span> How to best prove (1) depends on how you develop the theory of the exponential function.  If you know that <span class="math-container" id="8793807" visual_id="1301"><math alttext="e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mi>x</mi></msup></semantics></math></span> is its own derivative, then you can argue that <span class="math-container" id="8793808" visual_id="6291837"><math alttext="e^{x}-1=\int_{0}^{x}e^{t}\,dt\geq\int_{0}^{x}1\,dt=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mi>t</mi></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>≥</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mpadded width="+1.7pt"><mn>1</mn></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math></span> (because <span class="math-container" id="8793809" visual_id="655525"><math alttext="e^{t}\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>t</mi></msup><mo>≥</mo><mn>1</mn></mrow></semantics></math></span> if <span class="math-container" id="8793810" visual_id="6087"><math alttext="t\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="8793811" visual_id="81303"><math alttext="e^{t}\leq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>t</mi></msup><mo>≤</mo><mn>1</mn></mrow></semantics></math></span> if <span class="math-container" id="8793812" visual_id="19418"><math alttext="t\leq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≤</mo><mn>0</mn></mrow></semantics></math></span>; note that we could have <span class="math-container" id="8793813" visual_id="2021"><math alttext="x&amp;lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>&lt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> so that the integration interval is backwards).</p> <p>Anyway, once you have (1), take logs to get <span class="math-container" id="8793814" visual_id="208640"><math alttext="\ln(1+x)\leq x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>x</mi></mrow></semantics></math></span> and then replace <span class="math-container" id="8793815" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> with <span class="math-container" id="8793816" visual_id="15893"><math alttext="x-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> to get <span class="math-container" id="8793817" visual_id="3053473"><math alttext="\ln(x)\leq x-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> which implies your first inequality.</p> <p>For the second, if <span class="math-container" id="8793818" visual_id="14529"><math alttext="x\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span> then multiplying (1) by <span class="math-container" id="8793819" visual_id="15893"><math alttext="x-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> yields <span class="math-container" id="8793820" visual_id="6291838"><math alttext="e^{x}(x-1)\geq(1+x)(x-1)=x^{2}-1\geq-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo>≥</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> which implies your second inequality in the case <span class="math-container" id="8793821" visual_id="14529"><math alttext="x\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>. On the other hand, if <span class="math-container" id="8793822" visual_id="11636"><math alttext="x&amp;lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>&lt;</mo></mrow><mn>1</mn></mrow></semantics></math></span> then replacing <span class="math-container" id="8793823" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> with <span class="math-container" id="8793824" visual_id="17255"><math alttext="-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi>x</mi></mrow></semantics></math></span> in (1) yields <span class="math-container" id="8793825" visual_id="39235"><math alttext="e^{-x}\geq 1-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>≥</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mrow></semantics></math></span> taking reciprocals (which reverses the inequality because both sides are positive in this case) yields <span class="math-container" id="8793826" visual_id="961939"><math alttext="e^{x}\leq\frac{1}{1-x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>≤</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math></span> Multiplying by <span class="math-container" id="8793827" visual_id="15893"><math alttext="x-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> (which is negative) yields <span class="math-container" id="8793828" visual_id="6291839"><math alttext="e^{x}(x-1)\geq-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> which implies your second inequality in the case <span class="math-container" id="8793829" visual_id="11636"><math alttext="x&amp;lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>&lt;</mo></mrow><mn>1</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

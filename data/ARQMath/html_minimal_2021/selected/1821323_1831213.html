@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove that $4$ divides $3^{2m+1} - 3$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove that <span class="math-container" id="16840655" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> divides <span class="math-container" id="16840656" visual_id="3605937"><math alttext="3^{2m+1}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1821323">
+<blockquote> <p>Prove that <span class="math-container" id="16840657" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> divides <span class="math-container" id="16840658" visual_id="3605937"><math alttext="3^{2m+1}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow></semantics></math></span>.</p> </blockquote> <p>By plugging in numbers I can see this is true, but I can't figure out a way to prove this, I was thinking maybe proving first that it is divisible by <span class="math-container" id="16840659" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>, and concluding its divisible by <span class="math-container" id="16840660" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>.  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> proof-writing </span><span> divisibility </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3722133"> <span class="math-container" id="16840661" visual_id="3605938"><math alttext="3^{2}=1\pmod{4}\implies 3^{2m}=1\pmod{4}\implies 3^{2m+1}=3\pmod{4}\implies" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mn>2</mn></msup><mo>=</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⟹</mo><msup><mn>3</mn><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></msup><mo>=</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⟹</mo><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><mn>3</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⟹</mo><mi></mi></mrow></semantics></math></span> ... </td></tr><tr><td comment_id="3722409"> You can say more: <span class="math-container" id="16840733" visual_id="3605937"><math alttext="3^{2m+1}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow></semantics></math></span> is in fact always divisible by <span class="math-container" id="16840663" visual_id="4522"><math alttext="24" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>24</mn></semantics></math></span> ;) See JasonM's answer for an idea of how you might prove this. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1831213" id="answer">
+<p>Let <span class="math-container" id="16840708" visual_id="12864"><math alttext="S(m)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be the statement: <span class="math-container" id="16840709" visual_id="3605937"><math alttext="3^{2m+1}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow></semantics></math></span> is divisible by 4</p> <p>Basis step: <span class="math-container" id="16840710" visual_id="53920"><math alttext="S(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>:</p> <p><span class="math-container" id="16840711" visual_id="3605964"><math alttext="\Rightarrow 3^{2(1)+1}-3=3^{2+1}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>⇒</mo><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow><mo>=</mo><mrow><msup><mn>3</mn><mrow><mn>2</mn><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16840712" visual_id="3605965"><math alttext="\hskip 73.977165pt=3^{3}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="76.5pt">=</mo><mrow><msup><mn>3</mn><mn>3</mn></msup><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16840713" visual_id="3605966"><math alttext="\hskip 73.977165pt=27-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="76.5pt">=</mo><mrow><mn>27</mn><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16840714" visual_id="620560"><math alttext="\hskip 73.977165pt=24" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="76.5pt">=</mo><mn>24</mn></mrow></semantics></math></span>, which is divisible by <span class="math-container" id="16840715" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span></p> <p>Inductive step:</p> <p>Assume <span class="math-container" id="16840716" visual_id="173020"><math alttext="S(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is true, i.e. assume that <span class="math-container" id="16840717" visual_id="3278931"><math alttext="3^{2k+1}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow></semantics></math></span> is divisible by 4</p> <p><span class="math-container" id="16840718" visual_id="3605967"><math alttext="\hskip 167.87126pt\Rightarrow 3^{2k+1}-3=4A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="170.4pt">⇒</mo><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi>A</mi></mrow></mrow></semantics></math></span>; <span class="math-container" id="16840719" visual_id="535161"><math alttext="A\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span></p> <p><span class="math-container" id="16840720" visual_id="3605968"><math alttext="\hskip 167.87126pt\Rightarrow 3^{2k+1}=4A+3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="170.4pt">⇒</mo><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>A</mi></mrow><mo>+</mo><mn>3</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16840721" visual_id="170301"><math alttext="S(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>: <span class="math-container" id="16840722" visual_id="3605969"><math alttext="3^{2(k+1)+1}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow></semantics></math></span></p> <p><span class="math-container" id="16840723" visual_id="3605970"><math alttext="\hskip 35.565945pt=3^{2k+2+1}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="38.1pt">=</mo><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16840724" visual_id="3605971"><math alttext="\hskip 35.565945pt=3^{2k+3}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="38.1pt">=</mo><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>3</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16840725" visual_id="3605972"><math alttext="\hskip 35.565945pt=3^{2}\bullet{3^{2k+1}}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="38.1pt">=</mo><mrow><mrow><msup><mn>3</mn><mn>2</mn></msup><mo>∙</mo><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup></mrow><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16840726" visual_id="3605973"><math alttext="\hskip 35.565945pt=9(4A+3)-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="38.1pt">=</mo><mrow><mrow><mn>9</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>A</mi></mrow><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16840727" visual_id="3605974"><math alttext="\hskip 35.565945pt=36A+27-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="38.1pt">=</mo><mrow><mrow><mrow><mn>36</mn><mo>⁢</mo><mi>A</mi></mrow><mo>+</mo><mn>27</mn></mrow><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16840728" visual_id="3605975"><math alttext="\hskip 35.565945pt=36A+24" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="38.1pt">=</mo><mrow><mrow><mn>36</mn><mo>⁢</mo><mi>A</mi></mrow><mo>+</mo><mn>24</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16840729" visual_id="3605976"><math alttext="\hskip 35.565945pt=4(9A+6)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="38.1pt">=</mo><mrow><mn>4</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>9</mn><mo>⁢</mo><mi>A</mi></mrow><mo>+</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, which is divisible by <span class="math-container" id="16840730" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span></p> <p>So, <span class="math-container" id="16840731" visual_id="170301"><math alttext="S(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is true whenever <span class="math-container" id="16840732" visual_id="173020"><math alttext="S(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is true.</p> <p>Therefore, <span class="math-container" id="16840733" visual_id="3605937"><math alttext="3^{2m+1}-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>3</mn></mrow></semantics></math></span> is divisible by 4.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3745722"> In your basis step do you mean (27 - 3) = 24 which is divisible by 4 ? </td></tr><tr><td comment_id="3745749"> Thanks for pointing that out </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

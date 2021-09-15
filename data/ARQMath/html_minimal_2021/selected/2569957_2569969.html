@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Starting with assumption (inequality induction)</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Starting with assumption (inequality induction) </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2569957">
+<p>My teacher has always told me that when doing inequality induction proofs,  for the <span class="math-container" id="23755899" visual_id="407"><math alttext="k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> step, I should always start with the expression for <span class="math-container" id="23755900" visual_id="407"><math alttext="k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> and then somehow manipulate it so that I can plug in the assumption. Then prove the statement. However, I recently came across this video of a teacher starting directly with the assumption: <a href="https://www.youtube.com/watch?v=7VLSjyUa2aA" rel="nofollow noreferrer">https://www.youtube.com/watch?v=7VLSjyUa2aA</a></p> <p>Is this valid and if so, why isn't it taught more widely (doesn't mention it in my textbook either)? I personally find this technique much easier to follow. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> inequality </span><span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5303945"> Why did you delete your earlier question https://math.stackexchange.com/q/2568830/42969 – for which you already got an answer – and posted the same question again? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2569969" id="answer">
+<p>Both are fine. </p> <ul> <li><p>Basically the induction hypothesis is a tool that is given to you.</p></li> <li><p>The <span class="math-container" id="23755901" visual_id="11885"><math alttext="(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>-th case is what you want to show. Your goal.</p></li> </ul> <p>As long as you can show the <span class="math-container" id="23755902" visual_id="11885"><math alttext="(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>-th case, it is up to you how do you want to use your tool. You can either use it at the beginning as the video shown, or you can use it as an intermediate tool.</p> <p>In fact, for this particular case, it is almost identical.</p> <p>\begin{align} \text{LHS of what you want to show} &amp;= 3^{k+1} \\ &amp;= 3 (3^k) \\ &amp; \geq 3(1+2k) \\ &amp;=  3+6k\\ &amp;= 2k + 3+ 4k\\ &amp;\geq 2k+3\\ &amp;=\text{RHS  of what you want to show} \end{align}</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

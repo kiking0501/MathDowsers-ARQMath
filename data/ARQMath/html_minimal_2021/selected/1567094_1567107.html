@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is a bandlimited function smooth?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is a bandlimited function smooth? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1567094">
+<p>Definition of <a href="http://www.wikiwand.com/en/Smoothness" rel="nofollow"><strong>smoothness</strong></a></p> <p>Definition of <a href="https://www.wikiwand.com/en/Bandlimiting" rel="nofollow"><strong>bandlimited</strong></a>: for simplicity, let's consider a function in <span class="math-container" id="14472824" visual_id="15106"><math alttext="L^{2}(\mathbb{R})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is bandlimited if the support of its Fourier transform lies in <span class="math-container" id="14472825" visual_id="5234982"><math alttext="[\Omega,\Omega]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi mathvariant="normal">Ω</mi><mo>,</mo><mi mathvariant="normal">Ω</mi><mo stretchy="false">]</mo></mrow></semantics></math></span> for some <span class="math-container" id="14472826" visual_id="3176582"><math alttext="\Omega\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Ω</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span></p> <p>Specifically, how smooth is this function given that I know it's bandlimited? <span class="math-container" id="14472827" visual_id="5234983"><math alttext="Sinc(4\pi t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> analysis </span><span> fourier-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3190674"> The sinc function is <span class="math-container" id="14472828" visual_id="9179"><math alttext="C^{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup></semantics></math></span>. There's a general principle that smoothness on one side corresponds to decay on the other, and band-limited functions have pretty nice decay. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1567107" id="answer">
+<p>Yes, it is true that the Fourier transform of a compactly supported function is smooth. There is a <a href="https://en.wikipedia.org/wiki/Paley%E2%80%93Wiener_theorem" rel="nofollow noreferrer">cute proof using the fact that the Fourier transform is actually analytic</a>. (Refer to the "Holomorphic Fourier transform" section.) A more direct proof (perhaps simpler) can be constructed using the general ideal that the Fourier transform trades off smoothness and decay. See Remark 9.3(a) in Rudin's <em>Real and Complex Analysis</em>, for example, but the idea is probably worked out more explicitly elsewhere.</p> <p>In fact, more is true. Supposing the compactly supported function is smooth, its Fourier transform <a href="https://math.stackexchange.com/a/382124/284566">decays very rapidly and lies in the Schwarz space</a>. Also, <a href="https://mathoverflow.net/questions/195681/fourier-transform-of-compactly-supported-distribution-is-smooth">this result extends to distributions</a>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="382103"> Fourier transform of a compactly supported function </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

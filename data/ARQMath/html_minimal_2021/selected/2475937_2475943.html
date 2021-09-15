@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Given a fixed point of a function, is it always a contraction mapping close to the fixed point?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Given a fixed point of a function, is it always a contraction mapping close to the fixed point? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2475937">
+<p>If we are given a complete metric space X and <span class="math-container" id="22914123" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> a contraction from into itself, then the Banach fixed Point theorem assures the existance of a unique fixed Point. How about the reverse of this conclusion, i.e. given a fixed point of a function defined on a complete metric space, can we suggest that it will be a contraction close to the fixed point ? If not, under which conditions it will be a contraction ?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5115507"> No.  Take a linear (or "affine") function <span class="math-container" id="22914124" visual_id="3106"><math alttext="f:\mathbb{R}\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> and play around with the slope. </td></tr><tr><td comment_id="5115596"> A more interesting question would be the following: Given we have a unique fixed point <span class="math-container" id="22914125" visual_id="606"><math alttext="x_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>0</mn></msub></semantics></math></span> of <span class="math-container" id="22914135" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> in <span class="math-container" id="22914127" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>, is there a bijective mapping <span class="math-container" id="22914128" visual_id="56471"><math alttext="g:X\to X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>X</mi></mrow></mrow></semantics></math></span> such that <span class="math-container" id="22914129" visual_id="3134422"><math alttext="g^{-1}\circ f\circ g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>∘</mo><mi>f</mi><mo>∘</mo><mi>g</mi></mrow></semantics></math></span> is a contraction and <span class="math-container" id="22914130" visual_id="271732"><math alttext="g(x_{0})=x_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2475943" id="answer">
+<p>Let <span class="math-container" id="22914131" visual_id="3106"><math alttext="f:\mathbb{R}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span>, <span class="math-container" id="22914132" visual_id="27379"><math alttext="f(x)=2x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span>. The unique fixed point is <span class="math-container" id="22914133" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>, while <span class="math-container" id="22914134" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is celarly not a contraction, rather expanding map.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5115554"> Thanks. In the case it is not differentiable at the fixed point, i want to figure out under which conditions <span class="math-container" id="22914135" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> will be a contraction ? </td></tr><tr><td comment_id="5115571"> A contraction in <span class="math-container" id="22914136" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> is a.e. differentiable since it is Lipschitz continuous and therefore absolutely continuous and therefore of bounded variation. </td></tr><tr><td comment_id="5115595"> A.e. differentiable means that it must not be differentiable at the fixed point. Do you agree ? </td></tr><tr><td comment_id="5116308"> @user249018 Completely wrong. There are many differentiable functions with fixed points. A differentiable function is (in particular) almost differentiable. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

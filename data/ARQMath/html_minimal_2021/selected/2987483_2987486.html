@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to find the nth term in quadratic sequence?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to find the nth term in quadratic sequence? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2987483">
+<p><a href="https://i.stack.imgur.com/K9I1C.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/K9I1C.png"/></a></p> <p>Consider this triangular set of numbers. Determine the last number in the <span class="math-container" id="27665770" visual_id="3074"><math alttext="99" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>99</mn></semantics></math></span>th row.</p> <p>I came up with the formula for the <span class="math-container" id="27665771" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>'th term, and got <span class="math-container" id="27665772" visual_id="216921"><math alttext="\frac{1}{2}n^{2}+\frac{1}{2}n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>n</mi></mrow></mrow></semantics></math></span></p> <p>The issue is that the last term in the <span class="math-container" id="27665773" visual_id="3074"><math alttext="99" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>99</mn></semantics></math></span>th row is not the last term. So the <span class="math-container" id="27665774" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>rd overall term is the last term of the second row, the 6th overall term is the last term in the third row, and the <span class="math-container" id="27665775" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span>th overall term is the last in the fourth row, etc.</p> <p>So the pattern is <span class="math-container" id="27665776" visual_id="216922"><math alttext="3,6,10,\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>10</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span> and the formula for <span class="math-container" id="27665777" visual_id="216923"><math alttext="a_{n}=\frac{1}{2}n^{2}+1.5n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>1.5</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span></p> <p>My issue is, how can I find out what term number the last number of the <span class="math-container" id="27665778" visual_id="3074"><math alttext="99" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>99</mn></semantics></math></span>th term is? that way I can find out what <span class="math-container" id="27665779" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is to plug into my original equation</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> combinatorics </span><span> discrete-mathematics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2987486" id="answer">
+<p>Hint. The last term of the <span class="math-container" id="27665780" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span>-th row is <span class="math-container" id="27665781" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>-th <a href="https://en.wikipedia.org/wiki/Triangular_number" rel="nofollow noreferrer">triangular number</a> where <span class="math-container" id="27665782" visual_id="216924"><math alttext="n=1+2+3+\dots+r." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mi>r</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="6164838"> Beat me to it! You phrased it better than a I could have anyway :) <span class="math-container" id="27665783" visual_id="341"><math alttext="+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="6164840"> oh wow. I feel so dumb. so it's just <span class="math-container" id="27665791" visual_id="216925"><math alttext="1+2+...+99" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mn>99</mn></mrow></semantics></math></span>. My question is, how can I just look at this and recognize it? I'm having trouble recognizing what to do. Let's say the numbers were not triangular, then what would I do? </td></tr><tr><td comment_id="6164841"> @Clayton Thanks for your comment! </td></tr><tr><td comment_id="6164847"> "Let's say the numbers were not triangular" What do you mean? Have you any example to propose? </td></tr><tr><td comment_id="6164852"> If I do this ,then I get <span class="math-container" id="27665785" visual_id="216926"><math alttext="a_{99}=\frac{99}{2}(1+99)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>99</mn></msub><mo>=</mo><mrow><mfrac><mn>99</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>99</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and that is 4950. but that seems way too buy, what did I do wrong? </td></tr><tr><td comment_id="6164858"> @user8290579 Actually you should evaluate <span class="math-container" id="27665786" visual_id="216927"><math alttext="n=4950" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>4950</mn></mrow></semantics></math></span> and therefore you have to evaluate <span class="math-container" id="27665792" visual_id="216928"><math alttext="a_{4950}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>4950</mn></msub></semantics></math></span>. For example the last number in the <span class="math-container" id="27665788" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>th row is <span class="math-container" id="27665789" visual_id="216929"><math alttext="a_{10}=\frac{10\cdot 11}{2}=55" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>10</mn></msub><mo>=</mo><mfrac><mrow><mn>10</mn><mo>⋅</mo><mn>11</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>55</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="6164860"> wait maybe I'm missing something, so my formula for finding any term <span class="math-container" id="27665790" visual_id="216921"><math alttext="\frac{1}{2}n^{2}+\frac{1}{2}n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>n</mi></mrow></mrow></semantics></math></span> is not even relevant here? because I can just do <span class="math-container" id="27665791" visual_id="216925"><math alttext="1+2+...+99" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mn>99</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="6164864"> so i need to evaluate <span class="math-container" id="27665792" visual_id="216928"><math alttext="a_{4950}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>4950</mn></msub></semantics></math></span> in <span class="math-container" id="27665793" visual_id="216930"><math alttext="\frac{1}{2}n^{2}_{\frac{1}{2}}n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msubsup><mi>n</mi><mfrac><mn>1</mn><mn>2</mn></mfrac><mn>2</mn></msubsup><mo>⁢</mo><mi>n</mi></mrow></semantics></math></span>? </td></tr><tr><td comment_id="6164870"> Yes, it is relevant, but you have to use it two times. One time to evaluate <span class="math-container" id="27665794" visual_id="216931"><math alttext="n=r(r+1)/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> and then to evaluate <span class="math-container" id="27665795" visual_id="216932"><math alttext="a_{n}=n(n+1)/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>. Is it clear now? </td></tr><tr><td comment_id="6164890"> So if I'm understanding correctly, what I need to do is: <span class="math-container" id="27665796" visual_id="216933"><math alttext="n=99(99+1)/2=4950" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mn>99</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>99</mn><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mn>2</mn></mrow><mo>=</mo><mn>4950</mn></mrow></semantics></math></span> and then <span class="math-container" id="27665797" visual_id="216934"><math alttext="\frac{1}{2}(4950)^{2}+\frac{1}{2}(4950)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mn>4950</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4950</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and that is my answer? </td></tr><tr><td comment_id="6164891"> I get 12,253,725. That's an enormous number </td></tr><tr><td comment_id="6164999"> Yes, that's correct. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

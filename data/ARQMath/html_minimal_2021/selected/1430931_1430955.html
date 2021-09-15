@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that $\frac{n}{2}<\sum_{k=2}^{2n}\frac{1}{k}<n$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that <span class="math-container" id="13277274" visual_id="5394899"><math alttext="\frac{n}{2}&lt;\sum_{k=2}^{2n}\frac{1}{k}&lt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac><mo>&lt;</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msubsup><mfrac><mn>1</mn><mi>k</mi></mfrac></mrow><mo>&lt;</mo><mi>n</mi></mrow></semantics></math></span></h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1430931">
+<p>Show that </p> <blockquote> <p><span class="math-container" id="13277275" visual_id="5394900"><math alttext="\frac{n}{2}&amp;lt;\sum_{k=2}^{2n}\frac{1}{k}&amp;lt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac><mo>&lt;</mo></mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msubsup><mrow><mfrac><mn>1</mn><mi>k</mi></mfrac><mo>&lt;</mo></mrow></mrow><mi>n</mi></mrow></semantics></math></span></p> </blockquote> <p>Hence show that </p> <blockquote> <p><span class="math-container" id="13277276" visual_id="5394901"><math alttext="\sum_{k=1}^{n}\frac{1}{k}\rightarrow\infty\ as\ n\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><mi>k</mi></mfrac></mrow><mo>→</mo><mrow><mpadded width="+5pt"><mi mathvariant="normal">∞</mi></mpadded><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mpadded width="+5pt"><mi>s</mi></mpadded><mo>⁢</mo><mi>n</mi></mrow><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>.</p> <p>Group the terms thus: <span class="math-container" id="13277277" visual_id="5394902"><math alttext="\frac{1}{2}+(\frac{1}{3}+\frac{1}{4})+(\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+% \frac{1}{8}+...)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>7</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> </blockquote> <p>I am novice to the limit of sequence chapter and finding it tough to solve. </p> <p>Please explain me the concept involved with the question and the technique to solve such problems. Reference study notes will be a great help.  <a href="https://i.stack.imgur.com/Jf1C9.jpg" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/Jf1C9.jpg"/></a></p> <p>Source : Barnard and Child Higher Algebra Exercise XXIV</p> <p>Thanks in Advance !</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span><span> analysis </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2915092"> Perhaps the sum goes to <span class="math-container" id="13277278" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> instead of <span class="math-container" id="13277279" visual_id="3953"><math alttext="2n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="2915111"> No,it goes to 2n. </td></tr><tr><td comment_id="2915265"> try using industion </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1430955" id="answer">
+<p>This seems to be a typo in the book. </p> <p>The hint points to the <a href="https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)#Comparison_test" rel="nofollow">classical proof of the divergence of the harmonic series</a>, which ends with <span class="math-container" id="13277280" visual_id="215262"><math alttext="\sum_{k=1}^{2^{n}}\,\frac{1}{k}\;\geq\;1+\frac{n}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+1.7pt"><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></msubsup></mpadded><mpadded width="+2.8pt"><mfrac><mn>1</mn><mi>k</mi></mfrac></mpadded></mrow><mo>≥</mo><mrow><mn> 1</mn><mo>+</mo><mfrac><mi>n</mi><mn>2</mn></mfrac></mrow></mrow></semantics></math></span> and this is equivalent to <span class="math-container" id="13277281" visual_id="5394903"><math alttext="\sum_{k=2}^{2^{n}}\,\frac{1}{k}\;\geq\;\frac{n}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+1.7pt"><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></msubsup></mpadded><mpadded width="+2.8pt"><mfrac><mn>1</mn><mi>k</mi></mfrac></mpadded></mrow><mo rspace="5.3pt">≥</mo><mfrac><mi>n</mi><mn>2</mn></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2915130"> @ihf. yes I missed that. Anyways can you please just explain what basically it imply grouping the terms. </td></tr><tr><td comment_id="2915149"> @ihf but the series went till 2n and then it was groupped and the later is performed. But grouping the terms gives an infinite series. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

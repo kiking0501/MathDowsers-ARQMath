@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding $x^4 + y^4 + z^4$ using geometric series</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding <span class="math-container" id="4924342" visual_id="505145"><math alttext="x^{4}+y^{4}+z^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup><mo>+</mo><msup><mi>z</mi><mn>4</mn></msup></mrow></semantics></math></span> using geometric series </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="468506">
+<p>This is a problem from the <a href="http://sumo.stanford.edu/smt/2001/smt-questions.pdf">2001 Stanford Math Tournament Algebra section</a>.  <span class="math-container" id="4924343" visual_id="1744017"><math alttext="Giventhat\par" class="ltx_Math" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>v</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>t</mi></mrow></semantics></math></span>x+y+z=3<span class="math-container" id="4924344"> </span>x^2 + y^2 + z^2 = 5<span class="math-container" id="4924345" visual_id="1657414"><math alttext="x^{3}+y^{3}+z^{3}=7\par" class="ltx_Math" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>=</mo><mn>7</mn></mrow></semantics></math></span>Find <span class="math-container" id="4924346" visual_id="505145"><math alttext="x^{4}+y^{4}+z^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup><mo>+</mo><msup><mi>z</mi><mn>4</mn></msup></mrow></semantics></math></span>. <span class="math-container" id="4924347">$</span>$My friend claimed that he was able to solve this question using geometric series, i.e. adding the above three equations together and forming geometric series with three terms, but I can't see how he solved it using that method. I solved it using the method described in the <a href="http://sumo.stanford.edu/smt/2001/smt-solutions.pdf">solutions document</a>, but I haven't seen a solution using geometric series. Can anyone find a way to solve the problem using geometric series? Any help with this problem would be great. Thanks for the help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebra-precalculus </span><span> contest-math </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1008261"> is your friend prone to lying? </td></tr><tr><td comment_id="1008269"> Maybe he used some other method, but didn't want you to win, so he gave you a false hint to lead you in the wrong direction. </td></tr><tr><td comment_id="1008276"> Since the *only* possible answer is <span class="math-container" id="4924348" visual_id="4348177"><math alttext="\frac{1}{6}a^{4}-ba^{2}+\frac{4}{3}ac+\frac{1}{2}b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>⁢</mo><msup><mi>a</mi><mn>4</mn></msup></mrow><mo>-</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> with <span class="math-container" id="4924349" visual_id="786490"><math alttext="a=x+y+z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow></mrow></semantics></math></span>, <span class="math-container" id="4924350" visual_id="4348178"><math alttext="b=x^{2}+y^{2}+z^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> and <span class="math-container" id="4924351" visual_id="4348179"><math alttext="c=x^{3}+y^{3}+z^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow></mrow></semantics></math></span>, there is little room for alternative theories. maybe he used not a geometric series, but an arithmetic sequence to qǵuess the next value? In that case he was lucky ... </td></tr><tr><td comment_id="1008303"> Good thing these aren't integer solutions. *cough* fermat *cough* </td></tr><tr><td comment_id="1008304"> You should ask him to substantiate his claim. For example, it is not true that "the sum must follow an arithmetic progression". As a side note, <span class="math-container" id="4924352" visual_id="4348180"><math alttext="x^{0}+y^{0}+z^{0}=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>0</mn></msup><mo>+</mo><msup><mi>y</mi><mn>0</mn></msup><mo>+</mo><msup><mi>z</mi><mn>0</mn></msup></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1008921"> Does this generalize to <span class="math-container" id="4924353" visual_id="4348181"><math alttext="x^{n}+y^{n}+z^{n}=2n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msup><mi>y</mi><mi>n</mi></msup><mo>+</mo><msup><mi>z</mi><mi>n</mi></msup></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> for <span class="math-container" id="4924354" visual_id="967"><math alttext="n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>? </td></tr><tr><td comment_id="1009105"> @DanielR Notice that the values of <span class="math-container" id="4924355" visual_id="70937"><math alttext="x+y+z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow></semantics></math></span>, <span class="math-container" id="4924356" visual_id="50659"><math alttext="x^{2}+y^{2}+z^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></semantics></math></span>, and <span class="math-container" id="4924357" visual_id="1308605"><math alttext="x^{3}+y^{3}+z^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow></semantics></math></span> determine those of <span class="math-container" id="4924358" visual_id="1462"><math alttext="x,y,z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow></semantics></math></span>. The system of equations you propose for <span class="math-container" id="4924359" visual_id="262541"><math alttext="n=1,2,3,4,5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn></mrow></mrow></semantics></math></span> doesn't have solutions. </td></tr><tr><td comment_id="1009117"> @RGB: Sure, what I meant was if the solutions of the equations in the OP give <span class="math-container" id="4924360" visual_id="3954"><math alttext="2n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> when plugged into the expression <span class="math-container" id="4924361" visual_id="2066014"><math alttext="x^{n}+y^{n}+z^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msup><mi>y</mi><mi>n</mi></msup><mo>+</mo><msup><mi>z</mi><mi>n</mi></msup></mrow></semantics></math></span> (since the answer for <span class="math-container" id="4924362" visual_id="351"><math alttext="n=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></semantics></math></span> is <span class="math-container" id="4924363" visual_id="3052"><math alttext="9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn></semantics></math></span>). They don't, I checked it myself. For <span class="math-container" id="4924364" visual_id="5413"><math alttext="n=5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow></semantics></math></span> the result seems to be <span class="math-container" id="4924365" visual_id="4348182"><math alttext="\frac{29}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>29</mn><mn>3</mn></mfrac></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="468592" id="answer">
+<p>This is a rather encumbered solution for a not-as-hard problem, and it is the only way I see to make sense of what your friend is saying. On the other hand, it is cool that it let us know about Newton's identities and their <a href="http://en.wikipedia.org/wiki/Newton%27s_identities#Comparing_coefficients_in_series" rel="nofollow">proof using generating functions</a>.</p> <p>Let us form the formal series \begin{align}F(x,y,z,t)&amp;:=(x+y+z)t+(z^2+y^2+z^2)t^2+(x^3+y^3+z^3)t^3+\ldots\\&amp;=3t+5t^2+7t^3+at^4+\ldots,\end{align} where <span class="math-container" id="4924366" visual_id="4348183"><math alttext="a:=x^{4}+y^{4}+z^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>:=</mo><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup><mo>+</mo><msup><mi>z</mi><mn>4</mn></msup></mrow></mrow></semantics></math></span> is the number we want to find. </p> <p>Forming this power series is <em>kind of</em> adding the given equations (as your friend suggested), but we multiply them first by <span class="math-container" id="4924367" visual_id="1634326"><math alttext="t,t^{2},t^{3},..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>,</mo><msup><mi>t</mi><mn>2</mn></msup><mo>,</mo><msup><mi>t</mi><mn>3</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span>, respectively, before adding.</p> <p>Consider the polynomial \begin{align}G(x,y,z,t)&amp;:=-1+(x+y+z)t+(xy+xz+yz)t^2-(xyz)t^3\\&amp;=-1+3t+(xy+xz+yz)t^2-(xyz)t^3\end{align}</p> <p>We multiply <span class="math-container" id="4924368" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> times <span class="math-container" id="4924369" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>. It happens that we get a polynomial:</p> <p>\begin{align} FG&amp;=\left(\sum_{k=1}^{\infty}(xt)^k+\sum_{k=1}^{\infty}(yt)^k+\sum_{k=1}^{\infty}(zt)^k\right)G\\ &amp;=-\left(\frac{xt}{1-xt}+\frac{yt}{1-yt}+\frac{yt}{1-xt}\right)(1-xt)(1-yt)(1-zt)\\ &amp;=t\left((-x)(1-yt)(1-zt)+(-y)(1-xt)(1-zt)+(-z)(1-xt)(1-yt)\right)\\ &amp;=-(x+y+z)t+(xy+xz+yz)t^2-(xyz)t^3\\ &amp;=-3t+(xy+xz+yz)t^2-(xyz)t^3 \end{align}</p> <p>In the second equality we used the sum of the geometric series <em>more or less</em> like your friend said.</p> <p>Comparing coefficients of the multiplication <span class="math-container" id="4924370" visual_id="40181"><math alttext="FG" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mi>G</mi></mrow></semantics></math></span> with the result in the last line we get (the Newton's identities for the values in this problem)</p> <p>\begin{align} 2(xy+xz+yz)&amp;=9-5\\ 3xyz&amp;=3(xy+xz+yz)-15+7\\ 0&amp;=3(xyz)-5(xy+xz+yz)+21-(x^4+y^4+z^4) \end{align}</p> <p>From these, substituting from top to bottom, we find the value of <span class="math-container" id="4924371" visual_id="505145"><math alttext="x^{4}+y^{4}+z^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup><mo>+</mo><msup><mi>z</mi><mn>4</mn></msup></mrow></semantics></math></span>. Notice that the method allows us to continue using the equalities between coefficients of higher degree in <span class="math-container" id="4924372" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> to compute <span class="math-container" id="4924373" visual_id="507926"><math alttext="x^{5}+y^{5}+z^{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><msup><mi>y</mi><mn>5</mn></msup><mo>+</mo><msup><mi>z</mi><mn>5</mn></msup></mrow></semantics></math></span>, <span class="math-container" id="4924374" visual_id="4348184"><math alttext="x^{6}+y^{6}+z^{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>6</mn></msup><mo>+</mo><msup><mi>y</mi><mn>6</mn></msup><mo>+</mo><msup><mi>z</mi><mn>6</mn></msup></mrow></semantics></math></span>, and so on ...</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="556726"> How to find <span class="math-container" id="5762937" visual_id="505145"><math alttext="x^{4}+y^{4}+z^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup><mo>+</mo><msup><mi>z</mi><mn>4</mn></msup></mrow></semantics></math></span> from equation? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Polynomial root finding</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Polynomial root finding </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="309178">
+<p>I have an univariate polynomial of some degree - how do I numerically find all of its real roots?</p> <p>I never thought I would ask this question - everyone knows how to find polynomial roots, right..? Please, can someone explain to me how this works? This is what I think I understand so far:</p> <p>Newton method - it can find only one root at a time (if it converges) so in order to list all the roots I need to somehow guess where to start from. How to guess?</p> <p>Bisection - also finds only one root and it needs two endpoints with opposite signs. How to guess those endpoints? What if the function simply does not have opposite signs, for example <span class="math-container" id="3351163" visual_id="3813517"><math alttext="f(x)=x*x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>*</mo><mi>x</mi></mrow></mrow></semantics></math></span>?</p> <p>Do I need to know at least the interval I want to search in? Say, that I'm only interested in roots from -1000 to 1000? Or is it possible to list all the roots without any initial guesses?</p> <p>Then I found about <a href="http://en.wikipedia.org/wiki/Sturm%27s_theorem" rel="nofollow noreferrer">http://en.wikipedia.org/wiki/Sturm%27s_theorem</a> but I don't really understand it yet - is it somehow helpful in this context?</p> <p>Is the approach basically combination of the above? Count the signs with Descartes (what for?), find the intervals with Sturm, check if there are opposite signs, if no - find the extreme, if yes - bisect?</p> <p>And I also read somewhere that it is possible to covert the polynomial into a system of linear equations (matrix?) and solve that? Is this possible?</p> <p>(Note: I search this forum and found <a href="https://math.stackexchange.com/questions/184107/finding-all-roots-of-polynomial-system-numerically">this</a> but I don't really understand any of it - "Homotopy Continuation"?)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> polynomials </span><span> numerical-methods </span><span> roots </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="669392"> I'm not an expert in numerical mathematics, but here's an outline of a possible procedure: First, calculate the square-free part of a polynomial <span class="math-container" id="3351164" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> via <span class="math-container" id="3351165" visual_id="1321983"><math alttext="\operatorname{gcd}(p,p^{\prime})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>,</mo><msup><mi>p</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. Then, use Descartes' Rule and Sturm's Theorem to find small-enough intervals for each zero of the polynomial (since it's square-free, the intervals can be made small enough to contain a single zero each); this can be done by bisection. Also, make the intervals so small that any point inside them gives quadratic convergence for Newton iteration, and do Newton iteration from the center point. </td></tr><tr><td comment_id="669585"> @JohannesKloos: why to calculate square-free part? To eliminate multiple roots? And why to use Descartes' Rule - it only gives the number of sign changes, no? "the intervals can be made small enough" - how? by Sturm's Theorem? </td></tr><tr><td comment_id="669816"> The square-free part eliminates multiple roots, as you said. This is advantageous for two reasons: a. It allows you to get intervals containing a single zero using Sturm's Theorem. b. I read somewhere that some numerical methods have problems with multiple roots. </td></tr><tr><td comment_id="669829"> The "small enough" thing you can do as follows: As soon as you have seperated the zeroes into intervals (use Sturm's Theorem), it is guaranteed that there is a sign change inside every interval (because there are no repeated zeroes). You can then use, e.g., bisection to find a sub-interval in which Newton's method converges quadratically. </td></tr><tr><td comment_id="2805183"> Sturm's method and the algorithms that are sometimes collectively described as Descartes methods (VCA, VAS, Continued Fraction, ...) are orthogonal - no need to use both. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="309246" id="answer">
+<p>You can use Sturm's Theorem to find initial guesses for Newton's method, along the lines of Johannes's comment.</p> <p>The matrix formulation you're referring to is the <a href="http://en.wikipedia.org/wiki/Companion_matrix" rel="nofollow">companion matrix</a> of the polynomial. Roots of the polynomial become eigenvalues of the companion matrix, so you can then use any eigenvalue algorithm to find the roots.</p> <p>However, in my experience, if you need to find all of the roots of an arbitrary polynomial, the <a href="http://en.wikipedia.org/wiki/Jenkins%E2%80%93Traub_algorithm" rel="nofollow">Jenkins-Traub algorithm</a> is easily the best, both in terms of efficiency and robustness, and it's what commercial software like Mathematica uses under the hood when you ask it to numerical solve for polynomial roots. The one downside is that it is far from trivial to implement yourself; fortunately it's not hard to find codes on the Internet, in both Fortran and <a href="http://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CDUQFjAA&amp;url=http://www.crbond.com/download/misc/rpoly.cpp&amp;ei=Qf4kUcXwMNOH0QH3k4C4CQ&amp;usg=AFQjCNE301ms_qpxNbwHh4cBmcQoHVNmzw&amp;sig2=FBNJDq8ezgt3yyu1Ml-BGQ" rel="nofollow">C</a>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="669609"> I'm a bit lost on this - so should I use the method based on Sturm's Theorem or Jenkins-Traub or companion matrix? Could you please somehow compare these methods, if it is possible at all? Also, Mathematica uses "VAS", according to http://en.wikipedia.org/wiki/Root-finding_algorithm#Finding_roots_of_polynomials </td></tr><tr><td comment_id="669642"> Knowing nothing about exactly what you are trying to do, as a one-size-fits-all method I recommend Jenkins-Traub. I'm not sure what kind of comparisons you want -- for a comprehensive overview of the different method you can read, e.g. http://www.amazon.com/Numerical-Methods-Roots-Polynomials-Computational/dp/044452729X </td></tr><tr><td comment_id="669662"> For a polynomial, does each of the method gives the same result as other methods? I mean, for edge cases like multiple roots or no opposite signs, do the methods return the same values? Using floating point calculations, which method is the most stable? For small polynomials (of degree 1 - 10), which method is the fastest? </td></tr><tr><td comment_id="670363"> No, each method will give different answers. Which is most stable or fastest will vary *widely* depending on how the polynomials are sampled, how the methods are implemented, and how the results are measured, (suppose someone asked you, "Which car should I buy that's fastest and safest?") and any kind of definitive partial ordering is *way* beyond the scope of a comment. I recommend posting a new question along the lines of "what are some recent papers comparing the robustness and performance of different polynomial root-finding algorithms" with tag "reference-request". </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="184107"> Finding all roots of polynomial system (numerically) </td></tr><tr><td post_id="1046774"> Approximate solutions for quintic equation </td></tr><tr><td post_id="445782"> Analog to bisection: Converging on complex roots of a polynomial </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

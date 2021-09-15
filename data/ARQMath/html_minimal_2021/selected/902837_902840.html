@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Relating Binomial Coefficients</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Relating Binomial Coefficients </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="902837">
+<p>This question popped up in my revision sheet, and was just wondering on how to do it (this is high-school math by the way, so nothing too complicated please)</p> <p>"Expand <span class="math-container" id="8728629" visual_id="4204918"><math alttext="(x+(1-x))^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></semantics></math></span>, and use this to prove:  <span class="math-container" id="8728630" visual_id="4204919"><math alttext="nC0+nC1+nC2+...+nCn=2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>C</mi><mo>⁢</mo><mn>0</mn></mrow><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mi>C</mi><mo>⁢</mo><mn>1</mn></mrow><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mi>C</mi><mo>⁢</mo><mn>2</mn></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mi>C</mi><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></semantics></math></span>"</p> <p>I literally have no idea on how to do this, any help would be appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> binomial-coefficients </span><span> binomial-theorem </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="902840" id="answer">
+<p>We have</p> <p><span class="math-container" id="8728631" visual_id="4204920"><math alttext="1=(x+(1-x))^{n}=\sum_{k=0}^{n}{n\choose k}x^{k}(1-x)^{n-k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>k</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></msup></mrow></mrow></mrow></semantics></math></span> Now let <span class="math-container" id="8728632" visual_id="14705"><math alttext="x=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span>. Can you take it frome here?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1862362"> You're welcome. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Complex Integral final steps</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Complex Integral final steps </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2126358">
+<p>How do we evaluate the Cauchy Principal value for:</p> <p><span class="math-container" id="19654896" visual_id="2739636"><math alttext="\int_{-\infty}^{\infty}\frac{\cos kx}{x-a}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>k</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mrow><mi>x</mi><mo>-</mo><mi>a</mi></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </p> <p>Given, a is real, k &gt;<span class="math-container" id="19654897" visual_id="92"><math alttext="{\ 0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn> 0</mn></semantics></math></span>?</p> <p>I thought of integrating from <span class="math-container" id="19654898" visual_id="1628"><math alttext="{-\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> to <span class="math-container" id="19654899" visual_id="159"><math alttext="{\ a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="5pt" width="+5pt"><mi>a</mi></mpadded></semantics></math></span> and then from <span class="math-container" id="19654900" visual_id="159"><math alttext="{\ a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="5pt" width="+5pt"><mi>a</mi></mpadded></semantics></math></span> to <span class="math-container" id="19654901" visual_id="1627"><math alttext="{+\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span></p> <p>Any help will be appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> contour-integration </span><span> residue-calculus </span><span> complex-integration </span><span> cauchy-principal-value </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4372973"> Take the function on the first row, multiply by <span class="math-container" id="19654902" visual_id="2739637"><math alttext="z-5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>-</mo><mn>5</mn></mrow></semantics></math></span>, substitute <span class="math-container" id="19654903" visual_id="256913"><math alttext="z=5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>5</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="4372981"> You shall check and correct your maths. I did it for you, by the way. But you cannot write similar malarkey. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2128288" id="answer">
+<p><span class="math-container" id="19654904">\newcommand{\bbx}[1]{\,\bbox[8px,border:1px groove navy]{\displaystyle{#1}}\,}  \newcommand{\braces}[1]{\left\lbrace\,{#1}\,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\,{#1}\,\right\rbrack}  \newcommand{\dd}{\mathrm{d}}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,\mathrm{e}^{#1}\,}  \newcommand{\ic}{\mathrm{i}}  \newcommand{\mc}[1]{\mathcal{#1}}  \newcommand{\mrm}[1]{\mathrm{#1}}  \newcommand{\pars}[1]{\left(\,{#1}\,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\,{#2}\,}\,}  \newcommand{\totald}[3][]{\frac{\mathrm{d}^{#1} #2}{\mathrm{d} #3^{#1}}}  \newcommand{\verts}[1]{\left\vert\,{#1}\,\right\vert}</span> \begin{align} &amp;\mbox{P.V.}\int_{-\infty}^{\infty}{\cos\pars{3x} \over x^{2} - 25}\,\dd x = \Re\int_{-\infty}^{\infty} {\cos\pars{3x} \over x^{2} - \pars{25 + \ic 0^{+}}}\,\dd x \\[5mm] = &amp;\ \Re\int_{-\infty}^{\infty}{\cos\pars{3x} \over \pars{x + \root{25 + \ic 0^{+}}}\pars{x - \root{25 + \ic 0^{+}}}}\,\dd x \\[5mm] = &amp;\ {1 \over 2}\,\Re\int_{-\infty}^{\infty}{\expo{3\ic x} \over \pars{x + 5 + \ic 0^{+}}\pars{x - 5 - \ic 0^{+}}}\,\dd x + {1 \over 2}\,\Re\int_{-\infty}^{\infty}{\expo{-3\ic x} \over \pars{x + 5 + \ic 0^{+}}\pars{x - 5 - \ic 0^{+}}}\,\dd x \\[5mm] = &amp;\ {1 \over 2}\,\Re\pars{2\pi\ic\,{\expo{3\ic\bracks{5 + \ic 0^{+}}} \over 10 + \ic 0^{+}}} + {1 \over 2}\,\Re\pars{-2\pi\ic\,{\expo{-3\ic\bracks{-5 - \ic 0^{+}}} \over -10 - \ic 0^{+}}} = {1 \over 10}\,\pi\,\bracks{\Re\pars{\ic\expo{15\,\ic}} + \Re\pars{\ic\expo{15\,\ic}}} \\[5mm] = &amp;\ \bbx{\ds{-\,{1 \over 5}\,\pi\sin\pars{15}}} \end{align}</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

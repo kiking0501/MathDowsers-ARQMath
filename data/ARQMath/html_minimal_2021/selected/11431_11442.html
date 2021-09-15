@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>When functions commute under composition</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> When functions commute under composition </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="11431">
+<p>Today I was thinking about composition of functions.  It has nice properties, its always associative, there is an identity, and if we restrict to bijective functions then we have an inverse.</p> <p>But then I thought about commutativity.  My first intuition was that bijective self maps of a space should commute but then I saw some counter-examples. The symmetric group is only abelian if <span class="math-container" id="105126" visual_id="91052"><math alttext="n\leq 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≤</mo><mn>2</mn></mrow></semantics></math></span> so clearly there need to be more restrictions on functions than bijectivity for them to commute.</p> <p>The only examples I could think of were boring things like multiplying by a constant or maximal tori of groups like <span class="math-container" id="105127" visual_id="4003"><math alttext="O(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> (maybe less boring).</p> <p>My question: In a euclidean space, what are (edit) some nice characterizations of sets of functions that commute? What about in a more general space? </p> <p>Bonus: Is this notion of commutativity important anywhere in analysis?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="24570"> Rotations in the plane commute; in space, however... </td></tr><tr><td comment_id="24573"> Yes, but thats just multiplication by a constant in <span class="math-container" id="105128" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> so its not very interesting I think. Like I noted, in higher dimensions we have the maximal tori of the orthogonal group I think. </td></tr><tr><td comment_id="24579"> I don't understand the question.  What sort of conditions are you looking for?  What sort of functions?  Do you want to assume continuity, differentiability, linearity, etc.? </td></tr><tr><td comment_id="24581"> @jonas yes this question was mainly motivated from an analysis perspective originally, so those properties would be nice to consider.  It would narrow the search a little bit. But im really open to anything since its more of a general inquiry. </td></tr><tr><td comment_id="24583"> @GottfriedLeibniz: But what sort of general necessary conditions are you looking for to make functions commute?  Different sets of commuting functions will commute for different reasons.  Are you looking for a bunch of examples? </td></tr><tr><td comment_id="24589"> Im sorry, maybe its a poor question. If you can think of a way to improve it, then be my guest. Im not quite sure how I would do that, maybe the question is too general. </td></tr><tr><td comment_id="24596"> No need to apologize.  I was just wondering what is being asked.  But interesting answers are already coming in, and hopefully they're useful! </td></tr><tr><td comment_id="3583469"> An example from the logic of the language: red big X = big red X </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="11442" id="answer">
+<p>A <a href="http://www.ams.org/journals/tran/1923-025-03/S0002-9947-1923-1501252-3/S0002-9947-1923-1501252-3.pdf">classic result of Ritt</a> shows that polynomials that commute under composition must be, up to a linear homeomorphism, either both powers of <span class="math-container" id="105129" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, both iterates of the same polynomial, or both  Chebychev polynomials. Actually Ritt proved a more general rational function case - follow the link. His work was motivated by work of Julia and Fatou's work on Julia sets of rational functions, e.g. see <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.47.8482">here</a> for a modern presentation.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="24592"> Yes, the identity <span class="math-container" id="105130" visual_id="8258196"><math alttext="T_{m}(T_{n}(x))=T_{n}(T_{m}(x))=T_{mn}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>T</mi><mi>m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>T</mi><mi>m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>T</mi><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, even after looking at it in terms of cosines, is pretty deep, I think. </td></tr><tr><td comment_id="24603"> Thanks, this is a very nice characterization. I will certainly read the links. </td></tr><tr><td comment_id="24690"> Ritt's theorem is for polynomials with complex coefficients (which implies the same result for polynomials over a field of characteristic 0).  The problem is unsolved in characteristic p &gt; 0. </td></tr><tr><td comment_id="987441"> What is meant by "up to linear homeomorphism"? Not even scalar multiples of powers of <span class="math-container" id="105131" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> will commute in general unless the scalars and the powers are the same. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1194115"> When does function composition commute? </td></tr><tr><td post_id="2126116"> An example of two functions commuting with each other </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1899400"> Determine all <span class="math-container" id="17604287" visual_id="421611"><math alttext="P(X)\in K[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span> such that <span class="math-container" id="17604288" visual_id="7802596"><math alttext="P\big{(}X^{2}+1\big{)}=\big{(}P(X)\big{)}^{2}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mi>X</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>, for fields <span class="math-container" id="17604289" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span> of any characteristic. </td></tr><tr><td post_id="1897673"> Determine all real polynomials with <span class="math-container" id="17587615" visual_id="241826"><math alttext="P(0)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="17587616" visual_id="389377"><math alttext="P(x^{2}+1)=(P(x))^{2}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1391401"> Is is true that: <span class="math-container" id="12923323" visual_id="9047569"><math alttext="f\circ g=g\circ f\implies" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>g</mi><mo>∘</mo><mi>f</mi></mrow><mo>⟹</mo><mi></mi></mrow></semantics></math></span> <span class="math-container" id="12923324" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is linear or <span class="math-container" id="12923325" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is linear? </td></tr><tr><td post_id="17162"> What is the property where f(g(x)) = g(f(x))? </td></tr><tr><td post_id="1664492"> When actually <span class="math-container" id="15384406" visual_id="45667"><math alttext="f(g(x))=g(f(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> holds? </td></tr><tr><td post_id="1779636"> What is implied by <span class="math-container" id="16440309" visual_id="204544"><math alttext="f\circ g=g\circ f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>g</mi><mo>∘</mo><mi>f</mi></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="2552120"> Abelian monoids and integer polynomial composition? </td></tr><tr><td post_id="1769083"> Find all <span class="math-container" id="16339374" visual_id="1754"><math alttext="g(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> such that <span class="math-container" id="16339375" visual_id="45667"><math alttext="f(g(x))=g(f(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="654461"> How to find all polynomials P(x) such that <span class="math-container" id="6609462" visual_id="4432096"><math alttext="P(x^{2}-2)=P(x)^{2}-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>-</mo><mn>2</mn></mrow></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

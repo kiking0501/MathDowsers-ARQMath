@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Give the combinatorial proof of the identity $\sum\limits_{i=0}^{n} \binom{k-1+i}{k-1} = \binom{n+k}{k}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Give the combinatorial proof of the identity <span class="math-container" id="3470966" visual_id="3775840"><math alttext="\sum\limits_{i=0}^{n}\binom{k-1+i}{k-1}=\binom{n+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mi>i</mi></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="321022">
+<p>Given the identity</p> <p><span class="math-container" id="3470967" visual_id="3775840"><math alttext="\sum_{i=0}^{n}\binom{k-1+i}{k-1}=\binom{n+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mi>i</mi></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span></p> <p>Need to give a <em>combinatorial</em> proof </p> <p>a) in terms of subsets</p> <p>b) by interpreting the parts in terms of compositions of integers</p> <p>I should not use induction or any other ways...</p> <p>Please help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> summation </span><span> binomial-coefficients </span><span> combinatorial-proofs </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1836523" id="answer">
+<p><span class="math-container" id="3471010">\newcommand{\angles}[1]{\left\langle\,{#1}\,\right\rangle}  \newcommand{\braces}[1]{\left\lbrace\,{#1}\,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\,{#1}\,\right\rbrack}  \newcommand{\dd}{\mathrm{d}}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,\mathrm{e}^{#1}\,}  \newcommand{\half}{{1 \over 2}}  \newcommand{\ic}{\mathrm{i}}  \newcommand{\iff}{\Leftrightarrow}  \newcommand{\imp}{\Longrightarrow}  \newcommand{\ol}[1]{\overline{#1}}  \newcommand{\pars}[1]{\left(\,{#1}\,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\,{#2}\,}\,}  \newcommand{\totald}[3][]{\frac{\mathrm{d}^{#1} #2}{\mathrm{d} #3^{#1}}}  \newcommand{\verts}[1]{\left\vert\,{#1}\,\right\vert}</span> \begin{align} \color{#f00}{\sum_{j = 0}^{n}{k - 1 + j \choose k - 1}} &amp; = \sum_{j = 0}^{n}{k - 1 + j \choose j} = \sum_{j = 0}^{n}{-k + 1 - j + j - 1 \choose j}\pars{-1}^{j} = \sum_{j = 0}^{n}{-k \choose j}\pars{-1}^{j} \\[3mm] &amp; = \sum_{j = -\infty}^{n}{-k \choose j}\pars{-1}^{j} = \sum_{j = -n}^{\infty}{-k \choose -j}\pars{-1}^{-j} = \sum_{j = 0}^{\infty}{-k \choose n - j}\pars{-1}^{j + n} = \\[3mm] &amp; = \pars{-1}^{n}\sum_{j = 0}^{\infty}\pars{-1}^{j}\oint_{\verts{z} = 1^{-}} {\pars{1 + z}^{-k} \over z^{n - j + 1}}\,{\dd z \over 2\pi\ic} \\[3mm] &amp; = \pars{-1}^{n}\oint_{\verts{z} = 1^{-}} {\pars{1 + z}^{-k} \over z^{n + 1}}\sum_{j = 0}^{\infty}\pars{-z}^{j} \,{\dd z \over 2\pi\ic} = \pars{-1}^{n}\oint_{\verts{z} = 1^{-}} {\pars{1 + z}^{-k - 1} \over z^{n + 1}}\,{\dd z \over 2\pi\ic} \\[3mm] &amp; = \pars{-1}^{n}{-k - 1 \choose n} = \pars{-1}^{n}{k + 1 + n - 1 \choose n}\pars{-1}^{n} = {n + k \choose n} = \color{#f00}{n + k \choose k} \end{align}</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1212450"> Combinational proof problem </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1408642"> Combinatorial Proof for Binomial Identity: <span class="math-container" id="13085336" visual_id="3429559"><math alttext="\sum_{k=0}^{n}\binom{k}{p}=\binom{n+1}{p+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>p</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

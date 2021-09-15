@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Combinatorics - Counting in two ways?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Combinatorics - Counting in two ways? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="777775">
+<p>What is the idea of proving a binomial identity by <strong>counting in two ways</strong>?</p> <p>Could you please illustrate this with this example? Thank you very much. </p> <p><span class="math-container" id="7671766" visual_id="271885"><math alttext="\binom{2n}{n}=\sum_{k=0}^{n}{\binom{n}{k}}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></semantics></math></span></p> <p><a href="https://i.stack.imgur.com/xD4dm.png" rel="noreferrer">(original screenshot)</a></p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1614000"> This becomes a special case of the [Vandermonde identity](https://en.wikipedia.org/wiki/Vandermonde%27s_identity) if you replace one of the factors <span class="math-container" id="7671767" visual_id="1602"><math alttext="\binom{n}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></semantics></math></span> by <span class="math-container" id="7671768" visual_id="375572"><math alttext="\binom{n}{n-k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></mfrac><mo>)</mo></mrow></semantics></math></span>. Also, it is a duplicate of at least [this question](http://math.stackexchange.com/q/677307), if not of many others. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="777795" id="answer">
+<p>[EDIT]</p> <p>The idea behind double counting arguments is to provide verbal proofs of combinatorial identities that give an intuitive understanding of why they should be so.  By simply showing that two expressions measure different ways to count the same thing it becomes clear to even a novice mathematician that they must be equivalent.</p> <hr/> <p>On the left hand side: <span class="math-container" id="7671794" visual_id="27890"><math alttext="\binom{2n}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></semantics></math></span> is the count of ways to divide a set of distinct objects into two equal sized subsets.</p> <p>On the right hand side: <span class="math-container" id="7671795" visual_id="806973"><math alttext="\sum\limits_{k=0}^{n}\binom{n}{k}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow></semantics></math></span> is the count of ways to redistribute objects between two equal sized sets as follows:</p> <p><span class="math-container" id="7671796" visual_id="1602"><math alttext="\binom{n}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></semantics></math></span> counts the ways to select <span class="math-container" id="7671797" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> objects form a set of <span class="math-container" id="7671798" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> distinct objects.  Thus <span class="math-container" id="7671799" visual_id="156444"><math alttext="\binom{n}{k}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup></semantics></math></span> counts the ways to do this for two sets; which makes it the count of ways to transfer <span class="math-container" id="7671800" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> object from one set to the other in exchange for <span class="math-container" id="7671801" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> objects originally in the second set.  The summation is thus the count of ways to exchange equal numbers of distinct objects between two equal sized sets, for all possible size of the exchanges.  </p> <p>It should be clear that one gets the same result by simply combining the two sets and counting all the ways to split them into equal sized sets.</p> <p>Hence it follows that: <span class="math-container" id="7671802" visual_id="271885"><math alttext="\dbinom{2n}{n}=\sum\limits_{k=0}^{n}\dbinom{n}{k}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mi>n</mi></mfrac></mstyle><mo>)</mo></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac></mstyle><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="677307"> Counting two ways, <span class="math-container" id="6809859" visual_id="5591176"><math alttext="\sum\binom{n}{k}\binom{m}{n-k}=\binom{n+m}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo largeop="true" symmetric="true">∑</mo><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>m</mi><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></mfrac><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

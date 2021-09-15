@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Integral Property: $\int^a_{0}f(x)dx=\int^a_{0}f(a-x)dx$ [Proof by definition of Riemann Sums]</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Integral Property: <span class="math-container" id="14622212" visual_id="186570"><math alttext="\int^{a}_{0}f(x)dx=\int^{a}_{0}f(a-x)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span> [Proof by definition of Riemann Sums] </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1582922">
+<p>This link: <a href="https://math.stackexchange.com/questions/1270326/why-int-0afxdx-int-0afa-xdx">Why <span class="math-container" id="14622213" visual_id="186570"><math alttext="\int_{0}^{a}f(x)dx=\int_{0}^{a}f(a-x)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span>?</a> addresses this question but I do not follow the proofs in the answers: Each proof starts off with variable <span class="math-container" id="14622214" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> but ends the right hand side with a different variable. How does that work? I can't find this discussed anywhere else on the internet.</p> <p>For example, how do we get from  <span class="math-container" id="14622215" visual_id="1236477"><math alttext="\int_{0}^{a}f(x)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> to <span class="math-container" id="14622216" visual_id="5281965"><math alttext="\int_{a}^{0}f(a-x)(-dx)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mn>0</mn></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>?(I apology if I'm overlooking some silly thing but for some reason I am stuck):</p> <p>Does anyone know the proof or where else I can find it? Also are there any special conditions on it?</p> <p><span class="math-container" id="14622217" visual_id="186570"><math alttext="\int^{a}_{0}f(x)dx=\int^{a}_{0}f(a-x)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> integration </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3221842"> One way to justify this is to remember that a definite integral represents the area under the curve.  Both of these integrals represent the same area under the curve, but the second one traces the area *backwards*. </td></tr><tr><td comment_id="3221853"> @MichaelBurr do know of a source where I can look this up a little more in detail? </td></tr><tr><td comment_id="3221877"> Take an example, for example, <span class="math-container" id="14622218" visual_id="7155"><math alttext="f(x)=x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></semantics></math></span>, let <span class="math-container" id="14622219" visual_id="31988"><math alttext="a=5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>5</mn></mrow></semantics></math></span>; then graph <span class="math-container" id="14622250" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="14622221" visual_id="5281966"><math alttext="f(5-x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>5</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3221883"> When you're looking for a source, are you looking for a source that the definite integral is an area under the curve?  The area under the curve can be taken as the *definition* of the definite integral. </td></tr><tr><td comment_id="3221885"> No, no I know that very well and I see your point geometrically. I was wondering about this particular property worked out algebraically. Anyhow I understand it both ways much better now. Thanks. But if you do know of a source I wouldn't mind </td></tr><tr><td comment_id="3221888"> I don't have a source (but it should be in most standard calculus textbooks).  It is a geometric explanation of the <span class="math-container" id="14622287" visual_id="506"><math alttext="u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi></semantics></math></span>-substitution <span class="math-container" id="14622256" visual_id="311511"><math alttext="u=a-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mrow><mi>a</mi><mo>-</mo><mi>x</mi></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3221914"> Proof by Riemann sums: <span class="math-container" id="14622224" visual_id="5281967"><math alttext="a+b+c+\cdots+z=z+y+x+\cdots+a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mi>z</mi></mrow><mo>=</mo><mrow><mi>z</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>x</mi><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mi>a</mi></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3221915"> @anon I understand what you are taking about but I was hoping some one do a slightly better and elaborate proof walking me through, though Im grateful for the answer below that does that. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1582924" id="answer">
+<p>Let <span class="math-container" id="14622278" visual_id="311511"><math alttext="u=a-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mrow><mi>a</mi><mo>-</mo><mi>x</mi></mrow></mrow></semantics></math></span>.  Then <span class="math-container" id="14622279" visual_id="487117"><math alttext="du=-dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> and when <span class="math-container" id="14622280" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="14622281" visual_id="428984"><math alttext="u=a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>a</mi></mrow></semantics></math></span> and when <span class="math-container" id="14622282" visual_id="1406"><math alttext="x=a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>a</mi></mrow></semantics></math></span>, <span class="math-container" id="14622283" visual_id="23476"><math alttext="u=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>Then write the second integral: <span class="math-container" id="14622284" visual_id="5281980"><math alttext="\int_{x=0}^{x=a}f(a-x)\,dx=-\int_{x=0}^{x=a}f(u)\,du\\ =-\int_{u=a}^{u=0}f(u)\,du=\int_{u=0}^{u=a}f(u)\,du=\int_{x=0}^{x=a}f(x)\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>x</mi><mo>=</mo><mi>a</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mi>x</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>x</mi><mo>=</mo><mi>a</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mi>u</mi><mo>=</mo><mi>a</mi></mrow><mrow><mi>u</mi><mo>=</mo><mn>0</mn></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mi>u</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>u</mi><mo>=</mo><mi>a</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>x</mi><mo>=</mo><mi>a</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>The last step is just using a different symbolfor a "dummy variable".</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3221846"> Yes but that doesn't mean that <span class="math-container" id="14622285" visual_id="23257"><math alttext="u=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>x</mi></mrow></semantics></math></span> ; we have taken <span class="math-container" id="14622286" visual_id="311511"><math alttext="u=a-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mrow><mi>a</mi><mo>-</mo><mi>x</mi></mrow></mrow></semantics></math></span>? </td></tr><tr><td comment_id="3225178"> In the next to last integral, what we call "<span class="math-container" id="14622287" visual_id="506"><math alttext="u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi></semantics></math></span>" is irrelevant (as long as it does not match one of the variables appearing in the limits); for example, <span class="math-container" id="14622288" visual_id="5281981"><math alttext="\int_{0}^{a}f(x)\,dx=\int_{0}^{a}f(t)\,dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span> and so forth.  In fact, the point of the exercise was to get you used to manipulating the dummy integration variables in this way, so that in more complicated cases you are at least familiar with this technique. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1270326"> Why <span class="math-container" id="11833735" visual_id="186570"><math alttext="\int_{0}^{a}f(x)dx=\int_{0}^{a}f(a-x)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

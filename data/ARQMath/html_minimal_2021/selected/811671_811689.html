@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Equivalence relations and equivalence classes</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Equivalence relations and equivalence classes </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="811671">
+<p><img alt="enter image description here" src="https://i.stack.imgur.com/gA9HR.png"/></p> <p>I dont know how to start this proof? Also, our professor did not explain equivalence classes fully so I am not understanding them very well.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span><span> proof-writing </span><span> equivalence-relations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1677333"> What do you know about equivalence classes? </td></tr><tr><td comment_id="1677337"> An equivalence relation needs to sattisfy reflexitivity, symmetry and transitivity, so you need to check whether those conditions hold for this relation. http://en.wikipedia.org/wiki/Equivalence_class. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="811689" id="answer">
+<p>In order to prove some relation <span class="math-container" id="7958058" visual_id="3262"><math alttext="\sim" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∼</mo></semantics></math></span> is an equivalence relation on some set <span class="math-container" id="7958059" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> we need to show that for <span class="math-container" id="7958060" visual_id="97140"><math alttext="a,b,c\in A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow><mo>∈</mo><mi>A</mi></mrow></semantics></math></span> we have the following properties:</p> <ul> <li><span class="math-container" id="7958061" visual_id="247706"><math alttext="a\sim a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∼</mo><mi>a</mi></mrow></semantics></math></span></li> <li><span class="math-container" id="7958062" visual_id="532132"><math alttext="a\sim b\implies b\sim a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∼</mo><mi>b</mi><mo>⟹</mo><mi>b</mi><mo>∼</mo><mi>a</mi></mrow></semantics></math></span></li> <li><span class="math-container" id="7958063" visual_id="3851435"><math alttext="a\sim b,b\sim c\implies a\sim c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>∼</mo><mi>b</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>∼</mo><mi>c</mi><mo>⟹</mo><mi>a</mi><mo>∼</mo><mi>c</mi></mrow></mrow></semantics></math></span></li> </ul> <p>Now I will give hints to to each step for your equivalence relation:</p> <ul> <li>Does <span class="math-container" id="7958064" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> divide <span class="math-container" id="7958065" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>?</li> <li>If <span class="math-container" id="7958066" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is even, is <span class="math-container" id="7958067" visual_id="17255"><math alttext="-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi>x</mi></mrow></semantics></math></span> even?</li> <li>Since we know that <span class="math-container" id="7958068" visual_id="1859944"><math alttext="a-b,b-c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>-</mo><mi>c</mi></mrow></mrow></semantics></math></span> are even, we know that <span class="math-container" id="7958069" visual_id="3851436"><math alttext="a-b=2n,b-c=2k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>,</mo><mrow><mrow><mi>b</mi><mo>-</mo><mi>c</mi></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></mrow></semantics></math></span> for some <span class="math-container" id="7958070" visual_id="55288"><math alttext="k,n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>,</mo><mi>n</mi></mrow></semantics></math></span></li> </ul> <p>Now the equivalence class of some element <span class="math-container" id="7958071" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> are defined as:</p> <blockquote> <p><span class="math-container" id="7958072" visual_id="3851437"><math alttext="[a]=\{b\mid a\sim b\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>b</mi><mo>∣</mo><mrow><mi>a</mi><mo>∼</mo><mi>b</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span></p> </blockquote> <p>So think about the different elements of <span class="math-container" id="7958073" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>, and what their equivlence classes will be. <strong>Hint:</strong> there are only 2 distinct classes.</p> <p>Hope this helps</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2835722"> What I don't understand is how a can NOT be itself? I get completely how a can NOT be b (symmetrical) and if a is NOT b and b is NOT c THEN a is NOT c (transitive), but the reflexive relation baffles me. a is not a statement, it's an element of a set, so a ~ a doesn't make any sense...? </td></tr><tr><td comment_id="2837628"> @BenjaminR I don't quite follow your question. <span class="math-container" id="7958075" visual_id="3262"><math alttext="\sim" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∼</mo></semantics></math></span> can be defined in many different ways, even non-symmetric ways. For example, consider <span class="math-container" id="7958075" visual_id="3262"><math alttext="\sim" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∼</mo></semantics></math></span> to be <span class="math-container" id="7958076" visual_id="5045"><math alttext="&lt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&lt;</mo></semantics></math></span> </td></tr><tr><td comment_id="2837690"> Hi Dan, I am new to logical symbols and notation. Whatever Discrete math book or reference I look at uses `~` to mean negation (or literally "not" some statement or value). That's why I find the equivalence relation questions on Math.SE and the reference on Wikipedia to equivalence classes confusing. It seems like `~` is literally used to represent the equivalence relation, am I understanding that right? </td></tr><tr><td comment_id="2837725"> Okay, I couldn't see the MathJax in your comment before (I was using the iOS SE app and it doesn't render it by default). I think you are essentially saying "Consider the relation <span class="math-container" id="7958077" visual_id="16677"><math alttext="a\&gt;\rm R\&gt;\it b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded width="+2.2pt"><mi>a</mi></mpadded><mo>⁢</mo><mpadded width="+2.2pt"><mi mathvariant="normal">R</mi></mpadded><mo>⁢</mo><mi>b</mi></mrow></semantics></math></span> if <span class="math-container" id="7958078" visual_id="21059"><math alttext="a&lt;b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow></semantics></math></span>. Is <span class="math-container" id="7958080" visual_id="277"><math alttext="\rm R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi></semantics></math></span> an _equivalence relation?_" </td></tr><tr><td comment_id="2837746"> @BenjaminR correct that's what I was sa<span class="math-container" id="26079072">y</span>ing in my previous comment - we are simply starting with a relation, and we want to prove that its an equivalence relation </td></tr><tr><td comment_id="2837760"> Aha! Great, thank you for being patient with me, that is a huge help to understanding the literature online. In our textbook by Epp and in our class at university we use <span class="math-container" id="7958080" visual_id="277"><math alttext="\rm R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">R</mi></semantics></math></span> or some other letter to represent a relation as any relation is also a set. That's why when I saw the `~` I was lost as I have only seen it (coming from a CS background) as equivalent to <span class="math-container" id="7958081" visual_id="16516"><math alttext="\neg" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">¬</mi></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1358420"> Grasping the concept of equivalence classes more concretely </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

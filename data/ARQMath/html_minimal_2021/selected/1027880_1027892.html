@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find chain and antichain equivalent to R</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find chain and antichain equivalent to R </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1027880">
+<p>Given partial order <span class="math-container" id="9764156" visual_id="5943605"><math alttext="(P(\mathbb{N}),\subset)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℕ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mo>⊂</mo><mo stretchy="false">)</mo></mrow></semantics></math></span>. I have to find chain and antichain in this partiar order equipotent to <span class="math-container" id="9764157" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>. Actually, I don't have any idea how to begin :) Any hints? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2095756"> <span class="math-container" id="9764158" visual_id="1072200"><math alttext="|\mathbb{Q}|=|\mathbb{N}|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>ℚ</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>ℕ</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="2095765"> Many duplicates. Chains: [one](http://math.stackexchange.com/q/246812/622), [two](http://math.stackexchange.com/q/298323/622), [three](http://math.stackexchange.com/q/244893/622). Antichains: [four](http://math.stackexchange.com/q/162387/622), [five](http://math.stackexchange.com/q/278837/622)... there are probably more of each type. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1027892" id="answer">
+<p>HINT: <span class="math-container" id="9764159" visual_id="1072200"><math alttext="|\mathbb{Q}|=|\mathbb{N}|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>ℚ</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>ℕ</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span>, so you can replace <span class="math-container" id="9764160" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> by <span class="math-container" id="9764161" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span>. Then for the first part think about <a href="http://en.wikipedia.org/wiki/Dedekind_cut" rel="nofollow noreferrer">Dedekind cuts</a> — specifically, their downward halves, say. For the second part, take a look at <a href="https://math.stackexchange.com/questions/278837/sets-of-natural-numbers">this question</a> and the answer given there (or the answers given at the linked earlier question).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2095767"> You beat me for that one link, but I've beaten you for four others! :-) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="298323"> Where the set of maximal chains is <span class="math-container" id="3253000" visual_id="18817"><math alttext="2^{\aleph_{0}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><msub><mi mathvariant="normal">ℵ</mi><mn>0</mn></msub></msup></semantics></math></span> </td></tr><tr><td post_id="162387"> Can a countable set contain uncountably many infinite subsets such that the intersection of any two such distinct subsets is finite? </td></tr><tr><td post_id="246812"> Finding maximal chain of cardinality <span class="math-container" id="2748496" visual_id="9908"><math alttext="\aleph" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ℵ</mi></semantics></math></span> </td></tr><tr><td post_id="278837"> Uncountably many sets of natural numbers with finite intersections </td></tr><tr><td post_id="244893"> A countale partially ordered set that has an uncountable number of maximal chains </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

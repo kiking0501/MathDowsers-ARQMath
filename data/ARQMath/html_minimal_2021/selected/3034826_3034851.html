@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>how to integrate $\frac{-1+e^{-i k x}}{x^2}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> how to integrate <span class="math-container" id="28106952" visual_id="8160662"><math alttext="\frac{-1+e^{-ikx}}{x^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3034826">
+<p>How do I integrate the following?<span class="math-container" id="28106953" visual_id="8160663"><math alttext="\int_{-\infty}^{\infty}\frac{-1+e^{-ikx}}{x^{2}}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span></p> <p>I am not very familiar with complex analysis, but I did try to use contour integral to do this but I couldn't get any success with that. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> contour-integration </span><span> calculator </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3034851" id="answer">
+<p>Another way to do it if you want to use contour integration is to use an indented semi circle in the upper half plane going around the singularity at <span class="math-container" id="28106961" visual_id="868"><math alttext="z=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. For this contour, the function <span class="math-container" id="28106962" visual_id="8160669"><math alttext="f(z)=(e^{-ikz}-1)/z^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> will integrate to 0 by Cauchy's theorem since it is holomorphic in the region enclosed by the indented semi circle. Now you simply split <span class="math-container" id="28106963" visual_id="8160670"><math alttext="\int_{\gamma}=\int_{C_{R}}+\int_{C_{\epsilon}}+\int_{-R}^{-\epsilon}+\int_{% \epsilon}^{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>γ</mi></msub><mo>=</mo><mrow><msub><mo largeop="true" symmetric="true">∫</mo><msub><mi>C</mi><mi>R</mi></msub></msub><mo>+</mo><msub><mo largeop="true" symmetric="true">∫</mo><msub><mi>C</mi><mi>ϵ</mi></msub></msub><mo>+</mo><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>R</mi></mrow><mrow><mo>-</mo><mi>ϵ</mi></mrow></msubsup><mo>+</mo><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>ϵ</mi><mi>R</mi></msubsup></mrow></mrow></semantics></math></span> and you're left with justifying the exchange of limit and integrals when you want to let <span class="math-container" id="28106964" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span> (radius of small semi circle) go to <span class="math-container" id="28106965" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> and R go to <span class="math-container" id="28106966" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span> (radius of larger semi-circle). Here are some examples : <a href="https://web.williams.edu/Mathematics/sjmiller/public_html/302/coursenotes/Trapper_MethodsContourIntegrals.pdf" rel="nofollow noreferrer">https://web.williams.edu/Mathematics/sjmiller/public_html/302/coursenotes/Trapper_MethodsContourIntegrals.pdf</a></p> <p>There are also nice people explaining it in full detail on youtube, have fun !</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="6257874"> This pdf is exactly the one I have been following. Thanks! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="141695"> how to calculate the integral of <span class="math-container" id="1644968" visual_id="1829840"><math alttext="\sin^{2}(x)/x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

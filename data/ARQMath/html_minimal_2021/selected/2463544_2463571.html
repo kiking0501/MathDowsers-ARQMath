@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>differential series solution</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> differential series solution </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2463544">
+<p>So I have been trying to figure out where I am going wrong with this question. I think it is to do with the index shifting, my book has given a model solution which has confused me more. I will try and show and explain where my problem is.</p> <p>Q. Substitute the power series for cos x into the differntial equation</p> <p><span class="math-container" id="22805577" visual_id="224521"><math alttext="y^{\prime\prime}=-y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mo>′′</mo></msup><mo>=</mo><mrow><mo>-</mo><mi>y</mi></mrow></mrow></semantics></math></span></p> <p>so my starting point is here:</p> <p><span class="math-container" id="22805578" visual_id="5890934"><math alttext="\sum\limits_{n=0}^{\infty}(-1)^{n}*\frac{x^{2n}}{2n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>*</mo><mfrac><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>n</mi><mo>!</mo></mrow></mrow></mfrac></mrow></mrow></semantics></math></span></p> <p>by taking the differntial I get:</p> <p><span class="math-container" id="22805579" visual_id="5890935"><math alttext="\frac{d}{dx}\sum\limits_{n=0}^{\infty}(-1)^{n}*\frac{x^{2n}}{2n!}=\sum\limits_% {n=1}^{\infty}(-1)^{n}\frac{x^{2n-1}}{(2n-1)!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>*</mo><mfrac><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>n</mi><mo>!</mo></mrow></mrow></mfrac></mrow></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mfrac><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow></mrow></mrow></semantics></math></span> </p> <p>I have set the lower limit as n=1 beacuse the series shifts one place to the right. </p> <p>Now this is the part where I seem to get lost. Taking the second differential I get:</p> <p><span class="math-container" id="22805580" visual_id="5890936"><math alttext="\frac{d}{dx}\sum\limits_{n=1}^{\infty}(-1)^{n}\frac{x^{2n-1}}{(2n-1)!}=\sum% \limits_{n=2}^{\infty}(-1)^{n}\frac{x^{2n-2}}{(2n-2)!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mfrac><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mfrac><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>2</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow></mrow></mrow></semantics></math></span> The reason being that when it has been differentiate twice it has shifted another place. But obviously this can't be correct as I know that this series does not give <span class="math-container" id="22805581" visual_id="224520"><math alttext="-\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></semantics></math></span>.</p> <p>Now my book solution is for the second differential is:</p> <p><span class="math-container" id="22805582" visual_id="5890937"><math alttext="\sum\limits_{n=1}^{\infty}(-1)^{n}\frac{x^{2n-2}}{(2n-2)!}=\sum\limits_{n=1}^{% \infty}(-1)^{n+1}\frac{x^{2n}}{(2n)!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mfrac><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>2</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mfrac><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow></mrow></mrow></semantics></math></span> </p> <p>which does equal <span class="math-container" id="22805583" visual_id="224520"><math alttext="-\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></semantics></math></span>, but I just can't seem to see how this has been done. Could someone please expand. </p> <p>Thanks in advance.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> ordinary-differential-equations </span><span> power-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2463571" id="answer">
+<p>You have </p> <p><span class="math-container" id="22805584" visual_id="5890938"><math alttext="\sum_{n=2}^{\infty}(-1)^{n}x^{2n-2}/(2n-2)!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><mo>/</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mrow></semantics></math></span>  lets manipulate it a little.</p> <p><span class="math-container" id="22805585" visual_id="5890939"><math alttext="\sum_{n=2}^{\infty}(-1)^{n}x^{2n-2}/(2n-2)!=\sum_{n=2}^{\infty}(-1)^{n}x^{2(n-% 1)}/(2(n-1))!\\ /j=n-1/\\ \sum_{j=1}^{\infty}(-1)^{j+1}x^{2j}/(2j)!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><mo>/</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow><mo>/</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo>/</mo><mi>j</mi></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>j</mi></mrow></msup></mrow><mo>/</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>So, in your solution given in the book, you have a different <span class="math-container" id="22805586" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> in the final answer.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5090490"> AH! okay I cant believe I miss that. Thank you very much. </td></tr><tr><td comment_id="5090505"> Well, I've been there too, and I will be there again. @JasonTaylor </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

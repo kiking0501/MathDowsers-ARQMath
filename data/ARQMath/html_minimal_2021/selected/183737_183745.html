@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is a continuous function simply a connected function?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is a continuous function simply a connected function? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="183737">
+<p>Intuitively, a function <span class="math-container" id="2133666" visual_id="9685"><math alttext="\mathbb{R}\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></semantics></math></span> is continuous if you can draw its graph without taking the pen off the page. This suggests the following theorem:</p> <p>A map <span class="math-container" id="2133667" visual_id="2889"><math alttext="f:X\rightarrow Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span> is continuous if and only if <span class="math-container" id="2133668" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is connected in the product topology <span class="math-container" id="2133669" visual_id="16194"><math alttext="X\times Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></semantics></math></span>.</p> <p>Is this true? And if not, can anyone think of an additional premise or two that would make it true?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> general-topology </span><span> continuity </span><span> connectedness </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="423677"> Not if <span class="math-container" id="2133672" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is disconnected. </td></tr><tr><td comment_id="423678"> The [Topologists Sine Curve](http://en.wikipedia.org/wiki/Topologist%27s_sine_curve) is not continuous at <span class="math-container" id="2133683" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="423680"> http://math.stackexchange.com/questions/34103/for-a-function-from-mathbbr-to-itself-whose-graph-is-connected-in-mathbb </td></tr><tr><td comment_id="423682"> I'd be curious if you add the condition that <span class="math-container" id="2133672" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is path-connected, then is it true that <span class="math-container" id="2133695" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous if and only if the graph of <span class="math-container" id="2133695" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is path-connected. </td></tr><tr><td comment_id="423685"> @Thomas: not necessarily. Slice the plane along a half-line and bend one side of the half-line down a little and the other one up a little. You get a discontinuous function <span class="math-container" id="2133675" visual_id="31275"><math alttext="\mathbb{R}^{2}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℝ</mi><mn>2</mn></msup><mo>→</mo><mi>ℝ</mi></mrow></semantics></math></span> with path-connected graph. </td></tr><tr><td comment_id="423700"> The 19th-century intuition of a continuous function was exactly what you describe.  But in that intuition, the function defined by [<span class="math-container" id="2133676" visual_id="2020"><math alttext="f(x)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> for <span class="math-container" id="2133677" visual_id="16221"><math alttext="x\leq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≤</mo><mn>0</mn></mrow></semantics></math></span>, and <span class="math-container" id="2133678" visual_id="3847"><math alttext="f(x)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> for <span class="math-container" id="2133679" visual_id="6148"><math alttext="x\gt 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mn>0</mn></mrow></semantics></math></span>] could be continuous, since you can draw its graph without taking the pen off the paper.  You have to move the pen vertically when you get to <span class="math-container" id="2133683" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, but you do not have to take it off the paper, and in the 19th century, this function was considered continuous in some contexts. So it is not just being pernickety to say that your intuitive description does not accord with the modern notion of continuity. </td></tr><tr><td comment_id="423703"> (I believe my source for this somewhat strange-seeming claim is Judith Grabiner's *The Origins of Cauchy's Rigorous Calculus*. I will try to find a suitable quotation.) </td></tr><tr><td comment_id="1836307"> The example of @t.b. can be thought of as the map <span class="math-container" id="2133681" visual_id="5979243"><math alttext="\mathrm{Arg}:\mathbb{C}\setminus\{0\}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Arg</mi><mo>:</mo><mrow><mrow><mi>ℂ</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> which associates to a complex number the _principal value_ of the argument of that number. Its graph is a piece of a [helicoid](http://en.wikipedia.org/wiki/Helicoid). In programming, that map is often called [`atan2`](http://en.wikipedia.org/wiki/Atan2) (link contains illustration). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="183745" id="answer">
+<p>It isn't true in general. An obvious  variant of the <a href="http://en.wikipedia.org/wiki/Topologist%27s_sine_curve">Topologist's sine curve</a> provides an example of a function <span class="math-container" id="2133682" visual_id="3106"><math alttext="f:\mathbb{R}\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> whose graph is  connected but fails to be continuous (at <span class="math-container" id="2133683" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>).</p> <p>However, <a href="http://www.jstor.org/discover/10.2307/2324521?uid=3739896&amp;uid=2&amp;uid=4&amp;uid=3739256&amp;sid=21100989454763">this article</a> shows that "it is correct to conclude that continuous real functions over <span class="math-container" id="2133684" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> are those functions over <span class="math-container" id="2133685" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> whose graphs, in the plane <span class="math-container" id="2133686" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span>, are both closed and connected".</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="423699"> Does anyone know of a non-jstor link to the article I mentioned? I can only view the first page. </td></tr><tr><td comment_id="423708"> I don't think the Monthly is freely available anywhere.  It would be a bit better (more reliable) to use the stable link to JSTOR: http://www.jstor.org/stable/2324521 than the one you use. $$ $$ In his *[Real analysis](http://books.google.com/books?id=4VFDVy1NFiAC)*, Carothers mentions Burgess's paper you link to and also refers to Boas's *[A primer of real functions](http://books.google.com/books?id=uQtykVwbrm4C)* and Randolph's *[Basic real and abstract analysis](http://books.google.com/books?id=NRrvAAAAMAAJ)* for that result (he doesn't say where to find it in those books). </td></tr><tr><td comment_id="424079"> @DavidMitra In my profile you can find my email address. I have access to the paper and I can send you it by email. If you are asking not just because you want a copy but because you wanted to provide a link for other users, if there is a freely accessible link, I did not found such a link. </td></tr><tr><td comment_id="424160"> The following <span class="math-container" id="4471270">r</span>e<span class="math-container" id="4471271">s</span><span class="math-container" id="4471276">u</span>lt seems to be related:  Theorem 8.2 in <span class="math-container" id="4471277">v</span>an Rooij-Schikhof, [p.52](http://books.google.com/books?id=Cqk5AAAAIAAJ&amp;pg=PA52)  For a function <span class="math-container" id="2133688" visual_id="7772"><math alttext="f\colon[a,b]\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> the following are equivalent: <span class="math-container" id="2133695" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous. <span class="math-container" id="2133692" visual_id="1183"><math alttext="\Leftrightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇔</mo></semantics></math></span> <span class="math-container" id="2133694" visual_id="469532"><math alttext="\Gamma_{f}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mi>f</mi></msub></semantics></math></span> is compact. <span class="math-container" id="2133692" visual_id="1183"><math alttext="\Leftrightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇔</mo></semantics></math></span> <span class="math-container" id="2133694" visual_id="469532"><math alttext="\Gamma_{f}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mi>f</mi></msub></semantics></math></span> is arcwise connected. (Here <span class="math-container" id="2133694" visual_id="469532"><math alttext="\Gamma_{f}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mi>f</mi></msub></semantics></math></span> denotes the graph of <span class="math-container" id="2133695" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>.) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="358049"> Let <span class="math-container" id="3826678" visual_id="1476153"><math alttext="f:(X,d)\mapsto(Y,d)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> be an mapping such that <span class="math-container" id="3826679" visual_id="101080"><math alttext="Graph(f)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is connected. </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="424042"> Is a function <span class="math-container" id="4469946" visual_id="2889"><math alttext="f:X\to Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span> continuous if and only if its graph on each connnected component of <span class="math-container" id="4469947" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is connected? </td></tr><tr><td post_id="34103"> For a function from <span class="math-container" id="354102" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> to itself whose graph is connected in <span class="math-container" id="354103" visual_id="5479"><math alttext="\mathbb{R}\times\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℝ</mi><mo>×</mo><mi>ℝ</mi></mrow></semantics></math></span>, yet is not continuous </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

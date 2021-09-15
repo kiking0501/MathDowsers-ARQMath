@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is failing to admit an axiom equivalent to proof when the axiom is false?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is failing to admit an axiom equivalent to proof when the axiom is false? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="180919">
+<p>Often, mathematicians wish to develop proofs without admitting certain axioms (e.g. the axiom of choice).</p> <p>If a statement can be proven without admitting that axiom, does that mean the statement is also true when the axiom is considered to be false?</p> <p>I have tried to construct a counter-example, but in every instance I can conceive, the counter-example depends on a definition which necessarily admits an axiom. I feel like the answer to my question is obvious, but maybe I am just out of practice.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> proof-writing </span><span> axioms </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="416865"> I suppose the question is equivalent to "is failing to admit an axiom equivalent to when the axiom is true," or "is proof without admitting an axiom equivalent to independence of that axiom." </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="180923" id="answer">
+<p>Yes. Let the axiom be P. The proof that didn't make use of P followed all the rules of logic, so it still holds when you adjoin <span class="math-container" id="2100912" visual_id="53281"><math alttext="\neg P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow></semantics></math></span> to the list of axioms. (It could also happen that the other axioms sufficed to prove P, in which case the system that included <span class="math-container" id="2100913" visual_id="53281"><math alttext="\neg P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow></semantics></math></span> would be inconsistent. In an inconsistent theory, every proposition can be proved, so the thing you originally proved is still true, although vacuously. The case where the other axioms prove <span class="math-container" id="2100914" visual_id="53281"><math alttext="\neg P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow></semantics></math></span> is also OK, obviously.)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="416873"> So my question is then, if a proof is complete without using <span class="math-container" id="2100918" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span>, then you can adjoin <span class="math-container" id="2100916" visual_id="53281"><math alttext="\neg P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow></semantics></math></span> to your list of axioms; however, you could also adjoin <span class="math-container" id="2100918" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> to your list of axioms. Which is correct? </td></tr><tr><td comment_id="416887"> Neither is 'correct', whatever that word means. It just means that axiom <span class="math-container" id="2100918" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> has nothing to do with your statement. I could add as an axiom that 'Reptilians are in charge of the Earth' to the axioms of Euclid and still prove Pythagoras' theorem. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

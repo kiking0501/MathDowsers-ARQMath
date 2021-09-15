@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving that $64$ divides $3^{2n+2}+56n+55$ by induction</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving that <span class="math-container" id="13772610" visual_id="34260"><math alttext="64" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>64</mn></semantics></math></span> divides <span class="math-container" id="13772611" visual_id="144947"><math alttext="3^{2n+2}+56n+55" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup><mo>+</mo><mrow><mn>56</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>55</mn></mrow></semantics></math></span> by induction </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1488976">
+<p>Let <span class="math-container" id="13772612" visual_id="62112"><math alttext="n≥0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><mi mathvariant="normal">≥</mi><mo>⁢</mo><mn>0</mn></mrow></semantics></math></span> be an integer. Prove by induction: 64 divides <span class="math-container" id="13772613" visual_id="144947"><math alttext="3^{2n+2}+56n+55" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup><mo>+</mo><mrow><mn>56</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>55</mn></mrow></semantics></math></span></p> <p>general expression: <span class="math-container" id="13772614" visual_id="6254452"><math alttext="3^{2n+2}+56n+55=64m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup><mo>+</mo><mrow><mn>56</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>55</mn></mrow><mo>=</mo><mrow><mn>64</mn><mo>⁢</mo><mi>m</mi></mrow></mrow></semantics></math></span></p> <p>1st I substitute <span class="math-container" id="13772615" visual_id="30306"><math alttext="P(0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and it gives me true: <span class="math-container" id="13772616" visual_id="351524"><math alttext="\nabla_{X}Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∇</mo><mi>X</mi></msub><mo>⁡</mo><mi>Y</mi></mrow></semantics></math></span> (if m = 1 the condition is true)</p> <p>2nd I assume <span class="math-container" id="13772617" visual_id="4770"><math alttext="n=k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mi>k</mi></mrow></semantics></math></span> and I substitute saying <span class="math-container" id="13772618" visual_id="6254453"><math alttext="3^{2k+2}+56k+55" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup><mo>+</mo><mrow><mn>56</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>55</mn></mrow></semantics></math></span></p> <p>and then I don't know what to do to prove the claim.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> proof-writing </span><span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2260068" id="answer">
+<h2>Proof by induction.</h2> <p>Let P(n) denote the proposition: "3<sup>2n+2</sup>+56n+55 is divisible by 64"</p> <h3>Basis step:</h3> <p>P(0) is true because 3<sup>2(0)+2</sup>+56(0)+55= 64. This completes the basis step.</p> <h3>Inductive step:</h3> <p>Assume that P(k) is true for an arbitrary non-negative integer k, that is, we assume that <strong>3<sup>2k+2</sup>+56k+55 is divisible by 64</strong> (inductive hypothesis). Now, we must show that if we assume that P(k) is true then P(k+1) is also true.</p> <p>Note that P(k+1) = 3<sup>2(k+1)+2</sup>+56(k+1)+55</p> <p>-&gt;3<sup>2k+4</sup>+56k+56+55</p> <p>-&gt;3<sup>2</sup>*3<sup>2k+2</sup>+56k+56+55 (By basic algebra we know that 3<sup>2k+4</sup>=3<sup>2</sup>*3<sup>2k+2</sup>)</p> <p>-&gt;9*3<sup>2k+2</sup>+56k+56+55</p> <p>-&gt;8*3<sup>2k+2</sup>+3<sup>2k+2</sup>+56k+56+55 (By basic algebra we know that  9*3<sup>2k+2</sup>=8*3<sup>2k+2</sup>+3<sup>2k+2</sup>)</p> <p>-&gt;8(3<sup>2k+2</sup>+7)+3<sup>2k+2</sup>+56k+55 (Factoring the first and fourth term)</p> <p>-&gt;8(3<sup>2k+2</sup>+56k-56k+55-48)+3<sup>2k+2</sup>+56k+55 (Equal to the above expression)</p> <p>-&gt;8(3<sup>2k+2</sup>+56k+55-8(7k+6))+3<sup>2k+2</sup>+56k+55 (Factoring -56k and -48)</p> <p>-&gt;8(3<sup>2k+2</sup>+56k+55)-64(7k+6)+3<sup>2k+2</sup>+56k+55 (Equal to the above expression)</p> <p>-&gt;9(3<sup>2k+2</sup>+56k+55)-64(7k+6)</p> <p>Resulting expression: -&gt;9(3<sup>2k+2</sup>+56k+55)-64(7k+6)</p> <p>Using the inductive hypothesis, we conclude that the above expression is divisible by 64.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1490221"> Prove by Induction - Modular arithmetic </td></tr><tr><td post_id="2970174"> Number theory textbook exercise <span class="math-container" id="27501832" visual_id="144920"><math alttext="11^{n+2}+12^{2n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>11</mn><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msup><mo>+</mo><msup><mn>12</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

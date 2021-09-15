@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Basic Linear Alg Question..Sufficient?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Basic Linear Alg Question..Sufficient? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="666876">
+<p><strong>Q</strong>:  Prove that if <span class="math-container" id="6718187" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is invertible and <span class="math-container" id="6718188" visual_id="121552"><math alttext="AB=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, then <span class="math-container" id="6718189" visual_id="7019"><math alttext="B=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.  </p> <p><strong>A</strong>: if <span class="math-container" id="6718190" visual_id="21857"><math alttext="A=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="6718191" visual_id="4466667"><math alttext="\nexists A^{-1}\mid AA^{-1}=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\nexists</mtext></merror><mo>⁢</mo><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mi>A</mi><mo>⁢</mo><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span>. but it's given that <span class="math-container" id="6718192" visual_id="827471"><math alttext="\exists A^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span>. Thus <span class="math-container" id="6718193" visual_id="7019"><math alttext="B=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.  </p> <p>This just seems too easy to be a sufficient answer... is it?  </p> <p>In my opinion I don't think it is because you can multiply a nonzero matrix that is not invertible and a nonzero matrix to get the zero matrix. So I'd think you'd need to involve the determinant here...</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> matrices </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1401963"> "if <span class="math-container" id="6718194" visual_id="21857"><math alttext="A=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>", why do you assume that? <span class="math-container" id="6718235" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is invertible. </td></tr><tr><td comment_id="1401969"> @NotMe well that's the issue, the only two matrices that are not invertible are <span class="math-container" id="6718196" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> and a matrix such that <span class="math-container" id="6718197" visual_id="28250"><math alttext="det(A)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. So im 1 for 2 here </td></tr><tr><td comment_id="1401972"> Not very sufficient proof.  Nice try though! </td></tr><tr><td comment_id="1401973"> @NasuSama Like I said 1/2. I don't want to get too complicated by using a <span class="math-container" id="6718198" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> determinant. </td></tr><tr><td comment_id="1401979"> It is not true that if <span class="math-container" id="6718199" visual_id="121552"><math alttext="AB=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="6718200" visual_id="39794"><math alttext="A\not=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> then <span class="math-container" id="6718230" visual_id="7019"><math alttext="B=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. You need to make use of the fact that A is invertible. </td></tr><tr><td comment_id="1402008"> If <span class="math-container" id="6718235" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is invertible and <span class="math-container" id="6718225" visual_id="121552"><math alttext="AB=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, you use the fact that invertibility allows you to multiply by <span class="math-container" id="6718229" visual_id="565"><math alttext="A^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span>, ie <span class="math-container" id="6718205" visual_id="4466668"><math alttext="AB=0\implies A^{-1}AB=IB=B=A^{-1}0=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mn>0</mn><mo>⟹</mo><mrow><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>I</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mi>B</mi><mo>=</mo><mrow><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mn>0</mn></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="666898" id="answer">
+<p>Since <span class="math-container" id="6718208" visual_id="565"><math alttext="A^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> exists we have <span class="math-container" id="6718209" visual_id="4466670"><math alttext="AB={\bf 0}\quad\Rightarrow\quad A^{-1}AB=A^{-1}{\bf 0}\quad\Rightarrow\quad IB% ={\bf 0}\quad\Rightarrow\quad B={\bf 0}\ ." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mn>𝟎</mn><mo mathvariant="italic" separator="true"> </mo><mo>⇒</mo></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mrow><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mrow><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mn>𝟎</mn></mrow><mo mathvariant="italic" separator="true"> </mo><mo>⇒</mo></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mrow><mi>I</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mn>𝟎</mn><mo mathvariant="italic" separator="true"> </mo><mo>⇒</mo></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mi>B</mi><mo>=</mo><mpadded width="+5pt"><mn>𝟎</mn></mpadded></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1402010"> This was my orignial proof </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

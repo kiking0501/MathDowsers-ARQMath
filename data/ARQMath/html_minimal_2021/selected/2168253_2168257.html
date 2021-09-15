@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>A sequence $(x_n)$ satisfying $0\leq x_n \leq \frac{1}{n}$ where $\sum(-1)^n x_n$ diverges</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> A sequence <span class="math-container" id="20034572" visual_id="961"><math alttext="(x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> satisfying <span class="math-container" id="20034573" visual_id="6444800"><math alttext="0\leq x_{n}\leq\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>x</mi><mi>n</mi></msub><mo>≤</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> where <span class="math-container" id="20034574" visual_id="214424"><math alttext="\sum(-1)^{n}x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" mathvariant="normal" symmetric="true">∑</mo><mrow><msup><mrow><mo mathvariant="normal" stretchy="false">(</mo><mrow><mo mathvariant="normal">-</mo><mn mathvariant="normal">1</mn></mrow><mo mathvariant="normal" stretchy="false">)</mo></mrow><mi>n</mi></msup><mo mathvariant="italic">⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> diverges </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2168253">
+<p>A sequence <span class="math-container" id="20034575" visual_id="961"><math alttext="(x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> satisfying <span class="math-container" id="20034576" visual_id="6444800"><math alttext="0\leq x_{n}\leq\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>x</mi><mi>n</mi></msub><mo>≤</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> where <span class="math-container" id="20034577" visual_id="214424"><math alttext="\sum(-1)^{n}x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" mathvariant="normal" symmetric="true">∑</mo><mrow><msup><mrow><mo mathvariant="normal" stretchy="false">(</mo><mrow><mo mathvariant="normal">-</mo><mn mathvariant="normal">1</mn></mrow><mo mathvariant="normal" stretchy="false">)</mo></mrow><mi>n</mi></msup><mo mathvariant="italic">⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> diverges. This is a HW assignment problem for my undergrad real analysis class. I cannot come up with a sequence that is less than <span class="math-container" id="20034578" visual_id="413"><math alttext="1/n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></semantics></math></span> that diverges when summed as an alternating series. Any help would be appreciated</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span><span> divergent-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4459351"> Make sure the negative terms are much smaller than the positive ones (such that their sum converges). Then make the sum of the positive ones diverge. </td></tr><tr><td comment_id="4459358"> The simplest example might be <span class="math-container" id="20034579" visual_id="6444801"><math alttext="x_{2n}=\frac{1}{2n}\qquad x_{2n+1}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mfrac></mrow><mo mathvariant="italic" separator="true">  </mo><mrow><msub><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow></mrow></semantics></math></span> Along the same vein, one can also consider <span class="math-container" id="20034580" visual_id="6444802"><math alttext="x_{n}=\frac{1}{2n}+\frac{(-1)^{n}}{2n\log(n+2)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mfrac><mo>+</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2168257" id="answer">
+<p><span class="math-container" id="20034581" visual_id="6444803"><math alttext="\text{Let}\;\,\large{{x_{n}}}=\begin{cases}\small{\displaystyle{\frac{1}{n^{2}% }}}&amp;amp;n\text{ is odd}\\ \small{\displaystyle{\frac{1}{n}}}&amp;amp;n\text{ is even}\\ \end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+4.4pt"><mtext>Let</mtext></mpadded><mo>⁢</mo><msub><mi mathsize="120%">x</mi><mi mathsize="120%">n</mi></msub></mrow><mo mathsize="120%" stretchy="false">=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="left"><mstyle displaystyle="true"><mfrac><mn mathsize="90%">1</mn><msup><mi mathsize="90%">n</mi><mn mathsize="90%">2</mn></msup></mfrac></mstyle></mtd><mtd columnalign="left"><mrow><mrow><mi mathsize="120%">a</mi><mo>⁢</mo><mi mathsize="120%">m</mi><mo>⁢</mo><mi mathsize="120%">p</mi></mrow><mo mathsize="120%" stretchy="false">;</mo><mrow><mi mathsize="120%">n</mi><mo>⁢</mo><mtext mathsize="120%"> is odd</mtext></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mstyle displaystyle="true"><mfrac><mn mathsize="90%">1</mn><mi mathsize="90%">n</mi></mfrac></mstyle></mtd><mtd columnalign="left"><mrow><mrow><mi mathsize="120%">a</mi><mo>⁢</mo><mi mathsize="120%">m</mi><mo>⁢</mo><mi mathsize="120%">p</mi></mrow><mo mathsize="120%" stretchy="false">;</mo><mrow><mi mathsize="120%">n</mi><mo>⁢</mo><mtext mathsize="120%"> is even</mtext></mrow></mrow></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4459370"> The example by "Did" (the "simplest example") is indeed simpler. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

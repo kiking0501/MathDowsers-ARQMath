@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>9th power of any positive integer is of the form $19 m $ or $19 m \pm 1$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> 9th power of any positive integer is of the form <span class="math-container" id="2996600" visual_id="5806391"><math alttext="19m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mo>⁢</mo><mi>m</mi></mrow></semantics></math></span> or <span class="math-container" id="2996601" visual_id="5806392"><math alttext="19m\pm 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>19</mn><mo>⁢</mo><mi>m</mi></mrow><mo>±</mo><mn>1</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="270797">
+<p>Which of the following statements are true?</p> <ol> <li><p>The 9th power of any positive integer is of the form <span class="math-container" id="2996602" visual_id="5806391"><math alttext="19m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mo>⁢</mo><mi>m</mi></mrow></semantics></math></span> or <span class="math-container" id="2996603" visual_id="5806392"><math alttext="19m\pm 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>19</mn><mo>⁢</mo><mi>m</mi></mrow><mo>±</mo><mn>1</mn></mrow></semantics></math></span>.</p></li> <li><p>For any positive integer <span class="math-container" id="2996604" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, the number <span class="math-container" id="2996605" visual_id="636256"><math alttext="n^{13}-n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>13</mn></msup><mo>-</mo><mi>n</mi></mrow></semantics></math></span> is divisible by 2730.</p></li> <li><p>The number <span class="math-container" id="2996606" visual_id="3539188"><math alttext="18!+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>18</mn><mo>!</mo></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> is divisible by 437.</p></li> </ol> <p>I am stuck on this problem. Can anyone help me please...</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="592057"> Little Fermat, congruences and <span class="math-container" id="2996607" visual_id="5806393"><math alttext="(x^{18}-1)=(x^{9}-1)(x^{9}+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>18</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>9</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>9</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> will get you started. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="270801" id="answer">
+<p><strong>Hints:</strong> </p> <ul> <li>Euler's theorem: for <span class="math-container" id="2996608" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="2996609" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> relatively prime, <span class="math-container" id="2996610" visual_id="1146456"><math alttext="a^{\varphi(n)}\equiv 1\bmod n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></msup><mo>≡</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>n</mi></mrow></mrow></semantics></math></span>.</li> <li>Wilson's theorem: for a prime number <span class="math-container" id="2996611" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>, <span class="math-container" id="2996612" visual_id="320185"><math alttext="(p-1)!\equiv-1\bmod p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo>≡</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>p</mi></mrow></mrow></semantics></math></span>.</li> </ul>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="592065"> how can I aaply these theorems? </td></tr><tr><td comment_id="592066"> That is for you to think about, for more than 4 minutes at any rate. How do you expect to get better at solving problems if you are not practicing solving problems? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

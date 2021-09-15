@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What disqualifies an expression from being linear?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What disqualifies an expression from being linear? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1223079">
+<p>I'm taking some advanced math classes at my high-school, and I have some questions.</p> <p>A helpful answer would include a definition. Examples of a concept or definition given (no matter how simple; please ELI5). </p> <p>This question I have historically phrased: "What makes a linear equation linear?"</p> <p>I get that an equation that graphs out to be a line is linear, but it seems there is more to the meaning of "linear."</p> <p>Additionally, why is linear algebra called linear algebra? What's linear about it?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2488038"> This looks like a question that I would spend an hour answering only to get beaten by a couple minutes by a better answer :/ </td></tr><tr><td comment_id="2488040"> @EricStucky I challenge you to a (very slow) race! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1223606" id="answer">
+<p>There is a small cultural gap here: mathematicians don't usually talk much about "linear equations". However, if you pressed me to give you a definition, I would say that a linear equation is an equation of the form <span class="math-container" id="11437108" visual_id="8514397"><math alttext="f(x_{1},x_{2},\dots,x_{n})=c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>c</mi></mrow></semantics></math></span>, where <span class="math-container" id="11437109" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is a linear function.</p> <hr/> <p>There is also a large cultural gap here.</p> <p>As Meelo mentions, there are two conflicting notions of a "linear function". Some look like <span class="math-container" id="11437110" visual_id="8682332"><math alttext="f(x_{1},x_{2},\dots,x_{n})=a_{1}x_{1}+a_{2}x_{2}+\cdots+a_{n}x_{n}+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span> and some look like this but without the <span class="math-container" id="11437111" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>. This is simply an unfortunate choice that someone made at some point regarding the second definition: the first function has a graph which looks like a generic line (when <span class="math-container" id="11437112" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>; vertical lines not included), and the second function is what most mathematicians mean when they say a function is "linear".</p> <p>Both answers explain this latter notion of linear: it is a bit stronger (i.e. it is harder for a function to be this kind of linear than the other kind). Meelo also mentions in passing that mathematicians usually refer to the first kind of "linear" by the name <em>affine</em>. Unfortunately, this means that "an equation that graphs out to a line" is <em>not</em> given by a linear function (unless the line passes through the origin), but <em>is</em> a linear equation (as I defined it above). To make matters worse, a "linear equation", as I described above, looks a lot more affine than linear.</p> <p>This may all seem hopelessly muddled and confusing to you; that's because it is. The two meanings of the word developed at different times and places, and the concepts became too useful in their context for the word to be replaced in either context. So we're stuck with it. This is really only a problem, though, at about your time in your math education. Give it a few more years, and you, too, will feel that faint annoyance anytime someone tries to tell you that <span class="math-container" id="11437113" visual_id="461473"><math alttext="f(x)=x+3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow></mrow></semantics></math></span> is "linear". For a mathematician, a function is not linear unless (in particular) <span class="math-container" id="11437114" visual_id="1851931"><math alttext="f(a+b)=f(a)+f(b)," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> and it is <em>not</em> true that <span class="math-container" id="11437115" visual_id="8682333"><math alttext="(a+b+3)=(a+3)+(b+3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, since the right-hand side is <span class="math-container" id="11437116" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> bigger than the left-hand side.</p> <hr/> <p>However, you asked another question which I think is important: What's linear about linear algebra? The other two answers talk about this obliquely. The short answer is that linear algebra is the study of linear functions. But if you really want to know what's linear about linear algebra, it might help to see some examples of what's <em>not</em> linear about nonlinear algebra. This sort of algebra is just called algebra by mathematicians, although in university classes they usually append some adjective like "abstract" or "modern" to differentiate you from the remedial students :)</p> <p>The answer to "what's nonlinear about algebra" is "approximately everything". Here is the simplest example of nonlinearity: you may have a nonlinear function; i.e. something like  <span class="math-container" id="11437117" visual_id="8682334"><math alttext="f(x,y)=-x^{2}+y." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi>y</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span> This isn't a linear function. But it's still defined on a "linear space", a "flat" space. So we can ramp up the nonlinearity by saying that maybe our numbers don't come in a nice number line any more, so not like <span class="math-container" id="11437118" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> but like <span class="math-container" id="11437119" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span>.</p> <p>But <span class="math-container" id="11437120" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> is a lot like <span class="math-container" id="11437121" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span>, which is flat, so maybe we could get even less linear: going to <span class="math-container" id="11437122" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> would work: the numbers are back to being ordered, but they're now too "far apart" to be linear.</p> <p>Okay, but this is still pretty linear, because we still can multiply a number by another one to "move it a long the line", so let's remove multiplication: there's only addition. It's harder to explain a natural setting for this, although they show up all over the place in higher math. </p> <p>So now even the definition of a linear function that we gave before doesn't make sense, because we need multiplication: <span class="math-container" id="11437123" visual_id="8682335"><math alttext="a_{1}x_{1}+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></semantics></math></span>. </p> <p>But wait, we can make the space even less linear: who says that <span class="math-container" id="11437124" visual_id="87216"><math alttext="a+b=b+a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>=</mo><mrow><mi>b</mi><mo>+</mo><mi>a</mi></mrow></mrow></semantics></math></span>? This is called commutativity, and there are very natural ways to define "addition" where this is no longer true. This "addition" isn't anything like the addition we're used to, of course. We still call it addition because it's a rule for taking two numbers and getting out a new number, but the rule is less linear than ordinary addition.</p> <p>Now we <em>could</em> still define linearity to be something like <span class="math-container" id="11437125" visual_id="143419"><math alttext="x_{1}+x_{2}+\cdots+x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></semantics></math></span> (note there are no multiplications happening here, so we're safe), but does that mean that <span class="math-container" id="11437126" visual_id="506514"><math alttext="x_{2}+x_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></semantics></math></span> isn't linear, just because the variables show up in the wrong order?</p> <hr/> <p>After removing all this structure, what we're left with is the notion of what's called a <em>group</em>, which is still more structured than a "set", because we at least have this notion of addition, however alien it may be. In an [abstract] algebra course, groups are usually the first object that you study. In our description above we spent a lot of time thinking about the numbers and the operations, but you could do a parallel "loss of structure" story for the linear functions, and what you'd be left with (if you start at the right place) is an object we call a <em>homomorphism</em>; these are the next objects that you study.</p> <p>After learning about them for a long time you learn something about the intermediate stages of the construction above: rings and fields. And once you have a field, you are finally in the position to put the linearity "on top" of it.</p> <p>So it seems like groups are very far removed from linearity. But in fact, linear spaces are just a very special type of group, and linear functions are just a very special type of homomorphism. From this vantage point, linear algebra is exactly what it sounds like: the section of [abstract] algebra that deals with linearity.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

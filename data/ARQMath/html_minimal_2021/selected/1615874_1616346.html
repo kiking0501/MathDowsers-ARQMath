@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Inequality involving Moore-Penrose pseudoinverse</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Inequality involving Moore-Penrose pseudoinverse </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1615874">
+<p>Let <span class="math-container" id="14939664" visual_id="9231593"><math alttext="A=\begin{bmatrix}A_{1}\\ A_{2}\end{bmatrix}\in\mathbb{F}^{(n+m)\times n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo>[</mo><mtable rowspacing="0pt"><mtr><mtd columnalign="center"><msub><mi>A</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><msub><mi>A</mi><mn>2</mn></msub></mtd></mtr></mtable><mo>]</mo></mrow><mo>∈</mo><msup><mi>𝔽</mi><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>×</mo><mi>n</mi></mrow></msup></mrow></semantics></math></span>, with <span class="math-container" id="14939665" visual_id="9231594"><math alttext="A_{1}\in\mathbb{F}^{n\times n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∈</mo><msup><mi>𝔽</mi><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></msup></mrow></semantics></math></span> and non singular, and <span class="math-container" id="14939666" visual_id="66328"><math alttext="\mathbb{F}=\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔽</mi><mo>=</mo><mi>ℂ</mi></mrow></semantics></math></span> or <span class="math-container" id="14939667" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>. Show that</p> <p><span class="math-container" id="14939668" visual_id="9231595"><math alttext="\lVert A^{\dagger}\rVert_{2}\leq\lVert A_{1}^{-1}\rVert_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo fence="true" stretchy="false">∥</mo><msup><mi>A</mi><mo>†</mo></msup><mo fence="true" stretchy="false">∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><msub><mrow><mo fence="true" stretchy="false">∥</mo><msubsup><mi>A</mi><mn>1</mn><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo fence="true" stretchy="false">∥</mo></mrow><mn>2</mn></msub></mrow></semantics></math></span></p> <p>How should I approach the problem?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> matrices </span><span> numerical-linear-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3293833"> Tiny possible typo: presumably you mean that it's in <span class="math-container" id="14939669" visual_id="9231596"><math alttext="\mathbb{F}^{(n+m)\times n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>𝔽</mi><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>×</mo><mi>n</mi></mrow></msup></semantics></math></span>, since you're looking at an <span class="math-container" id="14939670" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> 'slice' of it? </td></tr><tr><td comment_id="3294024"> @StevenStadnicki Yes, you're right, thank you. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1616346" id="answer">
+<p><span class="math-container" id="14939671" visual_id="9231597"><math alttext="\|A^{\dagger}\|_{2}^{-1}=\min_{\|x\|_{2}=1}\|Ax\|_{2}=\min_{\|x\|_{2}=1}\left% \|\begin{bmatrix}A_{1}x\\ A_{2}x\end{bmatrix}\right\|_{2}\geq\min_{\|x\|_{2}=1}\left\|A_{1}x\right\|_{2}% =\|A_{1}^{-1}\|_{2}^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mrow><mo>∥</mo><msup><mi>A</mi><mo>†</mo></msup><mo>∥</mo></mrow><mn>2</mn><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo>=</mo><mrow><msub><mi>min</mi><mrow><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><msub><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mn>2</mn></msub></mrow><mo>=</mo><mrow><msub><mi>min</mi><mrow><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><msub><mrow><mo>∥</mo><mrow><mo>[</mo><mtable rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>⁢</mo><mi>x</mi></mrow></mtd></mtr></mtable><mo>]</mo></mrow><mo>∥</mo></mrow><mn>2</mn></msub></mrow><mo>≥</mo><mrow><msub><mi>min</mi><mrow><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><msub><mrow><mo>∥</mo><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mn>2</mn></msub></mrow><mo>=</mo><msubsup><mrow><mo>∥</mo><msubsup><mi>A</mi><mn>1</mn><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo>∥</mo></mrow><mn>2</mn><mrow><mo>-</mo><mn>1</mn></mrow></msubsup></mrow></semantics></math></span></p> <hr/> <p>Start with the definition: <span class="math-container" id="14939672" visual_id="9231598"><math alttext="\|A^{\dagger}\|_{2}=\max_{x\neq 0}\frac{\|A^{\dagger}x\|_{2}}{\|x\|_{2}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mrow><mo>∥</mo><msup><mi>A</mi><mo>†</mo></msup><mo>∥</mo></mrow><mn>2</mn></msub><mo>=</mo><mrow><msub><mi>max</mi><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><msub><mrow><mo>∥</mo><mrow><msup><mi>A</mi><mo>†</mo></msup><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mn>2</mn></msub><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Any such <span class="math-container" id="14939673" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> can be written in the form <span class="math-container" id="14939674" visual_id="25914"><math alttext="x=y+z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>y</mi><mo>+</mo><mi>z</mi></mrow></mrow></semantics></math></span>, where  <span class="math-container" id="14939675" visual_id="9231599"><math alttext="y\in\mathcal{R}(A)\quad\text{and}\quad z\in\mathcal{R}(A)^{\perp}=\mathcal{N}(% A^{*})=\mathcal{N}(A^{\dagger})." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>y</mi><mo>∈</mo><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mtext>and</mtext></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mi>z</mi><mo>∈</mo><mrow><mi class="ltx_font_mathcaligraphic">ℛ</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo>⟂</mo></msup></mrow><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mo>*</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mo>†</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> We have that <span class="math-container" id="14939676" visual_id="9231600"><math alttext="A^{\dagger}x=A^{\dagger}y+A^{\dagger}z=A^{\dagger}y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>A</mi><mo>†</mo></msup><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><msup><mi>A</mi><mo>†</mo></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><msup><mi>A</mi><mo>†</mo></msup><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mrow><msup><mi>A</mi><mo>†</mo></msup><mo>⁢</mo><mi>y</mi></mrow></mrow></semantics></math></span> and since <span class="math-container" id="14939677" visual_id="1436813"><math alttext="y\perp z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>⟂</mo><mi>z</mi></mrow></semantics></math></span>, <span class="math-container" id="14939678" visual_id="9231601"><math alttext="\|x\|_{2}^{2}=\|y\|_{2}^{2}+\|z\|_{2}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mrow><msubsup><mrow><mo>∥</mo><mi>y</mi><mo>∥</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mrow><mo>∥</mo><mi>z</mi><mo>∥</mo></mrow><mn>2</mn><mn>2</mn></msubsup></mrow></mrow></semantics></math></span>. The maximum is therefore attained when <span class="math-container" id="14939679" visual_id="868"><math alttext="z=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. We can write <span class="math-container" id="14939680" visual_id="3846624"><math alttext="y=Aw" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mi>w</mi></mrow></mrow></semantics></math></span> for some <span class="math-container" id="14939681" visual_id="60"><math alttext="w" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi></semantics></math></span>. All this given then <span class="math-container" id="14939682" visual_id="9231602"><math alttext="\|A^{\dagger}\|_{2}=\max_{w\neq 0}\frac{\|A^{\dagger}Aw\|_{2}}{\|Aw\|_{2}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mrow><mo>∥</mo><msup><mi>A</mi><mo>†</mo></msup><mo>∥</mo></mrow><mn>2</mn></msub><mo>=</mo><mrow><msub><mi>max</mi><mrow><mi>w</mi><mo>≠</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><msub><mrow><mo>∥</mo><mrow><msup><mi>A</mi><mo>†</mo></msup><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>w</mi></mrow><mo>∥</mo></mrow><mn>2</mn></msub><msub><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>w</mi></mrow><mo>∥</mo></mrow><mn>2</mn></msub></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Since the rank of <span class="math-container" id="14939683" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is <span class="math-container" id="14939684" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, <span class="math-container" id="14939685" visual_id="1070038"><math alttext="A^{\dagger}A=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>A</mi><mo>†</mo></msup><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span>, and <span class="math-container" id="14939686" visual_id="9231603"><math alttext="\|A^{\dagger}\|_{2}=\max_{w\neq 0}\frac{\|w\|_{2}}{\|Aw\|_{2}}=\left(\min_{w% \neq 0}\frac{\|Aw\|_{2}}{\|w\|_{2}}\right)^{-1}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mrow><mo>∥</mo><msup><mi>A</mi><mo>†</mo></msup><mo>∥</mo></mrow><mn>2</mn></msub><mo>=</mo><mrow><msub><mi>max</mi><mrow><mi>w</mi><mo>≠</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><msub><mrow><mo>∥</mo><mi>w</mi><mo>∥</mo></mrow><mn>2</mn></msub><msub><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>w</mi></mrow><mo>∥</mo></mrow><mn>2</mn></msub></mfrac></mrow><mo>=</mo><msup><mrow><mo>(</mo><mrow><msub><mi>min</mi><mrow><mi>w</mi><mo>≠</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><msub><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>w</mi></mrow><mo>∥</mo></mrow><mn>2</mn></msub><msub><mrow><mo>∥</mo><mi>w</mi><mo>∥</mo></mrow><mn>2</mn></msub></mfrac></mrow><mo>)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3295380"> Why is <span class="math-container" id="14939687" visual_id="9231604"><math alttext="\lVert A^{\dagger}\rVert_{2}^{-1}=\min_{\lVert x\rVert_{2}=1}\lVert Ax\rVert_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mrow><mo fence="true" stretchy="false">∥</mo><msup><mi>A</mi><mo>†</mo></msup><mo fence="true" stretchy="false">∥</mo></mrow><mn>2</mn><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo>=</mo><msub><mi>min</mi><mrow><msub><mrow><mo fence="true" stretchy="false">∥</mo><mi>x</mi><mo fence="true" stretchy="false">∥</mo></mrow><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow></msub><msub><mrow><mo fence="true" stretchy="false">∥</mo><mi>A</mi><mi>x</mi><mo fence="true" stretchy="false">∥</mo></mrow><mn>2</mn></msub></mrow></semantics></math></span> and <span class="math-container" id="14939688" visual_id="9231605"><math alttext="\lVert A_{1}^{-1}\rVert_{2}^{-1}=\min_{\lVert x\rVert_{2}=1}\lVert A_{1}x% \rVert_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mrow><mo fence="true" stretchy="false">∥</mo><msubsup><mi>A</mi><mn>1</mn><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo fence="true" stretchy="false">∥</mo></mrow><mn>2</mn><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo>=</mo><msub><mi>min</mi><mrow><msub><mrow><mo fence="true" stretchy="false">∥</mo><mi>x</mi><mo fence="true" stretchy="false">∥</mo></mrow><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow></msub><msub><mrow><mo fence="true" stretchy="false">∥</mo><msub><mi>A</mi><mn>1</mn></msub><mi>x</mi><mo fence="true" stretchy="false">∥</mo></mrow><mn>2</mn></msub></mrow></semantics></math></span>? </td></tr><tr><td comment_id="3296880"> @user139019 See the edit. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

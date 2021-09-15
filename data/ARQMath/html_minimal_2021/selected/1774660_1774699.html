@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding the limit of the ratio of a sequence.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding the limit of the ratio of a sequence. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1774660">
+<p>I don't have any experience with formal mathematics (I took calculus in college, but that's about it), and I've come across a problem in my job that I don't quite know how to tackle.</p> <p>I have a sequence defined as follows:</p> <p><span class="math-container" id="16391613" visual_id="1307954"><math alttext="a_{n+1}=2a_{n}+n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> <span class="math-container" id="16391614" visual_id="1307955"><math alttext="a_{1}=12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>12</mn></mrow></semantics></math></span></p> <p>And I'm looking for the limit of the ratio of consecutive terms in this sequence. The sequence goes as follows:</p> <p><span class="math-container" id="16391615" visual_id="1307956"><math alttext="12,25,54,117,250,525,\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mo>,</mo><mn>25</mn><mo>,</mo><mn>54</mn><mo>,</mo><mn>117</mn><mo>,</mo><mn>250</mn><mo>,</mo><mn>525</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span></p> <p>With the ratio of consecutive terms going as follows:</p> <p><span class="math-container" id="16391616" visual_id="1307957"><math alttext="2.08,2.16,2.17,2.14,2.10,2.07,\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.08</mn><mo>,</mo><mn>2.16</mn><mo>,</mo><mn>2.17</mn><mo>,</mo><mn>2.14</mn><mo>,</mo><mn>2.10</mn><mo>,</mo><mn>2.07</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span></p> <p>I wrote the sequence out to many terms in Excel and it looks like the ratio goes to exactly <span class="math-container" id="16391617" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>. My supervisor is kind of convinced that this is true, but I think both she and I would feel more comfortable with a mathematical explanation.</p> <p>I tried manipulating the sequence as follows:</p> <p><span class="math-container" id="16391618" visual_id="1307958"><math alttext="\frac{a_{n+1}}{a_{n}}=2+\frac{n^{2}}{a_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>a</mi><mi>n</mi></msub></mfrac><mo>=</mo><mrow><mn>2</mn><mo>+</mo><mfrac><msup><mi>n</mi><mn>2</mn></msup><msub><mi>a</mi><mi>n</mi></msub></mfrac></mrow></mrow></semantics></math></span></p> <p>It's clear that as <span class="math-container" id="16391619" visual_id="1477"><math alttext="n\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>, the value of <span class="math-container" id="16391620" visual_id="241004"><math alttext="2\to 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>→</mo><mn>2</mn></mrow></semantics></math></span>. But why does the value of <span class="math-container" id="16391621" visual_id="1307959"><math alttext="\frac{n^{2}}{a_{n}}\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>n</mi><mn>2</mn></msup><msub><mi>a</mi><mi>n</mi></msub></mfrac><mo>→</mo><mn>0</mn></mrow></semantics></math></span>?</p> <p>Can someone explain this in a way that's mathematically tractable to someone like myself who barely knows any mathematics? Anything up until calculus should be okay, but I don't know all the new things kids are learning these days (see: set theory).</p> <hr/> <p>(Sidenote: I've seen a few posts here in passing and I'm in love with the Stack Exchange network, and I'm so happy you guys use <span class="math-container" id="16391622" visual_id="1724"><math alttext="\LaTeX" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐿𝑎𝑇𝑒𝑋</mi></semantics></math></span> style expressions here. I wasn't very math-inclined in college, but I had a part-time job transcribing documents into <span class="math-container" id="16391623" visual_id="1724"><math alttext="\LaTeX" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐿𝑎𝑇𝑒𝑋</mi></semantics></math></span> for math and physics <s>nerds</s> majors.)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1774699" id="answer">
+<p>The difference equation <span class="math-container" id="16391630" visual_id="1307965"><math alttext="a_{n+1}-2a_{n}=n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span> can be solved by first finding the <em>general solution</em> <span class="math-container" id="16391631" visual_id="1307966"><math alttext="a_{n}=k2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><mi>k</mi><mo>⁢</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></mrow></semantics></math></span> for the homogeneous equation <span class="math-container" id="16391632" visual_id="1307967"><math alttext="a_{n+1}-2a_{n}=0," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></semantics></math></span> where <span class="math-container" id="16391633" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> is a free parameter to be determined later, and then guessing a <em>particular solution</em> of the form <span class="math-container" id="16391634" visual_id="1307968"><math alttext="A_{n}=cn^{2}+dn+e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mi>c</mi><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mi>e</mi></mrow></mrow></semantics></math></span> to the inhomogeneous equation (1). Plugging this form for <span class="math-container" id="16391635" visual_id="1584"><math alttext="A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub></semantics></math></span> into (1) and equating coefficients gives us three equations in the three unknowns <span class="math-container" id="16391636" visual_id="46204"><math alttext="c,d,e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi></mrow></semantics></math></span>. Solving, we get <span class="math-container" id="16391637" visual_id="14891"><math alttext="c=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>, <span class="math-container" id="16391638" visual_id="220797"><math alttext="d=-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mrow><mo>-</mo><mn>2</mn></mrow></mrow></semantics></math></span>, and <span class="math-container" id="16391639" visual_id="1307969"><math alttext="e=-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mrow><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span>, so <span class="math-container" id="16391640" visual_id="1307970"><math alttext="A_{n}=-(n^{2}+2n+3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. </p> <p>The solution to the original equation is then the sum of the general and particular solutions: <span class="math-container" id="16391641" visual_id="1307971"><math alttext="a_{n}=k2^{n}-(n^{2}+2n+3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mi>k</mi><mo>⁢</mo><msup><mn>2</mn><mi>n</mi></msup></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> With the initial condition <span class="math-container" id="16391642" visual_id="1307955"><math alttext="a_{1}=12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>12</mn></mrow></semantics></math></span> we find <span class="math-container" id="16391643" visual_id="165542"><math alttext="k=9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>9</mn></mrow></semantics></math></span>. Since <span class="math-container" id="16391644" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span> grows exponentially this explains why <span class="math-container" id="16391645" visual_id="1307972"><math alttext="n^{2}/a_{n}\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>/</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo>→</mo><mn>0</mn></mrow></semantics></math></span> as <span class="math-container" id="16391646" visual_id="1477"><math alttext="n\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1689288"> Calculate infinite series <span class="math-container" id="15611054" visual_id="7365904"><math alttext="\sum_{i=0}^{\infty}\frac{i^{2}}{6^{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>i</mi><mn>2</mn></msup><msup><mn>6</mn><mi>i</mi></msup></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

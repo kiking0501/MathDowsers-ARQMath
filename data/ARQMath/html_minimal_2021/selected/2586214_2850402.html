@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why the infinity of prime numbers can be proved topologically?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why the infinity of prime numbers can be proved topologically? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2586214">
+<p>I was reading Proofs from THE BOOK by Martin Aigner, Günter M. Ziegler and was very impressed by the following proof of infinity of prime numbers with topology:</p> <p><a href="https://i.stack.imgur.com/kv2Z9.png" rel="noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/kv2Z9.png"/></a></p> <p><strong>Edit:</strong> The proof can also be found <a href="https://proofwiki.org/wiki/Number_of_Primes_is_Infinite/Proof_2" rel="noreferrer">here</a>.</p> <p>Though I understand every step of this proof logically, I still find using topology to prove this classical result in Number Theory amazing. I wonder why there is a topological proof to the infinity of prime numbers. What is the intuition that motives this proof? Are there any topological proofs to other famous results in other fields of mathematics?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> general-topology </span><span> number-theory </span><span> prime-numbers </span><span> proof-explanation </span><span> intuition </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5338967"> @CameronWilliams, Euclid's proof is concise and can be understood immediately. While the proof posted here uses general topology, which is developed much later. What do they have in common then? </td></tr><tr><td comment_id="5338969"> To me, the topology almost feels like a wasted and unnecessary layer of abstraction here because the proof is so similar to Euclid's in philosophy. I think of this proof as a direct analogue of Euclid to a topological argument </td></tr><tr><td comment_id="5338977"> @CameronWilliams, I feel the same way! Perhaps this proof may be simplified so that the terminology "open set" and "closed set" are not used at all. Not sure if eventually it simplifies to Euclid's proof. </td></tr><tr><td comment_id="5339008"> @CameronWilliams: Covering the integers with arithmetic progressions is something number theorists are actually interested in; it's not an artifice invented solely for this proof. </td></tr><tr><td comment_id="5339013"> @Zuriel: Abstract point-set topology is actually fairly useful for more general things than studying things like the continuum; this pattern of "collection of things closed under finite intersections and arbitrary unions" actually crops up in a lot of places (as do some other patterns that also correspond to doing topology). Better to use the existing theory as much as applicable rather than to reinvent the wheel! Also I do not believe this reduces to Euclid's proof either; the combinatorial flavor feels quite different </td></tr><tr><td comment_id="5339451"> Related discussions on MO: https://mathoverflow.net/questions/42512/awfully-sophisticated-proof-for-simple-facts/42517#42517, https://mathoverflow.net/questions/42589/is-f%c3%bcrstenbergs-topology-useful </td></tr><tr><td comment_id="5339736"> This is the profinite topology on the integers. </td></tr><tr><td comment_id="5340685"> Thank you @Hurkyl for your comment! It gives me a better understanding of the ideas of the proof. </td></tr><tr><td comment_id="5340688"> @HansLundmark, thanks for the links! I did not check MO as I thought MO is for research level mathematics only and this question is not advanced enough. </td></tr><tr><td comment_id="5340691"> @MusaAl-hassy, thanks for pointing out the name! </td></tr><tr><td comment_id="5878478"> See this on MSE:   https://math.stackexchange.com/questions/92975/on-a-topological-proof-of-the-infinitude-of-prime-numbers/92990#92990 </td></tr><tr><td comment_id="5878940"> The first chapter of the book "Prime Number Records" consists of  about 22 different proofs, including this one, that either there is no largest prime or (with the axiom of Infinity) that the set of primes is infinite.... My favorite, besides this one, is due to Leo Morse: "It suffices to exhibit a strictly increasing sequence of pair-wise co-prime natural numbers. For example the Fermat numbers." </td></tr><tr><td comment_id="5878962"> @MusaAl-hassy   .The profinite topology on <span class="math-container" id="23913382" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> is homeomorphic to the usual topology on <span class="math-container" id="23913383" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2850402" id="answer">
+<p>You can sometimes understand a proof and its origin if you summarise it fast, like so. There's a topology on <span class="math-container" id="23913384" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> whose open sets are unions of arithmetic progressions; then open sets are nonempty or finite so <span class="math-container" id="23913385" visual_id="3698606"><math alttext="S:=\{n\in\mathbb{Z}\mid\not\exists p\in\mathbb{P}:p|n\}=\{-1,\,1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>:=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>n</mi><mo>∈</mo><mi>ℤ</mi></mrow><mo>∣</mo><mrow><mrow><mrow><mo>∄</mo><mi>p</mi></mrow><mo>∈</mo><mi>ℙ</mi></mrow><mo>:</mo><mrow><mi>p</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>n</mi></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn> 1</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> isn't one of them, and each AP is also closed; with finitely many primes, <span class="math-container" id="23913386" visual_id="59883"><math alttext="\{-1,\,1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn> 1</mn><mo stretchy="false">}</mo></mrow></semantics></math></span> would be open. OK, so what triggers such thoughts?</p> <p>It's funny that, while the contents of <span class="math-container" id="23913387" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> as defined above are trivial to work out, the set is defined as a complement with respect to the union of APs whose contents are unknowable without working out the primes. But as soon as you notice this role of unions of APs, you can't help but wonder whether they have any interesting properties that unions of sets do, such as those topology discuss. And since "unions of open sets are open" isn't open<span class="math-container" id="23913388" visual_id="37160"><math alttext="\mapsto" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>↦</mo></semantics></math></span>closed-true unless you add "finitely many" into it, it's natural to explore whether the infinitude of the primes comes into this, especially when you notice that the topology you're now thinking of is not only valid, but one in which your open sets are also closed.</p> <p>As to why it worked out in the end, <a href="https://www.smbc-comics.com/comic/2010-06-20" rel="nofollow noreferrer">sadly</a> sometimes the answer is just "when I tried it, it did".</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="92975"> On a topological proof of the infinitude of prime numbers. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

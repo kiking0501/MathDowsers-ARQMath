@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Evaluate $\lim_{n\to\infty}\frac{1^{k}+2^{k}+...+n^{k}}{n^{k+1}}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Evaluate <span class="math-container" id="14055162" visual_id="1669389"><math alttext="\lim_{n\to\infty}\frac{1^{k}+2^{k}+...+n^{k}}{n^{k+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mrow><msup><mn>1</mn><mi>k</mi></msup><mo>+</mo><msup><mn>2</mn><mi>k</mi></msup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msup><mi>n</mi><mi>k</mi></msup></mrow><msup><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1520523">
+<p>I need to find <span class="math-container" id="14055163" visual_id="1669389"><math alttext="\lim_{n\to\infty}\frac{1^{k}+2^{k}+...+n^{k}}{n^{k+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mrow><msup><mn>1</mn><mi>k</mi></msup><mo>+</mo><msup><mn>2</mn><mi>k</mi></msup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msup><mi>n</mi><mi>k</mi></msup></mrow><msup><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></semantics></math></span> for <span class="math-container" id="14055164" visual_id="2074"><math alttext="k&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> And I just need an explanation on how come <span class="math-container" id="14055165" visual_id="2465709"><math alttext="\lim_{n\to\infty}\sum_{i=1}^{n}\frac{1}{n}\left(\frac{i}{n}\right)^{k}=\int_{0% }^{1}x^{k}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi>i</mi><mi>n</mi></mfrac><mo>)</mo></mrow><mi>k</mi></msup></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3096561"> Well, i'ts <span class="math-container" id="14055166" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> when <span class="math-container" id="14055167" visual_id="1992"><math alttext="k=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3096566"> Can't we use <span class="math-container" id="14055168" visual_id="2465710"><math alttext="\lim_{n\to\infty}\sum_{i=1}^{n}i^{k}=\int_{1}^{n}i^{k}di" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msup><mi>i</mi><mi>k</mi></msup></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi>n</mi></msubsup><mrow><msup><mi>i</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>i</mi></mrow></mrow></mrow></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="3096675"> it's the sum of the area of all rectangles (under the curve <span class="math-container" id="14055169" visual_id="24081"><math alttext="y=x^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mi>k</mi></msup></mrow></semantics></math></span>) with bases of length <span class="math-container" id="14055170" visual_id="4096"><math alttext="1\over n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>n</mi></mfrac></semantics></math></span> </td></tr><tr><td comment_id="3096683"> @LutzL Should close the other one instead, this one is a bit more general. </td></tr><tr><td comment_id="3096685"> I was not sure what the rules of chronological precedence are. Perhaps one should find an identical question, there was one in the last 3 days. </td></tr><tr><td comment_id="3096689"> Earlier duplicates: https://math.stackexchange.com/q/150391/115115, https://math.stackexchange.com/q/936924/115115, https://math.stackexchange.com/q/478344/115115. </td></tr><tr><td comment_id="3096919"> To the OP: Try to write down <span class="math-container" id="14055171" visual_id="2387965"><math alttext="\int_{0}^{1}x^{k}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> as Riemann sum. </td></tr><tr><td comment_id="3096924"> @LutzL : Now there are so many duplicates, I am not so sure which one to close now. I've flagged for moderator attention. We will see. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1520539" id="answer">
+<p>May be you already know that the numerator is a generalized <a href="https://en.wikipedia.org/wiki/Harmonic_number" rel="nofollow">harmonic number</a> <span class="math-container" id="14055176" visual_id="2465714"><math alttext="\sum_{i=1}^{n}i^{k}=H_{n}^{(-k)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msup><mi>i</mi><mi>k</mi></msup></mrow><mo>=</mo><msubsup><mi>H</mi><mi>n</mi><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow></msubsup></mrow></semantics></math></span> An asymptotic expansion is <span class="math-container" id="14055177" visual_id="2465715"><math alttext="H_{n}^{(-k)}=n^{k}\left(\frac{n}{k+1}+\frac{1}{2}+\frac{k}{12n}+O\left(\left(% \frac{1}{n}\right)^{3}\right)\right)+\zeta(-k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>H</mi><mi>n</mi><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow></msubsup><mo>=</mo><mrow><mrow><msup><mi>n</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mfrac><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mi>k</mi><mrow><mn>12</mn><mo>⁢</mo><mi>n</mi></mrow></mfrac><mo>+</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo>(</mo><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>)</mo></mrow><mn>3</mn></msup><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> This makes <span class="math-container" id="14055178" visual_id="2465716"><math alttext="\frac{\sum_{i=1}^{n}i^{k}}{n^{k+1}}=\frac{1}{k+1}+\frac{1}{2n}+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mstyle displaystyle="false"><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mstyle><msup><mi>i</mi><mi>k</mi></msup></mrow><msup><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></semantics></math></span> It is more complex than user2280549's clear and simple answer; I wrote my naswer to show how is approached the limit.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1137915"> Faulhaber's Formula to evaluate series </td></tr><tr><td post_id="150391"> Evaluate <span class="math-container" id="1749469" visual_id="7548016"><math alttext="\lim\limits_{n\to\infty}\frac{\sum_{k=1}^{n}k^{m}}{n^{m+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><mstyle displaystyle="false"><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mstyle><msup><mi>k</mi><mi>m</mi></msup></mrow><msup><mi>n</mi><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="478344"> What is the result of <span class="math-container" id="5026718" visual_id="4379504"><math alttext="\lim_{n\to\infty}\frac{\sum^{n}_{i=1}i^{k}}{n^{k+1}},\ k\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mrow><mstyle displaystyle="false"><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mstyle><msup><mi>i</mi><mi>k</mi></msup></mrow><msup><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow><mo rspace="7.5pt">,</mo><mi>k</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span> and why? </td></tr><tr><td post_id="936924"> Limit of the sequence <span class="math-container" id="9024846" visual_id="6364735"><math alttext="\frac{1^{k}+2^{k}+...+n^{k}}{n^{k+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mn>1</mn><mi>k</mi></msup><mo>+</mo><msup><mn>2</mn><mi>k</mi></msup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msup><mi>n</mi><mi>k</mi></msup></mrow><msup><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

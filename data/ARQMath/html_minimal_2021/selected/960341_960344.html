@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Homework - Probability of raining</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Homework - Probability of raining </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="960341">
+<p>When I was doing my homework in probability, I encounter this question.</p> <p>"The weather is raining 70% of the time. There are two people that provide weather forecast, A and B, which their prediction are wrong 10% and 40% respectively. Their predictions performance is independent. Given A predict it will rain and B predict it will not, find the probability that the weather is raining."</p> <p>I can divide the situation into 4 case, which are ‘both A and B are right’, ‘A is right and B is wrong’, ‘A is wrong and B is right’ and ‘both A and B are wrong’, and then use P(A is right and B is wrong) as the answer. This computation is rather simple, but I think I should not ignore ‘the weather is raining 70% of the time’ in the calculation.</p> <p>Can anyone please tell me if I am missing something in the calculation. This question is related to the topic of conditional probability, total probability theorem, Bayes’ Rule and independence. Thank you.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> conditional-probability </span><span> bayes-theorem </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1974007"> When the problem states that, say, A is wrong 10% of the time, does it mean that A declares 10% of all sunny days to me rainy, and 10% of all rainy days to be sunny, or merely that 10% of his predictions are wrong (but we don't know how those 10% are distributed into false positives and false negatives)? </td></tr><tr><td comment_id="1974101"> It means 10% of all predicted sunny days are raining and 10% of all predicted rainy days are sunny. </td></tr><tr><td comment_id="1974126"> x @Edison: What would such a forecaster do if he found himself in a place where it actually rains only 5 % of all days? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="960344" id="answer">
+<p>Let <span class="math-container" id="9216504" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> be the event it rains, <span class="math-container" id="9216505" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="9216506" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> be the events that <span class="math-container" id="9216507" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="9216508" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> predict it rains. We want <span class="math-container" id="9216509" visual_id="5545541"><math alttext="P(R|\,A\cap B^{c})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>R</mi><mo lspace="2.5pt" rspace="4.2pt" stretchy="false">|</mo><mrow><mi>A</mi><mo>∩</mo><msup><mi>B</mi><mi>c</mi></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, which you can use Baye's rule to find: <span class="math-container" id="9216510" visual_id="5545542"><math alttext="P(R|\,A\cap B^{c})=\frac{P(A\cap B^{c}|R)\cdot P(R)}{P(A\cap B^{c})}\\ \qquad\qquad\qquad\qquad\qquad\qquad\,\,\,\,\,\,\,\,\,=\frac{P(A\cap B^{c}|R)% \cdot P(R)}{P(A\cap B^{c}|R)\cdot P(R)+P(A\cap B^{c}|R^{c})\cdot P(R^{c})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>R</mi><mo rspace="4.2pt" stretchy="false">|</mo><mi>A</mi><mo>∩</mo><msup><mi>B</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mrow><msup><mi>B</mi><mi>c</mi></msup><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>R</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mi>P</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><msup><mi>B</mi><mi>c</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo mathvariant="italic" separator="true">              </mo><mo>=</mo><mfrac><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mrow><msup><mi>B</mi><mi>c</mi></msup><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>R</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mi>P</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mrow><msup><mi>B</mi><mi>c</mi></msup><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>R</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mi>P</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mrow><msup><mi>B</mi><mi>c</mi></msup><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><msup><mi>R</mi><mi>c</mi></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mi>P</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>R</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow></semantics></math></span> You can now find each of the terms in the last expression. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

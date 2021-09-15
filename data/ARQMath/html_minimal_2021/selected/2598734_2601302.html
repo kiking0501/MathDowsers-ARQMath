@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Posterior mean of Dirichlet distribution</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Posterior mean of Dirichlet distribution </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2598734">
+<p>Given the multinomial distribution: <span class="math-container" id="24031725" visual_id="3739192"><math alttext="P[X_{1}=x_{1},\ldots,X_{k}=x_{k}|n,\theta_{1},\ldots,\theta_{k}]=\frac{n!}{x_{% 1}!\ldots x_{k}!}\prod_{i=1}^{k}\theta_{i}^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>1</mn></msub><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo>=</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">|</mo><mi>n</mi><mo>,</mo><msub><mi>θ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>θ</mi><mi>k</mi></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>!</mo></mrow></mrow></mfrac><msubsup><mo largeop="true" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><msubsup><mi>θ</mi><mi>i</mi><mi>x</mi></msubsup></mrow></semantics></math></span> where <span class="math-container" id="24031726" visual_id="3739193"><math alttext="\sum_{i=1}^{k}\theta_{i}=1,\sum_{i=1}^{k}x_{i}=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><msub><mi>θ</mi><mi>i</mi></msub></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>=</mo><mi>n</mi></mrow></mrow></semantics></math></span> and a sample <span class="math-container" id="24031727" visual_id="1345804"><math alttext="x=(x_{1},\ldots,x_{k})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </p> <p>I want to compute the posterior mean of <span class="math-container" id="24031728" visual_id="7766"><math alttext="\theta_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>θ</mi><mn>1</mn></msub></semantics></math></span> using the conjugate family. </p> <p><strong>My reasoning</strong></p> <p>The multinomial distribution is <span class="math-container" id="24031729" visual_id="3739194"><math alttext="p(x|\theta)=\frac{n!}{\prod_{i}x_{i}!}\prod_{i}\theta_{i}^{x_{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mstyle displaystyle="false"><msub><mo largeop="true" symmetric="true">∏</mo><mi>i</mi></msub></mstyle><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>!</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><msub><mo largeop="true" symmetric="true">∏</mo><mi>i</mi></msub><msubsup><mi>θ</mi><mi>i</mi><msub><mi>x</mi><mi>i</mi></msub></msubsup></mrow></mrow></mrow></semantics></math></span> and the Dirichlet distribution is <span class="math-container" id="24031730" visual_id="696050"><math alttext="p(\theta|\alpha)=\frac{1}{B(\alpha)}\prod_{i}\theta_{i}^{\alpha_{i}-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>θ</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><msub><mo largeop="true" symmetric="true">∏</mo><mi>i</mi></msub><msubsup><mi>θ</mi><mi>i</mi><mrow><msub><mi>α</mi><mi>i</mi></msub><mo>-</mo><mn>1</mn></mrow></msubsup></mrow></mrow></mrow></semantics></math></span>. Now I should compute the posterior distribution which seems to be </p> <p><span class="math-container" id="24031731" visual_id="3739195"><math alttext="p(x|\theta)p(\theta|\alpha)\propto\prod_{i}\theta_{i}^{x_{i}+\alpha_{i}-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>θ</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>∝</mo><mrow><msub><mo largeop="true" symmetric="true">∏</mo><mi>i</mi></msub><msubsup><mi>θ</mi><mi>i</mi><mrow><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>-</mo><mn>1</mn></mrow></msubsup></mrow></mrow></semantics></math></span></p> <p>So I can assume that the posterior <span class="math-container" id="24031732" visual_id="3739196"><math alttext="p(\theta|x,\alpha^{\prime})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>θ</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><mi>x</mi><mo>,</mo><msup><mi>α</mi><mo>′</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a Dirichlet distribution with parameters <span class="math-container" id="24031733" visual_id="3739197"><math alttext="x_{i}+\alpha_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><msub><mi>α</mi><mi>i</mi></msub></mrow></semantics></math></span>. </p> <p>The posterior mean would be <span class="math-container" id="24031734" visual_id="3739198"><math alttext="\int_{\theta}\theta p(\theta|x,\alpha^{\prime})d\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>θ</mi></msub><mrow><mi>θ</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>θ</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><mi>x</mi><mo>,</mo><msup><mi>α</mi><mo>′</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>θ</mi></mrow></mrow></mrow></semantics></math></span></p> <p><strong>My question</strong></p> <p>How does one finish this exercise, namely how does one integrate the last expression?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> probability-distributions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5365868"> I haven't worked with trying to find the Bayesian posterior for this, but I asked a [similar question](https://stats.stackexchange.com/questions/319292/find-marginal-distribution-of-k-variate-dirichlet) which may help with the integration. </td></tr><tr><td comment_id="5366297"> If you know the formula for the norming constant of a Dirichlet distrib, you should be able to read the answer off of the ratio of two norming constants. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2601302" id="answer">
+<p>The posterior distribution is a distribution in <span class="math-container" id="24031735" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> with parameters <span class="math-container" id="24031736" visual_id="3739197"><math alttext="x_{i}+\alpha_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><msub><mi>α</mi><mi>i</mi></msub></mrow></semantics></math></span>.  This amounts to compute the mean of a particular Dirichlet distribution. This is done <a href="http://www.mas.ncl.ac.uk/~nmf16/teaching/mas3301/week6.pdf" rel="nofollow noreferrer">here</a>. Therefore: <span class="math-container" id="24031737" visual_id="3739199"><math alttext="E_{\pi(\theta|x)}\theta_{j}=\frac{x_{j}+\alpha_{j}}{\sum(x_{i}+\alpha_{i})}=% \frac{x_{j}+\alpha_{j}}{n+\sum\alpha_{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>E</mi><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>θ</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></msub><mo>⁢</mo><msub><mi>θ</mi><mi>j</mi></msub></mrow><mo>=</mo><mfrac><mrow><msub><mi>x</mi><mi>j</mi></msub><mo>+</mo><msub><mi>α</mi><mi>j</mi></msub></mrow><mstyle scriptlevel="-1"><mrow><mo largeop="true" symmetric="true">∑</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi mathsize="71%">i</mi></msub><mo>+</mo><msub><mi>α</mi><mi mathsize="71%">i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mstyle></mfrac><mo>=</mo><mfrac><mrow><msub><mi>x</mi><mi>j</mi></msub><mo>+</mo><msub><mi>α</mi><mi>j</mi></msub></mrow><mrow><mi>n</mi><mo>+</mo><mstyle scriptlevel="-1"><mrow><mo largeop="true" symmetric="true">∑</mo><msub><mi>α</mi><mi mathsize="71%">i</mi></msub></mrow></mstyle></mrow></mfrac></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding the coefficient of expansion</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding the coefficient of expansion </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1744609">
+<p>Question:</p> <p>Find the coefficient of <span class="math-container" id="16112073" visual_id="180612"><math alttext="x^{11}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>11</mn></msup></semantics></math></span> in the expansion of:<span class="math-container" id="16112074" visual_id="997042"><math alttext="(1+x^{2})^{4}(1+x^{3})^{7}(1+x^{4})^{12}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mn>4</mn></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mn>7</mn></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mn>12</mn></msup></mrow></semantics></math></span></p> <p>The traditional way of doing this, as far as I know, is to first find the coefficient of each term that has <span class="math-container" id="16112075" visual_id="180612"><math alttext="x^{11}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>11</mn></msup></semantics></math></span>, and then sum it. However, with three individual terms in multiplication, this would be a very tedious job. Is there a shorter way to approach such problems?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebra-precalculus </span><span> binomial-coefficients </span><span> binomial-theorem </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1744615" id="answer">
+<p>Based on your equation, I feel like the only way you can get <span class="math-container" id="16112102" visual_id="180612"><math alttext="x^{11}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>11</mn></msup></semantics></math></span> is <span class="math-container" id="16112103" visual_id="997048"><math alttext="(x^{2})^{4}*x^{3}*constant" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mn>4</mn></msup><mo>*</mo><msup><mi>x</mi><mn>3</mn></msup><mo>*</mo><mi>c</mi></mrow><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow></semantics></math></span> or <span class="math-container" id="16112104" visual_id="997049"><math alttext="(x^{2})^{2}*x^{3}*x^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>*</mo><msup><mi>x</mi><mn>3</mn></msup><mo>*</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></semantics></math></span> or <span class="math-container" id="16112105" visual_id="997050"><math alttext="x^{2}*(x^{3})^{2}*constant" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>*</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>*</mo><mi>c</mi></mrow><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow></semantics></math></span> or <span class="math-container" id="16112106" visual_id="997051"><math alttext="constant*x^{3}*(x^{4})^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>c</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow><mo>*</mo><msup><mi>x</mi><mn>3</mn></msup><mo>*</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>4</mn></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></semantics></math></span>. Then you can use formula for binomial expansion to calculate the coefficients for each term. Hopefully it helps.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

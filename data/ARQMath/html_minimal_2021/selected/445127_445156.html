@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove limit of function</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove limit of function </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="445127">
+<p>I need to prove this limit:</p> <blockquote> <p>Given <span class="math-container" id="4686508" visual_id="137878"><math alttext="f:(-1,1)\to\mathbb{R}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>→</mo><mpadded width="+1.7pt"><mi>ℝ</mi></mpadded></mrow></mrow></semantics></math></span> and <span class="math-container" id="4686509" visual_id="316933"><math alttext="\,f(x)&amp;gt;0,\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>f</mi></mpadded><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>&gt;</mo></mrow><mn>0</mn></mrow><mo rspace="4.2pt">,</mo></mrow></semantics></math></span> if <span class="math-container" id="4686510" visual_id="316934"><math alttext="\,\lim_{x\to 0}\left(f(x)+\dfrac{1}{f(x)}\right)=2,\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mo lspace="4.2pt">lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow><mo rspace="4.2pt">,</mo></mrow></semantics></math></span> then <span class="math-container" id="4686511" visual_id="230156"><math alttext="\,\lim_{x\to 0}f(x)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo lspace="4.2pt">lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.</p> </blockquote>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="955201"> Is it not rigorous enough to do this by direct substitution? </td></tr><tr><td comment_id="955203"> @Ovi <span class="math-container" id="4686512" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> has to be continuous for direct substitution to be possible. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="445156" id="answer">
+<p>Let <span class="math-container" id="4686542" visual_id="316949"><math alttext="g(x)=\max\{f(x),\frac{1}{f(x)}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mfrac><mn>1</mn><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span> and note that <span class="math-container" id="4686543" visual_id="316950"><math alttext="\begin{aligned} \displaystyle h\colon[1,\infty)&amp;\displaystyle amp;\to[2,\infty% )\\ \displaystyle x&amp;\displaystyle amp;\mapsto x+\frac{1}{x}\end{aligned}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><mi>h</mi><mo>:</mo><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>→</mo><mrow><mo stretchy="false">[</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>↦</mo><mi>x</mi><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></mrow></mtd></mtr></mtable></semantics></math></span> is a continous bijection with continuous inverse <span class="math-container" id="4686544" visual_id="316951"><math alttext="\begin{aligned} \displaystyle h^{-1}\colon[2,\infty)&amp;\displaystyle amp;\to[1,% \infty)\\ \displaystyle y&amp;\displaystyle amp;\mapsto\left(\frac{\sqrt{y-2}+\sqrt{y+2}}{2}% \right)^{2}\end{aligned}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><msup><mi>h</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>:</mo><mrow><mo stretchy="false">[</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>→</mo><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>↦</mo><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><msqrt><mrow><mi>y</mi><mo>-</mo><mn>2</mn></mrow></msqrt><mo>+</mo><msqrt><mrow><mi>y</mi><mo>+</mo><mn>2</mn></mrow></msqrt></mrow><mn>2</mn></mfrac></mstyle><mo>)</mo></mrow><mn>2</mn></msup></mrow></mtd></mtr></mtable></semantics></math></span> (the square roots ocurring here are <span class="math-container" id="4686545" visual_id="316952"><math alttext="\sqrt{x}\pm\frac{1}{\sqrt{x}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>x</mi></msqrt><mo>±</mo><mfrac><mn>1</mn><msqrt><mi>x</mi></msqrt></mfrac></mrow></semantics></math></span> because <span class="math-container" id="4686546" visual_id="316953"><math alttext="y\pm 2=x\pm 2+\frac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>±</mo><mn>2</mn></mrow><mo>=</mo><mrow><mrow><mi>x</mi><mo>±</mo><mn>2</mn></mrow><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mrow></semantics></math></span>).</p> <p>Since <span class="math-container" id="4686547" visual_id="316954"><math alttext="h(g(x))=f(x)+\frac{1}{f(x)}\to 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>→</mo><mn>2</mn></mrow></semantics></math></span> as <span class="math-container" id="4686548" visual_id="841"><math alttext="x\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></semantics></math></span>, we conclude <span class="math-container" id="4686549" visual_id="316955"><math alttext="g(x)\to h^{-1}(2)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi>h</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. Hence if <span class="math-container" id="4686550" visual_id="35"><math alttext="\epsilon&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϵ</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>. Then for <span class="math-container" id="4686551" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> sufficiently close to <span class="math-container" id="4686552" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> we have <span class="math-container" id="4686553" visual_id="316956"><math alttext="g(x)&amp;lt;1+\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>&lt;</mo></mrow><mrow><mn>1</mn><mo>+</mo><mi>ϵ</mi></mrow></mrow></semantics></math></span>, i.e. <span class="math-container" id="4686554" visual_id="316957"><math alttext="1-\epsilon=\frac{1-\epsilon^{2}}{1+\epsilon}&amp;lt;\frac{1}{1+\epsilon}&amp;lt;f(x)&amp;% lt;1+\epsilon." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>1</mn><mo>-</mo><mi>ϵ</mi></mrow><mo>=</mo><mrow><mrow><mfrac><mrow><mn>1</mn><mo>-</mo><msup><mi>ϵ</mi><mn>2</mn></msup></mrow><mrow><mn>1</mn><mo>+</mo><mi>ϵ</mi></mrow></mfrac><mo>&lt;</mo></mrow><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>ϵ</mi></mrow></mfrac><mo>&lt;</mo></mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>&lt;</mo></mrow><mrow><mn>1</mn><mo>+</mo><mi>ϵ</mi></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> This precisely says that <span class="math-container" id="4686555" visual_id="316958"><math alttext="\lim_{x\to 1}f(x)=1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

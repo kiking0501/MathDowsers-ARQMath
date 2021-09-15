@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>complicated integration problem</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> complicated integration problem </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="690675">
+<p>Last question.</p> <p>Consider the area between the graphs <span class="math-container" id="6927361" visual_id="5628151"><math alttext="x+4y=26" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mn>26</mn></mrow></semantics></math></span> and <span class="math-container" id="6927362" visual_id="5628152"><math alttext="x+6=y^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>+</mo><mn>6</mn></mrow><mo>=</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></semantics></math></span>. This area can be computed in two different ways using integrals </p> <p>First of all it can be computed as a sum of two integrals <span class="math-container" id="6927363" visual_id="5628153"><math alttext="\int_{a}^{b}f(x)dx+\int_{b}^{c}g(x)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>+</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>b</mi><mi>c</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>where a =  , b =  , c =  and  f(x) =<br/> g(x) =  </p> <p>Alternatively this area can be computed as a single integral <span class="math-container" id="6927364" visual_id="5628154"><math alttext="\int_{\alpha}^{\beta}h(y)dy" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>α</mi><mi>β</mi></msubsup><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>y</mi></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="6927365" visual_id="93"><math alttext="\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi></semantics></math></span> =  , <span class="math-container" id="6927366" visual_id="57"><math alttext="\beta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi></semantics></math></span> =  and  h(y) =<br/> Either way we find that the area is  .</p> <p>I don't understand how this is possible</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="690695" id="answer">
+<p>Firstly, I always recommend sketching the area. Once you've done this it should be easy to "see" where you get these integrals from.</p> <p>Once sketched, you will see that the area is bounded by three curves. You will also see that the line intersects the parabola at two locations. for the seeming arbitrary numbers below, you will need to find the points of intersection. </p> <p>The singley written double integral can be see as bound by <span class="math-container" id="6927375" visual_id="5628157"><math alttext="\{-6\leq{x}\leq{26-4y},-8\leq{y}\leq{4}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mrow><mrow><mo>-</mo><mn>6</mn></mrow><mo>≤</mo><mi>x</mi><mo>≤</mo><mrow><mn>26</mn><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mo>-</mo><mn>8</mn></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>4</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span></p> <p>The doubly written double integral can be seen as two pieces. The first piece is bound by <span class="math-container" id="6927376" visual_id="5628158"><math alttext="\{-\sqrt{(x+6)}\leq{y}\leq{\frac{26-x}{4}},10\leq{x}\leq 58\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mrow><mrow><mo>-</mo><msqrt><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow></msqrt></mrow><mo>≤</mo><mi>y</mi><mo>≤</mo><mfrac><mrow><mn>26</mn><mo>-</mo><mi>x</mi></mrow><mn>4</mn></mfrac></mrow><mo>,</mo><mrow><mn>10</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>58</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span> and the second <span class="math-container" id="6927377" visual_id="5628159"><math alttext="\{0\leq{y}\leq{\sqrt{(x+6)}},-6\leq{x}\leq 10\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mrow><mn>0</mn><mo>≤</mo><mi>y</mi><mo>≤</mo><msqrt><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow></msqrt></mrow><mo>,</mo><mrow><mrow><mo>-</mo><mn>6</mn></mrow><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>10</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span></p> <p>If you are having trouble graphing the area by hand, use an online tool like <a href="http://my.hrw.com/math06_07/nsmedia/tools/Graph_Calculator/graphCalc.html" rel="nofollow">this one</a>. some programs don't like you to enter functions as <span class="math-container" id="6927378" visual_id="9223"><math alttext="y^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>y</mi><mn>2</mn></msup></semantics></math></span>, so you'll need to split it up. In this case, plot <span class="math-container" id="6927379" visual_id="5628160"><math alttext="y=\frac{26-x}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mrow><mn>26</mn><mo>-</mo><mi>x</mi></mrow><mn>4</mn></mfrac></mrow></semantics></math></span>, <span class="math-container" id="6927380" visual_id="5628161"><math alttext="y=\sqrt{x+6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mi>x</mi><mo>+</mo><mn>6</mn></mrow></msqrt></mrow></semantics></math></span>, and <span class="math-container" id="6927381" visual_id="5628162"><math alttext="y=-\sqrt{x+6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mo>-</mo><msqrt><mrow><mi>x</mi><mo>+</mo><mn>6</mn></mrow></msqrt></mrow></mrow></semantics></math></span>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

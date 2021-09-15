@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is the motivation for the development of dual numbers?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is the motivation for the development of dual numbers? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2894248">
+<p><em>I searched the backlog of this website for something along the lines of my question to no avail. Not to mention a myriad of PDFs online which just drop the definition and allege more details can be found in Clifford's paper published in the 1873 Proceedings of the London Mathematical Society which is conveniently hidden behind a paywall.</em> </p> <p>It is easy to see what motivates the development of complex numbers <span class="math-container" id="26774748" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span>, the inability of real numbers <span class="math-container" id="26774749" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> to provide a solution in <span class="math-container" id="26774750" visual_id="42374"><math alttext="x^{2}+1=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> which leads to defining the indeterminate <span class="math-container" id="26774751" visual_id="51087"><math alttext="i^{2}=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>. Naturally, extending or changing algebraic rules doesn't necessarily have to be motivated by the inability of the current abstraction to provide a solve to a particular, previously unconsidered equation.</p> <p>What troubles me is that I am not sure how Clifford or Study (or anyone else in between) struck upon defining <span class="math-container" id="26774752" visual_id="4084225"><math alttext="\epsilon^{2}=\epsilon^{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ϵ</mi><mn>2</mn></msup><mo>=</mo><msup><mi>ϵ</mi><mi>n</mi></msup><mo>=</mo><mn>0</mn></mrow></semantics></math></span> beyond just taking complex numbers, stating <span class="math-container" id="26774753" visual_id="4084226"><math alttext="i^{n}=p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>i</mi><mi>n</mi></msup><mo>=</mo><mi>p</mi></mrow></semantics></math></span> and throwing <span class="math-container" id="26774754" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>s at the wall until one sticks. I understand the results, such as the way dual numbers lend themselves to various useful constructs such as encoding the first derivative in the "dual part" after evaluating a function extended to the realm of dual numbers... Or the notion of dual quaternions which extend quaternions to handle translations in addition to rotations (applicable to rigid body kinematics). But not what led Clifford to them, discounting divine providence. </p> <p>Fundamentally, <strong>did Clifford just poke at the work of Hamilton and those before him, seeing what sticks or did he have a problem in mind which led him to the notion of dual numbers when he was working on the "preliminary sketch of biquaternions"?</strong></p>
+</div>
+<hr/>
+<div id="tags">
+<span> complex-numbers </span><span> math-history </span><span> quaternions </span><span> clifford-algebras </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5977653"> For those who have neither heard of dual numbers before, nor want to penetrate behind that paywall: Here is the Wikipedia entry that explains what this question is all about:  https://en.wikipedia.org/wiki/Dual_number   . </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2894266" id="answer">
+<p>Actually, complex numbers were not considered because we were so eager to have a square root of <span class="math-container" id="26774765" visual_id="343"><math alttext="-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mn>1</mn></mrow></semantics></math></span>. But they turned out to be <em>useful</em> to solve cubic equations, and they gave meaningful and correct answers that were real numbers (see <a href="https://en.wikipedia.org/wiki/Complex_number#History" rel="nofollow noreferrer">Wikipedia</a>).</p> <p>So I guess the same might be true with dual numbers. They turned out to be useful, that is why they are teached and used.</p> <p>I should note that I'm no expert on dual numbers, but maybe you can think about <span class="math-container" id="26774766" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span> like the algebraic version of <span class="math-container" id="26774767" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span> in analysis. It is so small, that if you multiply it with itself it yields zero.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5980363"> Yes, it makes sense to use dual numbers in analysis, but this was not Clifford's motivation (see my answer). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

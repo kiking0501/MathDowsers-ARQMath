@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Independence of Axioms in Hilbert-Ackermann System</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Independence of Axioms in Hilbert-Ackermann System </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2902939">
+<p>The Following are the Axioms used in the Hilbert-Ackerman System:</p> <ol> <li>(X v X) → X</li> <li>X → (X v X)</li> <li>(X v Y) → (Y v X) </li> <li>(X → Y) → ((Z v X)→(Z v Y))</li> </ol> <p>I need to demonstrate that all of them are independent from each other but I don't know how. </p> <p>Edit: From what I can gather, I need to show the system works with the axioms and the negation of those axioms. So I need to build a system that shows how consistent the system is. Any ideas of how to build said system?</p> <p>Thanks for any help!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2903848" id="answer">
+<p>One way to show that, say, 2 is logically independent from 1,3, and 4, is to provide a semantics such that 1,3, and 4 have a semantical property that 2 does not have. Since all statements are theorems in classical propositional logic, this semantics will have to be something that is completely different from truth-functional semantics.</p> <p>For example, suppose that the variables in the expressions can take on one of the values <span class="math-container" id="26860342" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, <span class="math-container" id="26860343" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>, or <span class="math-container" id="26860344" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>, and suppose that the operators <span class="math-container" id="26860345" visual_id="1189"><math alttext="\lor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∨</mo></semantics></math></span> and <span class="math-container" id="26860346" visual_id="7792"><math alttext="\rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> map a pair of these values to another one of those values ( so again, this has nothing to do with good old truth-functional logic anymore, where operators map truth-values to truth-values ... here, they simply map <span class="math-container" id="26860347" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>'s, <span class="math-container" id="26860348" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>'s, and <span class="math-container" id="26860349" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>'s to each other). </p> <p>Furthermore, suppose that, as it so happens, statements 1,3, and 4 always end up mapping to the value <span class="math-container" id="26860350" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> (we could therefore call them '<span class="math-container" id="26860351" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>-necessities'), but statement 2 is not an <span class="math-container" id="26860352" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>-necessity. </p> <p>Finally, suppose that with the inference rules that you have (I suppose your system that is only Modus Ponens?), you can only infer <span class="math-container" id="26860353" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>-necessities from other <span class="math-container" id="26860354" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>-necessities. Then it should be clear that, starting with any instances of axioms 1,3, and 4, you can never reach axiom 4, applying the inference rules that you have, and thus 4 is idependent from the others.</p> <p>So, this is what you can try to do: try to construct a table as you would a normal truth-table, but now with all 9 possible pairs of <span class="math-container" id="26860355" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, <span class="math-container" id="26860356" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>, and <span class="math-container" id="26860357" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> for both the <span class="math-container" id="26860358" visual_id="1189"><math alttext="\lor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∨</mo></semantics></math></span> and the <span class="math-container" id="26860359" visual_id="7792"><math alttext="\rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span>, such that all of the above happens.... this could take a while ... maybe write a computer program to go through all possibilities ... and even then, it may not work; but if it doesn't work, maybe try a 4-value system ... Good luck!</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

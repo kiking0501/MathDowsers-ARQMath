@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Compute the mean of $(1 + X)^{-1}$ where $X$ is Poisson$(\lambda)$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Compute the mean of <span class="math-container" id="5219149" visual_id="2837785"><math alttext="(1+X)^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> where <span class="math-container" id="5219150" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is Poisson<span class="math-container" id="5219151" visual_id="268073"><math alttext="(\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="497643">
+<p><strong>Question</strong></p> <p>Let <span class="math-container" id="5219152" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> be Poisson with parameter <span class="math-container" id="5219153" visual_id="664"><math alttext="\lambda" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi></semantics></math></span>.  Compute the mean of <span class="math-container" id="5219154" visual_id="2837785"><math alttext="(1+X)^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span>. (Introduction to Probability Theory, Hoel, pp. 104)</p> <p><strong>Answer Key</strong></p> <p>The answer key shows that the mean is <span class="math-container" id="5219155" visual_id="2837786"><math alttext="\lambda^{-1}(1-e^{-\lambda})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>λ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p><strong>My Solution</strong></p> <p><span class="math-container" id="5219156" visual_id="2837787"><math alttext="E(1+X)^{-1}=\sum\limits_{j=1}^{\infty}(1+j)^{-1}\dfrac{\lambda^{(1+j)^{-1}}e^{% -\lambda}}{(1+j)^{-1}!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>λ</mi><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="5219157" visual_id="2837788"><math alttext="=e^{-\lambda}\sum\limits_{j=1}^{\infty}\dfrac{\lambda^{(1+j)^{-1}}}{((1+j)^{-1% }-1)!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mstyle displaystyle="true"><mfrac><msup><mi>λ</mi><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="5219158" visual_id="2837789"><math alttext="=\lambda^{-1}e^{-\lambda}\sum\limits_{j=1}^{\infty}\dfrac{\lambda^{(1+j)^{-1}-% 1}}{((1+j)^{-1}-1)!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><msup><mi>λ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mstyle displaystyle="true"><mfrac><msup><mi>λ</mi><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mstyle></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="5219159" visual_id="2837790"><math alttext="=\lambda^{-1}e^{-\lambda}(e^{\lambda}-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><msup><mi>λ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>λ</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="5219160" visual_id="2837791"><math alttext="=\lambda^{-1}(1-e^{-\lambda})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><msup><mi>λ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p><strong>EDIT: I found why I got the answer incorrect.  Thanks for those who answer the question! :)</strong></p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="497650" id="answer">
+<p>Your solution is not quite correct: <span class="math-container" id="5219161" visual_id="2837792"><math alttext="\mathsf{E}\left(\frac{1}{1+X}\right)=\sum_{k=0}^{\infty}\frac{1}{1+k}\Pr\left(% X=k\right)=\sum_{k=0}^{\infty}\frac{1}{1+k}\frac{\lambda^{k}\mathrm{e}^{-% \lambda}}{k!}=\frac{\mathrm{e}^{-\lambda}}{\lambda}\sum_{k=0}^{\infty}\frac{% \lambda^{k+1}}{(k+1)!}=\frac{\mathrm{e}^{-\lambda}}{\lambda}\left(\sum_{k=1}^{% \infty}\frac{\lambda^{k}}{k!}\right)=\frac{\mathrm{e}^{-\lambda}}{\lambda}% \left(\sum_{k=0}^{\infty}\frac{\lambda^{k}}{k!}-1\right)=\frac{\mathrm{e}^{-% \lambda}}{\lambda}\left(\mathrm{e}^{\lambda}-1\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝖤</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>X</mi></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>k</mi></mrow></mfrac><mo>⁢</mo><mrow><mi>Pr</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>X</mi><mo>=</mo><mi>k</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>k</mi></mrow></mfrac><mo>⁢</mo><mfrac><mrow><msup><mi>λ</mi><mi>k</mi></msup><mo>⁢</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi mathvariant="normal">e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mi>λ</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>λ</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi mathvariant="normal">e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mi>λ</mi></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>λ</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi mathvariant="normal">e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mi>λ</mi></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>λ</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi mathvariant="normal">e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mi>λ</mi></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi mathvariant="normal">e</mi><mi>λ</mi></msup><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1069590"> I edit my work in case you didn't know.  I changed the answer because I figured out why already.  Anyway, thanks for the answer! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="642676"> Average of <span class="math-container" id="6508912" visual_id="2837785"><math alttext="(1+X)^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> </td></tr><tr><td post_id="3000485"> Finding an expected value </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2736493"> <span class="math-container" id="25252442" visual_id="2906481"><math alttext="E\left(\frac{1}{1+X}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>X</mi></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> for possion distribution </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

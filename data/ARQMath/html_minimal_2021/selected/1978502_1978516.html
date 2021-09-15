@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <title>Flipping a "coin" that has 0.9 vs 0.1 chance on its sides. Can someone give some science behind my thoughts?</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be">
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js"> </script>
+
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+
+        <style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <div class="row" id="question-title">
+                <h1> Flipping a "coin" that has 0.9 vs 0.1 chance on its sides. Can someone give some science behind my thoughts? </h1>
+                <hr>
+            </div>
+
+
+            <div class="row">
+                <div class="question">
+
+                    <div question_id="1978502"  id="question">
+                        <p>Imagine a coin with two sides with uneven chances. Heads has a probability of 0.9 and Tails has one of 0.1. Flipping this coin ten times will (on average) result in nine times Heads and one time Tails. But there is a small chance, that more than five of the flips will turn out Tails. If we flip the coin 100 times there's still a chance, that it will be mostly (>50) turn out Tails. There is a really small chance, that if we flip Tails 1000 times in a row. The more times we flip the coin the smaller the chance gets, that we will have more Tails than Heads. </p>  <p>The challenge is to have more Tails than Heads at some point.</p>  <p>If we imagine flipping the coin an infinite amount of times evaluating after every flip, we will at some point have 1000 Tails. If this leads to more Tails than Heads the challenge is completed. If not we must continue, and the score is likely 1000 to 9000. Luckily we will a some point hit 9001 tails in a row. If this happens right after we will accept, otherwise we continue. This can go on forever and the more flips made the chance of ever reaching more Tails than Heads decreases.</p>  <p><strong>The question</strong></p>  <p>Since this challenge is accepted or continued with every coin flip, does this mean that we at some point will accept, or is infinite necessary to describe that it will end at some point?</p>  <p>I don't know if my question makes sense, and I can't find any theories about it.</p>  <p>Thanks.</p> 
+                    </div>
+                    <hr>
+
+                    <div id="tags">
+                        <span> probability-theory </span><span> markov-chains </span><span> random-walk </span>
+                    </div>
+                    <hr>
+
+                    <div id="question-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="4061721"> I'm not really sure of what you want to ask, but I think this belongs either to the Monkey on a Typewriter problem or to an analysis on a Binomial Distribution. </td></tr><tr><td comment_id="4061877"> I added the tags "markov chains" and "random walk"; those are the kind of areas you want to be looking in to answer this question. </td></tr><tr><td comment_id="4061913"> Your question confuses me and I find it hard to understand. I think it should be re-worded or clarified </td></tr><tr><td comment_id="4062216"> I understand the question to be: What's the probability that there will be a time when the number of tails is greater than the number of heads? </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div class="answer">
+
+
+                    <div answer_id="1978516" id="answer">
+                        <p>Just a comment as companion of your question and explanation. I don't answer your question. But I believe that my contribution is interesting:</p>  <p>In fact one can build such coins: <em>take two coins with same diameter and different densities (steel and wood) and join them with glue.</em> </p>  <p><em>After you can do experiments.</em></p> 
+                    </div>
+                    <hr>
+
+
+                    <div id="answer-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="4061711"> I was going to ask how you managed to have 2 golds and only 31 reputation. Interesting style. </td></tr><tr><td comment_id="4061870"> I'm not convinced this construction works. The coin rotates about its centre of mass, which is pretty much at the centre of the steel half, but it still spends about half its time in the air with the wood side facing up. </td></tr><tr><td comment_id="4061878"> In the past I did it, and I used confidence intervals to test my result. Any case I respect your reasoning and opinion. Many thanks @OscarCunningham and Von Seckendorff </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div id="duplicate">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+
+                <div id="related">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+</html>

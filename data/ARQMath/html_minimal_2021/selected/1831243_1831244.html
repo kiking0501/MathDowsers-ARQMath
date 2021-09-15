@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is it ok to use Kronecker delta function to find if one of its variables belongs to a half open interval?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is it ok to use Kronecker delta function to find if one of its variables belongs to a half open interval? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1831243">
+<p>Kronecker "delta" function is generally defined as  <span class="math-container" id="16937389" visual_id="3638143"><math alttext="\delta(i,j)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> if <span class="math-container" id="16937390" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> is equal to <span class="math-container" id="16937391" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span>, otherwise <span class="math-container" id="16937392" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>.</p> <p>How about if <span class="math-container" id="16937393" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span> is not an integer? I mean let <span class="math-container" id="16937394" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span> is a half open interval defined as <span class="math-container" id="16937395" visual_id="3638144"><math alttext="j=(0,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="16937396" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> has any value on interval <span class="math-container" id="16937397" visual_id="1356"><math alttext="[0,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></semantics></math></span>, then can we use Kronecker delta to find if <span class="math-container" id="16937398" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> belongs to <span class="math-container" id="16937399" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span>? In other words, can we define like: <span class="math-container" id="16937400" visual_id="3638143"><math alttext="\delta(i,j)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> if <span class="math-container" id="16937401" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>  is in <span class="math-container" id="16937402" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span>, <span class="math-container" id="16937403" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> otherwise?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1831244" id="answer">
+<p>What you are looking for is the indicator function: <span class="math-container" id="16937404" visual_id="3638145"><math alttext="\mathbf{1}_{A}(x)=\begin{cases}1&amp;amp;\text{if }x\in A\\ 0&amp;amp;\text{otherwise}\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mn>𝟏</mn><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="left"><mn>1</mn></mtd><mtd columnalign="left"><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><mtext>if </mtext><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>∈</mo><mi>A</mi></mrow></mtd></mtr><mtr><mtd columnalign="left"><mn>0</mn></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>otherwise</mtext></mrow></mtd></mtr></mtable></mrow></mrow></semantics></math></span> In your case, <span class="math-container" id="16937405" visual_id="266358"><math alttext="A=(0,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> (I have used <span class="math-container" id="16937406" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> instead of <span class="math-container" id="16937407" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> and <span class="math-container" id="16937408" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> instead of <span class="math-container" id="16937409" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span> since it is more customary to use lower case letters at the end of the alphabet for real numbers and upper case letters for sets).</p> <p>Note, as asmeurer points out, that the Kronecker delta <span class="math-container" id="16937410" visual_id="391810"><math alttext="\delta_{i,j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>δ</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub></semantics></math></span> can be written in terms of the indicator function: <span class="math-container" id="16937411" visual_id="3638146"><math alttext="\delta_{i,j}=\mathbf{1}_{\{j\}}(i)=\mathbf{1}_{\{i\}}(j)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><mrow><msub><mn>𝟏</mn><mrow><mo stretchy="false">{</mo><mi>j</mi><mo stretchy="false">}</mo></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mn>𝟏</mn><mrow><mo stretchy="false">{</mo><mi>i</mi><mo stretchy="false">}</mo></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <hr/> <p>That having been said, the answer to your original question is yes, since there is nothing stopping you from defining <span class="math-container" id="16937412" visual_id="3638147"><math alttext="\delta_{i,j}=\mathbf{1}_{j}(i)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><mrow><msub><mn>𝟏</mn><mi>j</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> when <span class="math-container" id="16937413" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span> is a subset of the real numbers and <span class="math-container" id="16937414" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> is a real number, but this might confuse your readers, and thus I <strong>strongly</strong> recommend against it.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3744108"> Worth pointing out that <span class="math-container" id="16937421" visual_id="391810"><math alttext="\delta_{i,j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>δ</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub></semantics></math></span> is a special-case of the indicator function, <span class="math-container" id="16937416" visual_id="3638148"><math alttext="\mathbf{1}_{\{j\}}(i)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mn>𝟏</mn><mrow><mo stretchy="false">{</mo><mi>j</mi><mo stretchy="false">}</mo></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

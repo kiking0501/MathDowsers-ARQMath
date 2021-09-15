@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is a closed map from X to T1 proper?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is a closed map from X to T1 proper? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1057518">
+<p><span class="math-container" id="10017022" visual_id="46899"><math alttext="f:X→Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>⁢</mo><mi mathvariant="normal">→</mi><mo>⁢</mo><mi>Y</mi></mrow></mrow></semantics></math></span> is a closed map. Suppose that the inverse image of each point in <span class="math-container" id="10017023" visual_id="375"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> is a compact subset of <span class="math-container" id="10017024" visual_id="38609"><math alttext="X." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>.</mo></mrow></semantics></math></span> Show that <span class="math-container" id="10017025" visual_id="142542"><math alttext="f^{-1}(K)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is compact in <span class="math-container" id="10017026" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> whenever <span class="math-container" id="10017027" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span> is compact in <span class="math-container" id="10017028" visual_id="119359"><math alttext="Y." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>.</mo></mrow></semantics></math></span></p> <p>This is my homework and I understand <span class="math-container" id="10017029" visual_id="375"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> is a <span class="math-container" id="10017030" visual_id="12909"><math alttext="T_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mn>1</mn></msub></semantics></math></span> space. But what should I do next?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> general-topology </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1057851" id="answer">
+<p>A map <span class="math-container" id="10017031" visual_id="2889"><math alttext="f:X\to Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span> which is continuous and closed and has the property that all fibers (the preimages of points) are compact is called <em>perfect</em>. A map is called <em>proper</em> if the preimages of compact sets are compact. So you want to show that each perfect map is proper.<br/> Note that for every <span class="math-container" id="10017032" visual_id="109511"><math alttext="B\subset Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⊂</mo><mi>Y</mi></mrow></semantics></math></span>, the restriction <span class="math-container" id="10017033" visual_id="4256506"><math alttext="f^{\prime}:f^{-1}(B)\to B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>:</mo><mrow><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mi>B</mi></mrow></mrow></semantics></math></span> is again proper. In particular, if <span class="math-container" id="10017034" visual_id="142543"><math alttext="K\subseteq Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>⊆</mo><mi>Y</mi></mrow></semantics></math></span> is compact, then <span class="math-container" id="10017035" visual_id="4256507"><math alttext="f^{\prime}:f^{-1}(K)\to K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>:</mo><mrow><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mi>K</mi></mrow></mrow></semantics></math></span> is a perfect map with a compact target space. For that case, you can find a proof at <a href="https://math.stackexchange.com/questions/902472/perfect-map-p-x-to-y-y-compact-implies-x-compact">Perfect Map <span class="math-container" id="10017036" visual_id="48963"><math alttext="p:\ X\to Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo rspace="7.5pt">:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span>, <span class="math-container" id="10017037" visual_id="375"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> compact implies <span class="math-container" id="10017038" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> compact</a> which also shows that the continuity is not needed.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="902472"> Perfect Map <span class="math-container" id="8725641" visual_id="48963"><math alttext="p:\ X\to Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo rspace="7.5pt">:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span>, <span class="math-container" id="8725642" visual_id="375"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> compact implies <span class="math-container" id="8725643" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> compact </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

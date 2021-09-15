@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is the sum of $E=\frac{1}{3}+\frac{2}{3^{2}}+\frac{3}{3^{3}}+\frac{4}{3^{4}}+...$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is the sum of <span class="math-container" id="22948513" visual_id="2210016"><math alttext="E=\frac{1}{3}+\frac{2}{3^{2}}+\frac{3}{3^{3}}+\frac{4}{3^{4}}+..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>+</mo><mfrac><mn>2</mn><msup><mn>3</mn><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mn>3</mn><msup><mn>3</mn><mn>3</mn></msup></mfrac><mo>+</mo><mfrac><mn>4</mn><msup><mn>3</mn><mn>4</mn></msup></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2480080">
+<p>What is the right way to assess this problem?</p> <p><span class="math-container" id="22948514" visual_id="2210016"><math alttext="E=\frac{1}{3}+\frac{2}{3^{2}}+\frac{3}{3^{3}}+\frac{4}{3^{4}}+..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>+</mo><mfrac><mn>2</mn><msup><mn>3</mn><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mn>3</mn><msup><mn>3</mn><mn>3</mn></msup></mfrac><mo>+</mo><mfrac><mn>4</mn><msup><mn>3</mn><mn>4</mn></msup></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span></p> <p>To find the value of the sum I tried to use the fact that it could be something convergent like a geometric series. However it does not seem to be the case as there is no common ratio between the terms. Since the numerator is increasing from <span class="math-container" id="22948515" visual_id="40493"><math alttext="1,2,3,..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span> makes it impossible to find a ratio. What should I do?.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> algebra-precalculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5123929"> https://math.stackexchange.com/q/30732/ </td></tr><tr><td comment_id="5123943"> What's this sum <span class="math-container" id="22948516" visual_id="2210017"><math alttext="x+2x^{2}+3x^{3}+4x^{4}+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2480099" id="answer">
+<p>\begin{eqnarray} E&amp;=&amp;\frac{1}{3}+\frac{2}{3^2}+\frac{3}{3^3}+\frac{4}{3^4}+\ldots=\sum_{k=1}^\infty\frac{k}{3^k}=\frac{1}{3}\sum_{k=1}^\infty k\cdot\left(\frac{1}{3}\right)^{k-1}\\ &amp;=&amp;\frac{1}{3}\dfrac{d}{dx}\left(\sum_{k=0}^\infty x^k\right)\Big|_{x=\frac{1}{3}}=\frac{1}{3}\frac{d}{dx}\left(\frac{1}{1-x}\right)\Big|_{x=\frac{1}{3}}=\frac{1}{3}\dfrac{1}{(1-x)^2}\Big|_{x=\frac{1}{3}}\\ &amp;=&amp;\frac{1}{3}\cdot\dfrac{1}{\left(1-\frac{1}{3}\right)^2}=\frac{1}{3}\cdot\dfrac{1}{\frac{4}{9}}=\frac{1}{3}\cdot\frac{9}{4}=\frac{3}{4} \end{eqnarray}</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="30732"> How can I evaluate <span class="math-container" id="317570" visual_id="52656"><math alttext="\sum_{n=0}^{\infty}(n+1)x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

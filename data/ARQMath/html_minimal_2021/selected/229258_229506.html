@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Defining "minimum" using logic and set-theoretic operations.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Defining "minimum" using logic and set-theoretic operations. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="229258">
+<blockquote> <p>Express the notion of a minimum of a set of number (where numbers are defined via sets). That is, define a relation Min(S,x) using logic and set-theoretic operations such that it is true whenever x is the minimum element in S.</p> </blockquote> <ul> <li>I understand the definition of numbers in terms of sets. I did that in part a of this same question.</li> <li><p>I understand what a function or relation is</p> <p>But I have no idea what this is asking, nor how to answer it.</p></li> </ul> <hr/> <p>Edit: My definition of a number is as follows:</p> <p>0 = {}<br/> <span class="math-container" id="2574668" visual_id="168205"><math alttext="n+1=n\cup\{n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><mi>n</mi><mo>∪</mo><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span></p> <p>So :</p> <ul> <li>1 = {{}}</li> <li>2 = {{}, {{}}}</li> <li>3 = {{}, {{}}, {{}, {{}}}}</li> </ul>
+</div>
+<hr/>
+<div id="tags">
+<span> set-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="510542"> Can you include your answer for part (a) of this question? </td></tr><tr><td comment_id="510546"> Try breaking it down into pieces: (1) How would you write '<span class="math-container" id="2574692" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is a smaller number than <span class="math-container" id="2574670" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span>' as a logical expression involving sets?  (2) How would you write '<span class="math-container" id="2574692" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is the smallest number in the set <span class="math-container" id="2574707" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>' as a logical expression involving the 'less-than' relation?  Once you have those, all you need to do is piece them together. </td></tr><tr><td comment_id="510562"> HINT: Have you noticed that by this definition <span class="math-container" id="2574673" visual_id="290962"><math alttext="3=\{0,1,2\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>? </td></tr><tr><td comment_id="510609"> Is this an answer? <span class="math-container" id="2574674" visual_id="3481908"><math alttext="\forall y\in S(x\in y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>y</mi><mo>∈</mo><mi>S</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="510611"> It’s almost part of one: it says that <span class="math-container" id="2574692" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is less than each number in <span class="math-container" id="2574707" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>. Unfortunately, this implies that <span class="math-container" id="2574677" visual_id="8889"><math alttext="x\notin S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∉</mo><mi>S</mi></mrow></semantics></math></span>, which is not what you want. <span class="math-container" id="2574678" visual_id="3481909"><math alttext="\operatorname{Min}(x,S)\leftrightarrow x\in S\land\dots~{}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>Min</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow><mo>↔</mo><mrow><mi>x</mi><mo>∈</mo><mrow><mi>S</mi><mo>∧</mo><mpadded width="+3.3pt"><mi mathvariant="normal">…</mi></mpadded></mrow></mrow></mrow></semantics></math></span>, where the missing part has to say in effect that for all <span class="math-container" id="2574694" visual_id="4219"><math alttext="y\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>S</mi></mrow></semantics></math></span>, <span class="math-container" id="2574684" visual_id="10507"><math alttext="x\leq y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>y</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="510615"> <span class="math-container" id="2574681" visual_id="3481910"><math alttext="\forall y\in S(x\in y\wedge x\in S)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>y</mi><mo>∈</mo><mi>S</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>y</mi><mo>∧</mo><mi>x</mi><mo>∈</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="510627"> That statement is self-contradictory: it implies that <span class="math-container" id="2574682" visual_id="57337"><math alttext="x\in x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>x</mi></mrow></semantics></math></span>, which violates one of the axioms of set theory. I’ll give you another push: <span class="math-container" id="2574683" visual_id="3481911"><math alttext="\operatorname{Min}(x,S)\leftrightarrow x\in S\land\forall y\in S(x\in y\lor% \dots)\;." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Min</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>S</mi><mo stretchy="false">)</mo></mrow><mo>↔</mo><mi>x</mi><mo>∈</mo><mi>S</mi><mo>∧</mo><mo>∀</mo><mi>y</mi><mo>∈</mo><mi>S</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>y</mi><mo>∨</mo><mi mathvariant="normal">…</mi><mo rspace="5.3pt" stretchy="false">)</mo></mrow><mo>.</mo></mrow></semantics></math></span> Now replace the dots by a very simple statement. Remember, you want <span class="math-container" id="2574684" visual_id="10507"><math alttext="x\leq y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>y</mi></mrow></semantics></math></span> for all <span class="math-container" id="2574694" visual_id="4219"><math alttext="y\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>S</mi></mrow></semantics></math></span>, **not** <span class="math-container" id="2574695" visual_id="17409"><math alttext="x&lt;y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>y</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="510681"> Last try <span class="math-container" id="2574687" visual_id="3481912"><math alttext="Min(x,S)\leftrightarrow x\in S\wedge\forall y\in S(x\in y\vee x=y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>i</mi><mi>n</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>S</mi><mo stretchy="false">)</mo></mrow><mo>↔</mo><mi>x</mi><mo>∈</mo><mi>S</mi><mo>∧</mo><mo>∀</mo><mi>y</mi><mo>∈</mo><mi>S</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>y</mi><mo>∨</mo><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> If this is true, I have to ask why it's true... This assignment is due on Wednesday and I'm not doing so well in the class. </td></tr><tr><td comment_id="510770"> (I only just saw this: if you want it brought to my attention, you have to put `@Brian` somewhere in the comment.) Yes, now you’ve got it. To say that <span class="math-container" id="2574692" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is the minimum element of <span class="math-container" id="2574707" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> you must say first that <span class="math-container" id="2574690" visual_id="8272"><math alttext="x\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>S</mi></mrow></semantics></math></span>, which you’ve done, and then that <span class="math-container" id="2574692" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is minimal. That means that <span class="math-container" id="2574692" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is less than or equal to everything in <span class="math-container" id="2574707" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>. Thus, for each <span class="math-container" id="2574694" visual_id="4219"><math alttext="y\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>S</mi></mrow></semantics></math></span>, you want either <span class="math-container" id="2574695" visual_id="17409"><math alttext="x&lt;y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>y</mi></mrow></semantics></math></span>, which means <span class="math-container" id="2574696" visual_id="11783"><math alttext="x\in y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>y</mi></mrow></semantics></math></span>, or <span class="math-container" id="2574698" visual_id="3940"><math alttext="x=y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow></semantics></math></span>. In some of your earlier attempts you were forgetting to allow for the <span class="math-container" id="2574698" visual_id="3940"><math alttext="x=y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow></semantics></math></span> possibility. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="229506" id="answer">
+<p><strong>Hint:</strong></p> <p>You can notice either of the following observations:</p> <ol> <li><span class="math-container" id="2574705" visual_id="411520"><math alttext="n&amp;lt;m\iff n\in m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>n</mi><mo>&lt;</mo></mrow><mi>m</mi></mrow><mo>⇔</mo><mrow><mi>n</mi><mo>∈</mo><mi>m</mi></mrow></mrow></semantics></math></span>; and</li> <li><span class="math-container" id="2574706" visual_id="3481917"><math alttext="n\leq m\iff n\subseteq m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>≤</mo><mi>m</mi></mrow><mo>⇔</mo><mrow><mi>n</mi><mo>⊆</mo><mi>m</mi></mrow></mrow></semantics></math></span>.</li> </ol> <p>Therefore if <span class="math-container" id="2574707" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> is a set of natural numbers, its minimum is the element which is either the member of everyone else; or a subset of everyone (including itself, of course).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

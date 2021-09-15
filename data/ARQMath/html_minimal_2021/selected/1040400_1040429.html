@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>A sequence of $n^2$ real numbers which contains no monotonic subsequence of more than $n$ terms</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> A sequence of <span class="math-container" id="9870914" visual_id="3802"><math alttext="n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mn>2</mn></msup></semantics></math></span> real numbers which contains no monotonic subsequence of more than <span class="math-container" id="9870915" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> terms </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1040400">
+<p>I'm following a Combinatorics course at the moment, and have recent proved the <a href="https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Szekeres_theorem" rel="nofollow">Erdős–Szekeres Theorem</a> (or, at least, some variation of):  </p> <blockquote> <p>A sequence of length <span class="math-container" id="9870916" visual_id="127217"><math alttext="k\pi,\,k\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>π</mi></mrow><mo rspace="4.2pt">,</mo><mi>k</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span> either contains an increasing subsequence of length <span class="math-container" id="9870917" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>, or a decreasing one of length <span class="math-container" id="9870918" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>.</p> </blockquote> <p>I have been set an exercise to prove the following:</p> <blockquote> <p>For each natural number <span class="math-container" id="9870919" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, find a sequence of <span class="math-container" id="9870920" visual_id="3802"><math alttext="n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mn>2</mn></msup></semantics></math></span> real numbers which contains no monotonic subsequence of more than <span class="math-container" id="9870921" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> terms.</p> </blockquote> <p>I can naively / informally how to do this, but no method which would seem to involve any sort of Graph / Ramsey Theory.  I'm assuming that I'll have to use Erdős–Szekeres, since I'm in a Combinatorics course, or notice something about its proof, to come up with a formal construction of the sequence, but can't see how I'd go about it.</p> <p>Would using Erdős–Szekeres be the right way to go about this, or is there a different / simpler combinatorial way to explore?  </p> <p>Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> graph-theory </span><span> ramsey-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2120066"> You need to look at the proof of the ES theorem, it will give you the construction you need. </td></tr><tr><td comment_id="2120069"> also try <span class="math-container" id="9870922" visual_id="179077"><math alttext="n=1," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></semantics></math></span> then <span class="math-container" id="9870923" visual_id="31446"><math alttext="n=2," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mo>,</mo></mrow></semantics></math></span> then <span class="math-container" id="9870924" visual_id="422638"><math alttext="n=3." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><mo>.</mo></mrow></semantics></math></span> Maybe you can find a pattern out of those. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1040429" id="answer">
+<p><strong>Hint</strong>: <span class="math-container" id="9870925" visual_id="9153519"><math alttext="\eqalign{\circ\ \ \circ\ \circ\ \circ\ \circ\ \circ\ \color{red}{\bullet}\ % \circ\ \circ\cr\circ\ \ \circ\ \circ\ \circ\ \circ\ \circ\ \circ\ \color{red}{% \bullet}\ \circ\cr\circ\ \ \circ\ \circ\ \circ\ \circ\ \circ\ \circ\ \circ\ % \color{red}{\bullet}\cr\circ\ \ \circ\ \circ\ \color{red}{\bullet}\ \circ\ % \circ\ \circ\ \circ\ \circ\cr\circ\ \ \circ\ \circ\ \circ\ \color{red}{\bullet% }\ \circ\ \circ\ \circ\ \circ\cr\circ\ \ \circ\ \circ\ \circ\ \circ\ \color{% red}{\bullet}\ \circ\ \circ\ \circ\cr\color{red}{\bullet}\ \ \circ\ \circ\ % \circ\ \circ\ \circ\ \circ\ \circ\ \circ\cr\circ\ \ \color{red}{\bullet}\ % \circ\ \circ\ \circ\ \circ\ \circ\ \circ\ \circ\cr\circ\ \ \circ\ \color{red}{% \bullet}\ \circ\ \circ\ \circ\ \circ\ \circ\ \circ\cr}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable align="baseline" columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><mo>∘</mo><mo separator="true"> </mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mo rspace="7.5pt">∙</mo><mo rspace="7.5pt">∘</mo><mo>∘</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="right"><mrow><mo>∘</mo><mo separator="true"> </mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mo rspace="7.5pt">∙</mo><mo>∘</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="right"><mrow><mo>∘</mo><mo mathvariant="italic" separator="true"> </mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mo>∙</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="right"><mrow><mo>∘</mo><mo separator="true"> </mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mo rspace="7.5pt">∙</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo>∘</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="right"><mrow><mo>∘</mo><mo separator="true"> </mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mo rspace="7.5pt">∙</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo>∘</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="right"><mrow><mo>∘</mo><mo separator="true"> </mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mo rspace="7.5pt">∙</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo>∘</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="right"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mo>∙</mo><mo separator="true"> </mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo>∘</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="right"><mrow><mo>∘</mo><mo separator="true"> </mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mo rspace="7.5pt">∙</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo>∘</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="right"><mrow><mo>∘</mo><mo separator="true"> </mo><mo rspace="7.5pt">∘</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mi>r</mi><mi>e</mi><mi>d</mi><mo rspace="7.5pt">∙</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo rspace="7.5pt">∘</mo><mo>∘</mo></mrow></mtd><mtd></mtd></mtr></mtable></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2121958"> Yes, this was the 'informal' idea that I had; glad to see what I was thinking was indeed on the right lines.  I've thought about it some more and been able to generalise it a bit more, so thanks for confirming my thoughts! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1144232"> Proving Erdős-Szekeres bound with counterexample </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

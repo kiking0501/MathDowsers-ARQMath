@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How can I solve this equation $x^{x^{x^{x^{.^{.^{.}}}}}}-a=0$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How can I solve this equation <span class="math-container" id="10513640" visual_id="8406575"><math alttext="x^{x^{x^{x^{.^{.^{.}}}}}}-a=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><msup><mi>x</mi><msup><mi>x</mi><msup><mi>x</mi><msup><mo>.</mo><msup><mo>.</mo><mo>.</mo></msup></msup></msup></msup></msup></msup><mo>-</mo><mi>a</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1115273">
+<p>I always use the Newton-Raphson Method if I want to find the roots of any equation as follow <span class="math-container" id="10513641" visual_id="4799095"><math alttext="x_{1}=x_{0}-\frac{y_{0}}{y^{\prime}_{0}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>-</mo><mfrac><msub><mi>y</mi><mn>0</mn></msub><msubsup><mi>y</mi><mn>0</mn><mo>′</mo></msubsup></mfrac></mrow></mrow></semantics></math></span></p> <p>But I don't know how to use this method if the equation takes the following form  <span class="math-container" id="10513642" visual_id="8406575"><math alttext="x^{x^{x^{x^{.^{.^{.}}}}}}-a=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><msup><mi>x</mi><msup><mi>x</mi><msup><mi>x</mi><msup><mo>.</mo><msup><mo>.</mo><mo>.</mo></msup></msup></msup></msup></msup></msup><mo>-</mo><mi>a</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>where <span class="math-container" id="10513643" visual_id="222724"><math alttext="a=" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi></mi></mrow></semantics></math></span> positive number</p> <p>I know some solved cases when <span class="math-container" id="10513644" visual_id="20877"><math alttext="a=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span> so that the <span class="math-container" id="10513645" visual_id="47221"><math alttext="x=\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math></span></p> <p>Now I want to find the solution when <span class="math-container" id="10513646" visual_id="60559"><math alttext="a=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>e</mi></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> numerical-methods </span><span> tetration </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2274904"> Check Lambert w function. </td></tr><tr><td comment_id="2274911"> possible duplicate of [Are the solutions of <span class="math-container" id="10513647" visual_id="424464"><math alttext="x^{x^{x^{x^{\cdot^{{\cdot}^{\cdot}}}}}}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><msup><mi>x</mi><msup><mi>x</mi><msup><mi>x</mi><msup><mo>⋅</mo><msup><mo>⋅</mo><mo>⋅</mo></msup></msup></msup></msup></msup></msup><mo>=</mo><mn>2</mn></mrow></semantics></math></span> correct?](http://math.stackexchange.com/questions/87870/are-the-solutions-of-xxxx-cdot-cdot-cdot-2-correct) </td></tr><tr><td comment_id="2274919"> My question is numerically </td></tr><tr><td comment_id="2274948"> Here is a good [example 3](http://en.m.wikipedia.org/wiki/Lambert_W_function). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1115280" id="answer">
+<p>You have <span class="math-container" id="10513648" visual_id="1064954"><math alttext="x^{a}=a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>a</mi></msup><mo>=</mo><mi>a</mi></mrow></semantics></math></span> and hence <span class="math-container" id="10513649" visual_id="5306951"><math alttext="x=a^{1/a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>a</mi><mrow><mn>1</mn><mo>/</mo><mi>a</mi></mrow></msup></mrow></semantics></math></span>. It converges for all <a href="http://en.wikipedia.org/wiki/Tetration#Extension_to_infinite_heights"><span class="math-container" id="10513650" visual_id="8406576"><math alttext="a\in[e^{-e},e^{1/e}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>e</mi></mrow></msup><mo>,</mo><msup><mi>e</mi><mrow><mn>1</mn><mo>/</mo><mi>e</mi></mrow></msup><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span></a>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2279882"> Perhaps it is of interest to do the generalization to complex numbers. Then your mentioned interval becomes a region of convergence called "Shell-Thron-region" (see wikipedia) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="87870"> Are these solutions of <span class="math-container" id="998287" visual_id="420683"><math alttext="2=x^{x^{x^{\&gt;\cdot^{\&gt;\cdot^{\&gt;\cdot}}}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><msup><mi>x</mi><msup><mi>x</mi><msup><mi>x</mi><msup><mo lspace="4.7pt">⋅</mo><msup><mo lspace="4.7pt">⋅</mo><mo lspace="4.7pt">⋅</mo></msup></msup></msup></msup></msup></mrow></semantics></math></span> correct? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

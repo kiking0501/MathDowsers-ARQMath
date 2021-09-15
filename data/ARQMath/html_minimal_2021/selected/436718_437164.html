@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Conditional probability with Bayes' Rule</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Conditional probability with Bayes' Rule </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="436718">
+<p>On a practice exam from statistics I encountered a very difficult exercise I couldn't manage to solve:</p> <hr/> <p>In the tent next to you there is a family with two children. Early in the morning you see a boy coming out of the tent. What is the probability that the other child is a girl? </p> <p>Use Bayes' Rule</p> <hr/> <p>My approach to the solution was the following: </p> <p>We assume <span class="math-container" id="4600683" visual_id="283172"><math alttext="P(GIRL)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>G</mi><mo>⁢</mo><mi>I</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>L</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> = 0.5 and similarly <span class="math-container" id="4600684" visual_id="283173"><math alttext="P(BOY)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>⁢</mo><mi>O</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> = 0.5.</p> <p>We have to compute the following conditional probability: <span class="math-container" id="4600685" visual_id="56981"><math alttext="P(" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo></mrow></semantics></math></span>One child is a girl| One child is a boy).</p> <p>By applying Bayes' rule we should be able to compute this probability.</p> <p>Bayes Rule: <span class="math-container" id="4600686" visual_id="3647"><math alttext="P(A|B)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> <span class="math-container" id="4600687" visual_id="3609"><math alttext="=" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>=</mo></semantics></math></span> <span class="math-container" id="4600688" visual_id="283174"><math alttext="\frac{P(B|A)*P(A)}{P(B|A)*P(A)+P(B|A^{c})*P(A^{c})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>*</mo><mi>P</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>*</mo><mi>P</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><msup><mi>A</mi><mi>c</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>*</mo><mi>P</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mi>c</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></semantics></math></span></p> <p>Could anyone please help me with this, I tried many things but nothing worked out..</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> conditional-probability </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1148324"> There is not enough information to solve the problem as stated.  hejseb's answer is correct if we consider the information "you see a boy coming out of the tent" to be equivalent to the information "there is at least one boy in the family" (or at least equivalent conditional on your having observed the tent.)  But perhaps it is more likely to see a boy coming out of the tent if there are two boys than it is to see a boy coming out of the tent if there is only one boy. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="437164" id="answer">
+<p>The answer is simply 1/2.  If you are required to use conditional probability, it goes like this: <span class="math-container" id="4600700" visual_id="283182"><math alttext="P(G_{2}|B_{1})=\frac{P(G_{2}\cap B_{1})}{P(B_{1})}=\frac{P(G_{2})P(B_{1})}{P(B% _{1})}=\frac{(1/2)(1/2)}{1/2}=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>G</mi><mn>2</mn></msub><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><msub><mi>B</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>G</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>B</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>G</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>B</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span></p> <p>Don't confuse this question with a very similar one where all we know at the start is that at least one child is a boy.  If you have seen one child, and that one is a boy, it has no effect on the probability that the remaining child is a girl; they are independent events.</p> <p>[edit] Despite being down-voted on this one, I am sticking to my guns.  Here is another way to look at it.  Initially, the possibilities are {BB, BG, GB, GG}, where the first letter denotes the first child seen and all possibilities are equally likely, by assumption.  After the first child is seen the remaining possibilities are {BB, BG}, each of which is equally likely.  The event that the second child is a girl corresponds to BG, with probability 1/2.</p> <p>I repeat, don't confuse this with the problem where all we know is that at least one child is a boy.  In that case, after elimination the possibilities are {BB, BG, GB]; but that's different.[/edit]</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="936740"> This answer is wrong. You oversimplificated the calculation of some of your probabilities. Please refer to hejseb's answer; the answer to this question should be <span class="math-container" id="4600701" visual_id="9956"><math alttext="\frac{2}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>2</mn><mn>3</mn></mfrac></semantics></math></span>. </td></tr><tr><td comment_id="937015"> See my expanded answer above. </td></tr><tr><td comment_id="937025"> Your answer does not take into account the fact that <span class="math-container" id="4600709" visual_id="154879"><math alttext="GB" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> (as in the girl is the oldest) would also be a possible outcome. The order in which the children were born and that in which they leave the tent should be clearly distinguished between. </td></tr><tr><td comment_id="937051"> Where do you see "oldest" in the problem statement?  We saw one child, and that child was a boy.  I believe there is a good discussion here: http://mathforum.org/dr.math/faq/faq.boygirl.choose.html In particular, the section titled "Choosing the child first". </td></tr><tr><td comment_id="937071"> Another argument, what makes you think that <span class="math-container" id="4600703" visual_id="283183"><math alttext="G_{2}\text{ and }B_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mn>2</mn></msub><mo>⁢</mo><mtext> and </mtext><mo>⁢</mo><msub><mi>B</mi><mn>1</mn></msub></mrow></semantics></math></span> are independent? Those are assumptions you cannot just make. If we could make such assumptions the whole exercise would have been pointless in the first place. </td></tr><tr><td comment_id="937122"> I think <span class="math-container" id="4600704" visual_id="4914"><math alttext="G_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>G</mi><mn>2</mn></msub></semantics></math></span> and <span class="math-container" id="4600705" visual_id="28245"><math alttext="B_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mn>1</mn></msub></semantics></math></span> are independent because kno<span class="math-container" id="9026375">w</span>ing that the first child seen is a boy does not convey any information about the sex of the second child.  Here is an experiment that I think is exactly analogous to the OP.  Suppose we put two coins in a box, close it, and shake the box.  We open the box just a little  and one coin slides out; it is a Head.  What is the probability that the second coin is a Tail?  Do you see any essential difference between this experiment and the OP, so far as the probabilities are concerned?  If so, what? As to the point of the exercise... </td></tr><tr><td comment_id="937197"> There is certainly a difference as here there is a 'limited' sample space of possibilities. But however you want to put it; this exercise is made to show that events that *seem* independent are in fact not. Whatever reason you might have, there is no way you can justify using independence if that is not given. The evidence that I have is the other answer that does not use such things results in a different probability (which hence means that your assumption must have been wrong). Other than that, there is nothing I can say to convince you. </td></tr><tr><td comment_id="937592"> @awkward Have you had a look at the reference in my answer? It seems like your answer corresponds to a simplification of its alternative answer, which indeed yields 1/2. Though I am guessing it's not the answer sought here, as it's pointlessly trivial to use conditional probabilities when dealing with independent events as in your answer. The ambiguity illustrated here is why it is known as a paradox! </td></tr><tr><td comment_id="937902"> rbm: We disagree as to the purpose of the exercise, evidently.  Without its author here, who knows?  I think you are correct that we will have to agree to disagree. hejseb: I did read your reference.  Notice that the first case starts with "they have a daughter" and has an answer of 1/3.  The second case, with answer 1/2, starts with "the door is opened by a girl".  The OP is just like the second case, except that the sexes have been switched and the house has been changed to a tent. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="538471"> Family with two boys </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2063017"> If one egg is found to be good, then what is the probability that other is also good? </td></tr><tr><td post_id="825698"> Is this always true: <span class="math-container" id="8076413" visual_id="2593384"><math alttext="P(A|B)=1-P(A^{c}|B)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>A</mi><mi>c</mi></msup><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="3034595"> Boy-Girl probability question </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

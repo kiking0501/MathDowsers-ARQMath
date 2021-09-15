@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Question about the proof of Ramsey's Theorem</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Question about the proof of Ramsey's Theorem </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="939720">
+<p>I was reading up on a proof of Ramsey's Theorem and I can't understand this part of the proof: </p> <blockquote> <p>Pick a vertex <span class="math-container" id="9048368" visual_id="1546"><math alttext="v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi></semantics></math></span> from the graph, and partition the remaining vertices into two sets <span class="math-container" id="9048369" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> and <span class="math-container" id="9048370" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span>, such that for every vertex <span class="math-container" id="9048371" visual_id="60"><math alttext="w" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi></semantics></math></span>, <span class="math-container" id="9048372" visual_id="60"><math alttext="w" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi></semantics></math></span> is in <span class="math-container" id="9048373" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> if <span class="math-container" id="9048374" visual_id="89609"><math alttext="(v,w)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> is blue, and <span class="math-container" id="9048375" visual_id="60"><math alttext="w" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi></semantics></math></span> is in <span class="math-container" id="9048376" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> if <span class="math-container" id="9048377" visual_id="89609"><math alttext="(v,w)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> is red. Because the graph has <span class="math-container" id="9048378" visual_id="6372325"><math alttext="R(r-1,s)+R(r,s-1)=|M|+|N|+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mrow><mi>s</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mi>M</mi><mo stretchy="false">|</mo></mrow><mo>+</mo><mrow><mo stretchy="false">|</mo><mi>N</mi><mo stretchy="false">|</mo></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> vertices, it follows that either <span class="math-container" id="9048379" visual_id="6372326"><math alttext="|M|\geq R(r−1,s)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>M</mi><mo stretchy="false">|</mo></mrow><mo>≥</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mn>1</mn></mrow><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> or <span class="math-container" id="9048380" visual_id="6372327"><math alttext="|N|\geq R(r,s−1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>N</mi><mo stretchy="false">|</mo></mrow><mo>≥</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mrow><mi>s</mi><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> </blockquote> <p>Why is that <span class="math-container" id="9048381" visual_id="6372326"><math alttext="|M|\geq R(r−1,s)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>M</mi><mo stretchy="false">|</mo></mrow><mo>≥</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mn>1</mn></mrow><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> or <span class="math-container" id="9048382" visual_id="6372327"><math alttext="|N|\geq R(r,s−1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>N</mi><mo stretchy="false">|</mo></mrow><mo>≥</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mrow><mi>s</mi><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>? I know from the proof of <span class="math-container" id="9048383" visual_id="1341723"><math alttext="R(3,3)=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math></span> that given a vertex, at least <span class="math-container" id="9048384" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> are guaranteed to be either red or blue, so what is the pigeonhole argument for the general case?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> graph-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="974896" id="answer">
+<p>If <span class="math-container" id="9048391" visual_id="6372332"><math alttext="\left|{M}\right|\ngeq R(r-1,s)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>|</mo><mi>M</mi><mo>|</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\ngeq</mtext></merror><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="9048392" visual_id="6372333"><math alttext="\left|{N}\right|\ngeq R(r,s-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>|</mo><mi>N</mi><mo>|</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\ngeq</mtext></merror><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mrow><mi>s</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, then <span class="math-container" id="9048393" visual_id="6372328"><math alttext="\left|{M}\right|\leq R(r-1,s)-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>|</mo><mi>M</mi><mo>|</mo></mrow><mo>≤</mo><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> and <span class="math-container" id="9048394" visual_id="6372329"><math alttext="\left|{N}\right|\leq R(r,s-1)-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>|</mo><mi>N</mi><mo>|</mo></mrow><mo>≤</mo><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mrow><mi>s</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>. Therefore, number of vertices <span class="math-container" id="9048395" visual_id="6372334"><math alttext="=\left|{M}\right|+\left|{N}\right|+1\leq R(r-1,s)-1+R(r,s-1)-1+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>|</mo><mi>M</mi><mo>|</mo></mrow><mo>+</mo><mrow><mo>|</mo><mi>N</mi><mo>|</mo></mrow><mo>+</mo><mn>1</mn></mrow><mo>≤</mo><mrow><mrow><mrow><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mrow><mi>s</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>. That is,<span class="math-container" id="9048396" visual_id="6372335"><math alttext="\left|{M}\right|+\left|{N}\right|+1\leq R(r-1,s)+R(r,s-1)-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>|</mo><mi>M</mi><mo>|</mo></mrow><mo>+</mo><mrow><mo>|</mo><mi>N</mi><mo>|</mo></mrow><mo>+</mo><mn>1</mn></mrow><mo>≤</mo><mrow><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mrow><mi>s</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> which is a contradiction to <span class="math-container" id="9048397" visual_id="6372331"><math alttext="\left|{M}\right|+\left|{N}\right|+1=R(r-1,s)+R(r,s-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>|</mo><mi>M</mi><mo>|</mo></mrow><mo>+</mo><mrow><mo>|</mo><mi>N</mi><mo>|</mo></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mrow><mi>s</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1999088"> This seems the same as the other answer. Is it not? </td></tr><tr><td comment_id="1999715"> Yeah, its the same </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="952212"> If <span class="math-container" id="9150103" visual_id="5903"><math alttext="m,n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></semantics></math></span> are integers <span class="math-container" id="9150104" visual_id="124633"><math alttext="\gt 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mn>2</mn></mrow></semantics></math></span> then <span class="math-container" id="9150105" visual_id="4897140"><math alttext="R(m,n)\leq R(m-1,n)+R(m,n-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

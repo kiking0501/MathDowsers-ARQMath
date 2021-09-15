@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Imaginary unit $i$ is not a limit of a real Cauchy sequence</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Imaginary unit <span class="math-container" id="7971349" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> is not a limit of a real Cauchy sequence </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="813094">
+<p>I saw this in some book once and it has been bugging me. The book had, I think as the first exercise it mentioned, to prove that the imaginary unit <span class="math-container" id="7971350" visual_id="51075"><math alttext="i=\sqrt{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mrow></semantics></math></span> is not a limit of any real valued Cauchy sequence.</p> <p>Given all I know of complex numbers, this shouldn't seem so hard to show. Like, I know any Cauchy sequence converges in <span class="math-container" id="7971351" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> and elements of <span class="math-container" id="7971352" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> have total ordering and elements of <span class="math-container" id="7971353" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> cannot and so on, but still I have great doubts of how this is supposed to be done.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> complex-numbers </span><span> cauchy-sequences </span><span> real-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1680369"> I think you should use the algebraic property that <span class="math-container" id="7971354" visual_id="51087"><math alttext="i^{2}=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> and that multiplication is continuous. In other words, without knowing about the complex numbers beforehand, you are supposed to show that there exists no Cauchy sequence in <span class="math-container" id="7971355" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> that converges to a number whose square is <span class="math-container" id="7971356" visual_id="343"><math alttext="-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mn>1</mn></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="813133" id="answer">
+<p><strong>Hint:</strong> If <span class="math-container" id="7971357" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span> is real, then the distance from <span class="math-container" id="7971358" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span> to <span class="math-container" id="7971359" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> is <span class="math-container" id="7971360" visual_id="3855803"><math alttext="\sqrt{a_{n}^{2}+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><msubsup><mi>a</mi><mi>n</mi><mn>2</mn></msubsup><mo>+</mo><mn>1</mn></mrow></msqrt></semantics></math></span>, which is always <span class="math-container" id="7971361" visual_id="7166"><math alttext="\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>. </p> <p>For an <span class="math-container" id="7971362" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span>-<span class="math-container" id="7971363" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> argument that the limit of the <span class="math-container" id="7971364" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span> is not <span class="math-container" id="7971365" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>, choose <span class="math-container" id="7971366" visual_id="28215"><math alttext="\epsilon=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Examples of "transfer via bijection"</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Examples of "transfer via bijection" </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="322279">
+<p>On some occasions I have seen the following situation: We want find out whether a set of a given cardinality <span class="math-container" id="3482480" visual_id="1014"><math alttext="\varkappa" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><merror class="ltx_ERROR undefined undefined"><mtext>\varkappa</mtext></merror></semantics></math></span> has some property P. If this property is invariant under bijective maps, then it doesn't matter which set of cardinality <span class="math-container" id="3482481" visual_id="1014"><math alttext="\varkappa" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><merror class="ltx_ERROR undefined undefined"><mtext>\varkappa</mtext></merror></semantics></math></span> we choose. But sometimes choosing a set which has some additional structure might make proving/disproving whether the set has this property.</p> <p>I am posting some examples of this method as answers below - I hope they help to clarify what I have in mind.</p> <p>Do you know of some other interesting examples?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span><span> soft-question </span><span> big-list </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="322280" id="answer">
+<p>Suppose that <span class="math-container" id="3482513" visual_id="255927"><math alttext="|A|=\aleph_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><msub><mi mathvariant="normal">ℵ</mi><mn>0</mn></msub></mrow></semantics></math></span>. We are asking whether there exists an <a href="http://en.wikipedia.org/wiki/Almost_disjoint_sets" rel="nofollow noreferrer">almost disjoint</a> system of infinite subsets of the set <span class="math-container" id="3482514" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, which has cardinality <span class="math-container" id="3482515" visual_id="9688"><math alttext="\mathfrak{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝔠</mi></semantics></math></span>. Recall that a system <span class="math-container" id="3482516" visual_id="8075"><math alttext="\mathcal{S}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">𝒮</mi></semantics></math></span> is called <em>almost disjoint</em> if <span class="math-container" id="3482517" visual_id="5081"><math alttext="A\cap B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></semantics></math></span> is finite for any two sets <span class="math-container" id="3482518" visual_id="160468"><math alttext="A,B\in\mathcal{S}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒮</mi></mrow></semantics></math></span> such that <span class="math-container" id="3482519" visual_id="15079"><math alttext="A\neq B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≠</mo><mi>B</mi></mrow></semantics></math></span>.</p> <p>Clearly this property is invariant under bijections.</p> <p>If we take <span class="math-container" id="3482520" visual_id="61830"><math alttext="A=\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>ℚ</mi></mrow></semantics></math></span> and we take for every real number <span class="math-container" id="3482521" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> a sequence <span class="math-container" id="3482522" visual_id="31709"><math alttext="(q_{n})_{n\in\mathbb{N}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>q</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub></semantics></math></span> of rationals, which converges to <span class="math-container" id="3482523" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span>, then the system of sets of the form <span class="math-container" id="3482524" visual_id="3779401"><math alttext="A_{r}=\{q_{n};n\in\mathbb{N}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>r</mi></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>q</mi><mi>n</mi></msub><mo>;</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>  for every <span class="math-container" id="3482525" visual_id="5911"><math alttext="r\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span> give as an almost disjoint family of cardinality <span class="math-container" id="3482526" visual_id="678442"><math alttext="|\mathbb{R}|=\mathfrak{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>ℝ</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>𝔠</mi></mrow></semantics></math></span>.</p> <p>Such almost disjoint systems appeared in several other questions at MSE, for example <a href="https://math.stackexchange.com/questions/162387/countable-set-having-uncountably-many-infinite-subsets">here</a> and <a href="https://math.stackexchange.com/questions/278837/sets-of-natural-numbers">here</a>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="253192"> Chain of length <span class="math-container" id="2812593" visual_id="18817"><math alttext="2^{\aleph_{0}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><msub><mi mathvariant="normal">ℵ</mi><mn>0</mn></msub></msup></semantics></math></span> in <span class="math-container" id="2812594" visual_id="3555679"><math alttext="(P(\mathbb{N}),\subseteq)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℕ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mo>⊆</mo><mo stretchy="false">)</mo></mrow></semantics></math></span> </td></tr><tr><td post_id="162387"> Can a countable set contain uncountably many infinite subsets such that the intersection of any two such distinct subsets is finite? </td></tr><tr><td post_id="177956"> An exercise in infinite combinatorics from Burris and Sankappanavar </td></tr><tr><td post_id="278837"> Uncountably many sets of natural numbers with finite intersections </td></tr><tr><td post_id="820686"> 'Obvious' theorems that are actually false </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

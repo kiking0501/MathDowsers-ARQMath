@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Let $x_1 = 2$, $x_{n+1}=2+\frac{1}{x_{n}}$, $n \in \mathbb{N}$. Does the sequence converge or diverge?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Let <span class="math-container" id="20602016" visual_id="47903"><math alttext="x_{1}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn></mrow></semantics></math></span>, <span class="math-container" id="20602017" visual_id="2385910"><math alttext="x_{n+1}=2+\frac{1}{x_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mn>2</mn><mo>+</mo><mfrac><mn>1</mn><msub><mi>x</mi><mi>n</mi></msub></mfrac></mrow></mrow></semantics></math></span>, <span class="math-container" id="20602018" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span>. Does the sequence converge or diverge? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2230799">
+<p>Let <span class="math-container" id="20602019" visual_id="47903"><math alttext="x_{1}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn></mrow></semantics></math></span>, <span class="math-container" id="20602020" visual_id="2385910"><math alttext="x_{n+1}=2+\dfrac{1}{x_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mn>2</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msub><mi>x</mi><mi>n</mi></msub></mfrac></mstyle></mrow></mrow></semantics></math></span>, <span class="math-container" id="20602021" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span>. Does the sequence converge or diverge?</p> <p>How can I solve this question using Monotone Convergence Theorem or any other better method? I can't think of a way to show it as monotone increasing or decreasing?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span><span> recurrence-relations </span><span> fixed-point-iteration </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4587025"> You might want to start by drawing the graph of the function <span class="math-container" id="20602022" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> defined by <span class="math-container" id="20602023" visual_id="3450137"><math alttext="f(x)=2+\frac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mrow></semantics></math></span> on <span class="math-container" id="20602024" visual_id="9617"><math alttext="x&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>, just to understand what is going on. </td></tr><tr><td comment_id="4587031"> Moreover: before going for monotonicity, try to compute the first few terms to get a sense of what may happen. (They are *not* monotone.) </td></tr><tr><td comment_id="4587051"> It oscillates and converges to <span class="math-container" id="20602030" visual_id="125192"><math alttext="1+\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4587176"> Interestingly, WolframAlpha obtains an explicit solution to this recurrence relation: https://www.wolframalpha.com/input/?i=x%5Bn+%2B+1%5D+%3D%3D+2+%2B+1%2Fx%5Bn%5D,+x%5B1%5D+%3D%3D+2. The convergence to <span class="math-container" id="20602030" visual_id="125192"><math alttext="1+\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math></span> is then obvious. But having to know the explicit solution seems like overkill! </td></tr><tr><td comment_id="4599332"> You can find several posts about this sequence on this site. For example, by [searching for <span class="math-container" id="20602027" visual_id="2385910"><math alttext="x_{n+1}=2+\dfrac{1}{x_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mn>2</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msub><mi>x</mi><mi>n</mi></msub></mfrac></mstyle></mrow></mrow></semantics></math></span>](https://approach0.xyz/search/?q=%24x_%7Bn%2B1%7D%3D2%2B%5Cdfrac%7B1%7D%7Bx_%7Bn%7D%7D%24&amp;p=1) in Approach0. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2231078" id="answer">
+<p>Hint For any <span class="math-container" id="20602036" visual_id="85174"><math alttext="c&amp;gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>c</mi><mo>&gt;</mo></mrow><mn>1</mn></mrow></semantics></math></span>, <span class="math-container" id="20602037" visual_id="3450137"><math alttext="f(x)=2+\frac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mrow></semantics></math></span> is contractive in <span class="math-container" id="20602038" visual_id="294341"><math alttext="[c,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>c</mi><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> (why?). Apply <a href="https://en.wikipedia.org/wiki/Banach_fixed-point_theorem" rel="nofollow noreferrer">Banach fixed-point theorem</a> to the recurrence <span class="math-container" id="20602039" visual_id="4934329"><math alttext="x_{n+1}=f(x_{n}),x_{1}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="3014227"> prove existence of the limit of a sequence </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

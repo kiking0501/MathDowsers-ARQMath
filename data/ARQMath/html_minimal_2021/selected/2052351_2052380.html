@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Let {$a_{n}$} be a sequence with $0 \lt a_1 \lt 1$, and $a_{n+1}=a_n(1-a_{n})$. Prove $\lim_{n\to \infty}n a_{n}=1$.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Let {<span class="math-container" id="18982194" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span>} be a sequence with <span class="math-container" id="18982195" visual_id="3379225"><math alttext="0\lt a_{1}\lt 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mn>1</mn></mrow></semantics></math></span>, and <span class="math-container" id="18982196" visual_id="1577885"><math alttext="a_{n+1}=a_{n}(1-a_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Prove <span class="math-container" id="18982197" visual_id="1577886"><math alttext="\lim_{n\to\infty}na_{n}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2052351">
+<p>Problem: Let {<span class="math-container" id="18982198" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span>} be a sequence with <span class="math-container" id="18982199" visual_id="3379225"><math alttext="0\lt a_{1}\lt 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mn>1</mn></mrow></semantics></math></span>, and <span class="math-container" id="18982200" visual_id="1577885"><math alttext="a_{n+1}=a_{n}(1-a_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Prove <span class="math-container" id="18982201" visual_id="1577886"><math alttext="\lim_{n\to\infty}na_{n}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.</p> <p>My try: I have figured out {<span class="math-container" id="18982202" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span>} is decreasing and converges to <span class="math-container" id="18982203" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>. But how can I relate it to {<span class="math-container" id="18982204" visual_id="60385"><math alttext="{na_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></semantics></math></span>} ?</p> <p>Any hint to start, thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4212798"> I think this problem was given at Putnam, 1966. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2052380" id="answer">
+<p>Since <span class="math-container" id="18982205" visual_id="50385"><math alttext="(a_{n})_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mi>n</mi></msub></semantics></math></span> is eventually decreasing to <span class="math-container" id="18982206" visual_id="129403"><math alttext="0^{+}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>0</mn><mo>+</mo></msup></semantics></math></span> then <span class="math-container" id="18982207" visual_id="3379226"><math alttext="(1/a_{n})_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msub></semantics></math></span>  is a strictly increasing and divergent sequence, and we can use <a href="https://en.wikipedia.org/wiki/Stolz%E2%80%93Ces%C3%A0ro_theorem" rel="nofollow noreferrer">Stolz-Cesaro theorem</a>: <span class="math-container" id="18982208" visual_id="3379227"><math alttext="\lim_{n\to\infty}na_{n}=\lim_{n\to\infty}\frac{n}{1/a_{n}}\stackrel{{% \scriptstyle\text{SC}}}{{=}}\lim_{n\to\infty}\frac{(n+1)-n}{1/a_{n+1}-1/a_{n}}% =\lim_{n\to\infty}\frac{1}{\frac{1}{a_{n}(1-a_{n})}-\frac{1}{a_{n}}}=\lim_{n% \to\infty}(1-a_{n})=1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mi>n</mi><mrow><mn>1</mn><mo>/</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mfrac></mrow><mover><mo movablelimits="false">=</mo><mtext>SC</mtext></mover><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>-</mo><mi>n</mi></mrow><mrow><mrow><mn>1</mn><mo>/</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow></mfrac></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mn>1</mn><mrow><mfrac><mn>1</mn><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><msub><mi>a</mi><mi>n</mi></msub></mfrac></mrow></mfrac></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

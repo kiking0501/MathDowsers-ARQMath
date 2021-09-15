@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What does $e^{-iAt}$ mean?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What does <span class="math-container" id="14679187" visual_id="5300322"><math alttext="e^{-iAt}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></semantics></math></span> mean? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1588827">
+<p>I'm trying to understand an algorithm, to solve <span class="math-container" id="14679188" visual_id="10813"><math alttext="Ax=b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mi>b</mi></mrow></semantics></math></span> linear equations.</p> <p>But there is an equation, which I can not understand: <span class="math-container" id="14679189" visual_id="5300322"><math alttext="e^{-iAt}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></semantics></math></span>  What does it mean, to calculate the <span class="math-container" id="14679190" visual_id="5300323"><math alttext="-iAt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></semantics></math></span> power of <span class="math-container" id="14679191" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span> ?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> exponential-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3234767"> use the series expansion:<span class="math-container" id="14679192" visual_id="1205046"><math alttext="e^{x}=\sum_{i=0}^{\infty}\frac{x^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1588842" id="answer">
+<p>It is a little unclear, but for the <span class="math-container" id="14679204" visual_id="5300323"><math alttext="-iAt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></semantics></math></span> power of <span class="math-container" id="14679205" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span>, I'm going to assume that <span class="math-container" id="14679206" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> is the <span class="math-container" id="14679207" visual_id="27695"><math alttext="\sqrt{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></semantics></math></span> so that the expression is an combination of a real and an <a href="https://en.wikipedia.org/wiki/Imaginary_number" rel="nofollow">imaginary number</a> as you can determine from the series expansion. Think of the real numbers as being on the the x-axis and the imaginary numbers being on the y-axis. Relationships using real and imaginary numbers happen in all sorts of scientific problems. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Elementary proof that $c^n > n^c$ for $n>>1$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Elementary proof that <span class="math-container" id="22601868" visual_id="4753267"><math alttext="c^{n}&gt;n^{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>c</mi><mi>n</mi></msup><mo>&gt;</mo><msup><mi>n</mi><mi>c</mi></msup></mrow></semantics></math></span> for <span class="math-container" id="22601869" visual_id="4753268"><math alttext="n&gt;&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo mathvariant="italic">&gt;&gt;</mo><mn>1</mn></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2440905">
+<p>I need to prove that for <span class="math-container" id="22601870" visual_id="85174"><math alttext="c&amp;gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>c</mi><mo>&gt;</mo></mrow><mn>1</mn></mrow></semantics></math></span> we can find some bound <span class="math-container" id="22601871" visual_id="5858"><math alttext="n_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>0</mn></msub></semantics></math></span> such that <span class="math-container" id="22601872" visual_id="4753269"><math alttext="c^{n}&amp;gt;n^{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>c</mi><mi>n</mi></msup><mo>&gt;</mo></mrow><msup><mi>n</mi><mi>c</mi></msup></mrow></semantics></math></span> for all <span class="math-container" id="22601873" visual_id="4753270"><math alttext="n\in\mathbb{N},n&amp;gt;n_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mrow><mi>ℕ</mi><mo>,</mo><mrow><mi>n</mi><mo>&gt;</mo></mrow><msub><mi>n</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span>. </p> <p>Now all proofs I found so far include more advanced tools like that <span class="math-container" id="22601874" visual_id="3784391"><math alttext="f(x)=x/\log x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>/</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> grows unbounded, and to prove that we need again more theory. Is there a more elementary proof of this statement that does not get too long? The reason is that I want to show it a student that just started taking math courses at a university.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> analysis </span><span> inequality </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5042501"> I am trying to settle it with simple inequalities and binomial theorem only but it is hard, it looks the more elementary the proof the more involved it becomes. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2440933" id="answer">
+<blockquote> <p>I need to prove that for <span class="math-container" id="22601893" visual_id="85174"><math alttext="c&amp;gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>c</mi><mo>&gt;</mo></mrow><mn>1</mn></mrow></semantics></math></span> we can find some bound <span class="math-container" id="22601894" visual_id="5858"><math alttext="n_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>0</mn></msub></semantics></math></span> such that   <span class="math-container" id="22601895" visual_id="4753269"><math alttext="c^{n}&amp;gt;n^{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>c</mi><mi>n</mi></msup><mo>&gt;</mo></mrow><msup><mi>n</mi><mi>c</mi></msup></mrow></semantics></math></span> for all <span class="math-container" id="22601896" visual_id="4753270"><math alttext="n\in\mathbb{N},n&amp;gt;n_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mrow><mi>ℕ</mi><mo>,</mo><mrow><mi>n</mi><mo>&gt;</mo></mrow><msub><mi>n</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span></p> </blockquote> <p><span class="math-container" id="22601897" visual_id="4753280"><math alttext="\lim_{n\to\infty}\,\frac{c^{n}}{n^{c}}=\infty\quad(*)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+1.7pt"><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub></mpadded><mo>⁡</mo><mfrac><msup><mi>c</mi><mi>n</mi></msup><msup><mi>n</mi><mi>c</mi></msup></mfrac></mrow><mo>=</mo><mrow><mi mathvariant="normal">∞</mi><mo mathvariant="italic" separator="true"> </mo><mrow><mo stretchy="false">(</mo><mo>*</mo><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> Indeed as <span class="math-container" id="22601898" visual_id="4753281"><math alttext="\lceil c\rceil\geq c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⌈</mo><mi>c</mi><mo stretchy="false">⌉</mo></mrow><mo>≥</mo><mi>c</mi></mrow></semantics></math></span> then <span class="math-container" id="22601899" visual_id="4753282"><math alttext="\dfrac{c^{n}}{n^{\lceil c\rceil}}\leq\dfrac{c^{n}}{n^{c}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><msup><mi>c</mi><mi>n</mi></msup><msup><mi>n</mi><mrow><mo stretchy="false">⌈</mo><mi>c</mi><mo stretchy="false">⌉</mo></mrow></msup></mfrac></mstyle><mo>≤</mo><mstyle displaystyle="true"><mfrac><msup><mi>c</mi><mi>n</mi></msup><msup><mi>n</mi><mi>c</mi></msup></mfrac></mstyle></mrow></semantics></math></span> and applying L'Hopital rule <span class="math-container" id="22601900" visual_id="4753283"><math alttext="\lceil c\rceil" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⌈</mo><mi>c</mi><mo stretchy="false">⌉</mo></mrow></semantics></math></span> times as <span class="math-container" id="22601901" visual_id="85174"><math alttext="c&amp;gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>c</mi><mo>&gt;</mo></mrow><mn>1</mn></mrow></semantics></math></span> we get <span class="math-container" id="22601902" visual_id="4753284"><math alttext="\dfrac{c^{n}\log^{\lceil c\rceil}c}{\lceil c\rceil!}\to\infty\text{ as }n\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mi>c</mi><mi>n</mi></msup><mo>⁢</mo><mrow><msup><mi>log</mi><mrow><mo stretchy="false">⌈</mo><mi>c</mi><mo stretchy="false">⌉</mo></mrow></msup><mo>⁡</mo><mi>c</mi></mrow></mrow><mrow><mrow><mo stretchy="false">⌈</mo><mi>c</mi><mo stretchy="false">⌉</mo></mrow><mo>!</mo></mrow></mfrac></mstyle><mo>→</mo><mrow><mi mathvariant="normal">∞</mi><mo>⁢</mo><mtext> as </mtext><mo>⁢</mo><mi>n</mi></mrow><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span></p> <p>Thus if the LHS of the inequality tends to <span class="math-container" id="22601903" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span> then to a greater extent does the RHS. So <span class="math-container" id="22601904" visual_id="1237"><math alttext="(*)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo>*</mo><mo stretchy="false">)</mo></mrow></semantics></math></span> is proved.</p> <p>This means that for any <span class="math-container" id="22601905" visual_id="2167"><math alttext="M&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>M</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> there exists an <span class="math-container" id="22601906" visual_id="110603"><math alttext="\bar{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></semantics></math></span> such that for <span class="math-container" id="22601907" visual_id="1145584"><math alttext="n&amp;gt;\bar{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>&gt;</mo></mrow><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mrow></semantics></math></span> it happens that <span class="math-container" id="22601908" visual_id="4753285"><math alttext="\dfrac{c^{n}}{n^{c}}&amp;gt;M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><msup><mi>c</mi><mi>n</mi></msup><msup><mi>n</mi><mi>c</mi></msup></mfrac></mstyle><mo>&gt;</mo></mrow><mi>M</mi></mrow></semantics></math></span>. I choose <span class="math-container" id="22601909" visual_id="11798"><math alttext="M=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> so that there exists an <span class="math-container" id="22601910" visual_id="5858"><math alttext="n_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>0</mn></msub></semantics></math></span> such that for <span class="math-container" id="22601911" visual_id="60391"><math alttext="n&amp;gt;n_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>&gt;</mo></mrow><msub><mi>n</mi><mn>0</mn></msub></mrow></semantics></math></span> we have <span class="math-container" id="22601912" visual_id="4753286"><math alttext="\dfrac{c^{n}}{n^{c}}&amp;gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><msup><mi>c</mi><mi>n</mi></msup><msup><mi>n</mi><mi>c</mi></msup></mfrac></mstyle><mo>&gt;</mo></mrow><mn>1</mn></mrow></semantics></math></span> that is <span class="math-container" id="22601913" visual_id="4753269"><math alttext="c^{n}&amp;gt;n^{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>c</mi><mi>n</mi></msup><mo>&gt;</mo></mrow><msup><mi>n</mi><mi>c</mi></msup></mrow></semantics></math></span></p> <p><em>QED</em></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5043292"> Ceiling of 1.5 is 2 and <span class="math-container" id="22601914" visual_id="148660"><math alttext="2^{n}&gt;n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>&gt;</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span> for n greater than 2 </td></tr><tr><td comment_id="5043603"> @flawr I changed completely my proof. Now it works and it's easy to understand. Hope it helps </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

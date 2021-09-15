@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is the cardinality of a set of all points on a line?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is the cardinality of a set of all points on a line? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2612033">
+<p>When it is said that there are infitely many points on a line, does it imply anything about the cardinality of set of all points on a line? I think the answer to the question depends on the definition of a line and what is meant by the <em>infinitely many points</em> on it, so apologies if there are ambiguities in my question (but I'd appreciate if you can choose an unambiguous case and answer that!).</p> <p><strong>Related Questions:</strong></p> <ul> <li><a href="https://math.stackexchange.com/questions/1249836/is-the-set-of-points-or-the-set-of-lines-on-a-plane-larger">Is the set of points or the set of lines on a plane "larger"?</a></li> <li><a href="https://math.stackexchange.com/questions/708294/cardinality-of-the-set-of-all-straight-lines-in-mathbb-r2">Cardinality of the set of all straight lines in R^2</a></li> </ul>
+</div>
+<hr/>
+<div id="tags">
+<span> cardinals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2612088" id="answer">
+<p>There seem to be two distinct questions here: the title question, and the body question "When it is said that there are infinitely many points on a line, does it imply anything about the cardinality of set of all points on a line?" These have different answers. The answer to the latter is: "It implies that the cardinality is infinite." Saying that a set is infinite is just a statement about the set's cardinality, in the same way that saying that a set has five elements is a statement about the set's cardinality. </p> <p>So with regard to that, I think you may be over-thinking what "there are infinitely many ..." means - it just means exactly that, that the set of [things] is infinite, or has infinite cardinality.</p> <hr/> <p>Meanwhile, the title question has a reasonably exact answer. Different sets, infinite or otherwise, can be compared by considering <em>injections</em>; we say <span class="math-container" id="24153110" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> has cardinality at least that of <span class="math-container" id="24153111" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> if there is an injection from <span class="math-container" id="24153112" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> to <span class="math-container" id="24153113" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>. (There are various alternatives we can use here, which are equivalent <em>if</em> we assume the axiom of choice; in general, some care needs to be taken.) Two sets have the same cardinality if there are "injections both ways;" by  the <a href="https://en.wikipedia.org/wiki/Schr%C3%B6der%E2%80%93Bernstein_theorem" rel="nofollow noreferrer">Cantor-Bernstein theorem</a>, this is the same as the existence of a bijection (note that this does <em>not</em> require choice!).</p> <p>Using this language, we can show that each of the following sets have the same cardinality:</p> <ul> <li><p>The set of points on a line, as usually understood (e.g. a line in Euclidean space); that is, the cardinality of <span class="math-container" id="24153114" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>.</p></li> <li><p>The set of points on a plane: the cardinality of <span class="math-container" id="24153115" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span>.</p></li> <li><p>The set of infinite sequences of zeroes and ones.</p></li> <li><p>The set of infinite sequences of natural numbers.</p></li> <li><p>The set of sets of natural numbers.</p></li> </ul> <p>The cardinality of all these sets is denoted "<span class="math-container" id="24153116" visual_id="18817"><math alttext="2^{\aleph_{0}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><msub><mi mathvariant="normal">ℵ</mi><mn>0</mn></msub></msup></semantics></math></span>." Another important fact is that these sets are <a href="https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument" rel="nofollow noreferrer">uncountable</a>.</p> <p>There are, interestingly, some basic facts about this cardinality which are <em>not</em> known, and in fact known to not be establishable from <a href="https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory" rel="nofollow noreferrer">the usual axioms of set theory</a>. Chief among these is whether there is any cardinality "strictly between" that of <span class="math-container" id="24153117" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> and <span class="math-container" id="24153118" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> (which are different since the latter is uncountable). This question is known as the <a href="https://en.wikipedia.org/wiki/Continuum_hypothesis" rel="nofollow noreferrer">continuum hypothesis</a>, and it is known that the usual ZFC axioms of set theory cannot resolve the question one way or another. But that's going fairly far afield, so I'll stop there.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1249836"> Is the set of points or the set of lines on a plane "larger"? </td></tr><tr><td post_id="708294"> Cardinality of the set of all straight lines in <span class="math-container" id="7081991" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

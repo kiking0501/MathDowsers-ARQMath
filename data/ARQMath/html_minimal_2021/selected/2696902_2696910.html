@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to show the determinant of a matrix is zero for which the column elements sum to zero</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to show the determinant of a matrix is zero for which the column elements sum to zero </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2696902">
+<p>It is given that the sum of the elements of each column of a <span class="math-container" id="24898349" visual_id="28142"><math alttext="N\times N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>×</mo><mi>N</mi></mrow></semantics></math></span> square matrix <span class="math-container" id="24898350" visual_id="188"><math alttext="{\rm A}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">A</mi></semantics></math></span> is zero. How can I show that the determinant is zero without specializing to <span class="math-container" id="24898351" visual_id="5986"><math alttext="N=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span> or <span class="math-container" id="24898352" visual_id="17731"><math alttext="N=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>3</mn></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> matrices </span><span> determinant </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5568407"> You can observe that last row would be linear combination of other rows, and hence det must be zero. </td></tr><tr><td comment_id="5568445"> A similar question had been asked sometime back where the sum of elements of each row was a constant. Then thanks to a well known theorem, that constant must be an eigenvalue corresponding to the eigenvector of all ones. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2696910" id="answer">
+<p>Suppose the matrix is <span class="math-container" id="24898359" visual_id="1208992"><math alttext="(a_{ij}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow></semantics></math></span>, you have <span class="math-container" id="24898360" visual_id="1208993"><math alttext="a_{ni}=\sum_{j=1}^{j=n-1}-a_{ji}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mi>i</mi></mrow></msub><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>j</mi><mo>=</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mrow></msubsup><mo>-</mo><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mi>i</mi></mrow></msub></mrow></mrow></semantics></math></span>, if you sum the first <span class="math-container" id="24898361" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> line you have the last line with the opposite sign.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

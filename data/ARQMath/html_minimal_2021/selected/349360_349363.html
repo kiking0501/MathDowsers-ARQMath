@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove an inequality given only the moment generating function</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove an inequality given only the moment generating function </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="349360">
+<blockquote> <p>If given <span class="math-container" id="3740298" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> as a non-negative random variable that has mgf <span class="math-container" id="3740299" visual_id="1446208"><math alttext="M_{X}(s)=E[e^{sX}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>M</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msup><mi>e</mi><mrow><mi>s</mi><mo>⁢</mo><mi>X</mi></mrow></msup><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span>, how can I prove <span class="math-container" id="3740300" visual_id="1446209"><math alttext="\Pr(X\geq a)\leq e^{-as}\centerdot M_{X}(s)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>Pr</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>≥</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mi>s</mi></mrow></mrow></msup><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\centerdot</mtext></merror><mo>⁢</mo><msub><mi>M</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="3740301" visual_id="16025"><math alttext="A=(A+B)-B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo>-</mo><mi>B</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="3740302" visual_id="42497"><math alttext="s\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> ?</p> </blockquote> <p>I figure the Markov inequality is a good start: <span class="math-container" id="3740303" visual_id="1446210"><math alttext="\Pr(X\geq a)\leq\dfrac{E[X]}{a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>Pr</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>≥</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mstyle displaystyle="true"><mfrac><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mi>a</mi></mfrac></mstyle></mrow></semantics></math></span></p> <p>But this is where I'm stuck. Of course you can derive <span class="math-container" id="3740304" visual_id="1446211"><math alttext="M_{x}(s)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>x</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> at <span class="math-container" id="3740305" visual_id="716"><math alttext="s=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> to get <span class="math-container" id="3740306" visual_id="1485"><math alttext="E[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>, but that doesn't really get you anywhere here.</p> <p>Any suggestions?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> statistics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="349363" id="answer">
+<p><strong>Hint:</strong> <span class="math-container" id="3740307" visual_id="1446212"><math alttext="X\geqslant a\Leftrightarrow e^{sX}\geqslant e^{sa}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>X</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\geqslant</mtext></merror><mo>⁢</mo><mi>a</mi></mrow><mo>⇔</mo><mrow><msup><mi>e</mi><mrow><mi>s</mi><mo>⁢</mo><mi>X</mi></mrow></msup><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\geqslant</mtext></merror><mo>⁢</mo><msup><mi>e</mi><mrow><mi>s</mi><mo>⁢</mo><mi>a</mi></mrow></msup></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

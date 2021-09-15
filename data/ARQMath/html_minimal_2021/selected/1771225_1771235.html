@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proof for trivial sequence shared on facebook</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proof for trivial sequence shared on facebook </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1771225">
+<p>I recently solved the following problem on Facebook that was shared on my timeline.</p> <p>8 = 56</p> <p>7 = 42</p> <p>6 = 30</p> <p>5 = 20</p> <p>3 = ?</p> <p>I got the answer <strong>6</strong> by using the following formula, after some inspection,  <strong>Answer = SQUARE(N) - N</strong></p> <p>As I have been reading proofs recently  I wanted to know how a mathematician would prove for all integers in the sequence N &gt; 0 that Answer = Square (N) - N?</p> <p><strong><em>What I have tried:</em></strong></p> <p><strong>Contapositive proof</strong> but I couldn't frame -Q --&gt; -P in English eg <strong>if "Square (N)  -N" is false then it is not the case N is greater than 1</strong> was my guess but I couldn't proceed.</p> <p>I have tried induction but after the trivial case of <strong>Square(1) - 1 = 0</strong> is true  I could not proceed because I don't know how to frame the <strong>N+1th value</strong> eg  <strong>Square (N) - N --&gt; square(N+ 1) - (n+ 1)</strong></p> <p>Can anyone help or supply a method with how to prove this sequence for all positive integers?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3614601"> That's an analogy why would someone prove it </td></tr><tr><td comment_id="3614654"> As others have pointed out, to prove anything here you need more assumptions.  Maybe you know that the answer is quadratic (so <span class="math-container" id="16358625" visual_id="284055"><math alttext="f(n)=an^{2}+bn+c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mi>c</mi></mrow></mrow></semantics></math></span> for suitable constants <span class="math-container" id="16358626" visual_id="22245"><math alttext="\{a,b,c\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow></semantics></math></span>.  That would be enough.  Even knowing it was cubic would be enough (as you have four data points).  But even knowing that it is a polynomial isn't enough (you can fit  lots of polynomials of high degree through these data points, for example). </td></tr><tr><td comment_id="3614664"> In the same vein as lulu's comment: if you only allow polynomials, <span class="math-container" id="16358627" visual_id="61793"><math alttext="n^{2}-n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mi>n</mi></mrow></semantics></math></span> is the solution of the lowest degree. </td></tr><tr><td comment_id="3615357"> Well, I guess it is back to the drawing board with proofs!I guessed what I was doing might not be correct because all the proof methods I have studied didn't quite fit what I had in mind - still not sure how to go from reading to doing proofs. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1771235" id="answer">
+<p>You can't possibly prove anything here. What if the author says "No, what I had in mind was the sequence <span class="math-container" id="16358628" visual_id="1295727"><math alttext="u_{n}=7846" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mn>7846</mn></mrow></semantics></math></span> except for <span class="math-container" id="16358629" visual_id="1295728"><math alttext="n=5,6,7,8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn></mrow></mrow></semantics></math></span> where it has the values given above" ? How can you "prove" that your answer is the correct one ? What does it even mean ?</p> <p>The formula you give indeed defines a sequence <span class="math-container" id="16358630" visual_id="1295729"><math alttext="u_{n}=n^{2}-n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mi>n</mi></mrow></mrow></semantics></math></span> that coincides with the given values. That's all that can mathematically be said.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3614659"> Furthermore, take a look at the encyclopaedia of integer sequences: https://oeis.org/search?q=20%2C+30%2C+42%2C+56&amp;language=english&amp;go=Search  There are many other things that this sequence could follow. </td></tr><tr><td comment_id="3615369"> Wow I like that ,  but how the heck do I find my sequence from the title page please? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

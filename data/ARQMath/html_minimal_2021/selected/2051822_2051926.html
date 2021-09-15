@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Divisibility of a number of the form $4^n-1$ with large $n$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Divisibility of a number of the form <span class="math-container" id="18978016" visual_id="542794"><math alttext="4^{n}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>4</mn><mi>n</mi></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> with large <span class="math-container" id="18978017" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2051822">
+<p>I came across a question which was <span class="math-container" id="18978018" visual_id="3377776"><math alttext="4^{1000}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>4</mn><mn>1000</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> is divisible by ...".</p> <p>I tried the dividing tricks, but I couldn't do it because the number was too large.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> exponential-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4211753"> Which divisors did you have to test? </td></tr><tr><td comment_id="4211758"> lookup elementary number theory questions. not exponential function </td></tr><tr><td comment_id="4211767"> Consider the quadratic <span class="math-container" id="18978019" visual_id="60927"><math alttext="a^{2}-b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></semantics></math></span> and how it factors... </td></tr><tr><td comment_id="4211788"> Well, there are tricks.  We know <span class="math-container" id="18978020" visual_id="3377777"><math alttext="4^{1000}-1=(4^{500}-1)(4^{500}+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>4</mn><mn>1000</mn></msup><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>4</mn><mn>500</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mn>4</mn><mn>500</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.  As <span class="math-container" id="18978021" visual_id="3377778"><math alttext="4^{500}-1,4^{500},4^{500}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>4</mn><mn>500</mn></msup><mo>-</mo><mn>1</mn></mrow><mo>,</mo><msup><mn>4</mn><mn>500</mn></msup><mo>,</mo><mrow><msup><mn>4</mn><mn>500</mn></msup><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> are consecutive, one of them is divisible by 3 and it isn't <span class="math-container" id="18978022" visual_id="3377779"><math alttext="4^{500}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>4</mn><mn>500</mn></msup></semantics></math></span>.  So that number is divisible by 3.  There are probably other tricks.  We know what <span class="math-container" id="18978023" visual_id="3377780"><math alttext="4^{1000}\equiv k\mod n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>4</mn><mn>1000</mn></msup><mo>≡</mo><mrow><mi>k</mi><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>n</mi></mrow></mrow></semantics></math></span> for any odd <span class="math-container" id="18978024" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> so that will give us some more things to muck with.  But what divisors do you have to text. </td></tr><tr><td comment_id="4211993"> <span class="math-container" id="18978025" visual_id="2315065"><math alttext="2^{2000}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>2000</mn></msup></semantics></math></span> is also a fifth power and consequences of that won't appear in the factorizations by squares that others are pointing out. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2051926" id="answer">
+<p>Note: <span class="math-container" id="18978026" visual_id="3377781"><math alttext="\frac{x^{k}-1}{x-1}=x^{k-1}+....+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mrow><msup><mi>x</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>.</mo><mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> so <span class="math-container" id="18978027" visual_id="3377782"><math alttext="x-1|x^{k}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>-</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><mn>1</mn></mrow></mrow></mrow></semantics></math></span> and so <span class="math-container" id="18978028" visual_id="3377783"><math alttext="2^{k}-1|2^{km}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>-</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><msup><mn>2</mn><mrow><mi>k</mi><mo>⁢</mo><mi>m</mi></mrow></msup><mo>-</mo><mn>1</mn></mrow></mrow></mrow></semantics></math></span>.</p> <p>So <span class="math-container" id="18978029" visual_id="3377784"><math alttext="4^{1000}-1=2^{2000}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>4</mn><mn>1000</mn></msup><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mrow><msup><mn>2</mn><mn>2000</mn></msup><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> .  </p> <p>So if <span class="math-container" id="18978030" visual_id="3377785"><math alttext="k|2000=2^{4}*5^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mn>2000</mn></mrow><mo>=</mo><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>5</mn><mn>3</mn></msup></mrow></mrow></semantics></math></span> then <span class="math-container" id="18978031" visual_id="3377786"><math alttext="2^{k}-1|2^{2000}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>-</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><msup><mn>2</mn><mn>2000</mn></msup><mo>-</mo><mn>1</mn></mrow></mrow></mrow></semantics></math></span>.</p> <p>So <span class="math-container" id="18978032" visual_id="30771"><math alttext="2^{k}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> is divisor for <span class="math-container" id="18978033" visual_id="3377787"><math alttext="k=1,2,4,8,16,5,10,20,40,80,25,50,100,200,400,125,250,500,1000,2000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>16</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>20</mn><mo>,</mo><mn>40</mn><mo>,</mo><mn>80</mn><mo>,</mo><mn>25</mn><mo>,</mo><mn>50</mn><mo>,</mo><mn>100</mn><mo>,</mo><mn>200</mn><mo>,</mo><mn>400</mn><mo>,</mo><mn>125</mn><mo>,</mo><mn>250</mn><mo>,</mo><mn>500</mn><mo>,</mo><mn>1000</mn><mo>,</mo><mn>2000</mn></mrow></mrow></semantics></math></span></p> <p>Note: <span class="math-container" id="18978034" visual_id="3377788"><math alttext="\frac{x^{2}n-1}{x+1}=x^{2n-1}-x^{2n-2}+...-x^{2}+x-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mrow><mrow><mrow><mrow><mrow><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><msup><mi>x</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi>x</mi></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span></p> <p>So for <span class="math-container" id="18978035" visual_id="3377789"><math alttext="k|1000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mn>1000</mn></mrow></semantics></math></span> then <span class="math-container" id="18978036" visual_id="3377790"><math alttext="2^{k}+1|2^{2000}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>+</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><msup><mn>2</mn><mn>2000</mn></msup><mo>-</mo><mn>1</mn></mrow></mrow></mrow></semantics></math></span> which holds for <span class="math-container" id="18978037" visual_id="3377791"><math alttext="1,2,4,8,5,10,20,40,25,50,100,200,125,250,500,1000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>20</mn><mo>,</mo><mn>40</mn><mo>,</mo><mn>25</mn><mo>,</mo><mn>50</mn><mo>,</mo><mn>100</mn><mo>,</mo><mn>200</mn><mo>,</mo><mn>125</mn><mo>,</mo><mn>250</mn><mo>,</mo><mn>500</mn><mo>,</mo><mn>1000</mn></mrow></semantics></math></span>.</p> <p>So those are a lot of factors!</p> <p>But there are more.</p> <p>For each <span class="math-container" id="18978038" visual_id="137616"><math alttext="k|n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>n</mi></mrow></semantics></math></span> and <span class="math-container" id="18978039" visual_id="3377792"><math alttext="n|2000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mn>2000</mn></mrow></semantics></math></span> then <span class="math-container" id="18978040" visual_id="3377793"><math alttext="1+2^{k}+2^{2k}+.....+2^{n-k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><msup><mn>2</mn><mi>k</mi></msup><mo>+</mo><msup><mn>2</mn><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></msup><mo>+</mo><mi mathvariant="normal">…</mi><mo>.</mo><mo>.</mo><mo>+</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></msup></mrow></semantics></math></span> is a factor.</p> <p>As is <span class="math-container" id="18978041" visual_id="3377794"><math alttext="2^{n-k}-....-2^{2k}+2^{k}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></msup><mo>-</mo><mi mathvariant="normal">…</mi></mrow><mo>.</mo><mrow><mrow><mrow><mo>-</mo><msup><mn>2</mn><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></msup></mrow><mo>+</mo><msup><mn>2</mn><mi>k</mi></msup></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> if <span class="math-container" id="18978042" visual_id="1987689"><math alttext="k|2n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="18978043" visual_id="3377792"><math alttext="n|2000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mn>2000</mn></mrow></semantics></math></span>. </p> <p>So for example <span class="math-container" id="18978044" visual_id="1220570"><math alttext="31=2^{5}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>31</mn><mo>=</mo><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> and <span class="math-container" id="18978045" visual_id="2831312"><math alttext="33=2^{5}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>33</mn><mo>=</mo><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> are both factors as are .... lots of things.  Also <span class="math-container" id="18978046" visual_id="3377795"><math alttext="2^{8}\pm 1=63,65" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>2</mn><mn>8</mn></msup><mo>±</mo><mn>1</mn></mrow><mo>=</mo><mrow><mn>63</mn><mo>,</mo><mn>65</mn></mrow></mrow></semantics></math></span> etc.  <span class="math-container" id="18978047" visual_id="2072233"><math alttext="13=1+4+8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>8</mn></mrow></mrow></semantics></math></span>.  (<span class="math-container" id="18978048" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span> seems to be a lucky accident as <span class="math-container" id="18978049" visual_id="462292"><math alttext="2^{5}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>+</mo><mn>1</mn></mrow></semantics></math></span> wasn't prime.) Way too many to list.  </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

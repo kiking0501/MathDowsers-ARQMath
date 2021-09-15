@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Alternative proof of Wedderburn's little theorem</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Alternative proof of Wedderburn's little theorem </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="277236">
+<p>I have this exercise where I'm proving: "Every finite division ring is a field". I need only a part (c) of it:</p> <p>(a) show that a subalgebra of a finite dimensional central division algebra is a finite dimensional division algebra. (DONE)</p> <p>(b) show that if <span class="math-container" id="3052194" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is a finite dimensional central division algebra and <span class="math-container" id="3052195" visual_id="5823649"><math alttext="\{|x|\geq 2\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>≥</mo><mn>2</mn></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span> is any subfield, then <span class="math-container" id="3052196" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is generated as an <span class="math-container" id="3052197" visual_id="1286164"><math alttext="Z(D)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>-algebra by <span class="math-container" id="3052198" visual_id="5823650"><math alttext="\bigcup_{d\in D^{*}}d^{-1}Kd" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>d</mi><mo>∈</mo><msup><mi>D</mi><mo>*</mo></msup></mrow></msub><mrow><msup><mi>d</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>K</mi><mo>⁢</mo><mi>d</mi></mrow></mrow></semantics></math></span>. (DONE)</p> <p>(c) Conclude, without using the Noether-Skolem theorem, that a finite division ring is a field. (NEEDED...)</p> <p>Thanks, G.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> ring-theory </span><span> division-algebras </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="605171"> Write using LateX: it's very hard to guess what you meant by "d^-1Kd", for example </td></tr><tr><td comment_id="605177"> have'nt had the chance to learn how to. i meant was Union over all invertible elements "d" in D, of "the inverse of d" * "K" * "d" </td></tr><tr><td comment_id="605180"> Go to the FAQ section for directions on LaTeX. </td></tr><tr><td comment_id="605183"> Thanks YACP, for the LaTeX </td></tr><tr><td comment_id="684148"> Excuse me, but what does it mean to add <span class="math-container" id="3052199" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> in the end? Regards. </td></tr><tr><td comment_id="974341"> @awllower: See [here](http://www.urbandictionary.com/define.php?term=G) </td></tr><tr><td comment_id="974582"> @Prism Thanks for the clarification. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="314625" id="answer">
+<p>To provide an alternate, maybe somewhat too over-loaded proof of this fact: every finite division ring is commutative.<br/> It amounts to the same thing as showing that the Brauer group of any finite field is trivial, for then the finite division rings are all matrix rings. Since they are division rings, this implies that they are fields. Now, by a theorem in the theory of central simple algebras, <span class="math-container" id="3052200" visual_id="5823651"><math alttext="\mathbb{Br}(K/\kappa)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔹</mi><mo>⁢</mo><mi>𝕣</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>K</mi><mo>/</mo><mi>κ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, for a finite Galois extension of a finite field <span class="math-container" id="3052201" visual_id="5016"><math alttext="\kappa" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi></semantics></math></span>, is isomorphic with <span class="math-container" id="3052202" visual_id="5823652"><math alttext="H^{2}(Gal(K/\kappa),K^{\times})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>H</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>G</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>K</mi><mo>/</mo><mi>κ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><msup><mi>K</mi><mo>×</mo></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. But finite extensions of finite fields are cyclic, so this is a cohomology group of a finite cyclic group. Since such cohomology is periodic of period <span class="math-container" id="3052203" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>, we find that it is just the norm residue group <span class="math-container" id="3052204" visual_id="5823653"><math alttext="\kappa^{\times}/N_{\mathbb{K}\mid\kappa}\mathbb{K}^{\times}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>κ</mi><mo>×</mo></msup><mo>/</mo><msub><mi>N</mi><mrow><mi>𝕂</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>κ</mi></mrow></msub></mrow><mo>⁢</mo><msup><mi>𝕂</mi><mo>×</mo></msup></mrow></semantics></math></span>. Since it is well-known that norms of finite field extensions are surjective, this tells us that the relative Brauer groups are trivial. As Brauer groups are colimits of relative ones, this finishes the proof.<br/> P.S. I learned this proof from Mariano Suarez-Alvarez. As this proof is quite remarkable, I make it CW, to keep it as a reference. Thanks.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

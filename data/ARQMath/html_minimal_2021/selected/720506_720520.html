@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Determine whether x(n) converges</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Determine whether x(n) converges </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="720506">
+<p>This is just a simple exercise that I am struggling with.</p> <p>Let <span class="math-container" id="7187372" visual_id="730248"><math alttext="x(1):=a&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mrow><mrow><mi>a</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></mrow></semantics></math></span>, and <span class="math-container" id="7187373" visual_id="730249"><math alttext="x(n+1)=x(n)+\frac{1}{x(n)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></mrow></semantics></math></span></p> <p>Determine whether the series converges or diverges. Now I have shown that the series is increasing using induction. Using random values of a and a calculator I am fairly sure that the series diverges. Any hints on how to go about doing this? I would assume that I start by assuming an &lt; M for some M and find a contradiction, but I have no idea as to how to go about doing this.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="720520" id="answer">
+<p>Hand wavey approach: Suppose the sequence <span class="math-container" id="7187374" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> does converge some to some limit, say <span class="math-container" id="7187375" visual_id="4329"><math alttext="\ell" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ℓ</mi></semantics></math></span>, as <span class="math-container" id="7187376" visual_id="1477"><math alttext="n\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. Taking the limit of both sides of the recurrence relation <span class="math-container" id="7187377" visual_id="138827"><math alttext="x_{n+1}=x_{n}+\frac{1}{x_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>+</mo><mfrac><mn>1</mn><msub><mi>x</mi><mi>n</mi></msub></mfrac></mrow></mrow></semantics></math></span>, we get</p> <p><span class="math-container" id="7187378" visual_id="730250"><math alttext="\ell=\ell+\frac{1}{\ell}\iff 0=\frac{1}{\ell}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mi mathvariant="normal">ℓ</mi><mo>+</mo><mfrac><mn>1</mn><mi mathvariant="normal">ℓ</mi></mfrac></mrow></mrow><mo>⇔</mo><mrow><mn>0</mn><mo>=</mo><mfrac><mn>1</mn><mi mathvariant="normal">ℓ</mi></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

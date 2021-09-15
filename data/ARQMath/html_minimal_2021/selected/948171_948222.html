@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why are real numbers useful?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why are real numbers useful? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="948171">
+<p>A question (by a fellow CS student taking a first course in calculus, presumably after the lecture in which continuity was introduced: was as follows.</p> <blockquote> <p>In the real, physical world, we deal with numbers that are sort of “finite” or “discrete” by their nature; there's no such thing as a perfect circle in the physical world. In CS, we model computers with discrete mathematics and it’s enough. So why real analysis? Why concepts like continuity and “completeness” of real numbers are useful? Why do we need them?</p> </blockquote> <p>I found Math.se has lots of questions for similar “concrete” justifications for <em>complex</em> numbers and great answers for them, but I didn’t really manage to find similar for this. The question <a href="https://math.stackexchange.com/questions/51316/are-all-numbers-real-numbers">Are all numbers real numbers?</a> is related, but I’m not sure it’s exactly what I’m looking for.</p> <p>My attempt at an answer was along the line:</p> <blockquote> <p>Are we content with the length of the side of a square that has area of 2 units remaining a undefined number, even if we never manage find such a square?</p> </blockquote> <p>and</p> <blockquote> <p>Calculus and real analysis provide results that are useful even if in numerical calculations we use finite approximations. To really understand what's going on, we want it to be rigorous.</p> </blockquote> <p>but I’m not sure if I was persuasive enough. Any better ideas?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> soft-question </span><span> continuity </span><span> real-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1952563"> Because as much as computer science is important, it's not the center of the world, certainly not the center of the mathematical world? </td></tr><tr><td comment_id="1952576"> Also if you send the student to talk with Doron Zeilberger or Norman Wildberger, they'll inform him that real numbers are meaningless and a silly waste of time indeed. </td></tr><tr><td comment_id="1952581"> Differential and integral analysis are powerful tools that make use of the real numbers. Maxwell's equations are expressed using calculus. Is not electromagnetism important to CS? I would say yes, unless you use an abacus. </td></tr><tr><td comment_id="1952607"> One way I see it is: some problems / topics are easier in general form, in the same sense that the reals are more general than rationals and integers. </td></tr><tr><td comment_id="1952622"> Jazz music does not exist in nature. Let's not play it. </td></tr><tr><td comment_id="1952727"> By definition, discrete things can be used to approximate continuous things, e.g., the integral is a limit of discrete sums. It's not much of a leap to realize that, conversely, computations utilizing the continuum may approximate discrete things, and indeed, one can observe this come up innumerable times in the relevant branches of mathematics. So there's still a place for the continuum, even if the discrete is all that "exists". </td></tr><tr><td comment_id="1953778"> Real numbers are not important; only computable reals are. </td></tr><tr><td comment_id="1953831"> Instead of your square example (which you yourself argue that we may never be able to construct a 2cm^2 square by definition that the length of its sides may not exist). Draw a 1cm^2 square instead (or in inches). A unit square is something concrete and definitely exist. Now, draw the diagonal line that connects opposing corners. This line is square root 2 cm/inch long. That's a physical, real, real number in the physical world. </td></tr><tr><td comment_id="1953976"> Pure Mathematics doesn't concern itself with its applicability. </td></tr><tr><td comment_id="1954221"> The best you can get from Timothy Gowers https://www.dpmms.cam.ac.uk/~wtg10/reals.html </td></tr><tr><td comment_id="1955580"> I have a piece of string. There is a 0 chance that it's length is rational! So we need the reals. </td></tr><tr><td comment_id="1956942"> @Paramanand I showed them that Gowers' webpage, they seemed quite satisfied with reasoning presented there. </td></tr><tr><td comment_id="1956965"> @kekkonen: I have found Gowers' page to be a very good justification of real numbers and it is especially suitable for undergrad students. I am happy that you liked Gowers argument. </td></tr><tr><td comment_id="1959676"> CS students can calculate <span class="math-container" id="9118453" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> by finding (to a certain level of precision) the limit of the sequence defined by <span class="math-container" id="9118452" visual_id="2027077"><math alttext="a_{n+1}=\frac{1}{2}\left(a_{n}+\frac{1}{a_{n}}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>+</mo><mfrac><mn>1</mn><msub><mi>a</mi><mi>n</mi></msub></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span>. Forget <span class="math-container" id="9118453" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span>, how do you know that the sequence converges? </td></tr><tr><td comment_id="2877202"> Is the existence of analytic number theory not enough? </td></tr><tr><td comment_id="3921270"> I didn't find satisfying answer here neither. As far as I understand, infinity and continuity are just legacy. If people in ancient Greece would have limited themselves with finite sets,  mathematics would have been available for wider audience and there would be no need to translate from language of infinities to say finite differences. I think in 100 or 200 years language constructs for describing infinite objects will become a different subject like philosophy. And right now we are experiencing a huge inertia (a lot of books have been written). </td></tr><tr><td comment_id="5654879"> How about solving optimization problems with partial derivatives or the methods of gradient descent? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="948222" id="answer">
+<p>I think your whole viewpoint is skewed, even in the other answers. Continuity is the most  natural and physical notion. If we look at the physical world we seem to be able to subdivide matter, time and space indefinitly. From such a naive point of view real numbers are forced upon us, by geometry. Just an the Pythagoreans were compelled to accept irrationals.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1953774"> Continuity is not something we encounter in the physical world. For instance, a continuous, connected manifold cannot be partitioned into disjoint closed subsets. An eggshell seems smooth. But crack it: you've partitioned it into disjoint closed subsets. If an *eggshell* isn't continuous, nothing is! </td></tr><tr><td comment_id="1953780"> This is utterly untrue; matter has a fundamental limit (the quark), and quantum mechanics ar<span class="math-container" id="18110488">g</span>ues for a discre<span class="math-container" id="18110490">t</span>e notion of the universe. The physical world does not seem continuous. </td></tr><tr><td comment_id="1953786"> @Alice Hence my usage of the word 'naive'. Also QM only came into being long after the real numbers had an established  theory. </td></tr><tr><td comment_id="1953800"> @ReneSchipperus Which doesn't mean anything? That just means that we were using the wrong tool to define and work with reality; instead of reals, reality is actually complex numbers and quanta. The fact we found a tool to better explain reality should immediately inform you the previous tool was lacking. The physical world does not work like how you say it does. </td></tr><tr><td comment_id="1953822"> @Alice Its so nice to meet a fanatic. </td></tr><tr><td comment_id="1953934"> Likewise! A pleasure to make your acquaintance. </td></tr><tr><td comment_id="1953967"> @Alice: Do you have any actual assurance that quarks are the fundamental limit of matter? Or that quantum mechanics is correct, for that matter? Observation is not assurance, by the way, because if it is then only set theory is an interesting field in mathematics, no ravens are black, and pretty much everyone speaks Hebrew. </td></tr><tr><td comment_id="1955185"> @AsafKaragila Yes, mathematics; there are several very deep properties that quantum mechanics have that, given even a few tweaks, would result in a very unreal theory. Same with respect to quarks; there have been attempts to make theories where quarks are composite, and they are universally unreal. </td></tr><tr><td comment_id="1955219"> @Alice: So you have no way of assuring that. Great, I'm glad that we agree. </td></tr><tr><td comment_id="1956358"> @AsafKaragila I disagree, because assurance does not dictate absolute proof. </td></tr><tr><td comment_id="1956415"> @Alice: This will be my last comment in this waltz of nonsense. Just because the math doesn't work out when you change a few things doesn't mean it's right. Doesn't mean anything from a physical point of view. Except that for the time being this is perhaps our best approximation of the universe. Much like Newtonian mechanics was the best approximation at its heyday. Only time will tell, and we all probably die before time will tell us anything. Time is a jerk that way. </td></tr><tr><td comment_id="3921291"> I don't think that continuity is natural. In fact, I think the opposite is true. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2934352"> How important is the concept of uncomputability in mathematics? </td></tr><tr><td post_id="1078593"> Do we really need reals? </td></tr><tr><td post_id="51316"> Are all numbers real numbers? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

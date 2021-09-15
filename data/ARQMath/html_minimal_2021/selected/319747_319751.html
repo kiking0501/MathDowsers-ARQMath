@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>DTMC : Example of Irreducible Aperiodic Null Recurrent Chain</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> DTMC : Example of Irreducible Aperiodic Null Recurrent Chain </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="319747">
+<p>Can someone give me an example of a Discrete Time Markov Chain (DTMC) which is </p> <ul> <li><p>Irreducible  </p></li> <li><p>Aperiodic</p></li> <li><p>Null Recurrent</p></li> </ul> <p>I know that a Simple Symmetric Random Walk on Integers is Irreducible Periodic and Null Recurrent but I am having a tough time coming up with a Markov chain which has the aforementioned properties.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> stochastic-processes </span><span> markov-chains </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="692174"> The simple symmetric random walk on the integers is *null recurrent*. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="319751" id="answer">
+<p>In your example take <span class="math-container" id="3457763" visual_id="18008"><math alttext="p=q=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>q</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span></p> <p>EDIT: if <span class="math-container" id="3457764" visual_id="21505"><math alttext="p&amp;gt;q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>&gt;</mo></mrow><mi>q</mi></mrow></semantics></math></span>, your MC is positive-recurrent; otherwise it is transient. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="692146"> This is periodic (with period 2) </td></tr><tr><td comment_id="692150"> No it's not: if <span class="math-container" id="6940827">p</span>eriod was two, you return to the starting state w.p. 1 after two periods, which is not the case here. </td></tr><tr><td comment_id="692153"> If I am at zero. How many steps does it take to return to 0? Can I return in 1 or 3? </td></tr><tr><td comment_id="692157"> @Inquest: It might take any no. of steps, but has a non-zero probability. You are perhaps confusing a simple random walk? </td></tr><tr><td comment_id="692162"> @Shyam, yeah. Alex said "in your example". The example I stated was simple, maybe that's the confusion. </td></tr><tr><td comment_id="692167"> Alex, do you mean simple symmetric random walk or just the simple random walk on integers? </td></tr><tr><td comment_id="692170"> @Inquest: "Symmetric" is <span class="math-container" id="3457765" visual_id="18020"><math alttext="p=q=0.5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>q</mi><mo>=</mo><mn>0.5</mn></mrow></semantics></math></span>. Not the presence of 0 and 1 states only. </td></tr><tr><td comment_id="692178"> Oops. I meant only symmetric (no simple). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

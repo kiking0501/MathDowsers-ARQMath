@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is $f(x) = \frac{1}{x}$ uniformly continuous on $(1, \infty)$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is <span class="math-container" id="27797124" visual_id="23815"><math alttext="f(x)=\frac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math></span> uniformly continuous on <span class="math-container" id="27797125" visual_id="23523"><math alttext="(1,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3001506">
+<p>is the function <span class="math-container" id="27797126" visual_id="11972"><math alttext="f(x)=1/x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mrow></semantics></math></span> uniformly continuous on <span class="math-container" id="27797127" visual_id="8317489"><math alttext="(1,\infty)\qvar@construct{$}\par" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></semantics></math></span> I know that it is not uniformly continuous on <span class="math-container" id="27797128" visual_id="1764"><math alttext="(0,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>, but now I'm restricting it even more to get rid of most of the bad parts. I think the answer is yes.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> uniform-continuity </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6191506"> It is. ${}{}{}{}$ </td></tr><tr><td comment_id="6191511"> Very roughly, "uniformly continuous" means "having bounded derivative". </td></tr><tr><td comment_id="6191522"> Indeed, the function <span class="math-container" id="27797130" visual_id="11972"><math alttext="f(x)=1/x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mrow></semantics></math></span> will be uniformly continuous on any interval of the form <span class="math-container" id="27797131" visual_id="2028141"><math alttext="(\varepsilon,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>ε</mi><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> for any <span class="math-container" id="27797132" visual_id="14003"><math alttext="\varepsilon&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>. The failure to be uniformly continuous only happens in a neighborhood of <span class="math-container" id="27797133" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>, so if you prevent the variable from being able to get too close, you ensure uniform continuity (see Lord Shark the Unknown's comment, too). </td></tr><tr><td comment_id="6191620"> Though as a caution on taking Lord Shark the Unknown's comment too literally - for example, <span class="math-container" id="27797134" visual_id="71302"><math alttext="f(x)=\sqrt{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mi>x</mi></msqrt></mrow></semantics></math></span> and <span class="math-container" id="27797135" visual_id="28824"><math alttext="f(x)=x\sin(1/x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> are both uniformly continuous on <span class="math-container" id="27797136" visual_id="2953"><math alttext="(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> even though the derivative is unbounded in both cases. </td></tr><tr><td comment_id="6191959"> @LordSharktheUnknown NO! Roughly, “having bounded derivative” is equivalent to being **Lipchitz**. Uniform continuity is a much weaker condition, as Daniel points out and can be made precise using holder or sobolev spaces for instance. </td></tr><tr><td comment_id="6192454"> @Shalop That's why I said "**very** roughly". </td></tr><tr><td comment_id="6193564"> @LordSharktheUnknown there exist nowhere-differentiable functions on <span class="math-container" id="27797137" visual_id="1356"><math alttext="[0,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></semantics></math></span> which are uniformly continuous. Even “very roughly” is simply inaccurate. </td></tr><tr><td comment_id="6193573"> @Shalop And you'll find that these nowhere-differentiable functions are certainly very rough! </td></tr><tr><td comment_id="6193634"> Ha (dry laughter)... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3001557" id="answer">
+<p><span class="math-container" id="27797143" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is differentiable at <span class="math-container" id="27797144" visual_id="264244"><math alttext="(1,+\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> and</p> <p><span class="math-container" id="27797145" visual_id="8317492"><math alttext="|f^{\prime}(x)|=|\frac{-1}{x^{2}}|\leq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mfrac><mrow><mo>-</mo><mn>1</mn></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo stretchy="false">|</mo></mrow><mo>≤</mo><mn>1</mn></mrow></semantics></math></span></p> <p><span class="math-container" id="27797146" visual_id="8317493"><math alttext="f^{\prime}\text{ is bounded }\implies" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mtext> is bounded </mtext></mrow><mo>⟹</mo><mi></mi></mrow></semantics></math></span> <span class="math-container" id="27797147" visual_id="8317494"><math alttext="f\text{ is Lipschitz}\implies" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mtext> is Lipschitz</mtext></mrow><mo>⟹</mo><mi></mi></mrow></semantics></math></span> <span class="math-container" id="27797148" visual_id="8317495"><math alttext="f\text{ is uniformly continuous}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mtext> is uniformly continuous</mtext></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

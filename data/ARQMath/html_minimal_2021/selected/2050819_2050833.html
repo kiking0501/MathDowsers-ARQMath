@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is there a flaw in this proof that $\lim_{x\to a} f(x) = \lim_{h\to 0} f(a+h)$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is there a flaw in this proof that <span class="math-container" id="18969766" visual_id="1585882"><math alttext="\lim_{x\to a}f(x)=\lim_{h\to 0}f(a+h)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2050819">
+<p>I found 3 answers for a proof at <a href="https://math.stackexchange.com/questions/895480/formal-proof-of-lim-x-to-afx-lim-h-to-0-fah">Formal proof of <span class="math-container" id="18969767" visual_id="1585882"><math alttext="\lim_{x\to a}f(x)=\lim_{h\to 0}f(a+h)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></a>.  The selected answer seemed more rigorous, but the 3rd answer (repeated here) seemed simpler.   Is the 3rd answer flawed?  In general, can you substitute limit variables such as changing <span class="math-container" id="18969768" visual_id="155731"><math alttext="\lim_{x\to a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub></semantics></math></span> to <span class="math-container" id="18969769" visual_id="123359"><math alttext="\lim_{h\to 0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>lim</mo><mrow><mi>h</mi><mo>→</mo><mn>0</mn></mrow></msub></semantics></math></span>? The third answer was: Pose h=x-a, then x=a+h, and when <span class="math-container" id="18969770" visual_id="61848"><math alttext="x\to a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></semantics></math></span>, there is <span class="math-container" id="18969771" visual_id="5400"><math alttext="h\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>→</mo><mn>0</mn></mrow></semantics></math></span>.  Then, <span class="math-container" id="18969772" visual_id="4186302"><math alttext="\lim_{x\to a}f(x)=\lim_{x-a\to 0}f(x-a+a)=\lim_{h\to 0}f(a+h)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mrow><mi>x</mi><mo>-</mo><mi>a</mi></mrow><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>x</mi><mo>-</mo><mi>a</mi></mrow><mo>+</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>This is not a dup of the referenced question because I asked if 3rd proof in original question was valid, and was that technique valid in general.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> limits </span><span> proof-writing </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4212290"> My question is different.  The existing question asked for a proof.  My question asks two separate questions: 1) Is the 3rd answer in the existing question a valid proof and 2) is the technique for substituting limit variables valid in general.  I already edited my question to explain the difference, but I apologize for being new with math.stackexchange so I have explained the difference in this comment.  I am not sure where to explain the difference. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2050833" id="answer">
+<p>Yes, you can do it if <span class="math-container" id="18969773" visual_id="11486"><math alttext="h(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a continuous function. For example, you also have that <span class="math-container" id="18969774" visual_id="4864023"><math alttext="\lim_{x\to 0}f(\cos(x))=\lim_{h\to 1}f(h)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo>→</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> because <span class="math-container" id="18969775" visual_id="730908"><math alttext="h(x)=\cos(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is continuous at <span class="math-container" id="18969776" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. The proof for this is quite similar to the one you posted in the question.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="895480"> Formal proof of <span class="math-container" id="8672659" visual_id="1585882"><math alttext="\lim_{x\to a}f(x)=\lim_{h\to 0}f(a+h)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>h</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

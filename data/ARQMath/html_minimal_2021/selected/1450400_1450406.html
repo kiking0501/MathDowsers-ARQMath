@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Inequality Proof: $(x-y)^n\leq x^n-y^n$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Inequality Proof: <span class="math-container" id="13447114" visual_id="1958131"><math alttext="(x-y)^{n}\leq x^{n}-y^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>≤</mo><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>-</mo><msup><mi>y</mi><mi>n</mi></msup></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1450400">
+<p><span class="math-container" id="13447115" visual_id="1958132"><math alttext="\forall x\geq y\geq 0,n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>∀</mo><mi>x</mi></mrow><mo>≥</mo><mi>y</mi><mo>≥</mo><mn>0</mn></mrow><mo>,</mo><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></mrow></semantics></math></span> show that :</p> <p><span class="math-container" id="13447116" visual_id="1958131"><math alttext="(x-y)^{n}\leq x^{n}-y^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>≤</mo><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>-</mo><msup><mi>y</mi><mi>n</mi></msup></mrow></mrow></semantics></math></span></p> <p>If I have tried something, it would appear here after I have changed this placeholder text.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> inequality </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2954495"> What attempts have you made? </td></tr><tr><td comment_id="2954500"> Use induction hypothesis </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1450406" id="answer">
+<p><strong>Hint</strong>: Perform induction on <span class="math-container" id="13447121" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. For <span class="math-container" id="13447122" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, this is trivial. Assume the inductive hypothesis <span class="math-container" id="13447123" visual_id="1958134"><math alttext="(x-y)^{k}\leq x^{k}-y^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mo>≤</mo><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><msup><mi>y</mi><mi>k</mi></msup></mrow></mrow></semantics></math></span>. Now <span class="math-container" id="13447124" visual_id="1958135"><math alttext="(x-y)^{k+1}\leq(x^{k}-y^{k})(x-y)=x^{k+1}-x^{k}y-y^{k}x-y^{k+1}\text{.}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>≤</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><msup><mi>y</mi><mi>k</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>⁢</mo><mi>y</mi></mrow><mo>-</mo><mrow><msup><mi>y</mi><mi>k</mi></msup><mo>⁢</mo><mi>x</mi></mrow><mo>-</mo><mrow><msup><mi>y</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mtext>.</mtext></mrow></mrow></mrow></semantics></math></span> Since <span class="math-container" id="13447125" visual_id="1958136"><math alttext="y,x\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>,</mo><mi>x</mi></mrow><mo>≥</mo><mn>0</mn></mrow></semantics></math></span>, what can you do to finish this off?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

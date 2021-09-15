@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Taylor Polynomial of degree 2</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Taylor Polynomial of degree 2 </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2039811">
+<p>Suppose g is a function which has continuous derivatives, and that<span class="math-container" id="18874961" visual_id="4832766"><math alttext="g(8)=1,g′(8)=−1,g″(8)=−3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mi mathvariant="normal">′</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">−</mi><mo>⁢</mo><mn>1</mn></mrow></mrow><mo>,</mo><mrow><mrow><mi>g</mi><mo>⁢</mo><mi mathvariant="normal">″</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi mathvariant="normal">−</mi><mo>⁢</mo><mn>3</mn></mrow></mrow></mrow></mrow></semantics></math></span>, and <span class="math-container" id="18874962" visual_id="4832767"><math alttext="g^{\prime\prime\prime}(8)=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>g</mi><mo>′′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span></p> <p>What is the Taylor polynomial of degree <span class="math-container" id="18874963" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> for <span class="math-container" id="18874964" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> near <span class="math-container" id="18874965" visual_id="2663"><math alttext="8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>8</mn></semantics></math></span>?</p> <p>I am relatively new to Taylor series, so it could be the way this question is worded, but I am not sure what the question is asking for. While I have come to this site several time before, this is my first post, so I apologize if I am not following all eligible rules.</p> <p>Thanks</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span><span> taylor-expansion </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4187008"> Show your work if you want help, did you try anything? do you know what the formula for Taylor series is? </td></tr><tr><td comment_id="4187027"> Amazingly, there is this thing called [Google](https://www.google.com/search?q=taylor+polynomial+formula&amp;espv=2&amp;biw=1280&amp;bih=894&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;sqi=2&amp;ved=0ahUKEwiwyaPTtNTQAhVBPCYKHX33Dq8Q_AUIBigB).  I find one of the top images most useful here, with <span class="math-container" id="18874966" visual_id="1579646"><math alttext="x_{0}=8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>8</mn></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2039824" id="answer">
+<p>Hint:</p> <p>The Taylor expansion of a given function <span class="math-container" id="18874967" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> centered in a point <span class="math-container" id="18874968" visual_id="55350"><math alttext="a\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>D</mi></mrow></semantics></math></span>, where <span class="math-container" id="18874969" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is the domain of the function, is given by:</p> <p><span class="math-container" id="18874970" visual_id="916344"><math alttext="f(x)=\sum_{n=0}^{\infty}\frac{1}{n!}f^{(n)}(a)(x-a)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo>⁢</mo><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></mrow></mrow></semantics></math></span>  Where <span class="math-container" id="18874971" visual_id="323447"><math alttext="f^{(n)}(a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is the <span class="math-container" id="18874972" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>th derivative at the point of centering.</p> <p>So I guess if you think what is the degree of a polynomial you can go on. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4187088"> Thank you. I forgot to adjust for the a in the second part of the series. I was doing Maclaurin series earlier today and forgot that the formula changed when it wasn't centered at 0. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

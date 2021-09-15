@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Determine whether the fourier series converges</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Determine whether the fourier series converges </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1798477">
+<p>I have calculated the Fourier Series of <span class="math-container" id="16621445" visual_id="28296"><math alttext="g\left(x\right)=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math></span> on <span class="math-container" id="16621446" visual_id="4472"><math alttext="\left(-\pi,\pi\right]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mrow><mo>-</mo><mi>π</mi></mrow><mo>,</mo><mi>π</mi><mo>]</mo></mrow></semantics></math></span> extended periodically to <span class="math-container" id="16621447" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> to be <span class="math-container" id="16621448" visual_id="7327477"><math alttext="g\left(x\right)=2\sum^{\infty}_{n=1}\dfrac{\left(-1\right)^{n+1}}{n}\sin\left(% nx\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mstyle displaystyle="true"><mfrac><msup><mrow><mo>(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mi>n</mi></mfrac></mstyle><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>I now need to determine and explain whether the Fourier series converges at <span class="math-container" id="16621449" visual_id="14235"><math alttext="x=\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>π</mi></mrow></semantics></math></span> but I'm not sure how.</p> <p>If it involves finding the left/right limits/derivatives, I'm not sure how to find these for a Fourier Series.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> limits </span><span> convergence-divergence </span><span> fourier-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3672408"> What is <span class="math-container" id="16621450" visual_id="300739"><math alttext="\sin(n\pi)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1798487" id="answer">
+<p>for <span class="math-container" id="16621451" visual_id="14235"><math alttext="x=\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>π</mi></mrow></semantics></math></span>, the series is <span class="math-container" id="16621452" visual_id="7327478"><math alttext="\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}\sin(n\pi)=\sum_{n=1}^{\infty}0=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mi>n</mi></mfrac><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mn>0</mn></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>so the series converges to 0 at <span class="math-container" id="16621453" visual_id="1294"><math alttext="\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi></semantics></math></span>. We expect this because 0 is the midpoint between <span class="math-container" id="16621454" visual_id="7327479"><math alttext="g(-\pi)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="16621455" visual_id="1227540"><math alttext="g(\pi)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>π</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

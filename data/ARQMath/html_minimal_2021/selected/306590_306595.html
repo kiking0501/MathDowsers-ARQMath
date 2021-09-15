@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to show that for $|x|<1$, $1+2x+3x^2+\cdots=\frac1{(1-x)^2}$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to show that for <span class="math-container" id="3326037" visual_id="5452"><math alttext="|x|&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span>, <span class="math-container" id="3326038" visual_id="6607244"><math alttext="1+2x+3x^{2}+\cdots=\frac{1}{(1-x)^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>=</mo><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="306590">
+<p>I saw this formula and I don't know if it has a certain name or how can it be proven</p> <blockquote> <p>If <span class="math-container" id="3326039" visual_id="3470"><math alttext="|x|&amp;lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo></mrow><mn>1</mn></mrow></semantics></math></span> then <span class="math-container" id="3326040" visual_id="5329465"><math alttext="1+2x+3x^{2}+4x^{3}+\cdots=\frac{1}{(1-x)^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>=</mo><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow></semantics></math></span></p> </blockquote> <p>Can someone tell me anything about it? How can it be proven?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span><span> power-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="664095"> What's <span class="math-container" id="3326042" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> doing there? </td></tr><tr><td comment_id="664096"> Definitely untrue for certain values of <span class="math-container" id="3326042" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> and <span class="math-container" id="3326061" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> </td></tr><tr><td comment_id="664097"> You mean <span class="math-container" id="3326044" visual_id="6797265"><math alttext="1+2x+\ldots+nx^{n-1}+\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span>. Just take the derivative of <span class="math-container" id="3326045" visual_id="6797266"><math alttext="1+x+\ldots+x^{n}+\ldots=\frac{1}{1-x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math></span> and justify term-by-term differentiation. </td></tr><tr><td comment_id="664098"> You skipped over <span class="math-container" id="3326046" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>, it goes <span class="math-container" id="3326047" visual_id="36851"><math alttext="2x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></semantics></math></span> and <span class="math-container" id="3326048" visual_id="36501"><math alttext="4x^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></semantics></math></span>. I'm not sure whether it's a typo or it should be <span class="math-container" id="3326049" visual_id="6797267"><math alttext="2nx^{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span> or <span class="math-container" id="3326050" visual_id="6797268"><math alttext="2^{n}x^{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span>, or whatever. </td></tr><tr><td comment_id="664102"> @BujancaMihai Do you know that <span class="math-container" id="3326051" visual_id="436360"><math alttext="\displaystyle\frac{1}{1-x}=1+x+x^{2}+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mfrac></mstyle><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></semantics></math></span> for any <span class="math-container" id="3326052" visual_id="4655"><math alttext="x\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span> such that <span class="math-container" id="3326053" visual_id="5452"><math alttext="|x|&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span>? </td></tr><tr><td comment_id="664103"> @BujancaMihai: See [this Wikipedia page](http://en.wikipedia.org/wiki/Geometric_series#Geometric_power_series). </td></tr><tr><td comment_id="664108"> @ZevChonoles thanks a lot </td></tr><tr><td comment_id="664115"> [Here](http://math.stackexchange.com/questions/30732/how-can-i-evaluate-sum-n-0-infty-n1xn) is a similar question. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="306595" id="answer">
+<p>This is a power series: <span class="math-container" id="3326054" visual_id="52656"><math alttext="\sum_{n=0}^{\infty}(n+1)x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></semantics></math></span></p> <p>For power series we can integrate term by term and we have:</p> <p><span class="math-container" id="3326055" visual_id="6797269"><math alttext="\int\left(\sum_{n=0}^{\infty}(n+1)x^{n}\right)dx=\sum_{n=0}^{\infty}\int(n+1)x% ^{n}dx=\sum_{n=0}^{\infty}x^{n+1}=\sum_{n=1}^{\infty}x^{n}=\frac{x}{1-x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mrow><mo>(</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msup><mi>x</mi><mi>n</mi></msup></mrow><mo>=</mo><mfrac><mi>x</mi><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math></span></p> <p>So if we differentiate <span class="math-container" id="3326056" visual_id="690994"><math alttext="\frac{x}{1-x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>x</mi><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mfrac></semantics></math></span> with respect to <span class="math-container" id="3326057" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, and we get the sum of the original series:</p> <p><span class="math-container" id="3326058" visual_id="6797270"><math alttext="\left(\frac{x}{1-x}\right)^{\prime}=\frac{1}{1-x}+\frac{x}{(1-x)^{2}}=\frac{1}% {(1-x)^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>(</mo><mfrac><mi>x</mi><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mfrac><mo>)</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mfrac><mo>+</mo><mfrac><mi>x</mi><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow></semantics></math></span></p> <p>As wanted. Of course we have to have <span class="math-container" id="3326059" visual_id="3470"><math alttext="|x|&amp;lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo></mrow><mn>1</mn></mrow></semantics></math></span> for everything to converge and have meaning.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="30732"> How can I evaluate <span class="math-container" id="317570" visual_id="52656"><math alttext="\sum_{n=0}^{\infty}(n+1)x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Can any sequence of RVs converge almost surely to a non-constant RV?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Can any sequence of RVs converge almost surely to a non-constant RV? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="689992">
+<p>We know for almost sure convergence, <span class="math-container" id="6921478" visual_id="5626417"><math alttext="X_{n}\rightarrow X\text{ a.s. as }n\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>→</mo><mrow><mi>X</mi><mo>⁢</mo><mtext> a.s. as </mtext><mo>⁢</mo><mi>n</mi></mrow><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> if <span class="math-container" id="6921479" visual_id="5626418"><math alttext="P\{\limsup_{n\rightarrow\infty}X_{n}=\liminf_{n\rightarrow\infty}X_{n}\}=1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">{</mo><msub><mo>lim sup</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><msub><mo>lim inf</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mo>=</mo><mn>1</mn><mo>.</mo></mrow></semantics></math></span></p> <p>Then does this mean the limiting random variable <span class="math-container" id="6921480" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> must be a constant (random variable)?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability-theory </span><span> random-variables </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1446656"> What if all the <span class="math-container" id="6921481" visual_id="1096"><math alttext="X_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mi>n</mi></msub></semantics></math></span> are equal? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="690062" id="answer">
+<p>To understand what convergence means for random variables, you have to realize that you don't sample a <em>single</em> random variable multiple times to construct the sequences, but rather take a joint sample of <em>countably</em> many random variables. For that, <em>all</em> the random variables have to refer to the same probability space. Thus, each element of the probability space maps to a whole sequence of real numbers - one for each random variable.</p> <p>Now, some of these sequences might converge, and some might not. You can then look at the set of elements of your probability space which map to <em>convering</em> sequences. If the measure (i.e. probability) of that set is 1, the random variables converge almost surely.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1450600"> Thanks a lot for your thorough explanation! It really helps! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

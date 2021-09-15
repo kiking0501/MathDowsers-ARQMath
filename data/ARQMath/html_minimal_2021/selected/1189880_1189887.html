@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>greatest common divisor</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> greatest common divisor </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1189880">
+<p>How can I find the greatest common divisor of x and y?</p> <p><img alt="enter image description here" src="https://i.stack.imgur.com/YSHzS.gif"/></p> <p>I know the algorithm but I can't figure out how to use it on numbers with powers.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1189887" id="answer">
+<p>Think of it this way. <span class="math-container" id="11152523" visual_id="15430"><math alttext="2^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>2</mn></msup></semantics></math></span> is a factor or both, so it's a factor of the GCD. <span class="math-container" id="11152524" visual_id="25510"><math alttext="2^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>3</mn></msup></semantics></math></span> is too. However, <span class="math-container" id="11152525" visual_id="4458"><math alttext="2^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>4</mn></msup></semantics></math></span> is a factor of only one. Thus <span class="math-container" id="11152526" visual_id="25510"><math alttext="2^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>3</mn></msup></semantics></math></span> is the largest factor of the GCD involving 2. Now do that for each prime factor to find the GCD, since other primes clearly won't divide it. Does that clarify the motivation for quid's method?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

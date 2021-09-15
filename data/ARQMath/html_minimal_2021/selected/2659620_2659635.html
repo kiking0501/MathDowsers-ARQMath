@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find all $x \in \mathbb Z_{360}$ such that $x^2 ≡ 0 \pmod{360}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find all <span class="math-container" id="24573747" visual_id="6177040"><math alttext="x\in\mathbb{Z}_{360}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><msub><mi>ℤ</mi><mn>360</mn></msub></mrow></semantics></math></span> such that <span class="math-container" id="24573748" visual_id="6177041"><math alttext="x^{2}≡0\pmod{360}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi mathvariant="normal">≡</mi><mo>⁢</mo><mn>0</mn></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>360</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2659620">
+<p>Find all <span class="math-container" id="24573749" visual_id="6177040"><math alttext="x\in\mathbb{Z}_{360}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><msub><mi>ℤ</mi><mn>360</mn></msub></mrow></semantics></math></span> such that <span class="math-container" id="24573750" visual_id="6177042"><math alttext="x^{2}≡0\pmod{360}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi mathvariant="normal">≡</mi><mo>⁢</mo><mn>0</mn></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>360</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>I know that this means to find all <span class="math-container" id="24573751" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> such that the result divides into <span class="math-container" id="24573752" visual_id="59113"><math alttext="360" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>360</mn></semantics></math></span> evenly. I also know the prime factorization of <span class="math-container" id="24573753" visual_id="6177043"><math alttext="360=2^{3}\cdot 3^{2}\cdot 5." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>360</mn><mo>=</mo><mrow><msup><mn>2</mn><mn>3</mn></msup><mo>⋅</mo><msup><mn>3</mn><mn>2</mn></msup><mo>⋅</mo><mn>5</mn></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Is there a technique to use this prime factorization to easily come up with all the numbers that would satisfy this equation?</p> <p>Thank you.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> modular-arithmetic </span><span> prime-factorization </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5493393"> By <span class="math-container" id="24573795" visual_id="6177044"><math alttext="Z_{360}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Z</mi><mn>360</mn></msub></semantics></math></span>, you mean  the numbers <span class="math-container" id="24573755" visual_id="6177045"><math alttext="1,2,...,360" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mn>360</mn></mrow></semantics></math></span>? </td></tr><tr><td comment_id="5493410"> Yes, the integers up to 360 in mod360 arithmetic. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2659635" id="answer">
+<p>Hint:  <span class="math-container" id="24573798" visual_id="6177054"><math alttext="x^{2}\equiv 0\mod 360" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≡</mo><mrow><mn>0</mn><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>360</mn></mrow></mrow></semantics></math></span> iff <span class="math-container" id="24573799" visual_id="6177055"><math alttext="x^{2}\equiv 0\mod 2^{3},\mod 3^{2}\ \text{and}\mod 5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≡</mo><mn>0</mn><mo lspace="2.5pt" rspace="2.5pt">mod</mo><msup><mn>2</mn><mn>3</mn></msup><mo>,</mo><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mpadded width="+5pt"><msup><mn>3</mn><mn>2</mn></msup></mpadded><mtext>and</mtext><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>5</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

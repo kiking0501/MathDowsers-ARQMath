@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why the Ramsey number $R(2,4)$ is not equal to $2$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why the Ramsey number <span class="math-container" id="13132986" visual_id="2627924"><math alttext="R(2,4)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is not equal to <span class="math-container" id="13132987" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1413892">
+<p>I'm reading Harris/Hirst/Mossinghoff's: <em>Combinatorics and Graph Theory</em>. Here:</p> <blockquote> <p><a href="https://i.stack.imgur.com/R9g5P.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/R9g5P.png"/></a></p> </blockquote> <p>I don't understand: For all <span class="math-container" id="13132988" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>-colorings, it must have a <span class="math-container" id="13132989" visual_id="235827"><math alttext="K_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>p</mi></msub></semantics></math></span> <strong>and</strong> <span class="math-container" id="13132990" visual_id="399647"><math alttext="K_{q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>q</mi></msub></semantics></math></span> or it must have a <span class="math-container" id="13132991" visual_id="235827"><math alttext="K_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>p</mi></msub></semantics></math></span> <strong>or</strong> a <span class="math-container" id="13132992" visual_id="399647"><math alttext="K_{q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>q</mi></msub></semantics></math></span>? I'm confused: If it's the second option, a <span class="math-container" id="13132993" visual_id="7461"><math alttext="K_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>2</mn></msub></semantics></math></span> does have a <span class="math-container" id="13132994" visual_id="7461"><math alttext="K_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>2</mn></msub></semantics></math></span>. But it's not clear that it actually speaks as if it were the first option.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> graph-theory </span><span> ramsey-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1413895" id="answer">
+<p>You can always prevent one of them by colouring all edges the same color. Therefore it must be (inclusive) or. This gives, for instance, <span class="math-container" id="13133023" visual_id="5349295"><math alttext="R(2,n)=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>n</mi></mrow></semantics></math></span>, since if there are <span class="math-container" id="13133024" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> vertices, then either you have a <span class="math-container" id="13133025" visual_id="7461"><math alttext="K_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>2</mn></msub></semantics></math></span> of one color, or all edges are of the second color and you have <span class="math-container" id="13133026" visual_id="6867"><math alttext="K_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>n</mi></msub></semantics></math></span> in that color.</p> <p>I think maybe the important point you've missed here is that the order matters, in some sense. The first number is coupled to the red subgraph and the second number to the blue one.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

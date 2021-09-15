@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Limit of $\frac{x^2-x}{x^2-1}$ as $x \to 1$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Limit of <span class="math-container" id="23718321" visual_id="2568778"><math alttext="\frac{x^{2}-x}{x^{2}-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></mfrac></semantics></math></span> as <span class="math-container" id="23718322" visual_id="5198"><math alttext="x\to 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mn>1</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2565693">
+<p><span class="math-container" id="23718323" visual_id="2568779"><math alttext="\lim_{x\to 1}\frac{x^{2}-x}{x^{2}-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span> Hello, I am trying to solve this problem. May you give me a hint how to solve problems like this without l'hospital?</p> <p>Thank you very much. (I tried factorising etc. but I always end up with <span class="math-container" id="23718324" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> divided by <span class="math-container" id="23718325" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>.)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2565705" id="answer">
+<p>You simply need to factor out the <span class="math-container" id="23718329" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> on the top and expand the difference of squares on the bottom (follow this <a href="https://www.khanacademy.org/math/algebra/polynomial-factorization/factoring-quadratics-diff-of-squares/a/factoring-quadratics-difference-of-squares" rel="nofollow noreferrer">link</a> if you don't know what a difference of squares is). Then, there will be something that you can cancel out which will help you simplify the expression. After that, you can use the direct substitution method to finally find the limit. Here are the steps:</p> <p>\begin{align}\require{cancel} \lim_{x\to1}\frac{x^2-x}{x^2-1} &amp;=\lim_{x\to1}\frac{x^2-x}{x^2-1^2}\\  &amp;=\lim_{x\to1}\frac{x(x-1)}{(x-1)(x+1)}\\ &amp;=\lim_{x\to1}\frac{x\cancel{(x-1)}}{\cancel{(x-1)}(x+1)}\\ &amp;=\lim_{x\to1}\frac{x}{x+1}\\ &amp;=\frac{1}{1+1}\\ &amp;=\frac{1}{2} \end{align}</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5295531"> Thank you very much. This was very helpful. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Greatest Common Divisor of prime numbers</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Greatest Common Divisor of prime numbers </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2433888">
+<blockquote> <p>What is the greatest common divisor of  <span class="math-container" id="22538699" visual_id="4732204"><math alttext="2^{4}\cdot 3^{4}\cdot 25\cdot 7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>⋅</mo><msup><mn>3</mn><mn>4</mn></msup><mo>⋅</mo><mn>25</mn><mo>⋅</mo><mn>7</mn></mrow></semantics></math></span> and <span class="math-container" id="22538700" visual_id="4732205"><math alttext="2\cdot 12^{2}\cdot 15" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⋅</mo><msup><mn>12</mn><mn>2</mn></msup><mo>⋅</mo><mn>15</mn></mrow></semantics></math></span>? </p> </blockquote> <p>I know how to find the GCD of a problem like this, but I didn't know what to do since <span class="math-container" id="22538701" visual_id="2460"><math alttext="12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>12</mn></semantics></math></span> is not a prime number. Should I say <span class="math-container" id="22538702" visual_id="4732206"><math alttext="12^{2}=2^{2}\cdot 2^{2}\cdot 3^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>12</mn><mn>2</mn></msup><mo>=</mo><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>⋅</mo><msup><mn>2</mn><mn>2</mn></msup><mo>⋅</mo><msup><mn>3</mn><mn>2</mn></msup></mrow></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> gcd-and-lcm </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5027609"> Hint: <span class="math-container" id="22538703" visual_id="4732207"><math alttext="12^{2}=(2^{2}*3)^{2}=2^{4}*3^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>12</mn><mn>2</mn></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>*</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>2</mn></msup></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="5027756"> that's a start.  <span class="math-container" id="22538704" visual_id="4732208"><math alttext="12^{2}=2^{2}*2^{2}*3^{2}=2^{4}*3^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>12</mn><mn>2</mn></msup><mo>=</mo><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>*</mo><msup><mn>2</mn><mn>2</mn></msup><mo>*</mo><msup><mn>3</mn><mn>2</mn></msup></mrow><mo>=</mo><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>2</mn></msup></mrow></mrow></semantics></math></span>.  And <span class="math-container" id="22538705" visual_id="4732209"><math alttext="15=3*5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>=</mo><mrow><mn>3</mn><mo>*</mo><mn>5</mn></mrow></mrow></semantics></math></span> so <span class="math-container" id="22538706" visual_id="4732210"><math alttext="12^{2}*15=2^{4}*3^{2}*3*5=2^{4}*3^{3}*5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>12</mn><mn>2</mn></msup><mo>*</mo><mn>15</mn></mrow><mo>=</mo><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>2</mn></msup><mo>*</mo><mn>3</mn><mo>*</mo><mn>5</mn></mrow><mo>=</mo><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>3</mn></msup><mo>*</mo><mn>5</mn></mrow></mrow></semantics></math></span>.  Basically the first step is to rewrite *everything* as its *unique* prime factorization.  <span class="math-container" id="22538707" visual_id="4732211"><math alttext="2^{4}*3^{4}*25*7=2^{4}*3^{4}*5^{2}*7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>4</mn></msup><mo>*</mo><mn>25</mn><mo>*</mo><mn>7</mn></mrow><mo>=</mo><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>4</mn></msup><mo>*</mo><msup><mn>5</mn><mn>2</mn></msup><mo>*</mo><mn>7</mn></mrow></mrow></semantics></math></span> and <span class="math-container" id="22538708" visual_id="4732212"><math alttext="2*12^{2}*15=2*2^{4}*3^{2}*3*5=2^{4}*3^{3}*5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>*</mo><msup><mn>12</mn><mn>2</mn></msup><mo>*</mo><mn>15</mn></mrow><mo>=</mo><mrow><mn>2</mn><mo>*</mo><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>2</mn></msup><mo>*</mo><mn>3</mn><mo>*</mo><mn>5</mn></mrow><mo>=</mo><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>3</mn></msup><mo>*</mo><mn>5</mn></mrow></mrow></semantics></math></span>.  Then... you know what to do. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2433903" id="answer">
+<p>The first one equal to <span class="math-container" id="22538709" visual_id="4732213"><math alttext="2^{4}*3^{4}*5^{2}*7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>4</mn></msup><mo>*</mo><msup><mn>5</mn><mn>2</mn></msup><mo>*</mo><mn>7</mn></mrow></semantics></math></span></p> <p>The second one equals to <span class="math-container" id="22538710" visual_id="4732214"><math alttext="2^{5}*3^{3}*5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>*</mo><msup><mn>3</mn><mn>3</mn></msup><mo>*</mo><mn>5</mn></mrow></semantics></math></span></p> <p>Therefore the GCD is <span class="math-container" id="22538711" visual_id="4732215"><math alttext="2^{4}*3^{3}*5=2160" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>3</mn></msup><mo>*</mo><mn>5</mn></mrow><mo>=</mo><mn>2160</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

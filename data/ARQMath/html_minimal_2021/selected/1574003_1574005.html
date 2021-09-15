@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that if A, B, C, D are sets, |A| = |B| and |C| = |D| then |A × C| = |B × D|.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that if A, B, C, D are sets, |A| = |B| and |C| = |D| then |A × C| = |B × D|. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1574003">
+<p>I know that if A and C are finite sets then |AxC|=|A||C|. This makes the problem quite simple but the sets may not be finite. </p> <p>I am guessing that the concept of cardinally of infinite sets and ℵ <sub>0</sub> are part of the solution but those are concepts that my class did not go into much and I do not understand very well.</p> <p>This is my first post to stack exchange so please inform me of any wrong doings.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> elementary-set-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3204489"> Assume <span class="math-container" id="14536744" visual_id="60966"><math alttext="f:A\to C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>A</mi><mo>→</mo><mi>C</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="14536745" visual_id="60967"><math alttext="g:B\to D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mrow><mi>B</mi><mo>→</mo><mi>D</mi></mrow></mrow></semantics></math></span> are 1-1and onto functions. Now define <span class="math-container" id="14536746" visual_id="5255015"><math alttext="h:A\times C\to B\times D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>:</mo><mrow><mrow><mi>A</mi><mo>×</mo><mi>C</mi></mrow><mo>→</mo><mrow><mi>B</mi><mo>×</mo><mi>D</mi></mrow></mrow></mrow></semantics></math></span> such that <span class="math-container" id="14536747" visual_id="5255016"><math alttext="h(a,b)=(f(a),g(b))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and show that it is 1-1 and onto. </td></tr><tr><td comment_id="3204497"> @Babak <span class="math-container" id="14536770" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> should be from <span class="math-container" id="14536749" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> to <span class="math-container" id="14536750" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> and <span class="math-container" id="14536771" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> should be from <span class="math-container" id="14536752" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> to <span class="math-container" id="14536753" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span>. Your current <span class="math-container" id="14536770" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> does not need to be bijective as <span class="math-container" id="14536755" visual_id="6459"><math alttext="|A|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow></semantics></math></span> and <span class="math-container" id="14536756" visual_id="69304"><math alttext="|C|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>C</mi><mo stretchy="false">|</mo></mrow></semantics></math></span> does not have any particular relationship as it goes. </td></tr><tr><td comment_id="3204501"> I think the definition of cartesian product is enough to prove it for finite cardinals. </td></tr><tr><td comment_id="3204514"> Damn IPhone! I tried to type exactly the same as yours. your right. :-( </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1574005" id="answer">
+<p><span class="math-container" id="14536757" visual_id="144320"><math alttext="|A|=|B|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> means there is a bijection <span class="math-container" id="14536758" visual_id="5456"><math alttext="f:A\rightarrow B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow></mrow></semantics></math></span> that <span class="math-container" id="14536759" visual_id="13900"><math alttext="f(a)=b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>b</mi></mrow></semantics></math></span> for <span class="math-container" id="14536760" visual_id="31812"><math alttext="a\in A,b\in B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>∈</mo><mi>B</mi></mrow></mrow></semantics></math></span>.</p> <p>Similarly there is <span class="math-container" id="14536761" visual_id="465813"><math alttext="g:C\rightarrow D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mrow><mi>C</mi><mo>→</mo><mi>D</mi></mrow></mrow></semantics></math></span> that <span class="math-container" id="14536762" visual_id="2012190"><math alttext="g(c)=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span>.</p> <p>Now we can easily show that <span class="math-container" id="14536763" visual_id="5255017"><math alttext="h(a,c)=(f(a),g(c))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a bijection over <span class="math-container" id="14536764" visual_id="822488"><math alttext="A\times C\rightarrow B\times D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>×</mo><mi>C</mi></mrow><mo>→</mo><mrow><mi>B</mi><mo>×</mo><mi>D</mi></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3204536"> Thanks for the help. Just to clarify you meant to put <span class="math-container" id="14536765" visual_id="2012190"><math alttext="g(c)=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span> not <span class="math-container" id="14536766" visual_id="2049617"><math alttext="f(c)=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span>, right? </td></tr><tr><td comment_id="3204546"> Yes, that's correct. Will edit it. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

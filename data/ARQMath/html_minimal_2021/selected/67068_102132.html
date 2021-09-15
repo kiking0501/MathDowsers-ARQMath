@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Combinatorial proof for two identities</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Combinatorial proof for two identities </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="67068">
+<ul> <li><p>Does exist a combinatorial proof for the following two identities ? </p> <ul> <li><p><span class="math-container" id="744643" visual_id="1019077"><math alttext="\sum_{k=0}^{n}\binom{x+k}{k}=\binom{x+n+1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span></p></li> <li><p><span class="math-container" id="744644" visual_id="327767"><math alttext="\sum_{k=0}^{n}k\binom{n}{k}=n2^{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mi>k</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span></p></li> </ul></li> </ul> <p>I know how to derive the identites from <span class="math-container" id="744645" visual_id="47297"><math alttext="(1+x)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></semantics></math></span> , but I am searching for a combinatorial proof ? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> binomial-coefficients </span><span> generating-functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="158568"> For what it's worth, there are several proofs of the second identity here: [How to prove this binomial identity <span class="math-container" id="744646" visual_id="1949929"><math alttext="\sum_{r=0}^{n}{r{n\choose r}}=n2^{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mi>r</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>r</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span>?](http://math.stackexchange.com/questions/7757/how-to-prove-this-binomial-identity-sum-r-0n-r-n-choose-r-n2n-1) </td></tr><tr><td comment_id="158569"> My solution is identical to acarchau's answer. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="102132" id="answer">
+<p>You are choosing <span class="math-container" id="744647" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> people from <span class="math-container" id="744648" visual_id="1019079"><math alttext="x+n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> people who are lined up in a row. The right side counts the number of choices.</p> <p>The left side counts the choices in another way. For any <span class="math-container" id="744649" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> from <span class="math-container" id="744650" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> to <span class="math-container" id="744651" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, select <em>all</em> of the  first <span class="math-container" id="744652" visual_id="190"><math alttext="n-k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></semantics></math></span> people (from the left), then <em>not</em> the next one, then choose <span class="math-container" id="744653" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> people from the remaining <span class="math-container" id="744654" visual_id="8783203"><math alttext="x+n+1-(n-k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, that is from the remaining <span class="math-container" id="744655" visual_id="89303"><math alttext="x+k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow></semantics></math></span>.  There are <span class="math-container" id="744656" visual_id="8783204"><math alttext="\binom{x+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></semantics></math></span> ways to do this. The sum of the <span class="math-container" id="744657" visual_id="8783204"><math alttext="\binom{x+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></semantics></math></span> thus counts the choices of <span class="math-container" id="744658" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> people from the <span class="math-container" id="744659" visual_id="1019079"><math alttext="x+n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="102107"> Combinatorial proof to the identity <span class="math-container" id="1172490" visual_id="1019077"><math alttext="\sum_{k=0}^{n}\binom{x+k}{k}=\binom{x+n+1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="191548"> Combinatorial proof of <span class="math-container" id="2222630" visual_id="6005304"><math alttext="\sum_{k=0}^{n}\binom{n+k-1}{k}=\binom{2n}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mo>-</mo><mn>1</mn></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="357063"> Proving that <span class="math-container" id="3817414" visual_id="1472993"><math alttext="\sum\limits_{k=0}^{n}{{m+k}\choose{m}}={m+n+1\choose m+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>m</mi><mo>+</mo><mi>k</mi></mrow><mi>m</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>m</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="67112"> What does it mean to "count (some number) of (some finite set of objects)"? </td></tr><tr><td post_id="1926378"> Prove the identity <span class="math-container" id="17859532" visual_id="1373384"><math alttext="\sum_{i=0}^{n}{n\choose i}i=n2^{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>i</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><mi>i</mi></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span> using combinatorial proof. </td></tr><tr><td post_id="7757"> How to prove this binomial identity <span class="math-container" id="67940" visual_id="1949929"><math alttext="\sum_{r=0}^{n}{r{n\choose r}}=n2^{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mi>r</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>r</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="65398"> Why does this expected value simplify as shown? </td></tr><tr><td post_id="2428794"> Combinatoric Proof of <span class="math-container" id="22493374" visual_id="4716849"><math alttext="\sum_{0}^{n}\binom{k-1+i}{k-1}=\binom{n+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mn>0</mn><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mi>i</mi></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="65947"> Combinatorics-number of permutations of <span class="math-container" id="730467" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> A's and at most <span class="math-container" id="730468" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> B's </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

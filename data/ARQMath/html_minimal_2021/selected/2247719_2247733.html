@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Are normal subgroups subsets of each other?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Are normal subgroups subsets of each other? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2247719">
+<p>I mean, let <span class="math-container" id="20761076" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> be a group and has normal subgroups <span class="math-container" id="20761077" visual_id="467225"><math alttext="N_{1},N_{2},N_{3},..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mn>1</mn></msub><mo>,</mo><msub><mi>N</mi><mn>2</mn></msub><mo>,</mo><msub><mi>N</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span></p> <p>Let <span class="math-container" id="20761078" visual_id="2630789"><math alttext="N:max(N_{1},N_{2},N_{3},...)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>:</mo><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>N</mi><mn>1</mn></msub><mo>,</mo><msub><mi>N</mi><mn>2</mn></msub><mo>,</mo><msub><mi>N</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Is the following true :</p> <p><span class="math-container" id="20761079" visual_id="2630790"><math alttext="\bigcup_{k=1}^{\infty}N_{k}=N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>N</mi><mi>k</mi></msub></mrow><mo>=</mo><mi>N</mi></mrow></semantics></math></span></p> <p>I'm asking this because I'm concerned with the definition of Maximal normal subgroup.</p> <p>A proper normal subgroup of <span class="math-container" id="20761080" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> is called maximal if I can't find a proper normal subgroup of <span class="math-container" id="20761081" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> that contains it? However this doesn't mean I can't find another normal subgroup which has order larger than.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> group-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4622231"> What's <span class="math-container" id="20761082" visual_id="2630791"><math alttext="\max(N_{1},N_{2},N_{3},\dots)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>N</mi><mn>1</mn></msub><mo>,</mo><msub><mi>N</mi><mn>2</mn></msub><mo>,</mo><msub><mi>N</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>? </td></tr><tr><td comment_id="4622261"> You have confused maximum element with maximal element. A maximum element is unique but a maximal element is not. Hence the notation <span class="math-container" id="20761083" visual_id="2630792"><math alttext="\max\{N1,N2,\dots\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mi>N</mi><mo>⁢</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>N</mi><mo>⁢</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> is **not** justified. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2247733" id="answer">
+<p>In a general partially ordered set <span class="math-container" id="20761084" visual_id="318436"><math alttext="(S,\leq)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>S</mi><mo>,</mo><mo>≤</mo><mo stretchy="false">)</mo></mrow></semantics></math></span>, an element is called <span class="math-container" id="20761085" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> maximal if there does not exist <span class="math-container" id="20761086" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> such that <span class="math-container" id="20761087" visual_id="11696"><math alttext="x&amp;lt;y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>&lt;</mo></mrow><mi>y</mi></mrow></semantics></math></span>. For instance, if <span class="math-container" id="20761088" visual_id="2630793"><math alttext="S=\{x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>x</mi><mn>3</mn></msub><mo>,</mo><msub><mi>x</mi><mn>4</mn></msub><mo>,</mo><msub><mi>x</mi><mn>5</mn></msub><mo>,</mo><msub><mi>x</mi><mn>6</mn></msub><mo>,</mo><msub><mi>x</mi><mn>7</mn></msub><mo>,</mo><msub><mi>x</mi><mn>8</mn></msub><mo>,</mo><msub><mi>x</mi><mn>9</mn></msub><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> and the order is the divisor order (<span class="math-container" id="20761089" visual_id="294895"><math alttext="x_{i}\leq x_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≤</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></semantics></math></span> if and only if <span class="math-container" id="20761090" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> divides <span class="math-container" id="20761091" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span>), then the elements <span class="math-container" id="20761092" visual_id="2630794"><math alttext="x_{5},x_{6},x_{7},x_{8},x_{9}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>5</mn></msub><mo>,</mo><msub><mi>x</mi><mn>6</mn></msub><mo>,</mo><msub><mi>x</mi><mn>7</mn></msub><mo>,</mo><msub><mi>x</mi><mn>8</mn></msub><mo>,</mo><msub><mi>x</mi><mn>9</mn></msub></mrow></semantics></math></span> are all maximal. This is much weaker than saying that for every <span class="math-container" id="20761093" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> we have <span class="math-container" id="20761094" visual_id="55374"><math alttext="y\leq x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>≤</mo><mi>x</mi></mrow></semantics></math></span>. Such an <span class="math-container" id="20761095" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> might be called maxim<em>um</em> or greatest. In finite sets this is the same as saying <span class="math-container" id="20761096" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is the unique maximal element. For example if we add the element <span class="math-container" id="20761097" visual_id="2630795"><math alttext="x_{5\cdot 7\cdot 8\cdot 9}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mrow><mn>5</mn><mo>⋅</mo><mn>7</mn><mo>⋅</mo><mn>8</mn><mo>⋅</mo><mn>9</mn></mrow></msub></semantics></math></span> to our set then this is the greatest element.</p> <p>In group theory, the relation of inclusion <span class="math-container" id="20761098" visual_id="28242"><math alttext="M\subseteq N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>⊆</mo><mi>N</mi></mrow></semantics></math></span> is far more natural and useful than the weaker order relation <span class="math-container" id="20761099" visual_id="1506537"><math alttext="|M|\leq|N|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>M</mi><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mo stretchy="false">|</mo><mi>N</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span>, and a subgroup is called maximal if it is maximal with respect to inclusion. As you say this is the same as not being contained in a larger subgroup. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

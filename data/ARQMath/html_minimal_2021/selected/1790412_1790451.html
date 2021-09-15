@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving cardinality of coproduct presentation is unique without choice?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving cardinality of coproduct presentation is unique without choice? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1790412">
+<p>The definition of an extensive category immediately implies that given two coproduct decompositions indexed by sets of equal cardinality, if the coproduct objects are isomorphic compatibly with their injections, they are isomorphic as coproducts.</p> <p>Now suppose <span class="math-container" id="16540680" visual_id="7302578"><math alttext="\coprod_{i\in I}C_{i}\cong\coprod_{j\in J}D_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo largeop="true" symmetric="true">∐</mo><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></msub><msub><mi>C</mi><mi>i</mi></msub></mrow><mo>≅</mo><mrow><msub><mo largeop="true" symmetric="true">∐</mo><mrow><mi>j</mi><mo>∈</mo><mi>J</mi></mrow></msub><msub><mi>D</mi><mi>j</mi></msub></mrow></mrow></semantics></math></span> are two coproduct decompositions of an object <span class="math-container" id="16540681" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> of an extensive category. By comparing the cardinals <span class="math-container" id="16540682" visual_id="7302579"><math alttext="|I|\neq|J|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo>≠</mo><mrow><mo stretchy="false">|</mo><mi>J</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> we may assume wlog one is strictly greater than the other, and then add to the smaller collections copies of <span class="math-container" id="16540683" visual_id="3030803"><math alttext="\mathbf{0}\rightarrow X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>𝟎</mn><mo>→</mo><mi>X</mi></mrow></semantics></math></span> to make the cardinalities of the new pair equal. Then applying the above proposition we see the originally larger collection had redundancies etc. This proves (I think), that the cardinality of nontrivial coproduct decompositions is unique for each object.</p> <p>Is there any way of proving this without using choice, or comparing cardinals?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span><span> category-theory </span><span> cardinals </span><span> axiom-of-choice </span><span> limits-colimits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1790451" id="answer">
+<p>No, of course not.</p> <p>Consider the case with Russell's socks. It is consistent that there is a countable family of pairwise disjoint sets of size <span class="math-container" id="16540684" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>, whose union does not have any countably infinite subset.</p> <p>Namely, the coproduct <span class="math-container" id="16540685" visual_id="7302580"><math alttext="\coprod_{n\in\mathbb{N}}P_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo largeop="true" symmetric="true">∐</mo><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub><msub><mi>P</mi><mi>n</mi></msub></mrow></semantics></math></span> is not isomorphic, or even comparable, with <span class="math-container" id="16540686" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>. But on the other hand, <span class="math-container" id="16540687" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> can certainly be divided into countably many sets of size <span class="math-container" id="16540688" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>, whose coproduct is indeed <span class="math-container" id="16540689" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>.</p> <p>The assumption that cardinal summation extends to arbitrary sums, if so, is not provable without some axiom of choice. While I don't have my books with me here, if my memory serves me right, the question whether or not this implies the axiom of choice is open. So it might as well be that whenever the axiom of choice fails, such examples can be constructed (with index sets perhaps bigger than <span class="math-container" id="16540690" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>, of course). But it might be strictly between <span class="math-container" id="16540691" visual_id="17274"><math alttext="\sf ZF" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝖹𝖥</mi></semantics></math></span> and <span class="math-container" id="16540692" visual_id="46489"><math alttext="\sf ZFC" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝖹𝖥𝖢</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

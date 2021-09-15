@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Upper Triangular Matrices</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Upper Triangular Matrices </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="796336">
+<p>Consider the set <span class="math-container" id="7831119" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span> of upper-triangular <span class="math-container" id="7831120" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrices with elements in some ﬁeld <span class="math-container" id="7831121" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span>. I.e., if <span class="math-container" id="7831122" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is such a matrix, <span class="math-container" id="7831123" visual_id="58613"><math alttext="a_{ij}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, for <span class="math-container" id="7831124" visual_id="273580"><math alttext="i&amp;gt;j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>i</mi><mo>&gt;</mo></mrow><mi>j</mi></mrow></semantics></math></span></p> <p>Show that non-degenerate upper-triangular matrices form a group with respect to matrix multiplication.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="796339" id="answer">
+<p>Well, if <span class="math-container" id="7831125" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is upper-triangular, then <span class="math-container" id="7831126" visual_id="565"><math alttext="A^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is upper-triangular as well, and if <span class="math-container" id="7831127" visual_id="4205"><math alttext="A,B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math></span> are upper-triangular, then <span class="math-container" id="7831128" visual_id="3318"><math alttext="AB" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> is, too. This follows from the formulas for matrix multiplication. For different proofs of this see <a href="https://math.stackexchange.com/questions/4841/inverse-of-an-invertible-triangular-matrix-either-upper-or-lower-is-triangula?noredirect=1&amp;lq=1">here</a>. Since the identity is upper-triangular, the invertible upper-triangular matrices form a group, e.g., a subgroup of <span class="math-container" id="7831129" visual_id="30105"><math alttext="GL(n,K)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1933313"> Let <span class="math-container" id="17921526" visual_id="4983673"><math alttext="G=GL_{2}\mathbb{(}R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mrow><mi>G</mi><mo>⁢</mo><msub><mi>L</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Show that <span class="math-container" id="17921527" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span> is a subgroup of <span class="math-container" id="17921528" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="4841"> Inverse of an invertible triangular matrix (either upper or lower) is triangular of the same kind </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

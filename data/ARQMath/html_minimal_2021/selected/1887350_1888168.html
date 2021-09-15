@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is a generic (genetic/geometric) map? (In the study of manifolds)</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is a generic (genetic/geometric) map? (In the study of manifolds) </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1887350">
+<p>At 29:30 in <a href="https://www.youtube.com/watch?v=u5DLpAqX4YA" rel="nofollow">his lecture on Youtube</a>, Mikhail Gromov talks about how one only gets a manifold from the zero set of the equation <span class="math-container" id="17484159" visual_id="2610"><math alttext="f(0)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> if the map <span class="math-container" id="17484160" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is "generic" (or genetic or geometric -- I mostly but not entirely understand his accent).</p> <blockquote> <p>It is a dirty word, because it is extremely convenient, but you don't know what you get -- but on the other hand this is the major mechanism generating manifolds, by genericity(?)</p> </blockquote> <p>He then goes on to discuss how this concept raises foundational issues, saying at 31:37 that if we do not allow such functions to exist then the continuum hypothesis is true,  and that if we do allow such functions to exist, then the continuum hypothesis is false.</p> <p><strong>What concept is he referring to?</strong> It sounds extremely important.</p> <p>The best I could find is <a href="https://en.wikipedia.org/wiki/Generic_point" rel="nofollow">generic point</a> which sounds vaguely similar. That or perhaps he is mistranslating a Russian term and means <strong><em>regular point</em></strong>? Because I am aware of how one can use the implicit function theorem to take the inverse images of a regular point and create manifolds.</p> <p>Also he talks in between about singularities being "rare" but coming with additional structure when they do occur, which sounds like Morse theory to me. He also talks about a result from Riemannian geometry which holds at least for dimensions 1-7 and was proved in part by Jim Simons.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebraic-geometry </span><span> manifolds </span><span> differential-topology </span><span> riemannian-geometry </span><span> morse-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3869648"> The term is "generic." Loosely it means that among all functions, there is a "large" collection of functions for which the statement is true, and the functions for which the statement is not true are special in some way. </td></tr><tr><td comment_id="3869659"> A simple example: a "generic" polynomial has distinct roots. The special polynomials, which don't have distinct roots, are precisely those polynomials whose discriminant vanishes. This is a codimension-<span class="math-container" id="17484161" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> (and in particular measure zero) subspace of the space of all polynomials (of a fixed degree, to keep things simple). </td></tr><tr><td comment_id="3869685"> @QiaochuYuan Oh, so he's not talking about a specific definition, he's just using mathematical jargon. I.e. a generic point of a smooth manifold is regular (by Sard's theorem). I've heard the term before, I thought he was using it in a precise, definitional way. Do you understand his claim then about the continuum hypothesis? He says it is obvious, but I don't even understand what sort of statement he is talking about or why it would have anything to do with set theory. </td></tr><tr><td comment_id="3869705"> https://en.wikipedia.org/wiki/List_of_mathematical_jargon </td></tr><tr><td comment_id="3870901"> I'm not sure how you conclude that Gromov is being imprecise. The usage in algebraic geometric as Qiaochu mentions or in Sard's theorem is quite rigorous. </td></tr><tr><td comment_id="3871480"> @Hoot Can't generic mean anything from "except for a set of (Lebesgue or some other) measure zero", "except for a set of first category", "except for finitely many", "except for countably many", "codimension 1subspace of an infinite dimensional vector space", etc.? What type of "generic" property is he referring to in the video, and why is it "obvious" that it has this implication for the continuum hypothesis? That's like saying "canonically" or "isomorphic" or "natural" -- it can have a specific, unambiguous meaning in certain contexts, but if the context is somehow unspecified, then it is </td></tr><tr><td comment_id="3871485"> not clear. With regards to his comments about the continuum hypothesis, I don't understand what the context he is referring to is, hence I do not know what specific sense of "generic" he is referring to, hence I don't understand why it is obvious that allowing or not allowing "generic" (generic what? generic in what sense?) should bear any relationship to the continuum hypothesis whatsoever. Is he postulating that "generic" (i.e. "typical") sets have cardinality in between that of <span class="math-container" id="17484162" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> and <span class="math-container" id="17484168" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>? Why should such sets be "typical" if you have to assume that they exist? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1888168" id="answer">
+<p>Let <span class="math-container" id="17484164" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> be some space. A subset <span class="math-container" id="17484165" visual_id="1084317"><math alttext="C\subset F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>⊂</mo><mi>F</mi></mrow></semantics></math></span> is generic if it contains a countable intersection of open and dense subsets. If <span class="math-container" id="17484166" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is a Baire space, it follows that <span class="math-container" id="17484167" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> is dense itself. The intuition is that a generic set is in some sense "almost all" of the space. This generalizes the idea of a full measure set outside of measure theory. Often generic sets of interest are open themselves, but they need not be.</p> <p>Some examples (some were given in the comments):</p> <ul> <li>The set of irrational numbers is generic as a subset of <span class="math-container" id="17484168" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span></li> <li>The set of polynomials of degree <span class="math-container" id="17484169" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> with <span class="math-container" id="17484170" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> distinct roots is generic </li> <li>The set of regular values of a smooth function <span class="math-container" id="17484171" visual_id="40709"><math alttext="f:M\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>M</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span>, with <span class="math-container" id="17484172" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> a smooth manifold, is generic (Sard's theorem). The set of critical points is not in general!</li> <li>The set of Morse functions on a given smooth manifold is generic (if the manifold is compact, it is open)</li> <li>The set of invertible matrices is generic</li> </ul> <p>Given a smooth function <span class="math-container" id="17484173" visual_id="40709"><math alttext="f:M\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>M</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> the set of regular values is generic. This implies, that for "most" values <span class="math-container" id="17484174" visual_id="4655"><math alttext="x\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span> the set <span class="math-container" id="17484175" visual_id="30819"><math alttext="f^{-1}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a smooth manifold. Indeed we apply the implicit function theorem here to conclude that <span class="math-container" id="17484176" visual_id="30819"><math alttext="f^{-1}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a smooth manifold, but the "most" does not come from the implicit function theorem. This is one of the easiest mechanisms to construct smooth manifolds.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3871563"> This is really helpful! I appreciate the thoroughness of your reply. Do you understand then what Professor Gromov is saying at 31:37 about the continuum hypothesis? Because I don't see the connection between this topological definition and abstract set theory. </td></tr><tr><td comment_id="3872423"> I'll have a look tomorrow. I didn't watch the movie. remind me if I forget </td></tr><tr><td comment_id="3873199"> @william: I had a look, but to quote Abouzaid, my Gromovian is pretty rudimentary. I don't understand his remark there. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

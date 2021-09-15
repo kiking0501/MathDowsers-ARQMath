@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <title>What is this kind of geometry called?</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be">
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js"> </script>
+
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+
+        <style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <div class="row" id="question-title">
+                <h1> What is this kind of geometry called? </h1>
+                <hr>
+            </div>
+
+
+            <div class="row">
+                <div class="question">
+
+                    <div question_id="958949"  id="question">
+                        <p>I want to get Cartesian coordinates of the points of a curve (e.g. a bezier curve) based on the distance (e.g length of the arc) from the start point on the curve. To make this more clear, suppose I want to walk along a path with a constant speed, then I want to know my position for every time interval after I started. Could you provide me with <strong>keywords</strong> or <strong>links</strong> to search for this kind of geometry? Also please consult the following picture:  <img src="https://i.stack.imgur.com/qnhEF.png" alt="enter image description here"></p> 
+                    </div>
+                    <hr>
+
+                    <div id="tags">
+                        <span> geometry </span><span> coordinate-systems </span><span> plane-curves </span>
+                    </div>
+                    <hr>
+
+                    <div id="question-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="1971484"> See [http://en.wikipedia.org/wiki/Arc_length](http://en.wikipedia.org/wiki/Arc_length). </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div class="answer">
+
+
+                    <div answer_id="965125" id="answer">
+                        <p>As Robert Israel's answer said, you want to <strong>parameterize</strong> the curve by <strong>arclength.</strong> This means that, given an arclength along the curve, you can calculate the location of the corresponding point.</p>  <p>In fact, in the field of <strong>differential geometry</strong>, they often assume from the start that they are dealing with curves that are parametrized by arclength. This makes the formulas tidier. For example, it means that the first derivative vector has length equal to 1.</p>  <p>But, this ignores the fact that, for all but the simplest curves (straight lines and circles), there is no simple formula that gives the arclength corresponding to a given point, nor one that gives the point corresponding to a given arclength. To compute arclengths and points, you have to use numerical methods, specifically numerical integration (sometimes called "<strong>quadrature</strong>").</p>  <p>So, you can start by looking up terms like <strong>arclength</strong>, <strong>parameterization</strong>, and <strong>differential geometry</strong>. But, to make any tangible progress with Bézier curves, you'll need to learn about <strong>numerical integration</strong>, too.</p> 
+                    </div>
+                    <hr>
+
+
+                    <div id="answer-comments">
+                        <table>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div id="duplicate">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+
+                <div id="related">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+</html>

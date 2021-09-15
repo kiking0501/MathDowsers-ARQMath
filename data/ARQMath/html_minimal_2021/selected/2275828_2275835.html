@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Existence of $\int_{-a}^{a}\frac{1}{t}dt$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Existence of <span class="math-container" id="21022465" visual_id="8580763"><math alttext="\int_{-a}^{a}\frac{1}{t}dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>a</mi></mrow><mi>a</mi></msubsup><mrow><mfrac><mn>1</mn><mi>t</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2275828">
+<p>I've never understood why <span class="math-container" id="21022466" visual_id="8580763"><math alttext="\int_{-a}^{a}\frac{1}{t}dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>a</mi></mrow><mi>a</mi></msubsup><mrow><mfrac><mn>1</mn><mi>t</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></semantics></math></span> isn't <span class="math-container" id="21022467" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>. The function <span class="math-container" id="21022468" visual_id="122994"><math alttext="\frac{1}{t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>t</mi></mfrac></semantics></math></span> is odd so the area under the curve on the <span class="math-container" id="21022469" visual_id="8580764"><math alttext="t=(0,a]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>a</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> interval should cancel out with the area on the <span class="math-container" id="21022470" visual_id="8580765"><math alttext="t=[-a,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mi>a</mi></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> interval. It shouldn't matter whether it's infinite area though right?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4681326"> This is called the Cauchy principal value. It has its uses, but you have to take care not to abuse it. https://en.wikipedia.org/wiki/Cauchy_principal_value </td></tr><tr><td comment_id="4681329"> In particular, lazy use of change of variables can be risky, unless the change of variable is symmetric, too. </td></tr><tr><td comment_id="4681337"> Any time you subtract infinities you are jumping on thin ice... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2275835" id="answer">
+<p>If you have to assign a meaningful value to it, then use the Cauchy Principal Value, which is obtained by direct integration.</p> <p>Similar to how physics uses <span class="math-container" id="21022471" visual_id="8580766"><math alttext="1+2+3...=-\frac{1}{12}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mfrac><mn>1</mn><mn>12</mn></mfrac></mrow></mrow></semantics></math></span>. </p> <p>But if you want something intuitive, like the rate of water pouring into a glass, pouring infinite amount of water, and taking an infinite amount of water out right after... yeah, that doesn't quite make sense, because the integral doesn't converge when broken apart. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

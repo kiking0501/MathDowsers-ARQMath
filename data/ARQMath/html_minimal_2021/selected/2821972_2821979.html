@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Comparing cohomologies of $\mathcal{O}_X$ and $\mathcal{O}_{X_\text{red}}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Comparing cohomologies of <span class="math-container" id="26056242" visual_id="12795"><math alttext="\mathcal{O}_{X}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub></semantics></math></span> and <span class="math-container" id="26056243" visual_id="3279048"><math alttext="\mathcal{O}_{X_{\text{red}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><msub><mi>X</mi><mtext>red</mtext></msub></msub></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2821972">
+<p>Let <span class="math-container" id="26056244" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> be a noetherian scheme. If <span class="math-container" id="26056245" visual_id="27783"><math alttext="X_{\text{red}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mtext>red</mtext></msub></semantics></math></span> is affine, then <span class="math-container" id="26056246" visual_id="3279049"><math alttext="H^{i}(X,\mathcal{O}_{X})\rightarrow H^{i}(X,\mathcal{O}_{X_{\text{red}}})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>H</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi>H</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><msub><mi>X</mi><mtext>red</mtext></msub></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is an isomorphism for all <span class="math-container" id="26056247" visual_id="3137"><math alttext="i&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>i</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>. Is this true even if <span class="math-container" id="26056248" visual_id="27783"><math alttext="X_{\text{red}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mtext>red</mtext></msub></semantics></math></span> is not affine?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebraic-geometry </span><span> sheaf-theory </span><span> sheaf-cohomology </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2821979" id="answer">
+<p>This is in general false. For a simple example, take <span class="math-container" id="26056249" visual_id="375"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span>, the projective line and consider <span class="math-container" id="26056250" visual_id="3279050"><math alttext="R=\mathcal{O}_{Y}\oplus L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>Y</mi></msub><mo>⊕</mo><mi>L</mi></mrow></mrow></semantics></math></span> for any line bundle <span class="math-container" id="26056251" visual_id="580"><math alttext="L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi></semantics></math></span> on <span class="math-container" id="26056252" visual_id="375"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span>. Then <span class="math-container" id="26056253" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> can be given an <span class="math-container" id="26056254" visual_id="76796"><math alttext="\mathcal{O}_{Y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>Y</mi></msub></semantics></math></span>-algebra structure by putting <span class="math-container" id="26056255" visual_id="3279051"><math alttext="L\cdot L=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>L</mi><mo>⋅</mo><mi>L</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. Let <span class="math-container" id="26056256" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> be the spec of <span class="math-container" id="26056257" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>. Then, you have <span class="math-container" id="26056258" visual_id="3279052"><math alttext="\mathcal{O}_{X}=R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo>=</mo><mi>R</mi></mrow></semantics></math></span> and <span class="math-container" id="26056259" visual_id="3279053"><math alttext="X_{red}=Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mrow><mi>r</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>d</mi></mrow></msub><mo>=</mo><mi>Y</mi></mrow></semantics></math></span>. By choosing <span class="math-container" id="26056260" visual_id="3279054"><math alttext="L=\mathcal{O}_{Y}(-n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>Y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> for <span class="math-container" id="26056261" visual_id="1214"><math alttext="n\geq 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow></semantics></math></span>, you see that <span class="math-container" id="26056262" visual_id="3279055"><math alttext="H^{1}(\mathcal{O}_{Y})=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>H</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>Y</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, but <span class="math-container" id="26056263" visual_id="3279056"><math alttext="H^{1}(\mathcal{O}_{X})\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>H</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

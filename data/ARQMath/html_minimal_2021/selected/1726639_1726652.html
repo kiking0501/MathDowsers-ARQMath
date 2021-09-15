@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Let $k \geq 2$ be an integer. Let $x$ and $y$ be positive integers. Show that $x^k- y^k > 2$.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Let <span class="math-container" id="15950161" visual_id="2662"><math alttext="k\geq 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>2</mn></mrow></semantics></math></span> be an integer. Let <span class="math-container" id="15950162" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="15950163" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> be positive integers. Show that <span class="math-container" id="15950164" visual_id="937597"><math alttext="x^{k}-y^{k}&gt;2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><msup><mi>y</mi><mi>k</mi></msup></mrow><mo>&gt;</mo><mn>2</mn></mrow></semantics></math></span>. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1726639">
+<p>Let <span class="math-container" id="15950165" visual_id="2662"><math alttext="k\geq 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>2</mn></mrow></semantics></math></span> be an integer. Let <span class="math-container" id="15950166" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="15950167" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> be positive integers. Show that <span class="math-container" id="15950168" visual_id="937598"><math alttext="x^{k}-y^{k}&amp;gt;2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><mrow><msup><mi>y</mi><mi>k</mi></msup><mo>&gt;</mo></mrow></mrow><mn>2</mn></mrow></semantics></math></span>.</p> <p>I'm a little confused by this because this is the only information given. The book I'm using doesn't specify whether or not <span class="math-container" id="15950169" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> needs to be greater than <span class="math-container" id="15950170" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span>, so couldn't you have <span class="math-container" id="15950171" visual_id="937599"><math alttext="2^{2}-3^{2}=-5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>-</mo><msup><mn>3</mn><mn>2</mn></msup></mrow><mo>=</mo><mrow><mo>-</mo><mn>5</mn></mrow></mrow></semantics></math></span>?</p> <p>Also, I just don't know how to approach this problem. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3524855"> Presumably <span class="math-container" id="15950172" visual_id="38516"><math alttext="x&gt;y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mi>y</mi></mrow></semantics></math></span>. Try factoring <span class="math-container" id="15950180" visual_id="937600"><math alttext="x^{k}-y^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><msup><mi>y</mi><mi>k</mi></msup></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3524880"> Or... let <span class="math-container" id="15950174" visual_id="937601"><math alttext="x=y+n;n&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mi>y</mi><mo>+</mo><mi>n</mi></mrow></mrow><mo>;</mo><mrow><mi>n</mi><mo>&gt;</mo><mn>0</mn></mrow></mrow></semantics></math></span>  then prove <span class="math-container" id="15950175" visual_id="937602"><math alttext="(x+n)^{k}-x^{k}&gt;2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mo>-</mo><msup><mi>x</mi><mi>k</mi></msup></mrow><mo>&gt;</mo><mn>2</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3524884"> Although I **have** to get irked that it doesn't stipulate x &gt; y.  If $x \le ys this is obviously not true. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1726652" id="answer">
+<p>Since <span class="math-container" id="15950189" visual_id="92549"><math alttext="x,y\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> we may as well assume <span class="math-container" id="15950190" visual_id="937604"><math alttext="x&amp;gt;y\iff x\geq y+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>x</mi><mo>&gt;</mo></mrow><mi>y</mi></mrow><mo>⇔</mo><mrow><mi>x</mi><mo>≥</mo><mrow><mi>y</mi><mo>+</mo><mn>1</mn></mrow></mrow></mrow></semantics></math></span>. But then</p> <blockquote> <p><span class="math-container" id="15950191" visual_id="937605"><math alttext="x^{k}-y^{k}\geq x^{k}-(x-1)^{k}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><msup><mi>y</mi><mi>k</mi></msup></mrow><mo>≥</mo><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> </blockquote> <p>Set <span class="math-container" id="15950192" visual_id="937606"><math alttext="z+1=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>z</mi><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math></span> then it is enough to show <span class="math-container" id="15950193" visual_id="937607"><math alttext="(z+1)^{k}-z^{k}&amp;gt;2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mo>-</mo><mrow><msup><mi>z</mi><mi>k</mi></msup><mo>&gt;</mo></mrow></mrow><mn>2</mn></mrow></semantics></math></span>.</p> <blockquote> <p><span class="math-container" id="15950194" visual_id="937608"><math alttext="(z+1)^{k}-z^{k}=\sum_{n=0}^{n-1}{k\choose n}z^{n}&amp;gt;{k\choose 1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mo>-</mo><msup><mi>z</mi><mi>k</mi></msup></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>n</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mi>z</mi><mi>n</mi></msup><mo>&gt;</mo></mrow></mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mn>1</mn></mfrac><mo>)</mo></mrow></mrow></mrow></semantics></math></span></p> </blockquote> <p>here the last inequality follows by positivity of <span class="math-container" id="15950195" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span>. But <span class="math-container" id="15950196" visual_id="53057"><math alttext="{k\choose 1}=k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mn>1</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mi>k</mi></mrow></semantics></math></span> and <span class="math-container" id="15950197" visual_id="2662"><math alttext="k\geq 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>2</mn></mrow></semantics></math></span>.</p> <p>So we have</p> <blockquote> <p><span class="math-container" id="15950198" visual_id="937609"><math alttext="x^{k}-y^{k}\geq x^{k}-(x-1)^{k}&amp;gt;{k\choose 1}\geq 2." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><msup><mi>y</mi><mi>k</mi></msup></mrow><mo>≥</mo><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>-</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mo>⁢</mo><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo>;</mo><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mn>1</mn></mfrac><mo>)</mo></mrow><mo>≥</mo><mn>2</mn></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> </blockquote>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

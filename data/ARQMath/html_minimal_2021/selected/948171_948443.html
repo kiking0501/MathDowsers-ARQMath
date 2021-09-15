@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why are real numbers useful?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why are real numbers useful? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="948171">
+<p>A question (by a fellow CS student taking a first course in calculus, presumably after the lecture in which continuity was introduced: was as follows.</p> <blockquote> <p>In the real, physical world, we deal with numbers that are sort of “finite” or “discrete” by their nature; there's no such thing as a perfect circle in the physical world. In CS, we model computers with discrete mathematics and it’s enough. So why real analysis? Why concepts like continuity and “completeness” of real numbers are useful? Why do we need them?</p> </blockquote> <p>I found Math.se has lots of questions for similar “concrete” justifications for <em>complex</em> numbers and great answers for them, but I didn’t really manage to find similar for this. The question <a href="https://math.stackexchange.com/questions/51316/are-all-numbers-real-numbers">Are all numbers real numbers?</a> is related, but I’m not sure it’s exactly what I’m looking for.</p> <p>My attempt at an answer was along the line:</p> <blockquote> <p>Are we content with the length of the side of a square that has area of 2 units remaining a undefined number, even if we never manage find such a square?</p> </blockquote> <p>and</p> <blockquote> <p>Calculus and real analysis provide results that are useful even if in numerical calculations we use finite approximations. To really understand what's going on, we want it to be rigorous.</p> </blockquote> <p>but I’m not sure if I was persuasive enough. Any better ideas?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> soft-question </span><span> continuity </span><span> real-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1952563"> Because as much as computer science is important, it's not the center of the world, certainly not the center of the mathematical world? </td></tr><tr><td comment_id="1952576"> Also if you send the student to talk with Doron Zeilberger or Norman Wildberger, they'll inform him that real numbers are meaningless and a silly waste of time indeed. </td></tr><tr><td comment_id="1952581"> Differential and integral analysis are powerful tools that make use of the real numbers. Maxwell's equations are expressed using calculus. Is not electromagnetism important to CS? I would say yes, unless you use an abacus. </td></tr><tr><td comment_id="1952607"> One way I see it is: some problems / topics are easier in general form, in the same sense that the reals are more general than rationals and integers. </td></tr><tr><td comment_id="1952622"> Jazz music does not exist in nature. Let's not play it. </td></tr><tr><td comment_id="1952727"> By definition, discrete things can be used to approximate continuous things, e.g., the integral is a limit of discrete sums. It's not much of a leap to realize that, conversely, computations utilizing the continuum may approximate discrete things, and indeed, one can observe this come up innumerable times in the relevant branches of mathematics. So there's still a place for the continuum, even if the discrete is all that "exists". </td></tr><tr><td comment_id="1953778"> Real numbers are not important; only computable reals are. </td></tr><tr><td comment_id="1953831"> Instead of your square example (which you yourself argue that we may never be able to construct a 2cm^2 square by definition that the length of its sides may not exist). Draw a 1cm^2 square instead (or in inches). A unit square is something concrete and definitely exist. Now, draw the diagonal line that connects opposing corners. This line is square root 2 cm/inch long. That's a physical, real, real number in the physical world. </td></tr><tr><td comment_id="1953976"> Pure Mathematics doesn't concern itself with its applicability. </td></tr><tr><td comment_id="1954221"> The best you can get from Timothy Gowers https://www.dpmms.cam.ac.uk/~wtg10/reals.html </td></tr><tr><td comment_id="1955580"> I have a piece of string. There is a 0 chance that it's length is rational! So we need the reals. </td></tr><tr><td comment_id="1956942"> @Paramanand I showed them that Gowers' webpage, they seemed quite satisfied with reasoning presented there. </td></tr><tr><td comment_id="1956965"> @kekkonen: I have found Gowers' page to be a very good justification of real numbers and it is especially suitable for undergrad students. I am happy that you liked Gowers argument. </td></tr><tr><td comment_id="1959676"> CS students can calculate <span class="math-container" id="9118453" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> by finding (to a certain level of precision) the limit of the sequence defined by <span class="math-container" id="9118452" visual_id="2027077"><math alttext="a_{n+1}=\frac{1}{2}\left(a_{n}+\frac{1}{a_{n}}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>+</mo><mfrac><mn>1</mn><msub><mi>a</mi><mi>n</mi></msub></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span>. Forget <span class="math-container" id="9118453" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span>, how do you know that the sequence converges? </td></tr><tr><td comment_id="2877202"> Is the existence of analytic number theory not enough? </td></tr><tr><td comment_id="3921270"> I didn't find satisfying answer here neither. As far as I understand, infinity and continuity are just legacy. If people in ancient Greece would have limited themselves with finite sets,  mathematics would have been available for wider audience and there would be no need to translate from language of infinities to say finite differences. I think in 100 or 200 years language constructs for describing infinite objects will become a different subject like philosophy. And right now we are experiencing a huge inertia (a lot of books have been written). </td></tr><tr><td comment_id="5654879"> How about solving optimization problems with partial derivatives or the methods of gradient descent? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="948443" id="answer">
+<p>As a one who learns Computer Science and Mathematics (just because I love to make my own video games) I want tell you that: </p> <p>Even though computer science is all discrete, Continuous mathematics stays true in discrete cases like computer science.</p> <p>For example suppose that you want to move a bird on screen from point <span class="math-container" id="9118458" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> to point <span class="math-container" id="9118459" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> on the graph of the function <span class="math-container" id="9118460" visual_id="15399"><math alttext="f(x)=\frac{\sin x}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow></semantics></math></span>. What can you do when <span class="math-container" id="9118461" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>? How can you know that <span class="math-container" id="9118462" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> can be defined at <span class="math-container" id="9118463" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> in a way that removes the discontinuity without using the squeeze theorem? (By the way better movement can be done using the arc length formula which invites even more calculus) What if you want to change the bird' s rotation so that the bird will be 'tangent' to the curve? The derivative comes. There are even more extreme cases where you'll need to use Real Analysis to analyze graph of functions (and to actually use <span class="math-container" id="9118464" visual_id="1149"><math alttext="\epsilon-\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>-</mo><mi>δ</mi></mrow></semantics></math></span> definition of limits).</p> <p>That's  was a very simple example. There are more complex examples, How can your make water simulation that interacts with your bird so that if your bird touches the water or dives into the water, ripples will start (not ripples that are some simple animation, but ripples that are calculated using the impact force on the water)? You'll need to use Vector Fields and Fluid Mechanics and a lot of it which is of course continuous mathematics.</p> <p>This means that continuous mathematics stays true in discrete cases (like pixels on screen).</p> <p>I think one of the best ways to see where continuous mathematics is important in computer science is to do stuff that invites its use like Computer Graphics, Audio Processing, Image Processing, Computer Vision, Artificial Intelligence, Physics Programming, Machine Learning, Computational Geometry, Game Development (which is actually a mix of Computer Graphics, Computational Geometry, Artificial Intelligence and Physics Programming and you can even add Computer Vision and Audio Processing for different types of game interactions).</p> <p>Try to build a small computer game and tell me how can you move your objects on screen without continuous mathematics?</p> <p>Now what about complex analysis? </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1953784"> Untrue, as anyone who has ever had to use a form of antialiasing would clearly see; continuous mathematics does not stay true in discrete cases, below a certain value. </td></tr><tr><td comment_id="1954226"> True, in some cases continuous mathematics will not work but generally it is quite good. </td></tr><tr><td comment_id="3921292"> @MathNerd What does it mean? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2934352"> How important is the concept of uncomputability in mathematics? </td></tr><tr><td post_id="1078593"> Do we really need reals? </td></tr><tr><td post_id="51316"> Are all numbers real numbers? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

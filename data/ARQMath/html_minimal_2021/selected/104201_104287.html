@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>prove for all $n\geq 0$ that $3 \mid n^3+6n^2+11n+6$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> prove for all <span class="math-container" id="1198274" visual_id="3158"><math alttext="n\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> that <span class="math-container" id="1198275" visual_id="8499468"><math alttext="3\mid n^{3}+6n^{2}+11n+6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>6</mn></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="104201">
+<p>I'm having some trouble with this question and can't really get how to prove this..</p> <p>I have to prove <span class="math-container" id="1198276" visual_id="8499469"><math alttext="n^{3}+6n^{2}+11n+6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>6</mn></mrow></semantics></math></span> is divisible by <span class="math-container" id="1198277" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> for all <span class="math-container" id="1198278" visual_id="3158"><math alttext="n\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span>. </p> <p>I have tried doing <span class="math-container" id="1198279" visual_id="8499470"><math alttext="\dfrac{m}{3}=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mi>m</mi><mn>3</mn></mfrac></mstyle><mo>=</mo><mi>n</mi></mrow></semantics></math></span> and then did <span class="math-container" id="1198280" visual_id="1077557"><math alttext="m=3n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></semantics></math></span></p> <p>then I said <span class="math-container" id="1198281" visual_id="8499471"><math alttext="3n=n^{3}+6n^{2}+11n+6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow><mo>=</mo><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>6</mn></mrow></mrow></semantics></math></span> but now I am stuck.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> discrete-mathematics </span><span> divisibility </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="244522"> Induction will be handy here. </td></tr><tr><td comment_id="244524"> Yeah but ive thought of it thats why I found n=0 gives 6 in the equation which is divisible by 3 then i found n=1 gives 24 which is divisible as well n=2 gave 60....i know i can do induction but I cant think of how to put it in words.. </td></tr><tr><td comment_id="244526"> If you know what "mod 3" means then <span class="math-container" id="1198282" visual_id="8499472"><math alttext="n^{3}+6n^{2}+11n+6\equiv n^{3}-n=(n-1)n(n+1)\equiv 0\pmod{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>6</mn></mrow><mo>≡</mo><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>-</mo><mi>n</mi></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mrow><mn>0</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>... </td></tr><tr><td comment_id="244548"> @Raynos, induction is simple. You prove it for <span class="math-container" id="1198283" visual_id="3350"><math alttext="n=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, which you have done. Now assume that <span class="math-container" id="1198319" visual_id="8499469"><math alttext="n^{3}+6n^{2}+11n+6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>6</mn></mrow></semantics></math></span> is divisible by <span class="math-container" id="1198326" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>. You want to prove that the same holds for <span class="math-container" id="1198286" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>, that is, that <span class="math-container" id="1198287" visual_id="8499473"><math alttext="(n+1)^{3}+6(n+1)^{2}+11(n+1)+6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>6</mn></mrow></semantics></math></span> is divisible by <span class="math-container" id="1198326" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>. Just expand and collect all multiples of <span class="math-container" id="1198326" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>. </td></tr><tr><td comment_id="244771"> Dear Raynos, The following comment is not directed at solving your problem, but rather at clearing up a misconception that appears in the last two lines of your post:  if <span class="math-container" id="1198290" visual_id="8499469"><math alttext="n^{3}+6n^{2}+11n+6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>6</mn></mrow></semantics></math></span> is divisible by <span class="math-container" id="1198326" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>, then you are correct that you can write as <span class="math-container" id="1198326" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> times another number (this is the meaning of *divisible*), but you shouldn't call that other number <span class="math-container" id="1198314" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, since it (amost certainly) won't be the same number <span class="math-container" id="1198314" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> that you started with.  E.g. when <span class="math-container" id="1198300" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, you get <span class="math-container" id="1198296" visual_id="8499474"><math alttext="1^{3}+6\cdot 1^{2}+11\cdot 1+6=24=3\cdot 8," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mn>1</mn><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⋅</mo><msup><mn>1</mn><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>11</mn><mo>⋅</mo><mn>1</mn></mrow><mo>+</mo><mn>6</mn></mrow><mo>=</mo><mn>24</mn><mo>=</mo><mrow><mn>3</mn><mo>⋅</mo><mn>8</mn></mrow></mrow><mo>,</mo></mrow></semantics></math></span> and <span class="math-container" id="1198297" visual_id="2663"><math alttext="8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>8</mn></semantics></math></span> is not the same as the original value <span class="math-container" id="1198300" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> that you began with. </td></tr><tr><td comment_id="244773"> So setting <span class="math-container" id="1198299" visual_id="8499475"><math alttext="3n=n^{3}+6n^{2}+11n=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow><mo>=</mo><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math></span> is *not* the correct way to proceed (it is already not true in the case <span class="math-container" id="1198300" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, as we just saw).   As the answers below show, questions of this type are usually best answered by manipulating the expression <span class="math-container" id="1198301" visual_id="8499469"><math alttext="n^{3}+6n^{2}+11n+6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>6</mn></mrow></semantics></math></span> in some way, not by setting it equal to something else.  Regards, </td></tr><tr><td comment_id="244916"> This question get +1 due to the nice diversity of answers it has produced :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="104287" id="answer">
+<p>We have <span class="math-container" id="1198344" visual_id="8499495"><math alttext="n^{3}+6n+11n+6=(n+1)(n+2)(n+3)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>6</mn></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> A run of three consecutive integers has an integer in it divisible by 2, so  <span class="math-container" id="1198345" visual_id="8499496"><math alttext="2|n^{3}+6n+11n+6." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>6</mn></mrow></mrow><mo>.</mo></mrow></semantics></math></span>   A run of three consecutive integers has an integer in it divisible by 3, so  <span class="math-container" id="1198346" visual_id="8499497"><math alttext="3|n^{3}+6n+11n+6." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>3</mn><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mrow><mn>11</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>6</mn></mrow></mrow><mo>.</mo></mrow></semantics></math></span> </p> <p>Since 2 and 3 are relatively prime, the  desired conclusion follows right away.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="245568"> Uh, your second statement is the desired conclusion... </td></tr><tr><td comment_id="245596"> Oops, I went overboard and show it is in fact divisble by 6 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

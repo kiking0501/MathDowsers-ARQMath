@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to prove $\lim_{n\to\infty}\frac{a^n}{n!}=0$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to prove <span class="math-container" id="18247448" visual_id="79248"><math alttext="\lim_{n\to\infty}\frac{a^{n}}{n!}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><msup><mi>a</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1969191">
+<blockquote> <p>Prove that limit of sequence <span class="math-container" id="18247449" visual_id="79235"><math alttext="x_{n}={a^{n}\over n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mfrac><msup><mi>a</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></semantics></math></span> is <span class="math-container" id="18247450" visual_id="13537"><math alttext="\lim_{n\to\infty}x_{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> </blockquote> <p>Let <span class="math-container" id="18247451" visual_id="35"><math alttext="\epsilon&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϵ</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> So we need to prove: <span class="math-container" id="18247452" visual_id="26193"><math alttext="|x_{n}-a|&amp;lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo></mrow><mi>ϵ</mi></mrow></semantics></math></span></p> <p><span class="math-container" id="18247453" visual_id="3127141"><math alttext="\implies\left|{a^{n}\over n!}-0\right|&amp;lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>⟹</mo><mrow><mrow><mrow><mo>|</mo><mrow><mfrac><msup><mi>a</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo>-</mo><mn>0</mn></mrow><mo>|</mo></mrow><mo>&lt;</mo></mrow><mi>ϵ</mi></mrow></mrow></semantics></math></span> <span class="math-container" id="18247454" visual_id="3127142"><math alttext="\implies{a^{n}\over n!}&amp;lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>⟹</mo><mrow><mrow><mfrac><msup><mi>a</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo>&lt;</mo></mrow><mi>ϵ</mi></mrow></mrow></semantics></math></span> <span class="math-container" id="18247455" visual_id="3127143"><math alttext="\implies n\log{a}-\log n!&amp;lt;\log\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>⟹</mo><mrow><mrow><mrow><mi>n</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>a</mi></mrow></mrow><mo>-</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>⁢</mo><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo>;</mo><mrow><mi>log</mi><mo>⁡</mo><mi>ϵ</mi></mrow></mrow></mrow></semantics></math></span></p> <p>I don't know how can I isolate <span class="math-container" id="18247456" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> in this inequality.  Please provide hints, so that I can work the answer on my own. Thanks. </p> <p>EDIT:- I think my question is not duplicate because, the answers <a href="https://math.stackexchange.com/questions/77550/prove-that-lim-limits-n-to-infty-fracxnn-0-x-in-bbb-r">here</a> does not contain <span class="math-container" id="18247457" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span> proof.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4042087"> @AlexisOlson That question does not contain an epsilon proof . i am asking for epsilon proof. </td></tr><tr><td comment_id="4042448"> From the estimates in the answers to that question you can easily construct an epsilon proof. </td></tr><tr><td comment_id="4042615"> @HansLundmark I have no problem in my question getting closed, since i got the answer to my question. But i don't think that question has the answer to my question. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1969200" id="answer">
+<p>An alternative approach, not among the answers at the linked duplicate (and not an <span class="math-container" id="18247479" visual_id="1149"><math alttext="\epsilon-\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>-</mo><mi>δ</mi></mrow></semantics></math></span> proof, but still useful for others):</p> <p>Though most texts and courses assign your problem before they introduce the ratio test for convergence of series, it is perfectly valid to deduce that your limit is zero by using the ratio test.</p> <p>Define <span class="math-container" id="18247480" visual_id="79235"><math alttext="x_{n}=\frac{a^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mfrac><msup><mi>a</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></semantics></math></span>. Then <span class="math-container" id="18247481" visual_id="3127149"><math alttext="x_{n+1}/x_{n}=\frac{a}{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>/</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mfrac><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span>, which obviously tends to <span class="math-container" id="18247482" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> as <span class="math-container" id="18247483" visual_id="1477"><math alttext="n\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. By the ratio test, the series <span class="math-container" id="18247484" visual_id="2336"><math alttext="\sum_{n=1}^{\infty}x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>x</mi><mi>n</mi></msub></mrow></semantics></math></span> converges. Hence <span class="math-container" id="18247485" visual_id="13537"><math alttext="\lim_{n\to\infty}x_{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4042104"> Ok, does that mean if ratio of consecutive terms tends to a limit <span class="math-container" id="18247487" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> then the sequence will tend to <span class="math-container" id="18247487" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>. right ? </td></tr><tr><td comment_id="4042119"> @A---B nope, ratio test is the test which concludes whether series converges or not.. since the series converges, it is necessary for <span class="math-container" id="18247492" visual_id="895811"><math alttext="\lim_{n}x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mi>n</mi></msub><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></semantics></math></span> to be <span class="math-container" id="18247489" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>  it may sound strange if you still haven't learnt series </td></tr><tr><td comment_id="4042126"> Alright, so if the given <span class="math-container" id="18247492" visual_id="895811"><math alttext="\lim_{n}x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mi>n</mi></msub><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></semantics></math></span> was <span class="math-container" id="18247493" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> in my question, then by ratio test, you would have concluded sequence converges which implies that <span class="math-container" id="18247492" visual_id="895811"><math alttext="\lim_{n}x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mi>n</mi></msub><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></semantics></math></span> is <span class="math-container" id="18247493" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>. right ? </td></tr><tr><td comment_id="4042142"> @A---B: no. the ratio test says that if <span class="math-container" id="18247494" visual_id="3127150"><math alttext="\lim|\frac{x_{n+1}}{x_{n}}|&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>lim</mo><mo>⁡</mo><mrow><mo stretchy="false">|</mo><mfrac><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>x</mi><mi>n</mi></msub></mfrac><mo stretchy="false">|</mo></mrow></mrow><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span>, then <span class="math-container" id="18247495" visual_id="855565"><math alttext="\sum_{n=1}^{\infty}|x_{n}|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mo stretchy="false">|</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> converges, from which it follows that <span class="math-container" id="18247496" visual_id="1621330"><math alttext="\lim|x_{n}|=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>lim</mo><mo>⁡</mo><mrow><mo stretchy="false">|</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, which in turn implies <span class="math-container" id="18247497" visual_id="790562"><math alttext="\lim x_{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>lim</mo><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="77550"> Prove that <span class="math-container" id="873244" visual_id="285508"><math alttext="\lim\limits_{n\to\infty}\frac{x^{n}}{n!}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="873245" visual_id="4655"><math alttext="x\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

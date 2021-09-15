@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to use the power series of $e^x$ to find the derivative of $e^x$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to use the power series of <span class="math-container" id="3448720" visual_id="1301"><math alttext="e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mi>x</mi></msup></semantics></math></span> to find the derivative of <span class="math-container" id="3448721" visual_id="1301"><math alttext="e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mi>x</mi></msup></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="318814">
+<p>I am currently reading Roger Penrose's <a href="http://en.wikipedia.org/wiki/The_Road_to_Reality" rel="nofollow"><em>The Road to Reality</em></a> and in the book, the author poses various problems with three different levels of difficultly easy, hard and <em>really hard</em>, according to the author this is easy. The problem I am looking at is as follows:</p> <blockquote> <p>Using the power series of <span class="math-container" id="3448722" visual_id="1301"><math alttext="e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mi>x</mi></msup></semantics></math></span> show that <span class="math-container" id="3448723" visual_id="3768902"><math alttext="de^{x}=e^{x}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mi>x</mi></msup></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span></p> </blockquote> <p>I have no idea as to how to tackle this problem. </p> <p>If someone could provide some key points to solving the problem that would be great. Please do not provide the full steps, just key ideas or things to note. </p> <p>Thanks!</p> <p>EDIT:</p> <p>I believe I understand this now because when you take the derivative of a power series you can do it term by term. The power series for <span class="math-container" id="3448724" visual_id="1301"><math alttext="e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mi>x</mi></msup></semantics></math></span> is:</p> <p><span class="math-container" id="3448725" visual_id="1205046"><math alttext="e^{x}=\sum_{i=0}^{\infty}\frac{x^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></mrow></semantics></math></span></p> <p>But more expanded it looks like this:</p> <p><span class="math-container" id="3448726" visual_id="3768903"><math alttext="e^{x}=1+\frac{x}{1!}+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>x</mi><mrow><mn>1</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span></p> <p>If the derivative of each term then I get: <span class="math-container" id="3448727" visual_id="3768904"><math alttext="0+1+x+\frac{x^{2}}{2}+\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>+</mo><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span> So in essence, I'm coming back to the original series. Therefore, the derivatives are the same.  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> derivatives </span><span> exponential-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="690320"> That's about right. But no one really explained why the fact that it is a power series implies that you can differentiate term by term. Do you know why? </td></tr><tr><td comment_id="690323"> @GitGud No I don't, can you just think of it as a polynomial that is begin added? Like one that looks like this: <span class="math-container" id="3448728" visual_id="3768905"><math alttext="a_{n}x^{n}+a_{n-1}x^{n}-1\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow><mo>-</mo><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span> but more compact? And that is why you can do it term for term. If it it was <span class="math-container" id="3448729" visual_id="51564"><math alttext="\prod" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo largeop="true" symmetric="true">∏</mo></semantics></math></span> instead of <span class="math-container" id="3448763" visual_id="7690"><math alttext="\sum" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo largeop="true" symmetric="true">∑</mo></semantics></math></span> we would have to use the product rule instead of the power rule right? If my initial assertion is correct. </td></tr><tr><td comment_id="690330"> Do you know anything about [function series](http://en.wikipedia.org/wiki/Function_series)? </td></tr><tr><td comment_id="690332"> @GitGud Not really. I understand the basic idea behind <span class="math-container" id="3448763" visual_id="7690"><math alttext="\sum" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo largeop="true" symmetric="true">∑</mo></semantics></math></span> and how to do some basic things with it but I don't know much beyond that but is what I said correct? Like the basic idea of it? </td></tr><tr><td comment_id="690337"> Then I think you're not supposed to think about why it is legal to differentiate term by term. It's Physics anyway, so just do it. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="318816" id="answer">
+<p>Just write it out,</p> <p><span class="math-container" id="3448743" visual_id="3768911"><math alttext="e^{x}=\sum_{n\geq 0}\frac{x^{n}}{n!}=1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+% \ldots\;," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>≥</mo><mn>0</mn></mrow></msub><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mpadded width="+2.8pt"><mi mathvariant="normal">…</mi></mpadded></mrow></mrow><mo>,</mo></mrow></semantics></math></span></p> <p>and differentiate it term by term. What’s the derivative of <span class="math-container" id="3448744" visual_id="65982"><math alttext="\dfrac{x^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mstyle></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="690289"> I have not yet encountered how to find the derivative of <span class="math-container" id="3448745" visual_id="65982"><math alttext="\frac{x^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></semantics></math></span>, we haven't been taught this in school. What's the idea behind find that derivative? </td></tr><tr><td comment_id="690291"> @gekkostate: Do you know how to find the derivative of <span class="math-container" id="3448746" visual_id="3809"><math alttext="x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mi>n</mi></msup></semantics></math></span>? That’s pretty much a prerequisite for answering the question. </td></tr><tr><td comment_id="690292"> @gekkostate I think you know how to differentiate that. You're probably confusing something. Can you find the derivatives of $\displaystyle <span class="math-container" id="6923988">x</span>, \frac{x^2}{2}$ and $\displa<span class="math-container" id="6923989">y</span>style \frac{x^3}{6}$? </td></tr><tr><td comment_id="690295"> @GitGud, Yes I can. Is it the same principle? I am aware of all the differentiation rules, do they apply to factorials? </td></tr><tr><td comment_id="690298"> @gekkostate: <span class="math-container" id="3448749" visual_id="755"><math alttext="n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>!</mo></mrow></semantics></math></span> is just a number. When you differentiate <span class="math-container" id="3448750" visual_id="1440309"><math alttext="\dfrac{x^{3}}{3!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mo>!</mo></mrow></mfrac></mstyle></semantics></math></span>, you’re just differentiating <span class="math-container" id="3448751" visual_id="834183"><math alttext="\dfrac{x^{3}}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>6</mn></mfrac></mstyle></semantics></math></span>, so you get <span class="math-container" id="3448752" visual_id="200380"><math alttext="\dfrac{x^{2}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mstyle></semantics></math></span>. But it’s more useful here to think of that as differentiating <span class="math-container" id="3448753" visual_id="3768913"><math alttext="\dfrac{x^{3}}{3\cdot 2\cdot 1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>1</mn></mrow></mfrac></mstyle></semantics></math></span> and getting <span class="math-container" id="3448754" visual_id="3768914"><math alttext="\dfrac{3x^{2}}{3\cdot 2\cdot 1}=\dfrac{x^{2}}{2\cdot 1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mn>3</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>1</mn></mrow></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>⋅</mo><mn>1</mn></mrow></mfrac></mstyle></mrow></semantics></math></span>. </td></tr><tr><td comment_id="690301"> @gekkostate note that <span class="math-container" id="3448755" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> is already a fixed constant. Therefore <span class="math-container" id="3448756" visual_id="3768915"><math alttext="\displaystyle d\frac{x^{n}}{n!}=\frac{1}{n!}dx^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mstyle></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mstyle><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></semantics></math></span>. And to answer your question: yes, it is the same principle. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="3042529"> How to prove <span class="math-container" id="28169766" visual_id="159704"><math alttext="\dfrac{d}{dx}e^{x}=e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

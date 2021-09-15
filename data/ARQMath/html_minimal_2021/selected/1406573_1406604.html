@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Given any non compact set $A \subset \mathbb R^n$ does there exist a continuous function $f: A \to \mathbb R$ which is not uniformly continuous?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Given any non compact set <span class="math-container" id="13066453" visual_id="58108"><math alttext="A\subset\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></semantics></math></span> does there exist a continuous function <span class="math-container" id="13066454" visual_id="49725"><math alttext="f:A\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>A</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> which is not uniformly continuous? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1406573">
+<p>It's well known that if <span class="math-container" id="13066455" visual_id="58108"><math alttext="A\subset\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></semantics></math></span> is compact then every continuous function <span class="math-container" id="13066456" visual_id="49725"><math alttext="f:A\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>A</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> is uniformly continuous.So the obvious question is:</p> <p>Given a non compact set <span class="math-container" id="13066457" visual_id="58108"><math alttext="A\subset\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></semantics></math></span> does there <strong>always</strong> exist a continuous function <span class="math-container" id="13066458" visual_id="49725"><math alttext="f:A\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>A</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> which is not uniformly continuous?</p> <p>Any ideas?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> metric-spaces </span><span> continuity </span><span> uniform-continuity </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1406604" id="answer">
+<p><span class="math-container" id="13066465" visual_id="23815"><math alttext="f(x)=\frac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math></span> is continuous on <span class="math-container" id="13066466" visual_id="2953"><math alttext="(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> but not uniformly continuous.</p> <p>Proof: The proof is by <span class="math-container" id="13066467" visual_id="1151"><math alttext="\epsilon,\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>,</mo><mi>δ</mi></mrow></semantics></math></span> method, by choosing <span class="math-container" id="13066468" visual_id="5327951"><math alttext="\delta=\frac{1}{x_{0}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mfrac><mn>1</mn><msub><mi>x</mi><mn>0</mn></msub></mfrac></mrow></semantics></math></span> we get that the <span class="math-container" id="13066469" visual_id="41"><math alttext="\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi></semantics></math></span> depend to the point of continuity so the continuity is not uniform.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

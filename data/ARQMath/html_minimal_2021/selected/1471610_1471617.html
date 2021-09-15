@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Compute $\lim_{n \to \infty} n(\frac{{\pi}^2}{6} -( \sum_{k=1}^{n} \frac{1}{k^2} ) ) $</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Compute <span class="math-container" id="13624106" visual_id="6207779"><math alttext="\lim_{n\to\infty}n(\frac{{\pi}^{2}}{6}-(\sum_{k=1}^{n}\frac{1}{k^{2}}))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1471610">
+<p>Basel series <span class="math-container" id="13624107" visual_id="767150"><math alttext="\lim_{n\to\infty}\sum_{k=1}^{n}\frac{1}{k^{2}}=\frac{{\pi}^{2}}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>=</mo><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac></mrow></semantics></math></span><br/> is well known. I'm interested in computing the limit value  <span class="math-container" id="13624108" visual_id="6207780"><math alttext="\lim_{n\to\infty}n\left(\frac{{\pi}^{2}}{6}-\sum_{k=1}^{n}\frac{1}{k^{2}}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac><mo>-</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>although I am not sure even whether this limit exists or not..</p> <p>Does this limit exists? If exists, how can we compute this?</p> <p>Thanks in advance.  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2996972"> You probably forgot one <span class="math-container" id="13624109" visual_id="708994"><math alttext="\lim_{n\to+\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msub></semantics></math></span> in your first displayed formula. </td></tr><tr><td comment_id="2997470"> http://math.stackexchange.com/questions/685435/trying-to-get-a-bound-on-the-tail-of-the-series-for-zeta2/685493#685493 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1471617" id="answer">
+<p><strong>Hint</strong></p> <p>By definition, <span class="math-container" id="13624112" visual_id="1297113"><math alttext="\sum_{k=1}^{n}\frac{1}{k^{2}}=H_{n}^{(2)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><msubsup><mi>H</mi><mi>n</mi><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></msubsup></mrow></semantics></math></span> where appears the harmonic number. For large values of <span class="math-container" id="13624113" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>,  <span class="math-container" id="13624114" visual_id="6207783"><math alttext="H_{n}^{(2)}=\frac{\pi^{2}}{6}-\frac{1}{n}+\frac{1}{2n^{2}}+O\left(\left(\frac{% 1}{n}\right)^{3}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>H</mi><mi>n</mi><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></msubsup><mo>=</mo><mrow><mrow><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo>(</mo><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>)</mo></mrow><mn>3</mn></msup><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> Then, the result.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2996812"> how exactly did you get that precise estimate? </td></tr><tr><td comment_id="2996822"> This nice answer would be a very good answer if you mentioned (just by name) a method of obtaining that asymptotics, and additionally explained that one could, in principle, obtain as many terms as one wish, because that would open the door to the nice area of asymptotics to OP... </td></tr><tr><td comment_id="2996823"> @happymath. It is a classical expansion of the harmonic numbers. You can generalize it as <span class="math-container" id="13624115" visual_id="6207784"><math alttext="H_{n}^{(m)}=n^{-m}\left(-\frac{n}{m-1}+\frac{1}{2}-\frac{m}{12n}+O\left(\left(% \frac{1}{n}\right)^{3}\right)\right)+\zeta(m)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>H</mi><mi>n</mi><mrow><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>=</mo><mrow><mrow><msup><mi>n</mi><mrow><mo>-</mo><mi>m</mi></mrow></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mrow><mrow><mo>-</mo><mfrac><mi>n</mi><mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>-</mo><mfrac><mi>m</mi><mrow><mn>12</mn><mo>⁢</mo><mi>n</mi></mrow></mfrac></mrow><mo>+</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo>(</mo><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>)</mo></mrow><mn>3</mn></msup><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="2996837"> @ClaudeLeibovici thanks for the general formula. Can you please give a reference for the result? </td></tr><tr><td comment_id="2996854"> @happymath. I don(t have any reference for that. You can get any of these from series expansion for large values of <span class="math-container" id="13624116" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. It is something I worked decades ago. </td></tr><tr><td comment_id="2997027"> Here are some refences and a few more terms:  With the Digamma function you have from http://functions.wolfram.com/GammaBetaErf/HarmonicNumber2/03/01/01/0009/ <span class="math-container" id="13624117" visual_id="6207785"><math alttext="\sum_{k=1}^{n}\frac{1}{k^{2}}=H_{n}^{(2)}=\psi^{(1)}(1)-\psi^{(1)}(n+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><msubsup><mi>H</mi><mi>n</mi><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></msubsup><mo>=</mo><mrow><mrow><msup><mi>ψ</mi><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><msup><mi>ψ</mi><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>  You can either use the somewhat complicated asymptotic expansion from http://functions.wolfram.com/GammaBetaErf/HarmonicNumber2/06/02/0001/  or calculate it with e.g. Maple <span class="math-container" id="13624118" visual_id="6207786"><math alttext="H_{n}^{(2)}\sim\frac{1}{6}{\pi^{2}}-\frac{1}{n}+\frac{1}{2}\frac{1}{n^{2}}-% \frac{1}{6}\frac{1}{n^{3}}+\frac{1}{30}\frac{1}{n^{5}}+O(\frac{1}{n^{6}})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>H</mi><mi>n</mi><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></msubsup><mo>∼</mo><mrow><mrow><mrow><mrow><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>⁢</mo><msup><mi>π</mi><mn>2</mn></msup></mrow><mo>-</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>⁢</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>3</mn></msup></mfrac></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>30</mn></mfrac><mo>⁢</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>5</mn></msup></mfrac></mrow><mo>+</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>6</mn></msup></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="2997046"> @gammatester. Thank you very much ! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="685435"> Trying to get a bound on the tail of the series for <span class="math-container" id="6882990" visual_id="18188"><math alttext="\zeta(2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find the remainder of $\sum_{i=0}^{99} 2^{i^2}$ when dividing by 7 and determine if the quotient is even or odd</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find the remainder of <span class="math-container" id="16516636" visual_id="7295009"><math alttext="\sum_{i=0}^{99}2^{i^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mn>99</mn></msubsup><msup><mn>2</mn><msup><mi>i</mi><mn>2</mn></msup></msup></mrow></semantics></math></span> when dividing by 7 and determine if the quotient is even or odd </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1787806">
+<p>I've recently had this problem in an exam and couldn't solve it.</p> <p>Find the remainder of the following sum when dividing by 7 and determine if the quotient is even or odd:</p> <p><span class="math-container" id="16516637" visual_id="7295009"><math alttext="\sum_{i=0}^{99}2^{i^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mn>99</mn></msubsup><msup><mn>2</mn><msup><mi>i</mi><mn>2</mn></msup></msup></mrow></semantics></math></span></p> <p>I know the basic modular arithmetic properties but this escapes my capabilities. In our algebra course we've seen congruence, divisibility, division algorithm... how could I approach it?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> modular-arithmetic </span><span> divisibility </span><span> congruences </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3649240"> <span class="math-container" id="16516638" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span>, *even*. Just see below. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1787817" id="answer">
+<p><span class="math-container" id="16516643" visual_id="7295014"><math alttext="2^{i^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><msup><mi>i</mi><mn>2</mn></msup></msup></semantics></math></span> mod 7 is determined by <span class="math-container" id="16516644" visual_id="253772"><math alttext="i^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>i</mi><mn>2</mn></msup></semantics></math></span> mod 6, hence by <span class="math-container" id="16516645" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> mod 6. That should suffice to sort out the remainder. Now the parity of the quotient depends only on the remainder of the sum mod 14, which you can get from knowing the sum mod 7 and mod 2.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

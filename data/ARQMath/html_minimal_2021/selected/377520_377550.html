@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is the Knuth arrowup notation defined for non-natural exponents?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is the Knuth arrowup notation defined for non-natural exponents? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="377520">
+<p>I recently found out about Knuth's arrowup notation. Wikipedia, among other websites, only shows a definition for <span class="math-container" id="4015449" visual_id="761775"><math alttext="a\uparrow^{n}b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mi>n</mi></msup><mi>b</mi></mrow></semantics></math></span> where <span class="math-container" id="4015450" visual_id="6575440"><math alttext="n\in\mathbb{N}_{0},a\in\mathbb{R},b\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>∈</mo><msub><mi>ℕ</mi><mn>0</mn></msub></mrow><mo>,</mo><mrow><mrow><mi>a</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>∈</mo><mi>ℕ</mi></mrow></mrow></mrow></semantics></math></span> as following:</p> <p><span class="math-container" id="4015451" visual_id="6575441"><math alttext="a\uparrow^{n}b=\begin{cases}a^{b},&amp;\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mi>n</mi></msup><mi>b</mi><mo>=</mo><mo>{</mo></mrow></semantics></math></span>n = 1<span class="math-container" id="4015452">} \\ 1, &amp; \text{if </span>b = 0<span class="math-container" id="4015453">}  \\ a \uparrow^{n-1} (a \uparrow^n (b-1)) , &amp; \text{otherwise}  \\ \end{cases} </span> (From wikipedia)</p> <p>I wonder whether Knuth (or maybe someone else) also defined this notation for <span class="math-container" id="4015454" visual_id="6575443"><math alttext="n,a,b\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>,</mo><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>. I would then expect <span class="math-container" id="4015455" visual_id="6575444"><math alttext="a\uparrow^{1/n}b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></msup><mi>b</mi></mrow></semantics></math></span> to be the inverse <span class="math-container" id="4015456" visual_id="761775"><math alttext="a\uparrow^{n}b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mi>n</mi></msup><mi>b</mi></mrow></semantics></math></span>. And maybe <span class="math-container" id="4015457" visual_id="6575445"><math alttext="a\uparrow^{-n}b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mrow><mo>-</mo><mi>n</mi></mrow></msup><mi>b</mi></mrow></semantics></math></span> would mean <span class="math-container" id="4015458" visual_id="6575446"><math alttext="{1\over a\uparrow^{n}b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mrow><mi>a</mi><msup><mo>↑</mo><mi>n</mi></msup><mi>b</mi></mrow></mfrac></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> notation </span><span> math-history </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="808593"> What property would you want this to have? You could define these, I suppose, but what would it give you? It's not like you can compose them usefully - what is would <span class="math-container" id="4015459" visual_id="6575447"><math alttext="a\uparrow^{q}b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mi>q</mi></msup><mi>b</mi></mrow></semantics></math></span> be now when <span class="math-container" id="4015460" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> is rational? There isn't a nice way to "compose" binary functions to get a new binary function - I suppose you could define <span class="math-container" id="4015461" visual_id="6575448"><math alttext="a\uparrow^{x/y}b=(a\uparrow^{1/y}b)\uparrow^{x}b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mrow><mi>x</mi><mo>/</mo><mi>y</mi></mrow></msup><mi>b</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><msup><mo>↑</mo><mrow><mn>1</mn><mo>/</mo><mi>y</mi></mrow></msup><mi>b</mi><mo stretchy="false">)</mo></mrow><msup><mo>↑</mo><mi>x</mi></msup><mi>b</mi></mrow></semantics></math></span>. But I don't see that as useful, and it wouldn't be true that <span class="math-container" id="4015462" visual_id="6575449"><math alttext="a\uparrow^{p}b\uparrow^{q}b=a\uparrow^{pq}b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mi>p</mi></msup><mi>b</mi><msup><mo>↑</mo><mi>q</mi></msup><mi>b</mi><mo>=</mo><mi>a</mi><msup><mo>↑</mo><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow></msup><mi>b</mi></mrow></semantics></math></span> in general - indeed, that isn't true for natural <span class="math-container" id="4015463" visual_id="3699"><math alttext="p,q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow></semantics></math></span>. So what is the goal? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="377550" id="answer">
+<p>We attempt to extend to zero by using the inductive case backwards:</p> <p><span class="math-container" id="4015464" visual_id="6575450"><math alttext="a\uparrow^{1}b=a^{b}=a\uparrow^{0}(a\uparrow^{1}(b-1))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mn>1</mn></msup><mi>b</mi><mo>=</mo><msup><mi>a</mi><mi>b</mi></msup><mo>=</mo><mi>a</mi><msup><mo>↑</mo><mn>0</mn></msup><mrow><mo stretchy="false">(</mo><mi>a</mi><msup><mo>↑</mo><mn>1</mn></msup><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="4015465" visual_id="6575451"><math alttext="a^{b}=a\uparrow^{0}a^{b-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mi>b</mi></msup><mo>=</mo><mi>a</mi><msup><mo>↑</mo><mn>0</mn></msup><msup><mi>a</mi><mrow><mi>b</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span></p> <p>So a sensible definition of <span class="math-container" id="4015466" visual_id="6575452"><math alttext="a\uparrow^{0}b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mn>0</mn></msup><mi>b</mi></mrow></semantics></math></span> is just <span class="math-container" id="4015467" visual_id="2203"><math alttext="ab" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></semantics></math></span>.</p> <p>Can we extend to negative numbers?</p> <p><span class="math-container" id="4015468" visual_id="6575453"><math alttext="ab=a\uparrow^{-1}(a(b-1))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>=</mo><mi>a</mi><msup><mo>↑</mo><mrow><mo>-</mo><mn>1</mn></mrow></msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="4015469" visual_id="6575454"><math alttext="a\uparrow^{-1}b=a+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mrow><mo>-</mo><mn>1</mn></mrow></msup><mi>b</mi><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span></p> <p>Here we'll hit a bit of a snag:</p> <p><span class="math-container" id="4015470" visual_id="6575455"><math alttext="a+b=a\uparrow^{-2}(a+b-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>=</mo><mi>a</mi><msup><mo>↑</mo><mrow><mo>-</mo><mn>2</mn></mrow></msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p>Really the sensible definition here is that <span class="math-container" id="4015471" visual_id="6575456"><math alttext="a\uparrow^{-2}b=b+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mrow><mo>-</mo><mn>2</mn></mrow></msup><mi>b</mi><mo>=</mo><mrow><mi>b</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>. We only have one argument now, really. <span class="math-container" id="4015472" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> is irrelevant. Plugging this in gives</p> <p><span class="math-container" id="4015473" visual_id="6575457"><math alttext="b+1=a\uparrow^{-3}b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>b</mi><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mi>a</mi><msup><mo>↑</mo><mrow><mo>-</mo><mn>3</mn></mrow></msup><mi>b</mi></mrow></semantics></math></span></p> <p>But of course, this is the same as <span class="math-container" id="4015474" visual_id="6575458"><math alttext="a\uparrow^{-2}b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mo>↑</mo><mrow><mo>-</mo><mn>2</mn></mrow></msup><mi>b</mi></mrow></semantics></math></span>. So we don't actually get anything new here. You can't keep breaking it down into smaller things: adding one isn't a "repeated operation" in any real sense.</p> <p>I'd imagine an extension to <span class="math-container" id="4015475" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span>, forget <span class="math-container" id="4015476" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>, to be anywhere between arbitrary and impossible. The major issue here is that this definition fundamentally relies on <em>induction</em>. This needs a base case, and a sense of a <em>next element</em>, both of which pin down the natural numbers (or some such thing that terminates at the left end) as the natural setting.</p> <p>This is where I'd like to say something about other induction-based ideas with continuous extensions (e.g. factorials and the gamma function), but I can't really see a way of linking the ideas used in that extension (or similar ones) to this case.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

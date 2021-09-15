@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to calculate the integral of $\operatorname{sgn}(\sin\pi/x)$ in the interval $(0,1)$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to calculate the integral of <span class="math-container" id="8065248" visual_id="3887188"><math alttext="(sr^{k})(sr^{k})=s(r^{k}s)r^{k}=s(sr^{-k})r^{k}=s^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>s</mi><mo>⁢</mo><msup><mi>r</mi><mi>k</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>s</mi><mo>⁢</mo><msup><mi>r</mi><mi>k</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>r</mi><mi>k</mi></msup><mo>⁢</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>r</mi><mi>k</mi></msup></mrow><mo>=</mo><mrow><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>s</mi><mo>⁢</mo><msup><mi>r</mi><mrow><mo>-</mo><mi>k</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>r</mi><mi>k</mi></msup></mrow><mo>=</mo><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow></semantics></math></span> in the interval <span class="math-container" id="8065249" visual_id="2953"><math alttext="(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="823446">
+<p>How can I calculate the integral of <span class="math-container" id="8065250" visual_id="3887188"><math alttext="(sr^{k})(sr^{k})=s(r^{k}s)r^{k}=s(sr^{-k})r^{k}=s^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>s</mi><mo>⁢</mo><msup><mi>r</mi><mi>k</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>s</mi><mo>⁢</mo><msup><mi>r</mi><mi>k</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>r</mi><mi>k</mi></msup><mo>⁢</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>r</mi><mi>k</mi></msup></mrow><mo>=</mo><mrow><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>s</mi><mo>⁢</mo><msup><mi>r</mi><mrow><mo>-</mo><mi>k</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>r</mi><mi>k</mi></msup></mrow><mo>=</mo><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow></semantics></math></span>  in the interval <span class="math-container" id="8065251" visual_id="2953"><math alttext="(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>? I need to calculate this integral, thanks</p>
+</div>
+<hr/>
+<div id="tags">
+<span> definite-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1702296"> Im not sure what you mean by sgn? </td></tr><tr><td comment_id="1702297"> @Achilles This is the [sign function](http://en.wikipedia.org/wiki/Sign_function), I guess. </td></tr><tr><td comment_id="1702306"> WolframAlpha [gives](http://www.wolframalpha.com/input/?i=integral_0^1+sgn%28sin%28pi%2Fx%29%29+) a hint </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="823456" id="answer">
+<p><strong>Outline:</strong> In the interval <span class="math-container" id="8065252" visual_id="212491"><math alttext="(1/2,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> our function is <span class="math-container" id="8065253" visual_id="343"><math alttext="-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mn>1</mn></mrow></semantics></math></span>. </p> <p>In the interval <span class="math-container" id="8065254" visual_id="1609039"><math alttext="(1/3,1/2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow><mo>,</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>, our function is <span class="math-container" id="8065255" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>.</p> <p>In the interval <span class="math-container" id="8065256" visual_id="3887189"><math alttext="(1/4,1/3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow><mo>,</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>, our function is <span class="math-container" id="8065257" visual_id="343"><math alttext="-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mn>1</mn></mrow></semantics></math></span>.</p> <p>In the interval <span class="math-container" id="8065258" visual_id="3887190"><math alttext="(1/5,1/4)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>5</mn></mrow><mo>,</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>, our function is <span class="math-container" id="8065259" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>. </p> <p>And so on. The intervals have length <span class="math-container" id="8065260" visual_id="3887191"><math alttext="\frac{1}{1\cdot 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mrow><mn>1</mn><mo>⋅</mo><mn>2</mn></mrow></mfrac></semantics></math></span>, <span class="math-container" id="8065261" visual_id="451107"><math alttext="\frac{1}{2\cdot 3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn></mrow></mfrac></semantics></math></span>, <span class="math-container" id="8065262" visual_id="3887192"><math alttext="\frac{1}{3\cdot 4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mrow><mn>3</mn><mo>⋅</mo><mn>4</mn></mrow></mfrac></semantics></math></span>, and so on.</p> <p>So the integral ought to be  <span class="math-container" id="8065263" visual_id="3887193"><math alttext="-\frac{1}{1\cdot 2}+\frac{1}{2\cdot 3}-\frac{1}{3\cdot 4}+\frac{1}{4\cdot 5}-% \frac{1}{5\cdot 6}+\cdots." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mrow><mrow><mrow><mo>-</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>⋅</mo><mn>2</mn></mrow></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn></mrow></mfrac></mrow><mo>-</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>⋅</mo><mn>4</mn></mrow></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mo>⋅</mo><mn>5</mn></mrow></mfrac></mrow><mo>-</mo><mfrac><mn>1</mn><mrow><mn>5</mn><mo>⋅</mo><mn>6</mn></mrow></mfrac></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>If we want a closed form, note that  <span class="math-container" id="8065264" visual_id="3887194"><math alttext="\ln(1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\frac{x^{5}}{5}-% \frac{x^{6}}{6}+\cdots." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mrow><mrow><mi>x</mi><mo>-</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac></mrow><mo>-</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>4</mn></mfrac></mrow><mo>+</mo><mfrac><msup><mi>x</mi><mn>5</mn></msup><mn>5</mn></mfrac></mrow><mo>-</mo><mfrac><msup><mi>x</mi><mn>6</mn></msup><mn>6</mn></mfrac></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Now calculate <span class="math-container" id="8065265" visual_id="1491478"><math alttext="\int_{0}^{1}\ln(1+x)\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span>. This is the same as what we obtain when we integrate the series (1) term by term.   </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1702314"> Alternatively, write the series as <span class="math-container" id="8065266" visual_id="3887195"><math alttext="\left(-\dfrac{1}{1}+\dfrac{1}{2}\right)+\left(\dfrac{1}{2}-\dfrac{1}{3}\right)% +\left(-\dfrac{1}{3}+\dfrac{1}{4}\right)\ldots=-1+\dfrac{2}{2}-\dfrac{2}{3}+% \dfrac{2}{4}-\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>(</mo><mrow><mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>1</mn></mfrac></mstyle></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>-</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mrow><mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>2</mn></mfrac></mstyle></mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>3</mn></mfrac></mstyle></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>4</mn></mfrac></mstyle></mrow><mo>-</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="1702317"> Much smoother, I used a sledgehammer on a mouse. </td></tr><tr><td comment_id="1702366"> Finally, what is the answer ?. </td></tr><tr><td comment_id="1702368"> The answer is <span class="math-container" id="8065267" visual_id="3887196"><math alttext="1-2\ln 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1702378"> @AndréNicolas Thanks. That was I got it with a "sledgehammer on a mouse" as you pointed out. Any way, the integral is somehow 'tricky'. The limit at the lower integration limit is a mess. </td></tr><tr><td comment_id="1702386"> An antiderivative of <span class="math-container" id="8065268" visual_id="7975"><math alttext="\ln(1+x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is <span class="math-container" id="8065269" visual_id="3887197"><math alttext="(1+x)\ln(1+x)-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mi>x</mi></mrow></semantics></math></span>. At <span class="math-container" id="8065270" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> it is <span class="math-container" id="8065271" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

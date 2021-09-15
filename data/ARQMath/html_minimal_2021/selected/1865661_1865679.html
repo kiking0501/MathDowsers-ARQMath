@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Vector fields (on a manifold) and terminology</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Vector fields (on a manifold) and terminology </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1865661">
+<p>I read in several books (Do Carmo, <strong>Riemannian Geometry</strong> or John M. Lee, <strong>Smooth manifolds</strong>) that a <em>vector field</em> <span class="math-container" id="17278981" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> on a smooth manifold <span class="math-container" id="17278982" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> is a mapping which associates to each point <span class="math-container" id="17278983" visual_id="13405"><math alttext="p\in M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∈</mo><mi>M</mi></mrow></semantics></math></span> a tangent vector <span class="math-container" id="17278984" visual_id="1009489"><math alttext="X(p)\in\mathrm{T}_{p}M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></mrow></semantics></math></span>. With a more general point of view, a vector field is a section of the tangent bundle <span class="math-container" id="17278985" visual_id="31597"><math alttext="TM" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow></semantics></math></span>. </p> <p>Given a differentiable curve <span class="math-container" id="17278986" visual_id="1009490"><math alttext="c:I\subset\mathbb{R}\to M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>:</mo><mrow><mi>I</mi><mo>⊂</mo><mi>ℝ</mi><mo>→</mo><mi>M</mi></mrow></mrow></semantics></math></span>, the derivative <span class="math-container" id="17278987" visual_id="236937"><math alttext="\dot{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><mi>c</mi><mo>˙</mo></mover></semantics></math></span> of the curve is sometimes called <em>velocity field</em>. However, I fail to see how <span class="math-container" id="17278988" visual_id="236937"><math alttext="\dot{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><mi>c</mi><mo>˙</mo></mover></semantics></math></span> is a vector field of <span class="math-container" id="17278989" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span>. What am I missing ?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> differential-geometry </span><span> terminology </span><span> manifolds </span><span> smooth-manifolds </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3821415"> It's not a vector fields on <span class="math-container" id="17278990" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span>. It's a vector field along a curve. See the answer [here](http://math.stackexchange.com/questions/1294327/definition-of-vector-field-along-a-curve) </td></tr><tr><td comment_id="3821436"> There is a nice expository answer that might help you [here](http://mathoverflow.net/questions/88880/an-easy-way-to-to-explain-the-equivalence-definitions-of-tangent-spaces). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1865679" id="answer">
+<p>The velocity field <span class="math-container" id="17278991" visual_id="236937"><math alttext="\dot{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><mi>c</mi><mo>˙</mo></mover></semantics></math></span> is not a vector field on the manifold, but it is a section of the pullback of the tangent bundle by <span class="math-container" id="17278992" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>, usually denoted by <span class="math-container" id="17278993" visual_id="508239"><math alttext="c^{*}TM" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>c</mi><mo>*</mo></msup><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow></semantics></math></span>. This basically means that it is a "vector field defined on the image of <span class="math-container" id="17278994" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>" (and then, not really, as it could have more than one value at a point of the image, if <span class="math-container" id="17278995" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> crosses itself).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="3010333"> Is velocity field extendible to a vector field on the whole manifold? </td></tr><tr><td post_id="1294327"> Definition of vector field along a curve </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Foundation of Formal Logic</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Foundation of Formal Logic </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2661513">
+<p>All the books that I’ve read about formal logic either starts assuming the existence of set theory (they talk of countable sets of symbols and define formulae as sequences of symbols), or follow an axiomatic approach that assumes known the meaning of words like symbol, formula, substitution etc. Is there a way to formalize these concepts (with no reference to set theory, I consider set theory a product of formal logic)?</p> <p>We could assume as primitive the notion of symbol, but could the concepts of string, formula, composition of formulae be rendered in more precise way that don’t rely on intuition? A book or paper reference on this matter would be appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> set-theory </span><span> formal-languages </span><span> formal-systems </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5497493"> I don't know how you expect such a thing to be possible. Even correct application of formal rules is ultimately grounded in intuition. Can you give an argument for a formal deduction rule, say modus ponens, that isn't circular or ultimately just an appeal to our sense of what feels right? </td></tr><tr><td comment_id="5497497"> Besides, Gödel's completeness theorem justifies the connection between semantics and syntax in as ironclad a manner as could be hoped for. </td></tr><tr><td comment_id="5498246"> By the regress argument, if you always require whatever notion you use to be justified in terms of prior concepts, then you can never be satisfied. </td></tr><tr><td comment_id="5498852"> While you ultimately can't escape an appear to "intuition" at some point - your ability to simply parse (i.e. read and understand the structure of) well-formed formulas is already exercising non-trivial concepts - the "set theory" or "arithmetic" required in the metalogic (for a syntactic approach to logic) is very, very weak. You don't need ZF(C) set theory or even Peano arithmetic to formalize the notion of proof for ZFC. Proving certain results *about* the logic may require increasingly powerful metalogics. Most notably consistency of ZFC would require a system stronger than ZFC. </td></tr><tr><td comment_id="5499907"> Would you accept as primitive the notation of say, a computer text file filled with ASCII characters? </td></tr><tr><td comment_id="5500426"> @Mark Even if I was willing to accept “formula” as a primitive notion, that wouldn’t be enough. Because given a formula and a “rule” (i.e. another formula) you should always be able to decide if it matches or not. You need the concept of “matching” and some form of structural induction, which usually implies knowledge of naturals numbers. </td></tr><tr><td comment_id="5500451"> @Hurkyl That’s not what I want to do, I just want the primitive notions to be clearly identified and explained as best as we could in natural language. I was wondering if a lot of the things that are usually assumed as primitive could be explained in terms of more primitive concepts (i.e. concepts that are easier to explain in natural language). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2661741" id="answer">
+<p>Regarding the issue with defining strings and such, the most formal published discussions I know of are those I indicated in my answer to <a href="https://math.stackexchange.com/questions/2483122/highly-rigorous-logic-book">Highly Rigorous Logic Book</a>.</p> <p>In general, you might try googling <a href="https://www.google.com/search?q=metalanguage+logic" rel="nofollow noreferrer">metalanguage + logic</a>.</p> <p>I used to struggle with metalogic issues a lot myself, many years ago, and I still struggle a little now when reading some about some foundational topic that makes heavy use of mathematics in the metalanguage (for an example, see my answer to <a href="https://matheducators.stackexchange.com/questions/13216/how-to-write-an-individual-real-number">this question</a>).</p> <p>Here is a silly discussion that might help in thinking about the distinction between metalanguage and object language:</p> <blockquote> <p>You are reading a formal logic book. Near the beginning of the book the author writes the following: "<em>Recall the example we gave 3 sentences earlier</em> <span class="math-container" id="24591714" visual_id="4669"><math alttext="\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">…</mi></semantics></math></span>" Since this occurs well before any construction or definition of the natural numbers, how would you suggest the sentence be rewritten? Maybe the author could say "Recall the most recent example we gave <span class="math-container" id="24591715" visual_id="4669"><math alttext="\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">…</mi></semantics></math></span>". However, this assumes certain aspects of the notion of an order, such as the idea of "before" and "after".</p> <p>Or, suppose later in the book, the author cites a certain result, saying that it "can be found on page 235". Now the author is also using properties of decimal numerals, such as 235 = 200 + 30 + 5, this also well before the natural numbers are defined in some way, such as <span class="math-container" id="24591716" visual_id="3131121"><math alttext="\;0=\emptyset," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn> 0</mn><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><mo>,</mo></mrow></semantics></math></span> <span class="math-container" id="24591717" visual_id="6182813"><math alttext="\;1=\{\emptyset\},\;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn> 1</mn><mo>=</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">∅</mi><mo stretchy="false">}</mo></mrow></mrow><mo rspace="5.3pt">,</mo></mrow></semantics></math></span> <span class="math-container" id="24591718" visual_id="6182814"><math alttext="\;2=\{\emptyset,\{\emptyset\}\}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn> 2</mn><mo>=</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">∅</mi><mo>,</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">∅</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow></semantics></math></span> <span class="math-container" id="24591719" visual_id="34111"><math alttext="\ldots," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">…</mi><mo>,</mo></mrow></semantics></math></span> which in turn is well before decimal numeral representations for the natural numbers are defined.</p> </blockquote> <p><em>(ADDED A MONTH LATER)</em> I recently came across a book review I have (photocopied about 12 years ago from a library journal volume) of <a href="https://rads.stackoverflow.com/amzn/click/B000MTQKJY" rel="nofollow noreferrer"><strong>Introduction to Mathematical Logic</strong></a> by Alonzo Church that gives a useful discussion of these logic and metalogic issues. The review is by <a href="https://en.wikipedia.org/wiki/Martin_Davis" rel="nofollow noreferrer">Martin David Davis</a> and   the review appears on pp. 84-86 of <strong>Scripta Mathematica</strong> 24 (1959). What follows is approximately the first 2/3 of the review, on pp. 84-85.</p> <p>Although nothing here actually answers the question Alex123 asked, it does provide more context for the question. I suspect the question more properly belongs to philosophy than to mathematics, and I suspect it is discussed in one or more philosophy papers somewhere, but I don't have any specific references to offer at this time.</p> <blockquote> <p>This book is a comprehensive introduction to modern logic. Although no previous knowledge of mathematical logic is presumed, the reader is expected to have considerable mathematical maturity. (Roughly speaking, the text is suitable for first year graduate students.)</p> <p>Unlike many works in this field, this book does not limit itself to the development of one definite system of logic. Rather, a series of such systems is studied. The key technique employed is what Church calls "the logistic method."</p> <p>Mathematical logic is principally concerned with formal reasoning. However, any attempt to develop this subject matter as a deductive system---in the sense of, say, Euclidean geometry---comes up against a seemingly insurmountable obstacle. Namely, the usual technique of beginning with suitable axioms and then employing logic to derive theorems, i.e., <em>logical consequences</em> of the axioms, is clearly inappropriate when the subject matter itself is logic. Put otherwise, any attempt to develop logic as the study of the logical consequences of certain axioms is circular in that the laws of logic are used in obtaining the laws of logic. The logistic method provides a means for overcoming this difficulty. One begins by rigorously specifying exactly which symbols will be employed in the development. This specification must be complete and unambiguous. E.g., punctuation marks such as commas and parentheses must be included if they are going to be used; only those letters of the alphabet which are listed may be used. Among the various finite sequences that can be formed from these symbols, certain ones are distinguished as <em>well-formed formulas</em>. It is the well-formed formulas that are to be thought of as being "meaningful." The criterion for a finite sequence of symbols being a well-formed formula must be <em>effective</em> in the sense that there must be a purely mechanical procedure for determining whether or not a given finite sequence of symbols is a well-formed formula. Next, certain of the well-formed formulas are set aside as <em>axioms</em>. Again, it is demanded that there be an effective criterion for determining whether or not a well-formed formula is an axiom. (This last requirement is automatically satisfied in case the number of axioms is finite; often it is convenient, or even necessary, to work with an infinite number of axioms.) Finally <em>rules of inference</em> are specified. It is these rules of inference which enable one to derive theorems from the given axioms. The circularity referred to above is avoided because the rules of inference refer only to the symbols of which well-formed formulas are constructed, and not at all to any "meaning" which might be attributed to the well-formed formulas. Thus, a system of logic (or <em>logistic system</em>) whose primitive symbols include (among others) <span class="math-container" id="24591720" visual_id="6182815"><math alttext="\{\mb{n,e_{1},e_{2}}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\mb</mtext></merror><mo>⁢</mo><mi>n</mi></mrow><mo>,</mo><msub><mi>e</mi><mn>1</mn></msub><mo>,</mo><msub><mi>e</mi><mn>2</mn></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> might well have the following rule of inference:</p> <p><em>If</em> <strong>A</strong> <em>and</em> <strong>B</strong> <em>are well-formed formulas then one may infer</em> <strong>B</strong> <em>from</em> <strong>A</strong> <em>and</em> [<strong>A</strong> <span class="math-container" id="24591721" visual_id="39023"><math alttext="\supset" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊃</mo></semantics></math></span> <strong>B</strong>].</p> <p>Here it is understood that [<strong>A</strong> <span class="math-container" id="24591722" visual_id="39023"><math alttext="\supset" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊃</mo></semantics></math></span> <strong>B</strong>] is the well-formed formula which begins with [, followed by the symbols which make up <strong>A</strong>, followed by <span class="math-container" id="24591723" visual_id="6182816"><math alttext="\supset," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊃</mo><mo>,</mo></mrow></semantics></math></span> followed by the symbols which make up <strong>B</strong>, followed by ]. The rules of inference of a logistic system are also required to be <em>effective</em>. That is, there must be available a mechanical procedure for determining whether or not a given well-formed formula can be inferred from other given well-formed formulas by means of the rules of inference.</p> <p>A logistic system, once set up, is itself a mathematical object concerning which many questions can be asked. The answers to such questions are sought using the methods of ordinary mathematics. No circularity is involved since these mathematical techniques are employed, not to develop the logistic system, but to obtain information about it from without.</p> <p>The study of a logistic system in this way, as involving finite sequences of symbols without reference to meaning, is called the <em>syntax</em> of the logistic system, in contradistinction to the study of possible <em>interpretations</em> of the system, which is called the <em>semantics</em> of the system.</p> </blockquote>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2483122"> Highly Rigorous Logic Book </td></tr><tr><td post_id="2696995"> Book on the rigorous construction of logic and set theory </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

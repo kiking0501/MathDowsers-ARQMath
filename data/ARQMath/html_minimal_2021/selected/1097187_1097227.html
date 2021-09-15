@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Series convergence question from baby Rudin.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Series convergence question from baby Rudin. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1097187">
+<blockquote> <p>Suppose, <span class="math-container" id="10354964" visual_id="22125"><math alttext="a_{n}&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="10354965" visual_id="1564274"><math alttext="s_{n}=a_{1}+\cdots+a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>, and <span class="math-container" id="10354966" visual_id="11866"><math alttext="\sum a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></semantics></math></span> diverges.  Prove that   <span class="math-container" id="10354967" visual_id="6697450"><math alttext="\frac{a_{N+1}}{s_{N+1}}+\cdots\frac{a_{N+k}}{s_{N+k}}\geq 1-\frac{s_{N}}{s_{N+% k}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><msub><mi>a</mi><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow></msub></mfrac><mo>+</mo><mrow><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mfrac><msub><mi>a</mi><mrow><mi>N</mi><mo>+</mo><mi>k</mi></mrow></msub><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>k</mi></mrow></msub></mfrac></mrow></mrow><mo>≥</mo><mrow><mn>1</mn><mo>-</mo><mfrac><msub><mi>s</mi><mi>N</mi></msub><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>k</mi></mrow></msub></mfrac></mrow></mrow></semantics></math></span>   and deduce that <span class="math-container" id="10354968" visual_id="2107288"><math alttext="\sum\frac{a_{n}}{s_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><mfrac><msub><mi>a</mi><mi>n</mi></msub><msub><mi>s</mi><mi>n</mi></msub></mfrac></mrow></semantics></math></span> diverges.</p> </blockquote> <p>Looking for a verification of my proof.</p> <p><span class="math-container" id="10354969" visual_id="6697451"><math alttext="\begin{aligned} \displaystyle\sum_{m=1}^{k}\frac{a_{N+m}}{s_{N+m}}&amp;% \displaystyle amp;\geq\frac{1}{s_{N+k}}\sum_{m=1}^{k}a_{N+m}\\ &amp;\displaystyle amp;={s_{N+k}-s_{N}\over s_{N+k}}\\ &amp;\displaystyle amp;=1-\frac{s_{N}}{s_{N+k}}.\end{aligned}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><msub><mi>a</mi><mrow><mi>N</mi><mo>+</mo><mi>m</mi></mrow></msub><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>m</mi></mrow></msub></mfrac></mstyle></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>≥</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>k</mi></mrow></msub></mfrac></mstyle><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover></mstyle><msub><mi>a</mi><mrow><mi>N</mi><mo>+</mo><mi>m</mi></mrow></msub></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>k</mi></mrow></msub><mo>-</mo><msub><mi>s</mi><mi>N</mi></msub></mrow><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>k</mi></mrow></msub></mfrac></mstyle></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mn>1</mn><mo>-</mo><mstyle displaystyle="true"><mfrac><msub><mi>s</mi><mi>N</mi></msub><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>k</mi></mrow></msub></mfrac></mstyle><mo>.</mo></mrow></mtd></mtr></mtable></semantics></math></span></p> <p>Let <span class="math-container" id="10354970" visual_id="22787"><math alttext="0&amp;lt;\epsilon&amp;lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mrow><mi>ϵ</mi><mo>&lt;</mo></mrow><mn>1</mn></mrow></semantics></math></span>. Since, <span class="math-container" id="10354971" visual_id="6697452"><math alttext="\lim_{k\to\infty}1-\frac{s_{N}}{s_{N+k}}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mo>lim</mo><mrow><mi>k</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mn>1</mn></mrow><mo>-</mo><mfrac><msub><mi>s</mi><mi>N</mi></msub><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>k</mi></mrow></msub></mfrac></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, there is a <span class="math-container" id="10354972" visual_id="830884"><math alttext="K\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>, such that <span class="math-container" id="10354973" visual_id="6697453"><math alttext="k\geq K\implies 1-\left(1-\frac{s_{N}}{s_{N+k}}\right)&amp;lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>≥</mo><mi>K</mi><mo>⟹</mo><mrow><mn>1</mn><mo>-</mo><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><msub><mi>s</mi><mi>N</mi></msub><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>k</mi></mrow></msub></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><mo>;</mo><mi>ϵ</mi></mrow></semantics></math></span>; that is <span class="math-container" id="10354974" visual_id="6697454"><math alttext="\frac{s_{N}}{s_{N+k}}&amp;lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><msub><mi>s</mi><mi>N</mi></msub><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>k</mi></mrow></msub></mfrac><mo>&lt;</mo></mrow><mi>ϵ</mi></mrow></semantics></math></span>. So, it has been shown that there is an <span class="math-container" id="10354975" visual_id="35"><math alttext="\epsilon&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϵ</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> such that for all <span class="math-container" id="10354976" visual_id="60108"><math alttext="N\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>, <span class="math-container" id="10354977" visual_id="6697455"><math alttext="\sum_{m=1}^{k}\frac{a_{N+m}}{s_{N+m}}&amp;gt;1-\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><mrow><mfrac><msub><mi>a</mi><mrow><mi>N</mi><mo>+</mo><mi>m</mi></mrow></msub><msub><mi>s</mi><mrow><mi>N</mi><mo>+</mo><mi>m</mi></mrow></msub></mfrac><mo>&gt;</mo></mrow></mrow><mrow><mn>1</mn><mo>-</mo><mi>ϵ</mi></mrow></mrow></semantics></math></span>. Therefore the series does not meet the Cauchy criterion and diverges.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span><span> proof-verification </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1097227" id="answer">
+<p>Here may be an intuitive way to think about it. Assume the sequence is convergent, I claim that there exist some <span class="math-container" id="10354985" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span> such that for all <span class="math-container" id="10354986" visual_id="20190"><math alttext="N&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>N</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>, there exists terms  <span class="math-container" id="10354987" visual_id="6697458"><math alttext="\sum^{n}_{i=m}\frac{a_{n}}{s_{n}}\geq\epsilon,n&amp;gt;m&amp;gt;N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mi>m</mi></mrow><mi>n</mi></msubsup><mfrac><msub><mi>a</mi><mi>n</mi></msub><msub><mi>s</mi><mi>n</mi></msub></mfrac></mrow><mo>≥</mo><mrow><mi>ϵ</mi><mo>,</mo><mrow><mi>n</mi><mo>&gt;</mo></mrow><mrow><mi>m</mi><mo>&gt;</mo></mrow><mi>N</mi></mrow></mrow></semantics></math></span> Therefore the sequence is not convergent and it must diverge. To see the claim I made, since we know <span class="math-container" id="10354988" visual_id="665850"><math alttext="s_{n}\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> as <span class="math-container" id="10354989" visual_id="1477"><math alttext="n\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>, for any sufficiently large <span class="math-container" id="10354990" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span>, we can decompose <span class="math-container" id="10354991" visual_id="6697459"><math alttext="s_{n}=s_{N}+\sum^{N}_{i=n+1}a_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><mrow><msub><mi>s</mi><mi>N</mi></msub><mo>+</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mrow><mi>N</mi></msubsup><msub><mi>a</mi><mi>i</mi></msub></mrow></mrow></mrow></semantics></math></span>. Since the <span class="math-container" id="10354992" visual_id="538566"><math alttext="s_{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>N</mi></msub></semantics></math></span> factor is going to be relatively small in contrast to <span class="math-container" id="10354993" visual_id="433"><math alttext="s_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>n</mi></msub></semantics></math></span> with <span class="math-container" id="10354994" visual_id="1477"><math alttext="n\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>, it is enough to choose enough factors from the sum to get <span class="math-container" id="10354995" visual_id="6697460"><math alttext="\sum^{n}_{i=m}\frac{a_{i}}{s_{i}}\geq\frac{\sum^{n}_{i=m}a_{i}}{s_{n}}\geq\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mi>m</mi></mrow><mi>n</mi></msubsup><mfrac><msub><mi>a</mi><mi>i</mi></msub><msub><mi>s</mi><mi>i</mi></msub></mfrac></mrow><mo>≥</mo><mfrac><mrow><mstyle displaystyle="false"><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mi>m</mi></mrow><mi>n</mi></msubsup></mstyle><msub><mi>a</mi><mi>i</mi></msub></mrow><msub><mi>s</mi><mi>n</mi></msub></mfrac><mo>≥</mo><mi>ϵ</mi></mrow></semantics></math></span> And I think this is essentially what Rudin's hint and your proof is about. Of course this kind of result would not hold if <span class="math-container" id="10354996" visual_id="196163"><math alttext="\sum a_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><msub><mi>a</mi><mi>i</mi></msub></mrow></semantics></math></span> converges, as the sum would converge as well. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2236321"> Do you mean <span class="math-container" id="10354997" visual_id="665850"><math alttext="s_{n}\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> as <span class="math-container" id="10354998" visual_id="1477"><math alttext="n\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>?. </td></tr><tr><td comment_id="2236327"> Yes, you know <span class="math-container" id="10354999" visual_id="6593"><math alttext="a_{n}\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="10355000" visual_id="11866"><math alttext="\sum a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></semantics></math></span> diverges. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

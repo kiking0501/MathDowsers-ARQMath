@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding Pythagorean triplet given the hypotenuse</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding Pythagorean triplet given the hypotenuse </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1473201">
+<p>I have a number <span class="math-container" id="13637382" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> which is an integer and can be even or odd. It is the hypotenuse of a right angled triangle. How can I find integers <span class="math-container" id="13637383" visual_id="249"><math alttext="a,b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></semantics></math></span> such that</p> <p><span class="math-container" id="13637384" visual_id="5981"><math alttext="a^{2}+b^{2}=c^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></semantics></math></span></p> <p>What would be the complexity of the calculation?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> elementary-number-theory </span><span> algorithms </span><span> sums-of-squares </span><span> pythagorean-triples </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3000167"> but the pythagorean triplet that I am looking for is not necessarily a primitive pythagorean triplet. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1627181" id="answer">
+<p>c can be found as </p> <p><span class="math-container" id="13637402" visual_id="6212067"><math alttext="c=2r^{2}+s^{2}+2rs" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><mo>+</mo><msup><mi>s</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>s</mi></mrow></mrow></mrow></semantics></math></span><br/> <span class="math-container" id="13637403" visual_id="6212068"><math alttext="a=2r^{2}+2rs" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>s</mi></mrow></mrow></mrow></semantics></math></span><br/> <span class="math-container" id="13637404" visual_id="6212069"><math alttext="b=s^{2}+2rs" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>s</mi></mrow></mrow></mrow></semantics></math></span> </p> <p>Edit Was using x^2+y^2=z^2 variables changed to a^2+b^2=c^2</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3318027"> An answer to this question should find values of <span class="math-container" id="13637408" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="13637409" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> in terms of <span class="math-container" id="13637407" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>. I don't know why you're computing unrelated quantities from the unknowns <span class="math-container" id="13637408" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="13637409" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>. </td></tr><tr><td comment_id="3318042"> Well, how do you find <span class="math-container" id="13637410" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> and <span class="math-container" id="13637411" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span> now? And how does this "decomposition" help? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="685958"> Let <span class="math-container" id="6886746" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> be prime and <span class="math-container" id="6886747" visual_id="126931"><math alttext="(\frac{-3}{p})=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mfrac><mrow><mo>-</mo><mn>3</mn></mrow><mi>p</mi></mfrac><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. Prove that <span class="math-container" id="6886748" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is of the form <span class="math-container" id="6886749" visual_id="55881"><math alttext="p=a^{2}+3b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

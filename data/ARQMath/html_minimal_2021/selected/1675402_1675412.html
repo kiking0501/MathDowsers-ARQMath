@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What's the benefit of using strong induction when it's replaceable by weak induction?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What's the benefit of using strong induction when it's replaceable by weak induction? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1675402">
+<p><a href="https://i.stack.imgur.com/elODC.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/elODC.png"/></a><br/> Example of a proof of a theorem using weak(ordinary) induction<br/> <a href="https://i.stack.imgur.com/rkpls.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/rkpls.png"/></a> <a href="https://i.stack.imgur.com/wV8qh.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/wV8qh.png"/></a><br/> The two types of inductions have process of proving P(a) and "for all integers <span class="math-container" id="15483816" visual_id="90678"><math alttext="n\geq b,P(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mrow><mi>b</mi><mo>,</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>" as a result in common. </p> <p>For example, in the proof of the following question, we can use weak induction instead of strong induction, and using weak(ordinary) induction makes the proof simpler and shorter than the strong form of induction. So what's the benefit of using strong induction when it's replaceable by weak induction?</p> <p><a href="https://i.stack.imgur.com/yBjyu.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/yBjyu.png"/></a></p> <p><a href="https://i.stack.imgur.com/a5ujs.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/a5ujs.png"/></a></p> <p>[EDIT] As requested, here's the weak induction version of the question. Plus, I changed the <span class="math-container" id="15483817" visual_id="90679"><math alttext="s{k_{1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>⁢</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></semantics></math></span> part in red in the weak induction after reading answers. I now understand using weak induction doesn't prove the statement.</p> <p><a href="https://i.stack.imgur.com/JIkOT.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/JIkOT.png"/></a></p> <p>Source: Discrete Mathematics with Applications, Susanna S. Epp</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> discrete-mathematics </span><span> elementary-set-theory </span><span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3418181"> Do you mind spelling out the weak induction proof you have in mind? I can't figure it out from your clip notes. </td></tr><tr><td comment_id="3418187"> @GitGud I added my thoughts in gray and red in the proof. Did you see it? </td></tr><tr><td comment_id="3418190"> Yes,I had read them. </td></tr><tr><td comment_id="3418515"> @GitGud I uploaded the weak induction proof of the question. </td></tr><tr><td comment_id="3418533"> Below "`[EDIT] As requested, here's the weak induction version of the question`", there is not a weak induction proof, but a strong introduction one. It even says so in the text. In fact, when the hypothesis is  applied to <span class="math-container" id="15483837" visual_id="90680"><math alttext="s_{k-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></semantics></math></span>, strong induction is being used. As for the bit below "`FYI Example of a proof of a theorem using weak(ordinary) induction`", it's not what I asked for. I asked for a weak induction proof of the statement <span class="math-container" id="15483821" visual_id="90681"><math alttext="\forall n\in\mathbb{N}\left(s_{n}=5^{n}-1\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mrow><mo>(</mo><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><msup><mn>5</mn><mi>n</mi></msup><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math></span>, you haven't provided it yet. </td></tr><tr><td comment_id="3418568"> @GitGud It's only the problem of not changing "strong" to "weak" in that proof. I edited it again. </td></tr><tr><td comment_id="3418574"> That's not the only problem, I specifically said where strong induction is being used in your weak induction candidate proof. </td></tr><tr><td comment_id="3418608"> @buzzee: **read my answer**. the reason you can't just change the words "strong" to "weak" is that the strong proof **uses the assumption <span class="math-container" id="15483820" visual_id="90682"><math alttext="s_{k-1}=5^{k-1}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><msup><mn>5</mn><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>**. you don't have this assumption in the weak setting. but you do have it in the strong setting. </td></tr><tr><td comment_id="3419111"> Maybe it could hep to point out this: to prove <span class="math-container" id="15483821" visual_id="90681"><math alttext="\forall n\in\mathbb{N}\left(s_{n}=5^{n}-1\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mrow><mo>(</mo><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><msup><mn>5</mn><mi>n</mi></msup><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math></span> in the weak induction setting you need to apply induction to the statement <span class="math-container" id="15483889" visual_id="90683"><math alttext="Q(n)=P(1)\land\cdots\land P(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="15483823" visual_id="90684"><math alttext="P(n)=(s_{n}=5^{n}-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><msup><mn>5</mn><mi>n</mi></msup><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, that means <span class="math-container" id="15483824" visual_id="90685"><math alttext="Q(n)=(s_{1}=5^{1}-1)\land\cdots\land(s_{n}=5^{n}-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>s</mi><mn>1</mn></msub><mo>=</mo><msup><mn>5</mn><mn>1</mn></msup><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mo stretchy="false">(</mo><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><msup><mn>5</mn><mi>n</mi></msup><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1675412" id="answer">
+<p>Often it's conceptually easier to think about an argument in terms of strong induction.  It is true that you can always recast the proof in terms of weak induction (though I don't exactly follow the comments you're making on the example in the question--what you have to do to make the argument use weak induction is change the statement you are proving by induction from "<span class="math-container" id="15483907" visual_id="30308"><math alttext="P(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>" to "<span class="math-container" id="15483908" visual_id="62135"><math alttext="P(i)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is true for all <span class="math-container" id="15483909" visual_id="8555"><math alttext="i\leq k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>≤</mo><mi>k</mi></mrow></semantics></math></span>"), but it is a bit simpler to use strong induction directly.  I could turn your question around and ask you: why should you ever use weak induction, when it's replaceable by strong induction?  It's largely a matter of taste, and which version leads to a more easily understood proof for the particular problem you are trying to solve.</p> <p>Besides that, the concept of strong induction generalizes better than weak induction.  Strong induction works on any well-ordered set (or even more generally, any set equipped with a well-founded relation).  This generalized form of induction, called <a href="https://en.wikipedia.org/wiki/Transfinite_induction" rel="nofollow">transfinite induction</a>, is extremely important in set theory and also has applications in many other areas of mathematics, and cannot be reduced to weak induction the same way ordinary induction can.  (Well, there is sort of a "weak induction" version of transfinite induction given by splitting into successor and limit cases, but it is still rather different from ordinary weak induction because of the limit cases besides <span class="math-container" id="15483910" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>.  And this doesn't work at all when doing induction on general well-founded relations.)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3418201"> I know "well-ordering principle", but haven't heard or read about "well-ordered set" before. </td></tr><tr><td comment_id="3418325"> Does "well-ordered set" mean nonempty subsets in the following explanation? "Well-Ordering Principle. Every nonempty subset of the positive integers has a smallest element."  http://sites.millersville.edu/bikenaga/math-proof/induction/induction.html </td></tr><tr><td comment_id="3419704"> "Well-ordered set" refers to any set (not necessarily a subset of <span class="math-container" id="15483911" visual_id="90699"><math alttext="\mathbb{N})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℕ</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>) with an ordering which satisfies the well-ordering principle.  See https://en.wikipedia.org/wiki/Well-order. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

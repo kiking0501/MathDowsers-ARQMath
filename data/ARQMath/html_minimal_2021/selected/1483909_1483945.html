@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How many integers $m$ such that Euler Totient Function $\varphi(m)$ = a given integer?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How many integers <span class="math-container" id="13729342" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> such that Euler Totient Function <span class="math-container" id="13729343" visual_id="427721"><math alttext="\varphi(m)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> = a given integer? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1483909">
+<p>(I didn't find any other posts related to this but I think this is a weird because my question seems like a very natural one.)</p> <p>Let <span class="math-container" id="13729344" visual_id="252"><math alttext="\varphi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi></semantics></math></span> denote the Euler Totient Function. Given <span class="math-container" id="13729345" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> an even number, can we find all the positive integers <span class="math-container" id="13729346" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> such that <span class="math-container" id="13729347" visual_id="196683"><math alttext="\varphi(n)=m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>m</mi></mrow></semantics></math></span>? If not, at least can we tell how many there are? Are there infinite? Why?</p> <p>I strongly believe this is a hard task.</p> <p>Thank you in advance.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> elementary-number-theory </span><span> totient-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3022181"> You are looking at the inverse of the totient function, which happens to be multi-valued. Do have a look at this similar question on the number of <span class="math-container" id="13729355" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> which satisfies <span class="math-container" id="13729349" visual_id="496741"><math alttext="\phi(n)=m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>m</mi></mrow></semantics></math></span> for a given <span class="math-container" id="13729350" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span>: http://mathoverflow.net/questions/109509/the-inverse-of-the-euler-totient-function </td></tr><tr><td comment_id="3022194"> There won't be infinitely many solutions. There can't be any prime factors of bigger than <span class="math-container" id="13729351" visual_id="11766"><math alttext="m+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>, and for each other prime <span class="math-container" id="13729352" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>, if <span class="math-container" id="13729353" visual_id="6240750"><math alttext="p^{k}&gt;m+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>k</mi></msup><mo>&gt;</mo><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> then <span class="math-container" id="13729354" visual_id="416529"><math alttext="p^{k+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></semantics></math></span> cannot be a factor of <span class="math-container" id="13729355" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1483945" id="answer">
+<p>Finite.  <span class="math-container" id="13729356" visual_id="2046862"><math alttext="\varphi(n)\geq\sqrt{\frac{n}{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><msqrt><mfrac><mi>n</mi><mn>2</mn></mfrac></msqrt></mrow></semantics></math></span></p> <p>More complete statements and a proof as two answers at <a href="https://math.stackexchange.com/questions/301837/is-the-euler-phi-function-bounded-below">Is the Euler phi function bounded below?</a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="301837"> Is the Euler phi function bounded below? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

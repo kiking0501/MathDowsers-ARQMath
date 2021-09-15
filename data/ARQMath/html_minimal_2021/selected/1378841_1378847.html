@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is there a method to determine a prime number containing the first n digits?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is there a method to determine a prime number containing the first n digits? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1378841">
+<p>For example, the number <span class="math-container" id="12814152" visual_id="9013537"><math alttext="10243" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10243</mn></semantics></math></span> is prime and contains the digits '0,' '1,' '2,' '3,' and '4.'  Similarly, the number <span class="math-container" id="12814153" visual_id="2667574"><math alttext="20143" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>20143</mn></semantics></math></span> is prime.  Is there a method to determine whether a prime number exists that contains the first, say, <span class="math-container" id="12814154" visual_id="2663"><math alttext="8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>8</mn></semantics></math></span> digits?  Or whether a number exists that contains an arbitrary number of digits in order starting from an arbitrary number (say, <span class="math-container" id="12814155" visual_id="132075"><math alttext="3,4,5,6,7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn></mrow></semantics></math></span>)?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> prime-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2807610"> Do you want the prime to contain only those digits, each exactly once, or something more relaxed? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1378847" id="answer">
+<p>Let <span class="math-container" id="12814156" visual_id="421664"><math alttext="d_{1},d_{2},\dots,d_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>d</mi><mi>k</mi></msub></mrow></semantics></math></span> be an arbitrary sequence of <span class="math-container" id="12814157" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> digits, with <span class="math-container" id="12814158" visual_id="14006"><math alttext="d_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>k</mi></msub></semantics></math></span> odd and not equal to <span class="math-container" id="12814159" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span>. Let <span class="math-container" id="12814160" visual_id="4596044"><math alttext="a=10^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><msup><mn>10</mn><mi>k</mi></msup></mrow></semantics></math></span> and let <span class="math-container" id="12814161" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> be the number with decimal expansion <span class="math-container" id="12814162" visual_id="614486"><math alttext="d_{1}\dots d_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>d</mi><mi>k</mi></msub></mrow></semantics></math></span>. By <a href="https://en.wikipedia.org/wiki/Dirichlet%27s_theorem_on_arithmetic_progressions" rel="nofollow">Dirichlet's Theorem,</a> there are infinitely many primes in the arithmetic progression of numbers of the form <span class="math-container" id="12814163" visual_id="55203"><math alttext="an+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mi>b</mi></mrow></semantics></math></span>, so there are infinitely many primes whose decimal expansion ends in <span class="math-container" id="12814164" visual_id="614486"><math alttext="d_{1}\dots d_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>d</mi><mi>k</mi></msub></mrow></semantics></math></span>.</p> <p>Added: We now look at the "opposite" problem. Let <span class="math-container" id="12814165" visual_id="421664"><math alttext="d_{1},d_{2},\dots,d_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>d</mi><mi>k</mi></msub></mrow></semantics></math></span> be any sequence of digits, with <span class="math-container" id="12814166" visual_id="2618370"><math alttext="d_{1}\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>. Then there are infinitely many primes whose decimal expansion <em>starts</em> with the digits <span class="math-container" id="12814167" visual_id="421664"><math alttext="d_{1},d_{2},\dots,d_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>d</mi><mi>k</mi></msub></mrow></semantics></math></span>, in that order. The proof is in principle simple, but takes a while to write out. It uses the Prime Number Theorem. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

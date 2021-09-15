@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>if the fibers of all points are finite then will the map be finite?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> if the fibers of all points are finite then will the map be finite? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1690410">
+<p>If <span class="math-container" id="15620369" visual_id="2889"><math alttext="f:X\to Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span> is a regular map between affine varieties then we say <span class="math-container" id="15620370" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is finite if <span class="math-container" id="15620371" visual_id="102"><math alttext="k[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> is integral over <span class="math-container" id="15620372" visual_id="113"><math alttext="k[Y]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>. If <span class="math-container" id="15620373" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is finite then fibers of all points are finite. I think the converse of this statement is false but I can't give a counter example. Can you give a counterexample?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebraic-geometry </span><span> commutative-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3451681"> If <span class="math-container" id="15620374" visual_id="2889"><math alttext="f:X\to Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span> is a quasi-finite finite type morphism of schemes, then <span class="math-container" id="15620381" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is finite if and only if <span class="math-container" id="15620381" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is proper. If your schemes happen to be affine, then <span class="math-container" id="15620381" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is separated, so that <span class="math-container" id="15620381" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is finite if and only if <span class="math-container" id="15620381" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is universally closed. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1690456" id="answer">
+<p>An open immersion has finite fibres but is generally not finite. In fact I think an open immersion is finite if and only if it is also a closed immersion, hence an isomorphism onto a connected component.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3450262"> That is correct. If you're a monomorphism and proper then you're a closed embedding. </td></tr><tr><td comment_id="3450666"> @Alex Maybe over an algebraically closed field? For instance <span class="math-container" id="15620395" visual_id="7368722"><math alttext="\text{spec}\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>spec</mtext><mo>⁢</mo><mi>ℂ</mi></mrow></semantics></math></span> is proper over <span class="math-container" id="15620396" visual_id="7368723"><math alttext="\text{spec}\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>spec</mtext><mo>⁢</mo><mi>ℝ</mi></mrow></semantics></math></span> and the map is a monomorphism... </td></tr><tr><td comment_id="3450805"> That's not a monomorphism! Monomorphism is invariant under base change. </td></tr><tr><td comment_id="3450865"> @Alex Hmm!...  :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

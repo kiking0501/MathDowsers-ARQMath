@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Generating Function for a Recurrence Relation $a_n=a_{n-1} + n$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Generating Function for a Recurrence Relation <span class="math-container" id="10755270" visual_id="4056302"><math alttext="a_{n}=a_{n-1}+n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>n</mi></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1142624">
+<p>Find a generating function for <span class="math-container" id="10755271" visual_id="6575"><math alttext="\{a_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> where <span class="math-container" id="10755272" visual_id="22230"><math alttext="a_{0}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="10755273" visual_id="4056302"><math alttext="a_{n}=a_{n-1}+n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>n</mi></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> discrete-mathematics </span><span> recurrence-relations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2331938"> Are you sure you don't want <span class="math-container" id="10755274" visual_id="5817"><math alttext="a_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>0</mn></msub></semantics></math></span> to be zero? That would give you <span class="math-container" id="10755275" visual_id="8479900"><math alttext="a_{n}=1+2+...+n=\frac{n\cdot(n+1)}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mi>n</mi></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac></mrow></semantics></math></span>. In Germany this is known as “Small Gauss, but the Wikipedia article has no English equivalent.” </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1142634" id="answer">
+<p>Multiply both sides of the recurrence by <span class="math-container" id="10755276" visual_id="3809"><math alttext="x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mi>n</mi></msup></semantics></math></span> and sum over all <span class="math-container" id="10755277" visual_id="967"><math alttext="n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span> to get </p> <p>\begin{align}\sum_{n \ge 1} a_n x^n &amp;= \sum_{n \ge 1} a_{n-1}x^n + \sum_{n\ge 1} nx^n\\ \sum_{n\ge 1} a_nx^n &amp;= x\sum_{n\ge 1} a_{n-1}x^{n-1} + x\sum_{n\ge 1} nx^{n-1}\\ \sum_{n\ge 1} a_n x^n &amp;= x\sum_{n\ge 0} a_n x^n + x\frac{d}{dx}\sum_{n\ge 1} x^n\\ \sum_{n\ge 0} a_n x^n  - 1&amp;= x \sum_{n\ge 0} a_n x^n + x\frac{d}{dx}\frac{x}{1 - x}\\ (1 - x)\sum_{n\ge 0} a_n x^n &amp;= 1 + \frac{x}{(1 - x)^2}\\ \sum_{n\ge 0} a_n x^n &amp;= \frac{1}{1 - x} + \frac{x}{(1 - x)^3}. \end{align} </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

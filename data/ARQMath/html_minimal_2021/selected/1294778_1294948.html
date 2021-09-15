@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is the $\lim_{n\rightarrow \infty }(1+\frac{1}{n})^{n^n}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is the <span class="math-container" id="12046245" visual_id="5097897"><math alttext="\lim_{n\rightarrow\infty}(1+\frac{1}{n})^{n^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo stretchy="false">)</mo></mrow><msup><mi>n</mi><mi>n</mi></msup></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1294778">
+<p>What is the <span class="math-container" id="12046246" visual_id="5097897"><math alttext="\lim_{n\rightarrow\infty}\left(1+\frac{1}{n}\right)^{n^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><msup><mi>n</mi><mi>n</mi></msup></msup></mrow></semantics></math></span></p> <p>I know that the  <span class="math-container" id="12046247" visual_id="31468"><math alttext="\lim_{n\rightarrow\infty}\left(1+\frac{1}{n}\right)^{n}=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mi>n</mi></msup></mrow><mo>=</mo><mi>e</mi></mrow></semantics></math></span>, so I wanted to find the limit by the same way by taking <span class="math-container" id="12046248" visual_id="1385"><math alttext="\log" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>log</mi></semantics></math></span> two times  but I found the solution became not easy. Any help</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> limits </span><span> exponential-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1294948" id="answer">
+<p>Let <span class="math-container" id="12046257" visual_id="5097899"><math alttext="A_{n}=\left(1+\frac{1}{n}\right)^{n^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><msup><mi>n</mi><mi>n</mi></msup></msup></mrow></semantics></math></span> Taking logarithms <span class="math-container" id="12046258" visual_id="5097900"><math alttext="\log(A_{n})=n^{n}\log\left(1+\frac{1}{n}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>n</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> Now consider Taylor for <span class="math-container" id="12046259" visual_id="25487"><math alttext="\log(1+x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> when <span class="math-container" id="12046260" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is small; in the expression, replace <span class="math-container" id="12046261" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> by <span class="math-container" id="12046262" visual_id="4096"><math alttext="\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>n</mi></mfrac></semantics></math></span> to get <span class="math-container" id="12046263" visual_id="5097901"><math alttext="\log\left(1+\frac{1}{n}\right)=\frac{1}{n}-\frac{1}{2n^{2}}+\frac{1}{3n^{3}}+O% \left(\left(\frac{1}{n}\right)^{4}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>3</mn></msup></mrow></mfrac><mo>+</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo>(</mo><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>)</mo></mrow><mn>4</mn></msup><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="12046264" visual_id="5097902"><math alttext="\log(A_{n})=n^{n-1}n\Big{(}\frac{1}{n}-\frac{1}{2n^{2}}+\frac{1}{3n^{3}}+% \cdots\Big{)}=n^{n-1}\Big{(}1-\frac{1}{2n}+\frac{1}{3n^{2}}+\cdots\Big{)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>n</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>3</mn></msup></mrow></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>n</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow></semantics></math></span> So, for large <span class="math-container" id="12046265" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, <span class="math-container" id="12046266" visual_id="5097903"><math alttext="A\approx e^{n^{n-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≈</mo><msup><mi>e</mi><msup><mi>n</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></msup></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

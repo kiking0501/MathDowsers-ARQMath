@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is the solution of the (seemingly simple) functional equation $f(f(z))=f(z-c)+c$ unique?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is the solution of the (seemingly simple) functional equation <span class="math-container" id="24492954" visual_id="6150530"><math alttext="f(f(z))=f(z-c)+c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>-</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>c</mi></mrow></mrow></semantics></math></span> unique? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2650500">
+<p>Let a function <span class="math-container" id="24492955" visual_id="5883"><math alttext="f(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> defined for all <span class="math-container" id="24492956" visual_id="2388"><math alttext="z\in\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>∈</mo><mi>ℂ</mi></mrow></semantics></math></span> (without any further restrictions) satisfy the equation: <span class="math-container" id="24492957" visual_id="6150531"><math alttext="f(f(z))=f(z-c)+c," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>-</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>c</mi></mrow></mrow><mo>,</mo></mrow></semantics></math></span> where <span class="math-container" id="24492958" visual_id="4316"><math alttext="c\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> is a constant. It can be easily demonstrated that the only analytic function satisfying the equation is <span class="math-container" id="24492959" visual_id="15887"><math alttext="f(z)=z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>z</mi></mrow></semantics></math></span> and I have strong (but possibly wrong) impression that it is in fact the only possible solution of the equation. Can it be proved or disproved? In the latter case what is the general form of solution? </p> <p>I never dealt with functional equations, so any hint is appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> functional-equations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5474668"> If you are willing to consider matrices, the matrix equation <span class="math-container" id="24492960" visual_id="190904"><math alttext="A^{2}=A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>=</mo><mi>A</mi></mrow></semantics></math></span> has plenty of solutions. This for the case <span class="math-container" id="24492961" visual_id="5141"><math alttext="c=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> of course. </td></tr><tr><td comment_id="5474715"> At the moment I would like to know the answer for the case when both function and argument are scalars. But of course the case of vectors is also interesting. In any case <span class="math-container" id="24492962" visual_id="4316"><math alttext="c\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> is the condition. Otherwise there is a plenty of solutions also in scalar case. </td></tr><tr><td comment_id="5474763"> My guess is that the most general solution for <span class="math-container" id="24492963" visual_id="4084552"><math alttext="f(f(z))=f(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is the following. Let <span class="math-container" id="24492964" visual_id="11773"><math alttext="{\cal D}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">𝒟</mi></semantics></math></span> be a set of points <span class="math-container" id="24492965" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span> such that <span class="math-container" id="24492966" visual_id="15887"><math alttext="f(z)=z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>z</mi></mrow></semantics></math></span>. It suffices if the set contains a single point. Then in the domain <span class="math-container" id="24492967" visual_id="6150532"><math alttext="\mathbb{C}\setminus{\cal D}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℂ</mi><mo>∖</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow></semantics></math></span> the function can take any value <span class="math-container" id="24492968" visual_id="6150533"><math alttext="f(z)\in{\cal D}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒟</mi></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2651402" id="answer">
+<p>For a simple counterexample, consider <span class="math-container" id="24492969" visual_id="780355"><math alttext="f(z)=\operatorname{Re}(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Re</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, which works for any <span class="math-container" id="24492970" visual_id="24756"><math alttext="c\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>.  More generally, given any decomposition <span class="math-container" id="24492971" visual_id="6150534"><math alttext="\mathbb{C}=A\oplus B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℂ</mi><mo>=</mo><mrow><mi>A</mi><mo>⊕</mo><mi>B</mi></mrow></mrow></semantics></math></span> of <span class="math-container" id="24492972" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> as a group under addition with <span class="math-container" id="24492973" visual_id="40700"><math alttext="c\in A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>A</mi></mrow></semantics></math></span>, you could take <span class="math-container" id="24492974" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> to be the projection onto <span class="math-container" id="24492975" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>.  I suspect there are other solutions besides these as well, and there is probably no nice way to describe all the solutions.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5476969"> For integers with <span class="math-container" id="24492976" visual_id="8713"><math alttext="c=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span>, for instance, you could define <span class="math-container" id="24492977" visual_id="262"><math alttext="f(x)=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math></span> if <span class="math-container" id="24492980" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is even and <span class="math-container" id="24492979" visual_id="107327"><math alttext="f(x)=x-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> if <span class="math-container" id="24492980" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is odd. </td></tr><tr><td comment_id="5476988"> I have meanwhile realized this. I hope for your comments in the new [thread](https://math.stackexchange.com/questions/2651720/the-functional-equation-ffz-fz-cc-again). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2651720"> Do the solutions to functional equation <span class="math-container" id="24504526" visual_id="6150530"><math alttext="f(f(z))=f(z-c)+c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>-</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>c</mi></mrow></mrow></semantics></math></span> necessarily have a fixed point? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

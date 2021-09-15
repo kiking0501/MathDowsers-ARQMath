@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to find out if a sequence with exponentiation in fraction is convergent</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to find out if a sequence with exponentiation in fraction is convergent </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1288392">
+<p>I need to find the convergence of this function: <span class="math-container" id="11991169" visual_id="5080476"><math alttext="\sum^{\infty}_{x=1}{\frac{(x+1)^{x^{2}}}{x^{x^{2}}2^{x}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><msup><mi>x</mi><mn>2</mn></msup></msup><mrow><msup><mi>x</mi><msup><mi>x</mi><mn>2</mn></msup></msup><mo>⁢</mo><msup><mn>2</mn><mi>x</mi></msup></mrow></mfrac></mrow></semantics></math></span></p> <p>Now my problem is, I have no clue how to do this (I tried the root-test and it did not work out)...</p> <p>I thought the direct-comparison-test might do the job, but I am somehow not able to use it here, because I don't know how.</p> <p>Any help would be gratefully accepted... =)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> analysis </span><span> convergence-divergence </span><span> roots </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1288460" id="answer">
+<p>Hint: Your series is </p> <p><span class="math-container" id="11991170" visual_id="5080477"><math alttext="\sum_{n=1}^{\infty}\frac{(1+1/n)^{n^{2}}}{2^{n}}=\sum_{n=1}^{\infty}\frac{[(1+% 1/n)^{n}]^{n}}{2^{n}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><msup><mi>n</mi><mn>2</mn></msup></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mrow><mo stretchy="false">[</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo stretchy="false">]</mo></mrow><mi>n</mi></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2616251"> Hey, thanks for the answer... but how did you get to this term? Your term is convergent. But now I plotted the original term and it does not converge... could you explain that to me? I am a bit confused =D </td></tr><tr><td comment_id="2616278"> You don't understand why the series on the right is the same as your series? </td></tr><tr><td comment_id="2616464"> thats my problem, yes...? </td></tr><tr><td comment_id="2616652"> I'm just using <span class="math-container" id="11991171" visual_id="5080478"><math alttext="a^{x^{2}}/\,b^{x^{2}}=(a/b)^{x^{2}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup></msup><mo rspace="4.2pt">/</mo><msup><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup></msup></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>/</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><msup><mi>x</mi><mn>2</mn></msup></msup></mrow><mo>.</mo></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

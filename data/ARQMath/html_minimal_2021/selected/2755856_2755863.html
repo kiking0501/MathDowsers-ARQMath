@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Combinatorial or probabilistic proof of a binomial identity</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Combinatorial or probabilistic proof of a binomial identity </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2755856">
+<p>I'm looking for a combinatorial/probabilistic proof of this identity involving binomial coefficients :</p> <p><span class="math-container" id="25428265" visual_id="2967891"><math alttext="\displaystyle\sum_{k=n}^{2n}\binom{k}{n}\times\dfrac{1}{2^{k}}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mi>n</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></munderover></mstyle><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>k</mi><mi>n</mi></mfrac></mstyle><mo>)</mo></mrow><mo>×</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>2</mn><mi>k</mi></msup></mfrac></mstyle></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p> <p>My try : Multiplying both sides by <span class="math-container" id="25428266" visual_id="12726"><math alttext="2^{2n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup></semantics></math></span> would render the identity as </p> <p><span class="math-container" id="25428267" visual_id="2967892"><math alttext="\displaystyle\sum_{i=0}^{n}\binom{n+i}{n}\times 2^{n-i}=2^{2n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>i</mi></mrow><mi>n</mi></mfrac></mstyle><mo>)</mo></mrow><mo>×</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mi>i</mi></mrow></msup></mrow></mrow><mo>=</mo><msup><mn>2</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup></mrow></semantics></math></span></p> <p>That led me to trying to count the number of maps from a set consisting of <span class="math-container" id="25428268" visual_id="3953"><math alttext="2n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></semantics></math></span> elements to a set of two elements in two ways but I haven't succeeded yet.</p> <p>Could you please give it a try.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> combinatorics </span><span> combinatorial-proofs </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2755863" id="answer">
+<p><span class="math-container" id="25428269" visual_id="2967893"><math alttext="\binom{k}{n}\frac{1}{2^{k+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>n</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></semantics></math></span> is the probability that in a sequence of coin tosses, the <span class="math-container" id="25428270" visual_id="3796"><math alttext="(n+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>-th head is achieved on the <span class="math-container" id="25428271" visual_id="11885"><math alttext="(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>-th toss. Then <span class="math-container" id="25428272" visual_id="2967894"><math alttext="\sum_{k=n}^{2n}\binom{k}{n}\frac{1}{2^{k+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mi>n</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>n</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></mrow></semantics></math></span> is the probability that at least <span class="math-container" id="25428273" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> heads occur in a sequence of <span class="math-container" id="25428274" visual_id="3954"><math alttext="2n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> tosses, etc.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

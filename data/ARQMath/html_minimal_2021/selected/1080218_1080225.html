@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>ratio of two functions of finite variation</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> ratio of two functions of finite variation </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1080218">
+<p>According to the Jordan decomposition, a necessary and sufficient condition for a function to have finite variation is that it can be expressed as the difference of two increasing functions.</p> <p>The book I'm reading then says that the ratio of two functions of finite variation is also of finite variation provided that the modulus of the denominator is larger than a positive constant. How can I use the above fact to prove this? Or is more machinery needed to show this statement?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> stochastic-calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1080225" id="answer">
+<p>You don't need the decomposition for this; the result can be proved using the definition of "finite variation". The proof from <a href="https://math.stackexchange.com/a/1075185/147263">my answer about absolute continuity</a> applied  here with few changes: </p> <p>Suppose <span class="math-container" id="10202923" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> and <span class="math-container" id="10202924" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> are of finite variation. The vector-valued function <span class="math-container" id="10202925" visual_id="4300929"><math alttext="\phi(x)=(f(x),g(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is also of finite variation then, and it takes values in some closed rectangle <span class="math-container" id="10202926" visual_id="4300930"><math alttext="R=[a,b]\times[c,d]\subset\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>×</mo><mrow><mo stretchy="false">[</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy="false">]</mo></mrow></mrow><mo>⊂</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow></semantics></math></span> with <span class="math-container" id="10202927" visual_id="7960"><math alttext="c&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>c</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>. The function <span class="math-container" id="10202928" visual_id="4300931"><math alttext="\psi(u,v)=u/v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ψ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>u</mi><mo>/</mo><mi>v</mi></mrow></mrow></semantics></math></span> is Lipschitz in this rectangle, since its gradient is bounded. It is easy to see from the definition that post-composition with a Lipschitz function preserves finiteness of variation (indeed, the variation is at most multiplied by the Lipschitz constant). Hence,  the composition <span class="math-container" id="10202929" visual_id="72097"><math alttext="\psi\circ\phi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ψ</mi><mo>∘</mo><mi>ϕ</mi></mrow></semantics></math></span> has finite variation, and this is precisely <span class="math-container" id="10202930" visual_id="12570"><math alttext="f/g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>/</mo><mi>g</mi></mrow></semantics></math></span>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1074858"> Absolute continuity of the ratio of two absolutely continuous functions </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

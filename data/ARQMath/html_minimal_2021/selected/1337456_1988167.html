@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to compute the integral $ I\left(c\right)=\int_{0}^{1}{\frac{\ln(1-cx)}{1+x}dx} $</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to compute the integral <span class="math-container" id="12430493" visual_id="7693172"><math alttext="I\left(c\right)=\int_{0}^{1}{\frac{\ln(1-cx)}{1+x}dx}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo>(</mo><mi>c</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi>c</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1337456">
+<p>I am currently working on <a href="https://math.stackexchange.com/questions/1006707/how-to-compute-the-following-integral-in-n-variables">this question</a> and the following integral came up: <span class="math-container" id="12430494" visual_id="7693172"><math alttext="I\left(c\right)=\int_{0}^{1}{\frac{\ln(1-cx)}{1+x}dx}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo>(</mo><mi>c</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi>c</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span> for a suitable c. I would like to compute it in terms of <span class="math-container" id="12430495" visual_id="127955"><math alttext="\operatorname{Li}_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Li</mi><mn>2</mn></msub></semantics></math></span>. I tried to expand the logarithm, but things got a bit tedious. So any help is highly appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> integration </span><span> definite-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1988167" id="answer">
+<p><span class="math-container" id="12430518">\newcommand{\bbx}[1]{\,\bbox[8px,border:1px groove navy]{{#1}}\,}  \newcommand{\braces}[1]{\left\lbrace\,{#1}\,\right\rbrace}  \newcommand{\bracks}[1]{\left\lbrack\,{#1}\,\right\rbrack}  \newcommand{\dd}{\mathrm{d}}  \newcommand{\ds}[1]{\displaystyle{#1}}  \newcommand{\expo}[1]{\,\mathrm{e}^{#1}\,}  \newcommand{\ic}{\mathrm{i}}  \newcommand{\mc}[1]{\mathcal{#1}}  \newcommand{\mrm}[1]{\mathrm{#1}}  \newcommand{\pars}[1]{\left(\,{#1}\,\right)}  \newcommand{\partiald}[3][]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}  \newcommand{\root}[2][]{\,\sqrt[#1]{\,{#2}\,}\,}  \newcommand{\totald}[3][]{\frac{\mathrm{d}^{#1} #2}{\mathrm{d} #3^{#1}}}  \newcommand{\verts}[1]{\left\vert\,{#1}\,\right\vert}</span> \begin{align} \mrm{I}\pars{c} &amp; = \int_{0}^{1}{\ln\pars{1 - cx} \over 1 + x}\,\dd x \,\,\,\stackrel{1 - cx\ \mapsto\ x}{=}\,\,\, -\int_{1}^{1 - c}{\ln\pars{x} \over 1 + c - x}\,\dd x \\[5mm] &amp; \stackrel{x/\pars{1 + c}\ \mapsto\ x}{=}\,\,\, -\int_{1/\pars{1 + c}}^{\pars{1 - c}/\pars{1 + c}} {\ln\pars{\bracks{c + 1}x} \over 1 - x}\,\dd x \\[5mm] &amp; =  \left.\vphantom{\LARGE A}\ln\pars{1 - x}\ln\pars{\bracks{c + 1}x} \,\right\vert_{\ 1/\pars{1 + c}}^{\ \pars{1 - c}/\pars{1 + c}} - \int_{1/\pars{1 + c}}^{\pars{1 - c}/\pars{1 + c}}{\ln\pars{1 - x} \over x} \,\dd x \\[5mm] &amp; = \ln\pars{1 - {1 - c \over 1 + c}}\ln\pars{1 - c} + \int_{1/\pars{1 + c}}^{\pars{1 - c}/\pars{1 + c}}\mrm{Li}_{2}'\pars{x}\,\dd x \\[5mm] &amp; =\ \bbox[#ffe,15px,border:1px dotted navy]{\ds{% \ln\pars{2c \over 1 + c}\ln\pars{1 - c} + \mrm{Li}_{2}\pars{1 - c \over 1 + c} - \mrm{Li}_{2}\pars{1\over 1 + c}}} \end{align}</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1006707"> How to compute the following integral in <span class="math-container" id="9589816" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> variables? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

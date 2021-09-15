@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving $\big(n!^{\frac1n}\big)_{n\in\mathbb N^*} \to \infty$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving <span class="math-container" id="7275225" visual_id="763838"><math alttext="\big{(}n!^{\frac{1}{n}}\big{)}_{n\in\mathbb{N}^{*}}\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo maxsize="120%" minsize="120%">(</mo><msup><mrow><mi>n</mi><mo>!</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo maxsize="120%" minsize="120%">)</mo></mrow><mrow><mi>n</mi><mo>∈</mo><msup><mi>ℕ</mi><mo>*</mo></msup></mrow></msub><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="730823">
+<p>By definition, for any <span class="math-container" id="7275226" visual_id="812"><math alttext="a\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>, there exists <span class="math-container" id="7275227" visual_id="19140"><math alttext="k\in\mathbb{N}^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∈</mo><msup><mi>ℕ</mi><mo>*</mo></msup></mrow></semantics></math></span> such that, if <span class="math-container" id="7275228" visual_id="763839"><math alttext="n\in\mathbb{N}+k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mrow><mi>ℕ</mi><mo>+</mo><mi>k</mi></mrow></mrow></semantics></math></span>, then <span class="math-container" id="7275229" visual_id="763840"><math alttext="n!^{\large\frac{1}{n}}&amp;gt;a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mi>n</mi><mo>!</mo></mrow><mfrac><mn mathsize="172%">1</mn><mi mathsize="172%">n</mi></mfrac></msup><mo>&gt;</mo></mrow><mi>a</mi></mrow></semantics></math></span>. Therefore, by induction, I must:</p> <ul> <li>find some <span class="math-container" id="7275230" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> that satisfies <span class="math-container" id="7275231" visual_id="763841"><math alttext="k!&amp;gt;a^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>k</mi><mo>!</mo></mrow><mo>&gt;</mo></mrow><msup><mi>a</mi><mi>k</mi></msup></mrow></semantics></math></span>;</li> <li>show that, for each <span class="math-container" id="7275232" visual_id="41670"><math alttext="n\geq k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mi>k</mi></mrow></semantics></math></span>, if <span class="math-container" id="7275233" visual_id="763842"><math alttext="n!&amp;gt;a^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>&gt;</mo></mrow><msup><mi>a</mi><mi>n</mi></msup></mrow></semantics></math></span>, then <span class="math-container" id="7275234" visual_id="763843"><math alttext="(n+1)!&amp;gt;a^{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo>&gt;</mo></mrow><msup><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span>.</li> </ul> <p>For the 2nd part, it's enough that <span class="math-container" id="7275235" visual_id="763844"><math alttext="k\geq a-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>. I noticed the smallest adequate <span class="math-container" id="7275236" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> is <span class="math-container" id="7275237" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> for <span class="math-container" id="7275238" visual_id="20877"><math alttext="a=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span> and <span class="math-container" id="7275239" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span> for <span class="math-container" id="7275240" visual_id="5139"><math alttext="a=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>3</mn></mrow></semantics></math></span>, and I'm convinced that one can always find a <span class="math-container" id="7275241" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, but I would like a function of <span class="math-container" id="7275242" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> to make an actual argument.</p> <p>Definition aside, methods other than this one are welcome. I tried picking a sequence dominated by <span class="math-container" id="7275243" visual_id="763845"><math alttext="\big{(}n!^{\large\frac{1}{n}}\big{)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><msup><mrow><mi>n</mi><mo>!</mo></mrow><mfrac><mn mathsize="172%">1</mn><mi mathsize="172%">n</mi></mfrac></msup><mo maxsize="120%" minsize="120%">)</mo></mrow></semantics></math></span> that went to infinity as well, but couldn't find any.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1525731"> What's <span class="math-container" id="7275244" visual_id="19053"><math alttext="\mathbb{N}^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℕ</mi><mo>*</mo></msup></semantics></math></span>? Never seen this odd notation before. </td></tr><tr><td comment_id="1525857"> <span class="math-container" id="7275245" visual_id="763846"><math alttext="\mathbb{N}^{\ast}=\{0,1,2,\ldots\}-\{0\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℕ</mi><mo>∗</mo></msup><mo>=</mo><mrow><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow><mo>-</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="730836" id="answer">
+<p>Using Stirling's approximation, we have <span class="math-container" id="7275266" visual_id="763857"><math alttext="n!&amp;gt;\sqrt{2\pi n}(n/e)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>&gt;</mo></mrow><mrow><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>n</mi></mrow></msqrt><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>/</mo><mi>e</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></mrow></semantics></math></span>.  Then <span class="math-container" id="7275267" visual_id="763858"><math alttext="(n!)^{1/n}&amp;gt;\sqrt[n]{2\pi}n^{1/n}\frac{n}{e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></msup><mo>&gt;</mo></mrow><mrow><mroot><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mi>n</mi></mroot><mo>⁢</mo><msup><mi>n</mi><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></msup><mo>⁢</mo><mfrac><mi>n</mi><mi>e</mi></mfrac></mrow></mrow></semantics></math></span>.  Since <span class="math-container" id="7275268" visual_id="763859"><math alttext="\sqrt[n]{2\pi}\rightarrow 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mroot><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mi>n</mi></mroot><mo>→</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="7275269" visual_id="40668"><math alttext="n^{1/n}\rightarrow 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></msup><mo>→</mo><mn>1</mn></mrow></semantics></math></span> but <span class="math-container" id="7275270" visual_id="763860"><math alttext="\frac{n}{e}\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>n</mi><mi>e</mi></mfrac><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>, we see that <span class="math-container" id="7275271" visual_id="763861"><math alttext="(n!)^{1/n}\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></msup><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="136626"> <span class="math-container" id="1585598" visual_id="3490976"><math alttext="\lim\limits_{n\to{+}\infty}{\sqrt[n]{n!}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo mathvariant="normal" movablelimits="false">lim</mo><mrow><mi>n</mi><mo mathvariant="normal">→</mo><mrow><mo mathvariant="normal">+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mo mathvariant="italic">⁡</mo><mroot><mrow><mi>n</mi><mo mathvariant="normal">!</mo></mrow><mi>n</mi></mroot></mrow></semantics></math></span> is infinite </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

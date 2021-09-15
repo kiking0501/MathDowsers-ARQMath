@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is the abstract algebraic structure of "Elementary Algebra"?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is the abstract algebraic structure of "Elementary Algebra"? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="123995">
+<p>From what I understand the Set of Complex Numbers is Closed under Addition, Subtraction, Multiplication, Division, Exponentiation, Radicals and Logarithms.</p> <p>I understand this to mean that these binary operations applied to any two elements of this Set will always result in a third element also contained within this set (the complex numbers). (However upon further reflection perhaps division by zero creates an exception to this)</p> <p>My question is: what sort of algebraic structure does this create? I've been learning about Rings, Groups, Fields etc. But have always been left wondering what structure arises from <strong>all</strong> the standard tools of Elementary Algebra taken as a whole. That is the set of Complex Numbers and the standard operations I listed at the start.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="286497"> <span class="math-container" id="1438698" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> can not be a unit. <span class="math-container" id="1438645" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> is [algebraically-closed](http://en.wikipedia.org/wiki/Algebraically_closed_field). </td></tr><tr><td comment_id="286498"> Note that general exponentiation (that is, <span class="math-container" id="1438694" visual_id="11674"><math alttext="a^{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>a</mi><mi>b</mi></msup></semantics></math></span> rather than <span class="math-container" id="1438647" visual_id="5682475"><math alttext="\exp(b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>), radicals and logarithms are not very well-behaved on <span class="math-container" id="1438648" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> -- they are either multi-valued or discontinuous along an arbitrary chosen branch cut. </td></tr><tr><td comment_id="286504"> In terms of this table: [wiki/Group_(mathematics)#Generalizations](http://en.wikipedia.org/wiki/Group_(mathematics)#Generalizations), are we dealing with violation of closure, or violation of totality? </td></tr><tr><td comment_id="286535"> @J.D. My informal description of Algebraic Closure contains no mention of a "Unit" and I'm unsure of the meaning of your usage of it. Could you please clarify? (I apologize in advance for the myriad of basic concepts I am no doubt still unaware of. I have spent a lot of time and effort attempting to research such things on my own only to find there are questions I still can't answer myself!) </td></tr><tr><td comment_id="286537"> I was referring to [unit](http://en.wikipedia.org/wiki/Unit_(ring_theory)) and [zero divisor](http://en.wikipedia.org/wiki/Zero_divisor). Zero, by definition, has no multiplicative inverse (i.e., you can not divide by zero is not an anomaly). </td></tr><tr><td comment_id="286639"> @jcelios: The correct way to phrase your first sentence is that the *complex numbers* are closed under addition, subtraction, multiplication, division (by nonzero elements), exponentiation, radicals, and logarithms. That is, it's the complex numbers that are "closed under", not the operations. </td></tr><tr><td comment_id="287924"> @Arturo Magidin Thanks for the correction. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="124006" id="answer">
+<p>The fundamental nature is one of a field, <span class="math-container" id="1438691" visual_id="5682481"><math alttext="(\mathbb{F},+,\times,0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>𝔽</mi><mo>,</mo><mo>+</mo><mo>,</mo><mo>×</mo><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> equipped with an onto group homomorphism <span class="math-container" id="1438692" visual_id="5682482"><math alttext="\exp:(\mathbb{F},+)\rightarrow(\mathbb{F}^{\times},\times)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>exp</mi><mo>:</mo><mrow><mrow><mo stretchy="false">(</mo><mi>𝔽</mi><mo>,</mo><mo>+</mo><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><msup><mi>𝔽</mi><mo>×</mo></msup><mo>,</mo><mo>×</mo><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>The fact that <span class="math-container" id="1438693" visual_id="111821"><math alttext="exp" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>p</mi></mrow></semantics></math></span> is onto means that there is a (possibly multi-valued) logarithm.  In turn, that means that there is a more general (possibly multi-valued) exponentiation, <span class="math-container" id="1438694" visual_id="11674"><math alttext="a^{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>a</mi><mi>b</mi></msup></semantics></math></span> with <span class="math-container" id="1438695" visual_id="63096"><math alttext="a,b\in\mathbb{F}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>𝔽</mi></mrow></semantics></math></span> when <span class="math-container" id="1438696" visual_id="4314"><math alttext="a\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>If <span class="math-container" id="1438697" visual_id="2974"><math alttext="\mathbb{F}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝔽</mi></semantics></math></span> has characteristic <span class="math-container" id="1438698" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>, then it has all roots.</p> <p>You can theoretically do the same for a more general commutative rings, <span class="math-container" id="1438699" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>: <span class="math-container" id="1438700" visual_id="5682483"><math alttext="exp:(R,+)\rightarrow(R^{\times},\times)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>e</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>p</mi></mrow><mo>:</mo><mrow><mrow><mo stretchy="false">(</mo><mi>R</mi><mo>,</mo><mo>+</mo><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><msup><mi>R</mi><mo>×</mo></msup><mo>,</mo><mo>×</mo><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, where <span class="math-container" id="1438701" visual_id="49743"><math alttext="R^{\times}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mo>×</mo></msup></semantics></math></span> is the set of units of <span class="math-container" id="1438702" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>.</p> <p>Non-commutativity is an additional problem.  For example, while we can define <span class="math-container" id="1438703" visual_id="111821"><math alttext="exp" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>p</mi></mrow></semantics></math></span> in the ring of <span class="math-container" id="1438704" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrices, it is not a group homomorphism since addition of matrices is commutative but multiplication in general is not.  In this case, we still get <span class="math-container" id="1438705" visual_id="693016"><math alttext="\exp(A)\exp(B)=\exp(A+B)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> if <span class="math-container" id="1438706" visual_id="5084"><math alttext="AB=BA" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></semantics></math></span>.  Also, we have that if <span class="math-container" id="1438707" visual_id="7"><math alttext="U" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi></semantics></math></span> is an invertible <span class="math-container" id="1438708" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrix, then <span class="math-container" id="1438709" visual_id="5682484"><math alttext="exp(U^{-1}AU)=U^{-1}exp(A)U" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>e</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>U</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>U</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>U</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>U</mi></mrow></mrow></semantics></math></span>.</p> <p>Of course, you can also have fields where <span class="math-container" id="1438710" visual_id="14647"><math alttext="\exp" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>exp</mi></semantics></math></span> is not onto, such as <span class="math-container" id="1438711" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> with <span class="math-container" id="1438712" visual_id="2692573"><math alttext="exp(x)=e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>e</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></semantics></math></span>.  Then you don't have all roots or logarithms, but only for the image of <span class="math-container" id="1438713" visual_id="14647"><math alttext="\exp" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>exp</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="286544"> There is some sense in the non-commutative case, that the relationship between Lie Algebras and Lie Groups is related deeply to exponentiation, and that the Lie operator is naturally a measure of the extent to which an exponential operator fails to be commutative. But my understanding of this is very vague, at best, so maybe somebody else can elaborate. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

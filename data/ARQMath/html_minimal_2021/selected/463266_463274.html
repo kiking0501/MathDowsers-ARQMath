@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Pythagorean Quadruples:</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Pythagorean Quadruples: </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="463266">
+<p>Consider the set of integers <span class="math-container" id="4870817" visual_id="55088"><math alttext="\ln(e^{x}-1)\sim_{0}\ln(1+x-1)=\ln x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><msub><mo>∼</mo><mn>0</mn></msub><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></semantics></math></span></p> <p>Such that:</p> <p><span class="math-container" id="4870818" visual_id="4331420"><math alttext="x_{1}^{2}+x_{2}^{2}+x_{3}^{2}=x_{4}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>x</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>x</mi><mn>3</mn><mn>2</mn></msubsup></mrow><mo>=</mo><msubsup><mi>x</mi><mn>4</mn><mn>2</mn></msubsup></mrow></semantics></math></span></p> <p>How does one compute all the solutions to this system?</p> <p>I have the following method in place for computing solutions given the initial condition that <span class="math-container" id="4870819" visual_id="4331421"><math alttext="x_{1}^{2}+x_{2}^{2}=y^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>x</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mo>=</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></semantics></math></span> for some integer <span class="math-container" id="4870820" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span>.</p> <p>One can make the standard Pythagorean triple reduction given this condition and then repeat the reduction again thus generating a general solution for all integers.</p> <p>But what if there exists 3 square numbers such that the sum of any 2 squares in this set if not a square but the sum of all 3 squares is a square? I have no reason to rule out this possibility and no way of generating such solutions</p> <p>As a side note:</p> <p>Given a number and told that it is part of a Pythagorean triple (let's say it's the hypotenuse) how do you find the other squares that sum to it?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> elementary-number-theory </span><span> diophantine-equations </span><span> sums-of-squares </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2769548"> http://math.stackexchange.com/questions/1040843/find-all-solutions-in-positive-integers-of-the-diophantine-equation-w2x2y2/1040864#1040864   You can write more compactly.  <span class="math-container" id="4870821" visual_id="4331422"><math alttext="x_{1}=2ps" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>s</mi></mrow></mrow></semantics></math></span> <span class="math-container" id="4870822" visual_id="4331423"><math alttext="x_{2}=2as" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>s</mi></mrow></mrow></semantics></math></span> <span class="math-container" id="4870823" visual_id="4331424"><math alttext="x_{3}=p^{2}+a^{2}-s^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>3</mn></msub><mo>=</mo><mrow><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo>-</mo><msup><mi>s</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> <span class="math-container" id="4870824" visual_id="4331425"><math alttext="x_{4}=p^{2}+a^{2}+s^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>4</mn></msub><mo>=</mo><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>s</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="463274" id="answer">
+<p>All the primitive Pythagorean Quadruples are known. This is Theorem 3 on page 176 and Theorem 4 on page 177 of Jones_Pall_1939.pdf, available at <a href="http://zakuski.math.utsa.edu/~kap/Jones_Pall_1939.pdf" rel="nofollow noreferrer">TERNARY</a>  as a pdf. The same information is on the first two pages of <a href="http://zakuski.math.utsa.edu/~kap/Pall_Automorphs_1940.pdf" rel="nofollow noreferrer">Pall_Automorphs_1940.pdf</a> at the same site.</p> <p>The short version is this: you have an <strong><em>odd</em></strong> number <span class="math-container" id="4870833" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> Find all quadruples <span class="math-container" id="4870834" visual_id="2896"><math alttext="a,b,c,d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow></semantics></math></span> with <span class="math-container" id="4870835" visual_id="279892"><math alttext="a^{2}+b^{2}+c^{2}+d^{2}=W," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><msup><mi>d</mi><mn>2</mn></msup></mrow><mo>=</mo><mi>W</mi></mrow><mo>,</mo></mrow></semantics></math></span> where we are allowed to mix order, take the variables to be positive, negative, or zero. Then all the <strong><em>primitive</em></strong> quadruples, odd entry first, are given by <span class="math-container" id="4870836" visual_id="279893"><math alttext="\left(a^{2}+b^{2}-c^{2}-d^{2}\right)^{2}+4\left(ad-bc\right)^{2}+4\left(ac+bd% \right)^{2}=W^{2}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mrow><mo>(</mo><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>-</mo><msup><mi>c</mi><mn>2</mn></msup><mo>-</mo><msup><mi>d</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>d</mi></mrow><mo>-</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>d</mi></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>=</mo><msup><mi>W</mi><mn>2</mn></msup></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Meanwhile, if <span class="math-container" id="4870837" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> is some (positive) divisor of <span class="math-container" id="4870838" visual_id="9417"><math alttext="W," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>,</mo></mrow></semantics></math></span> we can do the same process for <span class="math-container" id="4870839" visual_id="4331426"><math alttext="W/t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>/</mo><mi>t</mi></mrow></semantics></math></span> and <span class="math-container" id="4870840" visual_id="4331427"><math alttext="W^{2}/t^{2}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>W</mi><mn>2</mn></msup><mo>/</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mo>,</mo></mrow></semantics></math></span> then multiply all <span class="math-container" id="4870841" visual_id="2896"><math alttext="a,b,c,d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow></semantics></math></span> by <span class="math-container" id="4870842" visual_id="64863"><math alttext="t." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>.</mo></mrow></semantics></math></span></p> <p>July 2015: for another project, I decided to try to generate all the quadruples by the sort of three-parameter formulas one gets by stereographic projection to <span class="math-container" id="4870843" visual_id="203155"><math alttext="\mathbb{S}^{2}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝕊</mi><mn>2</mn></msup><mo>.</mo></mrow></semantics></math></span> the results are really disappointing. I think I will stick with the four parameter thing. I found it in Jones and Pall, but it goes back at least to V. A. Lebesgue (and likely known to Euler),  <a href="https://en.wikipedia.org/wiki/Pythagorean_quadruple#Parametrization_of_primitive_quadruples" rel="nofollow noreferrer">https://en.wikipedia.org/wiki/Pythagorean_quadruple#Parametrization_of_primitive_quadruples</a> and is a simple calculation using quaternions with ordinary integer coefficients. Alright, the (first correct) proof that the four parameter recipe gives all <strong>primitive</strong> solutions is from  1920, by Dickson. In 1941, Skolem gave a proof that can be adjusted to give a reasonably direct algorithm for taking a quadruple and reconstructing the four parameters. In 1956, one F. Steiger gave inequalities that make the mapping one-to-one. This is all reported in a 1962 article by Robert Spira, in the maa Monthly, May 1962, volume 69, number 5, pages 360-365, title <strong><em>The Diophantine Equation <span class="math-container" id="4870844" visual_id="4331428"><math alttext="x^{2}+y^{2}+z^{2}=m^{2}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>=</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><mo>.</mo></mrow></semantics></math></span></em></strong> One thing I did not initially notice, Spira just discards the Pythagorean triples; in the quadruple setting, if one of the numbers is <span class="math-container" id="4870845" visual_id="13808"><math alttext="0," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo></mrow></semantics></math></span> we have a triple and can easily recover parameters. </p> <p>Let's see, I was able to adapt the methods of Jones and Pall to <span class="math-container" id="4870846" visual_id="4331429"><math alttext="x^{2}+y^{2}+z^{2}=3t^{2}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow></semantics></math></span>  coefficients other than <span class="math-container" id="4870847" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> could also be handled this way. <a href="http://math.stackexchange.com/questions/1964607/when-will-a-parametric-solution-generate-all-possible-solutions/1965805#1965805">http://math.stackexchange.com/questions/1964607/when-will-a-parametric-solution-generate-all-possible-solutions/1965805#1965805</a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="461527"> On the origins of the (Weierstrass) Tangent half-angle substitution </td></tr><tr><td post_id="1040843"> Find all solutions in positive integers of the diophantine equation <span class="math-container" id="9875029" visual_id="8848478"><math alttext="w^{2}+x^{2}+y^{2}=z^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>w</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>=</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></semantics></math></span> </td></tr><tr><td post_id="1964607"> When will a parametric solution generate all possible solutions? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

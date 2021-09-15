@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proof that $\sum\limits_{k = 0}^n {n\choose k} =2^n$ using Binomial Expansion Formula</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proof that <span class="math-container" id="9322563" visual_id="106500"><math alttext="\sum\limits_{k=0}^{n}{n\choose k}=2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></semantics></math></span> using Binomial Expansion Formula </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="974075">
+<p>HW problem here. Not sure how to even start on it.</p> <p>Prove that <span class="math-container" id="9322564" visual_id="106500"><math alttext="\sum\limits_{k=0}^{n}{n\choose k}=2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></semantics></math></span></p> <p>Any help is appreciated.</p> <p>For Search purposes:</p> <p>(Hint: Use the binomial expansion mentioned on p. 87.)<br/> An Introduction to Mathematical Statistics and It's Applications 2.6.58</p>
+</div>
+<hr/>
+<div id="tags">
+<span> binomial-coefficients </span><span> binomial-theorem </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1997758"> What is mentioned on p87? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="974110" id="answer">
+<p>If your aim is to use the binomial theorem, the other answers will do, but a nice way to see this is to count the number of subsets of a set containing <span class="math-container" id="9322567" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> elements. To count this, we can run through each element and choose to include or exclude it from the subset. This is two choices for each element, giving <span class="math-container" id="9322568" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> subsets. But we can also count this by adding up the number of subsets of size <span class="math-container" id="9322569" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> for each <span class="math-container" id="9322570" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> ranging from <span class="math-container" id="9322571" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> to <span class="math-container" id="9322572" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>; this is <span class="math-container" id="9322573" visual_id="4067035"><math alttext="\int_{(1-b)}^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mn>1</mn></msubsup></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

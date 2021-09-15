@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Calculating $\lim\limits_{n\to\infty}\frac{(\ln n)^{2}}{n}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Calculating <span class="math-container" id="3885614" visual_id="1497170"><math alttext="\lim\limits_{n\to\infty}\frac{(\ln n)^{2}}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mi>n</mi></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="364139">
+<p>What is the value of <span class="math-container" id="3885615" visual_id="1497170"><math alttext="\lim\limits_{n\to\infty}\dfrac{(\ln n)^{2}}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mstyle displaystyle="true"><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mi>n</mi></mfrac></mstyle></mrow></semantics></math></span> and the proof ?<br/> I can't find anything related to it from questions.<br/> Just only <span class="math-container" id="3885616" visual_id="1480221"><math alttext="\lim\limits_{n\to\infty}\dfrac{\ln n}{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow><mi>n</mi></mfrac></mstyle></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, which I know it is proved by Cesàro.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="364150" id="answer">
+<p>Let </p> <ul> <li><p><span class="math-container" id="3885618" visual_id="1497171"><math alttext="S=\displaystyle\lim_{n\to\infty}\frac{\log(n)}{\sqrt{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mstyle displaystyle="true"><mfrac><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><msqrt><mi>n</mi></msqrt></mfrac></mstyle></mrow></mrow></semantics></math></span>. What do you think the value of this limit would be? What you want to find is <span class="math-container" id="3885619" visual_id="39290"><math alttext="S^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>2</mn></msup></semantics></math></span>.</p></li> <li><p>Secondly to get bounds for this limit consider the function <span class="math-container" id="3885620" visual_id="1497172"><math alttext="f(x)=\frac{\log(x)}{\sqrt{x}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><msqrt><mi>x</mi></msqrt></mfrac></mrow></semantics></math></span> on the interval <span class="math-container" id="3885621" visual_id="21274"><math alttext="[1,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> and apply the derivative tests. </p></li> </ul>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="781686"> Yes, differentiation is nice tool. Thanks. But I'm searching a little more elementary proof. For example, without differentiation, using inequality, using squeeze theorem etc. </td></tr><tr><td comment_id="781690"> @Headhunter Welcome </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

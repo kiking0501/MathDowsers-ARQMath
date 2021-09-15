@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Difference Between Zero-Dimensional and Totally Separated in the Plane</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Difference Between Zero-Dimensional and Totally Separated in the Plane </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2866455">
+<p>In Michael Coornaert's book 'Topological Dimension and Dynamical Systems' he mentions the existence of a set <span class="math-container" id="26496506" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> in the plane that is totally separated, but not zero-dimensional.  He says it is due to Sierpinski, but the paper he cites is in French.  The example doesn't seem to be in Steen &amp; Seebach; is anyone familiar?</p> <p>Here, 'totally separated' means that the quasicomponents of <span class="math-container" id="26496507" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> are points.  Equivalently, for any <span class="math-container" id="26496508" visual_id="6492"><math alttext="x,y\in X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>X</mi></mrow></semantics></math></span> there is a separation of <span class="math-container" id="26496509" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> into disjoint open sets <span class="math-container" id="26496510" visual_id="12690"><math alttext="U,V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>,</mo><mi>V</mi></mrow></semantics></math></span> such that <span class="math-container" id="26496511" visual_id="5247"><math alttext="x\in U" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow></semantics></math></span> and <span class="math-container" id="26496512" visual_id="19933"><math alttext="y\in V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>V</mi></mrow></semantics></math></span>.</p> <p>The Sierpinski paper is here: <a href="https://eudml.org/doc/212954" rel="nofollow noreferrer">https://eudml.org/doc/212954</a></p> <p>A zero-dimensional space in this context can equivalently mean a space with a clopen basis, a space all of whose points have a clopen basis, or a space with arbitrarily fine covers by disjoint open sets.</p> <p>EDIT: David Hartley below has described Sierpinski's space satisfying the desired requirements.  I've attached a (bad) drawing.</p> <p><a href="https://i.stack.imgur.com/kGYdk.jpg" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/kGYdk.jpg"/></a></p>
+</div>
+<hr/>
+<div id="tags">
+<span> general-topology </span><span> examples-counterexamples </span><span> connectedness </span><span> plane-geometry </span><span> dimension-theory-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5914942"> What notion of dimension are you using? </td></tr><tr><td comment_id="5914952"> Since we are in the separable metric case, any of the standard definitions will do.  Covering, small ind, big ind or scattered. </td></tr><tr><td comment_id="5914955"> I was wondering if the Cantor set counted as an example. </td></tr><tr><td comment_id="5914956"> But can you also provide, for sake of completeness, an explicit description for zero dimensionality? </td></tr><tr><td comment_id="5914963"> Can you post a link to the paper by Sierpinski? </td></tr><tr><td comment_id="5914980"> Posted now, thanks for any help! </td></tr><tr><td comment_id="5915286"> @JohnSamples I find it odd that the "standard" definitions of dimension are the covering and inductive dimension. In my line of work, the Hausdorff and Minkowski dimensions are far more standard. :P I don't read French, but the construction in the paper looks to be similar to the construction of the standard [Sierpinski carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet) (thought it isn't quite that–the carpet fails to be totally separated).  You may find [this](https://www.springer.com/cda/content/document/cda_downloaddocument/9783319197937-c2.pdf?SGWID=0-0-45-1513804-p177405633) useful. </td></tr><tr><td comment_id="5915522"> Still not sure about the Sierpinski example, but apparently the Erdos Space, which has the desired properties, was shown to be embeddable in the plane. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2867455" id="answer">
+<p>The example in the Sierpinski paper quoted is quite different from his carpet, except it also uses lots of rectangles. Here's a brief sketch of the construction. It uses repeated applications of the following procedure, illustrated on the rectangle with corners at <span class="math-container" id="26496513" visual_id="185883"><math alttext="(\pm 1,\pm 1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mn>1</mn></mrow><mo>,</mo><mrow><mo>±</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>.   Let <span class="math-container" id="26496514" visual_id="7136623"><math alttext="R(2n-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be the rectangle in the top-left quarter bounded by <span class="math-container" id="26496515" visual_id="7136624"><math alttext="y=0,y=1,x=-(2^{-(2n-2)})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>x</mi><mo>=</mo><mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="26496516" visual_id="7136625"><math alttext="x=-(2^{-(2n-1)})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Let <span class="math-container" id="26496517" visual_id="7136626"><math alttext="R(2n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be the matching rectangle  in the bottom-right quarter (rotate 180 about origin). The same procedure,  scaled appropriately, is repeated in each <span class="math-container" id="26496518" visual_id="7136627"><math alttext="R(n_{1})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> to give rectangles <span class="math-container" id="26496519" visual_id="7136628"><math alttext="R(n_{1},n_{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and again within those, and so on, giving <span class="math-container" id="26496520" visual_id="7136629"><math alttext="R(n_{1},n_{2},..,n_{k})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mo>.</mo><mo>.</mo><mo>,</mo><msub><mi>n</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for any natural k. </p> <p>Let <span class="math-container" id="26496521" visual_id="19141"><math alttext="S_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>k</mi></msub></semantics></math></span> be the union of all these rectangles with k indices and P be the  intersection of all <span class="math-container" id="26496522" visual_id="19141"><math alttext="S_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>k</mi></msub></semantics></math></span>. Let Q be the set containing the centres of all the  defined rectangles and <span class="math-container" id="26496523" visual_id="7136630"><math alttext="E=P\cup Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mrow><mi>P</mi><mo>∪</mo><mi>Q</mi></mrow></mrow></semantics></math></span>.</p> <p><span class="math-container" id="26496524" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> is totally separated but not zero-dimensional. In particular, any clopen  set containing the centre of the outer rectangle has the mid-points of the  top and bottom sides in its closure in <span class="math-container" id="26496525" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span> (they are not in <span class="math-container" id="26496526" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span>) and so has  diameter at least 2. Hence the centre point cannot have a nbhd. basis of clopen sets.</p> <p>Adding one of those mid-points to <span class="math-container" id="26496527" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> forms <span class="math-container" id="26496528" visual_id="18651"><math alttext="E_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mn>1</mn></msub></semantics></math></span> which cannot be totally  separated but remains totally disconnected.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5917663"> Should the exponents for the <span class="math-container" id="26496529" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>-coordinates be negative? </td></tr><tr><td comment_id="5917712"> Ok, this space works!  Thanks!  The details for the non-zero-dimensionality are a bit unpleasant; do you prefer to post them or should I go ahead? </td></tr><tr><td comment_id="5917963"> Yes, they should be negative. I'll change them. (I tried to simplify the original as I'm not much good with Tex, but I slipped up there.) </td></tr><tr><td comment_id="5918033"> I didn't make it clear that this is not my example, just a "translation" of the one in the Sierpinski paper. I'll have a go at the proof if you like, but it will have to wait to tonight. </td></tr><tr><td comment_id="5920114"> if you can I would appreciate it, I have been MSEing on nothing but a tablet this summer (touch screen keyboard).  I deserve a new badge haha </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

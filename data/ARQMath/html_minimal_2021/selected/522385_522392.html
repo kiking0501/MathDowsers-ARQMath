@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Determinant of a block matrix</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Determinant of a block matrix </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="522385">
+<p>How prove this equality for a block matrix: <span class="math-container" id="5447362" visual_id="1547666"><math alttext="\det\left[\begin{array}[cc]{\\}A&amp;amp;C\\ 0&amp;amp;B\end{array}\right]=\det(A)\det(B)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>det</mo><mo>⁡</mo><mrow><mo>[</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>A</mi></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mi>C</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mi>B</mi></mrow></mtd></mtr></mtable><mo>]</mo></mrow></mrow><mo>=</mo><mrow><mo>det</mo><mo>⁡</mo><mrow><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>det</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>I tried to use a proof by induction but I'm stuck on it. Is there a simpler method? Thanks for help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> determinant </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1117367"> possible duplicate of [Determinant of a block lower triangular matrix](http://math.stackexchange.com/questions/75293/determinant-of-a-block-lower-triangular-matrix) and [The determinant of block triangular matrix as product of determinants of diagonal blocks](http://math.stackexchange.com/questions/266068/the-determinant-of-block-triangular-matrix-as-product-of-determinants-of-diagona). </td></tr><tr><td comment_id="1117384"> There is a deeper truth to this than just the proof itself.  While a matrix doesn't have the commutative multiplication of a field, most linear algebra results can be rephrased to not assume multiplicative commutivity.  Therefore any matrix can be though of as a 2x2 matrix of matrices, and most results follow inductively from the 2x2 case. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="522392" id="answer">
+<p>Hint:  See <a href="http://en.wikipedia.org/wiki/Determinant#Block_matrices" rel="noreferrer">Determinants of Block Matrices</a>.  </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1117304"> That does not even indirectly (through the link) give a proof. It is just an indication, and you could have copied that here (with reference to the source if you think it really necessary). </td></tr><tr><td comment_id="1117729"> I was trying to guide him somewhere.  I will put that in the comment section next time.  Thanks for the feedback. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="75293"> Determinant of a block lower triangular matrix </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2102594"> Very basic computations in determinants and matrices </td></tr><tr><td post_id="266068"> The determinant of block triangular matrix as product of determinants of diagonal blocks </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>An analogous definition of Fourier transform $\hat f(u) = \int_{-\infty}^{+\infty} f(t) \exp(- i u t) dt$ for sinc-function.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> An analogous definition of Fourier transform <span class="math-container" id="11358723" visual_id="8658869"><math alttext="\hat{f}(u)=\int_{-\infty}^{+\infty}f(t)\exp(-iut)dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mover accent="true"><mi>f</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span> for sinc-function. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1214014">
+<p>We know the definition of Fourier transform <span class="math-container" id="11358724" visual_id="8658870"><math alttext="\hat{f}(u)=\int_{-\infty}^{+\infty}f(t)\exp(-iut)dt\ \ \ (*)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mover accent="true"><mi>f</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo mathvariant="italic" separator="true">   </mo><mrow><mo stretchy="false">(</mo><mo>*</mo><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> It is widely used in the analysis in the frequency of dynamical systems, in the resolution of differential equations and in signal theory. For example, in systems theory, the Fourier transform of the impulse response characterizes the frequency response of the system in question. </p> <p>The question that I do with this post is rather a curiosity. Is there exist, in literature, a transform similar to (*), where exp-function is replaced by sinc-function? For example <span class="math-container" id="11358725" visual_id="8658871"><math alttext="\hat{f}(u)=\int_{-\infty}^{+\infty}f(t)\operatorname{sinc}(iut)dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mover accent="true"><mi>f</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sinc</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>i</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span> or <span class="math-container" id="11358726" visual_id="8658872"><math alttext="\hat{f}(u)=\int_{-\infty}^{+\infty}f(t)\operatorname{sinc}\left[i(u-t)\right]dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mover accent="true"><mi>f</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sinc</mi><mo>⁡</mo><mrow><mo>[</mo><mrow><mi>i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>u</mi><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>]</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span> or similar.</p> <p>I hope I have guessed the tags. In any case, suggestions are welcome.</p> <p>Thank you very much.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> reference-request </span><span> fourier-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2476967"> You may be interested in Chapter 7 of Keener's "Principles of Applied mathematics". He takes a general approach to deriving Fourier-type transforms. </td></tr><tr><td comment_id="2488860"> A <span class="math-container" id="11358729" visual_id="78507"><math alttext="\mathrm{sinc}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>sinc</mi></semantics></math></span> transform is substantially the same as a Fourier <span class="math-container" id="11358731" visual_id="694"><math alttext="\sin" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>sin</mi></semantics></math></span> transform. @Winther's answer shows that it can be interpreted as a three-dimensional Fourier transform of radially-symmetric functions even if the transform kernel is not <span class="math-container" id="11358729" visual_id="78507"><math alttext="\mathrm{sinc}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>sinc</mi></semantics></math></span> but <span class="math-container" id="11358730" visual_id="2140054"><math alttext="x\mapsto x\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>↦</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span>. Tables of the Fourier <span class="math-container" id="11358731" visual_id="694"><math alttext="\sin" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>sin</mi></semantics></math></span>-transform are available. For instance the Bateman's legacy books by Erdélyi *et al.* or the russians Prudnikov *et al.* </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1219799" id="answer">
+<p>Read this as a (too large) comment, not a full answer: The sinc-transform appears naturally when we take the Fourier transforms of spherical symmetric functions.</p> <p>Take for example a function <span class="math-container" id="11358732" visual_id="17862"><math alttext="f:\mathbb{R}^{3}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><msup><mi>ℝ</mi><mn>3</mn></msup><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> for which <span class="math-container" id="11358733" visual_id="8658873"><math alttext="f(x,y,z)\equiv f(r)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="11358734" visual_id="97529"><math alttext="r=\sqrt{x^{2}+y^{2}+z^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></msqrt></mrow></semantics></math></span>, then the 3D Fourier transform becomes a 1D sinc-transform (of the slightly modified function <span class="math-container" id="11358735" visual_id="8658874"><math alttext="f\to 4\pi r^{2}f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>→</mo><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mi>f</mi></mrow></mrow></semantics></math></span>): </p> <p><span class="math-container" id="11358736" visual_id="8658875"><math alttext="F(\vec{k})=\int f(\vec{x})e^{-i\vec{k}\cdot\vec{x}}d^{3}x=\int_{0}^{\infty}4% \pi f(r)r^{2}\cdot\text{sinc}(|k|r)dr" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>k</mi><mo stretchy="false">→</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>x</mi><mo stretchy="false">→</mo></mover><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mi>i</mi><mo>⁢</mo><mover accent="true"><mi>k</mi><mo stretchy="false">→</mo></mover></mrow><mo>⋅</mo><mover accent="true"><mi>x</mi><mo stretchy="false">→</mo></mover></mrow></mrow></msup><mo>⁢</mo><msup><mi>d</mi><mn>3</mn></msup><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><mo>⋅</mo><mtext>sinc</mtext></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>k</mi><mo stretchy="false">|</mo></mrow><mo>⁢</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>r</mi></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>see for example <a href="http://www.theoretical-physics.net/dev/math/transforms.html#radial-fourier-transform" rel="nofollow">this page</a>.</p> <p>Another comment: the way you have written it, sinc(<span class="math-container" id="11358737" visual_id="8658876"><math alttext="ix)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mi>x</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> - with the <span class="math-container" id="11358738" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>, is not a very interesting transform kernel for real functions since sinc(i<span class="math-container" id="11358739" visual_id="8658877"><math alttext="x)\sim e^{|x|}/x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false">)</mo><mo>∼</mo><mi>e</mi><msup><mi></mi><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></msup><mo>/</mo><mi>x</mi></mrow></semantics></math></span> for large <span class="math-container" id="11358740" visual_id="4404"><math alttext="|x|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></semantics></math></span> so the integral would not converge for most functions we would be interested in taking the transform of.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2488863"> More generally any Bessel function <span class="math-container" id="11358741" visual_id="874481"><math alttext="J_{\nu}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>J</mi><mi>ν</mi></msub></semantics></math></span> can be the kernel of a Fourier-like transform. In <span class="math-container" id="11358742" visual_id="427030"><math alttext="\mathbf{R}^{d}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>𝐑</mi><mi>d</mi></msup></semantics></math></span>, radially symmetric functions have a Fourier-like transform using <span class="math-container" id="11358743" visual_id="8658878"><math alttext="J_{d/2-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>J</mi><mrow><mrow><mi>d</mi><mo>/</mo><mn>2</mn></mrow><mo>-</mo><mn>1</mn></mrow></msub></semantics></math></span> as kernel. Note that <span class="math-container" id="11358744" visual_id="8658879"><math alttext="J_{1/2}=\mathrm{sinc}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub><mo>=</mo><mi>sinc</mi></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How many ways to distribute 19 identical objects to 4 distinct people so everyone gets at most 5?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How many ways to distribute 19 identical objects to 4 distinct people so everyone gets at most 5? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2264964">
+<p>How many ways to distribute 19 identical objects to 4 distinct people so everyone gets at most 5?</p> <p>I know to distribute r identical objects to n groups it's n^r... So I have 4^19 </p> <p>But I don't know how to deal with the fact that everyone gets at most 5.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2264983" id="answer">
+<p>Assuming that all <span class="math-container" id="20922045" visual_id="9405"><math alttext="19" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>19</mn></semantics></math></span> objects are distributed, let each one get <span class="math-container" id="20922046" visual_id="1175698"><math alttext="n_{1},n_{2},n_{3},n_{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub><mo>,</mo><msub><mi>n</mi><mn>4</mn></msub></mrow></semantics></math></span>, we have <span class="math-container" id="20922047" visual_id="2686211"><math alttext="\sum n_{i}=19" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo largeop="true" symmetric="true">∑</mo><msub><mi>n</mi><mi>i</mi></msub></mrow><mo>=</mo><mn>19</mn></mrow></semantics></math></span>, with each <span class="math-container" id="20922048" visual_id="2686212"><math alttext="n_{i}\leq 5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mi>i</mi></msub><mo>≤</mo><mn>5</mn></mrow></semantics></math></span></p> <p>Consider variables <span class="math-container" id="20922049" visual_id="2686213"><math alttext="y_{i}=5-n_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><mrow><mn>5</mn><mo>-</mo><msub><mi>n</mi><mi>i</mi></msub></mrow></mrow></semantics></math></span>, then the constraints become <span class="math-container" id="20922050" visual_id="82649"><math alttext="\sum y_{i}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo largeop="true" symmetric="true">∑</mo><msub><mi>y</mi><mi>i</mi></msub></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.</p> <p>So given that <span class="math-container" id="20922051" visual_id="4621"><math alttext="y_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mi>i</mi></msub></semantics></math></span> can only take values <span class="math-container" id="20922052" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> and <span class="math-container" id="20922053" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, we will have only <span class="math-container" id="20922054" visual_id="213669"><math alttext="\color{blue}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mn>4</mn></mrow></semantics></math></span> ways.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

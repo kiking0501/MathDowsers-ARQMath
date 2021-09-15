@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Does $f'(x)\in \mathbb Z$ a.e. implies that $f$ is an affine function?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Does <span class="math-container" id="20487432" visual_id="4897609"><math alttext="f^{\prime}(x)\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span> a.e. implies that <span class="math-container" id="20487433" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is an affine function? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2217433">
+<p>Conjecture: Let <span class="math-container" id="20487434" visual_id="3106"><math alttext="f:\mathbb{R}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> be an <strong>everywhere</strong> differentiable function and  assume that <span class="math-container" id="20487435" visual_id="4897609"><math alttext="f^{\prime}(x)\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span> <strong>almost everywhere</strong>. Then is <span class="math-container" id="20487436" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> necessarily an affine function?</p> <p>Can you give me a proof or a counter-example ? I thought of the devil's staircase, but this is not differentiable everywhere. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> analysis </span><span> measure-theory </span><span> derivatives </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4561486"> Use Darboux's theorem for the derivative. https://teachingcalculus.com/2014/08/18/darbouxs-theorem/ to deduce that the derivative is constant. </td></tr><tr><td comment_id="4561499"> Do you assume that <span class="math-container" id="20487437" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is **everywhere** or **almost everywhere** differentiable? </td></tr><tr><td comment_id="4561796"> @uniquesolution But the derivative is only assumed to be integral a.e., so the application of Darboux, if it works at all, isn't all that straightforward. Or did I miss something? </td></tr><tr><td comment_id="4563445"> The application of Darboux is very simple. Suppose <span class="math-container" id="20487438" visual_id="4897610"><math alttext="f^{\prime}(a)=z_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>z</mi><mn>1</mn></msub></mrow></semantics></math></span> and <span class="math-container" id="20487439" visual_id="4897611"><math alttext="f^{\prime}(b)=z_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>z</mi><mn>2</mn></msub></mrow></semantics></math></span>.  Then, between a and b, <span class="math-container" id="20487447" visual_id="1179"><math alttext="f^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mo>′</mo></msup></semantics></math></span> has to take every value between <span class="math-container" id="20487441" visual_id="4611"><math alttext="z_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mn>1</mn></msub></semantics></math></span> and <span class="math-container" id="20487442" visual_id="7265"><math alttext="z_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mn>2</mn></msub></semantics></math></span>, both integer and non-integer.  If it can't be an integer, then <span class="math-container" id="20487443" visual_id="116466"><math alttext="z_{1}=z_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>=</mo><msub><mi>z</mi><mn>2</mn></msub></mrow></semantics></math></span> and the derivative everywhere is that constant value. </td></tr><tr><td comment_id="4563473"> @Paul Why can't <span class="math-container" id="20487447" visual_id="1179"><math alttext="f^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mo>′</mo></msup></semantics></math></span> attain all noninteger values in <span class="math-container" id="20487445" visual_id="619579"><math alttext="[z_{1},z_{2}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><msub><mi>z</mi><mn>1</mn></msub><mo>,</mo><msub><mi>z</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></semantics></math></span> on a set of measure zero? </td></tr><tr><td comment_id="4563964"> I found this which can answer my question https://mathoverflow.net/questions/266377/how-quickly-can-the-derivative-of-an-everywhere-differentiable-function-change-s </td></tr><tr><td comment_id="4938247"> Perhaps I shall return to this question<span class="math-container" id="20487446" visual_id="4669"><math alttext="\,\ldots\qquad" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi mathvariant="normal">…</mi></mpadded><mo mathvariant="italic" separator="true">  </mo></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2644135" id="answer">
+<p>Yes, <span class="math-container" id="20487447" visual_id="1179"><math alttext="f^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mo>′</mo></msup></semantics></math></span> must be constant. This has been answered in the comments; the result in <a href="https://mathoverflow.net/questions/266377/how-quickly-can-the-derivative-of-an-everywhere-differentiable-function-change-s">https://mathoverflow.net/questions/266377/how-quickly-can-the-derivative-of-an-everywhere-differentiable-function-change-s</a> gives a kind of positive measure Darboux theorem. This is a special case of <a href="https://math.stackexchange.com/questions/2570732/how-irregular-can-f-be-beyond-darbouxs-theorem/2572866#2572866">How irregular can <span class="math-container" id="20487448" visual_id="372748"><math alttext="f&amp;#39;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi mathvariant="normal">#</mi><mo>⁢</mo><mn>39</mn></mrow><mo>;</mo></mrow></semantics></math></span> be beyond Darboux's Theorem?</a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2570732"> How irregular can <span class="math-container" id="23763962" visual_id="1179"><math alttext="f^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mo>′</mo></msup></semantics></math></span> be beyond Darboux's Theorem? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

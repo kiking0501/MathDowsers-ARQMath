@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is there a connection between duality in linear programming and duality in functional analysis?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is there a connection between duality in linear programming and duality in functional analysis? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1533754">
+<p>In linear programming we optimize a linear function which is constrained by linear inequalities or linear equalities. Under some conditions you can rewrite the problem to the dual problem, so that you can solve another linear programming problem to get your result.</p> <p>In functional analysis the dual of a vector space is the collection of linear functionals from the vector space.</p> <p>Are there any connections between this? Can we write the problems in some way so that they say the same thing? The only connection I have seen is that in functional analysis we have the hahn-banach theorem, which is a theorem about extensions of linear functionals, this is connected to the hahn-banach separation theorem, the separating hyperplane theorem, and this again is connected to farkas lemma, which is used in linear programming. Is there any more connections, or is it just coincidental that both use the word dual? Before I started reading functional analysis I thought the connection would be stronger, since we can prove the separating hyperplane theorem using functional analysis, and this theorem and farkas lemma were a big part of linear programming.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> functional-analysis </span><span> linear-programming </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1536594" id="answer">
+<p>As you already mentioned, dual spaces appear in separation theorems naturally.</p> <p>There is also another relation:</p> <p>Given a convex optimization problem, one can define a dual problem. If the original optimization problem is posed in a Banach space <span class="math-container" id="14174047" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span>, then the dual problem lives in the dual space <span class="math-container" id="14174048" visual_id="25686"><math alttext="V^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>V</mi><mo>*</mo></msup></semantics></math></span>.</p> <p>Linear programming problems are special instances of convex problems in the Banach space <span class="math-container" id="14174049" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span>. The dual programming problem can be derived by means of the general method for convex problems.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

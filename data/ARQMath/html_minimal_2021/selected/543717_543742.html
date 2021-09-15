@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove by induction that $3^{4n + 2} + 1$ is divisible by $10$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove by induction that <span class="math-container" id="5643328" visual_id="1616221"><math alttext="3^{4n+2}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup><mo>+</mo><mn>1</mn></mrow></semantics></math></span> is divisible by <span class="math-container" id="5643329" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="543717">
+<p>Prove by induction: <span class="math-container" id="5643330" visual_id="1616222"><math alttext="3^{(4n+2)}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></msup><mo>+</mo><mn>1</mn></mrow></semantics></math></span> is divisible by <span class="math-container" id="5643331" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span>.</p> <p>My basic step: <span class="math-container" id="5643332" visual_id="1616222"><math alttext="3^{(4n+2)}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></msup><mo>+</mo><mn>1</mn></mrow></semantics></math></span>, where <span class="math-container" id="5643333" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> gives me <span class="math-container" id="5643334" visual_id="1616223"><math alttext="3^{6}+1=730" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>3</mn><mn>6</mn></msup><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>730</mn></mrow></semantics></math></span>, which is divisible by <span class="math-container" id="5643335" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span>. However, then I have to do the induction hypothesis and I am kind of stuck because I do not have an equality. How do I finish proving this by induction?</p> <p>Many thanks.</p> <p>Edit: I am thinking of creating a formula which involves <span class="math-container" id="5643336" visual_id="38017"><math alttext="10n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>⁢</mo><mi>n</mi></mrow></semantics></math></span>? Would this be correct?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> proof-writing </span><span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1157950"> Its much simpler to get <span class="math-container" id="5643337" visual_id="1616224"><math alttext="(3^{4})^{n}.3^{2}+1\equiv\qvar@construct{(}mod10)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mn>3</mn><mn>4</mn></msup><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><msup><mn>.3</mn><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>≡</mo><mi mathcolor="red" mathvariant="italic">qvar_(</mi><mi>m</mi><mi>o</mi><mi>d</mi><mn>10</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="543742" id="answer">
+<p>Suppose <span class="math-container" id="5643373" visual_id="1616241"><math alttext="3^{4k+2}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>2</mn></mrow></msup><mo>+</mo><mn>1</mn></mrow></semantics></math></span> is divided by 10, then we need to show <span class="math-container" id="5643374" visual_id="1616242"><math alttext="3^{4(k+1)+2}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>4</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow></msup><mo>+</mo><mn>1</mn></mrow></semantics></math></span> is also divided by 10. Note that:  </p> <p>\begin{align*} \ 3^{4(k+1)+2} +1 &amp;= 3^{4k+2+4}+(81-80) \\ &amp;= 81\cdot3^{4k+2} + 81 - 80 \\ &amp;= 81\cdot(3^{4k+2}+1) - 80  \\ &amp;= 81\cdot10m -80\ldots\ldots (\text{where}~3^{4k+2}+1 = 10m ~~\text{for some integer}~m) \\ &amp;= 10(81m-8) \end{align*}</p> <p>Hence, <span class="math-container" id="5643375" visual_id="1616242"><math alttext="3^{4(k+1)+2}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mrow><mrow><mn>4</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow></msup><mo>+</mo><mn>1</mn></mrow></semantics></math></span> is also divided by 10, which complete the proof.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="540297"> last two digits of <span class="math-container" id="5612492" visual_id="1605590"><math alttext="9^{1500}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>9</mn><mn>1500</mn></msup></semantics></math></span> (Dummit Foote -Abstract Algebra preliminaries <span class="math-container" id="5612493" visual_id="1605591"><math alttext="0.3.5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.3.5</mn></semantics></math></span>) </td></tr><tr><td post_id="533175"> What is the tens digit of <span class="math-container" id="5547379" visual_id="474547"><math alttext="3^{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>3</mn><mn>100</mn></msup></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Use combinatorial arguments to prove the following binomial identities</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Use combinatorial arguments to prove the following binomial identities </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2629896">
+<p>Can anyone help prove this binomial identities by using the combinatorial arguments, I have no clue to get start. Thanks. <span class="math-container" id="24312270" visual_id="4018398"><math alttext="\binom{2n+1}{n}=\sum_{k=0}^{n}\binom{n+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> proof-verification </span><span> proof-explanation </span><span> combinatorial-proofs </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5430726"> Have you tried for induction? </td></tr><tr><td comment_id="5430739"> What have you tried? Why do you get stuck? Don't forget about providing this information in your question. </td></tr><tr><td comment_id="5430742"> Perhaps start by considering/trying various classical combinatorial interpretations: choosing people from a group, rearranging letters, etc. Then, if you're still stuck, edit your question to let us know what you've tried. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2629964" id="answer">
+<blockquote> <p>The number of lattice paths from <span class="math-container" id="24312271" visual_id="828"><math alttext="(0,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> to <span class="math-container" id="24312272" visual_id="696839"><math alttext="(n+1,n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> consisting of <span class="math-container" id="24312273" visual_id="16162"><math alttext="(1,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>-steps and <span class="math-container" id="24312274" visual_id="2953"><math alttext="(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>-steps is <span class="math-container" id="24312275" visual_id="2196512"><math alttext="\binom{2n+1}{n}=\binom{2n+1}{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> since we have to choose precisely <span class="math-container" id="24312276" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> <span class="math-container" id="24312277" visual_id="16162"><math alttext="(1,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>-steps out of <span class="math-container" id="24312278" visual_id="3954"><math alttext="2n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> steps.</p> </blockquote> <p>                               <a href="https://i.stack.imgur.com/RUY5D.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/RUY5D.png"/></a></p> <p>Each of these paths crosses the vertical line <span class="math-container" id="24312279" visual_id="17373"><math alttext="x=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>n</mi></mrow></semantics></math></span> at a specific height <span class="math-container" id="24312280" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> with <span class="math-container" id="24312281" visual_id="3910"><math alttext="0\leq k\leq n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mi>n</mi></mrow></semantics></math></span>.  There are <span class="math-container" id="24312282" visual_id="19530"><math alttext="\binom{n+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></semantics></math></span> paths crossing the vertical line <span class="math-container" id="24312283" visual_id="17373"><math alttext="x=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>n</mi></mrow></semantics></math></span> at height <span class="math-container" id="24312284" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>. Since this holds for each <span class="math-container" id="24312285" visual_id="3910"><math alttext="0\leq k\leq n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mi>n</mi></mrow></semantics></math></span> </p> <blockquote> <p>we conclude</p> <p>\begin{align*} \color{blue}{\sum_{k=0}^n\binom{n+k}{k}=\binom{2n+1}{n}} \end{align*}</p> </blockquote>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5431235"> is there a summation for RHS ? </td></tr><tr><td comment_id="5431290"> @Student: Some more details added. </td></tr><tr><td comment_id="5431557"> A nice argument. </td></tr><tr><td comment_id="5431568"> @N.F.Taussig: Thanks for the credit. </td></tr><tr><td comment_id="5431864"> Neat, i like it. </td></tr><tr><td comment_id="5437242"> Hey Markus. May I ask where you get your diagrams? </td></tr><tr><td comment_id="5437263"> @N.Shales: Checkout the latest version from GeoGebra and have fun. :-) </td></tr><tr><td comment_id="5437270"> Will do!! Cheers! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2632579"> Sum of Diagonal in Pascals triangle with power of 2 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

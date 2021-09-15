@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Binary relation, reflexive, symmetric and transitive</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Binary relation, reflexive, symmetric and transitive </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="863219">
+<p>I have a question regarding an image. I'm currently studying binary relations and the following image confused me:</p> <p><img alt="Binary relations" src="https://i.stack.imgur.com/TAHR9.gif"/></p> <p>What got me confused is that the page from which I got the link (<a href="http://www.cs.odu.edu/~toida/nerzic/content/relation/property/property.html" rel="nofollow noreferrer">http://www.cs.odu.edu/~toida/nerzic/content/relation/property/property.html</a>) says that the graph in (a) is reflexive, symmetric and transitive.</p> <p>According to what I've learned so far a set is reflexive if for all <span class="math-container" id="8382775" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, <span class="math-container" id="8382776" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> bears a relation to <span class="math-container" id="8382777" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, the graph has this property. Now, for the other two relations, symmetric and transitive, it does not hold. Because for it to be symmetric it would need a path from both points back to each other (because a relation is symmetric iff <span class="math-container" id="8382778" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> has a relation to <span class="math-container" id="8382779" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> and back). The transitive property also does not hold because there are only 2 points and transitivity needs at least three.</p> <p>I would like some proof that explains why the graph <strong>is</strong> transitive and symmetric.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> relations </span><span> equivalence-relations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="863245" id="answer">
+<p>The relation <span class="math-container" id="8382790" visual_id="3262"><math alttext="\sim" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∼</mo></semantics></math></span> is reflexive if <em>whenever</em> <span class="math-container" id="8382791" visual_id="7918"><math alttext="x\sim y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∼</mo><mi>y</mi></mrow></semantics></math></span>, it is also true that <span class="math-container" id="8382792" visual_id="142510"><math alttext="y\sim x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∼</mo><mi>x</mi></mrow></semantics></math></span>. In other words, <em>if there is no pair <span class="math-container" id="8382793" visual_id="921"><math alttext="x,y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></semantics></math></span> with <span class="math-container" id="8382794" visual_id="7918"><math alttext="x\sim y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∼</mo><mi>y</mi></mrow></semantics></math></span> and <span class="math-container" id="8382795" visual_id="356155"><math alttext="y\not\sim x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>≁</mo><mi>x</mi></mrow></semantics></math></span>, then the relation is symmetric</em>. Think of it this way: If there is no asymmetry, then it is symmetric. The same goes for transitivity. If there is no <em>violation</em> of transitivity, then the relation is transitive.</p> <p>Consider this - do you agree that the relation in example <span class="math-container" id="8382796" visual_id="12045"><math alttext="(e)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>e</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> is transitive? I am quite sure you do. But observe that the bottom element is not related to any other element. Is that a violation of transitivity? No, of course not. Similarly, even if no element is related to any other (like in <span class="math-container" id="8382797" visual_id="12036"><math alttext="(a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>), there is no actual violation of transitivity.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

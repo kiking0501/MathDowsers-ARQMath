@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Solving for Generating Functions</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Solving for Generating Functions </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="333521">
+<p>Suppose the EGF of <span class="math-container" id="3595160" visual_id="3814465"><math alttext="\{c_{n}\}_{n\geq 0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">{</mo><msub><mi>c</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>0</mn></mrow></msub></semantics></math></span> is <span class="math-container" id="3595161" visual_id="3814466"><math alttext="(e^{x}-1)^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></semantics></math></span>. Find a formula for <span class="math-container" id="3595162" visual_id="7982"><math alttext="c_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mi>n</mi></msub></semantics></math></span>. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> generating-functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="719871"> Foil (multiply out) then expand each summand <span class="math-container" id="3595163" visual_id="3814467"><math alttext="\pm\square e^{nx}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>±</mo><mrow><mi mathvariant="normal">□</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>n</mi><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></mrow></semantics></math></span> (<span class="math-container" id="3595164" visual_id="749653"><math alttext="0\leq n\leq 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>n</mi><mo>≤</mo><mn>3</mn></mrow></semantics></math></span>) using the series expansion of the exponential function. </td></tr><tr><td comment_id="719884"> Try to show that you have put some effort into it yourself. That way, people will be more willing to assist you. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="333525" id="answer">
+<p>Write out</p> <p><span class="math-container" id="3595165" visual_id="3814468"><math alttext="(e^{x}-1)^{3}=e^{3x}-3e^{2x}+3e^{x}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>=</mo><mrow><mrow><mrow><msup><mi>e</mi><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></msup><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span></p> <p>which has a series expansion</p> <p><span class="math-container" id="3595166" visual_id="3814469"><math alttext="\sum_{n=0}^{\infty}\frac{x^{n}}{n!}[3^{n}-3\cdot 2^{n}+3-\delta_{0n}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mrow><msup><mn>3</mn><mi>n</mi></msup><mo>-</mo><mrow><mn>3</mn><mo>⋅</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></mrow><mo>+</mo><mn>3</mn></mrow><mo>-</mo><msub><mi>δ</mi><mrow><mn>0</mn><mo>⁢</mo><mi>n</mi></mrow></msub></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Then</p> <p><span class="math-container" id="3595167" visual_id="3814470"><math alttext="c_{n}=3^{n}-3\cdot 2^{n}+3-\delta_{0n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mrow><msup><mn>3</mn><mi>n</mi></msup><mo>-</mo><mrow><mn>3</mn><mo>⋅</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></mrow><mo>+</mo><mn>3</mn></mrow><mo>-</mo><msub><mi>δ</mi><mrow><mn>0</mn><mo>⁢</mo><mi>n</mi></mrow></msub></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

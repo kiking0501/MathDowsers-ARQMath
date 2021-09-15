@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why rank of an $n \times n$ matrix after subtracting its column mean is $n-1$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why rank of an <span class="math-container" id="13049898" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrix after subtracting its column mean is <span class="math-container" id="13049899" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1404684">
+<p>Given a <span class="math-container" id="13049900" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrix <span class="math-container" id="13049901" visual_id="142788"><math alttext="A=\begin{bmatrix}a_{1}&amp;amp;a_{2}&amp;amp;\dots&amp;amp;a_{n}\end{bmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo>[</mo><mtable columnspacing="5pt"><mtr><mtd columnalign="center"><msub><mi>a</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><msub><mi>a</mi><mn>2</mn></msub></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mi mathvariant="normal">…</mi></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>]</mo></mrow></mrow></semantics></math></span>, where each <span class="math-container" id="13049902" visual_id="164"><math alttext="a_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>i</mi></msub></semantics></math></span> are columns of <span class="math-container" id="13049903" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> for <span class="math-container" id="13049904" visual_id="87679"><math alttext="i=1\dots n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></semantics></math></span>.</p> <p>Column mean is calculated by <span class="math-container" id="13049905" visual_id="5322561"><math alttext="\bar{a}=(a_{1}+a_{2}+\dots+a_{n})/n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>a</mi><mo stretchy="false">¯</mo></mover><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mi>n</mi></mrow></mrow></semantics></math></span>.</p> <p>Then, define:</p> <p><span class="math-container" id="13049906" visual_id="5322562"><math alttext="B=\begin{bmatrix}a_{1}-\bar{a}&amp;amp;a_{2}-\bar{a}&amp;amp;\dots&amp;amp;a_{n}-\bar{a}% \end{bmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo>[</mo><mtable columnspacing="5pt"><mtr><mtd columnalign="center"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>-</mo><mover accent="true"><mi>a</mi><mo stretchy="false">¯</mo></mover></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>-</mo><mover accent="true"><mi>a</mi><mo stretchy="false">¯</mo></mover></mrow></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mi mathvariant="normal">…</mi></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>-</mo><mover accent="true"><mi>a</mi><mo stretchy="false">¯</mo></mover></mrow></mrow></mtd></mtr></mtable><mo>]</mo></mrow></mrow></semantics></math></span>.</p> <p>May I know why the rank<span class="math-container" id="13049907" visual_id="31003"><math alttext="(B)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> is <span class="math-container" id="13049908" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span>?</p> <p>I did try many times with computer program to prove but I want a proof of this.</p> <p>Thanks in advance.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> statistics </span><span> matrix-rank </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2861076"> Would the reason be as simple as <span class="math-container" id="13049909" visual_id="5322563"><math alttext="\text{rank}(\hat{P}_{b})\leq l&lt;k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mtext>rank</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mover accent="true"><mi>P</mi><mo stretchy="false">^</mo></mover><mi>b</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>l</mi><mo>&lt;</mo><mi>k</mi></mrow></semantics></math></span>? </td></tr><tr><td comment_id="2861092"> <span class="math-container" id="13049917" visual_id="5322564"><math alttext="\widehat{\mathbf{P}}_{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>^</mo></mover><mi>b</mi></msub></semantics></math></span> should be <span class="math-container" id="13049911" visual_id="69362"><math alttext="l\times l" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>×</mo><mi>l</mi></mrow></semantics></math></span>, not <span class="math-container" id="13049912" visual_id="10337"><math alttext="k\times k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>×</mo><mi>k</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="2861303"> @hermes I agree. I think it is a typo. <span class="math-container" id="13049917" visual_id="5322564"><math alttext="\widehat{\mathbf{P}}_{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>^</mo></mover><mi>b</mi></msub></semantics></math></span> should be <span class="math-container" id="13049914" visual_id="69362"><math alttext="l\times l" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>×</mo><mi>l</mi></mrow></semantics></math></span>. But if <span class="math-container" id="13049915" visual_id="3001532"><math alttext="\mathbf{X}_{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝐗</mi><mi>b</mi></msub></semantics></math></span> has <span class="math-container" id="13049916" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> columns, do you know why rank of <span class="math-container" id="13049917" visual_id="5322564"><math alttext="\widehat{\mathbf{P}}_{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover accent="true"><mi>𝐏</mi><mo>^</mo></mover><mi>b</mi></msub></semantics></math></span> is <span class="math-container" id="13049918" visual_id="11609"><math alttext="k-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1404836" id="answer">
+<p>We observe that the sum of all columns in <span class="math-container" id="13049919" visual_id="10328"><math alttext="\mathbf{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐁</mi></semantics></math></span> is equal to zero. That means one column can be rewritten as a linear combination of all the others. Hence the rank is at most <span class="math-container" id="13049920" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

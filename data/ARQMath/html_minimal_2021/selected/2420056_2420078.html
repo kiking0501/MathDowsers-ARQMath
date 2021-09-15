@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to solve differential equation $y=xy'+\frac12y'^2$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to solve differential equation <span class="math-container" id="22412100" visual_id="2711888"><math alttext="y=xy^{\prime}+\frac{1}{2}y^{\prime 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi>y</mi><mrow><mo mathsize="142%" stretchy="false">′</mo><mo>⁣</mo><mn>2</mn></mrow></msup></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2420056">
+<p>How to solve differential equation <span class="math-container" id="22412101" visual_id="2711888"><math alttext="y=xy^{\prime}+\dfrac{1}{2}y^{\prime 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>y</mi><mrow><mo mathsize="142%" stretchy="false">′</mo><mo>⁣</mo><mn>2</mn></mrow></msup></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> ordinary-differential-equations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4998005"> Try <span class="math-container" id="22412102" visual_id="43757"><math alttext="y=ax^{2}{}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4998018"> Show your work if you have tried anything. </td></tr><tr><td comment_id="4998131"> There is the trivial solution <span class="math-container" id="22412103" visual_id="4689418"><math alttext="y(x)=x+\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mrow></semantics></math></span>, but apart from that, no idea. </td></tr><tr><td comment_id="4998152"> Duplicate https://math.stackexchange.com/q/2144855/115115, also search for "Clairaut equation" to find related examples. </td></tr><tr><td comment_id="4999376"> Exact duplicate of [Differential equation <span class="math-container" id="22412104" visual_id="2633696"><math alttext="y=xy^{\prime}+\frac{1}{2}(y^{\prime})^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>y</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span>](https://math.stackexchange.com/questions/2248737/differential-equation-y-xy-frac12y2/). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2420078" id="answer">
+<p><strong>Hint:</strong> </p> <p>For quadratic first order differential equation  <span class="math-container" id="22412133" visual_id="2711888"><math alttext="y=xy^{\prime}+\dfrac{1}{2}y^{\prime 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>y</mi><mrow><mo mathsize="142%" stretchy="false">′</mo><mo>⁣</mo><mn>2</mn></mrow></msup></mrow></mrow></mrow></semantics></math></span> we have <span class="math-container" id="22412134" visual_id="4689437"><math alttext="y^{\prime 2}+2xy^{\prime}-2y=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>y</mi><mrow><mo mathsize="142%" stretchy="false">′</mo><mo>⁣</mo><mn>2</mn></mrow></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="22412135" visual_id="4689438"><math alttext="y^{\prime}=-x\pm\sqrt{x^{2}+2y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mo>′</mo></msup><mo>=</mo><mrow><mrow><mo>-</mo><mi>x</mi></mrow><mo>±</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi></mrow></mrow></msqrt></mrow></mrow></semantics></math></span> these two equations solve with substitution <span class="math-container" id="22412136" visual_id="4689439"><math alttext="x^{2}+2y=u^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></semantics></math></span> and we have <span class="math-container" id="22412137" visual_id="1483210"><math alttext="u=C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>C</mi></mrow></semantics></math></span>. This shows <span class="math-container" id="22412138" visual_id="4689440"><math alttext="x^{2}+2y=C^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><msup><mi>C</mi><mn>2</mn></msup></mrow></semantics></math></span> and putting it in main equation gives us <span class="math-container" id="22412139" visual_id="4689441"><math alttext="\color{blue}{y=-\dfrac{1}{2}x^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2248737"> Differential equation <span class="math-container" id="20769089" visual_id="2633696"><math alttext="y=xy^{\prime}+\frac{1}{2}(y^{\prime})^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>y</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="2144855"> Doubt with a Clairaut Equation and <span class="math-container" id="19823657" visual_id="88946"><math alttext="u=H_{j}v_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mrow><msub><mi>H</mi><mi>j</mi></msub><mo>⁢</mo><msub><mi>v</mi><mi>j</mi></msub></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

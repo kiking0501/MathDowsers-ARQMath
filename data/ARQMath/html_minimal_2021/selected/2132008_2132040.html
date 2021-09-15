@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Stuck on a question in Stein & Shakarchi, Complex Analysis about Chapter 2 Exercise 4</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Stuck on a question in Stein &amp; Shakarchi, Complex Analysis about Chapter 2 Exercise 4 </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2132008">
+<p>I don't know how to prove it:</p> <p>For all <span class="math-container" id="19706401" visual_id="794020"><math alttext="\xi\in\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ξ</mi><mo>∈</mo><mi>ℂ</mi></mrow></semantics></math></span> we have <span class="math-container" id="19706402" visual_id="2757387"><math alttext="e^{-\pi\xi^{2}}=\int_{-\infty}^{\infty}e^{-\pi x^{2}}e^{2\pi ix\xi}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mrow></msup><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>ξ</mi></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span>.</p> <p>I tried to imitate the EXAMPLE 1 on the page 42,and put it into a toy contour like this: <a href="https://i.stack.imgur.com/axoyO.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/axoyO.png"/></a> and take <span class="math-container" id="19706403" visual_id="2757388"><math alttext="\xi=x_{0}+iy_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ξ</mi><mo>=</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></mrow></mrow></semantics></math></span> instead of <span class="math-container" id="19706404" visual_id="1028955"><math alttext="i\xi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></semantics></math></span>, but it makes no sense.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> complex-analysis </span><span> analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4384436"> it is easier to just complete the square in the exponent </td></tr><tr><td comment_id="4384437"> or to google: "Fouriertransform of a Gaussian" </td></tr><tr><td comment_id="4384471"> @tired another way? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2132040" id="answer">
+<p>Since <span class="math-container" id="19706405" visual_id="2757389"><math alttext="-\pi x^{2}+2\pi ix\xi=-\pi(x-i\xi)^{2}-\pi\xi^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span>, we write</p> <p><span class="math-container" id="19706406" visual_id="2757390"><math alttext="\int_{-\infty}^{\infty}e^{-\pi x^{2}}e^{2\pi ix\xi}\,dx=\int_{-\infty}^{\infty% }e^{-\pi(x-i\xi)^{2}}e^{-\pi\xi^{2}}\,dx=e^{-\pi\xi^{2}}\int_{-\infty}^{\infty% }e^{-\pi(x-i\xi)^{2}}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>ξ</mi></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></semantics></math></span> </p> <p>Let <span class="math-container" id="19706407" visual_id="2757391"><math alttext="\xi=a+bi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ξ</mi><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>i</mi></mrow></mrow></mrow></semantics></math></span>. Using the <span class="math-container" id="19706408" visual_id="506"><math alttext="u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi></semantics></math></span>-substition <span class="math-container" id="19706409" visual_id="2757392"><math alttext="u=x+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span>, we obtain</p> <p><span class="math-container" id="19706410" visual_id="2757393"><math alttext="\int_{-\infty}^{\infty}e^{-\pi(x-i\xi)^{2}}\,dx=\int_{-\infty}^{\infty}e^{-\pi% (u-ai)^{2}}\,du" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>u</mi><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>The last integral can be computed using the rectangular contour <span class="math-container" id="19706411" visual_id="268015"><math alttext="\Gamma(R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> with vertices <span class="math-container" id="19706412" visual_id="2757394"><math alttext="-R,R,R-ai" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mi>R</mi></mrow><mo>,</mo><mi>R</mi><mo>,</mo><mrow><mi>R</mi><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mi>i</mi></mrow></mrow></mrow></semantics></math></span>, and <span class="math-container" id="19706413" visual_id="2757395"><math alttext="-R-ai" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mi>R</mi></mrow><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mi>i</mi></mrow></mrow></semantics></math></span>. Let <span class="math-container" id="19706414" visual_id="2757396"><math alttext="f(z)=e^{-\pi z^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></semantics></math></span>. By Cauchy's theorem, <span class="math-container" id="19706415" visual_id="2757397"><math alttext="\int_{\Gamma(R)}f(z)\,dz=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>z</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. The integrals along the vertical edges of <span class="math-container" id="19706416" visual_id="268015"><math alttext="\Gamma(R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> are bounded by a constant times <span class="math-container" id="19706417" visual_id="2757398"><math alttext="e^{-\pi R^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>R</mi><mn>2</mn></msup></mrow></mrow></msup></semantics></math></span>, which tend to <span class="math-container" id="19706418" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> as <span class="math-container" id="19706419" visual_id="14935"><math alttext="R\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. Hence, </p> <p><span class="math-container" id="19706420" visual_id="2757399"><math alttext="\int_{-\infty}^{\infty}e^{-\pi(u-ai)^{2}}\,du=\int_{-\infty}^{\infty}e^{-\pi u% ^{2}}\,du=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>u</mi><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p> <p>and the value of the original integral is <span class="math-container" id="19706421" visual_id="2757400"><math alttext="e^{-\pi\xi^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mrow></msup></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

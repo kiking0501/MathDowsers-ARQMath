@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Time complexity of writing a number as power of 2's</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Time complexity of writing a number as power of 2's </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2243294">
+<p>I'm wondering about the time complexity of writing a number as power of 2's. For example writing <span class="math-container" id="20719009" visual_id="2616499"><math alttext="n=218" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>218</mn></mrow></semantics></math></span> as <span class="math-container" id="20719010" visual_id="2616500"><math alttext="2+2^{3}+2^{4}+2^{6}+2^{7}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>+</mo><msup><mn>2</mn><mn>3</mn></msup><mo>+</mo><msup><mn>2</mn><mn>4</mn></msup><mo>+</mo><msup><mn>2</mn><mn>6</mn></msup><mo>+</mo><msup><mn>2</mn><mn>7</mn></msup></mrow></semantics></math></span>. It seems to me that we do <span class="math-container" id="20719011" visual_id="2616501"><math alttext="\lceil log_{2}^{n}\rceil" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⌈</mo><mrow><mi>l</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msubsup><mi>g</mi><mn>2</mn><mi>n</mi></msubsup></mrow><mo stretchy="false">⌉</mo></mrow></semantics></math></span> divisions. Each division costs <span class="math-container" id="20719012" visual_id="589"><math alttext="O(n^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> so an upper bound is <span class="math-container" id="20719013" visual_id="2616502"><math alttext="O(n^{2}\cdot log_{2}^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>⋅</mo><mi>l</mi></mrow><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msubsup><mi>g</mi><mn>2</mn><mi>n</mi></msubsup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. However, this seems like a very loose upper bound to me as the number we start with gets smaller with each division. So, what would be a better upper bound on the time complexity of writing an integer <span class="math-container" id="20719014" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> as power of 2's ?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> asymptotics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4612769"> How is the initial number represented ? </td></tr><tr><td comment_id="4612770"> It's represented as decimal. </td></tr><tr><td comment_id="4612773"> Such as BCD or ASCII ? </td></tr><tr><td comment_id="4612777"> If you want to output a number as binary, in your example <span class="math-container" id="20719015" visual_id="2616503"><math alttext="n=11011010_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msub><mn>11011010</mn><mn>2</mn></msub></mrow></semantics></math></span>, then you need to use at least <span class="math-container" id="20719016" visual_id="36258"><math alttext="\log n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></semantics></math></span> time, since the bit-length of your number will be <span class="math-container" id="20719017" visual_id="1712182"><math alttext="\lceil\log_{2}n\rceil+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⌈</mo><mrow><msub><mi>log</mi><mn>2</mn></msub><mo>⁡</mo><mi>n</mi></mrow><mo stretchy="false">⌉</mo></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4612779"> @Joppy but what about the cost of divison ? </td></tr><tr><td comment_id="4612786"> How do you get division by 2 to have order <span class="math-container" id="20719018" visual_id="3802"><math alttext="n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mn>2</mn></msup></semantics></math></span>? To me it's at most order <span class="math-container" id="20719019" visual_id="257013"><math alttext="\log_{10}n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>log</mi><mn>10</mn></msub><mo>⁡</mo><mi>n</mi></mrow></semantics></math></span> (or order <span class="math-container" id="20719021" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, depending on whether <span class="math-container" id="20719021" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is the number itself or the number of digits), since you do one digit at the time. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2243301" id="answer">
+<p>We assume that initial number has <span class="math-container" id="20719022" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> digits. The test for parity takes constant time, while the divisions by <span class="math-container" id="20719023" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> can be done in linear time <span class="math-container" id="20719024" visual_id="300887"><math alttext="O(d)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> (halve the digits from left to right and carry to the right when odd). As this is repeated <span class="math-container" id="20719025" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> times, the global complexity is <span class="math-container" id="20719026" visual_id="2616504"><math alttext="O(d^{2})=O(\log^{2}n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>d</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>log</mi><mn>2</mn></msup><mo>⁡</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>[The length of the number indeed decreases on every division, but the net effect is only to halve the number of operations so that the complexity remains <span class="math-container" id="20719027" visual_id="216423"><math alttext="O(d^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>d</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.]</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4612806"> Where <span class="math-container" id="20719028" visual_id="331707"><math alttext="\log^{2}n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>log</mi><mn>2</mn></msup><mo>⁡</mo><mi>n</mi></mrow></semantics></math></span> means <span class="math-container" id="20719029" visual_id="331709"><math alttext="(\log n)^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></semantics></math></span>, of course. Not <span class="math-container" id="20719030" visual_id="1789751"><math alttext="\log(\log n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

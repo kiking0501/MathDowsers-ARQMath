@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Simple integration: $\int_{-1}^1 \frac{1}{x^2} dx$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Simple integration: <span class="math-container" id="13289625" visual_id="5399060"><math alttext="\int_{-1}^{1}\frac{1}{x^{2}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mn>1</mn></mrow><mn>1</mn></msubsup><mrow><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1432471">
+<p>Consider the integral <span class="math-container" id="13289626" visual_id="5399060"><math alttext="\int_{-1}^{1}\frac{1}{x^{2}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mn>1</mn></mrow><mn>1</mn></msubsup><mrow><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> then as a Riemann integral it diverges, also as a Lebesgue integral it is <span class="math-container" id="13289627" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span>. However,</p> <p>for a moment forget <span class="math-container" id="13289628" visual_id="4753973"><math alttext="0\in[-1,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> and "integrate": <span class="math-container" id="13289629" visual_id="5399061"><math alttext="\int_{-1}^{1}\frac{1}{x^{2}}dx=\left.-\frac{1}{x}\right|_{-1}^{1}=-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mn>1</mn></mrow><mn>1</mn></msubsup><mrow><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mo>-</mo><msubsup><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo fence="true">|</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow><mn>1</mn></msubsup></mrow><mo>=</mo><mrow><mo>-</mo><mn>2</mn></mrow></mrow></semantics></math></span></p> <p>Is there a way that one can make sense of this correspondence? Or it is completely absurd...    </p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1432525" id="answer">
+<p>You already have explanations that take care of the singularity at zero. Here is another argument:</p> <p>It is complete nonsense for the simple reason that you have a positive integrand and a negative end result. This goes against (one of) the (main) motivation(s) of integration, namely to represent area.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2918348"> Right, that was the first thing I thought of... but still wanted to ask this question... who knows :) since people can make sense of the correspondence <span class="math-container" id="13289662" visual_id="117461"><math alttext="1+2+3+...=-\frac{1}{12}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>=</mo><mrow><mo>-</mo><mfrac><mn>1</mn><mn>12</mn></mfrac></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="2919557"> Of course, then it depends on what one means by "make sense of"... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

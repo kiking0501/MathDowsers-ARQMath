@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Convergence of random variables in probability but not almost surely.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Convergence of random variables in probability but not almost surely. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="149775">
+<p>Can somebody provide me with a sequence of (real-valued) functions, say on <span class="math-container" id="1742509" visual_id="1356"><math alttext="[0,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></semantics></math></span> with the Lebesgue measure, such that the sequence converges in probability, or maybe in <span class="math-container" id="1742510" visual_id="5446"><math alttext="\|\cdot\|_{L^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∥</mo><mo>⋅</mo><msub><mo>∥</mo><msup><mi>L</mi><mn>2</mn></msup></msub></mrow></semantics></math></span>, but does not converge almost surely?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> measure-theory </span><span> probability-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="149786" id="answer">
+<p>Consider a sequence <span class="math-container" id="1742527" visual_id="12066"><math alttext="\{X_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> of independent random variables such that <span class="math-container" id="1742528" visual_id="1880672"><math alttext="P(X_{n}=1)=\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> and <span class="math-container" id="1742529" visual_id="1880640"><math alttext="P(X_{n}=0)=1-\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span>. For <span class="math-container" id="1742530" visual_id="849151"><math alttext="0&amp;lt;\varepsilon&amp;lt;1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mrow><mi>ε</mi><mo>&lt;</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> we have <span class="math-container" id="1742531" visual_id="7546073"><math alttext="P(|X_{n}|\geq\varepsilon)=\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mo stretchy="false">|</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">|</mo><mo>≥</mo><mi>ε</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> which converges to <span class="math-container" id="1742532" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> hence <span class="math-container" id="1742533" visual_id="168567"><math alttext="X_{n}\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>→</mo><mn>0</mn></mrow></semantics></math></span> in probability. Since <span class="math-container" id="1742534" visual_id="7546074"><math alttext="\sum_{n\geq 1}P(X_{n}=1)=+\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><mi>P</mi><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> and the events <span class="math-container" id="1742535" visual_id="3468607"><math alttext="\{X_{n}=1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span> are independent, <a href="https://en.wikipedia.org/wiki/Borel%E2%80%93Cantelli_lemma#Converse_result" rel="nofollow noreferrer">second Borel-Cantelli lemma</a> ensures that <span class="math-container" id="1742536" visual_id="7546075"><math alttext="P(\limsup_{n}\{X_{n}=1\})=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><msub><mo>lim sup</mo><mi>n</mi></msub><mrow><mo stretchy="false">{</mo><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> hence the sequence <span class="math-container" id="1742537" visual_id="12066"><math alttext="\{X_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> does not converge to <span class="math-container" id="1742538" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> almost everywhere (in fact the set on which this sequence does not converge to <span class="math-container" id="1742539" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> has probability <span class="math-container" id="1742540" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>). </p> <p>Counter-example for convergence in <span class="math-container" id="1742541" visual_id="1059"><math alttext="L^{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mi>p</mi></msup></semantics></math></span> have already be provided, but I think the example I gave is also useful. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="6194961"> Hope I can revive this old question. I just started on the subject of martingale convergence and convergence of random variables plays a big part in that. I was wondering about your statement "For <span class="math-container" id="1742559" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span>&lt;1+2 we have <span class="math-container" id="1742543" visual_id="4669"><math alttext="\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">…</mi></semantics></math></span>". Doesn't convergence in probability state that something has to hold for all <span class="math-container" id="1742544" visual_id="15601"><math alttext="\epsilon&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>? And where does the idea of setting <span class="math-container" id="1742545" visual_id="7546076"><math alttext="\epsilon&lt;1+2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&lt;</mo><mrow><mn>1</mn><mo>+</mo><mn>2</mn></mrow></mrow></semantics></math></span> even come from? Sorry for being late to the party, hope you can still help me! </td></tr><tr><td comment_id="6195949"> I meant <span class="math-container" id="1742546" visual_id="1923457"><math alttext="\varepsilon&lt;1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&lt;</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>. If <span class="math-container" id="1742547" visual_id="7546077"><math alttext="P(\lvert X_{n}\rvert\geq\varepsilon)\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mrow><mo fence="true" stretchy="false">|</mo><msub><mi>X</mi><mi>n</mi></msub><mo fence="true" stretchy="false">|</mo></mrow><mo>≥</mo><mi>ε</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mn>0</mn></mrow></semantics></math></span> for all <span class="math-container" id="1742548" visual_id="5093329"><math alttext="\varepsilon\in(0,1/2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> then it holds also for all positive <span class="math-container" id="1742554" visual_id="7479"><math alttext="\varepsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi></semantics></math></span>. Here the point is that for such <span class="math-container" id="1742554" visual_id="7479"><math alttext="\varepsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi></semantics></math></span>, the event <span class="math-container" id="1742551" visual_id="7546078"><math alttext="(\lvert X_{n}\rvert\geq\vapsilon)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mrow><mo fence="true" stretchy="false">|</mo><msub><mi>X</mi><mi>n</mi></msub><mo fence="true" stretchy="false">|</mo></mrow><mo>≥</mo><merror class="ltx_ERROR undefined undefined"><mtext>\vapsilon</mtext></merror></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> is contained in <span class="math-container" id="1742552" visual_id="2130411"><math alttext="(X_{n}=1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> and this inclusion may only hold for <span class="math-container" id="1742558" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> large enough for an arbitrary <span class="math-container" id="1742554" visual_id="7479"><math alttext="\varepsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi></semantics></math></span>. </td></tr><tr><td comment_id="6196042"> Alright that makes more sense. Could you elaborate on why you would have to set <span class="math-container" id="1742555" visual_id="75871"><math alttext="\epsilon&lt;1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&lt;</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> and not, for example <span class="math-container" id="1742556" visual_id="322182"><math alttext="\epsilon&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span> or <span class="math-container" id="1742557" visual_id="3731855"><math alttext="\epsilon&lt;1/4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&lt;</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></mrow></semantics></math></span> or would all of these choices have been fine also? And do you mean with the last sentence of your comment that the inclusion holds for any <span class="math-container" id="1742558" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> and any <span class="math-container" id="1742559" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span>? Thanks again for helping. </td></tr><tr><td comment_id="6196114"> I'm new to this website but I think I forgot to tag you. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1371480"> Convergence in proability does not imply convergence a.s. </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2728845"> Convergence of RV sequence </td></tr><tr><td post_id="1822383"> Does this sequence of random variables converge almost surely? </td></tr><tr><td post_id="2049585"> Almost Certain Convergence Example </td></tr><tr><td post_id="215379"> Sequence in measure </td></tr><tr><td post_id="1645590"> What is an example where we have convergence in distribution to a constant, but that doesn't imply convergence almost surely? </td></tr><tr><td post_id="830042"> strengthen the condition of convergence in measure of sequence of functions </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

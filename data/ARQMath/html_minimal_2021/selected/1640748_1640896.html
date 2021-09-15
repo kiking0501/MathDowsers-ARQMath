@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Derivative of integral - two functons of different variables</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Derivative of integral - two functons of different variables </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1640748">
+<p>Let's say we have two functions <span class="math-container" id="15174141" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="15174142" visual_id="14938"><math alttext="g(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> where <span class="math-container" id="15174143" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="15174144" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span> are two different, unrelated variables.</p> <p>Could anyone tell me why the following equality holds (if if does)? <span class="math-container" id="15174145" visual_id="5458343"><math alttext="\frac{d}{dx}\int f(x)dz=\int\frac{d}{dx}f(x)dz" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>z</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>z</mi></mrow></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3345959"> The same thing is on both sides of the equals sign; is that what you meant? </td></tr><tr><td comment_id="3346045"> @DylanSp Yes, and I'm wondering why it is equal. See [this page](http://emweb.unl.edu/NEGAHBAN/EM373/note19/note19.htm), in the part where it says 'Rearranging this relation and taking its time derivative relative to an inertial frame yields' - this is why I'm asking. </td></tr><tr><td comment_id="3346056"> Well, the equality you posted holds because of reflexivity; <span class="math-container" id="15174146" visual_id="330021"><math alttext="\forall{x}:x=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∀</mo><mi>x</mi></mrow><mo>:</mo><mrow><mi>x</mi><mo>=</mo><mi>x</mi></mrow></mrow></semantics></math></span>. Is your question about the equation <span class="math-container" id="15174147" visual_id="5458344"><math alttext="m\vec{v}_{cm}=\int_{m}\vec{v}\,dm" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>⁢</mo><msub><mover accent="true"><mi>v</mi><mo stretchy="false">→</mo></mover><mrow><mi>c</mi><mo>⁢</mo><mi>m</mi></mrow></msub></mrow><mo>=</mo><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>m</mi></msub><mrow><mpadded width="+1.7pt"><mover accent="true"><mi>v</mi><mo stretchy="false">→</mo></mover></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>m</mi></mrow></mrow></mrow></mrow></semantics></math></span>? </td></tr><tr><td comment_id="3346091"> I'm asking why time derivative of <span class="math-container" id="15174148" visual_id="5458345"><math alttext="\int_{m}\overrightarrow{r}dm" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>m</mi></msub><mrow><mover accent="true"><mi>r</mi><mo>→</mo></mover><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>m</mi></mrow></mrow></mrow></semantics></math></span> is <span class="math-container" id="15174149" visual_id="5458346"><math alttext="\int_{m}\overrightarrow{v}dm" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>m</mi></msub><mrow><mover accent="true"><mi>v</mi><mo>→</mo></mover><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>m</mi></mrow></mrow></mrow></semantics></math></span>. I know that time derivative of position <span class="math-container" id="15174152" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> is velocity <span class="math-container" id="15174151" visual_id="1546"><math alttext="v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi></semantics></math></span>, that's clear. Is <span class="math-container" id="15174152" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> a function of one or two variables? If two, then it shouldn't be that straightforward https://en.wikipedia.org/wiki/Leibniz_integral_rule </td></tr><tr><td comment_id="3346180"> Wow, I completely spaced out; I missed that the derivative is outside the integral on the left and inside the integral on the right. Disregard my previous comments. </td></tr><tr><td comment_id="3346185"> Looking at it more closely, I don't think it's true in general. There's going to be an extra constant term on the right side from integration; the differentiation on the left eliminates the constant of integration there. </td></tr><tr><td comment_id="3346200"> @DylanSp not sure what you mean here. We differentiate both left and right side once so no matter what we get on the right side, be it a constant, it won't be eliminated. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1640896" id="answer">
+<p>This equality isn't quite true in general. There's going to be an extra constant term on the right side from integration; the differentiation on the left eliminates the constant of integration there.</p> <p>Left hand side: \begin{align*} \frac{d}{dx}\int f(x)\,dz &amp;= \frac{d}{dx}(z \cdot f(x) + C_1) \\ &amp;= z \cdot f'(x) \end{align*}</p> <p>Right hand side: \begin{align*} \int \frac{d}{dx}f(x)dz &amp;= \int f'(x)\,dz \\ &amp;= z \cdot f'(x) + C_2 \end{align*}</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

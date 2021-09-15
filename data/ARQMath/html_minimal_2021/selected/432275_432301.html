@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Calculating the probability of an intersection</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Calculating the probability of an intersection </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="432275">
+<p>I have the following <em>Venn Diagram</em>, Let:</p> <ul> <li><span class="math-container" id="4554095" visual_id="264271"><math alttext="\color{red}A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow></semantics></math></span> be the red circle</li> <li><span class="math-container" id="4554096" visual_id="264272"><math alttext="\color{blue}B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> be the blue circle</li> <li><span class="math-container" id="4554097" visual_id="264273"><math alttext="\color{green}C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>C</mi></mrow></semantics></math></span> be the green circle</li> </ul> <p><img alt="venn diagram" src="https://i.imgur.com/yJ3lZ7y.png"/></p> <p>I know that <span class="math-container" id="4554098" visual_id="264274"><math alttext="\dfrac{1}{6}=P(\text{(all three)}=x|\text{at least two})=\dfrac{P(\text{at % least two}\cap\text{all three})}{P(\text{at least two})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>6</mn></mfrac></mstyle><mo>=</mo><mi>P</mi><mrow><mo stretchy="false">(</mo><mtext>(all three)</mtext><mo>=</mo><mi>x</mi><mo stretchy="false">|</mo><mtext>at least two</mtext><mo stretchy="false">)</mo></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mtext>at least two</mtext><mo>∩</mo><mtext>all three</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mtext>at least two</mtext><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></semantics></math></span> but all if know is <span class="math-container" id="4554099" visual_id="264275"><math alttext="P(\text{at least two})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mtext>at least two</mtext><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. How do I find the intersection of <em>all three</em> and <em>at least two</em> in order to find <span class="math-container" id="4554100" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="924551"> Is this correct, numbers-wise? The <span class="math-container" id="4554101" visual_id="13861"><math alttext="0.5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.5</mn></semantics></math></span> on the outside of all three, along with the <span class="math-container" id="4554102" visual_id="264276"><math alttext="0.4,0.1,0.1,0.15" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.4</mn><mo>,</mo><mn>0.1</mn><mo>,</mo><mn>0.1</mn><mo>,</mo><mn>0.15</mn></mrow></semantics></math></span> total to more than 1. Or are these numbers not probabilities? </td></tr><tr><td comment_id="924557"> 0.05 instead of 0.5 for the outside part? </td></tr><tr><td comment_id="924564"> @Did : Yes, that would make it all add to 1. Must be a typo by OP, who should respond if so... </td></tr><tr><td comment_id="924574"> @Did, a typo indeed. Thanks for letting me know </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="432301" id="answer">
+<p>By your diagram, at least 2 is <span class="math-container" id="4554103" visual_id="264277"><math alttext="0.4+0.0+x+(0.2-x)=0.6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0.4</mn><mo>+</mo><mn>0.0</mn><mo>+</mo><mi>x</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>0.2</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0.6</mn></mrow></semantics></math></span>. Also note that the intersection of "at least 2" with "all three" is the same as simply "all three", denoted <span class="math-container" id="4554104" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> in your diagram. So you know that <span class="math-container" id="4554105" visual_id="264278"><math alttext="1/6=x/0.6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>/</mo><mn>6</mn></mrow><mo>=</mo><mrow><mi>x</mi><mo>/</mo><mn>0.6</mn></mrow></mrow></semantics></math></span> from which you get <span class="math-container" id="4554106" visual_id="264279"><math alttext="x=1/10=0.1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>10</mn></mrow><mo>=</mo><mn>0.1</mn></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>NOTE: This all assumes the numbers in the venn diagram are probabilities directly. However they add to more than 1, and this all might need adjustment if the OP says the numbers are just "raw numbers" in the regions, not denoting probabilities. (I await confirmation by OP on this issue.) </p> <p>***As Did suggests in his comment, if that outer number were a typo and should have been <span class="math-container" id="4554107" visual_id="59819"><math alttext="0.05" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.05</mn></semantics></math></span> then things add to 1 properly, and no need to adjust</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="924576"> indeed a typo, sorry for that. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

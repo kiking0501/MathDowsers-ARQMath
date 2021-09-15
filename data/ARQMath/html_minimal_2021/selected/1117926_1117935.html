@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Question about series convergence $\sum_{n=1}^\infty \frac{1}{n}$ and $\sum_{n=1}^\infty \frac{1}{n^2}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Question about series convergence <span class="math-container" id="10538978" visual_id="4097"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> and <span class="math-container" id="10538979" visual_id="2539"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1117926">
+<p>So I have been playing around with convergent series recently and I still have a hard time understanding why <span class="math-container" id="10538980" visual_id="4097"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> diverges and <span class="math-container" id="10538981" visual_id="2539"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> converges.</p> <p>I can write out the first couple of terms of <span class="math-container" id="10538982" visual_id="4097"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> and compare them to a second series:</p> <p><span class="math-container" id="10538983" visual_id="8414218"><math alttext="\color{red}{1}+\color{green}{\frac{1}{2}}+\color{blue}{\frac{1}{3}+\frac{1}{4}% }+\color{maroon}{\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}}+..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mn>1</mn></mrow><mo>+</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>+</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>7</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span></p> <p><span class="math-container" id="10538984" visual_id="8414219"><math alttext="\color{red}{1}+\color{green}{\frac{1}{2}}+\color{blue}{\frac{1}{4}+\frac{1}{4}% }+\color{maroon}{\frac{1}{8}+\frac{1}{8}+\frac{1}{8}+\frac{1}{8}}+..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mn>1</mn></mrow><mo>+</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>+</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span></p> <p>The colored terms in the second series always add up to <span class="math-container" id="10538985" visual_id="363"><math alttext="\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac></semantics></math></span> and the corresponding colored terms in the first series always add up to more than <span class="math-container" id="10538986" visual_id="363"><math alttext="\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac></semantics></math></span>. Since the second series diverges the first one must also diverge. This still makes perfect sense. However if I write out the first couple of therms of   <span class="math-container" id="10538987" visual_id="2539"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span></p> <p><span class="math-container" id="10538988" visual_id="8414220"><math alttext="\frac{1}{1}+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+\frac{1}{25}+\frac{1}{36}+% \frac{1}{49}+\frac{1}{64}..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>1</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>9</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>16</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>25</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>36</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>49</mn></mfrac><mo>+</mo><mrow><mfrac><mn>1</mn><mn>64</mn></mfrac><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span></p> <p>then how does this converge?</p> <p>Why is it not possible to group them similar to the first series? It seems to me that if I have infinitely many numbers I will be able to group <span class="math-container" id="10538989" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> of them to get to some number <span class="math-container" id="10538990" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> that I can add up forever.</p> <p>Thanks in advance.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> convergence-divergence </span><span> divergent-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2280701"> They decrease too fast in the series in question. Eventually, for no matter what real number you pick, you will never reach that number by adding the last terms. </td></tr><tr><td comment_id="2280708"> @SimonS My mistake. I fixed it. </td></tr><tr><td comment_id="2280717"> Have you tried doing the same with the <span class="math-container" id="10538993" visual_id="2539"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span>, like what you did with <span class="math-container" id="10538992" visual_id="4097"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span>? It's the [Cauchy condensation test](http://en.wikipedia.org/wiki/Cauchy_condensation_test), you can show <span class="math-container" id="10538993" visual_id="2539"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> converges. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1117935" id="answer">
+<p>Think about Zeno's paradox in reverse.</p> <p><span class="math-container" id="10538994" visual_id="8414221"><math alttext="\frac{1}{2}+\frac{1}{2^{2}}+\frac{1}{2^{3}}+\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mn>2</mn><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mn>2</mn><mn>3</mn></msup></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span></p> <p>You want to walk a mile.</p> <p>First you walk half of it. Then take a bit of rest. Then walk half of the remaining, then take a bit of rest. And so on.</p> <p>Will you ever go beyond the mile?</p> <p>You have an infinite number of numbers (of the form <span class="math-container" id="10538995" visual_id="26332"><math alttext="\frac{1}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac></semantics></math></span>), but you can never go beyond the mile. Basically, the numbers are decreasing too fast, that no matter how many you take, you still are bounded.</p> <p>In this case, you can prove that (using <span class="math-container" id="10538996" visual_id="8414222"><math alttext="\frac{1}{n^{2}}\lt\frac{1}{(n-1)(n+1)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mfrac><mn>1</mn><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></semantics></math></span>)</p> <p><span class="math-container" id="10538997" visual_id="8414223"><math alttext="1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\dots+\frac{1}{n^{2}}\lt 2-\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><msup><mn>2</mn><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mn>3</mn><mn>2</mn></msup></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mn>2</mn></mrow></mrow><mo>-</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span></p> <p>So it is in fact bounded, and you cannot go beyond <span class="math-container" id="10538998" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>, no matter how many terms you take.</p> <p>(And any bounded monotonic sequence converges).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2280755"> Now I can actually visualize it. Thanks </td></tr><tr><td comment_id="2280760"> @Rzeta: You are welcome! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

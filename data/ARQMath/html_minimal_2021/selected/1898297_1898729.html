@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <title>If the inter arrival rate is uniform distribution, is it a Poisson arrival process?</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be">
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js"> </script>
+
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+
+        <style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <div class="row" id="question-title">
+                <h1> If the inter arrival rate is uniform distribution, is it a Poisson arrival process? </h1>
+                <hr>
+            </div>
+
+
+            <div class="row">
+                <div class="question">
+
+                    <div question_id="1898297"  id="question">
+                        <p>I have an inter arrival rate of a queue described by a continuous uniform distribution [0,freeParam]. I am trying to model such a queue using Kendall notation and confused  whether continuous uniform distribution comes under Poisson process? Basically what to consider M/M/1 or G/M/1 if my service time is exponential. Thank you in advance for your help.</p>  <p>I did lot of study but couldn't find any justification or a clear understanding of what to be considered. Might be i am not understanding the basics right but any help on this would be very helpful. Thank you</p> 
+                    </div>
+                    <hr>
+
+                    <div id="tags">
+                        <span> mathematical-modeling </span><span> poisson-distribution </span><span> queueing-theory </span>
+                    </div>
+                    <hr>
+
+                    <div id="question-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="3894974"> Can an inter arrival time assume any value from zero to infinity? If not, I doubt that it is a Poisson arrival process, but I'm not sure. </td></tr><tr><td comment_id="3895568"> Definitely G/M/1. Each M in M/M/1 stands for "Markov" and indicates an exponential distribution. Then the **rate** of arrivals is constant. </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div class="answer">
+
+
+                    <div answer_id="1898729" id="answer">
+                        <p>What do you mean by "inter arrival rate"?</p>  <p>If you mean that inter-arrival times are uniformly distributed, then the answer is no. The arrival process is not Poisson and the queue is a G/M/1.</p>  <p>The arrival process is only Poisson if the inter-arrival times follow an exponential distribution. </p> 
+                    </div>
+                    <hr>
+
+
+                    <div id="answer-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="3896139"> Yes, the inter-arrival times are uniformly distributed. Thank you </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div id="duplicate">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+
+                <div id="related">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+</html>

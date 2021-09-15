@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove in any integral domain, if $a^2=b^2$ then $a=\pm b$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove in any integral domain, if <span class="math-container" id="9788899" visual_id="66832"><math alttext="a^{2}=b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></semantics></math></span> then <span class="math-container" id="9788900" visual_id="53876"><math alttext="a=\pm b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mo>±</mo><mi>b</mi></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1031046">
+<p>Prove in any integral domain, if <span class="math-container" id="9788901" visual_id="66832"><math alttext="a^{2}=b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></semantics></math></span> then <span class="math-container" id="9788902" visual_id="53876"><math alttext="a=\pm b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mo>±</mo><mi>b</mi></mrow></mrow></semantics></math></span></p> <p>An integral domain is a commutative ring with unity having the cancellation property.  I don't see how I can use this in proving the statement.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2101614"> Can you prove that in an integral domain we have the factorization <span class="math-container" id="9788903" visual_id="60926"><math alttext="a^{2}-b^{2}=(a-b)(a+b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="2101657"> Do we start by rewriting <span class="math-container" id="9788933" visual_id="66832"><math alttext="a^{2}=b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></semantics></math></span> as : <span class="math-container" id="9788911" visual_id="9128144"><math alttext="a^{2}+ab-ab-b^{2}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>? </td></tr><tr><td comment_id="2101699"> Is there a way to prove this without introducing adding and subtracting <span class="math-container" id="9788912" visual_id="2203"><math alttext="ab" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1031338" id="answer">
+<p>You have good answers. You are asking in the comments how one would <em>arrive</em> at such an answer. If I can take liberty in rephrasing: </p> <blockquote> <p>I never thought about factoring, would you have to do that -and- see how to factor <span class="math-container" id="9788921" visual_id="60927"><math alttext="a^{2}-b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></semantics></math></span> in order to prove that this thing is true in every integral domain?</p> </blockquote> <p>The main thing that "integral domain" gives you is that <strong>If <span class="math-container" id="9788922" visual_id="41511"><math alttext="xy=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> then <span class="math-container" id="9788923" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="9788924" visual_id="575869"><math alttext="y=0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></semantics></math></span></strong> To make use of this it would seem helpful to have "<span class="math-container" id="9788925" visual_id="3420"><math alttext="=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>" statements so to change the question to </p> <p>Prove that in every integral domain <strong>If <span class="math-container" id="9788926" visual_id="218834"><math alttext="a^{2}-b^{2}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> then <span class="math-container" id="9788927" visual_id="72256"><math alttext="a-b=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="9788928" visual_id="31233"><math alttext="a+b=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</strong> It seems the best chance is to use the defining property with <span class="math-container" id="9788929" visual_id="94044"><math alttext="x=a-b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="9788930" visual_id="9128148"><math alttext="y=a+b." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Since you already have <span class="math-container" id="9788931" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="9788932" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> you don't have to factor, you just have to multiply. </p> <p>Had the question been merely "When is <span class="math-container" id="9788933" visual_id="66832"><math alttext="a^{2}=b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></semantics></math></span> in an Integral Domain?"  One would have to first get to <span class="math-container" id="9788934" visual_id="218834"><math alttext="a^{2}-b^{2}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and then factor (although knowing the solution <span class="math-container" id="9788935" visual_id="5337"><math alttext="a=b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi></mrow></semantics></math></span> does suggest the factor <span class="math-container" id="9788936" visual_id="1158086"><math alttext="a-b." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo>.</mo></mrow></semantics></math></span>)</p> <hr/> <p>It <em>is</em> true that, for this line of reasoning, you have to be thinking of Integral Domain in this way... As far as the definitions, cancellation is the first property below and the rest are equivalent</p> <ul> <li><span class="math-container" id="9788937" visual_id="4043980"><math alttext="xA=xB" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mi>B</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="9788938" visual_id="259"><math alttext="x\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> implies <span class="math-container" id="9788939" visual_id="37695"><math alttext="A=B." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow><mo>.</mo></mrow></semantics></math></span> </li> <li><span class="math-container" id="9788940" visual_id="9128149"><math alttext="x(A-B)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="9788941" visual_id="259"><math alttext="x\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> implies <span class="math-container" id="9788942" visual_id="9128150"><math alttext="A-B=0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>A</mi><mo>-</mo><mi>B</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></semantics></math></span></li> <li><span class="math-container" id="9788943" visual_id="41511"><math alttext="xy=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="9788944" visual_id="259"><math alttext="x\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> implies <span class="math-container" id="9788945" visual_id="575869"><math alttext="y=0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></semantics></math></span></li> <li><span class="math-container" id="9788946" visual_id="41511"><math alttext="xy=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> implies <span class="math-container" id="9788947" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="9788948" visual_id="575869"><math alttext="y=0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></semantics></math></span></li> </ul> <p>(To a constructive mathematician the last is not equivalent... but that is another story.)</p> <p>Sometimes the first form is more useful and sometimes, as in this case, the last form is more useful.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Order of a Group Based on Their Exponents</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Order of a Group Based on Their Exponents </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2229993">
+<blockquote> <p>Let <span class="math-container" id="20593458" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> be a finite commutative group. The exponent of <span class="math-container" id="20593459" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> is the least common multiple of all orders of all the elements of <span class="math-container" id="20593460" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>. Show that <span class="math-container" id="20593461" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> has an element whose order equals the exponent of <span class="math-container" id="20593462" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>.</p> </blockquote> <p>Here is the question that I have been stuck on for the past 2 days. I haven't been able to come up with anything <em>useful</em> that would help show this result is true. Even my two good math friends, through a collaborative effort, weren't able to figure this question out... What do the orders of <span class="math-container" id="20593463" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> have to do with the least common multiple of the exponent of <span class="math-container" id="20593464" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> finite-groups </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4585432"> Could you give us any specifics of what you tried? </td></tr><tr><td comment_id="4585444"> Rough Sketch: Since we are given that <span class="math-container" id="20593503" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> is a finite commutative group, then this means that <span class="math-container" id="20593503" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> is abelian. Suppose that I have a commutative group G such that <span class="math-container" id="20593467" visual_id="4931609"><math alttext="G=a,b,c...," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>G</mi><mo>=</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mrow><mi>c</mi><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span>, where Id <span class="math-container" id="20593468" visual_id="702946"><math alttext="\in G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>∈</mo><mi>G</mi></mrow></semantics></math></span>. Here, <span class="math-container" id="20593469" visual_id="15813"><math alttext="Id" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>⁢</mo><mi>d</mi></mrow></semantics></math></span> stands for the identity element, since this is what is required of a commutative group. So the order of the elements of <span class="math-container" id="20593503" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> is the smallest positive integer, say <span class="math-container" id="20593471" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, such that for an element <span class="math-container" id="20593494" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>, <span class="math-container" id="20593473" visual_id="4931610"><math alttext="a^{k}=Id" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mi>k</mi></msup><mo>=</mo><mrow><mi>I</mi><mo>⁢</mo><mi>d</mi></mrow></mrow></semantics></math></span>. That is as far as I got. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2230073" id="answer">
+<p>Here is an argument that reduces the problem to when the exponent is a prime power.</p> <p>Let <span class="math-container" id="20593486" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span> be the exponent of <span class="math-container" id="20593487" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>. If <span class="math-container" id="20593488" visual_id="1304539"><math alttext="e=ab" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></semantics></math></span> with <span class="math-container" id="20593489" visual_id="24677"><math alttext="\gcd(a,b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="20593490" visual_id="2245"><math alttext="a,b&amp;gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mrow><mi>b</mi><mo>&gt;</mo></mrow><mn>1</mn></mrow></semantics></math></span>, let <span class="math-container" id="20593491" visual_id="778831"><math alttext="A=\{g\in G:g^{a}=1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow><mo>:</mo><mrow><msup><mi>g</mi><mi>a</mi></msup><mo>=</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="20593492" visual_id="1959529"><math alttext="B=\{g\in G:g^{b}=1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow><mo>:</mo><mrow><msup><mi>g</mi><mi>b</mi></msup><mo>=</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>. Then by induction you have elements <span class="math-container" id="20593493" visual_id="18813"><math alttext="\alpha\in A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>∈</mo><mi>A</mi></mrow></semantics></math></span> of order <span class="math-container" id="20593494" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="20593495" visual_id="49624"><math alttext="\beta\in B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>∈</mo><mi>B</mi></mrow></semantics></math></span> of order <span class="math-container" id="20593496" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>. Then <span class="math-container" id="20593497" visual_id="186415"><math alttext="\alpha\beta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>⁢</mo><mi>β</mi></mrow></semantics></math></span> has order <span class="math-container" id="20593498" visual_id="343373"><math alttext="ab=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>=</mo><mi>e</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4585522"> See also [Chapter 2](http://www.springer.com/cda/content/document/cda_downloaddocument/9780387405100-c1.pdf?SGWID=0-0-45-107321-p14004925) of the book [*The Theory of Finite Groups: An Introduction*](http://link.springer.com/book/10.1007%2Fb97433), by Kurzweil and Stellmacher, and http://math.stackexchange.com/questions/792528/simple-proof-of-the-structure-theorems-for-finite-abelian-groups. </td></tr><tr><td comment_id="4585543"> I will take a look at the textbook link. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="792528"> Simple proof of the structure theorems for finite abelian groups </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

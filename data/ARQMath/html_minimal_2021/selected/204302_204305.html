@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>"converging to a range of numbers"</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> "converging to a range of numbers" </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="204302">
+<p><br/> I was doing an exercise in a book which asked the question "what can be said about a divergent sequence which diverges to neither <span class="math-container" id="2341913" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span> or <span class="math-container" id="2341914" visual_id="1628"><math alttext="-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>?" I came up with the answer that it is bounded. I was wondering two things: <br/> 1. Is there anything more you can say about it? <br/> The above led me to think about:<br/> 2. Is there a concept of a sequence of numbers converging to a certain range of numbers? and would this even be useful? I'm thinking then that the <span class="math-container" id="2341915" visual_id="1374600"><math alttext="\epsilon,N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>,</mo><mi>N</mi></mrow></semantics></math></span> defn. of convergence to a limit would be a special case of the "convergence to a range of numbers" when the range has only one number in it. <br/> Thanks for any thoughts/advice. :)</p> <p>Sincerely, <br/> Vien</p> <p>p.s. the exercise is not for a grade for a class, it's just out of curiosity.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="204305" id="answer">
+<p>Not necessarily bounded. Look at <span class="math-container" id="2341916" visual_id="5163067"><math alttext="1,0,2,0,3,0,4,0,5,0,\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span>.</p> <p>And yes, if we have a sequence, we can look at its set of <em>accumulation points</em>.  These are all numbers <span class="math-container" id="2341917" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> such that there is an infinite subsequence of our sequence that converges to <span class="math-container" id="2341918" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>. Alternately, <span class="math-container" id="2341919" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is called <strong>a</strong> limit point of the sequence.  The concept is useful. One can alter the definition to throw in the possibility of <span class="math-container" id="2341920" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span> and <span class="math-container" id="2341921" visual_id="1628"><math alttext="-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. </p> <p>A sequence <span class="math-container" id="2341922" visual_id="4141"><math alttext="(a_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> converges to a real number iff it has exactly one accumulation point. </p> <p>Interesting example: Look at the sequence <span class="math-container" id="2341923" visual_id="5163068"><math alttext="\sin(1),\sin(2),\sin(3),\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span>. Then every number if <span class="math-container" id="2341924" visual_id="840"><math alttext="[-1,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></semantics></math></span> is an accumulation point of the sequence.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

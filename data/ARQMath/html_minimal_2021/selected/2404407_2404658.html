@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is currying valid in Linear logic and Relevance logic?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is currying valid in Linear logic and Relevance logic? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2404407">
+<p>In Classical and Intuitionistic logic we have what I will call the "currying equivalence":</p> <p><span class="math-container" id="22261125" visual_id="6523550"><math alttext="P\rightarrow(Q\rightarrow P)\equiv(P\land Q)\rightarrow P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>→</mo><mi>P</mi><mo stretchy="false">)</mo></mrow><mo>≡</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>∧</mo><mi>Q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>P</mi></mrow></semantics></math></span></p> <p>But linear and relevance logics do not allow weakening. To prove <span class="math-container" id="22261126" visual_id="711093"><math alttext="P\rightarrow(Q\rightarrow P)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>→</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> we require weakening and the deduction theorem: </p> <p><span class="math-container" id="22261127" visual_id="2744562"><math alttext="P\vdash P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⊢</mo><mi>P</mi></mrow></semantics></math></span> <span class="math-container" id="22261128" visual_id="2922498"><math alttext="P,Q\vdash P\hskip 8.535827pt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>,</mo><mi>Q</mi></mrow><mo>⊢</mo><mpadded width="+8.5pt"><mi>P</mi></mpadded></mrow></semantics></math></span> <span class="math-container" id="22261129" visual_id="6523551"><math alttext="P\vdash Q\rightarrow P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⊢</mo><mrow><mi>Q</mi><mo>→</mo><mi>P</mi></mrow></mrow></semantics></math></span> <span class="math-container" id="22261130" visual_id="4156619"><math alttext="\vdash P\rightarrow(Q\rightarrow P)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊢</mo><mi>P</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>→</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p>Is Currying invalid in Linear and Relevance logics? </p> <p>SEP on <a href="https://plato.stanford.edu/entries/logic-linear/" rel="nofollow noreferrer" title="Linear Logic">Linear logic</a> and <a href="https://plato.stanford.edu/entries/logic-relevance/" rel="nofollow noreferrer" title="Relevance Logic">Relevance logic</a>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> proof-theory </span><span> linear-logic </span><span> relevant-logic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4962547"> The rule of replacement is called [exportation](https://en.wikipedia.org/wiki/Exportation_(logic)), though it is related to the [currying](https://en.wikipedia.org/wiki/Currying) procedure. </td></tr><tr><td comment_id="4965059"> The logical equivalence doesn't need each side to hold tautologically, it merely needs each side to imply the other. <span class="math-container" id="22261131" visual_id="6523552"><math alttext="0=1\equiv 1=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mn>1</mn><mo>≡</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow></semantics></math></span> even though <span class="math-container" id="22261132" visual_id="4435"><math alttext="0=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mn>1</mn></mrow></semantics></math></span> doesn't hold. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2404658" id="answer">
+<p>As per Taroccoesbrocco's answer, currying is already valid in linear logic. I think part of your confusion here might be that you are considering a restriction of the usual, more general currying schema <span class="math-container" id="22261160" visual_id="6523556"><math alttext="P\to(Q\to R)\equiv(P\wedge Q)\to R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>≡</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>∧</mo><mi>Q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>R</mi></mrow></semantics></math></span>, which becomes <span class="math-container" id="22261161" visual_id="6523557"><math alttext="P\multimap(Q\multimap R)\equiv(P\otimes Q)\multimap R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\multimap</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Q</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\multimap</mtext></merror><mo>⁢</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>⊗</mo><mi>Q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\multimap</mtext></merror><mo>⁢</mo><mi>R</mi></mrow></mrow></semantics></math></span> in the notation of linear logic (and is closely related to the <a href="https://en.wikipedia.org/wiki/Tensor-hom_adjunction" rel="nofollow noreferrer">tensor-hom adjunction</a> in <a href="https://en.wikipedia.org/wiki/Closed_monoidal_category" rel="nofollow noreferrer">monoidal closed categories</a>). That is, you are considering the special case of the currying equivalence where <span class="math-container" id="22261162" visual_id="3020437"><math alttext="R=P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>P</mi></mrow></semantics></math></span>. In this case, the two sides of the equivalence both happen to be classical/intuitionistic tautologies, but that is irrelevant for the proof that the equivalence <em>itself</em> is a tautology (of classical/intuitionistic logic, but also of linear logic).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4965054"> I feel a little uncomfortable calling this (the defining adjunction of any monoidally closed category) the tensor-hom adjunction as "tensor-hom adjunction" has quite a lot of baggage that is neither necessary for understanding the concept nor necessarily there at all. </td></tr><tr><td comment_id="4965260"> Point taken. Maybe I should have written "closely related to" instead of "also called". (I will go ahead and edit.) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why do we need duality in linear programming or convex optimization?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why do we need duality in linear programming or convex optimization? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="446482">
+<p>I'm learning convex optimization, just get started with linear programming, and there is such a thing as <em>duality</em> in linear programming. </p> <p>Here is my problems, why there is a dual problem for a linear program, how to prove it?  And why do we need the dual problem when solving the primal problem ?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-programming </span><span> duality-theorems </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="446518" id="answer">
+<p>This is only a partial answer but, in my opinion, one of the best consequences of having a duality is the following:</p> <pre><code>A linear programming P has an optimal solution if and only if P* has an optimal solution and the values of both optimal solutions are the same.  Moreover if z is the value of some factible solution of P and z* is the value of some factible solution of P* then z&lt;=z*. </code></pre> <p>This can be used to show the optimality of some solutions and, in fact, is one of the main steps in the proof of the convergence of the Simplex algorithm.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

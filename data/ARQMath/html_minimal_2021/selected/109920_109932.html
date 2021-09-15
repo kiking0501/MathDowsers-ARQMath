@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Cumulative distribution function question</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Cumulative distribution function question </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="109920">
+<blockquote> <p><strong>Possible Duplicate:</strong><br/> <a href="https://math.stackexchange.com/questions/109896/normal-random-variable-x-and-the-cdf-of-y-axb">Normal random variable <span class="math-container" id="1269885" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and the cdf of <span class="math-container" id="1269886" visual_id="1417"><math alttext="Y=aX+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>X</mi></mrow><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span></a> </p> </blockquote> <p>I'm given a standard random variable <span class="math-container" id="1269887" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>, and <span class="math-container" id="1269888" visual_id="1417"><math alttext="Y=aX+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>X</mi></mrow><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span>:</p> <p>How can I find the cumulative distribution function for Y as an integral of <span class="math-container" id="1269889" visual_id="8518942"><math alttext="f(x)=(\frac{1}{\sqrt{2}\pi\sigma}e^{-\frac{(x-u)^{2}}{\sigma^{2}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mrow><msqrt><mn>2</mn></msqrt><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>σ</mi></mrow></mfrac><msup><mi>e</mi><mrow><mo>-</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>u</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><msup><mi>σ</mi><mn>2</mn></msup></mfrac></mrow></msup></mrow></mrow></semantics></math></span>?</p> <p>I know <span class="math-container" id="1269890" visual_id="8518943"><math alttext="F_{y}(y)=F_{x}(\frac{y-b}{a})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>F</mi><mi>y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>F</mi><mi>x</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac><mrow><mi>y</mi><mo>-</mo><mi>b</mi></mrow><mi>a</mi></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, but cant figure out where to go from there.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> statistics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="257105"> You should write <span class="math-container" id="1269891" visual_id="8518944"><math alttext="F_{Y}(y)=F_{X}((y-b)/a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>F</mi><mi>Y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, with capital letters in the subscripts referring to the random variables involved, and lower-case letters as the arguments to the functions.  That way you're not using the same letter for two different things.  This is important when you want to refer to something like <span class="math-container" id="1269892" visual_id="258903"><math alttext="\Pr(Y\leq y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Pr</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>≤</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="257137"> Are you sure your expression for <span class="math-container" id="1269893" visual_id="99326"><math alttext="F_{Y}(y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>Y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is correct in the case <span class="math-container" id="1269908" visual_id="21539"><math alttext="a&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span> also? But, assuming <span class="math-container" id="1269895" visual_id="168089"><math alttext="u_{tt}=a^{2}u_{xx}+f(t,x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mrow><mi>t</mi><mo>⁢</mo><mi>t</mi></mrow></msub><mo>=</mo><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><msub><mi>u</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>, does it not follow from the **definition** of <span class="math-container" id="1269896" visual_id="1666780"><math alttext="F_{X}(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>:  <span class="math-container" id="1269897" visual_id="8518945"><math alttext="F_{X}(t)=\int_{-\infty}^{t}f_{X}(x)\mathrm{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi>t</mi></msubsup><mrow><msub><mi>f</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span> that <span class="math-container" id="1269898" visual_id="8518946"><math alttext="F_{Y}(y)=F_{X}\left(\frac{y-b}{a}\right)=\int_{-\infty}^{\frac{y-b}{a}}f_{X}(x% )\mathrm{d}x\qvar@construct{$}\par" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>F</mi><mi>Y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo>(</mo><mfrac><mrow><mi>y</mi><mo>-</mo><mi>b</mi></mrow><mi>a</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mfrac><mrow><mi>y</mi><mo>-</mo><mi>b</mi></mrow><mi>a</mi></mfrac></msubsup><mrow><msub><mi>f</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></mrow></mrow></semantics></math></span>  Straight plug-and-chug, no mess, and it works even when <span class="math-container" id="1269900" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is not a normal random variable.  By the way, your density for <span class="math-container" id="1269900" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is _not_ that of a standard normal random variable. </td></tr><tr><td comment_id="257227"> See also the answer to [this almost identical question](http://math.stackexchange.com/q/109896/15941) posted about an hour before yours.  Common homework? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="109932" id="answer">
+<p>As an integral of the function you have given, you would need <span class="math-container" id="1269901" visual_id="377846"><math alttext="u=b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>b</mi></mrow></semantics></math></span> and <span class="math-container" id="1269902" visual_id="193844"><math alttext="\sigma=a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mi>a</mi></mrow></semantics></math></span>.</p> <p>Proof: As you note </p> <p><span class="math-container" id="1269903" visual_id="8518947"><math alttext="F_{Y}(y)=F_{X}\left(\frac{y-b}{a}\right)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{% t}e^{-x^{2}/2}\,dx," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>F</mi><mi>Y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo>(</mo><mfrac><mrow><mi>y</mi><mo>-</mo><mi>b</mi></mrow><mi>a</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi>t</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span></p> <p>where <span class="math-container" id="1269904" visual_id="6664897"><math alttext="t=\frac{y-b}{a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mi>y</mi><mo>-</mo><mi>b</mi></mrow><mi>a</mi></mfrac></mrow></semantics></math></span>.  Now make the substitution <span class="math-container" id="1269905" visual_id="8518948"><math alttext="x=\frac{s-b}{a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mi>s</mi><mo>-</mo><mi>b</mi></mrow><mi>a</mi></mfrac></mrow></semantics></math></span>.  Then <span class="math-container" id="1269906" visual_id="8518949"><math alttext="dx=ds/a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>s</mi></mrow><mo>/</mo><mi>a</mi></mrow></mrow></semantics></math></span>, so</p> <p><span class="math-container" id="1269907" visual_id="8518950"><math alttext="F_{Y}(y)=\frac{1}{a\sqrt{2\pi}}\int_{-\infty}^{y}e^{-(s-b)^{2}/2a^{2}}\,ds." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>F</mi><mi>Y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>a</mi><mo>⁢</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi>y</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>s</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>s</mi></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="257173"> Be careful when <span class="math-container" id="1269908" visual_id="21539"><math alttext="a&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span>; you don't want a random variable whose standard deviation <span class="math-container" id="1269909" visual_id="722"><math alttext="\sigma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi></semantics></math></span> is negative. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="109896"> Normal random variable <span class="math-container" id="1269566" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and the cdf of <span class="math-container" id="1269567" visual_id="1417"><math alttext="Y=aX+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>X</mi></mrow><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

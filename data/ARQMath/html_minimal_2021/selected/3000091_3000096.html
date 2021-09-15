@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that $\lim\limits_{x \to \infty}\frac{\ln x}{x}=0$ from definition.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that <span class="math-container" id="27783974" visual_id="489571"><math alttext="\lim\limits_{x\to\infty}\frac{\ln x}{x}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> from definition. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3000091">
+<p>Show that <span class="math-container" id="27783975" visual_id="489571"><math alttext="\displaystyle\lim_{x\to\infty}\frac{\ln x}{x}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mstyle displaystyle="true"><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mstyle></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>I know this is a simple application of the L'Hopital's rule, but can we also show this from the <span class="math-container" id="27783976" visual_id="1149"><math alttext="\displaystyle\epsilon-\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>-</mo><mi>δ</mi></mrow></semantics></math></span> definition?</p> <p>I am stuck because while it is easy to find a lower bound for the denominator <span class="math-container" id="27783977" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, the numerator does not have an upper bound - it merely increases less fast than the denominator. Is there a way to manipulate the expression to get a bound?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> limits </span><span> limits-without-lhopital </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6188730"> <span class="math-container" id="27783978" visual_id="153435"><math alttext="\ln(x)\leq x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>x</mi></mrow></semantics></math></span> for <span class="math-container" id="27783979" visual_id="9617"><math alttext="x&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> and show it for the function <span class="math-container" id="27783980" visual_id="9226"><math alttext="\frac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>x</mi></mfrac></semantics></math></span>. </td></tr><tr><td comment_id="6188734"> @Rustyn there is one for infinite limits </td></tr><tr><td comment_id="6188738"> @gt6989b many thanks, I'll have a look </td></tr><tr><td comment_id="6188745"> If you let <span class="math-container" id="27783981" visual_id="155725"><math alttext="x=e^{y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>e</mi><mi>y</mi></msup></mrow></semantics></math></span>, then it's equivalent to show that  <span class="math-container" id="27783982" visual_id="1616980"><math alttext="\lim_{y\to\infty}\frac{y}{e^{y}}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>y</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mi>y</mi><msup><mi>e</mi><mi>y</mi></msup></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="6188782"> Well its just an immediate but non-obvious consequence of the inequality <span class="math-container" id="27783983" visual_id="310010"><math alttext="\log x\leq x-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo>≤</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> or if you prefer the simpler inequality <span class="math-container" id="27783984" visual_id="2502766"><math alttext="\log x&lt;x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo>&lt;</mo><mi>x</mi></mrow></semantics></math></span>. The non-obvious part is related to the fact that we need to replace <span class="math-container" id="27783985" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> with <span class="math-container" id="27783986" visual_id="3765"><math alttext="\sqrt{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi>x</mi></msqrt></semantics></math></span> in above inequality to get <span class="math-container" id="27783987" visual_id="8312958"><math alttext="\log x&lt;2\sqrt{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow><mo>&lt;</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>x</mi></msqrt></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3000096" id="answer">
+<p>Assuming you define the <span class="math-container" id="27783988" visual_id="347506"><math alttext="\ln(\cdot)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mo>⋅</mo><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> by the integral, then it is more or less enough to notice that <span class="math-container" id="27783989" visual_id="8312959"><math alttext="0\leq\int^{x}_{1}\frac{1}{t}\,dt\leq\int^{x}_{1}\frac{1}{\sqrt{t}}\,dt\leq\int% ^{x}_{0}\frac{1}{\sqrt{t}}\,dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi>x</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mn>1</mn><mi>t</mi></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>≤</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi>x</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mn>1</mn><msqrt><mi>t</mi></msqrt></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>≤</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mn>1</mn><msqrt><mi>t</mi></msqrt></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span> This leads to <span class="math-container" id="27783990" visual_id="8312960"><math alttext="\left|\frac{\ln(x)}{x}\right|\leq\left|\frac{2\sqrt{x}}{x}\right|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>|</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>|</mo></mrow><mo>≤</mo><mrow><mo>|</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>x</mi></msqrt></mrow><mi>x</mi></mfrac><mo>|</mo></mrow></mrow></semantics></math></span> The rest is straightforward. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="6188770"> Ah yes! I forgot that's how we defined log function. Thank you! </td></tr><tr><td comment_id="6188802"> @Bunbury glad I could help, I made it a little bit easier now. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

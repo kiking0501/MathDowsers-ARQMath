@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Logic: Proving (~P v Q ) and (P ^ ~Q) are in Contradiction</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Logic: Proving (~P v Q ) and (P ^ ~Q) are in Contradiction </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2255833">
+<p>I am trying to show <code>(~P v Q)</code> is in contradiction with <code>(P^~Q)</code> as part of a larger proof. </p> <p>I am having a hard time wrapping my head around it because it is really obvious informally. I am given <code>(~P v Q)</code> and I have established <code>(P^~Q)</code>--initially, I thought this would be sufficient to prove that the two are a contradiction, but I can only show this using AnaCon or TautCon, both of which are not allowed by my professor.  </p> <p>I searched my book for a proof of DeMorgan's Equivalence (so I could turn <code>P^~Q</code> to have the form <code>~[~PvQ]</code>) but could not find it. </p> <p>The system that I am required to use is Fitch. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2255884" id="answer">
+<p><em>Hint</em></p> <p>We can derive <span class="math-container" id="20836788" visual_id="873480"><math alttext="\lnot(\lnot P\lor Q)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow><mo>∨</mo><mi>Q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> from  <span class="math-container" id="20836789" visual_id="324940"><math alttext="P\land\lnot Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>Q</mi></mrow></mrow></semantics></math></span>:</p> <p>1) <span class="math-container" id="20836790" visual_id="324940"><math alttext="P\land\lnot Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>Q</mi></mrow></mrow></semantics></math></span> --- premise</p> <p>2) <span class="math-container" id="20836791" visual_id="68150"><math alttext="\lnot P\lor Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow><mo>∨</mo><mi>Q</mi></mrow></semantics></math></span> --- assumed</p> <p>3) <span class="math-container" id="20836792" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> --- from 1) by <span class="math-container" id="20836793" visual_id="23170"><math alttext="\land" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∧</mo></semantics></math></span>-elim</p> <p>4) <span class="math-container" id="20836794" visual_id="101176"><math alttext="\lnot Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>Q</mi></mrow></semantics></math></span> --- from 1) by <span class="math-container" id="20836795" visual_id="23170"><math alttext="\land" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∧</mo></semantics></math></span>-elim</p> <p>5) <span class="math-container" id="20836796" visual_id="53281"><math alttext="\lnot P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow></semantics></math></span> --- assumed [a] from 2) for <span class="math-container" id="20836797" visual_id="1189"><math alttext="\lor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∨</mo></semantics></math></span>-elim</p> <p>6) <span class="math-container" id="20836798" visual_id="26703"><math alttext="\bot" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊥</mo></semantics></math></span> --- contradiciton: from 3) and 5)</p> <p>7) <span class="math-container" id="20836799" visual_id="202"><math alttext="Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi></semantics></math></span> --- assumed [b] from 2) for <span class="math-container" id="20836800" visual_id="1189"><math alttext="\lor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∨</mo></semantics></math></span>-elim</p> <p>8) <span class="math-container" id="20836801" visual_id="26703"><math alttext="\bot" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊥</mo></semantics></math></span> --- contradiciton: from 4) and 7)</p> <p>9) <span class="math-container" id="20836802" visual_id="26703"><math alttext="\bot" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊥</mo></semantics></math></span> --- from 2), 5)-6) and 7)-8) by <span class="math-container" id="20836803" visual_id="1189"><math alttext="\lor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∨</mo></semantics></math></span>-elim, discharging [a] and [b]</p> <blockquote> <p>10) <span class="math-container" id="20836804" visual_id="873480"><math alttext="\lnot(\lnot P\lor Q)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow><mo>∨</mo><mi>Q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> --- from 2) and 9) by <span class="math-container" id="20836805" visual_id="16516"><math alttext="\lnot" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">¬</mi></semantics></math></span>-intro, discharging assumption 2).</p> </blockquote> <p>In conclusion:</p> <blockquote> <blockquote> <p><span class="math-container" id="20836806" visual_id="2656976"><math alttext="P\land\lnot Q\vdash\lnot(\lnot P\lor Q)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>Q</mi></mrow></mrow><mo>⊢</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow><mo>∨</mo><mi>Q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> </blockquote> </blockquote> <p>The same for the other "direction".</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4639480"> Thank you, the hint was just what I needed! But what if I have `~P v Q` as a previous assumption, should I still assume the same statement after I have established `P^~Q`? Essentially repeating it? Would that be necessary if the latter statement, `P^~Q` came after `~P v Q`? </td></tr><tr><td comment_id="4639500"> @Matt - not clear... You are saying: to swap 1) and 2) to prove : <span class="math-container" id="20836807" visual_id="296231"><math alttext="\lnot(P\land\lnot Q)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>Q</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> from <span class="math-container" id="20836808" visual_id="68150"><math alttext="\lnot P\lor Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow><mo>∨</mo><mi>Q</mi></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="4639577"> My bad. Imagine that I already have `~P v Q` as step #5, then I manage to establish `P^~Q` as step #8, do I then have to assume `~P v Q` again as step #9 (in order to obtain `~(~PvQ)` or could I have used the `~PvQ` from step #5? </td></tr><tr><td comment_id="4639596"> You can re-use it. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>$x,y \in R$ and $x \neq y$ Show that $e^\frac{x+y}2 \lt \frac12 (e^x + e^y)$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> <span class="math-container" id="27961417" visual_id="42067"><math alttext="x,y\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> and <span class="math-container" id="27961418" visual_id="254"><math alttext="x\neq y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mi>y</mi></mrow></semantics></math></span> Show that <span class="math-container" id="27961419" visual_id="8370972"><math alttext="e^{\frac{x+y}{2}}\lt\frac{1}{2}(e^{x}+e^{y})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></msup><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><msup><mi>e</mi><mi>y</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3018952">
+<p>Let <span class="math-container" id="27961420" visual_id="42067"><math alttext="x,y\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> and <span class="math-container" id="27961421" visual_id="254"><math alttext="x\neq y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mi>y</mi></mrow></semantics></math></span>. Show that <span class="math-container" id="27961422" visual_id="8370972"><math alttext="e^{\frac{x+y}{2}}\lt\frac{1}{2}(e^{x}+e^{y})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></msup><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><msup><mi>e</mi><mi>y</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p>Struggling with this proof atm. </p> <p>Tried every approach I could think of. Attempted to look at it written as a series, as a limit and tried playing around with the general rules for exponential functions.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> inequality </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6225803"> This is just the arithmetic-geometric mean inequality. </td></tr><tr><td comment_id="6225809"> Can people please stop tagging real analysis to whatever has to do with calculus ? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3018965" id="answer">
+<p>if <span class="math-container" id="27961423" visual_id="8157"><math alttext="a\neq b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≠</mo><mi>b</mi></mrow></semantics></math></span></p> <p><span class="math-container" id="27961424" visual_id="8370973"><math alttext="(a-b)^{2}&amp;gt;0\\ a^{2}+b^{2}&amp;gt;2ab\\ ab&amp;lt;\frac{1}{2}(a^{2}+b^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>&gt;</mo></mrow><mrow><mrow><mn>0</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>&gt;</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>&lt;</mo></mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>This is the AM-GM inequality.</p> <p><span class="math-container" id="27961425" visual_id="8370974"><math alttext="a=e^{\frac{x}{2}},b=e^{\frac{y}{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>=</mo><msup><mi>e</mi><mfrac><mi>x</mi><mn>2</mn></mfrac></msup></mrow><mo>,</mo><mrow><mi>b</mi><mo>=</mo><msup><mi>e</mi><mfrac><mi>y</mi><mn>2</mn></mfrac></msup></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

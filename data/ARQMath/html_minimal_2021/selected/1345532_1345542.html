@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Sample space: What's the possibility that a family has $n$ boys?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Sample space: What's the possibility that a family has $n$ boys? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1345532">
+<p>What's the sample space in these two cases?  </p> <p>Case <span class="math-container" id="12506744" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>:<br/> Of all families with two children you ask the parents, if they have a boy born on a Thursday. They say yes. What's the possibility that the family has two boys?<br/> I'd say the sample space <span class="math-container">$\Omega=\{BG, GB, BB\}$</span> (because we know there is already a boy).<br/> So the probability would be <span class="math-container">$1/3.$</span> </p> <p>Case <span class="math-container" id="12506737" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>:<br/> You know a family has three kids. On a day your visiting them, you see two boys playing in the garden. What's the possibility the family has three boys?<br/> I'd say the sample space <span class="math-container">$\Omega=\{GBB, BGB, BBG, BBB\}$</span> so the probability would be <span class="math-container">$1/4.$</span><br/> Or is the sample space <span class="math-container">$\Omega=\{B, G\}$</span>, because you already know, they have two boys? Which would be a probability of <span class="math-container">$1/2.$</span></p> <p>Thanks in advance</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> statistics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2736291"> For problems like these (especially case 1), I don't think there is any such thing as "the" sample space in general. There are only correct sample spaces and incorrect sample spaces. I think you can also reasonably define the sample space to be the set of all possible family configurations _before_ you make observe any of the children, or _after_, as long as you apply probabilities correctly to the sample space you use. (If you use the "before" sample space then you need to use conditional probability.) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1345542" id="answer">
+<p><strong>Case 1</strong> is badly worded. Do you mean you deal with families with two children, and you ask the probability that such a family has two boys given that they have a boy born on a Thursday? And do you want a sample space where the outcomes have equal probability?</p> <p>If so, let the days of the week be <span class="math-container" id="12506731" visual_id="1825755"><math alttext="SMTWHFs" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⁢</mo><mi>M</mi><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mi>W</mi><mo>⁢</mo><mi>H</mi><mo>⁢</mo><mi>F</mi><mo>⁢</mo><mi>s</mi></mrow></semantics></math></span>. Then your sample space begins with <span class="math-container" id="12506732" visual_id="1825756"><math alttext="BSBS" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⁢</mo><mi>S</mi><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>S</mi></mrow></semantics></math></span>, meaning the first child was a Boy born on Sunday and the second child was a Boy born on Sunday. This sample space has <span class="math-container" id="12506733" visual_id="1825757"><math alttext="2\cdot 7\cdot 2\cdot 7=196" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⋅</mo><mn>7</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>7</mn></mrow><mo>=</mo><mn>196</mn></mrow></semantics></math></span> outcomes. You want the conditional probability of two <span class="math-container" id="12506734" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>'s given at least one <span class="math-container" id="12506735" visual_id="145224"><math alttext="BH" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⁢</mo><mi>H</mi></mrow></semantics></math></span>.</p> <p>There are other ways to do this with smaller sample spaces, if you allow the sample space to be non-uniform in probability.</p> <p>Let's work it out with my sample space. We want</p> <p><span class="math-container" id="12506736" visual_id="1825758"><math alttext="P(2\text{ boys | a boy born Thursday})=\frac{P(2\text{ boys and a boy born % Thursday})}{P(\text{a boy born Thursday})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mtext> boys — a boy born Thursday</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mtext> boys and a boy born Thursday</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mtext>a boy born Thursday</mtext><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></semantics></math></span></p> <p>For the numerator, <span class="math-container" id="12506737" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> boys and a boy born Thursday, we have three overlapping subcases: the first boy born Thursday (<span class="math-container" id="12506738" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span> possibilities for the other child); the second boy born Thursday (<span class="math-container" id="12506739" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span> possibilities for the other child); or both boys born Thursday (<span class="math-container" id="12506740" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> possibility). The third case is the double counting if we add the first two cases, so the total number of possibilities is</p> <p><span class="math-container" id="12506741" visual_id="1825759"><math alttext="P(2\text{ boys and a boy born Thursday})=7+7-1=13" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mtext> boys and a boy born Thursday</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>7</mn><mo>+</mo><mn>7</mn></mrow><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mn>13</mn></mrow></semantics></math></span></p> <p>For the denominator, we again have three overlapping subcases: the first child is a boy born Thursday (<span class="math-container" id="12506742" visual_id="726881"><math alttext="2\cdot 7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>7</mn></mrow></semantics></math></span> possibilities [sex and day] for the other child); the second child is a boy born Thursday (<span class="math-container" id="12506743" visual_id="726881"><math alttext="2\cdot 7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>7</mn></mrow></semantics></math></span> possibilities [sex and day] for the other child); or both children are boys born Thursday (<span class="math-container" id="12506744" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> possibility). Again, the third case is the double counting if we add the first two cases, so the total number of possibilities is</p> <p><span class="math-container" id="12506745" visual_id="1825760"><math alttext="P(\text{a boy born Thursday})=2\cdot 7+2\cdot 7-1=27" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mtext>a boy born Thursday</mtext><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mn>2</mn><mo>⋅</mo><mn>7</mn></mrow><mo>+</mo><mrow><mn>2</mn><mo>⋅</mo><mn>7</mn></mrow></mrow><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mn>27</mn></mrow></semantics></math></span></p> <p>Therefore we get</p> <blockquote> <p><span class="math-container" id="12506746" visual_id="1825761"><math alttext="P(2\text{ boys | a boy born Thursday})=\frac{P(2\text{ boys and a boy born % Thursday})}{P(\text{a boy born Thursday})}=\frac{13}{27}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mtext> boys — a boy born Thursday</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mtext> boys and a boy born Thursday</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mtext>a boy born Thursday</mtext><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mn>13</mn><mn>27</mn></mfrac></mrow></semantics></math></span></p> </blockquote> <p>This may seem strange, but the information about a birth on Thursday is actually meaningful to the problem, since it restricts both numerator and denominator in the calculation but in different proportions. For more details, see <a href="https://www.sciencenews.org/article/when-intuition-and-math-probably-look-wrong" rel="nofollow">this article</a> or <a href="https://en.wikipedia.org/wiki/Boy_or_Girl_paradox#Information_about_the_child" rel="nofollow">this article</a> on the problem where "Thursday" is replaced by "Tuesday." I just tested this problem in a Microsoft Excel spreadsheet, listing all <span class="math-container" id="12506747" visual_id="89893"><math alttext="196" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>196</mn></semantics></math></span> outcomes, and it checks out.</p> <hr/> <p>Your rewording of the problem is more clear, and it seems you do not want the sample space to be all families with two children but rather those with two children with at least one of them a boy born on Thursday. That does not change my answer but does change the overall sample space. In this situation your sample space has <span class="math-container" id="12506748" visual_id="5737"><math alttext="27" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>27</mn></semantics></math></span> elements, namely</p> <pre><code>1st Boy-Thursday  2nd Boy-Thursday BHBS              BSBH BHBM              BMBH BHBT              BTBH BHBW              BWBH BHBH BHBF              BFBH BHBs              BsBH BHGS              GSBH BHGM              GMBH BHGT              GTBH BHGW              GWBH BHGH              GHBH BHGF              GFBH BHGs              GsBH </code></pre> <p>Note that the second column has a gap, to avoid double-counting the case where both children are boys born on Thursday. You can easily count that <span class="math-container" id="12506749" visual_id="3581"><math alttext="13" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>13</mn></semantics></math></span> of these <span class="math-container" id="12506750" visual_id="5737"><math alttext="27" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>27</mn></semantics></math></span> possibilities have two boys.</p> <hr/> <p><strong>Case 2</strong> is more clearly worded. Your sample space is <span class="math-container" id="12506751" visual_id="1602704"><math alttext="BBB" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> through <span class="math-container" id="12506752" visual_id="95842"><math alttext="GGG" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>⁢</mo><mi>G</mi><mo>⁢</mo><mi>G</mi></mrow></semantics></math></span>, a size of <span class="math-container" id="12506753" visual_id="2663"><math alttext="8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>8</mn></semantics></math></span>. You want the conditional probability that there are three boys given that there are at least two boys. Your calculation here of <span class="math-container" id="12506754" visual_id="1118"><math alttext="\frac{1}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac></semantics></math></span> is correct.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2735776"> Thanks, but which calculation is correct in case 2?   The one with sample space Omega={GBB, BBG; BGB, BBB} or Omega={B, G} </td></tr><tr><td comment_id="2735783"> I updated case 1. Because we know they have a boy on Thursday. I wrote that wrong. Sorry. </td></tr><tr><td comment_id="2735927"> @mblaettler: In case 2 your calculation of <span class="math-container" id="12506755" visual_id="1118"><math alttext="\frac{1}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac></semantics></math></span> is correct because you used the correct sample space of size <span class="math-container" id="12506756" visual_id="2663"><math alttext="8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>8</mn></semantics></math></span> with equal probabilities. You did the conditional probability by looking at the event "has at least two boys" of size <span class="math-container" id="12506757" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>. Your second calculation of <span class="math-container" id="12506758" visual_id="363"><math alttext="\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac></semantics></math></span> is wrong because the two listed outcomes do not have the same probability. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

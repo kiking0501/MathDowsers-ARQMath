@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Logic Question: How does $(P\to R )\vee (Q\to R) \equiv (P \wedge Q)\to R$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Logic Question: How does <span class="math-container" id="3862260" visual_id="1488961"><math alttext="(P\to R)\vee(Q\to R)\equiv(P\wedge Q)\to R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>∨</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>≡</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>∧</mo><mi>Q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>R</mi></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="361610">
+<p>I can prove that these two statements are equivalent, but I can't make sense of them logically.  For instance, if P = "have a cold", Q = "have a headache", and R = "go see a doctor" then the statement:</p> <p>If you have a cold then go see a doctor or if you have a headache then go see a doctor.</p> <p>Is equivalent to:</p> <p>If you have a cold and a headache then go see a doctor?</p> <p>This to me does not make sense because the left side is saying if you have a cold OR a headache see a doctor, but the right side of the equation is saying if you have a cold AND a headache go see a doctor.</p> <p>Can someone help clarify this for me?</p> <p>EDIT:   </p> <p>I forgot to add that this is from the book "How to Prove It" by Daniel Velleman, of which I double checked and the equivalence is written in the book just as I wrote it. </p> <p>Also, I think the author is trying to make me see a contrast between the two statements:</p> <p>(i) (P→R)∧(Q→R)≡(P∨Q)→R [I understand this statement]</p> <p>(ii) (P→R)∨(Q→R)≡(P∧Q)→R [I don't understand this statement]. </p> <p>Both statements, at least as written in the book, are true.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="777056"> In light of your edit, I've given a counterexample in my post. </td></tr><tr><td comment_id="777088"> Oh, sorry, let me completely revise this, and give a completely new answer. There is a huge subtlety in the notion of implication which comes up here. </td></tr><tr><td comment_id="777120"> I've added a much expanded answer. </td></tr><tr><td comment_id="778354"> The problem with translating propositions like these into English and testing their "real world sense" is that mathematics is not 100% compatible with the real world. When you harass little kids with "Who do you love more, mommy or daddy?" the answer "Yes." is not the one you'd expect, but mathematically it is a correct one. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="362432" id="answer">
+<p>The mathematical aspect of the question has already been answered, so let me say something about the intuitive aspect, which caused the difficulty in the first place.  I think the problem (or at least part of it) is that we are not accustomed to thinking about disjunctions of implications.  We see implications all the time, for example in civil laws, but we don't often have a choice of which law to obey.  But I think, once the issue is brought into the open, we can think about such disjunctions without too much difficulty.  In the example at hand, suppose that you had a choice between obeying a law that says "If you have a cold, then you must go to the doctor" and another law that says "If you have a headache, then you must go  to the doctor."  In such a situation, if you had a cold <em>and</em> a headache, you would have to go to the doctor.  Even though you can choose which law to obey, either choice will require you to go to the doctor.  But if you had <em>only</em> a cold or <em>only</em> a headache, then you could avoid going to the doctor, by choosing to obey the law that doesn't apply to your actual condition.  So the ultimate effect of the two laws and your option of choosing between them is exactly the same as the ultimate effect of a single law saying "If you have  both a cold and a headache, then you must go to the doctor."</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="778416"> The disjunction of implications problem is even more striking with <span class="math-container" id="3862339" visual_id="243411"><math alttext="(P\to Q)\lor(Q\to P)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>→</mo><mi>Q</mi><mo stretchy="false">)</mo></mrow><mo>∨</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>→</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. So, either "If I had a headache yesterday then I went to the doctor yesterday" or "If I went to the doctor yesterday then I had a headache yesterday" must be true. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

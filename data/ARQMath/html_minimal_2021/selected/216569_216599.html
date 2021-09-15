@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Assuming $AB=I$ prove $BA=I$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Assuming <span class="math-container" id="2454023" visual_id="33766"><math alttext="AB=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span> prove <span class="math-container" id="2454024" visual_id="25149"><math alttext="BA=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="216569">
+<blockquote> <p><strong>Possible Duplicate:</strong><br/> <a href="https://math.stackexchange.com/questions/3852/if-ab-i-then-ba-i">If <span class="math-container" id="2454025" visual_id="33766"><math alttext="AB=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span> then <span class="math-container" id="2454026" visual_id="25149"><math alttext="BA=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span></a> </p> </blockquote> <p>Most introductory linear algebra texts define the inverse of a square matrix <span class="math-container" id="2454027" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> as such:</p> <p>Inverse of <span class="math-container" id="2454028" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, if it exists, is a matrix <span class="math-container" id="2454029" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> such that <span class="math-container" id="2454030" visual_id="3320"><math alttext="AB=BA=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span>.</p> <p>That definition, in my opinion, is problematic. A few books (in my sample less than 20%) give a different definition:</p> <p>Inverse of <span class="math-container" id="2454031" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, if it exists, is a matrix <span class="math-container" id="2454032" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> such that <span class="math-container" id="2454033" visual_id="33766"><math alttext="AB=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span>. Then they go and prove that <span class="math-container" id="2454034" visual_id="25149"><math alttext="BA=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span>. </p> <p>Do you know of a proof other than defining inverse through determinants or through using <code>rref</code>?  </p> <p>Is there a general setting in algebra under which <span class="math-container" id="2454035" visual_id="343373"><math alttext="ab=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>=</mo><mi>e</mi></mrow></semantics></math></span>  leads to <span class="math-container" id="2454036" visual_id="463433"><math alttext="ba=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>a</mi></mrow><mo>=</mo><mi>e</mi></mrow></semantics></math></span> where <span class="math-container" id="2454037" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span> is the identity?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> abstract-algebra </span><span> matrices </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="487689"> You might want to take a look at [this question](http://math.stackexchange.com/questions/3852/if-ab-i-then-ba-i). </td></tr><tr><td comment_id="487694"> What's "problematic" about the first definition? In general there's no relationship between having a left inverse and having a right inverse, and two-sided inverse is the correct generalization of the naive notion of inverse. </td></tr><tr><td comment_id="487696"> There’s nothing at all problematic about the definition. There is no compelling reason to incorporate into the definition the fact that a one-sided inverse of a square matrix can be proved to be a two-sided inverse. </td></tr><tr><td comment_id="487698"> Maybe it's of some interest to notice that if <span class="math-container" id="2454102" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is a non-square matrix, with more rows that columns, and its columns are independent, then there is a matrix <span class="math-container" id="2454101" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> such that <span class="math-container" id="2454078" visual_id="3319"><math alttext="BA" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></semantics></math></span> is a (small) identity matrix, and <span class="math-container" id="2454041" visual_id="3318"><math alttext="AB" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> is the projection matrix onto the column space of <span class="math-container" id="2454102" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>.  The matrix <span class="math-container" id="2454101" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is <span class="math-container" id="2454044" visual_id="628912"><math alttext="(A^{T}A)^{-1}A^{T}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>A</mi><mi>T</mi></msup><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>A</mi><mi>T</mi></msup></mrow></semantics></math></span>.  It is a left-inverse of <span class="math-container" id="2454102" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>.  Multiplying boths sides of an equality on the left by <span class="math-container" id="2454101" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> has the effect of canceling the <span class="math-container" id="2454102" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> when <span class="math-container" id="2454102" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is the leftmost factor on one side of the equality. </td></tr><tr><td comment_id="487704"> To answer the last part: both inverses coincide in a group. The <span class="math-container" id="2454049" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrices, excluding the zero matrix,form a multiplicative group called the General linear group.  That's why the inverses are the same. </td></tr><tr><td comment_id="487705"> @QiaochuYuan This definition sounds like both requirements are needed to define the inverse. Or that somehow it is trivial that a matrix and its inverse commute. In texts I have seen once <span class="math-container" id="2454050" visual_id="25150"><math alttext="B=A^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><msup><mi>A</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span> is constructed there is no check or explanation that `both` <span class="math-container" id="2454107" visual_id="33766"><math alttext="AB=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span> and <span class="math-container" id="2454099" visual_id="25149"><math alttext="BA=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span> are true. </td></tr><tr><td comment_id="487707"> @Maesumi: they are both required, _in general._ For matrices it happens to be the case that a left inverse is also a right inverse and vice versa, but in more general contexts this is false and the correct generalization of "inverse" is "two-sided inverse." </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="216599" id="answer">
+<blockquote> <p>Is there a general setting in algebra under which ab=e leads to ba=e where e is the identity?</p> </blockquote> <p>Finiteness or finite-dimensionality or rigidities that follow from those, such as:</p> <ul> <li>a Dedekind-finite set is not infinite</li> <li>the double-dual <span class="math-container" id="2454090" visual_id="138996"><math alttext="V^{**}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>V</mi><mrow><mi></mi><mo>*</mo><mo>*</mo></mrow></msup></semantics></math></span> being naturally isomorphic to <span class="math-container" id="2454091" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span>, </li> <li>antipode^2=identity, and other fancier analogues (think here of phrases like <em>rigid tensor categories with duals</em>).   </li> </ul> <p>There is a duality between injective and surjective, or left and right, and you need some setting in which the transpose from one to the other is its own inverse.    The linear algebra result for finite matrices ultimately rests on the same principle for functions on finite sets, and on the dimension of a finite-dimensional vector space being well-defined (which is closely related to the cardinality of a finite set being well-defined).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="3852"> If <span class="math-container" id="30799" visual_id="33766"><math alttext="AB=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span> then <span class="math-container" id="30800" visual_id="25149"><math alttext="BA=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mi>I</mi></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="975521"> Linear Algebra - Prove <span class="math-container" id="9334478" visual_id="5084"><math alttext="AB=BA" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="216187"> In a monoid, does <span class="math-container" id="2450270" visual_id="3500674"><math alttext="x\cdot y=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⋅</mo><mi>y</mi></mrow><mo>=</mo><mi>e</mi></mrow></semantics></math></span> imply <span class="math-container" id="2450271" visual_id="5195979"><math alttext="y\cdot x=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>⋅</mo><mi>x</mi></mrow><mo>=</mo><mi>e</mi></mrow></semantics></math></span>? </td></tr><tr><td post_id="226190"> Proof on Endomorphism </td></tr><tr><td post_id="1725831"> Inverse of <span class="math-container" id="15942906" visual_id="4582"><math alttext="2\times 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></semantics></math></span> matrix </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

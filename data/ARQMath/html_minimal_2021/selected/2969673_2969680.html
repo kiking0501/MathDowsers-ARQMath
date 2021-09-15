@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Binomial sum of $\sum\limits_{k=0}^{n} k \binom{n}{k} (-1)^{k-1} 2^{n-k}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Binomial sum of <span class="math-container" id="27496920" visual_id="142830"><math alttext="\sum\limits_{k=0}^{n}k\binom{n}{k}(-1)^{k-1}2^{n-k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mi>k</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></msup></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2969673">
+<p>Evaluate <span class="math-container" id="27496921" visual_id="142830"><math alttext="\displaystyle{\sum_{k=0}^{n}k\binom{n}{k}(-1)^{k-1}2^{n-k}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mi>k</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></msup></mrow></mrow></semantics></math></span></p> <p>So if the <span class="math-container" id="27496922" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> wasn't here this binomial sum would be really easy to solve.  How would you evaluate this then?  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> summation </span><span> binomial-theorem </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6130191"> You may get rid of that <span class="math-container" id="27496923" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> by noticing that <span class="math-container" id="27496924" visual_id="9792"><math alttext="k\binom{n}{k}=n\binom{n-1}{k-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></semantics></math></span> if <span class="math-container" id="27496925" visual_id="142831"><math alttext="k,n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>,</mo><mi>n</mi></mrow><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2969680" id="answer">
+<p>We have <span class="math-container" id="27496966" visual_id="142850"><math alttext="\sum_{k=0}^{n}\binom{n}{k}z^{k}2^{n-k}=(z+2)^{n}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mi>z</mi><mi>k</mi></msup><mo>⁢</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></msup></mrow></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow><mo>.</mo></mrow></semantics></math></span> Differentiating with respect to <span class="math-container" id="27496967" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span> gives <span class="math-container" id="27496968" visual_id="142851"><math alttext="\sum_{k=0}^{n}k\binom{n}{k}z^{k-1}2^{n-k}=n(z+2)^{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mi>k</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mi>z</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></msup></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span> and now substitute <span class="math-container" id="27496969" visual_id="39311"><math alttext="z=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>.  Equivalently, you can use <span class="math-container" id="27496970" visual_id="9792"><math alttext="\displaystyle k\binom{n}{k}=n\binom{n-1}{k-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac></mstyle><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow></semantics></math></span> immediately inside the sum.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="6130203"> wow that was way easier than the way I was attempting to go about it.... </td></tr><tr><td comment_id="6130214"> and then this sum to <span class="math-container" id="27496971" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> I believe </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Determining Stirling number</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Determining Stirling number </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="335372">
+<p>In the first part of the question I was asked to find the exponential generating function for <span class="math-container" id="3612721" visual_id="383395"><math alttext="s_{n,r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mrow><mi>n</mi><mo>,</mo><mi>r</mi></mrow></msub></semantics></math></span>, the number of ways to distribute <span class="math-container" id="3612722" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> distinct objects into <span class="math-container" id="3612723" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> (a fixed constant) distinct boxes with no empty box. </p> <p>I determined the generating function to be <span class="math-container" id="3612724" visual_id="383404"><math alttext="(e^{x}-1)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></semantics></math></span>. The problem then asks to determine <span class="math-container" id="3612725" visual_id="383395"><math alttext="s_{n,r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mrow><mi>n</mi><mo>,</mo><mi>r</mi></mrow></msub></semantics></math></span>. I'm not sure how this is any different from the first part of the question, but I thought maybe it was asking for a coefficient of <span class="math-container" id="3612726" visual_id="2996026"><math alttext="x^{r}/r!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>r</mi></msup><mo>/</mo><mrow><mi>r</mi><mo>!</mo></mrow></mrow></semantics></math></span> How do I do this?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> generating-functions </span><span> integer-partitions </span><span> stirling-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="335381" id="answer">
+<p>Employ the following two facts:</p> <p><span class="math-container" id="3612727" visual_id="3820239"><math alttext="(e^{x}-1)^{n}=\sum_{k=0}^{n}{n\choose k}e^{kx}(-1)^{n-k},\qquad e^{kx}=\sum_{r% \geq 0}\frac{k^{r}}{r!}x^{r}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mi>k</mi><mo>⁢</mo><mi>x</mi></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></msup></mrow></mrow></mrow><mo rspace="22.5pt">,</mo><mrow><msup><mi>e</mi><mrow><mi>k</mi><mo>⁢</mo><mi>x</mi></mrow></msup><mo>=</mo><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mrow><mi>r</mi><mo>≥</mo><mn>0</mn></mrow></msub><mrow><mfrac><msup><mi>k</mi><mi>r</mi></msup><mrow><mi>r</mi><mo>!</mo></mrow></mfrac><mo>⁢</mo><msup><mi>x</mi><mi>r</mi></msup></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>The first is from the binomial theorem and second is from the Taylor expansion of <span class="math-container" id="3612728" visual_id="14647"><math alttext="\exp" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>exp</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

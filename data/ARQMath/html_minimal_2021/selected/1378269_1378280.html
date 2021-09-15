@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>If $G = S_5$ and $H = \{g \in G \mid g^{5} = e\}$ how could I determine and prove whether or not $H$ is a subgroup of $G$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> If <span class="math-container" id="12808995" visual_id="217666"><math alttext="G=S_{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><msub><mi>S</mi><mn>5</mn></msub></mrow></semantics></math></span> and <span class="math-container" id="12808996" visual_id="9011949"><math alttext="H=\{g\in G\mid g^{5}=e\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow><mo>∣</mo><mrow><msup><mi>g</mi><mn>5</mn></msup><mo>=</mo><mi>e</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> how could I determine and prove whether or not <span class="math-container" id="12808997" visual_id="1116"><math alttext="H" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi></semantics></math></span> is a subgroup of <span class="math-container" id="12808998" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1378269">
+<p>I think that the this group contains the 5 element cycles and the identity e but overall I'm not sure how to prove that the product of the 2 members of H is also a 5 cycle or e. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> group-theory </span><span> finite-groups </span><span> permutations </span><span> symmetric-groups </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2806334"> <span class="math-container" id="12808999" visual_id="945819"><math alttext="(1\;2\;3\;4\;5)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1 2 3 4 5</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> and <span class="math-container" id="12809000" visual_id="9011950"><math alttext="(3\;2\;1\;4\;5)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3 2 1 4 5</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> are in <span class="math-container" id="12809005" visual_id="1116"><math alttext="H" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi></semantics></math></span>, but is <span class="math-container" id="12809002" visual_id="9011951"><math alttext="(1\;2\;3\;4\;5)\cdot(3\;2\;1\;4\;5)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>1 2 3 4 5</mn><mo stretchy="false">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy="false">(</mo><mn>3 2 1 4 5</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> in <span class="math-container" id="12809005" visual_id="1116"><math alttext="H" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi></semantics></math></span>? </td></tr><tr><td comment_id="2806518"> Oh I think it's (154), so I guess H is not a subgroup, thanks! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1378280" id="answer">
+<p>Note that <span class="math-container" id="12809004" visual_id="9011952"><math alttext="(1\,2\,3\,4\,5)(1\,2\,3\,5\,4)=(1\,3)(2\,4)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mn>1 2 3 4 5</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1 2 3 5 4</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mn>1 3</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2 4</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2806520"> Tha<span class="math-container" id="25904450">n</span>ks for this great answer, I see that H is not now! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

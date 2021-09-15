@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Counting North-East Lattice Paths</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Counting North-East Lattice Paths </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1713710">
+<p>I have been assigned the following homework problem:</p> <blockquote> <p>Let <span class="math-container" id="15831944" visual_id="15004"><math alttext="f(m,n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be the number of north-east lattice paths which exist from <span class="math-container" id="15831945" visual_id="828"><math alttext="(0,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> to <span class="math-container" id="15831946" visual_id="25666"><math alttext="(m,n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>.</p> <p>(i) Show that <span class="math-container" id="15831947" visual_id="7434822"><math alttext="f(m,n)=f(m-1,n)+f(m,n-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>.</p> <p>(ii) Show by induction that <span class="math-container" id="15831948" visual_id="7434823"><math alttext="f(m,n)=\binom{n+m}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span>.</p> </blockquote> <p>I've been reading around (the concept of north-east lattice paths is entirely new to me), but still cannot seem to wrap my head around an approach to this problem. Any help would be greatly appreciated!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3497518"> At each step, you either go north or you go east. If you're at <span class="math-container" id="15831952" visual_id="25666"><math alttext="(m,n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> with <span class="math-container" id="15831950" visual_id="5903"><math alttext="m,n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></semantics></math></span> both being positive, how many ways are there to get there, if your last step was north? How many ways if your last step was east? What do you do with these numbers? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1713732" id="answer">
+<p>Assuming <span class="math-container" id="15831951" visual_id="195709"><math alttext="m,n&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mrow><mi>n</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>, we have the picture below. The only ways to get to <span class="math-container" id="15831952" visual_id="25666"><math alttext="(m,n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> are to start at <span class="math-container" id="15831953" visual_id="542731"><math alttext="(m-1,n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> and go east or start at <span class="math-container" id="15831954" visual_id="542732"><math alttext="(m,n-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> and go north.</p> <p>Since the last segment of the path is distinct, for <span class="math-container" id="15831955" visual_id="195709"><math alttext="m,n&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mrow><mi>n</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> we have <span class="math-container" id="15831956" visual_id="7434822"><math alttext="f(m,n)=f(m-1,n)+f(m,n-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>.</p> <p><a href="https://i.stack.imgur.com/hgK8M.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/hgK8M.png"/></a></p> <p>If <span class="math-container" id="15831957" visual_id="7933"><math alttext="m=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="15831958" visual_id="8106"><math alttext="n&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>, we see that there is only one path and <span class="math-container" id="15831959" visual_id="1789312"><math alttext="f(0,n)=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>n</mi></mrow></semantics></math></span>. Similarly, <span class="math-container" id="15831960" visual_id="6009781"><math alttext="f(m,0)=m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>m</mi></mrow></semantics></math></span>.</p> <p>Using induction, we see that once we specify the south west boundary values, that all the other values are uniquely defined.</p> <p>It is easy to check that <span class="math-container" id="15831961" visual_id="7434824"><math alttext="f(0,n)=\binom{n}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="15831962" visual_id="7434825"><math alttext="f(m,0)=\binom{m}{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>m</mi><mi>m</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span>, and since <span class="math-container" id="15831963" visual_id="7434826"><math alttext="\binom{n+m}{n}=\binom{n+m-1}{n}+\binom{n+m-1}{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mo>-</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mo>-</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></semantics></math></span>, we see that <span class="math-container" id="15831964" visual_id="7434827"><math alttext="g(m,n)=\binom{n+m}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> satisfies the difference equation and the boundary conditions, hence <span class="math-container" id="15831965" visual_id="6154"><math alttext="f=g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mi>g</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find last two digits using modular arithmetic</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find last two digits using modular arithmetic </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1631143">
+<p>Find the last two digits of <span class="math-container" id="15084239" visual_id="5429713"><math alttext="7^{7^{7^{10217}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>7</mn><msup><mn>7</mn><msup><mn>7</mn><mn>10217</mn></msup></msup></msup></semantics></math></span>.</p> <p>We need to find <span class="math-container" id="15084240" visual_id="5429713"><math alttext="7^{7^{7^{10217}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>7</mn><msup><mn>7</mn><msup><mn>7</mn><mn>10217</mn></msup></msup></msup></semantics></math></span> (mod <span class="math-container" id="15084241" visual_id="7905"><math alttext="100" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>100</mn></semantics></math></span>) and  <span class="math-container" id="15084242" visual_id="413382"><math alttext="\phi(100)=40" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>100</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>40</mn></mrow></semantics></math></span><br/> So <span class="math-container" id="15084243" visual_id="5429727"><math alttext="7^{40}\equiv 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>7</mn><mn>40</mn></msup><mo>≡</mo><mn>1</mn></mrow></semantics></math></span>(mod<span class="math-container" id="15084244" visual_id="7905"><math alttext="100" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>100</mn></semantics></math></span>)<br/> I don't know how to proceed after this</p>
+</div>
+<hr/>
+<div id="tags">
+<span> modular-arithmetic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3326034"> @user236182:  It is indeed an exact duplicate, The only difference is in the solution. The one below can be verified at a glance. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1631151" id="answer">
+<p>Hint: It is true that <span class="math-container" id="15084245" visual_id="1975934"><math alttext="7^{40}\equiv 1\pmod{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>7</mn><mn>40</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. But already <span class="math-container" id="15084246" visual_id="493994"><math alttext="7^{4}\equiv 1\pmod{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>7</mn><mn>4</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. So all we need to find out about the exponent is what it is modulo <span class="math-container" id="15084247" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>. Almost no calculation is needed, since the bottom <span class="math-container" id="15084248" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span> in the exponent is congruent to <span class="math-container" id="15084249" visual_id="343"><math alttext="-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mn>1</mn></mrow></semantics></math></span> modulo <span class="math-container" id="15084250" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1631133"> Find the last <span class="math-container" id="15084205" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> digits of <span class="math-container" id="15084206" visual_id="5429713"><math alttext="7^{7^{7^{10217}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>7</mn><msup><mn>7</mn><msup><mn>7</mn><mn>10217</mn></msup></msup></msup></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

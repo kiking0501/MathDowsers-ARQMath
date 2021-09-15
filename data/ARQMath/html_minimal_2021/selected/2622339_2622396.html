@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Symmetric difference as a equivalent relation-equivalence classes</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Symmetric difference as a equivalent relation-equivalence classes </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2622339">
+<p>I was wondering if I can get a hint on the following question:</p> <p>Let <span class="math-container" id="24247303" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> be an equivalence relation on  <span class="math-container" id="24247304" visual_id="126398"><math alttext="\mathcal{P}(\mathbb{N})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℕ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, which satisfies: <span class="math-container" id="24247305" visual_id="3996076"><math alttext="\langle A,B\rangle\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false">⟩</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> iff <span class="math-container" id="24247306" visual_id="119675"><math alttext="A\Delta B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> is finite. Prove that <span class="math-container" id="24247307" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is an equivalence relation, and that each equivalence class is countable.</p> <p>I managed to prove that it is an equivalence relation,but got stuck on second part of the question. This is from a class of elementary set theory.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span><span> relations </span><span> cardinals </span><span> equivalence-relations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2622396" id="answer">
+<p>Here's a route. Let <span class="math-container" id="24247308" visual_id="5307"><math alttext="\mathcal{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">𝒞</mi></semantics></math></span> be an equivalence class.</p> <p><span class="math-container" id="24247309" visual_id="749"><math alttext="\qquad(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="22.5pt" stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>: Show that the collection of finite subsets of <span class="math-container" id="24247310" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> is countable.</p> <p><span class="math-container" id="24247311" visual_id="1757"><math alttext="\qquad(2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="22.5pt" stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>: Show that if <span class="math-container" id="24247312" visual_id="5307"><math alttext="\mathcal{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">𝒞</mi></semantics></math></span> has a finite element, then all of its elements are finite.</p> <p><span class="math-container" id="24247313" visual_id="278289"><math alttext="\qquad\qquad(2.1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="42.5pt" stretchy="false">(</mo><mn>2.1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>: Conclude that if <span class="math-container" id="24247314" visual_id="5307"><math alttext="\mathcal{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">𝒞</mi></semantics></math></span> has a finite element, then it is countable.</p> <p><span class="math-container" id="24247315" visual_id="1034"><math alttext="\qquad(3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="22.5pt" stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>: Let <span class="math-container" id="24247316" visual_id="2350968"><math alttext="\mathcal{C}_{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">∞</mi></msub></semantics></math></span> have an infinite element <span class="math-container" id="24247317" visual_id="86482"><math alttext="A_{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi mathvariant="normal">∞</mi></msub></semantics></math></span>. Consider <span class="math-container" id="24247318" visual_id="3996077"><math alttext="\mathcal{C}_{\infty}^{\prime}=\{B\setminus A_{\infty}\,;\,B\in\mathcal{C}_{% \infty}\text{\}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">∞</mi><mo>′</mo></msubsup><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>B</mi><mo>∖</mo><mpadded width="+1.7pt"><msub><mi>A</mi><mi mathvariant="normal">∞</mi></msub></mpadded><mo rspace="4.2pt">;</mo><mi>B</mi><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">∞</mi></msub><mtext>}</mtext></mrow></mrow></semantics></math></span>. Show that each element in <span class="math-container" id="24247319" visual_id="3996078"><math alttext="C_{\infty}^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>C</mi><mi mathvariant="normal">∞</mi><mo>′</mo></msubsup></semantics></math></span> must be finite.</p> <p><span class="math-container" id="24247320" visual_id="285894"><math alttext="\qquad\qquad(3.1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="42.5pt" stretchy="false">(</mo><mn>3.1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>: Conclude that <span class="math-container" id="24247321" visual_id="3996079"><math alttext="\mathcal{C}_{\infty}^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">∞</mi><mo>′</mo></msubsup></semantics></math></span> is countable.</p> <p><span class="math-container" id="24247322" visual_id="1026"><math alttext="\qquad(4)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="22.5pt" stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>: Show that the set <span class="math-container" id="24247323" visual_id="3996080"><math alttext="\widehat{\mathcal{C}_{\infty}}=\{B\in C_{\infty}\,;\,B\subset A_{\infty}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">∞</mi></msub><mo>^</mo></mover><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>B</mi><mo>∈</mo><mpadded width="+1.7pt"><msub><mi>C</mi><mi mathvariant="normal">∞</mi></msub></mpadded><mo rspace="4.2pt">;</mo><mi>B</mi><mo>⊂</mo><msub><mi>A</mi><mi mathvariant="normal">∞</mi></msub><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> is countable.</p> <p><span class="math-container" id="24247324" visual_id="680473"><math alttext="\qquad\qquad(4.1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="42.5pt" stretchy="false">(</mo><mn>4.1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>: I suggest you show that <span class="math-container" id="24247325" visual_id="3996081"><math alttext="\widehat{\mathcal{C}_{\infty}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">∞</mi></msub><mo>^</mo></mover></semantics></math></span> is in bijection with <span class="math-container" id="24247326" visual_id="3996082"><math alttext="\left\{A_{\infty}\setminus B\,;\,B\in\widehat{\mathcal{C}_{\infty}}\right\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>{</mo><mrow><mrow><mrow><msub><mi>A</mi><mi mathvariant="normal">∞</mi></msub><mo>∖</mo><mpadded width="+1.7pt"><mi>B</mi></mpadded></mrow><mo rspace="4.2pt">;</mo><mi>B</mi></mrow><mo>∈</mo><mover accent="true"><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">∞</mi></msub><mo>^</mo></mover></mrow><mo>}</mo></mrow></semantics></math></span>.</p> <p><span class="math-container" id="24247327" visual_id="9198"><math alttext="\qquad(5)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="22.5pt" stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>: Show that <span class="math-container" id="24247328" visual_id="2350968"><math alttext="\mathcal{C}_{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">∞</mi></msub></semantics></math></span> is in bijection with <span class="math-container" id="24247329" visual_id="3996083"><math alttext="C_{\infty}^{\prime}\cup\widehat{\mathcal{C}_{\infty}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>C</mi><mi mathvariant="normal">∞</mi><mo>′</mo></msubsup><mo>∪</mo><mover accent="true"><msub><mi class="ltx_font_mathcaligraphic">𝒞</mi><mi mathvariant="normal">∞</mi></msub><mo>^</mo></mover></mrow></semantics></math></span> and conclude.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

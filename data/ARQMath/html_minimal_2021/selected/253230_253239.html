@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>A Fourier transform using contour integral</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> A Fourier transform using contour integral </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="253230">
+<p>I try to evaluate <span class="math-container" id="2812856" visual_id="3555747"><math alttext="\int_{-\infty}^{\infty}\frac{\sin^{2}x}{x^{2}}e^{itx}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mi>x</mi></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> (<span class="math-container" id="2812857" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> real) using contour integrals, but encounter some difficulty. Perhaps someone can provide a hint. (I do not want to use convolution.) </p>
+</div>
+<hr/>
+<div id="tags">
+<span> complex-analysis </span><span> analysis </span><span> fourier-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="253239" id="answer">
+<p>An idea, defining</p> <p><span class="math-container" id="2812864" visual_id="3555752"><math alttext="f(z):=\frac{e^{itz}\sin^{2}z}{z^{2}}\,\,,\,\,C_{R}:=[-R-\epsilon]\cup(-\gamma_% {\epsilon})\cup[\epsilon,R]\cup\gamma_{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mpadded width="+3.3pt"><mfrac><mrow><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>z</mi></mrow></msup><mo>⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mi>z</mi></mrow></mrow><msup><mi>z</mi><mn>2</mn></msup></mfrac></mpadded></mrow><mo rspace="5.8pt">,</mo><mrow><msub><mi>C</mi><mi>R</mi></msub><mo>:=</mo><mrow><mrow><mo stretchy="false">[</mo><mrow><mrow><mo>-</mo><mi>R</mi></mrow><mo>-</mo><mi>ϵ</mi></mrow><mo stretchy="false">]</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><msub><mi>γ</mi><mi>ϵ</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">[</mo><mi>ϵ</mi><mo>,</mo><mi>R</mi><mo stretchy="false">]</mo></mrow><mo>∪</mo><msub><mi>γ</mi><mi>R</mi></msub></mrow></mrow></mrow></semantics></math></span></p> <p>with</p> <p><span class="math-container" id="2812865" visual_id="3555753"><math alttext="\gamma_{k}:=\{z\in\mathbb{C}\;;\;|z|=k\,,\,\arg z\geq 0\}=\{z\in\mathbb{C}\;;% \;z=ke^{i\theta}\,\,,\,0\leq\theta\leq\pi\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>γ</mi><mi>k</mi></msub><mo>:=</mo><mrow><mo stretchy="false">{</mo><mi>z</mi><mo>∈</mo><mpadded width="+2.8pt"><mi>ℂ</mi></mpadded><mo rspace="5.3pt">;</mo><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo><mo>=</mo><mpadded width="+1.7pt"><mi>k</mi></mpadded><mo rspace="4.2pt">,</mo><mi>arg</mi><mi>z</mi><mo>≥</mo><mn>0</mn><mo stretchy="false">}</mo></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>z</mi><mo>∈</mo><mpadded width="+2.8pt"><mi>ℂ</mi></mpadded><mo rspace="5.3pt">;</mo><mi>z</mi><mo>=</mo><mi>k</mi><mpadded width="+3.3pt"><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>θ</mi></mrow></msup></mpadded><mo>,</mo><mn> 0</mn><mo>≤</mo><mi>θ</mi><mo>≤</mo><mi>π</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span></p> <p>in the positive direction (check the minus sign in <span class="math-container" id="2812866" visual_id="272316"><math alttext="\,\gamma_{\epsilon}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded width="+1.7pt"><msub><mpadded lspace="1.7pt" width="+1.7pt"><mi>γ</mi></mpadded><mi>ϵ</mi></msub></mpadded></semantics></math></span> above!).</p> <p>This works assuming <span class="math-container" id="2812867" visual_id="3555754"><math alttext="\,0&amp;lt;t\in\mathbb{R}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn> 0</mn><mo>&lt;</mo></mrow><mi>t</mi></mrow><mo>∈</mo><mpadded width="+1.7pt"><mi>ℝ</mi></mpadded></mrow></semantics></math></span>, Jordan's lemma in the lemma and its corollaty in the answer <a href="https://math.stackexchange.com/questions/83828/definite-integral-calculation-with-0-pole-and">here</a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="555732"> But sin z/z does not tend to 0 as z--&gt;infinity, so Jordan's lemma cannot be used. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="83828"> Definite integral calculation with poles at 0 and <span class="math-container" id="949396" visual_id="402770"><math alttext="\pm i\sqrt{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>±</mo><mrow><mi>i</mi><mo>⁢</mo><msqrt><mn>3</mn></msqrt></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

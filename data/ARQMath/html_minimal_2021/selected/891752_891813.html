@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to prove the Hubble law is the unique expansion law compatible with homogeneity and isotropy?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to prove the Hubble law is the unique expansion law compatible with homogeneity and isotropy? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="891752">
+<p>In the book <em>physical foundations of cosmology</em>, it says that Hubble's Law is unique and a problem seems to be a hint of proving that.</p> <blockquote> <p>In order for a general expansion law,<strong>v</strong>=f(<strong>r</strong>,t), to be the same for all observers, the function f must satisfy the relation    <span class="math-container" id="8640579" visual_id="4175563"><math alttext="f(\bf{r_{CA}}−\bf{r_{BA}},t)=f(\bf{r_{CA}},t)−f(\bf{r_{BA}},t)," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>𝐫</mi><mi>𝐂𝐀</mi></msub><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><msub><mi>𝐫</mi><mi>𝐁𝐀</mi></msub></mrow><mo>,</mo><mi>𝐭</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>𝐟</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>𝐫</mi><mi>𝐂𝐀</mi></msub><mo>,</mo><mi>𝐭</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mi>𝐟</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>𝐫</mi><mi>𝐁𝐀</mi></msub><mo>,</mo><mi>𝐭</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span>   where ABC are three points in space. Show that the only solution of this equation is given by the Hubble law.</p> </blockquote> <p>With a little help from a Taylor approximation, I can convince myself that <span class="math-container" id="8640580" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> should be a linear function without a constant. But it seems to me that this is not good enough for a proof. How can one prove it in a more mathematical way?  Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> physics </span><span> mathematical-astronomy </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="891813" id="answer">
+<p>I spent a lot of time reading about Hubble's Law only to find that in a math context this problem isn't too hard to explain.</p> <p>This function says that the change in <span class="math-container" id="8640581" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> corresponds to a constant change in <span class="math-container" id="8640582" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>. So, let <span class="math-container" id="8640583" visual_id="4175564"><math alttext="x=\frac{\partial f}{\partial r}+\frac{\partial f}{\partial t}\frac{dt}{dr}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac><mo>+</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow></mfrac></mrow></mrow></mrow></semantics></math></span>. Since we assume that <span class="math-container" id="8640584" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> is a constantly changing function, it's derivative with respect to <span class="math-container" id="8640585" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> is 0. this means that <span class="math-container" id="8640586" visual_id="4175565"><math alttext="x=\frac{\partial f}{\partial r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mrow></semantics></math></span>. We can integrate this function with respect to <span class="math-container" id="8640587" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span>  \begin{gather} \int \frac{\partial f}{\partial r}\,dr=\int x\,dr = xr + c \end{gather}</p> <p>I am unsure of as to why <span class="math-container" id="8640588" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> would be set to 0. There's probably an argument in there somewhere but I'm physics'd out for the day.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1841901"> I am not certain if the assertion "the change in r corresponds to a constant change in f" is valid directly from the relation. I am quite sure f must be continuous and then assume that it's also differentiable and analytic, which I find rather unsettling... As for <span class="math-container" id="8640594" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>, if you are still interested, here is how I managed it. Say on A (B), I observe B (A), at <span class="math-container" id="8640590" visual_id="7478"><math alttext="\bf{r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐫</mi></semantics></math></span> (<span class="math-container" id="8640591" visual_id="4175566"><math alttext="-\bf{r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi>𝐫</mi></mrow></semantics></math></span>), moving away from me at volocity of <span class="math-container" id="8640592" visual_id="4175567"><math alttext="H\bf{r}+\bf{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>H</mi><mo>⁢</mo><mi>𝐫</mi></mrow><mo>+</mo><mi>𝐜</mi></mrow></semantics></math></span>(<span class="math-container" id="8640593" visual_id="4175568"><math alttext="-H\bf{r}+\bf{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mrow><mi>H</mi><mo>⁢</mo><mi>𝐫</mi></mrow></mrow><mo>+</mo><mi>𝐜</mi></mrow></semantics></math></span>). So <span class="math-container" id="8640594" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> should go to 0. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

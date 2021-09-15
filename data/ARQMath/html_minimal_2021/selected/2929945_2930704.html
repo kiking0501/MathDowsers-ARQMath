@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Optimization explained to a middle school kid</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Optimization explained to a middle school kid </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2929945">
+<p>Let's say you play the game of collecting the maximum amount of coins along a path in the <span class="math-container" id="27118157" visual_id="66"><math alttext="(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> plane. The total amount of coins collected <span class="math-container" id="27118158" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> is given by <span class="math-container" id="27118159" visual_id="662651"><math alttext="S=5x+7y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>7</mn><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="27118160" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span> and <span class="math-container" id="27118161" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span> represents the number of coins collected by walking respectively one unit in the <span class="math-container" id="27118162" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="27118163" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> direction. However I can only go as far as one unit of distance (<span class="math-container" id="27118164" visual_id="3567"><math alttext="x^{2}+y^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>).</p> <p>It turns out that the solution to the problem is so such that <span class="math-container" id="27118165" visual_id="662652"><math alttext="y/x=7/5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>/</mo><mi>x</mi></mrow><mo>=</mo><mrow><mn>7</mn><mo>/</mo><mn>5</mn></mrow></mrow></semantics></math></span> or said in other words, <strong>the ratio of how much you have to walk in the <span class="math-container" id="27118166" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> direction compared to in the <span class="math-container" id="27118167" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> direction is the same as the ratio of the rates at which you collect the coins in the <span class="math-container" id="27118168" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> direction compared to in the <span class="math-container" id="27118169" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> direction.</strong> </p> <p><strong>My question</strong> : suppose I have to explain this result to a middle school student who does not know any calculus of trigonometry. He is also quite shaky on describing equations of lines in the plane so I would not rely on that. How can I convince him <strong>with intuition</strong> that the two ratios are the same? (I'm not looking for a series of algebraic equations but rather for some kind of a visual proof).</p>
+</div>
+<hr/>
+<div id="tags">
+<span> optimization </span><span> intuition </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6053990"> Is this specific example important, or would it be helpful if we suggested examples that don't require as much preexisting knowledge? </td></tr><tr><td comment_id="6054531"> The problem is that at a certain point you have to explain why there's some sort of a connection between ratios and circles, which is just sort of fundamentally non-trivial. The real reason this happens is because of the specific way in which the slope of a circle changes as a function of height. I don't see how you're going to do this without the equation <span class="math-container" id="27118170" visual_id="3567"><math alttext="x^{2}+y^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> showing up in some form or another. </td></tr><tr><td comment_id="6054896"> This is a bad example, because we're supposed to be picking up coins along a path, but the objective function makes no sense in terms of actual coins being physically located somewhere on the path. We can end up with negative coins or fractional coins, and two paths to the same endpoint produce the same number of coins no matter what. </td></tr><tr><td comment_id="6054909"> Optimally, you end up with <span class="math-container" id="27118172" visual_id="662653"><math alttext="\sqrt{74}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>74</mn></msqrt></semantics></math></span> coins. Do you really want to get into an argument with a middle schooler about what it means to have <span class="math-container" id="27118172" visual_id="662653"><math alttext="\sqrt{74}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>74</mn></msqrt></semantics></math></span> coins while you're trying to talk about optimization problems? </td></tr><tr><td comment_id="6055218"> What exactly are you trying to teach? What reusable principle/technique? What practically applicable definition of "optimization"? The way to "explain this result" is to apply/use the definition in a piece of reasoning. The only "intuition" needed should be to accept/understand definitions. What then is the specification, expressed in defined terms? "as far as one unit of distance" is not clear. You then say "(x²+y²=1)" but don't relate them--still not clear. "lines in the plane"--you mean it's a straight line path? Where's "optimize"? Get the premises clear before worrying about a solution. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2930704" id="answer">
+<p>You could start by showing that if you're walking along the line <span class="math-container" id="27118173" visual_id="662654"><math alttext="7y=5x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>7</mn><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mrow><mn>5</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span>,then going to the upper right increases the number of coins, while walking to the lower left decreases it. Then show how walking a little bit off the line to the upper right increases coins, but not as quickly. As your path has a larger and larger angle, the rate decreases. Eventually, when it reaches 90 degrees, you aren't getting any more coins, and when the angle exceeds that, you're losing coins. Tell the student to imagine walking along the circle, and holding their arm straight out pointing forward. When will their arm go from pointing in an "increasing" direction to a "decreasing" direction? That's where the number of coins is maximized.</p> <p>You could try a change of coordinates. Mark a tick mark off every 1/7 of a y unit, and every 1/5 of an x unit. You get a coin at each tick mark. What happens if you redraw the graph so that each tick mark is equidistant? The circle turns into an ellipse. If you draw the point that corresponds to <span class="math-container" id="27118174" visual_id="128937"><math alttext="(\sqrt{2},\sqrt{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msqrt><mn>2</mn></msqrt><mo>,</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false">)</mo></mrow></semantics></math></span>, then even though calculating the exact optimum location will be difficult, it'll be obvious that it's to the left and above that point, showing that giving more coins for vertical distance moves the optimum point to the left and up.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

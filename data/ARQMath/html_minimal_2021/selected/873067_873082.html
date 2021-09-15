@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find a closed form for the generating function for this sequence</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find a closed form for the generating function for this sequence </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="873067">
+<p>The sequence: <span class="math-container" id="8471311" visual_id="7077834"><math alttext="0,0,0,1,1,1,1,1,1,\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span>  The book gives the answer of <span class="math-container" id="8471312" visual_id="3111701"><math alttext="\frac{x^{3}}{1-x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mfrac></semantics></math></span> but I'm not sure how to get this answer. I understand the generating function of this sequence will be <span class="math-container" id="8471313" visual_id="7077835"><math alttext="0+0x+0x^{2}+1x^{3}+1x^{4}+1x^{5}+1x^{6}+\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>+</mo><mrow><mn>0</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>0</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>1</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mn>1</mn><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo>+</mo><mrow><mn>1</mn><mo>⁢</mo><msup><mi>x</mi><mn>5</mn></msup></mrow><mo>+</mo><mrow><mn>1</mn><mo>⁢</mo><msup><mi>x</mi><mn>6</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span> But I'm not sure how to put this in the closed form.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> discrete-mathematics </span><span> generating-functions </span><span> closed-form </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1800523"> Yes, but what is the common ratio? x^3? </td></tr><tr><td comment_id="1800524"> You skipped the <span class="math-container" id="8471314" visual_id="20593"><math alttext="x^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>4</mn></msup></semantics></math></span> term, not sure if that's intentional or not. </td></tr><tr><td comment_id="1800567"> Another route is to start with the usual geometric series and subtract off the first three terms directly. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="873082" id="answer">
+<p>A more do-it-from-scratch approach:</p> <p>Denote your sum <span class="math-container" id="8471321" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>.  Then <span class="math-container" id="8471322" visual_id="7077839"><math alttext="x\cdot S=x^{4}+x^{5}+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⋅</mo><mi>S</mi></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></semantics></math></span>.  Now subtracting <span class="math-container" id="8471323" visual_id="7077840"><math alttext="S-xS=x^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>S</mi><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>S</mi></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></semantics></math></span>.  Solve for <span class="math-container" id="8471324" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>, and you're done.</p> <p>This is exactly the same method used to express a repeating decimal as a fraction, and a variation of it will work for finding the generating function for any repeating sequence.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1800590"> Thank you, I appreciate the alternative approach! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

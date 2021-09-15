@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Decidability and "truth value"</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Decidability and "truth value" </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2614279">
+<p>One can read in the <a href="https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems" rel="nofollow noreferrer">Wikipedia page for "Gödel's incompleteness theorems"</a>:</p> <blockquote> <p>Undecidability of a statement in a particular deductive system does   not, in and of itself, address the question of whether the truth value   of the statement is well-defined, or whether it can be determined by   other means. Undecidability only implies that the particular deductive   system being considered does not prove the truth or falsity of the   statement. Whether there exist so-called "absolutely undecidable"   statements, whose truth value can never be known or is ill-specified,   is a controversial point in the philosophy of mathematics.</p> </blockquote> <p>NB: The same text appears in the <a href="https://en.wikipedia.org/wiki/Undecidable_problem" rel="nofollow noreferrer">Wikipedia page for "Undecidable Problem"</a>.</p> <p>I don't understand this. It seems to me that there are a couple of theorems in mathematical logic which, on the contrary, very clearly explain the relation between the undecidability of a statement and its "truth value": depending on the meaning of "truth value", I am thinking about Post's tautology theorem and Gödel's completeness theorem.</p> <p>Am I missing something? And what does Wikipedia mean by "absolutely undecidable"?</p> <p>Let me elaborate in a little bit for clarity. My understanding is that by the completeness theorem, a statement is undecidable if and only if there exist models in which it is true and other models in which it is false. Moreover (or alternatively), by the tautology theorem of Post, a statement is undecidable if and only if there exist some truth valuations for which it is true and others for which it is false. In any case, the conclusion, it seems to me, is simply that a statement is undecidable if and only if its truth value is not defined (it can be "chosen" true or false arbitrarily).</p> <hr/> <p><strong>EDIT</strong>. Let me add a couple of observations after reading the answers of 6005, user21820, and spaceisdarkgreen, which are not entirely satisfactory to me. These answers are defending Wikipedia's text by interpreting the meaning of "truth value" relatively to some kind of <em>correct model</em> or worse, <em>the physical world</em>. Neither of these notions have a place in mathematical logic, it seems to me. When talking about natural numbers, we may like to think there is a correct model, but it would be silly to assume that there is a "preferred universe" for every theory. </p> <p>For example, take Euclid's 5 axioms for geometry, remove axiom #5 (the "parallel postulate") so that you're left with only the first 4 axioms (you get "<a href="https://en.wikipedia.org/wiki/Absolute_geometry" rel="nofollow noreferrer">absolute geometry</a>"). Both the Euclidean plane and the hyperbolic plane are models for this theory. Is one of the two the "correct model"? Clearly no, since we got rid of the fifth axiom that would discriminate between the two.</p> <p>So at this point I still find that Wikipedia's assertion about "truth value" is still irrelevant.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> first-order-logic </span><span> model-theory </span><span> philosophy </span><span> incompleteness </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5399467"> NO. Undecidable does not mean that there are statements lacking truth value, but only that, in the cotext of a well-specified formal system, we have no algorithm to mechanically sort out the true statements from the false ones. </td></tr><tr><td comment_id="5399472"> Regarding Post's tautology theorem, you have to note that it holds for propositional logic, which is decidable: see the truth table method. </td></tr><tr><td comment_id="5399478"> Regarding G's Th for first-order logic, it asserts that a valid formula is provable. This does not violate the undecidability of FOL simply because we have no algorithm (like truth table) to know in advance if a formula is valid or not. </td></tr><tr><td comment_id="5399825"> You can see also [how-is-first-order-logic-complete-but-not-decidable](https://philosophy.stackexchange.com/questions/15525/how-is-first-order-logic-complete-but-not-decidable) as well as [why-is-propositional-logic-decidable](https://philosophy.stackexchange.com/questions/29606/why-is-propositional-logic-decidable). </td></tr><tr><td comment_id="5399845"> One should keep in mind that materials for laypersons are often rather imprecise about the subtler issues of logic, and through retelling by people who don't know the precise interpretations such descriptions often become riddled with errors; e.g. in the way that comparisons between "countable number of formulas" and "uncountable number of reals" often trip over Skolem's paradox. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2614289" id="answer">
+<p>Undecidable is undecidable under certain deductive system. Decidable means that it is a theorem or its negation is a theorem, understood in a very specific sense. A theorem here is the final line of a list of statements such that each one of them is</p> <ul> <li>an axiom</li> <li>a theorem already proved (I know this sounds kind of circular, just trying to give an idea)</li> <li>the result of applying <em>modus ponens</em> or a few other logic rules to previous lines of the list.</li> </ul> <p>If the number of axioms is finite or enumerable, it is "easy" to think about all such possible lists. The question is: every possible predicate will be a theorem or its negation will be a theorem? Or are there properties that you can enunciate but are not theorems and their negations aren't theorems either? That's all that incompleteness means, at least from a purely syntactic point of view.</p> <p>Regarding your observation, the phrasing of the paragraph you quote I wouldn't say is wrong but it does get a little confusing, since there are results about undecidability (like Gödel's incompleteness theorem) which DO address the truth value issue: it presents us with a proposition which is undecidable in the previous sense, but nevertheless is true (and so has a well defined truth-value).</p> <p>The quote says something like "undecidability does not address the question of wether the truth value is well defined", and well... No: "undecidability" doesn't; Gödel, perhaps. =S</p> <p>For sure that paragraph can and should be improved. You can never exagerate on the level of precission of your language when you write about these issues.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5399250"> While true, I don't think this addresses the question. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1807800"> Are sets and symbols the building blocks of mathematics? </td></tr><tr><td post_id="2569020"> Computable extension to <span class="math-container" id="23747358" visual_id="11867"><math alttext="Σ_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Σ</mi><mn>1</mn></msub></semantics></math></span>-sound system that is <span class="math-container" id="23747359" visual_id="81688"><math alttext="Σ_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Σ</mi><mn>2</mn></msub></semantics></math></span>-unsound? </td></tr><tr><td post_id="2251117"> How do we know what natural numbers are? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

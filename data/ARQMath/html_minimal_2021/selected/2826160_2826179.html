@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>For what number $n$ does the equation $\log_n{x} = n^x$ have exactly one solution?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> For what number <span class="math-container" id="26098668" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> does the equation <span class="math-container" id="26098669" visual_id="3293472"><math alttext="\log_{n}{x}=n^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>log</mi><mi>n</mi></msub><mo>⁡</mo><mi>x</mi></mrow><mo>=</mo><msup><mi>n</mi><mi>x</mi></msup></mrow></semantics></math></span> have exactly one solution? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2826160">
+<p>I'm looking for some number where the graphs of <span class="math-container" id="26098670" visual_id="559494"><math alttext="\log_{n}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>log</mi><mi>n</mi></msub><mo>⁡</mo><mi>x</mi></mrow></semantics></math></span> and <span class="math-container" id="26098671" visual_id="64122"><math alttext="n^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mi>x</mi></msup></semantics></math></span> intersect at one point - that is, the equation has exactly one solution. </p> <p>Can someone help me out with this? Based on trial and error I found that it's close to 1.44, but I couldn't find an exact value, even by solving algebraically.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logarithms </span><span> exponentiation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5827307"> I'm curious where this came up? I was looking at a similar equation last night. </td></tr><tr><td comment_id="5828618"> @goblin I was screwing around during an exam and it piqued my interest! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2826179" id="answer">
+<p><span class="math-container" id="26098672" visual_id="3293473"><math alttext="x\mapsto\log_{n}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>↦</mo><mrow><msub><mi>log</mi><mi>n</mi></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="26098673" visual_id="2074531"><math alttext="x\mapsto n^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>↦</mo><msup><mi>n</mi><mi>x</mi></msup></mrow></semantics></math></span> are each other's inverses, so if we're looking for an <span class="math-container" id="26098674" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> where they just touch each other, we're looking for an <span class="math-container" id="26098675" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> where one of them has the line <span class="math-container" id="26098676" visual_id="3940"><math alttext="x=y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow></semantics></math></span> as a <em>tangent</em>.</p> <p>Set <span class="math-container" id="26098677" visual_id="3293474"><math alttext="\alpha=\ln n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></semantics></math></span>; then one of the graphs is <span class="math-container" id="26098678" visual_id="9886"><math alttext="f(x)=e^{\alpha x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></semantics></math></span>. The tangent condition is that for some <span class="math-container" id="26098679" visual_id="606"><math alttext="x_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>0</mn></msub></semantics></math></span> we have <span class="math-container" id="26098680" visual_id="3293475"><math alttext="f(x_{0})=x_{0}\qquad\text{and}\qquad f^{\prime}(x_{0})=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo mathvariant="italic" separator="true">  </mo><mtext>and</mtext></mrow></mrow><mo mathvariant="italic" separator="true">  </mo><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></mrow></semantics></math></span> or, concretely <span class="math-container" id="26098681" visual_id="3293476"><math alttext="e^{\alpha x_{0}}=x_{0}\qquad\text{and}\qquad\alpha e^{\alpha x_{0}}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>e</mi><mrow><mi>α</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></msup><mo>=</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo mathvariant="italic" separator="true">  </mo><mtext>and</mtext></mrow></mrow><mo mathvariant="italic" separator="true">  </mo><mrow><mrow><mi>α</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>α</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></msup></mrow><mo>=</mo><mn>1</mn></mrow></mrow></semantics></math></span> Combining these, we find <span class="math-container" id="26098682" visual_id="3293477"><math alttext="\alpha x_{0}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>α</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, so <span class="math-container" id="26098683" visual_id="3293478"><math alttext="x_{0}=1/\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mi>α</mi></mrow></mrow></semantics></math></span>, which we can plug back into the second equation to get <span class="math-container" id="26098684" visual_id="3293479"><math alttext="\alpha e^{1}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>α</mi><mo>⁢</mo><msup><mi>e</mi><mn>1</mn></msup></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> which implies <span class="math-container" id="26098685" visual_id="3293480"><math alttext="\alpha=e^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><msup><mi>e</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span> and thus <span class="math-container" id="26098686" visual_id="3293481"><math alttext="n=e^{\alpha}=e^{e^{-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msup><mi>e</mi><mi>α</mi></msup><mo>=</mo><msup><mi>e</mi><msup><mi>e</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></msup></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2810793"> If <span class="math-container" id="25947018" visual_id="9305"><math alttext="a&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>, the number of values of <span class="math-container" id="25947019" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> for which <span class="math-container" id="25947020" visual_id="7499949"><math alttext="\log_{a}x=x=a^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>log</mi><mi>a</mi></msub><mo>⁡</mo><mi>x</mi></mrow><mo>=</mo><mi>x</mi><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

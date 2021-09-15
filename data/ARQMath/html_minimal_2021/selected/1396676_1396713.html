@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is axiom of choice necessary for proving that every infinite set has a countably infinite subset?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is axiom of choice necessary for proving that every infinite set has a countably infinite subset? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1396676">
+<p>Is it possible to prove the following fact without axiom of choice ?</p> <p>" Every infinite set has a countably infinite subset".  Can it be proved that axiom of choice is necessary here ?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span><span> axiom-of-choice </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2843682"> See also http://mathoverflow.net/questions/51415/is-it-possible-to-show-that-an-infinite-set-has-a-countable-infinite-subset-w </td></tr><tr><td comment_id="2843712"> Do you posses the technical knowledge to understand such an answer, or are you looking for a "yes" or "no" situation? </td></tr><tr><td comment_id="2843801"> @AsafKaragila: Actually, I was reading some corollary of Bessel's inequality in functional analysis. Found that need to use that. </td></tr><tr><td comment_id="2844214"> Haha, you really had a [hard time deciding](http://math.stackexchange.com/posts/1396676/timeline) whose answer to accept! :-D </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1396713" id="answer">
+<p>First let us clear up the definitions, since there may be some confusion about them.</p> <p>We say that a set <span class="math-container" id="12971919" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is <em>finite</em>, if there is a natural number <span class="math-container" id="12971920" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> and a bijection between <span class="math-container" id="12971921" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="12971922" visual_id="388621"><math alttext="\{0,\ldots,n-1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span>. If <span class="math-container" id="12971923" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is not finite, we say that it is <em>infinite</em>.</p> <p>We say that a set <span class="math-container" id="12971924" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is <em>Dedekind-finite</em>, if whenever <span class="math-container" id="12971925" visual_id="17276"><math alttext="f\colon A\to A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>A</mi><mo>→</mo><mi>A</mi></mrow></mrow></semantics></math></span> is an injective function, then <span class="math-container" id="12971926" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is a bijection. If <span class="math-container" id="12971927" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is not Dedekind-finite, we say that it is <em>Dedekind-infinite</em>.</p> <p>What can we say immediately?</p> <ol> <li>Every finite set is Dedekind-finite, and every Dedekind-infinite set is infinite.</li> <li><span class="math-container" id="12971928" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is Dedekind-infinite if and only if it has a countably infinite subset if and only if there is an injection from <span class="math-container" id="12971929" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> into <span class="math-container" id="12971930" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>.</li> <li>Equivalently, <span class="math-container" id="12971931" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is Dedekind-finite if and only if it has no countably infinite subset if and only if there is no injection from <span class="math-container" id="12971932" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> into <span class="math-container" id="12971933" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>.</li> </ol> <p>While in some low-level courses the definitions may be given as synonymous, the equivalence between finite and Dedekind-finite (or infinite and Dedekind-infinite) requires the presence of countable choice to some degree. This was shown originally by Fraenkel in the context of <span class="math-container" id="12971934" visual_id="269229"><math alttext="\sf ZFA" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝖹𝖥𝖠</mi></semantics></math></span> (where we allow non-set objects in our universe), and later the proof was imitated by Cohen in the context of forcing and symmetric extensions for producing a model of <span class="math-container" id="12971935" visual_id="17274"><math alttext="\sf ZF" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝖹𝖥</mi></semantics></math></span> without atoms where this equivalence fails.</p> <p>Interestingly enough, Dedekind-finiteness can be graded into various level of finiteness, so some sets are more finite than others. For example, it is possible for a Dedekind-finite set to be mapped <em>onto</em> <span class="math-container" id="12971936" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>, which in some way makes it "less finite" than sets which cannot be mapped onto <span class="math-container" id="12971937" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1517835"> Without the Axiom of Choice, does every infinite field contain a countably infinite subfield? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

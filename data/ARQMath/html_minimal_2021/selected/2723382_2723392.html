@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why do we clarify between Absolute and Conditional Convergence?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why do we clarify between Absolute and Conditional Convergence? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2723382">
+<p>First, can an alternating series diverge? Or does it always converge since you're adding then subtracting? If it must converge, then some of the following may be moot.</p> <p>Next, to review, if S is alternating, then we can examine |S|. We know that S &lt; |S| since S is alternating and subtracts alternate terms. So, if |S| converges, we know that S must also converge, since S &lt; |S|.</p> <p>Case 1: S = converges........ |S| = converges..... Ergo, S is absolutely convergent.</p> <p>Case 2: S = converges..... |S| = diverges...... Ergo, S is conditionally convergent.</p> <p>But, what about this?</p> <p>Case 3: S = unknown  |S| = diverges...... What can we conclude about S ?</p> <p>Also, if you know S is convergent, why go further with |S| in the first place? what is the point of examining |S| and adding the label S = "absolutely convergent"?   It seems the  entire point of absolute convergence, is to make a conclusion on the original S, if that is unknown.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5621751"> Consider <span class="math-container" id="25135279" visual_id="1619669"><math alttext="1+1-1+1-1+1-1+\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mrow><mrow><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mn>1</mn></mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mn>1</mn></mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span> which is alternating and diverges. </td></tr><tr><td comment_id="5621784"> When the series of absolute terms is divergent the original series could be divergent too, or convergent. Above you were given one that both are divergent and <span class="math-container" id="25135280" visual_id="1553302"><math alttext="\sum_{n}(-1)^{n}/n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mi>n</mi></msub><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>/</mo><mi>n</mi></mrow></mrow></semantics></math></span> is not absolutely convergent but it does converge. For testing convergence of non-absolutely convergent series you can use theorem like the [alternating series one](https://en.wikipedia.org/wiki/Alternating_series_test), or stronger ones like [Abel's](https://en.wikipedia.org/wiki/Abel%27s_test). When series converge but not absolutely [Riemann's theorem](https://en.wikipedia.org/wiki/Riemann_series_theorem) happens. </td></tr><tr><td comment_id="5621817"> Right, so alternating can diverge. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2723392" id="answer">
+<blockquote> <p>What can we conclude about S ?</p> </blockquote> <p>Nothing. <span class="math-container" id="25135281" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> is not absolutely convergent, and that's it.</p> <blockquote> <p>what is the point of examining |S| and adding the label S = "absolutely convergent"?</p> </blockquote> <p>For one thing, for a sequence which is convergent but not absolutely convergent, the limit is dependent on the order of the terms. For an absolutely convergent series, you can reorder terms freely, extract different subseries and sum them separately, and so on. In other words, absolute convergence allows us to do many of the manipulations that we might want to do without having to be too careful about the infinity of the series.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5622122"> So, otherwise, my case 1 &amp; 2 are correct, and the common scenario? </td></tr><tr><td comment_id="5622140"> @JackOfAll Yes, cases 1 and 2 are right. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding an expression for the sum of n tems of the series $1^2 + 2^2 + 3^2 + ... + n^2$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding an expression for the sum of n tems of the series <span class="math-container" id="15206224" visual_id="1136686"><math alttext="1^{2}+2^{2}+3^{2}+...+n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1644246">
+<blockquote> <p><strong>Possible Duplicate:</strong><br/> <a href="https://math.stackexchange.com/q/18983">why is <span class="math-container" id="15206225" visual_id="465737"><math alttext="\sum\limits_{k=1}^{n}k^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><mi>m</mi></msup></mrow></semantics></math></span> a polynomial with degree <span class="math-container" id="15206226" visual_id="11766"><math alttext="m+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> in <span class="math-container" id="15206227" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span></a> </p> </blockquote> <p>I know that if you have a non-arithmetic or geometric progression, you can find a sum <span class="math-container" id="15206228" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> of a series with the formula <span class="math-container" id="15206229" visual_id="5468708"><math alttext="S=f(n+1)-f(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> where the term <span class="math-container" id="15206230" visual_id="988"><math alttext="u_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mi>n</mi></msub></semantics></math></span> is <span class="math-container" id="15206231" visual_id="5468709"><math alttext="u_{n}=f(n+1)-f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>. Then you can prove that with induction.</p> <p>What I don't understand is how I should go about finding the function <span class="math-container" id="15206232" visual_id="9133"><math alttext="f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. For example if I want to calculate the sum to <span class="math-container" id="15206233" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> terms of the series <span class="math-container" id="15206234" visual_id="1136686"><math alttext="1^{2}+2^{2}+3^{2}+...+n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span> then, according to my textbook, my <span class="math-container" id="15206235" visual_id="9133"><math alttext="f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> function should be a polynomial with degree one more than the degree of a term in my sequence - so because the <span class="math-container" id="15206236" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>th term in the sequence is <span class="math-container" id="15206237" visual_id="233239"><math alttext="P(n)=n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span> then the function <span class="math-container" id="15206238" visual_id="9133"><math alttext="f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> should be <span class="math-container" id="15206239" visual_id="1917005"><math alttext="f(n)=an^{3}+bn^{2}+cn+d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>n</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mi>d</mi></mrow></mrow></semantics></math></span>. But how did they know that it should look like that and how do I gain some intuition into finding that function to help me solve similar problems in the future?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3353537"> I don't think it should be considered a duplicate because it's not the proof that I need help with but rather gaining some intuition with finding the function <span class="math-container" id="15206240" visual_id="9133"><math alttext="f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> in these types of problems. </td></tr><tr><td comment_id="3353538"> The answers of the first link give a lot of such intuitions (see the cubic pictures, for example). </td></tr><tr><td comment_id="3353549"> A found it: Possible dublicate of: http://math.stackexchange.com/questions/18983/why-is-sum-limits-k-1n-km-a-polynomial-with-degree-m1-in-n </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1644258" id="answer">
+<p>This works for sums of <span class="math-container" id="15206241" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>th powers of <span class="math-container" id="15206242" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> because of the fact that <span class="math-container" id="15206243" visual_id="5468710"><math alttext="(n+1)^{p+1}-n^{p+1}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><msup><mi>n</mi><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mo>,</mo></mrow></semantics></math></span> when expanded by the binomial theorem, will have no <span class="math-container" id="15206244" visual_id="1255061"><math alttext="n^{p+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></msup></semantics></math></span> term, and so when summed only uses powers up to the <span class="math-container" id="15206245" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>th power. Also before expanding it, its sum "telescopes" (all terms cancel but two, or all but one if you sum starting at <span class="math-container" id="15206246" visual_id="13389"><math alttext="0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo></mrow></semantics></math></span>). Also once you accept the fact you can use the first few values of the sum to determine the constants in front of the powers, as in the <span class="math-container" id="15206247" visual_id="2896"><math alttext="a,b,c,d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow></semantics></math></span> of your example, by solving a linear system.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="48080"> Sum of First <span class="math-container" id="508377" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> Squares Equals <span class="math-container" id="508378" visual_id="113572"><math alttext="\frac{n(n+1)(2n+1)}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></semantics></math></span> </td></tr><tr><td post_id="18983"> why is <span class="math-container" id="184139" visual_id="465737"><math alttext="\sum\limits_{k=1}^{n}k^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><mi>m</mi></msup></mrow></semantics></math></span> a polynomial with degree <span class="math-container" id="184140" visual_id="11766"><math alttext="m+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> in <span class="math-container" id="184141" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

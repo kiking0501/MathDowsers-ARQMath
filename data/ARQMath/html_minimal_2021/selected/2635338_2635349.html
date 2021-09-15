@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Create a grammar for the language L with a^n b^(n/2), where n % 2 = 0</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Create a grammar for the language L with a^n b^(n/2), where n % 2 = 0 </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2635338">
+<p>A grammar for the language L should be designed. <span class="math-container" id="24361404" visual_id="6107463"><math alttext="L=\left\{{a}^{n}{b}^{\frac{n}{2}}|n\in N,\quad n\quad mod\quad 2\quad=\quad 0\right\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mrow><mo>{</mo><mrow><msup><mi>a</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>b</mi><mfrac><mi>n</mi><mn>2</mn></mfrac></msup></mrow><mo stretchy="false">|</mo><mrow><mi>n</mi><mo>∈</mo><mrow><mi>N</mi><mo rspace="12.5pt">,</mo><mi>n</mi><mo mathvariant="italic" separator="true"> </mo><mrow><mi>m</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>d</mi></mrow><mo mathvariant="italic" separator="true"> </mo><mn>2</mn><mo mathvariant="italic" separator="true"> </mo><mo>=</mo><mo mathvariant="italic" separator="true"> </mo><mn>0</mn></mrow></mrow><mo>}</mo></mrow></mrow></semantics></math></span>  The special part of this language is the modulo operator (n % 2 = 0). Personally, I had a first idea for the grammar, but I can not reconcile it with the modulo operator.</p> <p>My idea can be formalized something like this: Set <span class="math-container" id="24361405" visual_id="31464"><math alttext="n=2m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mrow></semantics></math></span> then  <span class="math-container" id="24361406" visual_id="6107464"><math alttext="{a}^{n}{b}^{\frac{n}{2}}=a^{2m}{b}^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>b</mi><mfrac><mi>n</mi><mn>2</mn></mfrac></msup></mrow><mo>=</mo><mrow><msup><mi>a</mi><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></msup><mo>⁢</mo><msup><mi>b</mi><mi>m</mi></msup></mrow></mrow></semantics></math></span> From this I derived the production rule: <span class="math-container" id="24361407" visual_id="6107465"><math alttext="S--&amp;gt;aaSb|\ E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>-</mo><mo>-</mo><mi mathvariant="normal">&amp;</mi><mi>g</mi><mi>t</mi><mo>;</mo><mi>a</mi><mi>a</mi><mi>S</mi><mi>b</mi><mo rspace="7.5pt" stretchy="false">|</mo><mi>E</mi></mrow></semantics></math></span> Where E is the empty word. I am not sure if this is correct. What is your opinion about this? I hope my question is clear so far :)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> formal-languages </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2635349" id="answer">
+<p>Your solution is perfect.</p> <p>Note that <span class="math-container" id="24361408" visual_id="6107466"><math alttext="n\in\mathbb{N},\ n\,\mathrm{mod}\,2=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><mo rspace="7.5pt">,</mo><mrow><mrow><mpadded width="+1.7pt"><mi>n</mi></mpadded><mo>⁢</mo><mi>mod</mi><mo>⁢</mo><mn> 2</mn></mrow><mo>=</mo><mn>0</mn></mrow></mrow></semantics></math></span> means nothing else but that <span class="math-container" id="24361409" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is a nonnegative even number, so that writing <span class="math-container" id="24361410" visual_id="31464"><math alttext="n=2m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mrow></semantics></math></span> for some <span class="math-container" id="24361411" visual_id="5912"><math alttext="m\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> is correct. <br/> And indeed, the original set of words could also be replaced by <span class="math-container" id="24361412" visual_id="6107467"><math alttext="L=\{a^{2m}b^{m}\mid m\in\mathbb{N}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><msup><mi>a</mi><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></msup><mo>⁢</mo><msup><mi>b</mi><mi>m</mi></msup></mrow><mo>∣</mo><mrow><mi>m</mi><mo>∈</mo><mi>ℕ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5442129"> Thaks for your answer this helps me very well! And thanks for the upvote too! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

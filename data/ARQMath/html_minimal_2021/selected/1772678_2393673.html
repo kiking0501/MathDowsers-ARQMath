@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Exponential is to Poisson as Normal is to ???</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Exponential is to Poisson as Normal is to ??? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1772678">
+<p>In a time series, if the gap between successive events follows an exponential distribution with PDF <span class="math-container" id="16372323" visual_id="1300877"><math alttext="\lambda e^{-\lambda}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup></mrow></semantics></math></span>, then a Poisson distribution with parameter <span class="math-container" id="16372324" visual_id="664"><math alttext="\lambda" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi></semantics></math></span> tells you the probability of finding 0, 1, 2, etc events in time frames of width 1.</p> <p>Now suppose the gap between successive events follows a normal distribution with parameters <span class="math-container" id="16372325" visual_id="2258"><math alttext="\mu" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi></semantics></math></span> and <span class="math-container" id="16372326" visual_id="722"><math alttext="\sigma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi></semantics></math></span>. Is there a corresponding discrete distribution telling us the probability of finding 0, 1, 2, etc events in time frames of width <span class="math-container" id="16372327" visual_id="2258"><math alttext="\mu" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi></semantics></math></span>? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> statistics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3618159"> Are you allowing for a negative gap? </td></tr><tr><td comment_id="3618994"> I'm assuming the standard deviation is small enough relative to the mean that all gaps can be assumed to be positive. </td></tr><tr><td comment_id="3619372"> If the standard deviation is small enough relative to the mean to make that assumption, then the number of events in a time frame of length <span class="math-container" id="16372332" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> is likely to be close to <span class="math-container" id="16372329" visual_id="353443"><math alttext="t/\mu" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>/</mo><mi>μ</mi></mrow></semantics></math></span>. You will also lose the memorylessness property so the probability may be affected by the timing of the previous event before the interval </td></tr><tr><td comment_id="3619742"> See, e.g. https://en.wikipedia.org/wiki/Renewal_theory for the generalization. The holding time should be positive as said, and the most fundamental relationship between the <span class="math-container" id="16372349" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>th jump time <span class="math-container" id="16372331" visual_id="7842"><math alttext="J_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>J</mi><mi>n</mi></msub></semantics></math></span> and the number of arrivals at time <span class="math-container" id="16372332" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> is <span class="math-container" id="16372333" visual_id="1300878"><math alttext="J_{n}\leq t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mi>n</mi></msub><mo>≤</mo><mi>t</mi></mrow></semantics></math></span> iff <span class="math-container" id="16372334" visual_id="1300879"><math alttext="N(t)\geq n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mi>n</mi></mrow></semantics></math></span> and that is how you relate the distribution of jump time with the distribution of the number of arrivals. </td></tr><tr><td comment_id="3621343"> Excellent feedback. @Henry, through simulation, with a frame size of <span class="math-container" id="16372335" visual_id="2258"><math alttext="\mu" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi></semantics></math></span>, the normally distributed wait times lead to discrete distribution which is a discrete approximation of a <span class="math-container" id="16372336" visual_id="1300880"><math alttext="N(1,\sigma)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mi>σ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> with peak in the 1-per bin and the 0-per bin value symmetric with the 2+-per bin value. BGM, I had not heard of Renewal Theory and will look into it. </td></tr><tr><td comment_id="4938200"> @mathcsguy : If you assume the standard deviation is so small relative to the positive mean that ALL "gaps" will be positive, then why not just use a gamma distribution with the same expected value and variance? If the standard deviation of a gamma distribution is small compared to the positive expected value, then for many practical purposes that's a normal distribution. It is very very close to a normal distribution and it's always positive. And note that the waiting time until the <span class="math-container" id="16372349" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>th arrival in a Poisson process has just that sort of gamma distribution. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2393673" id="answer">
+<p>We want <span class="math-container" id="16372338" visual_id="1300881"><math alttext="0&amp;lt;\sigma\ll\mu" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mi>σ</mi></mrow><mo>≪</mo><mi>μ</mi></mrow></semantics></math></span> so that for practical purposes the probability that this normally distributed random variable is negative is <span class="math-container" id="16372339" visual_id="13389"><math alttext="0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo></mrow></semantics></math></span></p> <p>Let <span class="math-container" id="16372340" visual_id="1300882"><math alttext="\alpha=\mu^{2}/\sigma^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mrow><msup><mi>μ</mi><mn>2</mn></msup><mo>/</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> and <span class="math-container" id="16372341" visual_id="1300883"><math alttext="\lambda=\mu/\sigma^{2}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>λ</mi><mo>=</mo><mrow><mi>μ</mi><mo>/</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Consider the Gamma distribution <span class="math-container" id="16372342" visual_id="1300884"><math alttext="\frac{1}{\Gamma(\alpha)}(\lambda x)^{\alpha-1}e^{-\lambda x}(\lambda\,dx)\quad% \text{for }x\geq 0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>α</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mpadded width="+1.7pt"><mi>λ</mi></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mtext>for </mtext><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><mo>.</mo></mrow></semantics></math></span> This has expected value <span class="math-container" id="16372343" visual_id="1300885"><math alttext="\alpha/\lambda=\mu" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>α</mi><mo>/</mo><mi>λ</mi></mrow><mo>=</mo><mi>μ</mi></mrow></semantics></math></span> and variance <span class="math-container" id="16372344" visual_id="1300886"><math alttext="\alpha/\lambda^{2}=\sigma^{2}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>α</mi><mo>/</mo><msup><mi>λ</mi><mn>2</mn></msup></mrow><mo>=</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><mo>,</mo></mrow></semantics></math></span> and the fact that <span class="math-container" id="16372345" visual_id="1300881"><math alttext="0&amp;lt;\sigma\ll\mu" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mi>σ</mi></mrow><mo>≪</mo><mi>μ</mi></mrow></semantics></math></span> means that it is so close to a normal distribution as to be normally distributed for any practical purposes for which one could say that the probability of that normal random variable being negative is <span class="math-container" id="16372346" visual_id="13389"><math alttext="0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo></mrow></semantics></math></span></p> <p>In cases where <span class="math-container" id="16372347" visual_id="1300882"><math alttext="\alpha=\mu^{2}/\sigma^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mrow><msup><mi>μ</mi><mn>2</mn></msup><mo>/</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> is an integer <span class="math-container" id="16372348" visual_id="4209"><math alttext="n," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>,</mo></mrow></semantics></math></span> the Gamma distribution above is precisely the distribution of the waiting time until the <span class="math-container" id="16372349" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> arrival in the Poisson process, when the average waiting time until the next arrival is <span class="math-container" id="16372350" visual_id="1300887"><math alttext="1/\lambda." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>/</mo><mi>λ</mi></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>That's where I'd start thinking about this. Maybe I'll be back with more later.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

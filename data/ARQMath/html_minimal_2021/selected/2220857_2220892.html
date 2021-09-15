@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>importance of implication vs its tautology</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> importance of implication vs its tautology </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2220857">
+<p>I'm self-taught in logic, started with programming. Texts stress the importance of the implication operator but I fail to see operator's importance. It was always intuitively clear that,</p> <p><span class="math-container" id="20517502" visual_id="530707"><math alttext="p\rightarrow q\equiv\neg\ p\lor q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>≡</mo><mrow><mrow><mpadded width="+5pt"><mi mathvariant="normal">¬</mi></mpadded><mo>⁢</mo><mi>p</mi></mrow><mo>∨</mo><mi>q</mi></mrow></mrow></semantics></math></span></p> <p>Keeping that in mind, my questions are:</p> <ul> <li>Does implication allow for additional rewrite rules or higher understanding in some form?</li> <li>Is sequent form, with its heavy use of implication rules, more "powerful" than nth-order logic with propositional syntax? Are there additional, or significantly simpler rewrite rules for some class of statements?</li> <li>The operator itself is counterintuitive, YMMV. Having the statement true in case the first operand is not, doesn't seem right or necessary at all. What am I missing?</li> </ul> <p>I hope the question itself isn't too vague. I've hit these roadblocks in understanding of logic and haven't found answers in a long time.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> propositional-calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4567679"> With regard to your third question, if I understand what you're asking, consider the following. It is always true that <span class="math-container" id="20517503" visual_id="114072"><math alttext="\neg p\lor p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow><mo>∨</mo><mi>p</mi></mrow></semantics></math></span>. Now, since if <span class="math-container" id="20517532" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is true, then <span class="math-container" id="20517516" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> is true, we can rewrite the first assertion as <span class="math-container" id="20517519" visual_id="40798"><math alttext="\neg p\lor q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow><mo>∨</mo><mi>q</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4567700"> For your third point, I would submit that what is counterintuitive is not how the <span class="math-container" id="20517571" visual_id="7792"><math alttext="\to" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> connective works; it is simply pragmatic that we often need a connective with that truth table, especially for putting below a universal quantifier, and <span class="math-container" id="20517571" visual_id="7792"><math alttext="\to" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> is a perfectly good mnemonic symbol for that; <span class="math-container" id="20517509" visual_id="23296"><math alttext="p\to q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></semantics></math></span> is "the thing that converts knowledge of <span class="math-container" id="20517532" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> (if/when we acquire that knowledge) to knowledge of <span class="math-container" id="20517516" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span>". What you find counterintuitive is _explaining_ that particular truth table as "If <span class="math-container" id="20517532" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> then <span class="math-container" id="20517516" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span>". </td></tr><tr><td comment_id="4567716"> I'm puzzled by what you mean by "sequent form, with its heavy use of implication rules" -- on the contrary, using sequent calculus as your proof system _downplays_ the importance of the <span class="math-container" id="20517571" visual_id="7792"><math alttext="\to" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> connective considerably relative to Hilbert systems (where you can't do _anything_ without a truckload of implications) or even natural deduction. </td></tr><tr><td comment_id="4567740"> @HenningMakholm the confusing parts are 1) "what if not p" and 2) from your intuitive explanation "why knowledge of q is needless if p is false". It's as if there's some philosophical meaning behind the operator that I'm missing. </td></tr><tr><td comment_id="4567762"> @sthalik: But isn't it the "if <span class="math-container" id="20517532" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> then <span class="math-container" id="20517516" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span>" explanation that leads you to think those are problems in the first place? If we had written it <span class="math-container" id="20517517" visual_id="4907395"><math alttext="p\mathrel{\circ\!\!-\!\!\!\!\times}q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mrow><mo rspace="0pt">∘</mo><mo>⁣</mo><mo rspace="0pt">-</mo><mo>⁣</mo><mo>×</mo></mrow><mi>q</mi></mrow></semantics></math></span> instead and never claimed that it would have anything to do with the word "if", "then" or "implies", would you then have any philosophical objection to considering a connective with that particular truth table? </td></tr><tr><td comment_id="4567770"> @HenningMakholm reasoning about sequent forms, from my vague experience, seems as use of formally named reasoning (i.e. several terms in Latin). OTOH reasoning close to software logic, whether infix or parenthesized Polish notation, is something so pliable as barely needing intermediate steps to hold in memory, YMMV. Could you provide an ISBN, DOI or otherwise for a terse guide on sequent calculus, please? </td></tr><tr><td comment_id="4567782"> @sthalik: [Sequent calculus](https://en.wikipedia.org/wiki/Sequent_calculus). </td></tr><tr><td comment_id="4567783"> @HenningMakholm agreed. Is there an intuitive term to describe "implies" truth table? It's even calling it "implies" that's counterintuitive here. </td></tr><tr><td comment_id="4567792"> @HenningMakholm please post an answer so that I can select your explanation in the comments as the answer. And thank you for your time. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2220892" id="answer">
+<p>It is interesting that you say that it is 'intuitively clear' to you that:</p> <p><span class="math-container" id="20517518" visual_id="530707"><math alttext="p\rightarrow q\equiv\neg p\lor q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>≡</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow><mo>∨</mo><mi>q</mi></mrow></mrow></semantics></math></span></p> <p>but you also say that 'having the statement true when the first operand is not doesn't seem right'</p> <p>since <span class="math-container" id="20517519" visual_id="40798"><math alttext="\neg p\lor q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow><mo>∨</mo><mi>q</mi></mrow></semantics></math></span> is true whenever <span class="math-container" id="20517520" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is not.</p> <p>Anyway, here are some further equivalence rules for the conditional:</p> <p><span class="math-container" id="20517521" visual_id="66803"><math alttext="\neg(p\rightarrow q)\equiv p\land\neg q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>q</mi></mrow></mrow></mrow></semantics></math></span> (Negation Implication)</p> <p><span class="math-container" id="20517522" visual_id="633659"><math alttext="p\rightarrow q\equiv\neg q\rightarrow\neg p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>≡</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>q</mi></mrow><mo>→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow></mrow></semantics></math></span> (Contraposition)</p> <p><span class="math-container" id="20517523" visual_id="2864012"><math alttext="p\rightarrow(q\rightarrow r)\equiv(p\land q)\rightarrow r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo>≡</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi></mrow></semantics></math></span> (Exportation)</p> <p><span class="math-container" id="20517524" visual_id="1956475"><math alttext="p\rightarrow(q\land r)\equiv(p\rightarrow q)\land(p\rightarrow r)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>∧</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo>≡</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> (left Distribution <span class="math-container" id="20517525" visual_id="7792"><math alttext="\rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> over <span class="math-container" id="20517526" visual_id="23170"><math alttext="\land" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∧</mo></semantics></math></span>)</p> <p><span class="math-container" id="20517527" visual_id="4907396"><math alttext="(p\lor q)\rightarrow r\equiv(p\rightarrow r)\land(q\rightarrow r)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi><mo>≡</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> (right 'distribution' ... But not really since the <span class="math-container" id="20517528" visual_id="1189"><math alttext="\lor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∨</mo></semantics></math></span> becomes a <span class="math-container" id="20517529" visual_id="23170"><math alttext="\land" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∧</mo></semantics></math></span>)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4567825"> Thank you for the rewrite rules. The confusing part was the vernacular usage of the "implication" term, say -- wanting to find out something that's not proper to ask by asking another question, where the improper question's answer follows from the proper question's answer. Or -- showing one's guilt by knowledge of particular details is "implying it" in vernacular. I will study the operator due to its perceived importance at least. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2336652"> Interpretation of implication as universal quantification in a natural language </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

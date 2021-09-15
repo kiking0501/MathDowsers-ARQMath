@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Does such an Isosceles triangle exist?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Does such an Isosceles triangle exist? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2824147">
+<p>What isosceles triangle meets the following requirement:</p> <ul> <li>the unique side has a length of 1</li> <li>the unique angle can be multiplied by a whole number to equal 180°</li> <li>the similar side lengths are whole numbers</li> <li>the triangle is not equilateral</li> </ul> <p>If it is possible and there are multiple, what is the triangle with the greatest unique angle?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> geometry </span><span> algebraic-geometry </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5823152"> I don't think that the third property is correctly stated. </td></tr><tr><td comment_id="5823191"> Note that this question is equivalent to asking of the existence of regular n-gon with side length 1 inscribed in a circle of integer radius <span class="math-container" id="26078307" visual_id="17590"><math alttext="r\neq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>≠</mo><mn>1</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2824176" id="answer">
+<p>You wrote two conditions for the unique side length. I assume you meant that length to be <span class="math-container" id="26078308" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, and the equal sides to be of integer length.</p> <p>Let the unique angle be <span class="math-container" id="26078309" visual_id="2748055"><math alttext="2\varphi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>φ</mi></mrow></semantics></math></span> so you can easily split the triangle into two congruent right-angled triangles. Then the ratio between half the unique side length and the equal side length <span class="math-container" id="26078310" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> is</p> <p><span class="math-container" id="26078311" visual_id="3286481"><math alttext="\sin\varphi=\frac{\,\frac{1}{2}\,}{a}\quad\Rightarrow\quad\csc\varphi=2a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>φ</mi></mrow><mo>=</mo><mrow><mfrac><mpadded lspace="1.7pt" width="+3.4pt"><mfrac><mn>1</mn><mn>2</mn></mfrac></mpadded><mi>a</mi></mfrac><mo mathvariant="italic" separator="true"> </mo><mo>⇒</mo></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mi>csc</mi><mo>⁡</mo><mi>φ</mi></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mrow></mrow></semantics></math></span></p> <p>Now consider <a href="https://en.wikipedia.org/wiki/Niven%27s_theorem" rel="nofollow noreferrer">Niven's theorem</a>. It states that</p> <p><span class="math-container" id="26078312" visual_id="3286482"><math alttext="\sin\varphi=x\text{ with }\varphi\in\pi\mathbb{Q},x\in\mathbb{Q},0\leq\varphi% \leq 90°\\ \Rightarrow\quad(\varphi,x)\in\{(0°,0),(30°,\tfrac{1}{2}),(90°,1)\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mi>φ</mi><mo>=</mo><mi>x</mi><mtext> with </mtext><mi>φ</mi><mo>∈</mo><mi>π</mi><mi>ℚ</mi><mo>,</mo><mi>x</mi><mo>∈</mo><mi>ℚ</mi><mo>,</mo><mn>0</mn><mo>≤</mo><mi>φ</mi><mo>≤</mo><mn>90</mn><mi mathvariant="normal">°</mi><mo>⇒</mo><mo mathvariant="italic" separator="true"> </mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mi mathvariant="normal">°</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>30</mn><mi mathvariant="normal">°</mi><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>90</mn><mi mathvariant="normal">°</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span></p> <p>So simply from the fact that your solution would have to satisfy both <span class="math-container" id="26078313" visual_id="3286483"><math alttext="\varphi\in\pi\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo>∈</mo><mrow><mi>π</mi><mo>⁢</mo><mi>ℚ</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="26078314" visual_id="3286484"><math alttext="\sin\varphi=\tfrac{1}{2a}\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>φ</mi></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac><mo>∈</mo><mi>ℚ</mi></mrow></semantics></math></span> along with <span class="math-container" id="26078315" visual_id="3286485"><math alttext="0&amp;lt;\varphi&amp;lt;90°" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mrow><mi>φ</mi><mo>&lt;</mo></mrow><mrow><mn>90</mn><mo>⁢</mo><mi mathvariant="normal">°</mi></mrow></mrow></semantics></math></span> you can see that there can be no solution satisfying the requirements.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

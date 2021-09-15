@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove using the basic properties of a sequence that $\lim \frac{n}{2^n} = 0$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove using the basic properties of a sequence that <span class="math-container" id="22938841" visual_id="5934790"><math alttext="\lim\frac{n}{2^{n}}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>lim</mo><mo>⁡</mo><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2478862">
+<p>Prove using the basic properties of a sequence that <span class="math-container" id="22938842" visual_id="5934790"><math alttext="\lim\frac{n}{2^{n}}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>lim</mo><mo>⁡</mo><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> <br/> I tried to prove this using the standard epsilon-definition of a limit but the math got really hard, so I stopped. Then, I tried to represent the sequence as a quotient or a product of two sequences, but those sequences were not convergent. Thus, I've got no more ideas on how to tackle this problem. Any suggestions would be most appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5121601"> You could prove that eventually <span class="math-container" id="22938843" visual_id="148660"><math alttext="2^{n}&gt;n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>&gt;</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2478875" id="answer">
+<p>By the binomial theorem <span class="math-container" id="22938850" visual_id="5934792"><math alttext="2^{n}=(1+1)^{n}&amp;gt;n(n-1)/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>=</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>&gt;</mo></mrow><mrow><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mn>2</mn></mrow></mrow></mrow></semantics></math></span> for all <span class="math-container" id="22938851" visual_id="967"><math alttext="n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>, so <span class="math-container" id="22938852" visual_id="5934793"><math alttext="\frac{n}{2^{n}}&amp;lt;\frac{2}{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>&lt;</mo></mrow><mfrac><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span></p> <p>for all <span class="math-container" id="22938853" visual_id="967"><math alttext="n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>. Given <span class="math-container" id="22938854" visual_id="35"><math alttext="\epsilon&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϵ</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>, choose a positive integer <span class="math-container" id="22938855" visual_id="5934794"><math alttext="N&amp;gt;\dfrac{2}{\epsilon}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>N</mi><mo>&gt;</mo></mrow><mrow><mstyle displaystyle="true"><mfrac><mn>2</mn><mi>ϵ</mi></mfrac></mstyle><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>, then use the above inequality to show that <span class="math-container" id="22938856" visual_id="4067960"><math alttext="\dfrac{n}{2^{n}}&amp;lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mstyle><mo>&lt;</mo></mrow><mi>ϵ</mi></mrow></semantics></math></span> for all <span class="math-container" id="22938857" visual_id="5540"><math alttext="n\geq N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mi>N</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="55468"> How to prove that exponential grows faster than polynomial? </td></tr><tr><td post_id="2381805"> Alternative way to prove <span class="math-container" id="22036396" visual_id="93714"><math alttext="\lim_{n\to\infty}\frac{2^{n}}{n!}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><msup><mn>2</mn><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

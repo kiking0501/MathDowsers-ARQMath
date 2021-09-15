@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving Equality of the Induced Matrix Norm</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving Equality of the Induced Matrix Norm </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1725705">
+<p>I need to prove that the induced matrix norm satisfies <span class="math-container" id="15941336" visual_id="934137"><math alttext="\|A\|=\max_{\|x\|=1}\|Ax\|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mo>=</mo><mrow><msub><mi>max</mi><mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Here's what I've done so far, and I'm not sure how to make the connection.</p> <p>By definition, <span class="math-container" id="15941337" visual_id="934138"><math alttext="\|A\|=\max_{x\neq 0}{\|Ax\|\over\|x\|}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mo>=</mo><mrow><msub><mi>max</mi><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Because <span class="math-container" id="15941338" visual_id="259"><math alttext="x\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="15941339" visual_id="934139"><math alttext="\|x\|\neq 0\implies\|x\|=\alpha&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mo>≠</mo><mn>0</mn><mo>⟹</mo><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mo>=</mo><mrow><mi>α</mi><mo>&gt;</mo></mrow></mrow><mn>0</mn></mrow></semantics></math></span> for any nonzero <span class="math-container" id="15941340" visual_id="4413"><math alttext="x\in\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></semantics></math></span> by definition of a vector norm. So, <span class="math-container" id="15941341" visual_id="934140"><?xml version="1.0" encoding="UTF-8"?> <math alttext="{1\over\alpha}x=\hat{x}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"> <mrow> <mrow> <mfrac> <mn>1</mn> <mi>α</mi> </mfrac> <mo>⁢</mo> <mi>x</mi> </mrow> <mo>=</mo> <mover accent="true"> <mi>x</mi> <mo stretchy="false">^</mo> </mover> </mrow> </math></span> I need to show that <span class="math-container" id="15941342" visual_id="934141"><math alttext="\max_{\|x\|=1}\|Ax\|=\max_{x\neq 0}{\|Ax\|\over\|x\|}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>max</mi><mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>max</mi><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Well I've shown that <span class="math-container" id="15941343" visual_id="934142"><math alttext="x\neq 0\implies\|\hat{x}\|=1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>≠</mo><mn>0</mn><mo>⟹</mo><mrow><mo>∥</mo><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover><mo>∥</mo></mrow><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></semantics></math></span> So does it suffice to say that since <span class="math-container" id="15941344" visual_id="934143"><math alttext="\|\hat{x}\|=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∥</mo><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover><mo>∥</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, <span class="math-container" id="15941345" visual_id="934144"><math alttext="\|A\|=\max_{x\neq 0}{\|Ax\|\over\|x\|}=\max_{\|\hat{x}\|=1}{\|A\hat{x}\|\over% \|\hat{x}\|}=\max_{\|\hat{x}\|=1}{\|A\hat{x}\|\over 1}=\max_{\|\hat{x}\|=1}\|A% \hat{x}\|\qvar@construct{$}\par" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mo>=</mo><mrow><msub><mi>max</mi><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow></mfrac></mrow><mo>=</mo><mrow><msub><mi>max</mi><mrow><mrow><mo>∥</mo><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover><mo>∥</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover></mrow><mo>∥</mo></mrow><mrow><mo>∥</mo><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover><mo>∥</mo></mrow></mfrac></mrow><mo>=</mo><mrow><msub><mi>max</mi><mrow><mrow><mo>∥</mo><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover><mo>∥</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover></mrow><mo>∥</mo></mrow><mn>1</mn></mfrac></mrow><mo>=</mo><mrow><msub><mi>max</mi><mrow><mrow><mo>∥</mo><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover><mo>∥</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover></mrow><mo>∥</mo></mrow><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></mrow></mrow></semantics></math></span></p> <p>Thanks so much!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> proof-verification </span><span> proof-writing </span><span> vectors </span><span> numerical-linear-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3522930"> Looks good for me. Neglecting the typo <span class="math-container" id="15941346" visual_id="934145"><math alttext="||x||=a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true">||</mo><mi>x</mi><mo fence="true">||</mo></mrow><mo>=</mo><mi>a</mi></mrow></semantics></math></span> which should be <span class="math-container" id="15941347" visual_id="934146"><math alttext="||x||=\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true">||</mo><mi>x</mi><mo fence="true">||</mo></mrow><mo>=</mo><mi>α</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3522931"> Whoops! Fixed that. Thanks! </td></tr><tr><td comment_id="3522938"> Hint.<span class="math-container" id="15941348" visual_id="934147"><math alttext="\{x:\|x\|=1\}=\{y/\|y\|:y\neq 0\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">{</mo><mi>x</mi><mo>:</mo><mo>∥</mo><mi>x</mi><mo>∥</mo><mo>=</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>y</mi><mo>/</mo><mo>∥</mo><mi>y</mi><mo>∥</mo><mo>:</mo><mi>y</mi><mo>≠</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="15941349" visual_id="934148"><math alttext="\{y:y\neq 0\}=\{rx:\|x\|=1\land 0\neq r\in R\}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">{</mo><mi>y</mi><mo>:</mo><mrow><mi>y</mi><mo>≠</mo><mn>0</mn></mrow><mo stretchy="false">}</mo></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>r</mi><mo>⁢</mo><mi>x</mi></mrow><mo>:</mo><mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mo>=</mo><mrow><mn>1</mn><mo>∧</mo><mn>0</mn></mrow><mo>≠</mo><mi>r</mi><mo>∈</mo><mi>R</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span>..... Remark:We usually write <span class="math-container" id="15941354" visual_id="398"><math alttext="\sup" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>sup</mo></semantics></math></span> rather than <span class="math-container" id="15941351" visual_id="26205"><math alttext="\max" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>max</mi></semantics></math></span> in the def'n of <span class="math-container" id="15941352" visual_id="73034"><math alttext="\|A\|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow></semantics></math></span> because in infinite-dimensional spaces the <span class="math-container" id="15941356" visual_id="26205"><math alttext="\max" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>max</mi></semantics></math></span> is not always attained. </td></tr><tr><td comment_id="3522947"> Ah, I'd forgotten that a magnitude of 1 meant that it was a unit vector. And I've used the <span class="math-container" id="15941354" visual_id="398"><math alttext="\sup" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>sup</mo></semantics></math></span> in norms before in my previous numerical analysis class with the <span class="math-container" id="15941355" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span> norm. It's just our textbook uses the <span class="math-container" id="15941356" visual_id="26205"><math alttext="\max" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>max</mi></semantics></math></span> definition. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1725720" id="answer">
+<p>Just to add to the previous answer: a clearer argument (I think) is to proceed in two steps. You certainly have <span class="math-container" id="15941357" visual_id="934149"><math alttext="\max_{\|x\|=1}\|Ax\|=\max_{\|x\|=1}\frac{\|Ax\|}{\|x\|}\leq\max_{x\not=0}\frac% {\|Ax\|}{\|x\|}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>max</mi><mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>max</mi><mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow></mfrac></mrow><mo>≤</mo><mrow><msub><mi>max</mi><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>For the reverse inequality, fix <span class="math-container" id="15941358" visual_id="259"><math alttext="x\not=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>. Then <span class="math-container" id="15941359" visual_id="934150"><math alttext="\frac{\|Ax\|}{\|x\|}=\left\|A\frac{x}{\|x\|}\right\|\leq\max_{\|y\|=1}\|Ay\|," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow></mfrac><mo>=</mo><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mfrac><mi>x</mi><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow></mfrac></mrow><mo>∥</mo></mrow><mo>≤</mo><mrow><msub><mi>max</mi><mrow><mrow><mo>∥</mo><mi>y</mi><mo>∥</mo></mrow><mo>=</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>y</mi></mrow><mo>∥</mo></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> and so taking the maximum over nonzero <span class="math-container" id="15941360" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> gives the result.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

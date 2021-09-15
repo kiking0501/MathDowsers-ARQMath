@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Doubts on Big O definition</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Doubts on Big O definition </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1594192">
+<p>I have doubts on big-o <span class="math-container" id="14732899" visual_id="8074"><math alttext="O" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi></semantics></math></span>.</p> <p>Considering two function <span class="math-container" id="14732900" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> and <span class="math-container" id="14732901" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> , if </p> <p><span class="math-container" id="14732902" visual_id="9168057"><math alttext="\lim_{x\to c}\frac{f(x)}{g(x)}=l\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>c</mi></mrow></msub><mo>⁡</mo><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mi>l</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span></p> <p>Then we say that <span class="math-container" id="14732903" visual_id="193430"><math alttext="f=O(g)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> as <span class="math-container" id="14732904" visual_id="180703"><math alttext="x\to c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mi>c</mi></mrow></semantics></math></span> </p> <p>Is it true in general that <span class="math-container" id="14732905" visual_id="9168058"><math alttext="f=O(g)\iff g=O(f)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>=</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>⇔</mo><mrow><mi>g</mi><mo>=</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>?</p> <p>I don't see why it shouldn't be, since, following the definition,</p> <p><span class="math-container" id="14732906" visual_id="9168059"><math alttext="\lim_{x\to c}\frac{f(x)}{g(x)}=l\in\mathbb{R}\iff\lim_{x\to c}\frac{g(x)}{f(x)% }=m\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>c</mi></mrow></msub><mo>⁡</mo><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mi>l</mi><mo>∈</mo><mi>ℝ</mi></mrow><mo>⇔</mo><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>c</mi></mrow></msub><mo>⁡</mo><mfrac><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mi>m</mi><mo>∈</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span></p> <p>If this is not true, in this particular case is the following implication correct? </p> <p><span class="math-container" id="14732907" visual_id="9168060"><math alttext="f\sim g\implies f=O(g)\wedge g=O(f)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∼</mo><mi>g</mi><mo>⟹</mo><mi>f</mi><mo>=</mo><mrow><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Thanks a lot for your help</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> asymptotics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3246691"> Have you looked at https://en.wikipedia.org/wiki/Big_O_notation#Formal_definition ? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1594203" id="answer">
+<p>No, it is not true since it is allowed that the limit <span class="math-container" id="14732918" visual_id="59"><math alttext="l" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi></semantics></math></span> may be zero. -- Note that the limit should properly be a limes superior, if you want to define the big-O using limits. This then makes the behavior of the reciprocal even less automatic.</p> <p>There is notation for asymptotic equivalence, i.e. when the limit exists and is different from zero (or if the lim sup is finite in both directions), with Omega or Theta letters, consult the wikipedia page on Landau notation.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

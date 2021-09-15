@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Natural deduction prove that A$\vee$B, $\neg$ A, $\neg$B $\vdash$ A $\wedge \neg$A</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Natural deduction prove that A<span class="math-container" id="18310037" visual_id="1189"><math alttext="\vee" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∨</mo></semantics></math></span>B, <span class="math-container" id="18310038" visual_id="16516"><math alttext="\neg" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">¬</mi></semantics></math></span> A, <span class="math-container" id="18310039" visual_id="16516"><math alttext="\neg" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">¬</mi></semantics></math></span>B <span class="math-container" id="18310040" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> A <span class="math-container" id="18310041" visual_id="3148561"><math alttext="\wedge\neg" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∧</mo><mi mathvariant="normal">¬</mi></mrow></semantics></math></span>A </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1976389">
+<p>I want to prove the following deduction in the natural deduction system:</p> <p>A<span class="math-container" id="18310042" visual_id="1189"><math alttext="\vee" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∨</mo></semantics></math></span>B, <span class="math-container" id="18310043" visual_id="16516"><math alttext="\neg" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">¬</mi></semantics></math></span> A, <span class="math-container" id="18310044" visual_id="16516"><math alttext="\neg" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">¬</mi></semantics></math></span>B <span class="math-container" id="18310045" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> A <span class="math-container" id="18310046" visual_id="23170"><math alttext="\wedge" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∧</mo></semantics></math></span><span class="math-container" id="18310047" visual_id="16516"><math alttext="\neg" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">¬</mi></semantics></math></span>A</p> <p>Specifically the difficult part:</p> <p>A<span class="math-container" id="18310048" visual_id="1189"><math alttext="\vee" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∨</mo></semantics></math></span>B, <span class="math-container" id="18310049" visual_id="16516"><math alttext="\neg" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">¬</mi></semantics></math></span> A, <span class="math-container" id="18310050" visual_id="16516"><math alttext="\neg" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">¬</mi></semantics></math></span>B <span class="math-container" id="18310051" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> A </p> <p>How can the result be proven by using the common inference rules?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> first-order-logic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4057064"> <span class="math-container" id="18310065" visual_id="60453"><math alttext="A\land\lnot A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></semantics></math></span> is a contradiction, denoted <span class="math-container" id="18310070" visual_id="26703"><math alttext="\bot" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊥</mo></semantics></math></span>, which seems to be the aim of your first deduction, and rightly so.  <span class="math-container" id="18310062" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is merely a proposition that can be true or false,  and does not follow from the premises.  Could you recheck what you posted? </td></tr><tr><td comment_id="4057074"> @amWhy Yes, I want to specifically prove the contradiction, which requires deriving A. </td></tr><tr><td comment_id="4057139"> See my answer, because you can deduce/derive <span class="math-container" id="18310062" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> by using the premise <span class="math-container" id="18310058" visual_id="10130"><math alttext="A\lor B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∨</mo><mi>B</mi></mrow></semantics></math></span>, **and** the premise <span class="math-container" id="18310059" visual_id="59925"><math alttext="\lnot B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span>.  I don't know which natural deduction system you know, or are supposed to work with, so I use very common names for inference rules; you can adjust accordingly. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1976833" id="answer">
+<p><span class="math-container" id="18310073" visual_id="3148565"><math alttext="\begin{array}[]{r|ll}(1)&amp;amp;A\lor B&amp;amp;\text{Given}\\ (2)&amp;amp;\lnot A&amp;amp;\text{Given}\\ (3)&amp;amp;\lnot B&amp;amp;\text{Given}\\ &amp;amp;&amp;amp;\\ (4)&amp;amp;\quad\quad A&amp;amp;\text{Premise}\\ (5)&amp;amp;\quad\quad\bot&amp;amp;\text{Contradiction of 2 and 4}\\ &amp;amp;&amp;amp;\\ (6)&amp;amp;\quad\quad B&amp;amp;\text{Premise}\\ (7)&amp;amp;\quad\quad\bot&amp;amp;\text{Contradiction of 3 and 6}\\ &amp;amp;&amp;amp;\\ (8)&amp;amp;\bot&amp;amp;\text{Or Eliminination of 1, 4 to 5, 6 to 7}\\ (9)&amp;amp;\text{Anything}&amp;amp;\text{Vaccuous Implication}\\ \end{array}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><mi>A</mi><mo>∨</mo><mi>B</mi></mrow></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>Given</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>Given</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>B</mi></mrow></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>Given</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_border_r"></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo></mrow></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo rspace="22.5pt">;</mo><mi>A</mi></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>Premise</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo rspace="22.5pt">;</mo><mo>⊥</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>Contradiction of 2 and 4</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_border_r"></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo></mrow></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo rspace="22.5pt">;</mo><mi>B</mi></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>Premise</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo rspace="22.5pt">;</mo><mo>⊥</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>Contradiction of 3 and 6</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_border_r"></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo></mrow></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mo>⊥</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>Or Eliminination of 1, 4 to 5, 6 to 7</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_border_r" columnalign="right"><mrow><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>Anything</mtext></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>Vaccuous Implication</mtext></mrow></mtd></mtr></mtable></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

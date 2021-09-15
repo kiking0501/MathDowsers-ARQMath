@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>prove combinatorical identity using induction</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> prove combinatorical identity using induction </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="711095">
+<p>Question: prove by induction on <span class="math-container" id="7107768" visual_id="40902"><math alttext="n+m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow></semantics></math></span> the combinatoric identity:</p> <p><span class="math-container" id="7107769" visual_id="700178"><math alttext="\sum_{k=0}^{n}{m+k\choose k}={m+n+1\choose n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>m</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>m</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span></p> <p>I've tried to do on both <span class="math-container" id="7107770" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> and <span class="math-container" id="7107771" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> but I think it isn't the right way.</p> <p>Thanks</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="711369" id="answer">
+<p>Another take.</p> <p><span class="math-container" id="7107794" visual_id="7933"><math alttext="m=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>: <span class="math-container" id="7107795" visual_id="700189"><math alttext="\sum_{k=0}^{n}\binom{k}{k}=\sum_{k=0}^{n}1=n+1=\binom{n+1}{1}=\binom{n+1}{n}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mn>1</mn></mrow><mo>=</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mn>1</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="7107796" visual_id="3350"><math alttext="n=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>: <span class="math-container" id="7107797" visual_id="700190"><math alttext="\sum_{k=0}^{n}\binom{k}{k}=\binom{0}{0}=1=\binom{m+1}{0}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>0</mn><mn>0</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow><mn>0</mn></mfrac><mo>)</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="7107798" visual_id="195709"><math alttext="m,n&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mrow><mi>n</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>: \begin{align*} \sum_{k=0}^n\binom{m+k}k&amp;= 1+\sum_{k=1}^n\left(\binom{m-1+k}k+\binom{m-1+k}{k-1}\right) \\&amp;=\sum_{k=0}^n\binom{m-1+k}{k}+\sum_{k=0}^{n-1}\binom{m+k}{k} \\&amp;=\binom{m+n}n+\binom{m+n}{n-1}=\binom{m+n+1}n \end{align*} The next to last equality uses induction on <span class="math-container" id="7107799" visual_id="40902"><math alttext="n+m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1812138"> Direct limit of certain <span class="math-container" id="16760802" visual_id="18267"><math alttext="C^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>C</mi><mo>*</mo></msup></semantics></math></span> algebras is simple </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

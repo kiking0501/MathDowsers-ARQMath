@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How is the shape of the curve $f(x)$, near $x=a$, affected by $f'''(a)$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How is the shape of the curve <span class="math-container" id="9549293" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, near <span class="math-container" id="9549294" visual_id="1406"><math alttext="x=a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>a</mi></mrow></semantics></math></span>, affected by <span class="math-container" id="9549295" visual_id="561249"><math alttext="f^{\prime\prime\prime}(a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1001895">
+<p>In introductory calculus classes we learn the utility of calculating <span class="math-container" id="9549296" visual_id="929"><math alttext="f^{\prime}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="9549297" visual_id="15587"><math alttext="f^{\prime\prime}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for sketching the curve <span class="math-container" id="9549298" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. My question is given <span class="math-container" id="9549299" visual_id="561249"><math alttext="f^{\prime\prime\prime}(a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, how does this value affect the shape a curve <span class="math-container" id="9549300" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for <span class="math-container" id="9549301" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> near <span class="math-container" id="9549302" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>?</p> <p>Consider an example where <span class="math-container" id="9549303" visual_id="14532"><math alttext="f^{\prime}(x)&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="9549304" visual_id="153428"><math alttext="f^{\prime\prime}(x)&amp;lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>&lt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> on the whole domain. How does the sign of <span class="math-container" id="9549305" visual_id="505722"><math alttext="f^{\prime\prime\prime}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> change the shape of the curve?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2047771"> @TylerHG I think the OP means just by looking at the graph of <span class="math-container" id="9549307" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> </td></tr><tr><td comment_id="2048093"> @TedShifrin I think you are referring to either the example or my  deleted comment. Both were clearly talking about an example and not a general <span class="math-container" id="9549307" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>. I suppose you are stating that constructing such an example would be difficult? Or are you saying that constructing such an example is not possible? If so, can you explain why there is no such function <span class="math-container" id="9549308" visual_id="7661"><math alttext="f(x,\theta)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> such that one can vary <span class="math-container" id="9549311" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> along some smooth trajectory in parameter space such that only the third derivative changes? </td></tr><tr><td comment_id="2048760"> Note that if <span class="math-container" id="9549310" visual_id="8113432"><math alttext="\dfrac{\partial^{2}f(x,\theta)}{\partial x^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mrow><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle></semantics></math></span> is independent of <span class="math-container" id="9549311" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span>, then so is <span class="math-container" id="9549312" visual_id="8113433"><math alttext="\dfrac{\partial^{3}f(x,\theta)}{\partial x^{3}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mrow><mrow><msup><mo>∂</mo><mn>3</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mfrac></mstyle></semantics></math></span>. If you don't believe this, one way to see it is this: <span class="math-container" id="9549313" visual_id="8113434"><math alttext="\dfrac{\partial}{\partial\theta}\dfrac{\partial^{2}f(x,\theta)}{\partial x^{2}% }=0\implies\dfrac{\partial}{\partial\theta}\dfrac{\partial^{3}f(x,\theta)}{% \partial x^{3}}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow><mo>=</mo><mn>0</mn><mo>⟹</mo><mrow><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><msup><mo>∂</mo><mn>3</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mfrac></mstyle></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, by interchanging partial derivatives. </td></tr><tr><td comment_id="2050615"> OK, yes that makes sense, my comment about fixing one derivative and varying another make no sense but I think the original question is still interesting. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1002239" id="answer">
+<p>You can also say that the third derivative <span class="math-container" id="9549342" visual_id="8113443"><math alttext="f′′′(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mi mathvariant="normal">′</mi><mo>⁢</mo><mi mathvariant="normal">′</mi><mo>⁢</mo><mi mathvariant="normal">′</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> gives you information about convexity (or concavity) of the first derivative (and geometric interpretation of the first derivative is obvious).</p> <p>Maybe you have heard about the famous quotation of Richard Nixon: "The rate of increase of inflation is decreasing." That is a use of the third derivation in practice.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

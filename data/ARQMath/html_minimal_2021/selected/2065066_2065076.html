@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Formal notation of the sum of the first $n$ squares</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Formal notation of the sum of the first <span class="math-container" id="19094923" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> squares </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2065066">
+<p>I've found the following summation to be true <span class="math-container" id="19094924" visual_id="3417882"><math alttext="\sum_{i=1}^{3}i^{2}=3+(3+2)+(3+2+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></msubsup><msup><mi>i</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mn>3</mn><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>  and it works for the first <span class="math-container" id="19094925" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> numbers, I also know that there is already a summation for that: <span class="math-container" id="19094926" visual_id="1216563"><math alttext="\sum_{i=0}^{n}i^{2}=\frac{(n^{2}+n)(2n+1)}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><msup><mi>i</mi><mn>2</mn></msup></mrow><mo>=</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></mrow></semantics></math></span> but that's not what I'm looking to use, my question is how would I appropiately write that first summation, could it be the following?  <span class="math-container" id="19094927" visual_id="3417883"><math alttext="\sum_{i=1}^{n}i^{2}=n+\big{(}n+(n-1)\big{)}+\big{(}n+(n−1)+(n−2)\big{)}+\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msup><mi>i</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mi>n</mi><mo>+</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>n</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>+</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>n</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span> I think that looks kind of ugly. </p> <p>How would I write the previous summation with a correct notation?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> summation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4240022"> The summation is fairly obvious if you consider it geometrically with blocks.  You are taking a pyramid consisting of stacked squares each one unit high and all aligned to one corner, and slicing it vertically. </td></tr><tr><td comment_id="4240207"> Indeed, I was just looking for a way to correctly represent that geometric/arithmetic relation between the number squares. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2065076" id="answer">
+<p>You can probably write it as <span class="math-container" id="19094946" visual_id="3417890"><math alttext="\sum\limits_{i=1}^{n}i^{2}=\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{i}(n+1-j)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>i</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>i</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>-</mo><mi>j</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4239481"> I think op is specifically asking about writing <span class="math-container" id="19094947" visual_id="3417891"><math alttext="n+(n+(n-1))+(n+(n-2)+(n-3))+\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span> </td></tr><tr><td comment_id="4239482"> yeah, my bad. thanks for that. </td></tr><tr><td comment_id="4239495"> @PabloIvan That original summation was equivalent to writing your series backwards i.e. <span class="math-container" id="19094948" visual_id="3417892"><math alttext="(1)+(1+2)+(1+2+3)+\cdots+(1+2+3+\cdots n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mrow><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mi>n</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4239531"> But then the expression fails. If I want to sum 3^2+2^2+1^2, using your formula I would write: 1 + (1+2) + (1+2+3) = 10, which isn't the case since the correct answer is: 3 + (3+2) + (3+2+1) = 14, now that is the correct result. </td></tr><tr><td comment_id="4239607"> @PabloIvan which is why the poster edited his answer to a correct one </td></tr><tr><td comment_id="4239616"> Alright then, but is there any difference between your approach (n-i) and Jorge's approach (n+1-j)? </td></tr><tr><td comment_id="4239955"> @PabloIvan I don't think so. I think he is just indexing from 1 so needs the + 1. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

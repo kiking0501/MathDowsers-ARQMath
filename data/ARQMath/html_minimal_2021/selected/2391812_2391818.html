@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>The largest integer that divides $p^4-1$, in which p is a prime greater than $5$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> The largest integer that divides <span class="math-container" id="22136408" visual_id="1567347"><math alttext="p^{4}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span>, in which p is a prime greater than <span class="math-container" id="22136409" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2391812">
+<p>The question is to find the largest integer that divides all <span class="math-container" id="22136410" visual_id="1567347"><math alttext="p^{4}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span>, where p is a prime greater than 5. Being asked this question, I just assume this number exists. Set <span class="math-container" id="22136411" visual_id="9847"><math alttext="p=7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>7</mn></mrow></semantics></math></span>, then <span class="math-container" id="22136412" visual_id="6483095"><math alttext="p^{4}-1=2400" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>p</mi><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mn>2400</mn></mrow></semantics></math></span>. I don't have any background in number theory and not sure what to do next. Thank you for your help! </p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4933885"> in what context did you find the question ? </td></tr><tr><td comment_id="4933889"> <span class="math-container" id="22136413" visual_id="6483096"><math alttext="2^{4}\cdot 3\cdot 5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>5</mn></mrow></semantics></math></span> divides <span class="math-container" id="22136414" visual_id="6199323"><math alttext="(p-1)(p+1)(p^{2}+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and is the gcd of <span class="math-container" id="22136415" visual_id="1976857"><math alttext="7^{4}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>7</mn><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="22136416" visual_id="6483097"><math alttext="11^{4}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>11</mn><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="4933896"> @RoddyMacPhee GRE Sub Practice exam. Since no calculator is permitted, I really don't know how to solve this in a quick way. </td></tr><tr><td comment_id="4933914"> what do we know about all primes greater than 3 ? that's a start. </td></tr><tr><td comment_id="4933927"> @RoddyMacPhee They are in the form <span class="math-container" id="22136417" visual_id="94687"><math alttext="4k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> or <span class="math-container" id="22136418" visual_id="8942"><math alttext="4k+3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>3</mn></mrow></semantics></math></span>. Therefore 16 divides <span class="math-container" id="22136484" visual_id="1567347"><math alttext="p^{4}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span>, thus this number should be greater than 16. The final answer seems to be 240, after I used my calculator. </td></tr><tr><td comment_id="4933931"> I was pointing to the fact they are all 1 or 5 mod 6  so we know 6 is in the divisors of the number we want because the value of <span class="math-container" id="22136420" visual_id="405651"><math alttext="p^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mn>4</mn></msup></semantics></math></span> will be 1 mod 6 and subtracting 1 is 0 mod 6. add in fermat's little theorem and you get that it also is divisible by 5 so <span class="math-container" id="22136421" visual_id="6483098"><math alttext="5\cdot lcm(16,6)=240" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>5</mn><mo>⋅</mo><mi>l</mi></mrow><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>16</mn><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>240</mn></mrow></semantics></math></span> and that at least shows 240 is a minimum to the value. </td></tr><tr><td comment_id="4933941"> Oh I see. Let that number be <span class="math-container" id="22136422" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, then <span class="math-container" id="22136423" visual_id="5150840"><math alttext="16|x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>x</mi></mrow></semantics></math></span>. <span class="math-container" id="22136486" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> are all 1 or 5 mod 6, thus <span class="math-container" id="22136425" visual_id="6483099"><math alttext="6|p^{4}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><msup><mi>p</mi><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>. Then <span class="math-container" id="22136426" visual_id="655691"><math alttext="5|x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>x</mi></mrow></semantics></math></span>, thus <span class="math-container" id="22136427" visual_id="6483100"><math alttext="lcm(5,16,6)=240" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>l</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>16</mn><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>240</mn></mrow></semantics></math></span> is the answer. </td></tr><tr><td comment_id="4933944"> @RoddyMacPhee We can try <span class="math-container" id="22136428" visual_id="62310"><math alttext="p=11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>11</mn></mrow></semantics></math></span> to find that 240 is the final answer. </td></tr><tr><td comment_id="4933945"> it could be higher but there's only 3 possibilities to check at that point to confirm 240 as the answer, 480,1200, and 2400. but baring that one of these also divides each one you can then safely conclude 240. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2391818" id="answer">
+<p>Let <span class="math-container" id="22136460" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> be the number you are trying to find.</p> <p>One of the main reasons to look at an example <span class="math-container" id="22136461" visual_id="9847"><math alttext="p=7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>7</mn></mrow></semantics></math></span> is to gain information about <span class="math-container" id="22136462" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. If <span class="math-container" id="22136463" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> divides all <span class="math-container" id="22136464" visual_id="1567347"><math alttext="p^{4}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span>, and <span class="math-container" id="22136465" visual_id="1764264"><math alttext="7^{4}-1=2400" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>7</mn><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mn>2400</mn></mrow></semantics></math></span>, then <span class="math-container" id="22136466" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> divides <span class="math-container" id="22136467" visual_id="253189"><math alttext="2400" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2400</mn></semantics></math></span>.</p> <p>Thus, you've gained information about <span class="math-container" id="22136468" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. Follow that up — what information does knowing that <span class="math-container" id="22136469" visual_id="6483113"><math alttext="n\mid 2400" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mn>2400</mn></mrow></semantics></math></span> give you?</p> <p>In my opinion, the next obvious things to do are to try the next few primes and gain more information about <span class="math-container" id="22136470" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.</p> <p>My expectation is that will be enough to completely determine what <span class="math-container" id="22136471" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> ought to be, or at least narrow it down to a very small number of possibilities, at which point you can turn towards trying to <em>prove</em> that one of the possibilities is actually the value of <span class="math-container" id="22136472" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="40429"> What is the greatest integer that divides <span class="math-container" id="419366" visual_id="1567347"><math alttext="p^{4}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> for every prime number <span class="math-container" id="419367" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> greater than <span class="math-container" id="419368" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

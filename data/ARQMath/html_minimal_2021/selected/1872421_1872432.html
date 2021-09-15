@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding true roots of $x^2 + 10^9x +1$ using the Quadratic Formula</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding true roots of <span class="math-container" id="17346045" visual_id="1033825"><math alttext="x^{2}+10^{9}x+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><msup><mn>10</mn><mn>9</mn></msup><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> using the Quadratic Formula </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1872421">
+<p>I've been given a hint to rearrange the quadratic formula to:</p> <p><span class="math-container" id="17346046" visual_id="1033826"><math alttext="b\sqrt{1-\frac{4ac}{b^{2}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>⁢</mo><msqrt><mrow><mn>1</mn><mo>-</mo><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><msup><mi>b</mi><mn>2</mn></msup></mfrac></mrow></msqrt></mrow></semantics></math></span></p> <p>but am still dealing with a numerical error at <span class="math-container" id="17346047" visual_id="1033827"><math alttext="4/10^{18}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>/</mo><msup><mn>10</mn><mn>18</mn></msup></mrow></semantics></math></span></p> <p>Can I solve this numerically with the Taylor Series?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> numerical-methods </span><span> quadratics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3836924"> This would be much easier on your Readers' eyes if you formatted mathematical expressions using [MathJax](http://math.stackexchange.com/help/notation) and <span class="math-container" id="17346048" visual_id="1724"><math alttext="\LaTeX" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐿𝑎𝑇𝑒𝑋</mi></semantics></math></span>. </td></tr><tr><td comment_id="3836926"> Why don't you rearrange the formula to <span class="math-container" id="17346049" visual_id="60923"><math alttext="\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mrow><mo>-</mo><mi>b</mi></mrow><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></msqrt></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></semantics></math></span> instead? </td></tr><tr><td comment_id="3836931"> Hi, the trouble there is that I'm trying to calculate 10^18 - 4 which gives an error on Matlab which only works to 16dp </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1872432" id="answer">
+<p>The problem is that the quadratic formula <span class="math-container" id="17346050" visual_id="1033828"><math alttext="\frac{1}{2a}(-b\pm\sqrt{b^{2}-4ac})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo>-</mo><mi>b</mi></mrow><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> suffers from roundoff if <span class="math-container" id="17346051" visual_id="1033829"><math alttext="4ac\ll b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><mo>≪</mo><mi>b</mi></mrow></semantics></math></span>.  In that case the square root is very close to <span class="math-container" id="17346052" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> and when you take the plus sign you get cancellation.  Rewriting the parentheses as <span class="math-container" id="17346053" visual_id="1033830"><math alttext="b(-1+\sqrt{1-\frac{4ac}{b^{2}}})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><msqrt><mrow><mn>1</mn><mo>-</mo><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><msup><mi>b</mi><mn>2</mn></msup></mfrac></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a step.  Then you can use the binomial theorem to say <span class="math-container" id="17346054" visual_id="1033831"><math alttext="\sqrt{1-\frac{4ac}{b^{2}}}\approx 1-\frac{2ac}{b^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mn>1</mn><mo>-</mo><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><msup><mi>b</mi><mn>2</mn></msup></mfrac></mrow></msqrt><mo>≈</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><msup><mi>b</mi><mn>2</mn></msup></mfrac></mrow></mrow></semantics></math></span>.  Now you can cancel the <span class="math-container" id="17346055" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>'s analytically and be left with<span class="math-container" id="17346056" visual_id="1033832"><math alttext="-\frac{2ac}{b^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><msup><mi>b</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span>.  This will not overflow your floats and you have avoided the subtraction error.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

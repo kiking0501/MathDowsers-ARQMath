@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is $\frac d {dz} \ln (xz)$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is <span class="math-container" id="21267476" visual_id="8909717"><math alttext="\frac{d}{dz}\ln(xz)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2301764">
+<p>I am not sure which one is the correct answer :</p> <ol> <li><span class="math-container" id="21267477" visual_id="8909718"><math alttext="\frac{1}{xz}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac></semantics></math></span> </li> <li><span class="math-container" id="21267478" visual_id="31"><math alttext="\frac{1}{z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>z</mi></mfrac></semantics></math></span> </li> <li><span class="math-container" id="21267479" visual_id="9226"><math alttext="\frac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>x</mi></mfrac></semantics></math></span></li> </ol>
+</div>
+<hr/>
+<div id="tags">
+<span> derivatives </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4735643"> Use the chain rule.  What is <span class="math-container" id="21267480" visual_id="8909719"><math alttext="d/du\ln u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>/</mo><mi>d</mi></mrow><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>u</mi></mrow></mrow></semantics></math></span>?  Or if you prefer, <span class="math-container" id="21267481" visual_id="8909720"><math alttext="\ln{xz}=\ln x+\ln z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>z</mi></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="4735656"> So, it's going to be 1/z </td></tr><tr><td comment_id="4735662"> Yes.  Someone has provided the answer using same approach below.  Alternatively using the chain rule you would get <span class="math-container" id="21267482" visual_id="8909721"><math alttext="\frac{1}{xz}\,\frac{d}{dz}{xz}=x\cdot\frac{1}{xz}=\frac{1}{z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+1.7pt"><mfrac><mn>1</mn><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac></mpadded><mo>⁢</mo><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow><mo>=</mo><mrow><mi>x</mi><mo>⋅</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2301773" id="answer">
+<p>The chain rule would be the most general method to getting the answer for an arbitrary differentiable function of <span class="math-container" id="21267483" visual_id="7225"><math alttext="xz" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></semantics></math></span>. However here we can exploit the linearity of derivatives and properties of logarithms alone.</p> <p>Assuming <span class="math-container" id="21267484" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is not a function of <span class="math-container" id="21267485" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span>, </p> <p><span class="math-container" id="21267486" visual_id="8909722"><math alttext="\frac{d}{dz}\ln(xz)=\frac{d}{dz}\ln(x)+\frac{d}{dz}\ln(z)=0+\frac{1}{z}=\frac{% 1}{z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo>+</mo><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

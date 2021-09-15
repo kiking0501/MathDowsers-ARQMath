@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Relation between Implication and Disjunction</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Relation between Implication and Disjunction </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1959385">
+<p>I hope that someone help me with an intuition or a good explanation for why does Implication relate to Disjunction in Mathematical Logic. The specific property I'm asking about is :  </p> <pre><code>                                (P → Q) ↔ (¬P ∨ Q) </code></pre> <p>Also, while I was searching on Wikipedia I found some <strong>Venn Diagrams</strong> explaining with visuals the <strong>Truth Table</strong> which I used to Proof the mentioned property, but it didn't make sense for me, eventually the symbolic proof doesn't build a good intuition in our minds. Thank you for your time, and I apologize if this question was previously asked in way or another, I couldn't find any, this is my first post here :). The link of the Wikipedia Article : <a href="https://en.wikipedia.org/wiki/Logical_connective" rel="nofollow">https://en.wikipedia.org/wiki/Logical_connective</a></p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1959396" id="answer">
+<p>In classical logic, the <a href="https://en.wikipedia.org/wiki/Logical_connective" rel="nofollow">logical connectives</a> are truth-functional, i.e. defined by their <a href="https://en.wikipedia.org/wiki/Truth_table#Logical_implication" rel="nofollow">truth-table</a>.</p> <p>With them, we may easily verify that the two formulae :</p> <blockquote> <p><span class="math-container" id="18160673" visual_id="117725"><math alttext="P\to Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mi>Q</mi></mrow></semantics></math></span> and <span class="math-container" id="18160674" visual_id="68150"><math alttext="\lnot P\lor Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow><mo>∨</mo><mi>Q</mi></mrow></semantics></math></span></p> </blockquote> <p>are <em>equivalent</em>.</p> <hr/> <p>If you are not "at ease" with this result, you are not alone: in <a href="http://plato.stanford.edu/entries/logic-intuitionistic/" rel="nofollow">Intuitionsitic Logic</a> this result is not provable.</p> <p>In effect, this logic does not "agree" on the truth-functional definition of the connectives.</p> <hr/> <p>In the context of "classical logic" the best "intuition I can suggest you is to reflect how the <span class="math-container" id="18160675" visual_id="7792"><math alttext="\to" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> connective is used in mathematical reasoning by way of <em>modus ponens</em> rule of inference.</p> <blockquote> <blockquote> <p>This rule licenses us to infer <span class="math-container" id="18160676" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> from <span class="math-container" id="18160677" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="18160678" visual_id="4952"><math alttext="A\to B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow></semantics></math></span>.</p> </blockquote> </blockquote> <p>We "apply" it asserting the <em>premises</em> :<span class="math-container" id="18160679" visual_id="4952"><math alttext="A\to B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow></semantics></math></span> and <span class="math-container" id="18160680" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>.</p> <p>The first assertion excludes the case when <span class="math-container" id="18160681" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is <em>true</em> and <span class="math-container" id="18160682" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> <em>false</em>, while the second assertion excludes the two cases where <span class="math-container" id="18160683" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is <em>false</em>.</p> <p>Thus, the truth-table fo <span class="math-container" id="18160684" visual_id="7792"><math alttext="\to" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> leaves us only one possibility : <span class="math-container" id="18160685" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> <em>true</em>, and this is what we need in order to conclude the proof.</p> <p>The same happens with the "disjunction version" of the same rule :</p> <blockquote> <blockquote> <p>that licenses us to infer <span class="math-container" id="18160686" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> from <span class="math-container" id="18160687" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="18160688" visual_id="59917"><math alttext="\lnot A\lor B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>A</mi></mrow><mo>∨</mo><mi>B</mi></mrow></semantics></math></span>.</p> </blockquote> </blockquote> <p>In words : if we know that at least one between <span class="math-container" id="18160689" visual_id="41573"><math alttext="\lnot A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>A</mi></mrow></semantics></math></span> and <span class="math-container" id="18160690" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> holds and if we know that <span class="math-container" id="18160691" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> holds (i.e. <span class="math-container" id="18160692" visual_id="41573"><math alttext="\lnot A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>A</mi></mrow></semantics></math></span> does not), we have to conclude that <span class="math-container" id="18160693" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> must hold.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4022190"> So you mean that I should just accept it as a fact ? </td></tr><tr><td comment_id="4022217"> @Mahmoud - as a definition that is part of the truth-functional" modelling of mathematical reasoning. </td></tr><tr><td comment_id="4022434"> Thank you for your effort, but Understanding the rule you mentioned if a lot harder for me than the question I asked in the first place, anyways I appreciate the time you gave me, I will try to rap my mind around the ''modus ponens rule of inference''. </td></tr><tr><td comment_id="4022510"> Wait ! I got Rule and I'm now able to justify why it works ! Thank you Mauro ! I owe an infinite set of (Thank you)s You made me believe in myself again ! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

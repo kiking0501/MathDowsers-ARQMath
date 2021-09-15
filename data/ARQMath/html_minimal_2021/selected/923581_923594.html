@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How do I solve this? $\lim_{n\to\infty} \frac{2^n}{n!}$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How do I solve this? <span class="math-container" id="8913560" visual_id="552972"><math alttext="\lim_{n\to\infty}\frac{2^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><msup><mn>2</mn><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="923581">
+<p>Good day to everyone. So, basically, it's no big deal that factorial grows faster than <span class="math-container" id="8913561" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span>, that's quite obvious, but I need to prove it, and that's where the problem begins. </p> <p>I've tried some standard ways — no result. Stirling's approximation — no result. I tend to think that I either don't know something minor yet helpful or do something wrong. Help me, please:з</p>
+</div>
+<hr/>
+<div id="tags">
+<span> limits </span><span> exponentiation </span><span> factorial </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1906513"> Hint. Prove by induction that <span class="math-container" id="8913562" visual_id="6329766"><math alttext="2^{n}/n!\leq 2(2/3)^{n-2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>/</mo><mrow><mi>n</mi><mo>!</mo></mrow></mrow><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="923594" id="answer">
+<p>Let <span class="math-container" id="8913574" visual_id="35"><math alttext="\epsilon&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϵ</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>. Choose <span class="math-container" id="8913575" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> large enough so that <span class="math-container" id="8913576" visual_id="6329774"><math alttext="\epsilon&amp;gt;\frac{8}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϵ</mi><mo>&gt;</mo></mrow><mfrac><mn>8</mn><mi>n</mi></mfrac></mrow></semantics></math></span>.</p> <p>Notice that <span class="math-container" id="8913577" visual_id="6329775"><math alttext="\frac{2^{n}}{1\cdot 2\cdots n}\leqslant\frac{2^{n}}{1\cdot 2^{n-2}\cdot n}=% \frac{4}{n}&amp;lt;\frac{8}{n}&amp;lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><msup><mn>2</mn><mi>n</mi></msup><mrow><mrow><mn>1</mn><mo>⋅</mo><mn>2</mn></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mi>n</mi></mrow></mfrac><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\leqslant</mtext></merror><mo>⁢</mo><mfrac><msup><mn>2</mn><mi>n</mi></msup><mrow><mn>1</mn><mo>⋅</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup><mo>⋅</mo><mi>n</mi></mrow></mfrac></mrow><mo>=</mo><mrow><mrow><mfrac><mn>4</mn><mi>n</mi></mfrac><mo>&lt;</mo></mrow><mrow><mfrac><mn>8</mn><mi>n</mi></mfrac><mo>&lt;</mo></mrow><mi>ϵ</mi></mrow></mrow></semantics></math></span></p> <p>concluding that <span class="math-container" id="8913578" visual_id="6329776"><math alttext="\lim_{n\to 0}\frac{2^{n}}{n!}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><msup><mn>2</mn><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="77550"> Prove that <span class="math-container" id="873244" visual_id="285508"><math alttext="\lim\limits_{n\to\infty}\frac{x^{n}}{n!}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="873245" visual_id="4655"><math alttext="x\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

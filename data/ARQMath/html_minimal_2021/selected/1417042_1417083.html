@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How is $\mathbb N$ actually defined?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How is <span class="math-container" id="13160513" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> actually defined? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1417042">
+<p>I know perfectly well the Peano axioms, but if they were sufficient for defining <span class="math-container" id="13160514" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>, there would be no controversy whether <span class="math-container" id="13160515" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> is a member of <span class="math-container" id="13160516" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> or not because <span class="math-container" id="13160517" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> is isomorphic to a host of sub- and supersets of <span class="math-container" id="13160518" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>.</p> <p>So it seems that mathematicians, when specifying <span class="math-container" id="13160519" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>, rarely mean <em>the</em> set of natural numbers according to its definition but rather some particular embedding into sets defined by different axiomatic systems.</p> <p>Doesn't this sort of misstate then the role of the Peano axioms as the defining characteristics of <span class="math-container" id="13160520" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>?  It seems like most of the time the Peano axioms are not more than a retrofit to a subset of <span class="math-container" id="13160521" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> or other sets defined by a different axiomatic system with one or several axioms incompatible with the Peano axioms.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> elementary-set-theory </span><span> definition </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2887383"> The decision to include or exclude zero as a "natural number" is not a problem for the foundations of mathematics.  Some authors prefer to include it, some exclude it, and some (like myself) are inconsistent in finding it convenient for some applications to have it, and other times not.   As long as the author makes the decision clear for purposes of a discussion/publication, either approach is okay. </td></tr><tr><td comment_id="2887390"> I think you're going to run into a problem assuming there's a standard definition that anyone uses. Most mathematicians just run with either <span class="math-container" id="13160522" visual_id="72940"><math alttext="\{1,2,...\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> or <span class="math-container" id="13160523" visual_id="72939"><math alttext="\{0,1,2,...\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> based on what's most useful at the moment and don't think much more about it. </td></tr><tr><td comment_id="2887391"> If <span class="math-container" id="13160597" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> occurs in your Peano axioms the <span class="math-container" id="13160525" visual_id="104916"><math alttext="0\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span>. If you replace <span class="math-container" id="13160613" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> for <span class="math-container" id="13160597" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> in them, then <span class="math-container" id="13160528" visual_id="8914"><math alttext="0\notin\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>∉</mo><mi>ℕ</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="2888073"> Perhaps I could say "a number is a natural number if it's the sum of four squares." (It would be odd to take it as a definition, but it could be taken as a definition if you want it to.) That particular definition is interesting in that it only uses the concepts of <span class="math-container" id="13160529" visual_id="5690"><math alttext="+" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>+</mo></semantics></math></span> and <span class="math-container" id="13160530" visual_id="9946"><math alttext="\times" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>×</mo></semantics></math></span>, rather than something like <span class="math-container" id="13160531" visual_id="43610"><math alttext="&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&gt;</mo></semantics></math></span>. (Of course, by this definition, <span class="math-container" id="13160597" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> is natural. You could easily change it if you don't want to count <span class="math-container" id="13160597" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> as a natural.) </td></tr><tr><td comment_id="2888211"> @columbus8myhw: So every complex number is a natural number? :-) </td></tr><tr><td comment_id="2888219"> @AsafKaragila Meh, I wrote that I was working in <span class="math-container" id="13160534" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>, but then I wanted to edit some stuff before pressing 'enter' and I accidentally got rid of that comment. Pfft. (In any case, <span class="math-container" id="13160557" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> isn't first-order definable in <span class="math-container" id="13160536" visual_id="2665003"><math alttext="(\mathbb{C},+,\times)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>ℂ</mi><mo>,</mo><mo>+</mo><mo>,</mo><mo>×</mo><mo stretchy="false">)</mo></mrow></semantics></math></span>, is it?) </td></tr><tr><td comment_id="2888222"> @columbus8myhw: No, the theory of the complex numbers is complete, decidable and consistent. So it cannot possibly interpret enough of the arithmetic of the natural numbers. In any case, context is important of course. I'm just being a smartypants. :-) </td></tr><tr><td comment_id="2888228"> @AsafKaragila Really? It's complete and decidable? I need to go learn some model theory. </td></tr><tr><td comment_id="2888244"> @columbus8myhw: <span class="math-container" id="13160537" visual_id="849019"><math alttext="\mathsf{ACF}_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝖠𝖢𝖥</mi><mi>p</mi></msub></semantics></math></span> is complete for every choice of characteristics (prime or <span class="math-container" id="13160597" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>, of course). And the theory really just says that you have a field (of a certain characteristics), and that every polynomial has a root. This can be easily done with finitely many axioms and two schemata (one for <span class="math-container" id="13160539" visual_id="15670"><math alttext="p&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>). So it's easily complete and recursively enumerable. But those two things together imply decidability! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1417083" id="answer">
+<p>I don't think that Peano axioms are sufficient for defining <span class="math-container" id="13160600" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>. For one thing, Peano axioms form a theory, not a particular structure. Additionally, the theory of Peano arithmetics is not complete, so it even doesn't define a structure up to elementary equivalence.</p> <p>On the other hand, there is a standard model of Peano arithmetics in the standard set theory (ZFC), namely the smallest infinite ordinal – as described in other answers.</p> <p>Also, you can easily construct a structure that is different but isomorphic to <span class="math-container" id="13160601" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span>. But that is trivial and matematitians often think of structures “up to isomorphism”. So they often do not make difference for example between zero as a natural number and zero as an integer, even though they are strictly speaking different objects (different sets) according to the standard set-theoretic formal construction.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2887460"> Don't you mean the *first* countable infinite ordinal? </td></tr><tr><td comment_id="2887469"> @HagenvonEitzen: Yes, of course, thank you. Ordinals are not cardinals so my description is not right. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1789980"> Do the axioms of set theory actually define the notion of a set? </td></tr><tr><td post_id="1461181"> Anita Tabacco include zero to N? </td></tr><tr><td post_id="2618575"> Different definitions of Natural Numbers and Proof by Contradiction </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

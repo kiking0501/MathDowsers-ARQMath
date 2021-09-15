@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Natural Deduction: $(p \lor q)\to r\vdash p \to r$ and $p\to\neg q\leftrightarrow(r\lor s),\neg s\vdash (p\land \neg q)\to r$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Natural Deduction: <span class="math-container" id="5424073" visual_id="1539301"><math alttext="(p\lor q)\to r\vdash p\to r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi></mrow><mo>⊢</mo><mrow><mi>p</mi><mo>→</mo><mi>r</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="5424074" visual_id="1539302"><math alttext="p\to\neg q\leftrightarrow(r\lor s),\neg s\vdash(p\land\neg q)\to r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>q</mi></mrow></mrow><mo>↔</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>∨</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>s</mi></mrow></mrow><mo>⊢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>q</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="519711">
+<p>I am having trouble applying Natural Deduction rule and solving these two questions. How do I start this.</p> <p>\begin{align} \{(p\lor q)\to r\}&amp;\vdash_{\sf ND} p\to r\\ \{p\to\neg q\leftrightarrow(r\lor s),\neg s\}&amp;\vdash_{\sf ND} (p\land\neg q)\to r \end{align}</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> propositional-calculus </span><span> natural-deduction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="519909" id="answer">
+<p>Here's a <strong>hint</strong> for the second question.</p> <p>You need to think strategically. You are aiming to prove a conditional. The default way of establishing a conditional <span class="math-container" id="5424075" visual_id="133799"><math alttext="A\to C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>C</mi></mrow></semantics></math></span> is to temporarily assume the antecedent <span class="math-container" id="5424076" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and aim for the consequent <span class="math-container" id="5424077" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>. If you can get there, you can then discharge the assumption <span class="math-container" id="5424078" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and derive the conditional.</p> <p>So the expected overall shape of the proof will be (inserting what look like necessary brackets)</p> <blockquote> <p><span class="math-container" id="5424079" visual_id="1539303"><math alttext="p\to(\neg q\leftrightarrow(r\lor s))\quad\quad\quad\text{Premiss}\\ \neg s\quad\quad\quad\quad\quad\quad\quad\quad\quad\ \ \ \text{Premiss}\\ \quad\quad|\quad(p\land\neg q)\quad\quad\quad\quad\text{Temporary assumption}% \\ \quad\quad|\quad\ldots\\ \quad\quad|\quad r\\ (p\land\neg q)\to r\quad\quad\quad\ \ \quad\quad\text{Discharging temporary % assumption}\\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo>↔</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>∨</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo mathvariant="italic" separator="true">   </mo><mtext>Premiss</mtext><mi mathvariant="normal">¬</mi><mi>s</mi><mo mathvariant="italic" separator="true">            </mo><mtext>Premiss</mtext><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo mathvariant="italic" separator="true">    </mo><mtext>Temporary assumption</mtext><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi mathvariant="normal">…</mi><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi>r</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi><mo mathvariant="italic" separator="true">      </mo><mtext>Discharging temporary assumption</mtext></mrow></semantics></math></span></p> </blockquote> <p>It is obvious what you have to do next. Disassemble the conjunction!</p> <blockquote> <p><span class="math-container" id="5424080" visual_id="1539304"><math alttext="p\to(\neg q\leftrightarrow(r\lor s))\\ \neg s\quad\quad\quad\quad\quad\quad\quad\quad\quad\ \\ \quad\quad|\quad(p\land\neg q)\\ \quad\quad|\quad p\\ \quad\quad|\quad\neg q\\ \quad\quad|\quad\ldots\\ \quad\quad|\quad r\\ (p\land\neg q)\to r\quad\quad\quad\ \ \\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo>↔</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>∨</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mi mathvariant="normal">¬</mi><mi>s</mi><mo mathvariant="italic" separator="true">             </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi>p</mi><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi mathvariant="normal">…</mi><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi>r</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi><mo mathvariant="italic" separator="true">    </mo></mrow></semantics></math></span></p> </blockquote> <p>Where do you go from here. You'll have to start using the initial premisses. So Which to use? Again it is obvious. Start using the initial premiss and use modus ponens, and you should get soon to</p> <blockquote> <p><span class="math-container" id="5424081" visual_id="1539305"><math alttext="p\to(\neg q\leftrightarrow(r\lor s))\\ \neg s\quad\quad\quad\quad\quad\quad\quad\quad\quad\ \\ \quad\quad|\quad(p\land\neg q)\\ \quad\quad|\quad p\\ \quad\quad|\quad\neg q\\ \quad\quad|\quad\ldots\\ \quad\quad|\quad(r\lor s)\\ \quad\quad|\quad\ldots\\ \quad\quad|\quad r\\ (p\land\neg q)\to r\quad\quad\quad\ \ \\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo>↔</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>∨</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mi mathvariant="normal">¬</mi><mi>s</mi><mo mathvariant="italic" separator="true">             </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi>p</mi><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi mathvariant="normal">…</mi><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>∨</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi mathvariant="normal">…</mi><mo mathvariant="italic" separator="true">  </mo><mo stretchy="false">|</mo><mo mathvariant="italic" separator="true"> </mo><mi>r</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi><mo mathvariant="italic" separator="true">    </mo></mrow></semantics></math></span></p> </blockquote> <p>So now you need to get from <span class="math-container" id="5424082" visual_id="377887"><math alttext="\neg s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>s</mi></mrow></semantics></math></span> and <span class="math-container" id="5424083" visual_id="1537433"><math alttext="r\lor s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>∨</mo><mi>s</mi></mrow></semantics></math></span> to <span class="math-container" id="5424084" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span>. How you do this will depend on the details of your ND system, but it is a standard "bookwork" proof. So you can fill in the dots yourself, I hope!</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="519118"> Natural Deduction: <span class="math-container" id="5419145" visual_id="1537424"><math alttext="p\to(\neg q\leftrightarrow(r\lor s)),\neg s\vdash(p\land\neg q)\to r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo>↔</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>∨</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>,</mo><mi mathvariant="normal">¬</mi><mi>s</mi><mo>⊢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

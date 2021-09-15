@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>The integral $\int \sqrt{\ x \sqrt[3]{\ x \sqrt[4]{\ x \sqrt[5]{\ x \cdots}}}} dx$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> The integral <span class="math-container" id="24363153" visual_id="6108099"><math alttext="\int\sqrt{\ x\sqrt[3]{\ x\sqrt[4]{\ x\sqrt[5]{\ x\cdots}}}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><msqrt><mrow><mpadded lspace="5pt" width="+5pt"><mi>x</mi></mpadded><mo>⁢</mo><mroot><mrow><mpadded lspace="5pt" width="+5pt"><mi>x</mi></mpadded><mo>⁢</mo><mroot><mrow><mpadded lspace="5pt" width="+5pt"><mi>x</mi></mpadded><mo>⁢</mo><mroot><mrow><mpadded lspace="5pt" width="+5pt"><mi>x</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">⋯</mi></mrow><mn>5</mn></mroot></mrow><mn>4</mn></mroot></mrow><mn>3</mn></mroot></mrow></msqrt><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2635523">
+<p>I have no idea how to solve the second question from <a href="http://www.mit.edu/~same/pdf/qualifying_round_2018_answers.pdf" rel="nofollow noreferrer">2018 MIT integration bee</a>, </p> <p><span class="math-container" id="24363154" visual_id="6108100"><math alttext="\int\sqrt{\ x\sqrt[3]{\ x\sqrt[4]{\ x\sqrt[5]{\ x\cdots}}}}dx=\frac{x^{e-1}}{e% -1}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><msqrt><mrow><mpadded lspace="5pt" width="+5pt"><mi>x</mi></mpadded><mo>⁢</mo><mroot><mrow><mpadded lspace="5pt" width="+5pt"><mi>x</mi></mpadded><mo>⁢</mo><mroot><mrow><mpadded lspace="5pt" width="+5pt"><mi>x</mi></mpadded><mo>⁢</mo><mroot><mrow><mpadded lspace="5pt" width="+5pt"><mi>x</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">⋯</mi></mrow><mn>5</mn></mroot></mrow><mn>4</mn></mroot></mrow><mn>3</mn></mroot></mrow></msqrt><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mfrac><msup><mi>x</mi><mrow><mi>e</mi><mo>-</mo><mn>1</mn></mrow></msup><mrow><mi>e</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>I tried to to find a value for the roots and i tried converting it to a power, and I tried making a <span class="math-container" id="24363155" visual_id="506"><math alttext="u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi></semantics></math></span> substitution but nothing worked out, while i think that the right approach to this question is to convert the roots to a power, i cant find the right approach to the question.  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> integration </span><span> indefinite-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5442529"> Show us first that you have attempted something... </td></tr><tr><td comment_id="5442538"> What is an integration "bee" ? Why not an integration mosquito? </td></tr><tr><td comment_id="5442547"> It's like a spelling bee -- a competition to see who's the best integrator. Has been going on for at least 40 years, probably more. </td></tr><tr><td comment_id="5442552"> @John Hughes Thank you. Question from a beotian. I have improved my culture today... </td></tr><tr><td comment_id="5442555"> And now I have learned the meaning of a new word : beotian. Thanks! </td></tr><tr><td comment_id="5442640"> @JeanMarie well i tried to investigate the first part of the function  by converting the root to a power and then i tried to make a u substitution but that didnt work out </td></tr><tr><td comment_id="5442671"> Seriously Jean Marie? Mosquito? </td></tr><tr><td comment_id="5442678"> Guys i really need you help </td></tr><tr><td comment_id="5442840"> The RHS suggests that it is a result from power rule, right? </td></tr><tr><td comment_id="5442886"> @jkabrg  wow thank you so much, i cant thank you enough. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2635752" id="answer">
+<p>\begin{align} I&amp;=\int \sqrt{\ x\sqrt[3]{\ x\sqrt[4]{\ x\cdots}}}\,dx\\ I&amp;=\int \sqrt{\ x}\cdot \sqrt{\ \sqrt[3]{\ x}}\cdot \sqrt{\ \sqrt[3]{\ \sqrt[4]{x}}}\cdots\,dx\\ I&amp;=\int x^{1/2}\cdot x^{1/6}\cdot x^{1/24}\cdots\,dx\\ I&amp;=\int x^{\sum_{n=2}^{\infty} \frac{1}{n!}}\,dx\\ I&amp;=\int x^{e-2}\,dx\\ I&amp;=\frac{x^{e-1}}{e-1}+C \end{align}</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="2635600"> Computing <span class="math-container" id="24363930" visual_id="6108361"><math alttext="\int\sqrt{x\sqrt[3]{x\sqrt[4]{x\sqrt[5]{x\cdots}}}}\,\mathrm{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mpadded width="+1.7pt"><msqrt><mrow><mi>x</mi><mo>⁢</mo><mroot><mrow><mi>x</mi><mo>⁢</mo><mroot><mrow><mi>x</mi><mo>⁢</mo><mroot><mrow><mi>x</mi><mo>⁢</mo><mi mathvariant="normal">⋯</mi></mrow><mn>5</mn></mroot></mrow><mn>4</mn></mroot></mrow><mn>3</mn></mroot></mrow></msqrt></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

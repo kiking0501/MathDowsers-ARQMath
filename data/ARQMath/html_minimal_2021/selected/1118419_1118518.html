@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why are derivations useful for defining tangent vectors?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why are derivations useful for defining tangent vectors? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1118419">
+<p>On page 54 in his book <em>Introduction to Smooth Manifolds</em>, John Lee says the following: </p> <p>A linear map <span class="math-container" id="10543816" visual_id="664824"><math alttext="v:C^{\infty}(M)\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>:</mo><mrow><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> is called a <em>derivation at p</em> if it satisfies </p> <p>\begin{equation} v(fg) = f(p)vg + g(p)vf  \end{equation} for all <span class="math-container" id="10543817" visual_id="232147"><math alttext="f,g\in C^{\infty}(M)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>,</mo><mi>g</mi></mrow><mo>∈</mo><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. </p> <p><strong>My Question:</strong> </p> <p>Why is this useful for defining tangent vectors? This just looks to me like a fancy way of characterizing a set of smooth, linear maps who also happen to satisfy the product rule. What relevance does that have to tangent vectors? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> differential-geometry </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2281840"> I suggest working out the following exercise:  Any derivation at a point <span class="math-container" id="10543828" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> in <span class="math-container" id="10543825" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> is given by a directional derivative in some vector <span class="math-container" id="10543820" visual_id="1546"><math alttext="v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi></semantics></math></span>.  Hint:  use Taylor's theorem. </td></tr><tr><td comment_id="2282048"> I believe the map should be defined going to <span class="math-container" id="10543821" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>, not <span class="math-container" id="10543825" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> in the question above. </td></tr><tr><td comment_id="2282132"> Changed it. Thx for correcting. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1118518" id="answer">
+<p>The initial definition of tangent vectors as point-derivations on a manifold is often favored because it is considered somewhat cleaner than other popular definitions, such as using the velocity vectors of smooth curves. This definition has more of a simple, algebraic flavor.</p> <p>At a point <span class="math-container" id="10543823" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> in the linear space <span class="math-container" id="10543824" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span>, we have an intuitive notion of the tangent space as a set of directions which we can use to travel, a vector space we can identify with another copy of <span class="math-container" id="10543825" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> itself. Call this vector space <span class="math-container" id="10543826" visual_id="122176"><math alttext="T_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>p</mi></msub></semantics></math></span>. Now let <span class="math-container" id="10543827" visual_id="6716047"><math alttext="\mathcal{D}_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mi>p</mi></msub></semantics></math></span> be the set of point-derivations at <span class="math-container" id="10543828" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>, and let <span class="math-container" id="10543829" visual_id="116"><math alttext="\overline{\mathbb{R}\setminus\mathbb{Q}}=\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mi>ℝ</mi><mo>∖</mo><mi>ℚ</mi></mrow><mo>¯</mo></mover><mo>=</mo><mi>ℝ</mi></mrow></semantics></math></span> be the mapping associating a direction in <span class="math-container" id="10543830" visual_id="122176"><math alttext="T_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>p</mi></msub></semantics></math></span> to a directional derivative. Every directional derivative is actually a point-derivation, and we find out the map <span class="math-container" id="10543831" visual_id="116"><math alttext="\overline{\mathbb{R}\setminus\mathbb{Q}}=\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mi>ℝ</mi><mo>∖</mo><mi>ℚ</mi></mrow><mo>¯</mo></mover><mo>=</mo><mi>ℝ</mi></mrow></semantics></math></span> is actually an isomorphism of vector spaces.</p> <p>When we switch over to smooth manifolds, there is no longer such a nice linear structure on the space that makes it easy to think of the tangent space as we did before. Thus, we use the more general definition concept of derivations to define the tangent space.</p> <p>I am not sure what to do to convince you of the importance of the product rule - it is a natural property to be associated with the derivative, and says things like the term <span class="math-container" id="10543832" visual_id="8415785"><math alttext="(vf)(vg)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo>⁢</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo>⁢</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> doesn't matter when looking at <span class="math-container" id="10543833" visual_id="8415786"><math alttext="v(fg)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, corresponding with the linear nature of the derivative.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

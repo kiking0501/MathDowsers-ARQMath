@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Intersection of infinitely many prime ideals</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Intersection of infinitely many prime ideals </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2280817">
+<p>I was thinking of the fact that, if you take an infinite number of prime ideals <span class="math-container" id="21070960" visual_id="8011723"><math alttext="p_{i}\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>i</mi></msub><mo>⁢</mo><mi>ℤ</mi></mrow></semantics></math></span> in the ring <span class="math-container" id="21070961" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>, then their intersection is zero. What kind of commutative rings satisfy that the intersection of an infinite number of prime ideals is zero?</p> <p>Is this true for any integral domain?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> commutative-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4691757"> In addition to the answers below, I'll remark that if you change your statement to "the intersection of ALL prime ideals is zero", then this is equivalent to saying that the ring is reduced. But you probably knew this already! </td></tr><tr><td comment_id="4691767"> yep (: I regret the way I stated the question though, because now I want to  know if the thing holds for principal ideal domains. But it's my turn to do some thinking I guess </td></tr><tr><td comment_id="4691802"> The prime ideals in a PID are precisely the principal ideals of the form <span class="math-container" id="21070962" visual_id="335019"><math alttext="(p_{i})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>p</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span>, where <span class="math-container" id="21070963" visual_id="163"><math alttext="p_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>i</mi></msub></semantics></math></span> is an irreducible element. If an element <span class="math-container" id="21070964" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is contained inside infinitely many prime ideals, then it has infinitely many irreducible divisors. Since every PID is a UFD, this is impossible, unless <span class="math-container" id="21070965" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2280829" id="answer">
+<p>Take <span class="math-container" id="21070966" visual_id="575671"><math alttext="R=\mathbb{C}[x,y]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mrow><mi>ℂ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span>, polynomial ring in two variables. Consider maximal ideals <span class="math-container" id="21070967" visual_id="8595989"><math alttext="P_{a}=(x-a,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>a</mi></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>a</mi></mrow><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> where <span class="math-container" id="21070968" visual_id="6044"><math alttext="a\in\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>ℂ</mi></mrow></semantics></math></span>. Then <span class="math-container" id="21070969" visual_id="8595990"><math alttext="\cap_{a}P_{a}=(y)\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>∩</mo><mi>a</mi></msub><msub><mi>P</mi><mi>a</mi></msub></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

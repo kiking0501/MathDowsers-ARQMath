@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find the indefinite integral</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find the indefinite integral </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1261110">
+<p><span class="math-container" id="11763447" visual_id="527822"><math alttext="\int\frac{x^{3}-2x+1}{\sqrt{x}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mfrac><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow><msqrt><mi>x</mi></msqrt></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span></p> <p>First term: <span class="math-container" id="11763448" visual_id="527823"><math alttext="x^{3}=\frac{1}{4}x^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>=</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></mrow></semantics></math></span></p> <p>Second term: <span class="math-container" id="11763449" visual_id="527824"><math alttext="2x=x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></semantics></math></span></p> <p>Third term: <span class="math-container" id="11763450" visual_id="450158"><math alttext="1=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mi>x</mi></mrow></semantics></math></span></p> <p>Fourth term: <span class="math-container" id="11763451" visual_id="183123"><math alttext="\sqrt{x}=x^{1/2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>x</mi></msqrt><mo>=</mo><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></semantics></math></span></p> <p>I know the fourth term is wrong and forget how to solve that one but which other ones are wrong as well?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> indefinite-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2561973"> you should NEVER write things like "<span class="math-container" id="11763452" visual_id="527823"><math alttext="x^{3}={1\over 4}x^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>=</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></mrow></semantics></math></span>" unless that is exactly the equation you are solving! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1261123" id="answer">
+<p>write the integrand as <span class="math-container" id="11763458" visual_id="527829"><math alttext="x^{\frac{5}{2}}-2x^{\frac{1}{2}}+x^{\frac{1}{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mfrac><mn>5</mn><mn>2</mn></mfrac></msup><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup></mrow></mrow><mo>+</mo><msup><mi>x</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup></mrow></semantics></math></span> and use the fact that the antiderivative of <span class="math-container" id="11763459" visual_id="72826"><math alttext="x^{\alpha}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mi>α</mi></msup></semantics></math></span> is <span class="math-container" id="11763460" visual_id="527830"><math alttext="\frac{x^{\alpha+1}}{\alpha+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msup><mi>x</mi><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow></mfrac></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

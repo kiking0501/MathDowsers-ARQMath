@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Eularian graph, prooving certain properties.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Eularian graph, prooving certain properties. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1232987">
+<p>An Eulerian graph <strong>G</strong> has 3 vertices and 5 edges. Show that if one vertex has degree 4, then another must have degree 2. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> eulerian-path </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1232993" id="answer">
+<p>Let <span class="math-container" id="11517802" visual_id="9996"><math alttext="v_{1},v_{2},v_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>,</mo><msub><mi>v</mi><mn>3</mn></msub></mrow></semantics></math></span> be the vertices and with degrees <span class="math-container" id="11517803" visual_id="166517"><math alttext="d_{1},d_{2},d_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>,</mo><msub><mi>d</mi><mn>3</mn></msub></mrow></semantics></math></span>. As <span class="math-container" id="11517804" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> is Eulerian, <span class="math-container" id="11517805" visual_id="166517"><math alttext="d_{1},d_{2},d_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>,</mo><msub><mi>d</mi><mn>3</mn></msub></mrow></semantics></math></span> are even integers, that is <span class="math-container" id="11517806" visual_id="49972"><math alttext="0,2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow></semantics></math></span> or <span class="math-container" id="11517807" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>. If there is a vertex with degree <span class="math-container" id="11517808" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>, say <span class="math-container" id="11517809" visual_id="426311"><math alttext="d_{1}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>4</mn></mrow></semantics></math></span>, then since there are <span class="math-container" id="11517810" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span> edges, <span class="math-container" id="11517811" visual_id="2240810"><math alttext="d_{1}+d_{2}+d_{3}=10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>+</mo><msub><mi>d</mi><mn>2</mn></msub><mo>+</mo><msub><mi>d</mi><mn>3</mn></msub></mrow><mo>=</mo><mn>10</mn></mrow></semantics></math></span>, hence some vertex must be of degree <span class="math-container" id="11517812" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2507361"> Would this also be a correct way of stating the answer:  Let graph **G** be eulerian and have 3 vertices and have 5 edges. For all vertices that belong to V(G), d(u) is even, such that d(u) equals 0 or 2 or 4...  I have to write it in set notation but I'm lost on how to write the rest. </td></tr><tr><td comment_id="2507431"> Take <span class="math-container" id="11517813" visual_id="426311"><math alttext="d_{1}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>4</mn></mrow></semantics></math></span>, then <span class="math-container" id="11517814" visual_id="8707306"><math alttext="d_{2}+d_{3}=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>+</mo><msub><mi>d</mi><mn>3</mn></msub></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math></span>, the only possibility is that one is <span class="math-container" id="11517815" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> and another one <span class="math-container" id="11517816" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>. </td></tr><tr><td comment_id="2507622"> I understand what you're saying. How would I write that in set notation though? </td></tr><tr><td comment_id="2508053"> You want to which extent in set notation?... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

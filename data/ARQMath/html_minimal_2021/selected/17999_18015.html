@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>1D random walk-probability to go back to origin</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> 1D random walk-probability to go back to origin </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="17999">
+<p>Suppose there is a random walk starting at the origin such that the probability to move right is <span class="math-container">$\frac13$</span> and the probability to move left is <span class="math-container">$\frac23$</span>.</p> <p>What is the probability to return to the origin?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability-theory </span><span> markov-chains </span><span> random-walk </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="39629"> If you let the random walk continue ad infinitum? One, I would think. </td></tr><tr><td comment_id="39635"> @Noldorin: No, an asymmetric walk like this one goes off to leftward infinity with probability 1. Thus it almost surely returns to the origin only finitely many times, and has a positive probability of never returning at all. </td></tr><tr><td comment_id="39637"> @Chris: Ah right. The analysis seems very complex indeed for the asymmetric case. </td></tr><tr><td comment_id="39642"> @Noldorin: proving what I've just said isn't very hard. See e.g. sections 1.5 and 1.6 of [this book](http://www.statslab.cam.ac.uk/~james/Markov/). I can't see immediately how to adapt that kind of approach to get a precise probability rather than an estimate though. </td></tr><tr><td comment_id="39646"> @Chris: Given I have zero formal training in Markov chains, I would consider it very difficult. :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="18015" id="answer">
+<p>Let <span class="math-container" id="173438" visual_id="8275433"><math alttext="P_{i\geq 0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mrow><mi>i</mi><mo>≥</mo><mn>0</mn></mrow></msub></semantics></math></span> be the probability of ever reaching position <span class="math-container" id="173439" visual_id="365903"><math alttext="x+i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>i</mi></mrow></semantics></math></span> when starting from position <span class="math-container" id="173440" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> (this is independent of <span class="math-container" id="173441" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, since the transition probabilities are).  Clearly <span class="math-container" id="173442" visual_id="71719"><math alttext="P_{0}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, and <span class="math-container" id="173443" visual_id="8275434"><math alttext="P_{i}\rightarrow 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>→</mo><mn>0</mn></mrow></semantics></math></span> as <span class="math-container" id="173444" visual_id="109903"><math alttext="i\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> provided that the right-hop probability <span class="math-container" id="173445" visual_id="800196"><math alttext="q&amp;lt;1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>q</mi><mo>&lt;</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> (in this case <span class="math-container" id="173446" visual_id="957847"><math alttext="q=1/3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></mrow></semantics></math></span>).  Otherwise, <span class="math-container" id="173447" visual_id="8275435"><math alttext="P_{i}=qP_{i-1}+(1-q)P_{i+1}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>=</mo><mrow><mrow><mi>q</mi><mo>⁢</mo><msub><mi>P</mi><mrow><mi>i</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> You can guess the solution to be of the form <span class="math-container" id="173448" visual_id="8275436"><math alttext="P_{i}=\alpha^{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub><mo>=</mo><msup><mi>α</mi><mi>i</mi></msup></mrow></semantics></math></span> for some <span class="math-container" id="173449" visual_id="39913"><math alttext="0&amp;lt;\alpha&amp;lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mrow><mi>α</mi><mo>&lt;</mo></mrow><mn>1</mn></mrow></semantics></math></span>.  This turns out to satisfy the conditions if <span class="math-container" id="173450" visual_id="8275437"><math alttext="\alpha=q+(1-q)\alpha^{2}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>α</mi><mo>=</mo><mrow><mi>q</mi><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>α</mi><mn>2</mn></msup></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> which has the solution <span class="math-container" id="173451" visual_id="8275438"><math alttext="\alpha=q/(1-q)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mrow><mi>q</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> in this case.</p> <p>For the problem specified, you want to know the total probability of returning to the origin after the first step.  If the first step is to the right (which happens with probability <span class="math-container" id="173452" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span>), then you must return to the origin; if it is to the left (with probability <span class="math-container" id="173453" visual_id="26004"><math alttext="1-q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>-</mo><mi>q</mi></mrow></semantics></math></span>), then you will return to the origin with probability <span class="math-container" id="173454" visual_id="8275439"><math alttext="P_{1}=\alpha=q/(1-q)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>1</mn></msub><mo>=</mo><mi>α</mi><mo>=</mo><mrow><mi>q</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.  So the solution is <span class="math-container" id="173455" visual_id="8275440"><math alttext="P_{\text{return}}=q+(1-q)\alpha=q+(1-q)\frac{q}{1-q}=2q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mtext>return</mtext></msub><mo>=</mo><mrow><mi>q</mi><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>α</mi></mrow></mrow><mo>=</mo><mrow><mi>q</mi><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mi>q</mi><mrow><mn>1</mn><mo>-</mo><mi>q</mi></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>q</mi></mrow></mrow></semantics></math></span> for general <span class="math-container" id="173456" visual_id="800196"><math alttext="q&amp;lt;1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>q</mi><mo>&lt;</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>, and <span class="math-container" id="173457" visual_id="8275441"><math alttext="P_{\text{return}}=2/3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mtext>return</mtext></msub><mo>=</mo><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></semantics></math></span> in this case.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="39675"> I am not sure. I must miss something, but with your computation: $P_{1}=\frac{\frac{1}{3}}{\frac{<span class="math-container" id="411310">2</span>}{3}}=0.5$. But I think it should be $\frac{1}{3}\cdot\frac{<span class="math-container" id="411311">2</span>}{3}+\frac{2}{3}\cdot\frac{1}{3}=0.<span class="math-container" id="411312">4</span>444$. What is the problem with my computation? </td></tr><tr><td comment_id="39679"> "i" could be negative so we could get probability greater then one which is not possible </td></tr><tr><td comment_id="39680"> @daroczig: Your <span class="math-container" id="173462" visual_id="4762"><math alttext="P_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>n</mi></msub></semantics></math></span> is the probability of returning to the origin from the origin in exactly <span class="math-container" id="173461" visual_id="3953"><math alttext="2n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></semantics></math></span> steps.  My <span class="math-container" id="173462" visual_id="4762"><math alttext="P_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>n</mi></msub></semantics></math></span> is the probability of _ever_ returning to the origin starting from position <span class="math-container" id="173463" visual_id="56036"><math alttext="(-n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>.  And my calculation is specifically for non-negative <span class="math-container" id="173464" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>... the probability of returning to the origin starting from any position to the right of the origin is 1. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1060425"> How can this paradox be resolved? </td></tr><tr><td post_id="1206783"> Question about random walk markov chain </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Basic Epsilon-N proof clarification</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Basic Epsilon-N proof clarification </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="103626">
+<p>It's been a couple years since I've done analysis, so I was hoping someone could point out any possible flaws I have in the following proof.</p> <p>Prove <span class="math-container" id="1191236" visual_id="93714"><math alttext="\lim_{n\to\infty}\frac{2^{n}}{n!}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><msup><mn>2</mn><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>For <span class="math-container" id="1191237" visual_id="10503"><math alttext="n&amp;gt;2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>&gt;</mo></mrow><mn>2</mn></mrow></semantics></math></span>, we have: <span class="math-container" id="1191238" visual_id="8497613"><math alttext="\lim_{n\to\infty}\frac{2^{n}}{n!}=\lim_{n\to\infty}\frac{2^{2}}{2!}\times\frac% {2}{3}\times\frac{2}{4}\times\frac{2}{5}\times\cdots\times\frac{2}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><msup><mn>2</mn><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mfrac><msup><mn>2</mn><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>×</mo><mi mathvariant="normal">⋯</mi><mo>×</mo><mfrac><mn>2</mn><mi>n</mi></mfrac></mrow></mrow></mrow></semantics></math></span>.</p> <p>Need to show that <span class="math-container" id="1191239" visual_id="8497614"><math alttext="\frac{2^{2}}{2!}\times\frac{2}{3}\times\frac{2}{4}\times\frac{2}{5}\times% \cdots\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><msup><mn>2</mn><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>×</mo><mi mathvariant="normal">⋯</mi></mrow><mo>→</mo><mn>0</mn></mrow></semantics></math></span>. In other words, need to show that <span class="math-container" id="1191240" visual_id="3163561"><math alttext="\lim_{n\to\infty}\frac{2}{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mn>2</mn><mi>n</mi></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>:</p> <p><span class="math-container" id="1191241" visual_id="8497615"><math alttext="\forall\epsilon\in\mathbb{N}^{+},\exists N\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>∀</mo><mi>ϵ</mi></mrow><mo>∈</mo><msup><mi>ℕ</mi><mo>+</mo></msup></mrow><mo>,</mo><mrow><mrow><mo>∃</mo><mi>N</mi></mrow><mo>∈</mo><mi>ℕ</mi></mrow></mrow></semantics></math></span> such that <span class="math-container" id="1191242" visual_id="101319"><math alttext="\forall n&amp;gt;N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∀</mo><mrow><mi>n</mi><mo>&gt;</mo></mrow></mrow><mi>N</mi></mrow></semantics></math></span> we have <span class="math-container" id="1191243" visual_id="1372530"><math alttext="\frac{2}{n}&amp;lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>2</mn><mi>n</mi></mfrac><mo>&lt;</mo></mrow><mi>ϵ</mi></mrow></semantics></math></span>. Take <span class="math-container" id="1191244" visual_id="65391"><math alttext="N=\frac{2}{\epsilon}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mfrac><mn>2</mn><mi>ϵ</mi></mfrac></mrow></semantics></math></span>. Since <span class="math-container" id="1191245" visual_id="3182"><math alttext="n&amp;gt;N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>&gt;</mo></mrow><mi>N</mi></mrow></semantics></math></span> we have <span class="math-container" id="1191246" visual_id="90915"><math alttext="n&amp;gt;\frac{2}{\epsilon}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>&gt;</mo></mrow><mfrac><mn>2</mn><mi>ϵ</mi></mfrac></mrow></semantics></math></span>. Thus <span class="math-container" id="1191247" visual_id="1372530"><math alttext="\frac{2}{n}&amp;lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>2</mn><mi>n</mi></mfrac><mo>&lt;</mo></mrow><mi>ϵ</mi></mrow></semantics></math></span>. Therefore  <span class="math-container" id="1191248" visual_id="3163561"><math alttext="\lim_{n\to\infty}\frac{2}{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mn>2</mn><mi>n</mi></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>And so <span class="math-container" id="1191249" visual_id="8497616"><math alttext="\lim_{n\to\infty}\frac{2^{2}}{2!}\times\frac{2}{3}\times\frac{2}{4}\times\frac% {2}{5}\times...\times\frac{2}{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mfrac><msup><mn>2</mn><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>×</mo><mi mathvariant="normal">…</mi><mo>×</mo><mfrac><mn>2</mn><mi>n</mi></mfrac></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>Then <span class="math-container" id="1191250" visual_id="93714"><math alttext="\lim_{n\to\infty}\frac{2^{n}}{n!}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><msup><mn>2</mn><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="103639" id="answer">
+<p>A couple of things: first of all, writing <span class="math-container" id="1191251" visual_id="8497617"><math alttext="\lim_{n\to\infty}\frac{2}{n}=0\ \ \Rightarrow\ \lim_{n\to\infty}\frac{2^{2}}{2% !}\times\frac{2}{3}\times\frac{2}{4}\times\frac{2}{5}\times...\times\frac{2}{n% }=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><mn>2</mn><mi>n</mi></mfrac><mo>=</mo><mn>0</mn><mo mathvariant="italic" separator="true"> </mo><mo rspace="7.5pt">⇒</mo><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mfrac><msup><mn>2</mn><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>×</mo><mi mathvariant="normal">…</mi><mo>×</mo><mfrac><mn>2</mn><mi>n</mi></mfrac><mo>=</mo><mn>0</mn></mrow></semantics></math></span> isn't completely rigorous, unless you observe that all the factors before <span class="math-container" id="1191252" visual_id="65394"><math alttext="\frac{2}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>2</mn><mi>n</mi></mfrac></semantics></math></span> are <span class="math-container" id="1191253" visual_id="10797"><math alttext="&amp;lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>t</mi></mrow><mo>;</mo><mn>1</mn></mrow></semantics></math></span> (except for the first, which is <span class="math-container" id="1191254" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>), which implies that their product is too. Thus you can write: <span class="math-container" id="1191255" visual_id="8497618"><math alttext="0&amp;lt;\frac{2^{2}}{2!}\times\frac{2}{3}\times\frac{2}{4}\times\frac{2}{5}\times% ...\times\frac{2}{n}&amp;lt;2\cdot 1\cdot\frac{2}{n}\rightarrow 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>0</mn><mo>&lt;</mo></mrow><mrow><mrow><mfrac><msup><mn>2</mn><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>4</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>×</mo><mi mathvariant="normal">…</mi><mo>×</mo><mfrac><mn>2</mn><mi>n</mi></mfrac></mrow><mo>&lt;</mo></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>1</mn><mo>⋅</mo><mfrac><mn>2</mn><mi>n</mi></mfrac></mrow></mrow><mo>→</mo><mn>0</mn></mrow></semantics></math></span> because, as you have proved, <span class="math-container" id="1191256" visual_id="628870"><math alttext="2/n\rightarrow 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>/</mo><mi>n</mi></mrow><mo>→</mo><mn>0</mn></mrow></semantics></math></span>. Whithout this observation the statement isn't justified, since all the accumulating factors could have resulted in an unbounded quantity. <br/> Also another minor consideration: in your proof that <span class="math-container" id="1191257" visual_id="3163561"><math alttext="\lim_{n\to\infty}\frac{2}{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mn>2</mn><mi>n</mi></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> your <span class="math-container" id="1191258" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> should be a natural number, such as  <span class="math-container" id="1191259" visual_id="5846203"><math alttext="N=\left[\frac{2}{\epsilon}\right]+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mrow><mrow><mo>[</mo><mfrac><mn>2</mn><mi>ϵ</mi></mfrac><mo>]</mo></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

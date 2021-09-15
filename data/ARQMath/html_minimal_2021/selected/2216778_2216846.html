@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>sum of squares of diagonal binomial coefficients.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> sum of squares of diagonal binomial coefficients. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2216778">
+<p>My question is if there exists a way to evaluate the sum</p> <p><span class="math-container" id="20481943" visual_id="4895749"><math alttext="{{s}\choose{s}}^{\!2}+{{s+1}\choose{s}}^{\!2}+\ldots{{s+r}\choose{s}}^{\!2}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>s</mi><mi>s</mi></mfrac><mo>)</mo></mrow><mpadded lspace="-1.7pt" width="-1.7pt"><mn>2</mn></mpadded></msup><mo>+</mo><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>s</mi><mo>+</mo><mn>1</mn></mrow><mi>s</mi></mfrac><mo>)</mo></mrow><mpadded lspace="-1.7pt" width="-1.7pt"><mn>2</mn></mpadded></msup><mo>+</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>s</mi><mo>+</mo><mi>r</mi></mrow><mi>s</mi></mfrac><mo>)</mo></mrow><mpadded lspace="-1.7pt" width="-1.7pt"><mn>2</mn></mpadded></msup></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>In other words, it's the sum of the squares of the first r binomial coefficients on the s-th right-to-left diagonal of Pascal's triangle. Moreover, is it true that the previous sum is <span class="math-container" id="20481944" visual_id="4895750"><math alttext="O_{\!s}(r^{s})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>O</mi><mpadded lspace="-1.7pt" width="-1.7pt"><mi>s</mi></mpadded></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>r</mi><mi>s</mi></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> combinatorics </span><span> number-theory </span><span> summation </span><span> binomial-coefficients </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4561210"> MO copy of the question: [Sum of squares of diagonal binomial coefficients](http://mathoverflow.net/q/266326) </td></tr><tr><td comment_id="4561212"> You might have a look at some [basic info about cross posting](https://math.meta.stackexchange.com/tags/cross-posting/info). Especially [this answer on meta](https://math.meta.stackexchange.com/questions/5085/moderator-supported-official-guidelines-for-legitimate-crossposting/5088#5088) gives a very reasonable advice. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2216846" id="answer">
+<p>I don't think there's a nice closed form.  </p> <p>For the second question, perhaps you mean <span class="math-container" id="20481945" visual_id="4895751"><math alttext="O(r^{2s+1})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>r</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, not <span class="math-container" id="20481946" visual_id="4895752"><math alttext="O(r^{s})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>r</mi><mi>s</mi></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.  In fact, for each fixed positive integer <span class="math-container" id="20481947" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span>, <span class="math-container" id="20481948" visual_id="4895753"><math alttext="{s+x\choose s}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>s</mi><mo>+</mo><mi>x</mi></mrow><mi>s</mi></mfrac><mo>)</mo></mrow></semantics></math></span> is a polynomial in <span class="math-container" id="20481949" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> of degree <span class="math-container" id="20481950" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span>, so <span class="math-container" id="20481951" visual_id="4895754"><math alttext="{s+x\choose s}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>s</mi><mo>+</mo><mi>x</mi></mrow><mi>s</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup></semantics></math></span> is a polynomial in <span class="math-container" id="20481952" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> of degree <span class="math-container" id="20481953" visual_id="87556"><math alttext="2s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></semantics></math></span>, and the partial sum <span class="math-container" id="20481954" visual_id="4895755"><math alttext="{s+0\choose s}^{2}+{s+1\choose s}^{2}+\ldots{s+r\choose s}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>s</mi><mo>+</mo><mn>0</mn></mrow><mi>s</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>s</mi><mo>+</mo><mn>1</mn></mrow><mi>s</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>s</mi><mo>+</mo><mi>r</mi></mrow><mi>s</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></semantics></math></span> is a polynomial in <span class="math-container" id="20481955" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> of degree <span class="math-container" id="20481956" visual_id="110542"><math alttext="2s+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

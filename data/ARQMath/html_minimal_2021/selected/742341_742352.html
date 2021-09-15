@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find the last two digits of the number $9^{9^9}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find the last two digits of the number <span class="math-container" id="7373228" visual_id="1231712"><math alttext="9^{9^{9}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>9</mn><msup><mn>9</mn><mn>9</mn></msup></msup></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="742341">
+<blockquote> <p>Find the last two digits of the number <span class="math-container" id="7373229" visual_id="1231712"><math alttext="9^{9^{9}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>9</mn><msup><mn>9</mn><mn>9</mn></msup></msup></semantics></math></span> . </p> </blockquote> <p>[Hint: <span class="math-container" id="7373230" visual_id="4494218"><math alttext="9^{9}\equiv 9\pmod{10}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>9</mn><mn>9</mn></msup><mo>≡</mo><mrow><mn>9</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>10</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>; hence, <span class="math-container" id="7373231" visual_id="1231712"><math alttext="9^{9^{9}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>9</mn><msup><mn>9</mn><mn>9</mn></msup></msup></semantics></math></span> = <span class="math-container" id="7373232" visual_id="4494219"><math alttext="9^{9}+10k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>9</mn><mn>9</mn></msup><mo>+</mo><mrow><mn>10</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></semantics></math></span> ;now use the fact that <span class="math-container" id="7373233" visual_id="4494220"><math alttext="9^{9}\equiv 89\pmod{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>9</mn><mn>9</mn></msup><mo>≡</mo><mrow><mn>89</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>]</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1547583"> Do you mean <span class="math-container" id="7373234" visual_id="4494221"><math alttext="9\uparrow(9\uparrow 9)=9^{9^{9}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>↑</mo><mrow><mo stretchy="false">(</mo><mn>9</mn><mo>↑</mo><mn>9</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mn>9</mn><msup><mn>9</mn><mn>9</mn></msup></msup></mrow></semantics></math></span> or <span class="math-container" id="7373235" visual_id="4494222"><math alttext="(9\uparrow 9)\uparrow 9=(9^{9})^{9}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>9</mn><mo>↑</mo><mn>9</mn><mo stretchy="false">)</mo></mrow><mo>↑</mo><mn>9</mn><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mn>9</mn><mn>9</mn></msup><mo stretchy="false">)</mo></mrow><mn>9</mn></msup></mrow></semantics></math></span>? Parentheses aren't optional here. </td></tr><tr><td comment_id="1547601"> there are no parentheses </td></tr><tr><td comment_id="1547613"> @DavidH He means, <span class="math-container" id="7373268" visual_id="1231712"><math alttext="9^{9^{9}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>9</mn><msup><mn>9</mn><mn>9</mn></msup></msup></semantics></math></span> I *think* </td></tr><tr><td comment_id="1547624"> @Lil Yes, and you should fix that. </td></tr><tr><td comment_id="1547633"> @Sabyasachi I guessed that too. But I firmly believe pedantry is a virtue in mathematics. ;) </td></tr><tr><td comment_id="1547637"> @DavidH I agree. </td></tr><tr><td comment_id="1624256"> Lil, why do you want solutions to old homework problems?  (This problem is from [here](http://pat-rossi.com/MTH4436/homework/p_73_1.pdf)). </td></tr><tr><td comment_id="2120602"> Also, [Find the last two digits of 9^(9^9)](http://math.stackexchange.com/questions/657131/find-the-last-two-digits-of-999?rq=1) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="742352" id="answer">
+<p><span class="math-container" id="7373272" visual_id="4494238"><math alttext="9^{9^{9}}=(10-1)^{9^{9}}\equiv(-1)^{9^{9}}+9^{9}\cdot 10^{1}\cdot(-1)^{9^{9}-1% }\equiv-1=10\cdot 9^{9}\pmod{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>9</mn><msup><mn>9</mn><mn>9</mn></msup></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>10</mn><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><msup><mn>9</mn><mn>9</mn></msup></msup><mo>≡</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><msup><mn>9</mn><mn>9</mn></msup></msup><mo>+</mo><mrow><msup><mn>9</mn><mn>9</mn></msup><mo>⋅</mo><msup><mn>10</mn><mn>1</mn></msup><mo>⋅</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><msup><mn>9</mn><mn>9</mn></msup><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>≡</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mrow><mrow><mn>10</mn><mo>⋅</mo><msup><mn>9</mn><mn>9</mn></msup></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Now, <span class="math-container" id="7373273" visual_id="4494239"><math alttext="\displaystyle 9^{9}=(10-1)^{9}\equiv-1\pmod{10}\implies 10\cdot 9^{9}\equiv-10% \pmod{10\cdot 10}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>9</mn><mn>9</mn></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>10</mn><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>9</mn></msup><mo>≡</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mn>10</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⟹</mo><mrow><mn>10</mn><mo>⋅</mo><msup><mn>9</mn><mn>9</mn></msup></mrow><mo>≡</mo><mrow><mrow><mo>-</mo><mn>10</mn></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mrow><mn>10</mn><mo>⋅</mo><mn>10</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="7373274" visual_id="4494240"><math alttext="\implies 9^{9^{9}}\equiv-1-10\pmod{100}\equiv 100-11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>⟹</mo><msup><mn>9</mn><msup><mn>9</mn><mn>9</mn></msup></msup><mo>≡</mo><mrow><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>-</mo><mn>10</mn></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mrow><mn>100</mn><mo>-</mo><mn>11</mn></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1559369"> Minor typo in first line: Should be <span class="math-container" id="7373275" visual_id="4494241"><math alttext="\equiv-1\color{green}{+}10\cdot 9^{9}(\text{mod }100)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>≡</mo><mrow><mrow><mo>-</mo><mrow><mn>1</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\color</mtext></merror><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>+</mo><mrow><mrow><mn>10</mn><mo>⋅</mo><msup><mn>9</mn><mn>9</mn></msup></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mtext>mod </mtext><mo>⁢</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="842643"> Find the last two digits of <span class="math-container" id="8208629" visual_id="1231712"><math alttext="9^{{9}^{9}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>9</mn><msup><mn>9</mn><mn>9</mn></msup></msup></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2931177"> What is the remainder of </td></tr><tr><td post_id="1585795"> How is <span class="math-container" id="14649879" visual_id="5291162"><math alttext="9^{40}\equiv\ 1\pmod{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>9</mn><mn>40</mn></msup><mo>≡</mo><mrow><mn> 1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="657131"> Find the last two digits of <span class="math-container" id="6633536" visual_id="1231712"><math alttext="9^{9^{9}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>9</mn><msup><mn>9</mn><mn>9</mn></msup></msup></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to solve inhomogeneous quadratic forms in integers?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to solve inhomogeneous quadratic forms in integers? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="9269">
+<p>If I have a quadratic form like <span class="math-container" id="82353" visual_id="8252216"><math alttext="y^{2}-x^{2}-x=k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi></mrow><mo>=</mo><mi>k</mi></mrow></semantics></math></span> none of the techniques I know work because of the nasty <span class="math-container" id="82354" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>. Note that homogenizing doesn't work because a solution of <span class="math-container" id="82355" visual_id="8252217"><math alttext="Y^{2}-X^{2}-XZ=kZ^{(2)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>Y</mi><mn>2</mn></msup><mo>-</mo><msup><mi>X</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Z</mi></mrow></mrow><mo>=</mo><mrow><mi>k</mi><mo>⁢</mo><msup><mi>Z</mi><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></msup></mrow></mrow></semantics></math></span> does not lead to a solution of the original equation in integers, at least as far as I have been able to determine.</p> <p>How does one understand the solution set of these equation? How can I solve them?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> diophantine-equations </span><span> quadratic-forms </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="9288" id="answer">
+<p>Over 200 years ago Lagrange solved the general binary quadratic Diophatine equation</p> <p><span class="math-container" id="82356" visual_id="1808622"><math alttext="\rm a\ x^{2}+b\ xy+c\ y^{2}+d\ x+e\ y+f=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mpadded width="+5pt"><mi mathvariant="normal">a</mi></mpadded><mo>⁢</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mpadded width="+5pt"><mi mathvariant="normal">b</mi></mpadded><mo>⁢</mo><mi>xy</mi></mrow><mo>+</mo><mrow><mpadded width="+5pt"><mi mathvariant="normal">c</mi></mpadded><mo>⁢</mo><msup><mi mathvariant="normal">y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mpadded width="+5pt"><mi mathvariant="normal">d</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">x</mi></mrow><mo>+</mo><mrow><mpadded width="+5pt"><mi mathvariant="normal">e</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">y</mi></mrow><mo>+</mo><mi mathvariant="normal">f</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>It reduces to a Pell equation: put <span class="math-container" id="82357" visual_id="1808623"><math alttext="\rm\ D=b^{2}-4ac,\ E=bd-2ae,\ F=d^{2}-4af\&gt;.\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mpadded lspace="5pt" width="+5pt"><mi mathvariant="normal">D</mi></mpadded><mo>=</mo><mrow><msup><mi mathvariant="normal">b</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi mathvariant="normal">a</mi><mo>⁢</mo><mi mathvariant="normal">c</mi></mrow></mrow></mrow><mo rspace="7.5pt">,</mo><mrow><mrow><mi mathvariant="normal">E</mi><mo>=</mo><mrow><mi>bd</mi><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi mathvariant="normal">a</mi><mo>⁢</mo><mi mathvariant="normal">e</mi></mrow></mrow></mrow><mo rspace="7.5pt">,</mo><mrow><mi mathvariant="normal">F</mi><mo>=</mo><mrow><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi mathvariant="normal">a</mi><mo>⁢</mo><mpadded width="+2.2pt"><mi mathvariant="normal">f</mi></mpadded></mrow></mrow></mrow></mrow></mrow><mo rspace="7.5pt">.</mo></mrow></semantics></math></span> Then</p> <p><span class="math-container" id="82358" visual_id="1808624"><math alttext="\rm D\ Y^{2}\ =\ (D\ y+E)^{2}+D\ F-E^{2},\quad\quad Y\ =\ 2ax+by+d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mpadded width="+5pt"><mi mathvariant="normal">D</mi></mpadded><mo>⁢</mo><mpadded width="+5pt"><msup><mi mathvariant="normal">Y</mi><mn>2</mn></msup></mpadded></mrow><mo rspace="7.5pt">=</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mpadded width="+5pt"><mi mathvariant="normal">D</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">y</mi></mrow><mo>+</mo><mi mathvariant="normal">E</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mrow><mpadded width="+5pt"><mi mathvariant="normal">D</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">F</mi></mrow></mrow><mo>-</mo><msup><mi mathvariant="normal">E</mi><mn>2</mn></msup></mrow></mrow><mo rspace="22.5pt">,</mo><mrow><mpadded width="+5pt"><mi mathvariant="normal">Y</mi></mpadded><mo>=</mo><mrow><mrow><mn> 2</mn><mo>⁢</mo><mi>ax</mi></mrow><mo>+</mo><mi>by</mi><mo>+</mo><mi mathvariant="normal">d</mi></mrow></mrow></mrow></semantics></math></span></p> <p>Therefore if we put <span class="math-container" id="82359" visual_id="1808625"><math alttext="\rm\quad\ \ X=D\ y+E,\quad\ \ N=E^{2}-D\ F\quad\ \ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mpadded lspace="20pt" width="+20pt"><mi mathvariant="normal">X</mi></mpadded><mo>=</mo><mrow><mrow><mpadded width="+5pt"><mi mathvariant="normal">D</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">y</mi></mrow><mo>+</mo><mi mathvariant="normal">E</mi></mrow></mrow><mo rspace="22.5pt">,</mo><mrow><mi mathvariant="normal">N</mi><mo>=</mo><mrow><msup><mi mathvariant="normal">E</mi><mn>2</mn></msup><mo>-</mo><mrow><mpadded width="+5pt"><mi mathvariant="normal">D</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">F</mi></mrow></mrow></mrow></mrow><mo mathvariant="italic" separator="true">  </mo></mrow></semantics></math></span> we have the Pell equation</p> <p><span class="math-container" id="82360" visual_id="1808626"><math alttext="\rm X^{2}-D\ Y^{2}\ =\ N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi mathvariant="normal">X</mi><mn>2</mn></msup><mo>-</mo><mrow><mpadded width="+5pt"><mi mathvariant="normal">D</mi></mpadded><mo>⁢</mo><mpadded width="+5pt"><msup><mi mathvariant="normal">Y</mi><mn>2</mn></msup></mpadded></mrow></mrow><mo rspace="7.5pt">=</mo><mi mathvariant="normal">N</mi></mrow></semantics></math></span></p> <p>Dario Alpern has a web page <a href="http://www.alpertron.com.ar/QUAD.HTM">Quadratic two integer variable equation solver</a> that will solve any such equation - with complete descriptions of the methods involved. For some  recent optimizations of Lagrange's algorithm see this paper H. C. Williams et al. <a href="http://www.springerlink.com/content/58614q7346xg2650/fulltext.pdf">A new look at an old equation</a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1950366"> In particular, consider the equation \begin{equation} 4a(b^2-4ac)(ax^2+bxy+cy^2+dx+ey+f) = 0, \end{equation} where <span class="math-container" id="82361" visual_id="632"><math alttext="a,b,c,d,e,f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi></mrow></semantics></math></span> are arbitrary. As long as <span class="math-container" id="82362" visual_id="2161692"><math alttext="a(b^{2}-4ac)\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>, we can assume <span class="math-container" id="82363" visual_id="149628"><math alttext="ax^{2}+bxy+cy^{2}+dx+ey+f=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>e</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mi>f</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, and we have the Pell equation \begin{align*}  \bigl((b^2-4ac)y-2ae+bd\bigr)^2 - (b^2-4ac)(2ax+by+d)^2   &amp;= 4a(ae^2+b^2f+cd^2-bde-4acf). \end{align*} </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="673836"> Enumerating integer solutions to quadratic equations </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="25569"> Formula for <span class="math-container" id="256318" visual_id="8296719"><math alttext="\binom{n}{2}/\binom{m}{2}=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mn>2</mn></mfrac><mo>)</mo></mrow><mo>/</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>m</mi><mn>2</mn></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> or <span class="math-container" id="256319" visual_id="8296720"><math alttext="2n(n-1)=m(m-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="2869251"> Integer points on a hyperbola </td></tr><tr><td post_id="486725"> Squaring an integer quadratic </td></tr><tr><td post_id="1798480"> Find all solutions to the Diophantine equation <span class="math-container" id="16621456" visual_id="57644"><math alttext="x^{2}-7y^{2}=-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>7</mn><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="2399449"> Finding integer solutions to a quadratic equation in 2 variables </td></tr><tr><td post_id="855164"> Extension of quadratic forms </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

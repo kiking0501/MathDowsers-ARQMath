@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proof By Contradiction With Rational and Irrational Numbers</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proof By Contradiction With Rational and Irrational Numbers </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="303963">
+<p>The question I am working on is:</p> <blockquote> <p>Use a proof by contradiction to prove that the sum of an irrational number and a rational number is irrational.</p> </blockquote> <p>After searching through Google, to see if this particular question had been asked before, I found this: <a href="http://answers.yahoo.com/question/index?qid=20081012182747AA3AaHz" rel="nofollow">http://answers.yahoo.com/question/index?qid=20081012182747AA3AaHz</a></p> <p>I am looking exclusively at Charles' answer. I understand the proof, and its steps, I just don't understand how it proves the original statement is true; I only see it as proving that, if you add two rational numbers, you get another rational number. Could someone help me?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> proof-writing </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="658420"> Do you understand proof by contradiction? </td></tr><tr><td comment_id="658423"> @ThomasAndrews Yes, I do. Essentially, the idea is that you proof that something, say <span class="math-container" id="3299951" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span>, implies something that is, say <span class="math-container" id="3299948" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>, and something that isn't, say <span class="math-container" id="3299944" visual_id="23293"><math alttext="\neg p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow></semantics></math></span>. Hence, <span class="math-container" id="3299945" visual_id="6789500"><math alttext="q\implies(p\wedge\neg p)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>⟹</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> Which is absurd: something can't both be and not be at the same time--unless, of course, we are discussing quantum mechanics. </td></tr><tr><td comment_id="658427"> Okay, now define your <span class="math-container" id="3299948" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> and <span class="math-container" id="3299951" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span>. </td></tr><tr><td comment_id="658432"> Well, I know that <span class="math-container" id="3299948" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> would definitely be that "<span class="math-container" id="3299958" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> is irrational"; however, I am not sure exactly what <span class="math-container" id="3299951" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> would be. Would <span class="math-container" id="3299951" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> be "the sum of a rational and irrational number?" </td></tr><tr><td comment_id="4699752"> @Mack  q⟹(p∧¬p) isn't saying that something is: `both be and not be at the same time` For instance if p is true then ¬p is false, it's not saying that p=¬p, such would be false which is the same logic here: p∧¬p. Ultimately they're not the same, and they are logical opposites. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="303973" id="answer">
+<p>He starts by assuming you can find rational <span class="math-container" id="3299952" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> and irrational <span class="math-container" id="3299953" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> that have rational sum <span class="math-container" id="3299954" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span>.  Using a direct proof that the difference of two rationals is rational, he shows that this assumption leads to a contradiction.  Therefore you cannot find a rational and irrational that sum to a rational, so the sum of a rational and irrational is always irrational.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="658426"> Oh, I see. It's as if we have two cases: a rational + irrational can equal either a rational or irrational; we've ruled out that it can't be rational, therefore, it must be irrational. Is that correct thinking? </td></tr><tr><td comment_id="658437"> Yes. Basically, the definition of "irrational" is "not rational." So when he shows that a number is irrational and rational, he has his contradiction. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

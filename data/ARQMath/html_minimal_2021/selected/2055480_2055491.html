@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Conditional convergence of a power series on the $z \in \mathbb{C}$ for which $|z|=\rho$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Conditional convergence of a power series on the <span class="math-container" id="19009227" visual_id="2388"><math alttext="z\in\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>∈</mo><mi>ℂ</mi></mrow></semantics></math></span> for which <span class="math-container" id="19009228" visual_id="539441"><math alttext="|z|=\rho" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mi>ρ</mi></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2055480">
+<p>Consider the following complex power series  <span class="math-container" id="19009229" visual_id="3388688"><math alttext="\sum_{n\geq 1}\frac{z^{n}}{n}\,\,\,\,\,\,\,z\in\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><mfrac><msup><mi>z</mi><mi>n</mi></msup><mi>n</mi></mfrac></mrow><mo mathvariant="italic" separator="true">  </mo><mi>z</mi></mrow><mo>∈</mo><mi>ℂ</mi></mrow></semantics></math></span></p> <p>It surely converges conditionally for <span class="math-container" id="19009230" visual_id="39311"><math alttext="z=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> (for alternating series test) and for <span class="math-container" id="19009231" visual_id="11045"><math alttext="z=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> it diverges (it is the harmonic series). </p> <p>My question is: how can one show that the power series converges conditionally for <strong>any</strong> <span class="math-container" id="19009232" visual_id="2388"><math alttext="z\in\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>∈</mo><mi>ℂ</mi></mrow></semantics></math></span> such that <span class="math-container" id="19009233" visual_id="9380"><math alttext="|z|=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> (except for <span class="math-container" id="19009234" visual_id="11045"><math alttext="z=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>)?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span><span> complex-analysis </span><span> convergence-divergence </span><span> power-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4219333"> The complex version of [Abel's test](https://en.m.wikipedia.org/wiki/Abel's_test) will work for this purpose. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2055491" id="answer">
+<p>We can use the <a href="https://en.wikipedia.org/wiki/Dirichlet's_test" rel="nofollow noreferrer"><strong>Dirichlet's test</strong></a> to prove the desired result: with <span class="math-container" id="19009235" visual_id="23699"><math alttext="a_{n}=\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> and <span class="math-container" id="19009236" visual_id="3388689"><math alttext="b_{n}=e^{in\theta}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mi>n</mi></msub><mo>=</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>θ</mi></mrow></msup></mrow></semantics></math></span> we verify that</p> <ul> <li><span class="math-container" id="19009237" visual_id="4141"><math alttext="(a_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> is decreasing to 0</li> <li><span class="math-container" id="19009238" visual_id="3388690"><math alttext="\sum_{n=1}^{N}b_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msub><mi>b</mi><mi>n</mi></msub></mrow></semantics></math></span> is bounded</li> </ul> <p>so the series <span class="math-container" id="19009239" visual_id="265923"><math alttext="\sum a_{n}b_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> is convergent.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="193542"> Behavior of <span class="math-container" id="2244724" visual_id="6011731"><math alttext="\sum_{n=1}^{\infty}n^{-1}z^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>n</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>z</mi><mi>n</mi></msup></mrow></mrow></semantics></math></span> on the circle of convergence </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

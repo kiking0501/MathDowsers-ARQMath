@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>If I flip a coin $n$ times, what is the expected maximum number of heads or tails in a row?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> If I flip a coin <span class="math-container" id="11846385" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> times, what is the expected maximum number of heads or tails in a row? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1271874">
+<p><strong>Question:</strong> If I flip a coin <span class="math-container" id="11846386" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> times, what is the maximum number of heads or tails in a row that I should expect?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> statistics </span><span> probability-theory </span><span> expectation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2582881"> See [this related question](http://math.stackexchange.com/questions/4658/what-is-the-probability-of-a-coin-landing-tails-7-times-in-a-row-in-a-series-of) </td></tr><tr><td comment_id="2582890"> As for the question of "flipping an infinite number of times," you seem to greatly misunderstand the meaning of infinity.  What will be true is that with a fair coin and an "infinite" number of coinflips, that any **finite-length** sequence of heads/tails will appear in the sequence, such as a billion heads in a row.  You cannot get an infinite string of heads however as that would contradict the notion that the coin is fair.  See [Normal Number](http://en.wikipedia.org/wiki/Normal_number).  Such a sequence of heads/tails could help us create a binary normal number. </td></tr><tr><td comment_id="2582896"> @JMoravitz "grossly" is a bit strong </td></tr><tr><td comment_id="2582899"> @JMoravitz: I cleaned up the question a bit as the part about an infinite number of flips does not seem well phrased. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1271917" id="answer">
+<p>This is not an easy question. </p> <p>Let <span class="math-container" id="11846387" visual_id="560595"><math alttext="Z_{0}(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Z</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be a random variable denoting the longest sequence of heads in a sequence of <span class="math-container" id="11846388" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> flips. In 1980, Guibas and Odlyzko showed that <span class="math-container" id="11846389" visual_id="560596"><math alttext="\mathbb{E}(Z_{0}(n))=\log_{2}(n)+\frac{\gamma}{\log 2}-\frac{3}{2}+\rho_{0}(n)% +o(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>Z</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><msub><mi>log</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mfrac><mi>γ</mi><mrow><mi>log</mi><mo>⁡</mo><mn>2</mn></mrow></mfrac></mrow><mo>-</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow><mo>+</mo><mrow><msub><mi>ρ</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>o</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="11846390" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span> is the <a href="http://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant" rel="nofollow">Euler-Mascheroni constant</a>, and <span class="math-container" id="11846391" visual_id="560597"><math alttext="\rho_{0}(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is an osscilatory function of <span class="math-container" id="11846392" visual_id="9955"><math alttext="\log(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> bounded in absolute value by <span class="math-container" id="11846393" visual_id="560598"><math alttext="1.6\cdot 10^{-6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.6</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></semantics></math></span>. In particular, this leads to the surprising result that <span class="math-container" id="11846394" visual_id="560599"><math alttext="\mathbb{E}(Z_{0}(n))-\log_{2}(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>Z</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><msub><mi>log</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> does <strong>not</strong> have a limit. See this paper, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.81.4948&amp;rep=rep1&amp;type=pdf" rel="nofollow">An Extreme Value Theory for Long Head Runs</a>, by Gordon, Schilling, Waterman for more details.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2582954"> Reading the linked article, I am surprised that the variance is as low as it is, being of the form <span class="math-container" id="11846395" visual_id="560600"><math alttext="\frac{\pi^{2}}{6\log_{2}(n)}+\frac{1}{12}+\rho_{0}(n)+o(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>π</mi><mn>2</mn></msup><mrow><mn>6</mn><mo>⁢</mo><mrow><msub><mi>log</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mo>+</mo><mrow><msub><mi>ρ</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>o</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.  Perhaps you can confirm what I'm thinking or missing from reading the article, with a fair coin, the expected longest sequence of heads tends towards the expected longest sequence of just heads *or* just tails, yes? </td></tr><tr><td comment_id="2582983"> How can one prove <span class="math-container" id="11846396" visual_id="560601"><math alttext="\mathbb{E}(Z_{0}(n))=\log_{2}(n)+o(\log_{2}(n))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝔼</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>Z</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>log</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>o</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>log</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> elementarily ? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="4658"> What is the probability of a coin landing tails 7 times in a row in a series of 150 coin flips? </td></tr><tr><td post_id="1409372"> What is the expected length of the largest run of heads if we make 1,000 flips? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

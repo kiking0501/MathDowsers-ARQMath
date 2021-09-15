@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Quadratic Diophantine to Pell reduction</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Quadratic Diophantine to Pell reduction </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="490617">
+<p><a href="http://mathworld.wolfram.com/DiophantineEquation2ndPowers.html" rel="nofollow">http://mathworld.wolfram.com/DiophantineEquation2ndPowers.html</a> says the equation <span class="math-container" id="5150525" visual_id="1300594"><math alttext="ax^{2}+bxy+cy^{2}=k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mi>k</mi></mrow></semantics></math></span> can be reduced to Pell equation.</p> <p>Can someone explain how?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> diophantine-equations </span><span> pell-type-equations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1055708"> Do you know how to complete the square? </td></tr><tr><td comment_id="1055711"> I also do not think that the article says what you claim it does. They are separate lines of though. </td></tr><tr><td comment_id="1055714"> What do you think it says? </td></tr><tr><td comment_id="1055719"> They are not sequential statements. There is an entire paragraph (line) between them that talks about implementation in Mathematica, and another paragraph (line) which mentions deeper results for more than 2 variables. </td></tr><tr><td comment_id="1055723"> Well if you know the correct form of the question I am implying, please feel free to modify this question. I am a bit clueless here. </td></tr><tr><td comment_id="2122507"> @CalvinLin Kindly see my answer below. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1041737" id="answer">
+<p><strong><em>Edit:</em></strong>  This is a shorter and clearer answer to the older version.</p> <p>Actually, <em>Mathworld</em> is correct when <a href="http://mathworld.wolfram.com/DiophantineEquation2ndPowers.html" rel="nofollow">it says solving</a>,</p> <p><span class="math-container" id="5150533" visual_id="1300594"><math alttext="ax^{2}+bxy+cy^{2}=k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mi>k</mi></mrow></semantics></math></span></p> <p>involves the usual <em>Pell equation</em>,</p> <p><span class="math-container" id="5150534" visual_id="1560633"><math alttext="x^{2}-Dy^{2}=\pm 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>D</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><mo>±</mo><mn>1</mn></mrow></mrow></semantics></math></span></p> <p>Given an initial solution {<span class="math-container" id="5150535" visual_id="5903"><math alttext="m,n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></semantics></math></span>} to,</p> <p><span class="math-container" id="5150536" visual_id="2815686"><math alttext="am^{2}+bmn+cn^{2}=k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mi>k</mi></mrow></semantics></math></span></p> <p>then we have the identity,</p> <p><span class="math-container" id="5150537" visual_id="2815687"><math alttext="ax^{2}+bxy+cy^{2}-k=k(u^{2}-Dv^{2}-1)(u^{2}-Dv^{2}+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>-</mo><mi>k</mi></mrow><mo>=</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>D</mi><mo>⁢</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>D</mi><mo>⁢</mo><msup><mi>v</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>where,</p> <p><span class="math-container" id="5150538" visual_id="2815688"><math alttext="x=mu^{2}-2(bm+2cn)uv+Dmv^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mrow><mi>m</mi><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>n</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>v</mi></mrow></mrow><mo>+</mo><mrow><mi>D</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msup><mi>v</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="5150539" visual_id="2815689"><math alttext="y=nu^{2}+2(2am+bn)uv+Dnv^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>n</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mi>v</mi></mrow><mo>+</mo><mrow><mi>D</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><msup><mi>v</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="5150540" visual_id="158273"><math alttext="D=b^{2}-4ac" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></mrow></semantics></math></span></p> <p>for <em>arbitrary</em> variables <span class="math-container" id="5150541" visual_id="11335"><math alttext="u,v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>v</mi></mrow></semantics></math></span>.  However, if one wishes to set <span class="math-container" id="5150542" visual_id="1034"><math alttext="(3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> equal to zero,  then <span class="math-container" id="5150543" visual_id="11335"><math alttext="u,v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>v</mi></mrow></semantics></math></span> should be chosen to satisfy the <em>Pell equation</em>,</p> <p><span class="math-container" id="5150544" visual_id="2815690"><math alttext="u^{2}-Dv^{2}=\pm 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>D</mi><mo>⁢</mo><msup><mi>v</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><mo>±</mo><mn>1</mn></mrow></mrow></semantics></math></span></p> <p>which, for non-square discriminant <span class="math-container" id="5150545" visual_id="39926"><math alttext="D&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>D</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>, should provide an infinite number of integer solutions for the <span class="math-container" id="5150546" visual_id="921"><math alttext="x,y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></semantics></math></span> of <span class="math-container" id="5150547" visual_id="1034"><math alttext="(3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2123985"> Oh wow. Thanks! </td></tr><tr><td comment_id="2127244"> @CalvinLin I modified the an<span class="math-container" id="19662212">s</span>wer to make it clearer. </td></tr><tr><td comment_id="5427953"> Do you know if this provides *all* solutions? i.e., letting <span class="math-container" id="5150553" visual_id="11335"><math alttext="u,v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>v</mi></mrow></semantics></math></span> range over all integers, do you eventually generate all integer solutions of (1)? </td></tr><tr><td comment_id="5430527"> @KierenMacMillan: I'm not sure. Also, while <span class="math-container" id="5150549" visual_id="1034"><math alttext="(3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> is valid for ***any*** <span class="math-container" id="5150553" visual_id="11335"><math alttext="u,v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>v</mi></mrow></semantics></math></span>, one has to choose such that <span class="math-container" id="5150551" visual_id="2815690"><math alttext="u^{2}-Dv^{2}=\pm 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>D</mi><mo>⁢</mo><msup><mi>v</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><mo>±</mo><mn>1</mn></mrow></mrow></semantics></math></span> to make <span class="math-container" id="5150554" visual_id="749"><math alttext="(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> true, hence <span class="math-container" id="5150553" visual_id="11335"><math alttext="u,v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>v</mi></mrow></semantics></math></span> does not range over all integers if the objective is <span class="math-container" id="5150554" visual_id="749"><math alttext="(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>. </td></tr><tr><td comment_id="5432369"> Of course; I meant ranging over all integer solutions to the Pell equation. As for the completeness… I smell a theorem I need to prove.  ;) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1042827"> A Tale of Two Quadratic Identities (Pell-like) </td></tr><tr><td post_id="1414779"> Solving a quadratic Diophantine equation </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

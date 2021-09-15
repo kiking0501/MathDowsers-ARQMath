@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Express a Proposition In Formal Logic</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Express a Proposition In Formal Logic </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1056300">
+<p>I am doing a question where I have to express: <strong>There is no largest prime number,</strong> in formal logic. This is the solution given:</p> <p>Of course this is a true statement, so it could be expressed by the logically equivalent formula “1 = 1,” but even if we didn’t know this, we could transcribe the statement directly as: <span class="math-container" id="10007743" visual_id="4253457"><math alttext="¬(∃p.IS­PRIME(p)∧(∀q.IS­PRIME(q)\implies p≥q))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∃</mi><mi>p</mi><mo>.</mo><mi>I</mi><mi>S</mi><mi mathvariant="normal">­</mi><mi>P</mi><mi>R</mi><mi>I</mi><mi>M</mi><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mi mathvariant="normal">∧</mi><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∀</mi><mi>q</mi><mo>.</mo><mi>I</mi><mi>S</mi><mi mathvariant="normal">­</mi><mi>P</mi><mi>R</mi><mi>I</mi><mi>M</mi><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>⟹</mo><mi>p</mi><mi mathvariant="normal">≥</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p>My first question is in what way does 1 = 1 mean there is no largest prime number?</p> <p>Secondly, to me the transcribed statement says that <strong>for all prime numbers q, there exists a prime number p that is greater than or equal to it</strong> (shouldn't it be just greater than?), and then there is the not at the start of the statement, I'm not sure why that is there or if it even makes sense to have it?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> logic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1056311" id="answer">
+<p>Your formalization of the statement :</p> <blockquote> <p>There is no largest prime number</p> </blockquote> <p>is correct; it can be translated also as :</p> <blockquote> <blockquote> <p><span class="math-container" id="10007761" visual_id="4253462"><math alttext="\forall p[Prime(p)\rightarrow\exists q(Prime(q)\land(p&amp;lt;q))]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>p</mi><mrow><mo stretchy="false">[</mo><mi>P</mi><mi>r</mi><mi>i</mi><mi>m</mi><mi>e</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mo>∃</mo><mi>q</mi><mrow><mo stretchy="false">(</mo><mi>P</mi><mi>r</mi><mi>i</mi><mi>m</mi><mi>e</mi><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mi mathvariant="normal">&amp;</mi><mi>l</mi><mi>t</mi><mo>;</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span></p> </blockquote> </blockquote> <p>that means :</p> <blockquote> <p>for every prime number <span class="math-container" id="10007762" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, there is a prime number <span class="math-container" id="10007763" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> such that <span class="math-container" id="10007764" visual_id="21507"><math alttext="p&amp;lt;q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>&lt;</mo></mrow><mi>q</mi></mrow></semantics></math></span>.</p> </blockquote> <p>The two formulae are equivalent; starting from the formula :</p> <blockquote> <blockquote> <p><span class="math-container" id="10007765" visual_id="4253463"><math alttext="¬∃p[IS­PRIME(p)∧∀q(IS­PRIME(q)\rightarrow p≥q)]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mi mathvariant="normal">∃</mi><mi>p</mi><mrow><mo stretchy="false">[</mo><mi>I</mi><mi>S</mi><mi mathvariant="normal">­</mi><mi>P</mi><mi>R</mi><mi>I</mi><mi>M</mi><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mi mathvariant="normal">∧</mi><mi mathvariant="normal">∀</mi><mi>q</mi><mrow><mo stretchy="false">(</mo><mi>I</mi><mi>S</mi><mi mathvariant="normal">­</mi><mi>P</mi><mi>R</mi><mi>I</mi><mi>M</mi><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>p</mi><mi mathvariant="normal">≥</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span></p> </blockquote> </blockquote> <p>we can rewrite is, using first the rules for quantifiers [<span class="math-container" id="10007766" visual_id="612270"><math alttext="\lnot\exists" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mo>∃</mo></mrow></semantics></math></span> is equivalent to <span class="math-container" id="10007767" visual_id="612271"><math alttext="\forall\lnot" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi mathvariant="normal">¬</mi></mrow></semantics></math></span>] and De Morgan, as :</p> <blockquote> <p><span class="math-container" id="10007768" visual_id="4253464"><math alttext="∀p[¬IS­PRIME(p)\lor\lnot∀q(IS­PRIME(q)\rightarrow p≥q)]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>p</mi><mrow><mo stretchy="false">[</mo><mi mathvariant="normal">¬</mi><mi>I</mi><mi>S</mi><mi mathvariant="normal">­</mi><mi>P</mi><mi>R</mi><mi>I</mi><mi>M</mi><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>∨</mo><mi mathvariant="normal">¬</mi><mi mathvariant="normal">∀</mi><mi>q</mi><mrow><mo stretchy="false">(</mo><mi>I</mi><mi>S</mi><mi mathvariant="normal">­</mi><mi>P</mi><mi>R</mi><mi>I</mi><mi>M</mi><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>p</mi><mi mathvariant="normal">≥</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span></p> </blockquote> <p>then, using again the rules for the quantifiers and the equivalence between <span class="math-container" id="10007769" visual_id="40798"><math alttext="\lnot p\lor q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow><mo>∨</mo><mi>q</mi></mrow></semantics></math></span> and <span class="math-container" id="10007770" visual_id="23296"><math alttext="p\rightarrow q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></semantics></math></span>, as :</p> <blockquote> <p><span class="math-container" id="10007771" visual_id="4253465"><math alttext="∀p[IS­PRIME(p)\rightarrow∃q\lnot(IS­PRIME(q)\rightarrow p≥q)]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>p</mi><mrow><mo stretchy="false">[</mo><mi>I</mi><mi>S</mi><mi mathvariant="normal">­</mi><mi>P</mi><mi>R</mi><mi>I</mi><mi>M</mi><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi mathvariant="normal">∃</mi><mi>q</mi><mi mathvariant="normal">¬</mi><mrow><mo stretchy="false">(</mo><mi>I</mi><mi>S</mi><mi mathvariant="normal">­</mi><mi>P</mi><mi>R</mi><mi>I</mi><mi>M</mi><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>p</mi><mi mathvariant="normal">≥</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span></p> </blockquote> <p>and finally, using the equivalence between <span class="math-container" id="10007772" visual_id="745086"><math alttext="\lnot(p\rightarrow q)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="10007773" visual_id="349634"><math alttext="p\land\lnot q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>q</mi></mrow></mrow></semantics></math></span>, as :</p> <blockquote> <p><span class="math-container" id="10007774" visual_id="4253466"><math alttext="∀p[IS­PRIME(p)\rightarrow∃q(IS­PRIME(q)\land\lnot(p≥q))]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>p</mi><mrow><mo stretchy="false">[</mo><mi>I</mi><mi>S</mi><mi mathvariant="normal">­</mi><mi>P</mi><mi>R</mi><mi>I</mi><mi>M</mi><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi mathvariant="normal">∃</mi><mi>q</mi><mrow><mo stretchy="false">(</mo><mi>I</mi><mi>S</mi><mi mathvariant="normal">­</mi><mi>P</mi><mi>R</mi><mi>I</mi><mi>M</mi><mi>E</mi><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>∧</mo><mi mathvariant="normal">¬</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mi mathvariant="normal">≥</mi><mi>q</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>.</p> </blockquote>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2150485"> why did you co<span class="math-container" id="19874926">n</span>vert the 'implies' into 'and'? </td></tr><tr><td comment_id="2150633"> I guess this means that it should be grater than and equal to rather than just greater than? </td></tr><tr><td comment_id="2150642"> @HaniSayegh - I've omitted the last simple step : <span class="math-container" id="10007775" visual_id="4253467"><math alttext="\lnot(p\geq q)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>≥</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is equivalent to <span class="math-container" id="10007776" visual_id="181263"><math alttext="p&lt;q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&lt;</mo><mi>q</mi></mrow></semantics></math></span> ("not greater-or-equal" means "less than"). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

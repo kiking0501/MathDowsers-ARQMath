@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Does the closed form of combinatorial sum exist?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Does the closed form of combinatorial sum exist? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1310420">
+<p>I would like to ask you to help me with this problem that I can't solve. Thanks in advance. Any suggestions will be appreciated. It states : Find the closed (or approximate) form of <span class="math-container" id="12187371" visual_id="7617543"><math alttext="\sum_{k=1}^{n}\left\lfloor{\frac{{n\choose k}}{{k+1}}}\right\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mo>⌊</mo><mfrac><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⌋</mo></mrow></mrow></semantics></math></span>. I don't even know if it has a solution.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2661722"> Computing, it seems that for large values of <span class="math-container" id="12187373" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, the logarithm of the expression seems to vary linearly with <span class="math-container" id="12187373" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> (this is just a visual observation, probably of not much help). </td></tr><tr><td comment_id="2662362"> [Apparently not](http://oeis.org/A095718). But we do know that <span class="math-container" id="12187374" visual_id="4381175"><math alttext="\displaystyle\sum_{k=0}^{n}\frac{\displaystyle{n\choose k}}{k+1}~{}=~{}\frac{2% ^{n+1}-1}{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mpadded width="+3.3pt"><mstyle displaystyle="true"><mfrac><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac></mstyle><mo>)</mo></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle></mpadded></mrow><mo rspace="5.8pt">=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1310956" id="answer">
+<blockquote> <p><em>Find the closed <span class="math-container" id="12187375" visual_id="6907"><math alttext="(" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo stretchy="false">(</mo></semantics></math></span>or approximate<span class="math-container" id="12187376" visual_id="6908"><math alttext=")" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo stretchy="false">)</mo></semantics></math></span> form of</em> <span class="math-container" id="12187377" visual_id="7617543"><math alttext="~{}\displaystyle\sum_{k=1}^{n}\left\lfloor\frac{n\choose k}{k+1}\right\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" lspace="5.8pt" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mo>⌊</mo><mstyle displaystyle="true"><mfrac><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi mathsize="70%">n</mi><mi mathsize="70%">k</mi></mfrac></mstyle><mo>)</mo></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo>⌋</mo></mrow></mrow></semantics></math></span></p> </blockquote> <p>The exact values, for the sum starting at <span class="math-container" id="12187378" visual_id="1992"><math alttext="k=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, can be found on <a href="http://oeis.org/A095718" rel="nofollow noreferrer"><em>OEIS</em></a>. There does not appear </p> <p>to be a closed form. However, we have <span class="math-container" id="12187379" visual_id="7617544"><math alttext="~{}\displaystyle\sum_{k=1}^{n}\left\lfloor\frac{n\choose k}{k+1}\right\rfloor~% {}\simeq~{}\sum_{k=0}^{n}\frac{\displaystyle{n\choose k}}{k+1}~{}=~{}\frac{2^{% n+1}-1}{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" lspace="5.8pt" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mo>⌊</mo><mstyle displaystyle="true"><mfrac><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi mathsize="70%">n</mi><mi mathsize="70%">k</mi></mfrac></mstyle><mo>)</mo></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle><mo rspace="5.8pt">⌋</mo></mrow></mrow><mo rspace="5.8pt">≃</mo><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mpadded width="+3.3pt"><mstyle displaystyle="true"><mfrac><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac></mstyle><mo>)</mo></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle></mpadded></mrow><mo rspace="5.8pt">=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mstyle></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

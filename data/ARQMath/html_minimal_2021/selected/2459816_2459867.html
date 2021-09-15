@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Need explanation on a binomial theorem related problem for $\sum_{k=0}^{n} \binom{n}{k}k$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Need explanation on a binomial theorem related problem for <span class="math-container" id="22771049" visual_id="5879878"><math alttext="\sum_{k=0}^{n}\binom{n}{k}k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><mi>k</mi></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2459816">
+<p>So I ran into this summation <span class="math-container" id="22771050" visual_id="5879878"><math alttext="\sum_{k=0}^{n}\binom{n}{k}k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><mi>k</mi></mrow></mrow></semantics></math></span></p> <p>So I have no idea what to do so I looked at what my professor this.  He said </p> <blockquote> <p>If we differentiate this <span class="math-container" id="22771051" visual_id="203732"><math alttext="(1+x)^{n}=\sum_{k=0}^{n}\binom{n}{k}x^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>k</mi></msup></mrow></mrow></mrow></semantics></math></span> we have <span class="math-container" id="22771052" visual_id="1466970"><math alttext="n(1+x)^{n-1}=\sum_{k=0}^{n}\binom{n}{k}kx^{k-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><mi>k</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow></semantics></math></span>.  Plugging in <span class="math-container" id="22771053" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> gives <span class="math-container" id="22771054" visual_id="523298"><math alttext="\sum_{k=0}^{n}\binom{n}{k}k=n2^{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><mi>k</mi></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span>.</p> </blockquote> <p>First of all where did he come up with <span class="math-container" id="22771055" visual_id="47297"><math alttext="(1+x)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></semantics></math></span> and why did he differentiate it?  And then why did he plug in <span class="math-container" id="22771056" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>?  I am confused.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> discrete-mathematics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5082724"> The first equation is just *defining* what the summation coefficient on the right hand side means.   Everything else is presumably done to find a more explicit/"useful" relation for the defined coefficient. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2459867" id="answer">
+<p>Here's one way to find <span class="math-container" id="22771057" visual_id="5879879"><math alttext="\displaystyle\sum_{k=0}^{n}k\binom{n}{k}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mi>k</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Let <span class="math-container" id="22771058" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> be the number of heads in in <span class="math-container" id="22771059" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> coin tosses. Then <span class="math-container" id="22771060" visual_id="5879880"><math alttext="\Pr(X=k)=\dbinom{n}{k}\left(\dfrac{1}{2}\right)^{n}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>Pr</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>)</mo></mrow><mi>n</mi></msup></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>But <span class="math-container" id="22771061" visual_id="5879881"><math alttext="\operatorname{E}(X)=\text{average number of heads in $n$ tosses}\begin{cases}=% n/2\\ =\sum_{k=0}^{n}k\Pr(X=k)\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">E</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mtext>average number of heads in </mtext><mi>n</mi><mtext> tosses</mtext></mrow><mo>⁢</mo><mrow><mo>{</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><mi>n</mi><mo>/</mo><mn>2</mn></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi></mi><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mi>k</mi><mo>⁢</mo><mrow><mi>Pr</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>=</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow></mrow></semantics></math></span></p> <p>Hence those two expressions are equal.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

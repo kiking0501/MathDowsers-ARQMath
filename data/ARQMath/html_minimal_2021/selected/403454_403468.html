@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is there a simpler approach to these system of equations?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is there a simpler approach to these system of equations? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="403454">
+<p>I recently came across the following system of equations:<br/> <span class="math-container" id="4269849" visual_id="7973014"><math alttext="x+y+z=1\\ x^{2}+y^{2}+z^{2}=2\\ x^{3}+y^{3}+z^{3}=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo>=</mo><mrow><mrow><mn>1</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span> </p> <p>And I have two questions:</p> <p>One, is there a way to prove or disprove whether there is a solution for this particular set of equations? Furthermore, is there a way to expand the proof for a more generalized set of equations, that is for this set :</p> <p><span class="math-container" id="4269850" visual_id="7973015"><math alttext="x+y+z=1\\ x^{2}+y^{2}+z^{2}=2\\ ...\\ x^{n}+y^{n}+z^{n}=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo>=</mo><mrow><mrow><mn>1</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow><mo>+</mo><msup><mi>y</mi><mi>n</mi></msup><mo>+</mo><msup><mi>z</mi><mi>n</mi></msup></mrow><mo>=</mo><mi>n</mi></mrow></semantics></math></span><br/> Two, is there a simpler approach for the prior solution set than substitution? As of now, I'm not getting anywhere with this method. I end up getting into a long-winded series of substitution and isolation that yields something like <span class="math-container" id="4269851" visual_id="87642"><math alttext="z=z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mi>z</mi></mrow></semantics></math></span> or <span class="math-container" id="4269852" visual_id="29633"><math alttext="1=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.</p> <p>Sorry if it's a repeat question; I couldn't exactly find an accurate way to search for the equations.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebra-precalculus </span><span> systems-of-equations </span><span> symmetric-polynomials </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="403468" id="answer">
+<p>For this particular set of three equations, there is no solution. (And therefore there is no solution if you add more equations either.)</p> <p>From the first equation <span class="math-container" id="4269876" visual_id="17046"><math alttext="x+y+z=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> you can eliminate <span class="math-container" id="4269877" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span> as <span class="math-container" id="4269878" visual_id="505044"><math alttext="z=1-x-y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi><mo>-</mo><mi>y</mi></mrow></mrow></semantics></math></span>. Then the second equation <span class="math-container" id="4269879" visual_id="807004"><math alttext="x^{2}+y^{2}+z^{2}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span> becomes <span class="math-container" id="4269880" visual_id="7973021"><math alttext="x^{2}+y^{2}+(1-x-y)^{2}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span>, which being a quadratic expression in <span class="math-container" id="4269881" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="4269882" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span>, defines a conic section in the <span class="math-container" id="4269883" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>-<span class="math-container" id="4269884" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> plane, in this case an ellipse. After this, the third equation <span class="math-container" id="4269885" visual_id="1308605"><math alttext="x^{3}+y^{3}+z^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow></semantics></math></span> which is equivalent to <span class="math-container" id="4269886" visual_id="7973022"><math alttext="R\subset\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⊂</mo><mi>ℕ</mi></mrow></semantics></math></span> defines another curve in the <span class="math-container" id="4269887" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>-<span class="math-container" id="4269888" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> plane, which happens not to intersect with the ellipse. </p> <p><img alt="The ellipse in the middle is the curve x^2 + y^2 + (1-x-y)^2 = 2; the curves outside but not touching it are x^3 + y^3 + (1-x-y)^3 = 3" src="https://i.stack.imgur.com/Q7c8X.jpg"/><br/> The ellipse in the middle is the curve <span class="math-container" id="4269889" visual_id="7973021"><math alttext="x^{2}+y^{2}+(1-x-y)^{2}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span>; the curves outside but not touching it are <span class="math-container" id="4269890" visual_id="7973023"><math alttext="x^{3}+y^{3}+(1-x-y)^{3}=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span>.</p> <hr/> <p>Now that we know what to prove (that there is no solution), we can look for an alebraic proof. :-)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="863376"> There are no **real** solutions.  There are complex solutions, e.g. one is approximately <span class="math-container" id="4269891" visual_id="7973024"><math alttext="x=-0.2154247831+0.2647131991\,i,y=-0.2154247831-0.2647131991\,i,z=1.430849566" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mo>-</mo><mn>0.2154247831</mn></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><mn>0.2647131991</mn></mpadded><mo>⁢</mo><mi>i</mi></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mo>-</mo><mn>0.2154247831</mn></mrow><mo>-</mo><mrow><mpadded width="+1.7pt"><mn>0.2647131991</mn></mpadded><mo>⁢</mo><mi>i</mi></mrow></mrow></mrow><mo>,</mo><mrow><mi>z</mi><mo>=</mo><mn>1.430849566</mn></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="863550"> @RobertIsrael: Indeed, by Bezout's theorem there are exactly 6 intersections of a quadratic curve and cubic curve, so there are 6 complex solutions. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1278394"> Find numbers <span class="math-container" id="11903513" visual_id="476"><math alttext="a,b,c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></semantics></math></span> given that <span class="math-container" id="11903514" visual_id="249407"><math alttext="a+b+c=12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mo>=</mo><mn>12</mn></mrow></semantics></math></span>, <span class="math-container" id="11903515" visual_id="5052133"><math alttext="a^{2}+b^{2}+c^{2}=50" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>50</mn></mrow></semantics></math></span>, and <span class="math-container" id="11903516" visual_id="5052134"><math alttext="a^{3}+b^{3}+c^{3}=168" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>+</mo><msup><mi>b</mi><mn>3</mn></msup><mo>+</mo><msup><mi>c</mi><mn>3</mn></msup></mrow><mo>=</mo><mn>168</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

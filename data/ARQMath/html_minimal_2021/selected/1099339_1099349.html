@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to calculate $\sum\limits_{n=-\infty}^\infty \frac{1}{1+n^2}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to calculate <span class="math-container" id="10373974" visual_id="6703310"><math alttext="\sum\limits_{n=-\infty}^{\infty}\frac{1}{1+n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1099339">
+<p>How can I calculate the summation: <span class="math-container" id="10373975" visual_id="6703310"><math alttext="\displaystyle\sum\limits_{n=-\infty}^{\infty}\frac{1}{1+n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> summation </span><span> proof-writing </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2241223"> possible duplicate of [Find the infinite sum of the series <span class="math-container" id="10373976" visual_id="55722"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{2}+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span>](http://math.stackexchange.com/questions/736860/find-the-infinite-sum-of-the-series-sum-n-1-infty-frac1n2-1) </td></tr><tr><td comment_id="2241225"> and also of http://math.stackexchange.com/q/208317/ </td></tr><tr><td comment_id="2241908"> Differentiate the natural logarithm of [Euler's infinite product formula for the sine function](http://en.wikipedia.org/wiki/Basel_problem). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1099349" id="answer">
+<p><strong>Hint:</strong> Apply the Residue theorem for <span class="math-container" id="10373977" visual_id="6703311"><math alttext="f(z)=\frac{\pi\cot\pi z}{1+z^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>π</mi><mo>⁢</mo><mrow><mi>cot</mi><mo>⁡</mo><mrow><mi>π</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac></mrow></semantics></math></span> using the circle at <span class="math-container" id="10373978" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> of radius <span class="math-container" id="10373979" visual_id="314441"><math alttext="n+\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span> and take the limit.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="736860"> Find the infinite sum of the series <span class="math-container" id="7327223" visual_id="55722"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{2}+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span> </td></tr><tr><td post_id="208317"> Show <span class="math-container" id="2380820" visual_id="55724"><math alttext="\sum_{n=0}^{\infty}\frac{1}{a^{2}+n^{2}}=\frac{1+a\pi\coth a\pi}{2a^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mi>coth</mi><mo>⁡</mo><mrow><mi>a</mi><mo>⁢</mo><mi>π</mi></mrow></mrow></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac></mrow></semantics></math></span> </td></tr><tr><td post_id="110494"> Possibility to simplify <span class="math-container" id="1276785" visual_id="3849194"><math alttext="\sum\limits_{k=-\infty}^{\infty}{\frac{{{{\left({-1}\right)}^{k}}}}{{a+k}}=% \frac{\pi}{{\sin\pi a}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo>(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>k</mi></msup><mrow><mi>a</mi><mo>+</mo><mi>k</mi></mrow></mfrac></mrow><mo>=</mo><mfrac><mi>π</mi><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>π</mi><mo>⁢</mo><mi>a</mi></mrow></mrow></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

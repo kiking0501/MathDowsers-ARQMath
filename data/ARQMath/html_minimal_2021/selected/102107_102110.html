@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Combinatorial proof to the identity $\sum_{k=0}^n\binom{x+k}{k}=\binom{x+n+1}{n}$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Combinatorial proof to the identity <span class="math-container" id="1172490" visual_id="1019077"><math alttext="\sum_{k=0}^{n}\binom{x+k}{k}=\binom{x+n+1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="102107">
+<blockquote> <p><strong>Possible Duplicate:</strong><br/> <a href="https://math.stackexchange.com/questions/67068/combinatorial-proof-for-two-identities">Combinatorial proof for two identities</a> </p> </blockquote> <p>The identity <span class="math-container" id="1172491" visual_id="1019077"><math alttext="\sum_{k=0}^{n}\binom{x+k}{k}=\binom{x+n+1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> can be verified by a straightforward induction, but is there some nice combinatorial argument  which proves it? Here <span class="math-container" id="1172492" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is a nonnegative integer, by the way.</p> <p>I've always found combinatorial arguments make it easier to remember such identities and intuitively grasp them so I would appreciate seeing one. Thank you.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="102110" id="answer">
+<p>Rewrite it as <span class="math-container" id="1172493" visual_id="8492369"><math alttext="\sum_{k=0}^{n}\binom{x+k}{x}=\binom{x+n+1}{x+1}\;." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mi>x</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mpadded width="+2.8pt"><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mpadded></mrow><mo>.</mo></mrow></semantics></math></span> The righthand side clearly counts the subsets of <span class="math-container" id="1172494" visual_id="8492370"><math alttext="[x+n+1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span> of size <span class="math-container" id="1172495" visual_id="4547"><math alttext="x+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>. The lefthand side breaks that count down according to the largest element of the subset. That is, if the largest element is <span class="math-container" id="1172496" visual_id="2957519"><math alttext="x+k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>, the other <span class="math-container" id="1172497" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> elements must be chosen from the set <span class="math-container" id="1172498" visual_id="8492371"><math alttext="[x+k]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span>, and this can be done in <span class="math-container" id="1172499" visual_id="8492372"><math alttext="\binom{x+k}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mi>x</mi></mfrac><mo>)</mo></mrow></semantics></math></span> ways. (Here I use <span class="math-container" id="1172500" visual_id="26277"><math alttext="[n]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>n</mi><mo stretchy="false">]</mo></mrow></semantics></math></span> for <span class="math-container" id="1172501" visual_id="1169"><math alttext="\{1,\dots,n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span>.)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="67068"> Combinatorial proof for two identities </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

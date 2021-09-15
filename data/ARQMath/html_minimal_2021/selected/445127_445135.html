@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove limit of function</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove limit of function </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="445127">
+<p>I need to prove this limit:</p> <blockquote> <p>Given <span class="math-container" id="4686508" visual_id="137878"><math alttext="f:(-1,1)\to\mathbb{R}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>→</mo><mpadded width="+1.7pt"><mi>ℝ</mi></mpadded></mrow></mrow></semantics></math></span> and <span class="math-container" id="4686509" visual_id="316933"><math alttext="\,f(x)&amp;gt;0,\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>f</mi></mpadded><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>&gt;</mo></mrow><mn>0</mn></mrow><mo rspace="4.2pt">,</mo></mrow></semantics></math></span> if <span class="math-container" id="4686510" visual_id="316934"><math alttext="\,\lim_{x\to 0}\left(f(x)+\dfrac{1}{f(x)}\right)=2,\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mo lspace="4.2pt">lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow><mo rspace="4.2pt">,</mo></mrow></semantics></math></span> then <span class="math-container" id="4686511" visual_id="230156"><math alttext="\,\lim_{x\to 0}f(x)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo lspace="4.2pt">lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.</p> </blockquote>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="955201"> Is it not rigorous enough to do this by direct substitution? </td></tr><tr><td comment_id="955203"> @Ovi <span class="math-container" id="4686512" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> has to be continuous for direct substitution to be possible. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="445135" id="answer">
+<p>Let <span class="math-container" id="4686527" visual_id="316941"><math alttext="z=\lim_{x\to 0}f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>, then the first limit can be written as, <span class="math-container" id="4686528" visual_id="316942"><math alttext="z+\dfrac{1}{z}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>z</mi><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>z</mi></mfrac></mstyle></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span>. Equivalently, we can write, <span class="math-container" id="4686529" visual_id="316943"><math alttext="z^{2}-2z+1=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>z</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="4686530" visual_id="316944"><math alttext="(z-1)^{2}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>Thus <span class="math-container" id="4686531" visual_id="11045"><math alttext="z=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and so <span class="math-container" id="4686532" visual_id="230156"><math alttext="\lim_{x\to 0}f(x)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="955212"> This assumes that <span class="math-container" id="4686533" visual_id="316945"><math alttext="\lim\limits_{x\to 0}(f(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></munder><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> exists. That's the hard part. </td></tr><tr><td comment_id="955215"> the function is bounded below. a theorem in analysis affirm that is this situation the limit exists. </td></tr><tr><td comment_id="955218"> @LeandroTavares Why is it bounded below? And why isn't the limit <span class="math-container" id="4686534" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>? </td></tr><tr><td comment_id="955222"> @ Git Gud because <span class="math-container" id="4686535" visual_id="316946"><math alttext="0&lt;f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="955226"> @LeandroTavares I missed that hypothesis, but still: <span class="math-container" id="4686536" visual_id="316947"><math alttext="x\overset{]0,+\infty[}{\longrightarrow}\dfrac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><mover accent="true"><mo>⟶</mo><mrow><mo stretchy="false">]</mo><mn>0</mn><mo>,</mo><mo>+</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">[</mo></mrow></mover><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle></mrow></semantics></math></span> and the limit isn't finite. </td></tr><tr><td comment_id="955227"> you're right i make a mistake. sorry </td></tr><tr><td comment_id="955232"> Note that <span class="math-container" id="4686537" visual_id="316948"><math alttext="\lim_{x\to 0}f(x)+\frac{1}{f(x)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mfrac><mn>1</mn><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></semantics></math></span> might exist even if <span class="math-container" id="4686538" visual_id="105522"><math alttext="\lim_{x\to 0}f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> does not exist. </td></tr><tr><td comment_id="955234"> @Christian Bueno :<span class="math-container" id="4686539" visual_id="316944"><math alttext="(z-1)^{2}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow></semantics></math></span>implies only <span class="math-container" id="4686540" visual_id="11045"><math alttext="z=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> . you're not using the hipothesis <span class="math-container" id="4686541" visual_id="21060"><math alttext="f(x)&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="955238"> @Leandro Whoops, yea just fixed it. Thanks. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

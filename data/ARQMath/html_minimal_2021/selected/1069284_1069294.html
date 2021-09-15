@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Method for Counting the Divisors of a number</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Method for Counting the Divisors of a number </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1069284">
+<p>I need to find the number of divisors of 600. Is there any other way to solve the problem, apart from writing them down and counting??</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> elementary-number-theory </span><span> divisor-counting-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2174921"> The prime factorisation of a number lets you quickly compute the number of divisors. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1069294" id="answer">
+<p><span class="math-container" id="10106729" visual_id="712210"><math alttext="600=2^{3}\cdot 3\cdot 5^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>600</mn><mo>=</mo><mrow><msup><mn>2</mn><mn>3</mn></msup><mo>⋅</mo><mn>3</mn><mo>⋅</mo><msup><mn>5</mn><mn>2</mn></msup></mrow></mrow></semantics></math></span>.  </p> <p>So any divisor of <span class="math-container" id="10106730" visual_id="77253"><math alttext="600" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>600</mn></semantics></math></span> will be of the form <span class="math-container" id="10106731" visual_id="2617684"><math alttext="2^{a}\cdot 3^{b}\cdot 5^{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>a</mi></msup><mo>⋅</mo><msup><mn>3</mn><mi>b</mi></msup><mo>⋅</mo><msup><mn>5</mn><mi>c</mi></msup></mrow></semantics></math></span> where <span class="math-container" id="10106732" visual_id="65820"><math alttext="0\leq a\leq 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>a</mi><mo>≤</mo><mn>3</mn></mrow></semantics></math></span>, <span class="math-container" id="10106733" visual_id="159990"><math alttext="0\leq b\leq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>b</mi><mo>≤</mo><mn>1</mn></mrow></semantics></math></span>, and <span class="math-container" id="10106734" visual_id="206386"><math alttext="0\leq c\leq 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>c</mi><mo>≤</mo><mn>2</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2174943"> But -2, - 1, -10 and so on are also divisors of 600. </td></tr><tr><td comment_id="2175027"> @ chen h.  I<span class="math-container" id="20096778">f</span> you want to count ne<span class="math-container" id="20096779">g</span>ative divisors, just double the number of positive divisors.  (Often the divisor count is just for positive divisors.) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

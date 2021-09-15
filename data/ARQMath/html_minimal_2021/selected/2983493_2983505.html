@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why is it true that if $x \in [0,1], x(1-x) \le 1/4$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why is it true that if <span class="math-container" id="27627598" visual_id="200147"><math alttext="x\in[0,1],x(1-x)\leq 1/4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></mrow><mo>,</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2983493">
+<p>I am reading through M. Nair's classic <a href="https://www.jstor.org/stable/2320934" rel="nofollow noreferrer">proof</a> about the lower bound of the Least Common Multiple when I encountered this step:</p> <blockquote> <p>for <span class="math-container" id="27627599" visual_id="200147"><math alttext="x\in[0,1],x(1-x)\leq 1/4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></mrow><mo>,</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></mrow></mrow></semantics></math></span></p> </blockquote> <p>While I can see this is true by testing it out with any value of <span class="math-container" id="27627600" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, I am not able to see the argument for why it is always true.</p> <p>Could someone state the argument for why this inequality holds?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> inequality </span><span> proof-explanation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6157280"> It's not true: <span class="math-container" id="27627638" visual_id="16172"><math alttext="x=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> gives <span class="math-container" id="27627602" visual_id="200148"><math alttext="x(1-x)=1/4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></mrow></semantics></math></span>, not <span class="math-container" id="27627603" visual_id="200149"><math alttext="&lt;1/4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>&lt;</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="6157283"> x=1/2 gives the maximum value = 1/4. </td></tr><tr><td comment_id="6157284"> @Lord Shark the Unknown, thanks.  I copied it wrong.  It should be <span class="math-container" id="27627604" visual_id="200150"><math alttext="x(1-x)\leq 1/4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></mrow></semantics></math></span>.  I will update. </td></tr><tr><td comment_id="6157287"> @herb steinberg, I am interested in how you would know that it is true.  How would I prove that <span class="math-container" id="27627638" visual_id="16172"><math alttext="x=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> gives the maximum value? </td></tr><tr><td comment_id="6157288"> In effect then, you are asking why <span class="math-container" id="27627606" visual_id="200151"><math alttext="1-4x(1-x)\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> for some values of <span class="math-container" id="27627622" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>? @LarryFreeman </td></tr><tr><td comment_id="6157290"> @LordSharktheUnknown, interesting.  Let me think about that.  That may be the answer that I was looking for!  :-) </td></tr><tr><td comment_id="6157301"> There's many way to view it but basically <span class="math-container" id="27627652" visual_id="200152"><math alttext="x(1-x)\leq\frac{1}{4}\iff-x^{2}+x-\frac{1}{4}\leq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>⇔</mo><mrow><mrow><mrow><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi>x</mi></mrow><mo>-</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>≤</mo><mn>0</mn></mrow></mrow></semantics></math></span>.  <span class="math-container" id="27627653" visual_id="200153"><math alttext="-x^{2}+x-\frac{1}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi>x</mi></mrow><mo>-</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math></span> is a parabola that "opens downward" and has a maximum. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2983505" id="answer">
+<p><span class="math-container" id="27627623" visual_id="178099"><math alttext="x(1-x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a quadratic polynomial, hence it has a global extremum, which is a <em>maximum</em> because its leading coefficient is negative.</p> <p>On the other hand, the high school theory of quadratic equations shows  the extremum of the quadratic function <span class="math-container" id="27627624" visual_id="4551"><math alttext="ax^{2}+bx+c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>c</mi></mrow></semantics></math></span> is attained at <span class="math-container" id="27627625" visual_id="4561"><math alttext="x=-\frac{b}{2a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>-</mo><mfrac><mi>b</mi><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mfrac></mrow></mrow></semantics></math></span>, which is also the arithmetic mean of its roots (real or complex). In the present case the roots are <span class="math-container" id="27627626" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> and <span class="math-container" id="27627627" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, so the maximum is attained at <span class="math-container" id="27627628" visual_id="14705"><math alttext="x=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

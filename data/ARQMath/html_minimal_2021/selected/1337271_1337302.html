@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Lagrange's interpolation, property proof</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Lagrange's interpolation, property proof </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1337271">
+<p><span class="math-container" id="12428979" visual_id="981951"><math alttext="x_{0},x_{1},...x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> are distinct points and <span class="math-container" id="12428980" visual_id="7692613"><math alttext="A(x)=\prod_{j=0}^{n}{(x-x_{j})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∏</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, <span class="math-container" id="12428981" visual_id="7692614"><math alttext="A_{k}(x)=\prod_{j=0,j\neq k}^{n}{(x-x_{j})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∏</mo><mrow><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo><mrow><mi>j</mi><mo>≠</mo><mi>k</mi></mrow></mrow><mi>n</mi></msubsup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, <span class="math-container" id="12428982" visual_id="7692615"><math alttext="L_{k}(x)=\frac{A_{k}(x)}{A_{k}(x_{k})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>L</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></semantics></math></span>. Prove each of the following:<br/> a) <span class="math-container" id="12428983" visual_id="7692616"><math alttext="\sum_{k=0}^{n}{L_{k}(x)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><msub><mi>L</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>=1 and <span class="math-container" id="12428984" visual_id="7692617"><math alttext="\sum_{k=0}^{n}{\frac{A_{k}^{\prime}(x)}{A^{\prime}(x_{k})}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mfrac><mrow><msubsup><mi>A</mi><mi>k</mi><mo>′</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></semantics></math></span>=0 for all x<br/> b)<span class="math-container" id="12428985" visual_id="7692618"><math alttext="\sum_{k=0}^{n}{\frac{1}{A^{\prime}(x_{k})}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></semantics></math></span>=0. [Hint:Use part a with suitable values of x]  </p> <p>Have solved part (a) - need help with part (b). </p>
+</div>
+<hr/>
+<div id="tags">
+<span> lagrange-interpolation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1337302" id="answer">
+<p>Note first that <span class="math-container" id="12428986" visual_id="7692619"><math alttext="A(x)=A_{k}(x)(x-x_{k})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><msub><mi>x</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, so differentiating both sides and putting <span class="math-container" id="12428987" visual_id="562053"><math alttext="x=x_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mi>k</mi></msub></mrow></semantics></math></span> we get</p> <p><span class="math-container" id="12428988" visual_id="7692620"><math alttext="A^{\prime}(x_{k})=A_{k}(x_{k})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>Thus <span class="math-container" id="12428989" visual_id="7692621"><math alttext="\displaystyle\sum\limits_{k=0}^{n}{\dfrac{1}{A^{\prime}(x_{k})}}=\displaystyle% \sum\limits_{k=0}^{n}{\dfrac{1}{A_{k}(x_{k})}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></mrow></semantics></math></span> is to be found.</p> <p>Now <span class="math-container" id="12428990" visual_id="7692622"><math alttext="\displaystyle\sum\limits_{k=0}^{n}{L_{k}(x)}=\displaystyle\sum\limits_{k=0}^{n% }{\dfrac{A_{k}(x)}{A_{k}(x_{k})}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mrow><msub><mi>L</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></mrow></semantics></math></span></p> <p>Since <span class="math-container" id="12428991" visual_id="7692623"><math alttext="\displaystyle\sum\limits_{k=0}^{n}{L_{k}(x)}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mrow><msub><mi>L</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> as a polynomial in <span class="math-container" id="12428992" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, we can look at the coefficient of <span class="math-container" id="12428993" visual_id="3809"><math alttext="x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mi>n</mi></msup></semantics></math></span> in this polynomial and equate it to <span class="math-container" id="12428994" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>.</p> <p>Each <span class="math-container" id="12428995" visual_id="7692624"><math alttext="A_{k}(x)=\displaystyle\prod\limits_{\begin{subarray}{c}j=0\\ j\neq k\end{subarray}}^{n}{(x-x_{j})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mtable rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>j</mi><mo>≠</mo><mi>k</mi></mrow></mtd></mtr></mtable><mi>n</mi></munderover></mstyle><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is a monic polynomial of degree <span class="math-container" id="12428996" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> so coefficient of <span class="math-container" id="12428997" visual_id="3809"><math alttext="x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mi>n</mi></msup></semantics></math></span> in <span class="math-container" id="12428998" visual_id="377181"><math alttext="A_{k}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is <span class="math-container" id="12428999" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>.</p> <p>Thus coefficient of <span class="math-container" id="12429000" visual_id="3809"><math alttext="x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mi>n</mi></msup></semantics></math></span> in <span class="math-container" id="12429001" visual_id="7692616"><math alttext="\displaystyle\sum\limits_{k=0}^{n}{L_{k}(x)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mrow><msub><mi>L</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is <span class="math-container" id="12429002" visual_id="7692625"><math alttext="\displaystyle\sum\limits_{k=0}^{n}{\dfrac{1}{A_{k}(x_{k})}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover></mstyle><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></semantics></math></span> and is thus equal to <span class="math-container" id="12429003" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

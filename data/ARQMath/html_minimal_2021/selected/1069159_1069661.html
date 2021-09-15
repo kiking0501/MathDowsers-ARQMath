@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to calculate$ \int_0^{\infty} e^{-x^2} \sin x dx$ in the most simple way</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to calculate<span class="math-container" id="10105880" visual_id="4285304"><math alttext="\int_{0}^{\infty}e^{-x^{2}}\sin xdx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>x</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span> in the most simple way </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1069159">
+<p>How to calculate<span class="math-container" id="10105881" visual_id="4285304"><math alttext="\int_{0}^{\infty}e^{-x^{2}}\sin xdx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>x</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span> in the most simple way?</p> <p>I remembered doing this calculation last month and got a result easily without using complex analysis or any big mathematic methods. </p> <p>However, when I need to do it again today, I lose track of how I did this.</p> <p>Can someone help me?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2174660"> Use <span class="math-container" id="10105882" visual_id="4285305"><math alttext="\sin x=(e^{ix}-e^{-ix})/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow></msup><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="2174662"> I think you have made a mistake the result isn't simple </td></tr><tr><td comment_id="2174663"> which tools are allowed? I do not think that this integral has an elementary simple closed form value ... </td></tr><tr><td comment_id="2174667"> The anti-derivative of your integrand involves the erf function.  Is this for a Calculus I class? </td></tr><tr><td comment_id="2174713"> @Dr.SonnhardGraubner Maybe my memory went wrong. I met this problem in a physics problem and when I say simple (maybe the word was not appropriate) I mean a method that I can easily remember after seeing the proof so that I can remember it in the future without too much calculation in physics application. </td></tr><tr><td comment_id="2174726"> @Bye_World this is used in a physics problem. </td></tr><tr><td comment_id="2174737"> @Mehdi Sorry, maybe my memory went wrong, I assumed there was a simple way, but if there isn't then any approach is good. So far I only learned complex analysis and real analysis, so I prefer methods relating to these. </td></tr><tr><td comment_id="2175636"> Using @JavierBadia's advice, complete the square in the exponent. </td></tr><tr><td comment_id="2175661"> @Lucian: My comment is not as useful as I thought it would be. It would work if the limits were <span class="math-container" id="10105883" visual_id="13217"><math alttext="\pm\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> (of course, the integral would be zero), but it doesn't work here because after completing the square, the limits of integration are not simple. It does let you get to the Dawson function quickly, but I thought you could get a closed form solution. </td></tr><tr><td comment_id="2175675"> @JavierBadia: Actually, your suggestion is exactly what the doctor ordered, though apparently not in the way you imagined it. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1069661" id="answer">
+<p><a href="http://en.wikipedia.org/wiki/Gaussian_integral" rel="nofollow">Knowing</a> that <span class="math-container" id="10105889" visual_id="242413"><math alttext="\displaystyle\int_{0}^{\infty}e^{-x^{2}}~{}dx=\frac{\sqrt{\pi}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mpadded width="+3.3pt"><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><msqrt><mi>π</mi></msqrt><mn>2</mn></mfrac></mstyle></mrow></semantics></math></span> we deduce that <span class="math-container" id="10105890" visual_id="4285309"><math alttext="\displaystyle\int_{0}^{\infty}e^{\large-\big{(}x^{2}+2ax+b^{2}\big{)}}~{}dx=% \frac{\sqrt{\pi}}{2}e^{a^{2}-b^{2}}\text{erfc }a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mpadded width="+3.3pt"><msup><mi>e</mi><mrow><mo mathsize="171%" stretchy="false">-</mo><mrow><mo maxsize="171%" minsize="171%">(</mo><mrow><msup><mi mathsize="171%">x</mi><mn mathsize="172%">2</mn></msup><mo mathsize="171%" stretchy="false">+</mo><mrow><mn mathsize="171%">2</mn><mo>⁢</mo><mi mathsize="171%">a</mi><mo>⁢</mo><mi mathsize="171%">x</mi></mrow><mo mathsize="171%" stretchy="false">+</mo><msup><mi mathsize="171%">b</mi><mn mathsize="172%">2</mn></msup></mrow><mo maxsize="171%" minsize="171%">)</mo></mrow></mrow></msup></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><msqrt><mi>π</mi></msqrt><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>e</mi><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mtext>erfc </mtext><mo>⁢</mo><mi>a</mi></mrow></mrow></semantics></math></span> where erfc is the <a href="http://en.wikipedia.org/wiki/Error_function" rel="nofollow">complementary error function</a>. In your case, <span class="math-container" id="10105891" visual_id="4285310"><math alttext="a=\dfrac{i}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>i</mi><mn>2</mn></mfrac></mstyle></mrow></semantics></math></span> and <span class="math-container" id="10105892" visual_id="4322"><math alttext="b=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, hence the result becomes <span class="math-container" id="10105893" visual_id="4285311"><math alttext="\dfrac{\sqrt{\pi}}{2~{}\sqrt[\Large 4]{e}}~{}\text{erfi}\bigg{(}\dfrac{1}{2}% \bigg{)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded width="+3.3pt"><mstyle displaystyle="true"><mfrac><msqrt><mi>π</mi></msqrt><mrow><mpadded width="+3.3pt"><mn>2</mn></mpadded><mo>⁢</mo><mroot><mi>e</mi><mn mathsize="205%">4</mn></mroot></mrow></mfrac></mstyle></mpadded><mo>⁢</mo><mtext>erfi</mtext><mo>⁢</mo><mrow><mo maxsize="210%" minsize="210%">(</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo maxsize="210%" minsize="210%">)</mo></mrow></mrow></semantics></math></span>, where erfi represents the <a href="http://en.wikipedia.org/wiki/Error_function" rel="nofollow">imaginary errof function</a>. All you need to do is to simply complete the square in the exponent, and employ the very definitions of the functions in question, nothing more.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

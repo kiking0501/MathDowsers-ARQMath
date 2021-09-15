@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Converting decimal number to a hexadecimal number</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Converting decimal number to a hexadecimal number </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="134316">
+<p>I'm trying to represent the number 12.25 in various bases. So without normalizing:</p> <p>For Binary:</p> <pre><code>   12    - &gt; 1100    0.25  - &gt; .01  (1 * (1/2)^2) so 12.25   = 1100.01 </code></pre> <p>For Hex :</p> <pre><code>   12    - &gt; C    0.25  - &gt; .4   (4 * (1/16)^1) so 12.25   = C.4  </code></pre> <p>and then the decimal point has been shifted in conjunction with an exponent term.</p> <p>But I'm not sure how to convert <strong>0.25 decimal to hexadecimal 0.4</strong>. I need to accomplish this without using a calculator. Any advice?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-systems </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="309659"> You mean "radix point", not "decimal point". </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="134319" id="answer">
+<p>One good way is to express your number as a fraction, and then "count the number of <span class="math-container" id="1561353" visual_id="6462"><math alttext="1/16" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mn>16</mn></mrow></semantics></math></span>'s. Here, il would give  <span class="math-container" id="1561354" visual_id="5718211"><math alttext="0.25=\frac{1}{4}=\frac{4}{16}=4*\frac{1}{16}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.25</mn><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>4</mn><mn>16</mn></mfrac><mo>=</mo><mrow><mn>4</mn><mo>*</mo><mfrac><mn>1</mn><mn>16</mn></mfrac></mrow></mrow></semantics></math></span> And this is true for any number that admits a finite hexadecimal expression : you make it a fraction, with a power of 16 at the denominator, then separate your fraction in chunks with nominator a integer between 0 and 15, and denominator a power of 16. Then the nominators give the hexadecimal decomposition.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

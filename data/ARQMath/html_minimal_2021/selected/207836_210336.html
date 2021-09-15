@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>principal "pseudo eigenvector" of a real symmetric positive-semidefinite matrix</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> principal "pseudo eigenvector" of a real symmetric positive-semidefinite matrix </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="207836">
+<p>Let <span class="math-container" id="2376064" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> be a real symmetric positive-semidefinite matrix and suppose that <span class="math-container" id="2376065" visual_id="7960"><math alttext="c&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>c</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> is a sufficiently small number. I wonder if it is possible to solve the non-convex optimization  <span class="math-container" id="2376066" visual_id="5173499"><math alttext="\arg\max_{u}\ u^{\mathrm{T}}Au\\ \mathrm{subject\ to\ }\left\|u\right\|_{2}\leq 1\\ \quad\quad\quad\quad\left\|u\right\|_{1}\leq c," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>arg</mi><mo>⁡</mo><mrow><mpadded width="+5pt"><msub><mi>max</mi><mi>u</mi></msub></mpadded><mo>⁡</mo><mrow><msup><mi>u</mi><mi mathvariant="normal">T</mi></msup><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>u</mi><mo>⁢</mo><mpadded width="+5pt"><mi>subject</mi></mpadded><mo>⁢</mo><mpadded width="+5pt"><mi>to</mi></mpadded><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>u</mi><mo>∥</mo></mrow><mn>2</mn></msub></mrow></mrow></mrow><mo>≤</mo><mn>1</mn></mrow><mo mathvariant="italic" separator="true">    </mo><mrow><msub><mrow><mo>∥</mo><mi>u</mi><mo>∥</mo></mrow><mn>1</mn></msub><mo>≤</mo><mi>c</mi></mrow></mrow><mo>,</mo></mrow></semantics></math></span> efficiently.</p> <p>For solving the optimization, I couldn't get farther than writing KKT conditions which do not help much in specifying the multipliers.</p> <p>Given that without the <span class="math-container" id="2376067" visual_id="8021"><math alttext="\ell_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub></semantics></math></span>-norm constraint (i.e. <span class="math-container" id="2376068" visual_id="24026"><math alttext="c\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>), the problem reduces to finding the principal eigenvector of <span class="math-container" id="2376069" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> that can be solved efficiently (e.g., using power iteration method), we can think of the solution to the optimization above as "psuedo eigenvector".</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> optimization </span><span> numerical-methods </span><span> numerical-linear-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="472070"> Dont know if this helps, but this sort of combination of L^2 and L^1 norm is known in statistics as the lasso, so you can google for that and see if some of the algorithms developed for the lasso can be applied. </td></tr><tr><td comment_id="472152"> @kjetilbhalvorsen: I'm aware of the LASSO and the related subjects in statistics, but I don't think they really apply here as randomness is central in their arguments, while my problem is completely deterministic. Namely, matrix <span class="math-container" id="2376070" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is not drawn from some random ensemble of matrices. </td></tr><tr><td comment_id="472201"> ... but their algorithms could still apply ... the algorithms in itself do not care about randomnes, they only see the data, not the model. </td></tr><tr><td comment_id="472313"> @kjetilbhalvorsen: It's true that their algorithm may apply, but we cannot guarantee it actually produces an accurate solution to the original problem. The randomness is what allows them to provide guarantees of accuracy. Regardless of this issue, the problem I have is a **maximization** of a convex quadratic, which is a non-convex optimization problem. The LASSO is a convex optimization formulation. </td></tr><tr><td comment_id="627712"> If <span class="math-container" id="2376071" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> is "sufficiently small" (i.e. smaller than <span class="math-container" id="2376072" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>), then you can just get rid of the <span class="math-container" id="2376073" visual_id="4504294"><math alttext="\lVert u\rVert_{2}\leq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo fence="true" stretchy="false">∥</mo><mi>u</mi><mo fence="true" stretchy="false">∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><mn>1</mn></mrow></semantics></math></span> constraint, can't you? Then the problem reduces to quadratic programming, and you can maybe even just iterate over the (explicitly known) facets of the feasible polytope. </td></tr><tr><td comment_id="631778"> @ℝⁿ: The problem is that I'm interested in problems where <span class="math-container" id="2376074" visual_id="12651"><math alttext="c&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>. In fact, the <span class="math-container" id="2376087" visual_id="8021"><math alttext="\ell_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub></semantics></math></span>-norm constraint is a convex relaxation of <span class="math-container" id="2376076" visual_id="285053"><math alttext="\ell_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">ℓ</mi><mn>0</mn></msub></semantics></math></span> constraint that induces sparsity. So for <span class="math-container" id="2376077" visual_id="5173500"><math alttext="\left\|u\right\|_{0}\leq s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo>∥</mo><mi>u</mi><mo>∥</mo></mrow><mn>0</mn></msub><mo>≤</mo><mi>s</mi></mrow></semantics></math></span> we should choose <span class="math-container" id="2376078" visual_id="5173501"><math alttext="c=\sqrt{s}\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><msqrt><mi>s</mi></msqrt><mo>≥</mo><mn>1</mn></mrow></semantics></math></span> in the <span class="math-container" id="2376087" visual_id="8021"><math alttext="\ell_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub></semantics></math></span>-constrained form. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="210336" id="answer">
+<p>I am not sure about the objective function part. But for the constraints, May be this will help. Write <span class="math-container" id="2376080" visual_id="3665460"><math alttext="u=u^{+}-u^{-}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mrow><msup><mi>u</mi><mo>+</mo></msup><mo>-</mo><msup><mi>u</mi><mo>-</mo></msup></mrow></mrow></semantics></math></span>, where <span class="math-container" id="2376081" visual_id="226568"><math alttext="u^{+}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>u</mi><mo>+</mo></msup></semantics></math></span> denotes positive part in <span class="math-container" id="2376082" visual_id="506"><math alttext="u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi></semantics></math></span> and <span class="math-container" id="2376083" visual_id="569984"><math alttext="u^{-}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>u</mi><mo>-</mo></msup></semantics></math></span> denotes the negative part. Now with this, the above problem will become </p> <p>\begin{align} \arg\max_{u^{+},u^{-}}\ {u^{+}}^{T}Au^{+}+{u^{-}}^{T}Au^{-}-2{u^{-}}^{T}Au^{+} \\ subject ~~to&amp; [1,1\ldots,1]^{T}({u^{+}}+{u^{-}}) &lt;= c \\ &amp; (u^{+}-u^{-})^{T}(u^{+}-u^{-})&lt;=1 \\ &amp;  u^{+}&gt;=0, u^{-}&gt;=0 \end{align} </p> <p>You can make the objective function linear by bringing in a variable <span class="math-container" id="2376084" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> and hence adding a non-convex quadratic constraint. All other linear constraints can be reformulated as quadratic constraints. I think then you can reformulate it as a semi-definite program. In details</p> <p>\begin{align} \min_{t}~~  -t \\ subject~to~ &amp;u^{H}Au \geq t \\ &amp; [1,1\ldots,1]^{T}({u^{+}}+{u^{-}}) &lt;= c \\ &amp; (u^{+}-u^{-})^{T}(u^{+}-u^{-})&lt;=1 \\ &amp;  u^{+}&gt;=0, u^{-}&gt;=0,t&gt;=0 \end{align}</p> <p>Note that this is equivalent to your original problem. Now the variables <span class="math-container" id="2376085" visual_id="5173502"><math alttext="u^{+},u^{-},t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mo>+</mo></msup><mo>,</mo><msup><mi>u</mi><mo>-</mo></msup><mo>,</mo><mi>t</mi></mrow></semantics></math></span> can be combined to form a single vector <span class="math-container" id="2376086" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and I believe you can write all of them as a optimization problem with a linear objective and non-convex quadratic constraints. If it is possible, then Semi-definite Relaxation (SDR) is a very famous technique to deal with such non convex problems. Also in your case, SDR should give exact solutions. In details, you problem should look something like </p> <p>\begin{align} \min_{x}~~  a^{T}x \\ subject~to~ &amp;x^{H}F_{1}x \geq c_1 \\ &amp;  x^{H}F_{2}x \geq c_2\\ &amp; x^{H}F_{3}x \geq c_3 \\ &amp;  x&gt;=0 \end{align}</p> <p>If you can reformulate your problem this way which I think is possible, then semi-definite relaxation will work. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="476923"> This change of variable helps avoiding the non-smooth <span class="math-container" id="2376087" visual_id="8021"><math alttext="\ell_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub></semantics></math></span>-norm, but it does doesn't simplify the entire problem. </td></tr><tr><td comment_id="483304"> @S.B. Please look at the edited Attempt </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

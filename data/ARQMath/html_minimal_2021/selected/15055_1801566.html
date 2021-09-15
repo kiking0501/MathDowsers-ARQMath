@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>In a family with two children, what are the chances, if one of the children is a girl, that both children are girls?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> In a family with two children, what are the chances, if one of the children is a girl, that both children are girls? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="15055">
+<p>In a family with two children, what are the chances, if one of the children is a girl, that both children are girls?</p> <p>I just dipped into a book, <em>The Drunkard's Walk - How Randomness Rules Our Lives</em>, by Leonard Mlodinow, Vintage Books, 2008. On p.107 Mlodinow says the chances are 1 in 3. </p> <p>It seems obvious to me that the chances are 1 in 2. Am I correct? Is this not exactly analogous to having a bowl with an infinite number of marbles, half black and half red? Without looking I draw out a black marble. The probability of the second marble I draw being black is 1/2.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> faq </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="33050"> In your "obvoius" case, you don't count the case where the first child is a boy but the second child is a girl. </td></tr><tr><td comment_id="33052"> @Rawling  Say I visit this family. I know they have 2 kids. One of them, a girl, comes into the room. The probability that the 2nd kid is also a girl is 1/2, no?   Or let's say my wife and I have our first child, a girl. The probability that the next child we have will also be a girl is 1/2, no? </td></tr><tr><td comment_id="33072"> In the second case, yes; in the first case, I think the answer is also yes (given that one of the two children walk with equal probability). Take a look at http://en.wikipedia.org/wiki/Boy_or_Girl_paradox </td></tr><tr><td comment_id="33132"> See also: http://math.stackexchange.com/questions/4400/boy-born-on-a-tuesday-is-it-just-a-language-trick </td></tr><tr><td comment_id="160598"> So re-order the question - "in a family with two children, at least one of whom is a girl, what are the chances that the other is also a girl?" and the 1 in 3 answer might make a little more sense. </td></tr><tr><td comment_id="190523"> @NotSuper: I've made considerable edits to my answer; though it's very long, hopefully it will clear things up. </td></tr><tr><td comment_id="1386183"> Every answer here is wrong, because it uses the unstated and flawed assumption that gender distributions of multiple children in the same family are independent. </td></tr><tr><td comment_id="5697926"> Closely related to this question is a technique for generating random numbers with an arbitrary probability density function: Von Neumann acceptance-rejection. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1801566" id="answer">
+<p>You have to read carefully.  Here, the probability of a girl means the probability of at least one girl.  You have <span class="math-container" id="143063" visual_id="8268039"><math alttext="P(\hbox{one child is a girl})=1-P(\hbox{no child is a girl})=1-P(\hbox{two % boys})=\frac{1}{4}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mtext>one child is a girl</mtext><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mtext>no child is a girl</mtext><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mtext>two boys</mtext><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>.</mo></mrow></semantics></math></span> Now you are calculating the conditional probabilty <span class="math-container" id="143064" visual_id="8268040"><math alttext="P(\hbox{two girls}|\hbox{at least 1 girl}={P(\hbox{two girls})\over P(\hbox{at%  least one girl})}={1\over 3}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mtext>two girls</mtext><mo stretchy="false">|</mo><mtext>at least 1 girl</mtext><mo>=</mo><mfrac><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mtext mathsize="142%">two girls</mtext><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mtext>at least one girl</mtext><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>.</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="211393"> Tree Diagram Probability </td></tr><tr><td post_id="1612358"> Probability Paradox </td></tr><tr><td post_id="200807"> Boy and Girl paradox </td></tr><tr><td post_id="2216071"> problem with family </td></tr><tr><td post_id="2081935"> Probability of two boys if one is a boy </td></tr><tr><td post_id="195151"> Finding probability of other child also being a boy </td></tr><tr><td post_id="2149812"> The two-daughter-problem </td></tr><tr><td post_id="2281498"> Pr[(X and Y) and (X or Y)] is Pr[X and Y]? </td></tr><tr><td post_id="1606363"> Why my answer for this conditional probability problem is wrong? </td></tr><tr><td post_id="607070"> A family has two children. One child is a girl. What is the probability that the other child is a boy? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="277005"> Successful approaches to the modelization of ''randomness'' </td></tr><tr><td post_id="86797"> What's the probability of 2-head given at least 1 head? </td></tr><tr><td post_id="2711205"> Wondering if it is merely Bayes Theorem? </td></tr><tr><td post_id="2731"> very simple conditional probability question </td></tr><tr><td post_id="4400"> Boy Born on a Tuesday - is it just a language trick? </td></tr><tr><td post_id="3037134"> Conditional expectation, what is my mistake </td></tr><tr><td post_id="1800658"> Probability of having a Girl </td></tr><tr><td post_id="93948"> What is the problem in this solution to the Two Child Problem? </td></tr><tr><td post_id="1131622"> A very easy probability problem but opinions diverge greatly. Need some help. </td></tr><tr><td post_id="299500"> Coin toss - probability of a tail known that one is heads </td></tr><tr><td post_id="2107501"> A family having 4 children has 3 girl children. What is the probability that their 4th child is a son? </td></tr><tr><td post_id="1950705"> Probability that both children were born on Mondays given that the older child was born on a Monday </td></tr><tr><td post_id="2889845"> Three coins are tossed. If one of them shows a tails, what is the probability that all three coins show tails? </td></tr><tr><td post_id="886"> Deal or no deal: does one switch (to avoid a goat)?/ Should deal or no deal be 10 minutes shorter? </td></tr><tr><td post_id="1483510"> Additional information in conditional probability problem gives a different answer but this does not seem correct to me? </td></tr><tr><td post_id="2438904"> I want to use Permutation and Combination to solve this problem, but my solution isn’t correct. What is wrong with it? </td></tr><tr><td post_id="2903289"> Guessing the other dice number, given two dice were rolled, and one of them rolled a 3 </td></tr><tr><td post_id="708220"> The Jezebel probability </td></tr><tr><td post_id="1982463"> Tricky Children Probability Question </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

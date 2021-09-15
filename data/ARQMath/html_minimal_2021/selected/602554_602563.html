@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Uniform continuity of $f(x)=x^{2/3}\log x$ on $[0, \infty)$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Uniform continuity of <span class="math-container" id="6150311" visual_id="7942834"><math alttext="f(x)=x^{2/3}\log x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> on <span class="math-container" id="6150312" visual_id="710"><math alttext="[0,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="602554">
+<p>Let <span class="math-container" id="6150313" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> be a real valued function on <span class="math-container" id="6150314" visual_id="710"><math alttext="[0,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> defined by</p> <p><span class="math-container" id="6150315" visual_id="7942835"><math alttext="f(x)=\begin{cases}x^{{2}/{3}}\log x&amp;amp;\text{ if }x&amp;gt;0\\ 0&amp;amp;\text{ if }x=0\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><msup><mi>x</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mtd><mtd columnalign="left"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><mtext> if </mtext><mo>⁢</mo><mi>x</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>g</mi><mo>⁢</mo><mi>t</mi></mrow><mo>;</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="left"><mn>0</mn></mtd><mtd columnalign="left"><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><mtext> if </mtext><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p> <p>Then which of the following is true?</p> <p>A. <span class="math-container" id="6150316" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is discontinuous at <span class="math-container" id="6150317" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>B. <span class="math-container" id="6150318" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous on <span class="math-container" id="6150319" visual_id="710"><math alttext="[0,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>, but not uniformly continuous on <span class="math-container" id="6150320" visual_id="710"><math alttext="[0,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>.</p> <p>C. <span class="math-container" id="6150321" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is uniformly continuous on <span class="math-container" id="6150322" visual_id="710"><math alttext="[0,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>.</p> <p>D. <span class="math-container" id="6150323" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is not uniformly continuous on <span class="math-container" id="6150324" visual_id="710"><math alttext="[0,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>, but uniformly continuous on <span class="math-container" id="6150325" visual_id="21274"><math alttext="[1,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>.</p> <p>I could see that <span class="math-container" id="6150326" visual_id="7934555"><math alttext="f(x)=x^{\frac{2}{3}}\log x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mfrac><mn>2</mn><mn>3</mn></mfrac></msup><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> is continous at <span class="math-container" id="6150327" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </p> <p>But for uniform continuity I thought boundedness of derivative would help </p> <p>But I found <span class="math-container" id="6150328" visual_id="7942836"><math alttext="f^{\prime}(x)=\frac{2}{3}x^{-\frac{1}{3}}\log x+x^{-\frac{1}{3}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>⁢</mo><msup><mi>x</mi><mrow><mo>-</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></msup><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></mrow><mo>+</mo><msup><mi>x</mi><mrow><mo>-</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></msup></mrow></mrow></semantics></math></span> </p> <p>This <span class="math-container" id="6150329" visual_id="929"><math alttext="f^{\prime}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is not bounded so i can not say any thing about uniform contunuity.</p> <p>Please help me to clear this. </p> <p>Thank you :)</p> <p>P.S : This was already asked before (<a href="https://math.stackexchange.com/questions/599413/uniform-continuity-of-fx-x-frac23-log-x#comment1269069_599413)by">Uniform continuity of <span class="math-container" id="6150330" visual_id="7934555"><math alttext="f(x)=x^{\frac{2}{3}}\log x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mfrac><mn>2</mn><mn>3</mn></mfrac></msup><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span></a> some other person but it was not having enough details so it got closed. I tried to edit that question but someone said I should not edit OP to add more details. I was afraid that may be against the rules of MSE. So, I thought i should ask this separately with my own ideas. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> uniform-continuity </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="602563" id="answer">
+<p>You proved that the function <span class="math-container" id="6150331" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous on <span class="math-container" id="6150332" visual_id="1356"><math alttext="[0,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></semantics></math></span>, hence uniformly continuous on <span class="math-container" id="6150333" visual_id="1356"><math alttext="[0,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></semantics></math></span>. The expression of <span class="math-container" id="6150334" visual_id="1179"><math alttext="f^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mo>′</mo></msup></semantics></math></span> you provided, plus the inequality <span class="math-container" id="6150335" visual_id="7942837"><math alttext="\log u\leqslant u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>u</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\leqslant</mtext></merror><mo>⁢</mo><mi>u</mi></mrow></mrow></semantics></math></span> applied to <span class="math-container" id="6150336" visual_id="838806"><math alttext="u=x^{1/3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></semantics></math></span>, yield <span class="math-container" id="6150337" visual_id="7942838"><math alttext="0\leqslant f^{\prime}(x)\leqslant 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\leqslant</mtext></merror><mo>⁢</mo><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\leqslant</mtext></merror><mo>⁢</mo><mn>3</mn></mrow></semantics></math></span> for every <span class="math-container" id="6150338" visual_id="396380"><math alttext="~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}% ~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}~{}\displaystyle\dfrac{1}{3}% \int\dfrac{1}{1+(u)^{2}}\ du" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="141.9pt" width="+141.9pt"><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mpadded><mo>⁢</mo><mstyle displaystyle="true"><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mpadded width="+5pt"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mstyle></mrow></semantics></math></span>, hence <span class="math-container" id="6150339" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is uniformly continuous on <span class="math-container" id="6150340" visual_id="111010"><math alttext="[1,+\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>. Ergo.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1269241"> Ah m<span class="math-container" id="11824547">y</span> bad... how could i miss that... I was sure derivative is bounded on $[1,\inft<span class="math-container" id="11824548">y</span>)$ but  not on $[0,\inft<span class="math-container" id="11824550">y</span>)$... I could have used derivative test for <span class="math-container" id="6150343" visual_id="21274"><math alttext="[1,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> and "continuous on compact set is uniform continuous" for <span class="math-container" id="6150344" visual_id="1356"><math alttext="[0,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></semantics></math></span>... I am highly disappointed with my negligence... Thank you  :) </td></tr><tr><td comment_id="1269245"> Please do not be disappointed, apparently you learned something today, and any day when one learns something is a good day, don't you think? </td></tr><tr><td comment_id="1269254"> yes it is a good day, but it was asked in the exam day before yesterday... That day was a bad day :D Thank you once again... :) </td></tr><tr><td comment_id="1269287"> Ah. Well, that's too bad. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="603718"> <span class="math-container" id="6160165" visual_id="7945686"><math alttext="f(x)=x^{\frac{2}{3}}\ln x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mfrac><mn>2</mn><mn>3</mn></mfrac></msup><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> for <span class="math-container" id="6160166" visual_id="9617"><math alttext="x&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> , is it uniformly continuous </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

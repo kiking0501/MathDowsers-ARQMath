@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>If n is such that every element $(\mathbb{Z}/n\mathbb{Z})^{*}$ is a root of $x^2-1$. Prove that $n$ divides 24.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> If n is such that every element <span class="math-container" id="5471617" visual_id="5486"><math alttext="(\mathbb{Z}/n\mathbb{Z})^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mi>n</mi></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></semantics></math></span> is a root of <span class="math-container" id="5471618" visual_id="14348"><math alttext="x^{2}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span>. Prove that <span class="math-container" id="5471619" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> divides 24. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="524789">
+<p>I have a hard time formulating proofs.  For this problem I  can see that if n is equal to 8, this statement it true.  Such that <span class="math-container" id="5471620" visual_id="410673"><math alttext="(\mathbb{Z}/8\mathbb{Z})^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>8</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></semantics></math></span> includes elements:  1,3,5,7 and all of these are roots of <span class="math-container" id="5471621" visual_id="29723"><math alttext="1-x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></semantics></math></span> in mod 8.  And obviously 8 divides 24.</p> <p>But how do I prove this without depending on number calculations and only using theorems?  Help Please?  I need a step by step walk though of how to do this proof and what theorems would be appropriate to use.  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1122928"> Hint: First prove this for primes. </td></tr><tr><td comment_id="1122955"> @PrahladVaidyanathan What do you mean? </td></tr><tr><td comment_id="1122977"> Is this what you are saying:  If, for each integer <span class="math-container" id="5471677" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> such that <span class="math-container" id="5471623" visual_id="131267"><math alttext="0\leq k&lt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>k</mi><mo>&lt;</mo><mi>n</mi></mrow></semantics></math></span> and <span class="math-container" id="5471677" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> and <span class="math-container" id="5471743" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> are relatively prime, <span class="math-container" id="5471677" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> divides <span class="math-container" id="5471627" visual_id="1125775"><math alttext="k^{2}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span>, then <span class="math-container" id="5471743" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> divides <span class="math-container" id="5471745" visual_id="4522"><math alttext="24" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>24</mn></semantics></math></span>. </td></tr><tr><td comment_id="1122988"> More extensive hint: Chinese remainder theorem + the fact that <span class="math-container" id="5471630" visual_id="676634"><math alttext="(\mathbb{Z}/p^{k}\mathbb{Z})^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><msup><mi>p</mi><mi>k</mi></msup></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></semantics></math></span> is cyclic for any prime <span class="math-container" id="5471631" visual_id="94667"><math alttext="p&gt;2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>2</mn></mrow></semantics></math></span>.  Finally that it fails for 16 (to treat the case <span class="math-container" id="5471696" visual_id="656"><math alttext="p=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span>). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="524963" id="answer">
+<p><strong>Case 1:</strong> <span class="math-container" id="5471658" visual_id="230026"><math alttext="5\nmid n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\nmid</mtext></merror><mo>⁢</mo><mi>n</mi></mrow></semantics></math></span>.</p> <p>Then <span class="math-container" id="5471659" visual_id="1556278"><math alttext="5^{2}\equiv 1\pmod{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>5</mn><mn>2</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and hence <span class="math-container" id="5471660" visual_id="1556279"><math alttext="n|24" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mn>24</mn></mrow></semantics></math></span>.</p> <p><strong>Case 2:</strong> <span class="math-container" id="5471661" visual_id="697650"><math alttext="5\mid n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>n</mi></mrow></semantics></math></span>. Let <span class="math-container" id="5471662" visual_id="1556280"><math alttext="n=5^{a}m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><msup><mn>5</mn><mi>a</mi></msup><mo>⁢</mo><mi>m</mi></mrow></mrow></semantics></math></span> with <span class="math-container" id="5471663" visual_id="1556281"><math alttext="\gcd(5,m)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. By the Chinese Remainder Theorem, we can find some <span class="math-container" id="5471664" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> so that</p> <p><span class="math-container" id="5471665" visual_id="1556282"><math alttext="\begin{cases}k\equiv 1\pmod{m}\\ k\equiv 2\pmod{5}\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>{</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mi>k</mi><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>k</mi><mo>≡</mo><mrow><mn>2</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow></semantics></math></span></p> <p>Then <span class="math-container" id="5471666" visual_id="204316"><math alttext="\gcd(k,n)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and hence </p> <p><span class="math-container" id="5471667" visual_id="1556283"><math alttext="k^{2}\equiv 1\pmod{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> As <span class="math-container" id="5471668" visual_id="697650"><math alttext="5\mid n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>n</mi></mrow></semantics></math></span> we get that </p> <p><span class="math-container" id="5471669" visual_id="1556284"><math alttext="k^{2}\equiv 1\pmod{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mn>2</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> But this contradicts <span class="math-container" id="5471670" visual_id="382333"><math alttext="k\equiv 2\pmod{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≡</mo><mrow><mn>2</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1133701"> I cannot see why <span class="math-container" id="5471671" visual_id="110823"><math alttext="(k,n)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1133708"> @PedroTamaroff  <span class="math-container" id="5471674" visual_id="1458961"><math alttext="(k,m)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> from the first relation and <span class="math-container" id="5471673" visual_id="1556285"><math alttext="5\nmid k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\nmid</mtext></merror><mo>⁢</mo><mi>k</mi></mrow></semantics></math></span> from the second relation. Thus, <span class="math-container" id="5471674" visual_id="1458961"><math alttext="(k,m)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>,</mo><mi>m</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="5471675" visual_id="1556286"><math alttext="(k,5^{a})=1\Rightarrow(k,5^{a}m)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>,</mo><msup><mn>5</mn><mi>a</mi></msup><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn><mo>⇒</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>,</mo><mrow><msup><mn>5</mn><mi>a</mi></msup><mo>⁢</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.... Or, if you prefer if <span class="math-container" id="5471676" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is a prime dividing <span class="math-container" id="5471677" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, the first relation tells you it cannot divide <span class="math-container" id="5471723" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span>, while second tells you <span class="math-container" id="5471679" visual_id="186279"><math alttext="p\neq 5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≠</mo><mn>5</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1133712"> Yes, got it. This is a very elegant solution. </td></tr><tr><td comment_id="1133714"> @PedroTamaroff Ty :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="522360"> Why is the group of units mod 8 isomorpic to the Klein 4 group? </td></tr><tr><td post_id="525947"> Suppose that <span class="math-container" id="5482173" visual_id="1559876"><math alttext="5\leq q\leq p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>≤</mo><mi>q</mi><mo>≤</mo><mi>p</mi></mrow></semantics></math></span> are both prime. Prove that <span class="math-container" id="5482174" visual_id="1559877"><math alttext="24|(p^{2}-q^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>24</mn><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>-</mo><msup><mi>q</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to obtain primal problem from Lagrangian?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to obtain primal problem from Lagrangian? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="686909">
+<p>If you're trying to optimize <span class="math-container" id="6894820" visual_id="5617956"><math alttext="\min_{x}f_{0}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>min</mi><mi>x</mi></msub><mo>⁡</mo><msub><mi>f</mi><mn>0</mn></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> subject to <span class="math-container" id="6894821" visual_id="2553090"><math alttext="f_{i}(x)\leq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>f</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mn>0</mn></mrow></semantics></math></span> then the Lagrangian would be</p> <p><span class="math-container" id="6894822" visual_id="5617957"><math alttext="L(x,\lambda)=f_{0}(x)+\sum_{i}\lambda_{i}f_{i}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mi>i</mi></msub><mrow><msub><mi>λ</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>f</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>The dual problem is <span class="math-container" id="6894823" visual_id="5617958"><math alttext="\max_{\lambda}g(y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>max</mi><mi>λ</mi></msub><mo>⁡</mo><mi>g</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> where <span class="math-container" id="6894824" visual_id="198679"><math alttext="g(\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is obtained from the Lagrangian above:</p> <p><span class="math-container" id="6894825" visual_id="5617959"><math alttext="g(\lambda)=\min_{x}\mathcal{L}(x,\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>min</mi><mi>x</mi></msub><mo>⁡</mo><mi class="ltx_font_mathcaligraphic">ℒ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Now my question is, how do I obtain <em>the primal problem itself</em> from the Lagrangian?  </p> <p>I think the primal is <span class="math-container" id="6894826" visual_id="489940"><math alttext="\min_{x}f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>min</mi><mi>x</mi></msub><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> where</p> <p><span class="math-container" id="6894827" visual_id="5617960"><math alttext="f(x)=\max_{\lambda}\mathcal{L}(x,\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>max</mi><mi>λ</mi></msub><mo>⁡</mo><mi class="ltx_font_mathcaligraphic">ℒ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>but is this correct?  </p> <p>Oddly enough, I've never seen this mentioned anywhere, so I feel I might be missing something.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> convex-optimization </span><span> lagrange-multiplier </span><span> duality-theorems </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1440694"> I'm not sure what you mean, but <span class="math-container" id="6894828" visual_id="5617961"><math alttext="f_{0}(x)=L(x,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="6894834" visual_id="5617962"><math alttext="f_{k}(x)=L(x,e_{k})-L(x,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>e</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1440702"> @copper.hat: That doesn't make any sense, your <span class="math-container" id="6894830" visual_id="28567"><math alttext="f_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>k</mi></msub></semantics></math></span> is a function of <span class="math-container" id="6894831" visual_id="6209"><math alttext="e_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>e</mi><mi>k</mi></msub></semantics></math></span> but you haven't written it as a parameter of it. </td></tr><tr><td comment_id="1440717"> It does make sense. <span class="math-container" id="6894832" visual_id="5617963"><math alttext="L(x,e_{k})=f_{0}(x)+f_{k}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>e</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> just from the formula above. In addition, <span class="math-container" id="6894833" visual_id="5617964"><math alttext="L(x,0)=f_{0}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, so subtracting gives <span class="math-container" id="6894834" visual_id="5617962"><math alttext="f_{k}(x)=L(x,e_{k})-L(x,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>e</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>. What part does not make sense to you? </td></tr><tr><td comment_id="1440727"> Perhaps I am missing your point, the primal problem arises directly from the Lagrangian as in <span class="math-container" id="6894835" visual_id="2528449"><math alttext="\inf_{x}\sup_{\lambda\geq 0}L(x,\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>inf</mo><mi>x</mi></msub><mo>⁡</mo><mrow><msub><mo>sup</mo><mrow><mi>λ</mi><mo>≥</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>. The dual problem switches the <span class="math-container" id="6894836" visual_id="399"><math alttext="\inf" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>inf</mo></semantics></math></span> and <span class="math-container" id="6894837" visual_id="398"><math alttext="\sup" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>sup</mo></semantics></math></span> to get <span class="math-container" id="6894838" visual_id="2528450"><math alttext="\sup_{\lambda\geq 0}\inf_{x}L(x,\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>sup</mo><mrow><mi>λ</mi><mo>≥</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><msub><mo>inf</mo><mi>x</mi></msub><mo>⁡</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1440730"> @copper.hat: Don't worry about it, I got my answer, thanks. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="686919" id="answer">
+<p>Yes, the primal optimal value is <span class="math-container" id="6894839" visual_id="2528449"><math alttext="\inf_{x}\sup_{\lambda\geq 0}L(x,\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>inf</mo><mi>x</mi></msub><mo>⁡</mo><mrow><msub><mo>sup</mo><mrow><mi>λ</mi><mo>≥</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> and the dual optimal value is <span class="math-container" id="6894840" visual_id="2528450"><math alttext="\sup_{\lambda\geq 0}\inf_{x}L(x,\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>sup</mo><mrow><mi>λ</mi><mo>≥</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mrow><msub><mo>inf</mo><mi>x</mi></msub><mo>⁡</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>.  A primal and dual optimal pair of variables gives you a saddle point of the Lagrangian.  This is discussed on p. 238 (section 5.4.1) of Boyd and Vandenberghe, and is also discussed in other convex optimization books such as Borwein and Lewis (p. 88, section 4.3).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1440729"> +1 thanks <span class="math-container" id="13361133">f</span>or mentioning the saddle point! That's a good intuition. </td></tr><tr><td comment_id="1440757"> Duality considerably predates Boyd et al. I think von Neumann is credited with the min-max interpretation. </td></tr><tr><td comment_id="1440805"> @copper.hat yes, good point, I mentioned Boyd and Vandenberghe mainly because it's one of the most popular convex optimization textbooks right now. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

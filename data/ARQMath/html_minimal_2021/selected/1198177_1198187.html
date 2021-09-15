@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>stuck with root test for series convergence to $1$ for $\sum_{n=0}^{\infty} \left(\frac{(1+i)}{\sqrt{2}}\right)^n$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> stuck with root test for series convergence to <span class="math-container" id="11222226" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> for <span class="math-container" id="11222227" visual_id="2169970"><math alttext="\sum_{n=0}^{\infty}\left(\frac{(1+i)}{\sqrt{2}}\right)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msup><mrow><mo>(</mo><mfrac><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>)</mo></mrow><mi>n</mi></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1198177">
+<p>I've got this series and I used the series convergence root test. However my problem is: The result of the root test is one, so I can't show wheter the series converges/diverges </p> <p><span class="math-container" id="11222228" visual_id="2169970"><math alttext="\sum_{n=0}^{\infty}\left(\frac{(1+i)}{\sqrt{2}}\right)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msup><mrow><mo>(</mo><mfrac><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>)</mo></mrow><mi>n</mi></msup></mrow></semantics></math></span> My approach  <span class="math-container" id="11222229" visual_id="2169971"><math alttext="M\phi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>⁢</mo><mi>ϕ</mi></mrow></semantics></math></span></p> <p>So, now I have 1 as result and can't decide wheter it converges or not? Is there any other test I can use to show?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> complex-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1198187" id="answer">
+<p><span class="math-container" id="11222232" visual_id="2169973"><math alttext="\left(\frac{1+i}{\sqrt{2}}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>)</mo></mrow></semantics></math></span> has norm <span class="math-container" id="11222233" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, hence every power of it has norm <span class="math-container" id="11222234" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>.</p> <p>So the sequence </p> <p><span class="math-container" id="11222235" visual_id="2169974"><math alttext="a_{n}=\left(\frac{1+i}{\sqrt{2}}\right)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msup><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><msqrt><mn>2</mn></msqrt></mfrac><mo>)</mo></mrow><mi>n</mi></msup></mrow></semantics></math></span></p> <p>is not a zero sequence, hence the series can not converge.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2438614"> I am not sure what you mean by norm? Edit: So you mean the <span class="math-container" id="11222236" visual_id="277085"><math alttext="\frac{\sqrt{2}}{\sqrt{2}}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msqrt><mn>2</mn></msqrt><msqrt><mn>2</mn></msqrt></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math></span>    And therefore I have <span class="math-container" id="11222237" visual_id="157080"><math alttext="1^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>1</mn><mi>n</mi></msup></semantics></math></span>? </td></tr><tr><td comment_id="2438616"> Just the usual norm for complex numbers. If <span class="math-container" id="11222238" visual_id="42822"><math alttext="z=a+bi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>i</mi></mrow></mrow></mrow></semantics></math></span>, then <span class="math-container" id="11222239" visual_id="98302"><math alttext="|z|^{2}=a^{2}+b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="2438620"> Yes, exactly. ;) </td></tr><tr><td comment_id="2438622"> That is what I thought, so I first check for absolute convergence and see that it is always 1 and therefore it can't converge. Right? </td></tr><tr><td comment_id="2438633"> No, I was not checking if we have absolute convergence. Take a look at this very important fact: http://en.wikipedia.org/wiki/Term_test </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

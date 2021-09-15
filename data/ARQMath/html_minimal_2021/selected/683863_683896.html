@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to find the sum of series $\sum_{i=1}^{\infty}\frac{i}{2^i}$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to find the sum of series <span class="math-container" id="6868868" visual_id="1819709"><math alttext="\sum_{i=1}^{\infty}\frac{i}{2^{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>i</mi><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="683863">
+<p>I am learning about series of numbers at the moment. In the book there is an exercise in which I need to find the sum of : <span class="math-container" id="6868869" visual_id="1819709"><math alttext="\sum_{i=1}^{\infty}\frac{i}{2^{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>i</mi><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow></semantics></math></span> I know it is equal to <span class="math-container" id="6868870" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>. But how do I get to that result? Are there any general ways of finding the sums of series? In the books I am using, there is a lot about series, their convergence etc. but almost no examples.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> self-learning </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1434906"> http://en.wikipedia.org/wiki/Arithmetico-geometric_sequence#Series.2C_sum_to_n_terms and http://www.artofproblemsolving.com/Wiki/index.php/Arithmetico-geometric_series  or http://en.wikipedia.org/wiki/Geometric_series#Geometric_power_series </td></tr><tr><td comment_id="1434907"> See [this](http://math.stackexchange.com/questions/30732/how-can-i-evaluate-sum-n-0-infty-n1xn). </td></tr><tr><td comment_id="1434911"> [Prove that for all <span class="math-container" id="6868871" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span>, <span class="math-container" id="6868872" visual_id="2882074"><math alttext="\sum_{i=1}^{n}i/2^{i}=2-(n+2)/2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mi>i</mi><mo>/</mo><msup><mn>2</mn><mi>i</mi></msup></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></mrow></mrow></semantics></math></span>](https://math.stackexchange.com/questions/512065/prove-that-for-all-n-in-mathbbn-sum-i-1n-i-2i-2-n2-2n) </td></tr><tr><td comment_id="1434914"> See [polylogarithm](http://en.wikipedia.org/wiki/Polylogarithm). </td></tr><tr><td comment_id="1434917"> [Why <span class="math-container" id="6868873" visual_id="950268"><math alttext="\sum_{k=1}^{\infty}\frac{k}{2^{k}}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>k</mi><msup><mn>2</mn><mi>k</mi></msup></mfrac></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span>?](https://math.stackexchange.com/questions/337937/why-sum-k-1-infty-frack2k-2/337952#337952) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="683896" id="answer">
+<p>In this particular case:</p> <p><span class="math-container" id="6868876" visual_id="5609828"><math alttext="\sum_{i=1}^{\infty}\frac{i}{2^{i}}=\sum_{i=1}^{\infty}\frac{1}{2^{i}}+\sum_{i=% 2}^{\infty}\frac{1}{2^{i}}+\sum_{i=3}^{\infty}\frac{1}{2^{i}}+\dots=\sum_{i=1}% ^{\infty}\frac{1}{2^{i}}\sum_{j=0}^{\infty}\frac{1}{2^{j}}=1\cdot 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>i</mi><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow><mo>+</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow><mo>+</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>3</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mi>i</mi></msup></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><msup><mn>2</mn><mi>j</mi></msup></mfrac></mrow></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>⋅</mo><mn>2</mn></mrow></mrow></semantics></math></span>.</p> <p>But, of course, you need to say something about absolute convergence to manipulate the series in such a way.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1434984"> Perhaps you should use two different indices in your last expression. </td></tr><tr><td comment_id="1434990"> They are "independent" but I agree, that looks better and less con<span class="math-container" id="13311516">f</span>using. Fi<span class="math-container" id="13311517">x</span>ed. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="674220"> A simple series <span class="math-container" id="6783068" visual_id="4486836"><math alttext="\sum_{i=1}^{\infty}\frac{i}{2^{i}}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>i</mi><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="30732"> How can I evaluate <span class="math-container" id="317570" visual_id="52656"><math alttext="\sum_{n=0}^{\infty}(n+1)x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

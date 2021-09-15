@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is the general equation for a straight line not considered a linear function in linear algebra?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is the general equation for a straight line not considered a linear function in linear algebra? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1773857">
+<p>Is the general equation for a straight line, which we called a linear function in highschool, i.e.</p> <p><span class="math-container" id="16384605" visual_id="64598"><math alttext="f(x)=mx+c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>c</mi></mrow></mrow></semantics></math></span></p> <p>not considered to be a linear function according to the linear algebra definition that it need to satisfy</p> <p><span class="math-container" id="16384606" visual_id="1305351"><math alttext="f(\alpha x_{1}+\beta x_{2})=\alpha f(x_{1})+\beta f(x_{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>since the two sides of equation <span class="math-container" id="16384607" visual_id="1757"><math alttext="(2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> would differ by the constant term if using equation <span class="math-container" id="16384608" visual_id="749"><math alttext="(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> as the definition of <span class="math-container" id="16384609" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>? As far as I understand the first equation I posted would be considered an affine function but not a linear function in linear algebra (right?).</p> <p>Are there just (annoyingly) two completely different definitions of what a linear function is or is there a reason that these two definitions have the same name (i.e. are the concepts related)?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3620211"> We call <span class="math-container" id="16384610" visual_id="1305352"><math alttext="mx+c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>c</mi></mrow></semantics></math></span> linear because its graph is a line.  We call linear mappings in (2) linear because they respect the linear (vector space) structure, so they map lines to lines/0, planes to planes/lines/0, etc.  You can connect the two uses of "linear" through [affine transformations](https://en.wikipedia.org/wiki/Affine_transformation) if you wanted to, but it might be best to just think of them as being separate. </td></tr><tr><td comment_id="3620234"> @JoshKeneda but an affine mapping would also map lines to lines etc right? So why then not have called that linear and called the linear mapping something else. I guess it's just a case of the same terminology used to mean two different things. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1773878" id="answer">
+<p>Simply put, the first one refers to "<a href="http://mathworld.wolfram.com/Line.html" rel="nofollow">a straight one-dimensional figure having no thickness and extending infinitely in both directions</a>". The second one refers to "verifying the linearity property". Everyday words are polysemic, and the first notion of a line possibly predates the algebraic notion.  In the past, the first one was callled a "right line" or a "straight line".</p> <p>Some have called "line" the edge of a graph, in differential geometry the line can be interpreted as a geodesic.</p> <p>Polysemy exist in mathematics too, and your knowledge and jugdement will help you distinguish the different acceptions. For instance, binary refers to the binary number systems, or to the nature of an operation acting on two operands.</p> <p>You can read about the polysemy of symbols in: <a href="http://www.math.umt.edu/tmme/vol7no2and3/4_mamolo_tmmevol7nos2and3_pp.247_262.pdf" rel="nofollow">Polysemy of symbols: Signs of ambiguity</a>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

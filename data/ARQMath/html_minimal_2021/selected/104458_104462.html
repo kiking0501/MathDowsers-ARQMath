@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Test for convergence</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Test for convergence </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="104458">
+<blockquote> <p><strong>Possible Duplicate:</strong><br/> <a href="https://math.stackexchange.com/questions/67198/does-int-0-infty-frac-sin-xxdx-have-an-improper-riemann-integral-or">Does <span class="math-container" id="1201200" visual_id="374727"><math alttext="\int_{0}^{\infty}\frac{\sin x}{x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> have an improper Riemann integral or a Lebesgue integral?</a> </p> </blockquote> <p>I am stuck with the following integral:</p> <p>\begin{equation} \int_\mathbb{R} \frac{\sin t}{t} \end{equation}</p> <p>I would like to find out whether this integral is convergent, but I totally forgot how to find the right convergence test here, at the origin I should have no problem since the integrand has a removable singularity. Towards infinity I was thinking about the harmonic series as a comparison, but obviously it is not going to bound the integrand from below, which would show divergence . Integration by parts should give me a logarithm multiplied by a trigonometric function, would that help? I then have to figure out <span class="math-container" id="1201201" visual_id="8500360"><math alttext="\lim_{t\to\infty}\cos t\log t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>t</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>t</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span> .. how do I do this?</p> <p>For the absolute integrand I reckon it is easier, here I can bound below using the harmonic series. But for the integral above I am not sure, thks for any hints!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> improper-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="245155"> I see two possible interpretations of the latter limit and they are incompatible; put some parentheses in it. (Not like the limit exists either way...) </td></tr><tr><td comment_id="245214"> This is done in Rudin's _Real and Complex Analysis_, second edition, on page 161, exercise 12. </td></tr><tr><td comment_id="245343"> I wish I could accept all answers - thanks so much as well as for the comment of where to look at in Rudin's book !! I must have been blind yesterday wrt the limit posted above, (below the integral) of course <span class="math-container" id="1201202" visual_id="8500361"><math alttext="\cos t\log t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>t</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>t</mi></mrow></mrow></mrow></semantics></math></span> increasingly oscillates as t gets large. Sometimes I have the eye of a mole. Anyways, many thanks !! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="104462" id="answer">
+<p>Consider the "improper Riemman integral",  \begin{align*} \int_0^\infty {\sin(x)\over x} \,dx &amp;= \lim_{n\to\infty} \int_0^{\pi n}{\sin(x)\over x} \,dx \\ &amp;= \lim_{n \to \infty}\sum_{k=0}^{n -1} \int_{k\pi}^{(k+1)\pi}{\sin(x)\over x}\,dx \\ &amp;=  \sum_{k = 0}^\infty (-1)^k \int_0^\pi{\sin(x)\over x + k\pi} \,dx \end{align*} The integrals are decreasing in <span class="math-container" id="1201203" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, so the series converges at <span class="math-container" id="1201204" visual_id="1477"><math alttext="n\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> by the alternating series test.  However, this integral is NOT absolutely integrable.  </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="245167"> I added in some limits and things that appeared to be missing. Hope I didn't mess it up! Nice answer. </td></tr><tr><td comment_id="245196"> I think you probably want <span class="math-container" id="1201205" visual_id="30610"><math alttext="x+k\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mrow><mi>k</mi><mo>⁢</mo><mi>π</mi></mrow></mrow></semantics></math></span> in the denominator of the last integral. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="67198"> Does <span class="math-container" id="747002" visual_id="374727"><math alttext="\int_{0}^{\infty}\frac{\sin x}{x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> have an improper Riemann integral or a Lebesgue integral? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

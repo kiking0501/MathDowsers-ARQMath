@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why the serving time (excluding waiting time) at bank counter can be modeled as exponential distribution?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why the serving time (excluding waiting time) at bank counter can be modeled as exponential distribution? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1493350">
+<p>Hi I read something saying the serving time has <code>exponential dist</code>.</p> <p>I understand that, if the process is <code>Poisson process</code>, the count of events happens in a hour has <code>Poisson dist.</code>, and the waiting time til the next event has <code>Exponential dist.</code>.</p> <p>For <code>Poisson process</code>, each event must be independent.</p> <p>[case 1] I see the waiting time til the next customer comes into the bank is <code>Exponential dist</code>, meaning you don't know whatsoever when the next one's coming. This is because the event of customer arrival is a <code>Poisson process</code>, which is because the arrival time of N customers t1-tN are independent.</p> <p>[case 2] Suppose there's a counter and a line, we start timing when the 1st customer line start his/her business, I don't see how the event that customers finishing business at the counter is <code>Poisson process</code>, . They are not independent - one starts his/her business only when the earlier one finishes. I also don't see how the serve time at the counter is <code>exponential dist.</code></p> <p>[case 3] a contrast example: the waiting time til the next customer leaving the counter is <code>exponential dist.</code>. This case is different from [case 2].  In [case 2], the serving time means we start timing when this customer starts his business. While in [case 4], we appear at the counter and see a customers there - we don't know if he/she just started or has been there for a while.</p> <p>About the physical meaning of <code>exponential dist.</code>, it's the cousin of <code>uniform dist.</code>. <code>Uniform dist.</code> is defined at x = a to b, and means you don't know whatsoever when it's gonna happen between a and b. When you extend the idea to x = 0 to Inf, it is <code>exponential dist.</code>, also meaning we have no idea when the next event's gonna happen. </p> <p>In [case 3] we don't know at all when the customs gonna finish the business.  In [case 2], we know something: we start timing when he/she just started the business. Would you still think the chance he/she spending 1 sec at the counter &gt; the chance of spending 30 sec &gt; the chance of spending 1 min? </p> <p>Does what I think make sense? Please help me. Thanks everyone.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> exponential-function </span><span> poisson-distribution </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1493764" id="answer">
+<p>It looks like you have two models here. One for the waiting time until the next customer arrives in the queue, which would be exponential if their arrival is Poisson, and one for the time you have to wait in the queue till you get served.  These distributions don't have to be the same. If the service time for each customer is an exponential distribution and there are <span class="math-container" id="13812542" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> customer before you, then your waiting time in the queue is no longer an exponential but the sum of exponentials. Under iid assumption your waiting time in the queue is then a gamma random variable depending on the nb of people before you.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3042729"> hi @Elsa thanks! I guess my question is, why the serving time is exponential dist.? Why customer finishes up at the counter is a Poisson process? I updated OP, please see the difference between [case 2] and [case 1 and 3] </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

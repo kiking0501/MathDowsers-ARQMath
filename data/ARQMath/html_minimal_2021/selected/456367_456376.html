@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to find $\sum n^3$ if $\sum n^2$ is given</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to find <span class="math-container" id="4802508" visual_id="361559"><math alttext="\sum n^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><msup><mi>n</mi><mn>3</mn></msup></mrow></semantics></math></span> if <span class="math-container" id="4802509" visual_id="38093"><math alttext="\sum n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math></span> is given </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="456367">
+<p>Problem : </p> <p>Find <span class="math-container" id="4802510" visual_id="361560"><math alttext="\sum_{j=1}^{n}j^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msup><mi>j</mi><mn>3</mn></msup></mrow></semantics></math></span> if <span class="math-container" id="4802511" visual_id="361561"><math alttext="\sum_{j=1}^{n}j^{2}=2870" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msup><mi>j</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>2870</mn></mrow></semantics></math></span> </p> <p>Can we use the following method : </p> <p><span class="math-container" id="4802512" visual_id="361562"><math alttext="\sum_{j=1}^{n}j^{2}=\frac{n(n+1)(2n+1)}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msup><mi>j</mi><mn>2</mn></msup></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></mrow></semantics></math></span> = 2870..</p> <p>( As sum of the square of first n natural number is <span class="math-container" id="4802513" visual_id="113572"><math alttext="\frac{n(n+1)(2n+1)}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></semantics></math></span>)</p> <p>But how do we proceed from here to get the result?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> algebra-precalculus </span><span> summation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="981944"> You could factor 2870. Then identify the factors with those in <span class="math-container" id="4802514" visual_id="113572"><math alttext="\frac{n(n+1)(2n+1)}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></semantics></math></span> to find <span class="math-container" id="4802547" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. </td></tr><tr><td comment_id="981957"> Do you know the formula for <span class="math-container" id="4802516" visual_id="361559"><math alttext="\sum n^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><msup><mi>n</mi><mn>3</mn></msup></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="981962"> yeah it is <span class="math-container" id="4802517" visual_id="361563"><math alttext="[\frac{n(n+1)}{2}]^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">[</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac><mo stretchy="false">]</mo></mrow><mn>2</mn></msup></semantics></math></span> @ Thomas </td></tr><tr><td comment_id="981968"> See [here](http://math.stackexchange.com/questions/320985/how-to-determine-equation-for-sum-k-1n-k3/321000#321000). </td></tr><tr><td comment_id="982038"> I've added ([tag:summation]) tag, which is intended specifically [for finite sums](http://math.stackexchange.com/tags/summation/info) (among other things). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="456376" id="answer">
+<p>Note that <span class="math-container" id="4802518" visual_id="361564"><math alttext="n(n+1)(2n+1)=2n(n+1)(n+1/2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Letting <span class="math-container" id="4802519" visual_id="361565"><math alttext="m=n+1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></mrow></semantics></math></span>, we get:</p> <p><span class="math-container" id="4802520" visual_id="361566"><math alttext="2780\cdot 3=(m-1/2)(m+1/2)m=m^{3}-m/4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2780</mn><mo>⋅</mo><mn>3</mn></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>m</mi></mrow><mo>=</mo><mrow><msup><mi>m</mi><mn>3</mn></msup><mo>-</mo><mrow><mi>m</mi><mo>/</mo><mn>4</mn></mrow></mrow></mrow></semantics></math></span> So we want <span class="math-container" id="4802521" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> to be just over <span class="math-container" id="4802522" visual_id="361567"><math alttext="\sqrt[3]{3\cdot 2780}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><mrow><mn>3</mn><mo>⋅</mo><mn>2780</mn></mrow><mn>3</mn></mroot></semantics></math></span>. That should give you a candidate for <span class="math-container" id="4802523" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. You should check that this <span class="math-container" id="4802524" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> works.</p> <p>Note: The <span class="math-container" id="4802525" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> trick is a bit of magic, but we know that <span class="math-container" id="4802526" visual_id="159210"><math alttext="n(n+1)(2n+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> grows "like" <span class="math-container" id="4802527" visual_id="361568"><math alttext="2n^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><msup><mi>n</mi><mn>3</mn></msup></mrow></semantics></math></span>, so even if you don't find the <span class="math-container" id="4802528" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> trick, you can guess it will be near <span class="math-container" id="4802529" visual_id="361567"><math alttext="\sqrt[3]{3\cdot 2780}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><mrow><mn>3</mn><mo>⋅</mo><mn>2780</mn></mrow><mn>3</mn></mroot></semantics></math></span>. The <span class="math-container" id="4802530" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> trick makes it clear that if such <span class="math-container" id="4802531" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> exists, there has to be only a single value.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="320985"> How to determine equation for <span class="math-container" id="3470555" visual_id="453122"><math alttext="\sum_{k=1}^{n}k^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msup><mi>k</mi><mn>3</mn></msup></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

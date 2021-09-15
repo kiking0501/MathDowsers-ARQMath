@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>smooth surjective map from lower dimensional manifold onto higher dimensional manifold?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> smooth surjective map from lower dimensional manifold onto higher dimensional manifold? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="773765">
+<p>I'm thinking about whether there exists a <strong>smooth surjective map <span class="math-container" id="7637583" visual_id="4579095"><math alttext="f:M^{m}\twoheadrightarrow N^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><msup><mi>M</mi><mi>m</mi></msup><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\twoheadrightarrow</mtext></merror><mo>⁢</mo><msup><mi>N</mi><mi>n</mi></msup></mrow></mrow></semantics></math></span> where both <span class="math-container" id="7637584" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> and <span class="math-container" id="7637585" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> are smooth manifolds, and <span class="math-container" id="7637586" visual_id="4579096"><math alttext="\dim M=m&amp;lt;n=\dim N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>dim</mo><mo>⁡</mo><mi>M</mi></mrow><mo>=</mo><mrow><mi>m</mi><mo>&lt;</mo></mrow></mrow><mrow><mi>n</mi><mo>=</mo><mrow><mo>dim</mo><mo>⁡</mo><mi>N</mi></mrow></mrow></mrow></semantics></math></span></strong>. (We might assume that <span class="math-container" id="7637587" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> and <span class="math-container" id="7637588" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> are boundaryless, although I don't think this is necessary.)</p> <p>Intuition tells me the answer is no, since smooth manifolds and smooth maps between them ought to behave nicely. Things like space-filling curves are obviously excluded from this class of nice objects.</p> <p>However, I find it hard to justify such a claim. In particular, I tried to approach from the measure of <span class="math-container" id="7637589" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> and <span class="math-container" id="7637590" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> but failed. Any ideas? Thanks.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> differential-geometry </span><span> manifolds </span><span> differential-topology </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="773773" id="answer">
+<p>You're looking for <a href="http://en.wikipedia.org/wiki/Sard%27s_theorem" rel="nofollow">Sard's theorem</a>. If <span class="math-container" id="7637591" visual_id="7908"><math alttext="m&amp;lt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>&lt;</mo></mrow><mi>n</mi></mrow></semantics></math></span>, the image of <span class="math-container" id="7637592" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> consists solely of critical values, and thus must have measure zero in <span class="math-container" id="7637593" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span>.</p> <p>Note that the proof of Sard's theorem is extremely difficult, so you shouldn't feel too bad about not discovering it!</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1605927"> I do know Sard's theorem and have seen a proof of it (and I thought about applying it...), but the version I know is from <span class="math-container" id="7637594" visual_id="2631"><math alttext="\mathbb{R}^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup></semantics></math></span> to <span class="math-container" id="7637595" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span>, so to apply it to <span class="math-container" id="7637596" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> and <span class="math-container" id="7637599" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span>, I need to go to the ambient space of <span class="math-container" id="7637599" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span>. But the measure of <span class="math-container" id="7637599" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> could be zero in the ambient space; that's why it wasn't clear to me how to proceed. However, obviously Sard's theorem also applies to general manifolds. Then it's crystal clear. Thank you. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that if the gcd of a set of non-negative integers $n_1,n_2,...,n_k$ is 1, then there exists $c_1,...,c_k\in\Bbb Z$ st. $\sum_{i=1}^k c_in_i=1$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that if the gcd of a set of non-negative integers <span class="math-container" id="14919386" visual_id="4573"><math alttext="n_{1},n_{2},...,n_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>n</mi><mi>k</mi></msub></mrow></semantics></math></span> is 1, then there exists <span class="math-container" id="14919387" visual_id="9225284"><math alttext="c_{1},...,c_{k}\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>c</mi><mi>k</mi></msub></mrow><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span> st. <span class="math-container" id="14919388" visual_id="9225285"><math alttext="\sum_{i=1}^{k}c_{i}n_{i}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>n</mi><mi>i</mi></msub></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1613706">
+<p>Show that if the gcd of a set of non-negative integers <span class="math-container" id="14919389" visual_id="4573"><math alttext="n_{1},n_{2},...,n_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>n</mi><mi>k</mi></msub></mrow></semantics></math></span> is 1, then there exists <span class="math-container" id="14919390" visual_id="9225286"><math alttext="c_{1},c_{2},...,c_{k}\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>c</mi><mi>k</mi></msub></mrow><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span> st. <span class="math-container" id="14919391" visual_id="9225287"><math alttext="c_{1}n_{1}+c_{2}n_{2}+...+c_{k}n_{k}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>n</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><msub><mi>c</mi><mi>k</mi></msub><mo>⁢</mo><msub><mi>n</mi><mi>k</mi></msub></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. Anyone can help give a understandable proof without those advanced number theory stuff? Thank you!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> gcd-and-lcm </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3289260"> @DavidKleiman Great! Thank you! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1613742" id="answer">
+<p>Let <span class="math-container" id="14919392" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> be the set of integers that can bet written in that form:</p> <p><span class="math-container" id="14919393" visual_id="9225288"><math alttext="S=\{c_{1}n_{1}+c_{2}n_{2}+\cdots+c_{k}n_{k}\mid c_{1},\dots,c_{k}\in\mathbb{Z}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>n</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>c</mi><mi>k</mi></msub><mo>⁢</mo><msub><mi>n</mi><mi>k</mi></msub></mrow></mrow><mo>∣</mo><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>c</mi><mi>k</mi></msub></mrow><mo>∈</mo><mi>ℤ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span></p> <p>Then <span class="math-container" id="14919394" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> is non-empty and has a positive integer in it (why?) Let <span class="math-container" id="14919395" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> be the least positive integer in <span class="math-container" id="14919396" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>.</p> <p>Then assume <span class="math-container" id="14919397" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> does not divide <span class="math-container" id="14919398" visual_id="4576"><math alttext="n_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>i</mi></msub></semantics></math></span> for some <span class="math-container" id="14919399" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>. Write <span class="math-container" id="14919400" visual_id="9225289"><math alttext="n_{i}=dq+r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mi>i</mi></msub><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>q</mi></mrow><mo>+</mo><mi>r</mi></mrow></mrow></semantics></math></span> with <span class="math-container" id="14919401" visual_id="62114"><math alttext="0\leq r&amp;lt;d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mrow><mrow><mi>r</mi><mo>&lt;</mo></mrow><mi>d</mi></mrow></mrow></semantics></math></span>, by the division algorithm.</p> <p>Now show that <span class="math-container" id="14919402" visual_id="9225290"><math alttext="r=n_{i}-dq\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mrow><msub><mi>n</mi><mi>i</mi></msub><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><mi>q</mi></mrow></mrow><mo>∈</mo><mi>S</mi></mrow></semantics></math></span>.  So <span class="math-container" id="14919403" visual_id="62114"><math alttext="0\leq r&amp;lt;d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mrow><mrow><mi>r</mi><mo>&lt;</mo></mrow><mi>d</mi></mrow></mrow></semantics></math></span>. Since <span class="math-container" id="14919404" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> does not divide <span class="math-container" id="14919405" visual_id="4576"><math alttext="n_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>i</mi></msub></semantics></math></span>, we have <span class="math-container" id="14919406" visual_id="6045"><math alttext="r&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>r</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>. So <span class="math-container" id="14919407" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> is a smaller positive integer in <span class="math-container" id="14919408" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>, reaching a contradiction.</p> <p>Therefore, <span class="math-container" id="14919409" visual_id="9225291"><math alttext="d\mid n_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><msub><mi>n</mi><mi>i</mi></msub></mrow></semantics></math></span> for all <span class="math-container" id="14919410" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>. Since they have no common factor, you are done - <span class="math-container" id="14919411" visual_id="9225292"><math alttext="d=1\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>1</mn><mo>∈</mo><mi>S</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3292553"> Thank you for your solution. I have a question. It seems <span class="math-container" id="14919412" visual_id="179840"><math alttext="q&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>, but why? Thank you! </td></tr><tr><td comment_id="3293046"> Ugh, there was a big error in my proof - I had written <span class="math-container" id="14919413" visual_id="9225293"><math alttext="d=n_{i}q+r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mrow><mrow><msub><mi>n</mi><mi>i</mi></msub><mo>⁢</mo><mi>q</mi></mrow><mo>+</mo><mi>r</mi></mrow></mrow></semantics></math></span> and meant <span class="math-container" id="14919414" visual_id="9225289"><math alttext="n_{i}=dq+r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mi>i</mi></msub><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>q</mi></mrow><mo>+</mo><mi>r</mi></mrow></mrow></semantics></math></span> with <span class="math-container" id="14919415" visual_id="880333"><math alttext="0\leq r&lt;d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>r</mi><mo>&lt;</mo><mi>d</mi></mrow></semantics></math></span>. There is no particular reson to expect <span class="math-container" id="14919416" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> to be positive. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1615224"> Given a sequence <span class="math-container" id="14933963" visual_id="14867"><math alttext="a_{1},a_{2},\ldots,a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></semantics></math></span>, if <span class="math-container" id="14933964" visual_id="534302"><math alttext="\gcd(a_{1},a_{2},\ldots,a_{n})=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, then there exists one pair <span class="math-container" id="14933965" visual_id="213803"><math alttext="a_{i},a_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>,</mo><msub><mi>a</mi><mi>j</mi></msub></mrow></semantics></math></span> st. <span class="math-container" id="14933966" visual_id="205760"><math alttext="\gcd(a_{i},a_{j})=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>,</mo><msub><mi>a</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. </td></tr><tr><td post_id="665389"> Writing a GCD of two numbers as a linear combination </td></tr><tr><td post_id="1615271"> Suppose <span class="math-container" id="14934498" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> is a common divisor of two numbers <span class="math-container" id="14934499" visual_id="5817"><math alttext="a_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>0</mn></msub></semantics></math></span> and <span class="math-container" id="14934500" visual_id="8686"><math alttext="a_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>1</mn></msub></semantics></math></span>, can <span class="math-container" id="14934501" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> be written as a linear combination of <span class="math-container" id="14934502" visual_id="5817"><math alttext="a_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>0</mn></msub></semantics></math></span>,<span class="math-container" id="14934503" visual_id="8686"><math alttext="a_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>1</mn></msub></semantics></math></span> with integer coefficients? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

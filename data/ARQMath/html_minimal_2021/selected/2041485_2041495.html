@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Remainder when $2^{108}$ is divided by $11$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Remainder when <span class="math-container" id="18889486" visual_id="3550626"><math alttext="2^{108}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>108</mn></msup></semantics></math></span> is divided by <span class="math-container" id="18889487" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2041485">
+<p>What is the remainder obtained when  <span class="math-container" id="18889488" visual_id="3550626"><math alttext="2^{108}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>108</mn></msup></semantics></math></span> is divided by <span class="math-container" id="18889489" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span>?</p> <p>I tried bringing in <span class="math-container" id="18889490" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span> in the given no. such as in</p> <p><span class="math-container" id="18889491" visual_id="4837405"><math alttext="(11-3)^{36}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>11</mn><mo>-</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>36</mn></msup></semantics></math></span> </p> <p>and then using binomial expansion...but its not helping. Any clues??</p> <p>Thanks in advance!!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> modular-arithmetic </span><span> divisibility </span><span> binomial-theorem </span><span> divisible-groups </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4190470"> Are you looking for hints or answers? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2041495" id="answer">
+<p>Without using knowledge about <span class="math-container" id="18889516" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span> being prime, you can think about multiples of <span class="math-container" id="18889517" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span> and powers of <span class="math-container" id="18889518" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> and see if you can identify some that are close to each other. <span class="math-container" id="18889519" visual_id="78996"><math alttext="33" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>33</mn></semantics></math></span> is close to <span class="math-container" id="18889520" visual_id="3985"><math alttext="32" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>32</mn></semantics></math></span>. Mod <span class="math-container" id="18889521" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span>, you have that <span class="math-container" id="18889522" visual_id="1312560"><math alttext="2^{5}\equiv-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>≡</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>.</p> <p>So <span class="math-container" id="18889523" visual_id="4837414"><math alttext="2^{108}\equiv\left(2^{5}\right)^{21}2^{3}\equiv(-1)^{21}8\equiv-8\equiv 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>108</mn></msup><mo>≡</mo><mrow><msup><mrow><mo>(</mo><msup><mn>2</mn><mn>5</mn></msup><mo>)</mo></mrow><mn>21</mn></msup><mo>⁢</mo><msup><mn>2</mn><mn>3</mn></msup></mrow><mo>≡</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>21</mn></msup><mo>⁢</mo><mn>8</mn></mrow><mo>≡</mo><mrow><mo>-</mo><mn>8</mn></mrow><mo>≡</mo><mn>3</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4190484"> Thanks!! That was quite helpful... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How does the Axiom of Extensionality prove the uniqueness of Specified sets?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How does the Axiom of Extensionality prove the uniqueness of Specified sets? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="200756">
+<p><a href="http://en.wikipedia.org/wiki/Axiom_schema_of_specification" rel="nofollow">http://en.wikipedia.org/wiki/Axiom_schema_of_specification</a> says:</p> <blockquote> <p>Note that there is one axiom for every such predicate φ; thus, this is an axiom schema.</p> <p>To understand this axiom schema, note that the set B must be a subset of A. Thus, what the axiom schema is really saying is that, given a set A and a predicate P, we can find a subset B of A whose members are precisely the members of A that satisfy P. <strong>By the axiom of extensionality this set is unique</strong></p> </blockquote> <p>(Emphasis added)</p> <p>My question is why, by the axiom of extensionality, is this set unique? The Axiom of Extensionality is about set equality; what is the relation between the Axiom of Extensionality with uniqueness of this set?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> set-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="458523"> How would you prove uniqueness without proving equality? And how would you prove equality without the axiom of extensionality? </td></tr><tr><td comment_id="459238"> What "unique" **means** is that there are not two **non-equal** things that both have the property in question. So "unqueness" is inherently about equality. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="200762" id="answer">
+<p>Suppose we have some predicate <span class="math-container" id="2308885" visual_id="252"><math alttext="\varphi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi></semantics></math></span> and let <span class="math-container" id="2308886" visual_id="416831"><math alttext="X,Y\subseteq Z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><mo>⊆</mo><mi>Z</mi></mrow></semantics></math></span> be such that <span class="math-container" id="2308887" visual_id="5153062"><math alttext="\forall{x}(x\in X\leftrightarrow\varphi(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>X</mi><mo>↔</mo><mi>φ</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="2308888" visual_id="5153063"><math alttext="\forall{x}(x\in Y\leftrightarrow\varphi(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>Y</mi><mo>↔</mo><mi>φ</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> (by specification). By a simple substitution of equivalents,</p> <p><span class="math-container" id="2308889" visual_id="5153064"><math alttext="x\in X\leftrightarrow\varphi(x)\leftrightarrow x\in Y." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><mo>↔</mo><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>↔</mo><mrow><mi>x</mi><mo>∈</mo><mi>Y</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>By extensionality, <span class="math-container" id="2308890" visual_id="5153065"><math alttext="\forall{x}(x\in X\leftrightarrow x\in Y)\rightarrow X=Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>X</mi><mo>↔</mo><mi>x</mi><mo>∈</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>X</mi><mo>=</mo><mi>Y</mi></mrow></semantics></math></span>. But <span class="math-container" id="2308891" visual_id="5153066"><math alttext="\forall{x}(x\in X\leftrightarrow x\in Y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>X</mi><mo>↔</mo><mi>x</mi><mo>∈</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. So <span class="math-container" id="2308892" visual_id="33727"><math alttext="X=Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>Y</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

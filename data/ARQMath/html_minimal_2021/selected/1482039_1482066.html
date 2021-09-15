@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <title>Common prime divisors of 2 integers</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be">
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js"> </script>
+
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+
+        <style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <div class="row" id="question-title">
+                <h1> Common prime divisors of 2 integers </h1>
+                <hr>
+            </div>
+
+
+            <div class="row">
+                <div class="question">
+
+                    <div question_id="1482039"  id="question">
+                        <p>I was trying to solve the task of checking if 2 numbers have same prime divisors. For example 10 has prime divisors of 2 and 5, 50 has prime divisors of 2 and 5, so they have the same prime divisors. 15 has prime divisors of 3 and 5, and 12 has prime divisors of 3 and 2, so they have different prime divisors. I wrote some solution for that and tried to find some better way of solving the task. While googling I found one solution which relies on a claim that Greatest Common Divisor of 2 numbers 'contains' all of their common prime divisors.</p>  <p>I tried to think of proof of that claim, but wasn't able to do it. Also I wasn't able to google such a proof. I believe it should be something extremely simple, can someone point me to some sketch of a proof please?</p>  <p>If anyone is interested - link to a full solution I am trying to understand: <a href="http://codesays.com/2014/solution-to-common-prime-divisors-by-codility/" rel="nofollow">http://codesays.com/2014/solution-to-common-prime-divisors-by-codility/</a></p> 
+                    </div>
+                    <hr>
+
+                    <div id="tags">
+                        <span> prime-numbers </span><span> arithmetic </span><span> prime-factorization </span><span> gcd-and-lcm </span>
+                    </div>
+                    <hr>
+
+                    <div id="question-comments">
+                        <table>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div class="answer">
+
+
+                    <div answer_id="1482066" id="answer">
+                        <p>Proof is simple. Let g be the gcd of a and b.  So we can express a and b as a=g<em>c and b=g</em>d.  If d and c had any common prime factor p, then p*g would be the gcd, contradicting our definition of g as the gcd.  QED the gcd of a,b contains ALL the common factors of a,b.</p> 
+                    </div>
+                    <hr>
+
+
+                    <div id="answer-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="3018277"> Thanks! As I assumed, that was simple </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div id="duplicate">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+
+                <div id="related">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why we can't have radicals with negative index?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why we can't have radicals with negative index? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2136739">
+<p>I am a high school student and we just learned about radical and radical notation. Our teacher says index of radical must be integer and greater than 2 by definition. But I can’t understand why we can’t have radical with negative or rational indexes?</p> <p>For example why can’t we have either of these?</p> <p><span class="math-container" id="19748493" visual_id="2771766"><math alttext="\sqrt[\frac{3}{2}]{8}=8^{\frac{1}{\left(\frac{3}{2}\right)}}=8^{\frac{2}{3}}=% \sqrt[3]{8^{2}}=\sqrt[3]{64}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mroot><mn>8</mn><mfrac><mn>3</mn><mn>2</mn></mfrac></mroot><mo>=</mo><msup><mn>8</mn><mfrac><mn>1</mn><mrow><mo>(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow></mfrac></msup><mo>=</mo><msup><mn>8</mn><mfrac><mn>2</mn><mn>3</mn></mfrac></msup><mo>=</mo><mroot><msup><mn>8</mn><mn>2</mn></msup><mn>3</mn></mroot><mo>=</mo><mroot><mn>64</mn><mn>3</mn></mroot><mo>=</mo><mn>4</mn></mrow></semantics></math></span></p> <p><span class="math-container" id="19748494" visual_id="2771767"><math alttext="\sqrt[-2]{4}=4^{\frac{1}{-2}}=4^{-\frac{1}{2}}=\sqrt[2]{4^{-1}}=\sqrt[2]{\frac% {1}{4}}=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mroot><mn>4</mn><mrow><mo>-</mo><mn>2</mn></mrow></mroot><mo>=</mo><msup><mn>4</mn><mfrac><mn>1</mn><mrow><mo>-</mo><mn>2</mn></mrow></mfrac></msup><mo>=</mo><msup><mn>4</mn><mrow><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>=</mo><mroot><msup><mn>4</mn><mrow><mo>-</mo><mn>1</mn></mrow></msup><mn>2</mn></mroot><mo>=</mo><mroot><mfrac><mn>1</mn><mn>4</mn></mfrac><mn>2</mn></mroot><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span></p> <p>Our teacher says it’s because negative and rational indexes are not defined for radical notations but why they are not defined? They certainly have answers.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> radicals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4394452"> Compare [radical](https://en.wikipedia.org/wiki/Nth_root) with [exponents](https://en.wikipedia.org/wiki/Exponentiation#Rational_exponents). </td></tr><tr><td comment_id="4394456"> Your teacher says  true. </td></tr><tr><td comment_id="4394476"> There isn't really any reason other than tradition. If <span class="math-container" id="19748495" visual_id="10214"><math alttext="r\not=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> and you have a way to determine what <span class="math-container" id="19748496" visual_id="2771768"><math alttext="x^{1/r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mi>r</mi></mrow></msup></semantics></math></span> means you could just as well define <span class="math-container" id="19748497" visual_id="2771769"><math alttext="\sqrt[r]{x}=x^{1/r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mroot><mi>x</mi><mi>r</mi></mroot><mo>=</mo><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mi>r</mi></mrow></msup></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2136756" id="answer">
+<p>Nothing prevents you from <em>choosing to define</em> a meaning for something like <span class="math-container" id="19748498" visual_id="2771770"><math alttext="\sqrt[-2/3]{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><mi>x</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></mroot></semantics></math></span>.</p> <p>It's just not something that is usually done, because the only "reasonable" choice of definition would to be to make it mean the same as what we already have the notation <span class="math-container" id="19748499" visual_id="578141"><math alttext="x^{-3/2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mrow><mo>-</mo><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></mrow></msup></semantics></math></span> for -- and since the latter notation is simpler and easier to read, there is no particular demand for <em>also</em> writing it <span class="math-container" id="19748500" visual_id="2771771"><math alttext="\sqrt[-2/3]{\cdots}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><mi mathvariant="normal">⋯</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></mroot></semantics></math></span>.</p> <p>In short, the fact that we usually don't define this is not out of any kind of mathematical <em>necessity</em>, but simply because there doesn't seem to be any need to.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4394521"> I have a vague recollection that Isaac Asimov defined fractional roots in _Realm of Numbers._ On the other hand, I was 8 years old when I read that book, so I may merely be imagining that. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

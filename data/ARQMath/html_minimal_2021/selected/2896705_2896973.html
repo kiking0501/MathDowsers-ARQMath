@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Problem with iterated exponentials</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Problem with iterated exponentials </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2896705">
+<blockquote> <p>If <span class="math-container" id="26798816" visual_id="4092573"><math alttext="n^{n^{132}}=11^{11^{11}}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>n</mi><msup><mi>n</mi><mn>132</mn></msup></msup><mo>=</mo><msup><mn>11</mn><msup><mn>11</mn><mn>11</mn></msup></msup></mrow><mo>,</mo></mrow></semantics></math></span> find the value of <span class="math-container" id="26798817" visual_id="4092574"><math alttext="n^{22}:" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>22</mn></msup><mo>:</mo><mi></mi></mrow></semantics></math></span></p> <p>a) <span class="math-container" id="26798818" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span></p> <p>b) <span class="math-container" id="26798819" visual_id="97571"><math alttext="121" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>121</mn></semantics></math></span></p> <p>c) <span class="math-container" id="26798820" visual_id="7905"><math alttext="100" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>100</mn></semantics></math></span></p> </blockquote> <p>From what I've researched online, it seems like a transcendental equation? Correct me if I'm wrong.  I would appreciate any help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebra-precalculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5982823"> In future, please try to put the text of the question into the body of your post. This can make it much easier for people accessing the site on mobile devices to help you. If you need it, here's a quick MathJax tutorial (MathJax is the program that makes the equations look nice): [link](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2896973" id="answer">
+<p>I suspect it is unrealistic to expect middle school/high school algebra students to be able to solve the general form of this problem without it being multiple choice, even if <span class="math-container" id="26798837" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is known to be an integer. Consider a similar, simpler problem: <span class="math-container" id="26798838" visual_id="192212"><math alttext="x^{x}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>x</mi></msup><mo>=</mo><mn>4</mn></mrow></semantics></math></span>. By inspection, <span class="math-container" id="26798839" visual_id="3383"><math alttext="x=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span> solves the equation, but let's try to get there.</p> <p><span class="math-container" id="26798840" visual_id="192212"><math alttext="x^{x}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>x</mi></msup><mo>=</mo><mn>4</mn></mrow></semantics></math></span> </p> <p><span class="math-container" id="26798841" visual_id="4092583"><math alttext="log_{2}(x^{x})=log_{2}4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>l</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>x</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>l</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mn>4</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="26798842" visual_id="4092584"><math alttext="xlog_{2}x=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span></p> <p>Now what? Elementary algebra doesn't appear to have the right tools to solve it; however, elementary algebra does have the tools to check a solution.</p> <p>Does <span class="math-container" id="26798843" visual_id="3383"><math alttext="x=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span> solve <span class="math-container" id="26798844" visual_id="192212"><math alttext="x^{x}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>x</mi></msup><mo>=</mo><mn>4</mn></mrow></semantics></math></span>?</p> <p>Yes, <span class="math-container" id="26798845" visual_id="52866"><math alttext="2^{2}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>4</mn></mrow></semantics></math></span></p> <p>Back to the original problem. Using only elementary algebra, there needs to be some guesswork. If the question is multiple choice as this one is, the guesswork is mostly done. The following algebra could lead to the proper guesswork even without pre-determined choices for the students, but I didn't follow this line of reasoning until I found the answer with other methods.</p> <p>let <span class="math-container" id="26798846" visual_id="4092585"><math alttext="x=n^{11}\implies n=x^{\frac{1}{11}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>n</mi><mn>11</mn></msup><mo>⟹</mo><mi>n</mi><mo>=</mo><msup><mi>x</mi><mfrac><mn>1</mn><mn>11</mn></mfrac></msup></mrow></semantics></math></span></p> <p><span class="math-container" id="26798847" visual_id="4092586"><math alttext="n^{n^{132}}=n^{x^{12}}=x^{({\frac{1}{11})}^{x^{12}}}=x^{\frac{x^{12}}{11}}=x^{% x^{11}(\frac{x}{11})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><msup><mi>n</mi><mn>132</mn></msup></msup><mo>=</mo><msup><mi>n</mi><msup><mi>x</mi><mn>12</mn></msup></msup><mo>=</mo><msup><mi>x</mi><msup><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>11</mn></mfrac><mo stretchy="false">)</mo></mrow><msup><mi>x</mi><mn>12</mn></msup></msup></msup><mo>=</mo><msup><mi>x</mi><mfrac><msup><mi>x</mi><mn>12</mn></msup><mn>11</mn></mfrac></msup><mo>=</mo><msup><mi>x</mi><mrow><msup><mi>x</mi><mn>11</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac><mi>x</mi><mn>11</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow></msup></mrow></semantics></math></span></p> <p>By inspection <span class="math-container" id="26798848" visual_id="4092587"><math alttext="x=11\implies x^{2}=121=n^{22}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>11</mn><mo>⟹</mo><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>121</mn><mo>=</mo><msup><mi>n</mi><mn>22</mn></msup></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

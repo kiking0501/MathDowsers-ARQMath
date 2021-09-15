@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Smooth functions for which $f(x)$ is rational if and only if $x$ is rational</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Smooth functions for which <span class="math-container" id="125568" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is rational if and only if <span class="math-container" id="125569" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is rational </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="13373">
+<p>A friend of mine introduced me to the following question: Does there exist a smooth function <span class="math-container" id="125570" visual_id="3106"><math alttext="f:\mathbb{R}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> (<span class="math-container" id="125571" visual_id="152874"><math alttext="f\in C^{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∈</mo><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup></mrow></semantics></math></span>), such that <span class="math-container" id="125572" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> maps rationals to rationals and irrationals to irrationals and is nonlinear?</p> <p>He has been able to prove that such a polynomial (with degree at least 2) doesn't exist.</p> <p>The problem has been asked before at least at <a href="http://www.artofproblemsolving.com">http://www.artofproblemsolving.com</a>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> real-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="28856"> That link would be more helpful if it took us straight to the question. </td></tr><tr><td comment_id="28858"> @TonyK: http://www.artofproblemsolving.com/Forum/viewtopic.php?f=73&amp;t=107035&amp;p=605167 but there is not much there. </td></tr><tr><td comment_id="28919"> Very interesting question: makes you think and it's easy to understand though hard to solve. </td></tr><tr><td comment_id="28927"> As a side note: If we required just <span class="math-container" id="125573" visual_id="27052"><math alttext="f\in C^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∈</mo><msup><mi>C</mi><mn>1</mn></msup></mrow></semantics></math></span>, then looking at the function <span class="math-container" id="125574" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> defined by <span class="math-container" id="125575" visual_id="8263529"><math alttext="f(x)=\frac{1}{x-1}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> for <span class="math-container" id="125576" visual_id="16221"><math alttext="x\leq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≤</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="125577" visual_id="8263530"><math alttext="f(x)=\frac{1}{x+1}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> for <span class="math-container" id="125578" visual_id="2019"><math alttext="x\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> provides an example. There is also an example for the case where we drop the requirement that irrationals are mapped to irrationals. </td></tr><tr><td comment_id="28944"> It seems kind of hard to get a grip on these things. That class of functions isn't stable under addition, multiplication (though it is under multiplication by elements of <span class="math-container" id="125579" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span>), exponentation or limits, ruling out most of the standard machinery of analysis. It is stable under iteration, though, so maybe dynamics could help? </td></tr><tr><td comment_id="29253"> What a nice question!  If it turns out no one here can answer it you might eventually want to try mathoverflow too. </td></tr><tr><td comment_id="29901"> @Noah: I did that now, http://mathoverflow.net/questions/48910/smooth-functions-for-which-fx-is-rational-if-and-only-if-x-is-rational. </td></tr><tr><td comment_id="30027"> Are you implicitly excluding trivial solutions like <span class="math-container" id="125580" visual_id="262"><math alttext="f(x)=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math></span>? </td></tr><tr><td comment_id="30056"> @Raphael: *nonlinear* </td></tr><tr><td comment_id="30159"> Did miss that, sorry. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="13839" id="answer">
+<p>Sergei Ivanov has given a positive answer for the existence of such functions on MO: <a href="https://mathoverflow.net/questions/48910/smooth-functions-for-which-fx-is-rational-if-and-only-if-x-is-rational">https://mathoverflow.net/questions/48910/smooth-functions-for-which-fx-is-rational-if-and-only-if-x-is-rational</a>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="654344"> <span class="math-container" id="6608321" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> differentiable, <span class="math-container" id="6608322" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> rational if <span class="math-container" id="6608323" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> rational; <span class="math-container" id="6608324" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> irrational if <span class="math-container" id="6608325" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> irrational. Is <span class="math-container" id="6608326" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> a linear function? </td></tr><tr><td post_id="2202087"> <span class="math-container" id="20348786" visual_id="10757"><math alttext="f(x)=ax+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span> for some <span class="math-container" id="20348787" visual_id="34954"><math alttext="a,b\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℚ</mi></mrow></semantics></math></span> if <span class="math-container" id="20348788" visual_id="124087"><math alttext="f(\mathbb{Q})\subset\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℚ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mi>ℚ</mi></mrow></semantics></math></span> and <span class="math-container" id="20348789" visual_id="3070907"><math alttext="f(\mathbb{R-Q})\subseteq\mathbb{R}-\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ℝ</mi><mo>-</mo><mi>ℚ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⊆</mo><mrow><mi>ℝ</mi><mo>-</mo><mi>ℚ</mi></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="2441103"> Describe the set of all continuous functions which send rationals to rationals and irrationals to irrationals </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

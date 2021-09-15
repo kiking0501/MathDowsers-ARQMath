@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Area of ellipse using double integral</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Area of ellipse using double integral </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2915515">
+<p>I am trying to find the area of a quadrant of an ellipse by double integrating polar coordinates but the answer I'm getting is incorrect. </p> <p>ellipse : <span class="math-container" id="26981618" visual_id="172673"><math alttext="x^{2}/a^{2}+y^{2}/b^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>/</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p> <p>Any point on ellipse : <span class="math-container" id="26981619" visual_id="610007"><math alttext="(a\cos(\theta),b\sin(\theta))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span></p> <p>At <span class="math-container" id="26981620" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span>, taking <span class="math-container" id="26981621" visual_id="27814"><math alttext="d\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow></semantics></math></span> segment, Thus <span class="math-container" id="26981622" visual_id="610008"><math alttext="r^{2}=a^{2}\cos^{2}(\theta)+b^{2}\sin^{2}(\theta)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span> [Using pythagoras theorem]  <span class="math-container" id="26981623" visual_id="610009"><math alttext="Area=\int_{0}^{\pi/2}\int_{0}^{\sqrt{a^{2}\cos^{2}(\theta)+b^{2}\sin^{2}(% \theta)}}rdrd\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>a</mi></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><msqrt><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></msqrt></msubsup><mrow><mi>r</mi><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>r</mi></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="26981624" visual_id="610010"><math alttext="=1/2\int_{0}^{\pi/2}r^{2}\Big{|}_{0}^{\sqrt{a^{2}\cos^{2}(\theta)+b^{2}\sin^{2% }(\theta)}}d\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><msubsup><mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><msup><mi>r</mi><mn>2</mn></msup></mrow></mrow><mo fence="true" maxsize="160%" minsize="160%">|</mo></mrow><mn>0</mn><msqrt><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></msqrt></msubsup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="26981625" visual_id="610011"><math alttext="=1/2\int_{0}^{\pi/2}(a^{2}\cos^{2}(\theta)+b^{2}\sin^{2}(\theta))d\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="26981626" visual_id="610012"><math alttext="=1/2\int_{0}^{\pi/2}((a^{2}-b^{2})\cos^{2}(\theta)+b^{2})d\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="26981627" visual_id="610013"><math alttext="=1/4\int_{0}^{\pi/2}(a^{2}-b^{2})(1+\cos(2\theta))d\theta+2b^{2}d\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow></semantics></math></span> I am getting <span class="math-container" id="26981628" visual_id="610014"><math alttext="\pi/8(a^{2}+b^{2})." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>π</mi><mo>/</mo><mn>8</mn></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span> But the correct answer is <span class="math-container" id="26981629" visual_id="610015"><math alttext="\pi ab/4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>π</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>/</mo><mn>4</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> integration </span><span> conic-sections </span><span> area </span><span> multiple-integral </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6022765"> Could you include your steps showing how you got your answer? </td></tr><tr><td comment_id="6022798"> Fix these things:  The points have coordinates <span class="math-container" id="26981630" visual_id="610016"><math alttext="x=ra\cos\theta,y=rb\sin\theta." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>,</mo><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> The Jacobian is not <span class="math-container" id="26981631" visual_id="73262"><math alttext="r." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>.</mo></mrow></semantics></math></span> </td></tr><tr><td comment_id="6022806"> Aren't polar coordinates in ellipse <span class="math-container" id="26981632" visual_id="610017"><math alttext="(acos(θ),bsin(θ))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="6022807"> @coffeemath steps added. </td></tr><tr><td comment_id="6022832"> Your <span class="math-container" id="26981645" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> is just some parameter; it is **not** the polar angle of the moving point. </td></tr><tr><td comment_id="6022864"> <span class="math-container" id="26981634" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> used by me in this equation is same as one given in this image.   https://ellipsesconicsections.weebly.com/uploads/2/2/5/5/22554190/5889216.png?403  . Why is it not a polar angle? </td></tr><tr><td comment_id="6022937"> <span class="math-container" id="26981635" visual_id="129546"><math alttext="(a\cos\theta,b\sin\theta)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> is a point on the boundary of the ellipse, why are you taking points on the ellipse? to find the area of the ellipse you have to take an elementary area inside the ellipse, which may be taken as <span class="math-container" id="26981649" visual_id="7736"><math alttext="rdrd\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2915603" id="answer">
+<p>Set <span class="math-container" id="26981656" visual_id="588803"><math alttext="x=ar\cos\theta,y=br\sin\theta." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mi>a</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>,</mo><mrow><mi>y</mi><mo>=</mo><mrow><mi>b</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> The Jacobian is <span class="math-container" id="26981657" visual_id="610029"><math alttext="abr" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>r</mi></mrow></semantics></math></span> and we compute the area  <span class="math-container" id="26981658" visual_id="610030"><math alttext="\mathcal{A}=\int_{0}^{\pi/2}\int_{0}^{1}abr\;dr\;d\theta," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mpadded width="+2.8pt"><mi>r</mi></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mpadded width="+2.8pt"><mi>r</mi></mpadded></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>θ</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> which is <span class="math-container" id="26981659" visual_id="610031"><math alttext="\frac{ab\pi}{4}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>π</mi></mrow><mn>4</mn></mfrac><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

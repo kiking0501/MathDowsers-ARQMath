@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Evaluate integral: $\int_0^{+\infty}\frac{\cos{bx}-\cos{ax}}{x}dx$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Evaluate integral: <span class="math-container" id="9403525" visual_id="8068230"><math alttext="\int_{0}^{+\infty}\frac{\cos{bx}-\cos{ax}}{x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mfrac><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>-</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="983985">
+<p>It seems that <span class="math-container" id="9403526" visual_id="8068231"><math alttext="\displaystyle\int_{0}^{+\infty}\frac{\cos x}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup></mstyle><mstyle displaystyle="true"><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mstyle></mrow></semantics></math></span> is divergent, so how to solve this problem?</p> <blockquote> <p><span class="math-container" id="9403527" visual_id="8068232"><math alttext="\int_{0}^{\infty}\frac{\cos bx-\cos ax}{x}\,dx\quad,\quad\mbox{where}\,a,b&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mpadded width="+1.7pt"><mfrac><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>-</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mi>x</mi></mfrac></mpadded><mi>d</mi><mi>x</mi><mo mathvariant="italic" separator="true"> </mo><mo rspace="12.5pt">,</mo><mpadded width="+1.7pt"><mtext>where</mtext></mpadded><mi>a</mi><mo>,</mo><mi>b</mi><mi mathvariant="normal">&amp;</mi><mi>g</mi><mi>t</mi><mo>;</mo><mn>0</mn></mrow></semantics></math></span></p> </blockquote> <p>It's really a great challenge for me.</p> <p>If there's any advice of hint I would be grateful!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> integration </span><span> definite-integrals </span><span> improper-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2015729"> Calculating or proving convergence? </td></tr><tr><td comment_id="2015740"> <span class="math-container" id="9403528" visual_id="5207884"><math alttext="\ln\left(\frac{a}{b}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> Hint: <span class="math-container" id="9403529" visual_id="5986308"><math alttext="\displaystyle\frac{1}{x}=\int^{\infty}_{0}e^{-xt}{\rm d}t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>x</mi></mfrac></mstyle><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="2015742"> Try contour integration like in http://math.stackexchange.com/users/186096/dunctural-q. </td></tr><tr><td comment_id="2015772"> @M.N.C.E.  Got it! Thx!! </td></tr><tr><td comment_id="2015787"> See [Frullani's Integral](http://mathworld.wolfram.com/FrullanisIntegral.html). </td></tr><tr><td comment_id="2015791"> @EclipseSun Magical! </td></tr><tr><td comment_id="2015815"> what kind of numbers are <span class="math-container" id="9403530" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="9403531" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>? </td></tr><tr><td comment_id="2015816"> the result must be <span class="math-container" id="9403532" visual_id="8068233"><math alttext="-\frac{1}{2}\log\left(\frac{a^{2}}{b^{2}}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="2015826"> @Dr.SonnhardGraubner I have updated my question:) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1083054" id="answer">
+<p>The <a href="http://en.wikipedia.org/wiki/Trigonometric_integral#Cosine_integral" rel="nofollow">cosine integral</a> is defined by <span class="math-container" id="9403554" visual_id="8068247"><math alttext="\text{Ci}(x)=-\int_{x}^{\infty}\frac{\cos t}{t}\ dt." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mtext>Ci</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>x</mi><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+5pt"><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mi>t</mi></mrow><mi>t</mi></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Using this definition, <span class="math-container" id="9403555" visual_id="8068248"><math alttext="\int_{x}^{\infty}\frac{\cos at}{t}\ dt=\int_{ax}^{\infty}\frac{\cos u}{u}\ du=% -\text{Ci}(ax)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>x</mi><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+5pt"><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>a</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mi>t</mi></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+5pt"><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mi>u</mi></mrow><mi>u</mi></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mtext>Ci</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Therefore,</p> <p><span class="math-container" id="9403556" visual_id="8068249"><math alttext="\begin{aligned} \displaystyle\int_{0}^{\infty}\frac{\cos bx-\cos ax}{x}\ dx&amp;% \displaystyle amp;=\lim_{\epsilon\to 0^{+}}\left(\int_{\epsilon}^{\infty}\frac% {\cos bx}{x}\ dx-\int_{\epsilon}^{\infty}\frac{\cos ax}{x}\ dx\right)\\ &amp;\displaystyle amp;=\lim_{\epsilon\to 0^{+}}\left(-\text{Ci}(b\epsilon)+\text{% Ci}(a\epsilon)\right)\\ &amp;\displaystyle amp;=\lim_{\epsilon\to 0^{+}}\left(-\ln(b\epsilon)+\ln(a% \epsilon)+\mathcal{O}(\epsilon^{2})\right)\\ &amp;\displaystyle amp;=\lim_{\epsilon\to 0^{+}}\left(\ln\left(\frac{a}{b}\right)+% \mathcal{O}(\epsilon^{2})\right)\\ &amp;\displaystyle amp;=\ln\left(\frac{a}{b}\right).\end{aligned}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mpadded width="+5pt"><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>-</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mi>x</mi></mfrac></mstyle></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><munder><mo movablelimits="false">lim</mo><mrow><mi>ϵ</mi><mo>→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mo>(</mo><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>ϵ</mi><mi mathvariant="normal">∞</mi></msubsup></mstyle><mpadded width="+5pt"><mstyle displaystyle="true"><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mi>x</mi></mfrac></mstyle></mpadded><mi>d</mi><mi>x</mi><mo>-</mo><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>ϵ</mi><mi mathvariant="normal">∞</mi></msubsup></mstyle><mpadded width="+5pt"><mstyle displaystyle="true"><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mi>x</mi></mfrac></mstyle></mpadded><mi>d</mi><mi>x</mi><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><munder><mo movablelimits="false">lim</mo><mrow><mi>ϵ</mi><mo>→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mo>(</mo><mo>-</mo><mtext>Ci</mtext><mrow><mo stretchy="false">(</mo><mi>b</mi><mi>ϵ</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mtext>Ci</mtext><mrow><mo stretchy="false">(</mo><mi>a</mi><mi>ϵ</mi><mo stretchy="false">)</mo></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><munder><mo movablelimits="false">lim</mo><mrow><mi>ϵ</mi><mo>→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mo>(</mo><mo>-</mo><mi>ln</mi><mrow><mo stretchy="false">(</mo><mi>b</mi><mi>ϵ</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mi>ln</mi><mrow><mo stretchy="false">(</mo><mi>a</mi><mi>ϵ</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mi class="ltx_font_mathcaligraphic">𝒪</mi><mrow><mo stretchy="false">(</mo><msup><mi>ϵ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><munder><mo movablelimits="false">lim</mo><mrow><mi>ϵ</mi><mo>→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mrow><mo>(</mo><mi>ln</mi><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>b</mi></mfrac></mstyle><mo>)</mo></mrow><mo>+</mo><mi class="ltx_font_mathcaligraphic">𝒪</mi><mrow><mo stretchy="false">(</mo><msup><mi>ϵ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mi>ln</mi><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>b</mi></mfrac></mstyle><mo>)</mo></mrow><mo>.</mo></mrow></mtd></mtr></mtable></semantics></math></span></p> <p><span class="math-container" id="9403557" visual_id="749"><math alttext="(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> <a href="http://en.wikipedia.org/wiki/Trigonometric_integral#Convergent_series" rel="nofollow">http://en.wikipedia.org/wiki/Trigonometric_integral#Convergent_series</a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="61828"> Proof of Frullani's theorem </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

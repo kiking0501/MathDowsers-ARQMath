@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Does Riemann integrable imply Lebesgue integrable?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Does Riemann integrable imply Lebesgue integrable? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="291020">
+<p>Suppose a definite integral exists in the Riemann sense. Does that mean the integral exists as a Lebesgue integral, and do we get the same result either way? ------- BTW: I have a MS in Electrical Engineering and a strong interest in math. I had one semester of real analysis 25 years ago, I tried to learn Lebesgue integration on my own by reading a book on real analysis, and that was a few years ago. Hence, I don't have a solid grasp of the subject.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> analysis </span><span> lebesgue-integral </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="634056"> Yes.${}{}{}{}{}$ </td></tr><tr><td comment_id="634060"> Aside: It is not true for indefinite integrals. In particular, one can consider <span class="math-container" id="3182191" visual_id="6755112"><math alttext="\int_{0}^{\infty}\sin(x^{2})dx." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> </td></tr><tr><td comment_id="634062"> @Clayton: Do you mean *improper* rather than indefinite? </td></tr><tr><td comment_id="634093"> @JonasMeyer: That is correct! My mistake... </td></tr><tr><td comment_id="2052423"> So both of the integral approaches are equivalent? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="291031" id="answer">
+<p>This is true for "properly" Riemann integrable functions <span class="math-container" id="3182192" visual_id="7772"><math alttext="f:[a,b]\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span>, a fact which is established in all standard treatments of the Lebesgue integral.  </p> <p>However, there are improperly Riemann integrable functions <span class="math-container" id="3182193" visual_id="39485"><math alttext="f:[0,\infty)\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> which are not Lebesgue integrable.  The most standard counterexample has already been discussed on this site: see <a href="https://math.stackexchange.com/questions/67198/does-int-0-infty-frac-sin-xxdx-have-an-improper-riemann-integral-or">here</a>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="17125"> What are the differences and relations of Haar integrals, Lebesgue integrals, Riemann integrals? </td></tr><tr><td post_id="2723721"> Indefinite integrals of <span class="math-container" id="25138335" visual_id="2242"><math alttext="x^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mi>x</mi></msup></semantics></math></span> sin(x)/x and relation to elementary integrals </td></tr><tr><td post_id="1141930"> Is <span class="math-container" id="10748924" visual_id="9766"><math alttext="\sin(1/x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> Lebesgue integrable on <span class="math-container" id="10748925" visual_id="1089"><math alttext="(0,1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></semantics></math></span>? </td></tr><tr><td post_id="226099"> A Riemann integrable function <span class="math-container" id="2541331" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> on a bounded interval <span class="math-container" id="2541332" visual_id="3186"><math alttext="[a,b]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></semantics></math></span> is measurable with respect to the Borel measure on <span class="math-container" id="2541333" visual_id="3186"><math alttext="[a,b]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></semantics></math></span>? </td></tr><tr><td post_id="2707479"> Proof that <span class="math-container" id="24990838" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is Riemann integrable without Lebesgue criteria </td></tr><tr><td post_id="1474488"> Lebesgue integral - interpretation </td></tr><tr><td post_id="1879033"> How to prove that a function is in fact <span class="math-container" id="17411178" visual_id="11713"><math alttext="L_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mn>1</mn></msub></semantics></math></span>? </td></tr><tr><td post_id="67198"> Does <span class="math-container" id="747002" visual_id="374727"><math alttext="\int_{0}^{\infty}\frac{\sin x}{x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> have an improper Riemann integral or a Lebesgue integral? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

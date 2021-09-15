@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to generate a "log" series of number knowing the start and end?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to generate a "log" series of number knowing the start and end? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2765101">
+<p><strong>I'd like to generate a series of number that follow a logarithmic curve style in Google Sheets.</strong> I know it kind of means nothing, but maybe this will help: it's for creating a previsional growth chart. So I know what the curve should look like, but don't know how to create it.</p> <p>I managed to "create" this one but I'd like to be able to specify the start and end number and, if it's possible, the curve "bending" coefficient.</p> <p><img alt="" src="https://i.imgur.com/lgYUVuz.png"/></p> <p>I'm then using the values in some other cells in the spreadsheet. The formula for this plot (blue line) is <code>= 30 + 300 * LN(30 * (COLUMN(A1) - 1) + 1)</code>, spreaded over multiple cells of the same row.</p> <p>Pretty much graphic design but using maths as the tool!</p> <hr/> <p><strong>EDIT</strong></p> <p>I made the Sheet available for anyone interested : <a href="https://docs.google.com/spreadsheets/d/147rfa4vrlOFYjrm17LZUoxOAtYC6_VdRN3pvNjR8_cg/edit?usp=sharing" rel="nofollow noreferrer">https://docs.google.com/spreadsheets/d/147rfa4vrlOFYjrm17LZUoxOAtYC6_VdRN3pvNjR8_cg/edit?usp=sharing</a></p> <p><img alt="" src="https://i.imgur.com/yPSrWif.png"/></p>
+</div>
+<hr/>
+<div id="tags">
+<span> statistics </span><span> logarithms </span><span> graphing-functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5702663"> For clarification:  are you saying that you know the initial and final coordinates, and you want to place a log curve between them? </td></tr><tr><td comment_id="5702685"> @D.B. Exactly. Starts at (2018 Q4, 30) and ends at (2020 Q4, 1500). </td></tr><tr><td comment_id="5702723"> @D.B. No data points in between. Just the curve style I want to get (and its corresponding values). If it helps I can provide one data point: 2019 Q1 should be the half of my end point. What would be the easiest formula in your point of view? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2765151" id="answer">
+<p>Suppose I want to place a log curve between points <span class="math-container" id="25515458" visual_id="8819938"><math alttext="(x_{0},y_{0})and(x_{f},y_{f})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>f</mi></msub><mo>,</mo><msub><mi>y</mi><mi>f</mi></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.  My equation will be of the form: <span class="math-container" id="25515459" visual_id="4472054"><math alttext="y=a\log(x)+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span>.  If I know two points, there is a unique logarithmic curve joining them.  Your job is to find the numbers <span class="math-container" id="25515460" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="25515461" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> which describe this curve.  Then, <span class="math-container" id="25515462" visual_id="8819939"><math alttext="y_{0}=a\log(x_{0})+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="25515463" visual_id="8819940"><math alttext="y_{f}=a\log(x_{f})+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>f</mi></msub><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>f</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span>.  This is a system of two equations in two variables.  Note that <span class="math-container" id="25515464" visual_id="8819941"><math alttext="y_{f}-y_{0}=a\log(\frac{x_{f}}{x_{0}})\implies a=\frac{y_{f}-y_{0}}{\log(x_{f}% /x_{0})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>y</mi><mi>f</mi></msub><mo>-</mo><msub><mi>y</mi><mn>0</mn></msub></mrow><mo>=</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><msub><mi>x</mi><mi>f</mi></msub><msub><mi>x</mi><mn>0</mn></msub></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>⟹</mo><mi>a</mi><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mi>f</mi></msub><mo>-</mo><msub><mi>y</mi><mn>0</mn></msub></mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>f</mi></msub><mo>/</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></semantics></math></span>.  After calculating <span class="math-container" id="25515465" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>, you can easily find <span class="math-container" id="25515466" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5725681"> It works perfect, thanks. So I'm maybe not fully aware of the specificities of a log curve, but can the curve "bending" coefficient be adjustable? Maybe by adding a third point? </td></tr><tr><td comment_id="5726695"> I don't know what a bending coefficient is.  But maybe someone else can help you with that.  You could try asking a new question.  Best of luck. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

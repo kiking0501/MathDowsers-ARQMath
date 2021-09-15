@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>If $F\subset D \subset E$ then $D$ must be a field</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> If <span class="math-container" id="26633409" visual_id="4037324"><math alttext="F\subset D\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⊂</mo><mi>D</mi><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span> then <span class="math-container" id="26633410" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> must be a field </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2879987">
+<p>Let <span class="math-container" id="26633411" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> a field and <span class="math-container" id="26633412" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> a finite extension of <span class="math-container" id="26633413" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>. I need to show that, if <span class="math-container" id="26633414" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is a integral domain such that <span class="math-container" id="26633415" visual_id="4037324"><math alttext="F\subset D\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⊂</mo><mi>D</mi><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span> then, D is a field.</p> <p><strong>My attempt:</strong> As <span class="math-container" id="26633416" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> is a finite extension, it is a algebraic extension. Let <span class="math-container" id="26633417" visual_id="1495666"><math alttext="\alpha\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>∈</mo><mi>D</mi></mrow></semantics></math></span>, it is sufficient to show that each element of <span class="math-container" id="26633418" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> has a inverse. So, take <span class="math-container" id="26633419" visual_id="1495666"><math alttext="\alpha\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>∈</mo><mi>D</mi></mrow></semantics></math></span> so <span class="math-container" id="26633420" visual_id="93"><math alttext="\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi></semantics></math></span> is algebraic over <span class="math-container" id="26633421" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>. Suppose that <span class="math-container" id="26633422" visual_id="4037325"><math alttext="\deg(\alpha,F)=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>deg</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>n</mi></mrow></semantics></math></span>, then every element of <span class="math-container" id="26633423" visual_id="17217"><math alttext="F(\alpha)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> can be written as <span class="math-container" id="26633424" visual_id="4037326"><math alttext="a_{0}+a_{1}\alpha+\cdots+a_{n-1}\alpha^{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><mi>α</mi></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msup><mi>α</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span> where <span class="math-container" id="26633425" visual_id="673299"><math alttext="a_{i}\in F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>∈</mo><mi>F</mi></mrow></semantics></math></span>. Therefore, <span class="math-container" id="26633426" visual_id="4037327"><math alttext="F(\alpha)\subset D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mi>D</mi></mrow></semantics></math></span> and as <span class="math-container" id="26633427" visual_id="17217"><math alttext="F(\alpha)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a field and it contains the inverse of <span class="math-container" id="26633428" visual_id="93"><math alttext="\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi></semantics></math></span>.</p> <p>I have troubles with my proof because a don't see where the fact that <span class="math-container" id="26633429" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is integral domain is important. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> field-theory </span><span> extension-field </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2879996" id="answer">
+<p>Well every subring of a field is an integral domain anyway.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="63950"> Proof that an integral domain that is a finite-dimensional <span class="math-container" id="705791" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>-vector space is in fact a field </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2938524"> If <span class="math-container" id="27201676" visual_id="4586695"><math alttext="\bar{k}\supseteq R\supseteq k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>k</mi><mo stretchy="false">¯</mo></mover><mo>⊇</mo><mi>R</mi><mo>⊇</mo><mi>k</mi></mrow></semantics></math></span>, then <span class="math-container" id="27201677" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is a field? </td></tr><tr><td post_id="2890661"> Expression of elements in splitting field </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

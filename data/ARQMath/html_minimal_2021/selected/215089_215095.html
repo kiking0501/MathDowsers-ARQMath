@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Subset of Power Set of Natural Numbers</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Subset of Power Set of Natural Numbers </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="215089">
+<p>I was given a question today which asks to find a subset of the power set of natural numbers having cardinality <span class="math-container" id="2439524" visual_id="18817"><math alttext="2^{\aleph_{0}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><msub><mi mathvariant="normal">ℵ</mi><mn>0</mn></msub></msup></semantics></math></span> and in which any two subsets have finitely many elements in their intersection.</p> <p>My solution was to consider the sequences of rationals converging to a real number, for every real, and then to take the bijection of those sequences of rationals to sequences of naturals.</p> <p>Can one prove this more directly? That is, show an explicit subset of the power set?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="485035"> There are four proofs that you can find an almost disjoint family of size <span class="math-container" id="2439525" visual_id="18817"><math alttext="2^{\aleph_{0}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><msub><mi mathvariant="normal">ℵ</mi><mn>0</mn></msub></msup></semantics></math></span> of <span class="math-container" id="2439526" visual_id="5897"><math alttext="\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℕ</mi></semantics></math></span> in http://www.hcm.uni-bonn.de/fileadmin/geschke/papers/IndependentFamilies_03.pdf, pages 2 and 3. </td></tr><tr><td comment_id="485050"> What is more explicit than that, by the way? You can take a very specific subset of rationals for each irrational (the continued fraction expansion) if you want to avoid seeming to use choice.  (For the rational <span class="math-container" id="2439527" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span>, you can just use <span class="math-container" id="2439528" visual_id="5192652"><math alttext="\{q-2^{-k}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mi>q</mi><mo>-</mo><msup><mn>2</mn><mrow><mo>-</mo><mi>k</mi></mrow></msup></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span>.) </td></tr><tr><td comment_id="485054"> Well, the first idea one has is to approach it directly, whereas the way through the rationals seems a bit indirect to me. (Also, the explicit bijection between the rationals and naturals is pretty ugly) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="215095" id="answer">
+<p>For each infinite set of integers <span class="math-container" id="2439568" visual_id="75306"><math alttext="A\subset\omega" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>ω</mi></mrow></semantics></math></span>, associate the infinite set of integers <span class="math-container" id="2439569" visual_id="5192668"><math alttext="S_{A}=\{\sum_{i\in A\cap n}2^{i}:n&amp;lt;\omega\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>A</mi></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>∈</mo><mrow><mi>A</mi><mo>∩</mo><mi>n</mi></mrow></mrow></msub><msup><mn>2</mn><mi>i</mi></msup></mrow><mo>:</mo><mrow><mrow><mi>n</mi><mo>&lt;</mo></mrow><mi>ω</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>.  If <span class="math-container" id="2439570" visual_id="5192669"><math alttext="i\in A\setminus B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mrow><mi>A</mi><mo>∖</mo><mi>B</mi></mrow></mrow></semantics></math></span> then all but finitely many elements of <span class="math-container" id="2439571" visual_id="95491"><math alttext="S_{A}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>A</mi></msub></semantics></math></span> have a "1" in the <span class="math-container" id="2439572" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>-th place in their binary expansion, and no elements of <span class="math-container" id="2439573" visual_id="234717"><math alttext="S_{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>B</mi></msub></semantics></math></span> do, so <span class="math-container" id="2439574" visual_id="5192670"><math alttext="S_{A}\cap S_{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>A</mi></msub><mo>∩</mo><msub><mi>S</mi><mi>B</mi></msub></mrow></semantics></math></span> is finite.  It remains to observe that the are continuum many infinite sets of integers <span class="math-container" id="2439575" visual_id="75306"><math alttext="A\subset\omega" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>ω</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

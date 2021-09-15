@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show $|\left(e^{-ixt}-1 \right)/t| \le |x|$, $x ,t\ne 0$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show <span class="math-container" id="2526944" visual_id="5218796"><math alttext="|\left(e^{-ixt}-1\right)/t|\leq|x|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mo>(</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>/</mo><mi>t</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span>, <span class="math-container" id="2526945" visual_id="5218797"><math alttext="x,t\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>t</mi></mrow><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="223748">
+<p>Show  <span class="math-container" id="2526946" visual_id="5218798"><math alttext="\left|\frac{e^{-ixt}-1}{t}\right|\leq|x|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>|</mo><mfrac><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>-</mo><mn>1</mn></mrow><mi>t</mi></mfrac><mo>|</mo></mrow><mo>≤</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span>  for all real <span class="math-container" id="2526947" visual_id="259"><math alttext="x\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> and all real <span class="math-container" id="2526948" visual_id="23313"><math alttext="t\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>I tried taylor theorem but as the reminder is complex, I don't see how to get the result.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> inequality </span><span> complex-numbers </span><span> exponential-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="500957"> First step: denote <span class="math-container" id="2526949" visual_id="5218799"><math alttext="\alpha=xt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></semantics></math></span>. You need to prove that <span class="math-container" id="2526950" visual_id="5218800"><math alttext="\left|e^{-i\alpha}-1\right|\leq|\alpha|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>|</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>α</mi></mrow></mrow></msup><mo>-</mo><mn>1</mn></mrow><mo>|</mo></mrow><mo>≤</mo><mrow><mo stretchy="false">|</mo><mi>α</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> for <span class="math-container" id="2526951" visual_id="28267"><math alttext="\alpha\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="3512316"> See also: [Prove <span class="math-container" id="2526952" visual_id="219925"><math alttext="|e^{i\theta}-1|\leq|\theta|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>θ</mi></mrow></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mo stretchy="false">|</mo><mi>θ</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span>](http://math.stackexchange.com/questions/584498/prove-ei-theta-1-leq-theta) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="223751" id="answer">
+<p>As explained by @Dennis Gulko in a comment, the task is to prove that <span class="math-container" id="2526953" visual_id="5218801"><math alttext="|\mathrm{e}^{-\mathrm{i}s}-1|\leqslant|s|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>s</mi></mrow></mrow></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\leqslant</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>s</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> for every real number <span class="math-container" id="2526954" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span>. But the function <span class="math-container" id="2526955" visual_id="3546086"><math alttext="u:\mathbb{R}\to\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℂ</mi></mrow></mrow></semantics></math></span>, <span class="math-container" id="2526956" visual_id="4592368"><math alttext="t\mapsto\mathrm{e}^{-\mathrm{i}t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>↦</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow></semantics></math></span>, has derivative <span class="math-container" id="2526957" visual_id="5218802"><math alttext="u^{\prime}(t)=-\mathrm{i}\mathrm{e}^{-\mathrm{i}t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><msup><mi>ie</mi><mrow><mo>-</mo><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow></mrow></semantics></math></span>, whose modulus is (at most) <span class="math-container" id="2526958" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> everywhere, hence  <span class="math-container" id="2526959" visual_id="5218803"><math alttext="|u(s)-u(0)|\leqslant|s-0|\cdot\sup\{|u^{\prime}(t)|\mid 0\leqslant t\leqslant s% \}=|s|." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\leqslant</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mrow><mi>s</mi><mo>-</mo><mn>0</mn></mrow><mo stretchy="false">|</mo></mrow></mrow><mo>⋅</mo><mrow><mo>sup</mo><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi>u</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mn>0</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\leqslant</mtext></merror><mo>⁢</mo><mi>t</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\leqslant</mtext></merror><mo>⁢</mo><mi>s</mi></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>s</mi><mo stretchy="false">|</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="584498"> Prove <span class="math-container" id="5992583" visual_id="219925"><math alttext="|e^{i\theta}-1|\leq|\theta|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>θ</mi></mrow></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mo stretchy="false">|</mo><mi>θ</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

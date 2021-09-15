@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Help understand this proof of even and odd subsets</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Help understand this proof of even and odd subsets </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="570022">
+<p>I need help understanding the proof of the following statement, as given in the book I'm following:</p> <blockquote> <p>Show that a non-empty set has an equal number of even subsets (that is, subsets with an even number of elements) and odd subsets.</p> </blockquote> <p>The idea of bijection or C(n,k) hasn't been introduced yet, so the proof relies on simple logic:</p> <blockquote> <p>Divide all subsets into pairs such that each pair differs only in their first element. Each pair contains an even and an odd subset, so their numbers are the same.</p> </blockquote> <p>I'm not at all sure I follow this. If I consider the subsets of <span class="math-container" id="5863365" visual_id="2125"><math alttext="\{1,2,3\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow></semantics></math></span> to be <span class="math-container" id="5863366" visual_id="1692570"><math alttext="\phi,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\{1,2,3\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>, how are the pairings to be done? I could start as follows:</p> <p><span class="math-container" id="5863367" visual_id="1692571"><math alttext="\{1\}\Leftrightarrow\{2\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo>⇔</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> <span class="math-container" id="5863368" visual_id="1692572"><math alttext="\{3\}\Leftrightarrow\phi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">{</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><mo>⇔</mo><mi>ϕ</mi></mrow></semantics></math></span> <span class="math-container" id="5863369" visual_id="1692573"><math alttext="\{1,2\}\Leftrightarrow\{3,2\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><mo>⇔</mo><mrow><mo stretchy="false">{</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span></p> <p>But then I don't see how <span class="math-container" id="5863370" visual_id="143737"><math alttext="\{1,3\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow></semantics></math></span> and <span class="math-container" id="5863371" visual_id="2125"><math alttext="\{1,2,3\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow></semantics></math></span> can be paired. More generally, I don't see how the proof works. Please explain.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> elementary-set-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1206748"> In your example there are four subsets with an even number of elements and four with an odd number of elements: you have to try to pair up even sets with odd ones. </td></tr><tr><td comment_id="1206756"> @DonAntonio Nice tip! Does that mean <span class="math-container" id="5863372" visual_id="2125"><math alttext="\{1,2,3\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow></semantics></math></span> gets paired with <span class="math-container" id="5863373" visual_id="116"><math alttext="\overline{\mathbb{R}\setminus\mathbb{Q}}=\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mi>ℝ</mi><mo>∖</mo><mi>ℚ</mi></mrow><mo>¯</mo></mover><mo>=</mo><mi>ℝ</mi></mrow></semantics></math></span>? Because I don't see any other possible pairing for it. </td></tr><tr><td comment_id="1206761"> You can do the pairing as you like, but better to follow a well defined and clear strategy just as Ittay's answer proposes. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="570027" id="answer">
+<p>Just pick one element, i.e. 1</p> <p>Now, pair it in this way:</p> <p><span class="math-container" id="5863380" visual_id="1692575"><math alttext="\phi,\{1\}\\ \{2\},\{1,2\}\\ \{3\},\{1,3\}\\ \{2,3\},\{1,2,3\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>,</mo><mrow><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo><mrow><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">{</mo><mn>3</mn><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo><mrow><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

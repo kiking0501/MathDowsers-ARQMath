@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Are there broad or powerful theorems of rings that do not involve the familiar numerical operations (+) and (*) in some fundamental way?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Are there broad or powerful theorems of rings that do not involve the familiar numerical operations (+) and (*) in some fundamental way? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="6507">
+<p>I am of, and I would like to retain, a mindset that mathematics does not have to have numbers as the central object of interest. With that in mind, I have done a fair amount of self-study on topics in undergrad modern algebra, looking for examples to show this is the case.</p> <p>For objects like groups, it is often stated explicitly, at some point, that group elements can be though of as automorphisms on a particular set. I find this pretty interesting, that numbers do not come into play at all here. This makes groups pretty useful for problems that have symmetries.</p> <p>However, for objects like fields and rings, it seems that their application often ends up dealing with numbers somehow. I'm aware there are probably a handful of cases where rings and fields do not show up as numbers, but those tend to be side-cases that are not of main study. I'm only vaguely aware of Galois theory and it's uses for fields as extensions of groups, so perhaps that is the direction I should follow there.</p> <p>But as for rings, aside from the example I just gave, I still come up a bit short on any powerful or broad theorems that make use of those two operations but do not involve numbers in some fundamental way. Perhaps math.stackexchange can prove me wrong?</p> <p>P.S. Answers with really good links to books or other resources will at least get an upvote.</p> <p><strong>An update for those who pointed out my lack of precision.</strong></p> <p>So admittedly, the choice of words was bad. I did use the phrase "involve numbers in some fundamental way", which, in my mind, means "does not use facts about numbers". Perhaps I can  rephrase it better.</p> <p>Suppose I have a group (G, *). There are many examples of groups if I want to let G be the integers, rationals, reals, complex, etc, where the group operation (*) can be addition, multiplication, or some other operation.</p> <p>However, each of these are "numerical" examples. There are groups which do not behave like numbers, if we let G be the set of all bijections on a set S, and let (*) be the composition, we may not be able to find a group where the set S is a collection of numbers and (*) is a "numerical" operation on them. Our group operation (*) may end just being some random rearrangement of numbers that does not take advantage of the properties of numbers.</p> <p>In this way, and as others often point out, all groups are just specific cases of bijections &amp; composition.</p> <p>Now suppose I have a ring (R, +, *). The ring of functions on integers, rationals, reals, etc. takes advantage of the properties of numbers when defining (+) and (*). As would the ring of polynomials, or the ring of matrices. Each of these examples of rings, while the set R is not a set of numbers, ends up being an abstraction of numbers, and the operations (+) and (*) make use of this fact.</p> <p><strong>An example of what I mean</strong></p> <p>To give a example (counterexample?) of what I mean, try Boolean rings. The operations (+) and (*) are isomorphic to the logical operations "xor" and "and". There is also examples of lattices with join and meet. One could try to squeeze in natural numbers into this with lcd and gcd, but these properties are not unique to numbers so they are not exactly "numerical".</p> <p>If you want to add more structure, say an additive and multiplicative identity, you can use  Stone's Representation Theorem to show it is isomorphic to a collection of sets with symmetric difference and intersection.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> soft-question </span><span> group-theory </span><span> ring-theory </span><span> field-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="13830"> One of the standard examples of a ring is the polynomial ring (or more generally, rings of functions on some space; for polynomial rings, this is affine space). For instance, one of the first results you prove in commutative algebra is that if a ring <span class="math-container" id="56576" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is noetherian (an extremely useful finiteness condition that crops up all the time), then so is the polynomial ring <span class="math-container" id="56577" visual_id="23793"><math alttext="R[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="13839"> I disagree with the premise of the question.  Many of the most important examples of rings have nothing to do with numbers and are certainly "of main study." </td></tr><tr><td comment_id="13856"> Galois theory is a very beautiful field, but it's not the way to go if you want to avoid numbers.  It was invented to study roots of polynomials in <span class="math-container" id="56578" visual_id="29129"><math alttext="\mathbb{Z}[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>, and though its Fundamental Theorem is nice and abstract, almost anything you'd use it for is going to involve polynomials over a finite field or an extension of <span class="math-container" id="56589" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> or <span class="math-container" id="56593" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span>. </td></tr><tr><td comment_id="14071"> Wow, big edit.  I really don't think the question is well-defined, though.  For instance, how "numerical" is <span class="math-container" id="56592" visual_id="3899"><math alttext="\mathbb{Z}_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ℤ</mi><mi>n</mi></msub></semantics></math></span>?  What about <span class="math-container" id="56582" visual_id="1332"><math alttext="\mathbb{F}_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝔽</mi><mi>p</mi></msub></semantics></math></span>?  As you yourself noted, any finite group embeds in a symmetric group -- if we choose to view it as this embedding, does that make it less "numerical"?  Two interesting examples of rings are the ring of integrable functions with convolution as the multiplication, and the group ring <span class="math-container" id="56583" visual_id="4047"><math alttext="\mathbb{Z}[G]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>G</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>.  Though they both depend on the additive properties of <span class="math-container" id="56589" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>, I wouldn't consider them numerical.  Would you? </td></tr><tr><td comment_id="14075"> @Paul Are you 100% sure about that? Like I said, I don't know much about it, but Galois Connections have shown up in category theory, and theoretical computer science, particularly the proof that syntax and semantics are adjoint. Please correct me if I'm missing something here, but that is the kind of stuff I'm after. </td></tr><tr><td comment_id="14081"> @Paul At your second comment: "if we choose to view it as this embedding, does that make it less "numerical"?" In my view, yes, although it's a trivial example of what I'm addressing. "I wouldn't consider them numerical. Would you?" The underlying use of numerical operations makes them, in my view, numerical. If there is some kind of underlying structure that fits better than numbers, then maybe. </td></tr><tr><td comment_id="14082"> I don't know too much about Galois connections, but it looks like they have more to do with category &amp; order theory than with Galois theory itself.  Galois theory is just the motivating example: [the relation between the subgroups of a Galois group and the subfields they fix](http://en.wikipedia.org/wiki/Fundamental_theorem_of_Galois_theory) is a Galois connection.  It's an insanely cool theorem.  I'd say the apparent wide applications of Galois connections are a reason to study fields of numbers, even if they don't immediately attract you. </td></tr><tr><td comment_id="14131"> Dear robinhoode, As an easier question, you might try to ask yourself whether you can construct many natural examples of abelian groups that do not involve numbers in some way.  (The point is that groups like symmetric groups, or other automorphism groups, tend to be non-commutative; abelian groups come up much more naturally in contexts where the group operation is obtained in some way from the addition of numbers.) </td></tr><tr><td comment_id="14132"> Also, I don't understand whether the theorem is asking about theorems or about examples.  Theorems about rings are about rings; they don't *a priori* involve numbers.  There are certainly theorems about rings that don't just apply to polynomial rings over a field: look at a book on commutative algebra, and you will see many results about arbitrary commutative Noetherian rings (just to give one example).  One might then ask: are there interesting examples where these theorems apply that don't involve numbers.  Is this what you are actually asking? </td></tr><tr><td comment_id="14146"> Probably also worth mentioning that <span class="math-container" id="56589" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> is the identity for the tensor product, that rings are all <span class="math-container" id="56589" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>-algebras, abelian groups are all <span class="math-container" id="56589" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>-modules, and so forth.  Tensor products with <span class="math-container" id="56593" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span> remove torsion from abelian groups, I'd guess something similar would happen with rings.  These are high-level algebraic results, and they boil down to the idea of <span class="math-container" id="56589" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> being the prototypical ring and <span class="math-container" id="56593" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span> being the prototypical field. </td></tr><tr><td comment_id="14152"> Correction to my last comment above: "whether the theorem is asking" should read "whether the question is asking". </td></tr><tr><td comment_id="14340"> @MattE "One might then ask: are there interesting examples where these theorems apply that don't involve numbers." Yes, this is the heart of my question. I can think of examples where I can use groups to study non-numerical structures. But is the only "reason" to study rings is to give you tools for working with numerical structures? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="6513" id="answer">
+<p>Well,</p> <p>I think the <a href="http://en.wikipedia.org/wiki/Wedderburn%27s_little_theorem" rel="nofollow">Wedderburn's theorem</a>, <a href="http://en.wikipedia.org/wiki/Gauss%27s_lemma_%28polynomial%29" rel="nofollow">Gauss Lemma,</a> and Eisentein's Criteria are good ones.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="648509"> Are there any abstract rings like there are groups? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

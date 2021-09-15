@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How many different ways are there from $(0,0,0)$ to the point $(4,3,5)$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How many different ways are there from <span class="math-container" id="9757638" visual_id="1467"><math alttext="(0,0,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> to the point <span class="math-container" id="9757639" visual_id="89015"><math alttext="(4,3,5)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1027070">
+<p>I had an exam in my <em>introduction to combinatorics</em> lectures today, there was a question like this:</p> <blockquote> <p>In the <span class="math-container" id="9757640" visual_id="35824"><math alttext="3D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>⁢</mo><mi>D</mi></mrow></semantics></math></span> space, consider the points of integer coordinates. Using only moviments corresponding to the increment of <span class="math-container" id="9757641" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> in each of the coordinates at a time, how many different ways are there from <span class="math-container" id="9757642" visual_id="1467"><math alttext="(0,0,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> to the point <span class="math-container" id="9757643" visual_id="89015"><math alttext="(4,3,5)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>?</p> <p><em>In this question, once one step was given in one of the three directions, it can't be undone. The question doesn't seems to point this, at least in the original version I had in the test. Otherwise it would be possible to have infinite ways to the mentioned point.</em></p> </blockquote> <p>I've used the following reasoning:</p> <p>It is mandatory that <span class="math-container" id="9757644" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> steps should be made in one direction, that <span class="math-container" id="9757645" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span> steps should be made in another direction and that <span class="math-container" id="9757646" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> steps should be made in the other direction. With this in mind, It's possible to write arbitrary words with <span class="math-container" id="9757647" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> <span class="math-container" id="9757648" visual_id="8812"><math alttext="D_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>1</mn></msub></semantics></math></span>'s, <span class="math-container" id="9757649" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> <span class="math-container" id="9757650" visual_id="29857"><math alttext="D_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>2</mn></msub></semantics></math></span>'s, and <span class="math-container" id="9757651" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span> <span class="math-container" id="9757652" visual_id="29863"><math alttext="D_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>3</mn></msub></semantics></math></span>'s as in:</p> <p><span class="math-container" id="9757653" visual_id="9118664"><math alttext="D_{1},D_{1},D_{1},D_{2},D_{2},D_{2},D_{2},D_{3},D_{3},D_{3},D_{3},D_{3}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>D</mi><mn>1</mn></msub><mo>,</mo><msub><mi>D</mi><mn>1</mn></msub><mo>,</mo><msub><mi>D</mi><mn>1</mn></msub><mo>,</mo><msub><mi>D</mi><mn>2</mn></msub><mo>,</mo><msub><mi>D</mi><mn>2</mn></msub><mo>,</mo><msub><mi>D</mi><mn>2</mn></msub><mo>,</mo><msub><mi>D</mi><mn>2</mn></msub><mo>,</mo><msub><mi>D</mi><mn>3</mn></msub><mo>,</mo><msub><mi>D</mi><mn>3</mn></msub><mo>,</mo><msub><mi>D</mi><mn>3</mn></msub><mo>,</mo><msub><mi>D</mi><mn>3</mn></msub><mo>,</mo><msub><mi>D</mi><mn>3</mn></msub></mrow><mo>,</mo></mrow></semantics></math></span></p> <p>Then it reduces to a problem of permuting the letters and removing the repetitions, therefore the answer is <span class="math-container" id="9757654" visual_id="9118665"><math alttext="\displaystyle\frac{12!}{3!4!5!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mrow><mn>12</mn><mo>!</mo></mrow><mrow><mrow><mn>3</mn><mo>!</mo></mrow><mo>⁢</mo><mrow><mn>4</mn><mo>!</mo></mrow><mo>⁢</mo><mrow><mn>5</mn><mo>!</mo></mrow></mrow></mfrac></mstyle></semantics></math></span>. Is that correct?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2094329"> "[Increment](https://en.wiktionary.org/wiki/increment)" means to increase (by 1), so the question does specify that there are no backward movements. </td></tr><tr><td comment_id="2094341"> @ChrisCulter Yes. But as I say, I changed it a bit (and continued afraid of didn't have made my point clearly), then I added the note. In the test, it's not so clear like I wrote. </td></tr><tr><td comment_id="2796359"> Yes this is correct. It's actually a case of the multinomial theorem, which is a generalisation of the binomial theorem: https://en.wikipedia.org/wiki/Multinomial_theorem. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1027073" id="answer">
+<p>Assuming (as you have) that all the steps need to be in a positive direction in one axis, so it will take exactly <span class="math-container" id="9757655" visual_id="2460"><math alttext="12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>12</mn></semantics></math></span> steps to get there, you are correct.  That seems to be the spirit of the problem.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

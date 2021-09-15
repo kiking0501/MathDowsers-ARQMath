@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why are derivations useful for defining tangent vectors?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why are derivations useful for defining tangent vectors? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1118419">
+<p>On page 54 in his book <em>Introduction to Smooth Manifolds</em>, John Lee says the following: </p> <p>A linear map <span class="math-container" id="10543816" visual_id="664824"><math alttext="v:C^{\infty}(M)\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>:</mo><mrow><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> is called a <em>derivation at p</em> if it satisfies </p> <p>\begin{equation} v(fg) = f(p)vg + g(p)vf  \end{equation} for all <span class="math-container" id="10543817" visual_id="232147"><math alttext="f,g\in C^{\infty}(M)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>,</mo><mi>g</mi></mrow><mo>∈</mo><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. </p> <p><strong>My Question:</strong> </p> <p>Why is this useful for defining tangent vectors? This just looks to me like a fancy way of characterizing a set of smooth, linear maps who also happen to satisfy the product rule. What relevance does that have to tangent vectors? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> differential-geometry </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2281840"> I suggest working out the following exercise:  Any derivation at a point <span class="math-container" id="10543828" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> in <span class="math-container" id="10543825" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> is given by a directional derivative in some vector <span class="math-container" id="10543820" visual_id="1546"><math alttext="v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi></semantics></math></span>.  Hint:  use Taylor's theorem. </td></tr><tr><td comment_id="2282048"> I believe the map should be defined going to <span class="math-container" id="10543821" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>, not <span class="math-container" id="10543825" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> in the question above. </td></tr><tr><td comment_id="2282132"> Changed it. Thx for correcting. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1118423" id="answer">
+<p>Short answer: They indicate local directions over the manifold to treat variation of scalars, vector fields or even tensors. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2281905"> But why the product rule as opposed to any other? What about the product rule in particular is useful? </td></tr><tr><td comment_id="2281911"> a.k.a "Leibniz rule" is needed to study derivatives for any kind of products, to be analyzed </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

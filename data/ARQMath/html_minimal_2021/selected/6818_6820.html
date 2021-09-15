@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Testing the series $\sum\limits_{n=1}^{\infty} \frac{1}{n^{k + \cos{n}}}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Testing the series <span class="math-container" id="59441" visual_id="8245425"><math alttext="\sum\limits_{n=1}^{\infty}\frac{1}{n^{k+\cos{n}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></msup></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="6818">
+<p>We know that the "Harmonic Series" <span class="math-container" id="59442" visual_id="30683"><math alttext="\sum\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> diverges. And for <span class="math-container" id="59443" visual_id="846"><math alttext="p&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span> we have the result that the series converges <span class="math-container" id="59444" visual_id="22439"><math alttext="\sum\frac{1}{n^{p}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∑</mo><mfrac><mn>1</mn><msup><mi>n</mi><mi>p</mi></msup></mfrac></mrow></semantics></math></span> converges. </p> <p>One can then ask the question of testing the convergence the following 2 Series:</p> <p><span class="math-container" id="59445" visual_id="8245426"><math alttext="\sum\limits_{n=1}^{\infty}\frac{1}{n^{k+\cos{n}}},\quad\sum\limits_{n=1}^{% \infty}\frac{1}{n^{k+\sin{n}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></msup></mfrac></mrow><mo rspace="12.5pt">,</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></msup></mfrac></mrow></mrow></semantics></math></span> where <span class="math-container" id="59446" visual_id="1177541"><math alttext="k\in(0,2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.</p> <p>Only thing which i have as tool for this problem is the inequality <span class="math-container" id="59447" visual_id="1394572"><math alttext="|\sin{n}|\leq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>n</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mn>1</mn></mrow></semantics></math></span>, which i am not sure whether would applicable or not. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> analysis </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="6820" id="answer">
+<p>Here is a handwaving argument that the series diverges for all <span class="math-container" id="59491" visual_id="1177541"><math alttext="k\in(0,2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>: Given <span class="math-container" id="59492" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, there will be a certain density of <span class="math-container" id="59493" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> for which <span class="math-container" id="59494" visual_id="8245448"><math alttext="k+cosn&amp;lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mi>n</mi><mo>&lt;</mo></mrow></mrow><mn>1</mn></mrow></semantics></math></span>.  A "random sample" of the harmonic series will diverge by the same argument that shows the harmonic series diverges.  Our series will be greater, term by term, than the harmonic series that has numerator 0 if <span class="math-container" id="59495" visual_id="8245449"><math alttext="k+cosn&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span> and numerator 1 if <span class="math-container" id="59496" visual_id="8245448"><math alttext="k+cosn&amp;lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mi>n</mi><mo>&lt;</mo></mrow></mrow><mn>1</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="14483"> Is every positive-density sub-series of the harmonic series divergent? </td></tr><tr><td comment_id="14484"> I think so, at least for a density bounded away from zero.  What you need for an easy proof is positive density in terms (2^n+1,2^(n+1)).  For a given positive density e, there must be an N such that the number of elements less than n in the series is greater than n*e/2 for n&gt;N.  So once we get big enough, there are 2^n*e/2  terms by term 2^n, each &gt;1/2^n.  Then there are 2^n*e/2 more by 2^(n+1), which contribute e/2 and so on. </td></tr><tr><td comment_id="14487"> @Mariano: It is true: http://math.stackexchange.com/questions/5932/theorem-on-natural-density </td></tr><tr><td comment_id="14499"> I have updated my answer with a justification for Ross' intuition. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="919477"> does <span class="math-container" id="8877291" visual_id="6318071"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{1.7+\sin n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><msup><mi>n</mi><mrow><mn>1.7</mn><mo>+</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></msup></mfrac></mrow></semantics></math></span> converge? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="128"> How do you prove that <span class="math-container" id="1294" visual_id="8230016"><math alttext="p(n\xi)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>ξ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for <span class="math-container" id="1295" visual_id="3516"><math alttext="\xi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ξ</mi></semantics></math></span> irrational and <span class="math-container" id="1296" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> a polynomial is uniformly distributed modulo 1? </td></tr><tr><td post_id="310756"> Convergence/Divergence of infinite series <span class="math-container" id="3366075" visual_id="6657002"><math alttext="\sum\limits_{n=1}^{\infty}\frac{1}{n^{1+\left|{\cos n}\right|}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mrow><mn>1</mn><mo>+</mo><mrow><mo>|</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>n</mi></mrow><mo>|</mo></mrow></mrow></msup></mfrac></mrow></semantics></math></span> </td></tr><tr><td post_id="5932"> If <span class="math-container" id="51040" visual_id="135942"><math alttext="A\subseteq\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>ℕ</mi></mrow></semantics></math></span> and <span class="math-container" id="51041" visual_id="594224"><math alttext="\sum\limits_{a\in A}\frac{1}{a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow></munder><mfrac><mn>1</mn><mi>a</mi></mfrac></mrow></semantics></math></span> converges then <span class="math-container" id="51042" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> has natural density <span class="math-container" id="51043" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> </td></tr><tr><td post_id="270064"> Does the series <span class="math-container" id="2988419" visual_id="5803688"><math alttext="\sum\limits_{n=1}^{\infty}\frac{1}{n^{1+|\sin(n)|}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="false">|</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow></msup></mfrac></mrow></semantics></math></span> converge or diverge? </td></tr><tr><td post_id="919063"> convergence of a series, exponent involving <span class="math-container" id="8873404" visual_id="1315575"><math alttext="\cos k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mi>k</mi></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

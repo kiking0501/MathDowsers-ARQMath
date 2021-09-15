@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Degree 3 polynomial with coef in a field K: question on roots in a algebraic closure</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Degree 3 polynomial with coef in a field K: question on roots in a algebraic closure </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="709961">
+<p>I am asked the following question:</p> <p>Consider a field <span class="math-container" id="7096966" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span> with characteristic different from 2 and 3, and the polynomial <span class="math-container" id="7096967" visual_id="696102"><math alttext="f(t)=t^{3}+pt+q\in K(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>t</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>p</mi><mo>⁢</mo><mi>t</mi></mrow><mo>+</mo><mi>q</mi></mrow><mo>∈</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> with three distinct roots <span class="math-container" id="7096968" visual_id="696103"><math alttext="\alpha_{1},\alpha_{2},\alpha_{3}\in\overline{K}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><msub><mi>α</mi><mn>2</mn></msub><mo>,</mo><msub><mi>α</mi><mn>3</mn></msub></mrow><mo>∈</mo><mover accent="true"><mi>K</mi><mo>¯</mo></mover></mrow></semantics></math></span> (<span class="math-container" id="7096969" visual_id="17416"><math alttext="\overline{K}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><mi>K</mi><mo>¯</mo></mover></semantics></math></span> denotes the algebraic closure of <span class="math-container" id="7096970" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span>). Show that  <span class="math-container" id="7096971" visual_id="696104"><math alttext="\alpha_{1}+\alpha_{2}+\alpha_{3}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>+</mo><msub><mi>α</mi><mn>2</mn></msub><mo>+</mo><msub><mi>α</mi><mn>3</mn></msub></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>Then there are similar questions about the squares and the cubes of the roots, but I am already stuck with this one. I tried using the fact that <span class="math-container" id="7096972" visual_id="696105"><math alttext="\alpha_{i}^{3}+p\alpha_{i}+q=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mi>α</mi><mi>i</mi><mn>3</mn></msubsup><mo>+</mo><mrow><mi>p</mi><mo>⁢</mo><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>+</mo><mi>q</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and manipulating this expression, but I did not get anywhere.</p> <p>Could you give me some hints? </p> <p>Thanks in advance,</p> <p>Olivier</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> polynomials </span><span> ring-theory </span><span> galois-theory </span><span> field-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="709970" id="answer">
+<p><strong>Hint</strong> If <span class="math-container" id="7096973" visual_id="219106"><math alttext="\alpha_{1},\alpha_{2},\alpha_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><msub><mi>α</mi><mn>2</mn></msub><mo>,</mo><msub><mi>α</mi><mn>3</mn></msub></mrow></semantics></math></span> are the roots of <span class="math-container" id="7096974" visual_id="2374"><math alttext="f(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, then <span class="math-container" id="7096975" visual_id="696106"><math alttext="f(t)=(t-\alpha_{1})(t-\alpha_{2})(t-\alpha_{3})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>-</mo><msub><mi>α</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>-</mo><msub><mi>α</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>-</mo><msub><mi>α</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Multiply this out and compare to the definition of <span class="math-container" id="7096976" visual_id="2374"><math alttext="f(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> with which you started.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

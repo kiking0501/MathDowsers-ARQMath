@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Can't find an identity for proving that $ \sum_{k=0}^{i+1} \binom {i+1} k=2^{i+1}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Can't find an identity for proving that <span class="math-container" id="7286755" visual_id="768197"><math alttext="\sum_{k=0}^{i+1}\binom{i+1}{k}=2^{i+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><msup><mn>2</mn><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="732117">
+<blockquote> <p><span class="math-container" id="7286756" visual_id="768198"><math alttext="\sum_{k=0}^{i+1}\binom{i+1}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span></p> </blockquote> <p>I can't find an identity for this summation :(</p> <p>To clarify I'm trying to prove using induction that this sum  is equal to <span class="math-container" id="7286757" visual_id="717302"><math alttext="2^{i+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup></semantics></math></span>, I have my basis and inductive hypothesis done, this is just my inductive step</p>
+</div>
+<hr/>
+<div id="tags">
+<span> summation </span><span> induction </span><span> binomial-coefficients </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1528068"> Your question is not very clear. Would you perhaps care to elucidate what you mean? </td></tr><tr><td comment_id="1528071"> The sum is <span class="math-container" id="7286758" visual_id="717302"><math alttext="2^{i+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup></semantics></math></span> by binomial theorem. Why do you need an inequality for this? </td></tr><tr><td comment_id="1528072"> <span class="math-container" id="7286759" visual_id="768199"><math alttext="\sum_{k=0}^{i+1}\binom{i+1}{k}&lt;\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. There you go </td></tr><tr><td comment_id="1528075"> Clarified my question above </td></tr><tr><td comment_id="1528077"> You need [Pascal's identity](http://www.artofproblemsolving.com/Wiki/index.php/Pascal%27s_Identity), not an inequality. </td></tr><tr><td comment_id="1528084"> Sorry, ya I meant identity, was working on inequalities earlier, typo </td></tr><tr><td comment_id="1528086"> But don't see how Pascal's identity helps here </td></tr><tr><td comment_id="1528098"> Using Pascal's identity, you can split the sum <span class="math-container" id="7286760" visual_id="768198"><math alttext="\sum_{k=0}^{i+1}\binom{i+1}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> into two copies of <span class="math-container" id="7286761" visual_id="719840"><math alttext="\sum_{k=0}^{i}\binom{i}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>i</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>i</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span>. In the induction step, you assume the second sum is <span class="math-container" id="7286762" visual_id="33016"><math alttext="2^{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>i</mi></msup></semantics></math></span>, this immediately implies the first sum is <span class="math-container" id="7286763" visual_id="768200"><math alttext="2\times 2^{i}=2^{i+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>×</mo><msup><mn>2</mn><mi>i</mi></msup></mrow><mo>=</mo><msup><mn>2</mn><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span>. You should work out the Pascal's identity for the first few <span class="math-container" id="7286764" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>, everything will then become obvious. </td></tr><tr><td comment_id="1528348"> You could have a look at http://math.stackexchange.com/questions/18690/algebraic-proof-that-sum-limits-i-0n-binomni-2n or http://math.stackexchange.com/questions/177405/prove-by-induction-2n-cn-0-cn-1-cdots-cn-n </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="732183" id="answer">
+<p>Your problem can be proved without making direct application of the Binomial Theorem itself. Let us consider two disjoint sets <span class="math-container" id="7286765" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="7286766" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> and <span class="math-container" id="7286767" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> elements at our disposal. Now the problem is to divide the <span class="math-container" id="7286768" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> elements in the two sets. In how many ways can it be done? The answer is easy. </p> <p>First analyze the problem as for any one of the <span class="math-container" id="7286769" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> elements there are two possibilities of satisfying the condition, namely , either it goes into <span class="math-container" id="7286770" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> or into <span class="math-container" id="7286771" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>. It is easy to see that the total number of ways in this case is indeed <span class="math-container" id="7286772" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span>. Right?</p> <p>Now analyze the same problem a bit differently. Since the sets are disjoint, if we can analyze all the possible distributions in <span class="math-container" id="7286773" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, it will automatically determine all the possible distribution in <span class="math-container" id="7286774" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> because there is a one-one correspondence between the distributions in <span class="math-container" id="7286775" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and that in <span class="math-container" id="7286776" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>. We can take <span class="math-container" id="7286777" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> elements from <span class="math-container" id="7286778" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> elements, the number of ways of choosing in such a manner being <span class="math-container" id="7286779" visual_id="19549"><math alttext="\binom{n}{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mn>0</mn></mfrac><mo>)</mo></mrow></semantics></math></span>. Similarly when we choose <span class="math-container" id="7286780" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> element the number of ways becomes <span class="math-container" id="7286781" visual_id="14902"><math alttext="\binom{n}{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mn>1</mn></mfrac><mo>)</mo></mrow></semantics></math></span> and thus generalizing if we choose <span class="math-container" id="7286782" visual_id="768201"><math alttext="i(\leq n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mspace width="veryverythickmathspace"></mspace><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo>≤</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> elements the number of ways becomes <span class="math-container" id="7286783" visual_id="12725"><math alttext="\binom{n}{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>i</mi></mfrac><mo>)</mo></mrow></semantics></math></span> and since each such choice  is mutually exclusive with any other choice the total number of such choices will be <span class="math-container" id="7286784" visual_id="621872"><math alttext="\sum_{i=0}^{n}\binom{n}{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>i</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span>. And since the total number of ways must be unique we get <span class="math-container" id="7286785" visual_id="237946"><math alttext="\sum_{i=0}^{n}\binom{n}{i}=2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>i</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></semantics></math></span>. Hence proved.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="18690"> Algebraic Proof that <span class="math-container" id="181315" visual_id="237946"><math alttext="\sum\limits_{i=0}^{n}\binom{n}{i}=2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>i</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="177405"> Prove by induction: <span class="math-container" id="2061174" visual_id="5958375"><math alttext="2^{n}=C(n,0)+C(n,1)+\cdots+C(n,n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>=</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

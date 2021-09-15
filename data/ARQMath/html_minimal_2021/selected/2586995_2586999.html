@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>System of homogeneous linear equations with coefficients in a field</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> System of homogeneous linear equations with coefficients in a field </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2586995">
+<p>In the book I started to read, at almost the very beginning it is stated (without proof):</p> <blockquote> <p>If <span class="math-container" id="23920996" visual_id="7908"><math alttext="m&amp;lt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>&lt;</mo></mrow><mi>n</mi></mrow></semantics></math></span> and we have a system <span class="math-container" id="23920997" visual_id="3701326"><math alttext="a_{11}x_{1}+...+a_{1n}x_{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mn>11</mn></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mn>1</mn><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p><span class="math-container" id="23920998" visual_id="5810"><math alttext="\vdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">⋮</mi></semantics></math></span></p> <p><span class="math-container" id="23920999" visual_id="3701327"><math alttext="a_{m1}x_{1}+...+a_{mn}x_{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>m</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>of homogeneous linear equations, with coefficients in a field, then there is a non-trivial solution in the field.</p> </blockquote> <p>So, I have some questions about this:</p> <p>Where a proof can be found? Does this also holds for finite fields (or it is implicitly assumed that we talk about infinite fields)? Is this just an application of matrix algebra (that is, this matrix of coefficients will always have an inverse if <span class="math-container" id="23921000" visual_id="7908"><math alttext="m&amp;lt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>&lt;</mo></mrow><mi>n</mi></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> matrices </span><span> reference-request </span><span> field-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5340681"> This is pretty much the first theorem in linear algebra. It follows from row reduction/Gaussian elimination. It certainly holds for finite fields. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2586999" id="answer">
+<p>To start, your last sentence is not correct in that if a matrix has an inverse it will only have the trivial solution to the homogenous system. Also, an invertable matrix must be square.</p> <p>The result itself follows from the fact that the system is underdetermined and will have multiple solutions (proof via Gaussian algorithm). You could also likely view it from a linear dependence argument. </p> <p>Any introductory linear algebra text should show this result (you could just replace the real numbers with an arbitrary field). Lay's Linear Algebra is a good one.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

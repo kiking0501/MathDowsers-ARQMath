@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How do you calculate how many decimal places there are before the repeating digits, given a fraction that expands to a repeating decimal?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How do you calculate how many decimal places there are before the repeating digits, given a fraction that expands to a repeating decimal? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="726969">
+<p>If you have a fraction such as <span class="math-container" id="7242340" visual_id="751480"><math alttext="\frac{7}{26}=0.269230\overline{769230}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>7</mn><mn>26</mn></mfrac><mo>=</mo><mrow><mn>0.269230</mn><mo>⁢</mo><mover accent="true"><mn>769230</mn><mo>¯</mo></mover></mrow></mrow></semantics></math></span> where there are a number of digits prior to the repeating section, how can you tell how many digits there will be given just the fraction?</p> <p>I believe I could run through the standard long division algorithm until I come across the same remainder for the second time and then use the location of the first instance of this remainder to calculate the number of digits before the repeating section, but this feels very cumbersome.</p> <p>After lots of reading online, I came across what looks like a formula for it from <a href="http://mathworld.wolfram.com/DecimalExpansion.html">Wolfram MathWorld</a>:</p> <blockquote> <p>When a rational number <span class="math-container" id="7242341" visual_id="23194"><math alttext="\frac{m}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>m</mi><mi>n</mi></mfrac></semantics></math></span> with <span class="math-container" id="7242342" visual_id="193256"><math alttext="(m,n)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> is expanded, the period begins after <span class="math-container" id="7242343" visual_id="706"><math alttext="{s}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span> terms and has length <span class="math-container" id="7242344" visual_id="297"><math alttext="{t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span>, where <span class="math-container" id="7242345" visual_id="706"><math alttext="{s}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span> and <span class="math-container" id="7242346" visual_id="297"><math alttext="{t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> are the smallest numbers satisfying <span class="math-container" id="7242347" visual_id="751481"><math alttext="10^{s}\equiv 10^{s+t}\pmod{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mi>s</mi></msup><mo>≡</mo><mrow><msup><mn>10</mn><mrow><mi>s</mi><mo>+</mo><mi>t</mi></mrow></msup><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> </blockquote> <p>I know how to calculate the length of the period of a fraction, and so in the case of my original fraction we have <span class="math-container" id="7242348" visual_id="751482"><math alttext="10^{s}\equiv 10^{s+6}\pmod{26}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mi>s</mi></msup><mo>≡</mo><mrow><msup><mn>10</mn><mrow><mi>s</mi><mo>+</mo><mn>6</mn></mrow></msup><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>26</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, but I don't know how to solve for <span class="math-container" id="7242349" visual_id="706"><math alttext="{s}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span> in this equation!</p> <p>So there are really two questions here - the one in the title, and a sneaky one about how to take logs in a modulo arithmetic equation.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> fractions </span><span> decimal-expansion </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1518178"> Nobody else knows how either; it's an open problem. You can use trial-and-error, and there are some things you can do with Fermat's theorem to cut down the number of exponents you have to check, but I don't think anything significantly better than brute force is known. </td></tr><tr><td comment_id="1518180"> @MJD That's not quite true; the algorithm is quite simple, but there isn't a constant-time closed form AFAIK. </td></tr><tr><td comment_id="1518182"> I would think it has something to do with it's continued fraction length. Can anyone confirm this? </td></tr><tr><td comment_id="1518187"> I will cheerfully *disconfirm* that. </td></tr><tr><td comment_id="1518193"> Do you have a counter example? Not really a number theorist, but I remember reading something about how each partial continued fraction represents the best rational approximation of the continued fraction. Ergo, partial continued fractions tend to look more and more irrational. </td></tr><tr><td comment_id="1518195"> @BobbyOcean You are correct that they are the best *rational* approximation, but that's very different than the best *decimal* approximation. </td></tr><tr><td comment_id="1518197"> I disagree with the point you chose to claim as beginning repetition in <span class="math-container" id="7242350" visual_id="751483"><math alttext="7/26" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>/</mo><mn>26</mn></mrow></semantics></math></span>.  It can be considered as repeating with the second decimal place. </td></tr><tr><td comment_id="1518204"> @Becker First I don't know if my statement is true, hence I would like a counter example. Evenmoreso, we are discussing not just decimal approximation, but repeating decimal approximation which is in essence a property concerning rational numbers. </td></tr><tr><td comment_id="1518208"> Also, just to point out, the title is a little funny since all fractions eventually start to repeat. </td></tr><tr><td comment_id="1518242"> @hardmath True, and indeed <span class="math-container" id="7242351" visual_id="751484"><math alttext="22\equiv 10^{2}\equiv 10^{8}\mod 26" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>22</mn><mo>≡</mo><msup><mn>10</mn><mn>2</mn></msup><mo>≡</mo><mrow><msup><mn>10</mn><mn>8</mn></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>26</mn></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="1518253"> @BobbyOcean Note that the continued fraction representations for the numbers <span class="math-container" id="7242352" visual_id="4096"><math alttext="\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>n</mi></mfrac></semantics></math></span> all have the same length; each is <span class="math-container" id="7242353" visual_id="751485"><math alttext="[0;n]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>;</mo><mi>n</mi><mo stretchy="false">]</mo></mrow></semantics></math></span>.  But they have completely different base-10 periods, for example the period of <span class="math-container" id="7242354" visual_id="566315"><math alttext="[0;3]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy="false">]</mo></mrow></semantics></math></span> is 1 and the period of <span class="math-container" id="7242355" visual_id="751486"><math alttext="[0;17]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>;</mo><mn>17</mn><mo stretchy="false">]</mo></mrow></semantics></math></span> is 16 and the period of <span class="math-container" id="7242356" visual_id="751487"><math alttext="[0;21]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>;</mo><mn>21</mn><mo stretchy="false">]</mo></mrow></semantics></math></span> is 9. </td></tr><tr><td comment_id="1518265"> @MJD Thanks. :-) However, I thought we were interested in the length s that comes before the repetition. Meaning that 1/n each have the same continued fraction length, but they also have the same s=0, where s is the portion before the repetition begins. </td></tr><tr><td comment_id="1518287"> @hardmath, you're right, my mistake. I'll calculate the length of the pre-period by tracking remainders during a long division, I'm not concerned about efficiency here. </td></tr><tr><td comment_id="1518293"> @MJD It is the length s that I'm after here as I can already calculate the length of the period. When you said "It's an open problem" I presume you are referring to the one of solving the modulus equation above? If so, is there another formula for calculating s? </td></tr><tr><td comment_id="1518308"> Bearing in mind @hardmath's correction, I've noticed a pattern that _seems_ to work. For terminating decimals, I believe that if you break down the denominator into prime factors, the higher of the number of 2s or 5s in the factors tells you the number of decimal places that the fraction will expand to. But it looks like with repeating decimals, this count indicates the value of s. For example, 26 = 2*13 so s=1, 84 = 2*2*3*7 so s=2, 6 = 2*3 so s=1 etc. Is this just co-incidence or is this a valid approach? </td></tr><tr><td comment_id="1519740"> @BobbyOcean Note that the continued fraction representations for the numbers <span class="math-container" id="7242357" visual_id="751488"><math alttext="\frac{1}{10^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mn>10</mn><mi>n</mi></msup></mfrac></semantics></math></span> all have the same length; each is <span class="math-container" id="7242358" visual_id="751489"><math alttext="[0;10^{n}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>;</mo><msup><mn>10</mn><mi>n</mi></msup><mo stretchy="false">]</mo></mrow></semantics></math></span>.  But they have completely different values of <span class="math-container" id="7242380" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span>, namely <span class="math-container" id="7242360" visual_id="751490"><math alttext="s=n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="848201" id="answer">
+<p>'Cumbersome' is what computers are meant for! <a href="https://math.stackexchange.com/questions/198810/proof-that-every-repeating-decimal-is-rational/847020#847020">Here</a> is an algorithm I converted into a python program to do something similar for Project Euler 26.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="775848"> Rational doubt ( doubt in rational number) </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="198810"> Proof that every repeating decimal is rational </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

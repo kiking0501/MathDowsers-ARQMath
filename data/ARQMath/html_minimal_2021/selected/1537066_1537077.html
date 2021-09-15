@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving that a one-to-one continuous function on a compact subset has a continuous inverse</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving that a one-to-one continuous function on a compact subset has a continuous inverse </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1537066">
+<p>This is a curious problem I found in the "challenge" section of the text I'm learning real analysis from. </p> <blockquote> <p>Suppose <span class="math-container" id="14201957" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is a compact subset of <span class="math-container" id="14201958" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> and that <span class="math-container" id="14201959" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is a continuous function mapping <span class="math-container" id="14201960" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> one-to-one onto <span class="math-container" id="14201961" visual_id="4880630"><math alttext="B\subseteq\mathbb{R}^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⊆</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow></semantics></math></span>. Try and prove that the inverse function <span class="math-container" id="14201962" visual_id="2"><math alttext="f^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is continuous on <span class="math-container" id="14201963" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>. </p> </blockquote> <p>I figure that this most likely has to do with the theorem stating that if a subset is compact in a particular vector space, then for a continuous <span class="math-container" id="14201964" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> mapping onto another vector space the function of the subset is compact in this other vector space <sup>i.e.</sup> the continuous image of a compact set is compact. I tried investigating the proof of this theorem to see if it would give me any intuition as to how to prove this question but wasn't successful, it feels required to solve the problem though. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> continuity </span><span> compactness </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3130017"> You probably know that a map <span class="math-container" id="14201983" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous iff the preimage of open sets is open. Taking complements, this is equivalent to the preimage of closed sets being closed. Now consdering <span class="math-container" id="14201984" visual_id="2"><math alttext="f^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span>, the preimages are the direct images of <span class="math-container" id="14201983" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>. If <span class="math-container" id="14201976" visual_id="782102"><math alttext="D\subseteq A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>⊆</mo><mi>A</mi></mrow></semantics></math></span> is closed, it is a closed inside a compact, hence compact, so <span class="math-container" id="14201970" visual_id="4718"><math alttext="f(A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is compact, hence closed. </td></tr><tr><td comment_id="3130024"> @LuizCordeiro That's the topological definition of continuity, right? </td></tr><tr><td comment_id="3130034"> To connect Luiz Cordeiro's comment and BigbearZzz's answer [<span class="math-container" id="14201970" visual_id="4718"><math alttext="f(A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> compact <span class="math-container" id="14201971" visual_id="6921056"><math alttext="\rightarrow f(A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>→</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> closed] follows from <span class="math-container" id="14201972" visual_id="2631"><math alttext="\mathbb{R}^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup></semantics></math></span> being Hausdorff. </td></tr><tr><td comment_id="3130036"> Yes, that's one of the several equivalent definitions. </td></tr><tr><td comment_id="3130086"> @LuizCordeiro I understand your logic and really appreciate your help, one last question would just be to clarify - when you say <span class="math-container" id="14201977" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span>, you're just referring to the image of <span class="math-container" id="14201984" visual_id="2"><math alttext="f^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> in <span class="math-container" id="14201986" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>? </td></tr><tr><td comment_id="3130191"> More or less. Take any closed <span class="math-container" id="14201976" visual_id="782102"><math alttext="D\subseteq A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>⊆</mo><mi>A</mi></mrow></semantics></math></span>. Then we need to verify that the preimage of <span class="math-container" id="14201977" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> under <span class="math-container" id="14201984" visual_id="2"><math alttext="f^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is closed. This preimage is precisely <span class="math-container" id="14201979" visual_id="6921057"><math alttext="(f^{-1})^{-1}(D)=f(D)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. I made a mistake in my first comments, and should have writte "<span class="math-container" id="14201980" visual_id="151651"><math alttext="f(D)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is compact" in the end. Anyway, we've shown that preimages of closed sets under <span class="math-container" id="14201984" visual_id="2"><math alttext="f^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> are closed, so <span class="math-container" id="14201984" visual_id="2"><math alttext="f^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is continuous. This is the definition of homeomorphisms. </td></tr><tr><td comment_id="3130234"> @LuizCordeiro Ohhh I see yeah, that makes sense. Thanks! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1537077" id="answer">
+<p>There is a famous result that a <a href="https://proofwiki.org/wiki/Continuous_Bijection_from_Compact_to_Hausdorff_is_Homeomorphism" rel="nofollow">continuous bijection <span class="math-container" id="14201983" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> from compact set into a Hausdorff space is a homeomorphism</a>, i.e. <span class="math-container" id="14201984" visual_id="2"><math alttext="f^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is continuous (on <span class="math-container" id="14201985" visual_id="15233"><math alttext="\mathscr{R}(A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="ltx_font_mathscript">ℛ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, that is). Since the assumption stated that <span class="math-container" id="14201986" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is compact and since <span class="math-container" id="14201987" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> is a Hausdorff space for all <span class="math-container" id="14201988" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span>, the result follows.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3130028"> I have yet to learn about Hausdorff spaces yet, but thanks for this. </td></tr><tr><td comment_id="3130043"> @snape Oops I'm really sorry, I should have noticed that you mentioned that you got the question from real analysis exercise. My bad.   By the way, the only thing that you need to know about Hausdorff space to understand the proof is that compact sets are all closed in Hausdorff space, which is quite obvious for <span class="math-container" id="14201990" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span>. (A set in <span class="math-container" id="14201990" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> is compact iff it's closed and bounded.) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

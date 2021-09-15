@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>(AIME 1987) Find the number of ordered triples $(a,b,c)$ of positive integers satisfying the following condtions.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> (AIME 1987) Find the number of ordered triples <span class="math-container" id="18747416" visual_id="11227"><math alttext="(a,b,c)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> of positive integers satisfying the following condtions. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2025425">
+<p><strong>Problem:</strong> [AIME 1987] Find the number of ordered triples <span class="math-container" id="18747417" visual_id="11227"><math alttext="(a,b,c)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> of positive integers for which <span class="math-container" id="18747418" visual_id="4790507"><math alttext="[a,b]=1000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mn>1000</mn></mrow></semantics></math></span>, <span class="math-container" id="18747419" visual_id="4790508"><math alttext="[b,c]=2000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mn>2000</mn></mrow></semantics></math></span> and <span class="math-container" id="18747420" visual_id="4790509"><math alttext="[c,a]=2000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>c</mi><mo>,</mo><mi>a</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mn>2000</mn></mrow></semantics></math></span>, where <span class="math-container" id="18747421" visual_id="1716"><math alttext="[x,y]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></semantics></math></span> denotes the <span class="math-container" id="18747422" visual_id="506663"><?xml version="1.0" encoding="UTF-8"?> <math alttext="\text{lcm}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <mrow> <merror class="ltx_ERROR undefined undefined"> <mtext>\text</mtext> </merror> <mo>⁢</mo> <mi>l</mi> <mo>⁢</mo> <mi>c</mi> <mo>⁢</mo> <mi>m</mi> </mrow> </math></span> of <span class="math-container" id="18747423" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="18747424" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span>.</p> <p><strong>My Attempt:</strong> Clearly <span class="math-container" id="18747425" visual_id="4790510"><math alttext="a=2^{m_{1}}5^{n_{1}},b=2^{m_{2}}5^{n_{2}}\text{ and }c=2^{m_{3}}5^{n_{3}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>=</mo><mrow><msup><mn>2</mn><msub><mi>m</mi><mn>1</mn></msub></msup><mo>⁢</mo><msup><mn>5</mn><msub><mi>n</mi><mn>1</mn></msub></msup></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>=</mo><mrow><msup><mn>2</mn><msub><mi>m</mi><mn>2</mn></msub></msup><mo>⁢</mo><msup><mn>5</mn><msub><mi>n</mi><mn>2</mn></msub></msup><mo>⁢</mo><mtext> and </mtext><mo>⁢</mo><mi>c</mi></mrow><mo>=</mo><mrow><msup><mn>2</mn><msub><mi>m</mi><mn>3</mn></msub></msup><mo>⁢</mo><msup><mn>5</mn><msub><mi>n</mi><mn>3</mn></msub></msup></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Then we need to find solutions to the following set of equations: <span class="math-container" id="18747426" visual_id="4790511"><math alttext="\max\{m_{1},m_{2}\}=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>m</mi><mn>1</mn></msub><mo>,</mo><msub><mi>m</mi><mn>2</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span> <span class="math-container" id="18747427" visual_id="4790512"><math alttext="\max\{m_{2},m_{3}\}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>m</mi><mn>2</mn></msub><mo>,</mo><msub><mi>m</mi><mn>3</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math></span> <span class="math-container" id="18747428" visual_id="4790513"><math alttext="\max\{m_{3},m_{1}\}=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>m</mi><mn>3</mn></msub><mo>,</mo><msub><mi>m</mi><mn>1</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math></span> <span class="math-container" id="18747429" visual_id="4790514"><math alttext="\max\{n_{1},n_{2}\}=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span> <span class="math-container" id="18747430" visual_id="4790515"><math alttext="\max\{n_{2},n_{3}\}=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span> <span class="math-container" id="18747431" visual_id="4790516"><math alttext="\max\{n_{3},n_{1}\}=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>n</mi><mn>3</mn></msub><mo>,</mo><msub><mi>n</mi><mn>1</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span></p> <p>Frankly I have never seen a system like this before and I would like to know a <strong>methodical</strong> way of solving such equations. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> least-common-multiple </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2025489" id="answer">
+<p>From <span class="math-container" id="18747432" visual_id="4790514"><math alttext="\max\{n_{1},n_{2}\}=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span> we gather that either <span class="math-container" id="18747433" visual_id="20820"><math alttext="n_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>1</mn></msub></semantics></math></span> or <span class="math-container" id="18747434" visual_id="5426"><math alttext="n_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>2</mn></msub></semantics></math></span> must be 3, while the other must only be one of <span class="math-container" id="18747435" visual_id="308318"><math alttext="0,1,2," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow><mo>,</mo></mrow></semantics></math></span> or <span class="math-container" id="18747436" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>. From <span class="math-container" id="18747437" visual_id="4790515"><math alttext="\max\{n_{2},n_{3}\}=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span> <span class="math-container" id="18747438" visual_id="4790516"><math alttext="\max\{n_{3},n_{1}\}=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>n</mi><mn>3</mn></msub><mo>,</mo><msub><mi>n</mi><mn>1</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span> we find the same result must hold for the pairs <span class="math-container" id="18747439" visual_id="756545"><math alttext="n_{2},n_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub></mrow></semantics></math></span> and <span class="math-container" id="18747440" visual_id="4790517"><math alttext="n_{3},n_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>3</mn></msub><mo>,</mo><msub><mi>n</mi><mn>1</mn></msub></mrow></semantics></math></span>. But how can this result hold for all 3 pairs? Clearly at least two of <span class="math-container" id="18747441" visual_id="247875"><math alttext="n_{1},n_{2},n_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub></mrow></semantics></math></span> must be <span class="math-container" id="18747442" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> else the result would fail for one pair. The third <span class="math-container" id="18747443" visual_id="4576"><math alttext="n_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>i</mi></msub></semantics></math></span> in the trio may be any of <span class="math-container" id="18747444" visual_id="24340"><math alttext="0,1,2,3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn></mrow></semantics></math></span>. Now we must count how many ways there are to choose <span class="math-container" id="18747445" visual_id="247875"><math alttext="n_{1},n_{2},n_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub></mrow></semantics></math></span>. There are <span class="math-container" id="18747446" visual_id="5153"><math alttext="\binom{3}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow></semantics></math></span> ways to choose two to be <span class="math-container" id="18747447" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>, and for the last we have <span class="math-container" id="18747448" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> options. This gives <span class="math-container" id="18747449" visual_id="2229027"><math alttext="4\binom{3}{2}=12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mn>12</mn></mrow></semantics></math></span> options for <span class="math-container" id="18747450" visual_id="247875"><math alttext="n_{1},n_{2},n_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub></mrow></semantics></math></span>. Can you use similar logic to find <span class="math-container" id="18747451" visual_id="139152"><math alttext="m_{1},m_{2},m_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>,</mo><msub><mi>m</mi><mn>2</mn></msub><mo>,</mo><msub><mi>m</mi><mn>3</mn></msub></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4157142"> There are only <span class="math-container" id="18747452" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> by my count: you seem to have counted the triple <span class="math-container" id="18747453" visual_id="4790518"><math alttext="(n_{1},n_{2},n_{3})=(3,3,3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><msub><mi>n</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> three times. </td></tr><tr><td comment_id="4157145"> You're right, thanks! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

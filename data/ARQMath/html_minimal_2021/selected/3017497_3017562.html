@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Under what conditions on $a,b,c$ is the sum $a^3 + b^3 + c^3$ strictly greater than $(a+b+c)^2$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Under what conditions on <span class="math-container" id="27948267" visual_id="476"><math alttext="a,b,c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></semantics></math></span> is the sum <span class="math-container" id="27948268" visual_id="25032"><math alttext="a^{3}+b^{3}+c^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>+</mo><msup><mi>b</mi><mn>3</mn></msup><mo>+</mo><msup><mi>c</mi><mn>3</mn></msup></mrow></semantics></math></span> strictly greater than <span class="math-container" id="27948269" visual_id="457198"><math alttext="(a+b+c)^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3017497">
+<p>I was solving a problem earlier and if this was true in general it would've made everything much easier, but it's not. So I thought it would be interesting to know when exactly it is true.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6222906"> One of the cases in which this holds is <span class="math-container" id="27948270" visual_id="117304"><math alttext="a,b=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="27948271" visual_id="196989"><math alttext="A=\bigcap_{n\in\mathbb{N}}U_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><msub><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋂</mo><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub><msub><mi>U</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="6222993"> The inequality holds <span class="math-container" id="27948272" visual_id="8366640"><math alttext="\forall\quad a,b,c\gt 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mo mathvariant="italic" separator="true"> </mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mrow><mi>c</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mn>3</mn></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3017562" id="answer">
+<p>Note that <span class="math-container" id="27948273" visual_id="25032"><math alttext="a^{3}+b^{3}+c^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>+</mo><msup><mi>b</mi><mn>3</mn></msup><mo>+</mo><msup><mi>c</mi><mn>3</mn></msup></mrow></semantics></math></span> is homogeneous of order <span class="math-container" id="27948274" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> while <span class="math-container" id="27948275" visual_id="457198"><math alttext="(a+b+c)^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></semantics></math></span> is homogeneous of order <span class="math-container" id="27948276" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>.  So for any <span class="math-container" id="27948277" visual_id="48800"><math alttext="a,b,c&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mrow><mi>c</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>, the statement will be true for <span class="math-container" id="27948278" visual_id="852030"><math alttext="(ta,tb,tc)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>⁢</mo><mi>a</mi></mrow><mo>,</mo><mrow><mi>t</mi><mo>⁢</mo><mi>b</mi></mrow><mo>,</mo><mrow><mi>t</mi><mo>⁢</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> if <span class="math-container" id="27948279" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> is sufficiently large and false if <span class="math-container" id="27948280" visual_id="47"><math alttext="t&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>t</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> is sufficiently small.  The boundary between the two regions is a certain surface.  Here is a picture of it.</p> <p><a href="https://i.stack.imgur.com/cgMLG.gif" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/cgMLG.gif"/></a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

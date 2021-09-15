@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Limit of $\frac{\sqrt[n]{(n+1)(n+2)\cdots(2n)}}n$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Limit of <span class="math-container" id="25660349" visual_id="8866177"><math alttext="\frac{\sqrt[n]{(n+1)(n+2)\cdots(2n)}}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mroot><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>n</mi></mroot><mi>n</mi></mfrac></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2781063">
+<p>Compute the limit <span class="math-container" id="25660350" visual_id="8866178"><math alttext="\lim_{n\to\infty}\frac{\sqrt[n]{(n+1)(n+2)\cdots(2n)}}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mfrac><mroot><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>n</mi></mroot><mi>n</mi></mfrac></mrow></semantics></math></span></p> <p>How can this be done? The best I could do was rewrite the limit as <span class="math-container" id="25660351" visual_id="8866179"><math alttext="\lim_{n\to\infty}\left(\frac{n+1}{n}\right)^{\frac{1}{n}}\left(\frac{n+2}{n}% \right)^{\frac{1}{n}}\cdots\left(\frac{2n}{n}\right)^{\frac{1}{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><msup><mrow><mo>(</mo><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mi>n</mi></mfrac><mo>)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup></mrow></mrow></semantics></math></span></p> <p>Following that log suggestion in the comments below: \begin{align} &amp;\ln \left(\lim_{n \to \infty} \left(\frac{n+1}n \right)^{\frac 1n}\left(\frac{n+2}n \right)^{\frac 1n}\cdots\left(\frac{2n}n \right)^{\frac 1n} \right) \\ &amp;= \lim_{n \to \infty} \ln \left( \left(\frac{n+1}n \right)^{\frac 1n}\left(\frac{n+2}n \right)^{\frac 1n}\cdots\left(\frac{2n}n \right)^{\frac 1n} \right) \\ &amp;= \lim_{n \to \infty} \left(\ln \left(\frac{n+1}n \right)^{\frac 1n} + \ln\left(\frac{n+2}n \right)^{\frac 1n} + \cdots + \ln\left(\frac{n+n}n \right)^{\frac 1n} \right) \\ &amp;= \lim_{n \to \infty} \sum_{i=1}^n \ln \left(\frac{n+i}n \right)^{\frac 1n} \\ &amp;= \lim_{n \to \infty} \frac 1n \sum_{i=1}^n \ln \left(1 + \frac in \right) \\ &amp;= \int_1^2 \ln x \, dx \\ &amp;= (x \ln x - x)\vert_1^2 \\ &amp;= (2 \ln 2 - 2)-(1 \ln 1-1) \\ &amp;= (\ln 4-2)-(0-1) \\ &amp;= \ln 4-1 \\ &amp;= \ln 4 - \ln e \\ &amp;= \ln \left( \frac 4e \right) \end{align}</p> <p>but I read from somewhere that the answer should be <span class="math-container" id="25660352" visual_id="238499"><math alttext="\frac{4}{e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>4</mn><mi>e</mi></mfrac></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5735283"> None of the factors in your last expression are correct. </td></tr><tr><td comment_id="5735287"> the product goes up to n+n </td></tr><tr><td comment_id="5735296"> This question is missing context or other details: Please improve the question by providing additional context, which ideally includes **the source and motivation of the problem**, your thoughts on the problem and any attempts you have made to solve it. This information helps others identify where you have difficulties and helps them write answers appropriate to your experience level. </td></tr><tr><td comment_id="5735468"> Your integral is the log of the answer </td></tr><tr><td comment_id="5735483"> @CarlMummert From the accepted answer of this [meta](https://math.meta.stackexchange.com/q/22032/290189) question, we can see that this is a well-written question (except the use of <span class="math-container" id="25660353" visual_id="4096"><math alttext="\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>n</mi></mfrac></semantics></math></span> as a power), and "additional indication of source would not make a difference".You may re-read [AmateurMathGuy's reply](//math.stackexchange.com/questions/2717294/question-on-coefficients-of-polynomials#comment5610217_2717294) to your comment to know why they are not required. </td></tr><tr><td comment_id="5735484"> You voted to close because "Being homework is a sufficient reason to vote to close a question", but [HW questions are allowed](https://math.meta.stackexchange.com/q/1803/). </td></tr><tr><td comment_id="5736210"> @GNU Supporter:  not to belabor the point, but standards vary.  This particular question has no real context, and does not fit the quality standards that many users expect.  There is always a risk in explaining the reason for a close vote, but I do not want to enter in extended conversation about it here. </td></tr><tr><td comment_id="5736593"> @CarlMummert I do not see how my question "has no real context, and does not fit the quality standards that many users expect." I put in the work and effort as this Math SE site suggests. </td></tr><tr><td comment_id="5737021"> Agreed.  This is supported by the [Close Queue Review result](https://math.stackexchange.com/review/close/1012278).  All reviewers left  this question open. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2781070" id="answer">
+<p>Now take a logarithm and realize you have just gotten a Riemann sum.  (Interval: <span class="math-container" id="25660378" visual_id="54314"><math alttext="[1,2]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false">]</mo></mrow></semantics></math></span>, widths: <span class="math-container" id="25660379" visual_id="413"><math alttext="1/n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></semantics></math></span>, heights <span class="math-container" id="25660380" visual_id="8866197"><math alttext="\ln(1+k/n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>k</mi><mo>/</mo><mi>n</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5735378"> I'm not sure how to rewrite the limit of the Riemann sum as its corresponding definite integral, although I think I managed to arrive at the Riemann sum in my work. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="201906"> Showing that <span class="math-container" id="2319801" visual_id="676361"><math alttext="\frac{\sqrt[n]{n!}}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mroot><mrow><mi>n</mi><mo>!</mo></mrow><mi>n</mi></mroot><mi>n</mi></mfrac></semantics></math></span> <span class="math-container" id="2319802" visual_id="3508307"><math alttext="\rightarrow\frac{1}{e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>→</mo><mfrac><mn>1</mn><mi>e</mi></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

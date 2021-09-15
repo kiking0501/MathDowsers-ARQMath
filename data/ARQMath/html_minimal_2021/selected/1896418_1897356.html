@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Combinatorial viewpoint regarding n Points and collinearity</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Combinatorial viewpoint regarding n Points and collinearity </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1896418">
+<p>Let us look at a set of <span class="math-container" id="17574824" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> points in the plane ( <span class="math-container" id="17574825" visual_id="8388"><math alttext="n\geq 5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>5</mn></mrow></semantics></math></span> ) with the property that no four of the points are collinear.</p> <p>Then , can we find out a closed expression for--- </p> <p><span class="math-container" id="17574826" visual_id="122593"><math alttext="f(n)=" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow></semantics></math></span>the maximum number of points ( out of these <span class="math-container" id="17574827" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> points ) such that we can guarantee that no three of these <span class="math-container" id="17574828" visual_id="9133"><math alttext="f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> number of  points are collinear .</p> <p>(Obviously , <span class="math-container" id="17574829" visual_id="9133"><math alttext="f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is taken over all possible legal configuration of the <span class="math-container" id="17574830" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> points)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> extremal-combinatorics </span><span> extremal-graph-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1897356" id="answer">
+<p>This is a wide-open research problem, and we are very very far from finding a closed expression - we do not know the right order of magnitude.</p> <p>Erdős would appear to be the one to have first posed this question, and the best known bounds are due to Füredi, who showed that <span class="math-container" id="17574831" visual_id="7798519"><math alttext="\Omega\left(\sqrt{n\log n}\right)=f(n)=o(n)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo>(</mo><msqrt><mrow><mi>n</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></msqrt><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>o</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> That is, <span class="math-container" id="17574832" visual_id="9133"><math alttext="f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is at least of the order of magnitude of <span class="math-container" id="17574833" visual_id="2202790"><math alttext="\sqrt{n\log n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><mi>n</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></msqrt></semantics></math></span>, and <span class="math-container" id="17574834" visual_id="9133"><math alttext="f(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> must be sublinear.  As you can see, there is a multiplicative gap of almost <span class="math-container" id="17574835" visual_id="7664"><math alttext="\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi>n</mi></msqrt></semantics></math></span> between the bounds.  You can find his paper <a href="http://www.math.illinois.edu/~z-furedi/PUBS/furedi_3-indep-sets-on-plane.pdf" rel="nofollow">here</a>, together with some extensions (where the <span class="math-container" id="17574836" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> points are allowed to have larger collinear sets) <a href="http://arxiv.org/pdf/1208.5289.pdf" rel="nofollow">here</a>.</p> <p>Note that Füredi's upper bound uses the Hales-Jewett theorem, so it is truly an asymptotic result.  Using the best-known bounds from the density Hales-Jewett theorem would give an upper bound of the form, for some constant <span class="math-container" id="17574837" visual_id="7960"><math alttext="c&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>c</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="17574838" visual_id="7798520"><math alttext="f(n)\leq\frac{cn}{\sqrt{\log^{*}n}}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mfrac><mrow><mi>c</mi><mo>⁢</mo><mi>n</mi></mrow><msqrt><mrow><msup><mi>log</mi><mo>*</mo></msup><mo>⁡</mo><mi>n</mi></mrow></msqrt></mfrac></mrow><mo>,</mo></mrow></semantics></math></span> where <span class="math-container" id="17574839" visual_id="2362016"><math alttext="\log^{*}n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>log</mi><mo>*</mo></msup><mo>⁡</mo><mi>n</mi></mrow></semantics></math></span> is the inverse of the tower function - it is the height of a tower of twos (iterative exponentiation) needed to get <span class="math-container" id="17574840" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.</p> <p>This is an extremely slow-growing function; for example, <span class="math-container" id="17574841" visual_id="7798521"><math alttext="\log^{*}\left(2^{65536}\right)=5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>log</mi><mo>*</mo></msup><mo>⁡</mo><mrow><mo>(</mo><msup><mn>2</mn><mn>65536</mn></msup><mo>)</mo></mrow></mrow><mo>=</mo><mn>5</mn></mrow></semantics></math></span>, and <span class="math-container" id="17574842" visual_id="7798522"><math alttext="\log^{*}\left(2^{\left(2^{65536}\right)}\right)=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>log</mi><mo>*</mo></msup><mo>⁡</mo><mrow><mo>(</mo><msup><mn>2</mn><mrow><mo>(</mo><msup><mn>2</mn><mn>65536</mn></msup><mo>)</mo></mrow></msup><mo>)</mo></mrow></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math></span>.  Hence the upper bound is only significantly sublinear for unthinkably large values of <span class="math-container" id="17574843" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.</p> <p>To finish, let me point out that <span class="math-container" id="17574844" visual_id="91650"><math alttext="\log\log n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></semantics></math></span> goes to infinity much much much much faster than <span class="math-container" id="17574845" visual_id="2362016"><math alttext="\log^{*}n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>log</mi><mo>*</mo></msup><mo>⁡</mo><mi>n</mi></mrow></semantics></math></span>, and of <span class="math-container" id="17574846" visual_id="91650"><math alttext="\log\log n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></semantics></math></span> itself it was once famously said:</p> <blockquote> <p><span class="math-container" id="17574847" visual_id="91650"><math alttext="\log\log n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></semantics></math></span> goes to infinity, but has never been observed to do so.</p> </blockquote>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

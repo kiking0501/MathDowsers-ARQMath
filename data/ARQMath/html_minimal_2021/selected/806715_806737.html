@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why does manipulating the expression help?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why does manipulating the expression help? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="806715">
+<p>Consider the limit <span class="math-container" id="7912906" visual_id="711985"><math alttext="\lim_{x\rightarrow 1}\frac{x^{2}-1}{x-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span> Plugging in <span class="math-container" id="7912907" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> for <span class="math-container" id="7912908" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> will yield <span class="math-container" id="7912909" visual_id="3417"><math alttext="\frac{0}{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>0</mn><mn>0</mn></mfrac></semantics></math></span>, which is no good. However, if we simplify the expression, we get: <span class="math-container" id="7912910" visual_id="897470"><math alttext="\lim_{x\rightarrow 1}\frac{x^{2}-1}{x-1}=\lim_{x\rightarrow 1}(x+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> Now, plugging in <span class="math-container" id="7912911" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> yields the answer <span class="math-container" id="7912912" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>. My question is: <strong>why on earth should simplifying the expression help us find the limit</strong>? The two expressions above are <em>absolutely equivalent</em>. I.e., if I plug in, say <span class="math-container" id="7912913" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> in <span class="math-container" id="7912914" visual_id="619444"><math alttext="(x+3)^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></semantics></math></span> and <span class="math-container" id="7912915" visual_id="219772"><math alttext="x^{2}+6x+9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>9</mn></mrow></semantics></math></span>, I get the <em>same answer</em> - <span class="math-container" id="7912916" visual_id="322789"><math alttext="169" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>169</mn></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1667285"> The two expressions are not completely equivalent. The first expression has a singularity at <span class="math-container" id="7912971" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, the second does not. The clever thing is that both expressions are equivalent on all points *except* <span class="math-container" id="7912971" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, but by the definition of limit, the actual value at <span class="math-container" id="7912971" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> is irrelevant. That's why the trick works. </td></tr><tr><td comment_id="1667301"> To be clear, <span class="math-container" id="7912920" visual_id="711985"><math alttext="\lim_{x\rightarrow 1}\frac{x^{2}-1}{x-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span> does indeed evaluate to <span class="math-container" id="7912942" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>. It is <span class="math-container" id="7912922" visual_id="628132"><math alttext="\frac{x^{2}-1}{x-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac></semantics></math></span> which is undefined at <span class="math-container" id="7912971" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1667303"> As @becko said, the first equation is not defined for <span class="math-container" id="7912971" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. When you are taking the limit, you look at numbers that are arbitrarily close to <span class="math-container" id="7912941" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, so therefore you are justified in cancelling out the terms in the numerator and denominator. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="806737" id="answer">
+<p>First, you need to ask yourself why plugging a number in the expression works? Precisely speaking, you need to figure out the condition under which the following expression holds <span class="math-container" id="7912951" visual_id="125645"><math alttext="\lim_{x\to a}f(x)=f(a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>The answer is the continuity. In other words, for a continuous function <span class="math-container" id="7912952" visual_id="3106"><math alttext="f\colon\mathbb{R}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span>, we have <span class="math-container" id="7912953" visual_id="897472"><math alttext="\lim_{x\to a}f(x)=f(a)\quad\forall a\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mo>∀</mo><mi>a</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span></p> <p>Now, is <span class="math-container" id="7912954" visual_id="897473"><math alttext="g(x)=\frac{x^{2}-1}{x-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span> continuous in <span class="math-container" id="7912955" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>? Obviously not, because <span class="math-container" id="7912956" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is not even defined on <span class="math-container" id="7912957" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. Therefore, plugging a number will never works for <span class="math-container" id="7912958" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span>.</p> <p>Second, why simplifying a expression works? The answer is very simple: you can always simplify a expression as long as you can. Besides, limit of a function at <span class="math-container" id="7912959" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> is only a behavior of a function in the neighborhood of <span class="math-container" id="7912960" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p> <p>Therefore, to calculate the limit <span class="math-container" id="7912961" visual_id="711985"><math alttext="\lim_{x\to 1}\frac{x^{2}-1}{x-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span> we first note that <span class="math-container" id="7912962" visual_id="363951"><math alttext="(x^{2}-1)/(x-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is not continuous at <span class="math-container" id="7912963" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. Therefore, plugging <span class="math-container" id="7912964" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> in the expression will not work. Then, in the neighborhood of <span class="math-container" id="7912965" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, <span class="math-container" id="7912966" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is equivalent to <span class="math-container" id="7912967" visual_id="3380"><math alttext="(x+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>, we simplify the expression and get <span class="math-container" id="7912968" visual_id="897474"><math alttext="\lim_{x\to 1}(x+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> Now, is <span class="math-container" id="7912969" visual_id="3380"><math alttext="(x+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> continuous at <span class="math-container" id="7912970" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>? Of course, it is! Now, you can plug <span class="math-container" id="7912971" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> in <span class="math-container" id="7912972" visual_id="3380"><math alttext="(x+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> to get the final answer.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="462199"> Why does factoring eliminate a hole in the limit? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

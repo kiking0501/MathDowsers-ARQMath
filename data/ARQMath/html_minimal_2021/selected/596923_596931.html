@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to substitute sum variable?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to substitute sum variable? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="596923">
+<p>I am not entirely sure how to use variable substitution for a sum. Take the following example: I would like to compute <span class="math-container" id="6100821" visual_id="7928211"><math alttext="\sum_{i=1}^{N}(2i-1)^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></semantics></math></span> One straightforward way is to split the sum, i.e. <span class="math-container" id="6100822" visual_id="7928212"><math alttext="4\sum i^{2}-4\sum i+N=\frac{1}{3}N(4N^{2}-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mn>4</mn><mo>⁢</mo><mrow><mo largeop="true" symmetric="true">∑</mo><msup><mi>i</mi><mn>2</mn></msup></mrow></mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mrow><mo largeop="true" symmetric="true">∑</mo><mi>i</mi></mrow></mrow></mrow><mo>+</mo><mi>N</mi></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>N</mi><mn>2</mn></msup></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> Now I am trying to use variable substitution. Let <span class="math-container" id="6100823" visual_id="7928213"><math alttext="j=2i-1\Rightarrow i=\frac{j+1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo>⇒</mo><mi>i</mi><mo>=</mo><mfrac><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mrow></semantics></math></span>. The new limits become: <span class="math-container" id="6100824" visual_id="7928214"><math alttext="\frac{j+1}{2}=1\Rightarrow j=1\\ \frac{j+1}{2}=N\Rightarrow j=2N-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mfrac><mrow><mi>j</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mrow><mo>=</mo><mi>N</mi><mo>⇒</mo><mi>j</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>N</mi></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>. The sum becomes <span class="math-container" id="6100825" visual_id="7928215"><math alttext="\sum_{j=1}^{2N-1}j^{2}=\frac{1}{3}n(2n-1)(4n-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>N</mi></mrow><mo>-</mo><mn>1</mn></mrow></msubsup><msup><mi>j</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> which is wrong :(</p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> summation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="596931" id="answer">
+<p>Continuing lab's answer:  You could write, say <span class="math-container" id="6100826" visual_id="7928216"><math alttext="\sum_{j=1,\;j\;\mathrm{odd}}^{2N-1}j^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo rspace="5.3pt">,</mo><mrow><mpadded width="+2.8pt"><mi>j</mi></mpadded><mo>⁢</mo><mi>odd</mi></mrow></mrow></mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>N</mi></mrow><mo>-</mo><mn>1</mn></mrow></msubsup><msup><mi>j</mi><mn>2</mn></msup></mrow></semantics></math></span> but of course the formulas you know for the case without the "odd" clause would not apply to it.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="48080"> Sum of First <span class="math-container" id="508377" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> Squares Equals <span class="math-container" id="508378" visual_id="113572"><math alttext="\frac{n(n+1)(2n+1)}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

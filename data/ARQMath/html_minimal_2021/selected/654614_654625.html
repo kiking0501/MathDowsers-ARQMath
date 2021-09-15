@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>An Euler-Mascheroni-like sequence</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> An Euler-Mascheroni-like sequence </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="654614">
+<p>How does one compute the limit of the sequence:</p> <p><span class="math-container" id="6610416" visual_id="4432447"><math alttext="\sum_{k=0}^{n}\frac{1}{3k+1}-\frac{\ln(n)}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><mo>-</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mn>3</mn></mfrac></mrow></semantics></math></span></p> <p>I would apreciate a hint.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> eulers-constant </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1378239"> It should be trivial to derive the sum from the result in the question that @Lucian referred to above. Accordingly, this question is about to be closed as a duplicate … </td></tr><tr><td comment_id="1378272"> Yes, thank you :D </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="654625" id="answer">
+<p><strong>Hint:</strong> use a comparison series/integral, by writing <span class="math-container" id="6610417" visual_id="4432448"><math alttext="\frac{\ln n}{3}=\int_{1}^{n}\frac{dx}{3x}=\sum_{k=1}^{n-1}\int_{k}^{k+1}\frac{% dx}{3x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow><mn>3</mn></mfrac><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi>n</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msubsup><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>k</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="6610418" visual_id="4432449"><math alttext="\sum_{k=0}^{n}\frac{1}{3k+1}=\sum_{k=0}^{n}\int_{k}^{k+1}\frac{dx}{3k+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>k</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p><strong>Edit:</strong> is not a straightforward approach -- I was thinking about proving convergence.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1378212"> This way it is easy to show that the sequence converges... I don't see how it helps at computing the limit(but of course, I might be missing something - If I am, could I get the complete calculation?) </td></tr><tr><td comment_id="1378252"> Yes, sorry -- not direct from there. (i was thinking about proving convergence, indeed) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="615695"> How to calculate the following sum: </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

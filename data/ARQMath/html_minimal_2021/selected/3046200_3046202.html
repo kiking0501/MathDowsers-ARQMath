@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Maximum number of distinct prime factors of numbers below $2^{64}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Maximum number of distinct prime factors of numbers below <span class="math-container" id="28203562" visual_id="84250"><math alttext="2^{64}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>64</mn></msup></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3046200">
+<p>What is the maximum number of distinct prime factors of numbers below <span class="math-container" id="28203563" visual_id="84250"><math alttext="2^{64}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>64</mn></msup></semantics></math></span>? I'm interested in the exact count, not just an estimate.</p> <p>In other words, what is the largest <span class="math-container" id="28203564" visual_id="132702"><math alttext="\omega(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, where <span class="math-container" id="28203565" visual_id="2213506"><math alttext="n&amp;lt;2^{64}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>&lt;</mo></mrow><msup><mn>2</mn><mn>64</mn></msup></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> prime-numbers </span><span> prime-factorization </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3046202" id="answer">
+<p>The number with the most distinct prime factors will have the form </p> <p><span class="math-container" id="28203566" visual_id="8192234"><math alttext="2\cdot 3\cdot 5\cdot 7\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><mn>7</mn></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi></mrow></semantics></math></span></p> <p>So all you need is to multiply all primes until you reach <span class="math-container" id="28203567" visual_id="84250"><math alttext="2^{64}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>64</mn></msup></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="6279588"> It's 15, in case anyone's wondering... Thanks! </td></tr><tr><td comment_id="6279604"> How did you get 15 @EcirHana ? </td></tr><tr><td comment_id="6279625"> @rsadhvika the product of 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 is 614889782588491410, which is less than 614889782588491410 (<span class="math-container" id="28203570" visual_id="84250"><math alttext="2^{64}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>64</mn></msup></semantics></math></span>). Including 53 it is 32589158477190044730. </td></tr><tr><td comment_id="6279630"> @EcirHana Is that a typo? </td></tr><tr><td comment_id="6279632"> @Szeto Sorry, what is a typo? </td></tr><tr><td comment_id="6280560"> Ecir already answered, but one way to show in gp: `vecprod(primes(15)) &lt; 2^64` returns 1, and `vecprod(primes(16)) &lt; 2^64` returns 0.  So the product of the first 15 primes is &lt; <span class="math-container" id="28203570" visual_id="84250"><math alttext="2^{64}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>64</mn></msup></semantics></math></span>, while the product of the first 16 is &gt; <span class="math-container" id="28203570" visual_id="84250"><math alttext="2^{64}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>64</mn></msup></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

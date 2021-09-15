@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find two integer numbers given the LCM and the difference between them</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find two integer numbers given the LCM and the difference between them </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2059595">
+<p>I started a Computer Science degree this year and I have a subject called 'Discrete Mathematics' which this unit (divisibility) is annoying me a lot, because I can't find the key to solve the problems as like as other units and subjects. </p> <p>The problem that I can't solve is this:</p> <blockquote> <p>Find two integer numbers 'a' and 'b' given that their difference is 1080 and their LCM is 3900</p> </blockquote> <p>Thanks</p>
+</div>
+<hr/>
+<div id="tags">
+<span> divisibility </span><span> least-common-multiple </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4227803"> First step I'd suggest is to look at the factorization of <span class="math-container" id="19044713" visual_id="1883802"><math alttext="3900" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3900</mn></semantics></math></span> being <span class="math-container" id="19044653" visual_id="3400700"><math alttext="2^{2}\cdot 3\cdot 5^{2}\cdot 13" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>⋅</mo><mn>3</mn><mo>⋅</mo><msup><mn>5</mn><mn>2</mn></msup><mo>⋅</mo><mn>13</mn></mrow></semantics></math></span>.  There are not very many factors then, you could easily write them all out.  There are only <span class="math-container" id="19044683" visual_id="16817"><math alttext="36" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>36</mn></semantics></math></span> factors of <span class="math-container" id="19044713" visual_id="1883802"><math alttext="3900" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3900</mn></semantics></math></span>.  Note also that if the difference of the two numbers is over a thousand, that implies that the larger number is over a thousand as well, and there are very few of those.  How many factors of <span class="math-container" id="19044713" visual_id="1883802"><math alttext="3900" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3900</mn></semantics></math></span> are over a thousand?  What are they?  Is the number <span class="math-container" id="19044759" visual_id="173177"><math alttext="1080" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1080</mn></semantics></math></span> less than it also a factor of <span class="math-container" id="19044713" visual_id="1883802"><math alttext="3900" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3900</mn></semantics></math></span>? </td></tr><tr><td comment_id="4227805"> On that note, are you certain that both numbers are correct?  <span class="math-container" id="19044759" visual_id="173177"><math alttext="1080" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1080</mn></semantics></math></span> seems incorrect.  Are you sure it isn't <span class="math-container" id="19044660" visual_id="3989"><math alttext="1000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1000</mn></semantics></math></span> instead? or <span class="math-container" id="19044661" visual_id="1925527"><math alttext="1170" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1170</mn></semantics></math></span> or something?  As it currently stands, the answer doesn't exist. </td></tr><tr><td comment_id="4227812"> @JMoravitz Yes, they are correct. And sorry if I didn't mention that the solution needs to be an integer number. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2059656" id="answer">
+<p>HINT:</p> <p>Let <span class="math-container" id="19044662" visual_id="821759"><math alttext="(a,b)=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span> and <span class="math-container" id="19044663" visual_id="1715372"><math alttext="\dfrac{a}{A}=\dfrac{b}{B}=d\implies(A,B)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>A</mi></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>b</mi><mi>B</mi></mfrac></mstyle><mo>=</mo><mi>d</mi><mo>⟹</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p> <p><span class="math-container" id="19044664" visual_id="3400701"><math alttext="d(A-B)=1080" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1080</mn></mrow></semantics></math></span></p> <p>and lcm<span class="math-container" id="19044665" visual_id="3400702"><math alttext="(a,b)=ABd=3900" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>d</mi></mrow><mo>=</mo><mn>3900</mn></mrow></semantics></math></span></p> <p><span class="math-container" id="19044666" visual_id="3400703"><math alttext="\implies\dfrac{3900}{1080}=\dfrac{ABd}{d(A-B)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>⟹</mo><mstyle displaystyle="true"><mfrac><mn>3900</mn><mn>1080</mn></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>d</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></semantics></math></span></p> <p><span class="math-container" id="19044667" visual_id="3400704"><math alttext="131," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>131</mn><mo>,</mo></mrow></semantics></math></span></p> <p>Now if integer <span class="math-container" id="19044668" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> divides both <span class="math-container" id="19044669" visual_id="3400705"><math alttext="65A,18A+65;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>65</mn><mo>⁢</mo><mi>A</mi></mrow><mo>,</mo><mrow><mrow><mn>18</mn><mo>⁢</mo><mi>A</mi></mrow><mo>+</mo><mn>65</mn></mrow></mrow><mo>;</mo></mrow></semantics></math></span></p> <p>as <span class="math-container" id="19044670" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is an integer, <span class="math-container" id="19044671" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> must divide <span class="math-container" id="19044672" visual_id="3400706"><math alttext="65(18A+65)-18(65A)=65^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>65</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>18</mn><mo>⁢</mo><mi>A</mi></mrow><mo>+</mo><mn>65</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mn>18</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>65</mn><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><msup><mn>65</mn><mn>2</mn></msup></mrow></semantics></math></span></p> <p>and <span class="math-container" id="19044673" visual_id="3400707"><math alttext="18A+65" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>18</mn><mo>⁢</mo><mi>A</mi></mrow><mo>+</mo><mn>65</mn></mrow></semantics></math></span> must divide <span class="math-container" id="19044674" visual_id="2490867"><math alttext="65^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>65</mn><mn>2</mn></msup></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4228036"> Thank you for your response </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

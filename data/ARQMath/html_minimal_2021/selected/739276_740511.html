@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is there a way to denote the calculation $1+2+3+\dots+n$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is there a way to denote the calculation <span class="math-container" id="7346719" visual_id="137494"><math alttext="1+2+3+\dots+n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mi>n</mi></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="739276">
+<p>Since <span class="math-container" id="7346720" visual_id="755"><math alttext="n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>!</mo></mrow></semantics></math></span> represents <span class="math-container" id="7346721" visual_id="790991"><math alttext="1\cdot 2\cdot 3\cdots n," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mi>n</mi></mrow><mo>,</mo></mrow></semantics></math></span> I am wondering if there is a way to represent  <span class="math-container" id="7346722" visual_id="790992"><math alttext="1+2+3+\dots+n\qvar@construct{$}\par" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></mrow></semantics></math></span> What are some usual notations for the computation of some common sequences? Any other examples?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> notation </span><span> summation </span><span> terminology </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1541775"> <span class="math-container" id="7346723" visual_id="266090"><math alttext="\sum_{i=1}^{n}i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mi>i</mi></mrow></semantics></math></span>. Also, <span class="math-container" id="7346724" visual_id="15788"><math alttext="n(n+1)/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mn>2</mn></mrow></semantics></math></span>. Depends on what you want to do with it. </td></tr><tr><td comment_id="1541784"> Your sum is the [Triangle Number](http://en.wikipedia.org/wiki/Triangular_number) <span class="math-container" id="7346755" visual_id="9423"><math alttext="T_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>n</mi></msub></semantics></math></span>. </td></tr><tr><td comment_id="1542739"> Only a comment, but I swear I've seen (maybe on another math.se post?) the notation <span class="math-container" id="7346726" visual_id="95807"><math alttext="n\qvar@construct{$}\par" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></semantics></math></span> for this sum as well. </td></tr><tr><td comment_id="1542768"> See [Faulhaber's formulas](http://en.wikipedia.org/wiki/Faulhaber's_formula#Examples). </td></tr><tr><td comment_id="1543307"> @StevenStadnicki According to Donald Knuth in Section 1.2.5 of Volume 1 of *The Art of Computer Programming*, the notation <span class="math-container" id="7346727" visual_id="790993"><math alttext="n\qvar@construct{=}\dfrac{1}{2}n(n+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_=</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is known as the **termial function** of <span class="math-container" id="7346749" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. However, I personally prefer the Triangular number interpretation for <span class="math-container" id="7346755" visual_id="9423"><math alttext="T_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>n</mi></msub></semantics></math></span>. </td></tr><tr><td comment_id="1546490"> possible duplicate of [What is the term for a factorial type operation, but with summation instead of products?](http://math.stackexchange.com/questions/60578/what-is-the-term-for-a-factorial-type-operation-but-with-summation-instead-of-p); also [Factorial, but with addition](http://math.stackexchange.com/questions/593318/factorial-but-with-addition) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="740511" id="answer">
+<p>Another way to write it would be <span class="math-container" id="7346730" visual_id="21349"><math alttext="{n+1\choose 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo>)</mo></mrow></semantics></math></span>:</p> <p><span class="math-container" id="7346731" visual_id="105400"><math alttext="{n\choose 0}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mn>0</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> for all <span class="math-container" id="7346732" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, and <span class="math-container" id="7346733" visual_id="790994"><math alttext="{n\choose k+1}=\sum_{k=0}^{n-1}{n\choose k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></mrow></semantics></math></span> (with <span class="math-container" id="7346734" visual_id="339985"><math alttext="{0\choose k}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>0</mn><mi>k</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> for <span class="math-container" id="7346735" visual_id="2074"><math alttext="k&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>). Therefore <span class="math-container" id="7346736" visual_id="105401"><math alttext="{n\choose 1}=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mn>1</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mi>n</mi></mrow></semantics></math></span> and thus <span class="math-container" id="7346737" visual_id="790995"><math alttext="{n+1\choose 2}=\sum_{k=0}^{n}k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mi>k</mi></mrow></mrow></semantics></math></span>. Note that this actually is <span class="math-container" id="7346738" visual_id="790996"><math alttext="0+1+\dots+n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>+</mo><mn>1</mn><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mi>n</mi></mrow></semantics></math></span>, but obviously the additional term <span class="math-container" id="7346739" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> doesn't change the sum.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="60578"> What is the term for a factorial type operation, but with summation instead of products? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="593318"> Factorial, but with addition </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

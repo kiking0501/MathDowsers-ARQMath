@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Integrate improper integral</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Integrate improper integral </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2191204">
+<p>Just don't know where to start from. Looks like this integral converges.</p> <p><span class="math-container" id="20247558" visual_id="3036285"><math alttext="\displaystyle{\int_{0}^{\infty}\frac{\ln\left(1+x^{2}\right)}{1+x^{2}}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2191250" id="answer">
+<p>A different approach: integrate "a la Feynman". Let <span class="math-container" id="20247565" visual_id="3036290"><math alttext="F(t)=\int_{0}^{\infty}\frac{\ln(1+t^{2}\,x^{2})}{1+x^{2}}\,dx." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mpadded width="+1.7pt"><msup><mi>t</mi><mn>2</mn></msup></mpadded><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Then, differentiating inside the integral, \begin{align*} F'(t)&amp;=\int_0^\infty\frac{2\,t\,x^2}{(1+t^2\,x^2)(1+x^2)}\,dx\\ &amp;=\frac{2\,t}{1-t^2}\int_0^\infty\Bigl(\frac{1}{1+t^2\,x^2}-\frac{1}{1+x^2}\Bigr)\,dx\\ &amp;=\frac{2\,t}{1-t^2}\Bigl(\frac1t\arctan(t\,x)-\arctan x\Bigl)\Bigr|_0^\infty\\ &amp;=\frac{2\,t}{1-t^2}\Bigl(\frac{\pi}{2\,t}-\frac\pi2\Bigr)\\ &amp;=\frac{\pi}{1+t}. \end{align*} Integrating <span class="math-container" id="20247566" visual_id="3036291"><math alttext="F(t)=\pi\log(1+t)+C." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>π</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Since <span class="math-container" id="20247567" visual_id="3036292"><math alttext="\lim_{t\to 0^{+}}F(t)=F(0)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>t</mi><mo>→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></msub><mo>⁡</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="20247568" visual_id="8066"><math alttext="C=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="20247569" visual_id="3036293"><math alttext="\int_{0}^{\infty}\frac{\log(1+t^{2}\,x^{2})}{1+x^{2}}\,dx=\pi\log(1+t)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mpadded width="+1.7pt"><msup><mi>t</mi><mn>2</mn></msup></mpadded><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Of course, differentiating under the integral sign and taking the limit as <span class="math-container" id="20247570" visual_id="41049"><math alttext="t\to 0^{+}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></semantics></math></span> must be justified.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4508059"> Julian, his name was spelled "Feynman," not "Feynmann." ;-)) </td></tr><tr><td comment_id="4508111"> Please disregard that last comment. ;-)) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

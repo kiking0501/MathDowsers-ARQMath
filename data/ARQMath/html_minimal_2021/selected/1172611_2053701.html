@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is $A'B$ invertible if both $A$ and $B$ are of full column rank?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is <span class="math-container" id="11001851" visual_id="107806"><math alttext="A^{\prime}B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> invertible if both <span class="math-container" id="11001852" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="11001853" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> are of full column rank? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1172611">
+<p>Suppose that <span class="math-container" id="11001854" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is a real matrix (dimension <span class="math-container" id="11001855" visual_id="200"><math alttext="n\times k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>k</mi></mrow></semantics></math></span>) with full column rank. We know that <span class="math-container" id="11001856" visual_id="215209"><math alttext="A^{\prime}A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mi>A</mi></mrow></semantics></math></span> is invertible:  <span class="math-container" id="11001857" visual_id="2389798"><math alttext="A^{\prime}Av=0\implies 0=v^{\prime}A^{\prime}Av=\left|Av\right|^{2}\implies Av% =0\implies v=0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>v</mi></mrow><mo>=</mo><mn>0</mn><mo>⟹</mo><mn>0</mn><mo>=</mo><mrow><msup><mi>v</mi><mo>′</mo></msup><mo>⁢</mo><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>v</mi></mrow><mo>=</mo><msup><mrow><mo>|</mo><mrow><mi>A</mi><mo>⁢</mo><mi>v</mi></mrow><mo>|</mo></mrow><mn>2</mn></msup><mo>⟹</mo><mrow><mi>A</mi><mo>⁢</mo><mi>v</mi></mrow><mo>=</mo><mn>0</mn><mo>⟹</mo><mi>v</mi><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></semantics></math></span> Does this result generalize as follows: if <span class="math-container" id="11001858" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is another real matrix (also dimension <span class="math-container" id="11001859" visual_id="200"><math alttext="n\times k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>k</mi></mrow></semantics></math></span>) with full column rank, <strong>under what conditions</strong> is it true that <span class="math-container" id="11001860" visual_id="107806"><math alttext="A^{\prime}B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> is invertible? As Pavel pointed out in the comment, <span class="math-container" id="11001861" visual_id="107806"><math alttext="A^{\prime}B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mi>B</mi></mrow></semantics></math></span> isn't invertible in general.</p> <p>I tried doing a similar trick above but it hadn't worked out so far. Thanks.</p> <p><strong>Edit</strong>: Does it matter if we know that <span class="math-container" id="11001862" visual_id="2389799"><math alttext="A=WJ" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mi>W</mi><mo>⁢</mo><mi>J</mi></mrow></mrow></semantics></math></span> where <span class="math-container" id="11001863" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> is <span class="math-container" id="11001864" visual_id="199856"><math alttext="n\times l" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>l</mi></mrow></semantics></math></span> with full column rank and <span class="math-container" id="11001865" visual_id="1363"><math alttext="J" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi></semantics></math></span> is <span class="math-container" id="11001866" visual_id="605011"><math alttext="l\times k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>×</mo><mi>k</mi></mrow></semantics></math></span> with full column rank? The context of these questions come from my reading on the Generalized Method of Moments: <span class="math-container" id="11001867" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is the matrix of explanatory variables, <span class="math-container" id="11001868" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> is the matrix of instruments, and <span class="math-container" id="11001869" visual_id="1363"><math alttext="J" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi></semantics></math></span> is a weighting matrix.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> matrices </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2389276"> If the columns of <span class="math-container" id="11001908" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="11001909" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> were orthogonal, then <span class="math-container" id="11001872" visual_id="2389800"><math alttext="A^{\prime}B=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> even if <span class="math-container" id="11001908" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="11001909" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> had full column rank. </td></tr><tr><td comment_id="2389279"> @AlgebraicPavel Good point. Let me add a few details. Edit: I actually summarized the problem correctly. The author must have used some unstated assumption. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2053701" id="answer">
+<p>Not sure if I'm getting the question right.</p> <p>A matrix product is invertible if both the matrices in the product are invertible, that is, A is invertible and B is invertible. A matrix is invertible when it follows: <span class="math-container" id="11001901" visual_id="2389809"><math alttext="n=rank" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>k</mi></mrow></mrow></semantics></math></span> This can also be showed by determinants. Hope this helped! </p> <p>With this method <span class="math-container" id="11001902" visual_id="1786"><math alttext="A^{T}A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mi>T</mi></msup><mo>⁢</mo><mi>A</mi></mrow></semantics></math></span> is also invertible, when <span class="math-container" id="11001903" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is invertible and because <span class="math-container" id="11001904" visual_id="1347891"><math alttext="rank(A)=rank(A^{T})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>r</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mi>T</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="11001905" visual_id="2014"><math alttext="A^{T}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mi>T</mi></msup></semantics></math></span> is also invertible and then the product is also.</p> <p>Hope this helped</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

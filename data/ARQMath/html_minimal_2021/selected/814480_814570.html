@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is it true that $\left|\sum_{n=1}^\infty \frac{x}{n^2+x^2}\right|<\frac{\pi}{2}$ for any $x\in \Bbb{R}$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is it true that <span class="math-container" id="7982743" visual_id="3859525"><math alttext="\left|\sum_{n=1}^{\infty}\frac{x}{n^{2}+x^{2}}\right|&lt;\frac{\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>|</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>x</mi><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>|</mo></mrow><mo>&lt;</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math></span> for any <span class="math-container" id="7982744" visual_id="4655"><math alttext="x\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="814480">
+<p>This is a question closely related to this one:</p> <p><a href="https://math.stackexchange.com/q/611186/9464">How can I show that <span class="math-container" id="7982745" visual_id="3859526"><math alttext="\left|\sum_{n=1}^{\infty}\frac{x}{n^{2}+x^{2}}\right|\leq\frac{\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>|</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>x</mi><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>|</mo></mrow><mo>≤</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math></span> for any <span class="math-container" id="7982746" visual_id="4655"><math alttext="x\in{\mathbb{R}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>?</a></p> <p>Here is my <strong>question</strong>: </p> <blockquote> <p>Is the strict inequality also true? </p> </blockquote> <hr/> <p>Several answers to the question I just quoted use the following argument, which is wrong:</p> <blockquote> <p><span class="math-container" id="7982747" visual_id="24716"><math alttext="a_{n}&amp;lt;b_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>&lt;</mo></mrow><msub><mi>b</mi><mi>n</mi></msub></mrow></semantics></math></span> for all <span class="math-container" id="7982748" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> implies that <span class="math-container" id="7982749" visual_id="3385909"><math alttext="\lim a_{n}&amp;lt;\lim b_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>lim</mo><mo>⁡</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>&lt;</mo></mrow></mrow><mrow><mo>lim</mo><mo>⁡</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>. </p> </blockquote> <p>While we have <span class="math-container" id="7982750" visual_id="24719"><math alttext="\lim a_{n}\leq\lim b_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>lim</mo><mo>⁡</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo>≤</mo><mrow><mo>lim</mo><mo>⁡</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> provided that <span class="math-container" id="7982751" visual_id="24716"><math alttext="a_{n}&amp;lt;b_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>&lt;</mo></mrow><msub><mi>b</mi><mi>n</mi></msub></mrow></semantics></math></span> for all <span class="math-container" id="7982752" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, the strict inequality is not necessarily true. For example: <span class="math-container" id="7982753" visual_id="3859527"><math alttext="a_{n}=\frac{\pi}{2}-\frac{1}{n},\ \ b_{n}=\frac{\pi}{2}-\frac{1}{2n}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><msub><mi>b</mi><mi>n</mi></msub><mo>=</mo><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mfrac></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>But I have no idea how to approach the question above. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1683157"> The inequality is strict in the accepted answer in the question you mentioned. So that clearly means the sum can never be <span class="math-container" id="7982754" visual_id="2063"><math alttext="\pi/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="814570" id="answer">
+<p>In the same spirit as Santosh Linkha's answer, you could have identified that <span class="math-container" id="7982765" visual_id="3859535"><math alttext="\sum_{n=1}^{\infty}\frac{x}{n^{2}+x^{2}}=\frac{\pi x\coth(\pi x)-1}{2x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>x</mi><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>=</mo><mfrac><mrow><mrow><mi>π</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mi>coth</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math></span> and that the function represented by the rhs has an asymptotic value of <span class="math-container" id="7982766" visual_id="3859536"><math alttext="\frac{\pi^{-}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msup><mi>π</mi><mo>-</mo></msup><mn>2</mn></mfrac></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="611186"> How can I show that <span class="math-container" id="6225395" visual_id="3859526"><math alttext="\left|\sum_{n=1}^{\infty}\frac{x}{n^{2}+x^{2}}\right|\leq\frac{\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>|</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mi>x</mi><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>|</mo></mrow><mo>≤</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math></span> for any <span class="math-container" id="6225396" visual_id="27039"><math alttext="x\in{\bf R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>𝐑</mi></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

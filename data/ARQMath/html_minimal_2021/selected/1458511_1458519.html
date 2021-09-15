@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find all $10$ numbers n such that $φ(n) = 24$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find all <span class="math-container" id="13514392" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> numbers n such that <span class="math-container" id="13514393" visual_id="1981448"><math alttext="φ(n)=24" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>24</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1458511">
+<blockquote> <p>Find all 10 numbers n such that <span class="math-container" id="13514394" visual_id="1981448"><math alttext="φ(n)=24" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>24</mn></mrow></semantics></math></span>. Show that there are no others.</p> </blockquote> <p>I'm so lost. I know that I have to find <span class="math-container" id="13514395" visual_id="1981449"><math alttext="φ(n)=2,3,4,6,8,12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>12</mn></mrow></mrow></semantics></math></span>. But don't really know where I'm going from there.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2970237"> Hint (referring to the title question):  factor <span class="math-container" id="13514396" visual_id="550529"><math alttext="n=\prod\,p_{i}^{a_{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mo largeop="true" rspace="4.2pt" symmetric="true">∏</mo><msubsup><mi>p</mi><mi>i</mi><msub><mi>a</mi><mi>i</mi></msub></msubsup></mrow></mrow></semantics></math></span>, so that <span class="math-container" id="13514397" visual_id="1981450"><math alttext="\varphi(n)=\prod(p_{i}-1)p_{i}^{a_{i}-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo largeop="true" symmetric="true">∏</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>p</mi><mi>i</mi></msub><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msubsup><mi>p</mi><mi>i</mi><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>-</mo><mn>1</mn></mrow></msubsup></mrow></mrow></mrow></semantics></math></span>.  Can you first figure out which prime <span class="math-container" id="13514398" visual_id="163"><math alttext="p_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>i</mi></msub></semantics></math></span> are possible factors of <span class="math-container" id="13514405" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>? </td></tr><tr><td comment_id="2970241"> The good news is that you don't have to find all numbers <span class="math-container" id="13514405" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> for which <span class="math-container" id="13514401" visual_id="1981449"><math alttext="\varphi(n)=2,3,4,6,8,12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>12</mn></mrow></mrow></semantics></math></span>, because it's not going to be of any use anyway. </td></tr><tr><td comment_id="2970292"> See also http://math.stackexchange.com/questions/23947/how-to-solve-the-equation-phin-k, http://math.stackexchange.com/questions/284003/computing-n-such-that-phin-m. </td></tr><tr><td comment_id="2970295"> @IvanNeretin, it certainly is useful. </td></tr><tr><td comment_id="2970299"> See also http://www.jstor.org/stable/2308462. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1458519" id="answer">
+<p><em>Hint:</em> <span class="math-container" id="13514402" visual_id="10042"><math alttext="\phi(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a product of <span class="math-container" id="13514403" visual_id="1981451"><math alttext="p^{k}(p-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for all primes <span class="math-container" id="13514404" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> dividing <span class="math-container" id="13514405" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. Which <span class="math-container" id="13514406" visual_id="32987"><math alttext="p^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>k</mi></msup></semantics></math></span> and <span class="math-container" id="13514407" visual_id="1327"><math alttext="p-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> divide <span class="math-container" id="13514408" visual_id="488589"><math alttext="24=2^{3}\cdot 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>24</mn><mo>=</mo><mrow><msup><mn>2</mn><mn>3</mn></msup><mo>⋅</mo><mn>3</mn></mrow></mrow></semantics></math></span>?</p> <p>Start with this: write <span class="math-container" id="13514409" visual_id="1981452"><math alttext="n=2^{e}m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><msup><mn>2</mn><mi>e</mi></msup><mo>⁢</mo><mi>m</mi></mrow></mrow></semantics></math></span>, with <span class="math-container" id="13514410" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> odd. Then <span class="math-container" id="13514411" visual_id="1981453"><math alttext="\phi(n)=\phi(2^{e})\phi(m)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mi>e</mi></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and you can bound <span class="math-container" id="13514412" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="23947"> How to solve the equation <span class="math-container" id="238723" visual_id="595817"><math alttext="\phi(n)=k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>k</mi></mrow></semantics></math></span>? </td></tr><tr><td post_id="284003"> Computing <span class="math-container" id="3111355" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> such that <span class="math-container" id="3111356" visual_id="496741"><math alttext="\phi(n)=m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>m</mi></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

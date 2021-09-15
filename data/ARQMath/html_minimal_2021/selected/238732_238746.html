@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is $n!$ when $n=0$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is <span class="math-container" id="2661443" visual_id="755"><math alttext="n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>!</mo></mrow></semantics></math></span> when <span class="math-container" id="2661444" visual_id="3350"><math alttext="n=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="238732">
+<blockquote> <p><strong>Possible Duplicate:</strong><br/> <a href="https://math.stackexchange.com/questions/20969/prove-0-1-from-first-principles">Prove <span class="math-container" id="2661445" visual_id="56267"><math alttext="0!=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>!</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> from first principles</a><br/> <a href="https://math.stackexchange.com/questions/25333/why-does-0-1">Why does 0! = 1?</a> </p> </blockquote> <p>If I'm right, factorial <span class="math-container" id="2661446" visual_id="41977"><math alttext="!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>!</mo></semantics></math></span> means:</p> <p><span class="math-container" id="2661447" visual_id="2379972"><math alttext="n!=1\cdot 2\cdot 3\cdot 4\cdots n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>=</mo><mrow><mrow><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>4</mn></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></semantics></math></span></p> <p>so:</p> <p><span class="math-container" id="2661448" visual_id="3508934"><math alttext="\begin{aligned} \displaystyle 5!&amp;\displaystyle amp;=1\cdot 2\cdot 3\cdot 4% \cdot 5=120\\ \displaystyle 4!&amp;\displaystyle amp;=1\cdot 2\cdot 3\cdot 4=24\\ \displaystyle 3!&amp;\displaystyle amp;=1\cdot 2\cdot 3=6\\ \displaystyle 2!&amp;\displaystyle amp;=1\cdot 2=2\\ \displaystyle 1!&amp;\displaystyle amp;=1\end{aligned}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><mn>5</mn><mo>!</mo></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>4</mn><mo>⋅</mo><mn>5</mn><mo>=</mo><mn>120</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mn>4</mn><mo>!</mo></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>24</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mn>3</mn><mo>!</mo></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mn>2</mn><mo>!</mo></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mn>1</mn><mo>!</mo></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mn>1</mn></mrow></mtd></mtr></mtable></semantics></math></span></p> <p>But what is <span class="math-container" id="2661449" visual_id="755"><math alttext="n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>!</mo></mrow></semantics></math></span> when <span class="math-container" id="2661450" visual_id="3350"><math alttext="n=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>?</p> <p>It can't be undefined and it can't be <span class="math-container" id="2661451" visual_id="463987"><math alttext="n!=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, since those are illegal in known equations like:</p> <p><span class="math-container" id="2661452" visual_id="86194"><math alttext="e^{x}=\sum_{n=0}^{\infty}\frac{x^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></mrow></semantics></math></span></p> <p>So what is it?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> factorial </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="238746" id="answer">
+<p><span class="math-container" id="2661453" visual_id="56267"><math alttext="0!=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>!</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> is consistent with, and for reasons related to, how we define the <em>empty product.</em> See this entry on <strong><em><a href="http://en.wikipedia.org/wiki/Empty_product">empty product</a></em></strong>.  </p> <blockquote> <p><em><strong>Empty product:</strong></em></p> <p>The empty product of numbers is the borderline case of product, where <em>the number of factors is zero</em>, i.e. the set of the factors is empty. In such a "borderline" case, the <em>empty product</em> of numbers is equal to the multiplicative identity number, <span class="math-container" id="2661454" visual_id="6748"><math alttext="1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>.</mo></mrow></semantics></math></span> </p> </blockquote> <p>Some of the most common examples are the following:</p> <ul> <li>The zeroth power of a number <em>x</em>: <span class="math-container" id="2661455" visual_id="15986"><math alttext="x^{0}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow></semantics></math></span><br/></li> <li>The factorial of <span class="math-container" id="2661456" visual_id="3508935"><math alttext="0:0!=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>:</mo><mrow><mrow><mn>0</mn><mo>!</mo></mrow><mo>=</mo><mn>1</mn></mrow></mrow></semantics></math></span><br/></li> <li>The prime factor presentation of unity, which has no prime factors</li> </ul> <p>Just as <span class="math-container" id="2661457" visual_id="347098"><math alttext="{n^{0}=1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow></semantics></math></span> for any <span class="math-container" id="2661458" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, we define, as a convention, <span class="math-container" id="2661459" visual_id="38287"><math alttext="0!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>!</mo></mrow></semantics></math></span> to be <span class="math-container" id="2661460" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>.</p> <hr/> <p>Added observation:</p> <p><span class="math-container" id="2661461" visual_id="3508936"><math alttext="e^{x}=1+\frac{x}{1!}+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+...=1+\sum_{n=1}^{% \infty}\frac{x^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>x</mi><mrow><mn>1</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p>But the following is a more concise definition: <span class="math-container" id="2661462" visual_id="3508937"><math alttext="e^{x}=\frac{x^{0}}{0!}+\frac{x^{1}}{1!}+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+...=% \sum_{n=0}^{\infty}\frac{x^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mrow><mfrac><msup><mi>x</mi><mn>0</mn></msup><mrow><mn>0</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>1</mn></msup><mrow><mn>1</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="2661463" visual_id="749"><math alttext="(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> and <span class="math-container" id="2661464" visual_id="1757"><math alttext="(2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> are equal <em>if and only</em> if <span class="math-container" id="2661465" visual_id="3508938"><math alttext="\;\;\displaystyle e^{0}=\frac{x^{0}}{0!}=\frac{1}{0!}=1\iff 0!=1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mpadded lspace="5.6pt" width="+5.6pt"><mi>e</mi></mpadded><mn>0</mn></msup><mo>=</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>0</mn></msup><mrow><mn>0</mn><mo>!</mo></mrow></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>0</mn><mo>!</mo></mrow></mfrac></mstyle><mo>=</mo><mn>1</mn></mrow><mo>⇔</mo><mrow><mrow><mn>0</mn><mo>!</mo></mrow><mo>=</mo><mn>1</mn></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="2083280"> According to this <span class="math-container" id="19265715" visual_id="38287"><math alttext="0!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>!</mo></mrow></semantics></math></span> Should be not defined, but why it is not? </td></tr><tr><td post_id="20969"> Prove <span class="math-container" id="204351" visual_id="56267"><math alttext="0!=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>!</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> from first principles </td></tr><tr><td post_id="25333"> Why does 0! = 1? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="477448"> Detailed, Understandable Explanation as to why 0!=1? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

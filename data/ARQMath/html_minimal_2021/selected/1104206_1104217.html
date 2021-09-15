@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Modular Arithmetic Inverse Exponent Simplification</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Modular Arithmetic Inverse Exponent Simplification </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1104206">
+<p>Need help on where to start here.</p> <p>Given <span class="math-container" id="10415796" visual_id="6716098"><math alttext="a^{b}\mod c=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mi>b</mi></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>c</mi></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span>, where <span class="math-container" id="10415797" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>, <span class="math-container" id="10415798" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> and <span class="math-container" id="10415799" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> is known, how do I find <span class="math-container" id="10415800" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>?</p> <p>Thank!</p> <hr/> <p>I just wrote some arbitrary number here:</p> <p><span class="math-container" id="10415801" visual_id="6716099"><math alttext="x^{13}\mod 47=17" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>13</mn></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>47</mn></mrow><mo>=</mo><mn>17</mn></mrow></semantics></math></span>, how do I convert this to x = .... mod 47? From my understanding, it will be <span class="math-container" id="10415802" visual_id="6716100"><math alttext="x=7^{1/13}\mod 47" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><msup><mn>7</mn><mrow><mn>1</mn><mo>/</mo><mn>13</mn></mrow></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>47</mn></mrow></mrow></semantics></math></span> but how do I simplify that to an all-integer form.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> modular-arithmetic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2251334"> Do we have any constraints on the values of <span class="math-container" id="10415803" visual_id="17352"><math alttext="b,c," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>b</mi><mo>,</mo><mi>c</mi></mrow><mo>,</mo></mrow></semantics></math></span> and <span class="math-container" id="10415806" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span>? </td></tr><tr><td comment_id="2251421"> We have a constraints on the number of digit available on the calculator used to perform the computation to find a. @mapierce271 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1104217" id="answer">
+<p>You do the same thing as if this was an equation in more familiar arithmetic: compute the <span class="math-container" id="10415805" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>-th roots of <span class="math-container" id="10415806" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> modulo <span class="math-container" id="10415807" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2251414"> Ah okay, can do that with a calculator. Although it mention about the digit limitation of the calculator used. Do you know anything about that? @Hurkyl </td></tr><tr><td comment_id="2251498"> I'm used to having a computer program that can either deal with big integers, or actually has modular exponentiation built-in. If you have to do it yourself, you could use one of the "square and multiply" algorithms for computing exponentiation. </td></tr><tr><td comment_id="2252195"> I chose an arbitrary number here <span class="math-container" id="10415808" visual_id="6716099"><math alttext="x^{13}\mod 47=17" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>13</mn></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>47</mn></mrow><mo>=</mo><mn>17</mn></mrow></semantics></math></span>, how do I convert this to x = .... mod 47? Because in this case it will be <span class="math-container" id="10415809" visual_id="6716100"><math alttext="x=7^{1/13}\mod 47" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><msup><mn>7</mn><mrow><mn>1</mn><mo>/</mo><mn>13</mn></mrow></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>47</mn></mrow></mrow></semantics></math></span> how do I simplify that? @Hurkyl </td></tr><tr><td comment_id="2252217"> What confuse me here is the exponent $1/1<span class="math-container" id="20802038">3</span>$, what can we do with it to simpli<span class="math-container" id="20802039">f</span>y the expression? Cause if there is a rule for it, please do tell. </td></tr><tr><td comment_id="2255630"> @Stud: I had assumed the phrase "modular roots" would ring a bell, or at least provide a hint for searching. Your particular example is a simple case, though, since in arithmetic modulo 47, exponents are integers modulo 46 (or modulo a factor of 46, depending on the particular base), and you can simplify 1/13 modulo 46. </td></tr><tr><td comment_id="2255771"> it didn't ring a bell but i would look through it. Thank you! @Hurkyl </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

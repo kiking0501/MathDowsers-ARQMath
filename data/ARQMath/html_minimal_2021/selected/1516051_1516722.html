@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Tree. Number of nodes and children</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Tree. Number of nodes and children </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1516051">
+<p>Suppose a given tree <span class="math-container" id="14015606" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span> has <span class="math-container" id="14015607" visual_id="20820"><math alttext="n_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>1</mn></msub></semantics></math></span> nodes that have <span class="math-container" id="14015608" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> child, <span class="math-container" id="14015609" visual_id="5426"><math alttext="n_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>2</mn></msub></semantics></math></span> nodes that have <span class="math-container" id="14015610" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> children, . . . , <span class="math-container" id="14015611" visual_id="223805"><math alttext="n_{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>m</mi></msub></semantics></math></span> nodes that have <span class="math-container" id="14015612" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> children and no node has more than <span class="math-container" id="14015613" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> children, how many nodes have NO child are there in <span class="math-container" id="14015614" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span>? </p> <p>I have no clue of how to solve it. Please help. Is there anyway i can know total number of nodes here?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algorithms </span><span> recursive-algorithms </span><span> trees </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3087745"> So that is to say, you want to count the number of leaf nodes. Consider the total number of nodes that are the child of another node. Can you count this value in 2 ways? </td></tr><tr><td comment_id="3087763"> can i answer <span class="math-container" id="14015615" visual_id="5858"><math alttext="n_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>0</mn></msub></semantics></math></span>? </td></tr><tr><td comment_id="3087772"> What do you mean by 2 ways? the total number of nodes that are the child of another nodes should be 1 + 2 +....+ m right? but what is the use of this? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1516722" id="answer">
+<p>HINT: The information given in the problem allows you to calculate the number of edges in <span class="math-container" id="14015616" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span> in terms of the numbers <span class="math-container" id="14015617" visual_id="749203"><math alttext="n_{1},n_{2},\ldots,n_{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>n</mi><mi>m</mi></msub></mrow></semantics></math></span>. Since <span class="math-container" id="14015618" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span> is a tree, the number of edges tells you the number of vertices. You know (in terms of <span class="math-container" id="14015619" visual_id="749203"><math alttext="n_{1},n_{2},\ldots,n_{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>n</mi><mi>m</mi></msub></mrow></semantics></math></span>) how many of those vertices have children, so you can calculate the number that have no children.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

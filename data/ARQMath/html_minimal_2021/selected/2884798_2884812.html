@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Segmentations with equal length on a hyperbola</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Segmentations with equal length on a hyperbola </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2884798">
+<p>How can I divide a hyperbola or one of its branches into many segmentations with equal <strong>length = <em>l</em> along the curve</strong>. hyperbola can be express as: <span class="math-container" id="26680829" visual_id="1047993"><math alttext="x^{2}/a^{2}-y^{2}/b^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo>-</mo><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>/</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p> <p>How to compute the <em>x, y</em> for the seperation points?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> hyperbolic-geometry </span><span> hyperbolic-functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2884812" id="answer">
+<p>Arclength along a hyperbola doesn't have an expression in terms of familiar functions; e.g. it is given by an "<a href="https://en.wikipedia.org/wiki/Elliptic_integral#Incomplete_elliptic_integral_of_the_second_kind" rel="nofollow noreferrer">elliptic integral of the second kind</a>" (wikipedia link).</p> <p>So, unless you happen to have access to (or can write) a function that computes elliptic integrals, you're going to have to use a numeric method to approximate arclength.</p> <hr/> <p><a href="http://www.wolframalpha.com/input/?i=integrate+sqrt(b%5E2+cosh(u)%5E2+%2B+a%5E2+sinh(u)%5E2)+du" rel="nofollow noreferrer">Here is a WolframAlpha expression</a> for the indefinite integral of arclength of the hyperbola parametrized by <span class="math-container" id="26680830" visual_id="2113502"><math alttext="\displaystyle x^{x^{2015}}=2015." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><msup><mi>x</mi><mn>2015</mn></msup></msup><mo>=</mo><mn>2015</mn></mrow><mo>.</mo></mrow></semantics></math></span></p> <p><a href="http://mathworld.wolfram.com/Hyperbola.html" rel="nofollow noreferrer">Here is a mathworld reference</a> for hyperbola mensuration formulas, which also includes the formula for arclength.rent notation conventions for the elliptic integral)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

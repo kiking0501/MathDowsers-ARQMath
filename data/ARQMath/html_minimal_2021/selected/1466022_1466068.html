@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to prove these commutative maps are bijective</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to prove these commutative maps are bijective </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1466022">
+<p>I had asked a similar question here before in form of a proof verification, and I got the answer that my proof was correct, but as a result of a recent question I asked I have realized that my proof is wrong. We have two linear maps <span class="math-container" id="13576996" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> and <span class="math-container" id="13576997" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> such that <span class="math-container" id="13576998" visual_id="1990755"><math alttext="f\circ g=g\circ f=3\cdot id" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>g</mi><mo>∘</mo><mi>f</mi></mrow><mo>=</mo><mrow><mrow><mn>3</mn><mo>⋅</mo><mi>i</mi></mrow><mo>⁢</mo><mi>d</mi></mrow></mrow></semantics></math></span>. How do we prove these functions are both isomorphisms i.e. bijective linear maps, given that <span class="math-container" id="13576999" visual_id="1990755"><math alttext="f\circ g=g\circ f=3\cdot id" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>g</mi><mo>∘</mo><mi>f</mi></mrow><mo>=</mo><mrow><mrow><mn>3</mn><mo>⋅</mo><mi>i</mi></mrow><mo>⁢</mo><mi>d</mi></mrow></mrow></semantics></math></span>?</p> <p>What I initially tried was rewriting the <span class="math-container" id="13577000" visual_id="1990755"><math alttext="f\circ g=g\circ f=3\cdot id" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>g</mi><mo>∘</mo><mi>f</mi></mrow><mo>=</mo><mrow><mrow><mn>3</mn><mo>⋅</mo><mi>i</mi></mrow><mo>⁢</mo><mi>d</mi></mrow></mrow></semantics></math></span> into a way that you'd get <span class="math-container" id="13577001" visual_id="43255"><math alttext="id" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>⁢</mo><mi>d</mi></mrow></semantics></math></span> only on the RHS, but I'm not even sure what that proves. I also know that the identity mapping is bijective. </p> <p>I'm given that if <span class="math-container" id="13577002" visual_id="2889"><math alttext="f:X\to Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="13577003" visual_id="23924"><math alttext="g:Y\to X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mrow><mi>Y</mi><mo>→</mo><mi>X</mi></mrow></mrow></semantics></math></span> are maps that satisfy <span class="math-container" id="13577004" visual_id="824939"><math alttext="f\circ g=\text{id}_{Y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><mo>=</mo><msub><mtext>id</mtext><mi>Y</mi></msub></mrow></semantics></math></span> , then <span class="math-container" id="13577005" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is surjective and <span class="math-container" id="13577006" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is injective. If, moreover, <span class="math-container" id="13577007" visual_id="817303"><math alttext="0\lt A\lt\frac{\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>A</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math></span> is a map that satisfies <span class="math-container" id="13577008" visual_id="2003346"><math alttext="h\circ f=\text{id}_{X}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>h</mi><mo>∘</mo><mi>f</mi></mrow><mo>=</mo><msub><mtext>id</mtext><mi>X</mi></msub></mrow></semantics></math></span>, then <span class="math-container" id="13577009" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is also injective, and therefore bijective; we then have <span class="math-container" id="13577010" visual_id="2003347"><math alttext="g=h=f^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mi>h</mi><mo>=</mo><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2985400"> The idea is to prove that <span class="math-container" id="13577011" visual_id="2003348"><math alttext="f\circ g=n.Id" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><mo>=</mo><mi>n</mi></mrow><mo>.</mo><mrow><mi>I</mi><mo>⁢</mo><mi>d</mi></mrow></mrow></semantics></math></span> imply that <span class="math-container" id="13577037" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is surjective and <span class="math-container" id="13577036" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> injective. The other equality gives you the opposite, hence <span class="math-container" id="13577037" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> and<span class="math-container" id="13577036" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> are both injective and surjective : they are bijective </td></tr><tr><td comment_id="2985413"> But how? <span class="math-container" id="13577016" visual_id="2003349"><math alttext="f\circ g=g\circ f=n\cdot id" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>g</mi><mo>∘</mo><mi>f</mi></mrow><mo>=</mo><mrow><mrow><mi>n</mi><mo>⋅</mo><mi>i</mi></mrow><mo>⁢</mo><mi>d</mi></mrow></mrow></semantics></math></span>, (in my particular case <span class="math-container" id="13577017" visual_id="350"><math alttext="n=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow></semantics></math></span>), so <span class="math-container" id="13577034" visual_id="26959"><math alttext="f\circ g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow></semantics></math></span> can't equal <span class="math-container" id="13577019" visual_id="43255"><math alttext="id" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>⁢</mo><mi>d</mi></mrow></semantics></math></span> right? </td></tr><tr><td comment_id="2985446"> What I hinted in my comment would work even if the right hand side was an arbitrary bijection: if <span class="math-container" id="13577026" visual_id="26959"><math alttext="f\circ g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow></semantics></math></span> is bijective, then <span class="math-container" id="13577037" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is surjective and <span class="math-container" id="13577036" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> injective </td></tr><tr><td comment_id="2985472"> @Tryss How would one go about proving that? I know that the identity mapping is bijective, but that's it. </td></tr><tr><td comment_id="2985483"> Try to show that if <span class="math-container" id="13577037" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is not surjective, then <span class="math-container" id="13577026" visual_id="26959"><math alttext="f\circ g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow></semantics></math></span> is not surjective. Then that if <span class="math-container" id="13577036" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is not injective, <span class="math-container" id="13577026" visual_id="26959"><math alttext="f\circ g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow></semantics></math></span> is not injective. Both are not hard, but you'll need to write clearly the definition of injectivity and surjectivity </td></tr><tr><td comment_id="2985549"> @Tryss so you could basically say that because <span class="math-container" id="13577033" visual_id="2003350"><math alttext="id\cdot n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>i</mi><mo>⁢</mo><mi>d</mi></mrow><mo>⋅</mo><mi>n</mi></mrow></semantics></math></span> is bijective, <span class="math-container" id="13577028" visual_id="204544"><math alttext="f\circ g=g\circ f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>g</mi><mo>∘</mo><mi>f</mi></mrow></mrow></semantics></math></span> is bijective, thus <span class="math-container" id="13577037" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> and <span class="math-container" id="13577036" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> are bijective? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1466068" id="answer">
+<p>I understand you are on vector spaces. If the characteristic of the base field is  a divisor of n, take f=id, g = multiplication by n (=0). The result is obviously false.</p> <p>(If the characteristic is prime to n, then Tryss comments give you the answer).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2985505"> Indeed, didn't think about that... vector spaces over non zero characteristic fields are a little tricky ;) </td></tr><tr><td comment_id="2985562"> This answer is a bit above my level </td></tr><tr><td comment_id="2985571"> What is your base field? </td></tr><tr><td comment_id="2985585"> @Heinrich I know what bijectivity is and the basics of vector spaces too. I also added something we were given which might make the proof easier but I haven't been able to figure it out for a long time now </td></tr><tr><td comment_id="2985608"> I mean, you are talking about vector spaces over ... which field? If they are the rational numbers or real numbers, then forget my answer; you only need to follow Tryss suggestion. Take in mind that multiplication by n is then bijective (its inverse is multiplication by 1/n which is a rational and real number). </td></tr><tr><td comment_id="2985618"> @Heinrich <span class="math-container" id="13577031" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> was <span class="math-container" id="13577032" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> in my case, so I guess rational/real. If I can prove that <span class="math-container" id="13577033" visual_id="2003350"><math alttext="id\cdot n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>i</mi><mo>⁢</mo><mi>d</mi></mrow><mo>⋅</mo><mi>n</mi></mrow></semantics></math></span> is bijective, then can I simply state that <span class="math-container" id="13577034" visual_id="26959"><math alttext="f\circ g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow></semantics></math></span> and <span class="math-container" id="13577035" visual_id="8087"><math alttext="g\circ f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>∘</mo><mi>f</mi></mrow></semantics></math></span> are bijective, and thus <span class="math-container" id="13577036" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> and <span class="math-container" id="13577037" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> are bijective? </td></tr><tr><td comment_id="2985710"> Yes, reasoning as Tryss point you. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

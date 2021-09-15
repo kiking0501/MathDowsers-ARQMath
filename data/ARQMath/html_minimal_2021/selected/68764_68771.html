@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving that a polynomial is irreducible over a field</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving that a polynomial is irreducible over a field </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="68764">
+<p>What's the general strategy to show that a particular polynomial is irreducible over a field?</p> <p>For example, how can I show <span class="math-container" id="766418" visual_id="8789047"><math alttext="x^{4}-10x^{2}-19" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mrow><mn>10</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>-</mo><mn>19</mn></mrow></semantics></math></span> is irreducible over <span class="math-container" id="766419" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> polynomials </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="162545"> <span class="math-container" id="766420" visual_id="9726"><math alttext="\mathbb{Q}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> is *not* a field. We usually say that a polynomial is irreducible *over* a field <span class="math-container" id="766421" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> when it is irreducible in the ring <span class="math-container" id="766422" visual_id="73"><math alttext="k[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="162548"> See for instance http://en.wikipedia.org/wiki/Rational_root_theorem and http://en.wikipedia.org/wiki/Factorization_of_polynomials#Factoring_over_the_integers_and_rationals </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="68771" id="answer">
+<p>When a polynomial is integer valued, one may appeal to Gauss's lemma which states that if the coefficients of a non-constant polynomial <span class="math-container" id="766423" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> are relatively prime and <span class="math-container" id="766424" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is irreducible in <span class="math-container" id="766425" visual_id="823613"><math alttext="\mathbb{Z}[X]," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>,</mo></mrow></semantics></math></span> then <span class="math-container" id="766426" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is irreducible in <span class="math-container" id="766427" visual_id="2779872"><math alttext="\mathbb{Q}[X]." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span> </p> <p>This allows you to use the structure of <span class="math-container" id="766428" visual_id="29129"><math alttext="\mathbb{Z}[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> which is richer than that of <span class="math-container" id="766429" visual_id="29130"><math alttext="\mathbb{Q}[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> to prove irreducibility. For example for every prime <span class="math-container" id="766430" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> there is a reduction map from <span class="math-container" id="766431" visual_id="29129"><math alttext="\mathbb{Z}[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> to <span class="math-container" id="766432" visual_id="1144892"><math alttext="\mathbb{F}_{p}[X]." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>𝔽</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span> If the reduction of <span class="math-container" id="766433" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is irreducible over <span class="math-container" id="766434" visual_id="29131"><math alttext="\mathbb{F}_{p}[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝔽</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> then <span class="math-container" id="766435" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is irreducible over <span class="math-container" id="766436" visual_id="4554992"><math alttext="\mathbb{Z}[X]." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Note that for your polynomial, <span class="math-container" id="766437" visual_id="8789048"><math alttext="x^{4}-10x^{2}-19\mod 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mrow><mn>10</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>-</mo><mn>19</mn></mrow><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>3</mn></mrow></semantics></math></span> is irreducible in <span class="math-container" id="766438" visual_id="8789049"><math alttext="\mathbb{F}_{3}[X]." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>𝔽</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Hence, <span class="math-container" id="766439" visual_id="8789047"><math alttext="x^{4}-10x^{2}-19" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mrow><mn>10</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>-</mo><mn>19</mn></mrow></semantics></math></span> is irreducible in <span class="math-container" id="766440" visual_id="4554992"><math alttext="\mathbb{Z}[X]." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span> </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="704297"> How to know whether a polynomial has factors? </td></tr><tr><td post_id="443612"> Proving irreducibility of <span class="math-container" id="4670004" visual_id="310538"><math alttext="x^{6}-72" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>6</mn></msup><mo>-</mo><mn>72</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proof that a rational is a repeating decimal.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proof that a rational is a repeating decimal. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="984231">
+<p>It's true, But how can we prove that fact?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> rational-numbers </span><span> number-systems </span><span> real-numbers </span><span> decimal-expansion </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2016241"> Welcome to MSE! Nothing's obvious here! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="984238" id="answer">
+<p>Let <span class="math-container" id="9405735" visual_id="285647"><math alttext="q=m/n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mrow><mi>m</mi><mo>/</mo><mi>n</mi></mrow></mrow></semantics></math></span> a rational. Then take the remainders <span class="math-container" id="9405736" visual_id="17944"><math alttext="r_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>k</mi></msub></semantics></math></span> of division of <span class="math-container" id="9405737" visual_id="38023"><math alttext="10^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mi>k</mi></msup></semantics></math></span> by <span class="math-container" id="9405738" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. As these powers are infinite and <span class="math-container" id="9405739" visual_id="8068926"><math alttext="r_{k}\in\{0,1,\ldots,n-1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>, then there exist <span class="math-container" id="9405740" visual_id="5305"><math alttext="k_{1},k_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>,</mo><msub><mi>k</mi><mn>2</mn></msub></mrow></semantics></math></span>, such that <span class="math-container" id="9405741" visual_id="8068927"><math alttext="r_{k_{1}}=r_{k_{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><msub><mi>k</mi><mn>1</mn></msub></msub><mo>=</mo><msub><mi>r</mi><msub><mi>k</mi><mn>2</mn></msub></msub></mrow></semantics></math></span>, and hence <span class="math-container" id="9405742" visual_id="8068928"><math alttext="n\mid 10^{k_{2}}-10^{k_{1}}=10^{k_{2}-k_{1}}(10^{k_{1}}-1)," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>n</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><msup><mn>10</mn><msub><mi>k</mi><mn>2</mn></msub></msup><mo>-</mo><msup><mn>10</mn><msub><mi>k</mi><mn>1</mn></msub></msup></mrow></mrow><mo>=</mo><mrow><msup><mn>10</mn><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>-</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mn>10</mn><msub><mi>k</mi><mn>1</mn></msub></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> and thus <span class="math-container" id="9405743" visual_id="8068929"><math alttext="10^{k_{2}-k_{1}}(10^{k_{1}}-1)=n\ell" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>10</mn><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>-</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mn>10</mn><msub><mi>k</mi><mn>1</mn></msub></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mi mathvariant="normal">ℓ</mi></mrow></mrow></semantics></math></span>, and hence <span class="math-container" id="9405744" visual_id="8068930"><math alttext="\frac{m}{n}=\frac{1}{10^{k_{2}-k_{1}}}\cdot\frac{\ell m}{10^{k_{1}}-1}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mi>m</mi><mi>n</mi></mfrac><mo>=</mo><mrow><mfrac><mn>1</mn><msup><mn>10</mn><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>-</mo><msub><mi>k</mi><mn>1</mn></msub></mrow></msup></mfrac><mo>⋅</mo><mfrac><mrow><mi mathvariant="normal">ℓ</mi><mo>⁢</mo><mi>m</mi></mrow><mrow><msup><mn>10</mn><msub><mi>k</mi><mn>1</mn></msub></msup><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Clearly, every number of the form <span class="math-container" id="9405745" visual_id="8068931"><math alttext="\dfrac{M}{10^{K}-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mi>M</mi><mrow><msup><mn>10</mn><mi>K</mi></msup><mo>-</mo><mn>1</mn></mrow></mfrac></mstyle></semantics></math></span> has a periodic decimal expansion as <span class="math-container" id="9405746" visual_id="8068932"><math alttext="\dfrac{1}{10^{K}-1}=\dfrac{1}{10^{K}}+\dfrac{1}{10^{2K}}+\dfrac{1}{10^{3K}}+\cdots," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><msup><mn>10</mn><mi>K</mi></msup><mo>-</mo><mn>1</mn></mrow></mfrac></mstyle><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>10</mn><mi>K</mi></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>10</mn><mrow><mn>2</mn><mo>⁢</mo><mi>K</mi></mrow></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mn>10</mn><mrow><mn>3</mn><mo>⁢</mo><mi>K</mi></mrow></msup></mfrac></mstyle><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo>,</mo></mrow></semantics></math></span> and so does <span class="math-container" id="9405747" visual_id="23194"><math alttext="\dfrac{m}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mi>m</mi><mi>n</mi></mfrac></mstyle></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="61937"> How can I prove that all rational numbers are either terminating decimal or repeating decimal numerals? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

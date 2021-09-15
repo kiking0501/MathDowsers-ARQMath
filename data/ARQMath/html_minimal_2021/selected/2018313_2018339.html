@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>In Differential Geometry, why does it make sense for a smooth vector field to act on a smooth function?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> In Differential Geometry, why does it make sense for a smooth vector field to act on a smooth function? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2018313">
+<p>For instance consider the smooth vector field  <span class="math-container" id="18684743" visual_id="9337844"><math alttext="\phi:\mathscr{M}\longrightarrow T\mathscr{M}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>:</mo><mrow><mi class="ltx_font_mathscript">ℳ</mi><mo>⟶</mo><mrow><mi>T</mi><mo>⁢</mo><mi class="ltx_font_mathscript">ℳ</mi></mrow></mrow></mrow></semantics></math></span> that maps every point on a smooth manifold <span class="math-container" id="18684744" visual_id="12346"><math alttext="\mathscr{M}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathscript">ℳ</mi></semantics></math></span> to an element in the tangent space of <span class="math-container" id="18684745" visual_id="12346"><math alttext="\mathscr{M}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathscript">ℳ</mi></semantics></math></span>.</p> <p>A lot of books, after defining the idea of a smooth vector field, move on to talk about the space of all such vector fields <span class="math-container" id="18684746" visual_id="9337845"><math alttext="\Gamma(T\mathscr{M})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>⁢</mo><mi class="ltx_font_mathscript">ℳ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. It's further expressed that this space forms a <span class="math-container" id="18684747" visual_id="4403814"><math alttext="C^{\infty}(\mathscr{M})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathscript">ℳ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> - module but in order to show this, they mysteriously talk about the tangent vector fields as functions from <span class="math-container" id="18684748" visual_id="4403814"><math alttext="C^{\infty}(\mathscr{M})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathscript">ℳ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> to <span class="math-container" id="18684749" visual_id="4403814"><math alttext="C^{\infty}(\mathscr{M})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathscript">ℳ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. Am I missing a step here? I thought the vector fields are functions on the manifold, i,e, the argument of the function is a point on the manifold. How can a vector field of this sort act on a smooth function? It doesn't sense to me. Can someone please clarify this for me. An elaborate answer would be much appreciated as I'm just a beginner in this subject.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> differential-geometry </span><span> smooth-manifolds </span><span> vector-bundles </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4143011"> In differential geometry, a tangent vector <span class="math-container" id="18684750" visual_id="9337846"><math alttext="\vec{v}=|v|\hat{v}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>v</mi><mo stretchy="false">→</mo></mover><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mi>v</mi><mo stretchy="false">|</mo></mrow><mo>⁢</mo><mover accent="true"><mi>v</mi><mo stretchy="false">^</mo></mover></mrow></mrow></semantics></math></span> at a point <span class="math-container" id="18684755" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is essentially an equivalent class of curves crossing that point <span class="math-container" id="18684755" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> along direction <span class="math-container" id="18684753" visual_id="323822"><math alttext="\hat{v}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><mi>v</mi><mo stretchy="false">^</mo></mover></semantics></math></span> with speed <span class="math-container" id="18684754" visual_id="21549"><math alttext="|v|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>v</mi><mo stretchy="false">|</mo></mrow></semantics></math></span>.  It act on any smooth functions defined over some neighbor of <span class="math-container" id="18684755" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> by taking directional derivatives along any member curve of corresponding equivalent class. In short, tangent vector <span class="math-container" id="18684763" visual_id="1546"><math alttext="v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi></semantics></math></span> is really directional derivatives in disguise. So it is natural to talk about action of a tangent vector field on a smooth function. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2018339" id="answer">
+<p>Think about what a tangent vector <span class="math-container" id="18684757" visual_id="1546"><math alttext="v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi></semantics></math></span> at a point <span class="math-container" id="18684758" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> does: it takes in a function <span class="math-container" id="18684759" visual_id="40709"><math alttext="f:M\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>M</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> and computes the 'directional derivative' <span class="math-container" id="18684760" visual_id="1279551"><math alttext="v(f)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> in the direction of <span class="math-container" id="18684761" visual_id="1546"><math alttext="v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi></semantics></math></span> at the point <span class="math-container" id="18684762" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>. In this sense, <span class="math-container" id="18684763" visual_id="1546"><math alttext="v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi></semantics></math></span> can be thought of as a function <span class="math-container" id="18684764" visual_id="664824"><math alttext="v:C^{\infty}(M)\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>:</mo><mrow><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> (Which satisfies the product rule at <span class="math-container" id="18684765" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, and 'really' acts on smooth functions locally defined near <span class="math-container" id="18684766" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>) </p> <p>A map <span class="math-container" id="18684767" visual_id="949136"><math alttext="V:M\to TM" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>:</mo><mrow><mi>M</mi><mo>→</mo><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow></mrow></mrow></semantics></math></span>, then, is a collection of these maps from <span class="math-container" id="18684768" visual_id="40102"><math alttext="C^{\infty}(M)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> to <span class="math-container" id="18684769" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>; the natural question is then how these maps vary as we move around the manifold. That is, if <span class="math-container" id="18684770" visual_id="87733"><math alttext="f\in C^{\infty}(M)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∈</mo><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is a function and <span class="math-container" id="18684771" visual_id="100250"><math alttext="x,y\in M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>M</mi></mrow></semantics></math></span>, the values of the vector field <span class="math-container" id="18684772" visual_id="49035"><math alttext="V_{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mi>x</mi></msub></semantics></math></span> and <span class="math-container" id="18684773" visual_id="365189"><math alttext="V_{y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mi>y</mi></msub></semantics></math></span> are tangent vectors at <span class="math-container" id="18684774" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="18684775" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> respectively. Then naturally we can apply both of them to <span class="math-container" id="18684776" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>; what should the relationship be between <span class="math-container" id="18684777" visual_id="9337847"><math alttext="V_{x}(f)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>x</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="18684778" visual_id="9337848"><math alttext="V_{y}(f)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be? A priori there's no reason to believe there really should be any relationship between them at all; but one way to define a smooth vector field (or, if you're using another definition of a smooth vector field, a reasonably straightforward theorem) is to say that the map <span class="math-container" id="18684779" visual_id="9337849"><math alttext="x\mapsto V_{x}(f)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>↦</mo><mrow><msub><mi>V</mi><mi>x</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, with <span class="math-container" id="18684780" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span> and <span class="math-container" id="18684781" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> fixed and the point on <span class="math-container" id="18684782" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> allowed to vary, should be a smooth function. It's this function that we call <span class="math-container" id="18684783" visual_id="5219"><math alttext="V(f)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, and this defines a map <span class="math-container" id="18684784" visual_id="949137"><math alttext="V:C^{\infty}(M)\to C^{\infty}(M)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>:</mo><mrow><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

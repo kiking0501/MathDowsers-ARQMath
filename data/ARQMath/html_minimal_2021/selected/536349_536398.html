@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove: Dividing an odd number by 2 always produces a remainder of 1</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove: Dividing an odd number by 2 always produces a remainder of 1 </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="536349">
+<p>How would I go about proving that for all n belonging to the natural numbers, if any given odd number n  is divided by 2, then the remainder is <em>at least</em> 1? </p> <p>I got a hint: Try to reduce the number of n, but I have no idea how that would help.</p> <p>I was thinking along the lines of induction, but what would be the best approach to this? I just want hints, please. I want to solve this myself, just need a heads up on where to get started.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> proof-writing </span><span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1144396"> Do you mean odd number? </td></tr><tr><td comment_id="1144399"> Yeah, I do actually. Sorry about that, I corrected it @Hovercouch </td></tr><tr><td comment_id="1144407"> How are you defining "odd number"? </td></tr><tr><td comment_id="1144415"> Usually the following is taken as the definition of an odd number, so I'm not sure if this qualifies as a 'hint', but here goes: an odd number is one of the form <span class="math-container" id="5575461" visual_id="20268"><math alttext="2k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> for some integer <span class="math-container" id="5575462" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="536398" id="answer">
+<p>The division algorithm says that for any <span class="math-container" id="5575471" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> and positive <span class="math-container" id="5575472" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> in the integers, there are integers <span class="math-container" id="5575473" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> and <span class="math-container" id="5575474" visual_id="1060201"><math alttext="0\leq r\lt n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mrow><mi>r</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>n</mi></mrow></mrow></semantics></math></span> so that <span class="math-container" id="5575475" visual_id="214829"><math alttext="m=qn+r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mrow><mi>q</mi><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mi>r</mi></mrow></mrow></semantics></math></span> For <span class="math-container" id="5575476" visual_id="352"><math alttext="n=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span>, there are two remainders (<span class="math-container" id="5575477" visual_id="1592762"><math alttext="0\leq r\lt 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mrow><mi>r</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mn>2</mn></mrow></mrow></semantics></math></span>): <span class="math-container" id="5575478" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> and <span class="math-container" id="5575479" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>.</p> <p><span class="math-container" id="5575480" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> is odd if it is not divisible by <span class="math-container" id="5575481" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> (the remainder when dividing by <span class="math-container" id="5575482" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> is not <span class="math-container" id="5575483" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>). Since there is only one non-zero remainder, the remainder when dividing <span class="math-container" id="5575484" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> by <span class="math-container" id="5575485" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> must be <span class="math-container" id="5575486" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

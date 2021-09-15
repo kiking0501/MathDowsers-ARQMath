@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Cauchy Problem - Real Analysis</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Cauchy Problem - Real Analysis </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="323258">
+<p>Been struggling with this for a while now, just kind of spinning my wheels at this point.  Any help/advice/anything much appreciated.  This is a problem from Wade's Intro to Analysis, chapter 3.</p> <p>Suppose <span class="math-container" id="3492572" visual_id="3782457"><math alttext="f:\textbf{N}\to\textbf{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mtext>𝐍</mtext><mo>→</mo><mtext>𝐑</mtext></mrow></mrow></semantics></math></span>. If <span class="math-container" id="3492573" visual_id="3782458"><math alttext="\lim\limits_{n\to\infty}f(n+1)-f(n)=L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi>L</mi></mrow></semantics></math></span>, prove that <span class="math-container" id="3492574" visual_id="3782459"><math alttext="\lim\limits_{n\to\infty}\frac{f(n)}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mi>n</mi></mfrac></mrow></semantics></math></span> exists and equals <span class="math-container" id="3492575" visual_id="580"><math alttext="L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="699259"> The most classical epsilon-delta proof works (or rather, in this case, epsilon-N). </td></tr><tr><td comment_id="699264"> stolz theorem http://en.wikipedia.org/wiki/Stolz%E2%80%93Ces%C3%A0ro_theorem </td></tr><tr><td comment_id="699305"> Did: yes I am attempting to use epsilon-N, I understand that it can be done that way, it is the 'how' that I am stuck on.  I have been trying to construct a string of inequalities that leads from the assumption to what I'm trying to prove, but I'm just not getting anywhere material. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="323309" id="answer">
+<p>Take An=f(n+1)-f(n) then lim An= L implies lim (A1+A2+....+An)/n=L (BY Cauchy's first principle) i.e. lim {f(n+1)-f(1)}/n=L i.e. lim {f(n+1)}/n=L</p> <p>Also lim {f(n+1)-f(n)}/n=lim L/n = 0 which gives lim {f(n+1)}/n=lim{f(n)}/n Hence the solution.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="646453"> A question related to a convergence of an integral </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Correct proof of divisibility question?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Correct proof of divisibility question? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2545162">
+<p>After having a disagreement with my teacher I posted the following question a few days ago and I have now rewritten my proof with all the comments I received earlier in mind. Would anyone like to comment if anything is still missing or if it looks good?</p> <p>Q: Let a and b be integers such that gcd(a,b)=1 and let c be a third integer. Show that if a|bc then a|c.</p> <p>(Note: I am aware that there are other and better proofs such as from Bezouts identity, but still like to know if the one I came up with was valid)</p> <p>Proof: Any integer that divides another integer is also a factor of that integer. Since a|bc, a is a factor of bc and all the factors of a are factors of bc. Therefore, one and only one of three options holds true for factors &gt;1; either some of the factors of a are factors of b and some of c, or all of the factors of a are factors of b and none of c, or similarly all of the factors of a are factors of c and none of b. In the trivial case that a=1, a|c because 1 divides any integer, and if b=1 then bc=c and we know that a|bc. Considering that gcd(a,b)=1, a and b have no common factors (except number 1), so the first option above can not be true. For the same reason, neither can the second option be valid. We can now conclude that the third option must be the correct one; all of the factors of a are factors of c and none of b (except number 1). This means that because a is itself one of the factors of a, a must be a factor to c, and so a|c.</p> <p>Short version: all factors of a are factors of bc (a|bc) a and b have no common factors except number 1 (gcd(a,b)=1) all factors of a must then be factors to c and therefore a|c</p>
+</div>
+<hr/>
+<div id="tags">
+<span> proof-verification </span><span> divisibility </span><span> gcd-and-lcm </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5254542"> Doesn't look good.  <span class="math-container" id="23533436" visual_id="340"><math alttext="6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn></semantics></math></span> divides <span class="math-container" id="23533434" visual_id="11763"><math alttext="3\times 4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>×</mo><mn>4</mn></mrow></semantics></math></span> yet <span class="math-container" id="23533436" visual_id="340"><math alttext="6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn></semantics></math></span> is a factor of itself and <span class="math-container" id="23533436" visual_id="340"><math alttext="6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn></semantics></math></span> divides neither <span class="math-container" id="23533437" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> nor <span class="math-container" id="23533438" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>.  So your initial decomposition into cases is not valid in general. </td></tr><tr><td comment_id="5254544"> I read "edited" in the title, but cannot see any edit. </td></tr><tr><td comment_id="5254547"> Worth noting:  the claim in question is highly non-trivial, even when <span class="math-container" id="23533468" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> is a prime. Usually it is proved using Bezout's Identity or the equivalent. </td></tr><tr><td comment_id="5254555"> You might like reading about the [Hilbert numbers](https://en.wikipedia.org/wiki/Hilbert_number).  Very simple notion, yet it shows how subtle the concept of unique factorization is. </td></tr><tr><td comment_id="5254564"> In that case some of the factors of a are factors of b (factor 3) and some of c (factor 2) I dont see how it shows my cases are not valid? I am stating that a and b have no common factors  as the reason why the case you bring up is not an option in this specific case. If b=3 and a=6 then they do have common factors. </td></tr><tr><td comment_id="5254567"> I know that one proof is from au+bv=1, but I Amsterdam curious if the idea I camembert upp with on an exam was actually valid. </td></tr><tr><td comment_id="5254570"> I am*.. Came up with* </td></tr><tr><td comment_id="5254572"> @Celtschk I have made a new post instead of editing the old one because I changed so much </td></tr><tr><td comment_id="5254603"> I think you are implicitly assuming what you are trying to prove. Try to apply your proof to some domain where unique factorization breaks down, and you may see what goes wrong. For example, in <span class="math-container" id="23533440" visual_id="2510784"><math alttext="{\bf Z}[\sqrt{6}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐙</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msqrt><mn>6</mn></msqrt><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>, <span class="math-container" id="23533441" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> is relatively prime to both <span class="math-container" id="23533442" visual_id="2510785"><math alttext="4+\sqrt{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>+</mo><msqrt><mn>6</mn></msqrt></mrow></semantics></math></span> and <span class="math-container" id="23533443" visual_id="805523"><math alttext="4-\sqrt{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>-</mo><msqrt><mn>6</mn></msqrt></mrow></semantics></math></span> but divides their product. In <span class="math-container" id="23533444" visual_id="2510786"><math alttext="{\bf R}[x,y,z]/(x^{2}-yz)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝐑</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, <span class="math-container" id="23533445" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is relatively prime to both <span class="math-container" id="23533446" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> and <span class="math-container" id="23533447" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span>, but divides their product. </td></tr><tr><td comment_id="5254624"> You claim on and only 1 of three options are possible: 1) some factors are factors of b and some of c (and some factors aren't factors of either). 2) all factors are factors of b, and 3) all factors are factors of c.  Why is this true.  Why not none are factors of b and some but not all are factors of c? </td></tr><tr><td comment_id="5254633"> I think most of the comments (but not me) here are assuming that you have not proven the fundsmental theorem of arithmetic (that all integers have a unique prime factorization) and that this question is a *step* on the way to that.  If you haven't proven the FTA then you can not do your options.  If you have, then you can but I think it'd be easier and clearer to talk of prime factors. </td></tr><tr><td comment_id="5254638"> @fleablood to answers your first comment, the reason is because as stated "all factors of a are factors of bc". So if only some are of c and none of b then how could all factors of a be of bc? </td></tr><tr><td comment_id="5254647"> @Gerry I will need some time to think through what youre saying, I am a first year student so some of it is pretty new to me. Please check back to see my response :) </td></tr><tr><td comment_id="5254672"> @Fleablood I didnt realize I might have to prove FTA first and not just assume it. You say it could be done with prime numbers instead, how would that kind of proof look campared to mine above? </td></tr><tr><td comment_id="5254726"> Your cases do not allow for some of the factors of <span class="math-container" id="23533468" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> to be factors of neither of <span class="math-container" id="23533449" visual_id="16800"><math alttext="b,c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>,</mo><mi>c</mi></mrow></semantics></math></span>.  You say that is covered by option <span class="math-container" id="23533452" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, but in that case you can't claim that <span class="math-container" id="23533451" visual_id="24677"><math alttext="\gcd(a,b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> implies that option <span class="math-container" id="23533452" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> is eliminated, as it is still possible that factors of <span class="math-container" id="23533468" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> are factors of neither <span class="math-container" id="23533454" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> nor <span class="math-container" id="23533469" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>. </td></tr><tr><td comment_id="5254727"> Note:  I certainly assume that unique factorization is not acceptable as a tool for proving this (you really need this, or something like it, to prove unique factorization). </td></tr><tr><td comment_id="5254782"> @lulu Im not sure if I stated it clear enough but by beginning with saying "all factors of a are factors of bc"  I mean to exclude the option you give that "it is possible that factors of a  are factors of neither b or c". If some factors of a are factors of neither b or c how could they be factors of bc? So the options where supposed to be stated in the context of the premiss mentioned above, but maybe I didnt get it right. </td></tr><tr><td comment_id="5254810"> Try to describe the cases clearly and in detail; I think you'll hit a problem.  Read the article on Hilbert Numbers I linked to earlier.  That describes a simple situation in which most of the rules of arithmetic still hold, but unique factorization fails (more to the point, the claim you are trying to prove fails). </td></tr><tr><td comment_id="5372202"> @Lukas Please, if you are ok, you can accept the answer and set it as solved. Thanks! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2545201" id="answer">
+<p>In my opinion your proof is correct as it is essentially based on the Foundamental Theorem of Arithmetic.</p> <p>In a way, the proof via Bezout's Theorem is more basic, in the sense that it is used in the proof of the FTA.</p> <p>Finally Bezout's Theorem can be proved by Euclidean Algorithm which is the starting point of all of these important results.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5254613"> I think what's going on here is that OP's result is intended as a step toward proving FTA, so using FTA to prove it is circular. </td></tr><tr><td comment_id="5254623"> Maybe we could say that is a Corollary of FTA, since it is immediately proved from FTA? </td></tr><tr><td comment_id="5254627"> You can only say it's a corollary of FTA if you have already proved FTA without using this result. That can be done, but most intro Number Theory textbooks use this result to prove FTA. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

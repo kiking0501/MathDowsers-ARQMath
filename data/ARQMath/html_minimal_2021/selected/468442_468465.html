@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to prove that $\int_0^{2\pi} \sqrt{1+\cos^2{t}}\; dt>2\pi$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to prove that <span class="math-container" id="4924052" visual_id="4348074"><math alttext="\int_{0}^{2\pi}\sqrt{1+\cos^{2}{t}}\;dt&gt;2\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msubsup><mrow><mpadded width="+2.8pt"><msqrt><mrow><mn>1</mn><mo>+</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mi>t</mi></mrow></mrow></msqrt></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>&gt;</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="468442">
+<p>Let <span class="math-container" id="4924053" visual_id="4348075"><math alttext="I=\int_{0}^{2\pi}\sqrt{1+\cos^{2}{(t)}}\;dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msubsup><mrow><mpadded width="+2.8pt"><msqrt><mrow><mn>1</mn><mo>+</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></msqrt></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>How to prove, in an elementary way, that <span class="math-container" id="4924054" visual_id="4348076"><math alttext="I&amp;gt;2\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>I</mi><mo>&gt;</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> integration </span><span> definite-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="468465" id="answer">
+<p>For a geometric approach, note that the integral <span class="math-container" id="4924062" visual_id="989"><math alttext="I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi></semantics></math></span> is the arc length of the function <span class="math-container" id="4924063" visual_id="69695"><math alttext="y=\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></semantics></math></span> on the interval <span class="math-container" id="4924064" visual_id="7765"><math alttext="[0,2\pi]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span>. The inequality follows since drawing a straight line from <span class="math-container" id="4924065" visual_id="828"><math alttext="(0,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> to <span class="math-container" id="4924066" visual_id="951619"><math alttext="(2\pi,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> is strictly shorter than the route the graph of <span class="math-container" id="4924067" visual_id="2934"><math alttext="\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></semantics></math></span> takes from <span class="math-container" id="4924068" visual_id="828"><math alttext="(0,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> to <span class="math-container" id="4924069" visual_id="951619"><math alttext="(2\pi,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1008145"> Excellent.   Then there are lower bounds by drawing  polygons through known points on the curve. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

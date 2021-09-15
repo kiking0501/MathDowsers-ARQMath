@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why must the decimal representation of a rational number in any base always either terminate or repeat?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why must the decimal representation of a rational number in any base always either terminate or repeat? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1131617">
+<p><a href="http://en.wikipedia.org/wiki/Rational_number" rel="nofollow">Wikipedia</a> makes the following statement about rational numbers.</p> <blockquote> <p>The decimal expansion of a rational number always either terminates   after a finite number of digits or begins to repeat the same finite   sequence of digits over and over. Moreover, any repeating or   terminating decimal represents a rational number. These statements   hold true not just for base 10, but also for binary, hexadecimal, or   any other integer base.</p> </blockquote> <p>Can anyone shed intuition and/or a mathematical proof for why this is true?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> rational-numbers </span><span> decimal-expansion </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2309831"> Because if it neither terminates nor repeats, then there are no pair of integers <span class="math-container" id="10660191" visual_id="14550"><math alttext="n,m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>,</mo><mi>m</mi></mrow></semantics></math></span> such that the number is equal to <span class="math-container" id="10660192" visual_id="23194"><math alttext="\frac{m}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>m</mi><mi>n</mi></mfrac></semantics></math></span>. </td></tr><tr><td comment_id="2309835"> @barakmanos, Apologies for my ignorance, but I would appreciate some elaboration on the contradiction argument. </td></tr><tr><td comment_id="2309838"> @barakmanos, In particular, why does the lack of repetition and termination imply the non-existence of `m` and `n`? </td></tr><tr><td comment_id="2309859"> @barak: You are saying that a rational number always repeats because if it didn't, it wouldn't be rational... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1131628" id="answer">
+<p>Look at the classical division algorithm: after you have exhausted the digits of the numerator, you will continue appending zeroes 'past the decimal point'. As the remainder is smaller than the divisor, it is finite and the same values will come back periodically. The period length of the decimals cannot exceed the value of the divisor minus <span class="math-container" id="10660193" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>.</p> <p>Base <span class="math-container" id="10660194" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> example, <span class="math-container" id="10660195" visual_id="8450906"><math alttext="83/7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>83</mn><mo>/</mo><mn>7</mn></mrow></semantics></math></span>:</p> <p><span class="math-container" id="10660196" visual_id="8450907"><math alttext="83\div 7=10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>83</mn><mo>÷</mo><mn>7</mn></mrow><mo>=</mo><mn>10</mn></mrow></semantics></math></span>, remainder <span class="math-container" id="10660197" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> (<span class="math-container" id="10660198" visual_id="8450908"><math alttext="=8-7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>8</mn><mo>-</mo><mn>7</mn></mrow></mrow></semantics></math></span>).</p> <p><span class="math-container" id="10660199" visual_id="8450909"><math alttext="83\div 7=11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>83</mn><mo>÷</mo><mn>7</mn></mrow><mo>=</mo><mn>11</mn></mrow></semantics></math></span>, remainder <span class="math-container" id="10660200" visual_id="340"><math alttext="6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn></semantics></math></span> (<span class="math-container" id="10660201" visual_id="8450910"><math alttext="=83-7\cdot 11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>83</mn><mo>-</mo><mrow><mn>7</mn><mo>⋅</mo><mn>11</mn></mrow></mrow></mrow></semantics></math></span>).</p> <p><span class="math-container" id="10660202" visual_id="8450911"><math alttext="83\div 7=11.8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>83</mn><mo>÷</mo><mn>7</mn></mrow><mo>=</mo><mn>11.8</mn></mrow></semantics></math></span>, remainder <span class="math-container" id="10660203" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> (<span class="math-container" id="10660204" visual_id="8450912"><math alttext="=830-7\cdot 118" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>830</mn><mo>-</mo><mrow><mn>7</mn><mo>⋅</mo><mn>118</mn></mrow></mrow></mrow></semantics></math></span>).</p> <p><span class="math-container" id="10660205" visual_id="8450913"><math alttext="83\div 7=11.85" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>83</mn><mo>÷</mo><mn>7</mn></mrow><mo>=</mo><mn>11.85</mn></mrow></semantics></math></span>, remainder <span class="math-container" id="10660206" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span> (<span class="math-container" id="10660207" visual_id="8450914"><math alttext="=8300-7\cdot 1185" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>8300</mn><mo>-</mo><mrow><mn>7</mn><mo>⋅</mo><mn>1185</mn></mrow></mrow></mrow></semantics></math></span>).</p> <p><span class="math-container" id="10660208" visual_id="8450915"><math alttext="83\div 7=11.857" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>83</mn><mo>÷</mo><mn>7</mn></mrow><mo>=</mo><mn>11.857</mn></mrow></semantics></math></span>, remainder <span class="math-container" id="10660209" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> (<span class="math-container" id="10660210" visual_id="8450916"><math alttext="=83000-7\cdot 11857" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>83000</mn><mo>-</mo><mrow><mn>7</mn><mo>⋅</mo><mn>11857</mn></mrow></mrow></mrow></semantics></math></span>).</p> <p><span class="math-container" id="10660211" visual_id="8450917"><math alttext="83\div 7=11.8571" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>83</mn><mo>÷</mo><mn>7</mn></mrow><mo>=</mo><mn>11.8571</mn></mrow></semantics></math></span>, remainder <span class="math-container" id="10660212" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> (=<span class="math-container" id="10660213" visual_id="16731"><math alttext="\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">⋯</mi></semantics></math></span>).</p> <p><span class="math-container" id="10660214" visual_id="8450918"><math alttext="83\div 7=11.85714" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>83</mn><mo>÷</mo><mn>7</mn></mrow><mo>=</mo><mn>11.85714</mn></mrow></semantics></math></span>, remainder <span class="math-container" id="10660215" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>.</p> <p><span class="math-container" id="10660216" visual_id="8450919"><math alttext="83\div 7=11.857142" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>83</mn><mo>÷</mo><mn>7</mn></mrow><mo>=</mo><mn>11.857142</mn></mrow></semantics></math></span>, remainder <span class="math-container" id="10660217" visual_id="340"><math alttext="6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn></semantics></math></span>.</p> <p><span class="math-container" id="10660218" visual_id="8450920"><math alttext="83\div 7=11.8571428" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>83</mn><mo>÷</mo><mn>7</mn></mrow><mo>=</mo><mn>11.8571428</mn></mrow></semantics></math></span>, remainder <span class="math-container" id="10660219" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>.</p> <p><span class="math-container" id="10660220" visual_id="16731"><math alttext="\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">⋯</mi></semantics></math></span></p> <p>Conversely, when you have a periodic number, if you shift it left by one period and subtract the original, you obtain a terminating number by cancellation of the decimals.</p> <p><span class="math-container" id="10660221" visual_id="8450921"><math alttext="11857142.8571428571428571428\cdots-11.8571428571428571428\cdots=11857131," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mn>11857142.8571428571428571428</mn><mo>⁢</mo><mi mathvariant="normal">⋯</mi></mrow><mo>-</mo><mrow><mn>11.8571428571428571428</mn><mo>⁢</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo>=</mo><mn>11857131</mn></mrow><mo>,</mo></mrow></semantics></math></span> hence the number is <span class="math-container" id="10660222" visual_id="8450922"><math alttext="\frac{11857131}{999999}=\frac{83}{7}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>11857131</mn><mn>999999</mn></mfrac><mo>=</mo><mfrac><mn>83</mn><mn>7</mn></mfrac></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2336539"> Is there any irrational number in decimal with a rational binary expansion? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

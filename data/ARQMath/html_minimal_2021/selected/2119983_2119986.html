@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Understanding how to properly determine if reflexive, symmetric, and transitive.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Understanding how to properly determine if reflexive, symmetric, and transitive. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2119983">
+<p>Determine which of the reflexive, symmetric, and transitive properties are satisfied by the given relation R defined on set S...</p> <p>S= {1,2,3}<br/> R= {(1,1), (1,3), (2,2), (2,3), (3,1), (3,2), (3,3)}<br/> I've concluded that it is not reflexive due to that there is no (1,2) or (2,1) in R. I'm not too confident to say its not symmetric... Basically would anyone be able to properly simplify an explanation on how to find whether its reflexive, transitive, and/ or symmetric?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> relations </span><span> equivalence-relations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4359926"> I guess it is reflexive ... if <span class="math-container" id="19599367" visual_id="7918"><math alttext="x\sim y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∼</mo><mi>y</mi></mrow></semantics></math></span> then <span class="math-container" id="19599368" visual_id="142510"><math alttext="y\sim x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∼</mo><mi>x</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4359927"> If it's reflexive, <span class="math-container" id="19599369" visual_id="935"><math alttext="(1,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>, <span class="math-container" id="19599370" visual_id="38881"><math alttext="(2,2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> and <span class="math-container" id="19599379" visual_id="85699"><math alttext="(3,3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> must be in it (we must have xRx for all x). If it is symmetric then if <span class="math-container" id="19599372" visual_id="2239"><math alttext="(a,b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> is in R, <span class="math-container" id="19599373" visual_id="5325"><math alttext="(b,a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> is in R too (xRy iff yRx). So if you found <span class="math-container" id="19599374" visual_id="470525"><math alttext="(1,3)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> but <span class="math-container" id="19599375" visual_id="1456265"><math alttext="(3,1)\notin R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>∉</mo><mi>R</mi></mrow></semantics></math></span> then it would not be symmetric. If no such example exists, it is. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2119986" id="answer">
+<p>Reflexive means you have <span class="math-container" id="19599400" visual_id="123549"><math alttext="(x,x)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> for any <span class="math-container" id="19599401" visual_id="8272"><math alttext="x\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>S</mi></mrow></semantics></math></span> ... which you do .. so it <em>is</em> reflexive.</p> <p>Symmetric means you have <span class="math-container" id="19599402" visual_id="9596"><math alttext="(x,y)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> whenever <span class="math-container" id="19599403" visual_id="350102"><math alttext="(y,x)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> .. which again is the case. So it is symmetric.</p> <p>Transitive means that you have <span class="math-container" id="19599404" visual_id="535044"><math alttext="(x,z)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> whenever <span class="math-container" id="19599405" visual_id="9596"><math alttext="(x,y)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> and <span class="math-container" id="19599406" visual_id="403372"><math alttext="(y,z)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> .. which is not the case: you have <span class="math-container" id="19599407" visual_id="11720"><math alttext="(2,3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> and <span class="math-container" id="19599408" visual_id="23362"><math alttext="(3,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> ... but you don't have <span class="math-container" id="19599409" visual_id="65888"><math alttext="(2,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> So it is not transitive.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4359928"> well this just goes to show how well i savvy this subject.... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove that $x_{n+1}=\frac{2}{9}(x_n^3+3)$ converges</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove that <span class="math-container" id="5568873" visual_id="1590613"><math alttext="x_{n+1}=\frac{2}{9}(x_{n}^{3}+3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mfrac><mn>2</mn><mn>9</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>x</mi><mi>n</mi><mn>3</mn></msubsup><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> converges </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="535617">
+<p>Let <span class="math-container" id="5568874" visual_id="338635"><math alttext="x_{1}=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> and <span class="math-container" id="5568875" visual_id="1590613"><math alttext="x_{n+1}=\frac{2}{9}(x_{n}^{3}+3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mfrac><mn>2</mn><mn>9</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi>x</mi><mi>n</mi><mn>3</mn></msubsup><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> for <span class="math-container" id="5568876" visual_id="5852"><math alttext="\text{Form}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Form</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. We want to prove that the sequence <span class="math-container" id="5568877" visual_id="961"><math alttext="(x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> converges to real number <span class="math-container" id="5568878" visual_id="41739"><math alttext="r\in(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> satisfying the equation <span class="math-container" id="5568879" visual_id="1590614"><math alttext="2r^{3}-9r+6=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>r</mi><mn>3</mn></msup></mrow><mo>-</mo><mrow><mn>9</mn><mo>⁢</mo><mi>r</mi></mrow></mrow><mo>+</mo><mn>6</mn></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p> <h2>First part</h2> <p>For the sequence to converge, it must be bounded. A sequence <span class="math-container" id="5568880" visual_id="1469825"><math alttext="X:=(x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>:=</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> of real numbers is said to be bounded if there exists a real number <span class="math-container" id="5568881" visual_id="2167"><math alttext="M&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>M</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> such that <span class="math-container" id="5568882" visual_id="64281"><math alttext="|x_{n}|\leq M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>M</mi></mrow></semantics></math></span> for all <span class="math-container" id="5568883" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span>.</p> <p>First, we show that <span class="math-container" id="5568884" visual_id="961"><math alttext="(x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> converges. </p> <p><strong>This is where I struggle</strong></p> <ul> <li>I tried showing by induction that <span class="math-container" id="5568885" visual_id="961"><math alttext="(x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> &lt; 1 for all <span class="math-container" id="5568886" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>** but it didn't work</li> <li>I also tried the ratio test...</li> </ul> <h2><strong>Second part</strong></h2> <p><strong>Claim</strong>  The real number <span class="math-container" id="5568887" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> satisfies the equation <span class="math-container" id="5568888" visual_id="1590615"><math alttext="2r^{3}-9+6=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>r</mi><mn>3</mn></msup></mrow><mo>-</mo><mn>9</mn></mrow><mo>+</mo><mn>6</mn></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p><em>Proof</em> - Since <span class="math-container" id="5568889" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> and <span class="math-container" id="5568890" visual_id="24510"><math alttext="x_{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></semantics></math></span> convergence to the same real number <span class="math-container" id="5568891" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span>, we can substitute <span class="math-container" id="5568892" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> in the equation for <span class="math-container" id="5568893" visual_id="24510"><math alttext="x_{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></semantics></math></span> when <span class="math-container" id="5568894" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> gets sufficiently large : </p> <p><span class="math-container" id="5568895" visual_id="1590616"><math alttext="\begin{aligned} \displaystyle x_{n+1}&amp;\displaystyle amp;=\frac{2}{9}(x_{n}^{3}% +3)\\ \displaystyle r&amp;\displaystyle amp;=\frac{2}{9}(r^{3}+3))\\ \displaystyle r&amp;\displaystyle amp;=\frac{2}{9}r^{3}+\frac{6}{9}\\ \displaystyle 0&amp;\displaystyle amp;=\frac{2}{9}r^{3}-r+\frac{6}{9}\\ \displaystyle 0&amp;\displaystyle amp;=2r^{3}-9r+6\quad\text{multiply by 9}\end{aligned}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>9</mn></mfrac></mstyle><mrow><mo stretchy="false">(</mo><msubsup><mi>x</mi><mi>n</mi><mn>3</mn></msubsup><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>r</mi></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>9</mn></mfrac></mstyle><mrow><mo stretchy="false">(</mo><msup><mi>r</mi><mn>3</mn></msup><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>r</mi></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>9</mn></mfrac></mstyle><msup><mi>r</mi><mn>3</mn></msup><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>6</mn><mn>9</mn></mfrac></mstyle></mrow></mtd></mtr><mtr><mtd columnalign="right"><mn>0</mn></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>9</mn></mfrac></mstyle><msup><mi>r</mi><mn>3</mn></msup><mo>-</mo><mi>r</mi><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>6</mn><mn>9</mn></mfrac></mstyle></mrow></mtd></mtr><mtr><mtd columnalign="right"><mn>0</mn></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mn>2</mn><msup><mi>r</mi><mn>3</mn></msup><mo>-</mo><mn>9</mn><mi>r</mi><mo>+</mo><mn>6</mn><mo separator="true"> </mo><mtext>multiply by 9</mtext></mrow></mtd></mtr></mtable></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span><span> analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1143226"> Good question! Thanks for showing some work and (especially) letting us know where you're struggling! +1 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="535632" id="answer">
+<p>To correct the first part, a sequence that is bounded need not converge (consider <span class="math-container" id="5568903" visual_id="12697"><math alttext="(-1)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></semantics></math></span>). What you <em>can</em> say is that the sequence converges if it is bounded and <em>monotone</em>. </p> <p>To show monotonicity, show that some <span class="math-container" id="5568904" visual_id="1590619"><math alttext="x_{k+1}&amp;gt;x_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&gt;</mo></mrow><msub><mi>x</mi><mi>k</mi></msub></mrow></semantics></math></span> (try the first two). Now use the fact that <span class="math-container" id="5568905" visual_id="80386"><math alttext="x_{n+1}&amp;gt;x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&gt;</mo></mrow><msub><mi>x</mi><mi>n</mi></msub></mrow></semantics></math></span> for some <span class="math-container" id="5568906" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> as your induction hypothesis and show the sequence is increasing in general. Vadim<span class="math-container" id="5568907" visual_id="3082"><math alttext="123" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>123</mn></semantics></math></span>'s argument gives you a clear upper bound. This guarantees convergence, and you have correctly solved the second part.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Simplifying $\frac{1}{\sqrt{-1}}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Simplifying <span class="math-container" id="12959241" visual_id="4216570"><math alttext="\frac{1}{\sqrt{-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1395310">
+<p>When trying to simplify <span class="math-container" id="12959242" visual_id="4216570"><math alttext="\frac{1}{\sqrt{-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac></semantics></math></span>, you could rationalize it: <span class="math-container" id="12959243" visual_id="9058732"><math alttext="\frac{1}{\sqrt{-1}}\cdot\frac{\sqrt{-1}}{\sqrt{-1}}=\frac{\sqrt{-1}}{-1}=-% \sqrt{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac><mo>⋅</mo><mfrac><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac></mrow><mo>=</mo><mfrac><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt><mrow><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mrow><mo>-</mo><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mrow></mrow></semantics></math></span> Or you could simplify it as one radical: <span class="math-container" id="12959244" visual_id="9058733"><math alttext="\frac{1}{\sqrt{-1}}=\frac{\sqrt{1}}{\sqrt{-1}}=\sqrt{\frac{1}{-1}}=\sqrt{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac><mo>=</mo><mfrac><msqrt><mn>1</mn></msqrt><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac><mo>=</mo><msqrt><mfrac><mn>1</mn><mrow><mo>-</mo><mn>1</mn></mrow></mfrac></msqrt><mo>=</mo><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mrow></semantics></math></span> These are obviously different answers. I'm pretty sure the first method is algebraically sound and the second method might not be because of maybe a branch cut. Could someone please explain why the answers are different, and which is correct?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> radicals </span><span> branch-cuts </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2840724"> I think the first method is correct. The second has problem when you identify <span class="math-container" id="12959245" visual_id="239482"><math alttext="1=\sqrt{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><msqrt><mn>1</mn></msqrt></mrow></semantics></math></span>. Note that <span class="math-container" id="12959246" visual_id="9058734"><math alttext="1=-\sqrt{-1}\sqrt{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mrow><mo>-</mo><mrow><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt><mo>⁢</mo><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mrow></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="2840763"> @GAVD <span class="math-container" id="12959247" visual_id="239482"><math alttext="1=\sqrt{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><msqrt><mn>1</mn></msqrt></mrow></semantics></math></span> is fine. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1395318" id="answer">
+<p>Note that <span class="math-container" id="12959248" visual_id="117784"><math alttext="\sqrt{ab}=\sqrt{a}\sqrt{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></msqrt><mo>=</mo><mrow><msqrt><mi>a</mi></msqrt><mo>⁢</mo><msqrt><mi>b</mi></msqrt></mrow></mrow></semantics></math></span> is true only for <span class="math-container" id="12959249" visual_id="21552"><math alttext="a\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="12959250" visual_id="33059"><math alttext="b\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span>. On the other hand, if <span class="math-container" id="12959251" visual_id="218832"><math alttext="a,b&amp;lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mrow><mi>b</mi><mo>&lt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>, then <span class="math-container" id="12959252" visual_id="9058735"><math alttext="\sqrt{ab}=\sqrt{(-a)(-b)}=\sqrt{-a}\sqrt{-b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></msqrt><mo>=</mo><msqrt><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt><mo>=</mo><mrow><msqrt><mrow><mo>-</mo><mi>a</mi></mrow></msqrt><mo>⁢</mo><msqrt><mrow><mo>-</mo><mi>b</mi></mrow></msqrt></mrow></mrow></semantics></math></span> <span class="math-container" id="12959253" visual_id="9058736"><math alttext="\sqrt{a}\sqrt{b}=i\sqrt{-a}\ \cdot i\sqrt{-b}=-\sqrt{-a}\sqrt{-b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msqrt><mi>a</mi></msqrt><mo>⁢</mo><msqrt><mi>b</mi></msqrt></mrow><mo>=</mo><mrow><mrow><mrow><mi>i</mi><mo>⁢</mo><mpadded width="+5pt"><msqrt><mrow><mo>-</mo><mi>a</mi></mrow></msqrt></mpadded></mrow><mo>⋅</mo><mi>i</mi></mrow><mo>⁢</mo><msqrt><mrow><mo>-</mo><mi>b</mi></mrow></msqrt></mrow><mo>=</mo><mrow><mo>-</mo><mrow><msqrt><mrow><mo>-</mo><mi>a</mi></mrow></msqrt><mo>⁢</mo><msqrt><mrow><mo>-</mo><mi>b</mi></mrow></msqrt></mrow></mrow></mrow></semantics></math></span></p> <p>Therefore the formula <span class="math-container" id="12959254" visual_id="9058737"><math alttext="\sqrt{a}=\sqrt{\frac{a}{b}}\sqrt{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>a</mi></msqrt><mo>=</mo><mrow><msqrt><mfrac><mi>a</mi><mi>b</mi></mfrac></msqrt><mo>⁢</mo><msqrt><mi>b</mi></msqrt></mrow></mrow></semantics></math></span> holds if and only if <span class="math-container" id="12959255" visual_id="4315"><math alttext="b\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> and (<span class="math-container" id="12959256" visual_id="2596271"><math alttext="\frac{a}{b}\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="12959257" visual_id="33059"><math alttext="b\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span>) if and only if <span class="math-container" id="12959258" visual_id="454597"><math alttext="ab&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="12959259" visual_id="18847"><math alttext="b&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>b</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span>. In your second proof, <span class="math-container" id="12959260" visual_id="292342"><math alttext="a=1,b=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>b</mi><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></mrow></semantics></math></span> does not satisfy the above condition.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="438"> Why <span class="math-container" id="4002" visual_id="573302"><math alttext="\sqrt{-1\times{-1}}\neq\sqrt{-1}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mo>-</mo><mn>1</mn><mo>×</mo><mo>-</mo><mn>1</mn></mrow></msqrt><mo>≠</mo><msup><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt><mn>2</mn></msup></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

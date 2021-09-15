@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to linearize this difficult constraint with binary variables?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to linearize this difficult constraint with binary variables? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2566930">
+<p>I would like to linearize the constraint <span class="math-container" id="23729202" visual_id="2579784"><math alttext="y_{i}\cdot q_{i}\leq y_{i}\cdot a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>⋅</mo><msub><mi>q</mi><mi>i</mi></msub></mrow><mo>≤</mo><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>⋅</mo><mi>a</mi></mrow></mrow></semantics></math></span> where <span class="math-container" id="23729203" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> is constant, <span class="math-container" id="23729204" visual_id="4621"><math alttext="y_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mi>i</mi></msub></semantics></math></span> is a binary variable and <span class="math-container" id="23729205" visual_id="338"><math alttext="q_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>q</mi><mi>i</mi></msub></semantics></math></span> is a continuous non negative variable.</p> <p>Thanks !</p>
+</div>
+<hr/>
+<div id="tags">
+<span> optimization </span><span> linear-programming </span><span> mathematical-modeling </span><span> mixed-integer-programming </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5297853"> What does that mean? </td></tr><tr><td comment_id="5297916"> @copper.hat Writing things in linear programming constraints </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2567006" id="answer">
+<p>Effectively <span class="math-container" id="23729206" visual_id="4621"><math alttext="y_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mi>i</mi></msub></semantics></math></span> implies <span class="math-container" id="23729207" visual_id="2579785"><math alttext="q_{i}\leq a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>i</mi></msub><mo>≤</mo><mi>a</mi></mrow></semantics></math></span>, which is <span class="math-container" id="23729208" visual_id="2579786"><math alttext="q_{i}\leq a\cdot y_{i}+M(1-y_{i})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>i</mi></msub><mo>≤</mo><mrow><mrow><mi>a</mi><mo>⋅</mo><msub><mi>y</mi><mi>i</mi></msub></mrow><mo>+</mo><mrow><mi>M</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msub><mi>y</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="23729209" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> is your favorite sufficiently-large small-M constant (i.e, what normally but dangerously is called a big-M constant).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5298999"> Thanks, I have edited your answer because my upper bound on <span class="math-container" id="23729210" visual_id="338"><math alttext="q_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>q</mi><mi>i</mi></msub></semantics></math></span> is more "significant" when  <span class="math-container" id="23729211" visual_id="59142"><math alttext="y_{i}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow></semantics></math></span> . I think it should work, don't you think? </td></tr><tr><td comment_id="5299092"> I don't see any change in your edit, so I can only assume I had a typo then in my initial version. </td></tr><tr><td comment_id="5299203"> I  multiplied <span class="math-container" id="23729212" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> by <span class="math-container" id="23729213" visual_id="4621"><math alttext="y_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mi>i</mi></msub></semantics></math></span>, that's indeed the change </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

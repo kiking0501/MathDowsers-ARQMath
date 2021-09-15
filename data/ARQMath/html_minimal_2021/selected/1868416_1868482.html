@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Combinatorial identity's algebraic proof without induction.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Combinatorial identity's algebraic proof without induction. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1868416">
+<p>How would you prove this combinatorial idenetity algebraically without induction?</p> <p><span class="math-container" id="17305072" visual_id="1019077"><math alttext="\sum_{k=0}^{n}{x+k\choose k}={x+n+1\choose n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>x</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span></p> <p>Thanks.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> binomial-coefficients </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1868482" id="answer">
+<p>Here is an algebraic approach. In order to do so it's convenient to use the <em>coefficient of</em> operator <span class="math-container" id="17305073" visual_id="168152"><math alttext="[z^{k}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><msup><mi>z</mi><mi>k</mi></msup><mo stretchy="false">]</mo></mrow></semantics></math></span> to denote the coefficient of <span class="math-container" id="17305074" visual_id="978"><math alttext="z^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>z</mi><mi>k</mi></msup></semantics></math></span> in a series. This way we can write e.g. \begin{align*} \binom{n}{k}=[z^k](1+z)^n \end{align*}</p> <blockquote> <p>We obtain </p> <p>\begin{align*} \sum_{k=0}^{n}\binom{x+k}{k}&amp;=\sum_{k=0}^{n}\binom{-x-1}{k}(-1)^k\tag{1}\\ &amp;=\sum_{k=0}^n[z^k](1+z)^{-x-1}(-1)^k \tag{2}\\ &amp;=[z^0]\frac{1}{(1+z)^{x+1}}\sum_{k=0}^n\left(-\frac{1}{ z }\right)^k\tag{3}\\ &amp;=[z^0]\frac{1}{(1+z)^{x+1}}\cdot \frac{1-\left(-\frac{1}{z}\right)^{n+1}}{1-\left(-\frac{1}{z}\right)}\tag{4}\\ &amp;=[z^n]\frac{z^{n+1}+(-1)^n}{(1+z)^{x+2}}\tag{5}\\ &amp;=(-1)^n[z^n]\sum_{k=0}^\infty\binom{-x-2}{k}z^k\tag{6}\\ &amp;=(-1)^n\binom{-x-2}{n}\tag{7}\\ &amp;=\binom{x+n+1}{n}\tag{8} \end{align*}   and the claim follows.</p> </blockquote> <p><em>Comment:</em></p> <ul> <li><p>In (1) we use  the binomial identity <span class="math-container" id="17305075" visual_id="214899"><math alttext="\binom{-p}{q}=\binom{p+q-1}{q}(-1)^{q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mo>-</mo><mi>p</mi></mrow><mi>q</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>p</mi><mo>+</mo><mi>q</mi></mrow><mo>-</mo><mn>1</mn></mrow><mi>q</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>q</mi></msup></mrow></mrow></semantics></math></span>.</p></li> <li><p>In (2) we apply the <em>coefficient of</em> operator.</p></li> <li><p>In (3) we do some rearrangements by using the linearity of the <em>coefficient of</em> operator  and  we also  use  the  rule \begin{align*} [z^{p-q}]A(z)=[z^p]z^{q}A(z) \end{align*}</p></li> <li><p>In (4) apply the formula for the <em><a href="https://en.wikipedia.org/wiki/Geometric_series#Formula" rel="nofollow">finite geometric series</a></em>.</p></li> <li><p>In (5) we do some simplifications and use again the rule stated in comment (3).</p></li> <li><p>In (6) we  use the <em><a href="https://en.wikipedia.org/wiki/Geometric_series#Geometric_power_series" rel="nofollow">geometric series expansion</a></em> of <span class="math-container" id="17305076" visual_id="1019078"><math alttext="\frac{1}{(1+z)^{x+2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></msup></mfrac></semantics></math></span>. Note that we can ignore the summand <span class="math-container" id="17305077" visual_id="361399"><math alttext="\operatorname{rank}(B)+\operatorname{Nullity}(B)=m." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>rank</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>Nullity</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi>m</mi></mrow><mo>.</mo></mrow></semantics></math></span> in the numerator since it has no contribution to the coefficient of <span class="math-container" id="17305078" visual_id="974"><math alttext="z^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>z</mi><mi>n</mi></msup></semantics></math></span>.</p></li> <li><p>In (7) we select the coefficient of <span class="math-container" id="17305079" visual_id="974"><math alttext="z^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>z</mi><mi>n</mi></msup></semantics></math></span>.</p></li> <li><p>In (8) we use the rule stated in comment (1) again.</p></li> </ul>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1490794"> Proof of the Hockey-Stick Identity: <span class="math-container" id="13788700" visual_id="678404"><math alttext="\sum\limits_{t=0}^{n}\binom{t}{k}=\binom{n+1}{k+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>t</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1868044"> The number of <span class="math-container" id="17301330" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>-tuples of nonnegative integers <span class="math-container" id="17301331" visual_id="10551"><math alttext="(x_{1},\ldots,x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> satisfying the equation <span class="math-container" id="17301332" visual_id="773922"><math alttext="x_{1}+\cdots+x_{n}=r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>r</mi></mrow></semantics></math></span> </td></tr><tr><td post_id="834829"> Prove summation related to cycles </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

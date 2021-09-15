@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>A curve whose image has positive measure</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> A curve whose image has positive measure </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="194472">
+<p>It is well-known that there are continuous curves <span class="math-container" id="2254743" visual_id="3085019"><math alttext="f:I\to\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>I</mi><mo>→</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> (where <span class="math-container" id="2254744" visual_id="8327"><math alttext="I\subset\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>⊂</mo><mi>ℝ</mi></mrow></semantics></math></span> is an interval) whose image have positive measure (e.g Peano curve). I have read somewhere that if we require the curve to be differentiable evrywhere then this cannot happen; but if we require it to be almost everywhere differentiable, then it can happen! How could one proceed to prove the first statement and give a counterexample for the second?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> differential-geometry </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="447499"> There is no discrepancy because there measure on <span class="math-container" id="2254745" visual_id="989"><math alttext="I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi></semantics></math></span> is not related to the measure on <span class="math-container" id="2254746" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span> for the purposes of this problem. </td></tr><tr><td comment_id="447501"> My first thought is that the standard Peano and Hilbert space-filling curves appear to be differentiable outside a countable set, being the limits of curves with only finitely many points of non-differentiability. </td></tr><tr><td comment_id="447502"> Yes I did not say there was a disreptancy, I just found the second statement counterintuitive. </td></tr><tr><td comment_id="447508"> @KevinCarlson: The (graphs of the) standard nowhere differentiable functions like the blancmange or Weierstrass functions (restricted to a bounded interval) are also uniform limits of curves with only finitely many points of non-differentiability. </td></tr><tr><td comment_id="447521"> @t.b. indeed. So much for the easy route. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="194477" id="answer">
+<p>The other direction is called (mini)-Sard's Theorem. Page 205 in Appendix 1 of Guilleman and Pollack, <em>Differential Topology</em>. The mini version is just this: Let <span class="math-container" id="2254796" visual_id="7"><math alttext="U" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi></semantics></math></span> be an open set of <span class="math-container" id="2254797" visual_id="61242"><math alttext="\mathbb{R}^{n}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo>,</mo></mrow></semantics></math></span> and let <span class="math-container" id="2254798" visual_id="162898"><math alttext="f:U\rightarrow\mathbb{R}^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>U</mi><mo>→</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow></mrow></semantics></math></span> be a smooth map. Then, if <span class="math-container" id="2254799" visual_id="1184039"><math alttext="m&amp;gt;n," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>m</mi><mo>&gt;</mo></mrow><mi>n</mi></mrow><mo>,</mo></mrow></semantics></math></span> we can conclude that <span class="math-container" id="2254800" visual_id="16127"><math alttext="f(U)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> has measure zero in <span class="math-container" id="2254801" visual_id="357651"><math alttext="\mathbb{R}^{m}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℝ</mi><mi>m</mi></msup><mo>.</mo></mrow></semantics></math></span></p> <p>The full Sard's Theorem is about critical points, while we make no demands about the relative dimensions. Let <span class="math-container" id="2254802" visual_id="2889"><math alttext="f:X\rightarrow Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span> be a smooth map of manifolds, and let <span class="math-container" id="2254803" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> be the set of critical points of <span class="math-container" id="2254804" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> in <span class="math-container" id="2254805" visual_id="38609"><math alttext="X." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>.</mo></mrow></semantics></math></span> Then <span class="math-container" id="2254806" visual_id="46755"><math alttext="f(C)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> has measure zero in <span class="math-container" id="2254807" visual_id="119359"><math alttext="Y." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>.</mo></mrow></semantics></math></span> </p> <p>They say their proof is almost verbatim from John W. Milnor, <em>Topology from the Differentiable Viewpoint.</em> It appears Guillemin and Pollack, also Milnor, assume <span class="math-container" id="2254808" visual_id="2542178"><math alttext="C^{\infty}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>.</mo></mrow></semantics></math></span> However, Milnor refers back to Pontryagin(1955), English translation (1959). Evidently  Pontryagin worked with weaker conditions, but we are not told what. <a href="http://en.wikipedia.org/wiki/Sard%27s_theorem" rel="nofollow">http://en.wikipedia.org/wiki/Sard%27s_theorem</a></p> <p>Alright, I've been looking stuff up elsewhere. The full Sard's theorem does depend on relative dimension. I currently think that mini-Sard make be true both for <span class="math-container" id="2254809" visual_id="13489"><math alttext="C^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>C</mi><mn>1</mn></msup></semantics></math></span> and for differentiable everywhere, which is a pretty weak hypothesis. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="447522"> Provided <span class="math-container" id="2254810" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is at least <span class="math-container" id="2254812" visual_id="13489"><math alttext="C^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>C</mi><mn>1</mn></msup></semantics></math></span> or some such regularity hypothesis. </td></tr><tr><td comment_id="447534"> @t.b., yes, thanks. It would appear the optimal result is Pontryagin (1955). I guess I can order a photocopy, but it takes a few days. </td></tr><tr><td comment_id="447543"> The regularity a<span class="math-container" id="4711671">s</span>sumption <span class="math-container" id="2254812" visual_id="13489"><math alttext="C^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>C</mi><mn>1</mn></msup></semantics></math></span> for mini-Sard is enough as proved already in Sard's [original paper](http://dx.doi.org/10.1090/S0002-9904-1942-07811-6), Theorem 4.1. I don't know off-hand how much this can be weakened. Whitney's example in *[A function not constant on a connected set of critical points](http://projecteuclid.org/euclid.dmj/1077489217)* is definitely worth having a look at. </td></tr><tr><td comment_id="447548"> @t.b. thanks. I've printed out Sard 1942, Thm. 4.1 says critical points. Critical point is when the rank of the matrix of first partials is smaller than both dimensions... </td></tr><tr><td comment_id="447550"> Oops... Guess it's bed time for me. Sorry about that. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="588130"> Holomorphic map containing <span class="math-container" id="6024577" visual_id="8120"><math alttext="\mathbb{T}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝕋</mi></semantics></math></span> in its image? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

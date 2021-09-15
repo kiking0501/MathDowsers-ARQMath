@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Can someone explain how to calculate the third order partial derivative of $f.$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Can someone explain how to calculate the third order partial derivative of <span class="math-container" id="9349424" visual_id="44483"><math alttext="f." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>.</mo></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="977410">
+<p><span class="math-container" id="9349425" visual_id="8051286"><math alttext="f(x,y)=\sin(xy)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> I calculated that <span class="math-container" id="9349426" visual_id="8051287"><math alttext="\dfrac{\partial^{2}f}{\partial x\,\partial y}=\dfrac{\partial^{2}f}{\partial y% \,\partial x}=\cos(xy)-xy\sin(xy)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mpadded width="+1.7pt"><mi>x</mi></mpadded></mrow><mo>⁢</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mrow></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mpadded width="+1.7pt"><mi>y</mi></mpadded></mrow><mo>⁢</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow></mfrac></mstyle><mo>=</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span>.</p> <p>I also calculated <span class="math-container" id="9349427" visual_id="8051288"><math alttext="\frac{\partial^{3}f}{\partial x^{2}\partial y}=-2y\sin(xy)-xy^{2}\cos(xy)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msup><mo>∂</mo><mn>3</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>⁢</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mrow></mfrac><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span> and  <span class="math-container" id="9349428" visual_id="8051289"><math alttext="\frac{\partial^{3}f}{\partial y^{2}\partial x}=-2x\sin(xy)-x^{2}y\cos(xy)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mrow><msup><mo>∂</mo><mn>3</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>⁢</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow></mfrac><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>-</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>However I am not sure whether this is the correct method to calculate the third order partial derivative because <span class="math-container" id="9349429" visual_id="8051290"><math alttext="\frac{\partial^{3}f}{\partial x^{2}\partial y}\neq\frac{\partial^{3}f}{% \partial y^{2}\partial x}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mrow><msup><mo>∂</mo><mn>3</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>⁢</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mrow></mfrac><mo>≠</mo><mfrac><mrow><msup><mo>∂</mo><mn>3</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>⁢</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow></mfrac></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Can someone explain how to calculate the third order partial derivative of <span class="math-container" id="9349430" visual_id="44483"><math alttext="f." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> derivatives </span><span> partial-derivative </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2003432"> You're doing fine. They're not supposed to be equal in general. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="977473" id="answer">
+<p>It will usually be the case that <span class="math-container" id="9349436" visual_id="8051293"><math alttext="\dfrac{\partial^{3}f}{\partial x^{2}\,\partial y}\neq\dfrac{\partial^{3}f}{% \partial y^{2}\,\partial x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>3</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mpadded width="+1.7pt"><msup><mi>x</mi><mn>2</mn></msup></mpadded></mrow><mo>⁢</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mrow></mfrac></mstyle><mo>≠</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>3</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mpadded width="+1.7pt"><msup><mi>y</mi><mn>2</mn></msup></mpadded></mrow><mo>⁢</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow></mfrac></mstyle></mrow></semantics></math></span>.  For this particular function, <span class="math-container" id="9349437" visual_id="545646"><math alttext="f(x,y)=\sin(xy)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, the variables <span class="math-container" id="9349438" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="9349439" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> play symmetrical roles.  A consequence is that <span class="math-container" id="9349440" visual_id="8051294"><math alttext="\dfrac{\partial^{3}f}{\partial x^{2}\,\partial y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>3</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mpadded width="+1.7pt"><msup><mi>x</mi><mn>2</mn></msup></mpadded></mrow><mo>⁢</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mrow></mfrac></mstyle></semantics></math></span> will differ from <span class="math-container" id="9349441" visual_id="4491342"><math alttext="\dfrac{\partial^{3}f}{\partial y^{2}\,\partial x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>3</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mpadded width="+1.7pt"><msup><mi>y</mi><mn>2</mn></msup></mpadded></mrow><mo>⁢</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow></mfrac></mstyle></semantics></math></span> only in that <span class="math-container" id="9349442" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="9349443" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> get interchanged.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Intervals and plotting functions</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Intervals and plotting functions </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1434818">
+<p>I am having a problem with this task. I am asked to plot two functions:</p> <p><span class="math-container" id="13309722" visual_id="5405592"><math alttext="f_{1}(x)=\dfrac{x^{2}-7}{x+\sqrt{7}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>f</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>7</mn></mrow><mrow><mi>x</mi><mo>+</mo><msqrt><mn>7</mn></msqrt></mrow></mfrac></mstyle></mrow></semantics></math></span> and  <span class="math-container" id="13309723" visual_id="5405593"><math alttext="f_{2}(x)=\dfrac{x^{2}-7}{x+2.645751311}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>f</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>7</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>2.645751311</mn></mrow></mfrac></mstyle></mrow></semantics></math></span></p> <p>and i am asked to plot these functions with x in the interval [-2.6458 .. -2.6457] and describe what i am seeing. I get this output:</p> <p>I don't have enough reputation to post images but i get these outputs for function 1 and 2:</p> <p><a href="https://i.stack.imgur.com/14xN6.png" rel="nofollow noreferrer">http://i.stack.imgur.com/14xN6.png</a></p> <p><a href="https://i.stack.imgur.com/PjQ04.png" rel="nofollow noreferrer">http://i.stack.imgur.com/PjQ04.png</a></p> <p>What am i supposed to be seeing? I see that <span class="math-container" id="13309724" visual_id="576"><math alttext="f_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>1</mn></msub></semantics></math></span> seems pretty normal but <span class="math-container" id="13309725" visual_id="578"><math alttext="f_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>2</mn></msub></semantics></math></span> seems to do a wierd cross.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> functions </span><span> graphing-functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2922843"> Can you see that <span class="math-container" id="13309726" visual_id="5405594"><math alttext="\sqrt{7}\approx 2.645751311" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>7</mn></msqrt><mo>≈</mo><mn>2.645751311</mn></mrow></semantics></math></span>? </td></tr><tr><td comment_id="2922847"> Yes, but the functions give different plots. Why does f2 give make a cross in the interval when i plot it? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1434838" id="answer">
+<p>The two functions give you different graphs, although their formulas are pretty close. Why? This is what the problem asks you to figure out. </p> <p>Try to factor function <span class="math-container" id="13309735" visual_id="576"><math alttext="f_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>1</mn></msub></semantics></math></span> and see if cancellation occurs to simplify it. Notice that a function usually goes to <span class="math-container" id="13309736" visual_id="13217"><math alttext="\pm\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> at the point where the denominator equals zero. This happens for function <span class="math-container" id="13309737" visual_id="578"><math alttext="f_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>2</mn></msub></semantics></math></span>. What is special about function <span class="math-container" id="13309738" visual_id="576"><math alttext="f_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>1</mn></msub></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

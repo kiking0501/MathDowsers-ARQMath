@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that $\langle 2,x \rangle$ is not a principal ideal in $\mathbb Z [x]$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that <span class="math-container" id="374581" visual_id="1560025"><math alttext="\langle 2,x\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>2</mn><mo>,</mo><mi>x</mi><mo stretchy="false">⟩</mo></mrow></semantics></math></span> is not a principal ideal in <span class="math-container" id="374582" visual_id="3381"><math alttext="\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="36169">
+<p>Hi I don't know how to show that <span class="math-container" id="374583" visual_id="1560025"><math alttext="\langle 2,x\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>2</mn><mo>,</mo><mi>x</mi><mo stretchy="false">⟩</mo></mrow></semantics></math></span> is not principal and the definition of a principal ideal is unclear to me. I need help on this, please. </p> <p>The ring that I am talking about is <span class="math-container" id="374584" visual_id="3381"><math alttext="\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> so <span class="math-container" id="374585" visual_id="1560025"><math alttext="\langle 2,x\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>2</mn><mo>,</mo><mi>x</mi><mo stretchy="false">⟩</mo></mrow></semantics></math></span> refers to <span class="math-container" id="374586" visual_id="1750454"><math alttext="2g(x)+xf(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="374587" visual_id="1754"><math alttext="g(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, <span class="math-container" id="374588" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> belongs to <span class="math-container" id="374589" visual_id="3381"><math alttext="\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> ring-theory </span><span> ideals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="36171" id="answer">
+<p>An ideal <span class="math-container" id="374768" visual_id="1449946"><math alttext="\langle a_{1},\dots,a_{k}\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>k</mi></msub><mo stretchy="false">⟩</mo></mrow></semantics></math></span> is the smallest ideal containing these elements, explicitly the set of all linear combinations <span class="math-container" id="374769" visual_id="1750501"><math alttext="r_{1}a_{1}+\dots+r_{k}a_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>a</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>r</mi><mi>k</mi></msub><mo>⁢</mo><msub><mi>a</mi><mi>k</mi></msub></mrow></mrow></semantics></math></span> where the <span class="math-container" id="374770" visual_id="570"><math alttext="r_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>i</mi></msub></semantics></math></span> are arbitrary elements from the ring.</p> <p>A principal ideal is an ideal that can be generated by a single element.</p> <p>So first of all, you have to say which ring you are looking at to have a definite question.</p> <p>Now, you could comment on whether you understand this definition of principal ideal.</p> <p>If the ideal <span class="math-container" id="374771" visual_id="1560025"><math alttext="\langle 2,x\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>2</mn><mo>,</mo><mi>x</mi><mo stretchy="false">⟩</mo></mrow></semantics></math></span> were principal, the generator would have to divide 2. What are the integer polynomial divisors of 2?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="78907"> I think that definition that you gave sounds like something that he would've said but it's not really enough of a criteria to show that something is a principal ideal. The way he did it was try to prove by contradiction that there's no generator <z> where <z> = &lt;2,x&gt; but he got stuck on that step. </z></z></td></tr><tr><td comment_id="78908"> But of course, it is enough to show something if it is well-defined. </td></tr><tr><td comment_id="78911"> The integer polynomial divisors of 2? 2 factors as a(x)b(x) = 2*1. I guess you're trying to say that the generator has to be &lt;2&gt; or &lt;1&gt;? Are all principal ideals supposed to be prime? </td></tr><tr><td comment_id="78951"> Yes, the generator has to be 2 or 1. Now, if you can exclude the two cases, you see that there is no single generator.   Second question: No, principal ideals are not prime in general. Think of the ideal <span class="math-container" id="374772" visual_id="547005"><math alttext="\langle 6\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>6</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> in <span class="math-container" id="374773" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> and the reason *why* they are called prime ideals. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1335684"> Why is <span class="math-container" id="12413885" visual_id="14635"><math alttext="(2,x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> non-principal in <span class="math-container" id="12413886" visual_id="3381"><math alttext="\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="2377573"> An integral domain that is not a principal ideal domain </td></tr><tr><td post_id="1314697"> Prove <span class="math-container" id="12226724" visual_id="989"><math alttext="I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi></semantics></math></span> is non-principal ideal of <span class="math-container" id="12226725" visual_id="3381"><math alttext="\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="1074958"> Why <span class="math-container" id="10156060" visual_id="3381"><math alttext="\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> is not Principal Ideal Domain </td></tr><tr><td post_id="2097008"> <span class="math-container" id="19391712" visual_id="14635"><math alttext="(2,x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> is not a principal ideal of the ring <span class="math-container" id="19391713" visual_id="3381"><math alttext="\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="2794586"> Proving the ideal <span class="math-container" id="25787325" visual_id="7448406"><math alttext="I=\{f(x)\in\mathbb{Z}[x]|f(0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>ℤ</mi><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">|</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is even<span class="math-container" id="25787326" visual_id="6865"><math alttext="\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo stretchy="false">}</mo></semantics></math></span> is not principal in the ring <span class="math-container" id="25787327" visual_id="67004"><math alttext="R=\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="629950"> Why <span class="math-container" id="6396194" visual_id="6069244"><math alttext="I=\left\{p(x)\in\mathbb{Z}\left[X\right]:2\mid p(0)\right\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mrow><mo>{</mo><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo>[</mo><mi>X</mi><mo>]</mo></mrow></mrow></mrow><mo>:</mo><mrow><mn>2</mn><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>}</mo></mrow></mrow></semantics></math></span> is not a principal ideal? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1547718"> Polynomials with even constant term form an ideal in <span class="math-container" id="14297242" visual_id="3381"><math alttext="\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1741574"> A Bézout UFD is a PID. </td></tr><tr><td post_id="38858"> Abstract Algebra proof for quadratic extensions </td></tr><tr><td post_id="1788044"> Example of an ideal which is not principal in the ring <span class="math-container" id="16518789" visual_id="3381"><math alttext="\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="110708"> The ideal <span class="math-container" id="1280503" visual_id="7388498"><math alttext="I=\langle x,y\rangle\subset k[x,y]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mo>⊂</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span> is not principal </td></tr><tr><td post_id="26837"> Do odd imaginary numbers exist? </td></tr><tr><td post_id="1030261"> Example of finitely generated Z[x]-module which is not a direct sum of cyclic modules </td></tr><tr><td post_id="1872667"> Non-principal ideal in <span class="math-container" id="17347950" visual_id="56363"><math alttext="K[x,y]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="1559901"> Proof verification: <span class="math-container" id="14406310" visual_id="1560025"><math alttext="\langle 2,x\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mn>2</mn><mo>,</mo><mi>x</mi><mo stretchy="false">⟩</mo></mrow></semantics></math></span> is a prime, not principal ideal </td></tr><tr><td post_id="917821"> How to prove or disprove PID (or ED)? </td></tr><tr><td post_id="38847"> What does <span class="math-container" id="402338" visual_id="1759071"><math alttext="\langle x,3\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mn>3</mn><mo stretchy="false">⟩</mo></mrow></semantics></math></span> mean if I'm talking about <span class="math-container" id="402339" visual_id="3381"><math alttext="\mathbb{Z}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

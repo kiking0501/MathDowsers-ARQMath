@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Algebraic proof of non-trivial solution to the Pell's equation</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Algebraic proof of non-trivial solution to the Pell's equation </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2288007">
+<p>Let <span class="math-container" id="21139528" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> be a square-free positive integer, and consider the pairs <span class="math-container" id="21139529" visual_id="164193"><math alttext="(x,y)\in\mathbb{Z}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>ℤ</mi><mn>2</mn></msup></mrow></semantics></math></span> that satisfy:</p> <p><span class="math-container" id="21139530" visual_id="83794"><math alttext="x^{2}-dy^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p> <p>The existence of a non-trivial solution to this equation (i.e. distinct from <span class="math-container" id="21139531" visual_id="101971"><math alttext="(\pm 1,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>) is equivalent to showing existence of a torsion-free unit in <span class="math-container" id="21139532" visual_id="7414"><math alttext="\mathbb{Z}[\sqrt{d}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msqrt><mi>d</mi></msqrt><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>. All proofs I've seen of this fact uses the Dirichlet Approximation Theorem, and then follows by consecutive applications of the Pigeonhole Principle. But the group of units in <span class="math-container" id="21139533" visual_id="7414"><math alttext="\mathbb{Z}[\sqrt{d}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msqrt><mi>d</mi></msqrt><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> is a purely algebraic construction, so I wonder if it's possible to prove this fact without resorting to the approximation theorem. Is there a known "algebraic" proof of this?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> number-theory </span><span> algebraic-number-theory </span><span> pell-type-equations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4708234"> I got my pages copied out of Stillwell, he does periodicity of the "river" directly, page 98.  I would call it about 30 pages you need to understand, particularly learn to draw the pictures yourself; it is all completely elementary, just detailed and quite visual. He does the pigeonhole argument first, you say you are familiar with that. </td></tr><tr><td comment_id="4710639"> Perhaps constructing a unit directly using the method of continued fractions turns out to be both elementary and algebraic, cf. http://mathworld.wolfram.com/PellEquation.html </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2288277" id="answer">
+<p>Assume that <span class="math-container" id="21139555" visual_id="8617584"><math alttext="d=p\equiv 1\bmod 4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>p</mi><mo>≡</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>4</mn></mrow></mrow></semantics></math></span> is a prime number. The field of <span class="math-container" id="21139556" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>-th roots of unity contains the real quadratic number field  <span class="math-container" id="21139557" visual_id="8617585"><math alttext="k={\mathbb{Q}}(\sqrt{p})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mi>p</mi></msqrt><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. The norm of the cyclotomic unit <span class="math-container" id="21139558" visual_id="1499634"><math alttext="1+\zeta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>ζ</mi></mrow></semantics></math></span> is a unit in <span class="math-container" id="21139559" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, and you will have an algebraic proof of the solvability of the Pell equation if you can show that this unit is not <span class="math-container" id="21139560" visual_id="7609"><math alttext="\pm 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>±</mo><mn>1</mn></mrow></semantics></math></span>. This must be east to prove using the sine function (this proof is due to Dirichlet).</p> <p>If you want to avoid transcendental function, you will have to invoke congruences, but I haven't checked how far this will get you. Things will get more technical in general; for primes <span class="math-container" id="21139561" visual_id="123886"><math alttext="p\equiv 3\bmod 4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≡</mo><mrow><mn>3</mn><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>4</mn></mrow></mrow></semantics></math></span> you already have to look at the field of <span class="math-container" id="21139562" visual_id="68700"><math alttext="4p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>⁢</mo><mi>p</mi></mrow></semantics></math></span>-th roots of unity. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="228356"> How to find solutions of <span class="math-container" id="2564158" visual_id="57638"><math alttext="x^{2}-3y^{2}=-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>2</mn></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="2287205"> Existence of a fundamental solution to the Pell's equation </td></tr><tr><td post_id="742181"> Find all integer solutions for the equation <span class="math-container" id="7371889" visual_id="57641"><math alttext="|5x^{2}-y^{2}|=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mn>5</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>-</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="822503"> Positive integer <span class="math-container" id="8056693" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> such that <span class="math-container" id="8056694" visual_id="3954"><math alttext="2n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> , <span class="math-container" id="8056695" visual_id="72068"><math alttext="3n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> are both perfect squares </td></tr><tr><td post_id="739752"> how to solve binary form <span class="math-container" id="7351017" visual_id="57640"><math alttext="ax^{2}+bxy+cy^{2}=m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mi>m</mi></mrow></semantics></math></span>, for integer and rational <span class="math-container" id="7351018" visual_id="66"><math alttext="(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> </td></tr><tr><td post_id="487051"> Why can't the Alpertron solve this Pell-like equation? </td></tr><tr><td post_id="342284"> Generate solutions of Quadratic Diophantine Equation </td></tr><tr><td post_id="680972"> If <span class="math-container" id="6843388" visual_id="4935215"><math alttext="(m,n)\in\mathbb{Z}_{+}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msubsup><mi>ℤ</mi><mo>+</mo><mn>2</mn></msubsup></mrow></semantics></math></span> satisfies <span class="math-container" id="6843389" visual_id="3393966"><math alttext="3m^{2}+m=4n^{2}+n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><mo>+</mo><mi>m</mi></mrow><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mi>n</mi></mrow></mrow></semantics></math></span> then <span class="math-container" id="6843390" visual_id="26600"><math alttext="(m-n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>-</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> is a perfect square. </td></tr><tr><td post_id="512621"> Finding all solutions of the Pell-type equation <span class="math-container" id="5360304" visual_id="57639"><math alttext="x^{2}-5y^{2}=-4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>5</mn><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>4</mn></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1091310"> Infinitely many systems of <span class="math-container" id="10309106" visual_id="3054"><math alttext="23" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>23</mn></semantics></math></span> consecutive integers </td></tr><tr><td post_id="1599211"> Solutions to Diophantine Equations </td></tr><tr><td post_id="1719280"> Does the Pell-like equation <span class="math-container" id="15882798" visual_id="912670"><math alttext="X^{2}-dY^{2}=k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>X</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>Y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mi>k</mi></mrow></semantics></math></span> have a simple recursion like <span class="math-container" id="15882799" visual_id="912671"><math alttext="X^{2}-dY^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>X</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>Y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>? </td></tr><tr><td post_id="1078450"> Maps of primitive vectors and Conway's river, has anyone built this in SAGE? </td></tr><tr><td post_id="1772594"> Find all natural numbers <span class="math-container" id="16371649" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> such that <span class="math-container" id="16371650" visual_id="1300580"><math alttext="21n^{2}-20" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>21</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>-</mo><mn>20</mn></mrow></semantics></math></span> is a perfect square. </td></tr><tr><td post_id="1404023"> Solving the equation <span class="math-container" id="13043544" visual_id="57644"><math alttext="x^{2}-7y^{2}=-3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>7</mn><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>3</mn></mrow></mrow></semantics></math></span> over integers </td></tr><tr><td post_id="1221178"> Small integral representation as <span class="math-container" id="11419526" visual_id="57643"><math alttext="x^{2}-2y^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> in Pell's equation </td></tr><tr><td post_id="1667323"> How to prove that the roots of this equation are integers? </td></tr><tr><td post_id="1132187"> Solve the following equation for x and y: </td></tr><tr><td post_id="81917"> Another quadratic Diophantine equation: How do I proceed? </td></tr><tr><td post_id="1132799"> Finding integers of the form <span class="math-container" id="10670507" visual_id="57642"><math alttext="3x^{2}+xy-5y^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>-</mo><mrow><mn>5</mn><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> where <span class="math-container" id="10670508" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="10670509" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> are integers, using diagram via arithmetic progression </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

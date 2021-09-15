@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Baire Category theorem - Determining First or Second Category</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Baire Category theorem - Determining First or Second Category </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1304740">
+<p>I don't have a mathematician background (I am an engineer). I understand some concepts but the Baire Category theorem and the ideas of first and second category are still very abstract for me.</p> <p>I have to show the following:</p> <blockquote> <p><strong>1.</strong> Of what category is the set of all rational numbers: </p> <p><strong>a.</strong> in <span class="math-container" id="12136805" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>?</p> <p><strong>b.</strong> in itself (taken with the usual metric)?</p> <p><strong>2.</strong> Of what category is the set of all integers: </p> <p><strong>a.</strong> in <span class="math-container" id="12136806" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>?</p> <p><strong>b.</strong> in itself (taken with the metric induced from <span class="math-container" id="12136807" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>)?</p> </blockquote> <p>In both of the problems (b), <strong>why does the metric affect the problem?</strong></p> <p>Thanks for your time!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> functional-analysis </span><span> baire-category </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2649747"> By "of what cathegory ", do you mean "open or closed"? </td></tr><tr><td comment_id="2649774"> He means first category or second category in the sense of Baire. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1304777" id="answer">
+<p>A set is of first category if it can be written as a countable union of sets whose closure has empty interior. (A set whose closure has empty interior is commonly called <em>nowhere dense</em>, but I won't use this term in the remainder of this answer.) Otherwise it is of second category. If you aren't already familiar, the closure of a set <span class="math-container" id="12136808" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is the smallest closed set which contains <span class="math-container" id="12136809" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>; the interior of <span class="math-container" id="12136810" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is the largest open set which is contained in <span class="math-container" id="12136811" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>. If you're not familiar with, for instance, how you can think of <span class="math-container" id="12136812" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> as a subset of <span class="math-container" id="12136813" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> vs. <span class="math-container" id="12136814" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> as a subset of itself with the topology inherited from <span class="math-container" id="12136815" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>, I would suggest you look up the term "subspace topology".</p> <p>Let's look at the part about the integers. Purely in set theory (no topology here), we can write <span class="math-container" id="12136816" visual_id="5126807"><math alttext="\mathbb{Z}=\bigcup_{n=-\infty}^{\infty}\{n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>=</mo><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>=</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span>, which is a countable union. </p> <p>In the topology of <span class="math-container" id="12136817" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>, the closure of <span class="math-container" id="12136818" visual_id="163538"><math alttext="\{n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> is <span class="math-container" id="12136819" visual_id="163538"><math alttext="\{n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> and the interior of <span class="math-container" id="12136820" visual_id="163538"><math alttext="\{n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> is <span class="math-container" id="12136821" visual_id="1611"><math alttext="\emptyset" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∅</mi></semantics></math></span> (because <span class="math-container" id="12136822" visual_id="163538"><math alttext="\{n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> does not contain any intervals). So we've shown that <span class="math-container" id="12136823" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> is of first category as a subset of <span class="math-container" id="12136824" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>. </p> <p>In the topology of <span class="math-container" id="12136825" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>, the closure of <span class="math-container" id="12136826" visual_id="163538"><math alttext="\{n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> is still <span class="math-container" id="12136827" visual_id="163538"><math alttext="\{n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span>. However, in the topology of <span class="math-container" id="12136828" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>, sets with only one element are actually open as well as closed. You can see this because <span class="math-container" id="12136829" visual_id="5126808"><math alttext="\{n\}=\{m\in\mathbb{Z}:|m-n|&amp;lt;1/2\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>m</mi><mo>∈</mo><mi>ℤ</mi></mrow><mo>:</mo><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>m</mi><mo>-</mo><mi>n</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>, which is the intersection of an open interval with <span class="math-container" id="12136830" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span>. This means that the interior of <span class="math-container" id="12136831" visual_id="163538"><math alttext="\{n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> is <span class="math-container" id="12136832" visual_id="163538"><math alttext="\{n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span>. That is, we have written <span class="math-container" id="12136833" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> as a countable union of sets, but the closures of these sets do not have empty interior. The Baire category theorem says that in fact you <em>cannot</em> write <span class="math-container" id="12136834" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> as a countable union of sets whose closure has empty interior, because <span class="math-container" id="12136835" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> is a complete metric space.</p> <p>The situation is different for <span class="math-container" id="12136836" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span>, which is <em>not</em> a complete metric space (its completion is <span class="math-container" id="12136837" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>). As a result the answer to 1b turns out to be different than the answer to 2b.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

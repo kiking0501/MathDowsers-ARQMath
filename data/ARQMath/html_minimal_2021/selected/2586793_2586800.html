@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Defining the Exponential Function: Existence of a Nontrivial Solution to a Differential Equation</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Defining the Exponential Function: Existence of a Nontrivial Solution to a Differential Equation </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2586793">
+<p>In the Spivak Calculus textbook, they show multiple ways of defining the exponential function. In one of the exercises they show that the exponential function can be defined as the unique function satisfying the following conditions: \begin{align*} f'&amp;=f\\ f(0)&amp;=1 \end{align*} The exercise shows that there is at most one function satisfying these conditions. It also manages to show the existence of such a function given that there exists a nonzero solution to  <span class="math-container" id="23919493" visual_id="60530"><math alttext="f^{\prime}=f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>=</mo><mi>f</mi></mrow></semantics></math></span> Similarly, the textbook shows that you can define the sine function as the unique function satisfying the following conditions:  \begin{align*} f''+f&amp;=0\\ f(0)&amp;=0\\ f'(0)&amp;=1 \end{align*} Again, the textbook shows that there exists at most one solution and shows the existence of a solution given a nonzero solution to <span class="math-container" id="23919494" visual_id="309350"><math alttext="f^{\prime\prime}+f=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>+</mo><mi>f</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> My question is, without explicitly finding a solution to the above differential equations, is it possible to show that there must exist a nonzero solution for each equation?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> ordinary-differential-equations </span><span> exponential-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5341678"> I think Spivak has given sufficient hints in the exercises to show that the solutions to these equations exist. </td></tr><tr><td comment_id="5341773"> For the exponential function see this answer: https://math.stackexchange.com/a/1292586/72031 For circular functions see this blog post: http://paramanands.blogspot.com/2016/03/theories-of-circular-functions-part-3.html In both these case a solution is explicitly created using integrals. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2586800" id="answer">
+<p>i would write <span class="math-container" id="23919495" visual_id="3700748"><math alttext="\frac{df}{dx}=f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mi>f</mi></mrow></semantics></math></span> and for <span class="math-container" id="23919496" visual_id="21039"><math alttext="f\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> we obtain <span class="math-container" id="23919497" visual_id="3700749"><math alttext="\frac{df}{f}=dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mi>f</mi></mfrac><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span> integrating this we get <span class="math-container" id="23919498" visual_id="3700750"><math alttext="\ln(|f(x)|)=x+C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">|</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mi>C</mi></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1291511"> Are the any non-trivial functions where <span class="math-container" id="12017005" visual_id="2479"><math alttext="f(x)=f^{\prime}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> not of the form <span class="math-container" id="12017006" visual_id="444137"><math alttext="Ae^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⁢</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

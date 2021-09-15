@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>$\frac{\sin(\frac{1}{3}x)}{x}$ as x approaches zero</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> <span class="math-container" id="8344573" visual_id="7037905"><math alttext="\frac{\sin(\frac{1}{3}x)}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac></semantics></math></span> as x approaches zero </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="857834">
+<p>I know it's not direct substitution cause i end up with zero. kindly, explain it too please thank you </p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1769682"> is that the limit or is it <span class="math-container" id="8344577" visual_id="7037906"><math alttext="\lim_{x\to 0}\frac{\sin\left(\frac{1}{3x}\right)}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>)</mo></mrow></mrow><mi>x</mi></mfrac></mrow></semantics></math></span> </td></tr><tr><td comment_id="1769684"> Write it as <span class="math-container" id="8344575" visual_id="7037907"><math alttext="{1\over 3}\cdot{\sin(x/3)\over x/3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>/</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>x</mi><mo>/</mo><mn>3</mn></mrow></mfrac></mrow></semantics></math></span> and use a well-known limit. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="857847" id="answer">
+<p>Using the <em>classic</em> limit <span class="math-container" id="8344598" visual_id="5777"><math alttext="\lim_{x\to 0}\frac{\sin x}{x}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and the substitution <span class="math-container" id="8344599" visual_id="935894"><math alttext="y=\frac{x}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>x</mi><mn>3</mn></mfrac></mrow></semantics></math></span> we have</p> <p><span class="math-container" id="8344600" visual_id="7037914"><math alttext="\lim_{x\to 0}\frac{\sin\left(\frac{x}{3}\right)}{x}=\frac{1}{3}\lim_{x\to 0}% \frac{\sin\left(\frac{x}{3}\right)}{\frac{x}{3}}=\frac{1}{3}\lim_{y\to 0}\frac% {\sin(y)}{y}=\frac{1}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi>x</mi><mn>3</mn></mfrac><mo>)</mo></mrow></mrow><mi>x</mi></mfrac></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mrow><msub><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mi>x</mi><mn>3</mn></mfrac><mo>)</mo></mrow></mrow><mfrac><mi>x</mi><mn>3</mn></mfrac></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mrow><msub><mo>lim</mo><mrow><mi>y</mi><mo>→</mo><mn>0</mn></mrow></msub><mo>⁡</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mi>y</mi></mfrac></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>GRE quant question (hard)</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> GRE quant question (hard) </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2697137">
+<p>I got this question from the GRE book. </p> <p>Central state college has three sections of Math 102. If four students, Bill, Jill,  Phill, and Will decide to transfer from Math 101 into Math 102, in how many ways can the four students be assigned to the three sections, if each section must receive at least on new student? </p> <p>A)12  B)18  C)24 D)27  E)36 </p> <p>I don't know how to solve this question, and I don't have a solution. Could you help me do this? </p> <p>Thank you in advance. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> permutations </span><span> gre-exam </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5570649"> If you don't add even a simulacrum of an attempt to solve the problem, your question will be deleted very shortly. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2697150" id="answer">
+<p>If there is no restriction that we must assign at least one new student to each section, then there are <span class="math-container" id="24899989" visual_id="77286"><math alttext="3^{4}=81" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>3</mn><mn>4</mn></msup><mo>=</mo><mn>81</mn></mrow></semantics></math></span> possibilities. (Consider the function from the set of students to the set of sections.) </p> <p>Now we will rule out the possibility that there is a section with no new student. Consider the case to choose one section and put students into other two sections. There are <span class="math-container" id="24899990" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> sections and <span class="math-container" id="24899991" visual_id="4458"><math alttext="2^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>4</mn></msup></semantics></math></span> ways to assign students to remaining sections. Hence we must rule out <span class="math-container" id="24899992" visual_id="1209592"><math alttext="48=3\cdot 2^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>48</mn><mo>=</mo><mrow><mn>3</mn><mo>⋅</mo><msup><mn>2</mn><mn>4</mn></msup></mrow></mrow></semantics></math></span> cases...</p> <p>No. We must consider there are double-counted cases. Can you find the cases which is double-counted?</p> <blockquote class="spoiler"> <p> Answer: The case when we assign all students to one section.</p> </blockquote> <p>We must rull out these cases, and there are <span class="math-container" id="24899993" visual_id="1209593"><math alttext="3\cdot 1^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>⋅</mo><msup><mn>1</mn><mn>4</mn></msup></mrow></semantics></math></span> such cases.</p> <p>Hence the answer is <span class="math-container" id="24899994" visual_id="1209594"><math alttext="3^{4}-(3\cdot 2^{4}-3\cdot 1^{4})=36" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>3</mn><mn>4</mn></msup><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>3</mn><mo>⋅</mo><msup><mn>2</mn><mn>4</mn></msup></mrow><mo>-</mo><mrow><mn>3</mn><mo>⋅</mo><msup><mn>1</mn><mn>4</mn></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>36</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

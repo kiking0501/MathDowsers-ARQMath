@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Expected Number of Coin Tosses to Get Five Consecutive Heads</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Expected Number of Coin Tosses to Get Five Consecutive Heads </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="364038">
+<p>A fair coin is tossed repeatedly until 5 consecutive heads occurs. </p> <p>What is the expected number of coin tosses?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> contest-math </span><span> expected-value </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="781652"> Yet another copy and paste from Brilliant.org: https://brilliant.org/i/5rCgJ3/ </td></tr><tr><td comment_id="781881"> @ErickWong: Is this a recent problem on brilliant.org? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="455568" id="answer">
+<p>Lets calculate it for <span class="math-container" id="3884670" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> consecutive tosses the expected number of tosses needed.</p> <p>Lets denote <span class="math-container" id="3884671" visual_id="13377"><math alttext="E_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>n</mi></msub></semantics></math></span> for <span class="math-container" id="3884672" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> consecutive heads. Now if we get one more head after <span class="math-container" id="3884673" visual_id="417678"><math alttext="E_{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></semantics></math></span>, then we have <span class="math-container" id="3884674" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> consecutive heads or if it is a tail then again we have to repeat the procedure.</p> <p>So for the two scenarios: </p> <ol> <li><span class="math-container" id="3884675" visual_id="1496880"><math alttext="E_{n-1}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>1</mn></mrow></semantics></math></span></li> <li><span class="math-container" id="3884676" visual_id="1496881"><math alttext="E_{n}{+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>+</mo><mn>1</mn></mrow></semantics></math></span> (<span class="math-container" id="3884677" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> for a tail)</li> </ol> <p>So, <span class="math-container" id="3884678" visual_id="1496882"><math alttext="E_{n}=\frac{1}{2}(E_{n-1}+1)+\frac{1}{2}(E_{n-1}+E_{n}+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>E</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>E</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>E</mi><mi>n</mi></msub><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>, so <span class="math-container" id="3884679" visual_id="1496883"><math alttext="E_{n}=2E_{n-1}+2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>E</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mn>2</mn></mrow></mrow></semantics></math></span>.</p> <p>We have the general recurrence relation. Define <span class="math-container" id="3884680" visual_id="1496884"><math alttext="f(n)=E_{n}+2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>+</mo><mn>2</mn></mrow></mrow></semantics></math></span> with <span class="math-container" id="3884681" visual_id="74693"><math alttext="f(0)=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span>. So, </p> <p>\begin{align} f(n)&amp;=2f(n-1) \\ \implies f(n)&amp;=2^{n+1} \end{align}</p> <p>Therefore, <span class="math-container" id="3884682" visual_id="1496885"><math alttext="E_{n}=2^{n+1}-2=2(2^{n}-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>2</mn></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>For <span class="math-container" id="3884683" visual_id="5413"><math alttext="n=5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow></semantics></math></span>, it will give us <span class="math-container" id="3884684" visual_id="1496886"><math alttext="2(2^{5}-1)=62" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>62</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4883133"> Amazing solution, thank you </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="2010042"> Show that <span class="math-container" id="18610963" visual_id="9315113"><math alttext="E(X_{n})=\sum_{k=1}^{n}p^{-k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msup><mi>p</mi><mrow><mo>-</mo><mi>k</mi></mrow></msup></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="376270"> How many flips of a fair coin does it take until you get N heads in a row? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1155104"> Expected number of coin tosses to land n heads </td></tr><tr><td post_id="373953"> Clarification on expected number of coin tosses for specific outcomes. </td></tr><tr><td post_id="1435456"> Number of throws required to obtain T-H-H </td></tr><tr><td post_id="1196452"> Expected value of the number of flips until the first head </td></tr><tr><td post_id="2552890"> Expected number of coin tosses with a coin that changes over time </td></tr><tr><td post_id="2191494"> Calculate 10 random generated digits </td></tr><tr><td post_id="1777412"> Probability distribution of tossing a coin until obtaining <span class="math-container" id="16418828" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> heads in a row </td></tr><tr><td post_id="1839496"> Expected number of tosses to get 3 consecutive Heads </td></tr><tr><td post_id="2762888"> How do I find the expected value of trials to achieve an amount of successes in a row? </td></tr><tr><td post_id="987594"> What is the expected number of flips that are needed? </td></tr><tr><td post_id="2251499"> Probability of sharing a fixed number of bits </td></tr><tr><td post_id="1337839"> Is my answer correct? Expected number of coin flips to get 5 consecutive heads </td></tr><tr><td post_id="2589523"> Given a fair coin, on average what is the number of tosses needed to get 3 heads in a row? </td></tr><tr><td post_id="931839"> Expected number of output letters to get desired word </td></tr><tr><td post_id="2157112"> Geometric stationary distribution, ergodic theorem and mean return time </td></tr><tr><td post_id="1726521"> When flipping a coin, why is the expected time till 3 Tails in a row different from Tail-Head-Tail? </td></tr><tr><td post_id="1077499"> Question regarding solution to the problem of computing the expected number of coin flips until getting 5 in a row. </td></tr><tr><td post_id="1408030"> Does it mean "two successive tosses is the same" is same as "two successive tosses is either heads or tells"? </td></tr><tr><td post_id="935871"> Detailed explanation of the derivation of the expected number of coin tosses </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

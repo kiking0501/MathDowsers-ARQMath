@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to prove similarity between two block triangular and block diagonal matrices</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to prove similarity between two block triangular and block diagonal matrices </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2762231">
+<p>the following problem has been keeping me up at night for the past two days. Any help or hint would be largely appreciated.</p> <p>Let <span class="math-container" id="25489496" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>, <span class="math-container" id="25489497" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> be matrices over the complex field ( <span class="math-container" id="25489498" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is <span class="math-container" id="25489499" visual_id="10337"><math alttext="k\times k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>×</mo><mi>k</mi></mrow></semantics></math></span> and <span class="math-container" id="25489500" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> is <span class="math-container" id="25489501" visual_id="69362"><math alttext="l\times l" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>×</mo><mi>l</mi></mrow></semantics></math></span>). Let <span class="math-container" id="25489502" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> be any <span class="math-container" id="25489503" visual_id="799781"><math alttext="k\times l" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>×</mo><mi>l</mi></mrow></semantics></math></span> matrix and <span class="math-container" id="25489504" visual_id="8074"><math alttext="O" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi></semantics></math></span> be the zero <span class="math-container" id="25489505" visual_id="605011"><math alttext="l\times k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>×</mo><mi>k</mi></mrow></semantics></math></span> matrix. Furthermore I am given that <span class="math-container" id="25489506" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> and <span class="math-container" id="25489507" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> have no eigenvalues in common.</p> <p>I need to show similarity between the following two matrices</p> <p>\begin{pmatrix}  B &amp; D \\ O &amp; C  \end{pmatrix} and \begin{pmatrix}  B &amp; O \\ O &amp; C  \end{pmatrix}</p> <p>So far I have got that both of them have the same characteristic polynomial that factors as the product of the characteristic polynomials of <span class="math-container" id="25489508" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> and <span class="math-container" id="25489509" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>. Furthermore since <span class="math-container" id="25489510" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> and <span class="math-container" id="25489511" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> share no eigenvalues their respective Jordan canonical forms can be split into two families of blocks (with the eigenvalues of <span class="math-container" id="25489512" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> and <span class="math-container" id="25489513" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> respectively).<br/> What I would like to argue (if possible) is that these blocks are equal and therefore the above two matrices have the same Jordan form.</p> <p>Thaks in advance for any help provided</p>
+</div>
+<hr/>
+<div id="tags">
+<span> matrices </span><span> diagonalization </span><span> jordan-normal-form </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2845827" id="answer">
+<p>Typically this is proved as a corollary to a result by WE Roth: </p> <p><a href="http://www.ams.org/journals/proc/1952-003-03/S0002-9939-1952-0047598-3/S0002-9939-1952-0047598-3.pdf" rel="nofollow noreferrer">The equations AX − YB = C and AX − XB = C in matrices Proc. Amer. Math. Soc., 3 (1952), pp. 392-396</a></p> <p>Specifically, theorem 2 in the paper. Then you just need to show that if the characteristic polynomial of <span class="math-container" id="25489514" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> is relatively prime to that of <span class="math-container" id="25489515" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> the (linear) mapping sending <span class="math-container" id="25489516" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> to <span class="math-container" id="25489517" visual_id="8811652"><math alttext="BX-XC" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>B</mi><mo>⁢</mo><mi>X</mi></mrow><mo>-</mo><mrow><mi>X</mi><mo>⁢</mo><mi>C</mi></mrow></mrow></semantics></math></span> is an isomorphism (Using the matrices in your question).</p> <p>For a detailed proof, see Proposition 5.20 in this dissertation: <a href="https://arxiv.org/abs/1804.02140" rel="nofollow noreferrer">Sums and products of square-zero matrices</a>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

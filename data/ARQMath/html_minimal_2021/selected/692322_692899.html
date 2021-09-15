@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Solving $\arcsin(1-x)-2\arcsin(x)=\pi/2$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Solving <span class="math-container" id="6942218" visual_id="5632593"><math alttext="\arcsin(1-x)-2\arcsin(x)=\pi/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="692322">
+<p>\begin{eqnarray*} \arcsin(1-x)-2\arcsin(x) &amp; = &amp; \frac{\pi}{2}\\ 1-x &amp; = &amp; \sin\left(\frac{\pi}{2}+2\arcsin(x)\right)\\  &amp; = &amp; \cos\left(2\arcsin(x)\right)\\  &amp; = &amp; 1-2\left(\sin\left(\arcsin(x)\right)\right)^{2}\\  &amp; = &amp; 1-2x^{2}\\ x &amp; = &amp; 2x^{2}\\ x\left(x-\frac{1}{2}\right) &amp; = &amp; 0 \end{eqnarray*}</p> <p>So <span class="math-container" id="6942219" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="6942220" visual_id="14705"><math alttext="x=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span></p> <p>But puttig <span class="math-container" id="6942221" visual_id="14705"><math alttext="x=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span> in the original expression gives <span class="math-container" id="6942222" visual_id="5632594"><math alttext="-\frac{\pi}{4}\neq\frac{\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mfrac><mi>π</mi><mn>4</mn></mfrac></mrow><mo>≠</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math></span></p> <p>So, <strong>why do we get <span class="math-container" id="6942223" visual_id="278552"><math alttext="x=-1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></mrow></semantics></math></span> as an answer?</strong></p>
+</div>
+<hr/>
+<div id="tags">
+<span> trigonometry </span><span> roots </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="692899" id="answer">
+<p>As  <span class="math-container" id="6942242" visual_id="5632600"><math alttext="\displaystyle\sin\left(\frac{\pi}{2}\pm A\right)=\cos A," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>±</mo><mi>A</mi></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>A</mi></mrow></mrow><mo>,</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="6942243" visual_id="5632601"><math alttext="\displaystyle\sin\left(\frac{\pi}{2}\pm 2\arcsin x\right)=\cos(2\arcsin x)=1-2% \left[\sin(\arcsin x)\right]^{2}=1-2x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle><mo>±</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo>[</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>]</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span></p> <p>So, <span class="math-container" id="6942244" visual_id="14705"><math alttext="\displaystyle x=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></semantics></math></span> corresponds to <span class="math-container" id="6942245" visual_id="5632602"><math alttext="\displaystyle\arcsin(1-x)+2\arcsin x=\frac{\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></mrow></semantics></math></span> as <span class="math-container" id="6942246" visual_id="5632603"><math alttext="\displaystyle\arcsin\frac{1}{2}=\frac{\pi}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>arcsin</mi><mo>⁡</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>6</mn></mfrac></mstyle></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1452116"> Er, that's exactly what I did. What are you getting at? </td></tr><tr><td comment_id="1453291"> @user80551, my point is if we start with <span class="math-container" id="6942247" visual_id="5632602"><math alttext="\displaystyle\arcsin(1-x)+2\arcsin x=\frac{\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>arcsin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>π</mi><mn>2</mn></mfrac></mstyle></mrow></semantics></math></span> we shall reach at <span class="math-container" id="6942249" visual_id="5632604"><math alttext="x=2x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span> as well </td></tr><tr><td comment_id="1453296"> I did reach <span class="math-container" id="6942249" visual_id="5632604"><math alttext="x=2x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span>, see the question. That quadratic has two roots, one of which is not the answer. My question is where did that root come from? </td></tr><tr><td comment_id="1453297"> @user80551, that is coming from the fact pointed out in the first line of my answer </td></tr><tr><td comment_id="1453302"> Oh, you mean <span class="math-container" id="6942250" visual_id="5632605"><math alttext="\sin(\pi/2+A)=\cos A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow><mo>+</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>A</mi></mrow></mrow></semantics></math></span> ***and*** <span class="math-container" id="6942251" visual_id="5632606"><math alttext="\sin(\pi/2-A)=\cos A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>π</mi><mo>/</mo><mn>2</mn></mrow><mo>-</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>A</mi></mrow></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="1453338"> @user80551, yes. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

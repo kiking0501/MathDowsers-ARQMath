@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Definition of dimension</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Definition of dimension </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="875276">
+<p>Let us consider Euclidean space <span class="math-container" id="8491131" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span>. We say it is <span class="math-container" id="8491132" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>-dimensional because each vector in it is an <span class="math-container" id="8491133" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>-tuple <span class="math-container" id="8491134" visual_id="10551"><math alttext="(x_{1},...,x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span>. However, it is possible to represent this exact same space using only a single number by creating a bijection <span class="math-container" id="8491135" visual_id="14651"><math alttext="\mathbb{R}^{n}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><mi>ℝ</mi></mrow></semantics></math></span> (e.g. <a href="https://math.stackexchange.com/questions/183361/examples-of-bijective-map-from-mathbbr3-rightarrow-mathbbr">for <span class="math-container" id="8491136" visual_id="350"><math alttext="n=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow></semantics></math></span></a>). Therefore, by the conventional definition of <em>dimension</em>, we must conclude that <span class="math-container" id="8491137" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> is in fact one-dimensional.</p> <p>How do we resolve this? What is a rigorous definition of dimension?</p> <p>This question was inspired by <a href="https://math.stackexchange.com/questions/875209/if-the-planck-length-exists-why-doesnt-it-follow-then-that-the-world-is-one-di">this one</a>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> vector-spaces </span><span> definition </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1805481"> Dimension of a vector space is defined in terms of *linear maps*. The claim that dimension is an invariant amounts to saying there is no *bijective linear map* between <span class="math-container" id="8491141" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> and <span class="math-container" id="8491139" visual_id="2631"><math alttext="\mathbb{R}^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup></semantics></math></span> when <span class="math-container" id="8491140" visual_id="7131"><math alttext="n\neq m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≠</mo><mi>m</mi></mrow></semantics></math></span>. So in particular, any bijection between <span class="math-container" id="8491141" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> and <span class="math-container" id="8491142" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> cannot be linear. </td></tr><tr><td comment_id="1805482"> A bijection between <span class="math-container" id="8491167" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> and <span class="math-container" id="8491144" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> can, for <span class="math-container" id="8491145" visual_id="10021"><math alttext="n\neq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≠</mo><mn>1</mn></mrow></semantics></math></span>, not be linear. Thus the spaces are not isomorphic as vector spaces. </td></tr><tr><td comment_id="1805485"> `"by the conventional definition of dimension"` - what definition do you mean? </td></tr><tr><td comment_id="1805490"> Great! @DanielFischer and Dustan: is there a proof that such a bijection cannot be linear? </td></tr><tr><td comment_id="1805491"> @MarcinŁoś that the dimension is the least number of coordinates required to represent any point within the space. </td></tr><tr><td comment_id="1805499"> @ozo this is a general algebraic fact, since there are <span class="math-container" id="8491171" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> linearly independent vectors in <span class="math-container" id="8491147" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span>, any linear bijection must map a basis to another basis, i.e the target set needs to be of the same size, but that would produce a bijection between the *finite* sets <span class="math-container" id="8491148" visual_id="11027"><math alttext="\{1,2,3,\ldots,n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> and <span class="math-container" id="8491149" visual_id="13220"><math alttext="\{1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow></semantics></math></span> which is impossible when <span class="math-container" id="8491150" visual_id="23125"><math alttext="n&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1805500"> The rank formula, for example. That shows that the kernel of every linear <span class="math-container" id="8491151" visual_id="1937788"><math alttext="T\colon\mathbb{R}^{n}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> has dimension <span class="math-container" id="8491152" visual_id="675061"><math alttext="\geqslant n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\geqslant</mtext></merror><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></semantics></math></span>, so for <span class="math-container" id="8491153" visual_id="23125"><math alttext="n&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>, it cannot be injective. For <span class="math-container" id="8491154" visual_id="3350"><math alttext="n=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, there is not even a non-linear bijection. </td></tr><tr><td comment_id="1805511"> I'm not 100% sure that [tag:dimension-theory] fits here. You're asking about the dimension of a vector space. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="875282" id="answer">
+<p>For vector spaces, the definition of dimension is the number of vectors in a basis for the vector space.</p> <p>A basis for a vector space V over a field <span class="math-container" id="8491161" visual_id="2974"><math alttext="\mathbb{F}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝔽</mi></semantics></math></span> is a set of vectors such that every vector in V is a unique linear combination of the basis vectors. That is, <span class="math-container" id="8491162" visual_id="51411"><math alttext="\{v_{1},...,v_{k}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>v</mi><mi>k</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> is a basis when every vector <span class="math-container" id="8491163" visual_id="683"><math alttext="v\in V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><mi>V</mi></mrow></semantics></math></span> can be written uniquely as <span class="math-container" id="8491164" visual_id="2103999"><math alttext="v=a_{1}v_{1}+\dots+a_{k}v_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mrow><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>v</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mi>k</mi></msub><mo>⁢</mo><msub><mi>v</mi><mi>k</mi></msub></mrow></mrow></mrow></semantics></math></span> for scalars <span class="math-container" id="8491165" visual_id="8686"><math alttext="a_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>1</mn></msub></semantics></math></span>, \dots, <span class="math-container" id="8491166" visual_id="7084233"><math alttext="a_{k}\in\mathbb{F}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>k</mi></msub><mo>∈</mo><mi>𝔽</mi></mrow></semantics></math></span>.</p> <p>It is possible to prove all bases for the same vector space have the same number of vectors, and this number is defined to be the dimension.</p> <p>For <span class="math-container" id="8491167" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span>, a basis is <span class="math-container" id="8491168" visual_id="224629"><math alttext="(1,0,\dots,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>, <span class="math-container" id="8491169" visual_id="1571516"><math alttext="(0,1,\dots,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>, ..., <span class="math-container" id="8491170" visual_id="383239"><math alttext="(0,0,\dots,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> so it has dimension <span class="math-container" id="8491171" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="183361"> Examples of bijective map from <span class="math-container" id="2128634" visual_id="72104"><math alttext="\mathbb{R}^{3}\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℝ</mi><mn>3</mn></msup><mo>→</mo><mi>ℝ</mi></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

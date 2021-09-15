@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding the remainder when a large number is divided by 13</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding the remainder when a large number is divided by 13 </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2031461">
+<p>Let a number <span class="math-container" id="18802265" visual_id="4808550"><math alttext="x=135792468135792468" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>135792468135792468</mn></mrow></semantics></math></span>. Find the remainder when <span class="math-container" id="18802266" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is divided by <span class="math-container" id="18802267" visual_id="3581"><math alttext="13" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>13</mn></semantics></math></span>.</p> <p>Is it possible to use Fermat's little theorem on this? I notice that the number is also repeating after <span class="math-container" id="18802268" visual_id="2663"><math alttext="8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>8</mn></semantics></math></span>. </p> <p>Would really appreciate any help, thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> modular-arithmetic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4169636"> "<span class="math-container" id="18802270" visual_id="4808551"><math alttext="135792468" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>135792468</mn></semantics></math></span> <span class="math-container" id="18802270" visual_id="4808551"><math alttext="135792468" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>135792468</mn></semantics></math></span>" is two numbers!!! </td></tr><tr><td comment_id="4169640"> @barakmanos it's one? There shouldn't be a space in between tho </td></tr><tr><td comment_id="4169685"> @barakmanos I have to show the working! </td></tr><tr><td comment_id="4174218"> Have you tried putting it divided by 13 into a calculator? </td></tr><tr><td comment_id="4174477"> The intent is likely to solve by some variant of "divisible by 100..001", but long division (or synthetic division) solves this problem. There's no reason to make things more complicated than necessary. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2031476" id="answer">
+<p>A little digression to speculate on the source of the problem.</p> <p>The test for divisibility by <span class="math-container" id="18802297" visual_id="3052"><math alttext="9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn></semantics></math></span> is well known: the remainder is the sum of the digits (mod <span class="math-container" id="18802298" visual_id="3052"><math alttext="9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn></semantics></math></span>).</p> <p>The test for divisibility by <span class="math-container" id="18802299" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span> is a little less well known: look at the alternating sum of the digits. That works because odd powers of <span class="math-container" id="18802300" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> are <span class="math-container" id="18802301" visual_id="4808567"><math alttext="-1\pmod{11}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>11</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> while even powers are <span class="math-container" id="18802302" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>.</p> <p>Now note the lovely fact that <span class="math-container" id="18802303" visual_id="2018022"><math alttext="7\times 11\times 13=1001" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>7</mn><mo>×</mo><mn>11</mn><mo>×</mo><mn>13</mn></mrow><mo>=</mo><mn>1001</mn></mrow></semantics></math></span>. That means you can find the remainder mod <span class="math-container" id="18802304" visual_id="237099"><math alttext="1001" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1001</mn></semantics></math></span> and hence mod <span class="math-container" id="18802305" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span>, <span class="math-container" id="18802306" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span> and <span class="math-container" id="18802307" visual_id="3581"><math alttext="13" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>13</mn></semantics></math></span> by alternately adding and subtracting "digits" in groups of three - essentially thinking of the number as written in base <span class="math-container" id="18802308" visual_id="3989"><math alttext="1000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1000</mn></semantics></math></span>.</p> <p>(Written while @Barakmanos was posting essentially the same argument.)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="52778"> Divisibility rules and congruences </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

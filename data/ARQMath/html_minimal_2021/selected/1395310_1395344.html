@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Simplifying $\frac{1}{\sqrt{-1}}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Simplifying <span class="math-container" id="12959241" visual_id="4216570"><math alttext="\frac{1}{\sqrt{-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1395310">
+<p>When trying to simplify <span class="math-container" id="12959242" visual_id="4216570"><math alttext="\frac{1}{\sqrt{-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac></semantics></math></span>, you could rationalize it: <span class="math-container" id="12959243" visual_id="9058732"><math alttext="\frac{1}{\sqrt{-1}}\cdot\frac{\sqrt{-1}}{\sqrt{-1}}=\frac{\sqrt{-1}}{-1}=-% \sqrt{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac><mo>⋅</mo><mfrac><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac></mrow><mo>=</mo><mfrac><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt><mrow><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mrow><mo>-</mo><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mrow></mrow></semantics></math></span> Or you could simplify it as one radical: <span class="math-container" id="12959244" visual_id="9058733"><math alttext="\frac{1}{\sqrt{-1}}=\frac{\sqrt{1}}{\sqrt{-1}}=\sqrt{\frac{1}{-1}}=\sqrt{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac><mo>=</mo><mfrac><msqrt><mn>1</mn></msqrt><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mfrac><mo>=</mo><msqrt><mfrac><mn>1</mn><mrow><mo>-</mo><mn>1</mn></mrow></mfrac></msqrt><mo>=</mo><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mrow></semantics></math></span> These are obviously different answers. I'm pretty sure the first method is algebraically sound and the second method might not be because of maybe a branch cut. Could someone please explain why the answers are different, and which is correct?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> radicals </span><span> branch-cuts </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2840724"> I think the first method is correct. The second has problem when you identify <span class="math-container" id="12959245" visual_id="239482"><math alttext="1=\sqrt{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><msqrt><mn>1</mn></msqrt></mrow></semantics></math></span>. Note that <span class="math-container" id="12959246" visual_id="9058734"><math alttext="1=-\sqrt{-1}\sqrt{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mrow><mo>-</mo><mrow><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt><mo>⁢</mo><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt></mrow></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="2840763"> @GAVD <span class="math-container" id="12959247" visual_id="239482"><math alttext="1=\sqrt{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><msqrt><mn>1</mn></msqrt></mrow></semantics></math></span> is fine. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1395344" id="answer">
+<p>Let <span class="math-container" id="12959261" visual_id="9058738"><math alttext="\frac{1}{\mathsf{i}}=a+b\mathsf{i}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><mi>𝗂</mi></mfrac><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>𝗂</mi></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> where <span class="math-container" id="12959262" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="12959263" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> are real numbers to be determined. Multiplying both sides by <span class="math-container" id="12959264" visual_id="2433971"><math alttext="\mathsf{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝗂</mi></semantics></math></span> yields <span class="math-container" id="12959265" visual_id="9058739"><math alttext="1=a\mathsf{i}+b\mathsf{i}^{2}=-b+a\mathsf{i}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>𝗂</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>𝗂</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><mrow><mo>-</mo><mi>b</mi></mrow><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><mi>𝗂</mi></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Now, matching the real and imaginary parts of both sides, one has <span class="math-container" id="12959266" visual_id="9058740"><math alttext="-b=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mi>b</mi></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="12959267" visual_id="4321"><math alttext="a=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. Hence, <span class="math-container" id="12959268" visual_id="9058741"><math alttext="\frac{1}{\mathsf{i}}=a+b\mathsf{i}=-\mathsf{i}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><mi>𝗂</mi></mfrac><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>𝗂</mi></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mi>𝗂</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="438"> Why <span class="math-container" id="4002" visual_id="573302"><math alttext="\sqrt{-1\times{-1}}\neq\sqrt{-1}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mo>-</mo><mn>1</mn><mo>×</mo><mo>-</mo><mn>1</mn></mrow></msqrt><mo>≠</mo><msup><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt><mn>2</mn></msup></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

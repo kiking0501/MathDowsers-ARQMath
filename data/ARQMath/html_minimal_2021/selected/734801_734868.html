@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Möbius transforms with a common fixed point</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Möbius transforms with a common fixed point </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="734801">
+<p>Let <span class="math-container" id="7308824" visual_id="882"><math alttext="f,g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi></mrow></semantics></math></span> be two Möbius transformations with a common fixed point <span class="math-container" id="7308825" visual_id="4354"><math alttext="z_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mn>0</mn></msub></semantics></math></span>. Show that the Möbius transformation <span class="math-container" id="7308826" visual_id="776739"><math alttext="f\circ g\circ f^{-1}\circ g^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi><mo>∘</mo><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>∘</mo><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span> is either parabolic or the identity.</p> <p>Möbius transforms with the same fixed points commute, so the identity case is easy enough. But if the second fixed point is not common, I'm confused as to how the given transform can be shown to be parabolic.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebraic-geometry </span><span> mobius-transformation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="734868" id="answer">
+<p>WLOG assume the common fixed point is <span class="math-container" id="7308827" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>.  If the other fixed point of <span class="math-container" id="7308828" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is <span class="math-container" id="7308829" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span>, then <span class="math-container" id="7308830" visual_id="776740"><math alttext="f(z)=\alpha z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>α</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></semantics></math></span> for some complex <span class="math-container" id="7308831" visual_id="28267"><math alttext="\alpha\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>.  If the other fixed point of <span class="math-container" id="7308832" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is <span class="math-container" id="7308833" visual_id="776741"><math alttext="z_{1}\neq\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>≠</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>, then <span class="math-container" id="7308834" visual_id="776742"><math alttext="g(z)=(\beta z_{1}+\gamma)\dfrac{z}{\beta z+\gamma}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>β</mi><mo>⁢</mo><msub><mi>z</mi><mn>1</mn></msub></mrow><mo>+</mo><mi>γ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mi>z</mi><mrow><mrow><mi>β</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mi>γ</mi></mrow></mfrac></mstyle></mrow></mrow></semantics></math></span> for some <span class="math-container" id="7308835" visual_id="57"><math alttext="\beta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi></semantics></math></span> and <span class="math-container" id="7308836" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span>.  Then you can calculate <span class="math-container" id="7308837" visual_id="776743"><math alttext="f\circ g\circ f^{-1}\circ g^{-1}(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi><mo>∘</mo><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>∘</mo><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> explicitly. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

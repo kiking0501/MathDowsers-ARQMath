@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Counting the number of surjections.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Counting the number of surjections. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="216360">
+<p>How many functions from set <span class="math-container" id="2452213" visual_id="11027"><math alttext="\{1,2,3,\ldots,n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> to <span class="math-container" id="2452214" visual_id="384948"><math alttext="\{A,B,C\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> are surjections? <span class="math-container" id="2452215" visual_id="11686"><math alttext="n\geq 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>3</mn></mrow></semantics></math></span></p> <p><strong>Attempt</strong></p> <p>I was hoping to count the number of surjections by treating <span class="math-container" id="2452216" visual_id="4236"><math alttext="A,B,C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi></mrow></semantics></math></span> like bins, and counting the number of ways to fill them with <span class="math-container" id="2452217" visual_id="69465"><math alttext="1,2,3,\ldots,n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></semantics></math></span> such that no bins are empty. This is equivalent to putting two "separator" bars in between the <span class="math-container" id="2452218" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> numbers or <span class="math-container" id="2452219" visual_id="68311"><math alttext="n-1\choose 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathvariant="normal">(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo mathvariant="normal">-</mo><mn mathvariant="normal">1</mn></mrow><mn mathvariant="normal">2</mn></mfrac><mo mathvariant="normal">)</mo></mrow></semantics></math></span>.</p> <p>However, I think I am missing a step here: prior to putting in the separator bars, I should permutate the <span class="math-container" id="2452220" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> elements. So, multiply by <span class="math-container" id="2452221" visual_id="755"><math alttext="n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>!</mo></mrow></semantics></math></span>.</p> <p>The order of elements in the same bins do not matter. So I should be divided by the number of permutations of the elements in each bins. This is where I am stuck.</p> <p><strong>Additional Info</strong></p> <p>I made the question up myself. Feel free to modify the question into a more solvable form if it is too difficult/complicated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="397823" id="answer">
+<p>Using PIE one can find a more generalized form of the number of surjections. The number of surjections of a set containing <span class="math-container" id="2452254" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> elements onto a set containing <span class="math-container" id="2452255" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> elements (<span class="math-container" id="2452256" visual_id="12866"><math alttext="m&amp;gt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>&gt;</mo></mrow><mi>n</mi></mrow></semantics></math></span>) is</p> <p><span class="math-container" id="2452257" visual_id="5196522"><math alttext="\sum\limits_{i=0}^{n}(-1)^{i}\dbinom{n}{i}(n-i)^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>i</mi></msup><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mi>n</mi><mi>i</mi></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mi>m</mi></msup></mrow></mrow></semantics></math></span></p> <p>In the given question <span class="math-container" id="2452258" visual_id="350"><math alttext="n=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow></semantics></math></span> and <span class="math-container" id="2452259" visual_id="25993"><math alttext="m=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mi>n</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="2611130"> Number of ways to select <span class="math-container" id="24145029" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> items out of <span class="math-container" id="24145030" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> categories, where each category is selected at least once and selection order matters? </td></tr><tr><td post_id="2494099"> How many ways are there to distribute 6 distinct books to 3 people so that each person gets at least one book? </td></tr><tr><td post_id="2964484"> number of surjective functions from X to Y where card(Y)=k &lt; n =card(X) </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1803107"> Combinatorics problem involving multinomial coefficients </td></tr><tr><td post_id="998158"> Probability problem! Combinations with repetition </td></tr><tr><td post_id="2503572"> Combinatorics in ML: Counting Points with co-ordinates from among a set. </td></tr><tr><td post_id="716886"> Number of surjections from <span class="math-container" id="7156726" visual_id="84139"><math alttext="\{1,...,m\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>m</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> to <span class="math-container" id="7156727" visual_id="1169"><math alttext="\{1,...,n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> </td></tr><tr><td post_id="1526459"> Counting surjective functions </td></tr><tr><td post_id="2866173"> Number of surjective functions from a set with <span class="math-container" id="26493933" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> elements onto a set with <span class="math-container" id="26493934" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> elements </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

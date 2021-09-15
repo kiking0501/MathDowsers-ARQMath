@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How many ways are there to distribute 8 teachers to 4 schools where each school must get at least 1 teacher?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How many ways are there to distribute 8 teachers to 4 schools where each school must get at least 1 teacher? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="518368">
+<p>Additional details: the teachers are considered distinct from one another.</p> <p>So here is what I thought:</p> <p>1) Choose four teachers to go to each one of the schools: <span class="math-container" id="5412046" visual_id="1535068"><math alttext="\binom{8}{4}\cdot 4!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>8</mn><mn>4</mn></mfrac><mo>)</mo></mrow><mo>⋅</mo><mrow><mn>4</mn><mo>!</mo></mrow></mrow></semantics></math></span></p> <p>2) For each of those situations, distribute the other 4 teachers to the 4 schools: <span class="math-container" id="5412047" visual_id="59547"><math alttext="4^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>4</mn><mn>4</mn></msup></semantics></math></span></p> <p>So total: <span class="math-container" id="5412048" visual_id="1535069"><math alttext="\binom{8}{4}\cdot 4!\cdot 4^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>8</mn><mn>4</mn></mfrac><mo>)</mo></mrow><mo>⋅</mo><mrow><mn>4</mn><mo>!</mo></mrow><mo>⋅</mo><msup><mn>4</mn><mn>4</mn></msup></mrow></semantics></math></span></p> <p>However, I am almost 100% sure that I am over-counting but can't quite put my finger on it. Any help would be appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> combinatorics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1110258"> For any actual way, the choice of which four teachers are assigned in step (1)  is not uniquely determined, so your method counts each single way multiple times. </td></tr><tr><td comment_id="1110269"> The answer that was posted by the OP is indeed correct. </td></tr><tr><td comment_id="1110274"> Looking in another way: We have 8 teachers, out of which we first pick a group of 4 people which can be done in <span class="math-container" id="5412049" visual_id="1535070"><math alttext="8C_{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>⁢</mo><msub><mi>C</mi><mn>4</mn></msub></mrow></semantics></math></span> ways. We ask them each to choose 1 school and that can be done in <span class="math-container" id="5412050" visual_id="13478"><math alttext="4!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>!</mo></mrow></semantics></math></span> ways. Now the remaining 4 teachers are free to choose whichever school that they want and that is <span class="math-container" id="5412051" visual_id="59547"><math alttext="4^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>4</mn><mn>4</mn></msup></semantics></math></span> ways. Hence the total is <span class="math-container" id="5412052" visual_id="1535071"><math alttext="8C_{4}\times 4!\times 4^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>8</mn><mo>⁢</mo><msub><mi>C</mi><mn>4</mn></msub></mrow><mo>×</mo><mrow><mn>4</mn><mo>!</mo></mrow><mo>×</mo><msup><mn>4</mn><mn>4</mn></msup></mrow></semantics></math></span> </td></tr><tr><td comment_id="1110290"> But which four form the first group and which four form the second group? For example, take the one way: ABCDE to school 1, F to 2, G to 3 and H to 4. You are counting that one way 5 different times by various choices {x,F,G,H | x = A,B,C,D,E} for the "first picked group of 4." </td></tr><tr><td comment_id="1110471"> @Ned I'm so crossed with myself that I overlook this. But I'm wondering what's the reduction that will be required to avoid these duplicates or is it a bad approach for this problem. </td></tr><tr><td comment_id="1111231"> It's not a practical approach, because the reduction factor (e.g. the "5" in the example I used) is not uniform for different types of assignments, so it just won't work to first assign one teacher to each school, assign the others arbitrarily, and then fix it up at the end. Rather, you want to treat all eight teachers alike from the beginning, and using inclusion-exclusion as Andre did is what you would find in most or all combinatorics texts that covered this sort of problem. I don't know of any good way to do it using only permutations, combinations, and the multiplication principle. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="518720" id="answer">
+<p>Another way is using exponential generating functions.</p> <p>The EGF of this problem is:</p> <p><span class="math-container" id="5412070" visual_id="1535076"><math alttext="\left(x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\frac{x^{4}}{4!}+\frac{x^{5}}{5!}+% \frac{x^{6}}{6!}+\frac{x^{7}}{7!}+\frac{x^{8}}{8!}\right)^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mrow><mn>4</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>5</mn></msup><mrow><mn>5</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>6</mn></msup><mrow><mn>6</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>7</mn></msup><mrow><mn>7</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>8</mn></msup><mrow><mn>8</mn><mo>!</mo></mrow></mfrac></mrow><mo>)</mo></mrow><mn>4</mn></msup></semantics></math></span></p> <p>to solve the problem we can use </p> <p><span class="math-container" id="5412071" visual_id="1264264"><math alttext="(e^{x}-1)^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>4</mn></msup></semantics></math></span></p> <p>for that expression. This expands out to</p> <p><span class="math-container" id="5412072" visual_id="1535077"><math alttext="1-4e^{x}+6e^{2x}-4e^{3x}+e^{4x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mn>1</mn><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></mrow><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>e</mi><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></mrow><mo>+</mo><msup><mi>e</mi><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></semantics></math></span></p> <p>this can expanded by hand or taken over to Wolfram Alpha. We get:</p> <p><span class="math-container" id="5412073" visual_id="1535078"><math alttext="x^{4}+2x^{5}+\frac{13x^{6}}{6}+\frac{5x^{7}}{3}+\frac{81x^{8}}{80}+...+" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>5</mn></msup></mrow><mo>+</mo><mfrac><mrow><mn>13</mn><mo>⁢</mo><msup><mi>x</mi><mn>6</mn></msup></mrow><mn>6</mn></mfrac><mo>+</mo><mfrac><mrow><mn>5</mn><mo>⁢</mo><msup><mi>x</mi><mn>7</mn></msup></mrow><mn>3</mn></mfrac><mo>+</mo><mfrac><mrow><mn>81</mn><mo>⁢</mo><msup><mi>x</mi><mn>8</mn></msup></mrow><mn>80</mn></mfrac><mo>+</mo><mrow><mi mathvariant="normal">…</mi><mo>+</mo></mrow></mrow></semantics></math></span></p> <p>The coefficient of x^8 is the one we want and we multiply that by 8!</p> <p><span class="math-container" id="5412074" visual_id="1535079"><math alttext="\dfrac{81}{80}\cdot 8!=40824" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>81</mn><mn>80</mn></mfrac></mstyle><mo>⋅</mo><mrow><mn>8</mn><mo>!</mo></mrow></mrow><mo>=</mo><mn>40824</mn></mrow></semantics></math></span></p> <p>That is the number of ways.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

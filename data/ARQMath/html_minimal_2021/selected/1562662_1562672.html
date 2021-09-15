@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>If $\limsup_{n\to\infty} \ x_{n} =-\infty$ then why $\lim_{n\to\infty} \ x_{n} =-\infty$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> If <span class="math-container" id="14432165" visual_id="6993397"><math alttext="\limsup_{n\to\infty}\ x_{n}=-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+5pt"><msub><mo>lim sup</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub></mpadded><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span> then why <span class="math-container" id="14432166" visual_id="2509342"><math alttext="\lim_{n\to\infty}\ x_{n}=-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+5pt"><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub></mpadded><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1562662">
+<p>I cannot understand why, if <span class="math-container" id="14432167" visual_id="6993397"><math alttext="\limsup_{n\to\infty}\ x_{n}=-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+5pt"><msub><mo>lim sup</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub></mpadded><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span> then <span class="math-container" id="14432168" visual_id="2509342"><math alttext="\lim_{n\to\infty}\ x_{n}=-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+5pt"><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub></mpadded><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span>? Can anybody explain it? What's the relationship between <span class="math-container" id="14432169" visual_id="435"><math alttext="\limsup" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>lim sup</mo></semantics></math></span> and <span class="math-container" id="14432170" visual_id="24726"><math alttext="\lim" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>lim</mo></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> limits </span><span> limsup-and-liminf </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3181819"> Basically <span class="math-container" id="14432171" visual_id="6993398"><math alttext="\limsup_{n\rightarrow\infty}=-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>lim sup</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>=</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span> means that there is a subsequence <span class="math-container" id="14432172" visual_id="6993399"><math alttext="\{x_{n}\}_{n\geq k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mi>k</mi></mrow></msub></semantics></math></span> with supremum smaller than any <span class="math-container" id="14432173" visual_id="118266"><math alttext="M\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span>. Therefore every <span class="math-container" id="14432183" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> must become arbitrarily small. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1562672" id="answer">
+<p>By definition,  <span class="math-container" id="14432184" visual_id="6993402"><math alttext="\limsup_{n\to\infty}x_{n}=\lim_{n\to\infty}\sup\{x_{n},x_{n+1},\ldots\}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mo>lim sup</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><mo>sup</mo><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo>,</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> and <span class="math-container" id="14432185" visual_id="6993403"><math alttext="x_{n}\leq\sup\{x_{n},x_{n+1},\ldots\}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>≤</mo><mrow><mo>sup</mo><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo>,</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3181859"> If <span class="math-container" id="14432186" visual_id="6993404"><math alttext="x_{n}\leq\sup\{x_{n},x_{n+1},\ldots\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>≤</mo><mrow><mo>sup</mo><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo>,</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span> then <span class="math-container" id="14432187" visual_id="6993405"><math alttext="\lim x_{n}\leq\lim\sup\{x_{n},x_{n+1},\ldots\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>lim</mo><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>≤</mo><mrow><mo>lim</mo><mo>⁡</mo><mrow><mo>sup</mo><mo>⁡</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo>,</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

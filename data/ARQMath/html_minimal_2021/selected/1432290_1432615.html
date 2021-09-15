@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is the probability this Markov chain does not reach state $r$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is the probability this Markov chain does not reach state <span class="math-container" id="13288070" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1432290">
+<p>Consider a random walk on the non-negative integers.</p> <p>You start at <span class="math-container" id="13288071" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>, and in each step you either move <span class="math-container" id="13288072" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> higher, or <span class="math-container" id="13288073" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> lower (but can't go below <span class="math-container" id="13288074" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>). The direction is picked w.p. <span class="math-container" id="13288075" visual_id="519"><math alttext="1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></semantics></math></span> independently at any step.</p> <p>From <span class="math-container" id="13288076" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> you can either stay at <span class="math-container" id="13288077" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>, or go to <span class="math-container" id="13288078" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>.</p> <p>From <span class="math-container" id="13288079" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> you flip a coin and go either to <span class="math-container" id="13288080" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> or to <span class="math-container" id="13288081" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>.</p> <p>From <span class="math-container" id="13288082" visual_id="1130"><math alttext="i&amp;gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>i</mi><mo>&gt;</mo></mrow><mn>1</mn></mrow></semantics></math></span>, you go to <span class="math-container" id="13288083" visual_id="222633"><math alttext="i-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>-</mo><mn>2</mn></mrow></semantics></math></span> or to <span class="math-container" id="13288084" visual_id="51746"><math alttext="i+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>.</p> <ul> <li><p><strong>What is the probability that during <span class="math-container" id="13288085" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> steps, the process never reaches state <span class="math-container" id="13288086" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span>?</strong></p> <p><strong>If this does not have a simple form (as a function of <span class="math-container" id="13288087" visual_id="96156"><math alttext="n,r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>,</mo><mi>r</mi></mrow></semantics></math></span>), can we derive an upper bound for it?</strong></p></li> </ul> <p>This seems to be solvable by a recurrence formula, but I couldn't reach an explicit expression.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> stochastic-processes </span><span> markov-chains </span><span> markov-process </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2918090"> Where it says "but can't go below <span class="math-container" id="13288088" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>", I think you mean "but can't go below <span class="math-container" id="13288089" visual_id="92"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>"? </td></tr><tr><td comment_id="2918218"> @joriki - Indeed, thanks ! </td></tr><tr><td comment_id="2918457"> When you say "process never reaches state r", do you mean the chain should never reach state r but can be at state r+1 (assuming r is positive)? Or do you mean the random walk always stays below state r? </td></tr><tr><td comment_id="2918468"> @karmanaut - I'm asking what is the probability that during <span class="math-container" id="13288124" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> steps, the chain stays in states <span class="math-container" id="13288091" visual_id="5398562"><math alttext="0,1,\ldots r-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mi>r</mi></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> and does not reach state <span class="math-container" id="13288137" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> at any point. </td></tr><tr><td comment_id="2918481"> Thank you for the clarification. One thing to notice immediately is that if r &gt; n, then this is trvially not possible. For n=r, all steps need to move 1 higher and for n&gt;r, we can have atmost r-1 that move higher. </td></tr><tr><td comment_id="2918484"> And I am also thinking along the lines of reflection principle application - http://math.stackexchange.com/questions/222505/is-there-an-intuitive-way-to-see-this-property-of-random-walks </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1432615" id="answer">
+<p>As I mentioned in my comment, if <span class="math-container" id="13288122" visual_id="208141"><math alttext="n&amp;gt;r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>&gt;</mo></mrow><mi>r</mi></mrow></semantics></math></span>, then we can have atmost <span class="math-container" id="13288123" visual_id="20404"><math alttext="r-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> steps that move up. So the probability that after <span class="math-container" id="13288124" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> steps, we do not reach <span class="math-container" id="13288125" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> is,</p> <p><span class="math-container" id="13288126" visual_id="5398569"><math alttext="P_{n,r}=\sum_{i=0}^{r-1}{n\choose i}{1\over 2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>n</mi><mo>,</mo><mi>r</mi></mrow></msub><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>i</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p>To include the constraint that we remain above 0, notice that if we move up <span class="math-container" id="13288127" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> times up, we have to move <span class="math-container" id="13288128" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> times down such that <span class="math-container" id="13288129" visual_id="329543"><math alttext="p+q=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>+</mo><mi>q</mi></mrow><mo>=</mo><mi>n</mi></mrow></semantics></math></span> and <span class="math-container" id="13288130" visual_id="5398570"><math alttext="p-2q&amp;gt;=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>-</mo><mn>2</mn><mi>q</mi><mi mathvariant="normal">&amp;</mi><mi>g</mi><mi>t</mi><mo>;</mo><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. Solving for minimum value of <span class="math-container" id="13288131" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>, we get <span class="math-container" id="13288132" visual_id="5398571"><math alttext="p&amp;gt;={2n\over 3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi mathvariant="normal">&amp;</mi><mi>g</mi><mi>t</mi><mo>;</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mn>3</mn></mfrac></mrow></semantics></math></span>. This also puts a contraint that <span class="math-container" id="13288133" visual_id="5398572"><math alttext="r&amp;gt;=2n/3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi mathvariant="normal">&amp;</mi><mi>g</mi><mi>t</mi><mo>;</mo><mo>=</mo><mn>2</mn><mi>n</mi><mo>/</mo><mn>3</mn></mrow></semantics></math></span>. Adjusting the value of <span class="math-container" id="13288134" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> in our original eqution, we get</p> <p><span class="math-container" id="13288135" visual_id="5398573"><math alttext="P_{n,r}=\sum_{i={2n\over 3}}^{r-1}{n\choose i}{1\over 2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>n</mi><mo>,</mo><mi>r</mi></mrow></msub><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mn>3</mn></mfrac></mrow><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></msubsup><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mi>i</mi></mfrac><mo>)</mo></mrow><mo>⁢</mo><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2918515"> But this doesn't count the probability of scenarios such as UDUDUD..., where we go up <span class="math-container" id="13288136" visual_id="15787"><math alttext="n/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>/</mo><mn>2</mn></mrow></semantics></math></span> times, but still does not reach <span class="math-container" id="13288137" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span>. </td></tr><tr><td comment_id="2918524"> I am updating my answer. But notice that UDUDUD... n/2 times is not valid since you will end up behind 0. </td></tr><tr><td comment_id="2918709"> True. UUDUUD.. then :). </td></tr><tr><td comment_id="2918721"> This is already accounted for. Notice that you have 2 go up and 1 go down, a ration of 2/3 in favor of up, which I argued is the lower limit and is counted for in the sum. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="222505"> Is there an intuitive way to see this property of random walks? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

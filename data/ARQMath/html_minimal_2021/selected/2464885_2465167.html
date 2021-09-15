@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Markov chain expected steps</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Markov chain expected steps </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2464885">
+<blockquote> <p>Consider the numbers 1, 2, ..., 12 written around a ring as they usually are on a clock. Consider a Markov chain that at any point jumps with equal probability to the two adjacent numbers. (a) What is the expected number of steps that <span class="math-container" id="22816987" visual_id="1096"><math alttext="X_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mi>n</mi></msub></semantics></math></span> will take to return to its starting position? (b) What is the probability <span class="math-container" id="22816988" visual_id="1096"><math alttext="X_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mi>n</mi></msub></semantics></math></span> will visit all the other states before returning to its starting position?</p> </blockquote> <p>I can see that we simply have a doubly stochastic 12x12 matrix, with <span class="math-container" id="22816989" visual_id="5894748"><math alttext="P_{x}(x,x+1)=P_{x}(x,x-1)=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>P</mi><mi>x</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>P</mi><mi>x</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> (here assuming 12 + 1 = 1). Thus, the stationary distribution <span class="math-container" id="22816990" visual_id="5894749"><math alttext="\pi[i]=1/12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>12</mn></mrow></mrow></semantics></math></span> for all <span class="math-container" id="22816991" visual_id="5894750"><math alttext="i\in[1:12]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>:</mo><mn>12</mn><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>. Then, the expected number of steps from any <span class="math-container" id="22816992" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> to <span class="math-container" id="22816993" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> is simply <span class="math-container" id="22816994" visual_id="5894751"><math alttext="1/\pi[i]=12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>1</mn><mo>/</mo><mi>π</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mn>12</mn></mrow></semantics></math></span>, right?</p> <p>(b) is a little trickier - we know that all states here are null recurrent. However, I'm not sure how to think about this probability. Any tips?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> stochastic-processes </span><span> markov-chains </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5093072"> I think the first one will be <span class="math-container" id="22816995" visual_id="5894752"><math alttext="s^{T}(\sum_{k=1}^{\infty}kP^{k})s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mi>T</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>k</mi><mo>⁢</mo><msup><mi>P</mi><mi>k</mi></msup></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>s</mi></mrow></semantics></math></span>, where s is the vector indicating the starting position with a 1 and 0 everywhere else. The matrix will be circulant so it will have eigenvectors which are the complex exponentials and the eigenvalues will be the fft coefficients of the fft of the first row. </td></tr><tr><td comment_id="5093105"> @mathreadler are you getting 12 as your answer with this method? Unfortunately we don't use eigenvalues in this stochastic processes class so I'm not sure I should use that method. </td></tr><tr><td comment_id="5093110"> Wait we must modify it so that the matrix we take the power of leaks out probability once we come back to the first state otherwise we will count some several times over. </td></tr><tr><td comment_id="5093427"> @mizichael : Your steady state argument <span class="math-container" id="22816996" visual_id="5894753"><math alttext="1/\pi_{i}=12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>/</mo><msub><mi>π</mi><mi>i</mi></msub></mrow><mo>=</mo><mn>12</mn></mrow></semantics></math></span> in part (a) looks good (and this shows the states are _recurrent_, not _null recurrent_).  For part (b), it is similar to finding the probability we reach state 12 before state 0 in a random walk on the integers (starting at 1), except you first have to condition on moving either right or left on the first hop. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2465167" id="answer">
+<p>For part (b), assume (without loss of generality) that from state 1 we went to state 2 and not state 12 (it does not matter, because the ring is symmetric).</p> <p>Then we want to know the probability, starting at state 2, that we reach state 12 before getting to state 1.</p> <p>Let <span class="math-container" id="22816997" visual_id="3150"><math alttext="p_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>k</mi></msub></semantics></math></span> be the probability, starting at state <span class="math-container" id="22816998" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, that we reach state 12 before getting to state 1. Then <span class="math-container" id="22816999" visual_id="146466"><math alttext="p_{1}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="22817000" visual_id="2761465"><math alttext="p_{12}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>12</mn></msub><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, and <span class="math-container" id="22817001" visual_id="5894754"><math alttext="p_{k}=\frac{p_{k+1}+p_{k-1}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>k</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>p</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>p</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mn>2</mn></mfrac></mrow></semantics></math></span> for <span class="math-container" id="22817002" visual_id="1839143"><math alttext="2\leq k\leq 11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mn>11</mn></mrow></semantics></math></span>.</p> <p>We can just solve this system of equations directly, getting <span class="math-container" id="22817003" visual_id="5894755"><math alttext="p_{k}=\frac{k-1}{11}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>k</mi></msub><mo>=</mo><mfrac><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow><mn>11</mn></mfrac></mrow></semantics></math></span> for all <span class="math-container" id="22817004" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, or we can use some trickery. </p> <p>Here's one "trickery" way to do it. Imagine a betting game in which you start with 2 dollars, and every time you bet you either win or lose a dollar with equal probability. If you keep playing until you get to 12 dollars or have 1 dollar left what is the expected amount of money you have at the end?</p> <ol> <li>Because the game is fair, it must still be 2 dollars.</li> <li>The game is clearly isomorphic to the random walk we're taking here. Starting with 2 dollars, we end with 12 dollars with probability <span class="math-container" id="22817005" visual_id="11032"><math alttext="p_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mn>2</mn></msub></semantics></math></span> and 1 dollars otherwise, so the expected amount of money at the end is <span class="math-container" id="22817006" visual_id="5894756"><math alttext="12p_{2}+1(1-p_{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>12</mn><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</li> </ol> <p>Setting these equal, we get <span class="math-container" id="22817007" visual_id="5894757"><math alttext="12p_{2}+(1-p_{2})=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>12</mn><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span>, or <span class="math-container" id="22817008" visual_id="5894758"><math alttext="p_{2}=\frac{1}{11}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>1</mn><mn>11</mn></mfrac></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5093809"> Minor edit perhaps needed:  There is no state 0, so perhaps we can start in state 1 and assume we go from 1 to 2 on the first hop.  Then, starting in 2, we want to know the probability of getting to 12 before going back to 1. </td></tr><tr><td comment_id="5093818"> Whoops! Okay, now we have the right number of states. </td></tr><tr><td comment_id="5095498"> That is an extremely interesting way of thinking about this and I hadn't even considered that...really helpful, thank you so much! +1 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2465001"> Help with interpretation of a matrix power series. Is it correct? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

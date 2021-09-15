@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How does ZFC account for uncountable subsets of naturals?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How does ZFC account for uncountable subsets of naturals? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1469927">
+<p>I understand that the set of naturals, N, exists in ZFC. And from the power set axiom, the power set of N exists. And there are uncountably many members of P(N). </p> <p>But there are only countably many finite expressions of our set theoretic vocabulary. Does that mean there are members of P(N) that can't be expressed in the language of ZFC?</p> <p>Specifically, if we take a random, infinite subset of N, how do we express the identity of this set in ZFC?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3013428"> The axioms of set theory are just a list of what are thought to be the essential properties of things we call *sets*. From these properties, we can derive other properties of interest. I'm not sure what you mean "identifying" a set. This notion has never been formalized in any set theory AFAIK, but you can postulate the existence of a set with certain properties (your "random set?") and derive any number of other properties of such a set using these axioms. That's what we do in mathematics. What more do you want? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1470048" id="answer">
+<p>Expressions in set theory can be defined as sets within set theory (inductively so), but the class-sized relation "<span class="math-container" id="13609100" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> satisfies <span class="math-container" id="13609101" visual_id="3448993"><math alttext="\varphi[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>" can't, so you can only say "there are undefinable sets" in the metalanguage.</p> <p>However, if you take a model <span class="math-container" id="13609102" visual_id="6203229"><math alttext="\mathcal{M}=(M,E)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℳ</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> of ZFC, then the (set-sized) relation <span class="math-container" id="13609103" visual_id="6203230"><math alttext="\{(a,\varphi[x])\ |\ a\in M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>φ</mi><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo rspace="7.5pt" stretchy="false">|</mo><mi>a</mi><mo>∈</mo><mi>M</mi></mrow></semantics></math></span> and <span class="math-container" id="13609104" visual_id="6203231"><math alttext="\mathcal{M}\vDash\varphi[a]\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℳ</mi><merror class="ltx_ERROR undefined undefined"><mtext>\vDash</mtext></merror><mi>φ</mi><mrow><mo stretchy="false">[</mo><mi>a</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span> is definable, hopefully. The set of integers of <span class="math-container" id="13609105" visual_id="12346"><math alttext="\mathcal{M}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">ℳ</mi></semantics></math></span>, that is <span class="math-container" id="13609106" visual_id="6203232"><math alttext="N:=\{a\in M\ |\ \mathcal{M}\vDash a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>:=</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>∈</mo><mpadded width="+5pt"><mi>M</mi></mpadded><mo rspace="7.5pt" stretchy="false">|</mo><mi class="ltx_font_mathcaligraphic">ℳ</mi><merror class="ltx_ERROR undefined undefined"><mtext>\vDash</mtext></merror><mi>a</mi></mrow></mrow></semantics></math></span> is a finite ordinal <span class="math-container" id="13609107" visual_id="6865"><math alttext="\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo stretchy="false">}</mo></semantics></math></span>, need not be countable, nor does <span class="math-container" id="13609108" visual_id="6203233"><math alttext="\mathcal{P}(N):=\{a\in M\ |\ \mathcal{M}\vDash\forall x(x\in a\rightarrow x\in N)\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><mo>:=</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>∈</mo><mpadded width="+5pt"><mi>M</mi></mpadded><mo rspace="7.5pt" stretchy="false">|</mo><mi class="ltx_font_mathcaligraphic">ℳ</mi><merror class="ltx_ERROR undefined undefined"><mtext>\vDash</mtext></merror><mo>∀</mo><mi>x</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>a</mi><mo>→</mo><mi>x</mi><mo>∈</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> need be uncountable. For instance, both can be countable, so your argument can't work in general.</p> <p>For some models we have <span class="math-container" id="13609109" visual_id="6203234"><math alttext="|\mathcal{P}(N)|&amp;gt;|\mathbb{N}|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&gt;</mo></mrow><mrow><mo stretchy="false">|</mo><mi>ℕ</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> so there are elements of <span class="math-container" id="13609110" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> that <span class="math-container" id="13609111" visual_id="12346"><math alttext="\mathcal{M}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">ℳ</mi></semantics></math></span> doesn't define.</p> <p>What is important is that whereas you can generally talk about "definable sets" by identifying them with their definition and then keeping in mind that different models of ZFC may have structurally different interpretations of the set that matches the definition, a set itself ("a point of the universe") doesn't have an identity - existence without essence. I personnaly merely regard the use of undefinable sets as a syntactic step encouraged by the rule in natural deduction: if <span class="math-container" id="13609112" visual_id="6203235"><math alttext="T\vdash\varphi[v]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>⊢</mo><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>v</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span> for some symbol <span class="math-container" id="13609113" visual_id="1546"><math alttext="v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi></semantics></math></span>, then <span class="math-container" id="13609114" visual_id="6203236"><math alttext="T\vdash\forall x\varphi[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>⊢</mo><mrow><mo>∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

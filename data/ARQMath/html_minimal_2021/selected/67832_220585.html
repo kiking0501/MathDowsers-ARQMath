@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Solving tricky Knuth Up Arrow Notations</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Solving tricky Knuth Up Arrow Notations </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="67832">
+<p>How would I solve something like<br/> <span class="math-container" id="754420" visual_id="3031581"><math alttext="2\uparrow\uparrow n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>↑</mo><mo>↑</mo><mi>n</mi></mrow></semantics></math></span>? when n ≤1?<br/> Or<br/> <span class="math-container" id="754421" visual_id="8785821"><math alttext="2\uparrow^{-2}2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><msup><mo>↑</mo><mrow><mo>-</mo><mn>2</mn></mrow></msup><mn>2</mn></mrow></semantics></math></span>?  </p> <p>Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> notation </span><span> exponentiation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="160345"> To be precise, there is nothing to *solve* in <span class="math-container" id="754422" visual_id="3031581"><math alttext="2\uparrow\uparrow n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>↑</mo><mo>↑</mo><mi>n</mi></mrow></semantics></math></span>, it's just an expression with some meaning. (The same way there is nothing to "solve" in the expression <span class="math-container" id="754423" visual_id="25510"><math alttext="2^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mn>3</mn></msup></semantics></math></span>; you can only *evaluate* it.) </td></tr><tr><td comment_id="161362"> Up-arrow is related to tetration, http://en.wikipedia.org/wiki/Tetration and http://www.tetration.org/.  There has been work to extend it to non-natural arguments. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="220585" id="answer">
+<p>Here is a possible answer:</p> <p>We know that for every positive integer n, m↑↑n = log<sub>m</sub>[m↑↑(n+1)]. If we assume the same equation to hold for nonpositive n, we get:</p> <p>m↑↑0 = log<sub>m</sub>(m↑↑1) = log<sub>m</sub>m = 1</p> <p>m↑↑-1 = log<sub>m</sub>(m↑↑0) = log<sub>m</sub>1 = 0</p> <p>m↑↑-2 = log<sub>m</sub>(m↑↑-1) = log<sub>m</sub>0 = -infinity (in other words, it is undefined) </p> <p>This seems to be the only logical extension of the double-arrow operator to nonpositive <i>integer</i> "exponents". </p> <p>As for the extension to a "nonpositive number of arrows", it is even simpler:</p> <p>m↑<sup>0</sup>n = m*n (ordinary multiplication)</p> <p>m↑<sup>-1</sup>n = m+n (ordinary addition)</p> <p>But the next one is somewhat surprising:</p> <p>m↑<sup>-2</sup>n = (m+n+4)/2 (you might want to try and verify on your own that this is correct, by proving that m+n is indeed equal to this function iterated n times on m)</p> <p>So the expression in your original question, 2↑<sup>-2</sup>2, evaluates to (2+2+4)/2 = 4. Of-course, this is hardly surprising, since 2[any-number-of-arrows]2 always evaluates to 4.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

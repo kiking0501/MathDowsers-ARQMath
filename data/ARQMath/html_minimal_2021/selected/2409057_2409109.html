@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that $11^{10} \equiv 1 (\mod 100)$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that <span class="math-container" id="22306412" visual_id="6538185"><math alttext="11^{10}\equiv 1(\mod 100)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>11</mn><mn>10</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo stretchy="false">(</mo><mrow><mi></mi><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2409057">
+<p><span class="math-container" id="22306413" visual_id="6538185"><math alttext="11^{10}\equiv 1\pmod{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>11</mn><mn>10</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>I tried to solve by using euler's theorem, But I got stuck.</p> <p><span class="math-container" id="22306414" visual_id="6538186"><math alttext="\gcd(11,100)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>11</mn><mo>,</mo><mn>100</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p> <p><span class="math-container" id="22306415" visual_id="6538187"><math alttext="11^{φ(100)}\equiv 1\pmod{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>11</mn><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>100</mn><mo stretchy="false">)</mo></mrow></mrow></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="22306416" visual_id="6538188"><math alttext="11^{40}\equiv 1\pmod{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>11</mn><mn>40</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>I don't know how to go on as <span class="math-container" id="22306417" visual_id="6538189"><math alttext="11^{40}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>11</mn><mn>40</mn></msup></semantics></math></span> is bigger than <span class="math-container" id="22306418" visual_id="821848"><math alttext="11^{10}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>11</mn><mn>10</mn></msup></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4973276"> Binomial theorem? </td></tr><tr><td comment_id="4973277"> I would suggest multiplying by hand <span class="math-container" id="22306419" visual_id="606436"><math alttext="11\times 11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mo>×</mo><mn>11</mn></mrow></semantics></math></span> reducing modulo <span class="math-container" id="22306453" visual_id="7905"><math alttext="100" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>100</mn></semantics></math></span> as you go, and see what transpires. Repeated squaring can be quicker for computing large powers. You could also try a binomial expansion of <span class="math-container" id="22306421" visual_id="6538190"><math alttext="(1+10)^{10}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>10</mn></mrow><mo stretchy="false">)</mo></mrow><mn>10</mn></msup></semantics></math></span>. But try something and look out for helpful patterns. </td></tr><tr><td comment_id="4973280"> @MarkBennet I don't know this binomial theorem, this example can't be solved by euler's theorem ? </td></tr><tr><td comment_id="4973301"> Even if you do not use it for this question, the binomial theorem is a tremendously valuable thing to know. I recommend learning it. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2409109" id="answer">
+<p>Well..., you got <span class="math-container" id="22306427" visual_id="6538193"><math alttext="11^{40}\equiv 1\pmod{100}\Rightarrow(11^{10}-1)(11^{10}+1)(11^{20}+1)\equiv 0% \pmod{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>11</mn><mn>40</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⇒</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>11</mn><mn>10</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mn>11</mn><mn>10</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mn>11</mn><mn>20</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mrow><mn>0</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Now it is easy to see that <span class="math-container" id="22306428" visual_id="6538194"><math alttext="(11^{10}+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><msup><mn>11</mn><mn>10</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> and <span class="math-container" id="22306429" visual_id="6538195"><math alttext="(11^{20}+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><msup><mn>11</mn><mn>20</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> end with <span class="math-container" id="22306430" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>. Then <span class="math-container" id="22306431" visual_id="6538196"><math alttext="(11^{10}-1)\equiv 0\pmod{25}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>11</mn><mn>10</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>≡</mo><mrow><mn>0</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>25</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Again <span class="math-container" id="22306432" visual_id="6538197"><math alttext="11^{2}\equiv 1\pmod{4}\Rightarrow 11^{10}\equiv 1\pmod{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>11</mn><mn>2</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⇒</mo><msup><mn>11</mn><mn>10</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Since <span class="math-container" id="22306433" visual_id="6538198"><math alttext="\gcd(25,4)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>25</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, we will have <span class="math-container" id="22306434" visual_id="6538199"><math alttext="11^{10}\equiv 1\pmod{100}\blacksquare" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>11</mn><mn>10</mn></msup><mo>≡</mo><mn>1</mn><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow><merror class="ltx_ERROR undefined undefined"><mtext>\blacksquare</mtext></merror></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2409435"> Is this proof for <span class="math-container" id="22310399" visual_id="6538185"><math alttext="11^{10}\equiv 1\pmod{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>11</mn><mn>10</mn></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo>mod</mo><mn>100</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> correct? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

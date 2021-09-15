@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>If F/K is an algebraic field extension, is every endomorphism of F/K an automorphism?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> If F/K is an algebraic field extension, is every endomorphism of F/K an automorphism? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1540936">
+<p>If F/K is a field extension of finite degree, then every endomorphism of F/K is an automorphism. Does the result also hold for algebraic extensions?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> field-theory </span><span> extension-field </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1541288" id="answer">
+<p>As Georges Elencwajg said, a <span class="math-container" id="14235870" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span>-endomorphism of an algebraic extension <span class="math-container" id="14235871" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is indeed an isomorphism. Here is another argument.</p> <p>Let <span class="math-container" id="14235872" visual_id="165354"><math alttext="f:F\rightarrow F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>F</mi><mo>→</mo><mi>F</mi></mrow></mrow></semantics></math></span> be your <span class="math-container" id="14235873" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span>-endomorphism. First, note that it is into, because its kernel is an ideal of <span class="math-container" id="14235874" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>, and since it is not <span class="math-container" id="14235875" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>, it is <span class="math-container" id="14235876" visual_id="10217"><math alttext="\{0\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></semantics></math></span>. We want to prove it is onto, so let <span class="math-container" id="14235877" visual_id="47039"><math alttext="a\in F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>F</mi></mrow></semantics></math></span>. Because <span class="math-container" id="14235878" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> is algebraic over <span class="math-container" id="14235879" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span>, it is a root of a polynomial <span class="math-container" id="14235880" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span>. Let <span class="math-container" id="14235881" visual_id="112135"><math alttext="F_{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>P</mi></msub></semantics></math></span> be the set of roots of <span class="math-container" id="14235882" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> in <span class="math-container" id="14235883" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>. Note that this is a finite set (<span class="math-container" id="14235884" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> has only a finite number of roots in <span class="math-container" id="14235885" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>), and that <span class="math-container" id="14235886" visual_id="6931636"><math alttext="f(F_{P})\subset F_{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>F</mi><mi>P</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><msub><mi>F</mi><mi>P</mi></msub></mrow></semantics></math></span> (<span class="math-container" id="14235887" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> maps a root of <span class="math-container" id="14235888" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> to a root of <span class="math-container" id="14235889" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span></p> <p>So <span class="math-container" id="14235890" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> induces a injective map <span class="math-container" id="14235891" visual_id="6931637"><math alttext="F_{P}\rightarrow F_{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>P</mi></msub><mo>→</mo><msub><mi>F</mi><mi>P</mi></msub></mrow></semantics></math></span> and <span class="math-container" id="14235892" visual_id="112135"><math alttext="F_{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>P</mi></msub></semantics></math></span> is finite, so it is also onto. Hence, there is <span class="math-container" id="14235893" visual_id="326415"><math alttext="b\in F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>∈</mo><mi>F</mi></mrow></semantics></math></span> such that <span class="math-container" id="14235894" visual_id="248753"><math alttext="f(b)=a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>a</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3138632"> Users should notice that Roland's answer is better than mine because it does **not** use knowledge of the result in the finite-dimensional case. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

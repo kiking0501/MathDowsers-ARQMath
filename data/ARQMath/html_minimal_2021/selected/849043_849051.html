@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Two definitions of the Incomplete Gamma Function - are they equivalent?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Two definitions of the Incomplete Gamma Function - are they equivalent? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="849043">
+<p>From <em>Loss Models</em>, 4th ed., by Klugman et al.:</p> <blockquote> <p><strong>Definition 5.5</strong> The <strong>incomplete Gamma function</strong> with parameter <span class="math-container" id="8266480" visual_id="5593"><math alttext="\alpha&amp;gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>α</mi><mo>&gt;</mo></mrow><mn>0</mn></mrow></semantics></math></span> is denoted and defined by   <span class="math-container" id="8266481" visual_id="7013355"><math alttext="\Gamma\left(\alpha;x\right)=\dfrac{1}{\Gamma(\alpha)}\int\limits_{0}^{x}t^{% \alpha-1}e^{-t}\text{ d}t\text{.}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo>(</mo><mi>α</mi><mo>;</mo><mi>x</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></munderover><mrow><msup><mi>t</mi><mrow><mi>α</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi></mrow></msup><mo>⁢</mo><mtext> d</mtext><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mtext>.</mtext></mrow></mrow></mrow></mrow></semantics></math></span></p> </blockquote> <p>I assume this is the "upper" incomplete Gamma function I've read about online. From <a href="http://mathworld.wolfram.com/IncompleteGammaFunction.html" rel="nofollow">Wolfram MathWorld</a>:</p> <p><span class="math-container" id="8266482" visual_id="1887789"><math alttext="\Gamma(\alpha;x)=\int\limits_{x}^{\infty}t^{a-1}e^{-t}\text{ d}t\text{.}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo>;</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∫</mo><mi>x</mi><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mi>t</mi><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi></mrow></msup><mo>⁢</mo><mtext> d</mtext><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mtext>.</mtext></mrow></mrow></mrow></semantics></math></span></p> <p>Are these definitions equivalent?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> gamma-function </span><span> actuarial-science </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="849051" id="answer">
+<p>No, they're not equivalent.</p> <p>The function in Klugman et al. should perhaps be called <em>the normalized lower incomplete gamma function</em>, and the function on MathWorld is commonly called <em>the upper incomplete gamma function</em>.</p> <p>See <a href="http://en.wikipedia.org/wiki/Incomplete_gamma_function" rel="nofollow">Wikipedia</a> and <a href="http://dlmf.nist.gov/8.2" rel="nofollow">the DLMF</a>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1750763"> Thank you, this is very helpful! </td></tr><tr><td comment_id="6279081"> Also note that the integral in the first definition is often written using the lowercase gamma, i.e. <span class="math-container" id="8266483" visual_id="5011703"><math alttext="\gamma(\alpha,x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and with the upper case as we see with your second integral definition. The first is know as the 'lower incomplete gamma' and the later is the 'upper incomplete gamma' </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

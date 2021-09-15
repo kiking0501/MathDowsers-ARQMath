@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Compare two fractions</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Compare two fractions </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3037114">
+<p>How to compare <span class="math-container" id="28126338" visual_id="8167110"><math alttext="\frac{\sin{2016°}}{\sin{2017°}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mn>2016</mn><mo>⁢</mo><mi mathvariant="normal">°</mi></mrow></mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mn>2017</mn><mo>⁢</mo><mi mathvariant="normal">°</mi></mrow></mrow></mfrac></semantics></math></span> and <span class="math-container" id="28126339" visual_id="8167111"><math alttext="\frac{\sin{2018°}}{\sin{2019°}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mn>2018</mn><mo>⁢</mo><mi mathvariant="normal">°</mi></mrow></mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mn>2019</mn><mo>⁢</mo><mi mathvariant="normal">°</mi></mrow></mrow></mfrac></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> trigonometry </span><span> contest-math </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6262171"> Hint: module 360 </td></tr><tr><td comment_id="6262178"> Where is this problem from? </td></tr><tr><td comment_id="6262181"> @Arthur an olimpiad </td></tr><tr><td comment_id="6262182"> And has it finished? Or is it ongoing? </td></tr><tr><td comment_id="6262183"> @Arthur finished several years ago </td></tr><tr><td comment_id="6262265"> Ok. The 2018 and 2019 made me think it was relatively recent. </td></tr><tr><td comment_id="6262268"> @Arthur I think the thing was about 2016 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3037164" id="answer">
+<p>It's easier to compare ratios by taking logs:</p> <p><span class="math-container" id="28126349" visual_id="8167116"><math alttext="\log\frac{\sin 2016^{\circ}}{\sin 2017^{\circ}}=\log\frac{-\sin 2016^{\circ}}{% -\sin 2017^{\circ}}=\log(-\sin 2016^{\circ})-\log(-\sin 2017^{\circ})." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>log</mi><mo>⁡</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2016</mn><mo>∘</mo></msup></mrow><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2017</mn><mo>∘</mo></msup></mrow></mfrac></mrow><mo>=</mo><mrow><mi>log</mi><mo>⁡</mo><mfrac><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2016</mn><mo>∘</mo></msup></mrow></mrow><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2017</mn><mo>∘</mo></msup></mrow></mrow></mfrac></mrow><mo>=</mo><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2016</mn><mo>∘</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2017</mn><mo>∘</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> So we want to compare the change in <span class="math-container" id="28126350" visual_id="8167117"><math alttext="f(x)=\log(-\sin x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> when we go from <span class="math-container" id="28126351" visual_id="2981359"><math alttext="x=2016" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2016</mn></mrow></semantics></math></span> to <span class="math-container" id="28126352" visual_id="1313635"><math alttext="x=2017" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2017</mn></mrow></semantics></math></span>, versus when we go from <span class="math-container" id="28126353" visual_id="2940923"><math alttext="x=2018" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2018</mn></mrow></semantics></math></span> to <span class="math-container" id="28126354" visual_id="618860"><math alttext="x=2019" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2019</mn></mrow></semantics></math></span>.</p> <p>We have <span class="math-container" id="28126355" visual_id="8167118"><math alttext="f^{\prime}(x)=\cot x=\frac{\cos x}{\sin x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cot</mi><mo>⁡</mo><mi>x</mi></mrow><mo>=</mo><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math></span>, and <span class="math-container" id="28126356" visual_id="8167119"><math alttext="f^{\prime\prime}(x)=-\frac{1}{\sin^{2}x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mfrac><mn>1</mn><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mi>x</mi></mrow></mfrac></mrow></mrow></semantics></math></span>, making <span class="math-container" id="28126357" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> strictly concave everywhere it is defined. (It is only defined when <span class="math-container" id="28126358" visual_id="2934"><math alttext="\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></semantics></math></span> is negative, but this holds for <span class="math-container" id="28126359" visual_id="8167120"><math alttext="1980^{\circ}&amp;lt;x&amp;lt;2160^{\circ}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>1980</mn><mo>∘</mo></msup><mo>&lt;</mo></mrow><mrow><mi>x</mi><mo>&lt;</mo></mrow><msup><mn>2160</mn><mo>∘</mo></msup></mrow></semantics></math></span>.) For concave functions, slopes are always decreasing, so we have <span class="math-container" id="28126360" visual_id="8167121"><math alttext="\log(-\sin 2017^{\circ})-\log(-\sin 2016^{\circ})&amp;gt;\log(-\sin 2019^{\circ})-% \log(-\sin 2018^{\circ})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2017</mn><mo>∘</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2016</mn><mo>∘</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo></mrow></mrow><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2019</mn><mo>∘</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2018</mn><mo>∘</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> which is equivalent to <span class="math-container" id="28126361" visual_id="8167122"><math alttext="\frac{\sin 2016^{\circ}}{\sin 2017^{\circ}}&amp;lt;\frac{\sin 2018^{\circ}}{\sin 2% 019^{\circ}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2016</mn><mo>∘</mo></msup></mrow><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2017</mn><mo>∘</mo></msup></mrow></mfrac><mo>&lt;</mo></mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2018</mn><mo>∘</mo></msup></mrow><mrow><mi>sin</mi><mo>⁡</mo><msup><mn>2019</mn><mo>∘</mo></msup></mrow></mfrac></mrow></semantics></math></span>.</p> <p>You might complain that for concave functions <em>tangent</em> slopes are always negative, and that's not what we're using. To get the statement above, we could use the mean value theorem: the change <span class="math-container" id="28126362" visual_id="8167123"><math alttext="f(2017)-f(2016)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2017</mn><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2016</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is equal to <span class="math-container" id="28126363" visual_id="929"><math alttext="f^{\prime}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for some <span class="math-container" id="28126364" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> between <span class="math-container" id="28126365" visual_id="10730"><math alttext="2016" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2016</mn></semantics></math></span> and <span class="math-container" id="28126366" visual_id="99428"><math alttext="2017" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2017</mn></semantics></math></span>, and the change <span class="math-container" id="28126367" visual_id="8167124"><math alttext="f(2019)-f(2018)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2019</mn><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2018</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is equal to <span class="math-container" id="28126368" visual_id="929"><math alttext="f^{\prime}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for some <span class="math-container" id="28126369" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> between <span class="math-container" id="28126370" visual_id="143557"><math alttext="2018" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2018</mn></semantics></math></span> and <span class="math-container" id="28126371" visual_id="585016"><math alttext="2019" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2019</mn></semantics></math></span>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Probabilities and Stirling numbers of the second kind</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Probabilities and Stirling numbers of the second kind </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2589428">
+<p>I would like to solve the following problem, from the book <em>Understanding Probability</em> by Henk Tijms.</p> <blockquote> <p>Fifteen tourists are stranded in a city with four hotels, all of which   are located near each other in the city center. Each hotel has enough   rooms available to accomodate all 15 tourists. Each tourist randomly   chooses a hotel, independently of the choices made by the others. What   is the probability that not all four hotels will be chosen?</p> </blockquote> <p>My idea is as follows. Denote by <span class="math-container" id="23944733" visual_id="8491"><math alttext="A,B,C,D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi></mrow></semantics></math></span> the four hotels, and by <span class="math-container" id="23944734" visual_id="3709377"><math alttext="P(A\cap B\cap C\cap D)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mo>∩</mo><mi>D</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> the probability that all four hotels are chosen by at least one tourist. I would start by computing <span class="math-container" id="23944735" visual_id="3709377"><math alttext="P(A\cap B\cap C\cap D)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mo>∩</mo><mi>D</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, and then take the complementary probability.</p> <p>Here is where I am stuck. A possible approach would be that of writing down a table such as:</p> <p><span class="math-container" id="23944736" visual_id="3709378"><math alttext="\begin{array}[]{ccccc}A&amp;amp;B&amp;amp;C&amp;amp;D&amp;amp;\text{probability}&amp;amp;\text{% count}\\ \hline 1&amp;amp;1&amp;amp;1&amp;amp;12&amp;amp;\binom{15}{1}\binom{14}{1}\binom{13}{1}/4^{15}% &amp;amp;4\\ 1&amp;amp;1&amp;amp;2&amp;amp;11&amp;amp;\binom{15}{1}\binom{14}{1}\binom{13}{2}/4^{15}&amp;amp;4% \\ \dots\end{array}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>A</mi></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mi>B</mi></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mi>C</mi></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mi>D</mi></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>probability</mtext></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mtext>count</mtext></mrow></mtd></mtr><mtr><mtd class="ltx_border_t" columnalign="center"><mn>1</mn></mtd><mtd class="ltx_border_t" columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mn>1</mn></mrow></mtd><mtd class="ltx_border_t" columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mn>1</mn></mrow></mtd><mtd class="ltx_border_t" columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mn>12</mn></mrow></mtd><mtd class="ltx_border_t" columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>15</mn><mn>1</mn></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>14</mn><mn>1</mn></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>13</mn><mn>1</mn></mfrac><mo>)</mo></mrow></mrow><mo>/</mo><msup><mn>4</mn><mn>15</mn></msup></mrow></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mn>4</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mn>1</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mn>2</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mn>11</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mrow><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>15</mn><mn>1</mn></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>14</mn><mn>1</mn></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mn>13</mn><mn>2</mn></mfrac><mo>)</mo></mrow></mrow><mo>/</mo><msup><mn>4</mn><mn>15</mn></msup></mrow></mrow></mtd><mtd columnalign="center"><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>p</mi></mrow><mo>;</mo><mn>4</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mi mathvariant="normal">…</mi></mtd><mtd></mtd><mtd></mtd><mtd></mtd><mtd></mtd></mtr></mtable></semantics></math></span> However, this approach is clearly too time-demanding (and error-prone) in this case, so I guess that the solution should be related to the number of ways to partition a set of fifteen elements in four nonempty subsets, counted by the probability of each of these subsets. I do not know how to develop this further.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> combinatorics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2589475" id="answer">
+<p>Use exponential generating functions to compute the probability that all four hotels will be chosen (some person in each hotel). We first compute the assignments of people to hotels that are surjective. Note that <span class="math-container" id="23944737" visual_id="3709379"><math alttext="(e^{x}-1)^{4}=\left(x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\dotsb\right)^{4}=\sum% _{n=0}^{\infty}\left(\sum_{k_{1}+\dotsb+k_{4}=n;\,k_{i}\geq 1}\frac{n!}{k_{1}!% k_{2}!k_{3}!k_{4}!}\right)\frac{x^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>4</mn></msup><mo>=</mo><msup><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>)</mo></mrow><mn>4</mn></msup><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo>(</mo><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mrow><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>k</mi><mn>4</mn></msub></mrow><mo>=</mo><mi>n</mi></mrow><mo rspace="4.2pt">;</mo><mrow><msub><mi>k</mi><mi>i</mi></msub><mo>≥</mo><mn>1</mn></mrow></mrow></msub><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><msub><mi>k</mi><mn>3</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><msub><mi>k</mi><mn>4</mn></msub><mo>!</mo></mrow></mrow></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></mrow></mrow></semantics></math></span> We want the coefficient of <span class="math-container" id="23944738" visual_id="3709380"><math alttext="x^{15}/15!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>15</mn></msup><mo>/</mo><mrow><mn>15</mn><mo>!</mo></mrow></mrow></semantics></math></span> (think of words of length <span class="math-container" id="23944739" visual_id="8287"><math alttext="15" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>15</mn></semantics></math></span> over the alphabet of letters (in this case hotels) <span class="math-container" id="23944740" visual_id="354745"><math alttext="H_{1},H_{2},H_{3},H_{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mn>1</mn></msub><mo>,</mo><msub><mi>H</mi><mn>2</mn></msub><mo>,</mo><msub><mi>H</mi><mn>3</mn></msub><mo>,</mo><msub><mi>H</mi><mn>4</mn></msub></mrow></semantics></math></span> in which each letter appears at least once). But then note that <span class="math-container" id="23944741" visual_id="3709381"><math alttext="(e^{x}-1)^{4}=e^{4x}-4e^{3x}+6e^{2x}-4e^{x}+1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>4</mn></msup><mo>=</mo><mrow><mrow><mrow><mrow><msup><mi>e</mi><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>e</mi><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></mrow><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></mrow><mo>+</mo><mn>1</mn></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Hence the coefficient of <span class="math-container" id="23944742" visual_id="3709380"><math alttext="x^{15}/15!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>15</mn></msup><mo>/</mo><mrow><mn>15</mn><mo>!</mo></mrow></mrow></semantics></math></span> and thus the number of assignments of people to hotels in which each each hotel is chosen at least once is  <span class="math-container" id="23944743" visual_id="3709382"><math alttext="4^{15}-4\cdot 3^{15}+6\cdot 2^{15}-4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mn>4</mn><mn>15</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⋅</mo><msup><mn>3</mn><mn>15</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>6</mn><mo>⋅</mo><msup><mn>2</mn><mn>15</mn></msup></mrow></mrow><mo>-</mo><mn>4</mn></mrow></semantics></math></span> and hence the probability that not all four hotels will be chosen is  <span class="math-container" id="23944744" visual_id="3709383"><math alttext="1-\frac{4^{15}-4\cdot 3^{15}+6\cdot 2^{15}-4}{4^{15}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>-</mo><mfrac><mrow><mrow><mrow><msup><mn>4</mn><mn>15</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⋅</mo><msup><mn>3</mn><mn>15</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>6</mn><mo>⋅</mo><msup><mn>2</mn><mn>15</mn></msup></mrow></mrow><mo>-</mo><mn>4</mn></mrow><msup><mn>4</mn><mn>15</mn></msup></mfrac></mrow><mo>.</mo></mrow></semantics></math></span> The same result can be obtained by inclusion-exclusion.</p> <p>As a side note  the number of surjective functions from people to hotels is counted by the ordered stirling numbers of the second kind. In this case it is <span class="math-container" id="23944745" visual_id="3709384"><math alttext="4!\times S(15,4)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>4</mn><mo>!</mo></mrow><mo>×</mo><mi>S</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>15</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. Hence the probability that not all four hotels will be chosen may also be written as <span class="math-container" id="23944746" visual_id="3709385"><math alttext="1-\frac{4!\times S(15,4)}{4^{15}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>-</mo><mfrac><mrow><mrow><mrow><mn>4</mn><mo>!</mo></mrow><mo>×</mo><mi>S</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>15</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow><msup><mn>4</mn><mn>15</mn></msup></mfrac></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5347103"> Thanks. I understand that <span class="math-container" id="23944747" visual_id="3709386"><math alttext="S(15,4)/4^{15}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>15</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><msup><mn>4</mn><mn>15</mn></msup></mrow></semantics></math></span> is the fraction of sequences of length 15 containing all the four letters <span class="math-container" id="23944748" visual_id="8491"><math alttext="A,B,C,D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi></mrow></semantics></math></span>, but why the <span class="math-container" id="23944749" visual_id="13478"><math alttext="4!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>!</mo></mrow></semantics></math></span>? I suppose this is related to the number of permutations of four elements, corresponding to the column "count" in the table I wrote in my original post. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

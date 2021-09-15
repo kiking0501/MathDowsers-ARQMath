@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Could a square be a perfect number?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Could a square be a perfect number? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1701915">
+<p>A perfect number is the sum of its (positive) divisors (excluding itself). I am wondering if a square could be a perfect number. </p> <p>If it is an odd square, then, excluding itself, it has an even number of divisors which are odd. Adding them together yields an even sum. Therefore, an odd square could not be a perfect number.</p> <p>What about the even square case? Every help is appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> square-numbers </span><span> perfect-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3475011"> "Therefore, an odd square could not be a perfect number." -- Just for the record, if you manage to find an odd perfect number, any odd perfect number at all, that's a big deal.  They are conjectured not to exist. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1701928" id="answer">
+<p>No.</p> <p>The <a href="https://en.wikipedia.org/wiki/Euclid%E2%80%93Euler_theorem">Euclid-Euler theorem</a> states that any even perfect number <span class="math-container" id="15723885" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> (we don't know whether there are any odd ones) is of the form <span class="math-container" id="15723886" visual_id="1496300"><math alttext="n=2^{k-1}(2^{k}-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><msup><mn>2</mn><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> with <span class="math-container" id="15723887" visual_id="30771"><math alttext="2^{k}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> prime, and furthermore that any <span class="math-container" id="15723888" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> of that form is perfect (this last part is relatively easy to prove, but it is the former part you need). This is clearly not a square, since <span class="math-container" id="15723889" visual_id="30771"><math alttext="2^{k}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> is strictly larger than <span class="math-container" id="15723890" visual_id="27079"><math alttext="2^{k-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> and prime.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3474856"> Do you mean relatively prime? <span class="math-container" id="15723891" visual_id="30771"><math alttext="2^{k}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> is not prime for k=4,6,8... </td></tr><tr><td comment_id="3474864"> @Nate8: Arthur is not saying that <span class="math-container" id="15723896" visual_id="30771"><math alttext="2^{k}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> is prime for all <span class="math-container" id="15723895" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, but that any even perfect number is of the form <span class="math-container" id="15723894" visual_id="1549447"><math alttext="2^{k-1}(2^{k}-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> with a <span class="math-container" id="15723895" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> such that <span class="math-container" id="15723896" visual_id="30771"><math alttext="2^{k}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> is prime. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1936200"> Can a multi-perfect number be a perfect square? </td></tr><tr><td post_id="1210487"> Counting the number of integers <span class="math-container" id="11327681" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span> such that <span class="math-container" id="11327682" visual_id="279963"><math alttext="\sigma(i)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is even. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

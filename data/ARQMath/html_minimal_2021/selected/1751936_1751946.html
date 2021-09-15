@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to prove that $\sum_{k=0}^{n-1}\cos\left(\frac{2\pi k}{n}+\phi\right)=0$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to prove that <span class="math-container" id="16179056" visual_id="1231094"><math alttext="\sum_{k=0}^{n-1}\cos\left(\frac{2\pi k}{n}+\phi\right)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msubsup><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow><mi>n</mi></mfrac><mo>+</mo><mi>ϕ</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1751936">
+<p>Prove that <span class="math-container" id="16179057" visual_id="1231094"><math alttext="\displaystyle\sum_{k=0}^{n-1}\cos\left(\frac{2\pi k}{n}+\phi\right)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></munderover></mstyle><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow><mi>n</mi></mfrac></mstyle><mo>+</mo><mi>ϕ</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> for <span class="math-container" id="16179058" visual_id="643870"><math alttext="n\in\mathbb{N},n&amp;gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mrow><mi>ℕ</mi><mo>,</mo><mrow><mi>n</mi><mo>&gt;</mo></mrow><mn>1</mn></mrow></mrow></semantics></math></span></p> <p>I'm thinking at a demonstration by induction, as base case <span class="math-container" id="16179059" visual_id="352"><math alttext="n=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span></p> <p><span class="math-container" id="16179060" visual_id="1231095"><math alttext="\sum_{k=0}^{n-1}\cos\left(\frac{2\pi k}{n}+\phi\right)=\sum_{k=0}^{1}\cos\left% (\frac{2\pi k}{n}+\phi\right)=\cos\phi+\cos(\pi+\phi)=\cos\phi-\cos\phi=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msubsup><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow><mi>n</mi></mfrac><mo>+</mo><mi>ϕ</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mn>1</mn></msubsup><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow><mi>n</mi></mfrac><mo>+</mo><mi>ϕ</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>+</mo><mi>ϕ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow><mo>-</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> but I don't have any idea to inductive step, how can someone prove this?</p> <p>I'm thinking use this to proof that <span class="math-container" id="16179061" visual_id="1231096"><math alttext="\displaystyle\sum_{k=0}^{n-1}\alpha^{k}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></munderover></mstyle><msup><mi>α</mi><mi>k</mi></msup></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> where <span class="math-container" id="16179062" visual_id="1231097"><math alttext="\alpha=\exp\left(\frac{2\pi}{n}\iota\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mi>n</mi></mfrac><mo>⁢</mo><mi>ι</mi></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span>, thanks for any help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> trigonometry </span><span> complex-numbers </span><span> proof-writing </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3575192"> You probably mean <span class="math-container" id="16179063" visual_id="3420"><math alttext="=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="3575203"> Just use the sum of geometric series, and that <span class="math-container" id="16179064" visual_id="110127"><math alttext="\alpha^{n}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>α</mi><mi>n</mi></msup><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3575206"> Roots of unity maybe? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1751946" id="answer">
+<p><span class="math-container" id="16179066" visual_id="1231099"><math alttext="\begin{aligned} \displaystyle\sum_{k=0}^{n-1}\cos\left(\frac{2\pi k}{n}+\phi% \right)&amp;\displaystyle amp;=\mathrm{Re}\left(\sum_{k=0}^{n-1}e^{\frac{2\pi ik}{% n}+i\phi}\right)\\ &amp;\displaystyle amp;=\mathrm{Re}\left(e^{i\phi}\sum_{k=0}^{n-1}e^{\frac{2\pi ik% }{n}}\right)\\ &amp;\displaystyle amp;=\mathrm{Re}\left(e^{i\phi}\frac{1-e^{\frac{2\pi in}{n}}}{1% -e^{\frac{2\pi i}{n}}}\right)\\ &amp;\displaystyle amp;=\mathrm{Re}\left(e^{i\phi}\frac{1-e^{2\pi i}}{1-e^{\frac{2% \pi i}{n}}}\right)\\ &amp;\displaystyle amp;=\mathrm{Re}(0)\\ &amp;\displaystyle amp;=0\end{aligned}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnspacing="0pt" rowspacing="0pt"><mtr><mtd columnalign="right"><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></munderover></mstyle><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow><mi>n</mi></mfrac></mstyle><mo>+</mo><mi>ϕ</mi></mrow><mo>)</mo></mrow></mrow></mrow></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mi>Re</mi><mrow><mo>(</mo><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></munderover></mstyle><msup><mi>e</mi><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>k</mi></mrow><mi>n</mi></mfrac><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow></msup><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mi>Re</mi><mrow><mo>(</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>ϕ</mi></mrow></msup><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></munderover></mstyle><msup><mi>e</mi><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>k</mi></mrow><mi>n</mi></mfrac></msup><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mi>Re</mi><mrow><mo>(</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>ϕ</mi></mrow></msup><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow><mi>n</mi></mfrac></msup></mrow><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi></mrow><mi>n</mi></mfrac></msup></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mi>Re</mi><mrow><mo>(</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>ϕ</mi></mrow></msup><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi></mrow></msup></mrow><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi></mrow><mi>n</mi></mfrac></msup></mrow></mfrac></mstyle><mo>)</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mi>Re</mi><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd></mtd><mtd columnalign="left"><mrow><mi>a</mi><mi>m</mi><mi>p</mi><mo>;</mo><mo>=</mo><mn>0</mn></mrow></mtd></mtr></mtable></semantics></math></span> As long as <span class="math-container" id="16179067" visual_id="1214"><math alttext="n\geq 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow></semantics></math></span>, <span class="math-container" id="16179068" visual_id="1231100"><math alttext="1-e^{\frac{2\pi i}{n}}\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi></mrow><mi>n</mi></mfrac></msup></mrow><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="17966"> How can we sum up <span class="math-container" id="173177" visual_id="694"><math alttext="\sin" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>sin</mi></semantics></math></span> and <span class="math-container" id="173178" visual_id="695"><math alttext="\cos" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>cos</mi></semantics></math></span> series when the angles are in arithmetic progression? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
