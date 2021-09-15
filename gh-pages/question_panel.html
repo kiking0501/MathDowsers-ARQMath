@@ -1,0 +1,115 @@
+<span id="formula-display-style" style="display:none;">latex</span>
+
+<div id="qbox" class="q-text">
+    <button id="btn_view_question_run" type="button" class="btn btn-default" onclick="viewResult();" style="float: right">View MathDowsers' Runs for the Selected Question <i class="fa fa-arrow-right" style="color: orange"></i></button>
+    <div class="row">
+        <div class="qpanel-placeholder col-md-6 col-sm-12">
+
+            <div class="qpanel-breakdown">
+
+                <h4 style="color: dimgrey"> ARQMath Benchmark </h4>
+                <div class="radio-container" align="center">
+                    <form>
+                        <div class="radio-inline">
+                          <input type="radio" name="arqmath-year" value=2020 onclick="filterQuestion()">ARQMath-1 (2020)
+                        </div>
+                        <div class="radio-inline">
+                          <input type="radio" name="arqmath-year" value=2021 onclick="filterQuestion()" checked>ARQMath-2 (2021)
+                        </div>
+                    </form>
+                </div>
+
+
+                <h4 style="color: dimgrey"> Topic Categories </h4>
+                <div class="topic-cat-containers" align="center">
+                    <div class="topic-category-container">
+
+                        <span class="grid-label">Dependency</span>:
+
+                        <span class="btn-group">
+                            <button type="button" class="btn btn-white" onclick="filterQuestion(this)">Text</button>
+                            <button type="button" class="btn btn-white" onclick="filterQuestion(this)">Formula</button>
+                            <button type="button" class="btn btn-white" onclick="filterQuestion(this)">Both</button>
+                        </span>
+
+
+                    </div>
+
+                    <div class="topic-category-container">
+
+                        <span class="grid-label">Topic Type</span>:
+
+                        <span class="btn-group">
+                            <button type="button" class="btn btn-white" onclick="filterQuestion(this)">Computation</button>
+                            <button type="button" class="btn btn-white" onclick="filterQuestion(this)">Concept</button>
+                            <button type="button" class="btn btn-white" onclick="filterQuestion(this)">Proof</button>
+                        </span>
+
+
+                    </div>
+
+                    <div class="topic-category-container">
+
+                        <span class="grid-label">Difficulty</span>:
+
+                        <span class="btn-group">
+                            <button type="button" class="btn btn-white" onclick="filterQuestion(this)">Easy</button>
+                            <button type="button" class="btn btn-white" onclick="filterQuestion(this)">Medium</button>
+                            <button type="button" class="btn btn-white" onclick="filterQuestion(this)">High</button>
+                       </span>
+
+
+                    </div>
+                </div>
+
+                <h4>
+                    <span style="color: dimgrey"> Available Questions: </span> <span style="color:#212529" id="num-topics">N/A</span>
+                </h4>
+
+            </div>
+
+
+            <div class="qpanel-dropdown" align="center">
+                <form>
+                     <select name = "dropdown">
+                     </select>
+                </form>
+            </div>
+            <a style="cursor: pointer;" onclick="resetPanel()">
+                    Reset Question Panel
+            </a>
+
+
+        </div>
+
+        <div class="qbox-placeholder col-md-6 col-sm-12">
+            <h4 style="color:dimgrey"> No Selected Question. </h4>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="qbox-template" class="qbox" style="display:none">
+    <div class="panel panel-default">
+        <div class="panel-heading" style="text-align: center">
+            <h4> <span style="color: orange; font-weight: bold"> Selected Question: </span> <span class="qtopic"> [ARQMath <span class="qyear"></span>, <span class="qtopic-id"></span>]</span></h4>
+            <h5>  <span class="qcategory"> (Topic Categories and Human Relevance Judgement Not Available) </span>  </h5>
+        </div>
+        <div class="panel-body">
+            <div class="qbox-content">
+                <h4 class="qbox-title">
+                    <span class="qtopic-text"></span>
+                </h4>
+                <h5>
+                <span class="qbox-tags" style="color: dimgrey">
+                </span>
+                </h5>
+
+                <hr class="qbox">
+                <div class="qbox-body">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

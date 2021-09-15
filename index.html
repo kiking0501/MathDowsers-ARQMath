@@ -20,12 +20,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-        <!-- Display MathML -->
-<!--         <script type="text/javascript" async
-          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-        </script>
-
- -->
         <!-- Display Latex -->
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
@@ -43,7 +37,12 @@
                 SEEditor: "mathjaxEditing"
             });
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+        <!-- Display MathML -->
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
 
         <!-- Custom -->
         <link rel="shortcut icon"
@@ -51,192 +50,95 @@
         <link rel="stylesheet" href="gh-pages/main.css">
         <script type="text/javascript" src="gh-pages/main.js"></script>
 
+        <link rel="stylesheet" href="gh-pages/tab_panels.css">
 
-        <style>
-            body,html {
-                height: 100%;
-                margin: 0;
-                font-family:'Open Sans', sans-serif;
+        <!-- <style type="text/css" media="screen"> -->
+        <!-- </style> -->
+
+        <script type="text/javascript" charset="utf-8">
+            var hasLoadTab = {
+                "overview": false,
+                "guide": false,
+                "question_panel": false,
+                "view_result": false,
             }
-        </style>
 
+            function openTab(tabName) {
+                if (!hasLoadTab[tabName]) {
+                        $("#" + tabName).load("gh-pages/" + tabName + ".html?_=" + (new Date().getTime()), function(){
+                            hasLoadTab[tabName] = true;
+                            if (tabName == "question_panel") {
+                                askQuestion();
+                            }
+                        });
+                }
+
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    $(tabcontent[i]).css("display", "none");
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                $("#" + tabName).css("display", "block");
+                $("#btn_" + tabName).addClass("active");
+
+            }
+            function checkisLimitSize() {
+                if ($("#hostSource").text() == "gitHub") {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            $( document ).ready(function() {
+
+                $("#btn_overview").click();
+                questionSelected(false);
+
+                if (checkisLimitSize()) {
+                    $("#note-for-limit-size").show();
+                }
+
+
+            })
+        </script>
     </head>
 
     <body>
+
         <div class="bg-image"></div>
+
         <div class="bg-text">
-            <h1> Dowsing for Math Answers </h1>
-            <h3> The MathDowsers team's submission at ARQMath</h3>
-            <h2 class="button-text action-text" onclick="askQuestion(true)"> Start Dowsing <i class="fa fa-play-circle" aria-hidden="true"></i> </h2>
+            <h1  style="color: orange"> Dowsing for Math Answers </h1>
+            <h3> The MathDowsers team's runs at ARQMath</h3>
+            <h5><span id="note-for-limit-size" style="color: red; display: none"> (Note that this is a limited version of the demo. For full version, visit <a href="https://cs.uwaterloo.ca/~yk2ng/MathDowsers-ARQMath/" target="_blank">here</a>.)</span></h5>
 
-            <hr>
-            <div class="description">
-                <p> A demo page to demonstrate <em> dowing for math answers</em>:
-                <blockquote>Given a math question, look for potential answers to this math question from an existing math answer database.</blockquote></p>
-                <p> This demo displays the MathDowsers team's submission runs in the <a href="https://www.cs.rit.edu/~dprl/ARQMath/" target="_blank">ARQMath Lab</a> (Answer Retrieval for Questions on Math) 2020 and 2021: </p>
-                <p> where the math answer database is the <a href="https://math.stackexchange.com/" target="_blank">MathStackExchange</a> corpus from year 2010 to 2018, and math questions are selected from the same corpus from year 2019 to 2020.</p>
-                <p> <span class="button-text action-text" onclick="askQuestion(true)">Start Dowsing <i class="fa fa-play-circle" aria-hidden="true"></i></span> </p>
-            </div>
-            <div class="description">
-
-                <h3> About </h3>
-
-                <p> MathDowsers is a team of researchers from the University of <em>Water</em>loo who are interested in <em>dowsing</em> for answers to <em>math</em> questions. </p>
-
-                <p>
-                The team produces the best participant run of the Answer Retrieval task in the ARQMath Lab in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
-                </p>
-
-                <p> This demo displays the team's submission runs only. To make a custom search, visit the interface of the <a href="http://mathbrush.cs.uwaterloo.ca/" target="_blank">math-aware search engine</a> in use (which supports a pen-based input). </p>
-
-                <p> The team's code repository can be found <a href="https://github.com/kiking0501/MathDowsers-ARQMath" target="_blank">here</a>. <p>
-
-            </div>
-
-
-            <div class="description">
-                <h3> Bibliography </h3>
-                <em>
-                <p>
-                Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. Dowsing for Answers to Math Questions: Ongoing Viability of Traditional MathIR, in: CLEF 2021, 2021 (to appear)
-                </p>
-
-                <p>
-                Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. Dowsing for Math Answers, in: (Best of Lab) CLEF 2021, volume 12880 of LNCS, 2021 (to appear)
-                </p>
-
-                <p>
-                Yin Ki NG, Dallas J. Fraser, Besat Kassaie, George Labahn, Mirette S. Marzouk, Frank Wm Tompa, and Kevin Wang. <a href="http://ceur-ws.org/Vol-2696/paper_167.pdf" target="_blank">Dowsing for Math Answers with Tangent-L</a>, in: CLEF 2020, volume 2696 of CEUR Workshop Proceedings, 2020
-                </p>
-                </em>
-            </div>
-
-        </div>
-
-        <div id="qbox" class="q-text" style="display:none">
-            <span class="button-text action-text" onclick="closeQuestion()"><h2><i style="position: absolute; top: 0; right: 0; margin-right:5px; z-index:3" class="fa fa-times-circle fa-6"></i></h2> </span>
-            <div class="row">
-                <div class="qpanel-placeholder col-md-6 col-sm-12">
-                    <h3>
-                        [Step 1] Select a Math Question <span class="button-text action-text" onclick="askQuestion(false)"> or Random <i class="fa fa-refresh" aria-hidden="true"></i> </span>
-                    </h3>
-                    <hr class="qbox">
-
-                    <div class="qpanel-breakdown">
-                        <div class="radio-container">
-                            <form>
-                                <div class="radio-inline">
-                                  <label><input type="radio" name="arqmath-year" value=2020 onclick="filterQuestion()">ARQMath 2020</label>
-                                </div>
-                                <div class="radio-inline">
-                                  <label><input type="radio" name="arqmath-year" value=2021 onclick="filterQuestion()" checked>ARQMath 2021</label>
-                                </div>
-
-                            </form>
-                        </div>
-                        <div class="grid-containers">
-                            <div class="grid-container">
-                            <span class="grid-label">Dependency</span>
-                            <span class="grid-item">
-                                <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Text</button>
-                            </span>
-                            <span class="grid-item">
-                                <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Formula</button>
-                            </span>
-                            <span class="grid-item">
-                                <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Both</button>
-                            </span>
-                            </div>
-                            <div class="grid-container">
-                            <span class="grid-label">Topic Type</span>
-                                <span class="grid-item">
-                                    <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Computation</button>
-                                </span>
-                                <span class="grid-item">
-                                    <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Concept</button>
-                                </span>
-                                <span class="grid-item">
-                                    <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Proof</button>
-                                </span>
-                            </div>
-                            <div class="grid-container">
-                            <span class="grid-label">Difficulty</span>
-                                <span class="grid-item">
-                                    <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Easy</button>
-                                </span>
-                                <span class="grid-item">
-                                    <button type="button" class="btn btn-default" onclick="filterQuestion(this)">Medium</button>
-                                </span>
-                                <span class="grid-item">
-                                    <button type="button" class="btn btn-default" onclick="filterQuestion(this)">High</button>
-                                </span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="qpanel-dropdown">
-
-                        <form>
-                             <select name = "dropdown" autofocus="autofocus">
-                             </select>
-
-                        </form>
-
-                    </div>
-
-                    <span class="button-text action-text" style="padding:10px; color:#253529;" > Available: <span id="num-topics">N/A</span> </span>
-                    <span class="button-text action-text" style="padding:10px; color:#1E90FF" onclick="resetPanel()"> Reset </span>
-
-
-                    <!-- h3 class="button-text action-text" onclick="searchQuestion()"> Get Answers <i class="fa fa-external-link" aria-hidden="true"></i> </h3> -->
+            <div class="tab">
+                <div class="tab-header">
+                  <button id="btn_overview" class="tablinks" onclick="openTab('overview')">Overview</button>
+                  <button id="btn_guide" class="tablinks" onclick="openTab('guide')">Guide</button>
+                  <button id="btn_question_panel" class="tablinks" onclick="openTab('view_result'); openTab('question_panel'); ";>ARQMath Question Panel<span id="questionIsSelected" style="color:orange"></span></button>
+                  <button id="btn_view_result" class="tablinks" onclick="openTab('view_result')">View Ranked Answers<span id="resultIsLoaded" style="color:orange"></span><img class="ajax-loader-gif" src="gh-pages/img/ajax-loader.gif"></button>
                 </div>
 
-                <div class="qbox-placeholder col-md-6 col-sm-12">
-                    In Construction
+                <div id="overview" class="tabcontent">
                 </div>
 
-            </div>
+                <div id="guide" class="tabcontent">
+                </div>
 
-        </div>
+                <div id="question_panel" class="tabcontent">
+                </div>
 
-        <div id="qbox-template" class="qbox" style="display:none">
-            <div class="qbox-header">
-                <h3>
-                    <span style="color:white; padding-left:20px; padding-right:20px"> [Step 2] Preview <i class="fa fa-angle-double-down" aria-hidden="true"></i> </span>
-                    <span class="action-text" onclick="searchQuestion()"> [Step 3] Search Potential Answers <i class="fa fa-external-link" aria-hidden="true"></i> </span>
-
-<!--                     <span class="action-text" onclick="closeQuestion()"><i style="float:right; margin-right: 20px;" class="fa fa-times-circle"></i> -->
-                </h3>
-
-            </div>
-
-            <h4 style="font-family:'Open Sans', sans-serif; float:left; margin-top:-15px"> <span class="qtopic"> [ARQMath <span class="qyear"></span>, <span class="qtopic-id"></span>]</span> <span class="qcategory"> Not Accessed </span> </h4>
-            <br>
-            <div class="qbox-content">
-
-                <h3 class="qbox-title">
-                    <span class="qtopic-text"></span>
-                </h3>
-                <h4>
-                <span class="qbox-tags">
-                </span>
-                </h4>
-
-                <hr class="qbox">
-                <div class="qbox-body">
+                <div id="view_result" class="tabcontent">
                 </div>
             </div>
+            <span id="hostSource" style="display:none">gitHub</span>
         </div>
 
-        <div class="footer">
-            Powered by the <a style="color:orange" href="https://www.scg.uwaterloo.ca/brushsearch/"> BrushSearch</a> project
-        </div>
     </body>
 </html>
-
-
-

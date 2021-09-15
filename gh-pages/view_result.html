@@ -1,0 +1,146 @@
+<div class="rbox">
+
+    <div class="row">
+        <div class="answer-abstract-placeholder col-md-6 col-sm-12">
+            <button class="btn btn-default" onclick="openTab('question_panel')" style="float: right"><i class="fa fa-arrow-left" style="color: orange"></i> Back to Question Selection</button>
+
+            <h4>
+            <div align="center">
+                <span  style="color:orange; float: left; font-weight: bold"> Selected Question: </span>
+                <span class="qtopic" > [ARQMath <span class="qyear"></span>, <span class="qtopic-id"></span>]</span>
+                <h5><span class="qcategory"> (Topic Categories and Human Relevance Judgement Not Available) </span>  </h5>
+            </div>
+            </h4>
+
+            <hr>
+            <h4> <span  style="color:dimgrey"> Rank Answers by: </span> </h4>
+            <div align="center">
+                <form>
+                  <select name = "dropdown" class="rbox-dropdown" onchange="viewResult()">
+                    <option value="post-duplicate">MathDowsers' run: duplicateTerms (experimental run)</option>
+                    <option value="primary">MathDowsers' run: primary (best automatic run)</option>
+                    <option value="proximityReRank">MathDowsers' run: proximityReRank</option>
+                  </select>
+                </form>
+            </div>
+            <h4> <span  style="color:dimgrey"> Show Human Relevance Judgement: </span> </h4>
+            <div align="center">
+                <h4>
+
+                    <span class="display-counts relevancy-label" style="display:none;">
+                        <span class="label label-success" id="label-HR"> Highly Relevant <span class="badge badge-warning" style="display:none"></span> </span>
+                        <span class="label label-info" id="label-R"> Relevant <span class="badge badge-warning" style="display: none"></span></span>
+                        <span class="label label-primary" id="label-LR"> Low Relevant <span class="badge badge-warning" style="display: none"></span></span>
+                        <span class="label label-default" id="label-IR"> Irrelevant <span class="badge badge-warning" style="display: none"></span></span>
+                    </span>
+                    &nbsp;
+                    <span class="switch-text" style="color:dimgrey; font-size: .83em">OFF</span>
+                    <label class="switch" onclick="toggleRelevance(this)">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                </h4>
+
+            </div>
+            <div>
+
+                <span style="color:dimgrey;"> Showing </span>
+                <span class="num-results" style="color:#212529"> </span><img class="ajax-loader-gif" src="gh-pages/img/ajax-loader.gif">
+                <span style="color:dimgrey;"> results. </span>
+
+            </div>
+
+            <div id="answer-rows" class="row">
+            </div>
+        </div>
+
+        <div class="document-placeholder col-md-6 col-sm-12">
+            <h4 style="color:dimgrey"> No Selected Answer. </h4>
+        </div>
+    </div>
+</div>
+
+<div id="answer-abstract-template" style="display:none">
+    <div class="panel panel-default">
+        <div class="panel-heading" style="cursor: pointer" onclick="selectAnswerDocument(this)">
+            <h5>
+                <span class="isViewing" style="color: dimgrey;"> <i class="fa fa-eye"> </i> </span>
+                [ Rank <span class="answer-rank"> 1 </span> ]
+                <span> Answer Id: </span> <span class="answer-id"> 98 </span>
+                <span style="float: right"> Thread Id:  <span class="thread-id"> 100098 </span> </span>
+                <span class="relevancy"> <span class="relevancy-label" style="display:none;"></span> <span class="relevancy-score" style="display:none"></span></span>
+            </h5>
+        </div>
+        <div class="panel-body answer-body"> Answer Content ... </div>
+        <div class="original-document" style="display:none"> </div>
+    </div>
+</div>
+
+<div id="document-template" style="display:none">
+    <div class="panel panel-default">
+        <div class="panel-heading" align="center">
+        <h4>
+            [ Rank <span class="answer-rank"> 1 </span> ]
+            <span> Answer Id: </span> <span class="answer-id"> 98 </span>
+            <span class="relevancy"> <span class="relevancy-label" style="display:none"></span> <span class="relevancy-score" style="display:none"></span></span>
+
+            <!-- <div  style="color:dimgrey; text-align: center"> Details of the Answer Document </div> -->
+        </h4>
+        <h5>
+            <span> View Thread in <a href="" class="mse-link" target="_blank">Math StackExchange <i class="fa fa-external-link"> </i></a> </span>
+        </h5>
+
+        </div>
+
+        <div class="panel-body" style="margin: 10px">
+            <h4 style="color:dimgrey"> Associated Question: </h4>
+            <div class="panel panel-default question-component">
+                <h4 class="panel-body question-title">
+                </h4>
+                <h5 class="panel-body question-tags" style="color:dimgrey">
+                </h5>
+                <hr>
+                <div class="panel-body question-body">
+                </div>
+            </div>
+            <h4  style="color:dimgrey"> Comments to the Questions: </h4>
+            <div class="panel panel-default question-component">
+                <div class="panel-body question-comments">
+                    N/A
+                </div>
+            </div>
+
+            <h4  style="color:dimgrey"> Answer:</h4>
+            <div class="panel panel-default answer-component">
+                <div class="panel-body answer-full-body">
+                </div>
+            </div>
+
+            <h4  style="color:dimgrey"> Comments to the Answer: </h4>
+            <div class="panel panel-default answer-component">
+                <div class="panel-body answer-comments">
+
+                </div>
+            </div>
+
+            <h4  style="color:dimgrey"> Duplicate / Related Posts: </h4>
+            <div class="panel panel-default post-links-component">
+                <div class="panel-body duplicate-posts">
+                    <table>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+                <div class="panel-body related-posts">
+                    <table>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

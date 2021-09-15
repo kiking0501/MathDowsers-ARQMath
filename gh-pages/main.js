@@ -14,8 +14,38 @@ function accessJson(url, callback) {
     }
 }
 
-function askQuestion(isInitial, target) {
-    // isInitial: whether the qbox panel has been opened
+function accessFile(url, callback){
+    $.ajax({
+        url: url,
+        type: 'get',
+        success: function(data) {
+            callback(data);
+        },
+        error: function() {
+        }
+    });
+}
+
+function getFormulaDisplayStyle() {
+    return $("#formula-display-style").text();
+}
+
+function checkisLimitSize() {
+    if ($("#hostSource").text() == "gitHub") {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
+/*
+====================
+/ Question Panel
+====================
+*/
+
+function askQuestion(target) {
     // target: whether a question-id has been fixed or to be randomly generated later
     var topic_id;
     var arqmath_year;
@@ -31,6 +61,9 @@ function askQuestion(isInitial, target) {
     }
     function getQuestions(callback){
         var name = "task1-topics-" + arqmath_year;
+        var formulaSuffix = ((getFormulaDisplayStyle() === "slt")? "-slt" : "");
+        name += formulaSuffix;
+
         if (isRandom(target)) {
             // reading all questions
             accessJson(
@@ -47,15 +80,13 @@ function askQuestion(isInitial, target) {
         // generate a question-id if not yet
         if (isRandom(target)) {
             topic_id = getRandomKey(data);
-        }
-        if (isInitial || isRandom(target)) {
             // clear and rewrite the select panel
             writeSelectPanel(arqmath_year, data, Object.keys(data), function() {
-                highlightOption(arqmath_year + "," + topic_id);
+                highlightOption(arqmath_year, topic_id);
             });
         } else {
             // only highlight the option
-            highlightOption(arqmath_year + "," + topic_id);
+            highlightOption(arqmath_year, topic_id);
         }
 
         // write the specific question
@@ -79,14 +110,11 @@ function askQuestion(isInitial, target) {
         qbox.removeAttr("id");
         qbox.find(".qyear").text(arqmath_year);
         qbox.find(".qtopic-id").text(topic_id);
-        qbox.find(".qtopic-text").html(question_data["Title"]);
-        qbox.find(".qbox-body").html(question_data["Question"]);
+        qbox.find(".qtopic-text").html(cleanFormula(question_data["Title"]));
+        qbox.find(".qbox-body").html(cleanFormula(question_data["Question"]));
         qbox.find(".qbox-tags").text(question_data["Tags"]);
         qbox.show();
         $("#qbox").find(".qbox-placeholder").html(qbox);
-        if (isInitial) {
-            $("#qbox").show("slow");
-        }
         accessJson(
             'data/ARQMath/postpro_2021/task1_' + arqmath_year + '_topic_info.json',
             function(topic_info) {
@@ -95,7 +123,7 @@ function askQuestion(isInitial, target) {
                     var q_info = topic_info[topic_id];
                     unifyTopicInfo(q_info);
                     qbox.find(".qcategory").text(
-                        q_info["Dependency"] + ", " + q_info["Topic Type"] + ", " + q_info["Difficulty"]
+                        "(" + q_info["Dependency"] + ", " + q_info["Topic Type"] + ", " + q_info["Difficulty"] + ")"
                     );
                 }
         });
@@ -104,22 +132,13 @@ function askQuestion(isInitial, target) {
 
 }
 
-function closeQuestion() {
-    $("#qbox").find(".qbox-placeholder").html("");
-    $("#qbox").hide("fast");
-}
-
-function searchQuestion() {
-    var arqmath_year = $("#qbox").find(".qyear").text();
-    var topic_id = $("#qbox").find(".qtopic-id").text();
-    window.open("gh-pages/result.html?ARQMath_year=" + arqmath_year + "&topic_id=" + topic_id);
-}
 
 function reloadMathJax() {
   MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
 function writeSelectPanel(arqmath_year, q_data, q_keys, callback) {
+
     q_keys.sort(function(a, b) {
         var a_id = parseInt(a.split(".")[1]);
         var b_id = parseInt(b.split(".")[1]);
@@ -130,7 +149,7 @@ function writeSelectPanel(arqmath_year, q_data, q_keys, callback) {
     select.html("");
     for (var i = 0; i < q_keys.length; i++) {
         var option = '<option value="' + arqmath_year + "," + q_keys[i] + '"';
-        option += " onclick='askQuestion(false, this.value)'"
+        option += " onclick='askQuestion(this.value)'"
         option += ">[" + arqmath_year + "," + q_keys[i] + "] ";
         option += q_data[q_keys[i]]["Title"].slice(0, 50) + "..." ;
         option += "</option>"
@@ -141,9 +160,13 @@ function writeSelectPanel(arqmath_year, q_data, q_keys, callback) {
     callback();
 }
 
-function highlightOption(val) {
+function highlightOption(arqmath_year, topic_id) {
     var select = $("#qbox").find(".qpanel-dropdown").find("select");
-    select.val(val).change();
+    select.val(arqmath_year + "," + topic_id).change();
+    select.focus();
+    $(".qpanel-placeholder").find(".qyear").text(arqmath_year);
+    $(".qpanel-placeholder").find(".qtopic-id").text(topic_id);
+    questionSelected(true);
 }
 
 function unifyTopicInfo(q_info) {
@@ -185,6 +208,8 @@ function filterQuestion(btn) {
     }
     var arqmath_year = $('[name="arqmath-year"]:checked').val();
     var name = "task1-topics-" + arqmath_year;
+    var formulaSuffix = ((getFormulaDisplayStyle() === "slt")? "-slt" : "");
+    name += formulaSuffix;
     accessJson(
         'data/ARQMath/experiments/topics/ARQMath_2021/' + name + '.json',
         function(data) {
@@ -221,83 +246,344 @@ function resetPanel() {
     $("[name=arqmath-year").val([2021]);
     $(".qpanel-breakdown").find("button").removeClass("selected");
     filterQuestion();
+    questionSelected(false);
 }
-$(document).ready(function() {
-    $(".q-text").hide();
-})
-
-function cleanMathML(text) {
-
-    return text.replace(
-        'display=\"block\"', 'display=\"inline\"').replace(
-        '<merror class="ltx_error undefined undefined">', "").replace(
-        "</merror>", "").replace(
-        '<merror class="ltx_ERROR undefined undefined">', "");
+function cleanFormula(text) {
+    if (getFormulaDisplayStyle() === "slt") {
+        return text;
+        // var mathml = $(text).find("merror").remove();
+        // console.log("hey", mathml);
+        // // $(mathml).remove("merror");
+        // return mathml;
+    }
+    return text;
 }
+
+
+function questionSelected(flag) {
+    if (!flag) {
+        $("#questionIsSelected").html("");
+        $(".qbox-placeholder").html("<h4 style='color:dimgrey'> No Selected Question. </h4>");
+        $("#btn_view_question_run").prop("disabled", true);
+        $("#btn_view_result").prop("disabled", true);
+
+        // initial state
+        $("#resultIsLoaded").html("");
+        $(".ajax-loader-gif").hide();
+
+    } else {
+        $("#questionIsSelected").html("<i class='fa fa-check'></i>");
+        $("#btn_view_question_run").prop("disabled", false);
+
+
+        $("#btn_view_result").prop("disabled", true);  // question changed, need to disable
+        $("#resultIsLoaded").html("");
+    }
+}
+
+/*
+====================
+/ View Result
+====================
+*/
+
+var topK = 20;
+
+function viewResult() {
+    var arqmath_year = $($("#qbox").find(".qyear")[0]).text();
+    var topic_id = $($("#qbox").find(".qtopic-id")[0]).text();
+    $("#btn_view_result").prop("disabled", false);
+    openTab("view_result");
+    writeResult(arqmath_year, topic_id);
+}
+
 
 function writeResult(arqmath_year, topic_id) {
-
+    resultIsLoaded(false);
+    $("#answer-rows").html("");
+    $("#document-placeholder").html("");
+    var runName = $(".rbox-dropdown").val();
+    if (typeof runName == 'undefined') {
+        runName = "post-duplicate";
+    }
     var rbox = $(".rbox");
     rbox.find(".qyear").text(arqmath_year);
     rbox.find(".qtopic-id").text(topic_id);
+    rbox.find(".qcategory").text(
+        $($("#qbox").find(".qcategory")[0]).text()
+    );
+    $("#ajax-loader-gif").show();
 
-    function getResultQuestion(callback){
-        accessJson('../data/ARQMath/experiments/topics/ARQMath_2021/task1-topics-' + arqmath_year + '-slt.json', callback);
+    function getResultTSV(callback) {
+        accessFile('data/ARQMath/experiments/runs/simple-task1-topics-' + arqmath_year + '-' + runName + '.tsv', callback);
     }
-    // getResultQuestion(function (data) {
-    //     writeResultQuestion(data);
-    // });
-
-    function writeResultQuestion(question_data) {
-        var qbox = $("#qbox-template").clone();
-        qbox.removeAttr("id");
-        qbox.find(".qbox-title").find(".qtopic-text").html(cleanMathML(question_data[topic_id]["Title"]));
-        qbox.find(".qbox-title").find(".qyear").text(arqmath_year);
-        qbox.find(".qbox-title").find(".qtopic-id").text(topic_id);
-        qbox.find(".qbox-body").html(cleanMathML(question_data[topic_id]["Question"]));
-        qbox.find(".qbox-tags").text(question_data[topic_id]["Tags"]);
-        qbox.show();
-        rbox.find(".qtopic-text").html(cleanMathML(question_data[topic_id]["Title"]));
-        rbox.find(".placeholder").html(qbox);
+    function getRelevancy(callback) {
+        accessFile('data/ARQMath/experiments/qrels_official_' + arqmath_year + '/qrel_task1', callback);
+    }
+    function getDirectoryManifest(callback) {
+        accessFile('data/ARQMath/prepro_2021/html-manifest.txt', callback);
     }
 
-    function getTerms(callback) {
-        accessJson('../data/ARQMath/experiments/topics/ARQMath_2021/task1-termCount-' + arqmath_year + '-rewrite.json', callback);
-    }
-    getTerms(function (data) {
-        var terms = getSortedItems(data[topic_id]);
-        var html = "";
-        for (let i = 0; i < terms.length; i++) {
-            // html += "<ul>";
-            html += "<div>";
-            html += cleanMathML(terms[i][0]);
+    getDirectoryManifest(function (str) {
+        var lines = str.split('\n');
+        var directory_path = 'data/ARQMath/html_minimal_2021';
+        var directory_list = [];
+        for (var i = 0; i < lines.length; i++) {
+            splits = lines[i].split('\t');
+            directory_list.push([splits[0], parseInt(splits[1]), parseInt(splits[2])]);
+        }
 
-            if (terms[i][1] > 1) {
-                html += " <span class='badge'>" + terms[i][1] + "</span>";
+        getRelevancy(function(str){
+            lines = str.split('\n');
+            var relevancy_dict = {};
+            for (var i = 0; i < lines.length; i++) {
+                splits = lines[i].split('\t');
+                res_topic_id = splits[0];
+                if (res_topic_id == topic_id) {
+                    relevancy_dict[splits[2]] = parseInt(splits[3]);
+                }
             }
-            html += "</div>";
-            // html += "</ul>";
-            // if (i !== terms.length - 1) {
-            //     html += ", ";
-            // }
+
+            getResultTSV(function (str) {
+                lines = str.split('\n');
+                var topic_results = [];
+                for (var i = 0; i < lines.length; i++) {
+                    splits = lines[i].split('\t');
+                    res_topic_id = splits[0];
+                    if (res_topic_id == topic_id) {
+                        topic_results.push(splits);
+                    }
+                }
+
+                getHtmlFile(directory_list, relevancy_dict, topic_results);
+            });
+
+        });
+
+    });
+}
+
+function getHtmlFile(directory_list, relevancy_dict, topic_results) {
+
+    function checkDirectoryPath() {
+        if (i < directory_list.length) {
+            $.ajax({
+                url: "data/ARQMath/html_minimal_2021/2010-2018_3patterns" + directory_list[i][0] + "/" + topic_results[rank][1] + "/" + topic_results[rank][1] + "_" + topic_results[rank][2] + ".html",
+                type: 'get',
+                success: function(data) {
+                    thread2path[thread_id] = "data/ARQMath/html_minimal_2021" + directory_list[i][0];
+                },
+                error: function() {
+
+                }
+            });
+        }
+    }
+    var thread2path = {};
+    var relevancy_count = [0, 0, 0, 0, 0];
+    if (checkisLimitSize()) {
+        // Use for GitHub with Size Limit
+        topK = 5;
+
+        for (var rank = 0; rank < Math.min(topK, topic_results.length); rank++) {
+            var thread_id = topic_results[rank][1];
+            var answer_id = topic_results[rank][2];
+            var relevancy = -1;
+            if (answer_id in relevancy_dict) {
+                relevancy = relevancy_dict[answer_id];
+            }
+            $.ajax({
+                url: "data/ARQMath/html_minimal_2021/selected/" + thread_id + "_" + answer_id + ".html",
+                type: 'get',
+                async: false,
+                success: function (doc_str) {
+                    drawCard(rank, answer_id, thread_id, relevancy, doc_str);
+                }
+            });
+        }
+
+    } else {
+        // Use for UW-CS homepage with all documents available
+
+        for (var rank = 0; rank < Math.min(topK, topic_results.length); rank++) {
+            var thread_id = topic_results[rank][1];
+            var answer_id = topic_results[rank][2];
+            var relevancy = -1;
+            if (answer_id in relevancy_dict) {
+                relevancy = relevancy_dict[answer_id];
+            }
+            if (!(thread_id in thread2path)) {
+                for (var i = 0; i < directory_list.length; i++) {
+                    if (!(thread_id in thread2path)) {
+                        if ((parseInt(thread_id) >= directory_list[i][1]) && (parseInt(thread_id) <= directory_list[i][2])) {
+                            $.ajax({
+                                url: "data/ARQMath/html_minimal_2021/2010-2018_3patterns" + directory_list[i][0] + "/" + thread_id + "/" + thread_id + "_" + answer_id + ".html",
+                                type: 'get',
+                                async:false,
+                                success: function (doc_str) {
+                                    thread2path[thread_id] = "data/ARQMath/html_minimal_2021/2010-2018_3patterns" + directory_list[i][0];
+                                    drawCard(rank, answer_id, thread_id, relevancy, doc_str);
+                                }
+                            });
+                        }
+                    }
+                }
+            } else {
+                $.ajax({
+                    url: thread2path[thread_id] + "/" + thread_id + "/" + thread_id + "_" + answer_id + ".html",
+                    type: 'get',
+                    async: false,
+                    success: function (doc_str) {
+                        drawCard(rank, answer_id, thread_id, relevancy, doc_str);
+                    }
+                })
+            }
 
         }
-        // html += "</h4>";
-        $(".rbox").find(".rbox-keywords").html(html);
-    })
-    function getSortedItems(obj) {
-        var items = Object.keys(obj).map(function(key) {
-          return [key, obj[key]];
-        });
-        // Sort the array based on the second value than first value
-        items.sort(function(a, b) {
-          return a[1] !== b[1]? b[1] - a[1]: b[0] < a[0]? 1: -1;
-        });
-        return items;
+    }
+
+    function drawCard(rank, answer_id, thread_id, relevancy, doc_str) {
+
+        var answer = $("#answer-abstract-template").clone();
+        answer.attr("id", answer_id);
+        answer.find(".answer-rank").text(rank + 1);
+        answer.find(".answer-id").text(answer_id);
+        answer.find(".thread-id").text(thread_id);
+        answer.find(".relevancy-score").text(relevancy);
+        if (relevancy == -1) {
+            answer.find(".relevancy-label").html(
+                "<span><em>(unjudged)</em></span>"
+            );
+        } else if (relevancy == 0) {
+            answer.find(".relevancy-label").html(
+                '<span class="label label-default">IR</span>'
+            );
+        } else if (relevancy == 1) {
+            answer.find(".relevancy-label").html(
+                '<span class="label label-primary">LR</span>'
+            );
+        } else if (relevancy == 2) {
+            answer.find(".relevancy-label").html(
+                '<span class="label label-info">R</span>'
+            );
+        } else if (relevancy == 3) {
+            answer.find(".relevancy-label").html(
+                '<span class="label label-success">HR</span>'
+            );
+        }
+
+
+        var doc_html = $('<div/>').html(doc_str).contents();
+        answer.find(".answer-body").html(
+            $(doc_html.find('#answer')[0]).html()
+        );
+        answer.find(".original-document").html(
+            $(doc_html.find("#question-title").parent()).html()
+        );
+        answer.show();
+        $("#answer-rows").append(answer.html());
+
+        relevancy_count[relevancy + 1]++;
+    }
+
+    resultIsLoaded(true);
+    $($(".answer-abstract-placeholder").find(".panel-heading")[0]).click();
+    var badges = $(".display-counts").find(".badge");
+    $("#label-HR").find(".badge").text(relevancy_count[4].toString());
+    $("#label-R").find(".badge").text(relevancy_count[3].toString());
+    $("#label-LR").find(".badge").text(relevancy_count[2].toString());
+    $("#label-IR").find(".badge").text(relevancy_count[1].toString());
+    $(".display-counts").find(".badge").show();
+}
+
+
+function resultIsLoaded(flag) {
+    if (!flag) {
+        $("#resultIsLoaded").html("");
+        $(".ajax-loader-gif").show();
+        $(".document-placeholder").html("");
+        $(".display-counts").find(".label").find(".badge").hide();
+        $(".num-results").text("");
+
+    } else {
+        $("#resultIsLoaded").html("<i class='fa fa-check'></i>");
+        $(".ajax-loader-gif").hide();
+        $(".num-results").text(topK.toString());
+
+        reloadMathJax();
     }
 }
 
-function toggleShowKeyword(container, target) {
+
+function selectAnswerDocument(btn) {
+    $(".isViewing").css("color", "dimgrey");
+
+    $(btn).find(".isViewing").css("color", "orange");
+    var ans_doc = $("#document-template").clone();
+    ans_doc.removeAttr("id");
+    ans_doc.find(".answer-rank").text(
+        $($(btn).find(".answer-rank")).text()
+    );
+    ans_doc.find(".answer-id").text(
+        $($(btn).find(".answer-id")).text()
+    );
+    ans_doc.find(".mse-link").attr(
+        "href", "https://math.stackexchange.com/questions/" +
+        $($(btn).find(".thread-id")).text()
+    );
+    ans_doc.find(".relevancy-label").html(
+        $($(btn).find(".relevancy-label")).html()
+    );
+    ans_doc.find(".relevancy-score").text(
+        $($(btn).find(".relevancy-score")).text()
+    );
+
+    var doc_node = $($(btn).parent().find(".original-document"));
+    ans_doc.find(".question-title").html(
+        $(doc_node.find("#question-title").find("h1")).html()
+    );
+    ans_doc.find(".question-body").html(
+        $(doc_node.find("#question")).html()
+    );
+    ans_doc.find(".question-tags").html(
+        $(doc_node.find("#tags")).html()
+    );
+    ans_doc.find(".question-comments").html(
+        $(doc_node.find("#question-comments")[0]).html()
+    );
+
+    ans_doc.find(".answer-full-body").html(
+        $($(btn).parent().find(".answer-body")[0]).html()
+    );
+    ans_doc.find(".answer-comments").html(
+        $(doc_node.find("#answer-comments")[0]).html()
+    );
+
+    ans_doc.find(".duplicate-posts").find("tbody").html(
+        $(doc_node.find("#duplicate")[0]).html()
+    );
+
+    ans_doc.find(".related-posts").find("tbody").html(
+        $(doc_node.find("#related")[0]).html()
+    );
+
+    ans_doc.show();
+    $(".document-placeholder").html(ans_doc.html());
+}
+
+
+function toggleExpand(container, target) {
     $(target).toggle("fast");
     $(container).find("i").toggleClass("fa-plus-circle fa-minus-circle");
+}
+
+function toggleRelevance(btn) {
+    $(".switch input").prop("checked", !$(".switch input").is(":checked"));
+    if ($(".switch input").is(":checked")) {
+        $(btn).parent().find(".switch-text").text("ON");
+        $(".relevancy-label").show();
+    } else {
+        $(btn).parent().find(".switch-text").text("OFF");
+        $(".relevancy-label").hide();
+    }
 }
