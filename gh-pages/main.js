@@ -38,10 +38,25 @@ function checkisLimitSize() {
     }
 }
 
+function reloadMathJax(ele) {
+    if (typeof(ele) != "undefined") {
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub, ele]);
+    } else {
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+
+
 /*
 ====================
 / Question Panel
 ====================
+*/
+
+
+/*
+********************
+Select & View a Particular Quesiton
 */
 
 function askQuestion(target) {
@@ -93,7 +108,9 @@ function askQuestion(target) {
         if (isRandom(target)) {
             question_data = data[topic_id];
         }
-        writeQuestion(question_data, reloadMathJax);
+        writeQuestion(question_data, function(){
+            reloadMathJax("qbox-placeholder");
+        });
     });
 
     function getRandomKey(obj){
@@ -132,9 +149,6 @@ function askQuestion(target) {
 }
 
 
-function reloadMathJax() {
-  MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-}
 
 function writeSelectPanel(arqmath_year, q_data, q_keys, callback) {
 
@@ -167,6 +181,13 @@ function highlightOption(arqmath_year, topic_id) {
     $(".qpanel-placeholder").find(".qtopic-id").text(topic_id);
     questionSelected(true);
 }
+
+
+
+/*
+********************
+Filter Availalbe Questions from the Panel
+*/
 
 function unifyTopicInfo(q_info) {
     function cleanInfoLabel(ori_label, target_label, obj) {
@@ -288,25 +309,42 @@ function questionSelected(flag) {
 ====================
 */
 
-var topK = 20;
 
 function viewResult() {
     var arqmath_year = $($("#qbox").find(".qyear")[0]).text();
     var topic_id = $($("#qbox").find(".qtopic-id")[0]).text();
     $("#btn_view_result").prop("disabled", false);
     openTab("view_result");
-    writeResult(arqmath_year, topic_id);
+
+    if (checkisLimitSize()){
+        $("#btn_extra_pageKs").hide();
+        $("#answer-paging").css("visibility", "hidden");
+        console.log($("#btn_extra_pageKs"));
+    }
+    var runName = $(".rbox-dropdown").val();
+    if (typeof(runName) == 'undefined') {
+        runName = "post-duplicate";
+    }
+    if (runName != 'custom') {
+        $("#customRunBox").hide();
+        writeResultBoard(arqmath_year, topic_id);
+
+    } else {
+        $("#customRunBox").show();
+        if (checkisLimitSize()) {
+            $(".note-for-limit-size").show();
+            $("#customRunBox").find(".panel").hide();
+        } else {
+            writeResultBoard(arqmath_year, topic_id);
+        }
+    }
 }
 
 
-function writeResult(arqmath_year, topic_id) {
+function writeResultBoard(arqmath_year, topic_id) {
     resultIsLoaded(false);
     $("#answer-rows").html("");
     $("#document-placeholder").html("");
-    var runName = $(".rbox-dropdown").val();
-    if (typeof runName == 'undefined') {
-        runName = "post-duplicate";
-    }
     var rbox = $(".rbox");
     rbox.find(".qyear").text(arqmath_year);
     rbox.find(".qtopic-id").text(topic_id);
@@ -322,17 +360,72 @@ function writeResult(arqmath_year, topic_id) {
     rbox.find(".topic-tags").html(
         $($("#qbox").find(".qbox-tags")[0]).html()
     )
-    $("#ajax-loader-gif").show();
+    changePage(1);
+}
 
-    function getResultTSV(callback) {
-        accessFile('data/ARQMath/experiments/runs/simple-task1-topics-' + arqmath_year + '-' + runName + '.tsv', callback);
+
+/*
+********************
+Ajax Call to Update list of Results
+*/
+
+function updateResult(runName, page){
+
+    function getResultTSV(arqmath_year, topic_id, runName, callback) {
+        function validateCustomInput(str) {
+            var splits = str.split("\n");
+
+            var res = [];
+            for (var i = 0; i < splits.length; i++) {
+                if ($.trim(splits[i]) != ""){
+                    var tsplits = splits[i].split("\t");
+                    try {
+                        var tsplits = splits[i].split("\t");
+                        var thread_id = parseInt($.trim(tsplits[0]));
+                        var answer_id = parseInt($.trim(tsplits[1]));
+                        if (!Number.isInteger(thread_id) || !Number.isInteger(answer_id)) {
+                            trigger();
+                        }
+                        res.push(topic_id + "\t" + thread_id + "\t" + answer_id);
+                    } catch (err) {
+                        try {
+                            var csplits = splits[i].split(",");
+                            var thread_id = parseInt($.trim(csplits[0]));
+                            var answer_id = parseInt($.trim(csplits[1]));
+                            if (!Number.isInteger(thread_id) || !Number.isInteger(answer_id)) {
+                                trigger();
+                            }
+                            res.push(topic_id + "\t" + thread_id + "\t" + answer_id);
+
+                        } catch (err) {
+                            alert("Input Line " + (i+1) + ": \n" + splits[i] + "\n is invalid! (Skipped)");
+                        }
+                    }
+                }
+            }
+            return res.join("\n");
+        }
+        if (runName != "custom") {
+            accessFile(
+                'data/ARQMath/experiments/runs/simple-task1-topics-' + arqmath_year + '-' + runName + '.tsv',
+            callback);
+        } else {
+            var customStr = $("#custom-ranking").val();
+            callback(validateCustomInput(customStr));
+
+        }
     }
-    function getRelevancy(callback) {
+    function getRelevancy(arqmath_year, callback) {
         accessFile('data/ARQMath/experiments/qrels_official_' + arqmath_year + '/qrel_task1', callback);
     }
     function getDirectoryManifest(callback) {
         accessFile('data/ARQMath/prepro_2021/html-manifest.txt', callback);
     }
+
+    resultIsLoaded(false);
+    var rbox = $(".rbox");
+    var arqmath_year = rbox.find(".qyear").text();
+    var topic_id = rbox.find(".qtopic-id").text();
 
     getDirectoryManifest(function (str) {
         var lines = str.split('\n');
@@ -343,7 +436,7 @@ function writeResult(arqmath_year, topic_id) {
             directory_list.push([splits[0], parseInt(splits[1]), parseInt(splits[2])]);
         }
 
-        getRelevancy(function(str){
+        getRelevancy(arqmath_year, function(str){
             lines = str.split('\n');
             var relevancy_dict = {};
             for (var i = 0; i < lines.length; i++) {
@@ -354,7 +447,7 @@ function writeResult(arqmath_year, topic_id) {
                 }
             }
 
-            getResultTSV(function (str) {
+            getResultTSV(arqmath_year, topic_id, runName, function (str) {
                 lines = str.split('\n');
                 var topic_results = [];
                 for (var i = 0; i < lines.length; i++) {
@@ -364,8 +457,11 @@ function writeResult(arqmath_year, topic_id) {
                         topic_results.push(splits);
                     }
                 }
+                 $("#page-total").text(
+                        Math.ceil(topic_results.length / getPageK()).toString()
+                );
 
-                getHtmlFile(directory_list, relevancy_dict, topic_results);
+                getHtmlFile(directory_list, relevancy_dict, topic_results, page);
             });
 
         });
@@ -373,7 +469,7 @@ function writeResult(arqmath_year, topic_id) {
     });
 }
 
-function getHtmlFile(directory_list, relevancy_dict, topic_results) {
+function getHtmlFile(directory_list, relevancy_dict, topic_results, page) {
 
     function checkDirectoryPath() {
         if (i < directory_list.length) {
@@ -391,11 +487,14 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results) {
     }
     var thread2path = {};
     var relevancy_count = [0, 0, 0, 0, 0];
+    var pageK = getPageK();
+
     if (checkisLimitSize()) {
         // Use for GitHub with Size Limit
-        topK = 5;
 
-        for (var rank = 0; rank < Math.min(topK, topic_results.length); rank++) {
+        var st = (page - 1) * pageK;
+        var et = Math.min(page * pageK, topic_results.length);
+        for (var rank = st; rank < et; rank++) {
             var thread_id = topic_results[rank][1];
             var answer_id = topic_results[rank][2];
             var relevancy = -1;
@@ -408,14 +507,20 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results) {
                 async: false,
                 success: function (doc_str) {
                     drawCard(rank, answer_id, thread_id, relevancy, doc_str);
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert("The answer " + (rank+1) + " with thread-id " + thread_id + ", " + "answer-id " + answer_id + " cannot be found!")
+
                 }
             });
         }
 
     } else {
         // Use for UW-CS homepage with all documents available
+            var st = (page - 1) * pageK;
+            var et = Math.min(page * pageK, topic_results.length);
 
-        for (var rank = 0; rank < Math.min(topK, topic_results.length); rank++) {
+        for (var rank = st; rank < et; rank++) {
             var thread_id = topic_results[rank][1];
             var answer_id = topic_results[rank][2];
             var relevancy = -1;
@@ -433,9 +538,15 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results) {
                                 success: function (doc_str) {
                                     thread2path[thread_id] = "data/ARQMath/html_minimal_2021/2010-2018_3patterns" + directory_list[i][0];
                                     drawCard(rank, answer_id, thread_id, relevancy, doc_str);
+                                },
+                                error: function (xhr, ajaxOptions, thrownError) {
+                                    if (i == directory_list.length-1) {
+                                        alert("The answer " + (rank+1) + " with thread-id " + thread_id + ", " + "answer-id " + answer_id + " cannot be found!")
+                                    }
                                 }
                             });
                         }
+
                     }
                 }
             } else {
@@ -470,11 +581,11 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results) {
             );
         } else if (relevancy == 1) {
             answer.find(".relevancy-label").html(
-                '<span class="label label-primary">Low Relevance</span>'
+                '<span class="label label-info">Low Relevance</span>'
             );
         } else if (relevancy == 2) {
             answer.find(".relevancy-label").html(
-                '<span class="label label-info">Medium Relevance</span>'
+                '<span class="label label-primary">Medium Relevance</span>'
             );
         } else if (relevancy == 3) {
             answer.find(".relevancy-label").html(
@@ -530,24 +641,156 @@ function resultIsLoaded(flag) {
         updateRelevanceLabel($("#" + labels[i]), false);
     if (!flag) {
         $("#resultIsLoaded").html("");
+        $("#answer-rows").html("");
         $("#btn_view_separate_answers").prop("disabled", true);
         $(".ajax-loader-gif").show();
-        $(".document-placeholder").html("");
+        $("#document-placeholder").html("");
+
         $(".display-counts").find(".label").find(".badge").hide();
         $(".num-results").text("");
+        $("#answer-paging").css("visibility", "hidden");
 
     } else {
         $("#resultIsLoaded").html("<i class='fa fa-check'></i>");
         $("#btn_view_separate_answers").prop("disabled", false);
         $(".ajax-loader-gif").hide();
-        $(".num-results").text(topK.toString());
-
+        $(".num-results").text(
+            $("#answer-rows").find(".answer-abstract-panel").length.toString()
+        )
+        if (!checkisLimitSize()) {
+            $("#answer-paging").css("visibility", "visible");
+        };
         // can only view tab after result loading
         $(".btn_view_result").prop("disabled", false);
-        reloadMathJax();
+        reloadMathJax("answer-rows");
     }
 }
 
+/*
+********************
+Pagination
+*/
+
+function selectPageK(btn) {
+    if (typeof(btn) != undefined) {
+        if (!($(btn).hasClass("selected"))) {
+            $(btn).parent().parent().find("button").removeClass("selected");
+            $(btn).addClass("selected");
+        }
+    }
+    changePage(1);
+}
+
+function getPageK(){
+    return parseInt($($(".pageK-selection").find(".selected")[0]).text());
+}
+
+
+function getCurrentPage(){
+    return parseInt($("#page-number").text());
+}
+function initPage() {
+    changePage(1);
+}
+
+function prevPage() {
+    var current_page = getCurrentPage();
+
+    if (current_page > 1) {
+        current_page--;
+        changePage(current_page);
+    }
+}
+
+function nextPage(){
+    var current_page = getCurrentPage();
+    if (current_page < numPages()) {
+        current_page++;
+        changePage(current_page);
+    }
+}
+
+function endPage(){
+    changePage(numPages());
+}
+
+
+function numPages(){
+    return parseInt($("#page-total").text());
+}
+
+function changePage(update_page){
+
+    if ((update_page < 1) || (update_page > numPages())) {
+    } else  {
+        var runName = $(".rbox-dropdown").val();
+        updateResult(runName, update_page);
+
+        $("#page-number").text(update_page.toString());
+
+        var btn_prev = $("#page-prev");
+        var btn_next = $("#page-next")
+        var btn_init = $("#page-init");
+        var btn_end = $("#page-end");
+        if (update_page == 1) {
+            btn_prev.css("display", "none");
+            btn_init.css("display", "none");
+        } else {
+            btn_prev.css("display", "")
+            btn_init.css("display", "");;
+        }
+        if (update_page == numPages()) {
+            btn_next.css("display", "none");
+            btn_end.css("display", "none");
+        } else {
+            btn_next.css("display", "");
+            btn_end.css("display", "");
+        }
+
+        if (getPageK() <= 10) {
+            var container = $(".answer-abstract-placeholder");
+            var scrollTo = $("#answer-results-info");
+
+            container.animate({
+                scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+            });
+        }
+    }
+
+}
+
+
+/*
+********************
+Display Answers in Pop-up Window
+*/
+
+function viewSeperateAnswers(){
+    var w = window.open(
+            "gh-pages/popup_answers.html",
+            "popUpAnswerLists?_=" + (new Date().getTime()),
+            "width=" + Math.max(600, Math.round(screen.width * 0.3)) + ", height=" + Math.round(screen.height * 0.8)+ ", scrollbars=yes");
+    var arqmath_year = $($("#qbox").find(".qyear")[0]).text();
+    var topic_id = $($("#qbox").find(".qtopic-id")[0]).text();
+    var runName = $(".rbox-dropdown").val();
+
+    w.document.title = "[ARQMath " + arqmath_year + ", " + topic_id + "] " + runName;
+    $(w).on('load', function(){
+        w.document.title = "[ARQMath " + arqmath_year + ", " + topic_id + "] " + runName;
+        var body = $(w.document.body);
+        var list_answers = $("#answer-rows").clone();
+        list_answers.find(".answer-details").show();
+        list_answers.find(".panel-heading").attr("onclick", "");
+        body.html(list_answers.html());
+    });
+
+}
+
+
+/*
+********************
+Select & View a Particular Answer
+*/
 
 function selectAnswerDocument(btn) {
     function writeComment(src, target) {
@@ -653,41 +896,24 @@ function selectAnswerDocument(btn) {
     numberRows(ans_doc.find(".related-posts"));
 
     ans_doc.show();
-    $(".document-placeholder").html(ans_doc.html());
+    $("#document-placeholder").html(ans_doc.html());
+
 }
 
+/*
+********************
+Filter Answers with Relevance
+*/
 
 function toggleRelevance(btn) {
     $(".switch input").prop("checked", !$(".switch input").is(":checked"));
     if ($(".switch input").is(":checked")) {
         $(btn).parent().find(".switch-text").text("ON");
-        $(".relevancy-label").show();
+        $(".relevancy-label").css("visibility", "visible");
     } else {
         $(btn).parent().find(".switch-text").text("OFF");
-        $(".relevancy-label").hide();
+        $(".relevancy-label").css("visibility", "hidden");
     }
-}
-
-
-function viewSeperateAnswers(){
-    var w = window.open(
-            "gh-pages/popup_answers.html",
-            "popUpAnswerLists?_=" + (new Date().getTime()),
-            "width=" + Math.max(600, Math.round(screen.width * 0.3)) + ", height=" + Math.round(screen.height * 0.8)+ ", scrollbars=yes");
-    var arqmath_year = $($("#qbox").find(".qyear")[0]).text();
-    var topic_id = $($("#qbox").find(".qtopic-id")[0]).text();
-    var runName = $(".rbox-dropdown").val();
-
-    w.document.title = "[ARQMath " + arqmath_year + ", " + topic_id + "] " + runName;
-    $(w).on('load', function(){
-        w.document.title = "[ARQMath " + arqmath_year + ", " + topic_id + "] " + runName;
-        var body = $(w.document.body);
-        var list_answers = $("#answer-rows").clone();
-        list_answers.find(".answer-details").show();
-        list_answers.find(".panel-heading").attr("onclick", "");
-        body.html(list_answers.html());
-    });
-
 }
 
 
@@ -696,7 +922,7 @@ function updateRelevanceLabel(label, update_active) {
         label.find(".badge").css("color", "orange");
         // label.css("outline", "3px solid orange");
         // label.css("background-color", "#f1f1f1");
-        label.css("color", "rgb(255,229,180)");
+        label.css("color", "#ffbf00");
     } else {
         label.find(".badge").css("color", "");
         // label.css("outline", "");

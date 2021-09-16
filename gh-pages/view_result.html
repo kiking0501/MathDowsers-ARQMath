@@ -1,13 +1,15 @@
 <div class="rbox">
 
     <div class="row">
-        <div class="answer-abstract-placeholder col-md-6 col-sm-12">
-            <button class="btn btn-default" onclick="openTab('question_panel')" style="float: right"><i class="fa fa-arrow-left" style="color: orange"></i> Back to Question Selection</button>
+        <div class="answer-abstract-placeholder col-lg-6 col-md-12">
+            <button class="btn btn-default" onclick="openTab('question_panel')" style="float: right"><i class="fa fa-arrow-left" aria-hidden=true style="color: orange"></i> Back to Question Selection</button>
 
             <h4>
             <div align="center">
+                <span>
                 <span  style="color:orange; float: left; font-weight: bold"> Selected Question: </span>
                 <span class="qtopic" > [ARQMath <span class="qyear"></span>, <span class="qtopic-id"></span>]</span>
+                </span>
                 <h5>  <span class="qcategory"></span>  </h5>
 
                 <h5>
@@ -28,39 +30,96 @@
             <h4> <span  style="color:dimgrey"> Rank Answers by: </span> </h4>
             <div align="center">
                 <form>
-                  <select name = "dropdown" class="rbox-dropdown" onchange="viewResult()">
+                  <select name = "dropdown" class="rbox-dropdown" onchange="viewResult()";>
                     <option value="post-duplicate">MathDowsers' run: duplicateTerms (experimental run)</option>
                     <option value="primary">MathDowsers' run: primary (best participant run)</option>
                     <option value="proximityReRank">MathDowsers' run: proximityReRank</option>
+                    <option value="custom">Custom</option>
                   </select>
+                  <div id="customRunBox">
+                    <span class="note-for-limit-size" style="display: none"> Custom Ranking is available only in the full version. </span>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-8 col-xs-12" align="left">
+                                    <p> To view a custom answer-ranking, input the ranked list of answers at the provided input box. Each line should contain first a thread-id (the post-id of the associated question) and then an answer-id, tab-separated or comma-separated. The displayed result will follow the order of the input list.
+                                    </p>
+                                    <p> If you do not know the associated thread-ids, you might download an <a href="data/ARQMath/prepro_2021/answer2question.json" target="_blank">answer-to-thread Id-map</a> (~31MB) to help create a valid input. No input will be stored or recorded.
+                                    </p>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <textarea id="custom-ranking" rows=1000 style="width: 100%; max-height: 100px; overflow-y: auto"> </textarea>
+                                     <button id="btn_view_separate_answers" class="btn btn-default" onclick="updateResult('custom', 1);" style="float:right"> Show Answer Ranking  <i class="fa fa-refresh" style="color: orange"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
                 </form>
             </div>
 
 
             <br>
 
-            <h4> <span  style="color:dimgrey"> Show Human Relevance Judgement: </span>
+            <h4> <span  style="color:dimgrey"> Show Human Relevance Judgement: </span> </h4>
                 <div align="center">
                     <h5 class="switch-text" style="color:dimgrey; display: inline-block;">OFF</h5>
                     <label class="switch" onclick="toggleRelevance(this)">
                       <input type="checkbox">
                       <span class="slider round"></span>
                     </label>
+                    <div class="display-counts relevancy-label" style="visibility: hidden; cursor: pointer;">
+                        <span class="label label-success" id="label-HR" onclick="filterByRelevance(3)" active=false> High Relevance <span class="badge badge-warning" style="display:none"></span></span>
+                        <span class="label label-primary" id="label-R" onclick="filterByRelevance(2)" active=false> Medium Relevance <span class="badge badge-warning" style="display: none"></span></span>
+                        <span class="label label-info" id="label-LR" onclick="filterByRelevance(1)" active=false> Low Relevance <span class="badge badge-warning" style="display: none"></span></span>
+                        <span class="label label-default" id="label-IR" onclick="filterByRelevance(0)" active=false> Irrelevant <span class="badge badge-warning" style="display: none"></span></span>
+                        <span><a style="cursor: pointer;" onclick="filterByRelevance(-1)">Reset</a></span>
+                    </div>
                 </div>
-             </h4>
-            <div class="row" style="padding-left: 15px; padding-right: 20px;">
-                <button id="btn_view_separate_answers" class="btn btn-default" onclick="viewSeperateAnswers();" style="float:right"> View in Separate Window <i class="fa fa-window-restore" style="color: orange"></i> </button>
+            <br>
+            <div  class="row">
+                <div id="answer-results-info" class="col-lg-4 col-md-12">
+                    <h5 style="color:dimgrey; display: inline-block;"> Showing
 
-                <h4 style="color:dimgrey; display: inline-block;"> Showing
-                <span class="num-results" style="color:#212529"> </span><img class="ajax-loader-gif" src="gh-pages/img/ajax-loader.gif">
-                results. </h4>
-                <span class="display-counts relevancy-label" style="display:none; cursor: pointer;">
-                    <span class="label label-success" id="label-HR" onclick="filterByRelevance(3)" active=false> High Relevance <span class="badge badge-warning" style="display:none"></span></span>
-                    <span class="label label-info" id="label-R" onclick="filterByRelevance(2)" active=false> Medium Relevance <span class="badge badge-warning" style="display: none"></span></span>
-                    <span class="label label-primary" id="label-LR" onclick="filterByRelevance(1)" active=false> Low Relevance <span class="badge badge-warning" style="display: none"></span></span>
-                    <span class="label label-default" id="label-IR" onclick="filterByRelevance(0)" active=false> Irrelevant <span class="badge badge-warning" style="display: none"></span></span>
-                    <a style="cursor: pointer;" onclick="filterByRelevance(-1)">Reset</a>
-                </span>
+                        <div class="pageK-selection" style="display:inline-block;">
+                            <span class="btn-group">
+                                <button type="button" class="btn btn-white selected" onclick="selectPageK(this)">5</button>
+                                <span id="btn_extra_pageKs">
+                                    <button type="button" class="btn btn-white" onclick="selectPageK(this)">10</button>
+                                    <button type="button" class="btn btn-white" onclick="selectPageK(this)">20</button>
+                                    per page.
+                                </span>
+                            </span>
+                        </div>
+                        <span class="note-for-limit-size" style="color: dimgrey; display: none"> results.</span>
+                        <!-- <span class="num-results" style="color:#212529"> </span> -->
+
+                    </h5>
+                </div>
+
+                <div id="answer-paging" class="col-lg-4 col-md-12" align="center">
+                    <h4 style="color:dimgrey; display: inline-block; text-align: center">
+                        <i id="page-init" class="fa fa-angle-double-left paging" onclick="initPage()" style="display:none"></i> &nbsp;&nbsp;
+                        <i id="page-prev" class="fa fa-chevron-circle-left paging" onclick="prevPage()" style="display:none"></i>
+                    </h4>
+
+                        <h5 style="color:dimgrey; display: inline-block; text-align: center">
+                            Page
+                            <span id="page-number">1</span>
+                            /
+                            <span id="page-total"></span>
+                        </h5>
+                    <h4 style="color:dimgrey; display: inline-block; text-align: center">
+                        <i id="page-next" class="fa fa-chevron-circle-right paging" onclick="nextPage()"></i>
+                        &nbsp;&nbsp;
+                        <i id="page-end" class="fa fa-angle-double-right paging" onclick="endPage()"></i>
+                    </h4>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <img class="ajax-loader-gif" src="gh-pages/img/ajax-loader.gif">
+                    <button id="btn_view_separate_answers" class="btn btn-default" onclick="viewSeperateAnswers();" style="float:right"> View in Separate Window <i class="fa fa-window-restore" style="color: orange" aria-hidden=true></i> </button>
+                </div>
 
             </div>
 
@@ -68,7 +127,7 @@
             </div>
         </div>
 
-        <div class="document-placeholder col-md-6 col-sm-12">
+        <div id="document-placeholder" class="document-placeholder col-lg-6 col-md-12">
             <h4 style="color:dimgrey"> No Selected Answer. </h4>
         </div>
     </div>
@@ -81,9 +140,9 @@
                 <span class="isViewing" style="color: dimgrey; font-weight: bold"> <i class="fa fa-eye" aria-hidden="true" > </i>
                     [ Rank <span class="answer-rank"> 1 </span> ]
                     <span> Answer Id: </span> <span class="answer-id"> 98 </span>
-                    <!-- <span style="float: right"> Thread Id:  <span class="thread-id"> 100098 </span> </span> -->
+                    <span style="float: right; display: none" > Thread Id:  <span class="thread-id"> 100098 </span> </span>
                  </span>
-                <span class="relevancy"> <span class="relevancy-label" style="display:none;"></span> <span class="relevancy-score" style="display:none"></span></span>
+                <span class="relevancy"> <span class="relevancy-label" style="visibility:hidden;"></span> <span class="relevancy-score" style="display:none"></span></span>
             </h5>
         </div>
         <div class="panel-body">
@@ -119,7 +178,7 @@
 
         <div class="panel-body" style="margin: 10px">
 
-            <h4  style="color:dimgrey"> Answer: <span class="relevancy"> <span class="relevancy-label" style="display:none"></span> <span class="relevancy-score" style="display:none"></span></span> </h4>
+            <h4  style="color:dimgrey"> Answer: <span class="relevancy"> <span class="relevancy-label" style="visibility:hidden"></span> <span class="relevancy-score" style="display:none"></span></span> </h4>
             <div class="panel panel-default answer-component">
                 <div class="panel-body answer-full-body">
                 </div>

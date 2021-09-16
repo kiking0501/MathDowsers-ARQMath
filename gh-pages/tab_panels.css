@@ -138,16 +138,20 @@ select option:checked {
     width:100%;;
 }
 
-
+.rbox-dropdown:hover,active,focus{
+    cursor: pointer;
+}
 .answer-abstract-placeholder{
 /*    padding-left: 60px;
     padding-right:30px;*/
     font-family:'Open Sans', sans-serif;
+    overflow-y: auto;
+    max-height: 630px;
 }
 
 #answer-rows{
     overflow-y: auto;
-    max-height: 280px;
+    max-height: 500px;
     border: 1px solid #ccc;
     margin: 10px;
 }
@@ -175,6 +179,26 @@ select option:checked {
   background-color: white;
   color: grey;
 }
+.display-counts .label:hover,focus{
+  color: #ffbf00;
+}
+
+i.paging{
+  cursor: pointer;
+}
+
+.pageK-selection button.btn-white{
+    background: white;
+}
+
+.pageK-selection button.btn-white:hover,active{
+    color: orange;
+}
+.pageK-selection button.btn-white.selected{
+    background:  #f1f1f1;
+    font-weight: normal;
+}
+
 
 /****** Switch Toggle ******/
 .switch {
