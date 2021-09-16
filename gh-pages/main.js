@@ -326,6 +326,7 @@ function viewResult() {
     if (typeof(runName) == 'undefined') {
         runName = "post-duplicate";
     }
+
     if (runName != 'custom') {
         $("#customRunBox").hide();
         writeResultBoard(arqmath_year, topic_id);
@@ -529,6 +530,7 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results, page) {
                 relevancy = relevancy_dict[answer_id];
             }
             if (!(thread_id in thread2path)) {
+                var found = false;
                 for (var i = 0; i < directory_list.length; i++) {
                     if (!(thread_id in thread2path)) {
                         if ((parseInt(thread_id) >= directory_list[i][1]) && (parseInt(thread_id) <= directory_list[i][2])) {
@@ -539,16 +541,17 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results, page) {
                                 success: function (doc_str) {
                                     thread2path[thread_id] = "data/ARQMath/html_minimal_2021/2010-2018_3patterns" + directory_list[i][0];
                                     drawCard(rank, answer_id, thread_id, relevancy, doc_str);
+                                    found = true;
                                 },
                                 error: function (xhr, ajaxOptions, thrownError) {
-                                    if (i == directory_list.length-1) {
-                                        alert("The answer " + (rank+1) + " with thread-id " + thread_id + ", " + "answer-id " + answer_id + " cannot be found!")
-                                    }
                                 }
                             });
                         }
 
                     }
+                }
+                if (!found) {
+                    alert("The answer " + (rank+1) + " with thread-id " + thread_id + ", " + "answer-id " + answer_id + " cannot be found!")
                 }
             } else {
                 $.ajax({
@@ -601,7 +604,7 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results, page) {
         );
         answer.find(".mse-link").attr(
             "href", "https://math.stackexchange.com/questions/" +
-            doc_html.find("#question").attr("question_id")
+            doc_html.find("#question").attr("question_id") + "#" + answer_id
         )
 
         answer.find(".answer-question-title").html(
@@ -722,7 +725,7 @@ function numPages(){
 
 function changePage(update_page){
 
-    if ((update_page < 1) || (update_page > numPages())) {
+    if ((update_page < 1) || ((update_page > numPages()) && numPages() > 0)) {
     } else  {
         var runName = $(".rbox-dropdown").val();
         updateResult(runName, update_page);
@@ -845,7 +848,7 @@ function selectAnswerDocument(btn) {
     );
     ans_doc.find(".mse-link").attr(
         "href", "https://math.stackexchange.com/questions/" +
-        $($(btn).find(".thread-id")).text()
+        $($(btn).find(".thread-id")).text()  + "#" + $($(btn).find(".answer-id")).text()
     );
     ans_doc.find(".relevancy-label").html(
         $($(btn).find(".relevancy-label")).html()
