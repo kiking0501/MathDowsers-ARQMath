@@ -316,10 +316,11 @@ function viewResult() {
     $("#btn_view_result").prop("disabled", false);
     openTab("view_result");
 
+
     if (checkisLimitSize()){
         $("#btn_extra_pageKs").hide();
         $("#answer-paging").css("visibility", "hidden");
-        console.log($("#btn_extra_pageKs"));
+        $(".note-for-limit-size").show();
     }
     var runName = $(".rbox-dropdown").val();
     if (typeof(runName) == 'undefined') {
