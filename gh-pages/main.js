@@ -748,7 +748,7 @@ function changePage(update_page){
             btn_end.css("display", "");
         }
 
-        if (getPageK() <= 10) {
+        if (getPageK() <= 10 && update_page > 1) {
             var container = $(".answer-abstract-placeholder");
             var scrollTo = $("#answer-results-info");
 

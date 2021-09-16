@@ -1,19 +1,59 @@
 <div class="description">
+    <a name="guideTop"></a>
     <h4 style="color: dimgrey"> How to Use </h4>
     <p>
-    This demo facillitates users to view the result of the MathCQA task, in particular, the result from the MathDowsers' team.
+        This demo facillitates users to view the result of the MathCQA task, in particular, the result from the MathDowsers' team. The included features are:
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <ul>
+                    <li> <a href="#selectQuestion">[Filter & Select Question]</a></li>
+                    <li> <a href="#viewAnswers">[View MathDowsers' Answers]</a></li>
+                    <li> <a href="#viewRelevance">[View Human Judgement of the Answers]</a></li>
+                    <li> <a href="#filterAnswersByRelevance">[Filter Relevant Answers]</a></li>
+                    <li> <a href="#inputCustomRuns">[Input Custom Runs]</a></li>
+                </ul>
+            </div>
+        </div>
+    </p>
     <ul>
-        <li><p>At first, select a question from the <button onclick="openTab('question_panel')" class="hpref-tabs">ARQMath Queston Panel</button> . The available  questions are query topics from the ARQMath Lab 2020 and 2021, selected from real-life questions in the Math StackExchange forum in 2019 and 2020. After selecting a question, one might then click on the top-right button "Refresh & View" button to navigate to the <button onclick="openTab('view_result')" class="hpref-tabs btn_view_result">View Ranked Answers</button> panel (note that the panel is only accessible afterwards).
+
+        <a name="selectQuestion"></a>
+        <li>[Filter & Select Question] <p>At first, select a question from the <button onclick="openTab('question_panel')" class="hpref-tabs">ARQMath Queston Panel</button> . The available  questions are query topics from the ARQMath Lab 2020 and 2021, selected from real-life questions in the Math StackExchange forum in 2019 and 2020. After selecting a question, one might then click on the top-right button "Refresh & View" button to navigate to the <button onclick="openTab('view_result')" class="hpref-tabs btn_view_result">View Ranked Answers</button> panel (note that the panel is only accessible afterwards).
              </p>
             <img src="gh-pages/img/Question_panel_explained.png" style="max-width: 800px">
         </li>
-        <li><p> From the <button onclick="openTab('view_result')" class="hpref-tabs btn_view_result">View Ranked Answers</button> panel, users might then explore different lists of potential answers and their accessed relevance with respect to the selected question. The displayed lists of answers (or <i>runs</i>) are retrieved and ranked by MathDowsers using forum posts in 2010 to 2018 from the Math Stack Exchange corpus. The<a href="http://ceur-ws.org/Vol-2936/paper-05.pdf" target="_blank"> ARQMath Working Paper 2021</a> has a full documentation on the runs.
+
+        <a href="#guideTop">Back to Top</a>
+        <a name="viewAnswers"></a>
+        <li>[View MathDowsers' Runs]<p> From the <button onclick="openTab('view_result')" class="hpref-tabs btn_view_result">View Ranked Answers</button> panel, users might then explore different lists of potential answers and their accessed relevance with respect to the selected question. By default, the displayed lists of answers (or <i>runs</i>) are retrieved and ranked by MathDowsers using forum posts in 2010 to 2018 from the Math Stack Exchange corpus. The<a href="http://ceur-ws.org/Vol-2936/paper-05.pdf" target="_blank"> ARQMath Working Paper 2021</a> has a full documentation on the runs.
             </p>
 
             <img src="gh-pages/img/Result_panel_explained.png" style="max-width: 800px">
         </li>
+
+        <a href="#guideTop">Back to Top</a>
+        <a name="viewRelevance"></a>
+        <li>[View Human Judgement of the Answers] <p> The displayed lists of answers were collected automatically by the MathDowsers' systems, that is, without human intervention. To view the relevance judgement of those answers by the Lab assessors, turn on the "Show Human Relevance Judgement" button.
+        </p>
+            <img src="gh-pages/img/Relevance_Before_explained.png" style="width: 100%; min-width: 500px; max-width: 800px;">
+            <img src="gh-pages/img/Relevance_After_explained.png" style="width: 100%; min-width: 500px; max-width: 800px;">
+        </li>
+
+        <a href="#guideTop">Back to Top</a>
+        <a name="filterAnswersByRelevance"></a>
+        <li>[Filter Relevant Answers]<p> To filter answers with a specific relevance judgement, click on the corresponding label on the top. It might be used together with the "View in Separate Windows" button to view target answers at once.
+        </p>
+            <img src="gh-pages/img/Relevance_HR_Filter_explained.png" style="width: 100%; min-width: 500px; max-width: 800px;">
+        </li>
+
+        <a href="#guideTop">Back to Top</a>
+        <a name="inputCustomRuns"></a>
+        <li>[Input Custom Runs]<p> Interested users might input custom runs by first selecting "custom" from the dropdown menu, then following the instructions to input a custom run into the provided box. Corresponding answers and their details will show up after clicking on the "Show Answer Ranking" button.
+        </p>
+            <img src="gh-pages/img/Custom_Before_explained.png" style="width: 50%; min-width: 800px; max-width: 900px;">
+            <img src="gh-pages/img/Custom_After_explained.png" style="width: 50%; min-width: 800px; max-width: 900px;">
+        </li>
+
     </ul>
-
-
 
 </div>
