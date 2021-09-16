@@ -82,9 +82,9 @@ To create the document corpus,
 
 
 ## Bibliography
-Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. <i> Dowsing for Math Answers</i>, in: Best of 2020 Lab at CLEF 2021, volume 12880 of LNCS, 2021 (to appear)
+Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm. Tompa. <i><a href="https://link.springer.com/chapter/10.1007/978-3-030-85251-1_16">Dowsing for Math Answers</a></i>, in: Candan K.S. et al. (eds) Experimental IR Meets Multilinguality, Multimodality, and Interaction. CLEF 2021. Lecture Notes in Computer Science, vol 12880. Springer, Cham. https://doi.org/10.1007/978-3-030-85251-1_16
 
-Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm Tompa. <i><a href="http://ceur-ws.org/Vol-2936/paper-05.pdf" target="_blank"> Dowsing for Answers to Math Questions: Ongoing Viability of Traditional MathIR </a></i>, in: CLEF 2021, volume 2936 of CEUR Workshop Proceddings, 2021
+Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm. Tompa. <i><a href="http://ceur-ws.org/Vol-2936/paper-05.pdf" target="_blank"> Dowsing for Answers to Math Questions: Ongoing Viability of Traditional MathIR </a></i>, in: CLEF 2021, volume 2936 of CEUR Workshop Proceddings, 2021
 
 Yin Ki NG, Dallas J. Fraser, Besat Kassaie, George Labahn, Mirette S. Marzouk, Frank Wm Tompa, and Kevin Wang. <i> <a href="http://ceur-ws.org/Vol-2696/paper_167.pdf" target="_blank">Dowsing for Math Answers with Tangent-L</a></i>, in: CLEF 2020, volume 2696 of CEUR Workshop Proceedings, 2020
 
