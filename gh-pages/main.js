@@ -667,6 +667,7 @@ function resultIsLoaded(flag) {
         // can only view tab after result loading
         $(".btn_view_result").prop("disabled", false);
         reloadMathJax("answer-rows");
+        viewSeperateAnswers();
     }
 }
 
