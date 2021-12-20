@@ -108,3 +108,17 @@ def get_all_post_ids(creation_year_map):
     for year, post_ids in creation_year_map.items():
         all_post_ids.update(post_ids)
     return all_post_ids
+
+
+def sort_topic_ids(topic_ids):
+    """
+        topic_id: A.XXX / B.XXX
+    """
+    return sorted(topic_ids, key=lambda x: int(x.partition('.')[2]))
+
+
+def sort_formula_ids(formula_ids):
+    """
+        task1 formula_id: q_XXX
+    """
+    return sorted(formula_ids, key=lambda x: int(x.partition('_')[2]))
