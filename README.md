@@ -27,7 +27,12 @@ The aim of this demo is data exploration. To make an actual search to the math q
 
 ## Resources
 
-### Create a document corpus for the Answer Retrieval task
+- [Create a document corpus for the Answer Retrieval task](#resource_document_corpus)
+- [Generate Search Queries from Task Topics](#resource_generate_queries)
+
+
+
+### <a name="resource_document_corpus"></a>Create a document corpus for the Answer Retrieval task
 
 The template for the document corpus is `src_2021/template_minimal_v2.html`, which is an HTML page that stores an answer together with its parent math question (that is, a question-answer pair) and other meta information.
 
@@ -69,7 +74,7 @@ To create the document corpus,
 
 
 
-### Generate Search Queries from Task Topics
+### <a name="resource_generate_queries"></a>Generate Search Queries from Task Topics
 
 The given ARQMath task topics is a collection of mathematical questions from MathStackExchange with ``title``, ``question body``, and ``tags``. However, the search engine requires keywords and formulas as formal search queries for retrieval tasks. MathDowsers created the formal search queries with the following files:
 
