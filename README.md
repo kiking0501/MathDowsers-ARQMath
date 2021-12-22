@@ -17,7 +17,7 @@ The math-aware search engine in use is <a href="https://cs.uwaterloo.ca/brushsea
 
 ## Demo
 
-<a href="https://cs.uwaterloo.ca/~yk2ng/MathDowsers-ARQMath/" target="_blank">Click here for the Demo</a>. (Last updated: 2021-09)
+<a href="https://cs.uwaterloo.ca/~yk2ng/MathDowsers-ARQMath/" target="_blank">Click here for the Demo</a>. (Last updated: 2021-12)
 
 This demo displays the task runs, in particular the submitted runs from the MathDowsers for ARQMath Lab 2020 and 2021. The math answer database is the <a href="https://math.stackexchange.com/" target="_blank">MathStackExchange</a> corpus from year 2010 to 2018, and math questions are selected from the same corpus from year 2019 to 2020.
 
