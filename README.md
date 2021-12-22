@@ -5,13 +5,13 @@ Dowsing for Math Answers - the MathDowsers team's submission for ARQMath @ CLEF
 
 ## About
 
-MathDowsers is a team of researchers from the University of  *Water*loo who are interested in *dowsing for answers to math questions*:
+MathDowsers is a team of researchers from the University of *Water*loo who are interested in *dowsing for answers to math questions*:
 
 >Given a math question, look for potential answers to this math question from an existing math answer database.
 
 The team produces the best participant run of this Answer Retrieval task in the <a href="https://www.cs.rit.edu/~dprl/ARQMath/" target="_blank">ARQMath (**A**nswer **R**etrieval for **Q**uestions on **Math**) Lab</a> in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
 
-The math-aware search engine in use is <a href="https://cs.uwaterloo.ca/brushsearch/tangent-l/" target="_blank">Tangent-L</a>. More details of the research project can be found in the <a href="https://cs.uwaterloo.ca/brushsearch/" target="_blank">BrushSearch</a> site.
+The math-aware search engine in use is <a href="https://cs.uwaterloo.ca/brushsearch/tangent-l/" target="_blank">Tangent-L</a>. More details of the supporting research project can be found in the <a href="https://cs.uwaterloo.ca/brushsearch/" target="_blank">BrushSearch</a> site.
 
 
 
@@ -69,7 +69,24 @@ To create the document corpus,
 
 
 
+### Generate Search Queries from Task Topics
+
+The given ARQMath task topics is a collection of mathematical questions from MathStackExchange with ``title``, ``question body``, and ``tags``. However, the search engine requires keywords and formulas as formal search queries for retrieval tasks. MathDowsers created the formal search queries with the following files:
+
+- ``query_prepro.py``: with pre-processing functions to convert and clean the given task topic files into json files. 
+- ``query_filters.py``: with helper functions that create and read list of stopwords and "mathy" words for keyword selection.
+- ``query_model.py`` : with rule-based models to generate search queries.
+- ``query_postpro.py``: with post-processing functions to print or analyze the generated search queries. 
+
+See descriptions in each file for more information.
+
+
+
 ## Changes
+
+*2021-12-22*: Update resources for generating formal search queries from the given task topics.
+
+*2021-11*: I finish my MMath thesis :)
 
 *2021-09-16*: Finish most features of the demo. Host the full demo at cs.uwaterloo.ca instead, and keep only a limited version in GitHub.
 
@@ -82,6 +99,14 @@ To create the document corpus,
 
 
 ## Bibliography
+*MMath Thesis*: 
+
+Yin Ki Ng (2021). Dowsing for Math Answers: Exploring MathCQA with a Math-aware Search Engine. UWSpace. http://hdl.handle.net/10012/17696
+
+
+
+*Publications*:
+
 Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm. Tompa. <i><a href="https://link.springer.com/chapter/10.1007/978-3-030-85251-1_16">Dowsing for Math Answers</a></i>, in: Candan K.S. et al. (eds) Experimental IR Meets Multilinguality, Multimodality, and Interaction. CLEF 2021. Lecture Notes in Computer Science, vol 12880. Springer, Cham. https://doi.org/10.1007/978-3-030-85251-1_16
 
 Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm. Tompa. <i><a href="http://ceur-ws.org/Vol-2936/paper-05.pdf" target="_blank"> Dowsing for Answers to Math Questions: Ongoing Viability of Traditional MathIR </a></i>, in: CLEF 2021, volume 2936 of CEUR Workshop Proceddings, 2021
