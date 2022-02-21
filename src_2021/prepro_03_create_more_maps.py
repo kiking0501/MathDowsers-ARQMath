@@ -15,7 +15,10 @@ Run by "python <name of this python file>.py"
 """
 
 import os
-from config import ARQM_PREPRO_PATH, MAP_RAW_PATH, FINAL_MAP_OF_COMMENTS_FILE
+from config import (
+    ARQM_PREPRO_PATH, MAP_RAW_PATH,
+    FINAL_MAP_OF_COMMENTS_FILE, FINAL_MAP_OF_COMMENTS_FOR_QUESTION, FINAL_MAP_OF_COMMENTS_FOR_JUST_ANSWER
+)
 from tqdm import tqdm
 from utility.dao import load_json, dump_json, get_all_post_ids
 import copy
@@ -131,8 +134,8 @@ def separate_comments_for_question_answer():
         os.path.join(MAP_RAW_PATH, FINAL_MAP_OF_COMMENTS_FILE), keys=[int], verbose=True)
 
     for json_file, output_file in (
-        ("map_questions.json", "map_of_comments_for_question.json"),
-        ("map_just_answers.json", "map_of_comments_for_just_answer.json"),
+        ("map_questions.json", FINAL_MAP_OF_COMMENTS_FOR_QUESTION),
+        ("map_just_answers.json", FINAL_MAP_OF_COMMENTS_FOR_JUST_ANSWER),
     ):
         map_json = load_json(
             os.path.join(MAP_RAW_PATH, json_file), keys=[int], verbose=True)

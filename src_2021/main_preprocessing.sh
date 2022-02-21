@@ -5,13 +5,21 @@
 # See individual prepro files for the expected outcome.
 
 # Run by "./main_preprocessing.sh"
+
+# Note:
+### For data study, it would be a better start to try the official ARQMath Parser classes first:
+###   https://github.com/ARQMath/ARQMathCode
+
+### The following scripts involve running an earlier version of the official Parsers
+###   with custom modifications to work out the document corpus outputs.
+
 #############
 
 task_counter=0
 declare -a files=(
     "prepro_00_create_html_manifest.py"
-    "prepro_00_create_thread2formulasTSV.py"
     "prepro_00_modify_formula_representation.py"
+    "prepro_00_create_thread2formulasTSV.py"
     "prepro_00_create_initial_parsers.py"
     "prepro_01_create_raw_maps_from_parsers.py"
     "prepro_02_modify_raw_map_of_comments.py"

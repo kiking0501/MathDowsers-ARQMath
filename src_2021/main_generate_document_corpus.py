@@ -46,7 +46,8 @@
 
 from config import (
     ARQM_PREPRO_PATH, MAP_RAW_PATH, ARQM_OUTPUT_HTML_FOLDER, ARQM_DATA_PATH,
-    ARQM_OUTPUT_HTML_MINIMAL_PATH, ARQM_THREADS_YEAR_PATH
+    ARQM_OUTPUT_HTML_MINIMAL_PATH, ARQM_THREADS_YEAR_PATH,
+    FINAL_MAP_OF_COMMENTS_FOR_QUESTION, FINAL_MAP_OF_COMMENTS_FOR_JUST_ANSWER
 )
 from utility.dao import load_json, get_recursive_paths
 from utility.datetime_util import str2dt
@@ -201,10 +202,10 @@ class HTMLMinimalCreator:
             os.path.join(ARQM_PREPRO_PATH, "thread2formulasTSV.json"), keys=[int], verbose=verbose
         )
         self.map_of_comments_for_question = load_json(
-            os.path.join(MAP_RAW_PATH, "map_of_comments_for_question_V1012_cleaned.json"), keys=[int], verbose=verbose
+            os.path.join(MAP_RAW_PATH, FINAL_MAP_OF_COMMENTS_FOR_QUESTION), keys=[int], verbose=verbose
         )
         self.map_of_comments_for_just_answer = load_json(
-            os.path.join(MAP_RAW_PATH, "map_of_comments_for_just_answer_V1012_cleaned.json"), keys=[int], verbose=verbose
+            os.path.join(MAP_RAW_PATH, FINAL_MAP_OF_COMMENTS_FOR_JUST_ANSWER), keys=[int], verbose=verbose
         )
         self.related_post_bimap = load_json(
             os.path.join(ARQM_PREPRO_PATH, "related_post_bimap.json"), keys=[int], verbose=verbose
@@ -238,12 +239,12 @@ class HTMLMinimalCreator:
             'duplicate_posts': lambda duplicate_posts:
                 ''.join(['<tr><td post_id="%d"> %s </td></tr>' % (
                     post_id, self.question2title[post_id])
-                    for post_id in duplicate_posts]),
+                    for post_id in sorted(duplicate_posts)]),
 
             'related_posts': lambda related_posts:
                 ''.join(['<tr><td post_id="%d"> %s </td></tr>' % (
                     post_id, self.question2title[post_id])
-                    for post_id in related_posts]),
+                    for post_id in sorted(related_posts)]),
 
             'answer': lambda answer: answer['body'],
             'acomments': lambda answer:
