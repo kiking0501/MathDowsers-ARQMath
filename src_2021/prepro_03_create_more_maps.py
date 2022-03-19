@@ -50,6 +50,7 @@ def create_from_map_questions():
         for thread_id in tqdm(value):
             map_questions_by_year[year][thread_id] = map_questions[thread_id]
 
+    os.makedirs(os.path.join(MAP_RAW_PATH, "map_questions_by_year"), exist_ok=True)
     for year in range(2010, 2019):
         dump_json(map_questions_by_year[year],
                   os.path.join(MAP_RAW_PATH, "map_questions_by_year", "map_questions_%d.json" % year))
@@ -71,6 +72,7 @@ def create_from_map_answers():
             if thread_id in map_answers:
                 map_answers_by_year[year][thread_id] = map_answers[thread_id]
 
+    os.makedirs(os.path.join(MAP_RAW_PATH, "map_answers_by_year"), exist_ok=True)
     for year in range(2010, 2019):
         dump_json(map_answers_by_year[year],
                   os.path.join(MAP_RAW_PATH, "map_answers_by_year", "map_answers_%d.json" % year))

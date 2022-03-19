@@ -23,6 +23,7 @@ ARQM_PREPRO_PATH = os.path.join(ARQM_DATA_PATH, "prepro_2021")
 ARQM_EXPERIMENTS_PATH = os.path.join(ARQM_DATA_PATH, "experiments")
 
 MAP_RAW_PATH = os.path.join(ARQM_PREPRO_PATH, "map_raw")
+os.makedirs(MAP_RAW_PATH, exist_ok=True)
 PKL_PATH = os.path.join(ARQM_PREPRO_PATH, "pkl")
 
 
