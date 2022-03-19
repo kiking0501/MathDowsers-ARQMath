@@ -89,6 +89,8 @@ See descriptions in each file for more information.
 
 ## Changes
 
+*2022-03-18*: Freeze ARQMath-2 version (add git tag)
+
 *2022-02-21*: Fix the followings: the running order in the preprocessing script; naming of the map_of_comments files; and the order of the duplicate/related-post titles in the generated htmls (thanks to Andrew Kane for pointing them out)
 
 *2021-12-22*: Update resources for generating formal search queries from the given task topics.
