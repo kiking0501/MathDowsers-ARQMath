@@ -397,7 +397,7 @@ class HTMLMinimalCreator:
                     outf.write("<DOC>\n<DOCNO>" + str(year) + "_" + str(thread_id) + "_" + str(answer_id) + "</DOCNO>\n" + new_html + "\n</DOC>\n")
                 else:
                     with open(output_path, "w") as f:
-                            f.write(new_html)
+                        f.write(new_html)
 
     def generate_htmls(
             self,
@@ -418,12 +418,187 @@ class HTMLMinimalCreator:
                     f.write(new_html)
 
 
+class HTMLMinimalMultiCreator(HTMLMinimalCreator):
+
+    def get_html_pure_answer(self, html):
+        q_parts = html.partition('<div class="question">')
+        a_html1 = q_parts[0] + q_parts[2].partition('<hr style="border-top: 3px double #8c8b8b">')[2]
+
+        a_comments_parts = a_html1.partition('<div id="answer-comments">')
+        a_html2 = a_comments_parts[0] + a_comments_parts[2].partition('</table>\n                    </div>')[2]
+
+        related_parts = a_html2.partition('<hr style="border-top: 3px double #8c8b8b">\n            </div>\n\n            ')
+        a_html3 = ''.join(related_parts[:2]) + '</div> \n </body> \n </html> \n </html>'
+
+        title_parts = a_html3.partition('<div class="row" id="question-title">')
+        a_html4 = title_parts[0] + title_parts[2].partition('</h1>\n                <hr>\n            </div>\n\n\n            ')[2]
+        return a_html4
+
+    def get_html_pure_question_answer(self, html):
+        q_comments_parts = html.partition('<div id="question-comments">')
+        qa_html1 = q_comments_parts[0] + q_comments_parts[2].partition('</table>\n                    </div>')[2]
+
+        a_comments_parts = qa_html1.partition('<div id="answer-comments">')
+        qa_html2 = a_comments_parts[0] + a_comments_parts[2].partition('</table>\n                    </div>')[2]
+
+        related_parts = qa_html2.rpartition('<hr style="border-top: 3px double #8c8b8b">\n            </div>\n\n            ')
+        qa_html3 = ''.join(related_parts[:2]) + '</div> \n </body> \n </html> \n </html>'
+        return qa_html3
+
+    def create_html_minimal(
+            self,
+            thread_id,
+            html_template=MINIMAL_HTML):
+
+        def _get_question_answers_content():
+            question_content = self.map_questions[thread_id]
+            question_content.update({
+                'latex_title': question_content['title'],
+                "qcomments": self.map_of_comments_for_question.get(thread_id, []),
+                "duplicate_posts": self.duplicate_post_bimap.get(thread_id, []),
+                "related_posts": [x for x in self.related_post_bimap.get(thread_id, [])
+                                  if x not in self.duplicate_post_bimap.get(thread_id, [])],
+            })
+            answers_content = self.map_answers[thread_id]
+            for answer in answers_content:
+                answer["acomments"] = self.map_of_comments_for_just_answer.get(answer["post_id"], [])
+            return question_content, answers_content
+
+        self.lazy_update(thread_id=thread_id)
+        self.formula_convertor.lazy_update(thread_id)
+        question_content, answers_content = _get_question_answers_content()
+
+        html = read_html(html_template)
+
+        for q_field in ('title', 'body', 'tags', 'qcomments',
+                        'duplicate_posts', 'related_posts'):
+            html = html.replace(
+                "#%s#" % q_field.upper(),
+                self.transform_functions[q_field](question_content[q_field])
+            )
+        html = html.replace("#QID#", str(thread_id))
+        pure_qa_html = self.get_html_pure_question_answer(html)
+        pure_a_html = self.get_html_pure_answer(html)
+
+        for answer in answers_content:
+            html_tuple = []
+
+            for start_html in (html, pure_qa_html, pure_a_html):
+                try:
+                    new_html = start_html
+                    new_html = new_html.replace(
+                        "#AID#", str(answer['post_id'])
+                    )
+                    for a_field in ('answer', 'acomments'):
+                        new_html = new_html.replace(
+                            "#%s#" % a_field.upper(),
+                            self.transform_functions[a_field](answer))
+
+                    if not self.keep_latex and self.formula_convertor.has_formula_convert_map():
+                        new_html = self.formula_convertor.latex2slt(new_html)
+
+                    new_html = new_html.replace(
+                        "#LATEX_TITLE#",
+                        self.transform_functions["latex_title"](question_content['latex_title'])
+                    )
+                    html_tuple.append(new_html)
+
+                except Exception as e:
+                    print("[ERROR] Thread_id: %d, Answer_id: %d" % (thread_id, answer['post_id']))
+                    raise Exception(e)
+
+            yield answer['post_id'], html_tuple
+
+    def generate_htmls_by_year(
+            self,
+            year,
+            output_folder=ARQM_OUTPUT_HTML_MINIMAL_PATH,
+            create_html_func="create_html_minimal",
+            selected_thread_ids=None,
+            store_as_gzip=False):
+
+        def _generate_html_path(thread_id, answer_id, tuple_id, creation_date):
+            folder_path = DATE2FOLDER_MAP[creation_date.year][creation_date.month]
+            html_folder = os.path.join(output_folder + folder_path, str(thread_id))
+            if not store_as_gzip:
+                os.makedirs(html_folder, exist_ok=True)
+            return os.path.join(html_folder, "%s_%s_%s.html" % (thread_id, answer_id, tuple_id))
+
+        def _generate_selected_path(thread_id, answer_id, tuple_id):
+            html_folder = os.path.join(output_folder + "/../selected", str(thread_id))
+            os.makedirs(html_folder, exist_ok=True)
+            return os.path.join(html_folder, "%s_%s_%s.html" % (thread_id, answer_id, tuple_id))
+
+        if not store_as_gzip:
+            os.makedirs(output_folder, exist_ok=True)
+        else:
+            outf = gzip.open(output_folder + "/" + str(year) + "_data.xml.gz", "wt")  # AK: output to one xml file
+
+        print("[create_year_htmls] Start:")
+        if selected_thread_ids is not None:
+            print("== Selected Thread Ids: ", len(selected_thread_ids))
+
+        print("Year", year)
+        map_questions = load_json(
+            os.path.join(MAP_RAW_PATH, "map_questions_by_year", "map_questions_%d.json" % year),
+            keys=[int]
+        )
+        map_answers = load_json(
+            os.path.join(MAP_RAW_PATH, "map_answers_by_year", "map_answers_%d.json" % year),
+            keys=[int]
+        )
+        self.lazy_update(map_questions=map_questions, map_answers=map_answers)
+
+        for thread_id in tqdm(sorted(map_questions.keys())):
+            if thread_id not in map_answers:
+                continue
+            if selected_thread_ids is not None and thread_id not in selected_thread_ids:
+                continue
+
+            for answer_id, html_tuple in getattr(self, create_html_func)(thread_id):
+                for tuple_id in range(len(html_tuple)):
+                    new_html = html_tuple[tuple_id]
+
+                    if selected_thread_ids is not None:
+                        output_path = _generate_selected_path(thread_id, answer_id, tuple_id)
+                    else:
+                        output_path = _generate_html_path(
+                            thread_id, answer_id, tuple_id, str2dt(map_questions[thread_id]['creation_date']))
+
+                    if store_as_gzip:
+                        # AK: output to one xml file
+                        outf.write("<DOC>\n<DOCNO>" + str(year) + "_" + str(thread_id) + "_" + str(answer_id) + "_" + str(tuple_id) + "</DOCNO>\n" + new_html + "\n</DOC>\n")
+                    else:
+                        with open(output_path, "w") as f:
+                            f.write(new_html)
+
+    def generate_htmls(
+            self,
+            selected_thread_ids,
+            output_folder=ARQM_OUTPUT_HTML_FOLDER + "/selected",
+            create_html_func="create_html_minimal"):
+
+        def _generate_html_path(thread_id, answer_id, tuple_id):
+            html_folder = os.path.join(output_folder, str(thread_id))
+            os.makedirs(html_folder, exist_ok=True)
+            return os.path.join(html_folder, "%s_%s_%s.html" % (thread_id, answer_id, tuple_id))
+
+        for thread_id in tqdm(sorted([int(x) for x in selected_thread_ids])):
+            self.lazy_update(thread_id=thread_id)
+            for answer_id, html_tuple in getattr(self, create_html_func)(thread_id):
+                for tuple_id in range(len(html_tuple)):
+                    new_html = html_tuple[tuple_id]
+                    output_path = _generate_html_path(thread_id, answer_id, tuple_id)
+                    with open(output_path, "w") as f:
+                        f.write(new_html)
+
+
 if __name__ == '__main__':
     import argparse
 
     argparser = argparse.ArgumentParser(description="Generate HTMLs for indexing.")
     argparser.add_argument(
-        "--style", choices=["minimal", "thread"],
+        "--style", choices=["minimal", "thread", "multi"],
         help="The style of the generated html page, 'minimal' for quesiton-answer pair, 'thread' for the whole thread"
     )
     argparser.add_argument(
@@ -460,11 +635,23 @@ if __name__ == '__main__':
         html_creator = HTMLThreadCreator(keep_latex=args.keep_latex, verbose=VERBOSE)
         if args.output_folder is None:
             if args.year:
-                output_folder = os.path.join(ARQM_DATA_PATH, "html_thread_2021", "2010-2018_local")
+                output_folder = os.path.join(ARQM_DATA_PATH, "html_thread_2022", "2010-2018_local")
             elif args.thread_id:
-                output_folder = os.path.join(ARQM_DATA_PATH, "html_thread_2021", "selected")
+                output_folder = os.path.join(ARQM_DATA_PATH, "html_thread_2022", "selected")
             else:
-                output_folder = os.path.join(ARQM_DATA_PATH, "html_thread_2021")
+                output_folder = os.path.join(ARQM_DATA_PATH, "html_thread_2022")
+        else:
+            output_folder = args.output_folder
+
+    elif args.style == "multi":
+        html_creator = HTMLMinimalMultiCreator(keep_latex=args.keep_latex, verbose=VERBOSE)
+        if args.output_folder is None:
+            if args.year:
+                output_folder = os.path.join(ARQM_DATA_PATH, "html_multi_2022", "2010-2018_local")
+            elif args.thread_id:
+                output_folder = os.path.join(ARQM_DATA_PATH, "html_multi_2022", "selected")
+            else:
+                output_folder = os.path.join(ARQM_DATA_PATH, "html_multi_2022")
         else:
             output_folder = args.output_folder
 

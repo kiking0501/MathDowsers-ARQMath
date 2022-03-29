@@ -48,7 +48,7 @@ ARQM_FINAL_HTML_MINIMAL_PATH = os.path.join(ARQM_OUTPUT_HTML_FOLDER, "2010-2018_
 FORMULA_FOLDER_CONFIG = {
     "latex": ("latex_representation_v3", range(1, 102)),
     "opt": ("opt_representation_v3", range(1, 102)),
-    "slt": ("slt_representation_v3_modified", range(1, 102)),
+    "slt": ("slt_representation_v3", range(1, 102)),
 }
 
 # TASK_FORMULA_FOLDER_CONFIG = {

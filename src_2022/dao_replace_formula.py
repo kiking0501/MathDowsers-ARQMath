@@ -155,6 +155,8 @@ def create_formula_map(latex_post_map, slt_post_map):
             continue
         latex_content = latex_post_map[formula_id][0]
         slt_content = slt_post_map[formula_id][0]
+        if not slt_content.get('formula'):  # Skip SLT Empty Formulas in V3
+            continue
         if "formula" not in latex_content:  # Skip Latex Empty Formulas in V3
             continue
         d[latex_content["formula"]] = {
@@ -254,6 +256,8 @@ def html_latex2slt(html, thread_id, formulaTSVs, latex2slt_formulas,
         return None
 
     def _update_math_container(slt_content, math_container):
+        if not slt_content.get("formula"):  # Skip SLT Empty Formulas in V3
+            return
         if "visual_id" in slt_content:
             math_container["visual_id"] = slt_content["visual_id"]
         math_container.string = ""
