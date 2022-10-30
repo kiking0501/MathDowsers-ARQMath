@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Distance between 2 skew lines (Weird Result?)</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Distance between 2 skew lines (Weird Result?) </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2168307">
+<p>I have <strong>2 skew lines</strong></p> <p><span class="math-container" id="20035109" visual_id="6444960"><math alttext="L_{1}:\begin{cases}x=1+2t\\ y=2-2t\\ z=3+4t\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub><mo>:</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>y</mi><mo>=</mo><mrow><mn>2</mn><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>z</mi><mo>=</mo><mrow><mn>3</mn><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="20035110" visual_id="6444961"><math alttext="L_{2}:\begin{cases}x=2+2t\\ y=1\\ z=t\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub><mo>:</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><mn>2</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>z</mi><mo>=</mo><mi>t</mi></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p> <p>Lets take <strong>2 points</strong> on <strong>line 1</strong> <span class="math-container" id="20035111" visual_id="9524"><math alttext="(A,B)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> by setting <span class="math-container" id="20035112" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> to <span class="math-container" id="20035113" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> and <span class="math-container" id="20035114" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span></p> <p>And <strong>1 point</strong> from <strong>line 2</strong> <span class="math-container" id="20035115" visual_id="17532"><math alttext="(P)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> by setting <span class="math-container" id="20035116" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> to <span class="math-container" id="20035117" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span></p> <p>My question is this:</p> <p><strong>why is this formula</strong></p> <p><span class="math-container" id="20035118" visual_id="2794866"><math alttext="\frac{||AB\times AP||}{||AB||}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo fence="true">||</mo><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>×</mo><mi>A</mi></mrow><mo>⁢</mo><mi>P</mi></mrow><mo fence="true">||</mo></mrow><mrow><mo fence="true">||</mo><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo fence="true">||</mo></mrow></mfrac></semantics></math></span> </p> <p>(The formula for finding the distance between a point and a line that passes through 2 points)</p> <p><strong>giving the same result as this formula?</strong></p> <p><span class="math-container" id="20035119" visual_id="6444962"><math alttext="\frac{|a\cdot x_{0}+b\cdot y_{0}+c\cdot z_{0}+d|}{\sqrt{a^{2}+b^{2}+c^{2}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>a</mi><mo>⋅</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>b</mi><mo>⋅</mo><msub><mi>y</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>c</mi><mo>⋅</mo><msub><mi>z</mi><mn>0</mn></msub></mrow><mo>+</mo><mi>d</mi></mrow><mo stretchy="false">|</mo></mrow><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mfrac></semantics></math></span>   (The formula for the distance  between a point and a plane)</p> <h2><strong>for the given skew lines?</strong></h2> <hr/> <p><em>Additional information for those who don't understand:</em></p> <p>. <span class="math-container" id="20035120" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>, <span class="math-container" id="20035121" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> and <span class="math-container" id="20035122" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> are the components of a vector normal to the plane formed by the parallel vectors of <span class="math-container" id="20035123" visual_id="11713"><math alttext="L_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mn>1</mn></msub></semantics></math></span> and <span class="math-container" id="20035124" visual_id="14009"><math alttext="L_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mn>2</mn></msub></semantics></math></span> (ie. <span class="math-container" id="20035125" visual_id="6444963"><math alttext="&lt;2,-2,4&gt;\times&lt;2,0,1&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mn>2</mn><mo>,</mo><mo>-</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>&gt;</mo><mo>×</mo><mo>&lt;</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>&gt;</mo></mrow></semantics></math></span> )</p> <p><strong><span class="math-container" id="20035126" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span></strong> = <strong>- <span class="math-container" id="20035127" visual_id="1286882"><math alttext="ax_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></semantics></math></span> - <span class="math-container" id="20035128" visual_id="1286883"><math alttext="by_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>⁢</mo><msub><mi>y</mi><mn>1</mn></msub></mrow></semantics></math></span> - <span class="math-container" id="20035129" visual_id="528623"><math alttext="cz_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>⁢</mo><msub><mi>z</mi><mn>1</mn></msub></mrow></semantics></math></span></strong> (just for those of you who don't know and are wondering how the last formula is made the <span class="math-container" id="20035130" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> is derived from the <strong>vector equation of the plane</strong>. <span class="math-container" id="20035131" visual_id="1455940"><math alttext="a(x-x_{0})+b(y-y_{0})+c(z-z_{0})=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>-</mo><msub><mi>y</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>-</mo><msub><mi>z</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>The <strong>scalar equation of the plane</strong> is  <span class="math-container" id="20035132" visual_id="6444964"><math alttext="d=ax_{0}+bx_{0}+cx_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="20035133" visual_id="606"><math alttext="x_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>0</mn></msub></semantics></math></span> <span class="math-container" id="20035134" visual_id="9190"><math alttext="y_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mn>0</mn></msub></semantics></math></span> <span class="math-container" id="20035135" visual_id="4354"><math alttext="z_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mn>0</mn></msub></semantics></math></span> is just the point on line 2 <span class="math-container" id="20035136" visual_id="17532"><math alttext="(P)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> (that we get when setting <span class="math-container" id="20035137" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> to <span class="math-container" id="20035138" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>)</p> <hr/> <p><strong>why are those 2 formulas giving the same result?</strong></p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> linear-algebra </span><span> geometry </span><span> multivariable-calculus </span><span> differential-geometry </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4459502"> I don't agree to close such a question where the OP shows he has worked on the subject. </td></tr><tr><td comment_id="4459510"> @JeanMarie is my question closed? </td></tr><tr><td comment_id="4459516"> Now, as you can see, only one person has voted to close. 4 more are needed. </td></tr><tr><td comment_id="4459560"> @JeanMarie The OP hasn't enough reputation points to see the close votes. </td></tr><tr><td comment_id="4459635"> @user1551 Thanks. I was forgetting. </td></tr><tr><td comment_id="4460115"> Shouldn't the **scalar equation of plane** be <span class="math-container" id="20035139" visual_id="80442"><math alttext="ax+by+cz=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span> instead of <span class="math-container" id="20035140" visual_id="2989617"><math alttext="ax_{0}+by_{0}+cz_{0}=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msub><mi>y</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mi>z</mi><mn>0</mn></msub></mrow></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span> ? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2169456" id="answer">
+<p>Two skew lines lie in a unique pair of parallel planes, whose normal vectors — as you said — is the cross-product of the direction vectors of the lines. The distance between the lines in the distance between those parallel planes. And you can find that by taking the distance from any point on one plane to the other plane. So you've taken the distance from any point on line 1 to the point on the plane passing through line 2.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4463487"> yes but, if you take any other skew lines L1 and L2 and apply those two formulas again, each formula will give a completely different result. </td></tr><tr><td comment_id="4463816"> Um, no, not true. I just explained that it will always work, if you do everything correctly. </td></tr><tr><td comment_id="4463969"> please take a look at this: http://math.stackexchange.com/questions/2143777/distance-of-a-point-from-a-line-passing-through-two-points </td></tr><tr><td comment_id="4464012"> OK, your first formula is nonsense, and your title for that other question is wrong.  You need to use the cross product of the direction vectors of the two lines (which will be the normal to the planes I'm discussing). Your first formula should be <span class="math-container" id="20035141" visual_id="6444965"><math alttext="\dfrac{|AP\cdot(v_{1}\times v_{2})|}{\|v_{1}\times v_{2}\|}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>P</mi></mrow><mo>⋅</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>×</mo><msub><mi>v</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mrow><mo>∥</mo><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>×</mo><msub><mi>v</mi><mn>2</mn></msub></mrow><mo>∥</mo></mrow></mfrac></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2143777"> Distance of a point from a line passing through two points. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

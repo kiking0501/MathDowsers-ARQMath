@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving kerT is a subspace of V. and rangeT is a subspace of W.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving kerT is a subspace of V. and rangeT is a subspace of W. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1255020">
+<p>My question is as follows: Suppose <span class="math-container" id="11710046" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span> and <span class="math-container" id="11710047" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> are vector spaces, and let <span class="math-container" id="11710048" visual_id="85115"><math alttext="T:V\longrightarrow W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>:</mo><mrow><mi>V</mi><mo>⟶</mo><mi>W</mi></mrow></mrow></semantics></math></span> be a linear transformation.  </p> <p>Show that <span class="math-container" id="11710049" visual_id="45860"><math alttext="\ker T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ker</mi><mo>⁡</mo><mi>T</mi></mrow></semantics></math></span> is a subspace of <span class="math-container" id="11710050" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span>. </p> <p>Show that <span class="math-container" id="11710051" visual_id="507145"><math alttext="\operatorname{range}T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>range</mi><mo>⁡</mo><mi>T</mi></mrow></semantics></math></span> is a subspace of <span class="math-container" id="11710052" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span>. </p> <p>Most of my problem here is I don't think I fully understand the concept of the kernel and the range.  I know that the kernel relates to a null space, and the range to the column space...  I also know that I have to show that each (the kernel and the range) must contain the zero vector, preserve vector addition and scalar multiplication. </p> <p>The kernel is then all the solutions to <span class="math-container" id="11710053" visual_id="222684"><math alttext="Ax=\vec{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mover accent="true"><mn>0</mn><mo stretchy="false">→</mo></mover></mrow></semantics></math></span>, so the zero vector must be there? </p> <p>I don't know how to proceed from there and we have hardly worked with the kernel and the range in class, so I really don't know where to go with this problem.  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> vector-spaces </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1255214" id="answer">
+<p>To show that <span class="math-container" id="11710054" visual_id="45860"><math alttext="\ker T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ker</mi><mo>⁡</mo><mi>T</mi></mrow></semantics></math></span> is a subspace of <span class="math-container" id="11710055" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span>, we need to show that it has the following properties:</p> <ul> <li>Has <span class="math-container" id="11710056" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span></li> <li>Is additively closed</li> <li>Is scalar multiplicatively closed</li> </ul> <p>Clearly <span class="math-container" id="11710057" visual_id="128056"><math alttext="T(0)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. So we need only show additive and scalar multiplicative closure.</p> <p><strong>Additive closure:</strong> We want to show that if <span class="math-container" id="11710058" visual_id="507146"><math alttext="a,b\in\ker(T)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mrow><mi>ker</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> then <span class="math-container" id="11710059" visual_id="507147"><math alttext="a+b\in\ker(T)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>∈</mo><mrow><mi>ker</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. E.g. <span class="math-container" id="11710060" visual_id="507148"><math alttext="T(a)=0,T(b)=0\implies T(a+b)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn><mo>⟹</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mrow></semantics></math></span>. This follows from the property of <em>additivity</em>, <span class="math-container" id="11710061" visual_id="507149"><math alttext="T(a+b)=T(a)+T(b)=0+0=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo>+</mo><mn>0</mn></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, and hence <span class="math-container" id="11710062" visual_id="507150"><math alttext="a+b\in\ker T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>∈</mo><mrow><mi>ker</mi><mo>⁡</mo><mi>T</mi></mrow></mrow></semantics></math></span>.</p> <p><strong>Scalar multiplicative closure:</strong> We want to show that if <span class="math-container" id="11710063" visual_id="507151"><math alttext="a\in\ker(T)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mrow><mi>ker</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> then <span class="math-container" id="11710064" visual_id="507152"><math alttext="ka\in\ker(T)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>a</mi></mrow><mo>∈</mo><mrow><mi>ker</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="11710065" visual_id="216304"><math alttext="k\in\mathbb{F}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>𝔽</mi></mrow></semantics></math></span>. So <span class="math-container" id="11710066" visual_id="507153"><math alttext="T(a)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and by the property of homogeneity(of degree <span class="math-container" id="11710067" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>) we have that <span class="math-container" id="11710068" visual_id="507154"><math alttext="0=k0=kT(a)=T(ka)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mrow><mi>k</mi><mo>⁢</mo><mn>0</mn></mrow><mo>=</mo><mrow><mi>k</mi><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and hence <span class="math-container" id="11710069" visual_id="507152"><math alttext="ka\in\ker(T)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>a</mi></mrow><mo>∈</mo><mrow><mi>ker</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

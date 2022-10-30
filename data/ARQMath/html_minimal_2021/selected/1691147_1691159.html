@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why is surface area not simply $2 \pi \int_{a}^{b} (y) dx$ instead of $2 \pi \int_a^b (y \cdot \sqrt{1 + y'^2}) dx$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why is surface area not simply <span class="math-container" id="15626828" visual_id="7370593"><math alttext="2\pi\int_{a}^{b}(y)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span> instead of <span class="math-container" id="15626829" visual_id="7370594"><math alttext="2\pi\int_{a}^{b}(y\cdot\sqrt{1+y^{\prime 2}})dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>⋅</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>y</mi><mrow><mo mathsize="142%" stretchy="false">′</mo><mo>⁣</mo><mn>2</mn></mrow></msup></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1691147">
+<p>Geometrically speaking, it seems to me that if you have for example <span class="math-container" id="15626830" visual_id="345046"><math alttext="y^{2}=8x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mrow><mn>8</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span> revolved around the x-axis, taking the limit of the sum of <span class="math-container" id="15626831" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> surfaces of cylinders as <span class="math-container" id="15626832" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> approaches infinity should give you the surface area of that surface of revolution.</p> <p>This is how the author initially derives the formula for finding the volume of solids of revolution. Take a rectangle under the curve over <span class="math-container" id="15626833" visual_id="28760"><math alttext="\Delta x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></semantics></math></span> and revolve it around the axis to get an approximation of the volume of the solid over that interval. Add up those rectangles over <span class="math-container" id="15626834" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> changes in <span class="math-container" id="15626835" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and take the limit as <span class="math-container" id="15626836" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> approaches infinity, which is the integral of the function that gives you the <span class="math-container" id="15626837" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> value (radius of that approximating cylinder) for each <span class="math-container" id="15626838" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> value.</p> <p>Following the same principle, why wouldn't we be able to take those same cylinders, but instead of taking their volume, taking their surface area and take the limit as the number of those cylinders approaches zero?</p> <p>In other words, in this case each <span class="math-container" id="15626839" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> value is given by <span class="math-container" id="15626840" visual_id="3308715"><math alttext="y=\sqrt{8x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mn>8</mn><mo>⁢</mo><mi>x</mi></mrow></msqrt></mrow></semantics></math></span>, which is the radius of that cylinder of height <span class="math-container" id="15626841" visual_id="28760"><math alttext="\Delta x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></semantics></math></span> and an approximation of the surface area over that interval.</p> <p>Why doesn't that work? Why do we need to deal with arc length? I don't understand why it doesn't work in this case, it seems to me that you're still getting a better and better approximation of surface area as those cylinders get smaller and smaller, eventually getting the exact surface area with the limit as their number goes to infinity.     </p> <p>PS: I saw this <a href="https://math.stackexchange.com/questions/1074986/surface-area-of-a-solid-of-revolution-why-does-not-int-ba-2-pi-fx">Surface area of a solid of revolution: Why does not <span class="math-container" id="15626842" visual_id="207130"><math alttext="\int_{b}^{a}2\pi\,f(x)\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>b</mi><mi>a</mi></msubsup><mrow><mn>2</mn><mo>⁢</mo><mpadded width="+1.7pt"><mi>π</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></semantics></math></span> work?</a> but it's still not making sense visually/geometrically.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> integration </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1691159" id="answer">
+<p>In your link, it explains precisely why integrating <span class="math-container" id="15626845" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> doesn't work: Because the length <span class="math-container" id="15626846" visual_id="22022"><math alttext="ds" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><mi>s</mi></mrow></semantics></math></span> of a little piece of the arc is not <span class="math-container" id="15626847" visual_id="12245"><math alttext="dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></semantics></math></span>, but <span class="math-container" id="15626848" visual_id="5010125"><math alttext="\sqrt{(dx)^{2}+(dy)^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></semantics></math></span>, which can be written as <span class="math-container" id="15626849" visual_id="7370596"><math alttext="{\sqrt{(dx)^{2}+(dy)^{2}}\over dx}\cdot dx=\sqrt{1+\left(dy\over dx\right)^{2}% }\cdot dx." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mfrac><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>⋅</mo><mi>d</mi></mrow><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mrow><mo>(</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>y</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mo>⋅</mo><mi>d</mi></mrow><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span> It's the same reasoning why the length of a hypotenuse is <span class="math-container" id="15626850" visual_id="73987"><math alttext="\sqrt{a^{2}+b^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></semantics></math></span> and not <span class="math-container" id="15626851" visual_id="2684"><math alttext="a+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></semantics></math></span>.</p> <p>Or this "proof" that <span class="math-container" id="15626852" visual_id="7370597"><math alttext="pi=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>⁢</mo><mi>i</mi></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math></span>: <a href="https://math.stackexchange.com/questions/12906/is-value-of-pi-4/155402#155402">Is value of <span class="math-container" id="15626853" visual_id="190002"><math alttext="\pi=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>=</mo><mn>4</mn></mrow></semantics></math></span>?</a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3451347"> Yes, but why does it work for volume, then? That's what I didn't understand in the link. Shouldn't you run into the same problem when integrating to find the volume? What's the difference? </td></tr><tr><td comment_id="3451355"> The integral <span class="math-container" id="15626854" visual_id="82572"><math alttext="\int_{a}^{b}f(x)\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> is based on dividing an interval into pieces and multiplying the width of each interval by the value of <span class="math-container" id="15626855" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> at some value in that interval, and adding the values together. This is not an exact answer; there is some error in the approximation. The error analysis for arc length turns out to be different from the error analysis for volume. </td></tr><tr><td comment_id="3451358"> There is some error in the approximation, but that error goes to zero when taking the limit as the number of those pieces of the interval goes to infinity, at least in the case of volume. Somehow though, this doesn't happen with surface area; I guess as you said the nature of the error is such that the error doesn't go to zero as <span class="math-container" id="15626856" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> goes to infinity. But why is that the case? What is different in the error analysis between volume and surface area? Visually at least, I just can't "see" the difference. </td></tr><tr><td comment_id="3451362"> This is the sort of thing covered in Real Analysis. I took it a long time ago and became a combinatorialist, so I don't remember everything from it. Sorry; someone else will have to pick up the thread here. </td></tr><tr><td comment_id="3451433"> @jeremyradcliff Here's a question about a similar problem. [Why is <span class="math-container" id="15626857" visual_id="1160607"><math alttext="\pi\neq 4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>≠</mo><mn>4</mn></mrow></semantics></math></span>?](http://math.stackexchange.com/questions/12906/is-value-of-pi-4) Just because you're "approximating" your surfaces in 3D doesn't mean that you approximate their area. In 2D, approximating lines doesn't guarantee that you're approximating their lengths. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="12906"> The staircase paradox, or why <span class="math-container" id="120826" visual_id="1160607"><math alttext="\pi\neq 4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>≠</mo><mn>4</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="1074986"> Surface area of a solid of revolution: Why does not <span class="math-container" id="10156305" visual_id="207130"><math alttext="\int_{b}^{a}2\pi\,f(x)\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>b</mi><mi>a</mi></msubsup><mrow><mn>2</mn><mo>⁢</mo><mpadded width="+1.7pt"><mi>π</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></semantics></math></span> work? </td></tr><tr><td post_id="2348362"> Volumes of solid objects </td></tr><tr><td post_id="2981193"> Why is this way of deriving surface area of sphere wrong when a similar method can be used to derive volume? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

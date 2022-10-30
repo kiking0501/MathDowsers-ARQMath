@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How does backwards induction work to prove a property for all naturals?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How does backwards induction work to prove a property for all naturals? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="97350">
+<p>I was reading a blogpost here: <a href="http://mzargar.wordpress.com/2009/07/19/cauchys-method-of-induction/">http://mzargar.wordpress.com/2009/07/19/cauchys-method-of-induction/</a></p> <p>One thing that threw me off was that after the first four large displayed equations, there is the statement "it is sufficient to prove that if the theorem holds for <span class="math-container" id="1116562" visual_id="54784"><math alttext="n=m+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>, then it holds for <span class="math-container" id="1116563" visual_id="26610"><math alttext="n=m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mi>m</mi></mrow></semantics></math></span>."</p> <p>How is this type of induction valid? I browsed around for things like backward induction, reverse induction, and Cauchy induction, but couldn't find a justification for how this is valid.</p> <p>With the usual forward induction of verifying a base case and proving <span class="math-container" id="1116564" visual_id="64335"><math alttext="P(n)\implies P(n+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⟹</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, it's easy to intuitively understand how induction will show a property holds for all natural numbers (or at least starting at the base case). But with this reverse induction, it seems to me that if you prove <span class="math-container" id="1116565" visual_id="462975"><math alttext="P(m+1)\implies P(m)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⟹</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, then if you were able to verify a specific case like <span class="math-container" id="1116566" visual_id="462976"><math alttext="P(15)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>15</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, then you would only know it's true for numbers up to <span class="math-container" id="1116567" visual_id="8287"><math alttext="15" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>15</mn></semantics></math></span>. How does it actually prove the property for all naturals?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="229319"> This induction principle is applied to finite sets, not the infinite set of natural numbers. </td></tr><tr><td comment_id="229323"> I never thought it was applied to infinite sets, but isn't induction used to prove certain properties hold for all naturals? As in <span class="math-container" id="1116568" visual_id="462977"><math alttext="2^{n}&gt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>&gt;</mo><mi>n</mi></mrow></semantics></math></span> for all <span class="math-container" id="1116658" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>? I'm just asking how you could draw the same conclusion from a different induction scheme. </td></tr><tr><td comment_id="338760"> You left out the first part of the sentence!  "***Now that we have the case when<span class="math-container" id="1116569" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>is a power of 2 settled,*** _it is sufficient to prove...._"  The short answer is that you ***also*** prove that for any n, you can find N &gt;= n for which it is true, usually by proving it true for some infinite set. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="97352" id="answer">
+<p>You seem to be confused with the method of infinite descent which is used to prove that something is FALSE : If <span class="math-container" id="1116649" visual_id="30306"><math alttext="P(0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is false and if <span class="math-container" id="1116650" visual_id="11437"><math alttext="P(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> implies that there exists a <span class="math-container" id="1116651" visual_id="7908"><math alttext="m&lt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&lt;</mo><mi>n</mi></mrow></semantics></math></span> such that <span class="math-container" id="1116652" visual_id="34160"><math alttext="P(m)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, then <span class="math-container" id="1116653" visual_id="11437"><math alttext="P(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is false for all <span class="math-container" id="1116654" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. This correspond to prove the anteposition of the standard recurrence principle. (The anteposition of an implication <span class="math-container" id="1116655" visual_id="73540"><math alttext="A\Rightarrow B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⇒</mo><mi>B</mi></mrow></semantics></math></span> is <span class="math-container" id="1116656" visual_id="463002"><math alttext="\text{not}B\Rightarrow\text{not}A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mtext>not</mtext><mo>⁢</mo><mi>B</mi></mrow><mo>⇒</mo><mrow><mtext>not</mtext><mo>⁢</mo><mi>A</mi></mrow></mrow></semantics></math></span>.)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="229321"> But that's not the situation in the blogpost. The claim is that <span class="math-container" id="1116657" visual_id="462975"><math alttext="P(m+1)\implies P(m)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⟹</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is sufficient to show an inequality holds for all <span class="math-container" id="1116658" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. There is no question of proving something false. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="2831130"> Cauchy's induction principle </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="27328"> Geometric mean never exceeds arithmetic mean </td></tr><tr><td post_id="75669"> Using strong induction to get the AM-GM inequality for <span class="math-container" id="850258" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> numbers </td></tr><tr><td post_id="83383"> Midpoint-Convex and Continuous Implies Convex </td></tr><tr><td post_id="149399"> Understanding Less Frequent Form of Induction? (Putnam and Beyond) </td></tr><tr><td post_id="190518"> Induction proof: <span class="math-container" id="2210992" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> contains powers of 2 and predecessors implies <span class="math-container" id="2210993" visual_id="3008006"><math alttext="S={\bf N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>𝐍</mi></mrow></semantics></math></span> </td></tr><tr><td post_id="407277"> A question on mean value inequality </td></tr><tr><td post_id="671508"> Prove GM-AM inequality using induction </td></tr><tr><td post_id="697287"> Question over induction, suppose <span class="math-container" id="6985637" visual_id="11437"><math alttext="P(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is true for all positive integers <span class="math-container" id="6985638" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> that is a power of 2. </td></tr><tr><td post_id="840720"> QM-AM-GM-HM proof help </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

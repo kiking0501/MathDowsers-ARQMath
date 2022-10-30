@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Likelihood Theory and finding maximum likelihood</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Likelihood Theory and finding maximum likelihood </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1095598">
+<p>Let <span class="math-container" id="10340095" visual_id="5203"><math alttext="X_{1},\,\ldots,\,X_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo rspace="4.2pt">,</mo><mi mathvariant="normal">…</mi><mo rspace="4.2pt">,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow></semantics></math></span> be independent random variables, each with probability density function <span class="math-container" id="10340096" visual_id="6692757"><math alttext="f(x;\,\theta)=\frac{2x}{\theta^{2}}\qquad\text{for }0&lt;x&lt;\theta." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="4.2pt">;</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><msup><mi>θ</mi><mn>2</mn></msup></mfrac></mrow><mo mathvariant="italic" separator="true">  </mo><mrow><mrow><mtext>for </mtext><mo>⁢</mo><mn>0</mn></mrow><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mi>θ</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>I want to find the maximum likelihood estimator for this using the likelihood function. My lecturer goes through the solution as such <span class="math-container" id="10340097" visual_id="6692758"><math alttext="L(\theta;\,x)=\prod_{i=1}^{n}\frac{2x_{i}}{\theta^{2}}=\frac{2^{n}}{\theta^{2n% }}\prod_{i=1}^{n}x_{i}\propto\theta^{-2n}\mathbb{I}(\theta&gt;x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo rspace="4.2pt">;</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mi>i</mi></msub></mrow><msup><mi>θ</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><msup><mn>2</mn><mi>n</mi></msup><msup><mi>θ</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup></mfrac><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub><mo>∝</mo><msup><mi>θ</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup><mi>𝕀</mi><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>&gt;</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> where <span class="math-container" id="10340098" visual_id="42807"><math alttext="\mathbb{I}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝕀</mi></semantics></math></span> denotes the indicator function.</p> <p><span class="math-container" id="10340099" visual_id="6692759"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span></p> <p>What I'm confused is how we get this proportionality. I can't seem to link the product with the indicator function and condition started within the function. Can someone explain this, thanks.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> statistical-inference </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1095607" id="answer">
+<p>For every <span class="math-container" id="10340100" visual_id="4399"><math alttext="\mathbf{x}=(x_{1},\ldots,x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐱</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, <span class="math-container" id="10340101" visual_id="6692760"><math alttext="L(\theta;\,\mathbf{x})=\prod_{i=1}^{n}\frac{2x_{i}}{\theta^{2}}\mathbb{I}(% \theta&gt;x_{i})=K(\mathbf{x})\theta^{-2n}\mathbb{I}(\theta&gt;m(\mathbf{x}))," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo rspace="4.2pt">;</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mi>i</mi></msub></mrow><msup><mi>θ</mi><mn>2</mn></msup></mfrac><mi>𝕀</mi><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>&gt;</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>K</mi><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow><msup><mi>θ</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup><mi>𝕀</mi><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>&gt;</mo><mi>m</mi><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>,</mo></mrow></semantics></math></span> where <span class="math-container" id="10340102" visual_id="308002"><math alttext="m(\mathbf{x})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="10340103" visual_id="6692761"><math alttext="K(\mathbf{x})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> depend on <span class="math-container" id="10340104" visual_id="10847"><math alttext="\mathbf{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐱</mi></semantics></math></span> but not on <span class="math-container" id="10340105" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> since <span class="math-container" id="10340106" visual_id="6692762"><math alttext="m(\mathbf{x})=\max\limits_{i}x_{i},\qquad K(\mathbf{x})=2^{n}\prod_{i=1}^{n}x_% {i}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mi>max</mi><mi>i</mi></munder><mo>⁡</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow><mo rspace="22.5pt">,</mo><mrow><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> In this sense, <span class="math-container" id="10340107" visual_id="6692763"><math alttext="L(\theta;\,\mathbf{x})\propto\theta^{-2n}\mathbb{I}(\theta&gt;m(\mathbf{x}))," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo rspace="4.2pt">;</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow><mo>∝</mo><msup><mi>θ</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup><mi>𝕀</mi><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>&gt;</mo><mi>m</mi><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>,</mo></mrow></semantics></math></span> hence, to maximize <span class="math-container" id="10340108" visual_id="6692764"><math alttext="L(\ ;\mathbf{x})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mrow><mo stretchy="false">(</mo><mo lspace="7.5pt">;</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, one should find <span class="math-container" id="10340109" visual_id="9365782"><math alttext="\theta\gt m(\mathbf{x})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> such that <span class="math-container" id="10340110" visual_id="6593357"><math alttext="\theta^{-2n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>θ</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></semantics></math></span> is maximal. </p> <p>This is not possible because of the <span class="math-container" id="10340111" visual_id="1014"><math alttext="\gt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror></semantics></math></span> sign in <span class="math-container" id="10340112" visual_id="6692765"><math alttext="\mathbb{I}(\theta&gt;m(\mathbf{x}))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝕀</mi><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>&gt;</mo><mi>m</mi><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> but one could have used instead the densities <span class="math-container" id="10340113" visual_id="6692766"><math alttext="f(x;\theta)=\frac{2x}{\theta^{2}}\mathbb{I}(\theta\geqslant x)," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>;</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><msup><mi>θ</mi><mn>2</mn></msup></mfrac><mi>𝕀</mi><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>⩾</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>,</mo></mrow></semantics></math></span> leading to the MLE <span class="math-container" id="10340114" visual_id="6692767"><math alttext="\hat{\theta}(\mathbf{x})=m(\mathbf{x})=\max\limits_{i}x_{i}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mover accent="true"><mi>θ</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mi>max</mi><mi>i</mi></munder><mo>⁡</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that if y satisfies $y''+y=\sin^{2017}{x}\cos x$ then $y$ is a periodic function.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that if y satisfies <span class="math-container" id="21366842" visual_id="8940899"><math alttext="y^{\prime\prime}+y=\sin^{2017}{x}\cos x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>y</mi><mo>′′</mo></msup><mo>+</mo><mi>y</mi></mrow><mo>=</mo><mrow><mrow><msup><mi>sin</mi><mn>2017</mn></msup><mo>⁡</mo><mi>x</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> then <span class="math-container" id="21366843" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> is a periodic function. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2311967">
+<p>Show that if y satisfies <span class="math-container" id="21366844" visual_id="8940900"><math alttext="y^{\prime\prime}+y=\sin^{2017}x\cdot\cos x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>y</mi><mo>′′</mo></msup><mo>+</mo><mi>y</mi></mrow><mo>=</mo><mrow><mrow><msup><mi>sin</mi><mn>2017</mn></msup><mo>⁡</mo><mi>x</mi></mrow><mo>⋅</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> then <span class="math-container" id="21366845" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> is a periodic function.</p> <p>To deal with this problem, the first thing I do is solving <span class="math-container" id="21366846" visual_id="18187"><math alttext="y^{\prime\prime}+y=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>y</mi><mo>′′</mo></msup><mo>+</mo><mi>y</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. Then I get <span class="math-container" id="21366847" visual_id="3211892"><math alttext="y=c_{1}\cos x+c_{2}\sin x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow></mrow><mo>+</mo><mrow><msub><mi>c</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span>, and I get stuck here.</p> <p>Any suggestion? Thanks in advance!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> ordinary-differential-equations </span><span> periodic-functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2312026" id="answer">
+<p>Let <span class="math-container" id="21366848" visual_id="8940901"><math alttext="f(t)=(\sin(t))^{2017}\cos(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2017</mn></msup><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>. Put <span class="math-container" id="21366849" visual_id="8940902"><math alttext="g(x)=\sin(x)\int_{0}^{x}f(t)\cos(t)dt-\cos(x)\int_{0}^{x}f(t)\sin(t)dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>-</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow></mrow></semantics></math></span> Then we compute that <span class="math-container" id="21366850" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is a particular solution of our differential equation. We want to show that <span class="math-container" id="21366851" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is periodic with period <span class="math-container" id="21366852" visual_id="698"><math alttext="2\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></semantics></math></span>. This is equivalent , writing <span class="math-container" id="21366853" visual_id="8940903"><math alttext="g(x+2\pi)-g(x)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, to show that </p> <p><span class="math-container" id="21366854" visual_id="8940904"><math alttext="\sin(x)\int_{x}^{x+2\pi}f(t)\cos(t)dt-\cos(x)\int_{x}^{x+2\pi}f(t)\sin(t)dt=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>-</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>It suffices to show that <span class="math-container" id="21366855" visual_id="8940905"><math alttext="\int_{x}^{x+2\pi}f(t)\cos(t)dt=\int_{x}^{x+2\pi}f(t)\sin(t)dt=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. By computing the derivative of these functionss, we see that they are constant; so it suffices to show that they vanishes for a particular value of <span class="math-container" id="21366856" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>. For the first, we take <span class="math-container" id="21366857" visual_id="452715"><math alttext="x=-\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>-</mo><mi>π</mi></mrow></mrow></semantics></math></span>, and use the fact that <span class="math-container" id="21366858" visual_id="8940906"><math alttext="f(t)\cos(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is odd to show that it is <span class="math-container" id="21366859" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>. For the second, we take <span class="math-container" id="21366860" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, and use that a primitive of <span class="math-container" id="21366861" visual_id="4631773"><math alttext="f(t)\sin(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is <span class="math-container" id="21366862" visual_id="8940907"><math alttext="\frac{(\sin(t)^{2019}}{2019}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo stretchy="false">(</mo><mi>sin</mi><msup><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mn>2019</mn></msup></mrow><mn>2019</mn></mfrac></semantics></math></span> to show it is <span class="math-container" id="21366863" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> also, and we are done. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Inverse Polynomial in a ring R</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Inverse Polynomial in a ring R </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="440423">
+<p>I just started working on my Bachelor-Thesis in IT-Security and therefore try to understand the NTRUencryption algorithm. It operates on polynomials in a Ring.  My problem is that I don't understand how someone computes the inverse of a polynomial in such a ring. I just tried to follow the calculation on <a href="http://en.wikipedia.org/wiki/NTRUEncrypt#Public_key_generation" rel="nofollow">wikipedia</a> but no intermediate steps are given. </p> <p>So can someone explain me how to get from f to fp and fq? I understand that when N is 11 we need the polynom x^11 - 1. But I don't know how to use it. Please use easy words. Im just a computer scientist not a mathematician :D </p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> polynomials </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="943894"> Did you click on the link to the Euclidean algorithm? </td></tr><tr><td comment_id="943902"> I did and I now the (extended) eucliedean algorithm. I used it to compute RSA and can apply the chinese remained theorem, too. I just dont know how to use it with vectors. </td></tr><tr><td comment_id="943904"> Vectors? what vectors? </td></tr><tr><td comment_id="943911"> I meant Polynomials. Sorry my mistake. </td></tr><tr><td comment_id="943918"> The wikipedia link has a section on polynomials. </td></tr><tr><td comment_id="943931"> I know. And I tried to follow [GCD of two polynomials](http://en.wikipedia.org/wiki/Greatest_common_divisor_of_two_polynomials#Euclidean_algorithm). But it doesn't work -.- </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="440433" id="answer">
+<p>You're given the polynomial <span class="math-container" id="4638117" visual_id="298005"><math alttext="f(x)=-1+x+x^{2}-x^{4}+x^{6}+x^{9}-x^{10}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>-</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo>+</mo><msup><mi>x</mi><mn>6</mn></msup><mo>+</mo><msup><mi>x</mi><mn>9</mn></msup></mrow><mo>-</mo><msup><mi>x</mi><mn>10</mn></msup></mrow></mrow></semantics></math></span> You want to find polynomials <span class="math-container" id="4638118" visual_id="15863"><math alttext="f_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>3</mn></msub></semantics></math></span> and <span class="math-container" id="4638119" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span> such that <span class="math-container" id="4638120" visual_id="298006"><math alttext="f(x)f_{3}(x)-(x^{11}-1)j(x)\equiv 1\pmod{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>f</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>11</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>j</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> So, you do the extended Euclidean algorithm on the polynomials <span class="math-container" id="4638121" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="4638122" visual_id="298007"><math alttext="x^{11}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>11</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span>, at every step doing all the computations modulo 3. This may be very messy: you start by dividing a degree 11 polynomial by a degree 10 polynomial, which could give you a degree 9 remainder; then you'll have to divide the degree 10 by that degree 9, which could give a degree 8 remainder; and so on, for quite a few steps; and after you're done with that, you have to build your way back up to <span class="math-container" id="4638123" visual_id="25443"><math alttext="f_{3}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. It's no wonder wikipedia leaves out the work! It's probably best handled by a computer algebra system like Maple or Mathematica, rather than trying to do it by hand. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="943978"> *This* example is certainly a candidate for a CAS, but I hope @datosh that you do take the time to try some smaller examples by hand so that you finally believe that "it works." Just pick a small polynomial for <span class="math-container" id="4638124" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and use <span class="math-container" id="4638125" visual_id="30125"><math alttext="x^{4}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> instead, and see what happens. If you pick unluckily you may find out you didn't start with a unit, but seeing the result should be educational. </td></tr><tr><td comment_id="944074"> Hey thanks for the great answer. I checked my math and found a mistake so I think I did it right already. Didn't thought it through that I have to do 11 iterations with a polynom of high power. I defenititly try to do it for a smaller polynom! Thanks @rschwieb too ;) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is this enough to prove that the GCD is larger?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is this enough to prove that the GCD is larger? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1855837">
+<blockquote> <p>Prove that <span class="math-container" id="17181689" visual_id="2074885"><math alttext="(a+b,a-b)\geq(a,b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>≥</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> </blockquote> <p><strong>My attempt</strong></p> <p>Let <span class="math-container" id="17181690" visual_id="2074886"><math alttext="(a+b,a-b)=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span> and <span class="math-container" id="17181691" visual_id="1903394"><math alttext="(a,b)=c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>c</mi></mrow></semantics></math></span>. Since <span class="math-container" id="17181692" visual_id="530995"><math alttext="c\mid a,b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></mrow></semantics></math></span> </p> <p><span class="math-container" id="17181693" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> is also a factor of <span class="math-container" id="17181694" visual_id="2684"><math alttext="a+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></semantics></math></span> and <span class="math-container" id="17181695" visual_id="35808"><math alttext="a-b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow></semantics></math></span>. Thus <span class="math-container" id="17181696" visual_id="20659"><math alttext="c\leq d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>≤</mo><mi>d</mi></mrow></semantics></math></span>. </p> <p>Is this enough as a proof? It feels kind of skimpy to me, so I was hoping for some feedback and ideas to make it more rigorous from the MSE community. In particular, I feel as though it's not rigorous enough on showing that <span class="math-container" id="17181697" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> is not always equal to <span class="math-container" id="17181698" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> and thus put some actual meaning behind the 'less than' part of <span class="math-container" id="17181699" visual_id="4229"><math alttext="\leq" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≤</mo></semantics></math></span>.   </p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> proof-verification </span><span> divisibility </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1855850" id="answer">
+<p>Your proof seems to be OK, as every number that divides two numbers, also divides their greatest common divisor. And it's well known that <span class="math-container" id="17181700" visual_id="2074887"><math alttext="c\mid d\implies c\leq d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>c</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>d</mi></mrow><mo>⟹</mo><mi>c</mi><mo>≤</mo><mi>d</mi></mrow></semantics></math></span>, when working in positive integers.</p> <p>For your second requirement here's how one can generate the cases when the GCDs are not equal. By Euclid's Algorithm we have <span class="math-container" id="17181701" visual_id="2074888"><math alttext="(a+b,a-b)=(a+b,2b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> Now obviously <span class="math-container" id="17181702" visual_id="2074889"><math alttext="c\mid(a+b,2b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and let <span class="math-container" id="17181703" visual_id="1657210"><math alttext="a=ca^{\prime},b=cb^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>a</mi><mo>′</mo></msup></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>b</mi><mo>′</mo></msup></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="17181704" visual_id="115014"><math alttext="(a^{\prime},b^{\prime})=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mo>′</mo></msup><mo>,</mo><msup><mi>b</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. Then we have that: <span class="math-container" id="17181705" visual_id="2074890"><math alttext="(a+b),2b)=c\cdot(a^{\prime}+b^{\prime},2b^{\prime})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mn>2</mn><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mi>c</mi><mo>⋅</mo><mo stretchy="false">(</mo><msup><mi>a</mi><mo>′</mo></msup><mo>+</mo><msup><mi>b</mi><mo>′</mo></msup><mo>,</mo><mn>2</mn><msup><mi>b</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></semantics></math></span> If a factor divides <span class="math-container" id="17181706" visual_id="40301"><math alttext="b^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>b</mi><mo>′</mo></msup></semantics></math></span> then it can't divide <span class="math-container" id="17181707" visual_id="812653"><math alttext="a^{\prime}+b^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mo>′</mo></msup><mo>+</mo><msup><mi>b</mi><mo>′</mo></msup></mrow></semantics></math></span>, as <span class="math-container" id="17181708" visual_id="115014"><math alttext="(a^{\prime},b^{\prime})=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mo>′</mo></msup><mo>,</mo><msup><mi>b</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. So <span class="math-container" id="17181709" visual_id="2074891"><math alttext="(a^{\prime}+b^{\prime},2b^{\prime})=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>a</mi><mo>′</mo></msup><mo>+</mo><msup><mi>b</mi><mo>′</mo></msup></mrow><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>b</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> or <span class="math-container" id="17181710" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>. Hence we have that <span class="math-container" id="17181711" visual_id="154855"><math alttext="d=c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>c</mi></mrow></semantics></math></span> or <span class="math-container" id="17181712" visual_id="66248"><math alttext="2c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>c</mi></mrow></semantics></math></span>. The second case is obtained when <span class="math-container" id="17181713" visual_id="1657210"><math alttext="a=ca^{\prime},b=cb^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>a</mi><mo>′</mo></msup></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>b</mi><mo>′</mo></msup></mrow></mrow></mrow></semantics></math></span>, where <span class="math-container" id="17181714" visual_id="143614"><math alttext="a^{\prime},b^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mo>′</mo></msup><mo>,</mo><msup><mi>b</mi><mo>′</mo></msup></mrow></semantics></math></span> are odd coprime integers. While in every other case <span class="math-container" id="17181715" visual_id="154855"><math alttext="d=c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>c</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1189424"> $\gcd(a,b,c)=\gcd(\gcd(a,b),c)\,$ [GCD Associative Law] </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

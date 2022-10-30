@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Convergence of multiple series $\sum\frac{1}{n^2+m^2}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Convergence of multiple series <span class="math-container" id="1735111" visual_id="7544034"><math alttext="\sum\frac{1}{n^{2}+m^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mfrac><mn>1</mn><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="149138">
+<p>I have a following series</p> <p><span class="math-container" id="1735112" visual_id="7544034"><math alttext="\sum\frac{1}{n^{2}+m^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mfrac><mn>1</mn><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></mfrac></mrow></semantics></math></span></p> <p>As far as I understand it converges. I tried Cauchy criteria and it showed divergency, but i may be mistaken.</p> <p>When I calculate it in matlab or Maxima it have a good behaviour and converge to finite number about 10.17615092535112.</p> <p>The convergency plot is following:</p> <p><img alt="enter image description here" src="https://i.stack.imgur.com/mnSka.png"/></p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> analysis </span><span> divergent-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="343560"> Over which <span class="math-container" id="1735115" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> and <span class="math-container" id="1735116" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> do you take the sum? All <span class="math-container" id="1735115" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, <span class="math-container" id="1735116" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span>? Are they independent? I think then the series diverges... </td></tr><tr><td comment_id="343563"> Just to make sure (since I have no experience with matlab etc.) what does it give you for the series <span class="math-container" id="1735117" visual_id="30683"><math alttext="\sum\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span>? </td></tr><tr><td comment_id="343567"> thanks you, Simon, <span class="math-container" id="1735118" visual_id="4096"><math alttext="\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>n</mi></mfrac></semantics></math></span> also do not go to infinity and stay at really low values, like 12.09 at <span class="math-container" id="1735119" visual_id="2955"><math alttext="10^{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mn>5</mn></msup></semantics></math></span> terms. That very strange. </td></tr><tr><td comment_id="343571"> That's what I expected. This has something to do with machine accuracy. Your computer can only represent numbers down to a certain number of digits. Hence for your computer the harmonic series is finite. </td></tr><tr><td comment_id="343573"> I bet you can even "show" that the harmonic series is constant after finitely many steps </td></tr><tr><td comment_id="343588"> I checked in matlab: <span class="math-container" id="1735120" visual_id="413"><math alttext="1/n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></semantics></math></span> diverges and 2D case <span class="math-container" id="1735121" visual_id="7544035"><math alttext="1/(n^{2}+m^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> converges. </td></tr><tr><td comment_id="343590"> yep, this is something with machine accuracy, but nevertheless, those series have "logarithmic" divergency speed. </td></tr><tr><td comment_id="5284319"> See also: [How to prove <span class="math-container" id="1735122" visual_id="2557239"><math alttext="\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}\frac{1}{m^{2}+n^{2}}=+\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span>](https://math.stackexchange.com/q/851302) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="149198" id="answer">
+<p>Matlabs sum for <span class="math-container" id="1735126" visual_id="7544039"><math alttext="\displaystyle\sum_{n=1}^{10^{5}}\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><msup><mn>10</mn><mn>5</mn></msup></munderover><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> is actually quite spot on, it's not a fault of machine accuracy. The series is called the <a href="http://en.wikipedia.org/wiki/Harmonic_series_%28mathematics%29" rel="nofollow">Harmonic series</a> and is known to diverge very slowly. In fact, it behaves approximately like <span class="math-container" id="1735127" visual_id="7544040"><math alttext="\gamma+\ln n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>+</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></semantics></math></span> where <span class="math-container" id="1735128" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span> is the Euler-Mascheroni constant, about <span class="math-container" id="1735129" visual_id="7544041"><math alttext="0.57721." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.57721</mn><mo>.</mo></mrow></semantics></math></span> At <span class="math-container" id="1735130" visual_id="752459"><math alttext="n=10^{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msup><mn>10</mn><mn>5</mn></msup></mrow></semantics></math></span> we indeed expect about <span class="math-container" id="1735131" visual_id="7544042"><math alttext="0.57721+5\ln 10\approx 12.0901." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>0.57721</mn><mo>+</mo><mrow><mn>5</mn><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mn>10</mn></mrow></mrow></mrow><mo>≈</mo><mn>12.0901</mn></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Matlab is also not saying anything incorrect for the original series, its results were just interpreted incorrectly (in a similar way to the previous example). The sum grows quite slowly. Consider if we order the sum like this: <span class="math-container" id="1735132" visual_id="7544043"><math alttext="\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}\frac{1}{m^{2}+n^{2}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>By Residue Calculus methods, one can show that the inner sum is equal to <span class="math-container" id="1735133" visual_id="7544044"><math alttext="\frac{\pi m\coth(\pi m)-1}{2m^{2}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mrow><mi>π</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mi>coth</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>⁢</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></mfrac><mo>.</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="1735134" visual_id="341113"><math alttext="\coth" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>coth</mi></semantics></math></span> tends to <span class="math-container" id="1735135" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> exponentially quickly so one expects <span class="math-container" id="1735136" visual_id="7544045"><math alttext="\sum_{m=1}^{k}\sum_{n=1}^{\infty}\frac{1}{m^{2}+n^{2}}\approx\frac{\pi\ln k}{2% }+\frac{6\gamma\pi-\pi^{2}}{12}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>≈</mo><mrow><mfrac><mrow><mi>π</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>k</mi></mrow></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mrow><mn>6</mn><mo>⁢</mo><mi>γ</mi><mo>⁢</mo><mi>π</mi></mrow><mo>-</mo><msup><mi>π</mi><mn>2</mn></msup></mrow><mn>12</mn></mfrac></mrow></mrow></semantics></math></span> for large <span class="math-container" id="1735137" visual_id="13382"><math alttext="k." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="851302"> How to prove <span class="math-container" id="8286562" visual_id="2557239"><math alttext="\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}\frac{1}{m^{2}+n^{2}}=+\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

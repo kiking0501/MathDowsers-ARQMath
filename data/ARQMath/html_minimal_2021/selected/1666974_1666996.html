@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finite derivative of the harmonic series</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finite derivative of the harmonic series </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1666974">
+<p>In Knuth's Concrete Mathematics he represents the famous quicksort algorithm in computer science as a infinite sum then shows that sum can be simplified to being essentially harmonic. I want to explore this sum more by taking a finite derivative of the function but I have not taken any discrete math courses and am struggling with notation.</p> <p><strong>My question:</strong></p> <p>Suppose, <span class="math-container" id="15407020" visual_id="56025"><math alttext="f(n)=\sum_{n=0}^{\infty}\frac{1}{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></mrow></semantics></math></span></p> <p>Now suppose we take the generalized finite difference of that function,  <span class="math-container" id="15407021" visual_id="56026"><math alttext="\Delta_{h}^{\mu}[f](x)=\sum_{x=0}^{\infty}\mu_{k}f(x+kh)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mi mathvariant="normal">Δ</mi><mi>h</mi><mi>μ</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>μ</mi><mi>k</mi></msub><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>k</mi><mo>⁢</mo><mi>h</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>Have I set this up properly? </p> <p>I want to explore the finite difference of this series. If I have not set this up correctly, might you point me in the right direction of what I might read to learn how to do this myself. Thank you.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> discrete-mathematics </span><span> derivatives </span><span> summation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3400496"> <span class="math-container" id="15407026" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is not a function of <span class="math-container" id="15407029" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, or is it? </td></tr><tr><td comment_id="3400498"> It is ... <span class="math-container" id="15407029" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> appears both as a free and a bounded variable ... not a very good idea. Besides this: As the harmonic series does not converge ... <span class="math-container" id="15407025" visual_id="56027"><math alttext="f\equiv\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≡</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3400502"> To my understanding <span class="math-container" id="15407026" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is a function of n, otherwise this problem would not work. But I may be confused. </td></tr><tr><td comment_id="3400513"> Part of my reason of asking this martini is that I wanted to explore this: I know the harmonic series diverge, but if I differentiate it to infinity, does that series converge? </td></tr><tr><td comment_id="3400518"> I made some edits. I don't know if that fixes the problem. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1666996" id="answer">
+<p>You probably mean <span class="math-container" id="15407027" visual_id="56028"><math alttext="f(n)=\sum_{k=1}^{n}\frac{1}{k}\approx\ln n+\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mn>1</mn><mi>k</mi></mfrac></mrow><mo>≈</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow><mo>+</mo><mi>γ</mi></mrow></mrow></semantics></math></span> As a sum is basically a discrete integral, the finite derivative of a sum over the upper bound gives you back the summand <span class="math-container" id="15407028" visual_id="56029"><math alttext="f^{\prime}(n)\asymp\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≍</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span>. More formal treatment of differentiation of discrete sums is found <a href="http://arxiv.org/pdf/1209.5739.pdf" rel="nofollow">here</a>.</p> <p>Anyway, I think you can deal with the finite difference implementation now: the difference between two partial sums for different <span class="math-container" id="15407029" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> shouldn't be a problem.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3400841"> I don't know if this is exactly what I was looking at doing but I will read the link and report back if it was. Thank you for sharing the link. I will read it all. </td></tr><tr><td comment_id="3405947"> Thanks, I read over the resource and I feel like it does accurately help me out. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

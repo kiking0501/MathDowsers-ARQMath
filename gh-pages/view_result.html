@@ -30,11 +30,7 @@
             <h4> <span  style="color:dimgrey"> Rank Answers by: </span> </h4>
             <div align="center">
                 <form>
-                  <select name = "dropdown" class="rbox-dropdown" onchange="viewResult()";>
-                    <option value="post-duplicate">MathDowsers' run: duplicateTerms (experimental run)</option>
-                    <option value="primary">MathDowsers' run: primary (best participant run)</option>
-                    <option value="proximityReRank">MathDowsers' run: proximityReRank</option>
-                    <option value="custom">Custom</option>
+                  <select id="runSelection" name="dropdown" class="rbox-dropdown" onchange="viewResult()";>
                   </select>
                   <div id="customRunBox">
                     <span class="note-for-limit-size" style="display: none"> Custom Ranking is available only in the full version. </span>
@@ -223,3 +219,11 @@
 
     </div>
 </div>
+
+<select id="runSelection-template" name="dropdown" class="rbox-dropdown" onchange="viewResult();" style="display: none;">
+    <option value="L8_a018" class="run2022">2022 MathDowsers' run: L8_a018</option>
+    <option value="post-duplicate" class="run2020 run2021 run2022">2021 MathDowsers' run: duplicateTerms (best experimental run)</option>
+    <option value="primary" class="run2020 run2021">2021 MathDowsers' run: primary (2021 best participant run)</option>
+    <option value="proximityReRank" class="run2020 run2021">2021 MathDowsers' run: proximityReRank</option>
+    <option value="custom" class="run2020 run2021 run2022">Custom</option>
+</select>

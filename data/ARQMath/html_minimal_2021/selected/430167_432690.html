@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is there an inverse to Stirling's approximation?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is there an inverse to Stirling's approximation? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="430167">
+<p>The factorial function cannot have an inverse, <span class="math-container" id="4531845" visual_id="38287"><math alttext="0!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>!</mo></mrow></semantics></math></span> and <span class="math-container" id="4531846" visual_id="255556"><math alttext="1!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>!</mo></mrow></semantics></math></span> having the same value. However, Stirling's approximation of the factorial <span class="math-container" id="4531847" visual_id="255557"><math alttext="x!\sim x^{x}e^{-x}\sqrt{2\pi x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>!</mo></mrow><mo>∼</mo><mrow><msup><mi>x</mi><mi>x</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>⁢</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi></mrow></msqrt></mrow></mrow></semantics></math></span> does not have this problem, and could provide a ballpark inverse to the factorial function. But can this actually be derived, and if so how? Here is my work:</p> <p><span class="math-container" id="4531848" visual_id="255558"><math alttext="\displaystyle y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span></p> <p>That is as far as I can go. I suspect the solution may require the Lambert W function.</p> <p>Edit: I have just realized that after step 3 above, one can divide both sides by <em>e</em> to get</p> <p><span class="math-container" id="4531849" visual_id="255559"><math alttext="\left(\frac{x}{e}\right)^{2x+1}=\frac{y^{2}}{2e\pi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>(</mo><mfrac><mi>x</mi><mi>e</mi></mfrac><mo>)</mo></mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>π</mi></mrow></mfrac></mrow></semantics></math></span></p> <p>Can this be solved?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> inverse </span><span> factorial </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="919733"> [This question](http://mathoverflow.net/questions/12828/inverse-gamma-function) may be of interest to you. </td></tr><tr><td comment_id="923334"> That's not Stirling's approximation. </td></tr><tr><td comment_id="923344"> @LeeSleek an approximation to the inverse gamma function will give you something similar to an inverse Stirling approximation. If that's what you want, it'll work. </td></tr><tr><td comment_id="924274"> Personally, I think 0! = 0, it makes the curve x! so much more smoother and beautiful! </td></tr><tr><td comment_id="924977"> I said "may be of interest to you", not that it answers your question. Otherwise I would've posted it as an answer. </td></tr><tr><td comment_id="925479"> @diophantine <span class="math-container" id="4531850" visual_id="255560"><math alttext="n!=n(n-1)!,1!=1(1-1)!,1=1(0!),0!=1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mrow><mn>1</mn><mo>!</mo></mrow><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mn>1</mn><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>0</mn><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mn>0</mn><mo>!</mo></mrow><mo>=</mo><mn>1</mn></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Furthermore, the convention is that the product of no numbers at all is 1. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="432690" id="answer">
+<p>As <span class="math-container" id="4531858" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> increases to infinity we want to know roughly the size of the <span class="math-container" id="4531859" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> that satisfies the equation <span class="math-container" id="4531860" visual_id="255563"><math alttext="x!=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>!</mo></mrow><mo>=</mo><mi>n</mi></mrow></semantics></math></span>. By Stirling <span class="math-container" id="4531861" visual_id="255564"><math alttext="x^{x}e^{-x}\sqrt{2\pi x}\sim n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mi>x</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>⁢</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi></mrow></msqrt></mrow><mo>∼</mo><mi>n</mi></mrow></semantics></math></span> Just focusing on <span class="math-container" id="4531862" visual_id="2242"><math alttext="x^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mi>x</mi></msup></semantics></math></span> a first approximation is <span class="math-container" id="4531863" visual_id="255565"><math alttext="\log n/\log\log n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>n</mi><mo>/</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></mrow></mrow></semantics></math></span>. Now writing <span class="math-container" id="4531864" visual_id="255566"><math alttext="x=\log n/\log\log n+x_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>n</mi><mo>/</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></mrow></mrow><mo>+</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow></semantics></math></span> and solving approximately for <span class="math-container" id="4531865" visual_id="273"><math alttext="x_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>1</mn></msub></semantics></math></span>, this time using <span class="math-container" id="4531866" visual_id="255567"><math alttext="x^{x}e^{-x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>x</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow></semantics></math></span> we get <span class="math-container" id="4531867" visual_id="255568"><math alttext="x=\frac{\log n}{\log\log n}+\frac{\log n\cdot(\log\log\log n+1)}{(\log\log n)^% {2}}+x_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mfrac><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></mfrac><mo>+</mo><mfrac><mrow><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow><mo>⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></semantics></math></span> with a yet smaller <span class="math-container" id="4531868" visual_id="584"><math alttext="x_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>2</mn></msub></semantics></math></span> which can be also determined by plugging this into <span class="math-container" id="4531869" visual_id="255567"><math alttext="x^{x}e^{-x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>x</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow></semantics></math></span>. You'll notice eventually that the <span class="math-container" id="4531870" visual_id="255569"><math alttext="\sqrt{2\pi x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi></mrow></msqrt></semantics></math></span> is too small to contribute. You can continue in this way, and this will give you an asymptotic (non-convergent) serie (in powers of <span class="math-container" id="4531871" visual_id="91650"><math alttext="\log\log n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></semantics></math></span>). For more I recommend looking at De Brujin's book "Asymptotic methods in analysis". He specifically focuses on the case of <span class="math-container" id="4531872" visual_id="755"><math alttext="n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>!</mo></mrow></semantics></math></span> case in one of the Chapters (don't have the book with me to check).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="925759"> I second your recommendation of De Brujin's book - it is a classic well worth reading. </td></tr><tr><td comment_id="935817"> I am only awarding you this bounty because I don't want it to go to waste and yours is the only answer. </td></tr><tr><td comment_id="6106158"> Could you please explain why <span class="math-container" id="4531873" visual_id="255565"><math alttext="\log n/\log\log n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>n</mi><mo>/</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></mrow></mrow></semantics></math></span> is an approximation for <span class="math-container" id="4531874" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span> if <span class="math-container" id="4531875" visual_id="255570"><math alttext="n=s^{s}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msup><mi>s</mi><mi>s</mi></msup></mrow></semantics></math></span>? (pointing to a source would be enough) Thank you. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1624347"> What approximations for the Gamma function's inverse appear to work 'best'? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

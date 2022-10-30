@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Evaluate $\lim_{n\to \infty} \left( \sum_{r=0}^n \frac {2^r}{5^{2^r}+1}\right) $</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Evaluate <span class="math-container" id="25298797" visual_id="2922681"><math alttext="\lim_{n\to\infty}\left(\sum_{r=0}^{n}\frac{2^{r}}{5^{2^{r}}+1}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>(</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mn>2</mn><mi>r</mi></msup><mrow><msup><mn>5</mn><msup><mn>2</mn><mi>r</mi></msup></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2741632">
+<blockquote> <p>Evaluate <span class="math-container" id="25298798" visual_id="2922681"><math alttext="\lim_{n\to\infty}\left(\sum_{r=0}^{n}\frac{2^{r}}{5^{2^{r}}+1}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>(</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mn>2</mn><mi>r</mi></msup><mrow><msup><mn>5</mn><msup><mn>2</mn><mi>r</mi></msup></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span></p> </blockquote> <p>I tried to create some infinite GP within the summation,  some algebraic manipulations like adding the first and last terms of the summation to find any series popping out of it and also tried writing it in the exponential form like <span class="math-container" id="25298799" visual_id="2922682"><math alttext="5^{2^{r}}=e^{2^{r}\ln 5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>5</mn><msup><mn>2</mn><mi>r</mi></msup></msup><mo>=</mo><msup><mi>e</mi><mrow><msup><mn>2</mn><mi>r</mi></msup><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mn>5</mn></mrow></mrow></msup></mrow></semantics></math></span> and also tried to do some power series thing. I also tried to find any method using integrals and Riemann sums but couldn't do so. </p> <p>Any hints would be greatly appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> integration </span><span> sequences-and-series </span><span> limits </span><span> summation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5657309"> Why do you think this series should have a nice evaluation? An extremely accurate evaluation will come from just the first few terms, since this series converges very, very rapidly. </td></tr><tr><td comment_id="5657560"> Euler-Maclaurin may be the way </td></tr><tr><td comment_id="5657585"> @PierpaoloVivo I don't see how this question relates to it </td></tr><tr><td comment_id="5657673"> Numerically, it "seems to go" to <span class="math-container" id="25298800" visual_id="2602052"><math alttext="\displaystyle\color[rgb]{1,0,0}{1\over 4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac mathcolor="#FF0000"><mn mathcolor="#FF0000">1</mn><mn mathcolor="#FF0000">4</mn></mfrac></semantics></math></span>. </td></tr><tr><td comment_id="5658466"> @FelixMarin Yeah I got to know about that from Wolfy but I want an algebraic hint or some kind method to do it by hand by proper means </td></tr><tr><td comment_id="5658478"> @Felix Marin I want a method that can be done by hand by proper methods </td></tr><tr><td comment_id="5658571"> I know that. However, a 'numerical check' is always useful. Specially when the problem at hand isn't trivial. </td></tr><tr><td comment_id="5658614"> @FelixMarin By the way did you get any idea how to answer this question. Now I have tried nearly 3 hours for this question with no success </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2743212" id="answer">
+<p><span class="math-container" id="25298801" visual_id="2922681"><math alttext="\lim_{n\to\infty}\left(\sum_{r=0}^{n}\frac{2^{r}}{5^{2^{r}}+1}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>(</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mn>2</mn><mi>r</mi></msup><mrow><msup><mn>5</mn><msup><mn>2</mn><mi>r</mi></msup></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></semantics></math></span> <span class="math-container" id="25298802" visual_id="2922683"><math alttext="=\lim_{n\to\infty}\sum_{r=0}^{n}\left(\frac{2^{r}}{5^{2^{r}}+1}\cdot\frac{5^{2% ^{r}}-1}{5^{2^{r}}-1}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mrow><mfrac><msup><mn>2</mn><mi>r</mi></msup><mrow><msup><mn>5</mn><msup><mn>2</mn><mi>r</mi></msup></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⋅</mo><mfrac><mrow><msup><mn>5</mn><msup><mn>2</mn><mi>r</mi></msup></msup><mo>-</mo><mn>1</mn></mrow><mrow><msup><mn>5</mn><msup><mn>2</mn><mi>r</mi></msup></msup><mo>-</mo><mn>1</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="25298803" visual_id="2922684"><math alttext="=\lim_{n\to\infty}\sum_{r=0}^{n}\left(\frac{2^{r}((5^{2^{r}}+1)-2)}{5^{2^{r+1}% }-1}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac><mrow><msup><mn>2</mn><mi>r</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>5</mn><msup><mn>2</mn><mi>r</mi></msup></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mn>5</mn><msup><mn>2</mn><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msup></msup><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="25298804" visual_id="2922685"><math alttext="=\lim_{n\to\infty}\sum_{r=0}^{n}\left(\frac{2^{r}}{5^{2^{r}}-1}-\frac{2^{r+1}}% {5^{2^{r+1}}-1}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mrow><mfrac><msup><mn>2</mn><mi>r</mi></msup><mrow><msup><mn>5</mn><msup><mn>2</mn><mi>r</mi></msup></msup><mo>-</mo><mn>1</mn></mrow></mfrac><mo>-</mo><mfrac><msup><mn>2</mn><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><msup><mn>5</mn><msup><mn>2</mn><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msup></msup><mo>-</mo><mn>1</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="25298805" visual_id="2922686"><math alttext="=\frac{1}{5-1}=\frac{1}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>5</mn><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math></span></p> <p>Note: In fact using this method it can be proved that for any natural number <span class="math-container" id="25298806" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> (except of course <span class="math-container">$a=1$</span>) <span class="math-container" id="25298807" visual_id="2922687"><math alttext="\lim_{n\to\infty}\left(\sum_{r=0}^{n}\frac{2^{r}}{a^{2^{r}}+1}\right)=\frac{1}% {a-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>(</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mn>2</mn><mi>r</mi></msup><mrow><msup><mi>a</mi><msup><mn>2</mn><mi>r</mi></msup></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5660394"> +1. Very clever. </td></tr><tr><td comment_id="5660731"> @Felix Marin Thanks a lot </td></tr><tr><td comment_id="5661122"> Good job, +1) . </td></tr><tr><td comment_id="5661649"> Telescoping sums are so nice. (+1) </td></tr><tr><td comment_id="5661787"> @xpaul Thanks... </td></tr><tr><td comment_id="5661789"> @Kirk Fox Thanks... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

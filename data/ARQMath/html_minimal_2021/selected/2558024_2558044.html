@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Solving equation using Euclidean Algorithm?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Solving equation using Euclidean Algorithm? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2558024">
+<p>Euclidean algorithm leverages multiplication and subtraction, which humans are fairly good at, to make fractions like 15996751/3870378 reducible. Also useful in scaling equations down to their simplest integer representation in one step, given with extra integers, GCD(C,GCD(A,B)) is equivalent to GCD(A,B,C). It's been around for over two thousand years and mathematicians have bent it to many purposes , but just the first bit should be justification.</p> <p>I am trying to find the <span class="math-container" id="23650032" visual_id="11246"><math alttext="\gcd" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>gcd</mi></semantics></math></span> of two numbers forming a linear combination: <span class="math-container" id="23650033" visual_id="2552021"><math alttext="5a+24b=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>a</mi></mrow><mo>+</mo><mrow><mn>24</mn><mo>⁢</mo><mi>b</mi></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. I know that <span class="math-container" id="23650034" visual_id="31988"><math alttext="a=5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>5</mn></mrow></semantics></math></span> and <span class="math-container" id="23650035" visual_id="18671"><math alttext="b=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>, but I found these values through trial and error. How would I use Euclid's Algorithm to find a and b?</p> <p>This is what I have done so far: <span class="math-container" id="23650036" visual_id="2552022"><math alttext="24/5\implies Q=4,R=4,5/4\implies Q=1,R=4,4/4\implies Q=1,R=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>24</mn><mo>/</mo><mn>5</mn></mrow><mo>⟹</mo><mi>Q</mi><mo>=</mo><mn>4</mn></mrow><mo>,</mo><mrow><mrow><mi>R</mi><mo>=</mo><mn>4</mn></mrow><mo>,</mo><mrow><mrow><mn>5</mn><mo>/</mo><mn>4</mn></mrow><mo>⟹</mo><mi>Q</mi><mo>=</mo><mn>1</mn></mrow></mrow><mo>,</mo><mrow><mrow><mi>R</mi><mo>=</mo><mn>4</mn></mrow><mo>,</mo><mrow><mrow><mn>4</mn><mo>/</mo><mn>4</mn></mrow><mo>⟹</mo><mi>Q</mi><mo>=</mo><mn>1</mn></mrow></mrow><mo>,</mo><mrow><mi>R</mi><mo>=</mo><mn>0</mn></mrow></mrow></semantics></math></span> How do I use this info to work backwards?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> cryptography </span><span> euclidean-algorithm </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5280436"> `I know that a=5 and b=−1` That's *one* solution, but it may be worth noting that the solution is *not* unique. For example <span class="math-container" id="23650037" visual_id="2552023"><math alttext="a=-19,b=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>=</mo><mrow><mo>-</mo><mn>19</mn></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>=</mo><mn>4</mn></mrow></mrow></semantics></math></span> is another solution.  In fact <span class="math-container" id="23650038" visual_id="2552024"><math alttext="a=24k+5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mn>24</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>5</mn></mrow></mrow></semantics></math></span>, <span class="math-container" id="23650039" visual_id="2552025"><math alttext="b=-5k-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mn>5</mn><mo>⁢</mo><mi>k</mi></mrow></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> is a solution <span class="math-container" id="23650040" visual_id="633939"><math alttext="\forall k\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∀</mo><mi>k</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="5290098"> @dxiv  Or equivalently,  <span class="math-container" id="23650041" visual_id="2552026"><math alttext="a=-24k+5,b=5k-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mo>-</mo><mrow><mn>24</mn><mo>⁢</mo><mi>k</mi></mrow></mrow><mo>+</mo><mn>5</mn></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>=</mo><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>k</mi></mrow><mo>-</mo><mn>1</mn></mrow></mrow></mrow></semantics></math></span>. Just need to cancel the parametric terms out,hence need the reverse signs in <span class="math-container" id="23650042" visual_id="249"><math alttext="a,b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></semantics></math></span> for the parametric term. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2558044" id="answer">
+<p>Using the extended Euclidean algorithm works like this:</p> <p><span class="math-container" id="23650050" visual_id="2552033"><math alttext="\displaystyle 24\cdot 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>24</mn><mo>⋅</mo><mn>1</mn></mrow></semantics></math></span></p> <p>In the right-most column we get a sequence of remainders from Euclidean division, each one less than the last.  The algorithm must terminate because the remainders are positive and strictly decreasing.  Furthermore, since the first two numbers in the remainder sequence are trivially linear combinations of <span class="math-container" id="23650051" visual_id="4522"><math alttext="24" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>24</mn></semantics></math></span> and <span class="math-container" id="23650052" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span>, we can inductively see that each new remainder in the sequence can be expressed as a linear combination of <span class="math-container" id="23650053" visual_id="4522"><math alttext="24" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>24</mn></semantics></math></span> and <span class="math-container" id="23650054" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span>.  </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2555000"> Using Euclidean Algorithm in RSA? </td></tr><tr><td post_id="2562816"> Linear Diophantine equation : <span class="math-container" id="23692327" visual_id="76336"><math alttext="ax+by=c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mi>c</mi></mrow></semantics></math></span>, parametric form of infinite solutions : Two issues </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

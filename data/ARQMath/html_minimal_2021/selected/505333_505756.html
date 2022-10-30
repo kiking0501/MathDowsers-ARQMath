@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding matrix norm equivalence constants</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding matrix norm equivalence constants </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="505333">
+<p>I've been given the following:</p> <p>"Find the best positive constants <span class="math-container" id="5291576" visual_id="93"><math alttext="\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi></semantics></math></span> and <span class="math-container" id="5291577" visual_id="57"><math alttext="\beta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi></semantics></math></span> such that <span class="math-container" id="5291578" visual_id="2861295"><math alttext="\alpha\left\|A\right\|_{2}\leq\left\|A\right\|_{1}\leq\beta\left\|A\right\|_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>α</mi><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub></mrow><mo>≤</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>1</mn></msub><mo>≤</mo><mrow><mi>β</mi><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub></mrow></mrow></semantics></math></span> for all <span class="math-container" id="5291579" visual_id="1781"><math alttext="A\in\mathbb{R}^{m\times n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>m</mi><mo>×</mo><mi>n</mi></mrow></msup></mrow></semantics></math></span>.</p> <p>This is part b of a question along with "Prove that <span class="math-container" id="5291580" visual_id="2861296"><math alttext="\left\|x\right\|_{2}\leq\left\|x\right\|_{1}\leq\sqrt{n}\left\|x\right\|_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>1</mn></msub><mo>≤</mo><mrow><msqrt><mi>n</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub></mrow></mrow></semantics></math></span> for all <span class="math-container" id="5291581" visual_id="4413"><math alttext="x\in\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></semantics></math></span>," which I was able to get after awhile by expanding out the first half and using Cauchy-Schwarz on the second, which would lead me to believe that at least one of those would be related to solving this.</p> <p>My book provides solutions for <span class="math-container" id="5291582" visual_id="1165206"><math alttext="\frac{1}{\sqrt{n}}\left\|A\right\|_{\infty}\leq\left\|A\right\|_{2}\leq\sqrt{m% }\left\|A\right\|_{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow><mo>≤</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><mrow><msqrt><mi>m</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow></semantics></math></span> and <span class="math-container" id="5291583" visual_id="1758122"><math alttext="\left\|A\right\|_{2}\leq\left\|A\right\|_{F}\leq\sqrt{n}\left\|A\right\|_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi>F</mi></msub><mo>≤</mo><mrow><msqrt><mi>n</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub></mrow></mrow></semantics></math></span> but they use <span class="math-container" id="5291584" visual_id="1191958"><math alttext="\left\|x\right\|_{2}\leq\sqrt{n}\left\|x\right\|_{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><mrow><msqrt><mi>n</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow></semantics></math></span> which I can see being true but isn't explicitly stated prior to this, and I don't think I can use without proving first. Would I simply be able to use the corresponding ratios from the first part to show this? I'm kinda lost to be honest.</p> <p>(Also, I'm taking "best" to mean closest-bounding, unless there's only one valid pair of them, though it remains somewhat ambiguous.)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> matrices </span><span> norm </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1084829"> You can just use the constants from the equivalence of the vector 1- and 2-norms plus the definition of the operator norm. And yes, you can find for both bounds a matrix which makes one of the inequality to become equality. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="505756" id="answer">
+<p>You can use simply the fact that <span class="math-container" id="5291585" visual_id="2861296"><math alttext="\|x\|_{2}\leq\|x\|_{1}\leq\sqrt{n}\|x\|_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>1</mn></msub><mo>≤</mo><mrow><msqrt><mi>n</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub></mrow></mrow></semantics></math></span> to get (upper bound in the numerator, lower bound in the denominator): <span class="math-container" id="5291586" visual_id="2861297"><math alttext="\|A\|_{1}=\max_{x\neq 0}\frac{\|Ax\|_{1}}{\|x\|_{1}}\leq\max_{x\neq 0}\frac{% \sqrt{m}\|Ax\|_{2}}{\|x\|_{2}}=\sqrt{m}\|A\|_{2}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>1</mn></msub><mo>=</mo><mrow><munder><mi>max</mi><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></munder><mo>⁡</mo><mfrac><msub><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mn>1</mn></msub><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>1</mn></msub></mfrac></mrow><mo>≤</mo><mrow><munder><mi>max</mi><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></munder><mo>⁡</mo><mfrac><mrow><msqrt><mi>m</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mn>2</mn></msub></mrow><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub></mfrac></mrow><mo>=</mo><mrow><msqrt><mi>m</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Similarly for the other: <span class="math-container" id="5291587" visual_id="2861298"><math alttext="\|A\|_{2}=\max_{x\neq 0}\frac{\|Ax\|_{2}}{\|x\|_{2}}\leq\max_{x\neq 0}\frac{\|% Ax\|_{1}}{(\sqrt{n})^{-1}\|x\|_{1}}=\sqrt{n}\|A\|_{1}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>=</mo><mrow><munder><mi>max</mi><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></munder><mo>⁡</mo><mfrac><msub><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mn>2</mn></msub><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>2</mn></msub></mfrac></mrow><mo>≤</mo><mrow><munder><mi>max</mi><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></munder><mo>⁡</mo><mfrac><msub><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∥</mo></mrow><mn>1</mn></msub><mrow><msup><mrow><mo stretchy="false">(</mo><msqrt><mi>n</mi></msqrt><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>x</mi><mo>∥</mo></mrow><mn>1</mn></msub></mrow></mfrac></mrow><mo>=</mo><mrow><msqrt><mi>n</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>1</mn></msub></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Hence <span class="math-container" id="5291588" visual_id="2861299"><math alttext="\frac{1}{\sqrt{n}}\|A\|_{2}\leq\|A\|_{1}\leq\sqrt{m}\|A\|_{2}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub></mrow><mo>≤</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>1</mn></msub><mo>≤</mo><mrow><msqrt><mi>m</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>The constants <span class="math-container" id="5291589" visual_id="2861300"><math alttext="\alpha=\frac{1}{\sqrt{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac></mrow></semantics></math></span> and <span class="math-container" id="5291590" visual_id="2861301"><math alttext="\beta=\sqrt{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><msqrt><mi>m</mi></msqrt></mrow></semantics></math></span> are <em>best</em> in the sense that they are the tightest constants such that the bounds hold for <em>all</em> matrices, that is, there exist matrices <span class="math-container" id="5291591" visual_id="9127"><math alttext="A_{\alpha}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>α</mi></msub></semantics></math></span> and <span class="math-container" id="5291592" visual_id="9128"><math alttext="A_{\beta}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>β</mi></msub></semantics></math></span> for which one of the bounds is attained: <span class="math-container" id="5291593" visual_id="2861302"><math alttext="\frac{1}{\sqrt{n}}\|A_{\alpha}\|_{2}=\|A_{\alpha}\|_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><msub><mrow><mo>∥</mo><msub><mi>A</mi><mi>α</mi></msub><mo>∥</mo></mrow><mn>2</mn></msub></mrow><mo>=</mo><msub><mrow><mo>∥</mo><msub><mi>A</mi><mi>α</mi></msub><mo>∥</mo></mrow><mn>1</mn></msub></mrow></semantics></math></span> and <span class="math-container" id="5291594" visual_id="2861303"><math alttext="\|A_{\beta}\|_{1}=\sqrt{m}\|A_{\beta}\|_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo>∥</mo><msub><mi>A</mi><mi>β</mi></msub><mo>∥</mo></mrow><mn>1</mn></msub><mo>=</mo><mrow><msqrt><mi>m</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><msub><mi>A</mi><mi>β</mi></msub><mo>∥</mo></mrow><mn>2</mn></msub></mrow></mrow></semantics></math></span>. These matrices can be, e.g.: <span class="math-container" id="5291595" visual_id="2861304"><math alttext="A_{\alpha}=\begin{bmatrix}1&amp;1&amp;\cdots&amp;1\\ 0&amp;0&amp;\cdots&amp;0\\ \vdots&amp;\vdots&amp;\vdots&amp;\vdots\\ 0&amp;0&amp;\cdots&amp;0\end{bmatrix},\qquad A_{\beta}=\begin{bmatrix}1&amp;0&amp;\cdots&amp;0\\ 1&amp;0&amp;\cdots&amp;0\\ \vdots&amp;\vdots&amp;\vdots&amp;\vdots\\ 1&amp;0&amp;\cdots&amp;0\end{bmatrix}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>A</mi><mi>α</mi></msub><mo>=</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>]</mo></mrow></mrow><mo rspace="22.5pt">,</mo><mrow><msub><mi>A</mi><mi>β</mi></msub><mo>=</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>]</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="901233"> Proving result on matrix norms </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

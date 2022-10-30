@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove that sequence converges to the non-negative root of $a^p - a = 1$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove that sequence converges to the non-negative root of <span class="math-container" id="19043537" visual_id="3400339"><math alttext="a^{p}-a=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mi>p</mi></msup><mo>-</mo><mi>a</mi></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2059429">
+<p>Let <span class="math-container" id="19043538" visual_id="845"><math alttext="p&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="19043539" visual_id="3400340"><math alttext="x_{n}=\sqrt[p]{1+\sqrt[p]{1+\sqrt[p]{1+\dotso+\sqrt[p]{1}}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mroot><mrow><mn>1</mn><mo>+</mo><mroot><mrow><mn>1</mn><mo>+</mo><mroot><mrow><mn>1</mn><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mroot><mn>1</mn><mi>p</mi></mroot></mrow><mi>p</mi></mroot></mrow><mi>p</mi></mroot></mrow><mi>p</mi></mroot></mrow></semantics></math></span>  (n radicals).</p> <p>Prove that <span class="math-container" id="19043540" visual_id="9007"><math alttext="\{x_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> converges to the positive root of <span class="math-container" id="19043541" visual_id="3400339"><math alttext="a^{p}-a=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mi>p</mi></msup><mo>-</mo><mi>a</mi></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.</p> <p>How do I find the roots of such equation or do I even need to find them?</p> <p>How do I usually deal with problems, when I have a lot of radicals one under each other?</p> <p>P.S. Ok, I noticed <span class="math-container" id="19043542" visual_id="3400341"><math alttext="x_{n}^{p}-1=x_{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mi>x</mi><mi>n</mi><mi>p</mi></msubsup><mo>-</mo><mn>1</mn></mrow><mo>=</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span><span> limits </span><span> radicals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4227501"> you are only interested in proving convergence, so you will probably be needing basic analysis tools for convergence of sequences. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2059492" id="answer">
+<p>Let <span class="math-container" id="19043578" visual_id="3400354"><math alttext="\phi(x)=x^{p}-(1+x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mi>p</mi></msup><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and notice that <span class="math-container" id="19043579" visual_id="3133522"><math alttext="\phi(0)=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>, <span class="math-container" id="19043580" visual_id="2828007"><math alttext="\phi^{\prime}(0)=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>ϕ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>, <span class="math-container" id="19043581" visual_id="3196289"><math alttext="\phi^{\prime\prime}(x)\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>ϕ</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="19043582" visual_id="2898610"><math alttext="\lim_{x\to\infty}\phi(x)=\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>.</p> <p>In particular, there is a unique <span class="math-container" id="19043583" visual_id="2049721"><math alttext="x^{*}&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo>*</mo></msup><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> such that <span class="math-container" id="19043584" visual_id="3400355"><math alttext="\phi(x^{*})=x^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mo>*</mo></msup></mrow></semantics></math></span>, and for <span class="math-container" id="19043585" visual_id="3400356"><math alttext="0\leq x\leq x^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><msup><mi>x</mi><mo>*</mo></msup></mrow></semantics></math></span>, we have <span class="math-container" id="19043586" visual_id="479955"><math alttext="\phi(x)&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span> and for <span class="math-container" id="19043587" visual_id="1521595"><math alttext="x^{*}\leq x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo>*</mo></msup><mo>≤</mo><mi>x</mi></mrow></semantics></math></span>, we have <span class="math-container" id="19043588" visual_id="479956"><math alttext="\phi(x)&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>Since <span class="math-container" id="19043589" visual_id="649015"><math alttext="x\mapsto\sqrt[p]{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>↦</mo><mroot><mi>x</mi><mi>p</mi></mroot></mrow></semantics></math></span> is strictly increasing, we see that <span class="math-container" id="19043590" visual_id="3400357"><math alttext="\eta(x)=x-\sqrt[p]{1+x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>η</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>-</mo><mroot><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mi>p</mi></mroot></mrow></mrow></semantics></math></span> also satisfies the same conditions regarding sign.</p> <p>Let <span class="math-container" id="19043591" visual_id="3400358"><math alttext="f(x)=\sqrt[p]{1+x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mroot><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mi>p</mi></mroot></mrow></semantics></math></span> and note that <span class="math-container" id="19043592" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is strictly increasing. </p> <p>From above we see that there is a unique <span class="math-container" id="19043593" visual_id="2049721"><math alttext="x^{*}&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo>*</mo></msup><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> such that <span class="math-container" id="19043594" visual_id="1028910"><math alttext="f(x^{*})=x^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mo>*</mo></msup></mrow></semantics></math></span>.</p> <p>If <span class="math-container" id="19043595" visual_id="3400356"><math alttext="0\leq x\leq x^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><msup><mi>x</mi><mo>*</mo></msup></mrow></semantics></math></span> then <span class="math-container" id="19043596" visual_id="3400359"><math alttext="x\leq f(x)\leq f(x^{*})=x^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≤</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mo>*</mo></msup></mrow></semantics></math></span>.</p> <p>If <span class="math-container" id="19043597" visual_id="1521595"><math alttext="x^{*}\leq x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo>*</mo></msup><mo>≤</mo><mi>x</mi></mrow></semantics></math></span> then <span class="math-container" id="19043598" visual_id="3400360"><math alttext="x^{*}=f(x^{*})\leq f(x)\leq x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo>*</mo></msup><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>x</mi></mrow></semantics></math></span>.</p> <p>Now consider the iteration <span class="math-container" id="19043599" visual_id="1090"><math alttext="x_{n+1}=f(x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> starting from any <span class="math-container" id="19043600" visual_id="606"><math alttext="x_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>0</mn></msub></semantics></math></span>.</p> <p>If <span class="math-container" id="19043601" visual_id="3400361"><math alttext="0\leq x_{0}\leq x^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msub><mi>x</mi><mn>0</mn></msub><mo>≤</mo><msup><mi>x</mi><mo>*</mo></msup></mrow></semantics></math></span>, then <span class="math-container" id="19043602" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> is a non decreasing sequence that is bounded above, hence <span class="math-container" id="19043603" visual_id="3400362"><math alttext="x_{n}\to\tilde{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>→</mo><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover></mrow></semantics></math></span> and since <span class="math-container" id="19043604" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous, we have <span class="math-container" id="19043605" visual_id="3400363"><math alttext="\tilde{x}=f(\tilde{x})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and so <span class="math-container" id="19043606" visual_id="1853965"><math alttext="\tilde{x}=x^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mo>=</mo><msup><mi>x</mi><mo>*</mo></msup></mrow></semantics></math></span>.</p> <p>A similar analysis shows that if <span class="math-container" id="19043607" visual_id="3400364"><math alttext="x^{*}\leq x_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo>*</mo></msup><mo>≤</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></semantics></math></span>, then <span class="math-container" id="19043608" visual_id="5830"><math alttext="x_{n}\to x^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>→</mo><msup><mi>x</mi><mo>*</mo></msup></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

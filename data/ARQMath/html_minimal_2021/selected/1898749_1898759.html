@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to solve equations in the form $f(x) = x!$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to solve equations in the form <span class="math-container" id="17598381" visual_id="22700"><math alttext="f(x)=x!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>!</mo></mrow></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1898749">
+<p>Preliminary Google's grant nothing, so I'll pose it here:</p> <p>How may I go about solving equations for the independent when in the form <span class="math-container" id="17598382" visual_id="22700"><math alttext="f(x)=x!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>!</mo></mrow></mrow></semantics></math></span> ?</p> <p><span class="math-container" id="17598383" visual_id="22701"><math alttext="x!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>!</mo></mrow></semantics></math></span> being the factorial of <span class="math-container" id="17598384" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, i.e.: <span class="math-container" id="17598385" visual_id="7805849"><math alttext="4!=4\times 3\times 2\times 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>!</mo></mrow><mo>=</mo><mrow><mn>4</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></mrow></semantics></math></span></p> <p>I'm aware of factorial approximation methods such as Stirling's approximation; <span class="math-container" id="17598386" visual_id="7805850"><math alttext="x!\approx\sqrt{2\pi x}\cdot\left(\dfrac{x}{e}\right)^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>!</mo></mrow><mo>≈</mo><mrow><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi></mrow></msqrt><mo>⋅</mo><msup><mrow><mo>(</mo><mfrac><mi>x</mi><mi>e</mi></mfrac><mo>)</mo></mrow><mi>x</mi></msup></mrow></mrow></semantics></math></span>; but am aware of no such method to solve for <span class="math-container" id="17598387" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> itself in the natural form.</p> <p>Thoughts?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> factorial </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3895477"> see [here](http://mathoverflow.net/questions/12828/inverse-gamma-function) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1898759" id="answer">
+<p>The factorial extends continuously onto the real numbers via a function called the gamma function, which remarkably has the same values at the integers as  the factorial does with a small shift : <span class="math-container" id="17598388" visual_id="35540"><math alttext="\Gamma(n)=(n-1)!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></semantics></math></span>. This permits us to not only look for integer, but also real number solutions for this problem. I suggest you look up this remarkable function on Wikipedia.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that $(\mathbb{Z}[x]/(x^{n+1}))^{\times}\cong \mathbb{Z}/2\mathbb{Z}\times\Pi_{i=1}^n\mathbb{Z}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that <span class="math-container" id="5081884" visual_id="4396545"><math alttext="(\mathbb{Z}[x]/(x^{n+1}))^{\times}\cong\mathbb{Z}/2\mathbb{Z}\times\Pi_{i=1}^{% n}\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>×</mo></msup><mo>≅</mo><mrow><mrow><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo>×</mo><msubsup><mi mathvariant="normal">Π</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="483642">
+<blockquote> <p>Show that <span class="math-container" id="5081885" visual_id="4396545"><math alttext="(\mathbb{Z}[x]/(x^{n+1}))^{\times}\cong\mathbb{Z}/2\mathbb{Z}\times\Pi_{i=1}^{% n}\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>×</mo></msup><mo>≅</mo><mrow><mrow><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo>×</mo><msubsup><mi mathvariant="normal">Π</mi><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></mrow></semantics></math></span>.</p> </blockquote> <p>Anyway how and what method is used to prove this. I still have no idea now. really thanks for your help</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> ring-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1041582"> More generally, if <span class="math-container" id="5081886" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is a commutative ring, then <span class="math-container" id="5081887" visual_id="4396546"><math alttext="(R[x]/(x^{n+1}))^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></semantics></math></span> is the direct product of the subgroups <span class="math-container" id="5081888" visual_id="12347"><math alttext="R^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mo>*</mo></msup></semantics></math></span> and <span class="math-container" id="5081889" visual_id="4396547"><math alttext="1+(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> (as a multiplicative group!). This can be verified directly. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="483648" id="answer">
+<p>Key observation #1:</p> <p>If <span class="math-container" id="5081890" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is a nilpotent element of a ring, then the geometric sum formula <span class="math-container" id="5081891" visual_id="4396548"><math alttext="\frac{1}{1-n}=1+n+n^{2}+n^{3}+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>-</mo><mi>n</mi></mrow></mfrac><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mi>n</mi><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></semantics></math></span> shows that <span class="math-container" id="5081892" visual_id="167432"><math alttext="1-n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>-</mo><mi>n</mi></mrow></semantics></math></span> is invertible.</p> <p>Key observation #2:</p> <p>In your ring the constant term of the product of cosets of <span class="math-container" id="5081893" visual_id="365535"><math alttext="a_{0}+a_{1}x+a_{2}x^{2}+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></semantics></math></span> and <span class="math-container" id="5081894" visual_id="4396549"><math alttext="b_{0}+b_{1}x+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mn>0</mn></msub><mo>+</mo><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></semantics></math></span> is <span class="math-container" id="5081895" visual_id="161177"><math alttext="a_{0}b_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>⁢</mo><msub><mi>b</mi><mn>0</mn></msub></mrow></semantics></math></span>.</p> <p>[Edit:] The point of these observations was to identify the <strong>set</strong> of units of your ring. Compare with Martin Brandenburg's comment! [/Edit]</p> <p>Key <strike>observation</strike> task #3:</p> <p>What's the multiplicative group generated by the cosets of <span class="math-container" id="5081896" visual_id="4142"><math alttext="1+x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></semantics></math></span>, <span class="math-container" id="5081897" visual_id="37131"><math alttext="1+x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></semantics></math></span>, <span class="math-container" id="5081898" visual_id="4669"><math alttext="\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">…</mi></semantics></math></span> , <span class="math-container" id="5081899" visual_id="349431"><math alttext="1+x^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></semantics></math></span>? Can you show that this is free abelian? Look at the low degree terms!</p> <p>[Edit:] Hint: If <span class="math-container" id="5081900" visual_id="4396550"><math alttext="u=1+a_{1}x+a_{2}x^{2}+\cdots\in 1+(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>∈</mo><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, then show that <span class="math-container" id="5081901" visual_id="4396551"><math alttext="(1+x)^{b_{1}}u\in 1+(x^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><msub><mi>b</mi><mn>1</mn></msub></msup><mo>⁢</mo><mi>u</mi></mrow><mo>∈</mo><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> if and only if <span class="math-container" id="5081902" visual_id="4396552"><math alttext="b_{1}=-a_{1}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>=</mo><mrow><mo>-</mo><msub><mi>a</mi><mn>1</mn></msub></mrow></mrow><mo>.</mo></mrow></semantics></math></span> After that try to show that there is a unique integer <span class="math-container" id="5081903" visual_id="5011"><math alttext="b_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>b</mi><mn>2</mn></msub></semantics></math></span> with the property that <span class="math-container" id="5081904" visual_id="4396553"><math alttext="(1+x^{2})^{-b_{2}}(1+x)^{-a_{1}}u\in 1+(x^{3})." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><msub><mi>b</mi><mn>2</mn></msub></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><msub><mi>a</mi><mn>1</mn></msub></mrow></msup><mo>⁢</mo><mi>u</mi></mrow><mo>∈</mo><mrow><mn>1</mn><mo>+</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Proceed recursively. [/Edit]</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="488983"> <span class="math-container" id="5134576" visual_id="2810351"><math alttext="(\mathbb{Z}[x]/(x^{n+1}))^{\times}\cong\mathbb{Z}/2\mathbb{Z}\times\prod_{i=1}% ^{n}\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>×</mo></msup><mo>≅</mo><mrow><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo>×</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>ℤ</mi></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="515575"> The group of invertible elements of <span class="math-container" id="5386022" visual_id="1525933"><math alttext="\mathbb{F}_{p}[x]/(x^{m})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>𝔽</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>m</mi></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is not a cyclic group. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

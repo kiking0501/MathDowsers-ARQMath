@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to calculate a determinant of a 2x2 symmetry block matrix?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to calculate a determinant of a 2x2 symmetry block matrix? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1549209">
+<p>I'd like to calculate the determinant of the matrix: <span class="math-container" id="14310788" visual_id="6955465"><math alttext="\begin{pmatrix}-A&amp;B^{\star}\\ -B&amp;A^{\star}\\ \end{pmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mo>-</mo><mi>A</mi></mrow></mtd><mtd columnalign="center"><msup><mi>B</mi><mo>⋆</mo></msup></mtd></mtr><mtr><mtd columnalign="center"><mrow><mo>-</mo><mi>B</mi></mrow></mtd><mtd columnalign="center"><msup><mi>A</mi><mo>⋆</mo></msup></mtd></mtr></mtable><mo>)</mo></mrow></semantics></math></span> <span class="math-container" id="14310789" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, <span class="math-container" id="14310790" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> are <span class="math-container" id="14310791" visual_id="307937"><math alttext="L\times L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>×</mo><mi>L</mi></mrow></semantics></math></span> complex matrix.</p> <p>I know that if <span class="math-container" id="14310792" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="14310793" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> are real matrix, the determinant can be easily calculated: <span class="math-container" id="14310794" visual_id="6955466"><math alttext="\begin{pmatrix}-A&amp;B\\ -B&amp;A\\ \end{pmatrix}=\begin{pmatrix}A&amp;B\\ B&amp;A\\ \end{pmatrix}.\begin{pmatrix}-1&amp;0\\ 0&amp;1\\ \end{pmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mo>-</mo><mi>A</mi></mrow></mtd><mtd columnalign="center"><mi>B</mi></mtd></mtr><mtr><mtd columnalign="center"><mrow><mo>-</mo><mi>B</mi></mrow></mtd><mtd columnalign="center"><mi>A</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>A</mi></mtd><mtd columnalign="center"><mi>B</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>B</mi></mtd><mtd columnalign="center"><mi>A</mi></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>.</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mo>-</mo><mn>1</mn></mrow></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></semantics></math></span> and  <span class="math-container" id="14310795" visual_id="3864482"><math alttext="\det\begin{pmatrix}A&amp;B\\ B&amp;A\\ \end{pmatrix}=\det(A-B)\det(A+B)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>A</mi></mtd><mtd columnalign="center"><mi>B</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>B</mi></mtd><mtd columnalign="center"><mi>A</mi></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>Is there a similar formula when <span class="math-container" id="14310796" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="14310797" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> are complex matrix? Thank you for your help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> matrices </span><span> determinant </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3155681"> I am blown away by this fact about real matrices on the last line -- I didn't know that was true. However does one prove it? It's nothing to do with real matrices -- it seems to be true for matrices over an arbitrary commutative ring. </td></tr><tr><td comment_id="3159321"> Hi Jeroen, thank you for your comments. I learned the last line from [wiki](https://en.wikipedia.org/wiki/Determinant#Block_matrices), I do not know how to prove that. Of course, A and B can be complex in the last line. I want to know whether there is a similar formula for my problem. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1549986" id="answer">
+<p>Hint.</p> <p>If <span class="math-container" id="14310798" visual_id="344045"><math alttext="\mathbf{A^{*}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>𝐀</mi><mo>*</mo></msup></semantics></math></span> is invertible you can use the general result: <span class="math-container" id="14310799" visual_id="6955467"><math alttext="\det\begin{bmatrix}\mathbf{A}&amp;\mathbf{B}\\ \mathbf{C}&amp;\mathbf{D}\end{bmatrix}=\det(\mathbf{D})\det(\mathbf{A}-\mathbf{B}% \mathbf{D}^{-1}\mathbf{C})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>𝐀</mi></mtd><mtd columnalign="center"><mi>𝐁</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>𝐂</mi></mtd><mtd columnalign="center"><mi>𝐃</mi></mtd></mtr></mtable><mo>]</mo></mrow></mrow><mo>=</mo><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mrow><mo stretchy="false">(</mo><mi>𝐃</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>𝐀</mi><mo>-</mo><mrow><msup><mi>𝐁𝐃</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>𝐂</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span> that is a consequence of the identity: <span class="math-container" id="14310800" visual_id="6955468"><math alttext="\begin{bmatrix}\mathbf{A}&amp;\mathbf{B}\\ \mathbf{C}&amp;\mathbf{D}\end{bmatrix}\begin{bmatrix}\mathbf{I}&amp;\mathbf{0}\\ \mathbf{-D^{-1}}\mathbf{C}&amp;\mathbf{D}\end{bmatrix}=\begin{bmatrix}\mathbf{A}-% \mathbf{B}\mathbf{D^{-1}}\mathbf{C}&amp;\mathbf{B}\\ \mathbf{0}&amp;\mathbf{D}\end{bmatrix}=\begin{bmatrix}\mathbf{I}&amp;\mathbf{B}\\ \mathbf{0}&amp;\mathbf{D}\end{bmatrix}\begin{bmatrix}\mathbf{A}-\mathbf{B}\mathbf{% D^{-1}}\mathbf{C}&amp;\mathbf{0}\\ \mathbf{0}&amp;\mathbf{D}\end{bmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>𝐀</mi></mtd><mtd columnalign="center"><mi>𝐁</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>𝐂</mi></mtd><mtd columnalign="center"><mi>𝐃</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>⁢</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>𝐈</mi></mtd><mtd columnalign="center"><mn>𝟎</mn></mtd></mtr><mtr><mtd columnalign="center"><mrow><mo>-</mo><mrow><msup><mi>𝐃</mi><mrow><mo>-</mo><mn>𝟏</mn></mrow></msup><mo>⁢</mo><mi>𝐂</mi></mrow></mrow></mtd><mtd columnalign="center"><mi>𝐃</mi></mtd></mtr></mtable><mo>]</mo></mrow></mrow><mo>=</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>𝐀</mi><mo>-</mo><mrow><msup><mi>𝐁𝐃</mi><mrow><mo>-</mo><mn>𝟏</mn></mrow></msup><mo>⁢</mo><mi>𝐂</mi></mrow></mrow></mtd><mtd columnalign="center"><mi>𝐁</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>𝟎</mn></mtd><mtd columnalign="center"><mi>𝐃</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>=</mo><mrow><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>𝐈</mi></mtd><mtd columnalign="center"><mi>𝐁</mi></mtd></mtr><mtr><mtd columnalign="center"><mn>𝟎</mn></mtd><mtd columnalign="center"><mi>𝐃</mi></mtd></mtr></mtable><mo>]</mo></mrow><mo>⁢</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>𝐀</mi><mo>-</mo><mrow><msup><mi>𝐁𝐃</mi><mrow><mo>-</mo><mn>𝟏</mn></mrow></msup><mo>⁢</mo><mi>𝐂</mi></mrow></mrow></mtd><mtd columnalign="center"><mn>𝟎</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>𝟎</mn></mtd><mtd columnalign="center"><mi>𝐃</mi></mtd></mtr></mtable><mo>]</mo></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3159312"> Thank you Emilio. This formula is not my goal, I'm looking for a formula similar to det(A+B) det(A-B). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Calculating a bound on the norm of a matrix exponential</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Calculating a bound on the norm of a matrix exponential </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1080186">
+<p>The problem is this:</p> <p>Let A be a square <span class="math-container" id="10202637" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrix, and define  <span class="math-container" id="10202638" visual_id="1498945"><math alttext="e^{A}=\sum_{k=0}^{\infty}\frac{1}{k!}A^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>A</mi></msup><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mn>1</mn><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo>⁢</mo><msup><mi>A</mi><mi>k</mi></msup></mrow></mrow></mrow></semantics></math></span> Find a bound for <span class="math-container" id="10202639" visual_id="1731578"><math alttext="\lvert e^{A}\rvert" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true" stretchy="false">|</mo><msup><mi>e</mi><mi>A</mi></msup><mo fence="true" stretchy="false">|</mo></mrow></semantics></math></span> in terms of <span class="math-container" id="10202640" visual_id="6459"><math alttext="\lvert A\rvert" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true" stretchy="false">|</mo><mi>A</mi><mo fence="true" stretchy="false">|</mo></mrow></semantics></math></span> and <span class="math-container" id="10202641" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. </p> <p>I was able to show that this converges. I know that once <span class="math-container" id="10202642" visual_id="6649489"><math alttext="k\geq\lvert A\rvert" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mrow><mo fence="true" stretchy="false">|</mo><mi>A</mi><mo fence="true" stretchy="false">|</mo></mrow></mrow></semantics></math></span> , the values of <span class="math-container" id="10202643" visual_id="6649490"><math alttext="\left\lvert\frac{A^{k}}{k!}\right\rvert" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">|</mo><mfrac><msup><mi>A</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo fence="true">|</mo></mrow></semantics></math></span> are going to start decreasing. So I'd imagine the strategy would be to take the partial sum up to <span class="math-container" id="10202644" visual_id="6649489"><math alttext="k\geq\lvert A\rvert" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mrow><mo fence="true" stretchy="false">|</mo><mi>A</mi><mo fence="true" stretchy="false">|</mo></mrow></mrow></semantics></math></span>, and then then find some upper bound for the decreasing series that remains. I'm not sure where to go from here.</p> <p>Additionally, I'm struggling to see the relevance of the dimension of the matrix. I mean, I could bound <span class="math-container" id="10202645" visual_id="6459"><math alttext="\lvert A\rvert" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true" stretchy="false">|</mo><mi>A</mi><mo fence="true" stretchy="false">|</mo></mrow></semantics></math></span> by <span class="math-container" id="10202646" visual_id="6649491"><math alttext="\sqrt{c^{2}n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></msqrt></semantics></math></span> if I take c = the max absolute value in A, but since I'm already expressing the result in the norm of A this doesn't seem like it would be a helpful thing to do. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> matrices </span><span> exponential-function </span><span> matrix-calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1080195" id="answer">
+<p>I'm also not sure what <span class="math-container" id="10202647" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> has to do with anything. The simplest thing that comes to mind is</p> <p><span class="math-container" id="10202648" visual_id="6649492"><math alttext="\left|e^{A}\right|\leq\sum_{k=0}^{\infty}\left|\frac{A^{k}}{k!}\right|\leq\sum% _{k=0}^{\infty}\frac{|A|^{k}}{k!}=e^{|A|}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>|</mo><msup><mi>e</mi><mi>A</mi></msup><mo>|</mo></mrow><mo>≤</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo>|</mo><mfrac><msup><mi>A</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo>|</mo></mrow></mrow><mo>≤</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><msup><mi>e</mi><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow></msup></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>I'm not sure how much better a bound could possibly get, because for a diagonal matrix whose largest entry is positive (for example <span class="math-container" id="10202649" visual_id="9734"><math alttext="A=I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>I</mi></mrow></semantics></math></span>), this bound is tight.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2198375"> Thanks, man. It's an early question in an introdu<span class="math-container" id="20314491">c</span>tory-style book, so that's probably <span class="math-container" id="20314493">i</span>t. Silly me, missing the obvious, easy solution. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

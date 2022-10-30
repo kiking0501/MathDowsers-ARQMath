@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove $ \cos\left(\frac{2\pi}{5}\right) + \cos\left(\frac{4\pi}{5}\right) + \cos\left(\frac{6\pi}{5}\right)+ \cos\left(\frac{8\pi}{5}\right) = -1 $</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove <span class="math-container" id="6353464" visual_id="6056503"><math alttext="\cos\left(\frac{2\pi}{5}\right)+\cos\left(\frac{4\pi}{5}\right)+\cos\left(% \frac{6\pi}{5}\right)+\cos\left(\frac{8\pi}{5}\right)=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mn>5</mn></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow><mn>5</mn></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>6</mn><mo>⁢</mo><mi>π</mi></mrow><mn>5</mn></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>8</mn><mo>⁢</mo><mi>π</mi></mrow><mn>5</mn></mfrac><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="625101">
+<p><span class="math-container" id="6353465" visual_id="6056503"><math alttext="\cos\left(\frac{2\pi}{5}\right)+\cos\left(\frac{4\pi}{5}\right)+\cos\left(% \frac{6\pi}{5}\right)+\cos\left(\frac{8\pi}{5}\right)=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mn>5</mn></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow><mn>5</mn></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>6</mn><mo>⁢</mo><mi>π</mi></mrow><mn>5</mn></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>8</mn><mo>⁢</mo><mi>π</mi></mrow><mn>5</mn></mfrac><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span></p> <p>Wolframalpha shows that it is a correct identity, although I can't prove it.</p> <p>I've tried to use the formula  <span class="math-container" id="6353466" visual_id="6056504"><math alttext="\cos(z)=\frac{e^{iz}-e^{iz}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow></msup><mo>-</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>z</mi></mrow></msup></mrow><mn>2</mn></mfrac></mrow></semantics></math></span> but without any satisfying result.</p> <p>This exercise is from chapter on series. </p> <p>EDIT: I corrected a mistake in the formula I wanted to use.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> trigonometry </span><span> trigonometric-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1316967"> Do you know about roots of unity and Euler's Theorem? </td></tr><tr><td comment_id="1316975"> Since the problem has cosines, maybe <span class="math-container" id="6353467" visual_id="1177344"><math alttext="\cos x=(e^{ix}+e^{-ix})/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow></msup><mo>+</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> would be easier to work with. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="926702" id="answer">
+<p>The values represent the <span class="math-container" id="6353536" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>-coördinates of four points of a regular pentagon centred at the origin, the missing fifth point being at <span class="math-container" id="6353537" visual_id="16162"><math alttext="(1,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>. The centre of mass of all five points is the origin, so in particular the mean of the <span class="math-container" id="6353538" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>-coördinates is <span class="math-container" id="6353539" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>. The sum of the four values is therefore <span class="math-container" id="6353540" visual_id="343"><math alttext="-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mn>1</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="498600"> How to prove <span class="math-container" id="5227737" visual_id="2840647"><math alttext="\cos 36^{\circ}=(1+\sqrt{5})/4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>cos</mi><mo>⁡</mo><msup><mn>36</mn><mo>∘</mo></msup></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>4</mn></mrow></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

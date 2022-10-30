@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>A curve is a straight line in $\mathbb{R}^3$ if and only if..</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> A curve is a straight line in <span class="math-container" id="15414439" visual_id="2209"><math alttext="\mathbb{R}^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>3</mn></msup></semantics></math></span> if and only if.. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1667755">
+<p>A regular curve <span class="math-container" id="15414440" visual_id="14209"><math alttext="\gamma(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> in <span class="math-container" id="15414441" visual_id="2209"><math alttext="\mathbb{R}^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>3</mn></msup></semantics></math></span> is a straight line iff <span class="math-container" id="15414442" visual_id="20989"><math alttext="\gamma^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>γ</mi><mo>′</mo></msup></semantics></math></span> and <span class="math-container" id="15414443" visual_id="59404"><math alttext="\gamma^{\prime\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>γ</mi><mo>′′</mo></msup></semantics></math></span> are proportional everywhere.</p> <p>I am looking for a proof of this so I can understand what it is meaning.</p> <p>So <span class="math-container" id="15414444" visual_id="59405"><math alttext="\gamma^{\prime}=m\gamma^{\prime\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>γ</mi><mo>′</mo></msup><mo>=</mo><mrow><mi>m</mi><mo>⁢</mo><msup><mi>γ</mi><mo>′′</mo></msup></mrow></mrow></semantics></math></span> for some scalar <span class="math-container" id="15414445" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> right? I'm not sure how this relates to a curve being a straight line. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> geometry </span><span> differential-geometry </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3402098"> Do you define straight line as <span class="math-container" id="15414446" visual_id="59406"><math alttext="\gamma(t)=t\,v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><mi>t</mi><mo>⁢</mo><mi>v</mi></mpadded></mrow></mrow></semantics></math></span>, for a fixed <span class="math-container" id="15414447" visual_id="26496"><math alttext="v\in\mathbb{R}^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><msup><mi>ℝ</mi><mn>3</mn></msup></mrow></semantics></math></span>? </td></tr><tr><td comment_id="3402106"> And what does "regular"  means in your context? </td></tr><tr><td comment_id="3402107"> Indeed, what is your definition of a straight line? Surely it is characterized by the fact that its velocity vector (in any parametrization) never changes direction. Can you see that this happens if and only if <span class="math-container" id="15414448" visual_id="59404"><math alttext="\gamma^{\prime\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>γ</mi><mo>′′</mo></msup></semantics></math></span> is parallel to <span class="math-container" id="15414449" visual_id="20989"><math alttext="\gamma^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>γ</mi><mo>′</mo></msup></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1667780" id="answer">
+<p>Hint for an intuition:</p> <p>Think at <span class="math-container" id="15414450" visual_id="55531"><math alttext="\gamma^{\prime}(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>γ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> as the velocity of a point moving along the trajectory <span class="math-container" id="15414451" visual_id="14209"><math alttext="\gamma(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. So <span class="math-container" id="15414452" visual_id="59407"><math alttext="\gamma^{\prime\prime}(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>γ</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is the acceleration of the point. If the acceleration is always aligned with the velocity, i.e. <span class="math-container" id="15414453" visual_id="59408"><math alttext="\gamma^{\prime\prime}(t)=k\gamma^{\prime}(t)\;\forall t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>γ</mi><mo>′′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>k</mi><mo>⁢</mo><msup><mi>γ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="5.3pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>∀</mo><mi>t</mi></mrow></mrow></mrow></semantics></math></span> than the velocity has always the same direction and this means that the trajectory is straight line.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3402156"> I understand now! Thank you. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

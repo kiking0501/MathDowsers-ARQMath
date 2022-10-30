@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Supremal distribution of positive continuous martingale, which converges to zero a.s.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Supremal distribution of positive continuous martingale, which converges to zero a.s. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1238896">
+<p>So the question is as follows: Let <span class="math-container" id="11567934" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> be a positive continous martingale, converging a.s. to zero as <span class="math-container" id="11567935" visual_id="19089"><math alttext="t\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. Prove that for every <span class="math-container" id="11567936" visual_id="965"><math alttext="x&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>: <span class="math-container" id="11567937" visual_id="8722621"><math alttext="\mathbb{P}\{\sup_{\{t\geq 0\}}M_{t}&gt;x|\mathcal{F}_{0}\}=1\wedge\frac{M_{0}}{x}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>ℙ</mi><mo>⁢</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><munder><mo movablelimits="false">sup</mo><mrow><mo stretchy="false">{</mo><mi>t</mi><mo>≥</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></munder><mo>⁡</mo><msub><mi>M</mi><mi>t</mi></msub></mrow><mo>&gt;</mo><mi>x</mi></mrow><mo stretchy="false">|</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>0</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>∧</mo><mfrac><msub><mi>M</mi><mn>0</mn></msub><mi>x</mi></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>We've tried so far to define <span class="math-container" id="11567938" visual_id="8722622"><math alttext="\tau=t\wedge\inf\{k\leq t|M_{k}&gt;x\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>=</mo><mrow><mi>t</mi><mo>∧</mo><mrow><mo movablelimits="false">inf</mo><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mi>k</mi><mo>≤</mo><mi>t</mi></mrow><mo stretchy="false">|</mo><mrow><msub><mi>M</mi><mi>k</mi></msub><mo>&gt;</mo><mi>x</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow></mrow></semantics></math></span>. Then apply optional sampling to find: <span class="math-container" id="11567939" visual_id="8722623"><math alttext="EM_{0}=EM_{t}=EM_{\tau}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><msub><mi>M</mi><mn>0</mn></msub></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><msub><mi>M</mi><mi>t</mi></msub></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><msub><mi>M</mi><mi>τ</mi></msub></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Then split into two indicators to find: <span class="math-container" id="11567940" visual_id="8722624"><math alttext="EM_{\tau}=EM_{\tau}1_{\{\max_{k\leq t}M_{k}\geq x\}}+EM_{\tau}1_{\{\max_{k\leq t% }M_{k}&lt;x\}}=x\mathbb{P}(\max_{k\leq t}M_{k}\geq x)+0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><msub><mi>M</mi><mi>τ</mi></msub><mo>=</mo><mi>E</mi><msub><mi>M</mi><mi>τ</mi></msub><msub><mn>1</mn><mrow><mo stretchy="false">{</mo><msub><mi>max</mi><mrow><mi>k</mi><mo>≤</mo><mi>t</mi></mrow></msub><msub><mi>M</mi><mi>k</mi></msub><mo>≥</mo><mi>x</mi><mo stretchy="false">}</mo></mrow></msub><mo>+</mo><mi>E</mi><msub><mi>M</mi><mi>τ</mi></msub><msub><mn>1</mn><mrow><mo stretchy="false">{</mo><msub><mi>max</mi><mrow><mi>k</mi><mo>≤</mo><mi>t</mi></mrow></msub><msub><mi>M</mi><mi>k</mi></msub><mo>&lt;</mo><mi>x</mi><mo stretchy="false">}</mo></mrow></msub><mo>=</mo><mi>x</mi><mi>ℙ</mi><mrow><mo stretchy="false">(</mo><munder><mi>max</mi><mrow><mi>k</mi><mo>≤</mo><mi>t</mi></mrow></munder><msub><mi>M</mi><mi>k</mi></msub><mo>≥</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mn>0</mn><mo>.</mo></mrow></semantics></math></span></p> <p>This would essentially prove the statement when letting <span class="math-container" id="11567941" visual_id="19089"><math alttext="t\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> and conditioning on <span class="math-container" id="11567942" visual_id="114491"><math alttext="\mathcal{F}_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>0</mn></msub></semantics></math></span>, but we're not sure of our reasoning and steps. It seems somewhat uncarefull. Could someone please help us with this proof.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> stochastic-processes </span><span> martingales </span><span> stopping-times </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1239161" id="answer">
+<p>Hi the Optimal Sampling Theorem works fine here because you don't need bounded stopping times if you know that the process <span class="math-container" id="11567943" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is uniformly integrable. Indeed in  that case Optimal Sampling Theorem works for every stopping times (even unbounded ones) and your argument is simplified. </p> <p>As you may know a (right-)continuous martingale <span class="math-container" id="11567944" visual_id="34011"><math alttext="(X_{t})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> is uniformly integrable if and only if it is converging in <span class="math-container" id="11567945" visual_id="1020"><math alttext="L^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>1</mn></msup></semantics></math></span> as <span class="math-container" id="11567946" visual_id="92511"><math alttext="t\to+\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span> which is the case as <span class="math-container" id="11567947" visual_id="9422"><math alttext="X_{t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mi>t</mi></msub></semantics></math></span> converges almost surely to 0. (reference "Karatzas  and Shreve Brownian motion and stochastic calculus" problem 3.20 page 18 condition a and b)).</p> <p>Let's apply fully this idea, and let's denote <span class="math-container" id="11567948" visual_id="80141"><math alttext="T_{a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>a</mi></msub></semantics></math></span> the first time <span class="math-container" id="11567949" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> attains <span class="math-container" id="11567950" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> (with <span class="math-container" id="11567951" visual_id="8722625"><math alttext="a&gt;X_{0}&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><msub><mi>X</mi><mn>0</mn></msub><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> so we discard the trivial case) which is a stopping time but not a bounded one. Nevertheless we don't mind because <span class="math-container" id="11567952" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is UI, so that by we have by Optimal Sampling Theroem :</p> <p><span class="math-container" id="11567953" visual_id="8722626"><math alttext="X_{0}=E[X_{0}]=E[X_{T_{a}}]=a.P[T_{a}&lt;\infty]+X_{\infty}.P[T_{a}=\infty]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mn>0</mn></msub><mo>=</mo><mi>E</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>0</mn></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><mi>E</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><msub><mi>T</mi><mi>a</mi></msub></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><mi>a</mi><mo>.</mo><mi>P</mi><mrow><mo stretchy="false">[</mo><msub><mi>T</mi><mi>a</mi></msub><mo>&lt;</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">]</mo></mrow><mo>+</mo><msub><mi>X</mi><mi mathvariant="normal">∞</mi></msub><mo>.</mo><mi>P</mi><mrow><mo stretchy="false">[</mo><msub><mi>T</mi><mi>a</mi></msub><mo>=</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span><br/> <span class="math-container" id="11567954" visual_id="8722627"><math alttext="=a.P[T_{a}&lt;\infty]+0.P[T_{a}=\infty]=a.P[sup_{s\geq 0}(X_{s})\geq a]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>a</mi><mo>.</mo><mi>P</mi><mrow><mo stretchy="false">[</mo><msub><mi>T</mi><mi>a</mi></msub><mo>&lt;</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">]</mo></mrow><mo>+</mo><mn>0</mn><mo>.</mo><mi>P</mi><mrow><mo stretchy="false">[</mo><msub><mi>T</mi><mi>a</mi></msub><mo>=</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mi>a</mi><mo>.</mo><mi>P</mi><mrow><mo stretchy="false">[</mo><mi>s</mi><mi>u</mi><msub><mi>p</mi><mrow><mi>s</mi><mo>≥</mo><mn>0</mn></mrow></msub><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>s</mi></msub><mo stretchy="false">)</mo></mrow><mo>≥</mo><mi>a</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span></p> <p>Which leads to your result ( taking the sup with 1 if <span class="math-container" id="11567955" visual_id="8722628"><math alttext="x\leq X_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≤</mo><msub><mi>X</mi><mn>0</mn></msub></mrow></semantics></math></span>).  </p> <p>Best regards.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2527803"> I know your answer is reasonable. I just have some detail questions: first, how do we have <span class="math-container" id="11567956" visual_id="8722629"><math alttext="X_{0}=EX_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mn>0</mn></msub><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><msub><mi>X</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span> and how does the conditioning on <span class="math-container" id="11567957" visual_id="114491"><math alttext="\mathcal{F}_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>0</mn></msub></semantics></math></span> come in? Is this just measurability? </td></tr><tr><td comment_id="2527971"> @ Tim : you are right I made the hypothesis that <span class="math-container" id="11567958" visual_id="71176"><math alttext="X_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mn>0</mn></msub></semantics></math></span> was a constant, to extend the result simply, I would apply OST (check th 2.3.12 page 38 here http://www.few.vu.nl/~rmeester/onderwijs/stochastic_processes/sp_new.pdf) but with 2 stopping times <span class="math-container" id="11567959" visual_id="2136"><math alttext="\tau" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi></semantics></math></span> the one defined and <span class="math-container" id="11567960" visual_id="157608"><math alttext="\sigma=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. PS: By the way saz answered the same question in another recent post of ME but within your framework (i.e .not using U.I ), I'll edit later my post to make a technicality more clear. Best regards </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

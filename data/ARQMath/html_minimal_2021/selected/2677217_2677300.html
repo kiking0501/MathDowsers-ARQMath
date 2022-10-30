@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>A question about projective modules and free modules.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> A question about projective modules and free modules. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2677217">
+<p>If <span class="math-container" id="24732112" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is a projective <span class="math-container" id="24732113" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>-module does there exist a <span class="math-container" id="24732114" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>-module <span class="math-container" id="24732115" visual_id="202"><math alttext="Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi></semantics></math></span> such that <span class="math-container" id="24732116" visual_id="148300"><math alttext="F=P\oplus Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mrow><mi>P</mi><mo>⊕</mo><mi>Q</mi></mrow></mrow></semantics></math></span> is free?</p> <p>I am studying "Module Theory" from N.S.Gopalakrishnan's "Commutative Algebra".In page 10 while proving the proposition 1.2.12 the author has made this assertion without proof.I am a new to this subject.If somebody helps me understanding it then I will be really benefitted by it.</p> <p>Thank you in advance.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> modules </span><span> direct-sum </span><span> projective-module </span><span> free-modules </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2677300" id="answer">
+<p>it is well known that one characterization of a projective module is that it is a direct summand of a free module.</p> <p>to see this, let P be projective and choose a generating set <span class="math-container" id="24732117" visual_id="1147060"><math alttext="S=\{m_{\alpha}\}_{\alpha\in A}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><msub><mrow><mo stretchy="false">{</mo><msub><mi>m</mi><mi>α</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>α</mi><mo>∈</mo><mi>A</mi></mrow></msub></mrow></semantics></math></span></p> <p>let <span class="math-container" id="24732118" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> be the free module on a set <span class="math-container" id="24732119" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> isomorphic to <span class="math-container" id="24732120" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> and look at the surjective map: <span class="math-container" id="24732121" visual_id="1147061"><math alttext="p:F\to P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>:</mo><mrow><mi>F</mi><mo>→</mo><mi>P</mi></mrow></mrow></semantics></math></span> defined by <span class="math-container" id="24732122" visual_id="1147062"><math alttext="p(x_{\alpha})=m_{\alpha}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>α</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>m</mi><mi>α</mi></msub></mrow></semantics></math></span></p> <p>by the defining property of a projective module there is a map <span class="math-container" id="24732123" visual_id="1147063"><math alttext="q:P\to F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>:</mo><mrow><mi>P</mi><mo>→</mo><mi>F</mi></mrow></mrow></semantics></math></span> (a <em>lift</em> of the identity map <span class="math-container" id="24732124" visual_id="46212"><math alttext="P\to P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mi>P</mi></mrow></semantics></math></span>) which satisfies <span class="math-container" id="24732125" visual_id="1147064"><math alttext="q\circ p=id_{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>q</mi><mo>∘</mo><mi>p</mi></mrow><mo>=</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mi>d</mi><mi>P</mi></msub></mrow></mrow></semantics></math></span></p> <p>you now have: <span class="math-container" id="24732126" visual_id="1147065"><math alttext="F=ker(p)\oplus im(q)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊕</mo><mrow><mi>i</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

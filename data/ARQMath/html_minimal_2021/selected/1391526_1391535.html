@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>No Lie algebra over $\Bbb R$ or $\Bbb C$ can have a unit element.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> No Lie algebra over <span class="math-container" id="12924507" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> or <span class="math-container" id="12924508" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> can have a unit element. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1391526">
+<blockquote> <p><strong>I want to prove:</strong> No Lie algebra over <span class="math-container" id="12924509" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> or <span class="math-container" id="12924510" visual_id="1492"><math alttext="\mathbb{C}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℂ</mi></semantics></math></span> can have a unit element.</p> </blockquote> <p>Now I am not sure how to take this in regard to the Lie bracket. I.e. I have now idea where to start. <span class="math-container" id="12924511" visual_id="9047904"><math alttext="[x,e]=[e,x]=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>e</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mi>e</mi><mo>,</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math></span> or something? That doesn't make sense to me, since we are just looking at an abstract bracket it seems.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> lie-algebras </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2832843"> The zero Lie algebra has a unit element, namely zero. </td></tr><tr><td comment_id="2832848"> What is  the zero Lie algebra? @ಠ_ಠ </td></tr><tr><td comment_id="2832854"> @LieAlgebra This gets into a little bit of a weird territory in linear algebra. You can define the vector space of one element (<span class="math-container" id="12924512" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>) and define it so that all operations to it give <span class="math-container" id="12924513" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>. It's a zero-dimensional space since it has no basis which is a bit weird. It's not a useful structure to consider and it's probably omitted entirely (subtly). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1391535" id="answer">
+<p>It would also contradict Jacobi's identity. If your Lie algebra is commutative, then clearly you can't have that <span class="math-container" id="12924523" visual_id="9047910"><math alttext="[x,e]=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>e</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math></span> unless <span class="math-container" id="12924524" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> since <span class="math-container" id="12924525" visual_id="2234559"><math alttext="[x,e]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>e</mi><mo stretchy="false">]</mo></mrow></semantics></math></span> would have to be <span class="math-container" id="12924526" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>. If it is non-commutative (meaning that for some <span class="math-container" id="12924527" visual_id="921"><math alttext="x,y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></semantics></math></span> in the Lie algebra we have that <span class="math-container" id="12924528" visual_id="1714076"><math alttext="[x,y]\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>), then Jacobi's identity would say that</p> <p><span class="math-container" id="12924529" visual_id="9047911"><math alttext="0=[x,[y,e]]+[y,[e,x]]+[e,[x,y]]=[x,y]+[y,x]+[x,y]=[x,y]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mi>e</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">]</mo></mrow><mo>+</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mrow><mo stretchy="false">[</mo><mi>e</mi><mo>,</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">]</mo></mrow><mo>+</mo><mrow><mo stretchy="false">[</mo><mi>e</mi><mo>,</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>+</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mo>+</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span></p> <p>by anti-symmetry. This holds for all <span class="math-container" id="12924530" visual_id="921"><math alttext="x,y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></semantics></math></span> in the Lie algebra which is a contradiction.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2832846"> Hmmm I am confused. Commutativity here means <span class="math-container" id="12924531" visual_id="757145"><math alttext="[x,y]=[y,x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> and by anti commutativity with commutativity we get <span class="math-container" id="12924532" visual_id="9047912"><math alttext="[x,y]=-[y,x]=[y,x]=-[x,y]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span> so then <span class="math-container" id="12924533" visual_id="194004"><math alttext="[x,y]=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> always when the Lie algebra is commutative. Is that right? Is there any point to commutative Lie algebras if so?   Other than that question above your answer looks awesome </td></tr><tr><td comment_id="2832849"> There is absolutely no reason to study commutative Lie algebras, honestly. You lose the Lie structure altogether, but I needed to include it to get rid of that case to get a proper contradiction in the second part. Commutative Lie algebras are just vector spaces with an operation that always evaluates to zero.. which is of course useless structure. </td></tr><tr><td comment_id="2832853"> <span class="math-container" id="12924534" visual_id="188635"><math alttext="\large\color[rgb]{0,1,0}{\checkmark}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathcolor="#00FF00" mathsize="120%" mathvariant="normal">✓</mi></semantics></math></span> - Thanks very much! </td></tr><tr><td comment_id="2832855"> Neat check mark. I've never seen that done in <span class="math-container" id="12924535" visual_id="185804"><math alttext="\rm\LaTeX" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>LaTeX</mi></semantics></math></span> before. </td></tr><tr><td comment_id="2833249"> @CameronWilliams There is a reason to study commutative algebras satisfying the Jacobi identity. They turn out to be Jordan algebras, see [here](http://arxiv.org/abs/1404.5435). </td></tr><tr><td comment_id="2833553"> @DietrichBurde that's interesting but it's a little bit different since the Jacobi identity there isn't one coming from the Lie bracket. I'll read some more though. The authors' writing style is very crisp. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

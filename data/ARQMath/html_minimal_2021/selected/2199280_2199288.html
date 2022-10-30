@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Probability of observing no sevens or elevens in any of the $10$ tosses</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Probability of observing no sevens or elevens in any of the <span class="math-container" id="20323136" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> tosses </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2199280">
+<p>Question: A pair of dice is tossed <span class="math-container" id="20323137" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> times in succession. What is the probability of observing no sevens and no elevens in any of the <span class="math-container" id="20323138" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> tosses?<br/><br> My approach is to do a Binomial Distribution by calculating the probability of getting something other than a <span class="math-container" id="20323139" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span> or <span class="math-container" id="20323140" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span> on a single toss. Also after that I should do the formula for order with replacement. Am I right? <br/><br/> The distribution part is causing me problems. So for that part am I calculating for <span class="math-container" id="20323141" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span> and <span class="math-container" id="20323142" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span> is <span class="math-container" id="20323143" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> choose <span class="math-container" id="20323144" visual_id="2663"><math alttext="8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>8</mn></semantics></math></span>? </br></p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> statistics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4525044"> but the question said <span class="math-container" id="20323164" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> tosses so I figured <span class="math-container" id="20323146" visual_id="2460"><math alttext="12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>12</mn></semantics></math></span> might not be a choice here </td></tr><tr><td comment_id="4525046"> The probability of a seven on one toss is <span class="math-container" id="20323147" visual_id="343778"><math alttext="6/36" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>/</mo><mn>36</mn></mrow></semantics></math></span>. On two tosses, <span class="math-container" id="20323148" visual_id="3062229"><math alttext="(6/36)^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>6</mn><mo>/</mo><mn>36</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></semantics></math></span>, etc. The probability of not getting a seven is <span class="math-container" id="20323149" visual_id="3062230"><math alttext="(1-6/36)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mn>6</mn><mo>/</mo><mn>36</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>, on two tosses, <span class="math-container" id="20323150" visual_id="3062231"><math alttext="(1-6/36)^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mn>6</mn><mo>/</mo><mn>36</mn></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></semantics></math></span>. Extrapolate for<span class="math-container" id="20323145" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span>rolls. Now do the same for 11's and add as ten rolls of 11 is mutually exclusive to ten rolls of 7. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2199288" id="answer">
+<blockquote> <p>My approach is to do a Binomial Distribution by calculating the probability of getting something other than a 7 or 11 on a single toss. Also after that I should do the formula for order with replacement. Am I right? </p> </blockquote> <p>Right.</p> <p>The probability that a Bernoulli event with probability <span class="math-container" id="20323156" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> does not occur among any of 10 independent attempts is <span class="math-container" id="20323157" visual_id="1114680"><math alttext="(1-p)^{10}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mn>10</mn></msup></semantics></math></span>.</p> <blockquote> <p>The distribution part is causing me problems. So for that part am I calculating for 7 and 11 is 10 choose 8?</p> </blockquote> <p>Wrong.  </p> <p>The event of tossing a sum of <code>7</code> is <span class="math-container" id="20323158" visual_id="2339310"><math alttext="\{(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>6</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span>, that is <span class="math-container" id="20323159" visual_id="340"><math alttext="6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn></semantics></math></span> among the <span class="math-container" id="20323160" visual_id="16817"><math alttext="36" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>36</mn></semantics></math></span> equally possible outcomes.</p> <p>The event of tossing a sum of <code>11</code> is <span class="math-container" id="20323161" visual_id="3062233"><math alttext="\{(5,6),(6,5)\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>6</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span>, which are <span class="math-container" id="20323162" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> among the <span class="math-container" id="20323163" visual_id="16817"><math alttext="36" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>36</mn></semantics></math></span> equally possible outcomes. </p> <p>So...</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4525050"> oh, that <span class="math-container" id="20323164" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> tosses obviously confused because I was so focused on that. Great analysis on breaking down my question sir </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

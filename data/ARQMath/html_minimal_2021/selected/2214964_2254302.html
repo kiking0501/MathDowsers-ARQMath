@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Gaps between consecutive prime powers</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Gaps between consecutive prime powers </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2214964">
+<p>After I've read and I've understand [1] (I have no free access), I would like to know if is it  possible to prove or discard that the sequence A025528, that counts the number of prime powers less than or equal to a fixed integer <span class="math-container" id="20465393" visual_id="5852"><math alttext="n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span> in <a href="https://oeis.org/" rel="nofollow noreferrer">OEIS</a> has gaps between their terms arbitraly large, as same as than occurs in the sequence of prime numbers.</p> <p>With it, and calculations and reasoning of the author should be easy to deduce,  in case that the sequence of gaps is unbounded, the irrationality of a real number following the proof in the article.</p> <blockquote> <p><strong>Question.</strong> Are the gaps between consecutive terms in the sequence of prime powers A000961 arbitrarly large? I am asking if such sequence is unbounded. I think that should be well known. <strong>Thanks in advance.</strong></p> </blockquote> <p>As a detail, and as comparison with a reasoning in the article I know that, for instance, in the sequence <span class="math-container" id="20465394" visual_id="4890144"><math alttext="4!+1,4!+2,4!+3,4!+4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>4</mn><mo>!</mo></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mn>4</mn><mo>!</mo></mrow><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mrow><mrow><mn>4</mn><mo>!</mo></mrow><mo>+</mo><mn>3</mn></mrow><mo>,</mo><mrow><mrow><mn>4</mn><mo>!</mo></mrow><mo>+</mo><mn>4</mn></mrow></mrow></semantics></math></span> the first term is a prime power, <span class="math-container" id="20465395" visual_id="7619"><math alttext="25" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>25</mn></semantics></math></span>.</p> <h2>References:</h2> <p>[1] Cilleruelo, <em>Una serie que converge a un número irracional</em>, La Gaceta de la RSME, Vol. 18 (2015), No. 3, page 568.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> elementary-number-theory </span><span> prime-numbers </span><span> analytic-number-theory </span><span> prime-gaps </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4556649"> It would be better to refer to the OEIS sequence https://oeis.org/A000961 -- see also https://oeis.org/A057820 </td></tr><tr><td comment_id="4556699"> See also http://math.stackexchange.com/questions/288439/is-the-asymptotic-density-of-powers-of-primes-zero </td></tr><tr><td comment_id="4556719"> Many thanks for your help @BarryCipra </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2254302" id="answer">
+<p>Matthew Conroy's answer shows that this follows easily from well-known facts about the density of prime powers.  Here is a more elementary approach: the OP seems to be aware of the standard construction that for <span class="math-container" id="20465405" visual_id="967"><math alttext="n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span> the set of numbers <span class="math-container" id="20465406" visual_id="91039"><math alttext="n!+2,n!+3,\ldots,n!+n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mn>3</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mi>n</mi></mrow></mrow></semantics></math></span> forms a string of <span class="math-container" id="20465407" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> consecutive non-primes.  In fact it's easy to adjust this construction to ensure that none of them are prime powers: just replace <span class="math-container" id="20465408" visual_id="755"><math alttext="n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>!</mo></mrow></semantics></math></span> by a larger function <span class="math-container" id="20465409" visual_id="11695"><math alttext="F(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> with the property that for any prime power <span class="math-container" id="20465410" visual_id="1282637"><math alttext="p^{r}\leq n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>r</mi></msup><mo>≤</mo><mi>n</mi></mrow></semantics></math></span>, <span class="math-container" id="20465411" visual_id="11695"><math alttext="F(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a multiple of <span class="math-container" id="20465412" visual_id="79500"><math alttext="p^{r+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msup></semantics></math></span>.  Then <span class="math-container" id="20465413" visual_id="4890149"><math alttext="F(n)+2,F(n)+3,\ldots,F(n)+n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>3</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>n</mi></mrow></mrow></semantics></math></span> contains no prime powers, as <span class="math-container" id="20465414" visual_id="4890150"><math alttext="F(n)+p^{r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><msup><mi>p</mi><mi>r</mi></msup></mrow></semantics></math></span> will be divisible by <span class="math-container" id="20465415" visual_id="72238"><math alttext="p^{r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>r</mi></msup></semantics></math></span> and clearly exceeds <span class="math-container" id="20465416" visual_id="72238"><math alttext="p^{r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>r</mi></msup></semantics></math></span>, but is not divisible by <span class="math-container" id="20465417" visual_id="79500"><math alttext="p^{r+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msup></semantics></math></span>.  (And <span class="math-container" id="20465418" visual_id="4890151"><math alttext="F(n)+k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>k</mi></mrow></semantics></math></span>, being divisible by <span class="math-container" id="20465419" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, is clearly not a prime power when <span class="math-container" id="20465420" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> is not itself a prime power).</p> <p>One could crudely take <span class="math-container" id="20465421" visual_id="11695"><math alttext="F(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> to be <span class="math-container" id="20465422" visual_id="4890152"><math alttext="(n!)^{r+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msup></semantics></math></span> where <span class="math-container" id="20465423" visual_id="32986"><math alttext="2^{r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>r</mi></msup></semantics></math></span> is the largest power of <span class="math-container" id="20465424" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> not exceeding <span class="math-container" id="20465425" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4636337"> Many thanks, your are generous with this nice answer. I am going to take notes also of this in my notebook. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="288439"> Is the asymptotic density of powers of primes zero? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

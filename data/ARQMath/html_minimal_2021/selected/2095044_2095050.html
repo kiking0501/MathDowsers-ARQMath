@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Cantor's proof and Zorn's lemma</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Cantor's proof and Zorn's lemma </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2095044">
+<p>In Cantor's proof, that the real numbers are uncountable he uses the fact that, we are able to always construct an element which doesn't belong to the given list of numbers.</p> <p>What if we add those numbers one after another and kept doing that.Notice that the lists create partially ordered set with inclusion as comparator. Any chain has an upper bound which is the union of all lists in that chain. So according to Zorn's lemma there should exist a maximal element(list), which is the list that we are looking for.</p> <p>Obviously there is a problem with my reasoning, but I don't understand where is it. Can anyone show me the pitfall of my reasoning?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span><span> fake-proofs </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4306808"> The maximal list is bigger than all the lists in your chain, but it still doesn't contain all real numbers.  So you can find an element not in the maximal list (which wasn't in any of the lists in the chain), then another element not in *that* list, and can even go on to make *another* maximal list.  But that still won't be all the real numbers, and you can find yet more missing elements... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2095050" id="answer">
+<p>Your partial order <span class="math-container" id="19374088" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> is (something like) countable subsets of <span class="math-container" id="19374089" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>, ordered by inclusion. You are right that, <em>if</em> <span class="math-container" id="19374090" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> has a maximal element, then <span class="math-container" id="19374091" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> is countable. </p> <p>So does <span class="math-container" id="19374092" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> have a maximal element? Well, by Zorn's Lemma it would ... <em>if</em> every chain in <span class="math-container" id="19374093" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> had an upper bound. Here you write</p> <blockquote> <p>Any chain has an upper bound which is the union of all lists in that chain.</p> </blockquote> <p><em>But this isn't true</em>! The union of a chain in <span class="math-container" id="19374094" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> <em>is</em> a set of reals, but not necessarily a <em>countable</em> set of reals - and <span class="math-container" id="19374095" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> only contains <em>countable</em> sets of reals. So the union of a chain in <span class="math-container" id="19374096" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> need not be an element of <span class="math-container" id="19374097" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span>.</p> <p>The union of a <em>countable</em> chain in <span class="math-container" id="19374098" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> will indeed be an element of <span class="math-container" id="19374099" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> - but not every chain in <span class="math-container" id="19374100" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> is countable, and Zorn's Lemma needs <em>every</em> chain to have an upper bound in the poset.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4306362"> The problem is that we are trying to prove that the real numbers are uncountable. So we can't use the fact that they are already uncountable, because the number of elements in any chain can't exceed the number of real numbers. So at the moment we don't know if chain can contain uncountably many elements or not. </td></tr><tr><td comment_id="4306366"> Can we exhibit such a chain whose union is uncountable explicitly? We can make one from a well-ordering of <span class="math-container" id="19374101" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>, but that's not very explicit. </td></tr><tr><td comment_id="4306369"> @guser: You say it yourself: _we don't know if chain can contain uncountably many elements or not_. If you **don't know** that yet, it is not a valid proof step to assume that it doesn't -- you're not allowed to use Zorn's lemma until you **do know** that its premises are satisfied. </td></tr><tr><td comment_id="4306370"> @guser No,you have it backwards. **You're** trying to prove that the reals are countable. What I've done is shown you that your argument that <span class="math-container" id="19374104" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> is closed under unions of chains is *not sufficient* - you either need to show that every chain in <span class="math-container" id="19374104" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> is countable, or get around this somehow. </td></tr><tr><td comment_id="4306381"> @guser That is, I don't have to prove that <span class="math-container" id="19374104" visual_id="9427"><math alttext="\mathbb{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℙ</mi></semantics></math></span> *doesn't* satisfy the hypothesis of Zorn's lemma - you need to prove that it *does*. </td></tr><tr><td comment_id="4306401"> Your last comment smacks it on the nose. And it fits to the same issue in one of your recent answers on the diagonal argument: whenever you say "this clearly has that property" and derive a contradiction to a long standing theorem, then you *clearly* made a mistake right there. </td></tr><tr><td comment_id="4306408"> @AsafKaragila I've learned to cringe deeply whenever I see the word "clearly" (especially in my own writing!). </td></tr><tr><td comment_id="4306421"> Well, obviously! </td></tr><tr><td comment_id="4306456"> Ok I see the problem. </td></tr><tr><td comment_id="4307822"> @NoahSchweber. Somehow your comment on what you don't have to prove makes me think of a passage in "The Scarperer" (not a typo) by Brendan Behan, where a  character remarks on the difficulty of proving that you don't know how to drive (a car). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

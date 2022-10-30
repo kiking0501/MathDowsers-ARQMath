@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Do integrable functions vanish at infinity?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Do integrable functions vanish at infinity? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2132739">
+<p>If <span class="math-container" id="19712791" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is a real-valued function that is integrable over <span class="math-container" id="19712792" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>, does it imply that</p> <p><span class="math-container" id="19712793" visual_id="2759542"><math alttext="f(x)\to 0\text{ as }|x|\to\infty\qvar@construct{$}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><mn>0</mn><mo>⁢</mo><mtext> as </mtext><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow><mo>→</mo><mrow><mi mathvariant="normal">∞</mi><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></mrow></semantics></math></span></p> <p>When I consider, for simplicity, positive function <span class="math-container" id="19712794" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> which is integrable, it seems to me that the finiteness of the "the area under the curve" over the whole line implies that <span class="math-container" id="19712795" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> must decay eventually. But is it true for general integrable functions?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> measure-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4386023"> No. Standard example: think of a row of triangles with area <span class="math-container" id="19712796" visual_id="30766"><math alttext="2^{-k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mo>-</mo><mi>k</mi></mrow></msup></semantics></math></span> and a fixed height. Actually, you can find strictly positive functions such that <span class="math-container" id="19712797" visual_id="2759543"><math alttext="\int_{\mathbb{R}}f&lt;\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>ℝ</mi></msub><mi>f</mi></mrow><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> which don't vanish at infinity. </td></tr><tr><td comment_id="4386029"> @MathematicsStudent1122 It is good example, maybe you should post it as an answer. </td></tr><tr><td comment_id="4386033"> @Hua Sure, feel free. It's not like I invented it or anything. </td></tr><tr><td comment_id="4386038"> @MathematicsStudent1122 Oh, sorry, it's a typo. I mean you should :-) </td></tr><tr><td comment_id="4386039"> @yumiko: *If the limit exists*, then it must be zero. Can you see that? Hence the counterexamples given are all those for  which the limit doesn't exist. </td></tr><tr><td comment_id="4386042"> In fact there exist real analytic functions for which the result fails. </td></tr><tr><td comment_id="4386085"> @астонвіллаолофмэллбэрг I unfortunately do not see that :( </td></tr><tr><td comment_id="4386100"> Suppose the limit were something else, without loss of generality positive. Then by using an epsilon delta argument, after some point, the value will always  be larger than some positive quantity. Now, can you see why the integral of this part is infinite? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2132749" id="answer">
+<p>Here is a <a href="https://math.stackexchange.com/questions/187729/evaluating-int-0-infty-sin-x2-dx-with-real-methods?noredirect=1&amp;lq=1">beautiful counter-example</a>: </p> <p><span class="math-container" id="19712805" visual_id="2759546"><math alttext="\int_{\mathbb{R}}\sin(x^{2})\ dx=\sqrt{\frac{\pi}{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>ℝ</mi></msub><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo rspace="7.5pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><msqrt><mfrac><mi>π</mi><mn>2</mn></mfrac></msqrt></mrow></semantics></math></span></p> <p>Other more extreme examples</p> <p><span class="math-container" id="19712806" visual_id="2759547"><math alttext="\int_{\mathbb{R}}x\sin(2^{|x|})\ dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>ℝ</mi></msub><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></msup><mo rspace="7.5pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span></p> <p>These rely on the Dirichlet test for convergence of a series/integral.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4386069"> unless by integrable they mean Lebesgue integrable. </td></tr><tr><td comment_id="4386114"> Neither the Riemann nor Lebesgue integrals of <span class="math-container" id="19712807" visual_id="81314"><math alttext="\sin(x^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> exist.  However, <span class="math-container" id="19712811" visual_id="45960"><math alttext="\int_{0}^{\infty}\sin(x^{2})\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> exists as an improper Riemann integral. </td></tr><tr><td comment_id="4386160"> @Dr.MV Do you mind explaining a bit more? Isn't the improper Riemann integral the Lebesgue integral for <span class="math-container" id="19712809" visual_id="372301"><math alttext="sin(x^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="4386174"> @Hua The Lebesgue integral  <span class="math-container" id="19712811" visual_id="45960"><math alttext="\int_{0}^{\infty}\sin(x^{2})\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> does not exist ([See this](https://en.wikipedia.org/wiki/Lebesgue_integration#Limitations_of_Lebesgue_integral)).  The Riemann integral  <span class="math-container" id="19712811" visual_id="45960"><math alttext="\int_{0}^{\infty}\sin(x^{2})\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> also fails to exist since Riemann integration is restricted to bounded intervals.  However, <span class="math-container" id="19712812" visual_id="2759548"><math alttext="\lim_{L\to\infty}\int_{0}^{L}\sin(x^{2})\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>L</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>L</mi></msubsup><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span> does exist, which is the improper Riemann integral. </td></tr><tr><td comment_id="4386189"> @Dr. MV: Hopefully the next to up-vote will actually read your comments.  I suppose the question could have been posed in the context of improper integrals, but the premise clearly is "integrable over <span class="math-container" id="19712813" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>" and the tag is measure-theory. Clearly this does not answer the question. </td></tr><tr><td comment_id="4386207"> @RRL Interestingly, the OP writes about "area under the curve," which sounds as if the interpretation might just be that of an improper Riemann integral.   I would add a tag for Lebesgue, but it is ambiguous.  Would the OP please provide clarification? </td></tr><tr><td comment_id="4387014"> :-( man, I miss all the good stuff when I sleep. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="108191"> Prove that <span class="math-container" id="1247234" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> continuous and <span class="math-container" id="1247235" visual_id="950628"><math alttext="\int_{a}^{\infty}|f(x)|\;dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="5.3pt" stretchy="false">|</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> finite imply <span class="math-container" id="1247236" visual_id="1767"><math alttext="\lim\limits_{x\to\infty}f(x)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="187729"> Evaluating <span class="math-container" id="2180090" visual_id="2046907"><math alttext="\int_{0}^{\infty}\sin x^{2}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>sin</mi><mo>⁡</mo><mrow><mpadded width="+1.7pt"><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mpadded></mrow></mrow></mrow></semantics></math></span> with real methods? </td></tr><tr><td post_id="2338578"> Finding a absolutely integrable function <span class="math-container" id="21626539" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> such that <span class="math-container" id="21626540" visual_id="123301"><math alttext="\lim_{x\to\infty}f(x)\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

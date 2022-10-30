@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Calculating Riemann zeta function of a complex number given the complex contour integral</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Calculating Riemann zeta function of a complex number given the complex contour integral </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="881205">
+<p>Can you please demonstrate how one would calculate the Riemann Zeta function of any complex number, given that the Riemann Zeta function is equal to the following (shown in <a href="http://arxiv.org/pdf/1208.3429v1.pdf" rel="nofollow noreferrer">http://arxiv.org/pdf/1208.3429v1.pdf</a>): <img alt="enter image description here" src="https://i.stack.imgur.com/tMZ6L.png"/></p> <p>If you utilize a technique in complex analysis (Such as Cauchy's Integral Formula), may you please explain the process step-by-step.</p> <p>Thank you,</p> <p>Best Regards,</p> <p>J.M</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> complex-analysis </span><span> functions </span><span> contour-integration </span><span> riemann-zeta </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1818529"> The technique used in this answer can be used for negative integers pretty easily http://math.stackexchange.com/questions/728590/calculation-of-a-residue </td></tr><tr><td comment_id="1818534"> So, you would use the Residue Theorem? (I thought it deals with branch cuts?) @TylerHG </td></tr><tr><td comment_id="1818553"> Yes, the residue theorem is a nice approach for this...However, the cauchy integral formula could be used after reducing the integral to a series as seen in that example. Branch cuts are an unrelated topic though they are sometimes necessary when computing contour integrals. http://mathworld.wolfram.com/BranchCut.html </td></tr><tr><td comment_id="1819716"> Thank you so much!! Can you please demonstrate what you mean (I understand the concept, however how does one apply Cauchy's integral theorem to a series?). @TylerHG </td></tr><tr><td comment_id="1819819"> Sure, I'll post a solution later tonight. Thing to notice though is that the contour integral of a sum is the sum of contour integrals for each term. </td></tr><tr><td comment_id="1820128"> Wow, thank you so much!!! I greatly appreciate your help. </td></tr><tr><td comment_id="1821905"> Hello Tyler, I have been working on the problem. Nevertheless, I had difficulty in the evaluation of the contour integral. Have you found a feasible solution to this problem? Thank you for everything!! :) @TylerHG </td></tr><tr><td comment_id="1822399"> This [paper](http://cr.yp.to/bib/2000/borwein.pdf) may be of interest. (It's a compendium of evaluation methods for <span class="math-container" id="8547849" visual_id="2750"><math alttext="\zeta(s)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>). Note, though, that while the formula you give is certainly the _defining formula_ for the Riemann zeta function, that doesn't mean  it's necessarily the most convenient for computation. So some of the labour is surely to put it into a different but more useful form. </td></tr><tr><td comment_id="1822507"> Dear @Semiclassical , this paper is very helpful intuitively, however there are 3 specific notions I want to understand in the formula I provided, which is as follows: 1. Can you tell me what the contour looks like visually (using visual representation, such as a diagram)? 2. What do the variables represent, such as t in the contour integral? Lastly 3. How would one compute the contour integral in the expression? Thank you for your help!-Best Regards, J.M </td></tr><tr><td comment_id="1822849"> Tyler, sorry for badgering you, however I have encountered a problem in my proof. By any chance, have you formulated a solution to the problem? @TylerHG Thank You </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="883273" id="answer">
+<p>Sorry for the late response, I have been busy with finals and such.</p> <p>Just for an example, let's calculate <span class="math-container" id="8547850" visual_id="538442"><math alttext="\zeta(-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.</p> <p><span class="math-container" id="8547851" visual_id="4144778"><math alttext="\zeta(-1)=\frac{\Gamma(2)}{2\pi i}\oint_{\gamma}\frac{u^{-2}}{e^{-u}-1}du" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi></mrow></mfrac><mo>⁢</mo><mrow><msub><mo largeop="true" symmetric="true">∮</mo><mi>γ</mi></msub><mrow><mfrac><msup><mi>u</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>u</mi></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>Where <span class="math-container" id="8547852" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span> is the Hankel contour.  Let's just focus on the integrand right now and expand it into a series.  The full derivation on how this can be expanded is found in the link I provided in the comments.  Thus:</p> <p><span class="math-container" id="8547853" visual_id="4144779"><math alttext="\frac{u^{-2}}{e^{-u}-1}=-\frac{1}{u^{3}}-\frac{1}{2u^{2}}-\frac{1}{12u}+\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>u</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>u</mi></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mrow><mrow><mrow><mo>-</mo><mfrac><mn>1</mn><msup><mi>u</mi><mn>3</mn></msup></mfrac></mrow><mo>-</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><msup><mi>u</mi><mn>2</mn></msup></mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><mn>12</mn><mo>⁢</mo><mi>u</mi></mrow></mfrac></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span></p> <p>Now, we can integrate this series term by term.  Essentially, we are coming in from <span class="math-container" id="8547854" visual_id="1628"><math alttext="-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>and going around the unit circle and then back out again to <span class="math-container" id="8547855" visual_id="1628"><math alttext="-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>.  The two paths coming in and out will cancel each other, as the only pole is at <span class="math-container" id="8547856" visual_id="23476"><math alttext="u=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.  Thus, we can just focus on the unit circle contour.  In general, the contour integral around the unit circle of the function <span class="math-container" id="8547857" visual_id="3193849"><math alttext="1/z^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><msup><mi>z</mi><mi>n</mi></msup></mrow></semantics></math></span> is zero unless <span class="math-container" id="8547858" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. Thus,</p> <p><span class="math-container" id="8547859" visual_id="4144780"><math alttext="\oint_{\gamma}\frac{u^{-2}}{e^{-u}-1}du=-\frac{1}{12}\oint_{\gamma}\frac{du}{u}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo largeop="true" symmetric="true">∮</mo><mi>γ</mi></msub><mrow><mfrac><msup><mi>u</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>u</mi></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>12</mn></mfrac><mo>⁢</mo><mrow><msub><mo largeop="true" symmetric="true">∮</mo><mi>γ</mi></msub><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mi>u</mi></mfrac></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>Then, by the Cauchy integral formula or the Residue theorem,</p> <p><span class="math-container" id="8547860" visual_id="4144781"><math alttext="\oint_{\gamma}\frac{du}{u}=2\pi i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo largeop="true" symmetric="true">∮</mo><mi>γ</mi></msub><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mi>u</mi></mfrac></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi></mrow></mrow></semantics></math></span></p> <p>So,</p> <p><span class="math-container" id="8547861" visual_id="4144782"><math alttext="\zeta{(-1)}=\frac{-\Gamma(2)}{12(2\pi i)}2\pi i=-\frac{1}{12}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mo>-</mo><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mn>12</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>i</mi></mrow><mo>=</mo><mrow><mo>-</mo><mfrac><mn>1</mn><mn>12</mn></mfrac></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1823002"> Thank you Tyler, this is very concise!! Is this path counterclockwise or clockwise (I assume it is clockwise, as you applied the Cauchy Integral formula.) Also, what did you use to define the radius of the circle (I presume you can use anything and conventionally r, however I just want to be definite.) Lastly, seeing that the two paths canceled, is the distance between the two line contours 0. In addition, do the other terms in the contour integral of the series cancel because they are raised to different powers and not 1? Thank you so much Tyler, I wish you well in your finals!! @TylerHG </td></tr><tr><td comment_id="1823023"> The hankel contour is counterclockwise, and The cauchy integral formula is defined for counterclockwise traversals. But it is only a sign change depeding on which way you go. We are free to change the radius of the circle as long as a pole isn't crossed when doing this. Yes, the two paths are a zero "distance" apart. Yes, the other terms in the series cancel out because they are raised to powers other than one. It's no problem. If you want to read a book on complex analyis "Visual complex analysis" is a great introduction to the subject. You are welcome! It was my pleasure, cheers! </td></tr><tr><td comment_id="1824621"> Hello Tyler, I am just confirming that u is a complex variable, seeing that you applied these methods. @TylerHG </td></tr><tr><td comment_id="1824624"> Yes, <span class="math-container" id="8547862" visual_id="506"><math alttext="u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi></semantics></math></span> is a complex variable...none of this would make sense if it wasnt </td></tr><tr><td comment_id="1826294"> Sorry to bother you again Tyler, but I calculated zeta of -3 and it had an outcome of -11/30 or -66/180, when it should be -1/120. Do you know what I am doing wrong in the series expansion?@TylerHG </td></tr><tr><td comment_id="1826822"> You will have to look for more terms after you bring the series out of the denominator </td></tr><tr><td comment_id="1826967"> Okay, will do and thank you again. @TylerHG </td></tr><tr><td comment_id="1827143"> I just worked it out. <span class="math-container" id="8547863" visual_id="4144783"><math alttext="\zeta(-3)=1/120" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>120</mn></mrow></mrow></semantics></math></span>, and the <span class="math-container" id="8547864" visual_id="7183"><math alttext="1/z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mi>z</mi></mrow></semantics></math></span> term will have a coefficient of <span class="math-container" id="8547865" visual_id="4144784"><math alttext="1/720" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mn>720</mn></mrow></semantics></math></span> but now there is a term of <span class="math-container" id="8547866" visual_id="961159"><math alttext="\Gamma(4)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> which is <span class="math-container" id="8547867" visual_id="340"><math alttext="6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn></semantics></math></span> so that reduces to <span class="math-container" id="8547868" visual_id="288420"><math alttext="1/120" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mn>120</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="4985367"> Sorry if I'm missing something but what about non integer values or even  complex values? Will the series expansion still contain a simple pole term to use the residue theorem? Also since the ingoing and outgoing terms cancel, wouldn't the integral just evaluate to a contour integral around 0 for all complex s or is this just a special case for real numbers? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="728590"> Calculation of a Residue </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

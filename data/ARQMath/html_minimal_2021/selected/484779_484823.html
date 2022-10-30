@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Matrix Norm Bounds</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Matrix Norm Bounds </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="484779">
+<p>A natural consideration of matrix norms is to compare them, and one of the many standard results on the induced 1, 2, and <span class="math-container" id="5092923" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span>-norms indicate that <span class="math-container" id="5092924" visual_id="1165206"><math alttext="\frac{1}{\sqrt{n}}\|A\|_{\infty}\leq\|A\|_{2}\leq\sqrt{m}\|A\|_{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow><mo>≤</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><mrow><msqrt><mi>m</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow></semantics></math></span> <span class="math-container" id="5092925" visual_id="1182454"><math alttext="\frac{1}{\sqrt{m}}\|A\|_{1}\leq\|A\|_{2}\leq\sqrt{n}\|A\|_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>m</mi></msqrt></mfrac><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>1</mn></msub></mrow><mo>≤</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><mrow><msqrt><mi>n</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>1</mn></msub></mrow></mrow></semantics></math></span> This is proven using Cauchy-Schwarz (among other things). I was recently told that for a square matrix, <span class="math-container" id="5092926" visual_id="4399788"><math alttext="\|A\|_{2}^{2}\leq\|A\|_{1}\|A\|_{\infty}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>≤</mo><mrow><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>1</mn></msub><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow><mo>,</mo></mrow></semantics></math></span> which seems more intuitively interesting to me as it's not dependent on the size of your matrix. I tried proving this similarly to the above two by seeing how <span class="math-container" id="5092927" visual_id="4399789"><math alttext="\|Ae\|_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>e</mi></mrow><mo>∥</mo></mrow><mn>2</mn></msub></semantics></math></span> can get bounded, but wasn't making any headway because when splitting off <span class="math-container" id="5092928" visual_id="4399790"><math alttext="\|e\|_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo>∥</mo><mi>e</mi><mo>∥</mo></mrow><mn>2</mn></msub></semantics></math></span>, it would then be dependent on the matrix size (and not what I'm trying to do). Using simply the definitions, I'm not sure how I could relate the max singular value to the max row and column sums.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> matrices </span><span> norm </span><span> upper-lower-bounds </span><span> matrix-norms </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="484823" id="answer">
+<p>Hint: <span class="math-container" id="5092929" visual_id="4399791"><math alttext="\|A\|_{2}^{2}=\rho(A^{\ast}A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>A</mi><mo>∗</mo></msup><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and the spectral radius is a lower bound to all (submultiplicative) matrix norms.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1043601"> Thank you for the hint. But that makes me curious; doesn't that imply the stronger statement that <span class="math-container" id="5092930" visual_id="3279808"><math alttext="\|A\|_{2}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn><mn>2</mn></msubsup></semantics></math></span> is the lower bound of <span class="math-container" id="5092931" visual_id="29189"><math alttext="\|A\|_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>1</mn></msub></semantics></math></span> and <span class="math-container" id="5092932" visual_id="29190"><math alttext="\|A\|_{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></semantics></math></span> separately? </td></tr><tr><td comment_id="1043607"> @Riem How? We only have <span class="math-container" id="5092933" visual_id="4399792"><math alttext="\rho(A^{\ast}A)\leq\|A^{\ast}A\|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>A</mi><mo>∗</mo></msup><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mo>∥</mo><mrow><msup><mi>A</mi><mo>∗</mo></msup><mo>⁢</mo><mi>A</mi></mrow><mo>∥</mo></mrow></mrow></semantics></math></span> for all matrix norms, but not <span class="math-container" id="5092934" visual_id="4399793"><math alttext="\rho(A^{\ast}A)\leq\|A\|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>A</mi><mo>∗</mo></msup><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow></mrow></semantics></math></span> for all matrix norms. </td></tr><tr><td comment_id="1043611"> Oh I see. My silly mistake. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

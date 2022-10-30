@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Geometry problem on the intersection of a tangent plane and a line on a sphere</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Geometry problem on the intersection of a tangent plane and a line on a sphere </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2883312">
+<p><span class="math-container" id="26667466" visual_id="4048491"><math alttext="P,Q\in\ell_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>,</mo><mi>Q</mi></mrow><mo>∈</mo><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub></mrow></semantics></math></span> which intersects the unit sphere at <span class="math-container" id="26667467" visual_id="37925"><math alttext="P,Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>,</mo><mi>Q</mi></mrow></semantics></math></span>. Show that the planes tangent to the unit sphere at <span class="math-container" id="26667468" visual_id="37925"><math alttext="P,Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>,</mo><mi>Q</mi></mrow></semantics></math></span> intersect along a line <span class="math-container" id="26667469" visual_id="4329"><math alttext="\ell" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ℓ</mi></semantics></math></span> <span class="math-container" id="26667470" visual_id="4048492"><math alttext="\ell_{1}:\begin{cases}x=-1+t\\ y=0+0t\\ z=2-t\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub><mo>:</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><mi>t</mi></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>y</mi><mo>=</mo><mrow><mn>0</mn><mo>+</mo><mrow><mn>0</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>z</mi><mo>=</mo><mrow><mn>2</mn><mo>-</mo><mi>t</mi></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p> <p>I have no idea what to do in this exercise. Help is much appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> geometry </span><span> spheres </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5953406"> Are you meant to find <span class="math-container" id="26667471" visual_id="785068"><math alttext="\mathscr{l}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathscript">𝓁</mi></semantics></math></span> or simply prove that the two tangent planes intersect in a line? The latter is almost trivial. </td></tr><tr><td comment_id="5953412"> The second part of the exercise is to determine the least distance between the line and the unit sphere, so I would assume I need to find <span class="math-container" id="26667472" visual_id="4329"><math alttext="\ell" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ℓ</mi></semantics></math></span>? </td></tr><tr><td comment_id="5953414"> Any help with any part of the exercise is highly appreciated though. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2883322" id="answer">
+<p>Where did you get stuck? It is hard to believe that you had "no idea", as the problem can be broken down to smaller questions in a straightforward way.  Compute <span class="math-container" id="26667473" visual_id="37925"><math alttext="P,Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>,</mo><mi>Q</mi></mrow></semantics></math></span> first. This is easy: first of all you have the system of equations, and you also have the equation of the unit sphere: <span class="math-container" id="26667474" visual_id="46480"><math alttext="x^{2}+y^{2}+z^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. </p> <p>Can you solve this system of equtions? </p> <p>Once you have <span class="math-container" id="26667475" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> and <span class="math-container" id="26667476" visual_id="202"><math alttext="Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi></semantics></math></span>, compute the tangent planes (again, straightforward), and then compute the intersection of them as a solution to a system of linear equations. </p> <p>There are even simpler methods to directly answer your question, but this one is absolutely straightforward, and it requires no idea at all. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5953415"> Is the unit sphere necessarily centered at the origin? I did not know that. I thought it was just any sphere with a radius of <span class="math-container" id="26667477" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>. </td></tr><tr><td comment_id="5953418"> When we say "the" unit sphere, that is what I associate to. If that is not clear, then of course the question cannot be answered, as the problem is not well-defined. </td></tr><tr><td comment_id="5953423"> I see. I'll have to give it another try I guess. But help would still be appreciated as I am still unsure I am able to solve it myself. </td></tr><tr><td comment_id="5953433"> Don't just say that, be more specific. Where did you get stuck? I have broken the problem down to three subproblems. Which one SPECIFICALLY are you uncertain about? It seems to me that you are not willing to put in any effort, just expect others to solve the problem for you. </td></tr><tr><td comment_id="5953439"> I've been stuck at not knowing that the unit sphere is at the origin for 90 min, if you'll excuse me I'll give it a try first and get back at you. Haven't read your text yet. </td></tr><tr><td comment_id="5953472"> That was exactly my point (try to understand the answer and work out the details on your own), so I am happy you are doing that. </td></tr><tr><td comment_id="5953496"> I think I solved it. The line is (1,0,1)+t(0,1,0) and the distance from the line to the sphere must be <span class="math-container" id="26667478" visual_id="47400"><math alttext="\sqrt{2}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt><mo>-</mo><mn>1</mn></mrow></semantics></math></span> (the distance from the line to the center minus the radius of the sphere). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

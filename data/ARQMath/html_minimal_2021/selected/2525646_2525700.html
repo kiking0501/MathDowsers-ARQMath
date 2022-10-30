@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to prove $ \lfloor \frac{\lfloor\frac{a}{b}\rfloor}{c} \rfloor = \lfloor \frac{a}{b \times c} \rfloor $</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to prove <span class="math-container" id="23356393" visual_id="1370731"><math alttext="\lfloor\frac{\lfloor\frac{a}{b}\rfloor}{c}\rfloor=\lfloor\frac{a}{b\times c}\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⌊</mo><mfrac><mrow><mo stretchy="false">⌊</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo stretchy="false">⌋</mo></mrow><mi>c</mi></mfrac><mo stretchy="false">⌋</mo></mrow><mo>=</mo><mrow><mo stretchy="false">⌊</mo><mfrac><mi>a</mi><mrow><mi>b</mi><mo>×</mo><mi>c</mi></mrow></mfrac><mo stretchy="false">⌋</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2525646">
+<p>If <span class="math-container" id="23356394" visual_id="476"><math alttext="a,b,c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></semantics></math></span> are positive integers, how to prove <span class="math-container" id="23356395" visual_id="1370731"><math alttext="\lfloor\frac{\lfloor\frac{a}{b}\rfloor}{c}\rfloor=\lfloor\frac{a}{b\times c}\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⌊</mo><mfrac><mrow><mo stretchy="false">⌊</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo stretchy="false">⌋</mo></mrow><mi>c</mi></mfrac><mo stretchy="false">⌋</mo></mrow><mo>=</mo><mrow><mo stretchy="false">⌊</mo><mfrac><mi>a</mi><mrow><mi>b</mi><mo>×</mo><mi>c</mi></mrow></mfrac><mo stretchy="false">⌋</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> integers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2525700" id="answer">
+<p>Let <span class="math-container" id="23356410" visual_id="1370743"><math alttext="a=b\cdot q_{1}+r_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mi>b</mi><mo>⋅</mo><msub><mi>q</mi><mn>1</mn></msub></mrow><mo>+</mo><msub><mi>r</mi><mn>1</mn></msub></mrow></mrow></semantics></math></span>, with <span class="math-container" id="23356411" visual_id="1370744"><math alttext="0\leq r_{1}\lt b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>b</mi></mrow></mrow></semantics></math></span>.</p> <p>Then <span class="math-container" id="23356412" visual_id="1370745"><math alttext="\frac{a}{b}=q_{1}+\frac{r_{1}}{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mrow><msub><mi>q</mi><mn>1</mn></msub><mo>+</mo><mfrac><msub><mi>r</mi><mn>1</mn></msub><mi>b</mi></mfrac></mrow></mrow></semantics></math></span>, and since <span class="math-container" id="23356413" visual_id="1370744"><math alttext="0\leq r_{1}\lt b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>b</mi></mrow></mrow></semantics></math></span>, we can say that</p> <p><span class="math-container" id="23356414" visual_id="1370746"><math alttext="\lfloor\frac{a}{b}\rfloor=\lfloor q_{1}+\frac{r_{1}}{b}\rfloor=q_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⌊</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo stretchy="false">⌋</mo></mrow><mo>=</mo><mrow><mo stretchy="false">⌊</mo><mrow><msub><mi>q</mi><mn>1</mn></msub><mo>+</mo><mfrac><msub><mi>r</mi><mn>1</mn></msub><mi>b</mi></mfrac></mrow><mo stretchy="false">⌋</mo></mrow><mo>=</mo><msub><mi>q</mi><mn>1</mn></msub></mrow></semantics></math></span></p> <p>Now let <span class="math-container" id="23356415" visual_id="1370747"><math alttext="q_{1}=c\cdot q_{2}+r_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mn>1</mn></msub><mo>=</mo><mrow><mrow><mi>c</mi><mo>⋅</mo><msub><mi>q</mi><mn>2</mn></msub></mrow><mo>+</mo><msub><mi>r</mi><mn>2</mn></msub></mrow></mrow></semantics></math></span>, with <span class="math-container" id="23356416" visual_id="1370748"><math alttext="0\leq r_{2}\lt c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>c</mi></mrow></mrow></semantics></math></span>.</p> <p>Then <span class="math-container" id="23356417" visual_id="1370749"><math alttext="\frac{q_{1}}{c}=q_{2}+\frac{r_{2}}{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>q</mi><mn>1</mn></msub><mi>c</mi></mfrac><mo>=</mo><mrow><msub><mi>q</mi><mn>2</mn></msub><mo>+</mo><mfrac><msub><mi>r</mi><mn>2</mn></msub><mi>c</mi></mfrac></mrow></mrow></semantics></math></span>, and since <span class="math-container" id="23356418" visual_id="1370748"><math alttext="0\leq r_{2}\lt c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>c</mi></mrow></mrow></semantics></math></span>, we can say that</p> <p><span class="math-container" id="23356419" visual_id="1370750"><math alttext="\lfloor\frac{\lfloor\frac{a}{b}\rfloor}{c}\rfloor=\lfloor\frac{q_{1}}{c}% \rfloor=\lfloor q_{2}+\frac{r_{2}}{c}\rfloor=q_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⌊</mo><mfrac><mrow><mo stretchy="false">⌊</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo stretchy="false">⌋</mo></mrow><mi>c</mi></mfrac><mo stretchy="false">⌋</mo></mrow><mo>=</mo><mrow><mo stretchy="false">⌊</mo><mfrac><msub><mi>q</mi><mn>1</mn></msub><mi>c</mi></mfrac><mo stretchy="false">⌋</mo></mrow><mo>=</mo><mrow><mo stretchy="false">⌊</mo><mrow><msub><mi>q</mi><mn>2</mn></msub><mo>+</mo><mfrac><msub><mi>r</mi><mn>2</mn></msub><mi>c</mi></mfrac></mrow><mo stretchy="false">⌋</mo></mrow><mo>=</mo><msub><mi>q</mi><mn>2</mn></msub></mrow></semantics></math></span></p> <p>Now we consider <span class="math-container" id="23356420" visual_id="1370751"><math alttext="\lfloor\frac{a}{bc}\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⌊</mo><mfrac><mi>a</mi><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mfrac><mo stretchy="false">⌋</mo></mrow></semantics></math></span>. Using the same variables in the forms we used above, we say</p> <p>\begin{align*} \frac {a}{b c} &amp;= \frac {a/b}{c} \\ &amp;= \frac{q_1 + \frac{r_1}b}c \\ &amp;= \frac{(c\cdot q_2 + r_2) + \frac{r_1}b}c \\ &amp;= \frac{c \cdot q_2}c + \frac{r_2}c + \frac{\frac{r_1}b}c \\ &amp;= q_2 + \frac{r_2}c + \frac{r_1}b \cdot \frac1c \end{align*}</p> <p>Now we take the floor. We know that <span class="math-container" id="23356421" visual_id="1370752"><math alttext="r_{2}&lt;c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>&lt;</mo><mi>c</mi></mrow></semantics></math></span>, that <span class="math-container" id="23356422" visual_id="936477"><math alttext="r_{1}&lt;b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>&lt;</mo><mi>b</mi></mrow></semantics></math></span>, and that <span class="math-container" id="23356423" visual_id="1370753"><math alttext="0&lt;\frac{1}{c}\leq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mfrac><mn>1</mn><mi>c</mi></mfrac><mo>≤</mo><mn>1</mn></mrow></semantics></math></span> (since <span class="math-container" id="23356424" visual_id="530968"><math alttext="c\in\mathbb{Z}^{+}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>∈</mo><msup><mi>ℤ</mi><mo>+</mo></msup></mrow></semantics></math></span>). Thus</p> <p><span class="math-container" id="23356425" visual_id="1370754"><math alttext="\lfloor\frac{a}{bc}\rfloor=\lfloor q_{2}+\frac{r_{2}}{c}+\frac{r_{1}}{b}\cdot% \frac{1}{c}\rfloor=q_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⌊</mo><mfrac><mi>a</mi><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mfrac><mo stretchy="false">⌋</mo></mrow><mo>=</mo><mrow><mo stretchy="false">⌊</mo><mrow><msub><mi>q</mi><mn>2</mn></msub><mo>+</mo><mfrac><msub><mi>r</mi><mn>2</mn></msub><mi>c</mi></mfrac><mo>+</mo><mrow><mfrac><msub><mi>r</mi><mn>1</mn></msub><mi>b</mi></mfrac><mo>⋅</mo><mfrac><mn>1</mn><mi>c</mi></mfrac></mrow></mrow><mo stretchy="false">⌋</mo></mrow><mo>=</mo><msub><mi>q</mi><mn>2</mn></msub></mrow></semantics></math></span></p> <p>Hence <span class="math-container" id="23356426" visual_id="1370755"><math alttext="\lfloor\frac{\lfloor\frac{a}{b}\rfloor}{c}\rfloor=q_{2}=\lfloor\frac{a}{b% \times c}\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⌊</mo><mfrac><mrow><mo stretchy="false">⌊</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo stretchy="false">⌋</mo></mrow><mi>c</mi></mfrac><mo stretchy="false">⌋</mo></mrow><mo>=</mo><msub><mi>q</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="false">⌊</mo><mfrac><mi>a</mi><mrow><mi>b</mi><mo>×</mo><mi>c</mi></mrow></mfrac><mo stretchy="false">⌋</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

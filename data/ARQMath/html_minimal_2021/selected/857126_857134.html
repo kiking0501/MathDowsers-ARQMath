@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving linear independence of matrices</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving linear independence of matrices </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="857126">
+<p>Let <span class="math-container" id="8338422" visual_id="7035963"><math alttext="A=\textrm{diag}(a_{1},a_{2},a_{3})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mtext>diag</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><msub><mi>a</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="8338423" visual_id="33621"><math alttext="a_{1},a_{2},a_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><msub><mi>a</mi><mn>3</mn></msub></mrow></semantics></math></span> are distinct. I am trying to show that every diagonal <span class="math-container" id="8338424" visual_id="2507"><math alttext="3\times 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>×</mo><mn>3</mn></mrow></semantics></math></span> matrix cane be made up of linear combinations of <span class="math-container" id="8338425" visual_id="989"><math alttext="I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi></semantics></math></span>, <span class="math-container" id="8338426" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="8338427" visual_id="15856"><math alttext="A^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mn>2</mn></msup></semantics></math></span>.</p> <p>I was thinking of writing this matrix  <span class="math-container" id="8338428" visual_id="7035964"><math alttext="\begin{pmatrix}1&amp;a_{1}&amp;a_{1}^{2}\\ 1&amp;a_{2}&amp;a_{2}^{2}\\ 1&amp;a_{3}&amp;a_{3}^{2}\end{pmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup></mtd></mtr><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>2</mn></msub></mtd><mtd columnalign="center"><msubsup><mi>a</mi><mn>2</mn><mn>2</mn></msubsup></mtd></mtr><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>3</mn></msub></mtd><mtd columnalign="center"><msubsup><mi>a</mi><mn>3</mn><mn>2</mn></msubsup></mtd></mtr></mtable><mo>)</mo></mrow></semantics></math></span></p> <p>and finding its determinant, then using to distinct value property to show that the determinant is non zero, but I didn't seem to get too far with that. I was wondering is there any other way I can approach this?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> matrices </span><span> determinant </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1768296"> http://en.wikipedia.org/wiki/Vandermonde_matrix </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="857134" id="answer">
+<p>I think you have the right idea. </p> <p>Firstly, the set of diagonal <span class="math-container" id="8338429" visual_id="2507"><math alttext="3\times 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>×</mo><mn>3</mn></mrow></semantics></math></span> matrices constitutes a three-dimensional vector space.</p> <p>Let <span class="math-container" id="8338430" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span> be a three-dimensional vector space and let <span class="math-container" id="8338431" visual_id="218102"><math alttext="\{e_{1},e_{2},e_{3}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>e</mi><mn>1</mn></msub><mo>,</mo><msub><mi>e</mi><mn>2</mn></msub><mo>,</mo><msub><mi>e</mi><mn>3</mn></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> be a basis for <span class="math-container" id="8338432" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span>. If <span class="math-container" id="8338433" visual_id="9996"><math alttext="v_{1},v_{2},v_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>,</mo><msub><mi>v</mi><mn>3</mn></msub></mrow></semantics></math></span> are elements of <span class="math-container" id="8338434" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span>, then the assertion that <span class="math-container" id="8338435" visual_id="136025"><math alttext="\{v_{1},v_{2},v_{3}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>,</mo><msub><mi>v</mi><mn>3</mn></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> is a basis for <span class="math-container" id="8338436" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span> is tantamount to the non-degeneracy of the matrix </p> <p><span class="math-container" id="8338437" visual_id="265449"><math alttext="\begin{pmatrix}a_{11}&amp;a_{12}&amp;a_{13}\\ a_{21}&amp;a_{22}&amp;a_{23}\\ a_{31}&amp;a_{32}&amp;a_{33}\end{pmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>12</mn></msub></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>13</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><msub><mi>a</mi><mn>21</mn></msub></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>22</mn></msub></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>23</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><msub><mi>a</mi><mn>31</mn></msub></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>32</mn></msub></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>33</mn></msub></mtd></mtr></mtable><mo>)</mo></mrow></semantics></math></span></p> <p>if <span class="math-container" id="8338438" visual_id="7035965"><math alttext="v_{j}=\sum_{i=1}^{3}a_{ij}e_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>j</mi></msub><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>⁢</mo><msub><mi>e</mi><mi>i</mi></msub></mrow></mrow></mrow></semantics></math></span> is the expansion of <span class="math-container" id="8338439" visual_id="10276"><math alttext="v_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>j</mi></msub></semantics></math></span> in terms of the basis <span class="math-container" id="8338440" visual_id="218102"><math alttext="\{e_{1},e_{2},e_{3}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>e</mi><mn>1</mn></msub><mo>,</mo><msub><mi>e</mi><mn>2</mn></msub><mo>,</mo><msub><mi>e</mi><mn>3</mn></msub><mo stretchy="false">}</mo></mrow></semantics></math></span>. </p> <p>Now, let us consider the specific case of <span class="math-container" id="8338441" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span> being the three-dimensional vector space of diagonal matrices with "standard" basis </p> <p><span class="math-container" id="8338442" visual_id="6322385"><math alttext="e_{1}=\begin{pmatrix}1&amp;0&amp;0\\ 0&amp;0&amp;0\\ 0&amp;0&amp;0\\ \end{pmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>e</mi><mn>1</mn></msub><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="8338443" visual_id="7035966"><math alttext="e_{2}=\begin{pmatrix}0&amp;0&amp;0\\ 0&amp;1&amp;0\\ 0&amp;0&amp;0\\ \end{pmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>e</mi><mn>2</mn></msub><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="8338444" visual_id="7035967"><math alttext="e_{3}=\begin{pmatrix}0&amp;0&amp;0\\ 0&amp;0&amp;0\\ 0&amp;0&amp;1\end{pmatrix}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>e</mi><mn>3</mn></msub><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>The matrix you wrote down </p> <p><span class="math-container" id="8338445" visual_id="7035964"><math alttext="\begin{pmatrix}1&amp;a_{1}&amp;a_{1}^{2}\\ 1&amp;a_{2}&amp;a_{2}^{2}\\ 1&amp;a_{3}&amp;a_{3}^{2}\end{pmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>1</mn></msub></mtd><mtd columnalign="center"><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup></mtd></mtr><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>2</mn></msub></mtd><mtd columnalign="center"><msubsup><mi>a</mi><mn>2</mn><mn>2</mn></msubsup></mtd></mtr><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><msub><mi>a</mi><mn>3</mn></msub></mtd><mtd columnalign="center"><msubsup><mi>a</mi><mn>3</mn><mn>2</mn></msubsup></mtd></mtr></mtable><mo>)</mo></mrow></semantics></math></span></p> <p>is exactly the matrix you need to check for nondegeneracy. In fact, this matrix is the so-called <strong>Vandermonde matrix</strong> and is nondegenerate if and only if the <span class="math-container" id="8338446" visual_id="164"><math alttext="a_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>i</mi></msub></semantics></math></span>'s are distinct (which is the assumption that you have been given!). (The determinant of the Vandermonde matrix, i.e., the <strong>Vandermonde determinant</strong>, is <span class="math-container" id="8338447" visual_id="7035968"><math alttext="\prod_{1\leq i&lt;j\leq 3}(a_{j}-a_{i})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mn>1</mn><mo>≤</mo><mi>i</mi><mo>&lt;</mo><mi>j</mi><mo>≤</mo><mn>3</mn></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mi>j</mi></msub><mo>-</mo><msub><mi>a</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.)</p> <p>Hope this helps!</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

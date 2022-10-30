@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Definition of regular space</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Definition of regular space </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2077013">
+<p>I am reading a theorem that says</p> <p>A topological space is regular if and only if <span class="math-container" id="19207032" visual_id="17958"><math alttext="\forall x\in X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∀</mo><mi>x</mi></mrow><mo>∈</mo><mi>X</mi></mrow></semantics></math></span> and for all <span class="math-container" id="19207033" visual_id="221087"><math alttext="u\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∈</mo><mi>T</mi></mrow></semantics></math></span> such that <span class="math-container" id="19207034" visual_id="159424"><math alttext="x\in u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>u</mi></mrow></semantics></math></span>, there exists <span class="math-container" id="19207035" visual_id="496171"><math alttext="v\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><mi>T</mi></mrow></semantics></math></span> such that <span class="math-container" id="19207036" visual_id="3455987"><math alttext="x\in v\subseteq\bar{v}\subseteq u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>v</mi><mo>⊆</mo><mover accent="true"><mi>v</mi><mo stretchy="false">¯</mo></mover><mo>⊆</mo><mi>u</mi></mrow></semantics></math></span>. </p> <p>The first few lines of the proof are as follows</p> <p>Let <span class="math-container" id="19207037" visual_id="162849"><math alttext="(X,T)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> be a regular space and let <span class="math-container" id="19207038" visual_id="875"><math alttext="x\in X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></semantics></math></span> and <span class="math-container" id="19207039" visual_id="221087"><math alttext="u\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∈</mo><mi>T</mi></mrow></semantics></math></span> such that <span class="math-container" id="19207040" visual_id="159424"><math alttext="x\in u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>u</mi></mrow></semantics></math></span></p> <p>Let <span class="math-container" id="19207041" visual_id="3455988"><math alttext="A=X-u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mi>X</mi><mo>-</mo><mi>u</mi></mrow></mrow></semantics></math></span>, <span class="math-container" id="19207042" visual_id="1739"><math alttext="x\notin A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∉</mo><mi>A</mi></mrow></semantics></math></span></p> <p>Then there exists <span class="math-container" id="19207043" visual_id="3455989"><math alttext="v,w\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>v</mi><mo>,</mo><mi>w</mi></mrow><mo>∈</mo><mi>T</mi></mrow></semantics></math></span> such that <span class="math-container" id="19207044" visual_id="1979052"><math alttext="x\in v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>v</mi></mrow></semantics></math></span>, <span class="math-container" id="19207045" visual_id="3455990"><math alttext="A\subseteq w" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>w</mi></mrow></semantics></math></span> and <span class="math-container" id="19207046" visual_id="3455991"><math alttext="v\,\cap\,w=\phi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+1.7pt"><mi>v</mi><mo rspace="4.2pt">∩</mo><mi>w</mi></mpadded></mrow><mo>=</mo><mi>ϕ</mi></mrow></semantics></math></span> <span class="math-container" id="19207047" visual_id="3455992"><math alttext="\Longrightarrow x\in v\in\bar{v}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>⟹</mo><mi>x</mi><mo>∈</mo><mi>v</mi><mo>∈</mo><mover accent="true"><mi>v</mi><mo stretchy="false">¯</mo></mover></mrow></semantics></math></span></p> <p><span class="math-container" id="19207048" visual_id="3455993"><math alttext="v\subseteq X-w\subseteq X-A=u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>⊆</mo><mrow><mi>X</mi><mo>-</mo><mi>w</mi></mrow><mo>⊆</mo><mrow><mi>X</mi><mo>-</mo><mi>A</mi></mrow><mo>=</mo><mi>u</mi></mrow></semantics></math></span></p> <p>The remaining lines are to prove that <span class="math-container" id="19207049" visual_id="3455994"><math alttext="\bar{v}\subseteq{u}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>v</mi><mo stretchy="false">¯</mo></mover><mo>⊆</mo><mi>u</mi></mrow></semantics></math></span>.</p> <p>My question is: I am confused because this theorem seems to suggest that in a regular space <span class="math-container" id="19207050" visual_id="162849"><math alttext="(X,T)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> there are an infinite number of open subsets in <span class="math-container" id="19207051" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span> that contain <span class="math-container" id="19207052" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> because for every <span class="math-container" id="19207053" visual_id="3455995"><math alttext="x\in u\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>u</mi><mo>∈</mo><mi>T</mi></mrow></semantics></math></span> there is <span class="math-container" id="19207054" visual_id="496171"><math alttext="v\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><mi>T</mi></mrow></semantics></math></span> such that <span class="math-container" id="19207055" visual_id="3455996"><math alttext="x\in\bar{v}\subseteq u\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mover accent="true"><mi>v</mi><mo stretchy="false">¯</mo></mover><mo>⊆</mo><mi>u</mi><mo>∈</mo><mi>T</mi></mrow></semantics></math></span> but there are many regular spaces where <span class="math-container" id="19207056" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span> contains a finite number of sets? </p> <p>For example <span class="math-container" id="19207057" visual_id="3455997"><math alttext="X=\{a,b,c\},T=\{\phi,X,\{a\},\{b,c\}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>X</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>ϕ</mi><mo>,</mo><mi>X</mi><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span> is regular space. But <span class="math-container" id="19207058" visual_id="3455998"><math alttext="a\in u=\{a\}\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>u</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><mo>∈</mo><mi>T</mi></mrow></semantics></math></span> and there is no <span class="math-container" id="19207059" visual_id="496171"><math alttext="v\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><mi>T</mi></mrow></semantics></math></span> such that <span class="math-container" id="19207060" visual_id="3455999"><math alttext="x\in v\subseteq\bar{v}\subseteq u=\{a\}\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>v</mi><mo>⊆</mo><mover accent="true"><mi>v</mi><mo stretchy="false">¯</mo></mover><mo>⊆</mo><mi>u</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><mo>∈</mo><mi>T</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> general-topology </span><span> elementary-set-theory </span><span> separation-axioms </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2077067" id="answer">
+<p>In your example <span class="math-container" id="19207061" visual_id="164916"><math alttext="v=u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>u</mi></mrow></semantics></math></span> will do. Sets can be closed and open at the same time (often called <em>clopen</em>). So <span class="math-container" id="19207062" visual_id="3456000"><math alttext="v\subseteq\overline{u}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>⊆</mo><mover accent="true"><mi>u</mi><mo>¯</mo></mover></mrow></semantics></math></span> need not imply <span class="math-container" id="19207063" visual_id="104095"><math alttext="u\neq v" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>≠</mo><mi>v</mi></mrow></semantics></math></span> at all. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4266483"> But doesn't every set <span class="math-container" id="19207064" visual_id="3122"><math alttext="t\in T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>∈</mo><mi>T</mi></mrow></semantics></math></span> have to be open? </td></tr><tr><td comment_id="4266490"> @gbd yes, but its complement can also be open, right ? </td></tr><tr><td comment_id="4266496"> Can it? I thought the complement of every element in <span class="math-container" id="19207066" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span> is closed. Do you mean that the complement of every element in <span class="math-container" id="19207066" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span> can be either closed or open and closed at the same time? </td></tr><tr><td comment_id="4266500"> @gbd yes, look at your example: <span class="math-container" id="19207067" visual_id="13210"><math alttext="\{a\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow></semantics></math></span>is open, but so is <span class="math-container" id="19207068" visual_id="28855"><math alttext="\{b,c\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> so <span class="math-container" id="19207069" visual_id="13210"><math alttext="\{a\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> is also closed.. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

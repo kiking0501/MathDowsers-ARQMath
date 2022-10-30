@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Equality in matrix norm equation.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Equality in matrix norm equation. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2682503">
+<p>I have proved that for a matrix <span class="math-container" id="24780083" visual_id="881132"><math alttext="A\in M_{m\times n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><msub><mi>M</mi><mrow><mi>m</mi><mo>×</mo><mi>n</mi></mrow></msub></mrow></semantics></math></span> <span class="math-container" id="24780084" visual_id="1165206"><math alttext="\frac{1}{\sqrt{n}}\|A\|_{\infty}\leq\|A\|_{2}\leq\sqrt{m}\|A\|_{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow><mo>≤</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>≤</mo><mrow><msqrt><mi>m</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow></semantics></math></span></p> <p>But wanting to know example of nonzero matrix <span class="math-container" id="24780085" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> where equality occurs.</p> <p>Will Identity matrix work as an example?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> matrices </span><span> inequality </span><span> norm </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5540066"> @LordSharktheUnknown can you give me an example in rectangular case </td></tr><tr><td comment_id="5540105"> The zero matrix? </td></tr><tr><td comment_id="5540107"> @Holo of course I want a nonzero example </td></tr><tr><td comment_id="5540245"> what if you set <span class="math-container" id="24780086" visual_id="39764"><math alttext="m=n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>?  Then what can you conclude? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2682807" id="answer">
+<p>Suppose you want </p> <p><span class="math-container" id="24780087" visual_id="1165207"><math alttext="\frac{1}{\sqrt{n}}\|A\|_{\infty}=\|A\|_{2}=\sqrt{m}\|A\|_{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow><mo>=</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mn>2</mn></msub><mo>=</mo><mrow><msqrt><mi>m</mi></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow></semantics></math></span></p> <p>Then we have <span class="math-container" id="24780088" visual_id="1165208"><math alttext="\|A\|_{\infty}=\sqrt{mn}\|A\|_{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub><mo>=</mo><mrow><msqrt><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msqrt><mo>⁢</mo><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow></semantics></math></span>  and since <span class="math-container" id="24780089" visual_id="1165209"><math alttext="\|A\|_{\infty}&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi mathvariant="normal">∞</mi></msub><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> if <span class="math-container" id="24780090" visual_id="39794"><math alttext="A\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>, we have <span class="math-container" id="24780091" visual_id="1165210"><math alttext="\sqrt{mn}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msqrt><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, that is <span class="math-container" id="24780092" visual_id="39764"><math alttext="m=n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.</p> <p>When <span class="math-container" id="24780093" visual_id="39764"><math alttext="m=n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, the equality holds.</p> <p>Also, when <span class="math-container" id="24780094" visual_id="7134"><math alttext="m\neq n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>≠</mo><mi>n</mi></mrow></semantics></math></span>, then the equality doesn't hold if <span class="math-container" id="24780095" visual_id="39794"><math alttext="A\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

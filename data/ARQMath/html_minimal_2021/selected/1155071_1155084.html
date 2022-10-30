@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Probability and counting dice roll</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Probability and counting dice roll </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1155071">
+<blockquote> <p>Two fair six-sided dice are rolled repeatedly until a score of 7, 9, or 11 is obtained.</p> <p>You win if a score of 9 is the first of these three scores to occur.</p> <p>Determine the probability that you win.</p> </blockquote> <p>This is what I've done so far: Since probability is equally likely then <span class="math-container" id="10854662" visual_id="2339306"><math alttext="\frac{\text{# outcome in }}{}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mtext># outcome in </mtext><mi></mi></mfrac></semantics></math></span>E<span class="math-container" id="10854663">}}{\text{outcomes in </span>S<span class="math-container" id="10854664">}}</span>  since order is important and the die is being replaced after each rolled then I used the formula <span class="math-container" id="10854665" visual_id="4940"><math alttext="n^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mi>k</mi></msup></semantics></math></span> so the number of outcome in <span class="math-container" id="10854666" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> is equal to <span class="math-container" id="10854667" visual_id="846905"><math alttext="6^{2}=36" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>6</mn><mn>2</mn></msup><mo>=</mo><mn>36</mn></mrow></semantics></math></span> where <span class="math-container" id="10854668" visual_id="24976"><math alttext="n=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow></semantics></math></span> and <span class="math-container" id="10854669" visual_id="16074"><math alttext="k=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span>.  My problem is finding out the number of outcome in <span class="math-container" id="10854670" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2355310"> What is <span class="math-container" id="10854697" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span>? Is it rolling <span class="math-container" id="10854707" visual_id="3052"><math alttext="9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn></semantics></math></span>, is it rolling any number in the set <span class="math-container" id="10854673" visual_id="1848912"><math alttext="\{7,9,11\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>7</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>11</mn><mo stretchy="false">}</mo></mrow></semantics></math></span>, or is it something else? </td></tr><tr><td comment_id="2355329"> <span class="math-container" id="10854671" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span>, the favoured space, contains the [redacted] outcomes where the dice add to <span class="math-container" id="10854672" visual_id="3052"><math alttext="9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn></semantics></math></span>.  <span class="math-container" id="10854676" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>, the conditioned space, contains the [redacted] outcomes where the dice add to any of <span class="math-container" id="10854677" visual_id="2339308"><math alttext="7,9," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>7</mn><mo>,</mo><mn>9</mn></mrow><mo>,</mo></mrow></semantics></math></span> *or* <span class="math-container" id="10854678" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1155084" id="answer">
+<blockquote> <p>This is what I've done so far: Since probability is equally likely then   <span class="math-container" id="10854679" visual_id="2339306"><math alttext="\frac{\text{# outcome in }}{}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mtext># outcome in </mtext><mi></mi></mfrac></semantics></math></span>E<span class="math-container" id="10854680">}}{\text{outcomes in </span>S<span class="math-container" id="10854681">}}</span>    since order is important and the die is being replaced after each rolled then I used the formula <span class="math-container" id="10854682" visual_id="4940"><math alttext="n^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mi>k</mi></msup></semantics></math></span> so the number of outcome in <span class="math-container" id="10854683" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> is equal to <span class="math-container" id="10854684" visual_id="846905"><math alttext="6^{2}=36" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>6</mn><mn>2</mn></msup><mo>=</mo><mn>36</mn></mrow></semantics></math></span> where <span class="math-container" id="10854685" visual_id="24976"><math alttext="n=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow></semantics></math></span> and <span class="math-container" id="10854686" visual_id="16074"><math alttext="k=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span>.    My problem is finding out the number of outcome in <span class="math-container" id="10854687" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span>.</p> </blockquote> <p>No, <span class="math-container" id="10854688" visual_id="16817"><math alttext="36" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>36</mn></semantics></math></span> is the count of <em>all</em> possible outcomes, but we are only interested in a restricted set of outcomes.</p> <p>Let <span class="math-container" id="10854689" visual_id="2339309"><math alttext="n(7)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> count the (equally likely) outcomes of rolling two dice that result in a sum of <span class="math-container" id="10854690" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span>. These are <span class="math-container" id="10854691" visual_id="2339310"><math alttext="\{(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>6</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span>, so <span class="math-container" id="10854692" visual_id="2339311"><math alttext="n(7)=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math></span>.  Similiarly there are <span class="math-container" id="10854693" visual_id="2339312"><math alttext="n(9)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> outcomes that result in a sum of <span class="math-container" id="10854694" visual_id="3052"><math alttext="9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn></semantics></math></span>, and <span class="math-container" id="10854695" visual_id="2339313"><math alttext="n(11)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>11</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> that result in a sum of <span class="math-container" id="10854696" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span>.  We ignore all other outcomes as the experiment is repeated until the required condition occurs (That is: one of these three events) .</p> <p>The favoured event space, <span class="math-container" id="10854697" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span>, contains all the outcomes that result in a sum of <span class="math-container" id="10854698" visual_id="3052"><math alttext="9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn></semantics></math></span>.</p> <p>Likewise the conditioned space, <span class="math-container" id="10854699" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>, contains all the outcomes that result in a sum of <span class="math-container" id="10854700" visual_id="2339308"><math alttext="7,9," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>7</mn><mo>,</mo><mn>9</mn></mrow><mo>,</mo></mrow></semantics></math></span> or <span class="math-container" id="10854701" visual_id="3290"><math alttext="11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn></semantics></math></span>.</p> <p>So you have <span class="math-container" id="10854702" visual_id="2339314"><math alttext="\frac{|E|}{|S|}=\frac{n(9)}{n(7)+n(9)+n(11)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo stretchy="false">|</mo><mi>E</mi><mo stretchy="false">|</mo></mrow><mrow><mo stretchy="false">|</mo><mi>S</mi><mo stretchy="false">|</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow></mrow><mrow><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>11</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2355312"> tha<span class="math-container" id="21782083">n</span>ks i got 1/3 a differe<span class="math-container" id="21782084">n</span>t way but wasn't sure </td></tr><tr><td comment_id="2355327"> For this question you can easily get the right answer for the wrong reasons. For example, "There are three different scores that end the game, one of those scores wins, so probability <span class="math-container" id="10854703" visual_id="364"><math alttext="\frac{1}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>3</mn></mfrac></semantics></math></span>," but that argument is invalid. So you should still check your work. </td></tr><tr><td comment_id="2355344"> Yeah i did get it by adding p(7)+p(9)+p(11),which was wrong way of doing it. </td></tr><tr><td comment_id="2355358"> Is there a way to approach this problem in the context of counting techniques? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

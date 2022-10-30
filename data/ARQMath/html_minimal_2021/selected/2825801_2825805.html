@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove equation using Fourier Transform</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove equation using Fourier Transform </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2825801">
+<p>Can anyone tell me how to prove the equation below using Fourier Transform for even function? I tried but I really have no idea.</p> <p><span class="math-container" id="26094843" visual_id="3292205"><math alttext="\frac{2}{\pi}\int_{0}^{\infty}\frac{\sin\pi u\cos xu}{u}du=\begin{cases}1,&amp;(|x% |\leq\pi)\\ 0,&amp;(|x|&gt;\pi)\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>2</mn><mi>π</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>π</mi><mo>⁢</mo><mi>u</mi></mrow></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>x</mi><mo>⁢</mo><mi>u</mi></mrow></mrow></mrow><mi>u</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mn>1</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mn>0</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&gt;</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p> <p>For Fourier Transform of an even function, what I was taught is as below:</p> <p>If <span class="math-container" id="26094844" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is an even function the Fourier transform and the Inverse Fourier Transform is:</p> <p><span class="math-container" id="26094845" visual_id="3292206"><math alttext="F(\omega)=2\int_{0}^{\infty}f(x)\cos\omega xdx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="26094846" visual_id="3292207"><math alttext="f(x)=\frac{1}{\pi}\int_{0}^{\infty}F(\omega)\cos\omega xd\omega" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>π</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>ω</mi></mrow></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>Here is my though:</p> <p>The left side is the Fourier transform of <span class="math-container" id="26094847" visual_id="3292208"><math alttext="f(u)=\frac{\sin\pi u}{\pi u}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>π</mi><mo>⁢</mo><mi>u</mi></mrow></mrow><mrow><mi>π</mi><mo>⁢</mo><mi>u</mi></mrow></mfrac></mrow></semantics></math></span></p> <p>And I stuck here.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> fourier-transform </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5826513"> Compute the FT of the function <span class="math-container" id="26094848" visual_id="3292209"><math alttext="f=1,\ \lvert x\rvert\leq\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>=</mo><mn>1</mn></mrow><mo rspace="7.5pt">,</mo><mrow><mrow><mo fence="true" stretchy="false">|</mo><mi>x</mi><mo fence="true" stretchy="false">|</mo></mrow><mo>≤</mo><mi>π</mi></mrow></mrow></semantics></math></span> instead and invoke the inversion theorem. </td></tr><tr><td comment_id="5826696"> @Mattos But then <span class="math-container" id="26094849" visual_id="3292210"><math alttext="F(\omega)=2\int_{0}^{\pi}\cos\omega tdt=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="5826810"> I'm not even sure how you got the integral above. That isn't <span class="math-container" id="26094850" visual_id="433790"><math alttext="F(\omega)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> though. \begin{align} F(\omega) &amp;= \frac{1}{2 \pi} \int_{\mathbb{R}} f \cdot e^{i \omega x} dx \\ &amp;= \frac{1}{2 \pi} \int_{-\pi}^{\pi} 1 \cdot e^{i \omega x} dx \\ &amp;= \frac{1}{2 \pi}  \frac{e^{i \omega x}}{i \omega} \bigg \lvert_{-\pi}^{\pi} \\&amp;= \frac{\sin \pi \omega}{\pi \omega} \end{align} </td></tr><tr><td comment_id="5827092"> To be honest in my university, what you wrote above is the inverse Fourier transform </td></tr><tr><td comment_id="5827157"> Then remove the <span class="math-container" id="26094851" visual_id="860156"><math alttext="1/2\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>π</mi></mrow></semantics></math></span> scaling and/or map <span class="math-container" id="26094852" visual_id="45175"><math alttext="x\to-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mrow><mo>-</mo><mi>x</mi></mrow></mrow></semantics></math></span> and then do the computation. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2825805" id="answer">
+<p>I can't provide the full answer right now, but a couple of hints:</p> <p>Hint 1: The Fourier transform of the indicator function for the interval <span class="math-container" id="26094853" visual_id="323607"><math alttext="x\in[-1/2,1/2]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo>,</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> (i.e. a function that is 1 inside that interval and 0 outside) is <span class="math-container" id="26094854" visual_id="908594"><math alttext="\sin(\omega)/\omega" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mi>ω</mi></mrow></semantics></math></span> (I'm possibly missing a constant factor somewhere, depending on the definition of Fourier transform you adhere to).</p> <p>Hine 2: You could equally well consider the integral to be an inverse transform.</p> <p>EDIT:</p> <p>Full solution: Let <span class="math-container" id="26094855" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be the indicator function for the interval <span class="math-container" id="26094856" visual_id="20630"><math alttext="[-\pi,\pi]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mi>π</mi></mrow><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow></semantics></math></span>. According to the definition of Fourier transform you supplied (and sticking to <span class="math-container" id="26094857" visual_id="506"><math alttext="u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi></semantics></math></span> instead of <span class="math-container" id="26094858" visual_id="4986"><math alttext="\omega" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi></semantics></math></span> is the frequency variable), the transform of f(x) is <span class="math-container" id="26094859" visual_id="3292211"><math alttext="F(u)=2\int_{0}^{\pi}\cos(ux)dx=2\frac{\sin(\pi u)}{u}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>u</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>⁢</mo><mi>u</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>u</mi></mfrac></mrow></mrow><mo>.</mo></mrow></semantics></math></span> Now, the inverse transform of <span class="math-container" id="26094860" visual_id="230389"><math alttext="F(u)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is, according to what you supplied, <span class="math-container" id="26094861" visual_id="3292212"><math alttext="f(x)=\frac{1}{\pi}\int_{0}^{\infty}F(u)\cos(xu)du=\frac{2}{\pi}\int_{0}^{% \infty}\frac{\sin(\pi u)\cos(xu)}{u}du," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>π</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>u</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mn>2</mn><mi>π</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>⁢</mo><mi>u</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mi>u</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>u</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> where I in the last step just substituted <span class="math-container" id="26094862" visual_id="230389"><math alttext="F(u)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for it's expression. But now you know that this last step is the inverse transform of the transform of <span class="math-container" id="26094863" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, which is <span class="math-container" id="26094864" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, by definition.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5826710"> Thank you for the answer but I couldnt see that the Fourier transform of the function is sin(ω)/ω  . Could you make it clearer? </td></tr><tr><td comment_id="5826838"> Full answer added above. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

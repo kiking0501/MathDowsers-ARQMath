@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Calculating the covariance of two random variables</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Calculating the covariance of two random variables </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="973510">
+<p>I have 4 random variables:</p> <p><span class="math-container" id="9318234" visual_id="5578241"><math alttext="X\sim Pois(6)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>P</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="9318235" visual_id="5578242"><math alttext="Y\sim Geom(\frac{1}{4})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>∼</mo><mrow><mi>G</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="9318236" visual_id="5578243"><math alttext="Z=6X-Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>=</mo><mrow><mrow><mn>6</mn><mo>⁢</mo><mi>X</mi></mrow><mo>-</mo><mi>Y</mi></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="9318237" visual_id="5578244"><math alttext="U=2X-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>X</mi></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span></p> <p>What is the covariance of X and Y if Cov(Z,U)=0?</p> <p>What I did:</p> <p><span class="math-container" id="9318238" visual_id="337119"><math alttext="Cov(X,Y)=E(XY)-E(X)E(Y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>, I know <span class="math-container" id="9318239" visual_id="49244"><math alttext="E(X)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="9318240" visual_id="99311"><math alttext="E(Y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> as well, I only need <span class="math-container" id="9318241" visual_id="176222"><math alttext="E(XY)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p>From <span class="math-container" id="9318242" visual_id="5578245"><math alttext="Cov(Z,U)=E(ZU)-E(Z)E(U)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo>,</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Z</mi><mo>⁢</mo><mi>U</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, and I know <span class="math-container" id="9318243" visual_id="5578246"><math alttext="E(Z)=32" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>32</mn></mrow></semantics></math></span> and <span class="math-container" id="9318244" visual_id="5578247"><math alttext="E(U)=11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>11</mn></mrow></semantics></math></span></p> <p><span class="math-container" id="9318245" visual_id="5578248"><math alttext="E(ZU)=E([6X-Y][2X-1])=32\cdot 11" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Z</mi><mo>⁢</mo><mi>U</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">[</mo><mrow><mrow><mn>6</mn><mo>⁢</mo><mi>X</mi></mrow><mo>-</mo><mi>Y</mi></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>X</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>32</mn><mo>⋅</mo><mn>11</mn></mrow></mrow></semantics></math></span></p> <p>I expanded the expression and got <span class="math-container" id="9318246" visual_id="5578249"><math alttext="E(XY)=60" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>60</mn></mrow></semantics></math></span></p> <p>So <span class="math-container" id="9318247" visual_id="5578250"><math alttext="Cov(X,Y)=60-24=36" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>60</mn><mo>-</mo><mn>24</mn></mrow><mo>=</mo><mn>36</mn></mrow></semantics></math></span></p> <p>Is that right? I generated such X,Y, U and Z in R, but didn't get this 36 covariance.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> covariance </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1996922"> Did you happen to simulate X and Y as draws from their respective distributions? If so, then that is not correct, as it implicitly assumes that X and Y are independent, when in fact they are not. </td></tr><tr><td comment_id="1996932"> BTW: Your calculation of the covariance is correct. </td></tr><tr><td comment_id="1996942"> @Eupraxis1981 yes, I simulated them from their distributions. Thanks! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="973581" id="answer">
+<p>Per your response to my comment, your simulation did not capture the true behavior of X and Y, since you modeled them as independent when they are not independent. This is the source of your numerical error. The theoretically calculated covariance is correct though (36). Simulation of correlated variables with arbitrary marginals is an intermediate/advanced topic, involving copulas and other techniques for inducing the correct relationships.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

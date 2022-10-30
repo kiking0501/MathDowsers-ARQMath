@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is the maximum number of consecutive composite numbers possible?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is the maximum number of consecutive composite numbers possible? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="186564">
+<p>Can anyone tell me what is the maximum number of consecutive composite numbers possible? I mean can I get say 1000 consecutive natural numbers. Is there any general theorem that when I have a n-digit number there will always be p consecutive composite numbers?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="430557"> <span class="math-container" id="2167461" visual_id="91039"><math alttext="n!+2,n!+3,...,n!+n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mn>3</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mi>n</mi></mrow></mrow></semantics></math></span> are all compositie </td></tr><tr><td comment_id="4280365"> Although the <span class="math-container" id="2167462" visual_id="1611648"><math alttext="[n!+2,n!+n]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mi>n</mi></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span> range guarantees <span class="math-container" id="2167463" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> consecutive composites, one would probably find many more much sooner. For example: <span class="math-container" id="2167464" visual_id="5989092"><math alttext="n!=3628800" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>=</mo><mn>3628800</mn></mrow></semantics></math></span>, but there are already 111 composites starting from <span class="math-container" id="2167465" visual_id="5989093"><math alttext="370262" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>370262</mn></semantics></math></span>, and 113 starting from <span class="math-container" id="2167466" visual_id="5989094"><math alttext="492114" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>492114</mn></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="186568" id="answer">
+<p>Let <span class="math-container" id="2167467" visual_id="90257"><math alttext="p_{1},p_{2},p_{3},\dots,p_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><msub><mi>p</mi><mn>2</mn></msub><mo>,</mo><msub><mi>p</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub></mrow></semantics></math></span> be the first <span class="math-container" id="2167468" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> primes, and let <span class="math-container" id="2167469" visual_id="4762"><math alttext="P_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>n</mi></msub></semantics></math></span> be their product. Then the <span class="math-container" id="2167470" visual_id="2315023"><math alttext="p_{n+1}-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><mn>2</mn></mrow></semantics></math></span> consecutive integers <span class="math-container" id="2167471" visual_id="5989095"><math alttext="P_{n}+2,P_{n}+3,\cdots,P_{n}+(p_{n+1}-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><mn>3</mn></mrow><mo>,</mo><mi mathvariant="normal">⋯</mi><mo>,</mo><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>p</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> are all composite. </p> <p>For let <span class="math-container" id="2167472" visual_id="5989096"><math alttext="P_{n}+x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><mi>x</mi></mrow></semantics></math></span> be one of these numbers. Since <span class="math-container" id="2167473" visual_id="5989097"><math alttext="2\leq x\lt p_{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>≤</mo><mrow><mi>x</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><msub><mi>p</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow></semantics></math></span>, <span class="math-container" id="2167474" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is divisible by some prime <span class="math-container" id="2167475" visual_id="1340408"><math alttext="p\leq p_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≤</mo><msub><mi>p</mi><mi>n</mi></msub></mrow></semantics></math></span> (<span class="math-container" id="2167476" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> could itself be prime).  But <span class="math-container" id="2167477" visual_id="4762"><math alttext="P_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>n</mi></msub></semantics></math></span> is also divisible by <span class="math-container" id="2167478" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>, so <span class="math-container" id="2167479" visual_id="5989096"><math alttext="P_{n}+x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><mi>x</mi></mrow></semantics></math></span> is divisible by <span class="math-container" id="2167480" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>. Clearly <span class="math-container" id="2167481" visual_id="5989098"><math alttext="P_{n}+x\gt p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mi>p</mi></mrow></mrow></semantics></math></span>, so <span class="math-container" id="2167482" visual_id="5989096"><math alttext="P_{n}+x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><mi>x</mi></mrow></semantics></math></span> is composite. </p> <p>We can in general get a very slightly cheaper string by starting at <span class="math-container" id="2167483" visual_id="5989099"><math alttext="P_{n}-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>-</mo><mn>2</mn></mrow></semantics></math></span> and going backwards.  These procedures get us arbitrarily long strings of consecutive composites, since there are infinitely many primes. </p> <p>But one can do a lot better than <span class="math-container" id="2167484" visual_id="4762"><math alttext="P_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>n</mi></msub></semantics></math></span> in general. The subject of Prime Gaps has been extensively studied. You will find detailed information in <a href="http://en.wikipedia.org/wiki/Prime_gap" rel="nofollow">this Wikipedia article.</a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="430575"> Could you please hint at why these numbers are composite. It must be obvious, but I am not seeing it. Thank you. </td></tr><tr><td comment_id="430578"> @Sasha: I had wondered whether I should explain that! I have added a couple of sentences to the answer. Please tell me if the reason is not clear. </td></tr><tr><td comment_id="430580"> Thanks for the explanation. It's all clear. However, if <span class="math-container" id="2167485" visual_id="5989100"><math alttext="P_{n}=\prod_{k=1}^{n}p_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>p</mi><mi>k</mi></msub></mrow></mrow></semantics></math></span>, then the sequence should be <span class="math-container" id="2167486" visual_id="5989101"><math alttext="\{P_{n}+2,P_{n}+2,\ldots,P_{n}+p_{n+1}-1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>+</mo><msub><mi>p</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span>, like in the wikipedia article you refer to. </td></tr><tr><td comment_id="430584"> You are right, I will change it, it gives us a few more consecutives in the string. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="284668"> Are there arbitrarily long prime deserts? </td></tr><tr><td post_id="548038"> Show a stretch of numbers are composite/ not prime </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

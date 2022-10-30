@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Does the sum of the reciprocals of all primes of the form $4k+1$ converge?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Does the sum of the reciprocals of all primes of the form <span class="math-container" id="8817790" visual_id="94687"><math alttext="4k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> converge? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="912824">
+<p>Let <span class="math-container" id="8817791" visual_id="6299363"><math alttext="S=\{p\in\mathbb{Z}^{+}:p\ \text{is prime and}\ p\equiv 1\mod\ 4\}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>p</mi><mo>∈</mo><msup><mi>ℤ</mi><mo>+</mo></msup></mrow><mo>:</mo><mrow><mrow><mpadded width="+5pt"><mi>p</mi><mo>⁢</mo><mpadded width="+5pt"><mtext>is prime and</mtext><mo>⁢</mo><mi>p</mi></mpadded></mpadded></mrow><mo>≡</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn> 4</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span> </p> <p>Is <span class="math-container" id="8817792" visual_id="6299364"><math alttext="\displaystyle\sum_{p\in S}\frac{1}{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>p</mi><mo>∈</mo><mi>S</mi></mrow></munder><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow></semantics></math></span> finite or infinite, and where can I find more information about it? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1884015"> The sum of the reciprocals of all primes diverges. Now, primes with residue <span class="math-container" id="8817793" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> or <span class="math-container" id="8817794" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> <span class="math-container" id="8817795" visual_id="320283"><math alttext="mod4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mn>4</mn></mrow></semantics></math></span> are approximately equidistributed in the long run, so it is a very safe bet to say this diverges too. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="912907" id="answer">
+<p>I'll add some references from the literature starting with the <a href="http://en.wikipedia.org/wiki/Meissel%E2%80%93Mertens_constant" rel="nofollow">Meissel–Mertens constant</a> defined by (the sum is over all the the primes <span class="math-container" id="8817796" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>) : <span class="math-container" id="8817797" visual_id="6299365"><math alttext="M:=\lim_{n\to\infty}\left(\sum_{p\leq n}\frac{1}{p}-\ln\ln\,n\right)=\gamma+% \sum_{p}\left(\ln\left(1-\frac{1}{p}\right)+\frac{1}{p}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>:=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>p</mi><mo>≤</mo><mi>n</mi></mrow></munder><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><mo>-</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mpadded width="+1.7pt"><mi>ln</mi><mo>⁡</mo><mi>n</mi></mpadded></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>γ</mi><mo>+</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>p</mi></munder><mrow><mo>(</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> (obtained after noticing the precise <a href="http://en.wikipedia.org/wiki/Divergence_of_the_sum_of_the_reciprocals_of_the_primes" rel="nofollow">divergence of the sum of the reciprocals of the primes</a>)</p> <p>Concerning the primes modulo <span class="math-container" id="8817798" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> (with <span class="math-container" id="8817799" visual_id="36374"><math alttext="k=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>4</mn></mrow></semantics></math></span> in your case) you may start with this article by Steven Finch <a href="http://www.people.fas.harvard.edu/~sfinch/csolve/mrtns.pdf" rel="nofollow">"Mertens' Formula"</a> (see page <span class="math-container" id="8817800" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> for <span class="math-container" id="8817801" visual_id="152670"><math alttext="\,p\equiv 1\bmod{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mo>≡</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>4</mn></mrow></mpadded></mrow></semantics></math></span>) and the relation  <span class="math-container" id="8817802" visual_id="6299366"><math alttext="M_{4,1}=\frac{\gamma}{2}-\ln\left(\frac{4}{\sqrt{\pi}}K_{1}\right)+\sum_{p% \equiv 1\bmod{4}}\left(\ln\left(1-\frac{1}{p}\right)+\frac{1}{p}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mn>4</mn><mo>,</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mrow><mfrac><mi>γ</mi><mn>2</mn></mfrac><mo>-</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>4</mn><msqrt><mi>π</mi></msqrt></mfrac><mo>⁢</mo><msub><mi>K</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>p</mi><mo>≡</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>4</mn></mrow></mrow></munder><mrow><mo>(</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> with <span class="math-container" id="8817803" visual_id="7460"><math alttext="K_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>1</mn></msub></semantics></math></span> the <a href="http://en.wikipedia.org/wiki/Landau%E2%80%93Ramanujan_constant" rel="nofollow">Landau-Ramanujan constant</a> for counting integers of the form <span class="math-container" id="8817804" visual_id="3794"><math alttext="a^{2}+b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></semantics></math></span> (see too <a href="http://books.google.com/books?id=DL5iVYNoEa0C&amp;pg=PA98" rel="nofollow">Finch <span class="math-container" id="8817805" visual_id="1915"><math alttext="2.3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2.3</mn></semantics></math></span></a> and <a href="http://mathworld.wolfram.com/Landau-RamanujanConstant.html" rel="nofollow">Mathworld</a>).</p> <p>Further references :</p> <ul> <li>Languasco and Zaccagnini <a href="http://www.sciencedirect.com/science/article/pii/S0022314X07000443" rel="nofollow">"A note on Mertens' formula for arithmetic progressions"</a></li> <li><a href="http://arxiv.org/abs/0706.2807v4" rel="nofollow">"On the constant in the Mertens product for arithmetic progressions. I. Identities"</a></li> <li><a href="http://arxiv.org/abs/0712.1665v1" rel="nofollow">"On the constant in the Mertens product for arithmetic progressions. II. Numerical values"</a></li> </ul>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

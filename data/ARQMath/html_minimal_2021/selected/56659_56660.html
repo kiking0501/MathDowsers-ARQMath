@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Roots of $x^2 + 2x + 2$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Roots of <span class="math-container" id="609754" visual_id="277771"><math alttext="x^{2}+2x+2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>2</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="56659">
+<p>I'm trying to show that there are infinitely many values of <span class="math-container" id="609755" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> such that <span class="math-container" id="609756" visual_id="277771"><math alttext="x^{2}+2x+2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>2</mn></mrow></semantics></math></span> has no roots over <span class="math-container" id="609757" visual_id="1332"><math alttext="\mathbb{F}_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝔽</mi><mi>p</mi></msub></semantics></math></span>.  Is this easily solvable?  (I kind of came up with it myself so I don't know.)</p> <p>Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> polynomials </span><span> finite-groups </span><span> finite-fields </span><span> quadratic-reciprocity </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="56660" id="answer">
+<p>It is straightforward if you know some theory.  I assume that by <span class="math-container" id="609758" visual_id="1332"><math alttext="\mathbb{F}_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝔽</mi><mi>p</mi></msub></semantics></math></span> you mean the integers modulo <span class="math-container" id="609759" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>. </p> <p>Your equation has a solution in <span class="math-container" id="609760" visual_id="1332"><math alttext="\mathbb{F}_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝔽</mi><mi>p</mi></msub></semantics></math></span> iff  <span class="math-container" id="609761" visual_id="8747554"><math alttext="(x+1)^{2}\equiv-1\pmod{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>≡</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>  has a solution. </p> <p>For odd primes <span class="math-container" id="609762" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>, the congruence  <span class="math-container" id="609763" visual_id="5498818"><math alttext="y^{2}\equiv-1\pmod{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>≡</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> has a solution  iff <span class="math-container" id="609764" visual_id="52063"><math alttext="p\equiv 1\pmod{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.  </p> <p>So for primes of the form <span class="math-container" id="609765" visual_id="8942"><math alttext="4k+3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>3</mn></mrow></semantics></math></span>, there is no solution.</p> <p>An argument much like the usual "Euclid" proof shows there are infinitely many primes of the form <span class="math-container" id="609766" visual_id="8942"><math alttext="4k+3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>3</mn></mrow></semantics></math></span>.  Indeed in a precise sense, half the primes are of this type. So there are infinitely many primes for which your equation has no solution.</p> <p>Proof of the characterization of the primes for which <span class="math-container" id="609767" visual_id="5498818"><math alttext="y^{2}\equiv-1\pmod{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>≡</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> can be found in any beginning book on Number Theory.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="129697"> Cool, I didn't know that!  Wait...why is that true? </td></tr><tr><td comment_id="129698"> Oh okay, if it's not easy I'll go look it up myself.  Thanks for the help! </td></tr><tr><td comment_id="129699"> @badatmath: An element <span class="math-container" id="609768" visual_id="49925"><math alttext="a\in\mathbb{F}_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><msub><mi>𝔽</mi><mi>p</mi></msub></mrow></semantics></math></span> is called a quadratic residue modulo <span class="math-container" id="609796" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> if there exists <span class="math-container" id="609770" visual_id="165356"><math alttext="x\in F_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><msub><mi>F</mi><mi>p</mi></msub></mrow></semantics></math></span> such that <span class="math-container" id="609771" visual_id="523492"><math alttext="x^{2}\equiv a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≡</mo><mi>a</mi></mrow></semantics></math></span> (mod <span class="math-container" id="609796" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>).  Many number theory texts will tell you that <span class="math-container" id="609773" visual_id="343"><math alttext="-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mn>1</mn></mrow></semantics></math></span> is a quadratic residue modulo <span class="math-container" id="609796" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> (<span class="math-container" id="609796" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> odd) if and only if <span class="math-container" id="609776" visual_id="29127"><math alttext="p\equiv 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≡</mo><mn>1</mn></mrow></semantics></math></span> (mod <span class="math-container" id="609794" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span>).  E.g., see Theorem 9-1 on [page 116](http://books.google.com/books?id=eVwvvwZeBf4C&amp;lpg=PA116&amp;pg=PA116#v=onepage&amp;q&amp;f=false) of Andrews's *Number theory*. </td></tr><tr><td comment_id="129701"> Oh ok<span class="math-container" id="1507819">a</span>y, thanks :) I haven't taken that class yet.  I'll go look at Jonas' reference. </td></tr><tr><td comment_id="129704"> @André There's no need to refer to a textbook since the proof is quite easy - see my answer. </td></tr><tr><td comment_id="222331"> Though, asymptotically, there are the same number of primes of the form 4n+1 as 4n+3, there are usually more of the form 4n+3. Look up "prime number races". </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="4872"> Group theory proof of existence of a solution to <span class="math-container" id="41092" visual_id="9628"><math alttext="x^{2}\equiv-1\pmod{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≡</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> iff <span class="math-container" id="41093" visual_id="52063"><math alttext="p\equiv 1\pmod{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

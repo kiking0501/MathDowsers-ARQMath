@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove that a set is countable</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove that a set is countable </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="557246">
+<p>Let <span class="math-container" id="5767542" visual_id="18281"><math alttext="A\subseteq\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>ℝ</mi></mrow></semantics></math></span>, A is an infinite set of positive numbers.</p> <p>Suppose, <span class="math-container" id="5767543" visual_id="155927"><math alttext="\exists k\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∃</mo><mi>k</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span> for all finite <span class="math-container" id="5767544" visual_id="10908"><math alttext="B\subseteq A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⊆</mo><mi>A</mi></mrow></semantics></math></span>.</p> <p><span class="math-container" id="5767545" visual_id="1659145"><math alttext="\sum_{b\in B}b&lt;k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>b</mi><mo>∈</mo><mi>B</mi></mrow></munder><mi>b</mi></mrow><mo>&lt;</mo><mi>k</mi></mrow></semantics></math></span></p> <p>Prove <span class="math-container" id="5767546" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is countable. </p> <p>I have a hint: <span class="math-container" id="5767547" visual_id="1659146"><math alttext="A_{n}=\{a\in A|a&gt;\frac{1}{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><mo stretchy="false">|</mo><mrow><mi>a</mi><mo>&gt;</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span></p> <p>I understand that <span class="math-container" id="5767548" visual_id="1269206"><math alttext="B\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>∈</mo><mi>ℚ</mi></mrow></semantics></math></span> and <span class="math-container" id="5767549" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> can be the last element of <span class="math-container" id="5767550" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> but I'm not really sure if that's right or what to do with it.</p> <p>Any help would be appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1184601"> What is <span class="math-container" id="5767551" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>? Is <span class="math-container" id="5767552" visual_id="598583"><math alttext="Z=\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>=</mo><mi>ℤ</mi></mrow></semantics></math></span>? </td></tr><tr><td comment_id="1184603"> Do you mean <span class="math-container" id="5767553" visual_id="155927"><math alttext="\exists k\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∃</mo><mi>k</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span> *such that for all finite* <span class="math-container" id="5767562" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>...? </td></tr><tr><td comment_id="1184604"> For an infinite set, it makes no sense to say "the last element". </td></tr><tr><td comment_id="1184614"> Git, yes I couldn't find the right command for it, I edited it now. Stefan yes. GEdgar, I see. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="557249" id="answer">
+<p>HINT: Prove that each <span class="math-container" id="5767555" visual_id="1584"><math alttext="A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub></semantics></math></span> must be finite, and hence that <span class="math-container" id="5767556" visual_id="1659147"><math alttext="A=\bigcup_{n\in\mathbb{Z}^{+}}A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><munder><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>∈</mo><msup><mi>ℤ</mi><mo>+</mo></msup></mrow></munder><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> is countable. If <span class="math-container" id="5767557" visual_id="1584"><math alttext="A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub></semantics></math></span> is infinite, and all of its elements are bigger than <span class="math-container" id="5767558" visual_id="4096"><math alttext="\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>n</mi></mfrac></semantics></math></span>, then there is a finite <span class="math-container" id="5767559" visual_id="1659148"><math alttext="B\subseteq A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⊆</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></semantics></math></span> such that ... ?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1184609"> Brian, I know that it takes less time to write an answer than to find a duplicate. But you must remember that you answered this exact same question not one week ago. EDIT: In fact, two days ago. </td></tr><tr><td comment_id="1184619"> @Asaf: I did remember, and I checked before I wrote: it is **not** an exact duplicate. </td></tr><tr><td comment_id="1184623"> Take a look at the two questions, side by side. It's the same question, with only one very minor difference. <span class="math-container" id="5767560" visual_id="57820"><math alttext="\leq k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>≤</mo><mi>k</mi></mrow></semantics></math></span> and <span class="math-container" id="5767561" visual_id="693221"><math alttext="&lt;k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>&lt;</mo><mi>k</mi></mrow></semantics></math></span> on the summation. Big whoop... :-) </td></tr><tr><td comment_id="1184625"> @Asaf: Look again. This one talks about sums over finite subsets; the other one about sums over countable subsets. The **solution** is essentially the same, but for many of those just encountering these ideas the **problems** are not. </td></tr><tr><td comment_id="1184632"> The difference seems to be the finiteness assumption on <span class="math-container" id="5767562" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> in this version. I don't know if that is a big enough difference. Anyhow, I already voted to close before noticing that. </td></tr><tr><td comment_id="1184635"> Ah, this one only asks about finite subsets. Seeing how the notation is downright the same, and the hint is the same; and that your answer is essentially the same (as the problem is essentially the same)... I still feel that this is a duplicate "enough" to merit a closure. </td></tr><tr><td comment_id="1184637"> @Harald: Yes, that’s exactly the difference. And to a lot of beginners it’s a significant difference, which is why I went to the trouble of typing up an answer instead of voting to close as a duplicate. </td></tr><tr><td comment_id="1184638"> If the other question talks about countable subsets and this one about finite one, then the solution for the other question applies to this question, too. Would it then be acceptable to vote this one as duplicate of the other? Because it is in a sense a "proper subset" of the other one. </td></tr><tr><td comment_id="1184639"> @Asaf: Having taught more than my share of weak students over the years, I prefer to err on the side of helpfulness. </td></tr><tr><td comment_id="1184642"> @Stefan: If you’ve read the comments, you know that I don’t think that it’s a good idea, and why. </td></tr><tr><td comment_id="1184648"> @BrianM.Scott: I'm actually asking this to myself. I still haven't found a reasonable answer to this, seeing the pros and the contras. Anyway, I voted to close before seeing the difference, I'm going to retract my vote because it was based on false assumptions. </td></tr><tr><td comment_id="1184689"> "a "proper subset" of the other one." That was pretty funny actually. I checked my paper again and it should be <span class="math-container" id="5767563" visual_id="4229"><math alttext="\leq" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≤</mo></semantics></math></span>, it is the same question, though it seems we understood it differently. I still don't get it even after going through the other post. <span class="math-container" id="5767565" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is just one set. Is it even possible to "break" <span class="math-container" id="5767565" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> into many subsets ? </td></tr><tr><td comment_id="1184696"> @GinKin: What you actually have is <span class="math-container" id="5767566" visual_id="571067"><math alttext="A_{1}\subseteq A_{2}\subseteq A_{3}\subseteq\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>⊆</mo><msub><mi>A</mi><mn>2</mn></msub><mo>⊆</mo><msub><mi>A</mi><mn>3</mn></msub><mo>⊆</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span>, and <span class="math-container" id="5767567" visual_id="1659149"><math alttext="A=\bigcup_{n\geq 1}A_{n}\;." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>=</mo><mrow><munder><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋃</mo><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></munder><mpadded width="+2.8pt"><msub><mi>A</mi><mi>n</mi></msub></mpadded></mrow></mrow><mo>.</mo></mrow></semantics></math></span> If <span class="math-container" id="5767568" visual_id="3405"><math alttext="a\in A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow></semantics></math></span>, then <span class="math-container" id="5767569" visual_id="10922"><math alttext="a&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>, so <span class="math-container" id="5767570" visual_id="1467012"><math alttext="a&gt;\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> for some <span class="math-container" id="5767571" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, and therefore <span class="math-container" id="5767572" visual_id="75763"><math alttext="a\in A_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1184719"> @GinKin: If it's the same question, why did you limit yourself to finite subsets, and Oria posted the question with "any subset"? </td></tr><tr><td comment_id="1184743"> I don't know, I don't think I even understood the question properly. As to why Oria thought the way he did, I can't possibly know. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="554469"> Show A is countable infinity </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

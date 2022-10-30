@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Lebesgue Integral but not a Riemann integral</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Lebesgue Integral but not a Riemann integral </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="364184">
+<p>Is it possible for a function to be a Lebesgue integral, but not a Riemann integral?</p> <p>After the comments below I realize my question was not a good one. Thank you. This is my edited version:</p> <p>Let <span class="math-container" id="3885973" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> be an integrable function on <span class="math-container" id="3885974" visual_id="3186"><math alttext="[a,b]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></semantics></math></span>. Suppose <span class="math-container" id="3885975" visual_id="512226"><math alttext="F(x)=F(a)+\int_{a}^{x}{f(t)}dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow></semantics></math></span>. and suppose <span class="math-container" id="3885976" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is Lebesgue integrable but not Riemann integrable.</p> <p>Is the following true: There is always a function <span class="math-container" id="3885977" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> which is Riemann integrable on <span class="math-container" id="3885978" visual_id="3186"><math alttext="[a,b]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></semantics></math></span> and for which <span class="math-container" id="3885979" visual_id="1497316"><math alttext="F(x)=F(a)+\int_{a}^{x}{g(t)}dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>x</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> measure-theory </span><span> lebesgue-integral </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="781742"> a function cannot be an integral. </td></tr><tr><td comment_id="783266"> @user31953 : The _definition_ of the Riemann integral does not use antiderivatives at all.  It uses Riemann sums.  The Fundamental Theorem of Calculus states the connection between the Riemann integral and antiderivatives. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="364185" id="answer">
+<p>You mean to be Lebesgue integrable and not Riemann integrable? The answer is yes. Classic example, let <span class="math-container" id="3885980" visual_id="3847"><math alttext="f(x)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> if <span class="math-container" id="3885981" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is a rational number and zero otherwise on the interval [0,1].</p> <p>By the way, the Lebesgue integral is a generalization of the Riemann integral. Every Riemann integrable function is Lebesgue integrable. On the other hand there are plenty of functions which are Lebesgue integrable but not Riemann integrable.</p> <hr/> <p>Addendunm:</p> <p>To the OP, looking at the comment below, I think there are several confusions here. You seem to be confusing an antiderivative with the integral. Antiderivatives and integrals are two entirely different things.</p> <p>Sticking with Riemann integral, a Riemann integral is defined as the (signed) area under a curve so the Riemann integral of a function is always a number. Your textbook calls this the definite integral.</p> <p>An antiderivative of <span class="math-container" id="3885982" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a function is another function <span class="math-container" id="3885983" visual_id="2864"><math alttext="F(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> such that <span class="math-container" id="3885984" visual_id="30578"><math alttext="F^{\prime}(x)=f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>F</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. An antiderivative is always a function.</p> <p>They are two different things but Newton and Leibniz proved that they are actually very closely related (a very useful thing by the way). The fundamental theorem of calculus says that in order to find the (definite) integral of a function, just compute its antiderivative and evaluate it at the top minus the bottom, meaning</p> <p><span class="math-container" id="3885985" visual_id="1427359"><math alttext="\int_{a}^{b}f(x)dx=F(b)-F(a)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>So when we say that a function is integrable, we mean that we can find the area underneath it. If you mean antiderivative then say antiderivative. Don't call the antiderivative the integral or the other way around.</p> <p>Now to answer what I think you originally asked, Lebesgue integral doesn't use antiderivatives. Only the Riemann integral does. They both measure area under the curve but they use different methods. Whenever they both exist, they both agree and give you the same number but they use different methods so it doesn't even make sense to ask "if a function can be a Lebesgue integral". There is no such thing as "an indefinite Lebesgue integral". The Lebesgue integral is useful because it works on many functions that the Riemann integral can't handle BUT the Riemann integral is much easier to do/understand/develop and it also came first historically. So the Lebesgue integral is a (great) generalization of the Riemann integral so the classic example I gave you is one such function which Lebesgue can handle but Riemann can't.</p> <hr/> <p>Second Addendum:</p> <p>Here's Martin's answer from the comments below</p> <p>"In Lebesgue theory the primitive <span class="math-container" id="3885986" visual_id="193674"><math alttext="F(x)=\int_{a}^{x}f(t)dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span> makes sense for every integrable function <span class="math-container" id="3885987" visual_id="7772"><math alttext="f:[a,b]\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> and by the Lebesgue differentiation theorem a function <span class="math-container" id="3885988" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is a primitive iff it is absolutely continuous. Perhaps OP asks whether the derivative of an absolutely continuous function is always Riemann integrable. In other words, whether there is an integrable function that is not a.e. equal to a Riemann integrable function (yes: characteristic function of a fat Cantor set)."</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="781754"> The statement "Every Riemann integrable function is Lebesgue integrable" is not correct. Consider <span class="math-container" id="3885989" visual_id="1497317"><math alttext="\sin[x]/x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mi>x</mi></mrow></semantics></math></span>, for example. </td></tr><tr><td comment_id="781759"> No, I mean integral. </td></tr><tr><td comment_id="781762"> Every proper Riemann integral exists as a Lebesgue integral. </td></tr><tr><td comment_id="781789"> And the other way around? </td></tr><tr><td comment_id="781816"> @user32240 The Riemann integral is define on a bounded interval for a bounded function on that interval. The improper integrals are an attempt at its generalizations. </td></tr><tr><td comment_id="781821"> @user31953 You still haven't answered user32240's comment above. If you don't mean "integrable" then what does you mean when you say "a function to be a Lebesgue integral". An integral is a number. Like how a Riemann integral is the signed area under a curve. Do you mean an anti-derivative? Like an indefinite Riemann integral? </td></tr><tr><td comment_id="781826"> @FixedPoint: I suggest you clarify the confusion, because OP is clearly confused. </td></tr><tr><td comment_id="781830"> I mean an indefinite integral sorry. Maybe this question does not make sense. </td></tr><tr><td comment_id="781835"> By way of example, the classic example given by Fixed Point, the integral is the constant function 0. But, there are plenty of Riemann integrable functions for which the integral is also 0 though. I think this is always true. Correct? </td></tr><tr><td comment_id="781846"> Addendum added! </td></tr><tr><td comment_id="782314"> In Lebesgue theory the primitive <span class="math-container" id="3885990" visual_id="193674"><math alttext="F(x)=\int_{a}^{x}f(t)\,dt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span> makes sense for every integrable function <span class="math-container" id="3885991" visual_id="7772"><math alttext="f\colon[a,b]\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> and by the Lebesgue differentiation theorem a function <span class="math-container" id="3885992" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is a primitive iff it is absolutely continuous. Perhaps OP asks whether the derivative of an absolutely continuous function is always Riemann integrable. In other words, whether there is an integrable function that is not a.e. equal to a Riemann integrable function (yes: characteristic function of a fat Cantor set). </td></tr><tr><td comment_id="782336"> Yes. I don't know how to accept a comment as an answer. But that is what I was asking! </td></tr><tr><td comment_id="782385"> @user31953: Fixed Point invested quite some effort in the answer (and trying to figure out what you wanted to know). It would feel like stealing to post this as an answer now. I suggest that Fixed Point adds that to the answer and you accept his or her answer after that. By the way: don't forget to upvote the answer! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="719184"> Is every Riemann-integrable function lebesgue integrable? </td></tr><tr><td post_id="2208943"> Motivation for the rigour of real analysis </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

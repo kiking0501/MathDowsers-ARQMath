@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>$\sqrt{17}$ is irrational: the Well-ordering Principle</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> <span class="math-container" id="4958331" visual_id="497073"><math alttext="\sqrt{17}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>17</mn></msqrt></semantics></math></span> is irrational: the Well-ordering Principle </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="471648">
+<p>Prove that <span class="math-container" id="4958332" visual_id="497073"><math alttext="\sqrt{17}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>17</mn></msqrt></semantics></math></span> is irrational by using the Well-ordering property of the natural numbers. </p> <p>I've been trying to figure out how to go about doing this but I haven't been able to.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> natural-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1015267"> Try using contradiction, with <span class="math-container" id="4958333" visual_id="9130"><math alttext="p/q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>/</mo><mi>q</mi></mrow></semantics></math></span> in lowest terms. </td></tr><tr><td comment_id="1015286"> May I please ask how this is a Calculus problem? </td></tr><tr><td comment_id="1015293"> @AhaanRungta This is the sort of thing one may encounter in the opening sections of Spivak's Calculus or equivalent texts. (I agree that formally it is not calculus, and other tags would be more appropriate.) </td></tr><tr><td comment_id="1015297"> Ah, yes, I see what you mean. Calculus books always open up with non-calculus. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="472040" id="answer">
+<p>In general, suppose <span class="math-container" id="4958334" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is an integer that is not a perfect square. I will show that <span class="math-container" id="4958335" visual_id="7664"><math alttext="\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi>n</mi></msqrt></semantics></math></span> is irrational. Note: This proof is not original, although I did come up with it independently.</p> <p>Let <span class="math-container" id="4958336" visual_id="602082"><math alttext="m=\lfloor\sqrt{n}\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mo stretchy="false">⌊</mo><msqrt><mi>n</mi></msqrt><mo stretchy="false">⌋</mo></mrow></mrow></semantics></math></span>. Since <span class="math-container" id="4958337" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is not a perfect square (this is where we use that assumption), <span class="math-container" id="4958338" visual_id="4358456"><math alttext="m&lt;\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&lt;</mo><msqrt><mi>n</mi></msqrt></mrow></semantics></math></span>.</p> <p>Suppose <span class="math-container" id="4958339" visual_id="7664"><math alttext="\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi>n</mi></msqrt></semantics></math></span> is rational, so <span class="math-container" id="4958340" visual_id="2722865"><math alttext="\sqrt{n}=\frac{a}{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>n</mi></msqrt><mo>=</mo><mfrac><mi>a</mi><mi>b</mi></mfrac></mrow></semantics></math></span> for some positive integers <span class="math-container" id="4958341" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="4958342" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>.</p> <p>At this point, we can go in two different directions. We can either assume that <span class="math-container" id="4958343" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> is the smallest positive integer such that <span class="math-container" id="4958344" visual_id="1157220"><math alttext="b\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></semantics></math></span> is an integer, and deduce a contradiction by finding a smaller positive integer <span class="math-container" id="4958345" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> such that <span class="math-container" id="4958346" visual_id="2072446"><math alttext="d\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></semantics></math></span> is an integer, or we can show that there is a smaller positive integer <span class="math-container" id="4958347" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> such that <span class="math-container" id="4958348" visual_id="2072446"><math alttext="d\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></semantics></math></span> is an integer and thus create a contradiction  using infinite descent.</p> <p>I will use the first method.</p> <p>Suppose <span class="math-container" id="4958349" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> is the smallest positive integer such that <span class="math-container" id="4958350" visual_id="1157220"><math alttext="b\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></semantics></math></span> is an integer. Let <span class="math-container" id="4958351" visual_id="4358457"><math alttext="a=b\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mi>b</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></mrow></semantics></math></span> As above, let <span class="math-container" id="4958352" visual_id="602082"><math alttext="m=\lfloor\sqrt{n}\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mrow><mo stretchy="false">⌊</mo><msqrt><mi>n</mi></msqrt><mo stretchy="false">⌋</mo></mrow></mrow></semantics></math></span>, so that <span class="math-container" id="4958353" visual_id="4358458"><math alttext="m&lt;\sqrt{n}&lt;m+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&lt;</mo><msqrt><mi>n</mi></msqrt><mo>&lt;</mo><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>.</p> <p>Then (watch closely - the fingers never leave the hands)</p> <p><span class="math-container" id="4958354" visual_id="4358459"><math alttext="\displaystyle\frac{a}{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>b</mi></mfrac></mstyle></semantics></math></span></p> <p>so that <span class="math-container" id="4958355" visual_id="4358460"><math alttext="(a-mb)\sqrt{n}=nb-ma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mrow><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow><mo>=</mo><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>b</mi></mrow><mo>-</mo><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi></mrow></mrow></mrow></semantics></math></span> is also an integer.</p> <p>Since <span class="math-container" id="4958356" visual_id="4358458"><math alttext="m&lt;\sqrt{n}&lt;m+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&lt;</mo><msqrt><mi>n</mi></msqrt><mo>&lt;</mo><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>, <span class="math-container" id="4958357" visual_id="4358461"><math alttext="m&lt;a/b&lt;m+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&lt;</mo><mrow><mi>a</mi><mo>/</mo><mi>b</mi></mrow><mo>&lt;</mo><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> or <span class="math-container" id="4958358" visual_id="4358462"><math alttext="mb&lt;a&lt;mb+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow><mo>+</mo><mi>b</mi></mrow></mrow></semantics></math></span>, or <span class="math-container" id="4958359" visual_id="4358463"><math alttext="0&lt;a-mb&lt;b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mrow><mi>a</mi><mo>-</mo><mrow><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><mo>&lt;</mo><mi>b</mi></mrow></semantics></math></span>.</p> <p>Therefore <span class="math-container" id="4958360" visual_id="4358464"><math alttext="a-mb" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>-</mo><mrow><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></semantics></math></span> is a positive integer  smaller than <span class="math-container" id="4958361" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> and <span class="math-container" id="4958362" visual_id="4358465"><math alttext="(a-mb)\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mrow><mi>m</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></semantics></math></span> is an integer. This contradicts the definition of <span class="math-container" id="4958363" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> as the smallest such integer.</p> <p>You can put <span class="math-container" id="4958364" visual_id="56588"><math alttext="n=17" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>17</mn></mrow></semantics></math></span> or <span class="math-container" id="4958365" visual_id="352"><math alttext="n=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span> (which is where I first saw this proof and generalized it to what you see here), or any non-perfect square and show that <span class="math-container" id="4958366" visual_id="7664"><math alttext="\sqrt{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi>n</mi></msqrt></semantics></math></span> is irrational this way.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="912387"> Can one prove existence of incommensurables without the Pythagorean theorem? </td></tr><tr><td post_id="930486"> Prove that the square root of 3 is irrational </td></tr><tr><td post_id="953390"> Proving that the square root of 5 is irrational </td></tr><tr><td post_id="1107015"> There're no <span class="math-container" id="10440276" visual_id="4656"><math alttext="x\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℚ</mi></mrow></semantics></math></span> which verifies <span class="math-container" id="10440277" visual_id="948506"><math alttext="x^{2}=12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>12</mn></mrow></semantics></math></span>. </td></tr><tr><td post_id="1251974"> Where does the proof of <span class="math-container" id="11684600" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> is irrational break down when trying to prove the same for <span class="math-container" id="11684601" visual_id="32448"><math alttext="\sqrt{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>4</mn></msqrt></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

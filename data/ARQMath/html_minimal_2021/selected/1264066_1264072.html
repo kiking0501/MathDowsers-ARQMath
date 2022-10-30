@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Evaluating the factorial-related limit $\lim_{x \to \infty} (x + 1)!^{1 / (x + 1)} - x!^{1/x}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Evaluating the factorial-related limit <span class="math-container" id="11781299" visual_id="534896"><math alttext="\lim_{x\to\infty}(x+1)!^{1/(x+1)}-x!^{1/x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow><mo>-</mo><msup><mrow><mi>x</mi><mo>!</mo></mrow><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1264066">
+<p>I'm looking for the limit</p> <blockquote> <p><span class="math-container" id="11781300" visual_id="534897"><math alttext="\lim_{x\to\infty}\left[[(x+1)!]^{\frac{1}{1+x}}-(x!)^{\frac{1}{x}}\right]." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>[</mo><mrow><msup><mrow><mo stretchy="false">[</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">]</mo></mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac></msup><mo>-</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mi>x</mi></mfrac></msup></mrow><mo>]</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> </blockquote> <p>I've put the above in a computer program, and evaluated it at very high values of <span class="math-container" id="11781301" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> (at <span class="math-container" id="11781302" visual_id="534898"><math alttext="x=100\text{ }000" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>100</mn><mo>⁢</mo><mtext> </mtext><mo>⁢</mo><mn>000</mn></mrow></mrow></semantics></math></span>, it is approximately <span class="math-container" id="11781303" visual_id="534899"><math alttext="0.367881" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.367881</mn></semantics></math></span>). The value seems to be caving in to <span class="math-container" id="11781304" visual_id="26315"><math alttext="1/e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mi>e</mi></mrow></semantics></math></span>, which is <span class="math-container" id="11781305" visual_id="534900"><math alttext="0.3678794412\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.3678794412</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span></p> <p>That makes sense, as <span class="math-container" id="11781306" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span> has an expansion related to factorial. However I'm stuck trying to figure out a proof if there is any. Thanks for any help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> limits </span><span> factorial </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2566646"> Yeah, Dr. MV has a point. We can use that to approximate <span class="math-container" id="11781307" visual_id="755"><math alttext="n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>!</mo></mrow></semantics></math></span> at infinity. </td></tr><tr><td comment_id="2566678"> @Dr.MV Comment I was referring to is gone. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1264072" id="answer">
+<p>If <span class="math-container" id="11781323" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is an integer, we can use Sterling's formula</p> <p><span class="math-container" id="11781324" visual_id="534910"><math alttext="x!\approx.\sqrt{2\pi x}\left(\frac{x}{e}\right)^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>!</mo><mo>≈</mo><mo>.</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi></mrow></msqrt><msup><mrow><mo>(</mo><mfrac><mi>x</mi><mi>e</mi></mfrac><mo>)</mo></mrow><mi>x</mi></msup></mrow></semantics></math></span></p> <p>Thus, </p> <p><span class="math-container" id="11781325" visual_id="534911"><math alttext="((x+1)!)^{1/(x+1)}\approx.(\sqrt{2\pi(x+1)})^{1/(x+1)}\left(\frac{x+1}{e}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>!</mo><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>≈</mo><mo>.</mo><msup><mrow><mo stretchy="false">(</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mrow><mo>(</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mi>e</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span></p> <p>and</p> <p><span class="math-container" id="11781326" visual_id="534912"><math alttext="(x!)^{1/x}\approx.(\sqrt{2\pi x})^{1/x}\left(\frac{x}{e}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>!</mo><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></msup><mo>≈</mo><mo>.</mo><msup><mrow><mo stretchy="false">(</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi></mrow></msqrt><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></msup><mrow><mo>(</mo><mfrac><mi>x</mi><mi>e</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span></p> <p>The term <span class="math-container" id="11781327" visual_id="534913"><math alttext="\sqrt{2\pi x}^{1/x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi></mrow></msqrt><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></msup></semantics></math></span> and <span class="math-container" id="11781328" visual_id="534914"><math alttext="\sqrt{2\pi(x+1)}^{1/(x+1)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></semantics></math></span> can easily be shown to approach <span class="math-container" id="11781329" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> as <span class="math-container" id="11781330" visual_id="2326"><math alttext="x\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>.  Thus, </p> <p><span class="math-container" id="11781331" visual_id="534915"><math alttext="((x+1)!)^{1/(x+1)}-(x!)^{1/x}\approx.\frac{x+1}{e}-\frac{x}{e}=1/e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>!</mo><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>-</mo><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>!</mo><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></msup><mo>≈</mo><mo>.</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mi>e</mi></mfrac><mo>-</mo><mfrac><mi>x</mi><mi>e</mi></mfrac><mo>=</mo><mn>1</mn><mo>/</mo><mi>e</mi></mrow></semantics></math></span> </p> <p>as <span class="math-container" id="11781332" visual_id="2326"><math alttext="x\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span></p> <hr/> <p>Aside, we do not need to assume that <span class="math-container" id="11781333" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is an integer.  Indeed, the Gamma function provides an extension of the factorial for complex values.  Using the large argument asymptotic expansion of the Gamma function with positive real arguments, we have </p> <p><span class="math-container" id="11781334" visual_id="534916"><math alttext="x!=\Gamma(x+1)=\sqrt{2\pi x}\left(\frac{x}{e}\right)^{x}\left(1+O\left(\frac{1% }{x}\right)\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>!</mo></mrow><mo>=</mo><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>x</mi></mrow></msqrt><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi>x</mi><mi>e</mi></mfrac><mo>)</mo></mrow><mi>x</mi></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Analysis proceeds identically and the result of the post is unaffected (i.e., the limit of the function of this post is <span class="math-container" id="11781335" visual_id="26315"><math alttext="1/e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mi>e</mi></mrow></semantics></math></span>).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2566669"> <span class="math-container" id="23726899">S</span>ame as mine, though DeMoivre is sufficient than Stirling. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1264144"> continuous function of the approximation of a sequence </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

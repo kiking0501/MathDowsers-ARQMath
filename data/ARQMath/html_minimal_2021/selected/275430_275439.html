@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>$\epsilon$-$\delta$ proof that $f$ is continuous for $x\notin\mathbb Q$ but isn't for $x\in\mathbb Q$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> <span class="math-container" id="3033612" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span>-<span class="math-container" id="3033613" visual_id="41"><math alttext="\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi></semantics></math></span> proof that <span class="math-container" id="3033614" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous for <span class="math-container" id="3033615" visual_id="42248"><math alttext="x\notin\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∉</mo><mi>ℚ</mi></mrow></semantics></math></span> but isn't for <span class="math-container" id="3033616" visual_id="4656"><math alttext="x\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℚ</mi></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="275430">
+<p>I'm trying to give an <span class="math-container" id="3033617" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span>-<span class="math-container" id="3033618" visual_id="41"><math alttext="\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi></semantics></math></span> proof that the following function <span class="math-container" id="3033619" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous for <span class="math-container" id="3033620" visual_id="42248"><math alttext="x\notin\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∉</mo><mi>ℚ</mi></mrow></semantics></math></span> but isn't for <span class="math-container" id="3033621" visual_id="4656"><math alttext="x\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℚ</mi></mrow></semantics></math></span>. </p> <p>Let <span class="math-container" id="3033622" visual_id="5817799"><math alttext="f:\mathbb{A\subset R\to R},\mathbb{A=\{x\in R|x&gt;0\}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>𝔸</mi><mo>⊂</mo><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi><mo>,</mo><mi>𝔸</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>𝕩</mi><mo>∈</mo><mi>ℝ</mi><mo stretchy="false">|</mo><mi>𝕩</mi><mo>&gt;</mo><mn>𝟘</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> be given by: <span class="math-container" id="3033623" visual_id="5817800"><math alttext="f(x)=\begin{cases}1/n,&amp;x=m/n\in\mathbb{Q}\\ 0,&amp;x\notin\mathbb{Q}\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><mi>m</mi><mo>/</mo><mi>n</mi></mrow><mo>∈</mo><mi>ℚ</mi></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mn>0</mn><mo>,</mo></mrow></mtd><mtd columnalign="left"><mrow><mi>x</mi><mo>∉</mo><mi>ℚ</mi></mrow></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p> <p>where <span class="math-container" id="3033624" visual_id="126525"><math alttext="m/n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>/</mo><mi>n</mi></mrow></semantics></math></span> is in the lowest terms.</p> <p>Can anyone help me with this proof (I'd prefer an answer with an <span class="math-container" id="3033625" visual_id="46"><math alttext="\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi></semantics></math></span>-<span class="math-container" id="3033626" visual_id="41"><math alttext="\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi></semantics></math></span> proof).</p> <p>Thank you very much!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> functions </span><span> continuity </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="601083"> Your function is not yet well-defined: for example, <span class="math-container" id="3033627" visual_id="5817801"><math alttext="1=1/1=2/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>1</mn></mrow><mo>=</mo><mrow><mn>2</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>, so your definition gives <span class="math-container" id="3033628" visual_id="2611"><math alttext="f(1)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="3033629" visual_id="278362"><math alttext="f(1)=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="601087"> Presumably you want to specify that <span class="math-container" id="3033630" visual_id="126513"><math alttext="x=m/n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>m</mi><mo>/</mo><mi>n</mi></mrow></mrow></semantics></math></span> **in lowest terms**. </td></tr><tr><td comment_id="601088"> @ChrisEagle This is actually from an exercise. I suppose it means the simplified fractions, but it didn't make that clear. I'll edit the question. Thanks! </td></tr><tr><td comment_id="601091"> @BrianM.Scott I just added that to the question, thanks! </td></tr><tr><td comment_id="601092"> What have you tried? You have to prove that <span class="math-container" id="3033662" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous at irrationals and discontinuous at rationals; can you prove either of these facts? </td></tr><tr><td comment_id="601094"> @ChrisEagle I couldn't do both parts actually. </td></tr><tr><td comment_id="601096"> i can't do either ... nice question +1 and would love to see the solution </td></tr><tr><td comment_id="601100"> @ChrisEagle Just as I mentioned at this other [similar comment](http://math.stackexchange.com/questions/275359/why-are-only-the-first-four-alternating-groups-are-non-simple/275398#275398), this is not as constructive as it could be. We shouldn't really use minutae as trout to whack about posters when their real question is obvious. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="275439" id="answer">
+<p>HINTS: To show that <span class="math-container" id="3033632" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous at an irrational <span class="math-container" id="3033633" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, show for any <span class="math-container" id="3033634" visual_id="13194"><math alttext="n\in\mathbb{Z}^{+}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><msup><mi>ℤ</mi><mo>+</mo></msup></mrow></semantics></math></span> you can choose <span class="math-container" id="3033635" visual_id="1336"><math alttext="\delta&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> small enough so that the interval <span class="math-container" id="3033636" visual_id="28555"><math alttext="(x-\delta,x+\delta)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>δ</mi></mrow><mo>,</mo><mrow><mi>x</mi><mo>+</mo><mi>δ</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> contains no fraction with a denominator <span class="math-container" id="3033637" visual_id="36257"><math alttext="\leq n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>≤</mo><mi>n</mi></mrow></semantics></math></span> in lowest term. Use the fact that between two rationals with denominator <span class="math-container" id="3033638" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> there is a gap of at least <span class="math-container" id="3033639" visual_id="88611"><math alttext="\frac{1}{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>m</mi></mfrac></semantics></math></span>.</p> <p>To show that <span class="math-container" id="3033640" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is discontinuous at a rational <span class="math-container" id="3033641" visual_id="23194"><math alttext="\frac{m}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>m</mi><mi>n</mi></mfrac></semantics></math></span>, let <span class="math-container" id="3033642" visual_id="5817802"><math alttext="\epsilon=\frac{m}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>=</mo><mfrac><mi>m</mi><mi>n</mi></mfrac></mrow></semantics></math></span> (or any smaller positive real), and just observe that every non-empty open interval in <span class="math-container" id="3033643" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> contains an irrational number.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="195951"> What exactly is going on when we're finding a limit? </td></tr><tr><td post_id="275359"> Why are only the first four alternating groups are non-simple? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

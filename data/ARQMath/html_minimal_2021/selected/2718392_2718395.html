@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that $\log_a x$ (for some $x > 1$), as a function of $a$, is monotonically decreasing</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that <span class="math-container" id="25090018" visual_id="186651"><math alttext="\log_{a}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>log</mi><mi>a</mi></msub><mo>⁡</mo><mi>x</mi></mrow></semantics></math></span> (for some <span class="math-container" id="25090019" visual_id="2230"><math alttext="x&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>), as a function of <span class="math-container" id="25090020" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>, is monotonically decreasing </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2718392">
+<blockquote> <p>Let <span class="math-container" id="25090021" visual_id="9086"><math alttext="a&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>. Let define logarithm function with base <span class="math-container" id="25090022" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> as a inverse function of <span class="math-container" id="25090023" visual_id="64491"><math alttext="f(x)=a^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></semantics></math></span> i.e. <span class="math-container" id="25090024" visual_id="7229720"><math alttext="log_{a}x=f^{-1}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>l</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msub><mi>g</mi><mi>a</mi></msub><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Next we fix <span class="math-container" id="25090025" visual_id="2952"><math alttext="x&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span> and define <span class="math-container" id="25090026" visual_id="7229721"><math alttext="g(a)=log_{a}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>l</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msub><mi>g</mi><mi>a</mi></msub><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span>. Show that function <span class="math-container" id="25090027" visual_id="29737"><math alttext="g(a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is monotonically decreasing.</p> </blockquote> <p>How I should answer this?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> logarithms </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5611839"> @JoséCarlosSantos Thank you. I got your point. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2718395" id="answer">
+<p>If <span class="math-container" id="25090040" visual_id="1644595"><math alttext="b&gt;a&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>&gt;</mo><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>, then <span class="math-container" id="25090041" visual_id="204150"><math alttext="a^{\log_{a}x}=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mrow><msub><mi>log</mi><mi>a</mi></msub><mo>⁡</mo><mi>x</mi></mrow></msup><mo>=</mo><mi>x</mi></mrow></semantics></math></span>, whereas<span class="math-container" id="25090042" visual_id="7229729"><math alttext="a^{\log_{b}x}=\left(\frac{a}{b}\right)^{\log_{b}x}b^{\log_{b}x}=\left(\frac{a}% {b}\right)^{\log_{b}x}x&lt;x," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mrow><msub><mi>log</mi><mi>b</mi></msub><mo>⁡</mo><mi>x</mi></mrow></msup><mo>=</mo><mrow><msup><mrow><mo>(</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>)</mo></mrow><mrow><msub><mi>log</mi><mi>b</mi></msub><mo>⁡</mo><mi>x</mi></mrow></msup><mo>⁢</mo><msup><mi>b</mi><mrow><msub><mi>log</mi><mi>b</mi></msub><mo>⁡</mo><mi>x</mi></mrow></msup></mrow><mo>=</mo><mrow><msup><mrow><mo>(</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>)</mo></mrow><mrow><msub><mi>log</mi><mi>b</mi></msub><mo>⁡</mo><mi>x</mi></mrow></msup><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mi>x</mi></mrow><mo>,</mo></mrow></semantics></math></span>since <span class="math-container" id="25090043" visual_id="594647"><math alttext="\frac{a}{b}&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span>. Therefore, <span class="math-container" id="25090044" visual_id="7229730"><math alttext="\log_{b}x&lt;\log_{a}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>log</mi><mi>b</mi></msub><mo>⁡</mo><mi>x</mi></mrow><mo>&lt;</mo><mrow><msub><mi>log</mi><mi>a</mi></msub><mo>⁡</mo><mi>x</mi></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5611964"> Thanks, this is elegant solution. Should I still say something about discontinuity of logarithm function at point a=1 or can I omit that in this kind of question? I have used to think monotonicality at intervals so is it correct to say that g(a) is monotonically decreasing at the intervals it is defined? Or is the question actually unclear? </td></tr><tr><td comment_id="5612014"> @Oscar What I wrote has nothing to do with continuity. However, I made a mistake (I shall edit my answer). What I did actually assumes that <span class="math-container" id="25090045" visual_id="632686"><math alttext="1&lt;a&lt;b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow></semantics></math></span>; in fact, if we allow <span class="math-container" id="25090046" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="25090047" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> to belong to <span class="math-container" id="25090053" visual_id="2953"><math alttext="(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>, then my proof will not work, because then <span class="math-container" id="25090049" visual_id="247801"><math alttext="\log_{b}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>log</mi><mi>b</mi></msub><mo>⁡</mo><mi>x</mi></mrow></semantics></math></span> will be negative and therefore$$a<b\implies\frac ab<1\implies\left(\frac="" ab\right)^{\log_bx}="">1.$$ </b\implies\frac></td></tr><tr><td comment_id="5612047"> Actually your proof works very well also for interval (0, 1). In that case it just show that <span class="math-container" id="25090051" visual_id="7229732"><math alttext="a^{log_{b}x}&gt;a^{log_{a}x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mrow><mi>l</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msub><mi>g</mi><mi>b</mi></msub><mo>⁢</mo><mi>x</mi></mrow></msup><mo>&gt;</mo><msup><mi>a</mi><mrow><mi>l</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msub><mi>g</mi><mi>a</mi></msub><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></semantics></math></span> and while <span class="math-container" id="25090052" visual_id="7229733"><math alttext="a\in(0,1)\Rightarrow log_{b}x&lt;log_{a}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⇒</mo><mrow><mi>l</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msub><mi>g</mi><mi>b</mi></msub><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mrow><mi>l</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><msub><mi>g</mi><mi>a</mi></msub><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span>. However, what I'm now hesitating here, is whether I can just say that function is decreasing, should I say it's decreasing at the intervals it's defined or simply that function is not decreasing? </td></tr><tr><td comment_id="5612053"> @Oscar It is increasing in both intervals <span class="math-container" id="25090048" visual_id="2953"><math alttext="(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> and <span class="math-container" id="25090054" visual_id="264244"><math alttext="(1,+\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>. Note, however, that it is not even defined at <span class="math-container" id="25090055" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

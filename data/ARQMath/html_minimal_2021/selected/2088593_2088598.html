@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Little task about matrix I don't quite understand</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Little task about matrix I don't quite understand </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2088593">
+<p>Here is another task from exam but this time I don't understand how to solve it. So it says:</p> <blockquote> <p>Show that: If <span class="math-container" id="19315113" visual_id="1102591"><math alttext="A\in\mathbb{R}^{2\times 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></msup></mrow></semantics></math></span> is a matrix of the from   <span class="math-container" id="19315114" visual_id="1227291"><math alttext="A=\begin{pmatrix}\lambda&amp;0\\ 0&amp;\lambda\end{pmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>λ</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mi>λ</mi></mtd></mtr></mtable><mo>)</mo></mrow></mrow></semantics></math></span> where   <span class="math-container" id="19315115" visual_id="601"><math alttext="\lambda\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>, then for all <span class="math-container" id="19315116" visual_id="865955"><math alttext="B\in\mathbb{R}^{2\times 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></msup></mrow></semantics></math></span> we   have that the identity is <span class="math-container" id="19315117" visual_id="671480"><math alttext="A\cdot B=B\cdot A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⋅</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⋅</mo><mi>A</mi></mrow></mrow></semantics></math></span></p> </blockquote> <p>I think similar task will be asked in our exam but I need to understand this.</p> <p>So <span class="math-container" id="19315118" visual_id="302535"><math alttext="\mathbb{R}^{2\times 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></msup></semantics></math></span> means we have matrix with 2 rows and 2 columns? And the numbers inside this matrix are real? Is that what's meant by that?</p> <p>So they basically ask if we multiply <span class="math-container" id="19315119" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> with any real matrix <span class="math-container" id="19315120" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> (2 rows 2 columns), then we have that <span class="math-container" id="19315121" visual_id="5084"><math alttext="AB=BA" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></semantics></math></span>? Or I understood wrong?</p> <p>But then I wouldn't know how to reason it, but the zeroes provide us same result I think.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> matrices </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2088598" id="answer">
+<p><strong>Always remember</strong> the only matrices that commutes with all other matrices are the multiples of the identity. Here <span class="math-container" id="19315122" visual_id="9332154"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> satisfies this condition, so for <span class="math-container" id="19315123" visual_id="865955"><math alttext="B\in\mathbb{R}^{2\times 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mn>2</mn><mo>×</mo><mn>2</mn></mrow></msup></mrow></semantics></math></span> <span class="math-container" id="19315124" visual_id="671480"><math alttext="A\cdot B=B\cdot A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⋅</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⋅</mo><mi>A</mi></mrow></mrow></semantics></math></span>. </p> <hr/> <p>Also, <strong>in general</strong>, matrix multiplication is commutative when the two are diagonal matrices and are of the same dimension. Hope it helps. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4292802"> What does "commute" mean in this case? </td></tr><tr><td comment_id="4292815"> Commute means <span class="math-container" id="19315125" visual_id="5084"><math alttext="AB=BA" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></semantics></math></span>. Same concept when we say addition is commutative,that is, <span class="math-container" id="19315126" visual_id="87216"><math alttext="a+b=b+a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>=</mo><mrow><mi>b</mi><mo>+</mo><mi>a</mi></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

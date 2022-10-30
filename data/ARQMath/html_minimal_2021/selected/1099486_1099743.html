@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding a Basis and Sub-Basis for a given set X.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding a Basis and Sub-Basis for a given set X. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1099486">
+<p>Suppose <span class="math-container" id="10375127" visual_id="854189"><math alttext="X=\{a,b,c,d,e\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> then suppose <span class="math-container" id="10375128" visual_id="6703686"><math alttext="\mathscr{B}=\{\{a\},\{a,c\},\{a,b\},\{b\},\{d\},\{e\},\{c\}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="ltx_font_mathscript">ℬ</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>b</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>d</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>e</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>. Is this a basis for <span class="math-container" id="10375129" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>?</p> <p>Part 1 of the definition states that for each <span class="math-container" id="10375130" visual_id="875"><math alttext="x\in X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></semantics></math></span> there is at least one basis element <span class="math-container" id="10375131" visual_id="6345"><math alttext="B\in\mathscr{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathscript">ℬ</mi></mrow></semantics></math></span> containing <span class="math-container" id="10375132" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>. </p> <p>So far I've noticed that all the elements in <span class="math-container" id="10375133" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> are also in <span class="math-container" id="10375134" visual_id="4122"><math alttext="\mathscr{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathscript">ℬ</mi></semantics></math></span> and that there is a basis element <span class="math-container" id="10375135" visual_id="13210"><math alttext="\{a\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> and <span class="math-container" id="10375136" visual_id="240922"><math alttext="\{a,c\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow></semantics></math></span>.  </p> <p>Now for Part 2, I found that taking the intersections of the basis elements <span class="math-container" id="10375137" visual_id="13210"><math alttext="\{a\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> and <span class="math-container" id="10375138" visual_id="240922"><math alttext="\{a,c\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> to get <span class="math-container" id="10375139" visual_id="13210"><math alttext="\{a\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow></semantics></math></span>. Then it applies for the third basis element which is a subset of the intersection of the two Basis elements.</p> <p>Then <span class="math-container" id="10375140" visual_id="4122"><math alttext="\mathscr{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathscript">ℬ</mi></semantics></math></span> generates the topology <span class="math-container" id="10375141" visual_id="8080"><math alttext="\mathscr{T}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathscript">𝒯</mi></semantics></math></span></p> <p>The next thing that I'm confused about is finding the Sub-Basis for the set <span class="math-container" id="10375142" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>.</p> <p>If someone can explain how to find the subbasis for <span class="math-container" id="10375143" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> by using an example that's similar to the one above, then that would be appreciated.</p> <p>Is this a basis or simply something that isn't a basis?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> general-topology </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1099743" id="answer">
+<p>If you need a reference, I'll suggest Section 13 of the second edition of <em>Topology</em> by Munkres. A subbasis <span class="math-container" id="10375171" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> for a topology on <span class="math-container" id="10375172" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is a collection of subsets of <span class="math-container" id="10375173" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> whose union equals <span class="math-container" id="10375174" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>. For example, with your set <span class="math-container" id="10375175" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>, a subbasis would be <span class="math-container" id="10375176" visual_id="6703691"><math alttext="\{\{a,b\},\{a,c,d,e\}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span>. </p> <p>The topology generated by <span class="math-container" id="10375177" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> is then then the collection of all unions of finite intersections of elements of <span class="math-container" id="10375178" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>. So in the example given above, the topology is <span class="math-container" id="10375179" visual_id="6703692"><math alttext="\{\{\},\{a\},\{a,b\},\{a,c,d,e\},X\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">{</mo><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mi>X</mi><mo stretchy="false">}</mo></mrow></semantics></math></span>. You can check for yourself that this is indeed a topology. </p> <p>A subbasis and basis are distinct concepts, but the finite intersections of elements of the subbasis form a basis. Any basis is trivially a subbasis, but the converse need not be true (for example, the example I gave above is not a basis). </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

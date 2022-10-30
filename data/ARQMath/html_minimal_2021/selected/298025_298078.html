@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Upper bound for $\displaystyle\int_1^\infty \frac{\lfloor x\rfloor }{x^3} dx $</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Upper bound for <span class="math-container" id="3249898" visual_id="6774765"><math alttext="\displaystyle\int_{1}^{\infty}\frac{\lfloor x\rfloor}{x^{3}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="298025">
+<p>How do I find <span class="math-container" id="3249899" visual_id="6774766"><math alttext="f(x)&gt;\lfloor x\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mrow><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow></mrow></semantics></math></span> in the interval <span class="math-container" id="3249900" visual_id="21274"><math alttext="[1,\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> such that  <span class="math-container" id="3249901" visual_id="6774767"><math alttext="\int_{1}^{\infty}\frac{2\lfloor x\rfloor}{x^{3}}dx&lt;\int_{1}^{\infty}\frac{2f(x% )}{x^{3}}dx=\frac{10}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>&lt;</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mfrac><mn>10</mn><mn>6</mn></mfrac></mrow></semantics></math></span> Actually I am trying to show that <span class="math-container" id="3249902" visual_id="715811"><math alttext="\large\frac{10}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn mathsize="120%">10</mn><mn mathsize="120%">6</mn></mfrac></semantics></math></span> is upper bound for <span class="math-container" id="3249903" visual_id="18188"><math alttext="\zeta(2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> using Euler Summation formula.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> definite-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="647819"> Note that, <span class="math-container" id="3249904" visual_id="6774768"><math alttext="\int_{1}^{\infty}\frac{2x^{4/5}}{x^{3}}dx=\frac{5}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mrow><mn>4</mn><mo>/</mo><mn>5</mn></mrow></msup></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mfrac><mn>5</mn><mn>3</mn></mfrac></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="298078" id="answer">
+<p><span class="math-container" id="3249911" visual_id="6774772"><math alttext="\displaystyle\int_{1}^{\infty}\frac{2\lfloor x\rfloor}{x^{3}}\ \mathrm{d}x=% \sum_{n=1}^{\infty}\int_{n}^{n+1}\frac{2n}{x^{3}}\ \mathrm{d}x=\sum_{n=1}^{% \infty}\frac{2n+1}{n(n+1)^{2}}=\sum_{n=1}^{\infty}\frac{1}{n}-\frac{1}{n+1}+% \frac{1}{(n+1)^{2}}=\frac{\pi^{2}}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+5pt"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">⌊</mo><mi>x</mi><mo stretchy="false">⌋</mo></mrow></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mpadded></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>n</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mrow><mpadded width="+5pt"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mpadded></mrow></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow><mo>=</mo><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>-</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac></mrow></semantics></math></span></p> <p>to prove that : <span class="math-container" id="3249912" visual_id="6774773"><math alttext="\displaystyle\frac{\pi^{2}}{6}\leq\frac{5}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac><mo>≤</mo><mfrac><mn>5</mn><mn>3</mn></mfrac></mrow></semantics></math></span> :</p> <p><span class="math-container" id="3249913" visual_id="6774774"><math alttext="S=\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^{2}}=\sum_{n=1}^{5}\frac{1}{n^{2}% }+\sum_{n=6}^{\infty}\frac{1}{n^{2}}\leq\sum_{n=1}^{5}\frac{1}{n^{2}}+\sum_{n=% 6}^{\infty}\frac{1}{n(n-1)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mn>5</mn></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>+</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>≤</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mn>5</mn></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>+</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="3249914" visual_id="6774775"><math alttext="\displaystyle S=\sum_{n=1}^{5}\frac{1}{n^{2}}+\sum_{n=6}^{\infty}\frac{1}{n}-% \frac{1}{n-1}=\frac{5989}{3600}\leq\frac{10}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mn>5</mn></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>+</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></mrow><mo>-</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow><mo>=</mo><mfrac><mn>5989</mn><mn>3600</mn></mfrac><mo>≤</mo><mfrac><mn>10</mn><mn>6</mn></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

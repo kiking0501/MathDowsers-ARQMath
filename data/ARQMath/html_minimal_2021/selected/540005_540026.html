@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Convergence of exponential matrix sum</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Convergence of exponential matrix sum </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="540005">
+<p>Let <span class="math-container" id="5608913" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> be an <span class="math-container" id="5608914" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrix. Consider the infinite sum <span class="math-container" id="5608915" visual_id="1604421"><math alttext="B=\sum_{k=1}^{\infty}\frac{A^{k}t^{k}}{k!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><msup><mi>A</mi><mi>k</mi></msup><mo>⁢</mo><msup><mi>t</mi><mi>k</mi></msup></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow></mrow></semantics></math></span> Each term <span class="math-container" id="5608916" visual_id="1604422"><math alttext="\dfrac{A^{k}t^{k}}{k!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>A</mi><mi>k</mi></msup><mo>⁢</mo><msup><mi>t</mi><mi>k</mi></msup></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></semantics></math></span> is an <span class="math-container" id="5608917" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> matrix. Does the sum <span class="math-container" id="5608918" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> always converge? (i.e. does the sum for each of the <span class="math-container" id="5608919" visual_id="3802"><math alttext="n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mn>2</mn></msup></semantics></math></span> entries always converge?)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> matrices </span><span> convergence-divergence </span><span> exponentiation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1151638"> Not that it matters from a convergence perspective, but did you mean the indexing to start at <span class="math-container" id="5608920" visual_id="1992"><math alttext="k=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="5608921" visual_id="1069"><math alttext="k=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="540026" id="answer">
+<p>Treat <span class="math-container" id="5608931" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> as a linear transformation <span class="math-container" id="5608932" visual_id="39657"><math alttext="\mathbb{R}^{n}\to\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></semantics></math></span>. As it has an operator norm and <span class="math-container" id="5608933" visual_id="1604426"><math alttext="||A^{k}||\leq||A||^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true">||</mo><msup><mi>A</mi><mi>k</mi></msup><mo fence="true">||</mo></mrow><mo>≤</mo><msup><mrow><mo fence="true">||</mo><mi>A</mi><mo fence="true">||</mo></mrow><mi>k</mi></msup></mrow></semantics></math></span>. Then the series </p> <p><span class="math-container" id="5608934" visual_id="1604427"><math alttext="B=\sum_{k=0}^{\infty}\frac{(At)^{k}}{k!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow></mrow></semantics></math></span>  converges absolutely, as </p> <p><span class="math-container" id="5608935" visual_id="1604428"><math alttext="\sum_{k=0}^{\infty}\bigg{|}\bigg{|}\frac{(At)^{k}}{k!}\bigg{|}\bigg{|}\leq\sum% _{k=0}^{\infty}\frac{(||A||t)^{k}}{k!}=e^{||A||t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo fence="true">||</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo fence="true">||</mo></mrow></mrow><mo>≤</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo fence="true">||</mo><mi>A</mi><mo fence="true">||</mo></mrow><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><msup><mi>e</mi><mrow><mrow><mo fence="true" maxsize="142%" minsize="142%">||</mo><mi>A</mi><mo fence="true" maxsize="142%" minsize="142%">||</mo></mrow><mo>⁢</mo><mi>t</mi></mrow></msup></mrow></semantics></math></span></p> <p>As the space of linear transformation is complete, the series converges for all <span class="math-container" id="5608936" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Integration by partial fractions, reducing denominator through substitution</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Integration by partial fractions, reducing denominator through substitution </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1365367">
+<p>In the following case, suppose <span class="math-container" id="12688069" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> is a number and <span class="math-container" id="12688070" visual_id="35338"><math alttext="b≠0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>⁢</mo><mi mathvariant="normal">≠</mi><mo>⁢</mo><mn>0</mn></mrow></semantics></math></span>. Find</p> <p><span class="math-container" id="12688071" visual_id="1890158"><math alttext="\int{1\over(x^{2}+b^{2})^{n}}\mathrm{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span></p> <p>The textbook uses the following substitution:</p> <p><span class="math-container" id="12688072" visual_id="1890159"><math alttext="x=bz" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>b</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></semantics></math></span> <span class="math-container" id="12688073" visual_id="1890160"><math alttext="\mathrm{d}x=b\mathrm{d}z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mi>b</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></semantics></math></span></p> <p>And reduces the integral to:</p> <p><span class="math-container" id="12688074" visual_id="1890161"><math alttext="\int{1\over(x^{2}+1)^{n}}\mathrm{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span></p> <p>However, given the presence of the exponent <span class="math-container" id="12688075" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> in the denominator and assuming that <span class="math-container" id="12688076" visual_id="663"><math alttext="n&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>, how is it possible that the integral is reduced in the manner above?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> integration </span><span> partial-fractions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2778069"> This substitution does not make sense when <span class="math-container" id="12688077" visual_id="4322"><math alttext="b=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. Is <span class="math-container" id="12688079" visual_id="4315"><math alttext="b\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> a condition? </td></tr><tr><td comment_id="2778076"> Yes, that would be so - good point. </td></tr><tr><td comment_id="2778086"> Edit your post to include the condition <span class="math-container" id="12688079" visual_id="4315"><math alttext="b\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>. It will be helpful for people trying to answer your question. </td></tr><tr><td comment_id="2778110"> The book may have made a mistake. There should be a factor of <span class="math-container" id="12688080" visual_id="1890162"><math alttext="\frac{1}{b^{2n-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mi>b</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></msup></mfrac></semantics></math></span> in front of the second integral. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1365380" id="answer">
+<p>If <span class="math-container" id="12688081" visual_id="4322"><math alttext="b=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> we have nothing to do (the integral depend only by <span class="math-container" id="12688082" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>.). Assuming <span class="math-container" id="12688083" visual_id="4315"><math alttext="b\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>, we have <span class="math-container" id="12688084" visual_id="1890163"><math alttext="\int\frac{1}{\left(x^{2}+b^{2}\right)^{n}}dx\overset{x=bz}{=}\int\frac{b}{% \left(b^{2}z^{2}+b^{2}\right)^{n}}dz=\frac{1}{b^{2n-1}}\int\frac{1}{\left(z^{2% }+1\right)^{n}}dz" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mfrac><mn>1</mn><msup><mrow><mo>(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow><mi>n</mi></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow><mo>⁢</mo><mover accent="true"><mo>=</mo><mrow><mi>x</mi><mo>=</mo><mrow><mi>b</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mover><mo>⁢</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mfrac><mi>b</mi><msup><mrow><mo>(</mo><mrow><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mo>)</mo></mrow><mi>n</mi></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>z</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msup><mi>b</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></msup></mfrac><mo>⁢</mo><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mfrac><mn>1</mn><msup><mrow><mo>(</mo><mrow><msup><mi>z</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mi>n</mi></msup></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>z</mi></mrow></mrow></mrow></mrow></mrow></semantics></math></span> so we have the constant <span class="math-container" id="12688085" visual_id="1890164"><math alttext="1/b^{2n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><msup><mi>b</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span> outside the integral.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2778081"> There should not be a <span class="math-container" id="12688086" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> inside your integral. You already cancelled it before taking <span class="math-container" id="12688090" visual_id="1890162"><math alttext="\frac{1}{b^{2n-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mi>b</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></msup></mfrac></semantics></math></span> outside. </td></tr><tr><td comment_id="2779089"> Although the expression makes sense in variable terms, I am curious as to why it only seems to work (assuming that <span class="math-container" id="12688088" visual_id="23125"><math alttext="n&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>) when <span class="math-container" id="12688098" visual_id="490"><math alttext="b=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. If the constant <span class="math-container" id="12688090" visual_id="1890162"><math alttext="\frac{1}{b^{2n-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mi>b</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></msup></mfrac></semantics></math></span> can be moved inside the integral, then for argument's sake let <span class="math-container" id="12688091" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, <span class="math-container" id="12688092" visual_id="352"><math alttext="n=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span> and <span class="math-container" id="12688093" visual_id="5140"><math alttext="b=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span>. Then <span class="math-container" id="12688094" visual_id="1890165"><math alttext="f(x)=\frac{1}{25}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>25</mn></mfrac></mrow></semantics></math></span> in the original integral and <span class="math-container" id="12688095" visual_id="1890166"><math alttext="f(x)=\frac{1}{32}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>32</mn></mfrac></mrow></semantics></math></span> in the second. On the other hand, when <span class="math-container" id="12688098" visual_id="490"><math alttext="b=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and holding all other terms constant, <span class="math-container" id="12688097" visual_id="1212902"><math alttext="f(x)=\frac{1}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math></span> for both integrals and the expression indeed holds true. Why would this be the case? </td></tr><tr><td comment_id="2780197"> @DavidLee The equality holds for the integrals, not for the functions. Obviously, if <span class="math-container" id="12688089" visual_id="490"><math alttext="b=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> the functions are the same, but only in this case. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

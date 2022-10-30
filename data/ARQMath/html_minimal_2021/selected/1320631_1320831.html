@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Smoothness of Fourier transform of $\frac{1}{|x|^p}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Smoothness of Fourier transform of <span class="math-container" id="12279620" visual_id="26292"><math alttext="\frac{1}{|x|^{p}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mi>p</mi></msup></mfrac></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1320631">
+<p>Consider the "function" (more precisely it is a tempered distribution) given by <span class="math-container" id="12279621" visual_id="4388"><math alttext="f:\mathbb{R}^{n}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span>, <span class="math-container" id="12279622" visual_id="7646016"><math alttext="f(x)=\frac{1}{|x|^{p}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mi>p</mi></msup></mfrac></mrow></semantics></math></span>, where <span class="math-container" id="12279623" visual_id="2018645"><math alttext="0&lt;p&lt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>p</mi><mo>&lt;</mo><mi>n</mi></mrow></semantics></math></span>. It can be calculated that the Fourier transform of <span class="math-container" id="12279624" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is given (upto a constant) by <span class="math-container" id="12279625" visual_id="7646017"><math alttext="\hat{f}(\xi)=\frac{1}{|\xi|^{n-p}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mover accent="true"><mi>f</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">|</mo><mi>ξ</mi><mo stretchy="false">|</mo></mrow><mrow><mi>n</mi><mo>-</mo><mi>p</mi></mrow></msup></mfrac></mrow></semantics></math></span>. Now, I am trying to prove that the Fourier transform of <span class="math-container" id="12279626" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is smooth eveywhere, except at the origin, which is clear from above. But I am unclear how to prove this without calculating the Fourier transform explicitly first. One should be able to exchange derivatives and decay, but the singularity at <span class="math-container" id="12279627" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> is throwing me off. Any hints would be highly appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> reference-request </span><span> fourier-analysis </span><span> integral-transforms </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1320831" id="answer">
+<p>Let <span class="math-container" id="12279628" visual_id="12048"><math alttext="\chi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>χ</mi></semantics></math></span> be a compactly supported smooth function that is equal to <span class="math-container" id="12279629" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> near the origin. Write <span class="math-container" id="12279630" visual_id="7646018"><math alttext="f_{1}=f\chi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>1</mn></msub><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mi>χ</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="12279631" visual_id="7646019"><math alttext="f_{2}=f(1-\chi)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>χ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Note that  <span class="math-container" id="12279632" visual_id="576"><math alttext="f_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>1</mn></msub></semantics></math></span> is compactly supported, therefore its Fourier transform is real-analytic. The function <span class="math-container" id="12279633" visual_id="578"><math alttext="f_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>2</mn></msub></semantics></math></span> is smooth, but has heavy tail at infinity, which is the main issue. </p> <p>Fix <span class="math-container" id="12279634" visual_id="2884702"><math alttext="\xi_{0}\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ξ</mi><mn>0</mn></msub><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>. Let <span class="math-container" id="12279635" visual_id="2716"><math alttext="\phi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi></semantics></math></span> be a bump function that is equal to <span class="math-container" id="12279636" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> near <span class="math-container" id="12279637" visual_id="159141"><math alttext="\xi_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ξ</mi><mn>0</mn></msub></semantics></math></span>, and is zero in a neighborhood of the origin. The goal is to prove that <span class="math-container" id="12279638" visual_id="7646020"><math alttext="\widehat{f_{2}}\phi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><msub><mi>f</mi><mn>2</mn></msub><mo>^</mo></mover><mo>⁢</mo><mi>ϕ</mi></mrow></semantics></math></span> is smooth. Equivalently, we must prove that <span class="math-container" id="12279639" visual_id="7646021"><math alttext="f_{2}*\check{\phi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>2</mn></msub><mo>*</mo><mover accent="true"><mi>ϕ</mi><mo stretchy="false">ˇ</mo></mover></mrow></semantics></math></span> vanishes at infinity faster than any power of <span class="math-container" id="12279640" visual_id="4404"><math alttext="|x|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></semantics></math></span>. </p> <p>Given a positive integer <span class="math-container" id="12279641" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, let <span class="math-container" id="12279642" visual_id="7646022"><math alttext="\psi(\xi)=|\xi|^{-2k}\phi(\xi)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ψ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">|</mo><mi>ξ</mi><mo stretchy="false">|</mo></mrow><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></msup><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Note that <span class="math-container" id="12279643" visual_id="10393"><math alttext="\psi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ψ</mi></semantics></math></span> is  still smooth and compactly supported. Going back to space variable, observe that <span class="math-container" id="12279644" visual_id="7646023"><math alttext="\check{\phi}=\Delta^{k}\check{\psi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>ϕ</mi><mo stretchy="false">ˇ</mo></mover><mo>=</mo><mrow><msup><mi mathvariant="normal">Δ</mi><mi>k</mi></msup><mo>⁢</mo><mover accent="true"><mi>ψ</mi><mo stretchy="false">ˇ</mo></mover></mrow></mrow></semantics></math></span> (Laplacian applied <span class="math-container" id="12279645" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> times, ignoring some multiplicative constants.)</p> <p>So, <span class="math-container" id="12279646" visual_id="7646024"><math alttext="f_{2}*\check{\phi}=f_{2}*\Delta^{k}\check{\psi}=(\Delta^{k}f_{2})*\check{\psi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>f</mi><mn>2</mn></msub><mo>*</mo><mover accent="true"><mi>ϕ</mi><mo stretchy="false">ˇ</mo></mover></mrow><mo>=</mo><mrow><mrow><msub><mi>f</mi><mn>2</mn></msub><mo>*</mo><msup><mi mathvariant="normal">Δ</mi><mi>k</mi></msup></mrow><mo>⁢</mo><mover accent="true"><mi>ψ</mi><mo stretchy="false">ˇ</mo></mover></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi mathvariant="normal">Δ</mi><mi>k</mi></msup><mo>⁢</mo><msub><mi>f</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo><mover accent="true"><mi>ψ</mi><mo stretchy="false">ˇ</mo></mover></mrow></mrow></semantics></math></span>. The benefit of all this juggling of Laplacians is that <span class="math-container" id="12279647" visual_id="7646025"><math alttext="\Delta^{k}f_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">Δ</mi><mi>k</mi></msup><mo>⁢</mo><msub><mi>f</mi><mn>2</mn></msub></mrow></semantics></math></span> decays at infinity faster than <span class="math-container" id="12279648" visual_id="578"><math alttext="f_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>2</mn></msub></semantics></math></span>: namely, like <span class="math-container" id="12279649" visual_id="7646026"><math alttext="|x|^{-p-2k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mrow><mrow><mo>-</mo><mi>p</mi></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></msup></semantics></math></span>. Since <span class="math-container" id="12279650" visual_id="7646027"><math alttext="\check{\psi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><mi>ψ</mi><mo stretchy="false">ˇ</mo></mover></semantics></math></span> is a Schwartz function, it follows that <span class="math-container" id="12279651" visual_id="7646028"><math alttext="(\Delta^{k}f_{2})*\check{\psi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi mathvariant="normal">Δ</mi><mi>k</mi></msup><mo>⁢</mo><msub><mi>f</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo><mover accent="true"><mi>ψ</mi><mo stretchy="false">ˇ</mo></mover></mrow></semantics></math></span> is <span class="math-container" id="12279652" visual_id="7646029"><math alttext="O(|x|^{-p-2k})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mrow><mrow><mo>-</mo><mi>p</mi></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> as <span class="math-container" id="12279653" visual_id="54076"><math alttext="|x|\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. This completes the proof.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1321507"> Check smoothness at point looking at Fourier transform </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

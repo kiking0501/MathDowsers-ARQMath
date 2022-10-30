@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>If $f:[0, \pi] \rightarrow \mathbb{R}$ is continuous, $f(0) = 0$, then does $\int_0^\pi f(t)\cos nt\,dt = 0$ for $n=0, 1,2,\dots$ imply $f = 0$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> If <span class="math-container" id="24311678" visual_id="758609"><math alttext="f:[0,\pi]\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> is continuous, <span class="math-container" id="24311679" visual_id="2610"><math alttext="f(0)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, then does <span class="math-container" id="24311680" visual_id="4018220"><math alttext="\int_{0}^{\pi}f(t)\cos nt\,dt=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>n</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>t</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mpadded></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> for <span class="math-container" id="24311681" visual_id="42842"><math alttext="n=0,1,2,\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span> imply <span class="math-container" id="24311682" visual_id="1866"><math alttext="f=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2629828">
+<p>Let <span class="math-container" id="24311683" visual_id="758609"><math alttext="f:[0,\pi]\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> is continuous and <span class="math-container" id="24311684" visual_id="2610"><math alttext="f(0)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, then which of the following are true?</p> <ol> <li>If <span class="math-container" id="24311685" visual_id="4018220"><math alttext="\int_{0}^{\pi}f(t)\cos nt\,dt=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>n</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>t</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mpadded></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> for <span class="math-container" id="24311686" visual_id="758611"><math alttext="n\in\{0\}\cup\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mrow><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow><mo>∪</mo><mi>ℕ</mi></mrow></mrow></semantics></math></span>, then <span class="math-container" id="24311687" visual_id="8215"><math alttext="f\equiv 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≡</mo><mn>0</mn></mrow></semantics></math></span></li> <li>If <span class="math-container" id="24311688" visual_id="4018221"><math alttext="\int_{0}^{\pi}f(t)\sin nt\,dt=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>n</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>t</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mpadded></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> for <span class="math-container" id="24311689" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span>, then <span class="math-container" id="24311690" visual_id="8215"><math alttext="f\equiv 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≡</mo><mn>0</mn></mrow></semantics></math></span></li> <li>If <span class="math-container" id="24311691" visual_id="4018222"><math alttext="\int_{0}^{\pi}t^{n}f(t)\,dt=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><msup><mi>t</mi><mi>n</mi></msup><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> for <span class="math-container" id="24311692" visual_id="2782263"><math alttext="\{0\}\cup\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow><mo>∪</mo><mi>ℕ</mi></mrow></semantics></math></span>, then <span class="math-container" id="24311693" visual_id="8215"><math alttext="f\equiv 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≡</mo><mn>0</mn></mrow></semantics></math></span></li> </ol>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> integration </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5430631"> By Weierstrass there is a sequence of polynomials <span class="math-container" id="24311694" visual_id="2802"><math alttext="p_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>n</mi></msub></semantics></math></span> converging uniformly to <span class="math-container" id="24311709" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>  on <span class="math-container" id="24311707" visual_id="8018"><math alttext="[0,\pi]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow></semantics></math></span>. Therefore, if we assume (3), <span class="math-container" id="24311697" visual_id="4018223"><math alttext="0=\int_{0}^{\pi}p_{n}(x)f(x)dx\to\int_{0}^{\pi}f^{2}(x)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>→</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>π</mi></msubsup><mrow><msup><mi>f</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span>. Therefore, <span class="math-container" id="24311709" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is zero. </td></tr><tr><td comment_id="5430679"> @orole Wouldn't this involve exchanging the limit and integral, though? <span class="math-container" id="24311699" visual_id="8499"><math alttext="f_{n}\rightarrow f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>→</mo><mi>f</mi></mrow></semantics></math></span> does not, in general, imply that <span class="math-container" id="24311700" visual_id="4018224"><math alttext="\lim_{n\rightarrow\infty}\int_{a}^{b}f_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup><msub><mi>f</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> converges to <span class="math-container" id="24311701" visual_id="48234"><math alttext="\int_{a}^{b}f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi></mrow></semantics></math></span>. **Edit**: My bad, the convergence is uniform. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2629944" id="answer">
+<p>Hint for (1) and (2): If <span class="math-container" id="24311702" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous on <span class="math-container" id="24311703" visual_id="8018"><math alttext="[0,\pi]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow></semantics></math></span> then <span class="math-container" id="24311704" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> can be extended to an <em>even</em> continuous function on <span class="math-container" id="24311705" visual_id="20630"><math alttext="[-\pi,\pi]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mi>π</mi></mrow><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow></semantics></math></span>. If <span class="math-container" id="24311706" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous on <span class="math-container" id="24311707" visual_id="8018"><math alttext="[0,\pi]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow></semantics></math></span> and <span class="math-container" id="24311708" visual_id="2610"><math alttext="f(0)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> then <span class="math-container" id="24311709" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> can also be extended to an <em>odd</em> function continuous on <span class="math-container" id="24311710" visual_id="20630"><math alttext="[-\pi,\pi]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mi>π</mi></mrow><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow></semantics></math></span>. In either case you can use the given information to find <span class="math-container" id="24311711" visual_id="4018225"><math alttext="\int_{-\pi}^{\pi}f(t)\cos(nt)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>π</mi></mrow><mi>π</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="24311712" visual_id="4018226"><math alttext="\int_{-\pi}^{\pi}f(t)\sin(nt)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>π</mi></mrow><mi>π</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

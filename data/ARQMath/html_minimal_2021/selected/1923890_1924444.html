@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding mostly likely waiting time, given mean</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding mostly likely waiting time, given mean </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1923890">
+<p>I have come across a statistics question which I couldn't find a solution to. </p> <p>Q: What is the most likely waiting time for students if the average waiting time in cafeteria for lunch is 10 minutes? </p> <p>It seems there's a queue to get a lunch box and the mean is 10 minutes. The questions asks &lt;10 mins vs &gt;10 mins.</p> <p>So here we only have the mean. So how would you approach with only 1 known? </p> <p>Thanks</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> statistics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3949642"> you need additional information about the distribution of the waiting times </td></tr><tr><td comment_id="3949661"> I think the question is asking to make some assumptions as well (e.g. if it's normally distributed... etc.) </td></tr><tr><td comment_id="3949665"> Waiting times are often modeled as being exponentially distributed. Under this assumption <span class="math-container" id="17837140" visual_id="7880003"><math alttext="P(X\leq m)=\int_{0}^{m}\frac{1}{m}e^{-t/m}dt=1-e^{-1}&gt;1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>≤</mo><mi>m</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>m</mi></msubsup><mfrac><mn>1</mn><mi>m</mi></mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>/</mo><mi>m</mi></mrow></mrow></msup><mi>d</mi><mi>t</mi><mo>=</mo><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&gt;</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3953008"> @Ian - assuming exponentially distributed waiting times, the most likely value (i.e. the mode) is <span class="math-container" id="17837141" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>. </td></tr><tr><td comment_id="3953083"> Yes, but in the body of the question they speak of comparing &lt;10 minutes to &gt;10 minutes. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1924444" id="answer">
+<p>Essentially the question is concerned with whether the distribution has a median which is higher or lower than the expected value. As mentioned by Ian: if we make the typical assumption that the waiting times are exponentially distributed, the median is smaller than the mean. If the waiting times are normally distributed, the median is equal to the mean. If the waiting times follow some heavy-tailed distribution, say the Pareto distribution, the median could be smaller than the mean.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3963217"> Typo: the last "smaller" should be "larger". </td></tr><tr><td comment_id="3963226"> Please explain yourself or provide an example, Ian. If you are not convinced by my example, you could also look at the log-normal distribution.  Heavy-tailed distributions have the intuitive interpretation, that a sum of independent outcomes is solely determined by the largest value. Thus the average is larger than most of the outcomes. </td></tr><tr><td comment_id="3963237"> Well then I don't think it really makes your point, because the exponential is not heavy-tailed and its median is smaller than its mean as well. </td></tr><tr><td comment_id="3963246"> I wanted to give some different examples. Heavy-tailed distributions are to my knowledge used increasingly in matters such as these, so they provide a good example to study. Maybe I could also have provided an example for the case median greater than mean. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

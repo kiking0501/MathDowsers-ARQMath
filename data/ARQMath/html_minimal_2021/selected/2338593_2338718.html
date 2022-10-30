@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>CDF of two exponential variables</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> CDF of two exponential variables </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2338593">
+<p>I want to know if my CDF calculation is correct. </p> <blockquote> <p>Let <span class="math-container" id="21626639" visual_id="16686"><math alttext="X,Z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Z</mi></mrow></semantics></math></span> be independent random variables with exponential distribution and parameter <span class="math-container" id="21626640" visual_id="6851166"><math alttext="\gamma_{x},\gamma_{z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>γ</mi><mi>x</mi></msub><mo>,</mo><msub><mi>γ</mi><mi>z</mi></msub></mrow></semantics></math></span>. Compute <span class="math-container" id="21626641" visual_id="6851167"><math alttext="P(Z+X&lt;t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo>+</mo><mi>X</mi><mo>&lt;</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> </blockquote> <p>\begin{align*}P(Z+X&lt;t)&amp;=P(Z&lt;t-x,X=x)\\ &amp;=\int\limits_{0}^\infty \int\limits_{0}^{t-x} \gamma_xe^{-\gamma_x t}\gamma_ze^{-\gamma_zm}\mathrm{d}m\mathrm{d}x=\int\limits_{0}^\infty \gamma_z\gamma_xe^{-\gamma_x t}\int\limits_{0}^{t-x} e^{-\gamma_zm}\mathrm{d}m\mathrm{d}x\\ &amp;=\int\limits_{0}^\infty \gamma_z\gamma_xe^{-\gamma_x t} \left[\frac{-e^{-\gamma_zm}}{\gamma_z}\right]_{0}^{t-x}\mathrm{d}x\\ &amp;=\int\limits_{0}^\infty \gamma_xe^{-\gamma_x t} (1-e^{-\gamma_z(t-x)})\mathrm{d}x\\ &amp;=\gamma_x\int\limits_{0}^\infty e^{-\gamma_x t}-e^{-\gamma_zx-\gamma_zt-\gamma_x t}\mathrm{d}x=\gamma_x\left[\frac{-e^{-\gamma_x t}}{\gamma_x}\right]_0^\infty+\gamma_xe^{-\gamma_zt-\gamma_x t}\left[\frac{e^{-\gamma_zx}}{\gamma_x}\right]_0^\infty \mathrm{d}x\\ &amp;=1-e^{-t(\gamma_z+\gamma_x )}\qquad t\geq 0\\ \end{align*}</p> <p>I don't know how to check such things. What is a good way?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> probability-theory </span><span> probability-distributions </span><span> exponential-distribution </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4814811"> I can tell you that what you just wrote is wrong: you have actually written the CDF for the minimum, not the sum. You can see this because the CDF of the sum should be smaller than the CDF of the separate terms (since both r.v.s are nonnegative) but in fact your CDF is larger. But I'm not sure at a quick glance where the mistake is. </td></tr><tr><td comment_id="4814859"> @Ian ok thanks. Just a final question. Is the first step correct <span class="math-container" id="21626642" visual_id="6851168"><math alttext="P(Z+X&lt;t)=P(Z&lt;t+x,X=x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo>+</mo><mi>X</mi><mo>&lt;</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>Z</mi><mo>&lt;</mo><mi>t</mi><mo>+</mo><mi>x</mi><mo>,</mo><mi>X</mi><mo>=</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>? </td></tr><tr><td comment_id="4814901"> Strictly speaking no, but if you apply independence and interpret <span class="math-container" id="21626643" visual_id="122663"><math alttext="P(X=x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>=</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> as its density then you get the correct result. This is just the total probability formula. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2338718" id="answer">
+<p>The pdf for <span class="math-container" id="21626644" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="21626645" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span> are:</p> <p><span class="math-container" id="21626646" visual_id="6851169"><math alttext="\frac{1}{\lambda_{x}}e^{\frac{-x}{\lambda_{x}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msub><mi>λ</mi><mi>x</mi></msub></mfrac><mo>⁢</mo><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>x</mi></mrow><msub><mi>λ</mi><mi>x</mi></msub></mfrac></msup></mrow></semantics></math></span> and <span class="math-container" id="21626647" visual_id="6851170"><math alttext="\frac{1}{\lambda_{z}}e^{\frac{-z}{\lambda_{z}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msub><mi>λ</mi><mi>z</mi></msub></mfrac><mo>⁢</mo><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>z</mi></mrow><msub><mi>λ</mi><mi>z</mi></msub></mfrac></msup></mrow></semantics></math></span></p> <p>Let <span class="math-container" id="21626648" visual_id="1066026"><math alttext="Y=X+Z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><mi>X</mi><mo>+</mo><mi>Z</mi></mrow></mrow></semantics></math></span></p> <p>In order for <span class="math-container" id="21626649" visual_id="637036"><math alttext="y=x+z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mi>z</mi></mrow></mrow></semantics></math></span> we need <span class="math-container" id="21626650" visual_id="14703"><math alttext="X=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow></semantics></math></span> and <span class="math-container" id="21626651" visual_id="6851171"><math alttext="Z=y-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>=</mo><mrow><mi>y</mi><mo>-</mo><mi>x</mi></mrow></mrow></semantics></math></span></p> <p>The probability that <span class="math-container" id="21626652" visual_id="14703"><math alttext="X=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow></semantics></math></span> and <span class="math-container" id="21626653" visual_id="6851171"><math alttext="Z=y-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo>=</mo><mrow><mi>y</mi><mo>-</mo><mi>x</mi></mrow></mrow></semantics></math></span> is the product of the pdfs at these two values, i.e. <span class="math-container" id="21626654" visual_id="6851172"><math alttext="P(Y=X+Z)=\frac{1}{\lambda_{x}}e^{\frac{-x}{\lambda_{x}}}\cdot\frac{1}{\lambda_% {z}}e^{\frac{-(y-x)}{\lambda_{z}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>=</mo><mi>X</mi><mo>+</mo><mi>Z</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><msub><mi>λ</mi><mi>x</mi></msub></mfrac><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>x</mi></mrow><msub><mi>λ</mi><mi>x</mi></msub></mfrac></msup><mo>⋅</mo><mfrac><mn>1</mn><msub><mi>λ</mi><mi>z</mi></msub></mfrac><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><msub><mi>λ</mi><mi>z</mi></msub></mfrac></msup></mrow></semantics></math></span></p> <p>Now integrate over all possible values of <span class="math-container" id="21626655" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>. Note that <span class="math-container" id="21626656" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> cannot be greater than <span class="math-container" id="21626657" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> since the sum of <span class="math-container" id="21626658" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="21626659" visual_id="44"><math alttext="z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi></semantics></math></span> is <span class="math-container" id="21626660" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span></p> <p><span class="math-container" id="21626661" visual_id="6851173"><math alttext="P(Y=y)=\int_{0}^{y}\frac{1}{\lambda_{x}}e^{\frac{-x}{\lambda_{x}}}\cdot\frac{1% }{\lambda_{z}}e^{\frac{-(y-x)}{\lambda_{z}}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>=</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>y</mi></msubsup><mfrac><mn>1</mn><msub><mi>λ</mi><mi>x</mi></msub></mfrac><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>x</mi></mrow><msub><mi>λ</mi><mi>x</mi></msub></mfrac></msup><mo>⋅</mo><mfrac><mn>1</mn><msub><mi>λ</mi><mi>z</mi></msub></mfrac><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><msub><mi>λ</mi><mi>z</mi></msub></mfrac></msup><mi>d</mi><mi>x</mi></mrow></semantics></math></span></p> <p><span class="math-container" id="21626662" visual_id="6851174"><math alttext="P(Y=y)=\frac{e^{\frac{-y}{\lambda_{x}}}-e^{\frac{-y}{\lambda_{z}}}}{\lambda_{x% }-\lambda_{z}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>=</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>y</mi></mrow><msub><mi>λ</mi><mi>x</mi></msub></mfrac></msup><mo>-</mo><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>y</mi></mrow><msub><mi>λ</mi><mi>z</mi></msub></mfrac></msup></mrow><mrow><msub><mi>λ</mi><mi>x</mi></msub><mo>-</mo><msub><mi>λ</mi><mi>z</mi></msub></mrow></mfrac></mrow></semantics></math></span></p> <p>My notation is a bit sloppy. <span class="math-container" id="21626663" visual_id="438201"><math alttext="P(Y=y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>=</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is the pdf of <span class="math-container" id="21626664" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span>. Now integrate the pdf to get the cdf</p> <p><span class="math-container" id="21626665" visual_id="6851175"><math alttext="\text{CDF}(y)=\int_{0}^{t}\frac{e^{\frac{-y}{\lambda_{x}}}-e^{\frac{-y}{% \lambda_{z}}}}{\lambda_{x}-\lambda_{z}}dy=\frac{\frac{1}{\lambda_{x}}(1-e^{% \frac{t}{\lambda_{x}}})-\frac{1}{\lambda_{z}}(1-e^{\frac{t}{\lambda_{z}}})}{% \frac{1}{\lambda_{x}}-\frac{1}{\lambda_{z}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mtext>CDF</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>t</mi></msubsup><mrow><mfrac><mrow><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>y</mi></mrow><msub><mi>λ</mi><mi>x</mi></msub></mfrac></msup><mo>-</mo><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>y</mi></mrow><msub><mi>λ</mi><mi>z</mi></msub></mfrac></msup></mrow><mrow><msub><mi>λ</mi><mi>x</mi></msub><mo>-</mo><msub><mi>λ</mi><mi>z</mi></msub></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>y</mi></mrow></mrow></mrow><mo>=</mo><mfrac><mrow><mrow><mfrac><mn>1</mn><msub><mi>λ</mi><mi>x</mi></msub></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mfrac><mi>t</mi><msub><mi>λ</mi><mi>x</mi></msub></mfrac></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mfrac><mn>1</mn><msub><mi>λ</mi><mi>z</mi></msub></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mfrac><mi>t</mi><msub><mi>λ</mi><mi>z</mi></msub></mfrac></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mfrac><mn>1</mn><msub><mi>λ</mi><mi>x</mi></msub></mfrac><mo>-</mo><mfrac><mn>1</mn><msub><mi>λ</mi><mi>z</mi></msub></mfrac></mrow></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4818907"> I would advise not to use the notation <span class="math-container" id="21626666" visual_id="438201"><math alttext="P(Y=y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>=</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for the PDF <span class="math-container" id="21626667" visual_id="72644"><math alttext="f_{Y}(y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>Y</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> because the values of a PDF are not probabilities, they are probabilities per unit quantity. This is why PDF's can exceed <span class="math-container" id="21626668" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> but CDF's cannot because they are true probabilities. </td></tr><tr><td comment_id="4818911"> Further, if you do want to talk about the event <span class="math-container" id="21626669" visual_id="12493"><math alttext="Y=y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mi>y</mi></mrow></semantics></math></span> for a continuous RV, then its probability is zero, so.... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

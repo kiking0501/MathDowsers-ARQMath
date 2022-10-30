@@ -9,7 +9,7 @@ MathDowsers is a team of researchers from the University of *Water*loo who are i
 
 >Given a math question, look for potential answers to this math question from an existing math answer database.
 
-The team produces the best participant run of this Answer Retrieval task in the <a href="https://www.cs.rit.edu/~dprl/ARQMath/" target="_blank">ARQMath (**A**nswer **R**etrieval for **Q**uestions on **Math**) Lab</a> in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
+**ARQMath-1 & ARQMath-2** The team produces the best participant run of this Answer Retrieval task in the <a href="https://www.cs.rit.edu/~dprl/ARQMath/" target="_blank">ARQMath (**A**nswer **R**etrieval for **Q**uestions on **Math**) Lab</a> in both year 2020 and 2021; and also the best automatic run of the Formula Retrieval task in the Lab in year 2021.
 
 The math-aware search engine in use is <a href="https://cs.uwaterloo.ca/brushsearch/tangent-l/" target="_blank">Tangent-L</a>. More details of the supporting research project can be found in the <a href="https://cs.uwaterloo.ca/brushsearch/" target="_blank">BrushSearch</a> site.
 
@@ -17,9 +17,9 @@ The math-aware search engine in use is <a href="https://cs.uwaterloo.ca/brushsea
 
 ## Demo
 
-<a href="https://cs.uwaterloo.ca/~yk2ng/MathDowsers-ARQMath/" target="_blank">Click here for the Demo</a>. (Last updated: 2021-12)
+<a href="https://cs.uwaterloo.ca/~yk2ng/MathDowsers-ARQMath/" target="_blank">Click here for the Demo</a>. (Last updated: 2022-10)
 
-This demo displays the task runs, in particular the submitted runs from the MathDowsers for ARQMath Lab 2020 and 2021. The math answer database is the <a href="https://math.stackexchange.com/" target="_blank">MathStackExchange</a> corpus from year 2010 to 2018, and math questions are selected from the same corpus from year 2019 to 2020.
+This demo displays the task runs, in particular the submitted runs from the MathDowsers for ARQMath Lab 2020, 2021, and 2022. The math answer database is the <a href="https://math.stackexchange.com/" target="_blank">MathStackExchange</a> corpus from year 2010 to 2018, and math questions are selected from the same corpus from year 2019 to 2020.
 
 The aim of this demo is data exploration. To make an actual search to the math questions (with formulas and keywords), visit the <a href="http://mathbrush.cs.uwaterloo.ca/" target="_blank">user interface of the search engine</a> (which supports a pen-based input).
 
@@ -78,16 +78,18 @@ To create the document corpus,
 
 The given ARQMath task topics is a collection of mathematical questions from MathStackExchange with ``title``, ``question body``, and ``tags``. However, the search engine requires keywords and formulas as formal search queries for retrieval tasks. MathDowsers created the formal search queries with the following files:
 
-- ``query_prepro.py``: with pre-processing functions to convert and clean the given task topic files into json files. 
+- ``query_prepro.py``: with pre-processing functions to convert and clean the given task topic files into json files.
 - ``query_filters.py``: with helper functions that create and read list of stopwords and "mathy" words for keyword selection.
 - ``query_model.py`` : with rule-based models to generate search queries.
-- ``query_postpro.py``: with post-processing functions to print or analyze the generated search queries. 
+- ``query_postpro.py``: with post-processing functions to print or analyze the generated search queries.
 
 See descriptions in each file for more information.
 
 
 
 ## Changes
+
+*2022-10-29*: Update demo with ARQMath-3 runs
 
 *2022-03-18*: Freeze ARQMath-2 version (add git tag)
 
@@ -108,7 +110,7 @@ See descriptions in each file for more information.
 
 
 ## Bibliography
-*MMath Thesis*: 
+*MMath Thesis*:
 
 Yin Ki Ng (2021). Dowsing for Math Answers: Exploring MathCQA with a Math-aware Search Engine. UWSpace. http://hdl.handle.net/10012/17696
 

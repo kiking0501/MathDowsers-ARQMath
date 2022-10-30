@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Orthonormal system close to Orthonormal basis is basis.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Orthonormal system close to Orthonormal basis is basis. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2567760">
+<p><span class="math-container" id="23735958" visual_id="91413"><math alttext="\{e_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>e</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> is an orthonormal basis in Hilbert space. <span class="math-container" id="23735959" visual_id="1737"><math alttext="\{f_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> is an orthonormal system in H, such that <span class="math-container" id="23735960" visual_id="2582156"><math alttext="\sum^{\infty}_{1}\|e_{n}-f_{n}\|&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mn>1</mn><mi mathvariant="normal">∞</mi></munderover><mrow><mo>∥</mo><mrow><msub><mi>e</mi><mi>n</mi></msub><mo>-</mo><msub><mi>f</mi><mi>n</mi></msub></mrow><mo>∥</mo></mrow></mrow><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span>. Prove that <span class="math-container" id="23735961" visual_id="1737"><math alttext="\{f_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> is a basis. </p> <p>It looks natural to use projections here, but I don't understand how to do it. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> functional-analysis </span><span> hilbert-spaces </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2567768" id="answer">
+<p>It is enough to show that if<span class="math-container" id="23735962" visual_id="2582157"><math alttext="&lt;v,f_{n}&gt;=0&lt;/v,f_{n}&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mi>v</mi><mo>,</mo><msub><mi>f</mi><mi>n</mi></msub><mo>&gt;</mo><mo>=</mo><mn>0</mn><mo>&lt;</mo><mo>/</mo><mi>v</mi><mo>,</mo><msub><mi>f</mi><mi>n</mi></msub><mo>&gt;</mo></mrow></semantics></math></span> for all <span class="math-container" id="23735963" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, then <span class="math-container" id="23735964" visual_id="5396"><math alttext="v=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. Suppose that we have such a <span class="math-container" id="23735965" visual_id="5397"><math alttext="v\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>By the completeness of <span class="math-container" id="23735966" visual_id="91413"><math alttext="\{e_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>e</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> we have  <span class="math-container" id="23735967" visual_id="2582158"><math alttext="\|v\|^{2}=\sum_{n=1}^{\infty}|&lt;v,e_{n}&gt;|^{2}=\sum_{n=1}^{\infty}|&lt;v,e_{n}-f_{n% }&gt;|^{2}\leq\|v\|^{2}\sum_{n=1}^{\infty}\|e_{n}-f_{n}\|^{2}&lt;/v,e_{n}-f_{n}&gt;&lt;/v,% e_{n}&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∥</mo><mi>v</mi><msup><mo>∥</mo><mn>2</mn></msup><mo>=</mo><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mo stretchy="false">|</mo><mo>&lt;</mo><mi>v</mi><mo>,</mo><msub><mi>e</mi><mi>n</mi></msub><mo>&gt;</mo><msup><mo stretchy="false">|</mo><mn>2</mn></msup><mo>=</mo><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mo stretchy="false">|</mo><mo>&lt;</mo><mi>v</mi><mo>,</mo><msub><mi>e</mi><mi>n</mi></msub><mo>-</mo><msub><mi>f</mi><mi>n</mi></msub><mo>&gt;</mo><msup><mo stretchy="false">|</mo><mn>2</mn></msup><mo>≤</mo><mo>∥</mo><mi>v</mi><msup><mo>∥</mo><mn>2</mn></msup><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mo>∥</mo><msub><mi>e</mi><mi>n</mi></msub><mo>-</mo><msub><mi>f</mi><mi>n</mi></msub><msup><mo>∥</mo><mn>2</mn></msup><mo>&lt;</mo><mo>/</mo><mi>v</mi><mo>,</mo><msub><mi>e</mi><mi>n</mi></msub><mo>-</mo><msub><mi>f</mi><mi>n</mi></msub><mo>&gt;</mo><mo>&lt;</mo><mo>/</mo><mi>v</mi><mo>,</mo><msub><mi>e</mi><mi>n</mi></msub><mo>&gt;</mo></mrow></semantics></math></span></p> <p>which is a contradiction unless <span class="math-container" id="23735968" visual_id="5396"><math alttext="v=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> since <span class="math-container" id="23735969" visual_id="2582156"><math alttext="\sum^{\infty}_{1}\|e_{n}-f_{n}\|&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mn>1</mn><mi mathvariant="normal">∞</mi></munderover><mrow><mo>∥</mo><mrow><msub><mi>e</mi><mi>n</mi></msub><mo>-</mo><msub><mi>f</mi><mi>n</mi></msub></mrow><mo>∥</mo></mrow></mrow><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="64676"> orthonormal system in a Hilbert space </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

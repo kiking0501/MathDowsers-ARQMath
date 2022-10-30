@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Importance of the homogeneity assumption in definition of linear map</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Importance of the homogeneity assumption in definition of linear map </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1836862">
+<p>Let <span class="math-container" id="16991366" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span> and <span class="math-container" id="16991367" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> be vector spaces over field <span class="math-container" id="16991368" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>.  A function <span class="math-container" id="16991369" visual_id="51044"><math alttext="f:V\rightarrow W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>V</mi><mo>→</mo><mi>W</mi></mrow></mrow></semantics></math></span> is said to be linear if for any two vectors <span class="math-container" id="16991370" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="16991371" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> in <span class="math-container" id="16991372" visual_id="25"><math alttext="V" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi></semantics></math></span> and any scalar <span class="math-container" id="16991373" visual_id="21766"><math alttext="\alpha\in F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>∈</mo><mi>F</mi></mrow></semantics></math></span>, the following two conditions are satisfied:</p> <ol> <li><span class="math-container" id="16991374" visual_id="10751"><math alttext="f(x+y)=f(x)+f(y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></li> <li><span class="math-container" id="16991375" visual_id="1471518"><math alttext="f(\alpha x)=\alpha f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>α</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></li> </ol> <p>Let <span class="math-container" id="16991376" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> be a field of real numbers. Is it possible to construct <span class="math-container" id="16991377" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> such that the first condition is satified but not the second one?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3755484"> The axiom is there for a reason. You can show that assuming (1), <span class="math-container" id="16991381" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> has to be homogeneous with respect to elements on <span class="math-container" id="16991379" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span>. I would pick <span class="math-container" id="16991380" visual_id="785555"><math alttext="V=W=\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>W</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math></span> and play around with this fact. </td></tr><tr><td comment_id="3755510"> There might be also some connections with max-plus algebras and topical functions. </td></tr><tr><td comment_id="3755677"> Possibly related: [Continuous and additive implies linear](http://math.stackexchange.com/questions/152632/continuous-and-additive-implies-linear) </td></tr><tr><td comment_id="3755743"> Relevant: [Overview of basic facts about Cauchy functional equation](http://math.stackexchange.com/questions/423492/overview-of-basic-facts-about-cauchy-functional-equation?lq=1) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1836872" id="answer">
+<p>A function <span class="math-container" id="16991391" visual_id="3106"><math alttext="f:\mathbb{R}\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> such that <span class="math-container" id="16991392" visual_id="10751"><math alttext="f(x+y)=f(x)+f(y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> is known as a <a href="https://en.wikipedia.org/wiki/Cauchy's_functional_equation" rel="nofollow">Cauchy additive function</a>. This would be a special case example when <span class="math-container" id="16991393" visual_id="785555"><math alttext="V=W=\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>W</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math></span>. Assuming the axiom of choice, there do exist such functions without the property that <span class="math-container" id="16991394" visual_id="1471518"><math alttext="f(\alpha x)=\alpha f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>α</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, but such functions are incredibly ugly, for example they aren't continuous anywhere.</p> <p>The proof that such functions exist is non-constructive (because it uses the axiom of choice). This means that you can't actually construct an example of one of them. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="16175"> On sort-of-linear functions </td></tr><tr><td post_id="152632"> Continuous and additive implies linear </td></tr><tr><td post_id="423492"> Overview of basic facts about Cauchy functional equation </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

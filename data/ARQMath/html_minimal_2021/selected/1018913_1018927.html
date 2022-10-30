@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is my proof that the union of countably many countable sets is countable correct?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is my proof that the union of countably many countable sets is countable correct? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1018913">
+<p>In an effort to find a proof that builds intuition for students in my proof writing course, I devised the following.  Its seems too easy to me, so I am worried something is wrong.  The class is very Naive Naive Set Theory so I realize some axioms are needed but that is way too hard for my students.  I guess I would just like to have this result and I used to just state it, but then I thought about this proof.  </p> <p>We assume that <span class="math-container" id="9689478" visual_id="8265"><math alttext="\mathbb{N}\times\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℕ</mi><mo>×</mo><mi>ℕ</mi></mrow></semantics></math></span> is countable.</p> <p>Suppose <span class="math-container" id="9689479" visual_id="9125"><math alttext="A_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>1</mn></msub></semantics></math></span>, <span class="math-container" id="9689480" visual_id="4912"><math alttext="A_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>2</mn></msub></semantics></math></span>, <span class="math-container" id="9689481" visual_id="13565"><math alttext="A_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>3</mn></msub></semantics></math></span>,... is a sequence of countably infinite pairwise disjoint sets.</p> <p>Write <span class="math-container" id="9689482" visual_id="8117342"><math alttext="A_{1}=\{a_{11},a_{12},a_{13},...\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>a</mi><mn>11</mn></msub><mo>,</mo><msub><mi>a</mi><mn>12</mn></msub><mo>,</mo><msub><mi>a</mi><mn>13</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>, <span class="math-container" id="9689483" visual_id="8117343"><math alttext="A_{2}=\{a_{21},a_{22},a_{23},...\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>a</mi><mn>21</mn></msub><mo>,</mo><msub><mi>a</mi><mn>22</mn></msub><mo>,</mo><msub><mi>a</mi><mn>23</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>,...,<span class="math-container" id="9689484" visual_id="9097729"><math alttext="A_{n}=\{a_{n1},a_{n2},a_{n3},...\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>⁢</mo><mn>3</mn></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>.</p> <p>Let <span class="math-container" id="9689485" visual_id="1320971"><math alttext="A=\bigcup_{i\in\mathbb{N}}A_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><munder><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋃</mo><mrow><mi>i</mi><mo>∈</mo><mi>ℕ</mi></mrow></munder><msub><mi>A</mi><mi>i</mi></msub></mrow></mrow></semantics></math></span>.  Define <span class="math-container" id="9689486" visual_id="9097730"><math alttext="f:A\rightarrow\mathbb{N}\times\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>A</mi><mo>→</mo><mrow><mi>ℕ</mi><mo>×</mo><mi>ℕ</mi></mrow></mrow></mrow></semantics></math></span> by the rule <span class="math-container" id="9689487" visual_id="9097731"><math alttext="f(a_{ij})=(i,j)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.  </p> <p>Since the <span class="math-container" id="9689488" visual_id="4286"><math alttext="A_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>i</mi></msub></semantics></math></span>'s are disjoint <span class="math-container" id="9689489" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is a function.  1-1 and onto are easily proved.  Thus, <span class="math-container" id="9689490" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is countable.</p> <p>If we take off the pairwise dijoint condition then for every <span class="math-container" id="9689491" visual_id="4286"><math alttext="A_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>i</mi></msub></semantics></math></span> and <span class="math-container" id="9689492" visual_id="22844"><math alttext="A_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>j</mi></msub></semantics></math></span> with <span class="math-container" id="9689493" visual_id="9097732"><math alttext="A_{i}\bigcap A_{j}\neq\emptyset" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋂</mo><msub><mi>A</mi><mi>j</mi></msub></mrow></mrow><mo>≠</mo><mi mathvariant="normal">∅</mi></mrow></semantics></math></span>, replace <span class="math-container" id="9689494" visual_id="22844"><math alttext="A_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>j</mi></msub></semantics></math></span> with <span class="math-container" id="9689495" visual_id="9097733"><math alttext="A_{j}-(A_{i}\bigcap A_{j})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>j</mi></msub><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋂</mo><msub><mi>A</mi><mi>j</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.  I guess this is where I think I may be a little to hand wavey.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2079194"> Take the elements from the <span class="math-container" id="9689496" visual_id="4286"><math alttext="A_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>i</mi></msub></semantics></math></span> in a round-robin fashion, taking one more set at every round. </td></tr><tr><td comment_id="2079239"> Yeah, students never seem to believe the round robin proof so that is why I thought of this. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1018927" id="answer">
+<p>A proof independent on the fact that <span class="math-container" id="9689497" visual_id="8265"><math alttext="\mathbb{N}\times\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℕ</mi><mo>×</mo><mi>ℕ</mi></mrow></semantics></math></span> is countable can be crafted using diagonal counting: Write the <span class="math-container" id="9689498" visual_id="22844"><math alttext="A_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>j</mi></msub></semantics></math></span> in rows to get an infinite table, now label the finite diagonals consisting of <span class="math-container" id="9689499" visual_id="9097734"><math alttext="a_{ij},i+j=m+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>,</mo><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow></mrow><mo>=</mo><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> as <span class="math-container" id="9689500" visual_id="34747"><math alttext="D_{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mi>m</mi></msub></semantics></math></span>.<br/> <span class="math-container" id="9689501" visual_id="34747"><math alttext="D_{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mi>m</mi></msub></semantics></math></span> is a finite set of cardinality at most (duplicates are to be ignored) <span class="math-container" id="9689502" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span>. Now start the enumeration with <span class="math-container" id="9689503" visual_id="53444"><math alttext="a_{11}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>11</mn></msub></semantics></math></span>, the only element of <span class="math-container" id="9689504" visual_id="8812"><math alttext="D_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>1</mn></msub></semantics></math></span>, append the elements of <span class="math-container" id="9689505" visual_id="29857"><math alttext="D_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>2</mn></msub></semantics></math></span> wich are not yet enumerated and continue...<br/> If all elements are unique (i.e. the <span class="math-container" id="9689506" visual_id="22844"><math alttext="A_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>j</mi></msub></semantics></math></span> are disjoint), the enumeration will be defined by the sequence <span class="math-container" id="9689507" visual_id="9097735"><math alttext="a_{11}\ a_{12}\ a_{21}\ a_{13}\ a_{22}\ a_{31}\ a_{14}\ a_{23}\ \ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded width="+5pt"><msub><mi>a</mi><mn>11</mn></msub><mo>⁢</mo><mpadded width="+5pt"><msub><mi>a</mi><mn>12</mn></msub><mo>⁢</mo><mpadded width="+5pt"><msub><mi>a</mi><mn>21</mn></msub><mo>⁢</mo><mpadded width="+5pt"><msub><mi>a</mi><mn>13</mn></msub><mo>⁢</mo><mpadded width="+5pt"><msub><mi>a</mi><mn>22</mn></msub><mo>⁢</mo><mpadded width="+5pt"><msub><mi>a</mi><mn>31</mn></msub><mo>⁢</mo><mpadded width="+5pt"><msub><mi>a</mi><mn>14</mn></msub><mo>⁢</mo><mpadded width="+5pt"><msub><mi>a</mi><mn>23</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi></mpadded></mpadded></mpadded></mpadded></mpadded></mpadded></mpadded></mpadded></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2079256"> This is the round-robin stuff. </td></tr><tr><td comment_id="2079279"> @YvesDaoust Didn't know it by that name, but it makes sense. </td></tr><tr><td comment_id="2079600"> This relates to a previous comment of mine; diagonalization is the common expression. </td></tr><tr><td comment_id="2079602"> @YvesDaoust I was unsure if this was called diagonal argument because I think that's what is used to show that <span class="math-container" id="9689509" visual_id="391080"><math alttext="\ell^{\infty}(\mathbb{N})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">ℓ</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℕ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is uncountable, so I stuck with diagonal enumeration ^^ </td></tr><tr><td comment_id="2079605"> http://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument and http://en.wikipedia.org/wiki/Pairing_function#Cantor_pairing_function. Cantor in any case. </td></tr><tr><td comment_id="2079608"> @YvesDaoust Yeah, that's what proves uncountability of <span class="math-container" id="9689509" visual_id="391080"><math alttext="\ell^{\infty}(\mathbb{N})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">ℓ</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℕ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> :D </td></tr><tr><td comment_id="2080921"> The pairing function proves countability of <span class="math-container" id="9689510" visual_id="59372"><math alttext="\mathbb{N}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℕ</mi><mn>2</mn></msup></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

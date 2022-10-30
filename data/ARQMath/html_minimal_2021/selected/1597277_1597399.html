@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Characterizing Riemann-integrability via condition on indefinite Lebesgue-integral</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Characterizing Riemann-integrability via condition on indefinite Lebesgue-integral </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1597277">
+<p>Let <span class="math-container" id="14761989" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>: <span class="math-container" id="14761990" visual_id="4855251"><math alttext="I\longrightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>⟶</mo><mi>ℝ</mi></mrow></semantics></math></span> be Lebesgue-integrable and let <span class="math-container" id="14761991" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> be some indefinite integral of <span class="math-container" id="14761992" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>. We know that <span class="math-container" id="14761993" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is absolutely continuous and hence differentiable a.e. with <span class="math-container" id="14761994" visual_id="58119"><math alttext="F^{\prime}=f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>F</mi><mo>′</mo></msup><mo>=</mo><mi>f</mi></mrow></semantics></math></span>. In fact, this is a characterizing property, so <span class="math-container" id="14761995" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is Lebesgue-integrable if and only if it is expressible as the a.e. derivative of an absolutely continuous function.</p> <p>Now suppose that in the last statement we replace Lebesgue- by Riemann-.</p> <p>How can we modify the condition on the right so as to maintain equivalence?</p> <p>Simpler question: What relevant additional properties does <span class="math-container" id="14761996" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> have when <span class="math-container" id="14761997" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is Riemann-integrable?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3253499"> I don't know if it can help, but read this [paper](http://classicalrealanalysis.info/documents/Berberian2321526.pdf) by Berberian, 5, p. 210: the class of "primitives" <span class="math-container" id="14761998" visual_id="4669"><math alttext="\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">…</mi></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1597399" id="answer">
+<p>I remember at a summer conference Erik Talvila asked me this question, as he had asked some others:  </p> <blockquote> <p><strong>Erik's Proble</strong>m.   What conditions on a function <span class="math-container" id="14761999" visual_id="195551"><math alttext="F:[a,b]\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span>   are necessary and sufficient in order that <span class="math-container" id="14762000" visual_id="2779244"><math alttext="F(x)=\int_{a}^{x}f(t)\,dt+C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow></semantics></math></span> for some constant <span class="math-container" id="14762001" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> and some Riemann integrable function <span class="math-container" id="14762002" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>?</p> </blockquote> <p>He posed it more formally in </p> <blockquote> <p>E. Talvila, Characterizing integrals of Riemann integrable functions,   Real Anal. Exchange, 33(2) (2007), 487–488.</p> </blockquote> <p>I flippantly said, at the time,  that <span class="math-container" id="14762003" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> was Lipschitz with a  derivative that is equivalent to an a.e. continuous function. But we both knew that was a silly (if correct) answer.  Maybe a slightly less silly answer is that <span class="math-container" id="14762004" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is  Lipschitz with a strong derivative at almost every point.  [The strong or strict or unstraddled derivative has been discussed on this site several times.]  The reason that works is that the existence of the strong derivative at a point requires the ordinary derivative to exist a.e. in a neighborhood of that point and be continuous at the point.   </p> <p>Compare it with these questions:</p> <blockquote> <p><strong>PROBLEM A</strong>.  What conditions on a function <span class="math-container" id="14762005" visual_id="195551"><math alttext="F:[a,b]\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> are necessary and   sufficient in order that <span class="math-container" id="14762006" visual_id="2779244"><math alttext="F(x)=\int_{a}^{x}f(t)\,dt+C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow></semantics></math></span> for some   constant <span class="math-container" id="14762007" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> and some Lebesgue integrable function <span class="math-container" id="14762008" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>? </p> <p><em>[Answer: <span class="math-container" id="14762009" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>  is absolutely continuous.]</em></p> <p><strong>PROBLEM B</strong>.   What conditions on a function <span class="math-container" id="14762010" visual_id="195551"><math alttext="F:[a,b]\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> are necessary   and sufficient in order that <span class="math-container" id="14762011" visual_id="2779244"><math alttext="F(x)=\int_{a}^{x}f(t)\,dt+C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow></semantics></math></span> for some   constant <span class="math-container" id="14762012" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> and some Denjoy-Perron integrable function <span class="math-container" id="14762013" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>? </p> <p><em>[Answer: <span class="math-container" id="14762014" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is ACG<span class="math-container" id="14762015" visual_id="482140"><math alttext="{}_{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi></mi><mo>*</mo></msub></semantics></math></span> (i.e., generalized absolutely continuous).]</em></p> <p><strong>PROBLEM C</strong>.   What conditions on a function <span class="math-container" id="14762016" visual_id="195551"><math alttext="F:[a,b]\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> are necessary   and sufficient in order that <span class="math-container" id="14762017" visual_id="2779244"><math alttext="F(x)=\int_{a}^{x}f(t)\,dt+C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>x</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>+</mo><mi>C</mi></mrow></mrow></semantics></math></span> for some   constant <span class="math-container" id="14762018" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> and some   function <span class="math-container" id="14762019" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> of bounded variation? </p> <p><em>[Answer: See  F. Riesz, Sur certain syst`emes singulier d’equations   int´egrales, Annales de L’Ecole Norm. Sup., Paris (3) 28 (1911),   33–62.]</em></p> </blockquote> <p>Problems A, B, and C have quite satisfying answers as you can see. In the spirit of Riesz's characterization for the latter problem (and embarrassed that I couldn't find a fast answer) I published this as an answer to Erik's problem:</p> <blockquote> <p>Thomson, Brian S.  <a href="https://projecteuclid.org/download/pdf_1/euclid.rae/1285160546" rel="nofollow">Characterizations of an indefinite Riemann   integral</a>.  Real Anal. Exchange  35  (2010),  no. 2, 487--492.</p> </blockquote> <p>I doubt you will find the characterization all that compelling.  Don't be discouraged from finding a better one!</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3253799"> Many thanks for this! Could it be something along the lines of "absolutely continuous + extreme derivatives in Baire class 1"? </td></tr><tr><td comment_id="3253844"> Not quite.  There is a Lipschitz function <span class="math-container" id="14762020" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> that is everywhere differentiable but <span class="math-container" id="14762022" visual_id="10510"><math alttext="F^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>F</mi><mo>′</mo></msup></semantics></math></span> is not Riemann integrable (although it is Lebesgue integrable).  The function <span class="math-container" id="14762022" visual_id="10510"><math alttext="F^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>F</mi><mo>′</mo></msup></semantics></math></span> itself is Baire 1 of course. </td></tr><tr><td comment_id="3254560"> I actually do find it compelling, because, given this characterization, the condition (3) in your paper leads one to consider (via the "differentiable implies continuous" intuition) the definition of what we know is absolute continuity and hence, by analogy, to predict the existence of a more general integral. I try to think of this as a natural way to build up the class of Lebesgue-integrable functions from the class of Riemann-integrable ones. </td></tr><tr><td comment_id="3254589"> Interesting.  One wonders whether this problem, had it been posed in the 19th century, would have had a satisfactory solution and whether that might have led to a more general theory of integration. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

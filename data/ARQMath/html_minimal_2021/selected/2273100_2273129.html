@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Substitution Integral: $\int_0^3\frac {\sqrt{x}}{\sqrt{x}+\sqrt{3-x}} dx$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Substitution Integral: <span class="math-container" id="20997045" visual_id="1300356"><math alttext="\int_{0}^{3}\frac{\sqrt{x}}{\sqrt{x}+\sqrt{3-x}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>3</mn></msubsup><mrow><mfrac><msqrt><mi>x</mi></msqrt><mrow><msqrt><mi>x</mi></msqrt><mo>+</mo><msqrt><mrow><mn>3</mn><mo>-</mo><mi>x</mi></mrow></msqrt></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2273100">
+<p><span class="math-container" id="20997046" visual_id="1300356"><math alttext="\int_{0}^{3}\frac{\sqrt{x}}{\sqrt{x}+\sqrt{3-x}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>3</mn></msubsup><mrow><mfrac><msqrt><mi>x</mi></msqrt><mrow><msqrt><mi>x</mi></msqrt><mo>+</mo><msqrt><mrow><mn>3</mn><mo>-</mo><mi>x</mi></mrow></msqrt></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> I tried with substitution <span class="math-container" id="20997047" visual_id="4552065"><math alttext="t=3-x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mrow><mn>3</mn><mo>-</mo><mi>x</mi></mrow></mrow></semantics></math></span> but I don't know what to do next. Also how do I solve this limit: <span class="math-container" id="20997048" visual_id="6402361"><math alttext="\lim_{x\to\infty}\frac{1}{x}\int_{0}^{x}\frac{dt}{2+\cos t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow><mrow><mn>2</mn><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>t</mi></mrow></mrow></mfrac></mrow></mrow></mrow></semantics></math></span> I saw that most problems like this are solved by putting the period of the function in front,would it work here?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> definite-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4675502"> multiply both parts of the fraction by <span class="math-container" id="20997049" visual_id="8572942"><math alttext="(\sqrt{x}+\sqrt{3-x})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><msqrt><mi>x</mi></msqrt><mo>+</mo><msqrt><mrow><mn>3</mn><mo>-</mo><mi>x</mi></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> as it gets rid of some roots. </td></tr><tr><td comment_id="4675532"> Solving this in the future might be easier with the Weierstrass substitution. http://jekyll.math.byuh.edu/courses/m113/handouts/weierstrass.pdf </td></tr><tr><td comment_id="4677610"> See also: [Integrating <span class="math-container" id="20997050" visual_id="1300356"><math alttext="\int_{0}^{3}\frac{\sqrt{x}}{\sqrt{x}+\sqrt{3-x}}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>3</mn></msubsup><mrow><mpadded width="+1.7pt"><mfrac><msqrt><mi>x</mi></msqrt><mrow><msqrt><mi>x</mi></msqrt><mo>+</mo><msqrt><mrow><mn>3</mn><mo>-</mo><mi>x</mi></mrow></msqrt></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></semantics></math></span>](https://math.stackexchange.com/q/1772543). Found [using Approach0](https://approach0.xyz/search/?q=%24%5Cint_0%5E3%5Cfrac%20%7B%5Csqrt%7Bx%7D%7D%7B%5Csqrt%7Bx%7D%2B%5Csqrt%7B3-x%7D%7D%20dx%24&amp;p=1). </td></tr><tr><td comment_id="4677670"> The second question can be found here: [Evaluate limit of an integral: <span class="math-container" id="20997051" visual_id="6402361"><math alttext="\lim_{x\to\infty}\frac{1}{x}\int_{0}^{x}\&gt;\frac{dt}{2+\cos t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>⁢</mo><mrow><mpadded width="+2.2pt"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow><mrow><mn>2</mn><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>t</mi></mrow></mrow></mfrac></mpadded></mrow></mrow></mrow></semantics></math></span>](https://math.stackexchange.com/q/2153522). </td></tr><tr><td comment_id="4677675"> Please, post only one question in one post. Posting several questions in the same post is discouraged and such questions may be put on hold, see [meta](https://math.meta.stackexchange.com/questions/6464/posting-multiple-questions-as-one). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2273129" id="answer">
+<p>Let <span class="math-container" id="20997077" visual_id="8572959"><math alttext="F(x)=\int_{0}^{x}\frac{dt}{1+\cos(t)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow></mrow></semantics></math></span></p> <p>the limit is then</p> <p><span class="math-container" id="20997078" visual_id="1659777"><math alttext="\lim_{x\to 0}\frac{F(x)-F(0)}{x-0}=F^{\prime}(0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></munder><mo>⁡</mo><mfrac><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>x</mi><mo>-</mo><mn>0</mn></mrow></mfrac></mrow><mo>=</mo><mrow><msup><mi>F</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="20997079" visual_id="8572960"><math alttext="\frac{1}{1+\cos(0)}=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span></p> <p>for the integral, put <span class="math-container" id="20997080" visual_id="8572961"><math alttext="x=3\cos^{2}(t)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> It becomes</p> <p><span class="math-container" id="20997081" visual_id="8572962"><math alttext="I_{1}=\int_{0}^{\frac{\pi}{2}}\frac{6\cos^{2}(t)\sin(t)dt}{\cos(t)+\sin(t)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mfrac><mi>π</mi><mn>2</mn></mfrac></msubsup><mfrac><mrow><mn>6</mn><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow></mrow></semantics></math></span></p> <p>now with <span class="math-container" id="20997082" visual_id="8572963"><math alttext="x=3\sin^{2}(t)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>, it becomes <span class="math-container" id="20997083" visual_id="8572964"><math alttext="I_{2}=\int_{0}^{\frac{\pi}{2}}\frac{6\sin^{2}(t)\cos(t)dt}{\sin(t)+\cos(t)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mfrac><mi>π</mi><mn>2</mn></mfrac></msubsup><mfrac><mrow><mn>6</mn><mo>⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow></mrow></semantics></math></span></p> <p>the substitution <span class="math-container" id="20997084" visual_id="1572648"><math alttext="t=\frac{\pi}{2}-u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>-</mo><mi>u</mi></mrow></mrow></semantics></math></span> yields to <span class="math-container" id="20997085" visual_id="216835"><math alttext="I_{1}=I_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>=</mo><msub><mi>I</mi><mn>2</mn></msub></mrow></semantics></math></span></p> <p>but <span class="math-container" id="20997086" visual_id="8572965"><math alttext="I_{1}+I_{2}=3\int_{0}^{\frac{\pi}{2}}\sin(2u)du=3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>+</mo><msub><mi>I</mi><mn>2</mn></msub></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mfrac><mi>π</mi><mn>2</mn></mfrac></msubsup><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>u</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math></span></p> <p>thus <span class="math-container" id="20997087" visual_id="8572966"><math alttext="I_{1}=I_{2}=\frac{3}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>=</mo><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4675685"> Is there a trick to observing with what to substitute x so I can solve it faster?(its part of an 2 hr exam) </td></tr><tr><td comment_id="4677480"> Your first part does not match the question. The limit is for <span class="math-container" id="20997088" visual_id="2326"><math alttext="x\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> and the integrand is also different. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1772543"> Integrating <span class="math-container" id="16371108" visual_id="1300356"><math alttext="\int_{0}^{3}\frac{\sqrt{x}}{\sqrt{x}+\sqrt{3-x}}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>3</mn></msubsup><mrow><mpadded width="+1.7pt"><mfrac><msqrt><mi>x</mi></msqrt><mrow><msqrt><mi>x</mi></msqrt><mo>+</mo><msqrt><mrow><mn>3</mn><mo>-</mo><mi>x</mi></mrow></msqrt></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="2153522"> Evaluate limit of an integral: <span class="math-container" id="19902658" visual_id="6402361"><math alttext="\lim_{x\to\infty}\frac{1}{x}\int_{0}^{x}\&gt;\frac{dt}{2+\cos t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>⁢</mo><mrow><mpadded width="+2.2pt"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow><mrow><mn>2</mn><mo>+</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>t</mi></mrow></mrow></mfrac></mpadded></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

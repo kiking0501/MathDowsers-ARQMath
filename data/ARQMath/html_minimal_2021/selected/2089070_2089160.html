@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Fermat's last theorem over finite fields</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Fermat's last theorem over finite fields </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2089070">
+<p>I am taking a course in number theory that deals with quadratic and (higher order) reciprocity and have been wondering about the following question: Fermat's last theorem states that there are no integer solutions to <span class="math-container" id="19320149" visual_id="21608"><math alttext="x^{n}+y^{n}=z^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msup><mi>y</mi><mi>n</mi></msup></mrow><mo>=</mo><msup><mi>z</mi><mi>n</mi></msup></mrow></semantics></math></span> for <span class="math-container" id="19320150" visual_id="10503"><math alttext="n&gt;2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>2</mn></mrow></semantics></math></span>. Does a similar result exists over finite fields? My first thought was looking<span class="math-container" id="19320151" visual_id="9634"><math alttext="\mod p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>p</mi></mrow></semantics></math></span> and then for <span class="math-container" id="19320152" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> such that <span class="math-container" id="19320153" visual_id="925784"><math alttext="\gcd(n,p-1)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> the map <span class="math-container" id="19320154" visual_id="7723045"><math alttext="\phi:F_{p}\rightarrow F_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>:</mo><mrow><msub><mi>F</mi><mi>p</mi></msub><mo>→</mo><msub><mi>F</mi><mi>p</mi></msub></mrow></mrow></semantics></math></span> <span class="math-container" id="19320155" visual_id="811518"><math alttext="\phi(a)=a^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>a</mi><mi>n</mi></msup></mrow></semantics></math></span> is an automorphism and therefore a solution exists. Also, for every finite field we could reduce the equation to <span class="math-container" id="19320156" visual_id="7723046"><math alttext="1+y^{n}=z^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>y</mi><mi>n</mi></msup></mrow><mo>=</mo><msup><mi>z</mi><mi>n</mi></msup></mrow></semantics></math></span> by multiplying by <span class="math-container" id="19320157" visual_id="2561066"><math alttext="(x^{-1})^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></semantics></math></span>. I can't seem to get much further and would be glad to hear about existing results on the subject.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> diophantine-equations </span><span> finite-fields </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4293604"> Such a result would imply Fermat's Last Theorem, so that there are two possibilities: it is true and has a terribly hard proof, or it is false. The second thing happens, for example <span class="math-container" id="19320158" visual_id="7723047"><math alttext="7^{3}+9^{3}=3^{3}\pmod{11}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>7</mn><mn>3</mn></msup><mo>+</mo><msup><mn>9</mn><mn>3</mn></msup></mrow><mo>=</mo><mrow><msup><mn>3</mn><mn>3</mn></msup><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mn>11</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="4293622"> It is quite easy to construct counterexamples, indeed. Pick <span class="math-container" id="19320159" visual_id="102212"><math alttext="a,b,c,n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>n</mi></mrow></semantics></math></span> ANY four positive integers <span class="math-container" id="19320160" visual_id="20281"><math alttext="\geq 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>≥</mo><mn>3</mn></mrow></semantics></math></span>, and let <span class="math-container" id="19320192" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> be any prime divisor of <span class="math-container" id="19320162" visual_id="5706647"><math alttext="a^{n}+b^{n}-c^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mi>n</mi></msup><mo>+</mo><msup><mi>b</mi><mi>n</mi></msup></mrow><mo>-</mo><msup><mi>c</mi><mi>n</mi></msup></mrow></semantics></math></span>. Then you have <span class="math-container" id="19320163" visual_id="7121814"><math alttext="a^{n}+b^{n}=c^{n}\pmod{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>a</mi><mi>n</mi></msup><mo>+</mo><msup><mi>b</mi><mi>n</mi></msup></mrow><mo>=</mo><mrow><msup><mi>c</mi><mi>n</mi></msup><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> by construction. </td></tr><tr><td comment_id="4293628"> @Crostul as 3 is relatively prime to 11 this is exactly the example I mentioned. I don't see how it implies Fermat's last theorem. </td></tr><tr><td comment_id="4293635"> @yoni It implies the **failure** of Fermat's Last Theorem - it says there is a **counterexample**. In fact, you've already shown, in your question, that FLT does not hold in finite fields, but I don't think you've realized that. </td></tr><tr><td comment_id="4293665"> @DustanLevenstein right. corrected </td></tr><tr><td comment_id="4293684"> @yoni Well, you've still said it's an automorphism, which is, as Noah said, a benign falsehood for the purpose of this problem. </td></tr><tr><td comment_id="4293698"> @yoni Do you understand that the fact that (for appropriate <span class="math-container" id="19320164" visual_id="154830"><math alttext="p,n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mi>n</mi></mrow></semantics></math></span>) <span class="math-container" id="19320165" visual_id="21619"><math alttext="a\mapsto a^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>↦</mo><msup><mi>a</mi><mi>n</mi></msup></mrow></semantics></math></span> is a bijection, already implies that Fermat's Last Theorem **fails** in general <span class="math-container" id="19320166" visual_id="1332"><math alttext="\mathbb{F}_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝔽</mi><mi>p</mi></msub></semantics></math></span>, since it implies that - for all <span class="math-container" id="19320187" visual_id="156635"><math alttext="x,y\in\mathbb{F}_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><msub><mi>𝔽</mi><mi>p</mi></msub></mrow></semantics></math></span> - we have <span class="math-container" id="19320168" visual_id="52857"><math alttext="x^{n}+y^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msup><mi>y</mi><mi>n</mi></msup></mrow></semantics></math></span> is an <span class="math-container" id="19320171" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>th power? </td></tr><tr><td comment_id="4293844"> See http://math.stackexchange.com/questions/1515236/last-fermats-theorem-modulo-m and http://math.stackexchange.com/questions/697685/fermats-last-theorem-fails-in-mathbbz-p-mathbb-z-for-p-sufficiently-larg </td></tr><tr><td comment_id="4293981"> @yoni: The usual analog of FLT to consider is not whether it holds for finite fields, but for the polynomial rings <span class="math-container" id="19320170" visual_id="49618"><math alttext="\mathbb{F}_{p}[x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝔽</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> or algebraic extensions thereof. </td></tr><tr><td comment_id="4293988"> @Hurkyl could you elaborate or share a link? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2089160" id="answer">
+<p>Schur proved that for every <span class="math-container" id="19320171" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, if <span class="math-container" id="19320172" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is a large enough prime, then there is a nontrivial solution to <span class="math-container" id="19320173" visual_id="7723048"><math alttext="x^{n}+y^{n}\equiv z^{n}\bmod p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msup><mi>y</mi><mi>n</mi></msup></mrow><mo>≡</mo><mrow><msup><mi>z</mi><mi>n</mi></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>p</mi></mrow></mrow></semantics></math></span>. See this <a href="https://amininima.wordpress.com/2013/05/20/fermats-last-theorem-mod-p/" rel="nofollow noreferrer">link</a>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4293904"> Thanks, that's the sort of thing I was looking for </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="697685"> Fermat's last theorem fails in <span class="math-container" id="6988779" visual_id="9633"><math alttext="\mathbb{Z}/p\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>/</mo><mi>p</mi></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></semantics></math></span> for <span class="math-container" id="6988780" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> sufficiently large </td></tr><tr><td post_id="1515236"> "Last Fermat's Theorem" modulo m </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

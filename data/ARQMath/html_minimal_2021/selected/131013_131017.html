@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Matrix exponential convergence</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Matrix exponential convergence </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="131013">
+<p>Help me please to prove that matrix exponential which defined as:</p> <p><span class="math-container" id="1522428" visual_id="692999"><math alttext="e^{A}=\sum\limits_{k=0}^{\infty}\frac{A^{k}}{k!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>A</mi></msup><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>A</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow></mrow></semantics></math></span> converges for all matrix <span class="math-container" id="1522429" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span></p> <p>Thanks beforehand.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span><span> matrices </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="131017" id="answer">
+<p>Since the space <span class="math-container" id="1522430" visual_id="5707172"><math alttext="E:=\mathcal{M}_{n}(\mathbb{C})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>:=</mo><mrow><msub><mi class="ltx_font_mathcaligraphic">ℳ</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℂ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> of all <span class="math-container" id="1522431" visual_id="189"><math alttext="n\times n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></semantics></math></span> complex matrices is a finite-dimensional vector space, all norms define the same topology. So we can take a sub-multiplicative norm, that is, a norm <span class="math-container" id="1522432" visual_id="5446"><math alttext="\lVert\cdot\rVert" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true" stretchy="false">∥</mo><mo>⋅</mo><mo fence="true" stretchy="false">∥</mo></mrow></semantics></math></span> such that <span class="math-container" id="1522433" visual_id="772261"><math alttext="\lVert AB\rVert\leq\lVert A\rVert\cdot\lVert B\rVert" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true" stretchy="false">∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo fence="true" stretchy="false">∥</mo></mrow><mo>≤</mo><mrow><mrow><mo fence="true" stretchy="false">∥</mo><mi>A</mi><mo fence="true" stretchy="false">∥</mo></mrow><mo>⋅</mo><mrow><mo fence="true" stretchy="false">∥</mo><mi>B</mi><mo fence="true" stretchy="false">∥</mo></mrow></mrow></mrow></semantics></math></span>.  (For example, we can take <span class="math-container" id="1522434" visual_id="5446"><math alttext="\lVert\cdot\rVert" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true" stretchy="false">∥</mo><mo>⋅</mo><mo fence="true" stretchy="false">∥</mo></mrow></semantics></math></span> to be the <a href="http://en.wikipedia.org/wiki/Operator_norm"><em>operator norm</em></a> on <span class="math-container" id="1522435" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span>.)  As a finite dimensional vector space, <span class="math-container" id="1522436" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> is complete, so it's enough to show <a href="http://en.wikipedia.org/wiki/Normal_convergence">normal convergence</a>. We have that, for each integer <span class="math-container" id="1522437" visual_id="3158"><math alttext="n\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span>,  <span class="math-container" id="1522438" visual_id="5707173"><math alttext="0\leq\lVert\frac{A^{n}}{n!}\rVert\leq\frac{\lVert A\rVert^{n}}{n!}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>0</mn><mo>≤</mo><mrow><mo fence="true" stretchy="false">∥</mo><mfrac><msup><mi>A</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo fence="true" stretchy="false">∥</mo></mrow><mo>≤</mo><mfrac><msup><mrow><mo fence="true" stretchy="false">∥</mo><mi>A</mi><mo fence="true" stretchy="false">∥</mo></mrow><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow><mo>,</mo></mrow></semantics></math></span> and we know that, for each real number <span class="math-container" id="1522439" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, the series <span class="math-container" id="1522440" visual_id="5707174"><math alttext="\sum_{n=0}^{+\infty}\frac{x^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></munderover><mfrac><msup><mi>x</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></semantics></math></span> converges (it defines the exponential function).  Therefore, for any <span class="math-container" id="1522441" visual_id="868157"><math alttext="A\in E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><mi>E</mi></mrow></semantics></math></span>, the series <span class="math-container" id="1522442" visual_id="5707175"><math alttext="\sum_{n=0}^{+\infty}\frac{A^{n}}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></munderover><mfrac><msup><mi>A</mi><mi>n</mi></msup><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></semantics></math></span> converges.  (We also got the additional result that <span class="math-container" id="1522443" visual_id="1675253"><math alttext="\lVert e^{A}\rVert\leq e^{\lVert A\rVert}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true" stretchy="false">∥</mo><msup><mi>e</mi><mi>A</mi></msup><mo fence="true" stretchy="false">∥</mo></mrow><mo>≤</mo><msup><mi>e</mi><mrow><mo fence="true" stretchy="false">∥</mo><mi>A</mi><mo fence="true" stretchy="false">∥</mo></mrow></msup></mrow></semantics></math></span> for any <span class="math-container" id="1522444" visual_id="868157"><math alttext="A\in E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><mi>E</mi></mrow></semantics></math></span>.)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="203561"> Serie of a matrix </td></tr><tr><td post_id="1226434"> Exponential of a matrix always converges </td></tr><tr><td post_id="2895395"> Using non sub-multiplicative matrix norm for proving the convergence of the series of the exponential function of a matrix. </td></tr><tr><td post_id="2999144"> Matrix function </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

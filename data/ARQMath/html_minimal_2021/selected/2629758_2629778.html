@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Suppose $\gcd(a,b)=1$ and $c|ab$. Prove there exist integers $r$ and $s$ such that $c=rs, r|a, s|b$, and $\gcd(r,s)=1$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Suppose <span class="math-container" id="24311139" visual_id="24677"><math alttext="\gcd(a,b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="24311140" visual_id="499789"><math alttext="c|ab" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></semantics></math></span>. Prove there exist integers <span class="math-container" id="24311141" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> and <span class="math-container" id="24311142" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span> such that <span class="math-container" id="24311143" visual_id="4018025"><math alttext="c=rs,r|a,s|b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mi>r</mi><mi>s</mi><mo>,</mo><mi>r</mi><mo stretchy="false">|</mo><mi>a</mi><mo>,</mo><mi>s</mi><mo stretchy="false">|</mo><mi>b</mi></mrow></semantics></math></span>, and <span class="math-container" id="24311144" visual_id="144966"><math alttext="\gcd(r,s)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2629758">
+<p>I have the following problem on greatest common divisors: </p> <p>Suppose <span class="math-container" id="24311145" visual_id="24677"><math alttext="\gcd(a,b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="24311146" visual_id="499789"><math alttext="c|ab" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></semantics></math></span>. Prove there exist integers <span class="math-container" id="24311147" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> and <span class="math-container" id="24311148" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span> such that <span class="math-container" id="24311149" visual_id="4018025"><math alttext="c=rs,r|a,s|b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mi>r</mi><mi>s</mi><mo>,</mo><mi>r</mi><mo stretchy="false">|</mo><mi>a</mi><mo>,</mo><mi>s</mi><mo stretchy="false">|</mo><mi>b</mi></mrow></semantics></math></span>, and <span class="math-container" id="24311150" visual_id="144966"><math alttext="\gcd(r,s)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. </p> <p>Attempt: Basically, up to this point I've tried a whole lot of algebraic manipulation. Since <span class="math-container" id="24311151" visual_id="24677"><math alttext="\gcd(a,b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> we have <span class="math-container" id="24311152" visual_id="4018026"><math alttext="1=ma+nb" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi></mrow><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></mrow></semantics></math></span>, for some integers <span class="math-container" id="24311153" visual_id="5903"><math alttext="m,n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></semantics></math></span>. Also, <span class="math-container" id="24311154" visual_id="4018027"><math alttext="ab=kc" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>=</mo><mrow><mi>k</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></semantics></math></span> for some integer <span class="math-container" id="24311155" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>. We aim to show (to begin with) that <span class="math-container" id="24311156" visual_id="748282"><math alttext="r|a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>a</mi></mrow></semantics></math></span>, that is, that <span class="math-container" id="24311157" visual_id="2319417"><math alttext="a=rp" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mi>p</mi></mrow></mrow></semantics></math></span>, for some integer <span class="math-container" id="24311158" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>. So basically, I've started with the equation <span class="math-container" id="24311159" visual_id="4018026"><math alttext="1=ma+nb" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi></mrow><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></mrow></semantics></math></span> and multiplied by <span class="math-container" id="24311160" visual_id="359394"><math alttext="a,b,ab" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></semantics></math></span> etc., and I just can't seem to be able to express <span class="math-container" id="24311161" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> in the form above. I then looked at some of the results on prime factorisation, but they don't seem to shed any light on the situation. </p> <p>Any help or hints would be appreciated. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> divisibility </span><span> gcd-and-lcm </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5430502"> You really don't have much choice. Let <span class="math-container" id="24311162" visual_id="4012586"><math alttext="r=\gcd(a,c)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Show that this works. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2629778" id="answer">
+<p>Let <span class="math-container" id="24311177" visual_id="4012586"><math alttext="r=\gcd(a,c)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="24311178" visual_id="4018031"><math alttext="s=\gcd(b,c)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. It's easy to check that since <span class="math-container" id="24311179" visual_id="249"><math alttext="a,b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></semantics></math></span> coprime, <span class="math-container" id="24311180" visual_id="344130"><math alttext="r\mid a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>a</mi></mrow></semantics></math></span> and <span class="math-container" id="24311181" visual_id="3847758"><math alttext="s\mid b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>b</mi></mrow></semantics></math></span> then <span class="math-container" id="24311182" visual_id="21927"><math alttext="r,s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>,</mo><mi>s</mi></mrow></semantics></math></span> are coprime. Thus the lowest common multiple of <span class="math-container" id="24311183" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> and <span class="math-container" id="24311184" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span> is <span class="math-container" id="24311185" visual_id="23354"><math alttext="rs" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>⁢</mo><mi>s</mi></mrow></semantics></math></span>. Since <span class="math-container" id="24311186" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> is a common multiple, <span class="math-container" id="24311187" visual_id="4018032"><math alttext="rs\mid c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>r</mi><mo>⁢</mo><mi>s</mi></mrow><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>c</mi></mrow></semantics></math></span>.</p> <p>Finally, we know <span class="math-container" id="24311188" visual_id="4018033"><math alttext="r=aw+cx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>w</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="24311189" visual_id="4018034"><math alttext="s=by+cz" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></semantics></math></span> for some integers <span class="math-container" id="24311190" visual_id="138851"><math alttext="w,x,y,z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>,</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow></semantics></math></span>. Now <span class="math-container" id="24311191" visual_id="4018035"><math alttext="rs=abwy+acwz+bcxy+c^{2}xz" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>r</mi><mo>⁢</mo><mi>s</mi></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>w</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>w</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></semantics></math></span>, and each of these terms is divisible by <span class="math-container" id="24311192" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>. So also <span class="math-container" id="24311193" visual_id="4018036"><math alttext="c\mid rs" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mi>r</mi><mo>⁢</mo><mi>s</mi></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Diophantine equations solved using algebraic numbers?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Diophantine equations solved using algebraic numbers? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="18154">
+<p>On Mathworld it says some diophantine equations can be solved using algebraic numbers. I know one example which is factor <span class="math-container" id="175226" visual_id="9605"><math alttext="x^{2}+y^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></semantics></math></span> in <span class="math-container" id="175227" visual_id="198067"><math alttext="\mathbb{Z}[\sqrt{-1}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> to find the Pythagorean triples.</p> <p>I would be very interested in finding some examples of harder equations (not quadratic) which are also solved easily using algebraic numbers. Thank you!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="170925"> I haven't seen Section 7 of Lenstra's article mentioned: http://www.math.leidenuniv.nl/~psh/ANTproc/01lenstra.pdf </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="18230" id="answer">
+<p>An interesting example which appears in section <span class="math-container" id="175290" visual_id="157407"><math alttext="4.9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4.9</mn></semantics></math></span> of Stewart and Tall's <a href="http://books.google.co.cr/books?id=PIibasv45boC&amp;printsec=frontcover&amp;dq=algebraic+number+theory+and+Fermat%27s+Last+Theorem&amp;hl=es&amp;ei=f5s3TdPsK8SBlAehxOXnBg&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CCUQ6AEwAA#v=onepage&amp;q&amp;f=false" rel="nofollow">Algebraic Number Theory and Fermat's Last Theorem</a> is the solution of the <a href="http://en.wikipedia.org/wiki/Ramanujan%E2%80%93Nagell_equation" rel="nofollow">Ramanujan-Nagell equation</a> given by</p> <p><span class="math-container" id="175291" visual_id="287216"><math alttext="x^{2}+7=2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn></mrow><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></semantics></math></span></p> <p>The idea is to work over the quadratic field <span class="math-container" id="175292" visual_id="461967"><math alttext="\mathbb{Q}(\sqrt{-7})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mrow><mo>-</mo><mn>7</mn></mrow></msqrt><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and use the fact that it has unique factorization in order to compare two factorizations at the core of the argument. </p> <p>The argument needs to take care of different cases separately and does not run as "smoothly" as the arguments in some of the examples mentioned in the other answers, but that's probably in some sense due to the fact that this equation involves an exponential, which only makes the already difficult problem of solving a Diophantine equation worse.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="5914"> Integral solutions to <span class="math-container" id="50770" visual_id="339822"><math alttext="y^{2}=x^{3}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="21530"> If a product of relatively prime integers is an <span class="math-container" id="210134" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>th power, then each is an <span class="math-container" id="210135" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>th power </td></tr><tr><td post_id="213656"> Proof that <span class="math-container" id="2425712" visual_id="5188343"><math alttext="3n(n^{2}+6)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> can't be an odd cube </td></tr><tr><td post_id="821828"> Elements as a product of unit and power of element in UFD </td></tr><tr><td post_id="1102067"> Coprime cofactors of n'th powers are n'th powers, up to associates, for Gaussian integers </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

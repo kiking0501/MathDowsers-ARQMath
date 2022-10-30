@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Maximum likelihood estimator for $\theta$ when $f_{\theta}(x)=\frac{4x^3}{\theta ^4}1_{0\le x\le \theta}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Maximum likelihood estimator for <span class="math-container" id="18451744" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> when <span class="math-container" id="18451745" visual_id="9265938"><math alttext="f_{\theta}(x)=\frac{4x^{3}}{\theta^{4}}1_{0\leq x\leq\theta}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>f</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><msup><mi>θ</mi><mn>4</mn></msup></mfrac><mo>⁢</mo><msub><mn>1</mn><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>θ</mi></mrow></msub></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1992115">
+<p>Let <span class="math-container" id="18451746" visual_id="5203"><math alttext="X_{1},\ldots,X_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow></semantics></math></span> be i.i.d. sample from the absolute continuous distribution given by the p.d.f. <span class="math-container" id="18451747" visual_id="9265939"><math alttext="f_{\theta}(x)=\begin{cases}\frac{4x^{3}}{\theta^{4}},\qquad\text{if }0\leq x% \leq\theta\\ 0,\qquad\text{ otherwise }\end{cases}\quad," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>f</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mstyle displaystyle="false"><mfrac><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><msup><mi>θ</mi><mn>4</mn></msup></mfrac></mstyle><mo rspace="22.5pt">,</mo><mrow><mtext>if </mtext><mo>⁢</mo><mn>0</mn></mrow></mrow><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>θ</mi></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mn>0</mn><mo rspace="22.5pt">,</mo><mtext> otherwise </mtext></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mo>,</mo></mrow></semantics></math></span> where <span class="math-container" id="18451748" visual_id="12401"><math alttext="\theta&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>Find the maximum likelihood estimator of <span class="math-container" id="18451749" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span>.</p> <p>So far I got: <span class="math-container" id="18451750" visual_id="9265940"><math alttext="\mathcal{L_{\theta}}(x)=\prod\limits^{n}_{i=1}\frac{4x_{i}^{3}}{\theta^{4}}=% \theta^{-4n}4^{n}\left(\prod\limits^{n}_{i=1}x_{i}\right)^{3}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi class="ltx_font_mathcaligraphic">ℒ</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mn>4</mn><mo>⁢</mo><msubsup><mi>x</mi><mi>i</mi><mn>3</mn></msubsup></mrow><msup><mi>θ</mi><mn>4</mn></msup></mfrac></mrow><mo>=</mo><mrow><msup><mi>θ</mi><mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup><mo>⁢</mo><msup><mn>4</mn><mi>n</mi></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mn>3</mn></msup></mrow></mrow><mo>.</mo></mrow></semantics></math></span> <span class="math-container" id="18451751" visual_id="9265941"><math alttext="\ln[\mathcal{L_{\theta}}(x)]\equiv-4n\ln(\theta)+n\ln 4+3\sum\limits^{n}_{i=1}% \ln(x_{i})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">[</mo><mrow><msub><mi class="ltx_font_mathcaligraphic">ℒ</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>≡</mo><mrow><mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mn>4</mn></mrow></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="18451752" visual_id="9265942"><math alttext="\displaystyle{\partial L(\theta)\over\partial\theta}=\frac{-4n}{\theta}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><mfrac><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>L</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mi>θ</mi></mfrac></mstyle><mo>=</mo><mn>0</mn></mrow></semantics></math></span> What can be the Maximum likelihood estimator for <span class="math-container" id="18451753" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> ? Thanks.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> statistics </span><span> order-statistics </span><span> maximum-likelihood </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4090034"> 1. Your likelihood function is incomplete - you've forgotten to include the fact that <span class="math-container" id="18451754" visual_id="4418790"><math alttext="\theta\geq x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>≥</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></semantics></math></span> for each <span class="math-container" id="18451755" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>. The complete function should be <span class="math-container" id="18451756" visual_id="9265943"><math alttext="\mathcal{L}_{\theta}\cdot\prod[\theta\geq x_{i}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi class="ltx_font_mathcaligraphic">ℒ</mi><mi>θ</mi></msub><mo>⋅</mo><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mo stretchy="false">[</mo><mi>θ</mi><mo>≥</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>, where <span class="math-container" id="18451757" visual_id="9265944"><math alttext="\mathcal{L}_{\theta}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">ℒ</mi><mi>θ</mi></msub></semantics></math></span> is the function above and <span class="math-container" id="18451758" visual_id="4295"><math alttext="[\cdot]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mo>⋅</mo><mo stretchy="false">]</mo></mrow></semantics></math></span> is the indicator function. 2. In the range <span class="math-container" id="18451759" visual_id="9265945"><math alttext="\theta\geq\max x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>≥</mo><mrow><mi>max</mi><mo>⁡</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></semantics></math></span>, the corrected function and the original function agree, and you've determined that the likelihood function is positive and strictly decreasing. In the range <span class="math-container" id="18451760" visual_id="9265946"><math alttext="\theta&lt;\max x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>&lt;</mo><mrow><mi>max</mi><mo>⁡</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></semantics></math></span>, it is zero once you include the correction. Ergo, the maximiser is <span class="math-container" id="18451761" visual_id="9265947"><math alttext="\theta^{*}=\max x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>θ</mi><mo>*</mo></msup><mo>=</mo><mrow><mi>max</mi><mo>⁡</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1992134" id="answer">
+<p>If <span class="math-container" id="18451762" visual_id="9265948"><math alttext="\exists i\in\left\{1,\ldots,n\right\},x_{i}&gt;\theta,\mathcal{L_{θ}}(x)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>∃</mo><mi>i</mi></mrow><mo>∈</mo><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo>}</mo></mrow></mrow><mo>,</mo><mrow><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>&gt;</mo><mi>θ</mi></mrow><mo>,</mo><mrow><mrow><msub><mi class="ltx_font_mathcaligraphic">ℒ</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mrow></mrow></semantics></math></span></p> <p>If <span class="math-container" id="18451763" visual_id="9265949"><math alttext="\forall i\in\left\{1,\ldots,n\right\},x_{i}\leq\theta," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mo>∀</mo><mi>i</mi></mrow><mo>∈</mo><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo>}</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≤</mo><mi>θ</mi></mrow></mrow><mo>,</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="18451764" visual_id="9265950"><math alttext="\mathcal{L_{θ}}(x)=\prod\limits^{n}_{i=1}\frac{4x_{i}^{3}}{θ^{4}}=θ^{-4n}4^{n}% (\prod\limits^{n}_{i=1}x_{i})^{3}\geq 0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi class="ltx_font_mathcaligraphic">ℒ</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mn>4</mn><mo>⁢</mo><msubsup><mi>x</mi><mi>i</mi><mn>3</mn></msubsup></mrow><msup><mi>θ</mi><mn>4</mn></msup></mfrac></mrow><mo>=</mo><mrow><msup><mi>θ</mi><mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup><mo>⁢</mo><msup><mn>4</mn><mi>n</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow><mo>≥</mo><mn>0</mn></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>We want <span class="math-container" id="18451765" visual_id="9265951"><math alttext="\mathcal{L_{θ}}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi class="ltx_font_mathcaligraphic">ℒ</mi><mi>θ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> to be as large as possible and hence we have <span class="math-container" id="18451766" visual_id="1195140"><math alttext="\theta\geq\max_{i}x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>≥</mo><mrow><munder><mi>max</mi><mi>i</mi></munder><mo>⁡</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></semantics></math></span>. Also, When <span class="math-container" id="18451767" visual_id="1259788"><math alttext="\theta\geq\max(x_{i})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>≥</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, it is a decreasing function. </p> <p>Hence <span class="math-container" id="18451768" visual_id="9265952"><math alttext="\theta_{ML}=\max(x_{i})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>θ</mi><mrow><mi>M</mi><mo>⁢</mo><mi>L</mi></mrow></msub><mo>=</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Vapnik-Chervonenkis theory: growth function</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Vapnik-Chervonenkis theory: growth function </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="640907">
+<p>A classification problem is considered with observations <span class="math-container" id="6494238" visual_id="234225"><math alttext="x\in\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow></semantics></math></span> and responses <span class="math-container" id="6494239" visual_id="128942"><math alttext="y\in\{0,1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>. There is a set of axis-aligned rectangle classifiers <span class="math-container" id="6494240" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>. Particularly, сlassifier <span class="math-container" id="6494241" visual_id="6099619"><math alttext="f_{a,b}\in F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo>∈</mo><mi>F</mi></mrow></semantics></math></span> is defined so: if <span class="math-container" id="6494242" visual_id="6099620"><math alttext="a_{1}\leq x_{1}\leq b_{1},a_{2}\leq x_{2}\leq b_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>≤</mo><msub><mi>x</mi><mn>1</mn></msub><mo>≤</mo><msub><mi>b</mi><mn>1</mn></msub></mrow><mo>,</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>≤</mo><msub><mi>x</mi><mn>2</mn></msub><mo>≤</mo><msub><mi>b</mi><mn>2</mn></msub></mrow></mrow></semantics></math></span> <span class="math-container" id="6494243" visual_id="3847"><math alttext="f(x)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> else <span class="math-container" id="6494244" visual_id="2020"><math alttext="f(x)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>The problem is to determine Vapnic-Chervonenkis dimension and growth function for set <span class="math-container" id="6494245" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>.</p> <p>I found <a href="http://www.cs.berkeley.edu/~jordan/courses/281B-spring01/lectures/vc.ps" rel="nofollow">here</a> that VC-dimension is 4. But I have no idea how to find growth function.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> machine-learning </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="985437" id="answer">
+<p>The VC-dimension is the size of the largest set  that can be fully shattered by H an Hypothesis set. Purely combinatorial notion.</p> <p>VCdim(H) = max{m: H (m)=2**m}.</p> <p><a href="http://www.cs.nyu.edu/~mohri/mls/lecture_3.pdf" rel="nofollow">http://www.cs.nyu.edu/~mohri/mls/lecture_3.pdf</a></p> <p>As you can see in this pdf, page 25, for one axis aaligned rectangle the VC-dim is 4</p> <p>"No set of five points can be shattered: label negatively the point that is not near the sides"</p> <p>But, in your example there seems to be 2 rectangles so you can shatter more complex point configurations, the VC dim will be higher.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2025039"> In my example there is one rectangle too. It seems that there is no difference between my example and example in pdf you referenced. </td></tr><tr><td comment_id="2057423"> you're right, you have a single axis aligned rectangle, <span class="math-container" id="19025541">m</span>y bad.   <span class="math-container" id="19025542">i</span>n this case, the break point is at 5, (first counter example: 5points not shatterable by rectangle by labelling nega tive the point inside the 4 others) Thus the VC dimension is 4 and for m points the growth function will be O(m**4) which is much less than 2**m after the break point (inclusive) The exact polynomial of degree 4 is not necessarily obvious... (combinatorics) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

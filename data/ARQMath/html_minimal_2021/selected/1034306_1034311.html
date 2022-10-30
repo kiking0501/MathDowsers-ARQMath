@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find the equation of the plane that contains:</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find the equation of the plane that contains: </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1034306">
+<p>Find an equation for the plane containing the lines <span class="math-container" id="9818371" visual_id="9137030"><math alttext="x=5y=\frac{z+1}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>5</mn><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mfrac><mrow><mi>z</mi><mo>+</mo><mn>1</mn></mrow><mn>4</mn></mfrac></mrow></semantics></math></span> and <span class="math-container" id="9818372" visual_id="9137031"><math alttext="\begin{cases}x=t\\ y=2t\\ z=6t−1\end{cases}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mi>x</mi><mo>=</mo><mi>t</mi></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>y</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>z</mi><mo>=</mo><mrow><mn>6</mn><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mn>1</mn></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>I know that finding two points will allow me to find the plane, but how do I go about finding those points?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> analytic-geometry </span><span> vectors </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2108125"> Here's a hint. The first line is actually given as the intersection of two planes. You can find the intersection point of the two lines by substituting the parametrization of the second line into the equations of the first line. Then find the direction vector of the first line by using the normal vectors of the planes defining that line. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1034311" id="answer">
+<p>Remember that the line <span class="math-container" id="9818376" visual_id="915915"><math alttext="\frac{x-x_{0}}{a}=\frac{y-y_{0}}{b}=\frac{z-z_{0}}{c}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>x</mi><mo>-</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mi>a</mi></mfrac><mo>=</mo><mfrac><mrow><mi>y</mi><mo>-</mo><msub><mi>y</mi><mn>0</mn></msub></mrow><mi>b</mi></mfrac><mo>=</mo><mfrac><mrow><mi>z</mi><mo>-</mo><msub><mi>z</mi><mn>0</mn></msub></mrow><mi>c</mi></mfrac></mrow></semantics></math></span> passes through <span class="math-container" id="9818377" visual_id="93744"><math alttext="(x_{0},y_{0},z_{0})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo>,</mo><msub><mi>z</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> with direction <span class="math-container" id="9818378" visual_id="11227"><math alttext="(a,b,c)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>, and the same for the line <span class="math-container" id="9818379" visual_id="9137035"><math alttext="\begin{cases}x=x_{0}+at\\ y=y_{0}+bt\\ z=z_{0}+ct\end{cases}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>y</mi><mo>=</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>z</mi><mo>=</mo><mrow><msub><mi>z</mi><mn>0</mn></msub><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow><mo>.</mo></mrow></semantics></math></span> To find the plane, you need one point, and a normal vector. To find the normal vector, you can do the cross product between the directions of the two lines, and you can find the intersection by inspection, or by substituition.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

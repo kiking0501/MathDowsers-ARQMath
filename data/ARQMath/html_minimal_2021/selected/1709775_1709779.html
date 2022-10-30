@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Roots of (1+x)^n - a= 0, a <> 0, n > 1</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Roots of (1+x)^n - a= 0, a &lt;&gt; 0, n &gt; 1 </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1709775">
+<p>I'm trying to work out the roots of</p> <p><span class="math-container" id="15794137" visual_id="7422988"><math alttext="(1+x)^{n}-a=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>-</mo><mi>a</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>This is the characteristic equation of a dynamical system. <span class="math-container" id="15794138" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> is a constant and <span class="math-container" id="15794139" visual_id="663"><math alttext="n&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>. If <span class="math-container" id="15794140" visual_id="4321"><math alttext="a=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> the solutions are straightforward, what about when <span class="math-container" id="15794141" visual_id="4314"><math alttext="a\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>? Any pointers to finding the solution would be helpful.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> polynomials </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3489471"> <span class="math-container" id="15794142" visual_id="196284"><math alttext="&lt;&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>&lt;</mo><mo>&gt;</mo></mrow></semantics></math></span> is nonstandard. Use <span class="math-container" id="15794143" visual_id="1612"><math alttext="\neq" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≠</mo></semantics></math></span> instead. </td></tr><tr><td comment_id="3505379"> That's my pascal programming legacy coming through. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1709779" id="answer">
+<p>Move <span class="math-container" id="15794144" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>: <span class="math-container" id="15794145" visual_id="7422989"><math alttext="(1+x)^{n}=a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mi>a</mi></mrow></semantics></math></span> If you write <span class="math-container" id="15794146" visual_id="7422990"><math alttext="a=\rho e^{i\phi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mi>ρ</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>ϕ</mi></mrow></msup></mrow></mrow></semantics></math></span>, the solutions are given by <span class="math-container" id="15794147" visual_id="7422991"><math alttext="1+x=\sqrt[n]{\rho}e^{i\phi/n+i2\pi k/n},k\in[0..n-1]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>=</mo><mroot><mi>ρ</mi><mi>n</mi></mroot><msup><mi>e</mi><mrow><mrow><mrow><mi>i</mi><mo>⁢</mo><mi>ϕ</mi></mrow><mo>/</mo><mi>n</mi></mrow><mo>+</mo><mrow><mrow><mi>i</mi><mo>⁢</mo><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow><mo>/</mo><mi>n</mi></mrow></mrow></msup><mo>,</mo><mi>k</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>.</mo><mo>.</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> Hence <span class="math-container" id="15794148" visual_id="7422992"><math alttext="x=\sqrt[n]{\rho}e^{i\phi/n+i2\pi k/n}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mroot><mi>ρ</mi><mi>n</mi></mroot><mo>⁢</mo><msup><mi>e</mi><mrow><mrow><mrow><mi>i</mi><mo>⁢</mo><mi>ϕ</mi></mrow><mo>/</mo><mi>n</mi></mrow><mo>+</mo><mrow><mrow><mi>i</mi><mo>⁢</mo><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>k</mi></mrow><mo>/</mo><mi>n</mi></mrow></mrow></msup></mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3489435"> Do you have any suggestions to online material or textbooks that cover this? I'm curious how you came up with the solution so fast, is it well known? </td></tr><tr><td comment_id="3489436"> @rhody It is called <span class="math-container" id="15794150" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>th roots of unity, or complex exponential, or De Moivre's formula, or polar form of a complex number. </td></tr><tr><td comment_id="3489445"> It would probably help to think of this in terms of a polygon of <span class="math-container" id="15794150" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> sides, each side subtending an angle of <span class="math-container" id="15794151" visual_id="66656"><math alttext="2\pi/n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mo>/</mo><mi>n</mi></mrow></semantics></math></span> at the center of the circumscribing circle. The coordinates of each point in the argand plane gives the roots. As @HenryW. said, it would be easier to do this in polar coordinates, as we are working with circles. Try to visalise it (draw it or something). The answer should become more comprehensible then. </td></tr><tr><td comment_id="3489472"> Putting a on the other side and taking the n roots should be obvious to anyone.  If a is positive or if a is negative and n is odd and if you are only considering the reals the roots are straight forward.  Those who know complex analysis know the roots of unity.  So yes.  This is well known. </td></tr><tr><td comment_id="3489476"> I've not done any formal classes on complex analysis so I'm learning this as I go along. I could take the nth root on both sides but with out knowledge of complex analysis it didn't lead me anywhere. So I'm not sure it would be obvious to anyone as you suggest. </td></tr><tr><td comment_id="3505502"> Yes, I just realized thanks for getting back. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

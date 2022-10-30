@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is the probability that player A and B play against each other?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is the probability that player A and B play against each other? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2481670">
+<blockquote> <p>Players with same skill take part in a competition. The probability of   winning each game is 0.5. At first, we divide a group of <span class="math-container" id="22963582" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> people   to random pairs that play against each other. Then we will do the same   for <span class="math-container" id="22963583" visual_id="14721"><math alttext="2^{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> winners and this continues until there is only   one winner. What is the probability that player A and B play against   each other?</p> </blockquote> <p>I know we should calculate the sum of probabilities that two players play against each other in the first round, then for second round and etc. So how can i calculate the probability that two players play at round K?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> discrete-mathematics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5127236"> Did you try a small example to see what would have to happen for A and B to meet in the second round, or the third round, and then see how it may generalize from that? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2481757" id="answer">
+<p>Hmm...I don't see any real difference between this and an ordinary single-elimination tournament where the seeding is set from the start.  Maybe I'm missing something.</p> <p>Anyway, assuming that there isn't any difference, we observe that Player A has <span class="math-container" id="22963607" visual_id="19221"><math alttext="2^{n}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> different possible opponents in the first round.  Of those, <span class="math-container" id="22963608" visual_id="14721"><math alttext="2^{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> are in the opposite half of the draw, and both they and Player A would have to win <span class="math-container" id="22963609" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> games to meet; this happens with probability <span class="math-container" id="22963610" visual_id="2215419"><math alttext="\frac{1}{4^{n-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mn>4</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mfrac></semantics></math></span>.  <span class="math-container" id="22963611" visual_id="13715"><math alttext="2^{n-2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></semantics></math></span> are in the same half, but opposite quarters, and both they and Player A would have to win <span class="math-container" id="22963612" visual_id="15794"><math alttext="n-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></semantics></math></span> games to meet; this happens with probability <span class="math-container" id="22963613" visual_id="2215420"><math alttext="\frac{1}{4^{n-2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mn>4</mn><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></mfrac></semantics></math></span>.  And so on, until we get to the <span class="math-container" id="22963614" visual_id="2215421"><math alttext="2^{n-n}=2^{0}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mi>n</mi></mrow></msup><mo>=</mo><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow></semantics></math></span> single player who meets Player A in the first round.  Altogether, the probability of Player A and a given Player B meeting eventually is</p> <p>\begin{align} \frac{1}{2^n-1} \sum_{k=1}^n 2^{n-k}\frac{1}{4^{n-k}}     &amp; = \frac{1}{2^n-1} \sum_{k=1}^n \frac{1}{2^{n-k}} \\     &amp; = \frac{1}{2^n-1} \sum_{k=0}^{n-1} \frac{1}{2^k} \\     &amp; = \frac{1}{2^n-1} \left(2-\frac{1}{2^{n-1}}\right) \\     &amp; = \frac{1}{2^n-1} \times \frac{2^n-1}{2^{n-1}} \\     &amp; = \frac{1}{2^{n-1}} \end{align}</p> <p>I'll come back to edit this if I think (or someone points out) that there's a substantive difference between random reseeding and not reseeding.</p> <hr/> <p>There's also a pretty simple proof by induction: For <span class="math-container" id="22963615" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> (two players), the probability is clearly <span class="math-container" id="22963616" visual_id="2215422"><math alttext="\frac{1}{2^{n}-1}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.  For <span class="math-container" id="22963617" visual_id="663"><math alttext="n&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>, the probability that they meet in the first round is <span class="math-container" id="22963618" visual_id="549265"><math alttext="\frac{1}{2^{n}-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mn>1</mn></mrow></mfrac></semantics></math></span>.  If they don't meet in the first round (with probability <span class="math-container" id="22963619" visual_id="2215423"><math alttext="\frac{2^{n}-2}{2^{n}-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mn>2</mn></mrow><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mn>1</mn></mrow></mfrac></semantics></math></span>), then they must both win their first games (with probability <span class="math-container" id="22963620" visual_id="1118"><math alttext="\frac{1}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>4</mn></mfrac></semantics></math></span>) to get to the next round.  With reseeding, this is clearly the case of <span class="math-container" id="22963621" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span>, so with the premise that the probability of them meeting at that point is <span class="math-container" id="22963622" visual_id="2215424"><math alttext="\frac{1}{2^{n-1-1}}=\frac{1}{2^{n-2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn><mo>-</mo><mn>1</mn></mrow></msup></mfrac><mo>=</mo><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></mfrac></mrow></semantics></math></span>, the overall probability for case <span class="math-container" id="22963623" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is</p> <p>\begin{align} \frac{1}{2^n-1}+\frac{2^n-2}{2^n-1} \times \frac14 \times \frac{1}{2^{n-2}}     &amp; = \frac{1}{2^n-1} \left(1+\frac{2^n-2}{2^n}\right) \\     &amp; = \frac{1}{2^n-1} \times \frac{2^{n+1}-2}{2^n} \\     &amp; = \frac{1}{2^n-1} \times \frac{2^n-1}{2^{n-1}} \\     &amp; = \frac{1}{2^{n-1}} \end{align}</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

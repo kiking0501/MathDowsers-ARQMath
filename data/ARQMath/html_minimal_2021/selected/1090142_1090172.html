@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How can we measure how "irrational" a number is?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How can we measure how "irrational" a number is? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1090142">
+<p>I wonder, can we, for instance, say that <span class="math-container" id="10297926" visual_id="1294"><math alttext="\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi></semantics></math></span> is more irrational than <span class="math-container" id="10297927" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span>? Or that <span class="math-container" id="10297928" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span> is more irrational than <span class="math-container" id="10297929" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span>? What kind of irrationality measurement can we use to say that <span class="math-container" id="10297930" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> is (much) more irrational than <span class="math-container" id="10297931" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>? (in particularly rigorous sense)</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2221905"> http://math.stackexchange.com/questions/53056/beside-transcendental-or-uncomputable-numbers-what-other-types-of-numbers-are-th </td></tr><tr><td comment_id="2223800"> I am no mathematician, but instinctively it seems like there should be an exceptional class of irrational numbers: committed numbers. </td></tr><tr><td comment_id="5374570"> @CortAmmon What are committed numbers? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1090172" id="answer">
+<p>One way to view things would be to make the distinction between:</p> <ul> <li><code>algebraic</code> numbers, which are irrational but not too far from rational numbers, in the sense that they are roots of polynomial equations with rational  (or even integer) coefficients. For instance <span class="math-container" id="10297932" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> satisfies the equation <span class="math-container" id="10297933" visual_id="63437"><math alttext="x^{2}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn></mrow></semantics></math></span>. The set of all algebraic numbers is <code>countable</code>, just as the rational numbers.</li> <li><code>transcendental</code> numbers  which are not roots of any polynomial with rational coefficients. Among these numbers <code><span class="math-container" id="10297934" visual_id="1294"><math alttext="\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi></semantics></math></span></code> and <code><span class="math-container" id="10297935" visual_id="1073"><math alttext="\mathrm{e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">e</mi></semantics></math></span></code> are transcendental. It was proved only towards the end of the 19th century, although it was known since the mid-18th century that <span class="math-container" id="10297936" visual_id="1294"><math alttext="\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi></semantics></math></span> is irrational (Johann Lambert, 1761). It is not known if the Euler-Mascheroni constant is rational od irrational. Transcendental numbers are much numerous than algebraic numbers – actually as many as real numbers.</li> </ul> <p>The fact that <span class="math-container" id="10297937" visual_id="1294"><math alttext="\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi></semantics></math></span> is not an algebraic number provides a negative answer to the problem of <code>squaring the circle</code>, a problem that dated back to the Ancient Greek.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2221461"> so pi ,e ,square root of 2 , or euler masc </td></tr><tr><td comment_id="2221469"> That's what I wrote. For Euler-Mascheroni, it is not known. It was proved only in 1978 that <span class="math-container" id="10297938" visual_id="2771"><math alttext="\zeta(3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is irrational. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="53056"> Beside transcendental or uncomputable numbers what other types of numbers are there? </td></tr><tr><td post_id="992463"> Exponential extension of <span class="math-container" id="9472873" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span> </td></tr><tr><td post_id="2094401"> An 'irrationality score' </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

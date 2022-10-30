@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Uncorrelatedness and conditional expectation</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Uncorrelatedness and conditional expectation </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="704578">
+<p>Two random variables <span class="math-container" id="7048541" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and <span class="math-container" id="7048542" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span>. How are the following two statements related:</p> <ul> <li><span class="math-container" id="7048543" visual_id="128609"><math alttext="E(XY)=E(X)E(Y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, (<span class="math-container" id="7048544" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and <span class="math-container" id="7048545" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> are called uncorrelated)</li> <li><span class="math-container" id="7048546" visual_id="818658"><math alttext="E(X|Y)=E(X)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> a.s., (what is this case called?)</li> </ul> <p>Does one imply the other, and/or are there counterexample to such implications, or are there some condition that can make one imply the other? Thanks!</p> <hr/> <p>From a deleted reply, there is an interesting statement</p> <ul> <li><span class="math-container" id="7048547" visual_id="5665773"><math alttext="E(X|Y)E(Y)=E(XY)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> a.s.</li> </ul> <p>I don't quite remember it correctly. Can anyone who can see it (with 10k reputation) verify that? I wonder when it is true? Any implication with the previous two statements?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1475547"> Second bullet implies first (direct from the characterization of the conditional expectation). First bullet does not imply second (direct by a host of counterexamples). </td></tr><tr><td comment_id="1475556"> Thanks! What characterization of the conditional expectation can show the second implies the first? What ideas to find counterexamples for the reverse? </td></tr><tr><td comment_id="1475574"> Re the Edit: sorry but which DEFINITION of conditional expectation do you know/are you using? </td></tr><tr><td comment_id="1475582"> The measure-theoretical definition and the elementary definition. In the edit, the RHS is a r.v. times a constant, the RHS is a constant, so I will change the equality to be a.s.. (BTW, I don't remember the deleted reply exactly, so I might remember wrongly) </td></tr><tr><td comment_id="1475592"> If you know the definition, how can you believe that the "interesting formula E(X|Y)E(Y)=E(XY) a.s." holds? </td></tr><tr><td comment_id="1475596"> I wonder when it is true. not it is always true. Not only  correct things are worth thinking. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="704590" id="answer">
+<p>Since <span class="math-container" id="7048548" visual_id="5665774"><math alttext="cov(X,Y)=E(XY)-E(X)E(Y)," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>c</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> then for <span class="math-container" id="7048549" visual_id="128609"><math alttext="E(XY)=E(X)E(Y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>to be true, <span class="math-container" id="7048550" visual_id="9515"><math alttext="X,Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow></semantics></math></span> are uncorrelated.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1475563"> In the second line, what does the intersection <span class="math-container" id="7048551" visual_id="5665775"><math alttext="E(X)\cap E(Y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∩</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> mean, as it looks to be the intersection of two numbers? </td></tr><tr><td comment_id="1475572"> Well... "for E(XY)=E(X)E(Y)to be true, X,Y have to be independent" is pure fantasy. // @upvoter Why the upvote? Are you also the upvoter of the now deleted answer? </td></tr><tr><td comment_id="1475576"> It should conclude "...<span class="math-container" id="7048553" visual_id="9515"><math alttext="X,Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow></semantics></math></span> have to be uncorrelated." </td></tr><tr><td comment_id="1475577"> @<span class="math-container" id="13657814">D</span>id Why is E(<span class="math-container" id="13657818">X</span>Y)=E(X)E(Y) for X,Y independent pure fantasy? </td></tr><tr><td comment_id="1475583"> @Did As the author of the deleted answer, I deleted since I was totally off about the issue. I also was surprised by any upvote on it since it was wrong. </td></tr><tr><td comment_id="1475589"> @jnh If <span class="math-container" id="7048553" visual_id="9515"><math alttext="X,Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow></semantics></math></span> independent one can conclude the product formula, but cannot assume the product formula and conclude the two are independent. </td></tr><tr><td comment_id="1475590"> @coffeemath You're right, it is uncorrelated.  I was wrong, will fix it now. </td></tr><tr><td comment_id="1475595"> @coffeemath I had guessed so. No problem. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

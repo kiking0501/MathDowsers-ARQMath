@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is this identity about floor function true?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is this identity about floor function true? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1648117">
+<p>When <span class="math-container" id="15242423" visual_id="476"><math alttext="a,b,c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></semantics></math></span> are positive integers, is this identity below is true for all <span class="math-container" id="15242424" visual_id="476"><math alttext="a,b,c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow></semantics></math></span>?</p> <p><span class="math-container" id="15242425" visual_id="5480282"><math alttext="\left\lfloor\frac{\left\lfloor\frac{a}{b}\right\rfloor}{c}\right\rfloor=\left% \lfloor\frac{\left\lfloor\frac{a}{c}\right\rfloor}{b}\right\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>⌊</mo><mfrac><mrow><mo>⌊</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>⌋</mo></mrow><mi>c</mi></mfrac><mo>⌋</mo></mrow><mo>=</mo><mrow><mo>⌊</mo><mfrac><mrow><mo>⌊</mo><mfrac><mi>a</mi><mi>c</mi></mfrac><mo>⌋</mo></mrow><mi>b</mi></mfrac><mo>⌋</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> floor-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3361322"> Consider adding a tag for a broader subject area to which the question belongs. Some of [these tags](//math.stackexchange.com/tags/ceiling-function/info#h-related-tags) might fit. *(autocomment)* </td></tr><tr><td comment_id="3361345"> Probably not if a = 27 and b = 8 [a/b] =4.  if c = 1.9. the [[a/b]/c] = [4/1.9] = 3.  And [a/c] = 15.  And [[a/c]/8] = [15/8] = 2. </td></tr><tr><td comment_id="3361346"> @fleablood 1.9 is not a positive integer tho </td></tr><tr><td comment_id="3361358"> meh...$$$$$$$$$$ </td></tr><tr><td comment_id="3361364"> Sorry, it is floor function not ceiling function. </td></tr><tr><td comment_id="3361391"> Working on Euler 546? </td></tr><tr><td comment_id="3361400"> [[a/b]/c] = [(a/b - r/b)/c] = a/bc - r/bc - q/c. where a = mb + r and (a/bc - r/bc) = nc + q.   [[a/c]/b] = a/bc - t/bc - u/b where a = dc + t and (a/bc - t/bc) = eb + u.  Do r + q/c always equal t + u/b? (same would apply for ceiling.) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1648178" id="answer">
+<p>Using division with remainder write  <span class="math-container" id="15242428" visual_id="5480283"><math alttext="a=qbc+r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mi>q</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mi>r</mi></mrow></mrow></semantics></math></span> with <span class="math-container" id="15242429" visual_id="5480284"><math alttext="0\leq r&lt;bc" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>r</mi><mo>&lt;</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></semantics></math></span> and then write <span class="math-container" id="15242430" visual_id="5480285"><math alttext="r=q^{\prime}b+r^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mrow><mrow><msup><mi>q</mi><mo>′</mo></msup><mo>⁢</mo><mi>b</mi></mrow><mo>+</mo><msup><mi>r</mi><mo>′</mo></msup></mrow></mrow></semantics></math></span> with <span class="math-container" id="15242431" visual_id="1052692"><math alttext="0\leq r^{\prime}&lt;b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msup><mi>r</mi><mo>′</mo></msup><mo>&lt;</mo><mi>b</mi></mrow></semantics></math></span>, as well as <span class="math-container" id="15242432" visual_id="5480286"><math alttext="r=q^{\prime\prime}c+r^{\prime\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mrow><mrow><msup><mi>q</mi><mo>′′</mo></msup><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><msup><mi>r</mi><mo>′′</mo></msup></mrow></mrow></semantics></math></span> with <span class="math-container" id="15242433" visual_id="5480287"><math alttext="0\leq r^{\prime\prime}&lt;c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msup><mi>r</mi><mo>′′</mo></msup><mo>&lt;</mo><mi>c</mi></mrow></semantics></math></span>. So <span class="math-container" id="15242434" visual_id="5480288"><math alttext="a=qbc+q^{\prime}b+r^{\prime}=qbc+q^{\prime\prime}c+r^{\prime\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mi>q</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mrow><msup><mi>q</mi><mo>′</mo></msup><mo>⁢</mo><mi>b</mi></mrow><mo>+</mo><msup><mi>r</mi><mo>′</mo></msup></mrow><mo>=</mo><mrow><mrow><mi>q</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mrow><msup><mi>q</mi><mo>′′</mo></msup><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><msup><mi>r</mi><mo>′′</mo></msup></mrow></mrow></semantics></math></span>. Because <span class="math-container" id="15242435" visual_id="5480284"><math alttext="0\leq r&lt;bc" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>r</mi><mo>&lt;</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></semantics></math></span> we conclude that <span class="math-container" id="15242436" visual_id="5480289"><math alttext="0\leq q^{\prime}&lt;c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msup><mi>q</mi><mo>′</mo></msup><mo>&lt;</mo><mi>c</mi></mrow></semantics></math></span> and <span class="math-container" id="15242437" visual_id="5480290"><math alttext="0\leq q^{\prime\prime}&lt;b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><msup><mi>q</mi><mo>′′</mo></msup><mo>&lt;</mo><mi>b</mi></mrow></semantics></math></span>. Then  <span class="math-container" id="15242438" visual_id="5480291"><math alttext="\left\lfloor\frac{\left\lfloor\frac{a}{b}\right\rfloor}{c}\right\rfloor=\left% \lfloor\frac{qc+q^{\prime}}{c}\right\rfloor=q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>⌊</mo><mfrac><mrow><mo>⌊</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>⌋</mo></mrow><mi>c</mi></mfrac><mo>⌋</mo></mrow><mo>=</mo><mrow><mo>⌊</mo><mfrac><mrow><mrow><mi>q</mi><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><msup><mi>q</mi><mo>′</mo></msup></mrow><mi>c</mi></mfrac><mo>⌋</mo></mrow><mo>=</mo><mi>q</mi></mrow></semantics></math></span> and  <span class="math-container" id="15242439" visual_id="5480292"><math alttext="\left\lfloor\frac{\left\lfloor\frac{a}{c}\right\rfloor}{b}\right\rfloor=\left% \lfloor\frac{qb+q^{\prime\prime}}{c}\right\rfloor=q." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>⌊</mo><mfrac><mrow><mo>⌊</mo><mfrac><mi>a</mi><mi>c</mi></mfrac><mo>⌋</mo></mrow><mi>b</mi></mfrac><mo>⌋</mo></mrow><mo>=</mo><mrow><mo>⌊</mo><mfrac><mrow><mrow><mi>q</mi><mo>⁢</mo><mi>b</mi></mrow><mo>+</mo><msup><mi>q</mi><mo>′′</mo></msup></mrow><mi>c</mi></mfrac><mo>⌋</mo></mrow><mo>=</mo><mi>q</mi></mrow><mo>.</mo></mrow></semantics></math></span> So indeed <span class="math-container" id="15242440" visual_id="5480293"><math alttext="\left\lfloor\frac{\left\lfloor\frac{a}{c}\right\rfloor}{b}\right\rfloor=\left% \lfloor\frac{\left\lfloor\frac{a}{b}\right\rfloor}{c}\right\rfloor=\left% \lfloor\frac{a}{bc}\right\rfloor." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>⌊</mo><mfrac><mrow><mo>⌊</mo><mfrac><mi>a</mi><mi>c</mi></mfrac><mo>⌋</mo></mrow><mi>b</mi></mfrac><mo>⌋</mo></mrow><mo>=</mo><mrow><mo>⌊</mo><mfrac><mrow><mo>⌊</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>⌋</mo></mrow><mi>c</mi></mfrac><mo>⌋</mo></mrow><mo>=</mo><mrow><mo>⌊</mo><mfrac><mi>a</mi><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mfrac><mo>⌋</mo></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3361472"> I confess that I'm somewhat surprised by this. I would have suspected it to be false. +1. </td></tr><tr><td comment_id="3361487"> @MPW Me too, but the counterexamples kept failing :) </td></tr><tr><td comment_id="3361495"> Yes, that was my experience. I even tried a small spreadsheet with all a,b,c in the range 1-5. Oh well, live and learn. </td></tr><tr><td comment_id="3361965"> In hindsight it makes sense.  Ceiling works as well.  ceiling = q + 1 if r &gt; 0.  I can't tell you how long I struggled without realizing q' &lt; c and q" &lt; b. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

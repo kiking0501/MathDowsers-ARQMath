@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Diophantine equation $a b=a+b+n$, find $(a,b)$ for particular $n$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Diophantine equation <span class="math-container" id="19661610" visual_id="2741967"><math alttext="ab=a+b+n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>n</mi></mrow></mrow></semantics></math></span>, find <span class="math-container" id="19661611" visual_id="2239"><math alttext="(a,b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> for particular <span class="math-container" id="19661612" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2127166">
+<p>It's easy to see that this equation always has a solution:</p> <p><span class="math-container" id="19661613" visual_id="2741968"><math alttext="a=n+2,\quad b=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>=</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mi>b</mi><mo>=</mo><mn>2</mn></mrow></mrow></semantics></math></span></p> <p>Because it can be rewritten:</p> <p><span class="math-container" id="19661614" visual_id="2741969"><math alttext="a=\frac{b+n}{b-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>b</mi><mo>+</mo><mi>n</mi></mrow><mrow><mi>b</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span></p> <p>Moreover, for even <span class="math-container" id="19661615" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> there are no more nontrivial solutions, obviously, because we would have a ratio of odd to even or even to odd. (Never mind, that's not true, of course, even numbers can divide odd. However, there are other reasons for trouble with even <span class="math-container" id="19661616" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.)</p> <blockquote> <p>I need to find solutions with minimal <span class="math-container" id="19661617" visual_id="35808"><math alttext="a-b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow></semantics></math></span>, but <span class="math-container" id="19661618" visual_id="8157"><math alttext="a\neq b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≠</mo><mi>b</mi></mrow></semantics></math></span> for odd values of <span class="math-container" id="19661619" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. Is there a general formula or at least an algorithm?</p> </blockquote> <p>Since <span class="math-container" id="19661620" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="19661621" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> are interchangeable, assume <span class="math-container" id="19661622" visual_id="2213"><math alttext="a&gt;b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mi>b</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> diophantine-equations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4374520"> The equation can be written as <span class="math-container" id="19661623" visual_id="2741970"><math alttext="(a-1)(b-1)=n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2127171" id="answer">
+<p>We can rewrite this as <span class="math-container" id="19661624" visual_id="2741971"><math alttext="ab-a-b+1=n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>-</mo><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>, or <span class="math-container" id="19661625" visual_id="2741970"><math alttext="(a-1)(b-1)=n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>. Hence the smallest <span class="math-container" id="19661626" visual_id="35808"><math alttext="a-b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow></semantics></math></span> is achieved then <span class="math-container" id="19661627" visual_id="46413"><math alttext="a-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> is the smallest divisor of <span class="math-container" id="19661628" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> greater than <span class="math-container" id="19661629" visual_id="43901"><math alttext="\sqrt{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></semantics></math></span> (or equal if you were to allow <span class="math-container" id="19661630" visual_id="5337"><math alttext="a=b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi></mrow></semantics></math></span>).</p> <p>By the way, the ratio of even to odd can be integer - just look at <span class="math-container" id="19661631" visual_id="2741972"><math alttext="\frac{6}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>6</mn><mn>3</mn></mfrac></semantics></math></span>. For example, for <span class="math-container" id="19661632" visual_id="29175"><math alttext="n=14" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>14</mn></mrow></semantics></math></span>, you can take <span class="math-container" id="19661633" visual_id="2741973"><math alttext="a=6,b=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>=</mo><mn>6</mn></mrow><mo>,</mo><mrow><mi>b</mi><mo>=</mo><mn>4</mn></mrow></mrow></semantics></math></span>, so this is another nontrivial solution for an even <span class="math-container" id="19661634" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4374529"> @ Wojowu, thanks, I messed up about even <span class="math-container" id="19661640" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. But there are other reasons for trouble with even <span class="math-container" id="19661640" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> - the number of solutions is always much smaller for the cases I checked </td></tr><tr><td comment_id="4374537"> @YuriyS If you drop the assumption that <span class="math-container" id="19661637" visual_id="1640"><math alttext="a&gt;b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mi>b</mi></mrow></semantics></math></span>, then the number of solutions is precisely the number of divisors of <span class="math-container" id="19661639" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>. Since <span class="math-container" id="19661639" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> is odd if <span class="math-container" id="19661640" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is even, there will often be less solutions, but I don't see why this is any kind of trouble; my solution works just fine. </td></tr><tr><td comment_id="4374549"> Your answer is good, it's me who has trouble </td></tr><tr><td comment_id="4374552"> If you have any more questions, feel free to ask, either in a comment or add to your question. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

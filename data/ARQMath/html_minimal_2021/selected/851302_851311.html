@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to prove $\sum_{m=1}^\infty \sum_{n=1}^\infty \frac{1}{m^2+n^2}=+\infty$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to prove <span class="math-container" id="8286562" visual_id="2557239"><math alttext="\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}\frac{1}{m^{2}+n^{2}}=+\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="851302">
+<p>How to prove <span class="math-container" id="8286563" visual_id="7019643"><math alttext="\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}\frac{1}{m^{2}+n^{2}}=+\infty." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>I try to do like <span class="math-container" id="8286564" visual_id="7019644"><math alttext="\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}\frac{1}{m^{2}+n^{2}}=\sum_{N=1}^{\infty% }\sum_{n+m=N}^{\infty}\frac{1}{m^{2}+n^{2}}=\sum_{N=1}^{\infty}\sum_{m=1}^{N-1% }\frac{1}{m^{2}+(N-m)^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>N</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow><mo>=</mo><mi>N</mi></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>N</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></munderover><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>-</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></mrow></mrow></semantics></math></span> <span class="math-container" id="8286565" visual_id="7019645"><math alttext="\frac{1}{m^{2}+(N-m)^{2}}\leq\frac{2}{N^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>-</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac><mo>≤</mo><mfrac><mn>2</mn><msup><mi>N</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> but it doesn't work.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1755551"> or can we use <span class="math-container" id="8286566" visual_id="7019646"><math alttext="\sum_{n=1}^{\infty}\frac{\pi}{n}coth(\pi n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mi>π</mi><mi>n</mi></mfrac><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="1755552"> Have you tried using the inequality <span class="math-container" id="8286567" visual_id="7019647"><math alttext="m^{2}+n^{2}\leqslant(m+n)^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>⩽</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></semantics></math></span>? </td></tr><tr><td comment_id="1755583"> Yes, it can work. </td></tr><tr><td comment_id="1755719"> Would a simple comparison with <span class="math-container" id="8286568" visual_id="7019648"><math alttext="\displaystyle\int_{1}^{\infty}\int_{1}^{\infty}\dfrac{1}{x^{2}+y^{2}}dx~{}dy" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mn>1</mn><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mpadded width="+3.3pt"><mi>x</mi></mpadded></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>y</mi></mrow></mrow></mrow></mrow></semantics></math></span> be enough ? </td></tr><tr><td comment_id="5283855"> See an old question of mine [here](https://math.stackexchange.com/questions/1800159/for-which-values-of-real-alpha-beta-does-sum-n-m-ge-1-frac1n-alp) . Anyway, your argument is correct. Now, it is enough to see that <span class="math-container" id="8286569" visual_id="7019649"><math alttext="\sum_{m}\frac{m-1}{m^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>m</mi></munder><mfrac><mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow><msup><mi>m</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> diverges. This can be showed using the asymptotic comparison with the harmonic series, since <span class="math-container" id="8286570" visual_id="7019650"><math alttext="\frac{m-1}{m^{2}}\sim\frac{1}{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>m</mi><mo>-</mo><mn>1</mn></mrow><msup><mi>m</mi><mn>2</mn></msup></mfrac><mo>∼</mo><mfrac><mn>1</mn><mi>m</mi></mfrac></mrow></semantics></math></span> </td></tr><tr><td comment_id="5284101"> Ah ok. But can we rearrange the series even if the series diverges? @Crostul </td></tr><tr><td comment_id="5284406"> @MaryStar: as long as the terms are positive, we can rearrange the terms any way we want. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="851311" id="answer">
+<p>You're almost there. </p> <p><span class="math-container" id="8286571" visual_id="7019651"><math alttext="\frac{1}{m^{2}+(N-m)^{2}}=\frac{1}{2m^{2}+N^{2}-2mN}=\frac{1}{2m(m-N)+N^{2}}% \geq\frac{1}{N^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>-</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><mo>+</mo><msup><mi>N</mi><mn>2</mn></msup></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>N</mi></mrow></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>-</mo><mi>N</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><msup><mi>N</mi><mn>2</mn></msup></mrow></mfrac><mo>≥</mo><mfrac><mn>1</mn><msup><mi>N</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span></p> <p>Now <span class="math-container" id="8286572" visual_id="7019652"><math alttext="\sum_{N=1}^{\infty}\sum_{m=1}^{N-1}\frac{1}{m^{2}+(N-m)^{2}}\geq\sum_{N=1}^{% \infty}\sum_{m=1}^{N-1}\frac{1}{N^{2}}=\sum_{N=1}^{\infty}\frac{N-1}{N^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>N</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></munderover><mfrac><mn>1</mn><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>-</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>≥</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>N</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></munderover><mfrac><mn>1</mn><msup><mi>N</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>N</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow><msup><mi>N</mi><mn>2</mn></msup></mfrac></mrow></mrow></semantics></math></span></p> <p>Can you finish from here?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1755557"> oh! Thanks, why can't I think up of it, a big pity. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="149138"> Convergence of multiple series <span class="math-container" id="1735111" visual_id="7544034"><math alttext="\sum\frac{1}{n^{2}+m^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mfrac><mn>1</mn><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></mfrac></mrow></semantics></math></span> </td></tr><tr><td post_id="1031492"> <span class="math-container" id="9792856" visual_id="9129281"><math alttext="\sum_{m=1}^{\infty}\sum_{n=1}^{\infty}\frac{1}{|m+in|^{p}}&lt;\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">|</mo><mrow><mi>m</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></mrow><mo stretchy="false">|</mo></mrow><mi>p</mi></msup></mfrac></mrow></mrow><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> </td></tr><tr><td post_id="1800159"> For which values of real <span class="math-container" id="16637649" visual_id="6873"><math alttext="\alpha,\beta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>,</mo><mi>β</mi></mrow></semantics></math></span> does <span class="math-container" id="16637650" visual_id="7332494"><math alttext="\sum_{n,m\geq 1}\frac{1}{n^{\alpha}+m^{\beta}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mrow><mi>n</mi><mo>,</mo><mi>m</mi></mrow><mo>≥</mo><mn>1</mn></mrow></munder><mfrac><mn>1</mn><mrow><msup><mi>n</mi><mi>α</mi></msup><mo>+</mo><msup><mi>m</mi><mi>β</mi></msup></mrow></mfrac></mrow></semantics></math></span> converge? </td></tr><tr><td post_id="2559736"> The double series <span class="math-container" id="23664772" visual_id="2557233"><math alttext="\sum\frac{1}{j^{2}+k^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mfrac><mn>1</mn><mrow><msup><mi>j</mi><mn>2</mn></msup><mo>+</mo><msup><mi>k</mi><mn>2</mn></msup></mrow></mfrac></mrow></semantics></math></span> diverges </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

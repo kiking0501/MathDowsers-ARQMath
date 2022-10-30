@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>subtleties in the definition of Euclidean domain.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> subtleties in the definition of Euclidean domain. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2360492">
+<p>An integral domain <span class="math-container" id="21833592" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is called a Euclidean domain if there is a function <span class="math-container" id="21833593" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> from the non-zero elements of D to the non-zero integers such that</p> <p>1) <span class="math-container" id="21833594" visual_id="3190535"><math alttext="d\left(a\right)\leq d\left(ab\right)\forall a,b\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo>(</mo><mi>a</mi><mo>)</mo></mrow></mrow><mo>≤</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>∀</mo><mi>a</mi></mrow></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>∈</mo><mi>D</mi></mrow></mrow></semantics></math></span>.</p> <p>2) if <span class="math-container" id="21833595" visual_id="3190536"><math alttext="a,b\in D,b\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>D</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></mrow></semantics></math></span>, then there exists elements <span class="math-container" id="21833596" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> and <span class="math-container" id="21833597" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> in <span class="math-container" id="21833598" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> such that <span class="math-container" id="21833599" visual_id="26656"><math alttext="a=bq+r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>q</mi></mrow><mo>+</mo><mi>r</mi></mrow></mrow></semantics></math></span>, where <span class="math-container" id="21833600" visual_id="3212"><math alttext="r=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="21833601" visual_id="2746271"><math alttext="d\left(r\right)&lt;d\left(b\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo>(</mo><mi>r</mi><mo>)</mo></mrow></mrow><mo>&lt;</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo>(</mo><mi>b</mi><mo>)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>In the second condition, it is mentioned that <span class="math-container" id="21833602" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> is non-zero. This is tautological. It follows directly from the map <span class="math-container" id="21833603" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> that <span class="math-container" id="21833604" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> maps only non-zero elements. Or is there something subtle to this?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> ring-theory </span><span> euclidean-domain </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4863070"> It is not tautological. If you postulate "If <span class="math-container" id="21833605" visual_id="126041"><math alttext="a,b\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>D</mi></mrow></semantics></math></span>, then there exist elements <span class="math-container" id="21833606" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> and <span class="math-container" id="21833607" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> in <span class="math-container" id="21833608" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> such that <span class="math-container" id="21833609" visual_id="26656"><math alttext="a=bq+r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>q</mi></mrow><mo>+</mo><mi>r</mi></mrow></mrow></semantics></math></span>, where <span class="math-container" id="21833610" visual_id="3212"><math alttext="r=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="21833611" visual_id="3190537"><math alttext="d(r)&lt;d(b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2360692" id="answer">
+<p>There isn't really subtle behind the requirement that <span class="math-container" id="21833618" visual_id="4315"><math alttext="b\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>. Algebraic structures are nice generalizations of known structures. So when defining an abstract structure we want that structure behaves nicely as it does in the known structure. In the case of Euclidean domains, we define them in order to mimic the division algorithm for the integers. Now, as you surely know, in <span class="math-container" id="21833619" visual_id="3375"><math alttext="\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℤ</mi></semantics></math></span> we <a href="https://math.stackexchange.com/a/26452/133781">can't divide by zero</a>, so going to the abstract concept of Euclidean domains, we demand that the "divisor", i.e., <span class="math-container" id="21833620" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> must be nonzero like it happens in the integer case. So, this is basically the reason why we take <span class="math-container" id="21833621" visual_id="4315"><math alttext="b\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>. </p> <hr/> <p>On the other hand, the definition of Euclidean domain you have is maybe the standard one, but is not the only definition that exists. According to other authors we can define <span class="math-container" id="21833622" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> to be a Euclidean domain if there is a map <span class="math-container" id="21833623" visual_id="3190541"><math alttext="d\colon D\rightarrow\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>:</mo><mrow><mi>D</mi><mo>→</mo><mi>ℕ</mi></mrow></mrow></semantics></math></span> (here <span class="math-container" id="21833624" visual_id="265418"><math alttext="\mathbb{N}=\{0,1,\ldots\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℕ</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>) that satisfies:</p> <p>i) <span class="math-container" id="21833625" visual_id="1179176"><math alttext="d(0)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="21833626" visual_id="3190542"><math alttext="d(a)&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> for all <span class="math-container" id="21833627" visual_id="4314"><math alttext="a\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>ii) For <span class="math-container" id="21833628" visual_id="126041"><math alttext="a,b\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>D</mi></mrow></semantics></math></span>, <span class="math-container" id="21833629" visual_id="4315"><math alttext="b\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>, there are <span class="math-container" id="21833630" visual_id="193293"><math alttext="q,r\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>q</mi><mo>,</mo><mi>r</mi></mrow><mo>∈</mo><mi>D</mi></mrow></semantics></math></span> such that <span class="math-container" id="21833631" visual_id="26656"><math alttext="a=bq+r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>q</mi></mrow><mo>+</mo><mi>r</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="21833632" visual_id="2746271"><math alttext="d(r)&lt;d(b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>This definition can be found for example in Barshay's book "Topics in Ring Theory". Actually, the definition of Euclidean domains have changed along the time, see for example this <a href="http://journals.tubitak.gov.tr/math/issues/mat-95-19-3/pp-291-299.pdf" rel="nofollow noreferrer">paper</a> where the authors discuss different definitions (and generalizations) of Euclidean domains. </p> <p>Finally, the item 1) given in your definition is sometimes called the "<em>sub-multiplicative property</em>" of the euclidean function. In this <a href="http://www.math.uconn.edu/~kconrad/blurbs/ringtheory/euclideanrk.pdf" rel="nofollow noreferrer">blurb</a> K. Conrad shows that 1) isn't esencial in the definition of Euclidean domain. This is also discussed in the <a href="https://en.wikipedia.org/wiki/Euclidean_domain" rel="nofollow noreferrer">Wikipedia page</a> of Euclidean domains.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="26445"> Division by <span class="math-container" id="266757" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

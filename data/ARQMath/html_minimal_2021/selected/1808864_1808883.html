@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How did we derive this general term for the series?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How did we derive this general term for the series? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1808864">
+<p>We have this series of numbers:<br/> <span class="math-container" id="16729690" visual_id="1618336"><math alttext="1,3,6,10,15" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>15</mn></mrow></semantics></math></span><br/> The general term can be described wit: <span class="math-container" id="16729691" visual_id="1428542"><math alttext="\frac{r(r+1)}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac></semantics></math></span> Apparently the following series:<br/> <span class="math-container" id="16729692" visual_id="3568404"><math alttext="1,4,10,20,35" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>20</mn><mo>,</mo><mn>35</mn></mrow></semantics></math></span><br/> Can be described with <span class="math-container" id="16729693" visual_id="3568405"><math alttext="\frac{r(r+1)(r+2)}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></semantics></math></span> based on the first series.<br/> But I am not clear how this is derived. Can someone please explain?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> arithmetic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3696286"> The first sequence is the sequence of [triangle numbers](https://en.wikipedia.org/wiki/Triangular_number).  <span class="math-container" id="16729694" visual_id="3568406"><math alttext="T(n)=\sum\limits_{k=1}^{n}k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>k</mi></mrow></mrow></semantics></math></span>.  The second sequence you describe is that of the [tetrahedral numbers](https://en.wikipedia.org/wiki/Tetrahedral_number), <span class="math-container" id="16729695" visual_id="3568407"><math alttext="Tet(n)=\sum\limits_{j=1}^{n}T(j)=\sum\limits_{j=1}^{n}\sum\limits_{k=1}^{j}k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>T</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>j</mi></munderover><mi>k</mi></mrow></mrow></mrow></semantics></math></span>.  There are a number of ways to see this, geometrically, combinatorially, or algebraically.  For example [here](http://math.stackexchange.com/questions/1475083/deriving-the-formula-for-the-nth-tetrahedral-number). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1808883" id="answer">
+<p>Note: That from the given series you are not able to derive a unique expression for the general term. There are infinitly many solutions. There are some which are more obvious (see JMoravitz), but there is no mathematical definition for more obvious as far as I know.</p> <p>E.G. a polynomial of 6th degree can fit all points, polynomial of 7th degree ...., all polynomial of higher degree than 6 can have an appropriate choice of coefficients so that all the given points lie on the polynomial.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3704510"> What do you mean that there are infinitely many solution? I thought each series has 1 formula to derive a general term. Is that not so? </td></tr><tr><td comment_id="3704522"> No if you only have a finite number of points. there are mathematically inifinite solutions. imagine you had two points. How many functions can you draw including these two points? Answer is infinite. You could also consider infinite points for integer values and you would still be able to find infinite functions containing all these points. </td></tr><tr><td comment_id="3707614"> Is there a specific min number of points that leads us to 1 solution? </td></tr><tr><td comment_id="3708098"> only if you have infinitely many points on the continous domain. Even if there is only one single value which is not given on the interval, you can create an arbitrary jump for this x and still have a function. </td></tr><tr><td comment_id="3711261"> I am not sure on the last part. How is it possible to do an arbitrary jump and still be consistent with the formula thus far which is build based on the term's position? Is it some kind of mathematical property I am not aware? It seems difficult to come up with 1 formula let alone adapt it by adding new random terms. </td></tr><tr><td comment_id="3714065"> Do you recommend some good resource that explains the principles of this to read? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1475083"> Deriving the formula for the <span class="math-container" id="13652796" visual_id="2881"><math alttext="n^{th}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></semantics></math></span> tetrahedral number </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

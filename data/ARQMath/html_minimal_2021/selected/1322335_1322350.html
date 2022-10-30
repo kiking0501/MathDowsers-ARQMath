@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>To show that ${x_n}$ is convergent where $|x_{n+1} - x_n|< \frac{1}{n^2}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> To show that <span class="math-container" id="12295611" visual_id="615"><math alttext="{x_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> is convergent where <span class="math-container" id="12295612" visual_id="7650956"><math alttext="|x_{n+1}-x_{n}|&lt;\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1322335">
+<p>Let <span class="math-container" id="12295613" visual_id="615"><math alttext="{x_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> be a sequence in <span class="math-container" id="12295614" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> such that <span class="math-container" id="12295615" visual_id="7650957"><math alttext="|x_{n+1}-x_{n}|&lt;\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> for all <span class="math-container" id="12295616" visual_id="27389"><math alttext="n\in N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>N</mi></mrow></semantics></math></span>.</p> <p>Show that the sequence is convergent.</p> <p>If it were <span class="math-container" id="12295617" visual_id="7650958"><math alttext="|x_{n+1}-x_{n}|=\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span>, could take help of the fact <span class="math-container" id="12295618" visual_id="11860"><math alttext="\sum\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> is convergent and of triangular inequality.</p> <p>But what to do here? Please help. Thanks in advance.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1322350" id="answer">
+<p>We know that <span class="math-container" id="12295619" visual_id="22115"><math alttext="\sum_{k\geq 1}\frac{1}{k^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></munder><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> is convergent, then for all <span class="math-container" id="12295620" visual_id="35"><math alttext="\epsilon&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> exists some <span class="math-container" id="12295621" visual_id="8217"><math alttext="N\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> such that for all <span class="math-container" id="12295622" visual_id="3181"><math alttext="m,n&gt;N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow><mo>&gt;</mo><mi>N</mi></mrow></semantics></math></span> we have <span class="math-container" id="12295623" visual_id="7650959"><math alttext="\sum_{k=n}^{m}\frac{1}{k^{2}}&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mi>n</mi></mrow><mi>m</mi></munderover><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow><mo>&lt;</mo><mi>ϵ</mi></mrow></semantics></math></span> so <span class="math-container" id="12295624" visual_id="7650960"><math alttext="\epsilon&gt;\sum_{k=n}^{m}\frac{1}{k^{2}}&gt;\left|x_{m+1}-x_{m}\right|+\dots+\left|% x_{n+1}-x_{n}\right|\geq\left|x_{m+1}-x_{n}\right|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mi>n</mi></mrow><mi>m</mi></munderover><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow><mo>&gt;</mo><mrow><mrow><mo>|</mo><mrow><msub><mi>x</mi><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><msub><mi>x</mi><mi>m</mi></msub></mrow><mo>|</mo></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mo>|</mo><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>|</mo></mrow></mrow><mo>≥</mo><mrow><mo>|</mo><mrow><msub><mi>x</mi><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>-</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>|</mo></mrow></mrow></semantics></math></span> so it is a Cauchy sequence and so it is convergent.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2686736"> Thanks a lot @Marco Cantarini. </td></tr><tr><td comment_id="2686739"> @ParveenChhikara You're welcome :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

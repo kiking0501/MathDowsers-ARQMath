@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Vector geometry problem including skew lines, plane, and light ray.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Vector geometry problem including skew lines, plane, and light ray. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2301917">
+<p>I found this problem in one dusty textbook and thought I'd give it a try, but I can't seem to be able to solve it. I need your help.</p> <p>Basically, you are given a point <span class="math-container" id="21268826" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> in the normal <span class="math-container" id="21268827" visual_id="1462"><math alttext="x,y,z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow></semantics></math></span> coordinate system with coordinates <span class="math-container" id="21268828" visual_id="8910143"><math alttext="P(1,5,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. You are also given lines <span class="math-container" id="21268829" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="21268830" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> with equations  <span class="math-container" id="21268831" visual_id="8910144"><math alttext="a:\begin{cases}x=1-2t\\ y=2+t\\ z=2t\end{cases}\qquad b:\begin{cases}x+y-5=0\\ 3x-2z-9=0\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>:</mo><mrow><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>y</mi><mo>=</mo><mrow><mn>2</mn><mo>+</mo><mi>t</mi></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi>z</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow><mo mathvariant="italic" separator="true">  </mo><mi>b</mi></mrow><mo>:</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo>-</mo><mn>5</mn></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>z</mi></mrow><mo>-</mo><mn>9</mn></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow></semantics></math></span> Also the equation of the plane <span class="math-container" id="21268832" visual_id="8910145"><math alttext="R:y-z-2=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>:</mo><mrow><mrow><mi>y</mi><mo>-</mo><mi>z</mi><mo>-</mo><mn>2</mn></mrow><mo>=</mo><mn>0</mn></mrow></mrow></semantics></math></span>.</p> <p>What needs to be done is to find the equation of a light ray which passes through point <span class="math-container" id="21268833" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span>, reflects off the plane <span class="math-container" id="21268834" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> and its reflection passes through lines <span class="math-container" id="21268835" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="21268836" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>.</p> <p>My line of thoughts went by finding the orthogonal projections of the points in which the reflection intersects with <span class="math-container" id="21268837" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="21268838" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> and then build points with equivalent length from the orthogonal projections (basically to continue <span class="math-container" id="21268839" visual_id="59"><math alttext="l" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi></semantics></math></span> through the plane) but couldn't seem to make it work.</p> <p>Any help would be appreciated! </p>
+</div>
+<hr/>
+<div id="tags">
+<span> geometry </span><span> vectors </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4736199"> For <span class="math-container" id="21268852" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> you have given the equations of two planes, not the equation of a line as such </td></tr><tr><td comment_id="4758897"> That's not true, it's a euqtion of a line, just written in a different way. </td></tr><tr><td comment_id="4758925"> <span class="math-container" id="21268841" visual_id="111309"><math alttext="ax+by+cz+d=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mi>d</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> is the equation of a plane. Two non-parallel planes intersect in a line. That's what you have with the set of equations you have denoted as <span class="math-container" id="21268852" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>. </td></tr><tr><td comment_id="4758950"> Yeah, I know that. What I meant is that by typing it as<span class="math-container" id="21268840" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>: (insert equations here) it's implied that<span class="math-container" id="21268842" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>is the line where they intersect, and as such b could easily be converted to scalar-parametric quation for example. Also sorry I didnt mean to be rude if it came out that way </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2301958" id="answer">
+<p>Hint 1</p> <blockquote class="spoiler"> <p> Consider <span class="math-container" id="21268843" visual_id="8393"><math alttext="P^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>P</mi><mo>′</mo></msup></semantics></math></span> the reflection of <span class="math-container" id="21268844" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> by the plane <span class="math-container" id="21268845" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>.</p> </blockquote> <p>Hint 2</p> <blockquote class="spoiler"> <p> Instead of a ray through <span class="math-container" id="21268846" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span>, look for a line through <span class="math-container" id="21268847" visual_id="8393"><math alttext="P^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>P</mi><mo>′</mo></msup></semantics></math></span> that intersects both lines <span class="math-container" id="21268848" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="21268849" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>.</p> </blockquote> <p>Those two above should get you started, but if you need some more:</p> <p>Hint 3</p> <blockquote class="spoiler"> <p> Line <span class="math-container" id="21268850" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and point <span class="math-container" id="21268851" visual_id="8393"><math alttext="P^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>P</mi><mo>′</mo></msup></semantics></math></span> define a plane, have a look at it.</p> </blockquote> <p>If you really really need some more:</p> <p>Hint 4</p> <blockquote class="spoiler"> <p> The plane in Hint 3 will in general intersect line <span class="math-container" id="21268852" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>. (If it doesn't, there's no solution to your problem.)</p> </blockquote> <p>Hint 5</p> <blockquote class="spoiler"> <p> Let's call the point of intersection from Hint 4 <span class="math-container" id="21268853" visual_id="989"><math alttext="I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi></semantics></math></span>. What can you say of the line through <span class="math-container" id="21268854" visual_id="989"><math alttext="I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi></semantics></math></span> and <span class="math-container" id="21268855" visual_id="8393"><math alttext="P^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>P</mi><mo>′</mo></msup></semantics></math></span>?</p> </blockquote>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4736318"> Wow, thank you very much, hadn't thought of projecting P down. I solved it, with hints 1 to 3. You really helped me out. It feels bad I can't give you karma :/ </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

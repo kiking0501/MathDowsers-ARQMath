@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Block matrix determinant with symmetrically placed blocks</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Block matrix determinant with symmetrically placed blocks </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1112762">
+<p>I am trying to solve the determinant of the following block matrix</p> <p><span class="math-container" id="10491660" visual_id="8399645"><math alttext="\begin{bmatrix}A-Ia&amp;B\\ B&amp;A-Ib\end{bmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>A</mi><mo>-</mo><mrow><mi>I</mi><mo>⁢</mo><mi>a</mi></mrow></mrow></mtd><mtd columnalign="center"><mi>B</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>B</mi></mtd><mtd columnalign="center"><mrow><mi>A</mi><mo>-</mo><mrow><mi>I</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></mtd></mtr></mtable><mo>]</mo></mrow></semantics></math></span></p> <p>where <span class="math-container">$a$</span> and <span class="math-container">$b$</span> are integers and <span class="math-container">$I$</span> is an identity matrix. Matrices <span class="math-container">$A$</span> and <span class="math-container">$B$</span> are square. </p> <p>Unfortunately, I can't invoke the general expression since I don't want to attempt to invert any of these matrices (very complex). I see from <a href="http://en.wikipedia.org/wiki/Determinant#Block_matrices" rel="nofollow noreferrer">Wikipedia</a> that</p> <p><span class="math-container" id="10491661" visual_id="8399646"><math alttext="\det\begin{bmatrix}A&amp;B\\ B&amp;A\end{bmatrix}=\det(A+B)\det(A-B)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>A</mi></mtd><mtd columnalign="center"><mi>B</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>B</mi></mtd><mtd columnalign="center"><mi>A</mi></mtd></mtr></mtable><mo>]</mo></mrow></mrow><mo>=</mo><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span> Can anyone help me prove that this can be applied to my matrix (Such that I might get something like <span class="math-container" id="10491662" visual_id="8399647"><math alttext="\det(A-Ia+B)\det(A-Ib-B)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>A</mi><mo>-</mo><mrow><mi>I</mi><mo>⁢</mo><mi>a</mi></mrow></mrow><mo>+</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mrow><mi>I</mi><mo>⁢</mo><mi>b</mi></mrow><mo>-</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>)? Or alternatively, can anyone solve the determinant of my matrix without taking an inverse?</p> <p>Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> matrices </span><span> determinant </span><span> block-matrices </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2269553"> Oh I'm very sorry! I've misread it! :( </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1113223" id="answer">
+<p><strong>Hint :</strong> If <span class="math-container" id="10491665" visual_id="6982688"><math alttext="(A-aI)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mi>I</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> be invertible then <span class="math-container" id="10491666" visual_id="8399649"><math alttext="\det\begin{bmatrix}A-Ia&amp;B\\ B&amp;A-Ib\end{bmatrix}=\det(A-aI)\det(A-bI-B(A-aI)^{-1}B)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>A</mi><mo>-</mo><mrow><mi>I</mi><mo>⁢</mo><mi>a</mi></mrow></mrow></mtd><mtd columnalign="center"><mi>B</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>B</mi></mtd><mtd columnalign="center"><mrow><mi>A</mi><mo>-</mo><mrow><mi>I</mi><mo>⁢</mo><mi>b</mi></mrow></mrow></mtd></mtr></mtable><mo>]</mo></mrow></mrow><mo>=</mo><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mi>I</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mrow><mi>b</mi><mo>⁢</mo><mi>I</mi></mrow><mo>-</mo><mrow><mi>B</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mi>I</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>B</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2271687"> Thanks, but as I indicated in my o<span class="math-container" id="20984586">r</span>iginal post, I am looking for a solution that does not require taking an inverse - this formulation is what I referred to as the "general expression". </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1117072"> Blockwise Symmetric Matrix Determinant </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

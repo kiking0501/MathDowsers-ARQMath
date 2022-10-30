@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>finding examples for a non negative and continuous function for which the infinite integral is finite but the limit at infinity doesn't exist</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> finding examples for a non negative and continuous function for which the infinite integral is finite but the limit at infinity doesn't exist </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="543866">
+<p><strong>Question:</strong></p> <p>a. Find an example for a non-negative and continuous function s.t. <span class="math-container" id="5644747" visual_id="45957"><math alttext="\int_{0}^{\infty}f(x)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> is finite but the following limit doesn't exist: <span class="math-container" id="5644748" visual_id="6687"><math alttext="\lim_{x\to\infty}f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>b. Is it possible that <span class="math-container" id="5644749" visual_id="45957"><math alttext="\int_{0}^{\infty}f(x)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> is bounded but <span class="math-container" id="5644750" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is not bounded?</p> <p><strong>What we did with A:</strong> We suggested the function <span class="math-container" id="5644751" visual_id="1616756"><math alttext="|sin(x^{2})|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mrow><mi>s</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></semantics></math></span> which has periods that get smaller and smaller until they no longer imply on the sum. But since it's a trig function it doesn't have a determinate limit. Wolfram didn't have the integral value for that func, and we were wondering if it really converges and if it is really a good example.</p> <p><strong>What we did with B:</strong> We thought about the function: <span class="math-container" id="5644752" visual_id="1616757"><math alttext="f(x)={x\in\mathbb{N}},{e^{-x}\notin\mathbb{N}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi><mo>∈</mo><mi>ℕ</mi></mrow><mo>,</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>∉</mo><mi>ℕ</mi></mrow></mrow></semantics></math></span> and we had a disagreement whether f(x) is integrable. I said no because similarly to Dirichlet function, one sum's limit will be 0 while the other one's will be infinite. My partner said that if I find a <span class="math-container" id="5644753" visual_id="10462"><math alttext="\delta&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span> then the definition of Riemann's integral does hold and so this integral is equal to that of <span class="math-container" id="5644754" visual_id="1088"><math alttext="f(x)=e^{-x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow></semantics></math></span> She was trying to say this functions integral will be 0, but still it won't be bounded. I disagreed. Who's right?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="543875" id="answer">
+<p>For (b), and therefore (a), let <span class="math-container" id="5644755" visual_id="2020"><math alttext="f(x)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> with the following exceptions. For  every positive integer <span class="math-container" id="5644756" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, <span class="math-container" id="5644757" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> climbs linearly from <span class="math-container" id="5644758" visual_id="2020"><math alttext="f(x)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> at <span class="math-container" id="5644759" visual_id="1616758"><math alttext="x=n-2^{-2n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>n</mi><mo>-</mo><msup><mn>2</mn><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></mrow></mrow></semantics></math></span> to <span class="math-container" id="5644760" visual_id="1616759"><math alttext="f(x)=2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></semantics></math></span> at <span class="math-container" id="5644761" visual_id="17373"><math alttext="x=n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>n</mi></mrow></semantics></math></span>, then falls linearly to <span class="math-container" id="5644762" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> at <span class="math-container" id="5644763" visual_id="1616760"><math alttext="x=n+2^{-2n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>n</mi><mo>+</mo><msup><mn>2</mn><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></mrow></mrow></semantics></math></span>. </p> <p>The area of the triangle "at" <span class="math-container" id="5644764" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is <span class="math-container" id="5644765" visual_id="1616761"><math alttext="(2^{-2n})(2^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, that is, <span class="math-container" id="5644766" visual_id="65101"><math alttext="2^{-n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mo>-</mo><mi>n</mi></mrow></msup></semantics></math></span>, and the sum of the areas of these triangles is <span class="math-container" id="5644767" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1158270"> I love that example! </td></tr><tr><td comment_id="1158597"> Amazing :-) Huge thanks. Could you please answer the following questions: 1. How do we make sure that this function is integrable using Riemann's definition (the only one we've learned by now)? 2. Do you have any negative/positive thoughts about our suggestions? </td></tr><tr><td comment_id="1159149"> If you look at the definition of Riemann integral, the interval **must** be finite. So here we are dealing with an **improper** integral, for which we must extend the Riemann integral definition. But it is easy to see that <span class="math-container" id="5644768" visual_id="1616762"><math alttext="I(M)=\int_{0}^{M}f(x)\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>M</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span> exists, in the Riemann sense, for any <span class="math-container" id="5644769" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span>, since the function is continuous and that <span class="math-container" id="5644770" visual_id="1616763"><math alttext="\lim_{M\to\infty}I(M)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>M</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. So the improper integral exists. </td></tr><tr><td comment_id="1159170"> Your argument with B) would be OK for improper integral, except that probably the condition "continuous" mentioned in A) probably is also meant to apply. Then you would have to fix your example by putting "bumps" at the integers, like in my answer, instead of spikes, as in your suggestion. As to what you tried with A), there is a way to manipulate the sine function, but if we let <span class="math-container" id="5644771" visual_id="1616764"><math alttext="I(M)=\int_{0}^{M}|\sin(x^{2})|\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>M</mi></msubsup><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo rspace="4.2pt" stretchy="false">|</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span>, then <span class="math-container" id="5644772" visual_id="460098"><math alttext="\lim_{M\to\infty}I(M)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>M</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> does not exist, the improper integral diverges. </td></tr><tr><td comment_id="5384598"> What happens if we require the function to be differentiable? </td></tr><tr><td comment_id="5384600"> Then can we smoothen the triangles and still get a finite area? </td></tr><tr><td comment_id="6220560"> If we require function to be strictly positive, then such function exists? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1363287"> Behaviour of <span class="math-container" id="12669139" visual_id="459"><math alttext="L^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>2</mn></msup></semantics></math></span> functions at infinity </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="725634"> Can somebody help me solve the proof about improper integrals? </td></tr><tr><td post_id="1397509"> Help with a proof that <span class="math-container" id="12979269" visual_id="99519"><math alttext="\mathop{\lim}\limits_{x\to+\infty}f\left(x\right)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

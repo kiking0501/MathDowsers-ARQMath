@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to find the $20$ consecutive composite numbers</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to find the <span class="math-container" id="4920426" visual_id="2874"><math alttext="20" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>20</mn></semantics></math></span> consecutive composite numbers </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="468098">
+<p>I have a little confusion over the following problem:  </p> <blockquote> <p>Find the <span class="math-container" id="4920427" visual_id="2874"><math alttext="20" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>20</mn></semantics></math></span> consecutive composite numbers.  </p> </blockquote> <p>HINTS:  <span class="math-container" id="4920428" visual_id="4346847"><math alttext="\color[rgb]{0,1,0}{\text{Numbers}\,\,20!+2,20!+3,\cdots,20!+21\,\,\text{will % do the trick. The following result by Euclid has been known for more than 2000%  years.}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mtext mathcolor="#00FF00">Numbers</mtext><mo mathcolor="#00FF00">⁢</mo><mrow><mn mathcolor="#00FF00">  20</mn><mo mathcolor="#00FF00">!</mo></mrow></mrow><mo mathcolor="#00FF00">+</mo><mn mathcolor="#00FF00">2</mn></mrow><mo mathcolor="#00FF00">,</mo><mrow><mrow><mn mathcolor="#00FF00">20</mn><mo mathcolor="#00FF00">!</mo></mrow><mo mathcolor="#00FF00">+</mo><mn mathcolor="#00FF00">3</mn></mrow><mo mathcolor="#00FF00">,</mo><mi mathcolor="#00FF00" mathvariant="normal">⋯</mi><mo mathcolor="#00FF00">,</mo><mrow><mrow><mn mathcolor="#00FF00">20</mn><mo mathcolor="#00FF00">!</mo></mrow><mo mathcolor="#00FF00">+</mo><mrow><mpadded width="+3.3pt"><mn mathcolor="#00FF00">21</mn><mo mathcolor="#00FF00">⁢</mo><mtext mathcolor="#00FF00">will do the trick. The following result by Euclid has been known for more than 2000 years.</mtext></mpadded></mrow></mrow></mrow></semantics></math></span> </p> <p>But the solution is not very clear to me specially I do not understand why <span class="math-container" id="4920429" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>  has been added to <span class="math-container" id="4920430" visual_id="66221"><math alttext="20!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>!</mo></mrow></semantics></math></span> where the numbers are of the form <span class="math-container" id="4920431" visual_id="4346848"><math alttext="20!+k,k=2....,21" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>!</mo><mo>+</mo><mi>k</mi><mo>,</mo><mi>k</mi><mo>=</mo><mn>2</mn><mi mathvariant="normal">…</mi><mo>.</mo><mo>,</mo><mn>21</mn></mrow></semantics></math></span>. </p> <p>Can someone explain it? Thanks and regards to all.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1007373"> You could use <span class="math-container" id="4920432" visual_id="1154137"><math alttext="19!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mo>!</mo></mrow></semantics></math></span> instead of <span class="math-container" id="4920433" visual_id="66221"><math alttext="20!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>!</mo></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="468103" id="answer">
+<p>For every natural number <span class="math-container" id="4920434" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, if <span class="math-container" id="4920435" visual_id="10367"><math alttext="k\leq n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≤</mo><mi>n</mi></mrow></semantics></math></span> is a natural number, then <span class="math-container" id="4920436" visual_id="1481878"><math alttext="k\mid n!+k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mi>k</mi></mrow></mrow></semantics></math></span> (simply since <span class="math-container" id="4920437" visual_id="1481877"><math alttext="k\mid n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mi>n</mi><mo>!</mo></mrow></mrow></semantics></math></span>). In particular, if <span class="math-container" id="4920438" visual_id="1336637"><math alttext="1&lt;k\leq n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&lt;</mo><mi>k</mi><mo>≤</mo><mi>n</mi></mrow></semantics></math></span>, then <span class="math-container" id="4920439" visual_id="4932"><math alttext="n!+k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mi>k</mi></mrow></semantics></math></span> is not prime. It follows that all of <span class="math-container" id="4920440" visual_id="2155294"><math alttext="n!+2,n!+3,\cdots,n!+n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mn>3</mn></mrow><mo>,</mo><mi mathvariant="normal">⋯</mi><mo>,</mo><mrow><mrow><mi>n</mi><mo>!</mo></mrow><mo>+</mo><mi>n</mi></mrow></mrow></semantics></math></span> are composite. Thus, for every <span class="math-container" id="4920441" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> you can find a list of <span class="math-container" id="4920442" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> consecutive composite numbers.</p> <p>This should explain how the result you quote was arrived at (you just need to notice that <span class="math-container" id="4920443" visual_id="4346849"><math alttext="20!+21" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>20</mn><mo>!</mo></mrow><mo>+</mo><mn>21</mn></mrow></semantics></math></span> is also composite. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="2311652"> I'm trying to find the longest consecutive set of composite numbers </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

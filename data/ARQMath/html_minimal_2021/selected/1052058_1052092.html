@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Writing an alternating series as two non-alternating series?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Writing an alternating series as two non-alternating series? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1052058">
+<p>How does one calculate <span class="math-container" id="9971568" visual_id="888334"><math alttext="\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span></p> <p>if given this information: <span class="math-container" id="9971569" visual_id="373898"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{2}}=\frac{\pi^{2}}{6}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>How does one account for the <span class="math-container" id="9971570" visual_id="41659"><math alttext="(-1)^{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></semantics></math></span> in the first series?</p> <p>Note: in <a href="https://math.stackexchange.com/questions/1051530/integrating-a-fourier-series">this earlier post</a>, user David Hodden (thanks) pointed out that the following simplification can be made:</p> <p><span class="math-container" id="9971571" visual_id="4240029"><math alttext="\sum_{n=1}^{\infty}(-1)^{n+1}\frac{1}{n^{2}}=\sum_{n=1}^{\infty}\frac{1}{n^{2}% }-2\cdot\frac{1}{4}\sum_{n=1}^{\infty}\frac{1}{n^{2}}\\ =\frac{\pi^{2}}{12}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>-</mo><mrow><mrow><mn>2</mn><mo>⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow></mrow><mo>=</mo><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>12</mn></mfrac></mrow></semantics></math></span></p> <p>What I do not understand is where this simplification came from. Why can the alternating series be broken up into two non-alternating series?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2142135"> The information given tells you (in addition to the value) that the alternating series is *absolutely* convergent.  This gives you greater freedom to manipulate it. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1052092" id="answer">
+<p>There are two kind of terms in series <span class="math-container" id="9971573" visual_id="888334"><math alttext="\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span>: terms with sign <span class="math-container" id="9971574" visual_id="5690"><math alttext="+" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>+</mo></semantics></math></span> and terms with sign <span class="math-container" id="9971575" visual_id="730"><math alttext="-" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>-</mo></semantics></math></span>. Note that:</p> <p><span class="math-container" id="9971576" visual_id="4241484"><math alttext="\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^{2}}=\frac{1}{1^{2}}-\frac{1}{2^{2}}+% \frac{1}{3^{2}}-\frac{1}{4^{2}}+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mfrac><mn>1</mn><msup><mn>1</mn><mn>2</mn></msup></mfrac><mo>-</mo><mfrac><mn>1</mn><msup><mn>2</mn><mn>2</mn></msup></mfrac></mrow><mo>+</mo><mfrac><mn>1</mn><msup><mn>3</mn><mn>2</mn></msup></mfrac></mrow><mo>-</mo><mfrac><mn>1</mn><msup><mn>4</mn><mn>2</mn></msup></mfrac></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></semantics></math></span></p> <p>So <span class="math-container" id="9971577" visual_id="5690"><math alttext="+" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>+</mo></semantics></math></span> occurs with terms for odd <span class="math-container" id="9971578" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> and <span class="math-container" id="9971579" visual_id="730"><math alttext="-" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>-</mo></semantics></math></span>: for even terms. So let's divide this sum into two sums: for even and odd <span class="math-container" id="9971580" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>:</p> <p><span class="math-container" id="9971581" visual_id="4241485"><math alttext="\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^{2}}=\sum_{n=1\text{n is odd}}^{\infty}% \frac{(-1)^{n+1}}{n^{2}}+\sum_{n=1\text{n is even}}^{\infty}\frac{(-1)^{n+1}}{% n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mtext>n is odd</mtext></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>+</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mtext>n is even</mtext></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p>You know that <span class="math-container" id="9971582" visual_id="730"><math alttext="-" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>-</mo></semantics></math></span> occurs for odd <span class="math-container" id="9971583" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> and <span class="math-container" id="9971584" visual_id="5690"><math alttext="+" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>+</mo></semantics></math></span> for even, so you can write down this equality in different way:</p> <p><span class="math-container" id="9971585" visual_id="4241486"><math alttext="\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^{2}}=-\sum_{n=1\text{n is odd}}^{\infty% }\frac{1}{n^{2}}+\sum_{n=1\text{n is even}}^{\infty}\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mrow><mrow><mo>-</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mtext>n is odd</mtext></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>+</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mtext>n is even</mtext></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p>Next you can write down <span class="math-container" id="9971586" visual_id="4241487"><math alttext="\sum_{n=1\text{n is even}}^{\infty}\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mtext>n is even</mtext></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> in different way:</p> <p><span class="math-container" id="9971587" visual_id="4241488"><math alttext="\sum_{n=1\text{n is even}}^{\infty}\frac{1}{n^{2}}=\sum_{n=1}^{\infty}\frac{1}% {(2n)^{2}}=\frac{1}{4}\sum_{n=1}^{\infty}\frac{1}{n^{2}}=\frac{\pi^{2}}{24}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mtext>n is even</mtext></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>=</mo><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>24</mn></mfrac></mrow></semantics></math></span></p> <p>On the other hand:</p> <p><span class="math-container" id="9971588" visual_id="4241489"><math alttext="\sum_{n=1\text{n is odd}}^{\infty}\frac{1}{n^{2}}=\sum_{n=1}^{\infty}\frac{1}{% n^{2}}-\sum_{n=1\text{n is even}}^{\infty}\frac{1}{n^{2}}=\frac{\pi^{2}}{6}-% \frac{1}{4}\sum_{n=1}^{\infty}\frac{1}{n^{2}}=\frac{\pi^{2}}{6}-\frac{\pi^{2}}% {24}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mtext>n is odd</mtext></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>-</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mtext>n is even</mtext></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac><mo>-</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac><mo>-</mo><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>24</mn></mfrac></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2142523"> Thanks for explaining it at a fundamental level. This helps me very much! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1051530"> Integrating a Fourier series </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show $\lim \limits_{x \rightarrow c_{-}} f(x) \neq \lim \limits_{x \rightarrow c_{+}} f(x)$ imply $f$ is discontinuous at $c$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show <span class="math-container" id="8108085" visual_id="3901113"><math alttext="\lim\limits_{x\rightarrow c_{-}}f(x)\neq\lim\limits_{x\rightarrow c_{+}}f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msub><mi>c</mi><mo>-</mo></msub></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≠</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msub><mi>c</mi><mo>+</mo></msub></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> imply <span class="math-container" id="8108086" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is discontinuous at <span class="math-container" id="8108087" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="830297">
+<blockquote> <p>How to show <span class="math-container" id="8108088" visual_id="3901113"><math alttext="\lim\limits_{x\rightarrow c_{-}}f(x)\neq\lim\limits_{x\rightarrow c_{+}}f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msub><mi>c</mi><mo>-</mo></msub></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≠</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msub><mi>c</mi><mo>+</mo></msub></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> imply <span class="math-container" id="8108089" visual_id="3106"><math alttext="f:\mathbb{R}\rightarrow\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> is discontinuous at <span class="math-container" id="8108090" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> ?</p> </blockquote> <p>I know that <span class="math-container" id="8108091" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> cannot have two different limits at <span class="math-container" id="8108092" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>, since this is causing a contradiction.</p> <p>Also if I draw <span class="math-container" id="8108093" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> under the given assumption I see there is a jump on the graph, which intuitively imply discontinuity.</p> <p>How can I prove this is numbers ?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> algebra-precalculus </span><span> limits </span><span> continuity </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1713812"> may be you should see what does it mean to say <span class="math-container" id="8108094" visual_id="3901114"><math alttext="\lim_{x\rightarrow c_{+}}f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msub><mi>c</mi><mo>+</mo></msub></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="8108095" visual_id="3901115"><math alttext="\lim_{x\rightarrow c_{-}}f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msub><mi>c</mi><mo>-</mo></msub></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="1713888"> It is easier to prove that<span class="math-container" id="8108096" visual_id="3901116"><math alttext="\lim\limits_{x\rightarrow c_{-}}{f(x)}=\lim\limits_{x\rightarrow c_{+}}{f(x)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msub><mi>c</mi><mo>-</mo></msub></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msub><mi>c</mi><mo>+</mo></msub></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> given the function is continuous at <span class="math-container" id="8108097" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="830318" id="answer">
+<p>Perhaps this perspective will help you.</p> <p>The statement you seek to prove is equivalent to (its contrapositive):</p> <ul> <li>If <span class="math-container" id="8108098" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is continuous at <span class="math-container" id="8108099" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>, then <span class="math-container" id="8108100" visual_id="3901117"><math alttext="\lim_{x\to c^{-}}f(x)=\lim_{x\to c^{+}}f(x)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mi>c</mi><mo>-</mo></msup></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mi>c</mi><mo>+</mo></msup></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></li> </ul> <p>But that comes from the definition of continuity of <span class="math-container" id="8108101" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> at <span class="math-container" id="8108102" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1713836"> Since the statement you wrote is exactly equivalent to the statement OP wants to prove, I highly doubt that he is allowed to assume this statement is true... Still, this would be the easiest way of proving what he needs...:D </td></tr><tr><td comment_id="1713839"> Yes 5xum - I agree with you :-) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

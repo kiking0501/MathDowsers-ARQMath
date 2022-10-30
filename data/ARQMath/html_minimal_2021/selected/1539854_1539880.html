@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove a thm on stopped processes given fundamental principle 'you can't beat the system'?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove a thm on stopped processes given fundamental principle 'you can't beat the system'? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1539854">
+<p>How does the <strong>principle</strong> below imply the <strong>thm</strong> below?</p> <p>From Williams' Probability w/ Martingales:</p> <hr/> <p><strong>Principle</strong>:</p> <hr/> <p><a href="https://i.stack.imgur.com/tA920.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/tA920.png"/></a></p> <hr/> <p><strong>Thm:</strong></p> <p><a href="https://i.stack.imgur.com/BUOnS.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/BUOnS.png"/></a></p> <hr/> <p><strong>What I tried:</strong></p> <p><span class="math-container" id="14226863" visual_id="6928718"><math alttext="E[X_{T\wedge n}-X_{0}|\mathscr{F_{m}}]=/\leq X_{T\wedge m}-X_{0}\ \forall m&lt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>n</mi></mrow></msub><mo>-</mo><msub><mi>X</mi><mn>0</mn></msub><mo stretchy="false">|</mo><msub><mi class="ltx_font_mathscript">ℱ</mi><mi class="ltx_font_mathscript">𝓂</mi></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><mo>/</mo><mo>≤</mo><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>m</mi></mrow></msub><mo>-</mo><mpadded width="+5pt"><msub><mi>X</mi><mn>0</mn></msub><mo>∀</mo><mi>m</mi><mo>&lt;</mo><mi>n</mi></mpadded></mrow></semantics></math></span></p> <p><span class="math-container" id="14226864" visual_id="6928719"><math alttext="\to E[X_{T\wedge n}|\mathscr{F_{m}}]=/\leq X_{T\wedge m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo><mi>E</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>n</mi></mrow></msub><mo stretchy="false">|</mo><msub><mi class="ltx_font_mathscript">ℱ</mi><mi class="ltx_font_mathscript">𝓂</mi></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><mo>/</mo><mo>≤</mo><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>m</mi></mrow></msub></mrow></semantics></math></span></p> <p><span class="math-container" id="14226865" visual_id="6928720"><math alttext="\to E[X_{T\wedge n}|\mathscr{F_{0}}]=/\leq X_{T\wedge 0}\ \text{by choosing m % = 0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo><mi>E</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>n</mi></mrow></msub><mo stretchy="false">|</mo><msub><mi class="ltx_font_mathscript">ℱ</mi><mn class="ltx_font_mathscript" mathvariant="script">0</mn></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><mo>/</mo><mo>≤</mo><mpadded width="+5pt"><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mn>0</mn></mrow></msub><mtext>by choosing m = 0</mtext></mpadded></mrow></semantics></math></span></p> <p><span class="math-container" id="14226866" visual_id="6928721"><math alttext="\to E[X_{T\wedge n}]=/\leq X_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo><mi>E</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>n</mi></mrow></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><mo>/</mo><mo>≤</mo><msub><mi>X</mi><mn>0</mn></msub></mrow></semantics></math></span></p> <p><span class="math-container" id="14226867" visual_id="6928722"><math alttext="\to E[E[X_{T\wedge n}]]=/\leq E[X_{0}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo><mi>E</mi><mrow><mo stretchy="false">[</mo><mi>E</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>n</mi></mrow></msub><mo stretchy="false">]</mo></mrow><mo stretchy="false">]</mo></mrow><mo>=</mo><mo>/</mo><mo>≤</mo><mi>E</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>0</mn></msub><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="14226868" visual_id="6928723"><math alttext="\to E[X_{T\wedge n}]=/\leq E[X_{0}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo><mi>E</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>n</mi></mrow></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><mo>/</mo><mo>≤</mo><mi>E</mi><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>0</mn></msub><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span></p> <p>I think <span class="math-container" id="14226869" visual_id="71176"><math alttext="X_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mn>0</mn></msub></semantics></math></span> is constant <a href="https://math.stackexchange.com/questions/1282282/is-a-random-variable-constant-iff-it-is-trivial-sigma-algebra-measurable">and</a> <span class="math-container" id="14226870" visual_id="114491"><math alttext="\mathscr{F}_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathscript">ℱ</mi><mn>0</mn></msub></semantics></math></span> is the trivial <span class="math-container" id="14226871" visual_id="203378"><math alttext="\sigma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi></semantics></math></span>-algebra.</p> <p>Is that right? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability-theory </span><span> martingales </span><span> stopping-times </span><span> gambling </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1539880" id="answer">
+<p><strong>Hint:</strong> Choose the process <span class="math-container" id="14226872" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> so that <span class="math-container" id="14226873" visual_id="6928724"><math alttext="(C\cdot X)_{n}=X_{T\wedge n}-X_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo stretchy="false">(</mo><mrow><mi>C</mi><mo>⋅</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msub><mo>=</mo><mrow><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>n</mi></mrow></msub><mo>-</mo><msub><mi>X</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span>, which is what you did. </p> <p>Intuition: To obtain the stopped-at-<span class="math-container" id="14226874" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span> process, you want to keep betting so long as time <span class="math-container" id="14226875" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span> hasn't yet passed.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3135597"> I think that's what I did? </td></tr><tr><td comment_id="3135601"> John Dawkins, your bet is 1 unit per round? </td></tr><tr><td comment_id="3136947"> Yes, 1 unit per round up until time <span class="math-container" id="14226876" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span>. </td></tr><tr><td comment_id="3159088"> Thanks John Dawkins. So my proof is right? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1282282"> Is a random variable constant iff it is trivial sigma-algebra-measurable? </td></tr><tr><td post_id="1560804"> Asymmetric Random Walk / Prove <span class="math-container" id="14414503" visual_id="6987978"><math alttext="E[X_{T\wedge n}]=(p-q)E[T\wedge n]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>n</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>-</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>T</mi><mo>∧</mo><mi>n</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1562635"> Asymmetric Random Walk / Prove that <span class="math-container" id="14431851" visual_id="6993278"><math alttext="E[\inf\{n:X_{n}=b\}]&lt;\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mo movablelimits="false">inf</mo><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mi>n</mi><mo>:</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><mi>b</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> </td></tr><tr><td post_id="1564852"> Prove previsibility and <span class="math-container" id="14452252" visual_id="5228528"><math alttext="E[X_{T\wedge n}]\leq E[X_{S\wedge n}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>T</mi><mo>∧</mo><mi>n</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow><mo>≤</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>S</mi><mo>∧</mo><mi>n</mi></mrow></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

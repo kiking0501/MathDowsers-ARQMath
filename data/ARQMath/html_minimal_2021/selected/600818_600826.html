@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Induction Proof: Sum of Products of $3$ Consecutive Numbers</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Induction Proof: Sum of Products of <span class="math-container" id="6134607" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> Consecutive Numbers </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="600818">
+<p>I'm still trying to learn induction. But stuck on the following question. It will be highly appreciated if someone can show me how to do it.</p> <p>I need to prove the following using math induction.</p> <p><span class="math-container" id="6134608" visual_id="7938234"><math alttext="1\cdot 2\cdot 3+2\cdot 3\cdot 4+3\cdot 4\cdot 5+\cdots+n(n+1)(n+2)=\frac{n(n+1% )(n+2)(n+3)}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn></mrow><mo>+</mo><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>4</mn></mrow><mo>+</mo><mrow><mn>3</mn><mo>⋅</mo><mn>4</mn><mo>⋅</mo><mn>5</mn></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>4</mn></mfrac></mrow></semantics></math></span>  for <span class="math-container" id="6134609" visual_id="3011"><math alttext="n=1,2,3,\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1265755"> Do you know the steps to an induction proof? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="600826" id="answer">
+<p>The formula is true for the case <span class="math-container" id="6134610" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, since <span class="math-container" id="6134611" visual_id="7938235"><math alttext="1\times 2\times 3=6=\frac{1\times 2\times 3\times 4}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>3</mn></mrow><mo>=</mo><mn>6</mn><mo>=</mo><mfrac><mrow><mn>1</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>4</mn></mrow><mn>4</mn></mfrac></mrow></semantics></math></span>.</p> <p>Now, suppose that the formula is true for <span class="math-container" id="6134612" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.  We have that  <span class="math-container" id="6134613" visual_id="7938236"><math alttext="1\times 2\times 3+\cdots+n(n+1)(n+2)+(n+1)(n+2)(n+3)\\ =\frac{n(n+1)(n+2)(n+3)}{4}+(n+1)(n+2)(n+3)\\ =\frac{n(n+1)(n+2)(n+3)}{4}+\frac{4(n+1)(n+2)(n+3)}{4}\\ =\frac{(n+1)(n+2)(n+3)(n+4)}{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>1</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>3</mn></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>4</mn></mfrac><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>4</mn></mfrac><mo>+</mo><mfrac><mrow><mn>4</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>4</mn></mfrac></mrow><mo>=</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>4</mn></mfrac></mrow></semantics></math></span> </p> <p>So, since the <span class="math-container" id="6134614" visual_id="2324"><math alttext="n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> case is true, the induction holds.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

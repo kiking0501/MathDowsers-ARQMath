@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find x such that $x^2 \equiv 49$ (mod $pq$), $x \not\equiv\pm 7$ (mod $pq$)</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find x such that <span class="math-container" id="54100" visual_id="8244022"><math alttext="x^{2}\equiv 49" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≡</mo><mn>49</mn></mrow></semantics></math></span> (mod <span class="math-container" id="54101" visual_id="42056"><math alttext="pq" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow></semantics></math></span>), <span class="math-container" id="54102" visual_id="8244023"><math alttext="x\not\equiv\pm 7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≢</mo><mrow><mo>±</mo><mn>7</mn></mrow></mrow></semantics></math></span> (mod <span class="math-container" id="54103" visual_id="42056"><math alttext="pq" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow></semantics></math></span>) </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="6295">
+<p>Suppose you have two distinct large primes <span class="math-container" id="54104" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> and <span class="math-container" id="54105" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span>. Explain how you can find an integer <span class="math-container" id="54106" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> such that <span class="math-container" id="54107" visual_id="8244022"><math alttext="x^{2}\equiv 49" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≡</mo><mn>49</mn></mrow></semantics></math></span> (mod <span class="math-container" id="54108" visual_id="42056"><math alttext="pq" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow></semantics></math></span>), <span class="math-container" id="54109" visual_id="8244023"><math alttext="x\not\equiv\pm 7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≢</mo><mrow><mo>±</mo><mn>7</mn></mrow></mrow></semantics></math></span> (mod <span class="math-container" id="54110" visual_id="42056"><math alttext="pq" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow></semantics></math></span>).</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> prime-numbers </span><span> modular-arithmetic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="13444"> Is this homework? </td></tr><tr><td comment_id="13504"> Only AFTER reading the answers I understood that x!=+-7 did NOT mean "x factorial is congruent to....". PLEASE, use TeX ! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="6302" id="answer">
+<p>It's helpful to know the multiplicative structure of <span class="math-container" id="54116" visual_id="5486"><math alttext="(\mathbb{Z}/n\mathbb{Z})^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mi>n</mi></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></semantics></math></span>.  It is always a product of cyclic subgroups.</p> <p>For powers of 2, we have <span class="math-container" id="54117" visual_id="8244025"><math alttext="(\mathbb{Z}/2^{k}\mathbb{Z})^{*}\equiv C_{2}\times C_{2^{k-2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><msup><mn>2</mn><mi>k</mi></msup></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>≡</mo><mrow><msub><mi>C</mi><mn>2</mn></msub><mo>×</mo><msub><mi>C</mi><msup><mn>2</mn><mrow><mi>k</mi><mo>-</mo><mn>2</mn></mrow></msup></msub></mrow></mrow></semantics></math></span>.</p> <p>For odd primes <em>p</em>, we have <span class="math-container" id="54118" visual_id="8244026"><math alttext="(\mathbb{Z}/p^{k}\mathbb{Z})^{*}\equiv C_{(p-1)p^{k-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><msup><mi>p</mi><mi>k</mi></msup></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>≡</mo><msub><mi>C</mi><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>p</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></msub></mrow></semantics></math></span>.</p> <p>Knowing the structure for the prime powers is enough; we can use the Chinese Remainder Theorem to see that </p> <p><span class="math-container" id="54119" visual_id="8244027"><math alttext="(\mathbb{Z}/p_{1}^{i_{1}}\cdots p_{r}^{i_{r}}\mathbb{Z})^{*}=(\mathbb{Z}/p_{1}% ^{i_{1}}\mathbb{Z})^{*}\times\cdots\times(\mathbb{Z}/p_{r}^{i_{r}}\mathbb{Z})^% {*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><msubsup><mi>p</mi><mn>1</mn><msub><mi>i</mi><mn>1</mn></msub></msubsup></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msubsup><mi>p</mi><mi>r</mi><msub><mi>i</mi><mi>r</mi></msub></msubsup><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><msubsup><mi>p</mi><mn>1</mn><msub><mi>i</mi><mn>1</mn></msub></msubsup></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>×</mo><mi mathvariant="normal">⋯</mi><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><msubsup><mi>p</mi><mi>r</mi><msub><mi>i</mi><mi>r</mi></msub></msubsup></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></mrow></mrow></semantics></math></span>.</p> <p>Then <span class="math-container" id="54120" visual_id="8244028"><math alttext="(\mathbb{Z}/pq\mathbb{Z})^{*}=C_{p-1}\times C_{q-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mi>p</mi></mrow><mo>⁢</mo><mi>q</mi><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>=</mo><mrow><msub><mi>C</mi><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>×</mo><msub><mi>C</mi><mrow><mi>q</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow></mrow></semantics></math></span> has four solutions to <span class="math-container" id="54121" visual_id="8244029"><math alttext="x^{2}=7^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><msup><mn>7</mn><mn>2</mn></msup></mrow></semantics></math></span>, and Bill's answer shows very nicely how to find them.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

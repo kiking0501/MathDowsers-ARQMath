@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>figuring things out in linear algebra</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> figuring things out in linear algebra </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="48078">
+<p>There are things in linear algebra that I would like to better understand, from an intuitive point of view. For example, matrices are entities that may be use to transform a domain into another, by means of rotation, shifting, stretching and so on. My first question is this: how much information do I need to know about a matrix to have an idea about what the matrix is doing? Would it be possible to get some rough idea about this without much information about its spectral properties, and say "Well just by looking at the structure of this matrix, and the numbers in it, I can guess this and that...".  </p> <p>The second question is if anyone knows fast method to compute eigenvalues/eigenvector in your head. I know people who can do this for any 2-be-2 matrix, but I don't know which methods are they using.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> matrices </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="107188"> For a 2 x 2 matrix it is easy to calculate the determinant. So solving <span class="math-container" id="508329" visual_id="17719"><math alttext="det(A-\lambda{}I)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>I</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> isn't hard and can be (relatively) easily done in your head. Also keep in mind that diagonal matrices hold eigenvalues on their diagonal. </td></tr><tr><td comment_id="107190"> that's correct. But I've seen people who can do it for any 2-by-2 matrix in like two seconds (literally), so I was wondering if it's just a matter of practice. </td></tr><tr><td comment_id="107196"> A short answer: Think of matrices as linear transformations. The study of linear algebra over a finite-dimensional real vector space is analytic geometry in disguise. </td></tr><tr><td comment_id="107200"> If <span class="math-container" id="508330" visual_id="1791587"><math alttext="M=\begin{bmatrix}a&amp;b\\ c&amp;d\end{bmatrix}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>a</mi></mtd><mtd columnalign="center"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>c</mi></mtd><mtd columnalign="center"><mi>d</mi></mtd></mtr></mtable><mo>]</mo></mrow></mrow></semantics></math></span> then <span class="math-container" id="508331" visual_id="1791588"><math alttext="\det M=ad-bc" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mi>M</mi></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>d</mi></mrow><mo>-</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="508332" visual_id="1791589"><math alttext="\mathrm{Tr}M=a+d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>Tr</mi><mo>⁢</mo><mi>M</mi></mrow><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mi>d</mi></mrow></mrow></semantics></math></span>. Therefore <span class="math-container" id="508333" visual_id="1791590"><math alttext="\lambda_{1}\lambda_{2}=ad-bc" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>λ</mi><mn>2</mn></msub></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>d</mi></mrow><mo>-</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="508334" visual_id="893464"><math alttext="\lambda_{1}+\lambda_{2}=a+d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>+</mo><msub><mi>λ</mi><mn>2</mn></msub></mrow><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mi>d</mi></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="107235"> Dear Bob, have you read Sheldon Axler's textbook *Linear Algebra Done Right*? I think this is a fantastic book since it presents linear algebra in a very intuitive manner and avoids the use of determinants for the most part (except at the end where determinants are briefly discussed for the sake of completeness). For example, the characteristic polynomial is defined *without* using determinants and this leads to a simple proof of the Cayley-Hamilton theorem. I wonder how many students can explain intuitively what "<span class="math-container" id="508335" visual_id="1791591"><math alttext="\text{det}(A-\lambda I)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mtext>det</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>I</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>" means; it is a mess. </td></tr><tr><td comment_id="107255"> If <span class="math-container" id="508336" visual_id="5141"><math alttext="c=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> in Yuval's matrix <span class="math-container" id="508337" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span>, then the eigenvalues are <span class="math-container" id="508338" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="508339" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span>. (The eigenvalues of an upper triangular matrix are precisely the entries on the diagonal of the matrix.) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="48108" id="answer">
+<blockquote> <p>how much information do I need to know about a matrix to have an idea about what the matrix is doing?</p> </blockquote> <p>When I took Linear Algebra, it was really helpful to visualize the geometry of course! This is a really worthwhile endeavor in any branch of mathematics. When you're given a matrix, keep in mind always that you're looking at linear transformation from one vector space to another. The matrix can be thought of as column (row) vectors, depending on your point of view. Rather than try (in vain) to describe all of the geometry contained within a matrix, I will point you in the direction to begin:</p> <p>If you haven't yet, please look at MIT's open courseware Linear Algebra video lectures by <a href="http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/" rel="nofollow">Dr. Gilbert Strang</a>. His lectures are very good. I haven't studied his book, but I've studied from other books (both cheap and very good: Shilov's Linear Algebra and Axler's Linear Algebra Done Right; buy/rent/obtain them somehow).</p> <p>The point of eigen(german for characteristic)values is that these vectors remain the same(up to a scaling factor, <span class="math-container" id="508340" visual_id="664"><math alttext="\lambda" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi></semantics></math></span>, under the linear transformation. Take a linear transformation that rotates by 180 degrees in <span class="math-container" id="508341" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span>. The vector <span class="math-container" id="508342" visual_id="16162"><math alttext="(1,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> is mapped to <span class="math-container" id="508343" visual_id="17257"><math alttext="(-1,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>. This is peculiar: it seems we have only multiplied this vector by a <span class="math-container" id="508344" visual_id="6837"><math alttext="\lambda=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>. You can probably guess this is going to be an eigenvalue (actually two). <span class="math-container" id="508345" visual_id="2953"><math alttext="(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> is similarly mapped to <span class="math-container" id="508346" visual_id="79041"><math alttext="(0,-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>. And in general a vector <span class="math-container" id="508347" visual_id="2239"><math alttext="(a,b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> is mapped to <span class="math-container" id="508348" visual_id="407330"><math alttext="(-a,-b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>a</mi></mrow><mo>,</mo><mrow><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>. This computation is much easier when the matrix is in its diagonalized form (two -1's on the diagonals).</p> <blockquote> <p>The second question is if anyone knows fast method to compute eigenvalues/eigenvector in your head. I know people who can do this for any 2-be-2 matrix, but I don't know which methods are they using.</p> </blockquote> <p>You can try <span class="math-container" id="508349" visual_id="29740"><math alttext="\det{(A-\lambda I)}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>-</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>I</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. This determinant is not hard, and how the polynomial splits should be recognizable. There are other methods, of course. Maybe you could provide an example matrix? (see Axler for Linear Algebra with little mention of the determinant...) Hopefully you remember that if you have a diagonal matrix <span class="math-container" id="508350" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, the eigenvalues are on the diagonal :-).</p> <p>I hope this helped a bit.</p> <p>Edit: Ohh! I forgot! What Yuval said is very good for quickly finding the product and sum of the eigenvalues.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

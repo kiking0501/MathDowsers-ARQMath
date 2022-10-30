@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is (a/b)/c equal to a/(b*c) for integer division?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is (a/b)/c equal to a/(b*c) for integer division? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2557458">
+<p>Let <span class="math-container" id="23644463" visual_id="15565"><math alttext="\div" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>÷</mo></semantics></math></span> denote a binary operator that returns the integer quotient of two integers, i.e. (assuming that both integers are positive) <span class="math-container" id="23644464" visual_id="2550177"><math alttext="a\div b=\left\lfloor\frac{a}{b}\right\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>÷</mo><mi>b</mi></mrow><mo>=</mo><mrow><mo>⌊</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>⌋</mo></mrow></mrow></semantics></math></span>.  This corresponds to the <a href="https://en.wikipedia.org/wiki/Division_(mathematics)#Of_integers" rel="nofollow noreferrer">integer division</a> operator in many programming languages (e.g. the <code>//</code> operator in Python).</p> <p>I observed that, when <span class="math-container" id="23644465" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>, <span class="math-container" id="23644466" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> and <span class="math-container" id="23644467" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> are positive integers, the values of <span class="math-container" id="23644468" visual_id="1938032"><math alttext="(a\div b)\div c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>÷</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>÷</mo><mi>c</mi></mrow></semantics></math></span> and <span class="math-container" id="23644469" visual_id="2550178"><math alttext="a\div(b\times c)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>÷</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>×</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> are equal.</p> <p>I have tried to find a counter-example by using the following Python code, but wasn't able to find one:</p> <pre><code>from random import randint  while True:      a = randint(1, 10000000000)     b = randint(1, 10000)     c = randint(1, 10000)      lhs = a//b     lhs = lhs//c      rhs = a//(b *c)      if lhs != rhs:         print a, b, c         break </code></pre> <p>Could anyone please provide a counter example if the assertion that I made is not true or a proof which shows that it is always true?</p> <p>Additional Information:</p> <ol> <li>Please note that all the division operators used above correspond to <strong>integer division</strong>.</li> <li>The version of Python is 2.7.12.</li> <li>I asked this question on StackOverflow and it was suggested there, that I ask it here.</li> <li>I was not able to find a tag which says integer-division, so I didn't use it and any suggestions are welcome.</li> </ol>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> arithmetic </span><span> integers </span><span> programming </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5279269"> Already proven in 1994. See [Wikipedia](https://en.wikipedia.org/wiki/Floor_and_ceiling_functions#Nested_divisions). </td></tr><tr><td comment_id="5279376"> The difference between computing and mathematics is when b*c causes arithmetic overflow (e.g. 16b or 32b int). Then a/(b *c) should be 0 but instead it'll cause overflow. </td></tr><tr><td comment_id="5279412"> I [answered this on StackOverflow](https://stackoverflow.com/questions/45112911/is-it-safe-to-replace-a-bc-with-a-b-c-when-using-integer-division/45113310#45113310) a few months ago. </td></tr><tr><td comment_id="5279584"> IMO, whoever told you to move this here was mistaken. While this question may indeed fall marginally within the [scope](/help/on-topic) of Math.SE (and could be made a better fit here with some editing to generalize it and make it less Python-specific), it would've been a much better fit for SO, or perhaps for [cs.SE]. SO's scope does seem to be gradually shifting towards "fix my code", with some folks there nowadays flat out claiming that any question without code to debug is off-topic (even though [officially](https://stackoverflow.com/help/on-topic) it's not). IMO, this is unfortunate. </td></tr><tr><td comment_id="5279679"> @smci: For Python that's not an issue, since it uses [arbitrary-precision integers](https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic) that don't overflow. </td></tr><tr><td comment_id="5279693"> @IlmariKaronen: I'm very well aware of that, but the title merely says *" integer division"*, and the body says *"in many languages"* and doesn't restrict the scope to Python, it only mentions it. This is a very real issue in C/C++/R/Java/SQL/assembly/Fortran/etc. </td></tr><tr><td comment_id="5279697"> @smci: Agreed. I just wanted to clarify that the difference you pointed out doesn't *always* exist (and, in particular, that it doesn't exist for the specific language the OP used, explaining why they didn't find a counterexample). </td></tr><tr><td comment_id="5279724"> @IlmariKaronen: agreed. "99% of computing", then. Also C#. And I suspect Mathematica, Javascript, Ruby, Scheme etc. Related: [LanguageDesign.SE: Why is Arithmetic Overflow ignored?](https://softwareengineering.stackexchange.com/questions/348535/why-is-arithmetic-overflow-ignored). Yeah we should not rely on one language or compiler(/interpreter) for computer proofs. </td></tr><tr><td comment_id="5280393"> https://math.stackexchange.com/questions/360004/prove-that-lfloor-lfloor-x-a-rfloor-b-rfloor-lfloor-x-ab-rfloor </td></tr><tr><td comment_id="5280925"> @smci that deserves to be an answer. </td></tr><tr><td comment_id="5286223"> @RonJohn: I'm not sure because this is Mathematics.SE . Is the difference between maths and computer arithmetic on-topic here? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2558081" id="answer">
+<p>Another way to think about this is, say you have <span class="math-container" id="23644496" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> candies that you want to distribute among <span class="math-container" id="23644497" visual_id="183425"><math alttext="a*b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>*</mo><mi>b</mi></mrow></semantics></math></span> kids. What is the maximum number of candies a kid can get, given that you distribute the candies equally.</p> <p>The answer is <span class="math-container" id="23644498" visual_id="2550195"><math alttext="\Big{\lfloor}\frac{N}{a*b}\Big{\rfloor}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo maxsize="160%" minsize="160%">⌊</mo><mfrac><mi>N</mi><mrow><mi>a</mi><mo>*</mo><mi>b</mi></mrow></mfrac><mo maxsize="160%" minsize="160%">⌋</mo></mrow></semantics></math></span></p> <p>Note that you can divide the <span class="math-container" id="23644499" visual_id="183425"><math alttext="a*b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>*</mo><mi>b</mi></mrow></semantics></math></span> kids into <span class="math-container" id="23644500" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> classes. Since each student gets an equal number of candies, each class also gets an equal number of candies, which is <span class="math-container" id="23644501" visual_id="2550196"><math alttext="\leq\left\lfloor\frac{N}{a}\right\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>≤</mo><mrow><mo>⌊</mo><mfrac><mi>N</mi><mi>a</mi></mfrac><mo>⌋</mo></mrow></mrow></semantics></math></span>. Now for each class, you distribute these many candies among <span class="math-container" id="23644502" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> kids, so each kid gets</p> <p><span class="math-container" id="23644503" visual_id="2550197"><math alttext="\left\lfloor\frac{\left\lfloor\frac{N}{a}\right\rfloor}{b}\right\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⌊</mo><mfrac><mrow><mo>⌊</mo><mfrac><mi>N</mi><mi>a</mi></mfrac><mo>⌋</mo></mrow><mi>b</mi></mfrac><mo>⌋</mo></mrow></semantics></math></span></p> <p>Hence,</p> <p><span class="math-container" id="23644504" visual_id="2550198"><math alttext="\left\lfloor\frac{\left\lfloor\frac{N}{a}\right\rfloor}{b}\right\rfloor=\left% \lfloor\frac{N}{a*b}\right\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>⌊</mo><mfrac><mrow><mo>⌊</mo><mfrac><mi>N</mi><mi>a</mi></mfrac><mo>⌋</mo></mrow><mi>b</mi></mfrac><mo>⌋</mo></mrow><mo>=</mo><mrow><mo>⌊</mo><mfrac><mi>N</mi><mrow><mi>a</mi><mo>*</mo><mi>b</mi></mrow></mfrac><mo>⌋</mo></mrow></mrow></semantics></math></span></p> <hr/> <p>I didn't prove that we can give <span class="math-container" id="23644505" visual_id="2550199"><math alttext="\Big{\lfloor}\frac{N}{a}\Big{\rfloor}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo maxsize="160%" minsize="160%">⌊</mo><mfrac><mi>N</mi><mi>a</mi></mfrac><mo maxsize="160%" minsize="160%">⌋</mo></mrow></semantics></math></span> candies to each class and still ensure that each student will get the optimal number of candies. This can be proven easily as well. Let's say each class gets <span class="math-container" id="23644506" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> candies in the optimal solution. Then, we have:</p> <p><span class="math-container" id="23644507" visual_id="2550200"><math alttext="Y*a\leq N\implies Y\leq\frac{N}{a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>Y</mi><mo>*</mo><mi>a</mi></mrow><mo>≤</mo><mi>N</mi><mo>⟹</mo><mi>Y</mi><mo>≤</mo><mfrac><mi>N</mi><mi>a</mi></mfrac></mrow></semantics></math></span></p> <p>Hence we can give each class <span class="math-container" id="23644508" visual_id="2550199"><math alttext="\left\lfloor\frac{N}{a}\right\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⌊</mo><mfrac><mi>N</mi><mi>a</mi></mfrac><mo>⌋</mo></mrow></semantics></math></span> candies for optimal distribution.</p> <p>Note that each class can also reject some candies.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

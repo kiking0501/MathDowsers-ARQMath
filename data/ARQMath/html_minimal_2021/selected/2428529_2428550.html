@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Epsilon-Delta Proof limit $\frac{3x^2y}{ x^2 + y^2}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Epsilon-Delta Proof limit $\frac{3x^2y}{ x^2 + y^2}$ </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2428529">
+<p>I have just learned about the Epsilon-Delta definition of a limit. I understand that if a function has a limit, then given any <span class="math-container" id="22490676" visual_id="35"><math alttext="\epsilon&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>, there is a <span class="math-container" id="22490677" visual_id="1336"><math alttext="\delta&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>, such that for all <span class="math-container" id="22490678" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> within <span class="math-container" id="22490679" visual_id="41"><math alttext="\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi></semantics></math></span> of <span class="math-container" id="22490680" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>, <span class="math-container" id="22490681" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is within <span class="math-container" id="22490682" visual_id="4716048"><math alttext="\epsilon ofL" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mi>L</mi></mrow></semantics></math></span>. </p> <p>In other words, </p> <p><span class="math-container" id="22490683" visual_id="4716049"><math alttext="|x-c|&lt;\delta\rightarrow|f(x)-L|&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>-</mo><mi>c</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>δ</mi><mo>→</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mi>L</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>ϵ</mi></mrow></semantics></math></span></p> <p>The task in my textbook was to find the limit of <span class="math-container" id="22490684" visual_id="4716047"><math alttext="3x^{2}y/(x^{2}+y^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> as <span class="math-container" id="22490685" visual_id="160785"><math alttext="(x,y)\rightarrow 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mn>0</mn></mrow></semantics></math></span>. </p> <p>To prove that the limit of this function is <span class="math-container" id="22490686" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>, we need to find <span class="math-container" id="22490687" visual_id="1336"><math alttext="\delta&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> that confirms the inequalities specified above. As I set out to answer the question, I wrote down </p> <p><span class="math-container" id="22490688" visual_id="4716050"><math alttext="0&lt;|x-0|&lt;\delta\rightarrow 3x^{2}y/(x^{2}+y^{2})-0&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>-</mo><mn>0</mn></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>δ</mi><mo>→</mo><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mn>0</mn></mrow><mo>&lt;</mo><mi>ϵ</mi></mrow></semantics></math></span></p> <p>However, the book began with<br/> <span class="math-container" id="22490689" visual_id="4716051"><math alttext="0&lt;\sqrt{x^{2}+y^{2}}&lt;\delta\rightarrow 3x^{2}y/(x^{2}+y^{2})-0&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt><mo>&lt;</mo><mi>δ</mi><mo>→</mo><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mn>0</mn></mrow><mo>&lt;</mo><mi>ϵ</mi></mrow></semantics></math></span></p> <p>Where do they get <span class="math-container" id="22490690" visual_id="41185"><math alttext="\sqrt{x^{2}+y^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt></semantics></math></span> ? Please explain in the simplest way you can - I am very, very new to this!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> limits </span><span> multivariable-calculus </span><span> epsilon-delta </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5016251"> <span class="math-container" id="22490691" visual_id="4716052"><math alttext="\|(x,y)-(0,0)\|=\sqrt{(x-0)^{2}+(y-0)^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∥</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>∥</mo></mrow><mo>=</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>-</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow></semantics></math></span>. </td></tr><tr><td comment_id="5016253"> If you have "just learned about" the <span class="math-container" id="22490692" visual_id="33"><math alttext="\delta-\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>-</mo><mi>ϵ</mi></mrow></semantics></math></span> definition of a limit, then plunging into the limit of a two-variable function is a really big step, since there are subtleties that do not crop up in one variable. In particular, for the limit to exist, the values must agree along all <span class="math-container" id="22490719" visual_id="66"><math alttext="(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> continuous paths to <span class="math-container" id="22490694" visual_id="828"><math alttext="(0,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span>. </td></tr><tr><td comment_id="5016277"> @copper.hat could you show the steps of that a little more in depth? I'm not quite following you solved that absolute value </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2428550" id="answer">
+<p>The definition</p> <p><span class="math-container" id="22490702" visual_id="4716057"><math alttext="\forall\epsilon&gt;0,\exists\delta&gt;0:|x-a|&lt;\delta\implies|f(x)-L|&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mo>∀</mo><mi>ϵ</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mo>∃</mo><mi>δ</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow><mo>:</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>-</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>δ</mi><mo>⟹</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mi>L</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>ϵ</mi></mrow></mrow></semantics></math></span></p> <p>has taken a bit of a shortcut on you and is assuming that <span class="math-container" id="22490703" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="22490704" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> are one dimensional.</p> <p>For multivariate functions (or generalized metric spaces), use the appropriate distance metric instead of absolute values.</p> <p>something like:</p> <p><span class="math-container" id="22490705" visual_id="4716058"><math alttext="\forall\epsilon&gt;0,\exists\delta&gt;0:d(\mathbf{x},\mathbf{a})&lt;\delta\implies d(f(% \mathbf{x}),L)&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mo>∀</mo><mi>ϵ</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mo>∃</mo><mi>δ</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow><mo>:</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo>,</mo><mi>𝐚</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mi>δ</mi><mo>⟹</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi>L</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mi>ϵ</mi></mrow></mrow></semantics></math></span></p> <p>And in the one dimensional case <span class="math-container" id="22490706" visual_id="49263"><math alttext="|x-a|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mrow><mi>x</mi><mo>-</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow></semantics></math></span> is the distance between <span class="math-container" id="22490707" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="22490708" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span></p> <p>The Euclidean norm is one such metric for <span class="math-container" id="22490709" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span></p> <p><span class="math-container" id="22490710" visual_id="4716059"><math alttext="\|\mathbf{x}\|=\sqrt{x^{2}+y^{2}}\\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∥</mo><mi>𝐱</mi><mo>∥</mo></mrow><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5016294"> so for all two variable functions I should use, <span class="math-container" id="22490711" visual_id="4716060"><math alttext="\sqrt{x^{2}+y^{2}}-c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt><mo>-</mo><mi>c</mi></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="5016300"> You don't have to, but it is safe.  But there are other viable metrics.  You may find it easier to use the square of the distance <span class="math-container" id="22490712" visual_id="4716061"><math alttext="x^{2}+y^{2}&lt;\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>&lt;</mo><mi>δ</mi></mrow></semantics></math></span> or <span class="math-container" id="22490713" visual_id="4716062"><math alttext="|x|+|y|&lt;\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>+</mo><mrow><mo stretchy="false">|</mo><mi>y</mi><mo stretchy="false">|</mo></mrow></mrow><mo>&lt;</mo><mi>δ</mi></mrow></semantics></math></span> or <span class="math-container" id="22490714" visual_id="4716063"><math alttext="\max(x,y)&lt;\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mi>δ</mi></mrow></semantics></math></span>.  All of those are "legal."  One handy technique is to convert to polar coordinates... then you have turned it into a one variable problem. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

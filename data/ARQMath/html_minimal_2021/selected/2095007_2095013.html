@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Number of positive integer solutions of $\frac{1}{x}+\frac{1}{y}=\frac{1}{pq}$ for distinct primes $p$ and $q$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Number of positive integer solutions of <span class="math-container" id="19373910" visual_id="1817304"><math alttext="\frac{1}{x}+\frac{1}{y}=\frac{1}{pq}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>y</mi></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow></mfrac></mrow></semantics></math></span> for distinct primes <span class="math-container" id="19373911" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> and <span class="math-container" id="19373912" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2095007">
+<blockquote> <p>Let <span class="math-container" id="19373913" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> and <span class="math-container" id="19373914" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> be distinct primes. Then find the number of positive integer solutions of the equation <span class="math-container" id="19373915" visual_id="1817304"><math alttext="\frac{1}{x}+\frac{1}{y}=\frac{1}{pq}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>y</mi></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow></mfrac></mrow></semantics></math></span></p> </blockquote> <p>We get <span class="math-container" id="19373916" visual_id="7740551"><math alttext="pq=\frac{xy}{x+y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow><mo>=</mo><mfrac><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></mfrac></mrow></semantics></math></span></p> <p>Now <span class="math-container" id="19373917" visual_id="3024"><math alttext="x+y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></semantics></math></span> must divide <span class="math-container" id="19373918" visual_id="7226"><math alttext="xy" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></semantics></math></span> as L.H.S. is a positive integer with two prime factors but how do we make sure the same on R.H.S. ?</p> <p>Given options are <span class="math-container" id="19373919" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> or <span class="math-container" id="19373920" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> or <span class="math-container" id="19373921" visual_id="2663"><math alttext="8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>8</mn></semantics></math></span> or <span class="math-container" id="19373922" visual_id="3052"><math alttext="9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> prime-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2095013" id="answer">
+<p>Starting hint: rewrite as  <span class="math-container" id="19373944" visual_id="7740559"><math alttext="pq(x+y)=xy" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></semantics></math></span> Can you say anything about the prime factors of <span class="math-container" id="19373945" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="19373946" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span>? </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1343056"> Solve <span class="math-container" id="12483590" visual_id="1817304"><math alttext="\frac{1}{x}+\frac{1}{y}=\frac{1}{pq}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>y</mi></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2769277"> Let <span class="math-container" id="25552619" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> and <span class="math-container" id="25552620" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> be distinct primes. <span class="math-container" id="25552621" visual_id="1817304"><math alttext="\frac{1}{x}+\frac{1}{y}=\frac{1}{pq}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>y</mi></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

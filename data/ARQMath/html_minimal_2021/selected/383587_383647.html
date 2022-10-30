@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find the maximum likelihood estimator for $\theta$ when $f(x)=2\theta^{-2}x, 0\leq x \leq \theta$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find the maximum likelihood estimator for <span class="math-container" id="4075757" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> when <span class="math-container" id="4075758" visual_id="6593346"><math alttext="f(x)=2\theta^{-2}x,0\leq x\leq\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>θ</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>,</mo><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>θ</mi></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="383587">
+<p>Find the maximum likelihood estimator for <span class="math-container" id="4075759" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> when <span class="math-container" id="4075760" visual_id="6593347"><math alttext="f(x)=\frac{2x}{\theta^{2}},0\leq x\leq\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><msup><mi>θ</mi><mn>2</mn></msup></mfrac></mrow><mo>,</mo><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>θ</mi></mrow></mrow></semantics></math></span>.</p> <p>This should be a really easy question but I somehow cannot seem to get the right answer. My likelihood function is <span class="math-container" id="4075761" visual_id="6593348"><math alttext="\prod\limits_{i=1}^{n}\frac{2x_{i}}{\theta^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mi>i</mi></msub></mrow><msup><mi>θ</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> which gives me after some simplification <span class="math-container">$n\ln(2\theta^{-2}) + \sum\limits_{i=1}^n ln(x_i)$</span> as my log-likelihood function. Then the derivative becomes <span class="math-container" id="4075763" visual_id="6593350"><math alttext="\frac{-2n}{\theta}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mi>θ</mi></mfrac></semantics></math></span>. If I equate this to <span class="math-container" id="4075764" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> to obtain the maximum I obtain <span class="math-container" id="4075765" visual_id="6593351"><math alttext="\hat{\theta}\rightarrow\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>θ</mi><mo stretchy="false">^</mo></mover><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. However, this answer does not seem plausible. What did I do wrong?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> statistics </span><span> statistical-inference </span><span> maximum-likelihood </span><span> parameter-estimation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="383647" id="answer">
+<p>There's an issue that arises here. Your distribution is supported (nonzero) for <span class="math-container" id="4075766" visual_id="156462"><math alttext="0\leq x\leq\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>θ</mi></mrow></semantics></math></span>. In other words, it's zero outside this interval. That means when you look at something like <span class="math-container" id="4075767" visual_id="6593352"><math alttext="f(x_{i})=2\theta^{-2}x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>θ</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></semantics></math></span>, it should actually be <span class="math-container" id="4075768" visual_id="6593353"><math alttext="f(x_{i})=2\theta^{-2}x_{i}\mathbb{1}_{0\leq x_{i}\leq\theta}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>θ</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msub><mi>x</mi><mi>i</mi></msub><mo>⁢</mo><msub><mn>𝟙</mn><mrow><mn>0</mn><mo>≤</mo><msub><mi>x</mi><mi>i</mi></msub><mo>≤</mo><mi>θ</mi></mrow></msub></mrow></mrow></semantics></math></span>, where the indicator is zero when <span class="math-container" id="4075769" visual_id="1161"><math alttext="x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>i</mi></msub></semantics></math></span> is outside the interval. When you are maximizing <span class="math-container" id="4075770" visual_id="6593354"><math alttext="f(x_{1})\cdots f(x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, this product is zero if <span class="math-container" id="4075771" visual_id="6593355"><math alttext="\theta&lt;x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>&lt;</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></semantics></math></span> for some <span class="math-container" id="4075772" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>, so you can just assume that <span class="math-container" id="4075773" visual_id="4418790"><math alttext="\theta\geq x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>≥</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></semantics></math></span> for each <span class="math-container" id="4075774" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>. </p> <p>So think about how you would maximize such a function. Don't deal with derivatives because the function won't have a zero derivative, but will have a maximum. As a hint, try looking at <span class="math-container" id="4075775" visual_id="6593356"><math alttext="\hat{\theta}=\max_{i}x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>θ</mi><mo stretchy="false">^</mo></mover><mo>=</mo><mrow><munder><mi>max</mi><mi>i</mi></munder><mo>⁡</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></semantics></math></span>. Can you do better than that?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="821235"> Thank you for your help! How do I know that the function only has a minimum? Isn't it the case that the maximimum of the <span class="math-container" id="4075776" visual_id="1161"><math alttext="x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>i</mi></msub></semantics></math></span>'s that you suggested  is the best estimate for <span class="math-container" id="4075780" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> since it gives you the highest value of <span class="math-container" id="4075778" visual_id="122239"><math alttext="L(\theta)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>(the loglikelihoodfunction)? If not, could you explain me how we could do better? </td></tr><tr><td comment_id="821251"> @cruise: sorry that was a typo, minimum should be maximum (corrected). It's Max Log Likelihood, which is the same thing as max of the distribution function. </td></tr><tr><td comment_id="821267"> Ok thank you. Is your hint indeed the correct answer though? Because after reading your explanation that seems the most plausible answer. </td></tr><tr><td comment_id="821271"> You can easily justify it. Your MLE (without taking log's) will be <span class="math-container" id="8045908">p</span>roportional to <span class="math-container" id="4075779" visual_id="6593357"><math alttext="\theta^{-2n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>θ</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></semantics></math></span>, which is decreasing as <span class="math-container" id="4075780" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> gets larger and you re<span class="math-container" id="8045913">q</span>uire <span class="math-container" id="4075781" visual_id="1195140"><math alttext="\theta\geq\max_{i}x_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>≥</mo><mrow><munder><mi>max</mi><mi>i</mi></munder><mo>⁡</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></semantics></math></span>. If <span class="math-container" id="8045920">y</span>ou think about it, you're asking what the most likely uniform distribution is for a given set of observables. It's intuitively obvious you don't need an interval bigger than your largest value. </td></tr><tr><td comment_id="821284"> Thank you <span class="math-container" id="8046051">f</span>or your help :)! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

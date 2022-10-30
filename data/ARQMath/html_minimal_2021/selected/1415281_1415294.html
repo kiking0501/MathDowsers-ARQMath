@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>the least $m$ such that $a^m\equiv 1 \mod n $ for fixed $a,n$.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> the least <span class="math-container" id="13145394" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> such that <span class="math-container" id="13145395" visual_id="1574447"><math alttext="a^{m}\equiv 1\mod n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mi>m</mi></msup><mo>≡</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>n</mi></mrow></mrow></semantics></math></span> for fixed <span class="math-container" id="13145396" visual_id="19565"><math alttext="a,n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>n</mi></mrow></semantics></math></span>. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1415281">
+<p>Is there any known method for calculating <span class="math-container" id="13145397" visual_id="5352999"><math alttext="\lambda_{a}(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>a</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> which returns the smallest integer <span class="math-container" id="13145398" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> such that <span class="math-container" id="13145399" visual_id="167210"><math alttext="a^{m}\equiv 1\pmod{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mi>m</mi></msup><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> where <span class="math-container" id="13145400" visual_id="82715"><math alttext="\gcd(a,n)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> ? </p> <p>I searched but I found nothing, is there at least an algorithm that does not use bruteforce ? </p> <p>Note : as you may note this is closely related to Carmichael function, the difference is that <span class="math-container" id="13145401" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> is fixed here.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> algorithms </span><span> carmichael-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2883649"> @MichaelBurr thanks, I fixed it. </td></tr><tr><td comment_id="2883658"> Depends on how large <span class="math-container" id="13145411" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is. If we can factor <span class="math-container" id="13145406" visual_id="237769"><math alttext="\lambda(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, we can start with that, and calculate <span class="math-container" id="13145404" visual_id="5353000"><math alttext="a^{\lambda(n)/p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>a</mi><mrow><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mi>p</mi></mrow></msup></semantics></math></span> modulo <span class="math-container" id="13145411" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> for the various prime factors of <span class="math-container" id="13145406" visual_id="237769"><math alttext="\lambda(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.  As long as we get <span class="math-container" id="13145407" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, keep descending. </td></tr><tr><td comment_id="2883669"> This is an instance of the discrete logarithm. Suffice it to say that finding a discrete logarithm is hard, in the sense that there is no classical algorithm that runs in polynomial time. https://en.wikipedia.org/wiki/Discrete_logarithm#Algorithms </td></tr><tr><td comment_id="2883673"> I'm not looking for a really fast algorithm, just better than trying all <span class="math-container" id="13145408" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> or as I found out trying divisors of <span class="math-container" id="13145409" visual_id="10042"><math alttext="\phi(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1415294" id="answer">
+<p>What you're asking for is known as the order of <span class="math-container" id="13145410" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> modulo <span class="math-container" id="13145411" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. The strongest result I know of is that <span class="math-container" id="13145412" visual_id="5353001"><math alttext="\text{ord}_{n}a\mid\phi(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mtext>ord</mtext><mi>n</mi></msub><mo>⁢</mo><mi>a</mi></mrow><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2883664"> Finding <span class="math-container" id="13145413" visual_id="10042"><math alttext="\phi(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is not easy. </td></tr><tr><td comment_id="2883683"> I agree with vudu, take the pseudo prime numbers for example. </td></tr><tr><td comment_id="2883697"> Right, which is why I specified that it was the strongest result I knew of - it's not incredibly helpful, but I don't think there's anything better. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

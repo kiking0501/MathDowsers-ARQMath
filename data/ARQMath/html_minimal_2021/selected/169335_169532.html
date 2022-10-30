@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is there a good way to solve for the inverse of $(u^2-u+4)$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is there a good way to solve for the inverse of <span class="math-container" id="1967864" visual_id="7610409"><math alttext="(u^{2}-u+4)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>-</mo><mi>u</mi></mrow><mo>+</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="169335">
+<p>I'm having trouble calculating the inverse of a polynomial. Consider the polynomial <span class="math-container" id="1967865" visual_id="5650598"><math alttext="f(x)=x^{3}+3x-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>-</mo><mn>2</mn></mrow></mrow></semantics></math></span>, which is irreducible over <span class="math-container" id="1967866" visual_id="856"><math alttext="\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℚ</mi></semantics></math></span>, as it has no rational roots. So <span class="math-container" id="1967867" visual_id="7610410"><math alttext="\mathbb{Q}[x]/(f(x))\simeq\mathbb{Q}[u]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>u</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span> is a field. </p> <p>How would I calculate <span class="math-container" id="1967868" visual_id="7610411"><math alttext="(u^{2}-u+4)^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>-</mo><mi>u</mi></mrow><mo>+</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> as a polynomial? Calling this <span class="math-container" id="1967869" visual_id="1269842"><math alttext="p(u)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, I tried solving for it by writing <span class="math-container" id="1967870" visual_id="7610412"><math alttext="p(x)(x^{2}-x+4)=q(x)f(x)+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi></mrow><mo>+</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> but I don't know what <span class="math-container" id="1967871" visual_id="8706"><math alttext="q(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is. How can I write down <span class="math-container" id="1967872" visual_id="7610411"><math alttext="(u^{2}-u+4)^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>-</mo><mi>u</mi></mrow><mo>+</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> explicitly? Thanks.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> polynomials </span><span> field-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="389364"> Using Extended euclidean algorithm is a possible way. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="169532" id="answer">
+<p><strong>Hint</strong> <span class="math-container" id="1967873" visual_id="286"><math alttext="\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi></mi></semantics></math></span> By the polynomial long division algorithm <span class="math-container" id="1967874" visual_id="9340107"><math alttext="\@@eqnarray\displaystyle\rm x^{3}+3\,x-2&amp;\displaystyle=&amp;\displaystyle\rm\ (x+1% )\,(x^{2}-x+4)\,-\,\color[rgb]{0,0,0}6\\ \displaystyle\Rightarrow\ \ \rm mod\ \ x^{3}+3\,x-2\!:&amp;&amp;\displaystyle\rm\ % \dfrac{x+1}{\color[rgb]{0,0,0}6}\ (x^{2}-x+4)\,\equiv\,1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext class="ltx_eqn_eqnarray">(1)Equation 11(2)Equation 22</mtext></semantics></math></span></p> <p><strong>Remark</strong> <span class="math-container" id="1967875" visual_id="286"><math alttext="\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi></mi></semantics></math></span> There is no need to apply the hairy extended Euclidean algorithm machinery in such simple cases as this, where <span class="math-container" id="1967876" visual_id="7610413"><math alttext="\rm\&gt;f\ mod\ g\&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="2.2pt" width="+7.2pt"><mi mathvariant="normal">f</mi><mo>⁢</mo><mpadded width="+5pt"><mi>mod</mi><mo>⁢</mo><mpadded width="+2.2pt"><mi mathvariant="normal">g</mi></mpadded></mpadded></mpadded></mrow></semantics></math></span> is <span class="math-container" id="1967877" visual_id="7610414"><math alttext="\rm\color[rgb]{0,0,0}{constant}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathcolor="#000000">constant</mi></semantics></math></span>, since we can "read off" the inverse immediately as above from a single division (i.e. the Euclidean algorithm terminates in one step for such cases, so it reduces to the division algorithm). This optimization of the extended euclidean algorithm occurs  frequently in practice (by law of small numbers) so it is well-worth knowing and checking.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

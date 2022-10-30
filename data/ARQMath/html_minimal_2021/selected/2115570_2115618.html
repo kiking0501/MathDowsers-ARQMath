@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is the fundamental solution of this homogeneous system of linear equations?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is the fundamental solution of this homogeneous system of linear equations? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2115570">
+<p>What is the fundamental solution of this homogeneous system of linear equations? And what are the steps to solving one? <span class="math-container" id="19560770" visual_id="2705594"><math alttext="\left\{\begin{array}[]{ll}x_{1}+3x_{2}-5x_{3}+9x_{4}-x_{5}=0\\ 2x_{1}-2x_{2}-3x_{3}-7x_{4}+2x_{5}=0\\ x_{1}-5x_{2}+2x_{3}-16x_{4}+3x_{5}=0\end{array}\right." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mrow><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mo>-</mo><mrow><mn>5</mn><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow><mo>+</mo><mrow><mn>9</mn><mo>⁢</mo><msub><mi>x</mi><mn>4</mn></msub></mrow></mrow><mo>-</mo><msub><mi>x</mi><mn>5</mn></msub></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow><mo>-</mo><mrow><mn>7</mn><mo>⁢</mo><msub><mi>x</mi><mn>4</mn></msub></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mn>5</mn></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mrow><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>-</mo><mrow><mn>5</mn><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow><mo>-</mo><mrow><mn>16</mn><mo>⁢</mo><msub><mi>x</mi><mn>4</mn></msub></mrow></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msub><mi>x</mi><mn>5</mn></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd></mtd></mtr></mtable><mi></mi></mrow></semantics></math></span></p> <p>I had this exact task in a test and couldn't wrap my mind around it. I'd appreciate a more or less simple answer as I'm not a native English speaker. Thanks in advance.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> homogeneous-equation </span><span> fundamental-solution </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4350885"> Would the answer to ''finding a fundamental solution'' be - there is none, because there is an infinite amount of solutions? Or should I have x3=c3; x4=c4; x5=c5 and then make a solution out of that? Meaning x2=7/8*c3 - 25/8*c4+1/2*c5 etc.? I'm wondering if that counts as a fundamental solution </td></tr><tr><td comment_id="4350925"> Thanks a lot for your help :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2115618" id="answer">
+<p>Since the right side of each equation is 0, it is trivial that <span class="math-container" id="19560771" visual_id="2705595"><math alttext="x_{1}=x_{2}=x_{3}=x_{4}=x_{5}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><msub><mi>x</mi><mn>3</mn></msub><mo>=</mo><msub><mi>x</mi><mn>4</mn></msub><mo>=</mo><msub><mi>x</mi><mn>5</mn></msub><mo>=</mo><mn>0</mn></mrow></semantics></math></span> is a solution.  But since there are three equations in five unknowns, there exist other, non trivial solutions.</p> <p>One way to find all possible solutions is to start <strong>trying</strong> to solve the equations.  For example, if we multiply the first equation by 2 and subtract from the second equation we eliminate both <span class="math-container" id="19560772" visual_id="273"><math alttext="x_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>1</mn></msub></semantics></math></span> and <span class="math-container" id="19560773" visual_id="57287"><math alttext="x_{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>5</mn></msub></semantics></math></span>: <span class="math-container" id="19560774" visual_id="2705596"><math alttext="-8x_{2}+7x_{3}-25x_{4}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mo>-</mo><mrow><mn>8</mn><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow><mo>+</mo><mrow><mn>7</mn><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow><mo>-</mo><mrow><mn>25</mn><mo>⁢</mo><msub><mi>x</mi><mn>4</mn></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. If we multiply the <em>third</em> equation by 2 and subtract from the second equation, we eliminate <span class="math-container" id="19560775" visual_id="273"><math alttext="x_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>1</mn></msub></semantics></math></span> again: <span class="math-container" id="19560776" visual_id="2705597"><math alttext="14x_{2}-7x_{3}+25x_{4}-4x_{5}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mrow><mn>14</mn><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>-</mo><mrow><mn>7</mn><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow><mo>+</mo><mrow><mn>25</mn><mo>⁢</mo><msub><mi>x</mi><mn>4</mn></msub></mrow></mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><msub><mi>x</mi><mn>5</mn></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.  And if we add those two equations, we eliminate both <span class="math-container" id="19560777" visual_id="10019"><math alttext="x_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>3</mn></msub></semantics></math></span> and <span class="math-container" id="19560778" visual_id="19864"><math alttext="x_{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>4</mn></msub></semantics></math></span>: 6x_2- 4x_5= 0.  From that <span class="math-container" id="19560779" visual_id="2705598"><math alttext="x_{5}=\frac{3}{2}x_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>5</mn></msub><mo>=</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></semantics></math></span>.  Putting that into <span class="math-container" id="19560780" visual_id="2705597"><math alttext="14x_{2}-7x_{3}+25x_{4}-4x_{5}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mrow><mn>14</mn><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>-</mo><mrow><mn>7</mn><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow><mo>+</mo><mrow><mn>25</mn><mo>⁢</mo><msub><mi>x</mi><mn>4</mn></msub></mrow></mrow><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><msub><mi>x</mi><mn>5</mn></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> we get <span class="math-container" id="19560781" visual_id="2705599"><math alttext="8x_{2}-7x_{3}+25x_{1}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mn>8</mn><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>-</mo><mrow><mn>7</mn><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow><mo>+</mo><mrow><mn>25</mn><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.  Solving that for <span class="math-container" id="19560782" visual_id="273"><math alttext="x_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>1</mn></msub></semantics></math></span>, <span class="math-container" id="19560783" visual_id="2705600"><math alttext="x_{1}=\frac{7}{25}x_{3}-\frac{8}{25}x_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mrow><mrow><mfrac><mn>7</mn><mn>25</mn></mfrac><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow><mo>-</mo><mrow><mfrac><mn>8</mn><mn>25</mn></mfrac><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mrow></mrow></semantics></math></span>.  We are through with the equations so this is as far as we can go.  writing "A" for <span class="math-container" id="19560784" visual_id="10019"><math alttext="x_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>3</mn></msub></semantics></math></span> and "B" for <span class="math-container" id="19560785" visual_id="584"><math alttext="x_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>2</mn></msub></semantics></math></span>, <span class="math-container" id="19560786" visual_id="2705601"><math alttext="x_{1}=\frac{7}{25}A-\frac{8}{25}B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mrow><mrow><mfrac><mn>7</mn><mn>25</mn></mfrac><mo>⁢</mo><mi>A</mi></mrow><mo>-</mo><mrow><mfrac><mn>8</mn><mn>25</mn></mfrac><mo>⁢</mo><mi>B</mi></mrow></mrow></mrow></semantics></math></span>, <span class="math-container" id="19560787" visual_id="2705602"><math alttext="x_{2}=A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mi>A</mi></mrow></semantics></math></span>, <span class="math-container" id="19560788" visual_id="2705603"><math alttext="x_{4}=B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>4</mn></msub><mo>=</mo><mi>B</mi></mrow></semantics></math></span>, and you can solve for <span class="math-container" id="19560789" visual_id="10019"><math alttext="x_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>3</mn></msub></semantics></math></span> and <span class="math-container" id="19560790" visual_id="57287"><math alttext="x_{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>5</mn></msub></semantics></math></span> in terms of A and B.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

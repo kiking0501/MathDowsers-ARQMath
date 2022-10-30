@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Kuratowski-Zorn Lemma with pre-order (quasi-order, proset) instead poset?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Kuratowski-Zorn Lemma with pre-order (quasi-order, proset) instead poset? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="621280">
+<p>What would happen if we would use pre-order (there is no weak-antisymmetry, only reflexivity and transitivity) in  Kuratowski-Zorn Lemma instead of partial order? </p> <blockquote> <p>Suppose that we have set P which is preordered and  has the property   that every chain (i.e. totally ordered subset) has an upper bound in   P. Then the set P contains at least one maximal element.</p> </blockquote> <p>Is this statement true in ZFC? If not, what can we postulate to make it true? I think it can be false, or at least we need to postulate something more (or not?), but I am just missing something and don't see it.</p> <p>P.S.</p> <blockquote class="spoiler"> <p> I wanted to put tags with combination of words like: Kuratowski Zorn Lemma Pre-order Proset, but it seems that none of them exist and I need to have 300+ reputation to create new ones, thus I only typed (set-theory) :( If someone with bigger reputation could make this topics' tags more precise, I would be grateful :)</p> </blockquote>
+</div>
+<hr/>
+<div id="tags">
+<span> set-theory </span><span> axiom-of-choice </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1308913"> As a comment about tagging issues, there has been some discussion on the meta site regarding Zorn's Lemma tag. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="621291" id="answer">
+<p>In <span class="math-container" id="6317632" visual_id="46489"><math alttext="\sf ZFC" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝖹𝖥𝖢</mi></semantics></math></span> you can do the following trick.</p> <p>Let <span class="math-container" id="6317633" visual_id="167933"><math alttext="(P,\leq)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>,</mo><mo>≤</mo><mo stretchy="false">)</mo></mrow></semantics></math></span> be a preordered set. Define <span class="math-container" id="6317634" visual_id="4466475"><math alttext="x\sim y\iff x\leq y\land y\leq x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>∼</mo><mi>y</mi></mrow><mo>⇔</mo><mrow><mi>x</mi><mo>≤</mo><mrow><mi>y</mi><mo>∧</mo><mi>y</mi></mrow><mo>≤</mo><mi>x</mi></mrow></mrow></semantics></math></span>, clearly an equivalence relation. Now using the axiom of choice choose a representative from each equivalence class. This defines <span class="math-container" id="6317635" visual_id="2327818"><math alttext="P^{\prime}\subseteq P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>P</mi><mo>′</mo></msup><mo>⊆</mo><mi>P</mi></mrow></semantics></math></span> which is a partially ordered set.</p> <p>If <span class="math-container" id="6317636" visual_id="167933"><math alttext="(P,\leq)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>,</mo><mo>≤</mo><mo stretchy="false">)</mo></mrow></semantics></math></span> satisfied the Zorn lemma assumptions, so must <span class="math-container" id="6317637" visual_id="6045065"><math alttext="(P^{\prime},\leq)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>P</mi><mo>′</mo></msup><mo>,</mo><mo>≤</mo><mo stretchy="false">)</mo></mrow></semantics></math></span>. Therefore <span class="math-container" id="6317638" visual_id="8393"><math alttext="P^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>P</mi><mo>′</mo></msup></semantics></math></span> has a maximal element, so <span class="math-container" id="6317639" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> has one as well. Where maximal in a preordered set means that there is no strictly larger element.</p> <hr/> <p>(As Hagen von Eitzen points out, one can looks at the partial order defined naturally on <span class="math-container" id="6317640" visual_id="420623"><math alttext="P/\sim" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>/</mo><mo>∼</mo></mrow></semantics></math></span>, and see that it satisfies Zorn's lemma assumptions, therefore it has a maximal element, which has an equivalence class of maximal elements in <span class="math-container" id="6317641" visual_id="8393"><math alttext="P^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>P</mi><mo>′</mo></msup></semantics></math></span>.</p> <p>We do not resort to using the axiom of choice directly, since we are not choosing from the representatives of each class, but since Zorn's lemma is equivalent to the axiom of choice to begin with, this does not exempt us from using the axiom of choice in its full generality anyway.)</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1308922"> Not that it matters when Zorn is given anyway, but maybe there is "less choice" involved if one considers the partial order on the set of equivalence classes instead of on a set of representatives. </td></tr><tr><td comment_id="1308935"> True, true. Although it's not quite less choice, but rather less-obvious. </td></tr><tr><td comment_id="1308961"> @bof: If <span class="math-container" id="6317644" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> is a chai<span class="math-container" id="12174333">n</span> of equivalence classes, <span class="math-container" id="6317643" visual_id="192334"><math alttext="\bigcup C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋃</mo><mi>C</mi></mrow></semantics></math></span> is a chain in the preorder. Therefore has an upper bound. Its equivalence class is an upper bound of <span class="math-container" id="6317644" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> by definition. </td></tr><tr><td comment_id="1308964"> Or, in the old greedy slogan of choiceless proofs: <span class="math-container" id="6317645" visual_id="6045066"><?xml version="1.0" encoding="UTF-8"?> <math alttext="\sf\text{Ifyoucan^{\prime}tchooseone,takeeverything!}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"> <mrow> <mrow> <merror class="ltx_ERROR undefined undefined"> <mtext>\text</mtext> </merror> <mo>⁢</mo> <msup> <mi>𝖨𝖿𝗒𝗈𝗎𝖼𝖺𝗇</mi> <mo>′</mo> </msup> <mo>⁢</mo> <mi>𝗍𝖼𝗁𝗈𝗈𝗌𝖾𝗈𝗇𝖾</mi> </mrow> <mo>,</mo> <mrow> <mi>𝗍𝖺𝗄𝖾𝖾𝗏𝖾𝗋𝗒𝗍𝗁𝗂𝗇𝗀</mi> <mo>!</mo> </mrow> </mrow> </math></span> </td></tr><tr><td comment_id="1308979"> @bof: The question was not whether or not the two are equivalent in <span class="math-container" id="6317646" visual_id="17274"><math alttext="\sf ZF" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝖹𝖥</mi></semantics></math></span>, but rather whether or not they are equivalent in <span class="math-container" id="6317647" visual_id="46489"><math alttext="\sf ZFC" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝖹𝖥𝖢</mi></semantics></math></span>. Hagen didn't claim that there was less choice per se, either. </td></tr><tr><td comment_id="1308981"> OK, I misunderstood the definition of chain in a preorder. The OP said "i.e. totally ordered subset". I guess, then, that a totally **preordered subset** counts as a chain, too? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1398603"> Is there any <span class="math-container" id="12989177" visual_id="28233"><math alttext="F\in\mathscr{F}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>∈</mo><mi class="ltx_font_mathscript">ℱ</mi></mrow></semantics></math></span> such that <span class="math-container" id="12989178" visual_id="9067995"><math alttext="\mu(F)=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

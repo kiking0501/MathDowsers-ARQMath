@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How A complex submanifold satisfies the Newlander-Nirenberg integrability criterion.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How A complex submanifold satisfies the Newlander-Nirenberg integrability criterion. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2301711">
+<p>I'm reading Voisin's book Hodge Theory and Complex Algebraic Geometry.</p> <p>For the definition of complex submanifold, she said: A complex submanifold <span class="math-container" id="21267027" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> of a complex manifold <span class="math-container" id="21267028" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> is a differentiable submanifold whose tangent space at each point is stable under the almost complex structure <span class="math-container" id="21267029" visual_id="131306"><math alttext="I_{M}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>M</mi></msub></semantics></math></span> of <span class="math-container" id="21267030" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span>. </p> <p>Then she claimed that on the submanifold <span class="math-container" id="21267031" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> with the induced almost complex structure <span class="math-container" id="21267032" visual_id="44211"><math alttext="I_{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>N</mi></msub></semantics></math></span>, <span class="math-container" id="21267033" visual_id="8909592"><math alttext="(N,I_{N})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>N</mi><mo>,</mo><msub><mi>I</mi><mi>N</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> is <strong>integrable</strong>, i.e. satisfies the Newlander-Nirenberg integrability criterion.</p> <p>Recall that for a manifold <span class="math-container" id="21267034" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> with an almost complex structure <span class="math-container" id="21267035" visual_id="989"><math alttext="I" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi></semantics></math></span> on its tangent space <span class="math-container" id="21267036" visual_id="14160"><math alttext="T_{X}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>X</mi></msub></semantics></math></span>, we say <span class="math-container" id="21267037" visual_id="5196014"><math alttext="(X,I)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>I</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> satisfies the Newlander-Nirenberg condition if <span class="math-container" id="21267038" visual_id="8909593"><math alttext="[T_{X}^{0,1},T_{X}^{0,1}]\subset T_{X}^{0,1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><msubsup><mi>T</mi><mi>X</mi><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></msubsup><mo>,</mo><msubsup><mi>T</mi><mi>X</mi><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></msubsup><mo stretchy="false">]</mo></mrow><mo>⊂</mo><msubsup><mi>T</mi><mi>X</mi><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></msubsup></mrow></semantics></math></span>.</p> <p>Back to the question, it is clear that <span class="math-container" id="21267039" visual_id="8909594"><math alttext="T_{N}^{0,1}\subset T_{M}^{0,1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>T</mi><mi>N</mi><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></msubsup><mo>⊂</mo><msubsup><mi>T</mi><mi>M</mi><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></msubsup></mrow></semantics></math></span> since the almost complex structure <span class="math-container" id="21267040" visual_id="44211"><math alttext="I_{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>N</mi></msub></semantics></math></span> on <span class="math-container" id="21267041" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> comes from the complex structure <span class="math-container" id="21267042" visual_id="131306"><math alttext="I_{M}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>M</mi></msub></semantics></math></span>on <span class="math-container" id="21267043" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> and, by defintion (of a complex submanifold) , <span class="math-container" id="21267044" visual_id="227341"><math alttext="T_{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>N</mi></msub></semantics></math></span> is stable under <span class="math-container" id="21267045" visual_id="131306"><math alttext="I_{M}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>M</mi></msub></semantics></math></span>.</p> <p>Since <span class="math-container" id="21267046" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> is a complex manifold, by Newlander-Nirenberg Thm, <span class="math-container" id="21267047" visual_id="8909595"><math alttext="(M,I_{M})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>,</mo><msub><mi>I</mi><mi>M</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> satifies Newlander-Nirenberg condition.</p> <p>But I don't think it is obvious that <span class="math-container" id="21267048" visual_id="8909592"><math alttext="(N,I_{N})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>N</mi><mo>,</mo><msub><mi>I</mi><mi>N</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> also satisfies the Newlander-Nirenberg condition. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebraic-geometry </span><span> complex-geometry </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2301716" id="answer">
+<p>Choose local holomorphic coordinates <span class="math-container" id="21267049" visual_id="18326"><math alttext="(z^{1},\dots,z^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>z</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>z</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></semantics></math></span> on <span class="math-container" id="21267050" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> adapted to <span class="math-container" id="21267051" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> — i.e., so that <span class="math-container" id="21267052" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> is given by <span class="math-container" id="21267053" visual_id="8909596"><math alttext="z^{k+1}=\dots=z^{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>z</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mi mathvariant="normal">⋯</mi><mo>=</mo><msup><mi>z</mi><mi>n</mi></msup><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Nonintegrable almost complex structures</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Nonintegrable almost complex structures </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="46977">
+<p>The Newlander-Nirenberg theorem states that any Integrable Almost Complex manifold is a complex manifold. I am looking for natural examples of complex structures that are not integrable.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> geometry </span><span> differential-geometry </span><span> complex-geometry </span><span> almost-complex </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="104871"> I changed the title by adding "almost", because *nonintegrable complex structure* is an oxymoron. Also, I added some relevant tags. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="46991" id="answer">
+<p>The sphere <span class="math-container" id="494249" visual_id="238832"><math alttext="S^{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>6</mn></msup></semantics></math></span> naturally sits inside of the imaginary octonians <span class="math-container" id="494250" visual_id="1787019"><math alttext="\operatorname{Im}\mathbb{O}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Im</mi><mo>⁡</mo><mi>𝕆</mi></mrow></semantics></math></span>.  At the point <span class="math-container" id="494251" visual_id="1787020"><math alttext="p\in S^{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∈</mo><msup><mi>S</mi><mn>6</mn></msup></mrow></semantics></math></span>, multiplication by <span class="math-container" id="494252" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> on  <span class="math-container" id="494253" visual_id="1787021"><math alttext="T_{p}S^{6}=p^{\bot}\subseteq\operatorname{Im}\mathbb{O}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>T</mi><mi>p</mi></msub><mo>⁢</mo><msup><mi>S</mi><mn>6</mn></msup></mrow><mo>=</mo><msup><mi>p</mi><mo>⊥</mo></msup><mo>⊆</mo><mrow><mi>Im</mi><mo>⁡</mo><mi>𝕆</mi></mrow></mrow></semantics></math></span> defines an almost complex structure.</p> <p>This almost complex structure is <em>not</em> integrable, due to the nonassociativity of the octonians.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="104864"> Isn't it much more common to use "octonions" instead of "octonians" (Google gives 356K vs 28.3K hits)? Also, it might be worth pointing out that the existence of an integrable almost complex structure on <span class="math-container" id="494256" visual_id="238832"><math alttext="S^{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>6</mn></msup></semantics></math></span> is a famous open problem. </td></tr><tr><td comment_id="104879"> @Theo:  Tha<span class="math-container" id="1206446">n</span><span class="math-container" id="1206449">k</span>s for the edits.  I agree with your spelling of "octonions" - I consider my current version a typo.  (I won't edit to avoid needlessly bumping this). </td></tr><tr><td comment_id="2269285"> @JasonDeVito: Do you have a reference for your last statement? </td></tr><tr><td comment_id="2271136"> @Michael:  Actually I don't.  The "almost" part is pretty easy to prove.  The fact that is is not integrable follows from the fact that, as t.b. said, "the existence of an integrable almost complex structure on <span class="math-container" id="494256" visual_id="238832"><math alttext="S^{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>6</mn></msup></semantics></math></span> is a famous open problem."  According to this MO link: http://mathoverflow.net/questions/1973/is-there-a-complex-structure-on-the-6-sphere, LeBrun showed that there is no orthogonal complex structure on <span class="math-container" id="494256" visual_id="238832"><math alttext="S^{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>6</mn></msup></semantics></math></span>, but the above almost complex structure is orthogonal. </td></tr><tr><td comment_id="2272039"> @JasonDeVito: I know that the almost complex structure you describe is not integrable, but I am interested in the statement that the nonintegrability is due to the nonassociativity of the octonions. A similar claim was made by the user wisefool [here](http://math.stackexchange.com/questions/265807/almost-complex-structures-on-spheres#comment583167_265849). </td></tr><tr><td comment_id="2272385"> @Michael:  I see.  In retrospect, I guess I don't know that it's "due to the non-associativity of the octonions".  That said, I wrote that because in my head, the only algebraic difference between the quaternions and octonions is associativity, so it "must" be the reason.  I suppose a truly accurate phrasing would be "I think this complex structure is non-integrable, because I know that finding an integrable structure is a famous unsolved problem.  I suspect that the non-integrability stems from the non-associativity of the octonions, but I'm really just speculating." </td></tr><tr><td comment_id="2272387"> @Michael:  It's probably also worth adding that my only interaction with (almost) comple<span class="math-container" id="20990444">x</span> manifolds has been through a few cursory google searches - I've probably spent a grand total of a couple of days of my life thinking about them in any kind of detail.  Sorry to be useless! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="265807"> Almost complex structures on spheres </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

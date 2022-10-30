@@ -73,20 +73,30 @@ function askQuestion(target) {
         arqmath_year = target.split(",")[0];
         topic_id = target.split(",")[1];
     }
+
+    prepareRunSelectionDropdown();
+
+    // Prepare for selection panel: only show dropdown of runs in the proper year
+    $("#runSelection").html("");
+    $("#runSelection-template").find(".run" + arqmath_year).each(function (ind, option) {
+        $("#runSelection").append($(option).clone());
+    })
+
     function getQuestions(callback){
         var name = "task1-topics-" + arqmath_year;
         var formulaSuffix = ((getFormulaDisplayStyle() === "slt")? "-slt" : "");
         name += formulaSuffix;
+        var folder_year = (arqmath_year == 2022)? "2022" : "2021"
 
         if (isRandom(target)) {
             // reading all questions
             accessJson(
-                'data/ARQMath/experiments/topics/ARQMath_2021/' + name + '.json',
+                'data/ARQMath/experiments/topics/ARQMath_' + folder_year + '/' + name + '.json',
                 callback);
         } else {
             // reading an individual question
             accessJson(
-                'data/ARQMath/experiments/topics/ARQMath_2021/' + name + '/' + name + '-' + topic_id + '.json',
+                'data/ARQMath/experiments/topics/ARQMath_' + folder_year + '/' + name + '/' + name + '-' + topic_id + '.json',
                 callback)
         }
     }
@@ -130,9 +140,10 @@ function askQuestion(target) {
         qbox.find(".qbox-body").html(cleanFormula(question_data["Question"]));
         qbox.find(".qbox-tags").text(question_data["Tags"].split(",").join(" , "));
         qbox.show();
+        var folder_year = (arqmath_year == 2022)? "2022" : "2021"
         $("#qbox").find(".qbox-placeholder").html(qbox);
         accessJson(
-            'data/ARQMath/postpro_2021/task1_' + arqmath_year + '_topic_info.json',
+            'data/ARQMath/postpro_' + folder_year + '/task1_' + arqmath_year + '_topic_info.json',
             function(topic_info) {
                 if (topic_id in topic_info) {
 
@@ -144,6 +155,13 @@ function askQuestion(target) {
                 }
         });
         callback();
+    }
+
+    function prepareRunSelectionDropdown(){
+        $("#runSelection").html("");
+        $("#runSelection-template").find(".run" + arqmath_year).each(function (ind, option) {
+            $("#runSelection").append($(option).clone());
+        })
     }
 
 }
@@ -230,14 +248,15 @@ function filterQuestion(btn) {
     var name = "task1-topics-" + arqmath_year;
     var formulaSuffix = ((getFormulaDisplayStyle() === "slt")? "-slt" : "");
     name += formulaSuffix;
+    var folder_year = (arqmath_year == 2022)? "2022" : "2021"
     accessJson(
-        'data/ARQMath/experiments/topics/ARQMath_2021/' + name + '.json',
+        'data/ARQMath/experiments/topics/ARQMath_' + folder_year + '/' + name + '.json',
         function(data) {
             if (Object.keys(filter).length === 0) {
                 writeSelectPanel(arqmath_year, data, Object.keys(data), function() {});
             } else {
                 accessJson(
-                    'data/ARQMath/postpro_2021/task1_' + arqmath_year + '_topic_info.json',
+                    'data/ARQMath/postpro_' + folder_year + '/task1_' + arqmath_year + '_topic_info.json',
                     function(topic_info) {
                         var filtered_data = {};
 
@@ -260,6 +279,7 @@ function filterQuestion(btn) {
                 )
             }
     });
+
 }
 
 function resetPanel() {
@@ -314,6 +334,8 @@ function viewResult() {
     var arqmath_year = $($("#qbox").find(".qyear")[0]).text();
     var topic_id = $($("#qbox").find(".qtopic-id")[0]).text();
     $("#btn_view_result").prop("disabled", false);
+
+
     openTab("view_result");
 
 

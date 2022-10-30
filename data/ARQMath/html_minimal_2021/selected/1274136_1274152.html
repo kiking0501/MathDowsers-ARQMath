@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to solve problems of this type?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to solve problems of this type? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1274136">
+<p>I would like to know a nice approach for problems of this type</p> <p><span class="math-container" id="11864632" visual_id="567830"><math alttext="I_{n}=\int_{-\pi}^{\pi}\frac{\sin(nx)}{\sin x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>n</mi></msub><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>π</mi></mrow><mi>π</mi></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>Then find <span class="math-container" id="11864633" visual_id="4095"><math alttext="I_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>n</mi></msub></semantics></math></span></p> <p><b>My Approach</b>:- Trying to write <span class="math-container" id="11864634" visual_id="4095"><math alttext="I_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>n</mi></msub></semantics></math></span> as a difference of two integrals, and then summing, in  a telescopic fashion. </p> <p>But, I can't seem to find the required difference.</p> <p>There are several questions like this and i'd also appreciate some sort of common approach.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> definite-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2587334"> Is <span class="math-container" id="11864644" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> an integer? </td></tr><tr><td comment_id="2587361"> isn't <span class="math-container" id="11864636" visual_id="567831"><math alttext="\sin(nx)/sinx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mi>s</mi></mrow><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>x</mi></mrow></semantics></math></span> some type chebyshev polynomial in <span class="math-container" id="11864637" visual_id="567832"><math alttext="\cos x\qvar@construct{$}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mi>x</mi><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="2587364"> n is an integer </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1274152" id="answer">
+<p>First show that </p> <p>\begin{eqnarray}\frac{\sin nx}{\sin x}=\frac{\sin(n-2)x}{\sin x}+2\cos(n-1)x\end{eqnarray}</p> <p>From there we have the reduction formula \begin{eqnarray}I_n=I_{n-2}\end{eqnarray} I'll leave the rest to you.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

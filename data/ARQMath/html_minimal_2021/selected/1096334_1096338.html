@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>question about proof of continuity of d(x,A)</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> question about proof of continuity of d(x,A) </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1096334">
+<p>I have a very simple question regarding proof of the distance metric d(x,A). Given non empty subset of <span class="math-container" id="10346861" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span> <span class="math-container" id="10346862" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="10346863" visual_id="245881"><math alttext="\forall x\in\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∀</mo><mi>x</mi></mrow><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></semantics></math></span>, <span class="math-container" id="10346864" visual_id="6694796"><math alttext="f(x)=inf\{d(x,a):a\in A\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">{</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>:</mo><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span>. Prove <span class="math-container" id="10346865" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is continuous.</p> <p>Prove sited <a href="https://math.stackexchange.com/questions/400487/continuity-of-dx-a">here</a> starts of with taking two points x and y and arbitrary <span class="math-container" id="10346866" visual_id="3405"><math alttext="a\in A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow></semantics></math></span> and via triangle inequality:</p> <p>(1) <span class="math-container" id="10346867" visual_id="6694797"><math alttext="d(x,a)\leqslant d(x,y)+d(y,a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⩽</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>. </p> <p>Then by taking infimum over a, the previous equation is: </p> <p>(2) <span class="math-container" id="10346868" visual_id="6694798"><math alttext="d(x,A)\leqslant d(x,y)+d(y,A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⩽</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> and so on.</p> <p>I have problem with this last step. It is not obvious to me how it is possible to go from step (1) to step (2)? Why does going from <span class="math-container" id="10346869" visual_id="963624"><math alttext="d(x,a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> to <span class="math-container" id="10346870" visual_id="238605"><math alttext="d(x,A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and from <span class="math-container" id="10346871" visual_id="6694799"><math alttext="d(y,a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> to <span class="math-container" id="10346872" visual_id="6694800"><math alttext="d(y,A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> preserve inequality in (1)? </p> <p>Any help to clarify this problem is hugely appreciated. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1096338" id="answer">
+<p>The point to be understood here, imo, is that taking the infimum/supremum over some set does <strong>not</strong> affect anything that is not in that set.</p> <p>Remember: the infimum of a set is, first of all, a <strong>lower bound</strong> of that set. Next, it is <em>the greatest</em> (in a very precise sense that I hope you understand) such bound.</p> <p>Thus,</p> <p><span class="math-container" id="10346886" visual_id="6694805"><math alttext="\left(\forall\,a\in A\;\forall\,x,y\in X\;,\;\;d(x,a)\leq d(x,y)+d(y,a)\right)\implies" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mo rspace="4.2pt">∀</mo><mi>a</mi><mo>∈</mo><mpadded width="+2.8pt"><mi>A</mi><mo rspace="4.2pt">∀</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>∈</mo><mpadded width="+2.8pt"><mi>X</mi><mo rspace="8.1pt">,</mo><mi>d</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>≤</mo><mi>d</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mi>d</mi><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>)</mo></mpadded></mpadded></mrow><mo>⟹</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="10346887" visual_id="6694806"><math alttext="\implies d(x,A):=\inf_{a\in A}d(x,a)\leq\inf_{a\in A}\left(\,d(x,y)+d(y,a)\,% \right)=d(x,y)+d(y,A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>⟹</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mrow><munder><mo movablelimits="false">inf</mo><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow></munder><mo>⁡</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≤</mo><mrow><munder><mo movablelimits="false">inf</mo><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow></munder><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mpadded></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>a</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2234467"> The infimum is certainly *not* an upper bound of the set! </td></tr><tr><td comment_id="2234484"> Of course: it is exactly the other way around, but the argument remains. Thanks. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="400487"> Continuity of <span class="math-container" id="4239713" visual_id="238605"><math alttext="d(x,A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

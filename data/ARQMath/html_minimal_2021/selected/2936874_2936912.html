@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to show that $\dfrac{n^3 + 2n}{3}$ is an integer</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to show that <span class="math-container" id="27186462" visual_id="688983"><math alttext="\dfrac{n^{3}+2n}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mn>3</mn></mfrac></semantics></math></span> is an integer </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2936874">
+<p>Show that for each natural number <span class="math-container" id="27186463" visual_id="688984"><math alttext="n,\dfrac{n^{3}+2n}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>,</mo><mfrac><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mn>3</mn></mfrac></mrow></semantics></math></span> is an integer</p> <p>My try:</p> <p>Let P(n) be the statement that <span class="math-container" id="27186464" visual_id="467085"><math alttext="n^{3}+2n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></semantics></math></span> is divisible by <span class="math-container" id="27186465" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>.</p> <p>Base step:</p> <p>When <span class="math-container" id="27186466" visual_id="3350"><math alttext="n=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> we have <span class="math-container" id="27186467" visual_id="688985"><math alttext="0^{3}+0=0=3\times 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>0</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn></mrow><mo>=</mo><mn>0</mn><mo>=</mo><mrow><mn>3</mn><mo>×</mo><mn>0</mn></mrow></mrow></semantics></math></span></p> <p>So, the base case true.</p> <p>Inductive hypothesis:</p> <p>Assume that <span class="math-container" id="27186468" visual_id="30308"><math alttext="P(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is true.</p> <p>which means <span class="math-container" id="27186469" visual_id="688986"><math alttext="\dfrac{k^{3}+2k}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>k</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow><mn>3</mn></mfrac></semantics></math></span> is divisible by <span class="math-container" id="27186470" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> and <span class="math-container" id="27186471" visual_id="688987"><math alttext="\dfrac{k^{3}+2k}{3}=p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msup><mi>k</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow></mrow><mn>3</mn></mfrac><mo>=</mo><mi>p</mi></mrow></semantics></math></span> for some integer <span class="math-container" id="27186472" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>.</p> <p>Now we need to show that <span class="math-container" id="27186473" visual_id="30309"><math alttext="P(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is true.</p> <p><span class="math-container" id="27186474" visual_id="688988"><math alttext="(k+1)^{3}+2(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and we will show that this divisible by <span class="math-container" id="27186475" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>.</p> <p>Proof:</p> <p><span class="math-container" id="27186476" visual_id="688989"><math alttext="(k+1)^{3}+2(k1)=k^{3}+3k^{2}+3k+1+2k+2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi>k</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>k</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>2</mn></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="27186477" visual_id="20774"><math alttext="." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>.</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="27186478" visual_id="20774"><math alttext="." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>.</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="27186479" visual_id="20774"><math alttext="." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>.</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="27186480" visual_id="20774"><math alttext="." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>.</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="27186481" visual_id="688990"><math alttext="=3(p+k^{2}+k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>+</mo><msup><mi>k</mi><mn>2</mn></msup><mo>+</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>As <span class="math-container" id="27186482" visual_id="688991"><math alttext="p+k^{2}+k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>+</mo><msup><mi>k</mi><mn>2</mn></msup><mo>+</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> is an integer we have that <span class="math-container" id="27186483" visual_id="688992"><math alttext="(k+1)^{3}+2(k+!)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mn>2</mn><mrow><mo stretchy="false">(</mo><mi>k</mi><mo>+</mo><mo>!</mo><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is divisible by <span class="math-container" id="27186484" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>.</p> <p>Is my above attempt correct?</p> <p>Did I show that for each natural number <span class="math-container" id="27186485" visual_id="688984"><math alttext="n,\dfrac{n^{3}+2n}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>,</mo><mfrac><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mn>3</mn></mfrac></mrow></semantics></math></span> is an integer?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> discrete-mathematics </span><span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6066596"> If your calculation is right, you have shown that <span class="math-container" id="27186486" visual_id="688988"><math alttext="(k+1)^{3}+2(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> has the form <span class="math-container" id="27186487" visual_id="688993"><math alttext="3\cdot a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>⋅</mo><mi>a</mi></mrow></semantics></math></span> for some integer <span class="math-container" id="27186488" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>. Done. </td></tr><tr><td comment_id="6066617"> As an alternative approach, you could note that <span class="math-container" id="27186489" visual_id="688994"><math alttext="\frac{n^{3}+2n}{3}=n+\frac{n^{3}-n}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mn>3</mn></mfrac><mo>=</mo><mrow><mi>n</mi><mo>+</mo><mfrac><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>-</mo><mi>n</mi></mrow><mn>3</mn></mfrac></mrow></mrow></semantics></math></span> which is an integer exactly when <span class="math-container" id="27186490" visual_id="688995"><math alttext="\frac{n^{3}-n}{3}=\frac{n(n-1)(n+1)}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>-</mo><mi>n</mi></mrow><mn>3</mn></mfrac><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>3</mn></mfrac></mrow></semantics></math></span> is an integer... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2936912" id="answer">
+<p>Or you could directly let <span class="math-container" id="27186504" visual_id="689001"><math alttext="P^{\prime}(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>P</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be the proposition that "<span class="math-container" id="27186505" visual_id="688983"><math alttext="\frac{n^{3}+2n}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mn>3</mn></mfrac></semantics></math></span> is an integer".</p> <p>Assume <span class="math-container" id="27186506" visual_id="175024"><math alttext="P^{\prime}(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>P</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is true for some <span class="math-container" id="27186507" visual_id="4690"><math alttext="k\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span>, then consider <span class="math-container" id="27186508" visual_id="689002"><math alttext="P^{\prime}(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>P</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>,</p> <p><span class="math-container" id="27186509" visual_id="689003"><math alttext="\displaystyle\frac{(k+1)^{3}+2(k+1)}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true"><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mn>3</mn></mfrac></mstyle></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

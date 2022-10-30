@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Strong Markov property with two stopping times</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Strong Markov property with two stopping times </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1604244">
+<p>I have a diffusion <span class="math-container" id="14828688" visual_id="118519"><math alttext="X=(X_{t})_{t\geq 0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><msub><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></msub></mrow></semantics></math></span> and a stopping time <span class="math-container" id="14828689" visual_id="2136"><math alttext="\tau" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi></semantics></math></span>. From the strong Markov property I know that for any time <span class="math-container" id="14828690" visual_id="6087"><math alttext="t\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> (or a random time independent of <span class="math-container" id="14828691" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>) I get that <span class="math-container" id="14828692" visual_id="9197530"><math alttext="\mathbb{P}^{X_{0}}[X_{\tau+t}\in\cdot|\mathcal{F}_{\tau}]=\mathbb{P}^{X_{\tau}% }[X_{t}\in\cdot]." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℙ</mi><msub><mi>X</mi><mn>0</mn></msub></msup><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>τ</mi><mo>+</mo><mi>t</mi></mrow></msub><mo>∈</mo><mo>⋅</mo><mo stretchy="false">|</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>τ</mi></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><msup><mi>ℙ</mi><msub><mi>X</mi><mi>τ</mi></msub></msup><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mi>t</mi></msub><mo>∈</mo><mo>⋅</mo><mo stretchy="false">]</mo></mrow><mo>.</mo></mrow></semantics></math></span> Now, let us in addition to <span class="math-container" id="14828693" visual_id="2136"><math alttext="\tau" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi></semantics></math></span> have another stopping time <span class="math-container" id="14828694" visual_id="203378"><math alttext="\sigma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi></semantics></math></span> which we define as <span class="math-container" id="14828695" visual_id="9197531"><math alttext="\sigma:=\inf\{s&gt;\tau;\,X_{s}\in A\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>:=</mo><mo movablelimits="false">inf</mo><mrow><mo stretchy="false">{</mo><mi>s</mi><mo>&gt;</mo><mi>τ</mi><mo rspace="4.2pt">;</mo><msub><mi>X</mi><mi>s</mi></msub><mo>∈</mo><mi>A</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> for some subset <span class="math-container" id="14828696" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> of the state space. Now, intuitively <span class="math-container" id="14828697" visual_id="9197532"><math alttext="\mathbb{P}^{X_{0}}[X_{\sigma}\in\cdot|\mathcal{F}_{\tau}]=\mathbb{P}^{X_{\tau}% }[X_{\sigma^{\prime}}\in\cdot]," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℙ</mi><msub><mi>X</mi><mn>0</mn></msub></msup><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mi>σ</mi></msub><mo>∈</mo><mo>⋅</mo><mo stretchy="false">|</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>τ</mi></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><msup><mi>ℙ</mi><msub><mi>X</mi><mi>τ</mi></msub></msup><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><msup><mi>σ</mi><mo>′</mo></msup></msub><mo>∈</mo><mo>⋅</mo><mo stretchy="false">]</mo></mrow><mo>,</mo></mrow></semantics></math></span> where <span class="math-container" id="14828698" visual_id="9197533"><math alttext="\sigma^{\prime}:=\inf\{s&gt;0;X_{s}\in A\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>σ</mi><mo>′</mo></msup><mo>:=</mo><mo movablelimits="false">inf</mo><mrow><mo stretchy="false">{</mo><mi>s</mi><mo>&gt;</mo><mn>0</mn><mo>;</mo><msub><mi>X</mi><mi>s</mi></msub><mo>∈</mo><mi>A</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>. However, I somehow fail to show this rigorously. It is clear that <span class="math-container" id="14828699" visual_id="203378"><math alttext="\sigma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi></semantics></math></span> is "sort of like" <span class="math-container" id="14828700" visual_id="9197534"><math alttext="\tau+\sigma^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>+</mo><msup><mi>σ</mi><mo>′</mo></msup></mrow></semantics></math></span> but the problem is that unlike the case when I have <span class="math-container" id="14828701" visual_id="6001136"><math alttext="\tau+t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>+</mo><mi>t</mi></mrow></semantics></math></span>,i.e. a stopping time and a constant, the <span class="math-container" id="14828702" visual_id="20255"><math alttext="\sigma^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>σ</mi><mo>′</mo></msup></semantics></math></span> depends on <span class="math-container" id="14828703" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>. I feel like I am missing something fairly easy here. Thanks for any hints.</p> <p>EDIT: Is it simply that if I denote by <span class="math-container" id="14828704" visual_id="322824"><math alttext="\theta_{\tau}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>θ</mi><mi>τ</mi></msub></semantics></math></span> the shift operator at <span class="math-container" id="14828705" visual_id="2136"><math alttext="\tau" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi></semantics></math></span> then <span class="math-container" id="14828706" visual_id="9197535"><math alttext="\sigma\circ\theta_{\tau}=\sigma^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>σ</mi><mo>∘</mo><msub><mi>θ</mi><mi>τ</mi></msub></mrow><mo>=</mo><msup><mi>σ</mi><mo>′</mo></msup></mrow></semantics></math></span> and <span class="math-container" id="14828707" visual_id="9197536"><math alttext="X_{\sigma}\circ\theta_{\tau}=X_{\sigma^{\prime}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>X</mi><mi>σ</mi></msub><mo>∘</mo><msub><mi>θ</mi><mi>τ</mi></msub></mrow><mo>=</mo><msub><mi>X</mi><msup><mi>σ</mi><mo>′</mo></msup></msub></mrow></semantics></math></span>? I am asking because I am not sure how to actually apply the shift operator in this case.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability-theory </span><span> markov-process </span><span> stopping-times </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1604587" id="answer">
+<p><strong>1.</strong> (Correction) Your first formula should read <span class="math-container" id="14828708" visual_id="9197537"><math alttext="\mathbb{P}^{X_{0}}[X_{\tau+t}\in\cdot\,|\mathcal{F}_{\tau}]=\mathbb{P}^{X_{% \tau}}[X_{t}\in\cdot]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℙ</mi><msub><mi>X</mi><mn>0</mn></msub></msup><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mrow><mi>τ</mi><mo>+</mo><mi>t</mi></mrow></msub><mo>∈</mo><mo rspace="4.2pt">⋅</mo><mo stretchy="false">|</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>τ</mi></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><msup><mi>ℙ</mi><msub><mi>X</mi><mi>τ</mi></msub></msup><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mi>t</mi></msub><mo>∈</mo><mo>⋅</mo><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>.</p> <p><strong>2.</strong> It is true that <span class="math-container" id="14828709" visual_id="9197538"><math alttext="\sigma(\omega)=\tau(\omega)+\sigma^{\prime}(\theta_{\tau(\omega)}\omega)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>τ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>σ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>θ</mi><mrow><mi>τ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></msub><mo>⁢</mo><mi>ω</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>. Consequently <span class="math-container" id="14828710" visual_id="9197539"><math alttext="\mathbb{P}^{X_{0}}[X_{\sigma}\in\cdot\,|\mathcal{F}_{\tau}]=\mathbb{P}^{X_{% \tau}}[X_{\sigma}^{\prime}\in\cdot]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ℙ</mi><msub><mi>X</mi><mn>0</mn></msub></msup><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mi>σ</mi></msub><mo>∈</mo><mo rspace="4.2pt">⋅</mo><mo stretchy="false">|</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>τ</mi></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><msup><mi>ℙ</mi><msub><mi>X</mi><mi>τ</mi></msub></msup><mrow><mo stretchy="false">[</mo><msubsup><mi>X</mi><mi>σ</mi><mo>′</mo></msubsup><mo>∈</mo><mo>⋅</mo><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3279859"> Thanks! ad 1: Yeah, a stupid mistake, I edited it to include the conditioning. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

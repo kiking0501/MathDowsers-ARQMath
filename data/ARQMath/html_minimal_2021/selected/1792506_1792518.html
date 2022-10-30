@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Use mathematical induction to prove that $n^ 3 − n$ is divisible by 3 whenever n is a positive integer.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Use mathematical induction to prove that <span class="math-container" id="16562071" visual_id="7309176"><math alttext="n^{3}−n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mi>n</mi></mrow></semantics></math></span> is divisible by 3 whenever n is a positive integer. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1792506">
+<p>Solution:  Let <span class="math-container" id="16562072" visual_id="11437"><math alttext="P(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be the proposition “<span class="math-container" id="16562073" visual_id="7309176"><math alttext="n^{3}−n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mi>n</mi></mrow></semantics></math></span> is divisible by <span class="math-container" id="16562074" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> whenever <span class="math-container" id="16562075" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is a positive integer”. Basis Step:The statement <span class="math-container" id="16562076" visual_id="24508"><math alttext="P(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is true because <span class="math-container" id="16562077" visual_id="7309177"><math alttext="1^{3}−1=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>1</mn><mn>3</mn></msup><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> is divisible by <span class="math-container" id="16562078" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>. This completes the basis step. Inductive Step:Assume that <span class="math-container" id="16562079" visual_id="30308"><math alttext="P(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>is true; i.e. <span class="math-container" id="16562080" visual_id="7309178"><math alttext="k^{3}−k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mn>3</mn></msup><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mi>k</mi></mrow></semantics></math></span> is divisible by <span class="math-container" id="16562081" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>. To complete the inductive step, we must show that when we assume the inductive hypothesis, it follows that <span class="math-container" id="16562082" visual_id="30309"><math alttext="P(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, the statement that <span class="math-container" id="16562083" visual_id="7309179"><math alttext="(k+1)^{3}−(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is divisible by <span class="math-container" id="16562084" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span>, is also true. That is,we must show that <span class="math-container" id="16562085" visual_id="7309179"><math alttext="(k+1)^{3}−(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is divisible by <span class="math-container" id="16562086" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> . <span class="math-container" id="16562087" visual_id="7309180"><math alttext="(k+1)^{3}−(k+1)=(k^{3}+3k^{2}+3k+1)-(k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>k</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>k</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> this where I want to factorize ..need help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3659229"> If you want to factorise, you'd better do it this way: <span class="math-container" id="16562088" visual_id="7309181"><math alttext="(k+1)^{3}-(k+1)=(k+1)((k+1)^{2}-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1792518" id="answer">
+<p><strong>HINT</strong></p> <p><span class="math-container" id="16562104" visual_id="7309186"><math alttext="((n+1)^{3}-(n+1))-((n^{3})-(n))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><msup><mi>n</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="16562105" visual_id="7309187"><math alttext="=3n+3n^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3659231"> Difference between consecutive numbers is a multiple of 3.. show that first number is a multiple of 3 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

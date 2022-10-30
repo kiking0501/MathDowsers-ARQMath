@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Approximating a continuous function with compact support by simple functions from above?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Approximating a continuous function with compact support by simple functions from above? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2286281">
+<p>Let <span class="math-container" id="21122948" visual_id="8612458"><math alttext="f\in C_{c}(X),f:X\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∈</mo><mrow><mrow><msub><mi>C</mi><mi>c</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi>f</mi></mrow></mrow><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> be a continuous function with compact support on a measure space <span class="math-container" id="21122949" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> with <span class="math-container" id="21122950" visual_id="4233"><math alttext="f\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>Allegedly it is possiple to approximate that function by a monotonic decreasing sequence of simple functions <span class="math-container" id="21122951" visual_id="433"><math alttext="s_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>n</mi></msub></semantics></math></span> of the form <span class="math-container" id="21122952" visual_id="8612459"><math alttext="s_{n}(x)=\sum_{j}c_{j}\chi_{K_{j}}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>j</mi></munder><mrow><msub><mi>c</mi><mi>j</mi></msub><mo>⁢</mo><msub><mi>χ</mi><msub><mi>K</mi><mi>j</mi></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>, where the <span class="math-container" id="21122953" visual_id="98981"><math alttext="K_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>j</mi></msub></semantics></math></span> are compact.</p> <p>Well, if I divide the co-domain into intervals of the form <span class="math-container" id="21122954" visual_id="8612460"><math alttext="[\frac{j-1}{2^{n}},\frac{j}{2^{n}}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mfrac><mrow><mi>j</mi><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>,</mo><mfrac><mi>j</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo stretchy="false">]</mo></mrow></semantics></math></span>, I get compact sets within the support of <span class="math-container" id="21122955" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> by <span class="math-container" id="21122956" visual_id="8612461"><math alttext="f^{-1}([\frac{j-1}{2^{n}},\frac{j}{2^{n}}])" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">[</mo><mfrac><mrow><mi>j</mi><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>,</mo><mfrac><mi>j</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo stretchy="false">]</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, but then these sets are not disjoint and I can't define a simple function of the form described above.</p> <p>How can I remedy that?</p> <p>An idea I have is dividing the co-domain into intervals of the form <span class="math-container" id="21122957" visual_id="8612462"><math alttext="(\frac{j-1}{2^{n}},\frac{j}{2^{n}}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mfrac><mrow><mi>j</mi><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>,</mo><mfrac><mi>j</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo stretchy="false">]</mo></mrow></semantics></math></span> and then taking <span class="math-container" id="21122958" visual_id="8612463"><math alttext="f^{-1}([a,\frac{j}{2^{n}}])" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mfrac><mi>j</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo stretchy="false">]</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, where <span class="math-container" id="21122959" visual_id="8612464"><math alttext="[a,\frac{j}{2^{n}}]\subset(\frac{j-1}{2^{n}},\frac{j}{2^{n}}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mfrac><mi>j</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo stretchy="false">]</mo></mrow><mo>⊂</mo><mrow><mo stretchy="false">(</mo><mfrac><mrow><mi>j</mi><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>,</mo><mfrac><mi>j</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> is the largest compact interval that is contained in <span class="math-container" id="21122960" visual_id="8612462"><math alttext="(\frac{j-1}{2^{n}},\frac{j}{2^{n}}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mfrac><mrow><mi>j</mi><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>,</mo><mfrac><mi>j</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo stretchy="false">]</mo></mrow></semantics></math></span>.</p> <p>Does this work?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> measure-theory </span><span> simple-functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2288181" id="answer">
+<p>After some research, I think I can answer my own question.</p> <p>The problem I ran into was definition-wise. A simple function is defined as a function that assumes only a finite number of distinct values. The requirement that the <span class="math-container" id="21122961" visual_id="98981"><math alttext="K_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>j</mi></msub></semantics></math></span>'s in the representation <span class="math-container" id="21122962" visual_id="8612465"><math alttext="s_{n}(x)=\sum_{j=1}^{n}c_{j}\chi_{K_{j}}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><msub><mi>c</mi><mi>j</mi></msub><mo>⁢</mo><msub><mi>χ</mi><msub><mi>K</mi><mi>j</mi></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> be disjoint is however not part of the definition. Often this is convenient, since the representation of <span class="math-container" id="21122963" visual_id="81787"><math alttext="s_{n}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is unique for distinct sets <span class="math-container" id="21122964" visual_id="98981"><math alttext="K_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>j</mi></msub></semantics></math></span>. However, if you don't need uniqueness you can just have the sets <span class="math-container" id="21122965" visual_id="98981"><math alttext="K_{j}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>j</mi></msub></semantics></math></span> not necessarily disjoint and find a sequence of those functions that converges to an <span class="math-container" id="21122966" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> pointwise.</p> <p>So, the big misunderstanding here, for me, was that I thought that for a function to be a simple function the "defining sets" had to be disjoint which is not necessary at all.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

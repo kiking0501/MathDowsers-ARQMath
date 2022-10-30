@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Classsifying 1- and 2- dimensional Algebras, up to Isomorphism</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Classsifying 1- and 2- dimensional Algebras, up to Isomorphism </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="24601">
+<p>I am trying to find all 1- or 2- dimensional Lie Algebras "a" up to isomorphism. This is what I have so far:</p> <p>If a is 1-dimensional, then every vector (and therefore every tangent vector field) is of the form <span class="math-container" id="245316" visual_id="101834"><math alttext="cX" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>⁢</mo><mi>X</mi></mrow></semantics></math></span>. Then , by anti-symmetry, and bilinearity:</p> <p><span class="math-container" id="245317" visual_id="8293868"><math alttext="[X,cX]=c[X,X]=-c[X,X]==0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>X</mi><mo>,</mo><mi>c</mi><mi>X</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mi>c</mi><mrow><mo stretchy="false">[</mo><mi>X</mi><mo>,</mo><mi>X</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mo>-</mo><mi>c</mi><mrow><mo stretchy="false">[</mo><mi>X</mi><mo>,</mo><mi>X</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>I think this forces a unique Lie algebra because Lie algebra isomorphisms preserve the bracket.  I also know Reals <span class="math-container" id="245318" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> are the only 1-dimensional Lie group, so its Lie algebra (<span class="math-container" id="245319" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> also) is also 1-dimensional. How can I show that every other 1-dimensional algebra is isomorphic to this one? Do I use preservation of bracket?</p> <p>For 2 dimensions, I am trying to use the fact that the dimension of the Lie algebra g of a group <span class="math-container" id="245320" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> is the same as the dimension of the ambient group/manifold <span class="math-container" id="245321" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>. I know that all surfaces (i.e., groups of dimension 2) can be classified as products of spheres and Tori, and I think the only 2-dimensional Lie group is <span class="math-container" id="245322" visual_id="6816"><math alttext="S^{1}\times S^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mn>1</mn></msup><mo>×</mo><msup><mi>S</mi><mn>1</mn></msup></mrow></semantics></math></span>, but I am not sure every Lie algebra can be realized as the Lie algebra of a Lie group ( I think this is true in the finite-dimensional case, but I am not sure).</p> <p>I know there is a result out there that I cannot yet prove that all 1- and  2-dimensional Lie algebras are isomorphic to Lie subalgebras of <span class="math-container" id="245323" visual_id="93904"><math alttext="GL(2,\mathbb{R})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> (using matrix multiplication, of course); would someone suggest how to show this last? Thanks.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> differential-geometry </span><span> lie-algebras </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="53001"> Check out the early chapters of http://www.amazon.com/Introduction-Algebras-Springer-Undergraduate-Mathematics/dp/1846280400 </td></tr><tr><td comment_id="53227"> I don't have time to answer the full question, but I don't think your assertion that R is the only Lie group of dimension 1 is true. Consider <span class="math-container" id="245325" visual_id="6432"><math alttext="S^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>1</mn></msup></semantics></math></span> with its usual group operation (multiplication of complex numbers) and its standard manifold structure. In fact, you can show that when a one-dimension Lie group is compact, it must be <span class="math-container" id="245325" visual_id="6432"><math alttext="S^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>1</mn></msup></semantics></math></span>; when it's noncompact, it's R. </td></tr><tr><td comment_id="53342"> As I read the rest of your question, it's not true either that the torus is the only Lie group of dimension 2. Again, stuff like <span class="math-container" id="245326" visual_id="13880"><math alttext="R^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mn>2</mn></msup></semantics></math></span> or <span class="math-container" id="245327" visual_id="8293869"><math alttext="RxS^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>S</mi><mn>1</mn></msup></mrow></semantics></math></span> works as well. The so-called classification theorem only works for compact manifolds. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="24618" id="answer">
+<p>Although you've tagged your question "differential-geometry", it's actually a pure algebra question.  While you're right that for Lie algebras over (e.g.) <span class="math-container" id="245328" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span> there is a deep relationship with Lie groups which motivates their study and can be helpful for proving "purely algebraic theorems", it seems to me that juggling between Lie groups and Lie algebras is distracting you from the issues at hand.</p> <p>One more comment on your Lie-theoretic approach: there is indeed a bijection between connected, simply connected real Lie groups and finite-dimensional real Lie algebras, but the <em>group structure</em> on the Lie group side cannot be ignored.  It is not enough just to classify manifolds which admit a Lie group structure, since the same manifold may admit a Lie group structure in multiple different ways.  An especially relevant example is that any nilpotent Lie group -- i.e., a Lie group with associated Lie algebra a nilpotent Lie algebra -- is as a manifold isomorphic to <span class="math-container" id="245329" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span>, but the group law need not be commutative.</p> <p>Coming back to the classification of Lie algebras of small dimension:</p> <p>You have actually already done the one-dimensional case, as you have observed that the Lie bracket on any one-dimensional Lie algebra must be trivial.  Thus any two one-dimensional Lie algebras are isomorphic: any vector space isomorphism will do.</p> <p>In two dimensions there is again the Lie algebra <span class="math-container" id="245330" visual_id="11713"><math alttext="L_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mn>1</mn></msub></semantics></math></span> with trivial bracket, but there is also a noncommutative Lie algebra <span class="math-container" id="245331" visual_id="14009"><math alttext="L_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mn>2</mn></msub></semantics></math></span>.  Concretely, if we take a basis of <span class="math-container" id="245332" visual_id="921"><math alttext="x,y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></semantics></math></span> of <span class="math-container" id="245333" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span> and define <span class="math-container" id="245334" visual_id="5215609"><math alttext="[x,x]=[y,y]=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="245335" visual_id="8293870"><math alttext="[x,y]=-[y,x]=y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mi>y</mi></mrow></semantics></math></span> then this works to give a Lie algebra.  (Check this!)  Now the same construction can be done in many other ways, but they are all isomorphic to this one: start by assuming that  <span class="math-container" id="245336" visual_id="8293871"><math alttext="[x,y]=ax+by" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow></semantics></math></span> with <span class="math-container" id="245337" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="245338" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> not both zero and then find a new basis <span class="math-container" id="245339" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>, <span class="math-container" id="245340" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span>  under which the bracket is again <span class="math-container" id="245341" visual_id="2601425"><math alttext="[X,Y]=Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mi>Y</mi></mrow></semantics></math></span>.  Thus there are exactly two Lie algebras of dimension <span class="math-container" id="245342" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> over <span class="math-container" id="245343" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>.  In both cases, the corresponding Lie groups are isomorphic as manifolds to <span class="math-container" id="245344" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span> (there are many ways to see this, magic words being <strong>exponential map</strong> and <strong>Baker-Campbell-Hausdorff formula</strong>; you'll probably learn them later on), but one of the group structures is the usual one on <span class="math-container" id="245345" visual_id="5401"><math alttext="\mathbb{R}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>2</mn></msup></semantics></math></span> and the other is a non-commutative group structure.</p> <p>Note by the way that the situation is much different starting in dimension three:  there are then infinitely many isomorphism classes of Lie algebras, and indeed continuous families of Lie algebras.  See for instance Section 4 of <a href="http://www.emis.de/journals/EM/expmath/volumes/14/14.1/deGraaf.pdf">this paper</a> which constructs, over an arbitrary field <span class="math-container" id="245346" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>, for each <span class="math-container" id="245347" visual_id="47039"><math alttext="a\in F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>F</mi></mrow></semantics></math></span> a Lie algebra <span class="math-container" id="245348" visual_id="455408"><math alttext="L_{a}^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>L</mi><mi>a</mi><mn>3</mn></msubsup></semantics></math></span> such that for <span class="math-container" id="245349" visual_id="47041"><math alttext="a,b\in F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>F</mi></mrow></semantics></math></span>, <span class="math-container" id="245350" visual_id="8293872"><math alttext="L_{a}^{3}\cong L_{b}^{3}\iff a=b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mi>L</mi><mi>a</mi><mn>3</mn></msubsup><mo>≅</mo><msubsup><mi>L</mi><mi>b</mi><mn>3</mn></msubsup></mrow><mo>⇔</mo><mrow><mi>a</mi><mo>=</mo><mi>b</mi></mrow></mrow></semantics></math></span>.  Thus Lie algebras "vary in moduli" starting in dimension three.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="2330090"> Two nonabelian two dimensional Lie algebras are isomorphic </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="54746"> How to obtain a Lie group from a Lie algebra </td></tr><tr><td post_id="95540"> Are there finite-dimensional Lie algebras which are not defined over the integers? </td></tr><tr><td post_id="222743"> Two Dimensional Lie Algebra </td></tr><tr><td post_id="2049709"> Describe up to isomorphism all 2d associative algebras with 1 and without 1 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

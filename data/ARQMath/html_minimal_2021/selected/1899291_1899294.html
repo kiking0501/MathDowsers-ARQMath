@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Can I Square Root A Series?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Can I Square Root A Series? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1899291">
+<p>I have a question in Quantum Mechanics where I need to solve a series, and the thing is that I can get the answer to a similar series with the help of the same problem but I am not sure if I can square root my series to use it in the problem. For example I have <span class="math-container" id="17603500" visual_id="7807537"><math alttext="\sum_{n=1,3,5,7...}^{\infty}\frac{1}{n^{4}}=\frac{\pi^{4}}{96}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mrow><mn>7</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>4</mn></msup></mfrac></mrow><mo>=</mo><mfrac><msup><mi>π</mi><mn>4</mn></msup><mn>96</mn></mfrac></mrow></semantics></math></span>. But the summation I need is for <span class="math-container" id="17603501" visual_id="7807538"><math alttext="\style{Bold}{\frac{1}{n^{2}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\style</mtext></merror><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> So is it fine to square root both sides and say <span class="math-container" id="17603502" visual_id="7807539"><math alttext="\sum_{n=1,3,5,7...}^{\infty}\frac{1}{n^{2}}=\frac{\pi^{2}}{\sqrt{96}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mrow><mn>7</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mfrac><msup><mi>π</mi><mn>2</mn></msup><msqrt><mn>96</mn></msqrt></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3896714"> The sum is actually <span class="math-container" id="17603503" visual_id="292050"><math alttext="\pi^{2}/8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>π</mi><mn>2</mn></msup><mo>/</mo><mn>8</mn></mrow></semantics></math></span>, [according to Wolfram Alpha](https://www.wolframalpha.com/input/?i=sum%201%2F(2n%2B1)%5E2%20from%20n%3D0%20to%20infinity). </td></tr><tr><td comment_id="3897154"> As for the sum you are after: we have <span class="math-container" id="17603504" visual_id="7807540"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{2}}=\sum_{n=2,4,6,\ldots}^{\infty}\frac{1}{n^{2% }}+\sum_{n=1,3,5,\ldots}^{\infty}\frac{1}{n^{2}}=\frac{1}{4}\sum_{n=1}^{\infty% }\frac{1}{n^{2}}+\sum_{n=1,3,5,\ldots}^{\infty}\frac{1}{n^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>+</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>+</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow></mrow></semantics></math></span> so the sum is <span class="math-container" id="17603505" visual_id="7807541"><math alttext="\sum_{n=1,3,5,\ldots}\frac{1}{n^{2}}=\frac{3}{4}\sum_{n=1}^{\infty}\frac{1}{n^% {2}}=\frac{3}{4}\frac{\pi^{2}}{6}=\frac{\pi^{2}}{8}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></munder><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>⁢</mo><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac></mrow><mo>=</mo><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>8</mn></mfrac></mrow></semantics></math></span>. How to derive the famous result <span class="math-container" id="17603506" visual_id="15679"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n^{2}}=\frac{\pi^{2}}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mo>=</mo><mfrac><msup><mi>π</mi><mn>2</mn></msup><mn>6</mn></mfrac></mrow></semantics></math></span> [is found here](http://math.stackexchange.com/questions/8337/different-methods-to-compute-sum-limits-k-1-infty-frac1k2) </td></tr><tr><td comment_id="3897157"> <span class="math-container" id="17603507" visual_id="7807542"><math alttext="\sum_{n=1}^{\infty}\frac{1}{(2n-1)^{2s}}=\sum_{n=1}^{\infty}\frac{1}{n^{2s}}-% \sum_{n=1}^{\infty}\frac{1}{(2n)^{2s}}=(1-\frac{1}{2^{2s}})\sum_{n=1}^{\infty}% \frac{1}{n^{2s}}=(1-\frac{1}{2^{2s}})\zeta(2s)=(1-\frac{1}{2^{2s}})\frac{(2\pi% )^{2s}|B_{2s}|}{2(2s)!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msup></mfrac></mrow><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msup></mfrac></mrow><mo>-</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msup></mfrac></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msup></mfrac></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msup></mfrac></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msup></mfrac></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msup></mfrac></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">|</mo><msub><mi>B</mi><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow></msub><mo stretchy="false">|</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mrow></mrow></semantics></math></span> https://en.wikipedia.org/wiki/Riemann_zeta_function#Specific_values </td></tr><tr><td comment_id="4114963"> For positive <span class="math-container" id="17603508" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="17603509" visual_id="50877"><math alttext="b," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>,</mo></mrow></semantics></math></span> <span class="math-container" id="17603510" visual_id="7807543"><math alttext="\sqrt{a}+\sqrt{b}=\sqrt{a+b}\iff ab=0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><msqrt><mi>a</mi></msqrt><mo>+</mo><msqrt><mi>b</mi></msqrt></mrow><mo>=</mo><msqrt><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></msqrt></mrow><mo>⇔</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>=</mo><mn>0</mn></mrow></mrow><mo>.</mo></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1899294" id="answer">
+<p>No. For the same reason that <span class="math-container" id="17603511" visual_id="7807544"><math alttext="\sqrt{a_{1}+...+a_{n}}\neq\sqrt{a_{1}}+....+\sqrt{a_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msqrt><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></msqrt><mo>≠</mo><mrow><msqrt><msub><mi>a</mi><mn>1</mn></msub></msqrt><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>.</mo><mrow><mo>+</mo><msqrt><msub><mi>a</mi><mi>n</mi></msub></msqrt></mrow></mrow></semantics></math></span> What you are saying would also imply that say the harmonic series converges, which it does not. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="8337"> Different methods to compute <span class="math-container" id="73281" visual_id="22113"><math alttext="\sum\limits_{k=1}^{\infty}\frac{1}{k^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac></mrow></semantics></math></span> (Basel problem) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

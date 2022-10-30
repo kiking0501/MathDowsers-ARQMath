@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>$g: [-\pi,\pi]\to R$ cont. with $g(\pi) = g(-\pi)$, $\int_{-\pi}^{\pi}g(t)\sin(nt)dt = 0$ show that $g$ is even.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> <span class="math-container" id="22242395" visual_id="6517569"><math alttext="g:[-\pi,\pi]\to R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mi>π</mi></mrow><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>R</mi></mrow></mrow></semantics></math></span> cont. with <span class="math-container" id="22242396" visual_id="2956996"><math alttext="g(\pi)=g(-\pi)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>π</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, <span class="math-container" id="22242397" visual_id="6517570"><math alttext="\int_{-\pi}^{\pi}g(t)\sin(nt)dt=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>π</mi></mrow><mi>π</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> show that <span class="math-container" id="22242398" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is even. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2402555">
+<p>I have to show that <span class="math-container" id="22242399" visual_id="6517571"><math alttext="g:[-\pi,\pi]\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mi>π</mi></mrow><mo>,</mo><mi>π</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> is even when: it is continuous, <span class="math-container" id="22242400" visual_id="2956996"><math alttext="g(\pi)=g(-\pi)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>π</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, and when for all <span class="math-container" id="22242401" visual_id="993"><math alttext="n\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span>:</p> <p><span class="math-container" id="22242402" visual_id="6517572"><math alttext="\int_{-\pi}^{\pi}g(t)\sin(nt)\mathrm{d}t=0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>π</mi></mrow><mi>π</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>My attempt: I know that if <span class="math-container" id="22242403" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is odd:</p> <p><span class="math-container" id="22242404" visual_id="6517573"><math alttext="g(x)=\frac{g(x)-g(-x)}{2}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mn>2</mn></mfrac></mrow><mo>,</mo></mrow></semantics></math></span></p> <p>then</p> <p><span class="math-container" id="22242405" visual_id="6517574"><math alttext="\int_{-\pi}^{\pi}g(t)\sin(nt)\mathrm{d}t=\int_{-\pi}^{\pi}g(t)\sin(nt)\mathrm{% d}t-\int_{-\pi}^{\pi}g(-t)\sin(nt)\mathrm{d}t=0." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>π</mi></mrow><mi>π</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>π</mi></mrow><mi>π</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>t</mi></mrow></mrow></mrow><mo>-</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>π</mi></mrow><mi>π</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Hence,</p> <p><span class="math-container" id="22242406" visual_id="6517575"><math alttext="\int_{-\pi}^{\pi}g(t)\sin(nt)dt=\int_{-\pi}^{\pi}g(-t)\sin(nt)\mathrm{d}t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>π</mi></mrow><mi>π</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi>π</mi></mrow><mi>π</mi></msubsup><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>But I can not prove that <span class="math-container" id="22242407" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> is even... I was following a hint. Thanks.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> integration </span><span> definite-integrals </span><span> riemann-integration </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4958445"> Functions are not integers... They aren't either even or odd :/ </td></tr><tr><td comment_id="4958453"> You make me laugh. You are right. Even every constant function will satisfy that. </td></tr><tr><td comment_id="4958456"> Can I ask what is <span class="math-container" id="22242409" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>? Is it given? Is the integral's identity is true for *all* <span class="math-container" id="22242409" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>? </td></tr><tr><td comment_id="4958460"> @AsafHaas yes is true for all n. I will edit the question thanks. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2402566" id="answer">
+<p>Hint: use the Fourier series of the function g(t), it is the sum of even functions and so is even.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>$P$ is projective . Show that $P$ is a direct summand of a free $R-$ module</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> <span class="math-container" id="11605271" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is projective . Show that <span class="math-container" id="11605272" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is a direct summand of a free <span class="math-container" id="11605273" visual_id="55164"><math alttext="R-" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>-</mo></mrow></semantics></math></span> module </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1243071">
+<p><span class="math-container" id="11605274" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is projective . Show that <span class="math-container" id="11605275" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is a direct summand of a  free <span class="math-container" id="11605276" visual_id="55164"><math alttext="R-" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>-</mo></mrow></semantics></math></span> module</p> <p>I am using the definition of a projective module as <span class="math-container" id="11605277" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is projective if every exact sequence <span class="math-container" id="11605278" visual_id="8734290"><math alttext="M\rightarrow P\rightarrow 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>→</mo><mi>P</mi><mo>→</mo><mn>0</mn></mrow></semantics></math></span> splits </p> <p>How to proceed?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> modules </span><span> projective-module </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2708901" id="answer">
+<p>Since people are rejecting my edits suggesting to write an answer, I do it here:</p> <p>Let me first reformulate the question to contain all relevant details:</p> <blockquote> <p>Assume as definition of projective module the following:</p> <p><span class="math-container" id="11605284" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is projective if every exact sequence <span class="math-container" id="11605285" visual_id="8734290"><math alttext="M\rightarrow P\rightarrow 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>→</mo><mi>P</mi><mo>→</mo><mn>0</mn></mrow></semantics></math></span> splits, that is, for every epimorphishm <span class="math-container" id="11605286" visual_id="1519859"><math alttext="f:M\to P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>M</mi><mo>→</mo><mi>P</mi></mrow></mrow></semantics></math></span> there exists a   right inverse homomorphism <span class="math-container" id="11605287" visual_id="8734293"><math alttext="f^{\prime}:P\to M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>:</mo><mrow><mi>P</mi><mo>→</mo><mi>M</mi></mrow></mrow></semantics></math></span> such that <span class="math-container" id="11605288" visual_id="8734294"><math alttext="ff^{\prime}=1_{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><msup><mi>f</mi><mo>′</mo></msup></mrow><mo>=</mo><msub><mn>1</mn><mi>P</mi></msub></mrow></semantics></math></span></p> <p>Then, I need to prove the following implication:</p> <p>If <span class="math-container" id="11605289" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is projective, show that <span class="math-container" id="11605290" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is a direct summand of a free   <span class="math-container" id="11605291" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>-module, that is, there exists a free module <span class="math-container" id="11605292" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> such that <span class="math-container" id="11605293" visual_id="8734295"><math alttext="F=P\oplus T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mrow><mi>P</mi><mo>⊕</mo><mi>T</mi></mrow></mrow></semantics></math></span> for some other module <span class="math-container" id="11605294" visual_id="319"><math alttext="T" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi></semantics></math></span>.</p> </blockquote> <p>Then let me add all the details that were neccessary to me based on @MooS' answer:</p> <p>Choose generators of <span class="math-container" id="11605295" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> to get a surjection from a free module <span class="math-container" id="11605296" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> onto <span class="math-container" id="11605297" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span>. More precisely, prove that:</p> <blockquote> <p>If a module <span class="math-container" id="11605298" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> has a spanning set <span class="math-container" id="11605299" visual_id="330503"><math alttext="X\subseteq M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>⊆</mo><mi>M</mi></mrow></semantics></math></span> then there is an   epimorphism <span class="math-container" id="11605300" visual_id="8734296"><math alttext="R^{(X)}\to M\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></msup><mo>→</mo><mi>M</mi><mo>→</mo><mn>0</mn></mrow></semantics></math></span> </p> </blockquote> <p>If you need it, you can find the proof in the book Rings and Categories of Modules, theorem 8.1. </p> <p>Then what you have is a exact sequence <span class="math-container" id="11605301" visual_id="8734297"><math alttext="F\stackrel{{\scriptstyle f}}{{\to}}P\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mover><mo movablelimits="false">→</mo><mi>f</mi></mover><mi>P</mi><mo>→</mo><mn>0</mn></mrow></semantics></math></span> and taking the kernel <span class="math-container" id="11605302" visual_id="719"><math alttext="K" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi></semantics></math></span> of <span class="math-container" id="11605303" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> we get an exact sequence <span class="math-container" id="11605304" visual_id="8734298"><math alttext="0\to K\stackrel{{\scriptstyle i}}{{\to}}F\stackrel{{\scriptstyle f}}{{\to}}P\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>→</mo><mi>K</mi><mover><mo movablelimits="false">→</mo><mi>i</mi></mover><mi>F</mi><mover><mo movablelimits="false">→</mo><mi>f</mi></mover><mi>P</mi><mo>→</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>Since <span class="math-container" id="11605305" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is projective, by your definition, there exists <span class="math-container" id="11605306" visual_id="1179"><math alttext="f^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mo>′</mo></msup></semantics></math></span> such that <span class="math-container" id="11605307" visual_id="8734294"><math alttext="ff^{\prime}=1_{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><msup><mi>f</mi><mo>′</mo></msup></mrow><mo>=</mo><msub><mn>1</mn><mi>P</mi></msub></mrow></semantics></math></span> but this is one characterization of being a splitting sequence. Another characterization of splitting sequence is that the center is sum of the non-null extremes, showing that <span class="math-container" id="11605308" visual_id="8734292"><math alttext="F=K\oplus P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mrow><mi>K</mi><mo>⊕</mo><mi>P</mi></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

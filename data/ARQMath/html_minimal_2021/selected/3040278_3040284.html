@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Value of $\lim_{n \to \infty}\frac{\sqrt{1}+\sqrt{2}+\sqrt{3}+\cdots+\sqrt{n-1}}{n\sqrt{n}}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Value of <span class="math-container" id="28157436" visual_id="8177108"><math alttext="\lim_{n\to\infty}\frac{\sqrt{1}+\sqrt{2}+\sqrt{3}+\cdots+\sqrt{n-1}}{n\sqrt{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><msqrt><mn>1</mn></msqrt><mo>+</mo><msqrt><mn>2</mn></msqrt><mo>+</mo><msqrt><mn>3</mn></msqrt><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mrow><mi>n</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3040278">
+<blockquote> <p>Evaluate   <span class="math-container" id="28157437" visual_id="8177109"><math alttext="\lim_{n\to\infty}\dfrac{\sqrt{1}+\sqrt{2}+\sqrt{3}+\cdots+\sqrt{n-1}}{n\sqrt{n% }}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><msqrt><mn>1</mn></msqrt><mo>+</mo><msqrt><mn>2</mn></msqrt><mo>+</mo><msqrt><mn>3</mn></msqrt><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mrow><mi>n</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></mfrac></mrow><mo>.</mo></mrow></semantics></math></span></p> </blockquote> <p>I am trying to use the Sandwich principle here..</p> <p><span class="math-container" id="28157438" visual_id="8177110"><math alttext="\lim_{n\to\infty}\dfrac{\sqrt{1}+\sqrt{2}+\sqrt{3}+\cdots+\sqrt{n-1}}{n\sqrt{n% }}=\lim_{n\to\infty}\dfrac{\sqrt{\dfrac{1}{n}}+\sqrt{\dfrac{2}{n}}+\sqrt{% \dfrac{3}{n}}+\cdots+\sqrt{\dfrac{n-1}{n}}}{n}\geq\lim_{n\to\infty}\bigg{(}% \sqrt{\dfrac{1}{n}}.\sqrt{\dfrac{2}{n}}.\sqrt{\dfrac{3}{n}}\cdots\sqrt{\dfrac{% n-1}{n}}\bigg{)}^{\dfrac{1}{n-1}}=\lim_{n\to\infty}\bigg{(}\dfrac{(n-1)!}{n^{n% }}\bigg{)}^{\dfrac{1}{2(n-1)}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><mrow><msqrt><mn>1</mn></msqrt><mo>+</mo><msqrt><mn>2</mn></msqrt><mo>+</mo><msqrt><mn>3</mn></msqrt><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msqrt><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msqrt></mrow><mrow><mi>n</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></mfrac><mo>=</mo><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><mrow><msqrt><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>n</mi></mfrac></mstyle></msqrt><mo>+</mo><msqrt><mstyle displaystyle="true"><mfrac><mn>2</mn><mi>n</mi></mfrac></mstyle></msqrt><mo>+</mo><msqrt><mstyle displaystyle="true"><mfrac><mn>3</mn><mi>n</mi></mfrac></mstyle></msqrt><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msqrt><mstyle displaystyle="true"><mfrac><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mi>n</mi></mfrac></mstyle></msqrt></mrow><mi>n</mi></mfrac><mo>≥</mo><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><msqrt><mfrac><mn>1</mn><mi>n</mi></mfrac></msqrt><mo>.</mo><msqrt><mfrac><mn>2</mn><mi>n</mi></mfrac></msqrt><mo>.</mo><msqrt><mfrac><mn>3</mn><mi>n</mi></mfrac></msqrt><mi mathvariant="normal">⋯</mi><msqrt><mfrac><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mi>n</mi></mfrac></msqrt><mo maxsize="210%" minsize="210%">)</mo></mrow><mstyle displaystyle="true" scriptlevel="-1"><mfrac><mn>1</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mstyle></msup><mo>=</mo><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><msup><mi>n</mi><mi>n</mi></msup></mfrac><mo maxsize="210%" minsize="210%">)</mo></mrow><mstyle displaystyle="true" scriptlevel="-1"><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></msup></mrow></semantics></math></span></p> <p>But after this I am a little in doubt. This link may provide some light <a href="https://math.stackexchange.com/questions/238753/evaluation-of-the-limit-lim-limits-n-to-infty-frac1-sqrt-n-left1-f">Evaluation of the limit <span class="math-container" id="28157439" visual_id="3509015"><math alttext="\lim\limits_{n\to\infty}\frac{1}{\sqrt{n}}\left(1+\frac{1}{\sqrt{2}}+\frac{1}{% \sqrt{3}}+\cdots+\frac{1}{\sqrt{n}}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>+</mo><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span></a> but I do not understand how it would help my problem..</p> <p>In continuation of @Rebello's answer here, I would like to provide an answer for the problem given in the link </p> <p><span class="math-container" id="28157440" visual_id="8177111"><math alttext="\lim\limits_{n\to\infty}\frac{1}{\sqrt{n}}\left(1+\frac{1}{\sqrt{2}}+\frac{1}{% \sqrt{3}}+\cdots+\frac{1}{\sqrt{n}}\right)=\lim\limits_{n\to\infty}\sum_{k=1}^% {n}{\dfrac{1}{\sqrt{kn}}}=\int_{0}^{1}\dfrac{1}{\sqrt{x}}dx+\lim\limits_{n\to% \infty}\dfrac{1}{n}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>+</mo><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac></mrow><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mn>1</mn><msqrt><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></msqrt></mfrac></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mfrac><mn>1</mn><msqrt><mi>x</mi></msqrt></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>+</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6268596"> Well, this is just a Riemann sum. </td></tr><tr><td comment_id="6268598"> Oh is it? Leave it then I can do this... I forgot Reimann's sum. Sorry </td></tr><tr><td comment_id="6268601"> Okay then :D Also post it as answer when you finish solving it. </td></tr><tr><td comment_id="6268606"> There are <span class="math-container" id="28157441" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> terms in the numerator </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3040284" id="answer">
+<p>It is sufficient to obtain integral of <span class="math-container" id="28157468" visual_id="3765"><math alttext="\sqrt{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi>x</mi></msqrt></semantics></math></span>, when <span class="math-container" id="28157469" visual_id="10092"><math alttext="0\leq x\leq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>1</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="238753"> Evaluation of the limit <span class="math-container" id="2661704" visual_id="3509015"><math alttext="\lim\limits_{n\to\infty}\frac{1}{\sqrt{n}}\left(1+\frac{1}{\sqrt{2}}+\frac{1}{% \sqrt{3}}+\cdots+\frac{1}{\sqrt{n}}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>+</mo><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mfrac><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

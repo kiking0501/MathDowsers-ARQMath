@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Creating rectangle on 3D plane</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Creating rectangle on 3D plane </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="585695">
+<p>I would like to create a rectangle from two given 3D points (they are placed on rectangle diagonal). Those points lies on the same plane with given normal. I was able to do it on axis aligned planes, but now I would like to do it on any plane.</p> <p>Any ideas if this is possible and how?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> 3d </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1236821"> Your task is impossible without an additional criterion, such as the direction of one pair of edges: Given two points in the <span class="math-container" id="6003078" visual_id="66"><math alttext="(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>-plane, there is a <span class="math-container" id="6003079" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>-parameter family of rectangles having these points on a diagonal. </td></tr><tr><td comment_id="1236834"> Can I detrmine such direction? Let's say I want edges to be axis aligned, can it be done then? </td></tr><tr><td comment_id="1236867"> A _generic_ plane (specifically, one having equation <span class="math-container" id="6003080" visual_id="80442"><math alttext="ax+by+cz=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span> with <span class="math-container" id="6003081" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>, <span class="math-container" id="6003082" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>, <span class="math-container" id="6003083" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> all non-zero) contains no line parallel to a coordinate axis. Even if you only want the edges of your rectangle to be parallel to a coordinate plane, your task is impossible for planes <span class="math-container" id="6003085" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> that are not themselves parallel to a coordinate plane (the same class as before): Two non-parallel planes determine a line of intersection, and the three directions in <span class="math-container" id="6003085" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> defined by the Cartesian coordinate planes are mutually non-perpendicular. </td></tr><tr><td comment_id="1236873"> Ok, that's<span class="math-container" id="6003081" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>shame :( I think I will stick to that axis aligned drawing. Thank you for help :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="585731" id="answer">
+<p>If <span class="math-container" id="6003086" visual_id="34761"><math alttext="A,C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>C</mi></mrow></semantics></math></span> are your two points, let <span class="math-container" id="6003087" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span> be the sphere with <span class="math-container" id="6003088" visual_id="2909"><math alttext="AC" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>C</mi></mrow></semantics></math></span> as diameter. Let <span class="math-container" id="6003089" visual_id="8074"><math alttext="O" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi></semantics></math></span> be its center. Then pick any <span class="math-container" id="6003090" visual_id="201357"><math alttext="B\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>∈</mo><mi>S</mi></mrow></semantics></math></span> and let <span class="math-container" id="6003091" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> be the other point of intersection of the line <span class="math-container" id="6003092" visual_id="96286"><math alttext="BO" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⁢</mo><mi>O</mi></mrow></semantics></math></span> and <span class="math-container" id="6003093" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>. Then <span class="math-container" id="6003094" visual_id="2903"><math alttext="ABCD" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>C</mi><mo>⁢</mo><mi>D</mi></mrow></semantics></math></span> is a rectangle. If you have an additional restriction in form of a plane through <span class="math-container" id="6003095" visual_id="34761"><math alttext="A,C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>C</mi></mrow></semantics></math></span>, then the sphere becomes a circle (by intersection), but that still leaves you with a one-parameter faimily (as hinted by user86418).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

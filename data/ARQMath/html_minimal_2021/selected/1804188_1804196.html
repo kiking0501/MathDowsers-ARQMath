@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Can a non-continuous function be differentiable?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Can a non-continuous function be differentiable? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1804188">
+<p>I learnt that a function is called "differentiable " if the derivative (if it exists) of the function is continuous. Suppose a function <span class="math-container" id="16679559" visual_id="3106"><math alttext="f:\mathbb{R}\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> is differentiable, i.e., <span class="math-container" id="16679560" visual_id="929"><math alttext="f^{\prime}(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is continuous. Does that imply that <span class="math-container" id="16679561" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is also continuous?</p> <p>I know that the answer is "yes", but cannot understand why. If we define <span class="math-container" id="16679562" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> something like: <span class="math-container" id="16679563" visual_id="7345392"><math alttext="f(x)=\begin{cases}2\text{ for all }x\leq 5\\ 3\text{ elsewhere}\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mn>2</mn><mo>⁢</mo><mtext> for all </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>≤</mo><mn>5</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mn>3</mn><mo>⁢</mo><mtext> elsewhere</mtext></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow></semantics></math></span></p> <p>Then <span class="math-container" id="16679564" visual_id="7345393"><math alttext="\lim_{x\to 5^{+}}f^{\prime}(x)=\lim_{x\to 5^{-}}f^{\prime}(x)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>5</mn><mo>+</mo></msup></mrow></munder><mo>⁡</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>5</mn><mo>-</mo></msup></mrow></munder><mo>⁡</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> although <span class="math-container" id="16679565" visual_id="7345394"><math alttext="\lim_{x\to 5^{+}}f(x)\neq\lim_{x\to 5^{-}}f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>5</mn><mo>+</mo></msup></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≠</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>5</mn><mo>-</mo></msup></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> Doesn't this make <span class="math-container" id="16679566" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> discontinuous but differentiable?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> derivatives </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3684958"> If we take the geometrical definition of derivative as the slope of the tangent in all points then the derivative doesnt exist on discontinuous points of a function. So the definition of derivative implies continuity. </td></tr><tr><td comment_id="3684983"> <span class="math-container" id="16679567" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> being differentiable merely means that <span class="math-container" id="16679568" visual_id="1179"><math alttext="f^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mo>′</mo></msup></semantics></math></span> exists, not that <span class="math-container" id="16679569" visual_id="1179"><math alttext="f^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mo>′</mo></msup></semantics></math></span> is continuous. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1804196" id="answer">
+<p><span class="math-container" id="16679570" visual_id="7345393"><math alttext="\lim_{x\to 5^{+}}f^{\prime}(x)=\lim_{x\to 5^{-}}f^{\prime}(x)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>5</mn><mo>+</mo></msup></mrow></munder><mo>⁡</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>5</mn><mo>-</mo></msup></mrow></munder><mo>⁡</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> First of all <span class="math-container" id="16679571" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> should be zero. Secondly, this does not change the fact that  <span class="math-container" id="16679572" visual_id="4169327"><math alttext="f^{\prime}(5)=\lim_{h\to 0}\frac{f(5+h)-f(5)}{h}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>h</mi><mo>→</mo><mn>0</mn></mrow></munder><mo>⁡</mo><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>5</mn><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>h</mi></mfrac></mrow></mrow></semantics></math></span> is undefined. So, you cant talk about the continuity of <span class="math-container" id="16679573" visual_id="1179"><math alttext="f^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mo>′</mo></msup></semantics></math></span> at <span class="math-container" id="16679574" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span>.</p> <p>Also, having left limit equal to right limit only shows the existence of the limit, not the continuity of <span class="math-container" id="16679575" visual_id="1179"><math alttext="f^{\prime}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mo>′</mo></msup></semantics></math></span>. Think about the following: Define <span class="math-container" id="16679576" visual_id="2303608"><math alttext="f:[2,4]\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> by <span class="math-container" id="16679577" visual_id="2020"><math alttext="f(x)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> if <span class="math-container" id="16679578" visual_id="362898"><math alttext="x\neq 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>3</mn></mrow></semantics></math></span> and <span class="math-container" id="16679579" visual_id="679549"><math alttext="f(3)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. This function satisfies <span class="math-container" id="16679580" visual_id="7345395"><math alttext="\lim_{x\to 3^{+}}f(x)=\lim_{x\to 3^{-}}f(x)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>3</mn><mo>+</mo></msup></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>3</mn><mo>-</mo></msup></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, but, this equality does not mean anything, as <span class="math-container" id="16679581" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is not equal to that limit.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3684923"> Yes you are right... </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

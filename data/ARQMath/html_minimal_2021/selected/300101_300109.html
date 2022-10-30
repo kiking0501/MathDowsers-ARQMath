@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to verify the Jacobi identity for the semidirect product Lie algebra</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to verify the Jacobi identity for the semidirect product Lie algebra </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="300101">
+<p>I've been trying to check the claim that the vector space direct sum <span class="math-container" id="3271215" visual_id="6781001"><math alttext="L\oplus D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>⊕</mo><mi>D</mi></mrow></semantics></math></span> is a Lie algebra, and I'm having a lot of trouble with verifying the Jacobi identity. It's defined where <span class="math-container" id="3271216" visual_id="580"><math alttext="L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi></semantics></math></span> is a Lie algebra and <span class="math-container" id="3271217" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is a subalgebra of Der(L) with bracket <span class="math-container" id="3271218" visual_id="6781002"><math alttext="[x_{1}+d_{1},x_{2}+d_{2}]=[x_{1},x_{2}]+d_{1}(x_{2})-d_{2}(x_{1})+[d_{1},d_{2}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>d</mi><mn>1</mn></msub></mrow><mo>,</mo><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><msub><mi>d</mi><mn>2</mn></msub></mrow><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow><mo>+</mo><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mo stretchy="false">[</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>I started with <span class="math-container" id="3271219" visual_id="6781003"><math alttext="[x,[y,z]]+[y,[z,x]]+[z,[x,y]]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">]</mo></mrow><mo>+</mo><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mrow><mo stretchy="false">[</mo><mi>z</mi><mo>,</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">]</mo></mrow><mo>+</mo><mrow><mo stretchy="false">[</mo><mi>z</mi><mo>,</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> for <span class="math-container" id="3271220" visual_id="6781004"><math alttext="x=x_{1}+d_{1},y=x_{2}+d_{2},z=x_{3}+d_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>=</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>d</mi><mn>1</mn></msub></mrow></mrow><mo>,</mo><mrow><mrow><mi>y</mi><mo>=</mo><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><msub><mi>d</mi><mn>2</mn></msub></mrow></mrow><mo>,</mo><mrow><mi>z</mi><mo>=</mo><mrow><msub><mi>x</mi><mn>3</mn></msub><mo>+</mo><msub><mi>d</mi><mn>3</mn></msub></mrow></mrow></mrow></mrow></semantics></math></span>, with the aim of showing that this simplifies to 0 by bilinearity and definition of the bracket. I simplified all the inner brackets first, but then get confused when trying to break down further. I end up getting what seem like strange compositions of elements of L and derivations.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> lie-algebras </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="651917"> I have added dollar signs \<span class="math-container" id="3271221" visual_id="499634"><math alttext="...\$" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mo>$</mo></mrow></semantics></math></span> to your formulas so that they display properly. </td></tr><tr><td comment_id="652720"> Thank you. Looks much better. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="300109" id="answer">
+<p>Linearity of the Lie product  in each component, and the <em>cyclic</em> format of the Jacobi identify, allows you to deal with four cases. </p> <ol> <li><p><span class="math-container" id="3271222" visual_id="4525077"><math alttext="x,y,z\in L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow><mo>∈</mo><mi>L</mi></mrow></semantics></math></span>, that's Jacobi in <span class="math-container" id="3271223" visual_id="580"><math alttext="L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi></semantics></math></span>. </p></li> <li><p><span class="math-container" id="3271224" visual_id="6781005"><math alttext="x,y,z\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow><mo>∈</mo><mi>D</mi></mrow></semantics></math></span>, that's Jacobi in <span class="math-container" id="3271225" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span>.</p></li> <li><p><span class="math-container" id="3271226" visual_id="1711"><math alttext="x,y\in L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>L</mi></mrow></semantics></math></span>, and <span class="math-container" id="3271227" visual_id="6544"><math alttext="z\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>∈</mo><mi>D</mi></mrow></semantics></math></span>, that's the fact that the elements of <span class="math-container" id="3271228" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> are derivations of <span class="math-container" id="3271229" visual_id="580"><math alttext="L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi></semantics></math></span>. </p></li> <li><p><span class="math-container" id="3271230" visual_id="21201"><math alttext="x\in L" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>L</mi></mrow></semantics></math></span>, and <span class="math-container" id="3271231" visual_id="6781006"><math alttext="y,z\in D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>,</mo><mi>z</mi></mrow><mo>∈</mo><mi>D</mi></mrow></semantics></math></span>, that's the fact that <span class="math-container" id="3271232" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span> is a Lie subalgebra of <span class="math-container" id="3271233" visual_id="567646"><math alttext="\operatorname{Der}(L)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Der</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.</p></li> </ol>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

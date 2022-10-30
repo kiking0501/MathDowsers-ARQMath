@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is there a way to prove numbers irrational in general?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is there a way to prove numbers irrational in general? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3052372">
+<p>I'm familiar with the typical proof that <span class="math-container" id="28262881" visual_id="9095"><math alttext="\sqrt{2}\not\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt><mo>∉</mo><mi>ℚ</mi></mrow></semantics></math></span>, where we assume it is equivalent to <span class="math-container" id="28262882" visual_id="45827"><math alttext="\frac{a}{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>a</mi><mi>b</mi></mfrac></semantics></math></span> for some integers <span class="math-container" id="28262883" visual_id="249"><math alttext="a,b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></semantics></math></span>, then prove that both <span class="math-container" id="28262884" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="28262885" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> are divisible by <span class="math-container" id="28262886" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>, repeat infinitely, proof by contradiction, QED. I'm also familiar with the fact that if you repeat this procedure for any radical, you can similarly prove that each <span class="math-container" id="28262887" visual_id="1549745"><math alttext="a^{n},b^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mi>n</mi></msup><mo>,</mo><msup><mi>b</mi><mi>n</mi></msup></mrow></semantics></math></span> are divisible by the radicand, where <span class="math-container" id="28262888" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is the root of the radical (though things get tricky if you don't reduce first). In other words, the proof that <span class="math-container" id="28262889" visual_id="9095"><math alttext="\sqrt{2}\not\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt><mo>∉</mo><mi>ℚ</mi></mrow></semantics></math></span> generalizes to prove that any number of the form <span class="math-container" id="28262890" visual_id="8211601"><math alttext="\sqrt[m]{n}\not\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mroot><mi>n</mi><mi>m</mi></mroot><mo>∉</mo><mi>ℚ</mi></mrow></semantics></math></span>. </p> <p>Further, since adding or multiplying a rational and an irrational yields an irrational, this is a proof for all algebraic irrationals. (Ex. I can prove <span class="math-container" id="28262891" visual_id="2681"><math alttext="\phi=\frac{1+\sqrt{5}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math></span> irrational just by demonstrating that the <span class="math-container" id="28262892" visual_id="2717"><math alttext="\sqrt{5}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>5</mn></msqrt></semantics></math></span> term is irrational.)</p> <p>Because this relies on the algebra of radicals, this won't help for transcendental numbers. Is there a proof that generalizes to all irrational numbers, or must each transcendental number be proven irrational independently?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> irrational-numbers </span><span> rationality-testing </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6292659"> This may sound like silly pedantry, but what is your definition of 'number'? For instance, what (if anything) prevents 'the number which is 1 if Goldbach's conjecture is true and <span class="math-container" id="28262896" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> if it's false' from being a valid number under your definition? </td></tr><tr><td comment_id="6292666"> @Steven Imagine a line which stretches infinitely in both directions, and we pick an arbitrary point on it to label 0. Let's define a number as an unmovable point on this line, and the number's value is determined by its distance from the point we labeled 0. The reason "the number which is 1 if Goldbach's conjecture is true and <span class="math-container" id="28262894" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> if it's false" is not a number is because it's not a fixed point; it's in a superposition of "conjecture is true" and "conjecture is false" (for lack of a better term) and therefore occupies multiple points on the line. </td></tr><tr><td comment_id="6292667"> @DonielF No, it's a completely fixed point - it's either <span class="math-container" id="28262895" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> or <span class="math-container" id="28262896" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span>, we just don't currently (and may never) now which it is. </td></tr><tr><td comment_id="6292670"> Not all algebraic numbers admit the radical form you assume them to in your attempted proof all algebraic numbers' rationality is decidable this way. For example, quintics' roots don't in general take such a form. </td></tr><tr><td comment_id="6293182"> @DonielF For another perspective, 'its distance from the point labeled 0' is just a circular definition; you're defining the number in terms of itself. Indeed, the overwhelming majority of real numbers _have_ no finite definition (this is a nice little exercise in infinite counting) and so the very notion of an irrationality proof for them needs a little unwinding. (Of course, all of the numbers that _don't_ have a finite definition are immediately irrational by contradiction, but). </td></tr><tr><td comment_id="6293183"> In general, you can't simply 'write the number down' or anything like that, so formalizing _how_ you present your numbers is important when you start talking about 'uniformizing' proofs of properties; there are some subtle and interesting set theory and logic issues lurking just under the surface here. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3052376" id="answer">
+<p>There is no known general method of dealing with this problem. Otherwise, we would already know whether or not the <a href="https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant" rel="noreferrer">Euler–Mascheroni constant</a> is rational.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

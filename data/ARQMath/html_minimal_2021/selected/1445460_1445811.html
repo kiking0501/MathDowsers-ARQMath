@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>True or False: $\operatorname{gcd}(a,b) = \operatorname{gcd}(5a+b, 3a+2b)$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> True or False: <span class="math-container" id="13403642" visual_id="1942815"><math alttext="\operatorname{gcd}(a,b)=\operatorname{gcd}(5a+b,3a+2b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>a</mi></mrow><mo>+</mo><mi>b</mi></mrow><mo>,</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>a</mi></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>b</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1445460">
+<p>I'm trying to work through the above homework question (<span class="math-container" id="13403643" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="13403644" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> are positive integers), and I'm not sure if my reasoning is correct. </p> <p>I've been told that it is true.</p> <p>I think that if the <span class="math-container" id="13403645" visual_id="225419"><math alttext="\operatorname{gcd}(a,b)=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span>, then we would have <span class="math-container" id="13403646" visual_id="466222"><math alttext="ax+by=d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mi>d</mi></mrow></semantics></math></span>. where <span class="math-container" id="13403647" visual_id="1942816"><math alttext="\frac{a}{d}=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>d</mi></mfrac><mo>=</mo><mi>x</mi></mrow></semantics></math></span> and <span class="math-container" id="13403648" visual_id="1942817"><math alttext="\frac{b}{d}=y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>b</mi><mi>d</mi></mfrac><mo>=</mo><mi>y</mi></mrow></semantics></math></span>. </p> <p>Then if I divide both <span class="math-container" id="13403649" visual_id="1942818"><math alttext="5a+b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>a</mi></mrow><mo>+</mo><mi>b</mi></mrow></semantics></math></span> and <span class="math-container" id="13403650" visual_id="1010927"><math alttext="3a+2b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>a</mi></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>b</mi></mrow></mrow></semantics></math></span> by <span class="math-container" id="13403651" visual_id="302"><math alttext="d" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi></semantics></math></span> I get <span class="math-container" id="13403652" visual_id="1942819"><math alttext="5x+y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>y</mi></mrow></semantics></math></span> and <span class="math-container" id="13403653" visual_id="744647"><math alttext="3x+2y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi></mrow></mrow></semantics></math></span> respectively. Assuming that  <span class="math-container" id="13403654" visual_id="254"><math alttext="x\neq y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mi>y</mi></mrow></semantics></math></span> (which seems safe to say...unless <span class="math-container" id="13403655" visual_id="5337"><math alttext="a=b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi></mrow></semantics></math></span>) there are no common factors between <span class="math-container" id="13403656" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span> and <span class="math-container" id="13403657" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> in the first bit, and <span class="math-container" id="13403658" visual_id="305"><math alttext="3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn></semantics></math></span> and <span class="math-container" id="13403659" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> in the second bit, so there isn't anything I can factor out. </p> <p>The problem I'm having is that although this doesn't ask for a proof, because I can't provide one for myself, I'm not sure if my process is correct. </p> <p>Any hints, or suggestions would be greatly appreciated! </p>
+</div>
+<hr/>
+<div id="tags">
+<span> gcd-and-lcm </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2944447"> why x should be a/d ? </td></tr><tr><td comment_id="2944448"> <span class="math-container" id="13403660" visual_id="1942820"><math alttext="\gcd(5\cdot 1+2,3\cdot 1+2\cdot 2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>5</mn><mo>⋅</mo><mn>1</mn></mrow><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mrow><mrow><mn>3</mn><mo>⋅</mo><mn>1</mn></mrow><mo>+</mo><mrow><mn>2</mn><mo>⋅</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="2944467"> @AnuragJain  I thought that if ax + by = d then d =  a divisor of a and b ? I might be mixing this up with something else though =S </td></tr><tr><td comment_id="2945162"> Similar to http://math.stackexchange.com/q/1105240/589. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1445811" id="answer">
+<p>If x&gt;1 and x  divides 5a+b and 3a+2b then x divides 2(5a+b)-(3a+2b)=7a and x divides divides 3(5a+b)-5(3a+2b)=-7b. So x divides a and b, OR x=7. A little trial and error shows that if a=1 and b=2 then 5a+2b=3a+2b=7=gcd(5a+b,3a+2b) but gcd(a,b)=gcd(1,2)=1. So it is false. The trial and error was to find a and b not divisible by 7, when 5a+b and 3a+2b are divisible by 7.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="32737"> Prove <span class="math-container" id="338758" visual_id="24678"><math alttext="\gcd(a+b,a-b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> or <span class="math-container" id="338759" visual_id="358"><math alttext="2\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded width="+1.7pt"><mn>2</mn></mpadded></semantics></math></span> if <span class="math-container" id="338760" visual_id="24677"><math alttext="\,\gcd(a,b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mpadded></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="1105240"> If a, b ∈ Z are coprime show that 2a + 3b and 3a + 5b are coprime. </td></tr><tr><td post_id="1455838"> Prove/Disprove: If a, b ∈ Z (with at least one not zero) and d = gcd(a, b) then d = gcd(a + b, a − b). </td></tr><tr><td post_id="1613419"> Greatest Common Divisor of a+b,a-b </td></tr><tr><td post_id="1659663"> Show that if <span class="math-container" id="15339938" visual_id="24653"><math alttext="(x,y)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> then <span class="math-container" id="15339939" visual_id="24654"><math alttext="(x-y,x+y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mi>y</mi></mrow><mo>,</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> is either <span class="math-container" id="15339940" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> or <span class="math-container" id="15339941" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>. </td></tr><tr><td post_id="2000420"> Another proof that if <span class="math-container" id="18525909" visual_id="42617"><math alttext="(a,b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, then<span class="math-container" id="18525910" visual_id="1745921"><math alttext="(a+b,a-b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> or <span class="math-container" id="18525911" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> </td></tr><tr><td post_id="2379794"> Understanding proof that involves gcd and linear combinations </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

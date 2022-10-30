@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding subspace's base</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding subspace's base </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1039942">
+<p>Let W be a subspace of <span class="math-container" id="9866829" visual_id="2210"><math alttext="\mathbb{R}^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>4</mn></msup></semantics></math></span>:</p> <p><span class="math-container" id="9866830" visual_id="9152196"><math alttext="\begin{cases}x_{1}+2x_{2}+3x_{3}+4x_{4}=0\\ 2x_{1}+2x_{2}+x_{3}+3x_{4}=0\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msub><mi>x</mi><mn>4</mn></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>+</mo><msub><mi>x</mi><mn>3</mn></msub><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msub><mi>x</mi><mn>4</mn></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd></mtd></mtr></mtable></mrow></semantics></math></span></p> <p>Find base of W and extend it to the base of <span class="math-container" id="9866831" visual_id="2210"><math alttext="\mathbb{R}^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>4</mn></msup></semantics></math></span></p> <p>How to approach this question, detailed instructions appreciated.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> vector-spaces </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2119183"> I suppose you want to extend it? Also you should show your work on the problem (is it homework?). </td></tr><tr><td comment_id="2119192"> it is not a homework, i have solely rref of this matrix ie. $\begin{pmatrix}  1 &amp; 2 &amp; 3 &amp; 4 \\   0 &amp; -2 &amp; -5 &amp; -5 \end{pmatrix} $ </td></tr><tr><td comment_id="2119200"> The matrix doesn't seem related to the question. Can you solve linear equations and check for linear independence? </td></tr><tr><td comment_id="2119217"> @AlexR, it is the original matrix **after** it was reduced by rows: <span class="math-container" id="9866833" visual_id="9360821"><math alttext="\;R_{2}-2R_{1}\;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mpadded lspace="2.8pt" width="+2.8pt"><mi>R</mi><mn>2</mn></mpadded></msub><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mpadded width="+2.8pt"><msub><mi>R</mi><mn>1</mn></msub></mpadded></mrow></mrow></semantics></math></span> . </td></tr><tr><td comment_id="2119232"> @Alex, I meant the new, "unrelated", matrix's second row is obtained from the original one by substracting twice the first row from the second one... </td></tr><tr><td comment_id="2119236"> @Timbuc Wich is inverted by <span class="math-container" id="9866834" visual_id="2305395"><math alttext="R_{2}+2R_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>R</mi><mn>1</mn></msub></mrow></mrow></semantics></math></span>^^ Sorry for the misunderstanding. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1039953" id="answer">
+<p><strong>Hint</strong><br/> The space <span class="math-container" id="9866851" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> is the kernel of the linear map given by the Matrix <span class="math-container" id="9866852" visual_id="6736"><math alttext="\begin{pmatrix}{1\hfil&amp;2&amp;3&amp;4\\ 2&amp;2&amp;1&amp;\end{pmatrix}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mi></mi><mo>)</mo></mrow></semantics></math></span> Since the Matrix has full rank (<span class="math-container" id="9866853" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>), you can solve the equation if you allow two unknown parameters. The solutions you will obtain can be written in the form <span class="math-container" id="9866854" visual_id="9152206"><math alttext="Ax=0\Leftrightarrow x=\alpha v_{1}+\beta v_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo>⇔</mo><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><msub><mi>v</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><msub><mi>v</mi><mn>2</mn></msub></mrow></mrow></mrow></mrow></semantics></math></span> Where <span class="math-container" id="9866855" visual_id="5418"><math alttext="\alpha,\beta\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>α</mi><mo>,</mo><mi>β</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>. The basis you seek is <span class="math-container" id="9866856" visual_id="44305"><math alttext="\{v_{1},v_{2}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo stretchy="false">}</mo></mrow></semantics></math></span>. To extend it to a basis of <span class="math-container" id="9866857" visual_id="2210"><math alttext="\mathbb{R}^{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mn>4</mn></msup></semantics></math></span>, chose two vectors <span class="math-container" id="9866858" visual_id="1252185"><math alttext="v_{3},v_{4}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>3</mn></msub><mo>,</mo><msub><mi>v</mi><mn>4</mn></msub></mrow></semantics></math></span> such that <span class="math-container" id="9866859" visual_id="196938"><math alttext="\{v_{1},v_{2},v_{3},v_{4}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>,</mo><msub><mi>v</mi><mn>3</mn></msub><mo>,</mo><msub><mi>v</mi><mn>4</mn></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> is linearliy independent.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

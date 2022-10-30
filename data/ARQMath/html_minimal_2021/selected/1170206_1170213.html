@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Question regarding the square root of a squared number.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Question regarding the square root of a squared number. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1170206">
+<p>I've learnt that the square root of a number squared is equal to the absolute value of that number, but I haven't really understood why. I have looked through other questions on MSE but didn't really find a good answer.</p> <p>As an example: for me there are two ways to arrive at a solution for <span class="math-container" id="10980950" visual_id="1455128"><math alttext="\sqrt{(-5)^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></msqrt></semantics></math></span></p> <p>First: <span class="math-container" id="10980951" visual_id="2382554"><math alttext="\sqrt{(-5)^{2}}=" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></msqrt><mo>=</mo><mi></mi></mrow></semantics></math></span> <span class="math-container" id="10980952" visual_id="937996"><math alttext="\sqrt{25}=5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>25</mn></msqrt><mo>=</mo><mn>5</mn></mrow></semantics></math></span></p> <p>Second: <span class="math-container" id="10980953" visual_id="2382554"><math alttext="\sqrt{(-5)^{2}}=" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></msqrt><mo>=</mo><mi></mi></mrow></semantics></math></span> <span class="math-container" id="10980954" visual_id="2382555"><math alttext="\ (-5)^{\frac{2}{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo lspace="7.5pt" stretchy="false">(</mo><mrow><mo>-</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>2</mn><mn>2</mn></mfrac></msup></semantics></math></span><span class="math-container" id="10980955" visual_id="2382556"><math alttext="\ =(-5)^{1}=-5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo lspace="7.5pt">=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow><mn>1</mn></msup><mo>=</mo><mrow><mo>-</mo><mn>5</mn></mrow></mrow></semantics></math></span></p> <p>but according to the <span class="math-container" id="10980956" visual_id="20938"><math alttext="\sqrt{x^{2}}=|x|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msup><mi>x</mi><mn>2</mn></msup></msqrt><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span>  rule 5 is the only solution. What is the flaw in my logic in getting -5 as a solution. I would really appreciate a comprehensive explanation that clears this up. Thanks in advance.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> exponentiation </span><span> absolute-value </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2384716"> It boils down to the fact that although the square function $ \text{sq} $ maps $ \mathbb{R} \to [0,\infty) $, the square-root function $ \sqrt{\cdot} $ maps $ [0,\infty) $ to $ [0,\infty) $, not back to $ \mathbb{R} $, assuming that you choose only non-negative square roots so that $ \sqrt{\cdot} $ does not become multi-valued. </td></tr><tr><td comment_id="2384717"> If you regard <span class="math-container" id="10980964" visual_id="15567"><math alttext="\sqrt{\,\,}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi></mi></msqrt></semantics></math></span> as a function then it can only give one value.  So even if <span class="math-container" id="10980965" visual_id="928158"><math alttext="x^{2}=25" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>25</mn></mrow></semantics></math></span> may have two solutions, <span class="math-container" id="10980966" visual_id="2382558"><math alttext="x=\sqrt{25}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msqrt><mn>25</mn></msqrt></mrow></semantics></math></span> can only have one. </td></tr><tr><td comment_id="2384722"> Possible duplicate of: [Significance of <span class="math-container" id="10980967" visual_id="400496"><math alttext="\sqrt[n]{a^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><msup><mi>a</mi><mi>n</mi></msup><mi>n</mi></mroot></semantics></math></span>](http://math.stackexchange.com/questions/13094/significance-of-displaystyle-sqrtnan). Also [Proving square root of a square is the same as absolute value](http://math.stackexchange.com/questions/258876/proving-square-root-of-a-square-is-the-same-as-absolute-value) </td></tr><tr><td comment_id="2384734"> You may also find this article useful: [Absolute Value](http://eaton.math.rpi.edu/coursematerials/fall08/mk1500/AppdxE.pdf) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1170213" id="answer">
+<p>We define <span class="math-container" id="10980968" visual_id="210481"><math alttext="\sqrt{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi>k</mi></msqrt></semantics></math></span> to be the <em>positive</em> square root of <span class="math-container" id="10980969" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>. This means that taking square roots is a valid function on the positive reals - if we allowed it to have multiple values, then it wouldn't be a function. </p> <p>This is different to the solutions of the <em>equation</em> <span class="math-container" id="10980970" visual_id="1210782"><math alttext="x^{2}=k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mi>k</mi></mrow></semantics></math></span>. Here we are looking for all real numbers whose square is <span class="math-container" id="10980971" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, so we must also consider the negative square root. </p> <p>In you second case, the flaw in the argument is that you are implicitly taking the square root of a negative number - you are saying that <span class="math-container" id="10980972" visual_id="2382559"><math alttext="\sqrt{(-5)^{2}}=\sqrt{-5}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></msqrt><mo>=</mo><msup><msqrt><mrow><mo>-</mo><mn>5</mn></mrow></msqrt><mn>2</mn></msup></mrow></semantics></math></span>which gets messy, as taking the square root of a negative number, even if we allow complex numbers, requires a choice of root, and the rules of indices don't apply in the complex case in the same way they do in the real case. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2384726"> k i got what u mean. thnx </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="13094"> Significance of <span class="math-container" id="122631" visual_id="400496"><math alttext="\sqrt[n]{a^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><msup><mi>a</mi><mi>n</mi></msup><mi>n</mi></mroot></semantics></math></span>?! </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="258876"> Proving square root of a square is the same as absolute value </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

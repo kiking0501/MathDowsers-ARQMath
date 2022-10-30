@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Arithmetic sequence where every term is prime?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Arithmetic sequence where every term is prime? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2741007">
+<p>I conjecture that there does not exist an arithmetic sequence where every number is prime. Put another way, the set <span class="math-container" id="25293204" visual_id="2920609"><math alttext="S_{a,b}=\{a+\delta b\ |\delta\in\mathbb{N}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mpadded width="+5pt"><mi>b</mi></mpadded></mrow></mrow><mo stretchy="false">|</mo><mrow><mi>δ</mi><mo>∈</mo><mi>ℕ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span> Where <span class="math-container" id="25293205" visual_id="170847"><math alttext="a,b\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span></p> <p>contains <em>some</em> composite number. </p> <p>I have no idea how to approach such a question. Googling let me to theorems about densities of primes in arithmetic sequences (Green-Tao and the like), but nothing that answers this elementary question.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> elementary-number-theory </span><span> prime-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5655974"> What happens if <span class="math-container" id="25293215" visual_id="2920610"><math alttext="\delta=a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mi>a</mi></mrow></semantics></math></span>? </td></tr><tr><td comment_id="5656022"> @quasi That takes care of <span class="math-container" id="25293223" visual_id="8088"><math alttext="a≠1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi mathvariant="normal">≠</mi><mo>⁢</mo><mn>1</mn></mrow></semantics></math></span> but if <span class="math-container" id="25293234" visual_id="279"><math alttext="a=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> it's not always sufficient. Fortunately it's not hard to see that <span class="math-container" id="25293209" visual_id="2920611"><math alttext="b\delta+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>δ</mi></mrow><mo>+</mo><mn>1</mn></mrow></semantics></math></span> contains arbitrarily large multiples of <span class="math-container" id="25293228" visual_id="111745"><math alttext="b+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="5656152"> If <span class="math-container" id="25293211" visual_id="170847"><math alttext="a,b\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> and <span class="math-container" id="25293212" visual_id="24677"><math alttext="\gcd(a,b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> then there are infinitely many <span class="math-container" id="25293213" visual_id="38962"><math alttext="d\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> such that <span class="math-container" id="25293214" visual_id="2920612"><math alttext="a+bd" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>d</mi></mrow></mrow></semantics></math></span> is prime. This is called Dirichlet's Theorem. It is not easy or elementary. </td></tr><tr><td comment_id="5668034"> Would 3-5-7 or 7-37-67 be a case? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2741092" id="answer">
+<p>This is for your information:</p> <p>There is an arithmetic progression which has ten prime terms and its first term is 199 and common difference is 210:</p> <p><span class="math-container" id="25293251" visual_id="2920623"><math alttext="199,409,829,1039,1249,1459,1669,1879,2089" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>199</mn><mo>,</mo><mn>409</mn><mo>,</mo><mn>829</mn><mo>,</mo><mn>1039</mn><mo>,</mo><mn>1249</mn><mo>,</mo><mn>1459</mn><mo>,</mo><mn>1669</mn><mo>,</mo><mn>1879</mn><mo>,</mo><mn>2089</mn></mrow></semantics></math></span></p> <p>Also due to Sierpinski theorem the longest Arithmetic progression with prime numbers has 13 terms, first number is <span class="math-container" id="25293252" visual_id="2920624"><math alttext="4943" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4943</mn></semantics></math></span> and the common difference  is <span class="math-container" id="25293253" visual_id="2920625"><math alttext="60060" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>60060</mn></semantics></math></span>.</p> <p>There is also a theorem that claims there is infinitely many Arithmetic progressions with 13 numbers and common difference  <span class="math-container" id="25293254" visual_id="1163201"><math alttext="30030" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>30030</mn></semantics></math></span> with all numbers prime, but there has not been found even one yet! </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5656234"> &gt; "Also due to Sierpinski theorem the longest Arithmetic progression with prime numbers has 13 terms"  But doesn't the Green-Tao theorem tell us that we can get arbitrarily long arithmetic progressions consisting entirely of prime numbers? </td></tr><tr><td comment_id="5659914"> There is an arithmetric progression of length 26 known: https://en.wikipedia.org/wiki/Primes_in_arithmetic_progression#Largest_known_primes_in_AP </td></tr><tr><td comment_id="5659918"> And 14933623 + 30030·n is prime for 13 terms (n=0..12). http://primerecords.dk/aprecords.htm#minimal </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1452702"> Writing proof (disproof) prime number formula </td></tr><tr><td post_id="1702267"> For every positive integer <span class="math-container" id="15726925" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, <span class="math-container" id="15726926" visual_id="7402228"><math alttext="n^{2}+n+19" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi><mo>+</mo><mn>19</mn></mrow></semantics></math></span> is prime </td></tr><tr><td post_id="1922009"> Prove that there is no polynomial <span class="math-container" id="17818629" visual_id="4051491"><math alttext="P(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+\ldots+a_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="2788721"> How to determine numbers in the form (6n+1) that are NOT prime? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

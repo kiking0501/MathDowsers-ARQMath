@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Counterexample(?) of the theorem An Orthonormal basis of a vector space X is a Hamel basis if and only if X is finite dimensional.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Counterexample(?) of the theorem An Orthonormal basis of a vector space X is a Hamel basis if and only if X is finite dimensional. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2812676">
+<p>I found somewhere the following theorem. </p> <p><em>An Orthonormal basis of a vector space X is a Hamel basis if and only if X is finite dimensional.</em> </p> <p>For Hilbert spaces it is quite easy to prove but for pre-Hilbert spaces I'm not really sure that this is true.</p> <p>As a counterexample, the basis <span class="math-container" id="25965339" visual_id="12975"><math alttext="(e_{i})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>e</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> where each sequence <span class="math-container" id="25965340" visual_id="2839"><math alttext="e_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>e</mi><mi>i</mi></msub></semantics></math></span> is defined as <span class="math-container" id="25965341" visual_id="7505755"><math alttext="e_{i}^{(k)}=\delta_{ki}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>e</mi><mi>i</mi><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>=</mo><msub><mi>δ</mi><mrow><mi>k</mi><mo>⁢</mo><mi>i</mi></mrow></msub></mrow></semantics></math></span> is an orthonormal-Hamel basis in <span class="math-container" id="25965342" visual_id="95519"><math alttext="c_{00}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mn>00</mn></msub></semantics></math></span> with the inner product <span class="math-container" id="25965343" visual_id="25494"><math alttext="||\cdot||_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mo stretchy="false">|</mo><mo>⋅</mo><mo stretchy="false">|</mo><msub><mo stretchy="false">|</mo><mn>2</mn></msub></mrow></semantics></math></span>, but the space <span class="math-container" id="25965344" visual_id="95519"><math alttext="c_{00}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mn>00</mn></msub></semantics></math></span> is not finite dimensional.</p> <p>Where am I wrong? I know in some books they define Orthonormal basis in Hilbert spaces, but in my definition they can also exist in pre-Hilbert spaces. Is that the problem?</p> <p>Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> functional-analysis </span><span> hilbert-spaces </span><span> inner-product-space </span><span> orthonormal </span><span> hamel-basis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5799605"> Yes, one needs completeness for the conclusion. In every Hilbert space <span class="math-container" id="25965346" visual_id="1116"><math alttext="H" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi></semantics></math></span>, the subspace spanned by an ONB is one where the ONB is also a Hamel basis. But that subspace is closed if and only if <span class="math-container" id="25965346" visual_id="1116"><math alttext="H" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi></semantics></math></span> is finite-dimensional. </td></tr><tr><td comment_id="5799608"> Assuming <span class="math-container" id="25965347" visual_id="95519"><math alttext="c_{00}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mn>00</mn></msub></semantics></math></span> is the space of sequences that are eventually zero you're not wrong, this is all correct. If you really read that theorem stated for _vector spaces_ <span class="math-container" id="25965348" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> then now you know you can't believe everything you read. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2812709" id="answer">
+<p>If <span class="math-container" id="25965349" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is infinite dimensional, then it possesses an orthonormal basis <span class="math-container" id="25965350" visual_id="4122"><math alttext="\mathscr{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathscript">ℬ</mi></semantics></math></span>, which is clearly infinite dimensional (Zorn's Lemma is required to prove it). </p> <p>We shall show that <span class="math-container" id="25965351" visual_id="4122"><math alttext="\mathscr{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathscript">ℬ</mi></semantics></math></span> is NOT a Hamel basis.</p> <p>Let <span class="math-container" id="25965352" visual_id="7505756"><math alttext="\{e_{n}\}_{n\in\mathbb{N}}\subset\mathscr{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo stretchy="false">{</mo><msub><mi>e</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub><mo>⊂</mo><mi class="ltx_font_mathscript">ℬ</mi></mrow></semantics></math></span> be an orthonormal sequence and  <span class="math-container" id="25965353" visual_id="7505757"><math alttext="w=\sum_{k=1}^{\infty}2^{-k}e_{k}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>w</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mn>2</mn><mrow><mo>-</mo><mi>k</mi></mrow></msup><mo>⁢</mo><msub><mi>e</mi><mi>k</mi></msub></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> It can be readily shown that the <span class="math-container" id="25965354" visual_id="60"><math alttext="w" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi></semantics></math></span> is perpendicular (and hence linearly independent) to  the elements of <span class="math-container" id="25965355" visual_id="7505758"><math alttext="\mathscr{B}\!\smallsetminus\!\{e_{n}\}_{n\in\mathbb{N}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded width="-1.7pt"><mi class="ltx_font_mathscript">ℬ</mi><mo rspace="0.8pt">∖</mo><msub><mrow><mo stretchy="false">{</mo><msub><mi>e</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub></mpadded></mrow></semantics></math></span> and linearly independent with the elements of <span class="math-container" id="25965356" visual_id="44095"><math alttext="\{e_{n}\}_{n\in\mathbb{N}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">{</mo><msub><mi>e</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub></semantics></math></span>.</p> <p>In the same way one can construct <span class="math-container" id="25965357" visual_id="18817"><math alttext="2^{\aleph_{0}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><msub><mi mathvariant="normal">ℵ</mi><mn>0</mn></msub></msup></semantics></math></span> such elements. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Correlated Brownian motion and Poisson process</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Correlated Brownian motion and Poisson process </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="25519">
+<p>Is there an easy way to construct, on the same filtered probability space, a Brownian motion <span class="math-container" id="255903" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> and a Poisson process <span class="math-container" id="255904" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span>, such that <span class="math-container" id="255905" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> and <span class="math-container" id="255906" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> are not independent ?  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> stochastic-processes </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="25612" id="answer">
+<p>Consider the following.  Let <span class="math-container" id="255907" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> be a Brownian motion, and <span class="math-container" id="255908" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> an independent Poisson process with rate <span class="math-container" id="255909" visual_id="664"><math alttext="\lambda" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi></semantics></math></span>. Let <span class="math-container" id="255910" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> satisfy <span class="math-container" id="255911" visual_id="8296612"><math alttext="e^{-\lambda t}=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>. Define <span class="math-container" id="255912" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> as follows. If <span class="math-container" id="255913" visual_id="2727707"><math alttext="N_{t}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, then <span class="math-container" id="255914" visual_id="8296613"><math alttext="W={\rm sgn}(Y_{1})Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mrow><mi>sgn</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>Y</mi></mrow></mrow></semantics></math></span>; if <span class="math-container" id="255915" visual_id="2727706"><math alttext="N_{t}&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>, then <span class="math-container" id="255916" visual_id="8296614"><math alttext="W=-{\rm sgn}(Y_{1})Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mrow><mo>-</mo><mrow><mi>sgn</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>Y</mi></mrow></mrow></mrow></semantics></math></span>.</p> <p>Anyone is welcome to give opinion on this suggestion.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="55101"> Thanks for the suggestion. I might be missing something but I don't think this works. Let <span class="math-container" id="255928" visual_id="10374"><math alttext="{\cal F}_{t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>t</mi></msub></semantics></math></span> be the filtration generated by <span class="math-container" id="255939" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> and <span class="math-container" id="255938" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span>.    First I assume that <span class="math-container" id="255933" visual_id="72883"><math alttext="Y_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Y</mi><mn>1</mn></msub></semantics></math></span> should be <span class="math-container" id="255921" visual_id="10343"><math alttext="Y_{t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Y</mi><mi>t</mi></msub></semantics></math></span> in your formula (if not, for instance for <span class="math-container" id="255922" visual_id="443219"><math alttext="t&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span>, <span class="math-container" id="255923" visual_id="8296615"><math alttext="sgn(W_{1})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>W</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is <span class="math-container" id="255928" visual_id="10374"><math alttext="{\cal F}_{t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>t</mi></msub></semantics></math></span>-measurable).    So you have <span class="math-container" id="255925" visual_id="8296616"><math alttext="W_{t}&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>t</mi></msub><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> iff <span class="math-container" id="255926" visual_id="2727707"><math alttext="N_{t}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. But if <span class="math-container" id="255939" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> is a <span class="math-container" id="255928" visual_id="10374"><math alttext="{\cal F}_{t}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>t</mi></msub></semantics></math></span>-Poisson, for s<t, <span="" class="math-container" id="255929" visual_id="8296617"><math alttext="\mathbb{P}[N_{t}=O|{\cal F}_{s}]=e^{\lambda(t-s)}1_{\left\{N_{s}=0\right\}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℙ</mi><mrow><mo stretchy="false">[</mo><msub><mi>N</mi><mi>t</mi></msub><mo>=</mo><mi>O</mi><mo stretchy="false">|</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>s</mi></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><msup><mi>e</mi><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>-</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><msub><mn>1</mn><mrow><mo>{</mo><msub><mi>N</mi><mi>s</mi></msub><mo>=</mo><mn>0</mn><mo>}</mo></mrow></msub></mrow></semantics></math>. And if <span class="math-container" id="255938" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> is a BM for the same filtration, <span class="math-container" id="255931" visual_id="8296618"><math alttext="\mathbb{P}[W_{t}&gt;O|{\cal F}_{s}]=\Phi(-W_{s}/\sqrt{t-s})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℙ</mi><mrow><mo stretchy="false">[</mo><msub><mi>W</mi><mi>t</mi></msub><mo>&gt;</mo><mi>O</mi><mo stretchy="false">|</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mi>s</mi></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><mi mathvariant="normal">Φ</mi><mrow><mo stretchy="false">(</mo><mo>-</mo><msub><mi>W</mi><mi>s</mi></msub><mo>/</mo><msqrt><mrow><mi>t</mi><mo>-</mo><mi>s</mi></mrow></msqrt><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. Clearly these can't be equal a.s. ? </t,></td></tr><tr><td comment_id="55113"> @user7406: <span class="math-container" id="255933" visual_id="72883"><math alttext="Y_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Y</mi><mn>1</mn></msub></semantics></math></span> should be <span class="math-container" id="255933" visual_id="72883"><math alttext="Y_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Y</mi><mn>1</mn></msub></semantics></math></span>... However, I have ignored the "filtered" part. It's just an example where <span class="math-container" id="255938" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> and <span class="math-container" id="255939" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> are not independent. I can give further details if you wish. </td></tr><tr><td comment_id="55292"> I understand your answer. Indeed your construction is nice if you just want nonindependent <span class="math-container" id="255938" visual_id="304"><math alttext="W" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi></semantics></math></span> and <span class="math-container" id="255939" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span>, but I was more interested in the case where the filtration is the same for both, unfortunately I have no idea how to proceed. </td></tr><tr><td comment_id="55308"> @user7406: I suggest posting your question at http://mathoverflow.net/ </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1101153"> Martingale property of Brownian motion with resprect to a different filtration </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

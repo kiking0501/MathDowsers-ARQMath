@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Probability that the second-best player finishes second in a single-elimination tournament, given that better players always defeat weaker players?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Probability that the second-best player finishes second in a single-elimination tournament, given that better players always defeat weaker players? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="941209">
+<p>A chess tournament (single-elimination format) has 16 players. Suppose that no two players have the same strength, and that each player always defeats the players weaker than himself/herself (i.e. no draws). The loser of the final round becomes the runner-up. What is the chance that the second-best player turns out to be the runner-up? What if there are <span class="math-container" id="9060926" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> players?</p> <p>I'm not sure how to approach this. Would it be correct to think that the the probability is <span class="math-container" id="9060927" visual_id="6376243"><math alttext="\frac{14}{15}\times\frac{6}{7}\times\frac{2}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>14</mn><mn>15</mn></mfrac><mo>×</mo><mfrac><mn>6</mn><mn>7</mn></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math></span>, since at each round, there is only one person who can cause the player not to advance, and the number of players in each round is halved?</p> <p>How then, would I approach the follow-up question, where I am supposed to answer this in the general case?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> combinatorics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1940343"> Looks good to me. Observe that the product simplifies to <span class="math-container" id="9060928" visual_id="412353"><math alttext="8/15" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>/</mo><mn>15</mn></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="941211" id="answer">
+<p>The second best player will always lose when they play the best player. They will come second if they reach the final. They will reach the final if they don't meet the best player prior. Therefore they will come second if they are in the opposite half of the draw to the best player.</p> <p>If they are seeded then <span class="math-container" id="9060929" visual_id="1898"><math alttext="p=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.</p> <p>If they are assigned randomly then <span class="math-container" id="9060930" visual_id="6376244"><math alttext="p=\frac{8}{15}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mfrac><mn>8</mn><mn>15</mn></mfrac></mrow></semantics></math></span>, or for the general case of <span class="math-container" id="9060931" visual_id="3953"><math alttext="2n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></semantics></math></span>, <span class="math-container" id="9060932" visual_id="6376245"><math alttext="p=\frac{n}{2n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mfrac><mi>n</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1940317"> I understand your answer, but I'm having trouble understanding why my reasoning for the probability is incorrect... Isn't it true that for the round of <span class="math-container" id="9060933" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> players, the probability of the second-best player advancing <span class="math-container" id="9060934" visual_id="1125379"><math alttext="\frac{n-2}{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac></semantics></math></span>? And by multiplying this probability for successive rounds, I was under the impression that it would give me an answer... </td></tr><tr><td comment_id="1940336"> Hmm. In a field of sixteen players wouldn't the probability of the best player to be on the other side of the bracket be <span class="math-container" id="9060937" visual_id="412353"><math alttext="8/15" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>/</mo><mn>15</mn></mrow></semantics></math></span> as opposed to <span class="math-container" id="9060936" visual_id="519"><math alttext="1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></semantics></math></span>? You place the second best player in some random slot. Then there will be 7 open slots on the same half and 8 on the opposite half for the best player to be put on. Thus <span class="math-container" id="9060937" visual_id="412353"><math alttext="8/15" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>/</mo><mn>15</mn></mrow></semantics></math></span> ways of placing the best work out well for our runner-up. BTW, this is what the OP's calculation simplifies to. Generalization to <span class="math-container" id="9060938" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> players is immediate. </td></tr><tr><td comment_id="1940339"> Please note that <span class="math-container" id="9060939" visual_id="50742"><math alttext="p=0.5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0.5</mn></mrow></semantics></math></span> is wrong for the second case. If the strongest player is on one side of the draw, the probability for the second best to be on the other side is <span class="math-container" id="9060940" visual_id="6376246"><math alttext="8/15=0.5333..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>8</mn><mo>/</mo><mn>15</mn></mrow><mo>=</mo><mrow><mn>0.5333</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span> because one possibility has been taken by the best player. Hence, OP's calculation is correct (but overly complex, I agree). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>surface Areas using cylindrical shells</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> surface Areas using cylindrical shells </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="205983">
+<p>If I try to find the surface area of any solid by using cylindrical slices, I'm getting wrong answer. I'm taking this as the formula,</p> <p><span class="math-container" id="2358364" visual_id="5168007"><math alttext="S=\int_{a}^{b}2\pi ydx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>where <span class="math-container" id="2358365" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> = height (<span class="math-container" id="2358366" visual_id="1181417"><math alttext="2\pi y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>y</mi></mrow></semantics></math></span> = circumference of the cylinder) <span class="math-container" id="2358367" visual_id="12245"><math alttext="dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></semantics></math></span> = width. We can approximate the surface area using cylindrical shells right? If we can approximate volume, we can also approximate surface area right? This is my argument... Please help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="206033" id="answer">
+<p>Actually, approximating surface area by cylindrical shells doesn't work, for the same reason that <span class="math-container" id="2358368" visual_id="1160607"><math alttext="\pi\neq 4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>≠</mo><mn>4</mn></mrow></semantics></math></span> in this thread <a href="http://www.physicsforums.com/showthread.php?t=452917" rel="nofollow">http://www.physicsforums.com/showthread.php?t=452917</a></p> <p>Cylindrical shells do not give the correct "small" surface element because they are all "almost" parallel to the axis of revolution.</p> <p>The correct formula for <span class="math-container" id="2358369" visual_id="2468"><math alttext="y=f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, <span class="math-container" id="2358370" visual_id="48670"><math alttext="a\leq x\leq b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>b</mi></mrow></semantics></math></span> to find the surface area of the surface formed by revolving <span class="math-container" id="2358371" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> around the <span class="math-container" id="2358372" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>-axis is <span class="math-container" id="2358373" visual_id="5168008"><math alttext="S=2\pi\int_{a}^{b}f(x)\sqrt{1+(f^{\prime}(x))^{2}}dx." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>S</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>More information on this topic can be found at <a href="http://en.wikipedia.org/wiki/Surface_of_revolution" rel="nofollow">http://en.wikipedia.org/wiki/Surface_of_revolution</a> or by googling "surface area by revolution".</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="468426"> <span class="math-container" id="2358374" visual_id="1160607"><math alttext="\pi\neq 4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>≠</mo><mn>4</mn></mrow></semantics></math></span> is here at http://math.stackexchange.com/questions/12906/is-value-of-pi-4/12907#12907 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="12906"> The staircase paradox, or why <span class="math-container" id="120826" visual_id="1160607"><math alttext="\pi\neq 4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>≠</mo><mn>4</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="696268"> Why does the same limit work in one case but fail in another? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

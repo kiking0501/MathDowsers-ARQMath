@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Determine the Set of a Sum of Numbers</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Determine the Set of a Sum of Numbers </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="69961">
+<p>I want to determine the set of natural numbers that can be expressed as the sum of some non-negative number of 3s and 5s.</p> <p><span class="math-container" id="780973" visual_id="8793029"><math alttext="S=\{3k+5j∣k,j∈\mathbb{N}∪\{0\}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mrow><mn>5</mn><mo>⁢</mo><mi>j</mi><mo>⁢</mo><mi mathvariant="normal">∣</mi><mo>⁢</mo><mi>k</mi></mrow></mrow><mo>,</mo><mrow><mi>j</mi><mo>⁢</mo><mi mathvariant="normal">∈</mi><mo>⁢</mo><mi>ℕ</mi><mo>⁢</mo><mi mathvariant="normal">∪</mi><mo>⁢</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span></p> <p>I want to check whether that would be: 0,3, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, and so on.</p> <p>Meaning that it would include 0, 3, 5, 8. Then from 9 and on, every Natural Number. But how would I explain it as a set? or prove that these are the numbers in the set?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="165740"> This is a case of the Frobenius coin problem, discussed at http://en.wikipedia.org/wiki/Coin_problem </td></tr><tr><td comment_id="165749"> I forgot to mention that 6 can be made too., so 0, 3, 5, 6, then from 9 and beyond. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="69966" id="answer">
+<p>By inspection, you can see how to represent 0, 3, 5, and 8. Now, given any integer <span class="math-container" id="781120" visual_id="155788"><math alttext="n\geq 9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>9</mn></mrow></semantics></math></span>, classify <span class="math-container" id="781121" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> into one of the following cases.</p> <p>Case <span class="math-container" id="781122" visual_id="206851"><math alttext="n\equiv 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≡</mo><mn>0</mn></mrow></semantics></math></span> (mod 3): In this case, <span class="math-container" id="781123" visual_id="46679"><math alttext="n=3k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></semantics></math></span> for some <span class="math-container" id="781124" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, so there is nothing to show (it is already a certain multiple of 3).</p> <p>Case <span class="math-container" id="781125" visual_id="117474"><math alttext="n\equiv 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≡</mo><mn>1</mn></mrow></semantics></math></span> (mod 3): In this case, <span class="math-container" id="781126" visual_id="312922"><math alttext="n=3k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> for some <span class="math-container" id="781127" visual_id="42605"><math alttext="k\geq 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>3</mn></mrow></semantics></math></span> (since <span class="math-container" id="781128" visual_id="155788"><math alttext="n\geq 9" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>9</mn></mrow></semantics></math></span>). We can write <span class="math-container" id="781129" visual_id="8793052"><math alttext="n=3(k-3)+5\cdot 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>-</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mn>5</mn><mo>⋅</mo><mn>2</mn></mrow></mrow></mrow></semantics></math></span>.</p> <p>Case <span class="math-container" id="781130" visual_id="397248"><math alttext="n\equiv 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≡</mo><mn>2</mn></mrow></semantics></math></span> (mod 3): In this case, <span class="math-container" id="781131" visual_id="46680"><math alttext="n=3k+2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>2</mn></mrow></mrow></semantics></math></span>, for some <span class="math-container" id="781132" visual_id="42605"><math alttext="k\geq 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>3</mn></mrow></semantics></math></span>. We can write <span class="math-container" id="781133" visual_id="8793053"><math alttext="n=3(k-1)+5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>5</mn></mrow></mrow></semantics></math></span>.</p> <p>So, not only do all those numbers belong to the set, but there is an easy way to figure out how they are represented.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="481240"> Idea of the Proof : Existence of a &amp; b so that (Any integer greater than 8) = 3a + 5b </td></tr><tr><td post_id="505930"> Every <span class="math-container" id="5298010" visual_id="2863374"><math alttext="n&gt;17" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>17</mn></mrow></semantics></math></span> is a non-negative integer combination of <span class="math-container" id="5298011" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> and <span class="math-container" id="5298012" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span>. </td></tr><tr><td post_id="668151"> How can we make any integer m&gt;11 using 3's and 5's only?? </td></tr><tr><td post_id="1531819"> Prove that ∀ n ∈ {n | n ∈ ℕ ∧ n &gt; 7}: n = x*3 + y*5 </td></tr><tr><td post_id="2528942"> prove that for <span class="math-container" id="23387126" visual_id="23444"><math alttext="n\geq 8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>8</mn></mrow></semantics></math></span> exist <span class="math-container" id="23387127" visual_id="1382279"><math alttext="p,q\epsilon\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mrow><mi>q</mi><mo>⁢</mo><mi>ϵ</mi><mo>⁢</mo><mi>ℕ</mi></mrow></mrow></semantics></math></span> so that <span class="math-container" id="23387128" visual_id="1382280"><math alttext="n=5p+3q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>p</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>q</mi></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="72630"> Strong Induction: Every natural number <span class="math-container" id="814737" visual_id="23444"><math alttext="n\geq 8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>8</mn></mrow></semantics></math></span> can be represented as <span class="math-container" id="814738" visual_id="8802237"><math alttext="n=3k+5\ell" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mrow><mn>5</mn><mo>⁢</mo><mi mathvariant="normal">ℓ</mi></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="79978"> Linear combination of natural numbers with positive coefficients </td></tr><tr><td post_id="91538"> Prove <span class="math-container" id="1043416" visual_id="88869"><math alttext="2^{1/3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></semantics></math></span> is irrational. </td></tr><tr><td post_id="164164"> What are the subsemigroups of <span class="math-container" id="1909289" visual_id="6739087"><math alttext="(\mathbb{N},+)\qvar@construct{$}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>ℕ</mi><mo>,</mo><mo>+</mo><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></semantics></math></span> </td></tr><tr><td post_id="210389"> hint request: counting the elements in a subset of a numerical semigroup </td></tr><tr><td post_id="251837"> A fun little problem </td></tr><tr><td post_id="898661"> Help in this characterization of the gaps of the symmetric numerical semigroups </td></tr><tr><td post_id="1313318"> Conjecture about linear diophantine equations </td></tr><tr><td post_id="1477906"> Prove that a group of size <span class="math-container" id="13677816" visual_id="3801621"><math alttext="\geq 18" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>≥</mo><mn>18</mn></mrow></semantics></math></span> people can be assembled from groups of 4 and 7 </td></tr><tr><td post_id="1674876"> Alternative derivation of the second Frobenius number </td></tr><tr><td post_id="1708342"> 7 Cents and 11 cents Stamps Mathematical Induction </td></tr><tr><td post_id="1924798"> The Postage Stamp Problem Using Money and seeing if possible without change </td></tr><tr><td post_id="1939518"> How many distinct terms are there in <span class="math-container" id="17979883" visual_id="5002326"><math alttext="(1+x^{13}+x^{7})^{100}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>13</mn></msup><mo>+</mo><msup><mi>x</mi><mn>7</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mn>100</mn></msup></semantics></math></span>? </td></tr><tr><td post_id="2445618"> Group of order 21 acting on a set </td></tr><tr><td post_id="2527496"> Divisible by multiple numbers induction </td></tr><tr><td post_id="2560551"> Buying items in a nation with only two types of dollar bills? </td></tr><tr><td post_id="2599628"> <span class="math-container" id="24040108" visual_id="72919"><math alttext="ax+by" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></semantics></math></span> when a,b are relatively prime and <span class="math-container" id="24040109" visual_id="10754"><math alttext="x,y\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="2882840"> Prove that every natural number <span class="math-container" id="26661964" visual_id="871369"><math alttext="n&gt;15" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>15</mn></mrow></semantics></math></span> there exist natural numbers <span class="math-container" id="26661965" visual_id="9347829"><math alttext="x,y\geqslant 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>⩾</mo><mn>1</mn></mrow></semantics></math></span> which solve the equation. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

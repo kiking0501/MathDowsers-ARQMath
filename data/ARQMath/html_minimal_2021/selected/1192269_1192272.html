@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is ⌊0.9 recurring ⌋?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is ⌊0.9 recurring ⌋? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1192269">
+<p>For a ceiling and floor function, the number is taken to 0 decimal places. Does this process mean that 0.9 recurring inside a floor function would go to 0? Or would the mathematician take 0.9 recurring to be equal to 1, thus making the answer 1?</p> <p>And if 0.9 recurring does equal 1, does that mean (by definition) that ⌊1⌋ = 0?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> floor-function </span><span> ceiling-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2427378"> <span class="math-container" id="11172981" visual_id="837649"><math alttext="0.\overline{9}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>.</mo><mover accent="true"><mn>9</mn><mo>¯</mo></mover></mrow></semantics></math></span> is equal to one, so the floor of it is also equal to one. </td></tr><tr><td comment_id="2427738"> The definition of the floor function is not "truncate all digits after the decimal point". Indeed, as you've just shown, such a function is not even well-defined - it depends on the particular decimal representation you choose. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1192272" id="answer">
+<p><span class="math-container" id="11172982" visual_id="2152815"><math alttext="\lim_{n\to\infty}\left\lfloor\sum_{k=1}^{n}\frac{9}{10^{k}}\right\rfloor=0\\ \left\lfloor\lim_{n\to\infty}\sum_{k=1}^{n}\frac{9}{10^{k}}\right\rfloor=1\\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>⌊</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mn>9</mn><msup><mn>10</mn><mi>k</mi></msup></mfrac></mrow><mo>⌋</mo></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mrow><mo>⌊</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mn>9</mn><msup><mn>10</mn><mi>k</mi></msup></mfrac></mrow></mrow><mo>⌋</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2427385"> Thank you!, It makes much more sense now you put it like that. </td></tr><tr><td comment_id="2427389"> @user3344560: I'm glad to be of help. </td></tr><tr><td comment_id="2427578"> In other words, the floor function is (left-)discontinuous at 1, which hopefully surprises nobody :-) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="104530"> How do we prove that <span class="math-container" id="1202476" visual_id="8500592"><math alttext="\lfloor 0.999\cdots\rfloor=\lfloor 1\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">⌊</mo><mrow><mn>0.999</mn><mo>⁢</mo><mi mathvariant="normal">⋯</mi></mrow><mo stretchy="false">⌋</mo></mrow><mo>=</mo><mrow><mo stretchy="false">⌊</mo><mn>1</mn><mo stretchy="false">⌋</mo></mrow></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Are there an infinite number of primes a constant distance away from multiples of any given number?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Are there an infinite number of primes a constant distance away from multiples of any given number? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2874477">
+<p>Say we have two distinct integers <span class="math-container" id="26580037" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="26580038" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> such that <span class="math-container" id="26580039" visual_id="24677"><math alttext="\operatorname{gcd}(a,b)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="26580040" visual_id="3897"><math alttext="a&lt;b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow></semantics></math></span>. </p> <p>Are there an infinite number of primes of the form <span class="math-container" id="26580041" visual_id="382885"><math alttext="a+bm" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>m</mi></mrow></mrow></semantics></math></span>, where <span class="math-container" id="26580042" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> is a positive integer? Is this only true for some numbers <span class="math-container" id="26580043" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="26580044" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>? </p> <p>The question title says "a set distance away from a multiple" of <span class="math-container" id="26580045" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> because the numbers in this sequence are exactly a distance b-a below their corresponding multiple of b, b(m). </p> <p>Edit: All primes must be of the form a+b(m), as if a+b is prime, then gcd(a,b)=1. But are there an infinite number of primes for only certain values of a and b? </p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5933360"> https://en.wikipedia.org/wiki/Dirichlet%27s_theorem_on_arithmetic_progressions </td></tr><tr><td comment_id="5933396"> @GTonyJacobs:  Please make that an answer, just a sentence or two describing the result and adding the link, so we have an answer. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2874513" id="answer">
+<p>There is a theorem by Dirichlet which states exactly what you say. So there are infinitely many prime numbers with last digit 1 (or last digit 3, or 7 or 9). In fact he proves much more. Among all  <span class="math-container" id="26580046" visual_id="353063"><math alttext="\phi(b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> arithmetic progressions  with common difference <span class="math-container" id="26580047" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>, the primes are equally distributed.</p> <p>He proved this in 1837 bringing analysis for the first time into Number theory (quoting Tom Apostol).  This is called Dirichlet's Theorem on Arithmetic Progressions. Instead of calling it an arithmetic progression let us rephrase it as below:  the polynomial functions <span class="math-container" id="26580048" visual_id="58980"><math alttext="a+bx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span>, with integer coefficients  <span class="math-container" id="26580049" visual_id="249"><math alttext="a,b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></semantics></math></span> that are coprime, evaluates to primes for infinitely many integer values of <span class="math-container" id="26580050" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>.</p> <p>This polynomial is linear. Next ask the question about quadratic. For example, does the polynomial <span class="math-container" id="26580051" visual_id="8946"><math alttext="x^{2}+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></semantics></math></span> take prime values infinitely often. This seems to be unknown (Artin's conjecture).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5933904"> Almost nothing is  known about the quadratic cases. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

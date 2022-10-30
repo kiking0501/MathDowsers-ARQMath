@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to derive compositions of trigonometric and inverse trigonometric functions?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to derive compositions of trigonometric and inverse trigonometric functions? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="426399">
+<p>To prove:</p> <p><span class="math-container" id="4494209" visual_id="8039270"><math alttext="\displaystyle\sin({\arccos{x}})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arccos</mi><mo>⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> trigonometry </span><span> inverse </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="911302"> Draw  right angled Triangles </td></tr><tr><td comment_id="911360"> I got speak my mind about the above tip: to me it's worthless. Drawings might be helpful to help one think, but I don't count them  as proof and neither do the people who mark exams. </td></tr><tr><td comment_id="911541"> @GitGud: Why shouldn't drawings count as proof? As long as you remember that the proof only works for angles smaller than <span class="math-container" id="4494210" visual_id="58"><math alttext="90^{\circ}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>90</mn><mo>∘</mo></msup></semantics></math></span>, they're perfectly good arguments. </td></tr><tr><td comment_id="911547"> @JavierBadia I draw the line for what counts as a proof way before drawings are reached. Nothing but a formal proof is an actual proof so any given person will be satified with what he/she will be satisfied with. Drawigns mean nothing to me and I'm sure you've encountered multiple examples where drawings are misleading. Furthermore, they often don't count as proof for people marking exams and anyone who asks this question is at a level that he should be worried about how to deal with the details. Finally, personally, I hate visual mathematics. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="426435" id="answer">
+<p>I agree with the comment about right angled triangles. For example, by definition, <span class="math-container" id="4494233" visual_id="115629"><math alttext="\arccos(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>arccos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is the angle <span class="math-container" id="4494234" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> in a right triangle with hypotenuse <span class="math-container" id="4494235" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> occurring adjacent to a leg of length <span class="math-container" id="4494236" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, and by the Pythagorean theorem and the definition of sine, the sine of such an angle is <span class="math-container" id="4494237" visual_id="5688505"><math alttext="\sqrt{1-x^{2}}/1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>/</mo><mn>1</mn></mrow></semantics></math></span> (draw the picture). The others can be shown similarly.</p> <p>I think this is perfectly rigorous (and can be extended by symmetry or differentiation arguments to the whole domain of the arccosine function) -- it's just a matter of what you take as the starting definition of the trig functions.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="911392"> @coutinghaus The problem is that geometric definitions are untreatable. You gotta go from the plane, to the plane with the axis, define angle, define triangle, etc..., then extend the functions by periodicity. I don't really know how  to do it, maybe I'm wrong, but it seems very problematic to me. </td></tr><tr><td comment_id="2457880"> I believe that the proof by user29743 is the best one. Using this method one can derive several identities involving trig and inverse trig functions which may be useful for integration for example. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1088054"> Simplifying composition of trigonometric functions </td></tr><tr><td post_id="1180750"> Clear working of <span class="math-container" id="11075044" visual_id="2118459"><math alttext="\sin(\arccos(-\frac{1}{3}))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arccos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="548984"> How to calculate simple trigonometric problem </td></tr><tr><td post_id="561294"> Proving that a <span class="math-container" id="5786778" visual_id="1666096"><math alttext="f:\mathbb{R}\to(-1,1);x\mapsto\frac{x}{\sqrt{1+x^{2}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mi>ℝ</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mrow><mi>x</mi><mo>↦</mo><mfrac><mi>x</mi><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow></mrow></mrow></semantics></math></span> is bijective </td></tr><tr><td post_id="579005"> Integration by trig substitution - Why can I draw a right triangle and use that to go back to the original variable? </td></tr><tr><td post_id="801968"> Solving an equation with <span class="math-container" id="7872354" visual_id="115629"><math alttext="\arccos(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>arccos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="7872355" visual_id="881857"><math alttext="\sin(\arccos(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arccos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="808708"> Use the identity <span class="math-container" id="7930159" visual_id="83698"><math alttext="\cos^{2}x+\sin^{2}x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mi>x</mi></mrow><mo>+</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mi>x</mi></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> to show that <span class="math-container" id="7930160" visual_id="675417"><math alttext="\cos(\arcsin x)=\sqrt{1-x^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arcsin</mi><mo>⁡</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow></semantics></math></span> </td></tr><tr><td post_id="930017"> <span class="math-container" id="8968790" visual_id="3338945"><math alttext="\tan\left(\sec^{-1}(x)\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><msup><mi>sec</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="970505"> When simplifying <span class="math-container" id="9293113" visual_id="50635"><math alttext="\sin(\arctan(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>arctan</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, why is negative <span class="math-container" id="9293114" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> not considered? </td></tr><tr><td post_id="1147489"> How to prove this following trigonometric equation? </td></tr><tr><td post_id="1180989"> A Trigonometric Identity And Restrictions on Domains </td></tr><tr><td post_id="1581611"> Prove that <span class="math-container" id="14610073" visual_id="5278251"><math alttext="\sin(2\sin^{-1}(\alpha))=2\alpha\sqrt{-\alpha^{2}+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>α</mi><mo>⁢</mo><msqrt><mrow><mrow><mo>-</mo><msup><mi>α</mi><mn>2</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow></msqrt></mrow></mrow></semantics></math></span>. </td></tr><tr><td post_id="2367735"> Explain why the graph of <span class="math-container" id="21895865" visual_id="3212471"><math alttext="y=\frac{4x}{x^{2}+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span> and <span class="math-container" id="21895866" visual_id="3212472"><math alttext="y=2\sin(2\arctan x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>arctan</mi><mo>⁡</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> are the same. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

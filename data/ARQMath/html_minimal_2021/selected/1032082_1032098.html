@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Are (Z/21Z)* and (Z/13Z)* isomorphic? Find an isomorphism between these two group if they are.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Are (Z/21Z)* and (Z/13Z)* isomorphic? Find an isomorphism between these two group if they are. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1032082">
+<p>Are <span class="math-container" id="9797226" visual_id="9130658"><math alttext="(Z/21Z)^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>Z</mi><mo>/</mo><mn>21</mn></mrow><mo>⁢</mo><mi>Z</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></semantics></math></span> and <span class="math-container" id="9797227" visual_id="8838440"><math alttext="(Z/13Z)^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>Z</mi><mo>/</mo><mn>13</mn></mrow><mo>⁢</mo><mi>Z</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></semantics></math></span> isomorphic? Find an isomorphism between these two group if they are.</p> <p><span class="math-container" id="9797228" visual_id="9130658"><math alttext="(Z/21Z)^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>Z</mi><mo>/</mo><mn>21</mn></mrow><mo>⁢</mo><mi>Z</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></semantics></math></span> and <span class="math-container" id="9797229" visual_id="8838440"><math alttext="(Z/13Z)^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>Z</mi><mo>/</mo><mn>13</mn></mrow><mo>⁢</mo><mi>Z</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></semantics></math></span> are the multiplicative integer modulo group.</p> <p>I have tried constructing the function but I just can't find one. Based on the order of the element, I know 2,11,4,1,8,16 must map to 4,10,3,1,12,9 but I can't find a bijection for the rest.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2103448"> You should try finding a generator for each group. <span class="math-container" id="9797230" visual_id="147883"><math alttext="\mathbb{Z}/13\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>13</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></semantics></math></span> is cyclic, so if they're isomorphic, then <span class="math-container" id="9797231" visual_id="357011"><math alttext="\mathbb{Z}/21\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>21</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></semantics></math></span> should be cyclic too. </td></tr><tr><td comment_id="2103450"> so they are not isomorphic? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1032098" id="answer">
+<p>The <a href="http://en.wikipedia.org/wiki/Multiplicative_group_of_integers_modulo_n#Structure" rel="nofollow">structure of <span class="math-container" id="9797232" visual_id="27818"><math alttext="\mathbb{Z}/n\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>/</mo><mi>n</mi></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></semantics></math></span></a> is: <span class="math-container" id="9797233" visual_id="9130659"><math alttext="(\mathbb{Z}/13\mathbb{Z})^{*}\approx\mathbb{Z}/\phi(13)\mathbb{Z}=\mathbb{Z}/1% 2\mathbb{Z}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>13</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>≈</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mi>ϕ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>13</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo>=</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>12</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></mrow><mo>,</mo></mrow></semantics></math></span> <span class="math-container" id="9797234" visual_id="9130660"><math alttext="(\mathbb{Z}/21\mathbb{Z})^{*}\approx(\mathbb{Z}/7\mathbb{Z})^{*}\times(\mathbb% {Z}/3\mathbb{Z})^{*}\approx(\mathbb{Z}/6\mathbb{Z})\times(\mathbb{Z}/2\mathbb{% Z})." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>21</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>≈</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>7</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>3</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></mrow><mo>≈</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>6</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>×</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> They are isomorphic?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2103471"> How can i tell? </td></tr><tr><td comment_id="2103472"> after finding the order of all the elements, I realise that z/21 does not have element of order 12 so non of them generate the group so it means that it is not cyclic so it is no isomorphic to z13 but i am wondering how can i tell without painstakingly finding the order of all the elements. I am not quite sure how your example tell me directly. On top of that i thought there is a theorem that says two finite abelian group are isomorphic if they have the same number of elements. aren't these two group finite abelian? </td></tr><tr><td comment_id="2103477"> @user136266, your "theorem" is false: <span class="math-container" id="9797235" visual_id="9130661"><math alttext="C_{4}\not\approx C_{2}\times C_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>4</mn></msub><mo>≉</mo><mrow><msub><mi>C</mi><mn>2</mn></msub><mo>×</mo><msub><mi>C</mi><mn>2</mn></msub></mrow></mrow></semantics></math></span>. The order of the elements of <span class="math-container" id="9797236" visual_id="1928576"><math alttext="C_{6}\times C_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>6</mn></msub><mo>×</mo><msub><mi>C</mi><mn>2</mn></msub></mrow></semantics></math></span> is obviously <span class="math-container" id="9797237" visual_id="512643"><math alttext="\leq 6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>≤</mo><mn>6</mn></mrow></semantics></math></span>. Why? </td></tr><tr><td comment_id="2103480"> else the element will not belong to <span class="math-container" id="9797238" visual_id="9130662"><math alttext="C_{6}\times 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>6</mn></msub><mo>×</mo><mn>1</mn></mrow></semantics></math></span> or <span class="math-container" id="9797239" visual_id="3696319"><math alttext="1\times C_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>×</mo><msub><mi>C</mi><mn>2</mn></msub></mrow></semantics></math></span>? how do you get the isomorphism in the first place? Is there any theorems on this. I have not encountered this before. </td></tr><tr><td comment_id="2103485"> actually i don't quite know why it cannot be &gt;6 </td></tr><tr><td comment_id="2103490"> @user136266, take <span class="math-container" id="9797240" visual_id="9130663"><math alttext="(a,b)\in C_{6}\times C_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mrow><msub><mi>C</mi><mn>6</mn></msub><mo>×</mo><msub><mi>C</mi><mn>2</mn></msub></mrow></mrow></semantics></math></span>. What is <span class="math-container" id="9797241" visual_id="9130664"><math alttext="(a,b)+(a,b)+(a,b)+(a,b)+(a,b)+(a,b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>? An see http://en.wikipedia.org/wiki/Finitely-generated_abelian_group. </td></tr><tr><td comment_id="2103498"> <span class="math-container" id="9797242" visual_id="9130665"><math alttext="(a^{6},(b^{2})^{3})=(1,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mn>6</mn></msup><mo>,</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>b</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> so if <span class="math-container" id="9797243" visual_id="9130666"><math alttext="x\in C_{6}\times C_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><msub><mi>C</mi><mn>6</mn></msub><mo>×</mo><msub><mi>C</mi><mn>2</mn></msub></mrow></mrow></semantics></math></span>, it can have at most order 6. Is there a generalisation of this fact? Is it true that the product of cyclic groups can have at most order of the lcm of the order of the group? I think it is true </td></tr><tr><td comment_id="2103506"> @user136266, order of *elements* isn't the same that order of the *group*. </td></tr><tr><td comment_id="2103509"> but it is true for cyclic group isn't it? </td></tr><tr><td comment_id="2103510"> @user136266, order of identity? </td></tr><tr><td comment_id="2103518"> ok then what should be the correct generalisation? the element of a product of cyclic groups can have at most order of the lcm of the order of each of the cyclic groups? </td></tr><tr><td comment_id="2103523"> @user136266, right. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

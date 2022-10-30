@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving $\gcd(a,p_1p_2)>1$ $\Rightarrow$ $p_1\mid a$ xor $p_2\mid a$ using Euclid's Lemma</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving <span class="math-container" id="7630879" visual_id="4576984"><math alttext="\gcd(a,p_{1}p_{2})&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span> <span class="math-container" id="7630880" visual_id="6076"><math alttext="\Rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇒</mo></semantics></math></span> <span class="math-container" id="7630881" visual_id="1356296"><math alttext="p_{1}\mid a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>a</mi></mrow></semantics></math></span> xor <span class="math-container" id="7630882" visual_id="1095366"><math alttext="p_{2}\mid a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>2</mn></msub><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>a</mi></mrow></semantics></math></span> using Euclid's Lemma </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="772985">
+<p>Consider the lemma: If <span class="math-container" id="7630883" visual_id="4576985"><math alttext="\gcd(a,p_{1}p_{2})&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>, then either <span class="math-container" id="7630884" visual_id="1356296"><math alttext="p_{1}\mid a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>a</mi></mrow></semantics></math></span> or <span class="math-container" id="7630885" visual_id="1095366"><math alttext="p_{2}\mid a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>2</mn></msub><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>a</mi></mrow></semantics></math></span>.</p> <p>How can this be proved using Euclid's Lemma?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> proof-writing </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="773007" id="answer">
+<p><strong>Hint</strong> <span class="math-container" id="7630886"> </span> By Euclid, if <span class="math-container" id="7630887" visual_id="4576986"><math alttext="\,\gcd(a,p_{1})=1=\gcd(a,p_{2})\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><msub><mi>p</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mpadded></mrow><mo>=</mo><mn>1</mn><mo>=</mo><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><msub><mi>p</mi><mn>2</mn></msub><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> then <span class="math-container" id="7630888" visual_id="4576987"><math alttext="\,\gcd(a,p_{1}p_{2})=1,\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mpadded></mrow><mo>=</mo><mn>1</mn></mrow><mo rspace="4.2pt">,</mo></mrow></semantics></math></span> contra hypothesis. Hence at least one of the gcds is <span class="math-container" id="7630889" visual_id="569641"><math alttext="&gt;1,\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi></mi><mo>&gt;</mo><mn>1</mn></mrow><mo rspace="4.2pt">,</mo></mrow></semantics></math></span> so <span class="math-container" id="7630890" visual_id="9356803"><math alttext="\,p_{1}\mid a\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mn>1</mn></mpadded></msub><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mpadded width="+1.7pt"><mi>a</mi></mpadded></mrow></semantics></math></span> or <span class="math-container" id="7630891" visual_id="9351136"><math alttext="\ p_{2}\mid a\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mpadded lspace="5pt" width="+5pt"><mi>p</mi><mn>2</mn></mpadded></msub><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mpadded width="+1.7pt"><mi>a</mi></mpadded></mrow></semantics></math></span> (note <span class="math-container" id="7630892" visual_id="4576988"><math alttext="\,\gcd(a,p_{i})=p_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><msub><mi>p</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mpadded></mrow><mo>=</mo><msub><mi>p</mi><mi>i</mi></msub></mrow></semantics></math></span> or <span class="math-container" id="7630893" visual_id="15441"><math alttext="\,1,\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn> 1</mn><mo rspace="4.2pt">,</mo></mrow></semantics></math></span> by <span class="math-container" id="7630894" visual_id="88829"><math alttext="\,p_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mi>i</mi></mpadded></msub></semantics></math></span> prime).</p> <p>Or, using the form of Euclid's Lemma that prime <span class="math-container" id="7630895" visual_id="176149"><math alttext="\,p\mid ab\,\Rightarrow\,p\mid a\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><mi>a</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>b</mi></mpadded></mrow></mpadded></mrow><mo rspace="4.2pt">⇒</mo><mrow><mi>p</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mpadded width="+1.7pt"><mi>a</mi></mpadded></mrow></mrow></semantics></math></span> or <span class="math-container" id="7630896" visual_id="478665"><math alttext="\,p\mid b,\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>b</mi></mpadded></mrow><mo rspace="4.2pt">,</mo></mrow></semantics></math></span> let <span class="math-container" id="7630897" visual_id="4576989"><math alttext="\,d=\gcd(a,p_{1}p_{2})\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>d</mi><mo>=</mo><mrow><mi>gcd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow></mpadded></mrow></semantics></math></span> By <span class="math-container" id="7630898" visual_id="8191"><math alttext="\,d&gt;1\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>d</mi><mo>&gt;</mo><mpadded width="+1.7pt"><mn>1</mn></mpadded></mpadded></mrow></semantics></math></span> it has a prime factor <span class="math-container" id="7630899" visual_id="74"><math alttext="\,p\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="1.7pt" width="+3.4pt"><mi>p</mi></mpadded></semantics></math></span> and <span class="math-container" id="7630900" visual_id="4576990"><math alttext="\,p\mid d\mid p_{1}p_{2}\Rightarrow\,p\mid p_{1}p_{2}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mo>⁢</mo><mrow><mo>∣</mo><mi>d</mi><mo>∣</mo></mrow><mo>⁢</mo><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub></mpadded></mrow><mo rspace="4.2pt">⇒</mo><mrow><mi>p</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><mpadded width="+1.7pt"><msub><mi>p</mi><mn>2</mn></msub></mpadded></mrow></mrow></mrow></semantics></math></span>  hence <span class="math-container" id="7630901" visual_id="3867143"><math alttext="\,p\mid p_{1}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mpadded width="+1.7pt"><msub><mi>p</mi><mn>1</mn></msub></mpadded></mpadded></mrow></semantics></math></span> or <span class="math-container" id="7630902" visual_id="4576991"><math alttext="\,p\mid p_{2}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mpadded width="+1.7pt"><msub><mi>p</mi><mn>2</mn></msub></mpadded></mpadded></mrow></semantics></math></span> by Euclid. If <span class="math-container" id="7630903" visual_id="3867143"><math alttext="\,p\mid p_{1}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mpadded width="+1.7pt"><msub><mi>p</mi><mn>1</mn></msub></mpadded></mpadded></mrow></semantics></math></span> then <span class="math-container" id="7630904" visual_id="911886"><math alttext="\,p=p_{1}\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mo>=</mo><mpadded width="+1.7pt"><msub><mi>p</mi><mn>1</mn></msub></mpadded></mpadded></mrow></semantics></math></span> so <span class="math-container" id="7630905" visual_id="4576992"><math alttext="\,p_{1}\mid d\mid\,a\,\Rightarrow\,p_{1}\mid a.\," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mn>1</mn></mpadded></msub><mo>⁢</mo><mrow><mo>∣</mo><mi>d</mi><mo rspace="4.2pt">∣</mo></mrow><mo>⁢</mo><mpadded width="+1.7pt"><mi>a</mi></mpadded></mrow><mo rspace="4.2pt">⇒</mo><mrow><msub><mi>p</mi><mn>1</mn></msub><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>a</mi></mrow></mrow><mo rspace="4.2pt">.</mo></mrow></semantics></math></span> Similarly <span class="math-container" id="7630906" visual_id="4576993"><math alttext="\,p\mid p_{2}\,\Rightarrow\,p_{2}\mid a." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>p</mi><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mpadded width="+1.7pt"><msub><mi>p</mi><mn>2</mn></msub></mpadded></mpadded></mrow><mo rspace="4.2pt">⇒</mo><mrow><msub><mi>p</mi><mn>2</mn></msub><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>a</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1604571"> I learned 'If p|ab, then p|a or p|b' as EL and following as equivalent statements: 'If p  ∤ a and p ∤ b, then p  ∤ ab' and 'If p ∤ a and p | ab, then p | b'. I assume, in your proof you used an equivalent statement to 'If p  ∤ a and p  ∤ b, then p  ∤ ab'? </td></tr><tr><td comment_id="1604611"> @user38931 I added a second proof using that form of EL. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

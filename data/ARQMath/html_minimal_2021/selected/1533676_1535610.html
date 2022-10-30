@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Sum up a function series $f(1/9)+f(2/9)+\dots+f(26/9)$ for $f(x)=\frac{9^{x}}{9^{x}+27}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Sum up a function series <span class="math-container" id="14173584" visual_id="6912207"><math alttext="f(1/9)+f(2/9)+\dots+f(26/9)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>9</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>/</mo><mn>9</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>26</mn><mo>/</mo><mn>9</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> for <span class="math-container" id="14173585" visual_id="6912208"><math alttext="f(x)=\frac{9^{x}}{9^{x}+27}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><msup><mn>9</mn><mi>x</mi></msup><mrow><msup><mn>9</mn><mi>x</mi></msup><mo>+</mo><mn>27</mn></mrow></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1533676">
+<p>Given <span class="math-container" id="14173586" visual_id="6912208"><math alttext="f(x)=\dfrac{9^{x}}{9^{x}+27}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><msup><mn>9</mn><mi>x</mi></msup><mrow><msup><mn>9</mn><mi>x</mi></msup><mo>+</mo><mn>27</mn></mrow></mfrac></mrow></semantics></math></span>. Find: <span class="math-container" id="14173587" visual_id="6912209"><math alttext="S=f\left(\frac{1}{9}\right)+f\left(\frac{2}{9}\right)+\dotsb+f\left(\frac{26}{% 9}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mn>9</mn></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>2</mn><mn>9</mn></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>26</mn><mn>9</mn></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span> Teacher did not allow us to use calculator...Use sigma notation???</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebra-precalculus </span><span> functions </span><span> summation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3123261"> I edited the LaTeX for you. You forgot the dollar signs. </td></tr><tr><td comment_id="3123264"> Just a guess, but I think that <span class="math-container" id="14173588" visual_id="6912210"><math alttext="f(x)+f(3-x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> simplifies to something simple. </td></tr><tr><td comment_id="3124828"> @AkivaWeinberger you should post that as an answer :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1535610" id="answer">
+<p>Observe that <span class="math-container" id="14173589" visual_id="6912211"><math alttext="f(x)=\frac{1}{1+\frac{27}{9^{x}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mfrac><mn>27</mn><msup><mn>9</mn><mi>x</mi></msup></mfrac></mrow></mfrac></mrow></semantics></math></span> and <span class="math-container" id="14173590" visual_id="6912212"><math alttext="f(3-x)=\frac{1}{1+\frac{9^{x}}{27}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mfrac><msup><mn>9</mn><mi>x</mi></msup><mn>27</mn></mfrac></mrow></mfrac></mrow></semantics></math></span>. Adding these two expressions gives <span class="math-container" id="14173591" visual_id="6912213"><math alttext="f(x)+f(3-x)=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. (It may be easier to see this by making a substitute such as <span class="math-container" id="14173592" visual_id="6912214"><math alttext="a=\frac{27}{9^{x}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mn>27</mn><msup><mn>9</mn><mi>x</mi></msup></mfrac></mrow></semantics></math></span> and <span class="math-container" id="14173593" visual_id="6912215"><math alttext="a^{-1}=\frac{9^{x}}{27}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mfrac><msup><mn>9</mn><mi>x</mi></msup><mn>27</mn></mfrac></mrow></semantics></math></span>). Therefore, <span class="math-container" id="14173594" visual_id="6912216"><math alttext="S=f\left(\frac{1}{9}\right)+f\left(\frac{2}{9}\right)+\dotsb+f\left(\frac{26}{% 9}\right)=13." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>S</mi><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mn>9</mn></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>2</mn><mn>9</mn></mfrac><mo>)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>26</mn><mn>9</mn></mfrac><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mn>13</mn></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

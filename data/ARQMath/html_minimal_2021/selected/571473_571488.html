@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Solving the diophantine equation $y^{2}=x^{3}-2$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Solving the diophantine equation <span class="math-container" id="5876868" visual_id="339924"><math alttext="y^{2}=x^{3}-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><mn>2</mn></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="571473">
+<p>It is known that the diophantine equation <span class="math-container" id="5876869" visual_id="339924"><math alttext="y^{2}=x^{3}-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><mn>2</mn></mrow></mrow></semantics></math></span> has only one positive integer solution <span class="math-container" id="5876870" visual_id="1697433"><math alttext="(x,y)=(3,5)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. The proof of it can be read from the book "About Indeterminate Equation" (in Chinese, by Ke Zhao and Sun Qi). But the method I have known of solving this problem is algebraic number theory.</p> <p>My question: </p> <blockquote> <p>Does there exists an elementary method for solving the diophantine equation <span class="math-container" id="5876871" visual_id="339924"><math alttext="y^{2}=x^{3}-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><mn>2</mn></mrow></mrow></semantics></math></span>?</p> </blockquote> <p>I have gotten an elementary method by the assumption that "<span class="math-container" id="5876872" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>" is a prime. That is, we can get a conclusion from the equation that <span class="math-container" id="5876873" visual_id="682625"><math alttext="3\mid x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mi>x</mi></mrow></semantics></math></span>. Since <span class="math-container" id="5876874" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is a prime we get the only solution <span class="math-container" id="5876875" visual_id="1697433"><math alttext="(x,y)=(3,5)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. But if <span class="math-container" id="5876876" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is not a prime, the answer seems to be difficult.</p> <p>Thank you for your help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> algebraic-number-theory </span><span> diophantine-equations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1209478"> Interesting question, there must be an elementary argument. A ;ong time ago, I sort of found one, but by cheating heavily, and (almost) translating the <span class="math-container" id="5876877" visual_id="35308"><math alttext="\mathbb{Z}[\sqrt{-2}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msqrt><mrow><mo>-</mo><mn>2</mn></mrow></msqrt><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span> argument into one that only mentioned ordinary integers. </td></tr><tr><td comment_id="3245548"> See page <span class="math-container" id="5876878" visual_id="3739"><math alttext="7" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>7</mn></semantics></math></span> of http://www.math.uconn.edu/~kconrad/blurbs/gradnumthy/mordelleqn1.pdf </td></tr><tr><td comment_id="3245693"> I had the same question many years ago and tried to find a solution because somewhere was mentioned that it is possible to solve this with ''Fermatian methods'' Check for more details here http://mathoverflow.net/questions/142220/fermats-proof-for-x3-y2-2 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="571488" id="answer">
+<p>This is a <a href="http://en.wikipedia.org/wiki/Mordell_curve" rel="nofollow">Mordell curve</a>, with <span class="math-container" id="5876892" visual_id="44903"><math alttext="n=-2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mo>-</mo><mn>2</mn></mrow></mrow></semantics></math></span>.  From this fact alone you know that there are finitely many integer solutions.</p> <p>There is a table of data for various <span class="math-container" id="5876893" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>; <a href="http://tnt.math.se.tmu.ac.jp/simath/MORDELL/MORDELL-" rel="nofollow">here</a> you have the information, that you already know, that there is only one solution in positive integers.  I don't know of any elementary way of proving this fact.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3245700"> "*Does there exists an elementary method for solving the diophantine equation...*"? Does this answer provide any clue in this vein? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="652143"> Finding integer cubes that are <span class="math-container" id="6589197" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> greater than a square, <span class="math-container" id="6589198" visual_id="285540"><math alttext="x^{3}=y^{2}+2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>=</mo><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1169765"> By considering z[sqrt[-2]] show that x^2+2=y^3 only has two integer solutions </td></tr><tr><td post_id="1593631"> Integer solutions to <span class="math-container" id="14727148" visual_id="3494291"><math alttext="y^{2}+2=x^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1034875"> Solve <span class="math-container" id="9823312" visual_id="9138546"><math alttext="3^{a}-5^{b}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mn>3</mn><mi>a</mi></msup><mo>-</mo><msup><mn>5</mn><mi>b</mi></msup></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span> for integers a and b. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

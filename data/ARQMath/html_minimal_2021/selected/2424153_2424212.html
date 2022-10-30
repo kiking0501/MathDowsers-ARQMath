@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Expected value of the product of functions of two dependent random variables</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Expected value of the product of functions of two dependent random variables </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2424153">
+<p>We have two independent normally distributed random variables <span class="math-container" id="22450817" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and <span class="math-container" id="22450818" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span>.</p> <p><span class="math-container" id="22450819" visual_id="98781"><math alttext="X\sim N(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>∼</mo><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, but somehow <span class="math-container" id="22450820" visual_id="4702847"><math alttext="Y\sim N(X,2|X|)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>∼</mo><mrow><mi>N</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>X</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, that is, the mean and variance of <span class="math-container" id="22450821" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> depend on <span class="math-container" id="22450822" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>. (or more generally, they can be functions of <span class="math-container" id="22450823" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span>)</p> <p>We have <span class="math-container" id="22450824" visual_id="128609"><math alttext="E(XY)=E({X})E({Y})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, becasue <span class="math-container" id="22450825" visual_id="2320523"><math alttext="Cov(X,Y)=E(XY)-E({X})E({Y})=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>Can we still split up the following expression like this? (or any nonlinear transformations)</p> <p><span class="math-container" id="22450826" visual_id="4702848"><math alttext="E(e^{X}e^{Y})=E(e^{X})E(e^{Y})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>X</mi></msup><mo>⁢</mo><msup><mi>e</mi><mi>Y</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mi>X</mi></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mi>Y</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p>Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span><span> probability-theory </span><span> statistics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2424212" id="answer">
+<p>You say "somehow" but in fact what you're saying is perfectly fine. What you've saying is that <span class="math-container" id="22450827" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span>'s distribution <em>conditional on <span class="math-container" id="22450828" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span></em> is normal with parameters depending on <span class="math-container" id="22450829" visual_id="38609"><math alttext="X." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>.</mo></mrow></semantics></math></span> Models of this type are common, for instance mixture models.</p> <p>As for your question, in order to have <span class="math-container" id="22450830" visual_id="4702848"><math alttext="E(e^{X}e^{Y})=E(e^{X})E(e^{Y})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>X</mi></msup><mo>⁢</mo><msup><mi>e</mi><mi>Y</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mi>X</mi></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mi>Y</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> you'd need independence (or some reason to expect that particular factorization would hold in the absence of independence, which is possible but unusual.) But here <span class="math-container" id="22450831" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and <span class="math-container" id="22450832" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> are not independent (knowing <span class="math-container" id="22450833" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> tells you a lot of probabilistic information about <span class="math-container" id="22450834" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span>) so I see no reason why it would hold.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5006779"> Thanks! What I was thinking was <span class="math-container" id="22450835" visual_id="128609"><math alttext="E(XY)=E(X)E(Y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>⁢</mo><mi>Y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, because the covariance between <span class="math-container" id="22450846" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and <span class="math-container" id="22450847" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> are zero. Just wondering what would happen if impose a nonlinear transformation. </td></tr><tr><td comment_id="5006821"> @J.Wu Independence is pretty much equivalent to <span class="math-container" id="22450838" visual_id="2510230"><math alttext="E(f(X)g(Y))=E(f(X))E(g(Y))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> for any functions <span class="math-container" id="22450839" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> and <span class="math-container" id="22450840" visual_id="26372"><math alttext="g." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>.</mo></mrow></semantics></math></span> Uncorrelated is only special case where <span class="math-container" id="22450841" visual_id="45668"><math alttext="f(x)=g(x)=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math></span> and in general won't imply it for other functions. However, I'm not sure you're right about <span class="math-container" id="22450836" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and <span class="math-container" id="22450837" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> being uncorrelated here. Since <span class="math-container" id="22450842" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is the conditional mean of <span class="math-container" id="22450843" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> aren't <span class="math-container" id="22450844" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and <span class="math-container" id="22450845" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> positively correlated? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

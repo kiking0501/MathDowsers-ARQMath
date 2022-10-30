@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove $x_n$ converges if $x_n$ is a real sequence and $s_n=\frac{x_0+x_1+\cdots+x_n}{n+1}$ converges</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove <span class="math-container" id="7297156" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> converges if <span class="math-container" id="7297157" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> is a real sequence and <span class="math-container" id="7297158" visual_id="772301"><math alttext="s_{n}=\frac{x_{0}+x_{1}+\cdots+x_{n}}{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span> converges </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="733362">
+<p>Given that <span class="math-container" id="7297159" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> is a real sequence, <span class="math-container" id="7297160" visual_id="772301"><math alttext="s_{n}=\frac{x_{0}+x_{1}+\cdots+x_{n}}{n+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math></span> and <span class="math-container" id="7297161" visual_id="433"><math alttext="s_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>n</mi></msub></semantics></math></span> converges, <span class="math-container" id="7297162" visual_id="367194"><math alttext="a_{n}=x_{n}-x_{n-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow></mrow></semantics></math></span>, <span class="math-container" id="7297163" visual_id="60385"><math alttext="na_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></semantics></math></span> converges to 0, and <span class="math-container" id="7297164" visual_id="772302"><math alttext="x_{n}-s_{n}=\frac{1}{n+1}\sum_{i=1}^{n}ia_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><msub><mi>s</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>i</mi><mo>⁢</mo><msub><mi>a</mi><mi>i</mi></msub></mrow></mrow></mrow></mrow></semantics></math></span>, prove <span class="math-container" id="7297165" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> converges, and that <span class="math-container" id="7297166" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> and <span class="math-container" id="7297167" visual_id="433"><math alttext="s_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>n</mi></msub></semantics></math></span> converge to the same limit.                     </p> <p>Since I don't know anything about the sequences increasing, decreasing, or being positive, I was thinking that I can show that <span class="math-container" id="7297168" visual_id="772303"><math alttext="\frac{1}{n+1}\sum_{i=1}^{n}ia_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>i</mi><mo>⁢</mo><msub><mi>a</mi><mi>i</mi></msub></mrow></mrow></mrow></semantics></math></span> converges, so then <span class="math-container" id="7297169" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> will be the sum of two convergent sequences and so it must converge, but I don't know how to show  <span class="math-container" id="7297170" visual_id="772303"><math alttext="\frac{1}{n+1}\sum_{i=1}^{n}ia_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>i</mi><mo>⁢</mo><msub><mi>a</mi><mi>i</mi></msub></mrow></mrow></mrow></semantics></math></span> converges, or if this is even the right way to go about this problem.</p> <p>Also since <span class="math-container" id="7297171" visual_id="433"><math alttext="s_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>n</mi></msub></semantics></math></span> converges, it is bounded so maybe I can use that fact, but I'm not sure how that could help.</p> <p>I also showed that <span class="math-container" id="7297172" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span> must converge to 0 as well using the squeeze theorem, but I don't know if that helps either.                                              </p> <p>Any hints would be great. I have been stuck on this for days.                                                 </p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span><span> convergence-divergence </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1530505"> @David Yes, thank you, I was wondering how to format it like that. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="733372" id="answer">
+<p>Since <span class="math-container" id="7297173" visual_id="271920"><math alttext="na_{n}\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo>→</mo><mn>0</mn></mrow></semantics></math></span>, Cesaro gives <span class="math-container" id="7297174" visual_id="772304"><math alttext="x_{n}-s_{n}=\frac{1}{n+1}\sum_{i=1}^{n}ia_{i}\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><msub><mi>s</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>i</mi><mo>⁢</mo><msub><mi>a</mi><mi>i</mi></msub></mrow></mrow></mrow><mo>→</mo><mn>0</mn></mrow></semantics></math></span></p> <p>Can you move on?</p> <p><em>Add</em> Recall Cesaro's theorem says that if <span class="math-container" id="7297175" visual_id="772305"><math alttext="z_{n}\to\ell" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>n</mi></msub><mo>→</mo><mi mathvariant="normal">ℓ</mi></mrow></semantics></math></span>; then the averages <span class="math-container" id="7297176" visual_id="772306"><math alttext="\overline{z_{n}}=\displaystyle\frac{1}{n+1}\sum_{k=0}^{n}z_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><msub><mi>z</mi><mi>n</mi></msub><mo>¯</mo></mover><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><msub><mi>z</mi><mi>n</mi></msub></mrow></mrow></mrow></semantics></math></span> also converge to <span class="math-container" id="7297177" visual_id="4329"><math alttext="\ell" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ℓ</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1530577"> So since we know <span class="math-container" id="7297178" visual_id="433"><math alttext="s_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>n</mi></msub></semantics></math></span> converges, we can do operations on limits. Let <span class="math-container" id="7297179" visual_id="772307"><math alttext="x_{n}=x_{n}-s_{n}+s_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><msub><mi>s</mi><mi>n</mi></msub></mrow><mo>+</mo><msub><mi>s</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>. <span class="math-container" id="7297180" visual_id="772308"><math alttext="\lim_{n\to\infty}x_{n}-s_{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>-</mo><msub><mi>s</mi><mi>n</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="7297181" visual_id="772309"><math alttext="\lim_{n\to\infty}s_{n}=l" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><msub><mi>s</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>l</mi></mrow></semantics></math></span>, so we can rewrite this as <span class="math-container" id="7297182" visual_id="772310"><math alttext="\lim_{n\to\infty}{x_{n}-s_{n}+s_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>-</mo><msub><mi>s</mi><mi>n</mi></msub></mrow><mo>+</mo><msub><mi>s</mi><mi>n</mi></msub></mrow></semantics></math></span> = <span class="math-container" id="7297183" visual_id="13638"><math alttext="\lim_{n\to\infty}x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></semantics></math></span> and therefore the limit of <span class="math-container" id="7297184" visual_id="615"><math alttext="x_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>n</mi></msub></semantics></math></span> exists. And with <span class="math-container" id="7297185" visual_id="772311"><math alttext="x_{n}-s_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><msub><mi>s</mi><mi>n</mi></msub></mrow></semantics></math></span> converging to 0 we can show their limits are equal. But could you explain a little more how you got <span class="math-container" id="7297186" visual_id="772311"><math alttext="x_{n}-s_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><msub><mi>s</mi><mi>n</mi></msub></mrow></semantics></math></span> converging to 0? @Pedro </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

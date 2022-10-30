@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Polynomial uniqueness proof</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Polynomial uniqueness proof </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="231436">
+<p>this problem is from my Gelfand's Algebra book.</p> <p>Problem 164. Prove that a polynomial of degree not exceeding 2 is defined uniquely by three of its values.</p> <p>This means that if <span class="math-container" id="2587635" visual_id="8877"><math alttext="P(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="2587636" visual_id="1323"><math alttext="Q(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> are polynomials of degree not exceeding 2 and <span class="math-container" id="2587637" visual_id="3486015"><math alttext="P(x_{1})=Q(x_{1}),P(x_{2})=Q(x_{2}),P(x_{3})=Q(x_{3})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span> for three different numbers <span class="math-container" id="2587638" visual_id="83509"><math alttext="x_{1},x_{2}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>,</mo></mrow></semantics></math></span> and <span class="math-container" id="2587639" visual_id="10019"><math alttext="x_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>3</mn></msub></semantics></math></span>, then the polynomials <span class="math-container" id="2587640" visual_id="8877"><math alttext="P(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="2587641" visual_id="1323"><math alttext="Q(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> are equal.</p> <p>I honestly don't know where to start.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebra-precalculus </span><span> polynomials </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="513912"> Hint: what are some roots of the polynomial <span class="math-container" id="2587685" visual_id="118914"><math alttext="P-Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>-</mo><mi>Q</mi></mrow></semantics></math></span>? </td></tr><tr><td comment_id="513917"> If there's <span class="math-container" id="2587643" visual_id="3486016"><math alttext="V(x)=P(x)-Q(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>, and if <span class="math-container" id="2587644" visual_id="3486015"><math alttext="P(x_{1})=Q(x_{1}),P(x_{2})=Q(x_{2}),P(x_{3})=Q(x_{3})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span>, then <span class="math-container" id="2587645" visual_id="3486017"><math alttext="V(x_{1})=V(x_{2})=V(x_{3})=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, therefore <span class="math-container" id="2587659" visual_id="14316"><math alttext="x_{1},x_{2},x_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>x</mi><mn>3</mn></msub></mrow></semantics></math></span> are the roots of <span class="math-container" id="2587648" visual_id="112295"><math alttext="V(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, but how can it be? if <span class="math-container" id="2587648" visual_id="112295"><math alttext="V(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is degree 2 polynomial. </td></tr><tr><td comment_id="513926"> The answer to the question "how can it be?" is the rest of the proof - see Hagen's answer. </td></tr><tr><td comment_id="513928"> This fails if the coefficient ring is not a domain.  e.g. the polynomials <span class="math-container" id="2587649" visual_id="113688"><math alttext="\rm\&gt;x^{2}\&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded width="+2.2pt"><msup><mpadded lspace="2.2pt" width="+2.2pt"><mi mathvariant="normal">x</mi><mn>2</mn></mpadded></msup></mpadded></semantics></math></span> and <span class="math-container" id="2587650" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> have the same values at the <span class="math-container" id="2587651" visual_id="1253"><math alttext="4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn></semantics></math></span> points <span class="math-container" id="2587652" visual_id="122824"><math alttext="\pm 1,\,\pm 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>±</mo><mn>1</mn></mrow><mo rspace="4.2pt">,</mo><mrow><mo>±</mo><mn>3</mn></mrow></mrow></semantics></math></span> over <span class="math-container" id="2587653" visual_id="1517397"><math alttext="\,\mathbb{Z}/8=" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded lspace="1.7pt" width="+1.7pt"><mi>ℤ</mi><mo>/</mo><mn>8</mn></mpadded></mrow><mo>=</mo><mi></mi></mrow></semantics></math></span> integers mod <span class="math-container" id="2587654" visual_id="103185"><math alttext="8.\&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo rspace="4.7pt">.</mo></mrow></semantics></math></span> So you need to specify the coefficient ring. </td></tr><tr><td comment_id="513961"> I suspect the precalculus tag restricts the coefficient set... </td></tr><tr><td comment_id="513973"> @copper.hat Probably, but some precalculus algebra does include modular arithmetic and polynomials, esp. nowadays with applications to CS (cryptography, etc). So the question needs clarification. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="231439" id="answer">
+<p><strong>Hint:</strong> <span class="math-container" id="2587682" visual_id="118914"><math alttext="P-Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>-</mo><mi>Q</mi></mrow></semantics></math></span> is a polynomial of degree not exceeding <span class="math-container" id="2587683" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> and has at least three roots <span class="math-container" id="2587684" visual_id="14316"><math alttext="x_{1},x_{2},x_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>x</mi><mn>3</mn></msub></mrow></semantics></math></span>. How many roots would a <em>nonzero</em> polynomial of such degree have?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="513937"> Infinitely many, in general. But perhaps you meant to consider a certain more well-behaved class of polynomials? If so, then you should make that hypothesis *explicit*. </td></tr><tr><td comment_id="513963"> Thank you Hagen for the hint, I understood that results, they contradict each other right? so does that mean that <span class="math-container" id="2587685" visual_id="118914"><math alttext="P-Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>-</mo><mi>Q</mi></mrow></semantics></math></span> is zero polynomial? Should I assume that? since polynomial of degree not exceeding 2 has 3 roots? </td></tr><tr><td comment_id="514030"> Thanks for help, I will add rep point once I reach 15 reputations. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="233004"> Simple polynomial proof </td></tr><tr><td post_id="313044"> What is the remainder when <span class="math-container" id="3389279" visual_id="6815430"><math alttext="x^{100}-8x^{99}+12x^{98}-3x^{10}+24x^{9}-36x^{8}+3x^{2}-29x+41" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mrow><mrow><mrow><mrow><msup><mi>x</mi><mn>100</mn></msup><mo>-</mo><mrow><mn>8</mn><mo>⁢</mo><msup><mi>x</mi><mn>99</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>12</mn><mo>⁢</mo><msup><mi>x</mi><mn>98</mn></msup></mrow></mrow><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>10</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>24</mn><mo>⁢</mo><msup><mi>x</mi><mn>9</mn></msup></mrow></mrow><mo>-</mo><mrow><mn>36</mn><mo>⁢</mo><msup><mi>x</mi><mn>8</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>-</mo><mrow><mn>29</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>41</mn></mrow></semantics></math></span> is divided by: <span class="math-container" id="3389280" visual_id="1649524"><math alttext="x^{2}-8x+12" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>8</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mn>12</mn></mrow></semantics></math></span>. </td></tr><tr><td post_id="2064923"> Powers of Complex Numbers Are Linearly Independent </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

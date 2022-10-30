@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How does the exponent of a function effect the result?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How does the exponent of a function effect the result? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="717882">
+<p>The <span class="math-container" id="7165077" visual_id="663442"><math alttext="x^{2/2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mrow><mn>2</mn><mo>/</mo><mn>2</mn></mrow></msup></semantics></math></span> can be represented by these ways:  <span class="math-container" id="7165078" visual_id="721695"><math alttext="\displaystyle x^{2\over 2}=\sqrt{x^{2}}=|x|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mfrac><mn>2</mn><mn>2</mn></mfrac></msup><mo>=</mo><msqrt><msup><mi>x</mi><mn>2</mn></msup></msqrt><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow></mrow></semantics></math></span> And<br/> <span class="math-container" id="7165079" visual_id="721696"><math alttext="\displaystyle x^{2\over 2}=x^{1}=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mfrac><mn>2</mn><mn>2</mn></mfrac></msup><mo>=</mo><msup><mi>x</mi><mn>1</mn></msup><mo>=</mo><mi>x</mi></mrow></semantics></math></span> Which one is correct? And what is the domain of <span class="math-container" id="7165080" visual_id="721697"><math alttext="x^{2\over 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mfrac><mn>2</mn><mn>2</mn></mfrac></msup></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebra-precalculus </span><span> exponentiation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1501597"> The second form is deceptive: the function $ \ x^{2/2} \ $ is _not_ formally the same as the function $ \ x \ . $  There is a domain issue that must be considered for the implied square-root in $ \ x^{2/2} \  , $ just as there would be for   $ \ x^{3/2} \  . $ </td></tr><tr><td comment_id="1501710"> <span class="math-container" id="7165100" visual_id="721700"><math alttext="2/2=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>/</mo><mn>2</mn></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. So <span class="math-container" id="7165086" visual_id="721697"><math alttext="x^{\frac{2}{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mfrac><mn>2</mn><mn>2</mn></mfrac></msup></semantics></math></span> and  <span class="math-container" id="7165106" visual_id="20589"><math alttext="x^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>1</mn></msup></semantics></math></span> are the same thing. </td></tr><tr><td comment_id="1501725"> See also http://math.stackexchange.com/questions/472227/ </td></tr><tr><td comment_id="1502563"> After some sleep, I withdraw some part of my comments and have now written an answer.  On further (and hopefully better) thought, I realized there is a point I have been inconsistent about.  This has also been addressed by many other posters here already. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="717973" id="answer">
+<p>The rule <span class="math-container" id="7165119" visual_id="721712"><math alttext="x^{pq}=(x^{p})^{q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><mi>p</mi><mo>⁢</mo><mi>q</mi></mrow></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>p</mi></msup><mo stretchy="false">)</mo></mrow><mi>q</mi></msup></mrow></semantics></math></span> is not always valid if <span class="math-container" id="7165120" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> or <span class="math-container" id="7165121" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> are not integers and <span class="math-container" id="7165122" visual_id="2021"><math alttext="x&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span>. As you have noticed <span class="math-container" id="7165123" visual_id="721713"><math alttext="-1=(-1)^{1}=(-1)^{\frac{2}{2}}\neq((-1)^{2})^{\frac{1}{2}}=1^{\frac{1}{2}}=1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>1</mn></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>2</mn><mn>2</mn></mfrac></msup><mo>≠</mo><msup><mrow><mo stretchy="false">(</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>=</mo><msup><mn>1</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>So, unfortunately, <span class="math-container" id="7165124" visual_id="721714"><math alttext="x^{\frac{2}{2}}\neq\sqrt{x^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mfrac><mn>2</mn><mn>2</mn></mfrac></msup><mo>≠</mo><msqrt><msup><mi>x</mi><mn>2</mn></msup></msqrt></mrow></semantics></math></span> for <span class="math-container" id="7165125" visual_id="2021"><math alttext="x&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span>. For the last question: <span class="math-container" id="7165126" visual_id="663448"><math alttext="x^{\frac{2}{2}}=x^{1}=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mfrac><mn>2</mn><mn>2</mn></mfrac></msup><mo>=</mo><msup><mi>x</mi><mn>1</mn></msup><mo>=</mo><mi>x</mi></mrow></semantics></math></span> is defined for all <span class="math-container" id="7165127" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1501694"> There is freedom to play <span class="math-container" id="7165128" visual_id="721715"><math alttext="-1=(-1)^{1}=(-1)^{\frac{2}{2}}=((-1)^{\frac{1}{2}})^{2}=(\pm i)^{2}=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>1</mn></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>2</mn><mn>2</mn></mfrac></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>±</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="472227"> math fallacy problem: <span class="math-container" id="4963900" visual_id="4360240"><math alttext="-1=(-1)^{3}=(-1)^{6/2}=\sqrt{(-1)^{6}}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>6</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>=</mo><msqrt><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>6</mn></msup></msqrt><mo>=</mo><mn>1</mn></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

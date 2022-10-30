@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <title>Shortest proof of Kuratowski's lemma</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be">
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js"> </script>
+
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+
+        <style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <div class="row" id="question-title">
+                <h1> Shortest proof of Kuratowski's lemma </h1>
+                <hr>
+            </div>
+
+
+            <div class="row">
+                <div class="question">
+
+                    <div question_id="216290"  id="question">
+                        <p>I want a short proof of <a href="http://www.proofwiki.org/wiki/Kuratowski%27s_Lemma" rel="nofollow">Kuratowski's lemma</a> (about maximal chains).</p>  <p>Does proving Kuratowski's lemma need first prove Zorn lemma?</p>  <p>I am writing a book in which I claim that the reader needs to know only basic set theory in order to understand it. For this reason I need a short proof of Kuratowski's lemma, for the readers of my book.</p> 
+                    </div>
+                    <hr>
+
+                    <div id="tags">
+                        <span> order-theory </span><span> axiom-of-choice </span>
+                    </div>
+                    <hr>
+
+                    <div id="question-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="487106"> Well, the proof using ZL seems to be straightforward, see [PlanetMath](http://planetmath.org/?op=getobj&id=11512). </td></tr><tr><td comment_id="487107"> There are elementary proofs, but they all provide little insight. The best proof is IMHO by transfinite recursion: Add elements until you cannot add elements anymore without the set not being a chain.. </td></tr><tr><td comment_id="487109"> Zorn's lemma *is* basic set theory. </td></tr><tr><td comment_id="487111"> There are easy, elementary proofs of (KL implies ZL) and (ZL implies KL). Thus, proving KL can't be significantly easier than proving ZL. </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div class="answer">
+
+
+                    <div answer_id="216310" id="answer">
+                        <p>The answer depends entirely on what you consider elementary set theory. Kuratowski’s lemma is equivalent to the axiom of choice, which is independent of the usual ZF axioms of set theory. Thus, you can’t prove it in ZF; you can either assume it as an axiom, or assume one of the other equivalents of the axiom of choice and derive it from that.</p>  <p>If you intend to assume the axiom of choice and derive Kuratowski’s lemma from that, you will need to use transfinite recursion at some point. If you take this approach, your proof will be intuitively nice, as Michael Greinecker noted in the comments, but it will be technically a bit difficult if you mean to do it very rigorously.</p>  <p>If, on the other hand, you intend to assume Zorn’s lemma as a basic axiom, you can prove Kuratowski’s lemma almost trivially, but at the cost of assuming a much less intuitively satisfying equivalent of the axiom of choice. An intermediate alternative is to take the well-ordering principle as an axiom.</p>  <p>If you’re going to want more than one of the various equivalent statements later, you might as well spend a little extra time introducing them. As I said elsewhere, brevity is not always a good thing when you’re trying to explain something.</p> 
+                    </div>
+                    <hr>
+
+
+                    <div id="answer-comments">
+                        <table>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div id="duplicate">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+
+                <div id="related">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+</html>

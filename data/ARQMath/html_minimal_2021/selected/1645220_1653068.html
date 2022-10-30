@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove $\left(1+\frac{x}{n}\right)^n < e^x$, where $x$ is any positive real number and $n$ is any positive integer.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove <span class="math-container" id="15214412" visual_id="2411483"><math alttext="\left(1+\frac{x}{n}\right)^{n}&lt;e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>x</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mi>n</mi></msup><mo>&lt;</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></semantics></math></span>, where <span class="math-container" id="15214413" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is any positive real number and <span class="math-container" id="15214414" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is any positive integer. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1645220">
+<p>I am having trouble with my homework problem, it says: </p> <blockquote> <p>Suppose that <span class="math-container" id="15214415" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is a positive integer and that <span class="math-container" id="15214416" visual_id="965"><math alttext="x&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>. Show that   <span class="math-container" id="15214417" visual_id="5471495"><math alttext="\left(1+\frac{x}{n}\right)^{n}&lt;e^{x}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>x</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mi>n</mi></msup><mo>&lt;</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><mo>.</mo></mrow></semantics></math></span> </p> </blockquote> <p>I have proved the base case, but I am unsure how to proceed with the induction step. The question continues: </p> <blockquote> <p>and, if <span class="math-container" id="15214418" visual_id="201468"><math alttext="x&lt;n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>n</mi></mrow></semantics></math></span>, then   <span class="math-container" id="15214419" visual_id="5619156"><math alttext="e^{x}&lt;\left(1-\frac{x}{n}\right)^{-n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>&lt;</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mi>x</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mrow><mo>-</mo><mi>n</mi></mrow></msup></mrow></semantics></math></span>   Also, by choosing a suitable <span class="math-container" id="15214420" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, deduce that <span class="math-container" id="15214421" visual_id="5471497"><math alttext="2.5&lt;e&lt;2.99" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.5</mn><mo>&lt;</mo><mi>e</mi><mo>&lt;</mo><mn>2.99</mn></mrow></semantics></math></span>.</p> </blockquote> <p>I would like a hint to help me along if anyone can help. Thanks! </p>
+</div>
+<hr/>
+<div id="tags">
+<span> inequality </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3355432"> Which definition of <span class="math-container" id="15214422" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span> are you allowed to use? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1653068" id="answer">
+<p><a href="https://en.wikipedia.org/wiki/Bernoulli's_inequality" rel="nofollow">Bernoulli's Inequality</a> implies that <span class="math-container" id="15214439" visual_id="159702"><math alttext="\left(1+\frac{x}{n}\right)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>x</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mi>n</mi></msup></semantics></math></span> is increasing in <span class="math-container" id="15214440" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> for <span class="math-container" id="15214441" visual_id="1212201"><math alttext="x\gt-n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror></mrow><mo>-</mo><mi>n</mi></mrow></semantics></math></span>. This implies that for <span class="math-container" id="15214442" visual_id="6148"><math alttext="x\gt 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mn>0</mn></mrow></semantics></math></span> <span class="math-container" id="15214443" visual_id="952418"><math alttext="\left(1+\frac{x}{n}\right)^{n}\leq e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>x</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mi>n</mi></msup><mo>≤</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></semantics></math></span> and for <span class="math-container" id="15214444" visual_id="5471503"><math alttext="n\gt x\gt 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mi>x</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mn>0</mn></mrow></semantics></math></span> <span class="math-container" id="15214445" visual_id="1574896"><math alttext="\left(1-\frac{x}{n}\right)^{n}\leq e^{-x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mi>x</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mi>n</mi></msup><mo>≤</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow></semantics></math></span> and so <span class="math-container" id="15214446" visual_id="5471504"><math alttext="\left(1-\frac{x}{n}\right)^{-n}\geq e^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>-</mo><mfrac><mi>x</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mrow><mo>-</mo><mi>n</mi></mrow></msup><mo>≥</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

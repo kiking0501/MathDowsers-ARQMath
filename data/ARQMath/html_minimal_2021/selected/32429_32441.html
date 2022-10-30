@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Free module implies projective module</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Free module implies projective module </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="32429">
+<p>Definiton : Let <span class="math-container" id="335595" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> be an <span class="math-container" id="335596" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>-module. Then <span class="math-container" id="335597" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> is projective if there exists an <span class="math-container" id="335598" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>-module <span class="math-container" id="335599" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> such that <span class="math-container" id="335600" visual_id="254842"><math alttext="M\oplus N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>⊕</mo><mi>N</mi></mrow></semantics></math></span> is free.</p> <p>Prop: If <span class="math-container" id="335601" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> is free then <span class="math-container" id="335602" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> is projective. </p> <p>Can we simply take the trivial module <span class="math-container" id="335603" visual_id="10217"><math alttext="\{0\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></semantics></math></span> then <span class="math-container" id="335604" visual_id="1738180"><math alttext="M\oplus\{0\}\cong M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>M</mi><mo>⊕</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><mo>≅</mo><mi>M</mi></mrow></semantics></math></span> is free, so <span class="math-container" id="335605" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> is projective?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="32441" id="answer">
+<p>The reason this seems simple is that there are many equivalent definitions of "projective module", and what you give as the definition is usually a property that is shown to be equivalent. </p> <p>For example, in most treatments I know the the definition of <em>projective module</em> is given as either:</p> <blockquote> <p>An <span class="math-container" id="335606" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>-module <span class="math-container" id="335607" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is projective if and only if for every <span class="math-container" id="335608" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>-modules <span class="math-container" id="335609" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> and <span class="math-container" id="335610" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span>, and every homomorphism <span class="math-container" id="335611" visual_id="1738181"><math alttext="f\colon P\to N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>P</mi><mo>→</mo><mi>N</mi></mrow></mrow></semantics></math></span>, if <span class="math-container" id="335612" visual_id="142708"><math alttext="\varphi\colon M\to N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo>:</mo><mrow><mi>M</mi><mo>→</mo><mi>N</mi></mrow></mrow></semantics></math></span> is an onto module homomorphism, then there exists <span class="math-container" id="335613" visual_id="402266"><math alttext="g\colon P\to M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mrow><mi>P</mi><mo>→</mo><mi>M</mi></mrow></mrow></semantics></math></span> such that <span class="math-container" id="335614" visual_id="1738182"><math alttext="\varphi=f\circ g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo>=</mo><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow></mrow></semantics></math></span>.</p> </blockquote> <p>or equivalently</p> <blockquote> <p>An <span class="math-container" id="335615" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> module <span class="math-container" id="335616" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> is projective if and only if for every <span class="math-container" id="335617" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>-module <span class="math-container" id="335618" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span>, <span class="math-container" id="335619" visual_id="1519859"><math alttext="f\colon M\to P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>M</mi><mo>→</mo><mi>P</mi></mrow></mrow></semantics></math></span> is an onto module homomorphism, then there exists a module homomorphism <span class="math-container" id="335620" visual_id="402266"><math alttext="g\colon P\to M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mrow><mi>P</mi><mo>→</mo><mi>M</mi></mrow></mrow></semantics></math></span> such that <span class="math-container" id="335621" visual_id="1738183"><math alttext="f\circ g=\mathrm{id}_{P}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><mo>=</mo><msub><mi>id</mi><mi>P</mi></msub></mrow></semantics></math></span>; in particular, every module that has <span class="math-container" id="335622" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> as a quotient can be written as a direct sum of <span class="math-container" id="335623" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> and another module, and the direct sum is compatible with the original quotient map.</p> </blockquote> <p>Under either of these definitions, the fact that free modules are projective is easy as well; one then proves that these two definitions are equivalent between them, and equivalent to the one you give. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2570882"> Is this a valid proof for why all modules over a field are projective? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

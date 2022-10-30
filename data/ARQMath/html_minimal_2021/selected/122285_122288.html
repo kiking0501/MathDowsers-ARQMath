@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>CDF integration question</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> CDF integration question </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="122285">
+<p>I am solving a problem where <span class="math-container" id="1418910" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is an exponential random variable and <span class="math-container" id="1418911" visual_id="477780"><math alttext="\lambda=\frac{1}{10}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac></mrow></semantics></math></span>. I need to find the CDF of <span class="math-container" id="1418912" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and have that <span class="math-container" id="1418913" visual_id="5676575"><math alttext="\int_{0}^{\infty}\frac{e^{\frac{-x}{10}}}{10}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mfrac><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>x</mi></mrow><mn>10</mn></mfrac></msup><mn>10</mn></mfrac></mrow></semantics></math></span> turns out to be <span class="math-container" id="1418914" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, however the answer is <span class="math-container" id="1418915" visual_id="5676576"><math alttext="1-e^{\frac{-x}{10}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>x</mi></mrow><mn>10</mn></mfrac></msup></mrow></semantics></math></span>. Where did I go wrong?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> probability-distributions </span><span> definite-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="122288" id="answer">
+<p>The cumulative distribution function, <span class="math-container" id="1418916" visual_id="96235"><math alttext="F_{X}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>X</mi></msub></semantics></math></span>,  is a <i>function</i>; its value   at the point <span class="math-container" id="1418917" visual_id="21552"><math alttext="a\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> is <span class="math-container" id="1418918" visual_id="5676577"><math alttext="F_{X}(a)=P[X\leq a]=\int_{0}^{a}{\textstyle{1\over 10}}e^{-x/10}\,dx." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>X</mi></msub><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy="false">[</mo><mi>X</mi><mo>≤</mo><mi>a</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>10</mn></mfrac></mstyle><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>/</mo><mn>10</mn></mrow></mrow></msup><mi>d</mi><mi>x</mi><mo>.</mo></mpadded></mrow></semantics></math></span> Note, also, that  <span class="math-container" id="1418919" visual_id="1492707"><math alttext="F_{X}(a)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>F</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> for <span class="math-container" id="1418920" visual_id="21554"><math alttext="a&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>Of course, use <span class="math-container" id="1418921" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> if you like for the independent variable. </p> <p>After doing the integration, you should find: <span class="math-container" id="1418922" visual_id="2019"><math alttext="x\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span></p> <p>What you found was "<span class="math-container" id="1418923" visual_id="191625"><math alttext="F(\infty)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>", which is of course 1.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="282849"> So (completing the indefinite integral) we have <span class="math-container" id="1418924" visual_id="5676578"><math alttext="\int\frac{e^{\frac{-x}{10}}}{10}=-e^{\frac{-x}{10}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo largeop="true" symmetric="true">∫</mo><mfrac><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>x</mi></mrow><mn>10</mn></mfrac></msup><mn>10</mn></mfrac></mrow><mo>=</mo><mrow><mo>-</mo><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>x</mi></mrow><mn>10</mn></mfrac></msup></mrow></mrow></semantics></math></span> and for any value <span class="math-container" id="1418939" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> less than <span class="math-container" id="1418926" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span>, <span class="math-container" id="1418927" visual_id="5676579"><math alttext="F(x)=1-e^{\frac{-x}{10}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mfrac><mrow><mo>-</mo><mi>x</mi></mrow><mn>10</mn></mfrac></msup></mrow></mrow></semantics></math></span>. Is that the correct reasoning? </td></tr><tr><td comment_id="282853"> @johnnymath Not exactly. You compute a definite integral for the CDF. <span class="math-container" id="1418928" visual_id="53964"><math alttext="F(a)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is the probability that <span class="math-container" id="1418940" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is at most <span class="math-container" id="1418933" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>. So you integrate the density from <span class="math-container" id="1418931" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>  (here, since the density is 0 for <span class="math-container" id="1418941" visual_id="13252"><math alttext="x&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span>) to <span class="math-container" id="1418933" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>: <span class="math-container" id="1418934" visual_id="5676580"><math alttext="F(a)=\int_{0}^{a}{1\over 10}e^{-x/10}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>a</mi></msubsup><mrow><mfrac><mn>1</mn><mn>10</mn></mfrac><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>/</mo><mn>10</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></mrow></semantics></math></span>. So, you would have <span class="math-container" id="1418935" visual_id="5676581"><math alttext="F(a)=(-e^{-x/10})\bigl{|}_{0}^{a}=..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>/</mo><mn>10</mn></mrow></mrow></msup><mo stretchy="false">)</mo></mrow><mrow><msubsup><mo fence="true" maxsize="120%" minsize="120%">|</mo><mn>0</mn><mi>a</mi></msubsup><mo>=</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="282855"> @johnnymath Your final answer in the comment is correct for <span class="math-container" id="1418936" visual_id="2019"><math alttext="x\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math></span>.  But if <span class="math-container" id="1418941" visual_id="13252"><math alttext="x&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span>, then <span class="math-container" id="1418938" visual_id="42273"><math alttext="F(x)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. The cdf is usually defined for all <span class="math-container" id="1418939" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>. Since your <span class="math-container" id="1418940" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> does not take negative values, for <span class="math-container" id="1418941" visual_id="13252"><math alttext="x&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="1418942" visual_id="5676582"><math alttext="F(x)=P[X\leq x]=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy="false">[</mo><mi>X</mi><mo>≤</mo><mi>x</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. </td></tr><tr><td comment_id="282932"> While it is for<span class="math-container" id="1418930" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>different pdf, you might want to read [this](http://math.stackexchange.com/a/118757/15941) and the comments thereafter. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="118742"> Finding a CDF given a PDF </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Solutions of a cubic diophantine equation in $\mathbb{Z}/p\mathbb{Z}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Solutions of a cubic diophantine equation in <span class="math-container" id="4990028" visual_id="9633"><math alttext="\mathbb{Z}/p\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>/</mo><mi>p</mi></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="474931">
+<p>Suppose <span class="math-container" id="4990029" visual_id="54121"><math alttext="p\in\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math></span> is prime and <span class="math-container" id="4990030" visual_id="110589"><math alttext="p\equiv 1\pmod{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≡</mo><mrow><mn>1</mn><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Is there an estimate of the number of  solutions of <span class="math-container" id="4990031" visual_id="538980"><math alttext="x^{3}+y^{3}=z^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo>=</mo><msup><mi>z</mi><mn>3</mn></msup></mrow></semantics></math></span> in <span class="math-container" id="4990032" visual_id="9633"><math alttext="\mathbb{Z}/p\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>/</mo><mi>p</mi></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></semantics></math></span>, preferably using elementary number theory and algebra ? Can something be said about the "expected" ( in the sense of Probability Theory ) number of solutions ? I am particularly interested in large values of <span class="math-container" id="4990033" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> and elementary techniques.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> number-theory </span><span> elementary-number-theory </span><span> probability-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1022590"> Note thar <span class="math-container" id="4990034" visual_id="238256"><math alttext="p\equiv 1\mod 6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≡</mo><mrow><mn>1</mn><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>6</mn></mrow></mrow></semantics></math></span> or <span class="math-container" id="4990035" visual_id="4368109"><math alttext="p=6r+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mrow><mrow><mn>6</mn><mo>⁢</mo><mi>r</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> so that <span class="math-container" id="4990036" visual_id="343"><math alttext="-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="4990037" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> both have three cube roots in the field, and one third of the non-zero elements are cubes. </td></tr><tr><td comment_id="1022610"> The equation homogeneous: <span class="math-container" id="4990038" visual_id="57678"><math alttext="(x,y,z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> is a solution whenever <span class="math-container" id="4990039" visual_id="359670"><math alttext="(ax,ay,az)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>y</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>⁢</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>. This means that you can normalize <span class="math-container" id="4990045" visual_id="11045"><math alttext="z=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> or <span class="math-container" id="4990041" visual_id="868"><math alttext="z=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. In the latter case you get <span class="math-container" id="4990042" visual_id="4368110"><math alttext="x=-\omega y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mo>-</mo><mrow><mi>ω</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow></semantics></math></span>, where <span class="math-container" id="4990043" visual_id="4986"><math alttext="\omega" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi></semantics></math></span> is one of the third roots of unity. IIRC an exact formula for the number of solutions to <span class="math-container" id="4990044" visual_id="970743"><math alttext="x^{3}+y^{3}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> is known. I'm fairly sure that this is covered in Ireland &amp; Rosen in the chapter about Jacobi sums. The expected value of solutions of that equation (with <span class="math-container" id="4990045" visual_id="11045"><math alttext="z=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>) is close to <span class="math-container" id="4990049" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>. This is because it is an elliptic curve, and we know that the number of points differs from <span class="math-container" id="4990047" visual_id="43108"><math alttext="p+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> by at most <span class="math-container" id="4990048" visual_id="1183937"><math alttext="2\sqrt{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>p</mi></msqrt></mrow></semantics></math></span>. Gotta go... </td></tr><tr><td comment_id="1036208"> Dear pritam, I have answered this question a week ago, but haven't gotten any feedback from you. If anything is unclear, please let me know :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="475033" id="answer">
+<p>This particular problem is discussed in detail in Chapter 7 of <em>Rational Points on Elliptic Curves</em> by Silverman and Tate. </p> <p>Let <span class="math-container" id="4990049" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> be a prime number. Let <span class="math-container" id="4990050" visual_id="4019"><math alttext="M_{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mi>p</mi></msub></semantics></math></span> denote the number of (projective) solutions to <span class="math-container" id="4990051" visual_id="4368111"><math alttext="x^{3}+y^{3}\equiv z^{3}(\text{mod }p)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo>≡</mo><mrow><msup><mi>z</mi><mn>3</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mtext>mod </mtext><mo>⁢</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> in <span class="math-container" id="4990052" visual_id="9633"><math alttext="\mathbb{Z}/p\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>/</mo><mi>p</mi></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></semantics></math></span>. Gauss proved that if <span class="math-container" id="4990053" visual_id="1116861"><math alttext="p\equiv 1(\text{mod }3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≡</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mtext>mod </mtext><mo>⁢</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, then there are integers <span class="math-container" id="4990054" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>, and <span class="math-container" id="4990055" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> such that <span class="math-container" id="4990056" visual_id="4368112"><math alttext="4p=A^{2}+27B^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>p</mi></mrow><mo>=</mo><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>27</mn><mo>⁢</mo><msup><mi>B</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span>. Up to sign, <span class="math-container" id="4990057" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="4990058" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> are unique. Furthermore, if we fix the sign of <span class="math-container" id="4990059" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> to be positive, then in fact <span class="math-container" id="4990060" visual_id="4368113"><math alttext="M_{p}=p+1+A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>p</mi></msub><mo>=</mo><mrow><mi>p</mi><mo>+</mo><mn>1</mn><mo>+</mo><mi>A</mi></mrow></mrow></semantics></math></span>. </p> <p>So indeed, the theorem tells us exactly the number of solutions in <span class="math-container" id="4990061" visual_id="9633"><math alttext="\mathbb{Z}/p\mathbb{Z}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ℤ</mi><mo>/</mo><mi>p</mi></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></semantics></math></span> for this elliptic curve! I find this result striking and beautiful.</p> <p>The proof given in the book is somewhat long, and uses clever manipulation of Gauss sums. </p> <p><strong>Remark.</strong> Last line of Jyrki's comment relates to quite an interesting result called <a href="http://en.wikipedia.org/wiki/Hasse%27s_theorem_on_elliptic_curves" rel="nofollow">Hasse's bound.</a> Note that in the above case, this bound is verified: indeed, <span class="math-container" id="4990062" visual_id="4368112"><math alttext="4p=A^{2}+27B^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>p</mi></mrow><mo>=</mo><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>27</mn><mo>⁢</mo><msup><mi>B</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span> implies <span class="math-container" id="4990063" visual_id="4368114"><math alttext="A^{2}\leq 4p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>≤</mo><mrow><mn>4</mn><mo>⁢</mo><mi>p</mi></mrow></mrow></semantics></math></span>, giving us <span class="math-container" id="4990064" visual_id="4368115"><math alttext="A\leq 2\sqrt{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>p</mi></msqrt></mrow></mrow></semantics></math></span>. I highly recommend the above book by Silverman and Tate for accessible introduction to this topic and beyond.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

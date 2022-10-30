@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Units in Euclidean domains</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Units in Euclidean domains </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1862232">
+<p>I'm studying basic Ring Theory. And in my textbook, the author states the definition of Euclidean domain:<br/> An integral domain <span class="math-container" id="17244900" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is called to be a <em>Euclidean domain</em> precisely when there is a function <span class="math-container" id="17244901" visual_id="2097515"><math alttext="f:R\setminus\{0\}\rightarrow\mathbb{N}_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mi>R</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><mo>→</mo><msub><mi>ℕ</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span>, called degree function of <span class="math-container" id="17244902" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>, such that:<br/> (i) If <span class="math-container" id="17244903" visual_id="346487"><math alttext="a,b\in R\setminus\{0\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mrow><mi>R</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span> and there exists <span class="math-container" id="17244904" visual_id="170746"><math alttext="c\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> such that <span class="math-container" id="17244905" visual_id="313433"><math alttext="ac=b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><mo>=</mo><mi>b</mi></mrow></semantics></math></span> then <span class="math-container" id="17244906" visual_id="126038"><math alttext="f(a)\leq f(b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.<br/> (ii) <span class="math-container" id="17244907" visual_id="1717"><math alttext="a,b\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> with <span class="math-container" id="17244908" visual_id="4315"><math alttext="b\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>, then there exist <span class="math-container" id="17244909" visual_id="482023"><math alttext="q,r\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>q</mi><mo>,</mo><mi>r</mi></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> such that  <span class="math-container" id="17244910" visual_id="26656"><math alttext="a=bq+r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>q</mi></mrow><mo>+</mo><mi>r</mi></mrow></mrow></semantics></math></span> with <span class="math-container" id="17244911" visual_id="3212"><math alttext="r=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> or <span class="math-container" id="17244912" visual_id="10214"><math alttext="r\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="17244913" visual_id="2097516"><math alttext="f(r)\lt f(b)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </p> <p>I know the fact: all units in <span class="math-container" id="17244914" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> have smallest degree, and this question pops into my head:  </p> <blockquote> <p>I want to prove that all units have degree <span class="math-container" id="17244915" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>. </p> </blockquote> <p>Unfortunately I have no idea for it. Can anyone has an answer for my question or give me a readable explanation about it? I really appreciate ! </p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> ring-theory </span><span> integral-domain </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1862242" id="answer">
+<p>You can't prove that units have degree <span class="math-container" id="17244916" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>: if <span class="math-container" id="17244917" visual_id="2097515"><math alttext="f\colon R\setminus\{0\}\to\mathbb{N}_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mi>R</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><mo>→</mo><msub><mi>ℕ</mi><mn>0</mn></msub></mrow></mrow></semantics></math></span> is a degree function, also <span class="math-container" id="17244918" visual_id="2097517"><math alttext="f_{k}\colon R\setminus\{0\}\to\mathbb{N}_{0},\qquad f_{k}(a)=f(a)+k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>:</mo><mrow><mrow><mrow><mi>R</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><mo>→</mo><msub><mi>ℕ</mi><mn>0</mn></msub></mrow><mo rspace="22.5pt">,</mo><mrow><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>k</mi></mrow></mrow></mrow></mrow></semantics></math></span> is a degree function as well, for every integer <span class="math-container" id="17244919" visual_id="2097518"><math alttext="k\geq-f(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> (because <span class="math-container" id="17244920" visual_id="2605"><math alttext="f(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is the minimum value attained by <span class="math-container" id="17244921" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>).</p> <p>You can <em>normalize</em> your degree function, by defining <span class="math-container" id="17244922" visual_id="2097519"><math alttext="\hat{f}(a)=f(a)-f(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mover accent="true"><mi>f</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> and now units will have degree <span class="math-container" id="17244923" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> with respect to <span class="math-container" id="17244924" visual_id="13080"><math alttext="\hat{f}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover accent="true"><mi>f</mi><mo stretchy="false">^</mo></mover></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

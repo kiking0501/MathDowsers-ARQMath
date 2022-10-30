@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving a sequence is Cauchy, given that $|x_n − x_m|< 1/\min\{n, m\}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving a sequence is Cauchy, given that <span class="math-container" id="15454292" visual_id="77420"><math alttext="|x_{n}−x_{m}|&lt;1/\min\{n,m\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><msub><mi>x</mi><mi>m</mi></msub></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mn>1</mn><mo>/</mo><mrow><mi>min</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mi>n</mi><mo>,</mo><mi>m</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1672174">
+<blockquote> <p>Let <span class="math-container" id="15454293" visual_id="961"><math alttext="(x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> be a sequence of real numbers with the property that for all positive integers <span class="math-container" id="15454294" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> and <span class="math-container" id="15454295" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span>, <span class="math-container" id="15454296" visual_id="77421"><math alttext="|x_{n}−x_{m}|&lt;1/k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>⁢</mo><mi mathvariant="normal">−</mi><mo>⁢</mo><msub><mi>x</mi><mi>m</mi></msub></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mn>1</mn><mo>/</mo><mi>k</mi></mrow></mrow></semantics></math></span> where <span class="math-container" id="15454297" visual_id="77422"><math alttext="k=\min\{n,m\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mrow><mi>min</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mi>n</mi><mo>,</mo><mi>m</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span>.   ￼Prove that the sequence <span class="math-container" id="15454298" visual_id="961"><math alttext="(x_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> is a Cauchy sequence</p> </blockquote> <p>This is what I have so far: </p> <p>The definition of a Cauchy sequence is, if given <span class="math-container" id="15454299" visual_id="35"><math alttext="\epsilon&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>, there exists and <span class="math-container" id="15454300" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> such that for all <span class="math-container" id="15454301" visual_id="28218"><math alttext="n,m&gt;N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>,</mo><mi>m</mi></mrow><mo>&gt;</mo><mi>N</mi></mrow></semantics></math></span>, <span class="math-container" id="15454302" visual_id="30034"><math alttext="|x_{n}-x_{m}|&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><msub><mi>x</mi><mi>m</mi></msub></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>ϵ</mi></mrow></semantics></math></span>. This is what I have so far for my proof:</p> <p>Let <span class="math-container" id="15454303" visual_id="35"><math alttext="\epsilon&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> be given  Pick an <span class="math-container" id="15454304" visual_id="77423"><math alttext="N&gt;1/\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>&gt;</mo><mrow><mn>1</mn><mo>/</mo><mi>ϵ</mi></mrow></mrow></semantics></math></span>, such an <span class="math-container" id="15454305" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> exists by the Archimedean Property of <span class="math-container" id="15454306" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>.  This choice of <span class="math-container" id="15454307" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span>, for any <span class="math-container" id="15454308" visual_id="28218"><math alttext="n,m&gt;N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>,</mo><mi>m</mi></mrow><mo>&gt;</mo><mi>N</mi></mrow></semantics></math></span> we have that <span class="math-container" id="15454309" visual_id="77424"><math alttext="|x_{n}-x_{m}|&lt;1/k&lt;1/n&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><msub><mi>x</mi><mi>m</mi></msub></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mn>1</mn><mo>/</mo><mi>k</mi></mrow><mo>&lt;</mo><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow><mo>&lt;</mo><mi>ϵ</mi></mrow></semantics></math></span>.  I don't fully understand what <span class="math-container" id="15454310" visual_id="77422"><math alttext="k=\min\{n,m\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mrow><mi>min</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mi>n</mi><mo>,</mo><mi>m</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span> means and how to incorporate this into my proof.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> cauchy-sequences </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3411406"> Please show what you tried on this problem. </td></tr><tr><td comment_id="3411426"> It should be a fairly simple application of the definition. Just pick <span class="math-container" id="15454317" visual_id="35"><math alttext="\epsilon&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>, and show that there's <span class="math-container" id="15454312" visual_id="8217"><math alttext="N\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> such that<span class="math-container" id="15454313" visual_id="77425"><math alttext="|x_{n}-x_{m}|&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><msub><mi>x</mi><mi>m</mi></msub></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>ϵ</mi></mrow></semantics></math></span> for <span class="math-container" id="15454314" visual_id="3681"><math alttext="n,m\geq N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>,</mo><mi>m</mi></mrow><mo>≥</mo><mi>N</mi></mrow></semantics></math></span>. Hint: use the fact that there is a natural number <span class="math-container" id="15454315" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> such that <span class="math-container" id="15454316" visual_id="77426"><math alttext="1/k&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>/</mo><mi>k</mi></mrow><mo>&lt;</mo><mi>ϵ</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3411435"> Well, first define what the definition of a cauchy sequence is.  Then demonstrate that this sequence satisfies us.  Then write us and tell us why  and where you had trouble doing this.  Okay, a hint. If m is a large integer 1/m is a small fraction.  That should be enough if you know what the definition of a cauchy sequence is. </td></tr><tr><td comment_id="3411446"> Welcome to Stackexchange. Simple "Here's my exercise, solve it for me" posts usually get few responses. It is better to say what you understand about the problem, what you've tried so far, etc. Something to both show you are part of the learning experience and to help us guide you to the appropriate help. You can check [this link](http://meta.math.stackexchange.com/q/9959) for more tips. </td></tr><tr><td comment_id="3411531"> The definition of a cauchy sequence is if given epsilon &gt; 0, there exists and N such that for all n, m&gt; N |xn-xm|&lt; epsilon. This is what I have so far for my proof: Let epsilon &gt;0 be given Pick and N &gt; 1/epsilon, such an N exsits by the Archimedean Property of R This choice of N, for any n,m&gt; N we have that  |xn-xm|&lt;1/k &lt; 1/n <epsilon <="" and="" don't="" fully="" how="" i="" incorporate="" into="" k="min{n,m}" means="" my="" proof="" td="" this="" to="" understand="" what=""></epsilon></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1672181" id="answer">
+<p>If you note that for all <span class="math-container" id="15454317" visual_id="35"><math alttext="\epsilon&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> that there exists an <span class="math-container" id="15454318" visual_id="8217"><math alttext="N\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> so that <span class="math-container" id="15454319" visual_id="77427"><math alttext="\frac{1}{N}&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><mo>&lt;</mo><mi>ϵ</mi></mrow></semantics></math></span> then it follows for all <span class="math-container" id="15454320" visual_id="43823"><math alttext="m,n\geq N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow><mo>≥</mo><mi>N</mi></mrow></semantics></math></span> that <span class="math-container" id="15454321" visual_id="77428"><math alttext="|x_{n}-x_{m}|&lt;\frac{1}{\min(m,n)}\leq\frac{1}{N}&lt;\epsilon" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><msub><mi>x</mi><mi>m</mi></msub></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mfrac><mn>1</mn><mrow><mi>min</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>≤</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><mo>&lt;</mo><mi>ϵ</mi></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3411450"> I have let epsilon &gt;0 be given and that there exists an N so that 1/N &lt; epsilon and such N exists by the Archimedean Property of R. For any m,n &gt; N that |xn-xm|&lt;1/k&lt;1/N<epsilon. <="" am="" how="" i="" incorporate="" k="min{n,m}" td="" that="" to="" unsure=""></epsilon.></td></tr><tr><td comment_id="3411585"> @Amanda, since <span class="math-container" id="15454322" visual_id="77429"><math alttext="m,n&gt;N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow><mo>&gt;</mo><mi>N</mi></mrow></semantics></math></span>, you know that the minimum of the two is also greater than <span class="math-container" id="15454323" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span>. In other words: <span class="math-container" id="15454324" visual_id="77430"><math alttext="m,n&gt;N\implies k=\textrm{min}\{m,n\}&gt;N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow><mo>&gt;</mo><mi>N</mi><mo>⟹</mo><mi>k</mi><mo>=</mo><mrow><mtext>min</mtext><mo>⁢</mo><mrow><mo stretchy="false">{</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow><mo>&gt;</mo><mi>N</mi></mrow></semantics></math></span>. The result follows. You're proof is already done, more or less </td></tr><tr><td comment_id="3411608"> @andresMeijia Great, thank you! I was over-thinking it </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

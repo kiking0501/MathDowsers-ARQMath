@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How do I compute the following limit: $ \lim_{x \to \infty} \frac{x!}{\left( \frac{x}{e} \right)^{x}}$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How do I compute the following limit: <span class="math-container" id="14818172" visual_id="9194498"><math alttext="\lim_{x\to\infty}\frac{x!}{\left(\frac{x}{e}\right)^{x}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><mi>x</mi><mo>!</mo></mrow><msup><mrow><mo>(</mo><mfrac><mi>x</mi><mi>e</mi></mfrac><mo>)</mo></mrow><mi>x</mi></msup></mfrac></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1603159">
+<p>In class we proved that <span class="math-container" id="14818173" visual_id="9194499"><math alttext="\lim_{x\to\infty}\frac{x!}{2^{x}}=\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><mi>x</mi><mo>!</mo></mrow><msup><mn>2</mn><mi>x</mi></msup></mfrac></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span></p> <p>This got me thinking for what value <span class="math-container" id="14818174" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> <span class="math-container" id="14818175" visual_id="9194500"><math alttext="\lim_{x\to\infty}\frac{x!}{n^{x}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><mrow><mi>x</mi><mo>!</mo></mrow><msup><mi>n</mi><mi>x</mi></msup></mfrac></mrow></semantics></math></span> would the limit be <span class="math-container" id="14818176" visual_id="3420"><math alttext="=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>.</p> <p>So clearly <span class="math-container" id="14818177" visual_id="11661"><math alttext="n=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mi>x</mi></mrow></semantics></math></span> makes the bottom part of the fraction go to infinity much faster than the top part, and this is the case for <span class="math-container" id="14818178" visual_id="5259406"><math alttext="n=\frac{x}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mi>x</mi><mn>2</mn></mfrac></mrow></semantics></math></span> as well. However, the limit for <span class="math-container" id="14818179" visual_id="9194501"><math alttext="n=\frac{x}{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mi>x</mi><mn>3</mn></mfrac></mrow></semantics></math></span> is <span class="math-container" id="14818180" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span>. I immediately became suspicious that the "turning point" would be for <span class="math-container" id="14818181" visual_id="9194502"><math alttext="n=\frac{x}{e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mi>x</mi><mi>e</mi></mfrac></mrow></semantics></math></span>. Due to calculator approximation errors, a normal TI-89 says the limit is <span class="math-container" id="14818182" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span>, but I'm not really sure if that's correct. </p> <p>In any case, how would one compute the limit for when <span class="math-container" id="14818183" visual_id="9194502"><math alttext="n=\frac{x}{e}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mi>x</mi><mi>e</mi></mfrac></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3266536"> Is <span class="math-container" id="14818199" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> supposed to be an integer, or do you use <span class="math-container" id="14818189" visual_id="22701"><math alttext="x!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>!</mo></mrow></semantics></math></span> as a shorthand for <span class="math-container" id="14818186" visual_id="558619"><math alttext="\Gamma(x+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>? </td></tr><tr><td comment_id="3266538"> Do you know Stirling approximation for <span class="math-container" id="14818189" visual_id="22701"><math alttext="x!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>!</mo></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="3266544"> @DanielFischer <span class="math-container" id="14818199" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is the variable that is approaching infinity. I'm not too sure what that notation is, but <span class="math-container" id="14818189" visual_id="22701"><math alttext="x!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>!</mo></mrow></semantics></math></span> means the factorial of <span class="math-container" id="14818199" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, so: <span class="math-container" id="14818191" visual_id="6735054"><math alttext="x(x-1)(x-2)...(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td comment_id="3266549"> Okay, so <span class="math-container" id="14818199" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> is supposed to be an integer. Not that it would make a difference, but good to know. The next question is as Claude Leibovici asked, have you already heard of Stirling's formula? </td></tr><tr><td comment_id="3266551"> @ClaudeLeibovici Never heard of it. Does it have to do with <span class="math-container" id="14818193" visual_id="9194503"><math alttext="x!&gt;2\cdot 3^{n-2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>!</mo></mrow><mo>&gt;</mo><mrow><mn>2</mn><mo>⋅</mo><msup><mn>3</mn><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></mrow></semantics></math></span> for the first example? </td></tr><tr><td comment_id="3266562"> @DanielFischer Nope </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1603178" id="answer">
+<p><strong>Hint</strong></p> <p>When you have to manipulate factorials, <a href="https://en.wikipedia.org/wiki/Stirling's_approximation">Stirling approximation</a> is very often the trick to be used.</p> <p>As a first approximation, you have <span class="math-container" id="14818194" visual_id="3382355"><math alttext="x!\approx\sqrt{2\pi\,x}\,\Big{(}\frac{x}{e}\Big{)}^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>!</mo></mrow><mo>≈</mo><mrow><mpadded width="+1.7pt"><msqrt><mrow><mn>2</mn><mo>⁢</mo><mpadded width="+1.7pt"><mi>π</mi><mo>⁢</mo><mi>x</mi></mpadded></mrow></msqrt><mo>⁢</mo><msup><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mi>x</mi><mi>e</mi></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow><mi>x</mi></msup></mpadded></mrow></mrow></semantics></math></span> which than makes for your problem <span class="math-container" id="14818195" visual_id="9194504"><math alttext="\frac{x!}{\left(\frac{x}{e}\right)^{x}}\approx\sqrt{2\pi\,x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>x</mi><mo>!</mo></mrow><msup><mrow><mo>(</mo><mfrac><mi>x</mi><mi>e</mi></mfrac><mo>)</mo></mrow><mi>x</mi></msup></mfrac><mo>≈</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mpadded width="+1.7pt"><mi>π</mi><mo>⁢</mo><mi>x</mi></mpadded></mrow></msqrt></mrow></semantics></math></span> Please, remember it : it is very useful and you will often need it !</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3266585"> Never knew this until now. Life saver. </td></tr><tr><td comment_id="3266597"> Wow, thanks a lot! </td></tr><tr><td comment_id="3266641"> @AndresStadelmann. You are very welcome ! Remember it for ever. Cheers. </td></tr><tr><td comment_id="3274343"> This might be a dumb question, but if I replace all <span class="math-container" id="14818199" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> by <span class="math-container" id="14818197" visual_id="2111"><math alttext="2x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></semantics></math></span>, will this still work? </td></tr><tr><td comment_id="3275083"> Use it as it is with <span class="math-container" id="14818196" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and rename <span class="math-container" id="14818198" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> by <span class="math-container" id="14818200" visual_id="9194505"><math alttext="\pi\sqrt{y}+\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>π</mi><mo>⁢</mo><msqrt><mi>y</mi></msqrt></mrow><mo>+</mo><mi>γ</mi></mrow></semantics></math></span> or whatever you want. In fact, Stirling approximates the <span class="math-container" id="14818201" visual_id="2526"><math alttext="\Gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Γ</mi></semantics></math></span> function (which includes the factorial). Very, very useful ! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1603217"> What limit "identities" are good to memorize for early college calculus? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>On limits related to $\frac1{\ln n}\sum\limits_{r=1}^{n^4}\frac1r$ when $n\to\infty$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> On limits related to <span class="math-container" id="9340008" visual_id="5585175"><math alttext="\frac{1}{\ln n}\sum\limits_{r=1}^{n^{4}}\frac{1}{r}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><msup><mi>n</mi><mn>4</mn></msup></munderover><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow></mrow></semantics></math></span> when <span class="math-container" id="9340009" visual_id="1477"><math alttext="n\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="976231">
+<blockquote> <p><span class="math-container" id="9340010" visual_id="5585176"><math alttext="L=\lim_{n\to\infty}\frac{1}{\ln n}\sum_{r=1}^{n^{4}}\frac{1}{r},\qquad M=\lim_% {n\to\infty}\left\lfloor\frac{1}{\ln n}\sum_{r=1}^{n^{4}}\frac{1}{r}\right\rfloor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>L</mi><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mfrac><mn>1</mn><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><msup><mi>n</mi><mn>4</mn></msup></munderover><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow></mrow></mrow></mrow><mo rspace="22.5pt">,</mo><mrow><mi>M</mi><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>⌊</mo><mrow><mfrac><mn>1</mn><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><msup><mi>n</mi><mn>4</mn></msup></munderover><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow></mrow><mo>⌋</mo></mrow></mrow></mrow></mrow></semantics></math></span></p> </blockquote> <hr/> <p>I know that <span class="math-container" id="9340011" visual_id="5585177"><math alttext="\lim_{n\to\infty}\frac{1}{n}\sum_{r=1}^{n^{4}}\frac{n}{r}=\int_{\lim\limits_{n% \to\infty}1/n}^{\lim\limits_{n\to\infty}n^{4}/n}\frac{dx}{x}=\ln 4-\color[rgb]% {1,0,0}{\ln 0}\to-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><msup><mi>n</mi><mn>4</mn></msup></munderover><mfrac><mi>n</mi><mi>r</mi></mfrac></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><msup><mi>n</mi><mn>4</mn></msup><mo>/</mo><mi>n</mi></mrow></mrow></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><mo>=</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mn>4</mn></mrow><mo>-</mo><mrow><mi mathcolor="#FF0000">ln</mi><mo mathcolor="#FF0000">⁡</mo><mn mathcolor="#FF0000">0</mn></mrow></mrow><mo mathcolor="#FF0000">→</mo><mrow><mo mathcolor="#FF0000">-</mo><mi mathcolor="#FF0000" mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span></p> <p>I suspect the limits to both doesn't exist.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> harmonic-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2001400"> you may use the fact that <span class="math-container" id="9340012" visual_id="5585178"><math alttext="\sum\limits_{r=1}^{n}\frac{1}{r}\sim\ln n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow><mo>∼</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="2001681"> Your integral argument is close to correct.  You are in too much of a hurry to take limits; <span class="math-container" id="9340013" visual_id="5585179"><math alttext="\int_{1/n}^{n^{3}}\frac{dx}{x}=\ln(n^{3})-\ln(1/n)=4\ln n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow><msup><mi>n</mi><mn>3</mn></msup></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><mo>=</mo><mrow><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>n</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></mrow></semantics></math></span>.  If you divide by <span class="math-container" id="9340014" visual_id="73895"><math alttext="\ln n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mi>n</mi></mrow></semantics></math></span> and take the limit, you most certainly don't get infinity. </td></tr><tr><td comment_id="2001830"> @Slade thanks that's a good trick </td></tr><tr><td comment_id="2001849"> @Aditya It's tricky to make it rigorous (or I should say that it's easy to _forget_ to make it rigorous), because there are two limits involved, but it definitely works if you're careful with the details. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="976247" id="answer">
+<p>Regarding the first,</p> <p><span class="math-container" id="9340028" visual_id="5585185"><math alttext="\lim_{n\to\infty}\sum_{r=1}^{n^{4}}\frac{1}{r}\sim\log(n^{4})=4\log n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><msup><mi>n</mi><mn>4</mn></msup></munderover><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow></mrow><mo>∼</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>n</mi><mn>4</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></mrow></semantics></math></span></p> <p>then</p> <p><span class="math-container" id="9340029" visual_id="5585186"><math alttext="\lim_{n\to\infty}\left(\sum_{r=1}^{n^{4}}\frac{1}{r}/\log n\right)=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>(</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><msup><mi>n</mi><mn>4</mn></msup></munderover><mrow><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>/</mo><mrow><mi>log</mi><mo>⁡</mo><mi>n</mi></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2001413"> see my edit.... </td></tr><tr><td comment_id="2001419"> @Aditya: I see your edit. So? </td></tr><tr><td comment_id="2001425"> I meant the <span class="math-container" id="9340030" visual_id="332565"><math alttext="\ln 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mn>0</mn></mrow></semantics></math></span> term </td></tr><tr><td comment_id="2001431"> @Aditya: the accepted answer (and Did's and mine) don't address <span class="math-container" id="9340031" visual_id="337617"><math alttext="\log 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><mn>0</mn></mrow></semantics></math></span> at all. I think Did's is most responsive to your question and only posted mine since I had taken the trouble to do it. </td></tr><tr><td comment_id="2001462"> Oh but i wished simplicity here. </td></tr><tr><td comment_id="2001482"> Sorry to interrupt this conversation but what is not *simple* here? Simple <span class="math-container" id="9340032" visual_id="1612"><math alttext="\neq" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>≠</mo></semantics></math></span> wrong. For example, @daniel's argument is simple and true. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

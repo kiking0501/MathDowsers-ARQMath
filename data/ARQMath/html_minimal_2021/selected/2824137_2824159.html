@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Gaussian elimination with an unknown constant</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Gaussian elimination with an unknown constant </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2824137">
+<p>How do I do Gaussian elimination on this system of equations?</p> <p><span class="math-container" id="26078223" visual_id="3286446"><math alttext="\begin{cases}x_{1}+x_{2}+x_{3}=0\\ x_{1}+2x_{2}+ax_{3}=1\\ x_{1}+ax_{2}+2x_{3}=-1\end{cases}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><msub><mi>x</mi><mn>3</mn></msub></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow><mo>=</mo><mn>1</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>x</mi><mn>3</mn></msub></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow></semantics></math></span></p> <p>When I try to do this I end up with a coefficient with an <span class="math-container" id="26078224" visual_id="3589"><math alttext="a^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>a</mi><mn>2</mn></msup></semantics></math></span> term which I'm assuming is not supposed to be there.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2824159" id="answer">
+<p>You equation is  <span class="math-container" id="26078225" visual_id="3286447"><math alttext="\left[\begin{array}[]{ccc|c}1&amp;1&amp;1&amp;0\\ 1&amp;2&amp;a&amp;1\\ 1&amp;a&amp;2&amp;-1\\ \end{array}\right]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>2</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mi>a</mi></mtd><mtd columnalign="center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mi>a</mi></mtd><mtd class="ltx_border_r" columnalign="center"><mn>2</mn></mtd><mtd columnalign="center"><mrow><mo>-</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo>]</mo></mrow></semantics></math></span></p> <p>By doing <span class="math-container" id="26078226" visual_id="3286448"><math alttext="R_{2}-R_{1}\to R_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>R</mi><mn>2</mn></msub><mo>-</mo><msub><mi>R</mi><mn>1</mn></msub></mrow><mo>→</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></semantics></math></span>, <span class="math-container" id="26078227" visual_id="2867103"><math alttext="R_{3}-R_{1}\to R_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>R</mi><mn>3</mn></msub><mo>-</mo><msub><mi>R</mi><mn>1</mn></msub></mrow><mo>→</mo><msub><mi>R</mi><mn>3</mn></msub></mrow></semantics></math></span> you get <span class="math-container" id="26078228" visual_id="3286449"><math alttext="\left[\begin{array}[]{ccc|c}1&amp;1&amp;1&amp;0\\ 0&amp;1&amp;a-1&amp;1\\ 0&amp;a-1&amp;1&amp;-1\\ \end{array}\right]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></mtd><mtd columnalign="center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></mtd><mtd class="ltx_border_r" columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mrow><mo>-</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo>]</mo></mrow></semantics></math></span></p> <p>Now, <span class="math-container" id="26078229" visual_id="2867107"><math alttext="R_{3}-(a-1)R_{2}\to R_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>R</mi><mn>3</mn></msub><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>R</mi><mn>2</mn></msub></mrow></mrow><mo>→</mo><msub><mi>R</mi><mn>3</mn></msub></mrow></semantics></math></span> <span class="math-container" id="26078230" visual_id="3286450"><math alttext="\left[\begin{array}[]{ccc|c}1&amp;1&amp;1&amp;0\\ 0&amp;1&amp;a-1&amp;1\\ 0&amp;0&amp;1-(a-1)^{2}&amp;-1-(a-1)\\ \end{array}\right]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></mtd><mtd columnalign="center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mrow><mn>1</mn><mo>-</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mtd><mtd columnalign="center"><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr></mtable><mo>]</mo></mrow></semantics></math></span></p> <p>Simplify <span class="math-container" id="26078231" visual_id="3286451"><math alttext="\left[\begin{array}[]{ccc|c}1&amp;1&amp;1&amp;0\\ 0&amp;1&amp;a-1&amp;1\\ 0&amp;0&amp;-a^{2}+2a&amp;-a\\ \end{array}\right]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></mtd><mtd columnalign="center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mrow><mrow><mo>-</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mo>-</mo><mi>a</mi></mrow></mtd></mtr></mtable><mo>]</mo></mrow></semantics></math></span></p> <p>Now can divide the last row by <span class="math-container" id="26078232" visual_id="37330"><math alttext="-a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi>a</mi></mrow></semantics></math></span> (assuming <span class="math-container" id="26078233" visual_id="4314"><math alttext="a\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>), that is, <span class="math-container" id="26078234" visual_id="3286452"><math alttext="-\frac{1}{a}R_{3}\to R_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mi>a</mi></mfrac><mo>⁢</mo><msub><mi>R</mi><mn>3</mn></msub></mrow></mrow><mo>→</mo><msub><mi>R</mi><mn>3</mn></msub></mrow></semantics></math></span></p> <p><span class="math-container" id="26078235" visual_id="3286453"><math alttext="\left[\begin{array}[]{ccc|c}1&amp;1&amp;1&amp;0\\ 0&amp;1&amp;a-1&amp;1\\ 0&amp;0&amp;a-2&amp;1\\ \end{array}\right]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></mtd><mtd columnalign="center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd class="ltx_border_r" columnalign="center"><mrow><mi>a</mi><mo>-</mo><mn>2</mn></mrow></mtd><mtd columnalign="center"><mn>1</mn></mtd></mtr></mtable><mo>]</mo></mrow></semantics></math></span></p> <p>I assume you can finish from here.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

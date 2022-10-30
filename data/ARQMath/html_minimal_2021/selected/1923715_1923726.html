@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Does every irrational number have continued fraction representation? Are CFs fastest method so far? (Rational approximations of $ e,$ and $\gamma$)</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Does every irrational number have continued fraction representation? Are CFs fastest method so far? (Rational approximations of <span class="math-container" id="17835141" visual_id="146851"><math alttext="e," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>,</mo></mrow></semantics></math></span> and <span class="math-container" id="17835142" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span>) </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1923715">
+<p>What are rational approximations to <span class="math-container" id="17835143" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span> and Euler-Mascheroni constant <span class="math-container" id="17835144" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span> ?</p> <p>(Like <span class="math-container" id="17835145" visual_id="7879389"><math alttext="22/7,355/113,..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>22</mn><mo>/</mo><mn>7</mn></mrow><mo>,</mo><mrow><mn>355</mn><mo>/</mo><mn>113</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span> are for  <span class="math-container" id="17835146" visual_id="192125"><math alttext="\pi." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>.</mo></mrow></semantics></math></span>) </p> <p><em>EDIT 1:</em> </p> <p>(Number theory is not my cup of tea..). I wish to be able to learn if for every irrational number there exists an infinite set of progressively reducing  error rational numbers as approximation and a procedure by which it is obtained.  </p> <p><em>EDIT 2:</em></p> <p>Are continued fraction the fastest or the only method to obtain rational successive  approximations to irrationals?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3949272"> An answer to the title of your question can be found [here](http://math.stackexchange.com/a/1916271/131263). </td></tr><tr><td comment_id="3949276"> With regards to your bottom-line question, I believe that the answer is subjective, i.e., depends on the irrational value that you want to approximate. For example, Newton-Raphson method for integral roots converges pretty quickly. </td></tr><tr><td comment_id="3949295"> Depends on what measure? Is there in mathematics a * degree* of irrationality defined for irrational numbers? </td></tr><tr><td comment_id="3949326"> Your bottom-line question is about efficiency, the question in your comment is about "degree of irrationality". I do not quite understand the correlation between these two. To answer your question in the comment above - I do not know of any such degree, but the irrationals are divided to algebraic irrationals and transcendental irrational. I guess that in a certain manner, one can regard the transcendental irrational as "more irrational" than the algebraic irrationals. </td></tr><tr><td comment_id="3949331"> For example, every algebraic can be represented with a periodic continued fraction, while no transcendental can. </td></tr><tr><td comment_id="3949350"> :) so the woods are deep. Thank you sir, for above  patient comments, </td></tr><tr><td comment_id="4165272"> @barakmanos There is an [irrationality measure](https://en.wikipedia.org/wiki/Liouville_number#Irrationality_measure) <span class="math-container" id="17835147" visual_id="375"><math alttext="\mu" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi></semantics></math></span> that deals with "degree of irrationality". Rational numbers have <span class="math-container" id="17835148" visual_id="106191"><math alttext="\mu=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, algebraic irrationals have <span class="math-container" id="17835149" visual_id="497434"><math alttext="\mu=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span>, and transcendentals have <span class="math-container" id="17835150" visual_id="7879390"><math alttext="2\leq\mu\leq\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>≤</mo><mi>μ</mi><mo>≤</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="4165833"> @Théophile: That's very interesting. I was not aware of this. Thank you. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1923726" id="answer">
+<p>Euler's approximation (with function in link): <code>19/7, 87/32, 106/39,</code> etc... <a href="http://www.johndcook.com/blog/2013/01/30/rational-approximations-to-e/" rel="nofollow">http://www.johndcook.com/blog/2013/01/30/rational-approximations-to-e/</a></p> <p>Euler-Mascheroni constants can be found here with references to the original findings: <a href="http://mathworld.wolfram.com/Euler-MascheroniConstantApproximations.html" rel="nofollow">http://mathworld.wolfram.com/Euler-MascheroniConstantApproximations.html</a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1916266"> Is there a "positive" definition for irrational numbers? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

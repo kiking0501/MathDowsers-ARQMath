@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>On exponentials of matrices</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> On exponentials of matrices </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="309358">
+<blockquote> <p>How can I prove that <span class="math-container" id="3352689" visual_id="6649493"><math alttext="|e^{A}|\leq e^{|A|}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><msup><mi>e</mi><mi>A</mi></msup><mo stretchy="false">|</mo></mrow><mo>≤</mo><msup><mi>e</mi><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow></msup></mrow></semantics></math></span> where <span class="math-container" id="3352690" visual_id="5434"><math alttext="|\cdot|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mo>⋅</mo><mo stretchy="false">|</mo></mrow></semantics></math></span> means the operator norm of matrices?</p> </blockquote> <p>I guess i'm having trouble with the definition!</p> <p>A is a square (complex or real) matrix.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> linear-algebra </span><span> exponentiation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="669802"> is <span class="math-container" id="3352693" visual_id="5434"><math alttext="|\cdot|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mo>⋅</mo><mo stretchy="false">|</mo></mrow></semantics></math></span> the determinant ? And what have you tried ? </td></tr><tr><td comment_id="669814"> I would assume that <span class="math-container" id="3352692" visual_id="1502007"><math alttext="|A|=(A^{*}A)^{1/2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>A</mi><mo>*</mo></msup><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></semantics></math></span>. </td></tr><tr><td comment_id="669815"> I wrote a counter example assuming <span class="math-container" id="3352693" visual_id="5434"><math alttext="|\cdot|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mo>⋅</mo><mo stretchy="false">|</mo></mrow></semantics></math></span> is a determinant. </td></tr><tr><td comment_id="669830"> I think writing <span class="math-container" id="3352694" visual_id="6459"><math alttext="|A|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow></semantics></math></span> for <span class="math-container" id="3352695" visual_id="6862"><math alttext="\det A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo movablelimits="false">det</mo><mo>⁡</mo><mi>A</mi></mrow></semantics></math></span> would be perverse. </td></tr><tr><td comment_id="669842"> @harald i saw it several times before </td></tr><tr><td comment_id="669851"> @DominicMichaelis I am aware that perverse people exist, yes. Right now we are learning from another answer that a matrix norm might be the intended meaning. More perversion! The result is wrong if my guess is taken, by the way. An easy counterexample is <span class="math-container" id="3352696" visual_id="17994"><math alttext="\bigl{(}\begin{smallmatrix}0&amp;1\\ 0&amp;0\end{smallmatrix}\bigr{)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo maxsize="120%" minsize="120%">(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mn mathsize="70%">0</mn></mtd><mtd columnalign="center"><mn mathsize="70%">1</mn></mtd></mtr><mtr><mtd columnalign="center"><mn mathsize="70%">0</mn></mtd><mtd columnalign="center"><mn mathsize="70%">0</mn></mtd></mtr></mtable><mo maxsize="120%" minsize="120%">)</mo></mrow></semantics></math></span>. </td></tr><tr><td comment_id="669853"> I think he uses it for the linear operator norm </td></tr><tr><td comment_id="670010"> Yes, I meant the vertical bar to be the norm operator, sorry for the confusion. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="309393" id="answer">
+<p>Let <span class="math-container" id="3352697" visual_id="10009"><math alttext="\|.\|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∥</mo><mo>.</mo><mo>∥</mo></mrow></semantics></math></span> be a sub multiplicative norm on <span class="math-container" id="3352698" visual_id="311298"><math alttext="\mathbb{C}^{n\times n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℂ</mi><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></msup></semantics></math></span> (ie. <span class="math-container" id="3352699" visual_id="29193"><math alttext="\|AB\|\leq\|A\|\|B\|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∥</mo><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>∥</mo></mrow><mo>≤</mo><mrow><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mo>⁢</mo><mrow><mo>∥</mo><mi>B</mi><mo>∥</mo></mrow></mrow></mrow></semantics></math></span>). The matrix exponential for an element <span class="math-container" id="3352700" visual_id="155579"><math alttext="A\in\mathbb{C}^{n\times n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><msup><mi>ℂ</mi><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow></msup></mrow></semantics></math></span> is defined as follows. <span class="math-container" id="3352701" visual_id="6805055"><math alttext="e^{A}:=\sum_{k=0}^{\infty}\frac{A^{k}}{k!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>A</mi></msup><mo>:=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>A</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow></mrow></semantics></math></span>. To show the inequality, we first show <span class="math-container" id="3352702" visual_id="1471850"><math alttext="\|A^{k}\|\leq\|A\|^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∥</mo><msup><mi>A</mi><mi>k</mi></msup><mo>∥</mo></mrow><mo>≤</mo><msup><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi>k</mi></msup></mrow></semantics></math></span> by induction. Then:</p> <p><span class="math-container" id="3352703" visual_id="6805056"><math alttext="\|e^{A}\|=\|\sum_{k=0}^{\infty}\frac{A^{k}}{k!}\|=\|\lim_{n\to\infty}\sum_{k=0% }^{n}\frac{A^{k}}{k!}\|=\lim_{n\to\infty}\|\sum_{k=0}^{n}\frac{A^{k}}{k!}\|% \leq\lim_{n\to\infty}\sum_{k=0}^{n}\|\frac{A^{k}}{k!}\|\leq\lim_{n\to\infty}% \sum_{k=0}^{n}\frac{\|A\|^{k}}{k!}=e^{\|A\|}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∥</mo><msup><mi>e</mi><mi>A</mi></msup><mo>∥</mo></mrow><mo>=</mo><mrow><mo>∥</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>A</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow><mo>∥</mo></mrow><mo>=</mo><mrow><mo>∥</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mi>A</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow></mrow><mo>∥</mo></mrow><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>∥</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mi>A</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow><mo>∥</mo></mrow></mrow><mo>≤</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>∥</mo><mfrac><msup><mi>A</mi><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo>∥</mo></mrow></mrow></mrow><mo>≤</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow><mi>k</mi></msup><mrow><mi>k</mi><mo>!</mo></mrow></mfrac></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mo>∥</mo><mi>A</mi><mo>∥</mo></mrow></msup></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

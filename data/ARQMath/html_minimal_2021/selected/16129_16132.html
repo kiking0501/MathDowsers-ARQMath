@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Difference between lattice and complete lattice</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Difference between lattice and complete lattice </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="16129">
+<p>Definition of lattice require that any two elements of lattice should have LUB and GLB, while complete lattice extends it to, every subset should have LUB and GLB. But by induction , it is possible to show that if any two elements have LUB and GLB then every subset should have LUB and GLB. I read somewhere that the difference is because of infinite set, in that case it is possible that set along with some partial order is lattice but not complete lattice, can someone please elaborate it with one example?</p> <p>regards</p>
+</div>
+<hr/>
+<div id="tags">
+<span> lattice-orders </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="16132" id="answer">
+<p>Regular induction ("holds for <span class="math-container" id="155040" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>" and "if it holds for <span class="math-container" id="155041" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> then it holds for <span class="math-container" id="155042" visual_id="407"><math alttext="k+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>") only gives you that the result holds for every natural number <span class="math-container" id="155043" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>; it does not let you go beyond the finite numbers. For example, you can prove by induction that there are natural numbers that require <span class="math-container" id="155044" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> digits to write down in base <span class="math-container" id="155045" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span> for every <span class="math-container" id="155046" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, but this does not mean that there are natural numbers that require an infinite number of digits to write down in base <span class="math-container" id="155047" visual_id="1593"><math alttext="10" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn></semantics></math></span>. "For all <span class="math-container" id="155048" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>" is not the same as "for all sizes, finite or infinite".</p> <p>(There <em>is</em> a kind of induction that would allow you to prove something for <em>all</em> sizes, not just finite. This is called <a href="http://en.wikipedia.org/wiki/Transfinite_induction">transfinite induction</a>. You prove the result holds for <span class="math-container" id="155049" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, and that whenever it holds for all <span class="math-container" id="155050" visual_id="121056"><math alttext="m\lt k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>k</mi></mrow></semantics></math></span>, then it also holds for <span class="math-container" id="155051" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> (or, you prove it holds for <span class="math-container" id="155052" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, that if it holds for an ordinal/cardinal  <span class="math-container" id="155053" visual_id="93"><math alttext="\alpha" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi></semantics></math></span> then it holds for <span class="math-container" id="155054" visual_id="34689"><math alttext="\alpha+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>, and that if it holds for all ordinals/cardinals strictly smaller than <span class="math-container" id="155055" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span>, then it holds for <span class="math-container" id="155056" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span>). However you would be unable to do such a proof with lattices, because it is false).</p> <p>So, if you have a lattice, then any <em>nonempty finite</em> subset has a least upper bound and a greatest lower bound, by induction. Even if you have a <span class="math-container" id="155057" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> and a <span class="math-container" id="155058" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> (a minimum and a maximum element) so that every set has an upper and a lower bound, you still don't get that every set has a <em>least</em> upper bound. For example, take <span class="math-container" id="155059" visual_id="8270881"><math alttext="P=\mathbb{Q}\cup\{-\infty,\infty\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mi>ℚ</mi><mo>∪</mo><mrow><mo stretchy="false">{</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span>, with the usual order among rationals, <span class="math-container" id="155060" visual_id="8270882"><math alttext="-\infty\leq q\leq\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mo>≤</mo><mi>q</mi><mo>≤</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> for all <span class="math-container" id="155061" visual_id="2609"><math alttext="q\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>∈</mo><mi>ℚ</mi></mrow></semantics></math></span>. This is a lattice, with operations <span class="math-container" id="155062" visual_id="384736"><math alttext="a\wedge b=\min\{a,b\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>∧</mo><mi>b</mi></mrow><mo>=</mo><mrow><mi>min</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="155063" visual_id="915766"><math alttext="a\vee b=\max\{a,b\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>∨</mo><mi>b</mi></mrow><mo>=</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">}</mo></mrow></mrow></mrow></semantics></math></span> (since it is a totally ordered set). Every <em>finite</em> subset has a least upper bound (the maximum) and a greatest lower bound (the minimum). But it is precisely the absence of suprema and infima for general sets that stops it from being a complete lattice: the set <span class="math-container" id="155064" visual_id="8270883"><math alttext="\{q\in\mathbb{Q}\mid q^{2}\lt 2\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mrow><mi>q</mi><mo>∈</mo><mi>ℚ</mi></mrow><mo>∣</mo><mrow><msup><mi>q</mi><mn>2</mn></msup><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mn>2</mn></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span> has no least upper bound and no greatest lower bound.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="665501"> Being confused by a definition of Lattice </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
