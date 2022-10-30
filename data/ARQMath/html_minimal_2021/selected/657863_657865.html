@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>equivalence classes and cardinality</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> equivalence classes and cardinality </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="657863">
+<p>I need to prove that every equivalence class created by the equivalnce relation <span class="math-container" id="6640092" visual_id="3262"><math alttext="\sim" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∼</mo></semantics></math></span> on <span class="math-container" id="6640093" visual_id="448"><math alttext="\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℝ</mi></semantics></math></span>, that is defined by: <span class="math-container" id="6640094" visual_id="4441989"><math alttext="a\sim b\Leftrightarrow(a-b)\in\mathbb{Q}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>∼</mo><mi>b</mi></mrow><mo>⇔</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>ℚ</mi></mrow></mrow></semantics></math></span>, is <span class="math-container" id="6640095" visual_id="9906"><math alttext="\aleph_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">ℵ</mi><mn>0</mn></msub></semantics></math></span>. Furthermore, I need to prove that the group of all equivalence classes is uncountable. I have an idea how to move from step one (proving it's <span class="math-container" id="6640096" visual_id="9906"><math alttext="\aleph_{0}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">ℵ</mi><mn>0</mn></msub></semantics></math></span>) to step two (proving that the group of all equivalence classes is uncountable), by using the laws of addition in cardinality. However, I have no idea how to even approach the first step. Any help or idea will be appreciated!</p> <p>Thanks a bunch!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span><span> cardinals </span><span> equivalence-relations </span><span> rational-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1384470"> Let <span class="math-container" id="6640104" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> be any equivalence class, and let <span class="math-container" id="6640098" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> be a fixed element of <span class="math-container" id="6640104" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span>. Then <span class="math-container" id="6640104" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> consists of all <span class="math-container" id="6640101" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> of the form <span class="math-container" id="6640102" visual_id="1732716"><math alttext="b+r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>+</mo><mi>r</mi></mrow></semantics></math></span>, where <span class="math-container" id="6640103" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> ranges over the rationals. This gives us a one to one correspondence between <span class="math-container" id="6640104" visual_id="599"><math alttext="B" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi></semantics></math></span> and the rationals. </td></tr><tr><td comment_id="1386408"> [Related](http://math.stackexchange.com/questions/231236/cardinality-of-vitali-sets-countably-or-uncountably-infinite/231244#231244). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="657865" id="answer">
+<p><strong>Hint</strong>: Take any <span class="math-container" id="6640105" visual_id="15098"><math alttext="b\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>. Then <span class="math-container" id="6640106" visual_id="66260"><math alttext="a\sim b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∼</mo><mi>b</mi></mrow></semantics></math></span> if and only if <span class="math-container" id="6640107" visual_id="154595"><math alttext="a=b+p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mi>b</mi><mo>+</mo><mi>p</mi></mrow></mrow></semantics></math></span> for some <span class="math-container" id="6640108" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> such that...what?</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1384483"> Can't believe I failed to see that. Thanks a lot!! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="231236"> Cardinality of Vitali sets: countably or uncountably infinite? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Parametric equation of $x^y=y^x$ curve</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Parametric equation of <span class="math-container" id="5506964" visual_id="44405"><math alttext="x^{y}=y^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup><mo>=</mo><msup><mi>y</mi><mi>x</mi></msup></mrow></semantics></math></span> curve </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="528744">
+<p>What is the easiest/most natural way to parametrize the following curve?</p> <p><span class="math-container" id="5506965" visual_id="1568446"><math alttext="\{(x,y)\in\mathbb{R}^{+2}\mid x^{y}=y^{x},x\neq y\}\cup\{(e,e)\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">{</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>ℝ</mi><mrow><mo>+</mo><mn>2</mn></mrow></msup></mrow><mo>∣</mo><mrow><mrow><msup><mi>x</mi><mi>y</mi></msup><mo>=</mo><msup><mi>y</mi><mi>x</mi></msup></mrow><mo>,</mo><mrow><mi>x</mi><mo>≠</mo><mi>y</mi></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>e</mi><mo>,</mo><mi>e</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span></p> <p>The best I could do was taking it apart, and for <span class="math-container" id="5506966" visual_id="38514"><math alttext="x&gt;y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mi>y</mi></mrow></semantics></math></span> use <span class="math-container" id="5506967" visual_id="1568447"><math alttext="y(x)=\sqrt[x]{x}^{\sqrt[x]{x}^{\sqrt[x]{x}^{.....}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mroot><mi>x</mi><mi>x</mi></mroot><msup><mroot><mi>x</mi><mi>x</mi></mroot><msup><mroot><mi>x</mi><mi>x</mi></mroot><mrow><mi mathvariant="normal">…</mi><mo>.</mo><mo>.</mo></mrow></msup></msup></msup></mrow></semantics></math></span>, but I see no theoretical reason why I should break it into parts, since the curve <em>looks so nice</em>.</p> <p>Maybe the niceness of the curve is just an illusion, and in fact the <span class="math-container" id="5506968" visual_id="11696"><math alttext="x&lt;y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>y</mi></mrow></semantics></math></span> and <span class="math-container" id="5506969" visual_id="38514"><math alttext="x&gt;y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mi>y</mi></mrow></semantics></math></span> cases must be considered separately?</p> <p>EDIT:<span class="math-container" id="5506970" visual_id="1568448"><math alttext="(x,y)=(e^{t/(e^{t}-1)},e^{t/(1-e^{-t})})\quad t\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mi>t</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>t</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>,</mo><msup><mi>e</mi><mrow><mi>t</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mi>t</mi><mo>∈</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> This is a very nice parametrization, but still doesn't include <span class="math-container" id="5506971" visual_id="630926"><math alttext="(e,e)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>e</mi><mo>,</mo><mi>e</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> plane-curves </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="539878" id="answer">
+<p>I've done this here before, but it's quicker  to write it again than to try to find it.</p> <p>Let <span class="math-container" id="5507000" visual_id="44429"><math alttext="y=rx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span>. <span class="math-container" id="5507001" visual_id="44405"><math alttext="x^{y}=y^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup><mo>=</mo><msup><mi>y</mi><mi>x</mi></msup></mrow></semantics></math></span> becomes <span class="math-container" id="5507002" visual_id="44430"><math alttext="x^{rx}=(rx)^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><mi>r</mi><mo>⁢</mo><mi>x</mi></mrow></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>x</mi></msup></mrow></semantics></math></span> or <span class="math-container" id="5507003" visual_id="44431"><math alttext="x^{r}=rx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>r</mi></msup><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span> or <span class="math-container" id="5507004" visual_id="44432"><math alttext="x^{r-1}=r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mi>r</mi></mrow></semantics></math></span> or <span class="math-container" id="5507005" visual_id="44433"><math alttext="x=r^{1/(r-1)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>r</mi><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow></semantics></math></span> and <span class="math-container" id="5507006" visual_id="44434"><math alttext="y=rx=r^{1+1/(r-1)}=r^{r/(r-1)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><msup><mi>r</mi><mrow><mn>1</mn><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></msup><mo>=</mo><msup><mi>r</mi><mrow><mi>r</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow></semantics></math></span>.</p> <p>If <span class="math-container" id="5507007" visual_id="3568"><math alttext="r=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>, all values of <span class="math-container" id="5507008" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> work since the condition is <span class="math-container" id="5507009" visual_id="44432"><math alttext="x^{r-1}=r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mi>r</mi></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1150750"> Maybe I'm dense, but I can't make head or tail of this. </td></tr><tr><td comment_id="1157625"> @dfeuer: after substitution, take the x-th root, then divide by x, then take the (r-1)-th root </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

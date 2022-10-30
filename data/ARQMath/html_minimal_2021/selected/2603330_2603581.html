@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <title>What is (mathematically) minimal computer architecture to run any software</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be">
+
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js"> </script>
+
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+
+        <style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <div class="row" id="question-title">
+                <h1> What is (mathematically) minimal computer architecture to run any software </h1>
+                <hr>
+            </div>
+
+
+            <div class="row">
+                <div class="question">
+
+                    <div question_id="2603330"  id="question">
+                        <p>Computer consist of hardware, literally hard wiring machine language instructions (operations) and operands to predetermined results. At the lowest level of interest, this hard wiring is physical implementation of boolean algebra or some other discrete mathematical system, implemented with electronic logic gates.</p>  <p>At the most basic level, a logic gate takes one or two binary inputs (signals), and return a binary output in respect to one of these logical operations: AND, OR and NOT. Any truth table of arbitrary binary inputs and outputs can be reduced to canonical boolean expression composed of these logical operators. I.e any chip performing some logical operation on arbitrary binary data can be composed of these logic gates. Machine instruction are binary control bits to parameterize the chip behavior. </p>  <p>From these elementary logic gates, higher level of abstraction is derived: Adders, ALU, multiplexers, registers, CPU, memory etc. At this level, computer performs arithmetic operations on hardware sequentially, moving the binary results back and forth between ALU, registers and memory, synchronized by the clock signal. These physical transformations (arithmetics) of binary data logically obeys the mathematical axioms on which the logic gates are based.</p>  <p>Software is the ultimate abstraction over hardware. With it, computer can be instructed to perform anything. Software can be defined using any syntax, and it is completely decoupled from the hardware, until compiled. Even then, it only depends on the binary code, which is abstract interface to hardware. It never meets the hardware. Neither knows the existence of the other. But ultimately, any software is reduced (and limited) to the sequence of arithmetic or logical operations performed by the hardware.</p>  <p>My question is, what is the minimal design of computer circuitry and architecture (bit width, ALU operations, registers, instruction set etc.) to be able to theoretically compile and run any software which modern PC can run (OS and applications) on the computer, when performance isn't considered? And how do you mathematically proof this?</p>  <p>Here is the question in the nutshell: <strong>What is the minimal required instruction set for hardware to be able to emulate a modern PC?</strong></p> 
+                    </div>
+                    <hr>
+
+                    <div id="tags">
+                        <span> discrete-mathematics </span><span> logic </span><span> computer-science </span><span> boolean-algebra </span><span> binary </span>
+                    </div>
+                    <hr>
+
+                    <div id="question-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="5375558"> You may be interested in https://cstheory.stackexchange.com/questions/10207/whats-the-simplest-noncontroversial-2-state-universal-turing-machine. </td></tr><tr><td comment_id="5375562"> When you ask about _the_ minimal design. What linear ordering are you referring to? </td></tr><tr><td comment_id="5375622"> Is it really related to mathematics ? </td></tr><tr><td comment_id="5376199"> It is hard to define a ordering of simplicity, but I would guess register machines are as simple as they can get. https://en.wikipedia.org/wiki/Register_machine The keyword here is Turing completeness. </td></tr><tr><td comment_id="5376202"> @BorisEng Very much so. Simple computing formalisms are very closely related to logic and foundations of mathematics. </td></tr><tr><td comment_id="5377832"> Are you familiar with the concept of "Turing Machine" ? </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div class="answer">
+
+
+                    <div answer_id="2603581" id="answer">
+                        <p>This is a quite deep question, and has some problems:</p>  <ul> <li>What is <em>"any"</em> software? I.e. what do you define as a "program"?</li> <li>With respect to <em>what exactly</em> should this machine be <em>minimal</em>?</li> </ul>  <p>It seems like you want to minimize the bits of your CPU registers. Unfortunately, the number of bits is logarithmically proportional to how much memory you have access to. Since a program might need <em>any</em> amount of memory, in fact, no number of bits would be enough to run <em>any</em> program, even if you had an infinite amount of memory.</p>  <p>So you see, even asking the question correctly might be difficult and the answer can vary depending on how you do that. <a href="https://en.wikipedia.org/wiki/Automata_theory" rel="nofollow noreferrer">Automata Theory</a>, and theoretical computer science in general, deal with many of these kinds of questions. I am afraid unless you are more specific with what you want to optimize under which conditions, it is hard to give a formal answer.</p> 
+                    </div>
+                    <hr>
+
+
+                    <div id="answer-comments">
+                        <table>
+                            <tbody>
+                                <tr><td comment_id="5376163"> I'm no trying to do any optimization, but find the theoretically minimal set of required logical operations provided by the hardware to execute any software than modern PC may also execute. Specifically, what is the absolutely minimum functions of ALU to be able to emulate modern PC on the software running on this minimal hardware, when performance isn't considered? </td></tr><tr><td comment_id="5376299"> In that case, [NOR](https://en.wikipedia.org/wiki/NOR_gate) is a [functionally complete](https://en.wikipedia.org/wiki/Functional_completeness) gate. Is that what you are looking for? </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <hr style="border-top: 3px double #8c8b8b">
+            </div>
+
+            <div class="row">
+                <div id="duplicate">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+
+                <div id="related">
+                    <table>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+</html>

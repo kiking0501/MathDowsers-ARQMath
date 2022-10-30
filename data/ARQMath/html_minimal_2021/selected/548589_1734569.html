@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Sum of reciprocals of primes factorial: $\sum_{p\;\text{prime}}\frac{1}{p!}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Sum of reciprocals of primes factorial: <span class="math-container" id="5687992" visual_id="1631467"><math alttext="\sum_{p\;\text{prime}}\frac{1}{p!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mpadded width="+2.8pt"><mi>p</mi><mo>⁢</mo><mtext>prime</mtext></mpadded></mrow></munder><mfrac><mn>1</mn><mrow><mi>p</mi><mo>!</mo></mrow></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="548589">
+<p>The series <span class="math-container" id="5687993" visual_id="1631468"><math alttext="\sum_{p\;\text{prime}}\frac{1}{p}=\frac{1}{2}+\frac{1}{3}+\frac{1}{5}+\frac{1}% {7}+\frac{1}{11}+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mpadded width="+2.8pt"><mi>p</mi><mo>⁢</mo><mtext>prime</mtext></mpadded></mrow></munder><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>7</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>11</mn></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></semantics></math></span> diverges as is well known. How about the following? <span class="math-container" id="5687994" visual_id="1631469"><math alttext="\sum_{p\;\text{prime}}\frac{1}{p!}=\frac{1}{2!}+\frac{1}{3!}+\frac{1}{5!}+% \frac{1}{7!}+\frac{1}{11!}+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mpadded width="+2.8pt"><mi>p</mi><mo>⁢</mo><mtext>prime</mtext></mpadded></mrow></munder><mfrac><mn>1</mn><mrow><mi>p</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>5</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>7</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>11</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow></semantics></math></span> Its convergence is easily obtained by comparing with the series <span class="math-container" id="5687995" visual_id="413026"><math alttext="e=\sum_{n=0}^{\infty}\frac{1}{n!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><mi>n</mi><mo>!</mo></mrow></mfrac></mrow></mrow></semantics></math></span>. Numerically, we get <span class="math-container" id="5687996" visual_id="1631470"><math alttext="\sum_{p\;\text{prime}}\frac{1}{p!}\simeq 0.675198" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mpadded width="+2.8pt"><mi>p</mi><mo>⁢</mo><mtext>prime</mtext></mpadded></mrow></munder><mfrac><mn>1</mn><mrow><mi>p</mi><mo>!</mo></mrow></mfrac></mrow><mo>≃</mo><mn>0.675198</mn></mrow></semantics></math></span> Can we find the specific value?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> prime-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1167626"> Dear Spenser: it depends what you mean by "find"! We can definitely calculate it up to very high precision, but I doubt that it can be expressed in terms of familiar constants. </td></tr><tr><td comment_id="1167774"> Perhaps this paper will interest you: http://arxiv.org/abs/0705.4299. It contains a proof (theorem 65) that your sum is an irrational number. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1734569" id="answer">
+<p><strong>Some quick notes on the approximation of this sum</strong></p> <p>This sum can be approximated in the obvious way (with Maple):</p> <pre><code>SrpfN := proc (N) local s, p; s := 0; for p from 2 to N do if isprime(p) = true then s := s+1/factorial(p) end if end do; s; end proc; </code></pre> <p>The problem with the above is, however, the procedure "isprime" of Maple, which, in the best possible case is <span class="math-container" id="5688000" visual_id="327311"><math alttext="O(n^{k})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>n</mi><mi>k</mi></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> for some constant <span class="math-container" id="5688001" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> (Primes is in P).</p> <p>There is an alternate way to approximate it, using the PNT. Indeed, if we set <span class="math-container" id="5688002" visual_id="1631474"><math alttext="S_{rpf}(N)=\sum\limits_{n=2}^{N}\frac{1}{p_{n}!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>S</mi><mrow><mi>r</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>f</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi>N</mi></munderover><mfrac><mn>1</mn><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>!</mo></mrow></mfrac></mrow></mrow></semantics></math></span> then, because the sum is asymptotic, we can also set: <span class="math-container" id="5688003" visual_id="1631475"><math alttext="p_{n}\sim\frac{n}{\ln(n)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>∼</mo><mfrac><mi>n</mi><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></semantics></math></span> and then,</p> <p><span class="math-container" id="5688004" visual_id="1631476"><math alttext="\displaystyle S_{rpf}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mrow><mi>r</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>f</mi></mrow></msub></semantics></math></span></p> <p>Therefore, two useful approximants are given, as:</p> <p><span class="math-container" id="5688005" visual_id="1631477"><math alttext="\displaystyle S_{rpf1}(N,M)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mrow><mi>r</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>N</mi><mo>,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p> <p>Note that because the approximants are dependent on asymptotic behavior, it helps to move <span class="math-container" id="5688006" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> to some large number and leave the first part of the sum fixed, as: <span class="math-container" id="5688007" visual_id="1631478"><math alttext="S_{rpf}(N)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mrow><mi>r</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>f</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. This limits the use of the "isprime" calculator. We then use the following code:</p> <pre><code>N := 'N'; M := 'M'; n := 'n';#clear vars  px := proc (x) options operator, arrow;#PNT x/ln(x) end proc  Srpf1 := proc (N, M) options operator, arrow; SrpfN(N)+Sum(1/GAMMA(px(n)+1), n = N+1 .. M) end proc  Srpf2 := proc (N, M) options operator, arrow; SrpfN(N)+Int(1/GAMMA(px(x)+1), x = N+1 .. M) end proc </code></pre> <p>And now we verify that we have indeed fast convergence:</p> <pre><code>N := 100; print('M', 'SrpfN(M)', 'Srpf1(N, M)', 'Srpf2(N, M)') for M from N to N+10 do print(M,evalf(SrpfN(M)),evalf(Srpf1(N, M)),evalf(Srpf2(N, M))); od;        M, SrpfN(M), Srpf1(N, M), Srpf2(N, M)      100, 0.6751984379, 0.6751984379, 0.6751984379      101, 0.6751984379, 0.6751984379, 0.6751984379      102, 0.6751984379, 0.6751984379, 0.6751984379      103, 0.6751984379, 0.6751984379, 0.6751984379      104, 0.6751984379, 0.6751984379, 0.6751984379      105, 0.6751984379, 0.6751984379, 0.6751984379      106, 0.6751984379, 0.6751984379, 0.6751984379      107, 0.6751984379, 0.6751984379, 0.6751984379      108, 0.6751984379, 0.6751984379, 0.6751984379      109, 0.6751984379, 0.6751984379, 0.6751984379      110, 0.6751984379, 0.6751984379, 0.6751984379 </code></pre> <p>Are approximations calculated this way faster? Indeed they are. Killing unneeded terms, getting rid of the constants and simplifying, with:</p> <pre><code>expr := factor(expand(simplify( n*asympt(1/GAMMA(n/ln(n)+1), n, 1), trig, exp, ln))); </code></pre> <p>we get:</p> <p><span class="math-container" id="5688008" visual_id="1631479"><math alttext="O\left(\sum\limits_{n=N+1}^{M}\Gamma\left(\frac{n}{\ln(n)}+1\right)^{-1}\right% )\sim\frac{\sqrt{n\ln(n)}\cdot\ln(n)^{\left(\frac{n}{\ln(n)}\right)}}{e^{n-% \frac{n}{\ln(n)}}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>O</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow></mrow><mi>M</mi></munderover><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mfrac><mi>n</mi><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>)</mo></mrow></mrow><mo>∼</mo><mfrac><mrow><msqrt><mrow><mi>n</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></msqrt><mo>⋅</mo><mi>ln</mi><msup><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mrow><mo>(</mo><mfrac><mi>n</mi><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>)</mo></mrow></msup></mrow><msup><mi>e</mi><mrow><mi>n</mi><mo>-</mo><mfrac><mi>n</mi><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></msup></mfrac></mrow></semantics></math></span></p> <p>Now setting <span class="math-container" id="5688009" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span> equal to the above, we find <span class="math-container" id="5688010" visual_id="948436"><math alttext="\lim\limits_{n\to\infty}\frac{a_{n}}{n}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><msub><mi>a</mi><mi>n</mi></msub><mi>n</mi></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, which shows immediately that the order of the sum and the integral in (1) and (2) is sublinear, hence sub-polynomial.</p> <p>Therefore the above approximations are calculated faster than using only the "isprime" function, which is of polynomial time.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1734340"> Value of <span class="math-container" id="16018361" visual_id="962854"><math alttext="\sum^{\infty}\frac{1}{p_{n}!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi mathvariant="normal">∞</mi></mover><mfrac><mn>1</mn><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>!</mo></mrow></mfrac></mrow></semantics></math></span> =? </td></tr><tr><td post_id="2186347"> Is there a name for this number? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1344000"> What is known about the sum <span class="math-container" id="12492601" visual_id="1820687"><math alttext="\sum\frac{1}{p^{p}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mfrac><mn>1</mn><msup><mi>p</mi><mi>p</mi></msup></mfrac></mrow></semantics></math></span> of reciprocals of primes raised to themselves? </td></tr><tr><td post_id="1462577"> Is the series: <span class="math-container" id="13548814" visual_id="1993317"><math alttext="\frac{\pi}{p_{1}!}+\frac{\pi}{p_{2}!}+...+\frac{\pi}{p_{n}!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>π</mi><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mi>π</mi><mrow><msub><mi>p</mi><mn>2</mn></msub><mo>!</mo></mrow></mfrac><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mfrac><mi>π</mi><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>!</mo></mrow></mfrac></mrow></semantics></math></span> convergent or divergent, where <span class="math-container" id="13548815" visual_id="2802"><math alttext="p_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>n</mi></msub></semantics></math></span> is the <span class="math-container" id="13548816" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>-th odd prime? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

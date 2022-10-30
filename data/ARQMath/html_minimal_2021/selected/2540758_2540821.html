@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>An example of a non-commutative ring with multiplicative identity 1 in which the only (two sided) ideals are 0 and the whole ring</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> An example of a non-commutative ring with multiplicative identity 1 in which the only (two sided) ideals are 0 and the whole ring </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2540758">
+<p>Is there any example of a non-commutative ring with 1 in which the only ideals are (0) and the whole ring, yet the elements do not have multiplicative inverses?</p> <p>I thought an example of all 2x2 matrices with entries from any fields (like R, the real number), and it is clearly that not all of them are invertible, thus do not have multiplicative inverses, but how do I show the ideals are only (0) and the whole ring?</p> <p>Thank you so much!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> ring-theory </span><span> ideals </span><span> noncommutative-algebra </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5246008"> You are asking for simple rings which are not necessarily division rings. A big and interesting subclass of those are the central simple algebras ( https://en.m.wikipedia.org/wiki/Central_simple_algebra), of which matrix algebras <span class="math-container" id="23493530" visual_id="478631"><math alttext="M_{n}(k)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> over fields <span class="math-container" id="23493592" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> are indeed a standard example. </td></tr><tr><td comment_id="5246049"> I added the "ring-theory" tag to your post. </td></tr><tr><td comment_id="5246075"> But I don't know how to show the ideals to be only (0) and the whole ring.. I get basic idea that if for any 2x2 nonzero matrix in an ideal, we may eventually get the identity matrix in the ideal and therefore the ideal is the whole ring, but I don't know how to show it.. @TorstenSchoeneberg </td></tr><tr><td comment_id="5246693"> [DaRT search](http://ringtheory.herokuapp.com/search/results/?has=7&amp;lacks=1) yields seven at present, four of which haven't been mentioned yet, I think. </td></tr><tr><td comment_id="5247935"> The answers say it all now. A last thing to add is that all this relies on the distinction between two-sided and one-sided ideals in the noncommutative setting. A ring which has neither proper left- nor proper right-ideals would indeed be a division ring. In particular, "artinian" in Qiaochu Yuan's answer means "left-artinian", and it is fascinating to see that, e.g., matrix algebras over an infinite field have infinitely many distinct left ideals (although they fall into finitely many isoclasses), and e.g. the Weyl algebra even has an infinite descending chain of left ideals. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2540821" id="answer">
+<p>Matrix is a very important tool non-commutative ring. Following theorem can help to us for your question. <br/> Theorem: Let R be a ring, <span class="math-container" id="23493599" visual_id="543253"><math alttext="M_{n}(R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> be the ring of all <span class="math-container" id="23493600" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> x <span class="math-container" id="23493601" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> matrices over <span class="math-container" id="23493602" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>.<br/> <span class="math-container" id="23493603" visual_id="1421340"><math alttext="I\unlhd M_{n}(R)\iff" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>I</mi><mo>⊴</mo><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>⇔</mo><mi></mi></mrow></semantics></math></span> <span class="math-container" id="23493604" visual_id="1421341"><math alttext="I=M_{n}(U)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> for a uniquely determined ideal <span class="math-container" id="23493605" visual_id="7"><math alttext="U" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi></semantics></math></span> of <span class="math-container" id="23493606" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>.<br/> In particular, <span class="math-container" id="23493607" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is simple <span class="math-container" id="23493608" visual_id="1183"><math alttext="\iff" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇔</mo></semantics></math></span> <span class="math-container" id="23493609" visual_id="543253"><math alttext="M_{n}(R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is simple.<br/> Consequently, <span class="math-container" id="23493610" visual_id="109030"><math alttext="M_{n}(D)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is a simple for any division ring <span class="math-container" id="23493611" visual_id="524"><math alttext="D" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi></semantics></math></span>. <br/> Hence, you can find a lot of examples via above statements.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5246158"> What does <span class="math-container" id="23493612" visual_id="436195"><math alttext="\unlhd" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊴</mo></semantics></math></span> mean in this context? </td></tr><tr><td comment_id="5246160"> Two sided ideal. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

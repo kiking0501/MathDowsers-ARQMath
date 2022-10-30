@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to find integer solutions to $M^2=5N^2+2N+1$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to find integer solutions to <span class="math-container" id="16411966" visual_id="1315590"><math alttext="M^{2}=5N^{2}+2N+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mn>2</mn></msup><mo>=</mo><mrow><mrow><mn>5</mn><mo>⁢</mo><msup><mi>N</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>N</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1776734">
+<p>My number theory is terrible so I don't know what "class" of problem this secretly is.  I'm looking for all positive integer solutions to the equation:</p> <blockquote> <p><span class="math-container" id="16411967" visual_id="1315590"><math alttext="M^{2}=5N^{2}+2N+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mn>2</mn></msup><mo>=</mo><mrow><mrow><mn>5</mn><mo>⁢</mo><msup><mi>N</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>N</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span></p> </blockquote> <p>That is, I want positive integer <span class="math-container" id="16411968" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span> and <span class="math-container" id="16411969" visual_id="320"><math alttext="N" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi></semantics></math></span> to make the above true.  I've got the obvious solution (<span class="math-container" id="16411970" visual_id="19501"><math alttext="N=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="16411971" visual_id="11798"><math alttext="M=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>) but I don't know how to go about getting more solutions.  It has been suggested to me that there should be infinitely many solutions, and I would like to find them all.</p> <p>I could transform it to look like Pell's equation by completing the square on the right, but it won't have integer coefficients (or you could multiply it through by the denominators, but then it wouldn't look like Pell's equation), so I don't think that helps much.</p> <p>I don't know enough number theory to guess at other things, but I'm happy to read something on this topic.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> diophantine-equations </span><span> pell-type-equations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3626230"> Multiply by <span class="math-container" id="16411972" visual_id="339"><math alttext="5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn></semantics></math></span>, we get a Pell equarion. </td></tr><tr><td comment_id="3626336"> You missed <span class="math-container" id="16411973" visual_id="259060"><math alttext="N=-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> and <span class="math-container" id="16411974" visual_id="5986"><math alttext="N=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="3626354"> @Michael, well, I think I missed infinitely many solutions, but yes, those are not too tough. </td></tr><tr><td comment_id="3626355"> @Andre Doesn't a Pell equation need to be in the form <span class="math-container" id="16411975" visual_id="1315591"><math alttext="x^{2}-Dy^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>D</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>?  I don't see how to multiply by 5 and get that. </td></tr><tr><td comment_id="3626959"> @RichardRast Strictly speaking you are correct, however more generally any Diophantine equation of the form <span class="math-container" id="16411976" visual_id="1315592"><math alttext="x^{2}-Dy^{2}=k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>D</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mi>k</mi></mrow></semantics></math></span> with <span class="math-container" id="16411977" visual_id="12634"><math alttext="k\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span> is often called a Pellian equation.  The important thing is that the same principle still applies to the general case: if you have one solution, then you can always find infinitely many more. </td></tr><tr><td comment_id="4860597"> See also the earlier question (but without acceptance by the asker) https://math.stackexchange.com/q/75031 </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1776757" id="answer">
+<p>For these equations we use the standard approach. For a private quadratic form:  <span class="math-container" id="16412021" visual_id="1315608"><math alttext="Y^{2}=aX^{2}+bX+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>Y</mi><mn>2</mn></msup><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>X</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>X</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> </p> <p>Using solutions of Pell's equation:  <span class="math-container" id="16412022" visual_id="1315609"><math alttext="p^{2}-as^{2}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi>s</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> </p> <p>Solutions can be expressed through them is quite simple.  </p> <p><span class="math-container" id="16412023" visual_id="1315610"><math alttext="Y=p^{2}+bps+as^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>s</mi></mrow><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi>s</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span> </p> <p><span class="math-container" id="16412024" visual_id="1315611"><math alttext="X=2ps+bs^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mi>s</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>s</mi><mn>2</mn></msup></mrow></mrow></mrow></semantics></math></span> </p> <p><span class="math-container" id="16412025" visual_id="14138"><math alttext="p,s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mi>s</mi></mrow></semantics></math></span> - these numbers can have any sign.</p> <p>Finding solutions of equations Pell - standard procedure.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3626329"> Is this guaranteed to give every possible solution?  And does this work for every integer <span class="math-container" id="16412029" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="16412027" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> (assuming <span class="math-container" id="16412028" visual_id="4314"><math alttext="a\not=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>)? </td></tr><tr><td comment_id="3626389"> Generally speaking, you can write down several formulas. But I think that's enough.  The main thing that shows. Infinitely many solutions when the number   <span class="math-container" id="16412026" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>  is not<span class="math-container" id="16412029" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>square. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="75031"> Solving quadratic Diophantine equations: <span class="math-container" id="842560" visual_id="8809603"><math alttext="5n^{2}+2n+1=y^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mn>5</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1790680"> Sum of two consecutive squares equal square </td></tr><tr><td post_id="1938184"> Solving <span class="math-container" id="17965639" visual_id="4997818"><math alttext="p^{2}=2xq^{2}+2yq+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>q</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>q</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Stalks of the graph of a morphism</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Stalks of the graph of a morphism </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="58961">
+<p>I am interested in the graph <span class="math-container" id="643354" visual_id="469532"><math alttext="\Gamma_{f}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mi>f</mi></msub></semantics></math></span> of a morphism</p> <p><span class="math-container" id="643355" visual_id="2889"><math alttext="f:X\rightarrow Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span> between two sufficiently nice schemes <span class="math-container" id="643356" visual_id="9515"><math alttext="X,Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow></semantics></math></span>.</p> <p>One knows that it is a closed subset of <span class="math-container" id="643357" visual_id="16194"><math alttext="X\times Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></semantics></math></span> (when the schemes are nice, say varieties over a field).</p> <p>I would like to know the following: if you endow it with the reduced structure, what are the stalks of it's structure sheaf in a point <span class="math-container" id="643358" visual_id="40887"><math alttext="(x,f(x))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> ?</p> <p>Thanks you very much!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> algebraic-geometry </span><span> schemes </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="136277"> You're really posting a lot of questions here and on MO. Are you really thinking your questions over carefully before you ask them here? Do you really have time to digest all the helpful answers you've been getting? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="59047" id="answer">
+<p>Let <span class="math-container" id="643359" visual_id="2889"><math alttext="f:X\to Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></semantics></math></span> be a morphism of <span class="math-container" id="643360" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>-schemes. The graph morphism <span class="math-container" id="643361" visual_id="8756350"><math alttext="\gamma_{f}:X\to X\times_{S}Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>γ</mi><mi>f</mi></msub><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mrow><mi>X</mi><msub><mo>×</mo><mi>S</mi></msub><mi>Y</mi></mrow></mrow></mrow></semantics></math></span> is the pull-back of the diagonal morphism <span class="math-container" id="643362" visual_id="8756351"><math alttext="\delta:Y\to Y\times_{S}Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>:</mo><mrow><mi>Y</mi><mo>→</mo><mrow><mi>Y</mi><msub><mo>×</mo><mi>S</mi></msub><mi>Y</mi></mrow></mrow></mrow></semantics></math></span> along <span class="math-container" id="643363" visual_id="8756352"><math alttext="f\times id_{Y}:X\times_{S}Y\to Y\times_{S}Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>f</mi><mo>×</mo><mi>i</mi></mrow><mo>⁢</mo><msub><mi>d</mi><mi>Y</mi></msub></mrow><mo>:</mo><mrow><mrow><mi>X</mi><msub><mo>×</mo><mi>S</mi></msub><mi>Y</mi></mrow><mo>→</mo><mrow><mi>Y</mi><msub><mo>×</mo><mi>S</mi></msub><mi>Y</mi></mrow></mrow></mrow></semantics></math></span>. This implies that if <span class="math-container" id="643364" visual_id="41"><math alttext="\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi></semantics></math></span> is a closed embedding (i.e. <span class="math-container" id="643365" visual_id="220726"><math alttext="Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi></semantics></math></span> is separated over <span class="math-container" id="643366" visual_id="403"><math alttext="S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi></semantics></math></span>) so is <span class="math-container" id="643367" visual_id="1565267"><math alttext="\gamma_{f}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>γ</mi><mi>f</mi></msub></semantics></math></span>. So <span class="math-container" id="643368" visual_id="1565267"><math alttext="\gamma_{f}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>γ</mi><mi>f</mi></msub></semantics></math></span> induces an isomorphism between <span class="math-container" id="643369" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> and its image <span class="math-container" id="643370" visual_id="714086"><math alttext="\Gamma_{f}\subset X\times Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Γ</mi><mi>f</mi></msub><mo>⊂</mo><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></mrow></semantics></math></span>.    </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="138013"> Why is it an isomorphism on it's image? A closed immersion only yields an epimorphism on the structure sheaves. </td></tr><tr><td comment_id="143884"> You are confusing the target (or codomain) <span class="math-container" id="643371" visual_id="16194"><math alttext="X\times Y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></semantics></math></span> and the schematic image <span class="math-container" id="643372" visual_id="469532"><math alttext="\Gamma_{f}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mi>f</mi></msub></semantics></math></span> of <span class="math-container" id="643373" visual_id="1565267"><math alttext="\gamma_{f}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>γ</mi><mi>f</mi></msub></semantics></math></span>. By definition <span class="math-container" id="643374" visual_id="469532"><math alttext="\Gamma_{f}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mi>f</mi></msub></semantics></math></span> is the closed subscheme defined by the sheaf of ideal <span class="math-container" id="643375" visual_id="9354783"><math alttext="\mathcal{I}=ker(\mathcal{O}_{X\times Y}\to(\gamma_{f})_{*}\mathcal{O}_{X})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="ltx_font_mathcaligraphic">ℐ</mi><mo>=</mo><mi>k</mi><mi>e</mi><mi>r</mi><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></msub><mo>→</mo><msub><mrow><mo stretchy="false">(</mo><msub><mi>γ</mi><mi>f</mi></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. Since the morphism is surjective we get <span class="math-container" id="643376" visual_id="8756354"><math alttext="\mathcal{O}_{X\times Y}/\mathcal{I}=\mathcal{O}_{\Gamma_{f}}=(\gamma_{f})_{*}% \mathcal{O}_{X}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></msub><mo>/</mo><mi class="ltx_font_mathcaligraphic">ℐ</mi></mrow><mo>=</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><msub><mi mathvariant="normal">Γ</mi><mi>f</mi></msub></msub><mo>=</mo><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi>γ</mi><mi>f</mi></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub></mrow></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

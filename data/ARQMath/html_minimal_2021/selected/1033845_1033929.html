@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Can I use Fubini's theorem on this function?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Can I use Fubini's theorem on this function? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1033845">
+<p>Given function is <span class="math-container" id="9813854" visual_id="9135627"><math alttext="f(x,y)=\sin(x)e^{-xt}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow></mrow></semantics></math></span>. Problem says "use" Fubini's theorem and the fact that <span class="math-container" id="9813855" visual_id="555979"><math alttext="\int_{0}^{\infty}e^{-xt}dt=\frac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math></span> to prove that <span class="math-container" id="9813856" visual_id="9135628"><math alttext="\lim\limits_{A\rightarrow\infty}\int_{0}^{A}\frac{\sin(x)}{x}=\frac{\pi}{2}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>A</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>A</mi></msubsup><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac></mrow></mrow><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>So I used Fubini without doubt but thus the integral of <span class="math-container" id="9813857" visual_id="316502"><math alttext="|f(x,y)|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></semantics></math></span> does not seem to be <span class="math-container" id="9813858" visual_id="38331"><math alttext="&lt;\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>&lt;</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. I hope my calculation is wrong. please help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2107164"> Please fix the typos and show us your approach. </td></tr><tr><td comment_id="2107167"> You use Fubini's theorem for an arbitrary but fixed finite <span class="math-container" id="9813859" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>. </td></tr><tr><td comment_id="2107191"> Is there typos? Sorry I can find... </td></tr><tr><td comment_id="2107193"> Should be <span class="math-container" id="9813866" visual_id="246499"><math alttext="e^{-xt}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></semantics></math></span> rather than <span class="math-container" id="9813861" visual_id="9135629"><math alttext="E^{-xt}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>E</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></semantics></math></span>, and the limit is wrong, it's <span class="math-container" id="9813862" visual_id="3713"><math alttext="\frac{\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>π</mi><mn>2</mn></mfrac></semantics></math></span> actually. </td></tr><tr><td comment_id="2107195"> 1. since <span class="math-container" id="9813863" visual_id="3881890"><math alttext="|\sin(x)e^{-xt}|\leq e^{-xt}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow></semantics></math></span>, I tried to calculate this with respect to x first (0 to infinity) than I gives me integration of 1/x over 0 to A<infinity <span="" but,="" class="math-container" have="" i="" id="9813864" than="">\log(0) which is -infinity. So I tried to integrate with respec to t first but it also have 1/t term. </infinity></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1033929" id="answer">
+<p>For each <span class="math-container" id="9813865" visual_id="25308"><math alttext="A&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>, <span class="math-container" id="9813866" visual_id="246499"><math alttext="e^{-xt}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></semantics></math></span> is integrable for <span class="math-container" id="9813867" visual_id="5530269"><math alttext="0\leq x\leq A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mi>A</mi></mrow></semantics></math></span>, <span class="math-container" id="9813868" visual_id="912606"><math alttext="0\leq t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>t</mi></mrow></semantics></math></span>. So you can apply Fubini: <span class="math-container" id="9813869" visual_id="9135630"><math alttext="\int_{0}^{A}\frac{\sin x}{x}\,dx=\int_{0}^{A}\int_{0}^{\infty}e^{-xt}\,\sin x% \,dtdx=\int_{0}^{A}\int_{0}^{\infty}e^{-xt}\,\sin x\,dxdt\\ =\int_{0}^{\infty}\left[\frac{1}{1+t^{2}}-\frac{e^{-tA}}{t^{2}+1}(t\cos A+\sin A% )\right]\,dt\\ =\frac{\pi}{2}-\int_{0}^{\infty}\frac{e^{-tA}}{t^{2}+1}(t\cos A+\sin A)\,dt." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>A</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>A</mi></msubsup><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mpadded width="+1.7pt"><mi>x</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mpadded></mrow></mrow></mpadded></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>A</mi></msubsup><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mpadded width="+1.7pt"><mi>x</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>t</mi></mpadded></mrow></mrow></mpadded></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo>[</mo><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mo>-</mo><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></msup><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>t</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>A</mi></mrow></mrow><mo>+</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="4.2pt">]</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>-</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></msup><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>t</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>A</mi></mrow></mrow><mo>+</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi></mrow></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> As  <span class="math-container" id="9813870" visual_id="9135631"><math alttext="\left|\int_{0}^{\infty}\frac{e^{-tA}}{t^{2}+1}(t\cos A+\sin A)\,dt\right|\leq 2% \int_{0}^{\infty}e^{-tA}\,dt=\frac{2}{A}\to 0," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>|</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></msup><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>t</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>A</mi></mrow></mrow><mo>+</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi></mrow></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mrow></mrow><mo>|</mo></mrow><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>t</mi></mrow></mpadded></mrow></mrow></mrow><mo>=</mo><mfrac><mn>2</mn><mi>A</mi></mfrac><mo>→</mo><mn>0</mn></mrow><mo>,</mo></mrow></semantics></math></span> we get  <span class="math-container" id="9813871" visual_id="9135632"><math alttext="\int_{0}^{\infty}\frac{\sin x}{x}\,dx=\lim_{A\to\infty}\int_{0}^{A}\frac{\sin x% }{x}\,dx=\frac{\pi}{2}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow><mo>=</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>A</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>A</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></mrow><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Understanding the graph for $x^y = y^x$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Understanding the graph for <span class="math-container" id="7741362" visual_id="44405"><math alttext="x^{y}=y^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup><mo>=</mo><msup><mi>y</mi><mi>x</mi></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="785784">
+<p>I graphed <span class="math-container" id="7741363" visual_id="44405"><math alttext="x^{y}=y^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup><mo>=</mo><msup><mi>y</mi><mi>x</mi></msup></mrow></semantics></math></span> and it is a union of the line y=x, with some other curve.  So my first question is, how do I derive that other curve? My next question is, why don't I get the same graph when I plot <span class="math-container" id="7741364" visual_id="833191"><math alttext="x^{1/x}=y^{1/y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></msup><mo>=</mo><msup><mi>y</mi><mrow><mn>1</mn><mo>/</mo><mi>y</mi></mrow></msup></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> graphing-functions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1628398"> If anyone cares, it seems that the two parts intersect at the point <span class="math-container" id="7741390" visual_id="630926"><math alttext="(e,e)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>e</mi><mo>,</mo><mi>e</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1628409"> I plotted the two graphs on Maple and they look the same to me ;-) </td></tr><tr><td comment_id="1628417"> Hmm...I plotted them at Wolfram Alpha, and they aren't the same. Strange. </td></tr><tr><td comment_id="1628420"> @David I was talking about the two parts on the graph of <span class="math-container" id="7741457" visual_id="44405"><math alttext="x^{y}=y^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup><mo>=</mo><msup><mi>y</mi><mi>x</mi></msup></mrow></semantics></math></span>. Are you talking about the two curves or the two parts of the first curve? And I used Wolfram. </td></tr><tr><td comment_id="1628422"> @NotNotLogical Which David are you referring to? </td></tr><tr><td comment_id="1628423"> @SanathDevalapurkar Oh I didn't realize they were different David's :) </td></tr><tr><td comment_id="1628425"> @David I used parametric curves in my answer below. </td></tr><tr><td comment_id="1628426"> @David I used parametric curves in my answer below. (I don't know who I sent it to, so I typed it in twice.) </td></tr><tr><td comment_id="1628428"> There's a nice description of this problem here: http://mathforum.org/library/drmath/view/66166.html . Also, see this MSE question: http://math.stackexchange.com/questions/9505/xy-yx-for-integers-x-and-y , which states the parametric equations for the curve you see that's not <span class="math-container" id="7741472" visual_id="4360"><math alttext="y=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi></mrow></semantics></math></span>: <span class="math-container" id="7741368" visual_id="833192"><math alttext="x=(1+1/u)^{u},y=(1+1/u)^{u+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mi>u</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>u</mi></msup></mrow><mo>,</mo><mrow><mi>y</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mi>u</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>u</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1628433"> I'm saying when I plot the first graph at WA, I get a line with a curve intersecting it.  When I plot the second at WA, I get something different. </td></tr><tr><td comment_id="1628435"> Hi all (and especially @David), this is other David ;-)  Using "implicitplot" on Maple, <span class="math-container" id="7741366" visual_id="44405"><math alttext="x^{y}=y^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup><mo>=</mo><msup><mi>y</mi><mi>x</mi></msup></mrow></semantics></math></span> gives the line <span class="math-container" id="7741367" visual_id="4360"><math alttext="y=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi></mrow></semantics></math></span> together with a curve which is always decreasing with asymptotes <span class="math-container" id="7741371" visual_id="1567"><math alttext="x=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> and <span class="math-container" id="7741372" visual_id="1972"><math alttext="y=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.  (Looks something like a hyperbola but of course it isn't.)  Using "implicitplot" for <span class="math-container" id="7741373" visual_id="833191"><math alttext="x^{1/x}=y^{1/y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></msup><mo>=</mo><msup><mi>y</mi><mrow><mn>1</mn><mo>/</mo><mi>y</mi></mrow></msup></mrow></semantics></math></span> gives the same. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="785821" id="answer">
+<p>An alternative parameterization, which is a little more symmetric and found in the <a href="https://math.stackexchange.com/questions/9505/xy-yx-for-integers-x-and-y">SE link provided in the comments by @SteveKass</a>, can be derived as follows: <span class="math-container" id="7741430" visual_id="833216"><math alttext="x^{y}=y^{x}\\ x=a^{b}\quad y=a^{c}\\ a^{c}b\ln a=a^{b}c\ln a\implies a^{c}b=a^{b}c\\ a^{c-b}=\frac{c}{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>x</mi><mi>y</mi></msup><mo>=</mo><mrow><msup><mi>y</mi><mi>x</mi></msup><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><msup><mi>a</mi><mi>b</mi></msup></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mi>y</mi><mo>=</mo><mrow><msup><mi>a</mi><mi>c</mi></msup><mo>⁢</mo><msup><mi>a</mi><mi>c</mi></msup><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>a</mi></mrow></mrow><mo>=</mo><mrow><msup><mi>a</mi><mi>b</mi></msup><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mi>a</mi></mrow></mrow><mo>⟹</mo><mrow><msup><mi>a</mi><mi>c</mi></msup><mo>⁢</mo><mi>b</mi></mrow><mo>=</mo><mrow><msup><mi>a</mi><mi>b</mi></msup><mo>⁢</mo><mi>c</mi><mo>⁢</mo><msup><mi>a</mi><mrow><mi>c</mi><mo>-</mo><mi>b</mi></mrow></msup></mrow><mo>=</mo><mfrac><mi>c</mi><mi>b</mi></mfrac></mrow></mrow></semantics></math></span> Now we can let <span class="math-container" id="7741431" visual_id="833217"><math alttext="c=b+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mrow><mi>b</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span> so that the equation becomes <span class="math-container" id="7741432" visual_id="833218"><math alttext="a=1+\frac{1}{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>b</mi></mfrac></mrow></mrow></semantics></math></span> Therefore a parameterization for the second curve is <span class="math-container" id="7741433" visual_id="833219"><math alttext="\mathbf{x}(t)=\left(\left(1+\frac{1}{t}\right)^{t}\,,\,\left(1+\frac{1}{t}% \right)^{t+1}\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>𝐱</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mpadded width="+1.7pt"><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>t</mi></mfrac></mrow><mo>)</mo></mrow><mi>t</mi></msup><mo rspace="4.2pt">,</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>t</mi></mfrac></mrow><mo>)</mo></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>)</mo></mpadded></mrow></mrow></semantics></math></span></p> <p>As to why you're getting different graphs, it almost certainly is due to numerical errors in the CAS you're using. I don't know much about that area though, so I couldn't tell you what was causing the various problems.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="9505"> <span class="math-container" id="84563" visual_id="44405"><math alttext="x^{y}=y^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup><mo>=</mo><msup><mi>y</mi><mi>x</mi></msup></mrow></semantics></math></span> for integers <span class="math-container" id="84564" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> and <span class="math-container" id="84565" visual_id="68"><math alttext="y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi></semantics></math></span> </td></tr><tr><td post_id="785836"> Find all positive rational solutions to <span class="math-container" id="7741966" visual_id="44405"><math alttext="x^{y}=y^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup><mo>=</mo><msup><mi>y</mi><mi>x</mi></msup></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

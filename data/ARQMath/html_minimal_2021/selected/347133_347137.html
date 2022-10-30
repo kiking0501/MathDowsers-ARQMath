@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Evaluate: $\sum_{n=2}^\infty \frac{n(n-1)}{2^{n-2}}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Evaluate: <span class="math-container" id="3718226" visual_id="1438467"><math alttext="\sum_{n=2}^{\infty}\frac{n(n-1)}{2^{n-2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></mfrac></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="347133">
+<p>How would I go about finding the sum of this series?  <span class="math-container" id="3718227" visual_id="1438467"><math alttext="\sum_{n=2}^{\infty}\frac{n(n-1)}{2^{n-2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="746730"> Try (really: **try** ) the n-th root test... </td></tr><tr><td comment_id="746734"> Do you mean <span class="math-container" id="3718228" visual_id="1438467"><math alttext="\sum_{n=2}^{\infty}\frac{n(n-1)}{2^{n-2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></mfrac></mrow></semantics></math></span> ? </td></tr><tr><td comment_id="746735"> @experimentX yeah that's what i mean </td></tr><tr><td comment_id="746737"> differentiate and put <span class="math-container" id="3718229" visual_id="14705"><math alttext="x=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span> down below. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="347137" id="answer">
+<p>Hint: for <span class="math-container" id="3718230" visual_id="3470"><math alttext="|x|&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span>, <span class="math-container" id="3718231" visual_id="17490"><math alttext="\sum_{n=0}^{\infty}x^{n}=\frac{1}{1-x}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mi>x</mi><mi>n</mi></msup></mrow><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mfrac></mrow><mo>,</mo></mrow></semantics></math></span> so <span class="math-container" id="3718232" visual_id="1438468"><math alttext="\sum_{n=1}^{\infty}nx^{n-1}=\qvar@construct{?}\qvar@construct{$}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>n</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>=</mo><mrow><mi mathcolor="red" mathvariant="italic">qvar_?</mi><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="3718233" visual_id="1438469"><math alttext="\sum_{n=2}^{\infty}n(n-1)x^{n-2}=\qvar@construct{?}\qvar@construct{$}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>=</mo><mrow><mi mathcolor="red" mathvariant="italic">qvar_?</mi><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></mrow></semantics></math></span></p> <hr/> <blockquote class="spoiler"> <p> Differentiate twice to get <span class="math-container" id="3718234" visual_id="1438470"><math alttext="\sum_{n=2}^{\infty}n(n-1)x^{n-2}=\frac{2}{(1-x)^{3}}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>=</mo><mfrac><mn>2</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mfrac></mrow><mo>,</mo></mrow></semantics></math></span> and put <span class="math-container" id="3718235" visual_id="14705"><math alttext="x=\frac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span>.</p> </blockquote>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="746761"> I"m sorry, I don't understand how this helps edit: nvm thanks a lot </td></tr><tr><td comment_id="746763"> To get it clear: Since the geometric series is absolutely convergent (if |x|&lt;1), one can change the order of differentiation and summation? </td></tr><tr><td comment_id="746765"> @LeoSti: There are various ways to look at this, but yes, it's because a power series is uniformly convergent on <span class="math-container" id="3718236" visual_id="1438471"><math alttext="[-r+\varepsilon,r-\varepsilon]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mrow><mo>-</mo><mi>r</mi></mrow><mo>+</mo><mi>ε</mi></mrow><mo>,</mo><mrow><mi>r</mi><mo>-</mo><mi>ε</mi></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span> for any <span class="math-container" id="3718237" visual_id="14003"><math alttext="\varepsilon&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>, where <span class="math-container" id="3718238" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> is the radius of convergence. See Theorem 8.1 in Baby Rudin. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

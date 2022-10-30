@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>$\limsup$ sequence independent $\mathcal{N}(0,\sigma^2)$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> <span class="math-container" id="16869011" visual_id="435"><math alttext="\limsup" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo movablelimits="false">lim sup</mo></semantics></math></span> sequence independent <span class="math-container" id="16869012" visual_id="426063"><math alttext="\mathcal{N}(0,\sigma^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1824289">
+<p>In my lecture notes there is the following application of Borel-Cantelli's 2nd lemma: Let <span class="math-container" id="16869013" visual_id="153511"><math alttext="(X_{n})_{n\geq 1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub></semantics></math></span> be a sequence of independent <span class="math-container" id="16869014" visual_id="426063"><math alttext="\mathcal{N}(0,\sigma^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒩</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>-distributed random variables, with <span class="math-container" id="16869015" visual_id="98791"><math alttext="\sigma&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span>. From Borel-Cantelli 2, it follows that <span class="math-container" id="16869016" visual_id="3615330"><math alttext="\text{P-a.s}\ \limsup_{n}X_{n}=\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded width="+5pt"><mtext>P-a.s</mtext><mo>⁢</mo><mrow><munder><mo movablelimits="false">lim sup</mo><mi>n</mi></munder><mo>⁡</mo><msub><mi>X</mi><mi>n</mi></msub></mrow></mpadded></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span></p> <p>I know that for events <span class="math-container" id="16869017" visual_id="35356"><math alttext="(A_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span>, <span class="math-container" id="16869018" visual_id="3615331"><math alttext="\limsup_{n}A_{n}=\bigcap_{n\geq 1}\bigcup_{m\geq n}A_{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim sup</mo><mi>n</mi></munder><mo>⁡</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><munder><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋂</mo><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></munder><mrow><munder><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⋃</mo><mrow><mi>m</mi><mo>≥</mo><mi>n</mi></mrow></munder><msub><mi>A</mi><mi>m</mi></msub></mrow></mrow></mrow></semantics></math></span>, but I can't figure out how can I apply the lemma to random variables instead events.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> random-variables </span><span> limsup-and-liminf </span><span> borel-cantelli-lemmas </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3728644"> The question is about a limsup of functions, namely, the function <span class="math-container" id="16869019" visual_id="3615332"><math alttext="Y=\limsup X_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><mo movablelimits="false">lim sup</mo><mo>⁡</mo><msub><mi>X</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> defined pointwise by <span class="math-container" id="16869020" visual_id="3615333"><math alttext="Y(\omega)=\limsup X_{n}(\omega)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo movablelimits="false">lim sup</mo><mo>⁡</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1824363" id="answer">
+<p>Since the <span class="math-container" id="16869021" visual_id="1096"><math alttext="X_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mi>n</mi></msub></semantics></math></span> have the same distribution we know for any real number <span class="math-container" id="16869022" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, that  <span class="math-container" id="16869023" visual_id="3615334"><math alttext="\sum_{n=1}^{\infty}P(X_{n}&gt;x)=\infty." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mi>P</mi><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo>&gt;</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi><mo>.</mo></mrow></semantics></math></span> Therefore, by independence and the second Borel-Cantelli lemma, it follows that  <span class="math-container" id="16869024" visual_id="3615335"><math alttext="P(\limsup\{\omega\in\Omega\mid X_{n}&gt;x\})=1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo movablelimits="false">lim sup</mo><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mi>ω</mi><mo>∈</mo><mi mathvariant="normal">Ω</mi></mrow><mo>∣</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>&gt;</mo><mi>x</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></semantics></math></span> This in turn implies almost surely that infinitely many of the <span class="math-container" id="16869025" visual_id="1096"><math alttext="X_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mi>n</mi></msub></semantics></math></span> are bigger than <span class="math-container" id="16869026" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>, and thus <span class="math-container" id="16869027" visual_id="3615336"><math alttext="\limsup_{n\rightarrow\infty}X_{n}\geq x." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim sup</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><mo>≥</mo><mi>x</mi></mrow><mo>.</mo></mrow></semantics></math></span> Since we chose <span class="math-container" id="16869028" visual_id="4655"><math alttext="x\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span> arbitrary we conclude that the limit superior is infinite.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

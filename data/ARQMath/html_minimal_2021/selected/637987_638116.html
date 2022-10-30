@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to prove that $\lim_{(x,y) \to (0,0)} \frac{x^3y}{x^4+y^2} = 0?$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to prove that <span class="math-container" id="6467831" visual_id="626117"><math alttext="\lim_{(x,y)\to(0,0)}\frac{x^{3}y}{x^{4}+y^{2}}=0\qvar@construct{$}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></munder><mo>⁡</mo><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="637987">
+<blockquote> <p>How to prove that <span class="math-container" id="6467832" visual_id="626117"><math alttext="\lim_{(x,y)\to(0,0)}\dfrac{x^{3}y}{x^{4}+y^{2}}=0\qvar@construct{$}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></munder><mo>⁡</mo><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></mrow></semantics></math></span></p> </blockquote> <p>First I tried to contradict by using <span class="math-container" id="6467833" visual_id="62604"><math alttext="y=mx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span> , but I found that the limit exists.</p> <p>Secondly I tried to use polar coordinates, <span class="math-container" id="6467834" visual_id="27600"><math alttext="x=\cos\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></semantics></math></span> and <span class="math-container" id="6467835" visual_id="457559"><math alttext="y=\sin\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></semantics></math></span>,</p> <p>And failed .. How would you prove this limit equals <span class="math-container" id="6467836" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> limits </span><span> multivariable-calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1345338"> how did you not get the limit of 0 for the y=mx case? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="638116" id="answer">
+<p>With polar coordinates we're cool, too:</p> <p><span class="math-container" id="6467858" visual_id="36414"><math alttext="x=r\cos\theta\;\;,\;\;y=r\sin\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mpadded width="+5.6pt"><mi>θ</mi></mpadded></mrow></mrow></mrow><mo rspace="8.1pt">,</mo><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></mrow></semantics></math></span> </p> <p><span class="math-container" id="6467859" visual_id="6091491"><math alttext="\frac{x^{3}y}{x^{4}+y^{2}}=\frac{r^{4}\cos^{3}\theta\sin\theta}{r^{4}\cos^{4}% \theta+r^{2}\sin^{2}\theta}=\frac{r^{2}\cos^{3}\theta\sin\theta}{r^{2}\cos^{4}% \theta+\sin^{2}\theta}\xrightarrow[r\to 0]{}\frac{0}{0+\sin^{2}\theta}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mi>r</mi><mn>4</mn></msup><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>3</mn></msup><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mrow><mrow><msup><mi>r</mi><mn>4</mn></msup><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo>+</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>3</mn></msup><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msup><mi>cos</mi><mn>4</mn></msup><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo>+</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mi>θ</mi></mrow></mrow></mfrac><munderover accent="true" accentunder="true"><mo>→</mo><mrow><mi mathsize="142%">r</mi><mo mathsize="142%" stretchy="false">→</mo><mn mathsize="142%">0</mn></mrow><mi></mi></munderover><mfrac><mn>0</mn><mrow><mn>0</mn><mo>+</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mi>θ</mi></mrow></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>But what if <span class="math-container" id="6467860" visual_id="921882"><math alttext="\;\sin^{2}\theta=0\;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mpadded lspace="2.8pt" width="+2.8pt"><mi>sin</mi><mn>2</mn></mpadded></msup><mo>⁡</mo><mi>θ</mi></mrow><mo>=</mo><mpadded width="+2.8pt"><mn>0</mn></mpadded></mrow></semantics></math></span> ? Well, then <em>also</em> <span class="math-container" id="6467861" visual_id="83851"><math alttext="\;\sin\theta=0\;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mpadded lspace="2.8pt" width="+2.8pt"><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mpadded></mrow><mo>=</mo><mpadded width="+2.8pt"><mn>0</mn></mpadded></mrow></semantics></math></span> and the first expression above's already zero from the beginning...</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="6014149"> -1. This isn't a correct argument, since it would also “prove” that <span class="math-container" id="6467862" visual_id="6091492"><math alttext="x^{2}y/(x^{4}+y^{2})\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mn>0</mn></mrow></semantics></math></span>, which is *false* (since <span class="math-container" id="6467863" visual_id="6091493"><math alttext="x^{2}y/(x^{4}+y^{2})=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span> for <span class="math-container" id="6467864" visual_id="6091494"><math alttext="y=x^{2}\neq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>≠</mo><mn>0</mn></mrow></semantics></math></span>). The problem is that you can't treat <span class="math-container" id="6467865" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> as a constant when letting <span class="math-container" id="6467866" visual_id="17379"><math alttext="r\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>→</mo><mn>0</mn></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="674095"> Prove <span class="math-container" id="6781941" visual_id="4486487"><math alttext="\lim_{(x,y)\to(0,0)}\frac{x^{3}y}{x^{4}+y^{2}}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></munder><mo>⁡</mo><mfrac><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="2910959"> <span class="math-container" id="26938926" visual_id="593103"><math alttext="f(x,y)=\frac{(xy^{3})}{(x^{2}+y^{4})}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mfrac></mrow></semantics></math></span> except at <span class="math-container" id="26938927" visual_id="828"><math alttext="(0,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> where it is equal to 0, show it is continuous, is it differentiable at origin? </td></tr><tr><td post_id="2919665"> How to compute <span class="math-container" id="27022799" visual_id="626115"><math alttext="\lim\limits_{(x,y)\to(0,0)}\frac{xy^{3}}{x^{2}+y^{4}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></munder><mo>⁡</mo><mfrac><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup></mrow></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

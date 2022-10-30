@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Is there any formula to find the nth element in a sequence where common difference (d) is varying with a constant rate?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Is there any formula to find the nth element in a sequence where common difference (d) is varying with a constant rate? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1844894">
+<p>To explain my question, here is an example.</p> <p>Below is an AP:</p> <p>2, 6, 10, 14....n</p> <p>Calculating the nth term in this sequence is easy because we have a formula. The common difference (d = 4) in AP is constant and that's why the formula is applicable, I think.</p> <p>But what about this sequence:</p> <p>5, 12, 21, 32....n</p> <p>Here, the difference between two consecutive elements is not constant, but it too has a pattern which all of you may have guessed. Taking the differences between its consecutive elements and formimg a sequence results in an AP. For the above example, the AP looks like this:</p> <p>5, 7, 9, 11.....n</p> <p>So given a sequence with "uniformly varying common difference" , is there any formula to calculate the nth term of this sequence?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> discrete-mathematics </span><span> arithmetic-progressions </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3774045"> Where does the 0 come from? If the first difference is common, then the explicit form is linear. If the second difference is common, then the explicit form is quadratic. And so on... </td></tr><tr><td comment_id="3774049"> So first differences is 7,9,11,... and the second differences are 2,2,2,.... So you will have a quadratic. </td></tr><tr><td comment_id="3774054"> How to find the nth term then? Is there a formula that makes things easier? </td></tr><tr><td comment_id="3774061"> You say you are not very good at maths, but if you (re)discovered this concept - second differences - then I would say that you have good mathematical insight. </td></tr><tr><td comment_id="3774070"> There is Vandermonde Interpolation (which is more relatable to in middle/high school) and Lagrange Interpolation. Alternatively there is this guy (https://ckrao.wordpress.com/2012/02/28/finite-differences-for-polynomial-extrapolation/). </td></tr><tr><td comment_id="3775097"> You may be interested in reading my answer to this [related question](http://math.stackexchange.com/questions/1842543/number-patterns-types/1844720#1844720). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1844905" id="answer">
+<p>Well the explicit form aka the nth term is a quadratic... <span class="math-container" id="17071260" visual_id="2036294"><math alttext="A_{n}=an^{2}+bn+c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mi>c</mi></mrow></mrow></semantics></math></span></p> <p>Use the points from your sequence to find <span class="math-container" id="17071261" visual_id="318364"><math alttext="a,b,\text{ and }c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mrow><mtext> and </mtext><mo>⁢</mo><mi>c</mi></mrow></mrow></semantics></math></span></p> <p>For example you can use the points <span class="math-container" id="17071262" visual_id="9359868"><math alttext="(0,2),(1,6),\text{ and }(2,10)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mtext> and </mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>10</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3774072"> You should have a single power in the second term. </td></tr><tr><td comment_id="3774073"> Thanks, I didn't notice I put a square there. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="1842543"> Write an expression in terms of <span class="math-container" id="17048852" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> for the <span class="math-container" id="17048853" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>th term in the following sequence: <span class="math-container" id="17048854" visual_id="2028609"><math alttext="9,16,25,36,49" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>16</mn><mo>,</mo><mn>25</mn><mo>,</mo><mn>36</mn><mo>,</mo><mn>49</mn></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

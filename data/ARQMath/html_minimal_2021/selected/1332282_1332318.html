@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Combinatorial proof for $\sum_{k = 0}^n \binom {r+k} k = \binom {r + n + 1} n$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Combinatorial proof for <span class="math-container" id="12383239" visual_id="7678316"><math alttext="\sum_{k=0}^{n}\binom{r+k}{k}=\binom{r+n+1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>r</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>r</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1332282">
+<p>I'm trying to figure out a combinatorial proof for:</p> <p><span class="math-container" id="12383240" visual_id="7678316"><math alttext="\displaystyle\sum_{k\mathop{=}0}^{n}\binom{r+k}{k}=\binom{r+n+1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo>=</mo><mn>0</mn></mrow></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>r</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>r</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span></p> <p>I've tried the committee counting thing, but that didn't work. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> summation </span><span> binomial-coefficients </span><span> combinatorial-proofs </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2707255"> See http://math.stackexchange.com/questions/357063/proving-that-sum-k-0n-mk-choosem-mn1-choose-m1, http://math.stackexchange.com/questions/833451/prove-sum-i-0n-binomik-1k-1-binomnkk and other posts linked there. </td></tr><tr><td comment_id="2879826"> This question asks specifically about combinatorial proofs: http://math.stackexchange.com/questions/1408642/combinatorial-proof-for-binomial-identity-sum-k-0n-binomkp-binom </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1332318" id="answer">
+<p>A combinatorial proof is by counting bit strings of length <span class="math-container" id="12383241" visual_id="7678317"><math alttext="r+n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> with exactly <span class="math-container" id="12383242" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> ones. There are <span class="math-container" id="12383243" visual_id="7678318"><math alttext="\binom{r+n+1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>r</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></semantics></math></span> such strings. </p> <p>Such strings have <span class="math-container" id="12383244" visual_id="8368"><math alttext="r+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> zeros. Now count all bit strings of length <span class="math-container" id="12383245" visual_id="7678317"><math alttext="r+n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> with exactly <span class="math-container" id="12383246" visual_id="8368"><math alttext="r+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> zeros in which the last <span class="math-container" id="12383247" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> is at <span class="math-container" id="12383248" visual_id="7678319"><math alttext="(r+k+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>+</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span>-st position. Here <span class="math-container" id="12383249" visual_id="108454"><math alttext="k\in\{0,1,\ldots,n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>. There are exactly <span class="math-container" id="12383250" visual_id="7678320"><math alttext="\binom{r+k}{r}=\binom{r+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>r</mi><mo>+</mo><mi>k</mi></mrow><mi>r</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>r</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> such strings. Since all possible positions for the last zero are <span class="math-container" id="12383251" visual_id="7678321"><math alttext="r+1,\ldots,r+n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>r</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>, and since the sets of bit strings with the last zero at different positions are disjoint, this proves the given identity. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="833451"> Prove <span class="math-container" id="8135802" visual_id="1618769"><math alttext="\sum\limits_{i=0}^{n}\binom{i+k-1}{k-1}=\binom{n+k}{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi>i</mi><mo>+</mo><mi>k</mi></mrow><mo>-</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> (a.k.a. Hockey-Stick Identity) </td></tr><tr><td post_id="2209194"> Proving that <span class="math-container" id="20413509" visual_id="700178"><math alttext="\sum\limits_{k=0}^{n}{{m+k}\choose{k}}={m+n+1\choose n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>m</mi><mo>+</mo><mi>k</mi></mrow><mi>k</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>m</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="357063"> Proving that <span class="math-container" id="3817414" visual_id="1472993"><math alttext="\sum\limits_{k=0}^{n}{{m+k}\choose{m}}={m+n+1\choose m+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>m</mi><mo>+</mo><mi>k</mi></mrow><mi>m</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>m</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1408642"> Combinatorial Proof for Binomial Identity: <span class="math-container" id="13085336" visual_id="3429559"><math alttext="\sum_{k=0}^{n}\binom{k}{p}=\binom{n+1}{p+1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>k</mi><mi>p</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Computing A Multivariable Limit: $\lim_{(x,y) \to (0,0)}\frac{2x^2y}{x^4 + y^2}.$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Computing A Multivariable Limit: <span class="math-container" id="1073099" visual_id="447648"><math alttext="\lim_{(x,y)\to(0,0)}\frac{2x^{2}y}{x^{4}+y^{2}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></munder><mo>⁡</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>.</mo></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="93886">
+<p>Please help me in computing the following limit. <span class="math-container" id="1073100" visual_id="447648"><math alttext="\lim_{(x,y)\to(0,0)}\frac{2x^{2}y}{x^{4}+y^{2}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></munder><mo>⁡</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>.</mo></mrow></semantics></math></span> This will be my first attempt in computing a limit involving 2 variables. Is this a part of multivariable calculus as it contains more than one variable? How can I interpret this geometrically?</p> <p>Thank You</p>
+</div>
+<hr/>
+<div id="tags">
+<span> multivariable-calculus </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="220933"> Limit does not exists, if you consider two paths of approach <span class="math-container" id="1073121" visual_id="3870"><math alttext="y=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="1073102" visual_id="79665"><math alttext="x=\sqrt{y}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msqrt><mi>y</mi></msqrt></mrow></semantics></math></span>. </td></tr><tr><td comment_id="220934"> Try converting to polar coordinates. </td></tr><tr><td comment_id="220935"> Would you be able to calculate the limit if you assume that <span class="math-container" id="1073103" visual_id="5579"><math alttext="y=x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></semantics></math></span>? Would you be able to do the same if you assume <span class="math-container" id="1073104" visual_id="4360"><math alttext="y=x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi></mrow></semantics></math></span>? If these limits are different, it means that you can obtain different values if you approach <span class="math-container" id="1073105" visual_id="828"><math alttext="(0,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> along different curves and, consequently, the limit in two variables does not exist. </td></tr><tr><td comment_id="220961"> In general, to show that the limit does not exist at a point, you may use "Two Path Test" which @sos440 used above. </td></tr><tr><td comment_id="4045163"> See also http://math.stackexchange.com/questions/174190/prove-that-lim-limits-x-y-to-0-0-fracxy2x2-y4-0 </td></tr><tr><td comment_id="5542491"> More general solution : https://math.stackexchange.com/questions/66226/multivariable-limit-proof-lim-x-y-rightarrow-0-0-frac-leftx-righta </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="93917" id="answer">
+<p>Another approach is to consider the change of variables, <span class="math-container" id="1073106" visual_id="447649"><math alttext="x^{2}=r\cos\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="1073107" visual_id="5269"><math alttext="y=r\sin\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></semantics></math></span> then <span class="math-container" id="1073108" visual_id="447650"><math alttext="\frac{2x^{2}y}{x^{4}+y^{2}}=\frac{2r^{2}\cos\theta\sin\theta}{r^{2}}=2\cos% \theta\sin\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></semantics></math></span> which depends on <span class="math-container" id="1073109" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span> and hence the limit doesn't exist since it's not unique. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="174190"> Prove that <span class="math-container" id="2025092" visual_id="4161498"><math alttext="\lim\limits_{(x,y)\to(0,0)}\frac{{x{y^{2}}}}{{{x^{2}}+{y^{4}}}}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></munder><mo>⁡</mo><mfrac><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="933949"> Multivariable limit <span class="math-container" id="9000017" visual_id="6356841"><math alttext="\frac{(2x^{2})y}{x^{4}+y^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>y</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="66226"> Multivariable limit proof: <span class="math-container" id="734124" visual_id="7124452"><math alttext="\lim_{(x,y)\rightarrow(0,0)}\frac{\left|x\right|^{a}\left|y\right|^{b}}{\left|% x\right|^{c}+\left|y\right|^{d}}=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></munder><mo>⁡</mo><mfrac><mrow><msup><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow><mi>a</mi></msup><mo>⁢</mo><msup><mrow><mo>|</mo><mi>y</mi><mo>|</mo></mrow><mi>b</mi></msup></mrow><mrow><msup><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow><mi>c</mi></msup><mo>+</mo><msup><mrow><mo>|</mo><mi>y</mi><mo>|</mo></mrow><mi>d</mi></msup></mrow></mfrac></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="1476353"> Help with <span class="math-container" id="13663951" visual_id="6220430"><math alttext="\lim_{x,y\to(0,0)}\frac{x^{2}y}{x^{4}+y^{2}}\qvar@construct{$}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></munder><mo>⁡</mo><mrow><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mi mathcolor="red" mathvariant="italic">qvar_$</mi></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1492253"> Limit of two variable function. </td></tr><tr><td post_id="1780919"> Showing a function is discontinuous by taking a limit... </td></tr><tr><td post_id="2290733"> Limit with 2 variables: <span class="math-container" id="21164559" visual_id="98579"><math alttext="\frac{x^{2}y}{x^{4}+y^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></semantics></math></span>, <span class="math-container" id="21164560" visual_id="8625552"><math alttext="\frac{e^{xy^{3}}-1}{x^{2}+y^{4}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>e</mi><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow></msup><mo>-</mo><mn>1</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup></mrow></mfrac></semantics></math></span> and <span class="math-container" id="21164561" visual_id="8625553"><math alttext="(x^{2}+y^{2})^{xy}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></msup></semantics></math></span> at <span class="math-container" id="21164562" visual_id="828"><math alttext="(0,0)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> </td></tr><tr><td post_id="2960120"> Prove or disprove each of the follow function has limits <span class="math-container" id="27404185" visual_id="61848"><math alttext="x\to a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></semantics></math></span> by the definition <span class="math-container" id="27404186" visual_id="4654438"><math alttext="\lim_{(x,y)\to(0,0)}\frac{xy^{2}}{x^{2}+y^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></munder><mo>⁡</mo><mfrac><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

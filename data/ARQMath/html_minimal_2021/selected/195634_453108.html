@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How do you calculate the modulo of a high-raised number?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How do you calculate the modulo of a high-raised number? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="195634">
+<p>I need some help with this problem:</p> <p><span class="math-container" id="2266737" visual_id="5140442"><math alttext="439^{233}\mod 713" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>439</mn><mn>233</mn></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mn>713</mn></mrow></semantics></math></span></p> <p>I can't calculate <span class="math-container" id="2266738" visual_id="5140443"><math alttext="439^{223}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>439</mn><mn>223</mn></msup></semantics></math></span> since it's a very big number, there must be a way to do this.</p> <p>Thanks. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> modular-arithmetic </span><span> exponentiation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="449819"> See [How do I compute <span class="math-container" id="2266740" visual_id="70380"><math alttext="a^{b}\,\bmod c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded width="+1.7pt"><msup><mi>a</mi><mi>b</mi></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>c</mi></mpadded></mrow></semantics></math></span> by hand?](http://math.stackexchange.com/questions/81228/how-do-i-compute-ab-bmod-c-by-hand) </td></tr><tr><td comment_id="4995815"> Possible duplicate of [How do I compute <span class="math-container" id="2266739" visual_id="70380"><math alttext="a^{b}\,\bmod c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded width="+1.7pt"><msup><mi>a</mi><mi>b</mi></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>c</mi></mpadded></mrow></semantics></math></span> by hand?](https://math.stackexchange.com/questions/81228/how-do-i-compute-ab-bmod-c-by-hand) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="453108" id="answer">
+<p>Here`s the algorithm,basically it is <strong><em>Modular exponentiation.</em></strong></p> <pre><code>function modular_pow(base, exponent, modulus)   result := 1         while exponent &gt; 0       if (exponent mod 2 == 1):          result := (result * base) mod modulus       exponent := exponent &gt;&gt; 1       base = (base * base) mod modulus   return result </code></pre> <p>Also here is the working code in c++ which can work for upto 10^4 test cases,in 0.7 seconds Also the ideone link <a href="http://ideone.com/eyLiOP" rel="nofollow noreferrer">http://ideone.com/eyLiOP</a></p> <pre><code>#include &lt;iostream&gt; using namespace std; #define mod 1000000007   long long int modfun(long long int a,long long int b) {      long long int result = 1;     while (b &gt; 0)        {            if (b &amp; 1)            {                a=a%mod;                result = (result * a)%mod;                result=result%mod;            }         b=b&gt;&gt;1;         a=a%mod;         a = (a*a)%mod;         a=a%mod;        }     return result; } int main() {     int t;     cin&gt;&gt;t;     while(t--)         {            long long int a,b;            cin&gt;&gt;a&gt;&gt;b;            if(a==0)             cout&lt;&lt;0&lt;&lt;"\n";            else if(b==0)             cout&lt;&lt;1&lt;&lt;"\n";            else if(b==1)             cout&lt;&lt;a%mod&lt;&lt;"\n";            else            {                cout&lt;&lt;(modfun(a,b))%mod&lt;&lt;"\n";            }          }     return 0; } </code></pre>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1278401"> What is <span class="math-container" id="11903614" visual_id="5052173"><math alttext="13^{498}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>13</mn><mn>498</mn></msup></semantics></math></span> (mod <span class="math-container" id="11903615" visual_id="41516"><math alttext="997" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>997</mn></semantics></math></span>)? </td></tr><tr><td post_id="1393249"> How to compute a big number modulo x? </td></tr><tr><td post_id="2293060"> How calculate 3^187 mod 1000? </td></tr><tr><td post_id="3016181"> Modulo for power </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="81228"> How do I compute <span class="math-container" id="916314" visual_id="70380"><math alttext="a^{b}\,\bmod c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded width="+1.7pt"><msup><mi>a</mi><mi>b</mi></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>c</mi></mpadded></mrow></semantics></math></span> by hand? </td></tr><tr><td post_id="1272763"> Find <span class="math-container" id="11853193" visual_id="563259"><math alttext="19^{92}\pmod{92}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>19</mn><mn>92</mn></msup><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mn>92</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1635706"> Quadratic reciprocity: Tell if <span class="math-container" id="15126975" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span> got quadratic square root mod <span class="math-container" id="15126976" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> </td></tr><tr><td post_id="1836771"> Question about Diophantine equations </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

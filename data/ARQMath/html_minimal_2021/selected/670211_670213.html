@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Proving by induction propositions of the type $P(n_1, n_2, ..., n_k)$, where $n_1, n_2, ...,$ and $n_k$ are natural numbers</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Proving by induction propositions of the type <span class="math-container" id="6749097" visual_id="810401"><math alttext="P(n_{1},n_{2},...,n_{k})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>n</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, where <span class="math-container" id="6749098" visual_id="1867939"><math alttext="n_{1},n_{2},...," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><mo>,</mo></mrow></semantics></math></span> and <span class="math-container" id="6749099" visual_id="3152"><math alttext="n_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>k</mi></msub></semantics></math></span> are natural numbers </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="670211">
+<p>For example: I've seen proofs of the multinomial theorem that use induction in the number of terms that are elevated at some power, but none that use induction in the exponent instead of using it in the number of terms. In this case the multinomial theorem is a proposition that holds for every number of terms, and for every power (<span class="math-container" id="6749100" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> and <span class="math-container" id="6749101" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> respectively, both being naturals). </p> <p>So, the proof should use induction on<span class="math-container" id="6749102" visual_id="20"><math alttext="m" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi></semantics></math></span> and<span class="math-container" id="6749103" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, or is it enough to use induction on only one of them? What about if the proposition to prove is of the form <span class="math-container" id="6749104" visual_id="810401"><math alttext="P(n_{1},n_{2},...,n_{k})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>n</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, with <span class="math-container" id="6749105" visual_id="1867939"><math alttext="n_{1},n_{2},...," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow><mo>,</mo></mrow></semantics></math></span> and <span class="math-container" id="6749106" visual_id="3152"><math alttext="n_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>k</mi></msub></semantics></math></span> being naturals?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> combinatorics </span><span> induction </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="670213" id="answer">
+<p>Sometimes you can so induction on the sum of the elements, for examples of the kind of proofs see these two.</p> <p><a href="http://en.wikipedia.org/wiki/Ramsey%27s_theorem#Proof_of_the_theorem" rel="nofollow noreferrer">http://en.wikipedia.org/wiki/Ramsey%27s_theorem#Proof_of_the_theorem</a></p> <p><a href="https://math.stackexchange.com/questions/603837/coloring-5-largest-numbers-in-each-row-and-column-yields-at-least-25-double-colo">Coloring 5 Largest Numbers in Each Row and Column Yields at Least 25 Double-Colored Numbers</a></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="603837"> Coloring 5 Largest Numbers in Each Row and Column Yields at Least 25 Double-Colored Numbers </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Determine if a function is uniformly continuous by looking at its graph?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Determine if a function is uniformly continuous by looking at its graph? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1614045">
+<p>Today my professor introduced the idea of uniform continuity. However, I had difficulty visualizing what the graphical interpretation of a function being uniformly continuous is. Is it possible to determine if a function is uniformly continuous by looking at its graph?</p> <p>Can anyone give an intuitive interpretation of uniform continuity?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> continuity </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3289962"> Why not wait a few more lectures and see what your professor has to say about it? </td></tr><tr><td comment_id="3289963"> Can you give an example as to how to look at a graph? </td></tr><tr><td comment_id="3291733"> Related: [What is the geometrical difference between continuity and uniform continuity?](http://math.stackexchange.com/questions/1249552). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1614884" id="answer">
+<p>Heuristically, you can make a good guess if you have a continuous function <span class="math-container" id="14922563" visual_id="7772"><math alttext="f:[a,b]\to\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></semantics></math></span> such that that <span class="math-container" id="14922564" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span></p> <ol> <li><p>is bounded on <span class="math-container" id="14922565" visual_id="3186"><math alttext="[a,b]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></semantics></math></span> (there exists <span class="math-container" id="14922566" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span>, such that <span class="math-container" id="14922567" visual_id="100988"><math alttext="|f(x)|\leq M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>M</mi></mrow></semantics></math></span> for all <span class="math-container" id="14922568" visual_id="8618"><math alttext="x\in[a,b]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>)</p></li> <li><p>It doesn't visually "wiggle" too much, or is smooth almost everywhere. The topologist's sine curve is a typical counter-example to boundedness implies uniform continuity, but you can see by looking that it just wiggles too much.</p></li> </ol> <p>For intuition's sake consider the two following function: <span class="math-container" id="14922569" visual_id="23815"><math alttext="f(x)=\frac{1}{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math></span>. This function is <strong>not</strong> uniformly continuous n <span class="math-container" id="14922570" visual_id="6788"><math alttext="[0,\infty]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">]</mo></mrow></semantics></math></span>, but <span class="math-container" id="14922571" visual_id="9284"><math alttext="is" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>⁢</mo><mi>s</mi></mrow></semantics></math></span> uniformly continuous on <span class="math-container" id="14922572" visual_id="22810"><math alttext="[1,\infty]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">]</mo></mrow></semantics></math></span>, You can verify this result for practice, but just looking at the function, it is smooth and bounded, and will not "Wiggle" too much, meaning that you can catch each open neighborhood around <span class="math-container" id="14922573" visual_id="1805"><math alttext="f(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> with a single <span class="math-container" id="14922574" visual_id="41"><math alttext="\delta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="947079"> Show that <span class="math-container" id="9108515" visual_id="20105"><math alttext="x\sin(\frac{1}{x})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is uniformly continuous on <span class="math-container" id="9108516" visual_id="2953"><math alttext="(0,1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> </td></tr><tr><td post_id="1249552"> What is the geometrical difference between continuity and uniform continuity? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

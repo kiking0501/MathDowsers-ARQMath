@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Find all values of N that satisfy ϕ(N) = x for any given x value</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Find all values of N that satisfy ϕ(N) = x for any given x value </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1487507">
+<p>How would I determine all values of n in ϕ(n) = x for any value of x where ϕ is Euler's totient function? (and -1 if x is not a totient). Is there a simple formula for this? Or is this a lot more complicated than I think this is? Simply trying every number from x + 1 to the upper limit is too inefficient. I will be using numbers up to 1,000,000,000,000, so efficiency is key here.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-number-theory </span><span> discrete-mathematics </span><span> totient-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3029774"> Seems like the latter ... see e. g. [here](http://www.google.de/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=5&amp;ved=0CEIQFjAEahUKEwjJ8fOW4c7IAhUE8HIKHcO4AT4&amp;url=http%3A%2F%2Farxiv.org%2Fpdf%2F1401.6054&amp;usg=AFQjCNFbmjnrU9tDNWVrtR6MEIxUhpC44Q&amp;sig2=uWCEFwvI3yVSPFIUkVH6Eg&amp;bvm=bv.105454873,d.bGQ) </td></tr><tr><td comment_id="3029821"> You may find some idea how to do this for some given <span class="math-container" id="13759861" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> from various older posts on this site. For example: http://math.stackexchange.com/questions/1126844/eulers-function-phi-values-such-that-phin-8-phin-14 and http://math.stackexchange.com/questions/761014/solving-phin-84 (And a few more posts are linked in the sidebar among related questions.) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1487885" id="answer">
+<p>The paper below proves that it is very unlikely that this problem can be solved efficiently:</p> <blockquote> <p>"Complexity of Inverting the Euler Function" by Scott Contini, Ernie Croot and Igor E. Shparlinski, published in <em>Mathematics of Computation</em> (<a href="http://dx.doi.org/10.1090/S0025-5718-06-01826-6" rel="nofollow">doi</a>, <a href="http://arxiv.org/abs/math/0404116" rel="nofollow">arxiv</a>)</p> </blockquote>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="761014"> Solving <span class="math-container" id="7529895" visual_id="4545006"><math alttext="\phi(n)=84" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>84</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="1126844"> Euler's function <span class="math-container" id="10617829" visual_id="2716"><math alttext="\phi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi></semantics></math></span>: Values such that <span class="math-container" id="10617830" visual_id="41141"><math alttext="\phi(n)=8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>8</mn></mrow></semantics></math></span>, <span class="math-container" id="10617831" visual_id="41145"><math alttext="\phi(n)=14" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>14</mn></mrow></semantics></math></span> </td></tr><tr><td post_id="2257463"> Euler's totient function equation </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

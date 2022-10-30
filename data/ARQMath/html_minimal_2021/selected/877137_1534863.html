@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Strong duality: When does the optimal primal variable coincide with the primal variable giving the dual function.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Strong duality: When does the optimal primal variable coincide with the primal variable giving the dual function. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="877137">
+<p>I'm considering the inequality-constrained optimization problem of finding <span class="math-container" id="8509699" visual_id="4132112"><math alttext="x^{\star}=\arg\min_{x}f(x)\;\;\text{s.t.}\;\;h(x)\leq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo>⋆</mo></msup><mo>=</mo><mrow><mrow><mi>arg</mi><mo>⁡</mo><mrow><munder><mi>min</mi><mi>x</mi></munder><mo>⁡</mo><mi>f</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="8.1pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mpadded width="+5.6pt"><mtext>s.t.</mtext><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mpadded></mrow><mo>≤</mo><mn>0</mn></mrow></semantics></math></span> which is assumed to have a unique minimizer. The objective <span class="math-container" id="8509700" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> maps <span class="math-container" id="8509701" visual_id="912544"><math alttext="R^{n}\rightarrow R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mi>n</mi></msup><mo>→</mo><mi>R</mi></mrow></semantics></math></span> and <span class="math-container" id="8509702" visual_id="702"><math alttext="h" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi></semantics></math></span> maps <span class="math-container" id="8509703" visual_id="21281"><math alttext="R^{n}\rightarrow R^{m}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mi>n</mi></msup><mo>→</mo><msup><mi>R</mi><mi>m</mi></msup></mrow></semantics></math></span> capturing multiple constraints. This problem has Lagrangian <span class="math-container" id="8509704" visual_id="4132113"><math alttext="L(x,\lambda)=f(x)+\lambda^{T}h(x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msup><mi>λ</mi><mi>T</mi></msup><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> and the associated dual problem is to find some <span class="math-container" id="8509705" visual_id="4132114"><math alttext="\lambda^{\star}\in\arg\max_{\lambda}g(\lambda)\;\;\text{s.t.}\;\;\lambda\geq 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>λ</mi><mo>⋆</mo></msup><mo>∈</mo><mrow><mrow><mi>arg</mi><mo>⁡</mo><mrow><munder><mi>max</mi><mi>λ</mi></munder><mo>⁡</mo><mi>g</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo rspace="8.1pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mpadded width="+5.6pt"><mtext>s.t.</mtext><mo>⁢</mo><mi>λ</mi></mpadded></mrow><mo>≥</mo><mn>0</mn></mrow></semantics></math></span> where the dual function is defined <span class="math-container" id="8509706" visual_id="4132115"><math alttext="g(\lambda)=\min_{x}L(x,\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><munder><mi>min</mi><mi>x</mi></munder><mo>⁡</mo><mi>L</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>Assuming that strong duality holds, the optimal value of the primal problem <span class="math-container" id="8509707" visual_id="4132116"><math alttext="p^{\star}=f(x^{\star})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mo>⋆</mo></msup><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>⋆</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and that of the dual problem <span class="math-container" id="8509708" visual_id="4132117"><math alttext="d^{\star}=g(\lambda^{\star})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>d</mi><mo>⋆</mo></msup><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>λ</mi><mo>⋆</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> are equal.</p> <p>QUESTION: If we define <span class="math-container" id="8509709" visual_id="4132118"><math alttext="\hat{x}(\lambda)\in\arg\min_{x}L(x,\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mrow><mi>arg</mi><mo>⁡</mo><mrow><munder><mi>min</mi><mi>x</mi></munder><mo>⁡</mo><mi>L</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> to be a value of the primal variable <span class="math-container" id="8509710" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> which yields the dual function <span class="math-container" id="8509711" visual_id="4132119"><math alttext="g(\lambda)=L(\hat{x}(\lambda),\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, then do there exist functions <span class="math-container" id="8509712" visual_id="438546"><math alttext="(f,h)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> for which this is not necessarily equal to the solution, i.e. <span class="math-container" id="8509713" visual_id="4132120"><math alttext="\hat{x}(\lambda^{\star})\neq x^{\star}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>λ</mi><mo>⋆</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><msup><mi>x</mi><mo>⋆</mo></msup></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> optimization </span><span> convex-optimization </span><span> nonlinear-optimization </span><span> lagrange-multiplier </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1810439"> Strong duality does not guarantee that the optimal values are *attained*. That is: it's entirely possible that <span class="math-container" id="8509714" visual_id="4132121"><math alttext="\inf_{x:~{}h(x)\leq 0}f(x)=\sup_{\lambda\geq 0}\inf_{x}L(x,\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">inf</mo><mrow><mi>x</mi><mo rspace="5.8pt">:</mo><mrow><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mn>0</mn></mrow></mrow></munder><mo>⁡</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><munder><mo movablelimits="false">sup</mo><mrow><mi>λ</mi><mo>≥</mo><mn>0</mn></mrow></munder><mo>⁡</mo><mrow><munder><mo movablelimits="false">inf</mo><mi>x</mi></munder><mo>⁡</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></semantics></math></span>but there is no <span class="math-container" id="8509715" visual_id="5823"><math alttext="x^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>*</mo></msup></semantics></math></span> and/or <span class="math-container" id="8509716" visual_id="82008"><math alttext="\lambda^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>λ</mi><mo>*</mo></msup></semantics></math></span> that achieves these optima. Strict primal feasibility implies dual attainment, and vice versa. </td></tr><tr><td comment_id="1810687"> @MichaelGrant: The OP assumed that <span class="math-container" id="8509717" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> has a unique minimiser, so the primal optimal is attained. Presumably by the <span class="math-container" id="8509718" visual_id="18150"><math alttext="\min" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>min</mi></semantics></math></span> in the definition of <span class="math-container" id="8509719" visual_id="627"><math alttext="g" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi></semantics></math></span> this means that the dual optimal value is also attained. So there is a saddle point, we have <span class="math-container" id="8509720" visual_id="4132122"><math alttext="g(\lambda^{*})=L(x^{*},\lambda^{*})=f(x^{*})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>λ</mi><mo>*</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo>,</mo><msup><mi>λ</mi><mo>*</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>*</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. However, while I suspect that it is possible that <span class="math-container" id="8509721" visual_id="4132123"><math alttext="\hat{x}(\lambda^{*})\neq x^{*}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mover accent="true"><mi>x</mi><mo stretchy="false">^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>λ</mi><mo>*</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><msup><mi>x</mi><mo>*</mo></msup></mrow></semantics></math></span>, it is at best a hunch. </td></tr><tr><td comment_id="1811074"> Good points. I note that there is no assumption regarding the uniqueness of the dual maximizer. </td></tr><tr><td comment_id="1811318"> Can I add the assumption that both the primal and dual optimal values are attained? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1534863" id="answer">
+<p>This is entirely possible, and happens all the time. In order to guarantee that the subproblem solution obtained at the dual optimum corresponds to the true primal optimum, you need the dual to be differentiable which is equivalent to the primal problem being strictly convex. In the context of linear programming, this is called the "problem of non-coordinability". </p> <p>It has been a fairly active area of research actually, see for example <a href="http://link.springer.com/article/10.1007%2Fs10107-014-0772-2#/page-1" rel="nofollow">http://link.springer.com/article/10.1007%2Fs10107-014-0772-2#/page-1</a> for a decent exposition.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2412228"> When is the minimizer of the Lagrangian the solution to the primal problem? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

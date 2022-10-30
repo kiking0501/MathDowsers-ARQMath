@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove $\lim_{n\rightarrow \infty} n^{\frac{1}{n}} = 1$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove <span class="math-container" id="12685824" visual_id="472884"><math alttext="\lim_{n\rightarrow\infty}n^{\frac{1}{n}}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><msup><mi>n</mi><mfrac><mn>1</mn><mi>n</mi></mfrac></msup></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1365114">
+<p>Prove that <span class="math-container" id="12685825" visual_id="472884"><math alttext="\lim_{n\rightarrow\infty}n^{\frac{1}{n}}=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><msup><mi>n</mi><mfrac><mn>1</mn><mi>n</mi></mfrac></msup></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span></p> <p>Hint: write <span class="math-container" id="12685826" visual_id="1889334"><math alttext="n^{\frac{1}{n}}=1+\epsilon_{n},0&lt;\epsilon_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>n</mi><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>=</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>ϵ</mi><mi>n</mi></msub></mrow></mrow><mo>,</mo><mrow><mn>0</mn><mo>&lt;</mo><msub><mi>ϵ</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> then <span class="math-container" id="12685827" visual_id="1889335"><math alttext="n=(1+\epsilon_{n})^{n}&gt;1+\frac{n(n+1)}{2}\epsilon_{n}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>ϵ</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>&gt;</mo><mrow><mn>1</mn><mo>+</mo><mrow><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac><mo>⁢</mo><msubsup><mi>ϵ</mi><mi>n</mi><mn>2</mn></msubsup></mrow></mrow></mrow></semantics></math></span> by the binomial theorem.</p> <p>I am not sure how to establish this result. The only manipulation I see is taking <span class="math-container" id="12685828" visual_id="4096"><math alttext="\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>n</mi></mfrac></semantics></math></span> on both sides of the inequality in the hint, but I do not see how that can help me establish a result.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> limits </span><span> binomial-theorem </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2777515"> Do you have to follow the hint?  This is a classic l'Hopital example otherwise. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1365123" id="answer">
+<p>If  <span class="math-container" id="12685829" visual_id="1889336"><math alttext="n^{\frac{1}{n}}=1+\epsilon_{n}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>n</mi><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>=</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>ϵ</mi><mi>n</mi></msub></mrow></mrow><mo>,</mo></mrow></semantics></math></span> then by taking <span class="math-container" id="12685830" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>th powers, we know that  <span class="math-container" id="12685831" visual_id="1889337"><math alttext="n=(1+\epsilon_{n})^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>ϵ</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></semantics></math></span> and so  <span class="math-container" id="12685832" visual_id="1889338"><math alttext="n=(1+\epsilon_{n})^{n}=1+\binom{n}{1}\epsilon_{n}+\binom{n}{2}\epsilon_{n}^{2}% +\cdots&gt;1+\binom{n}{2}\epsilon_{n}^{2}=1+\frac{n(n+1)}{2}\epsilon_{n}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>ϵ</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mn>1</mn></mfrac><mo>)</mo></mrow><mo>⁢</mo><msub><mi>ϵ</mi><mi>n</mi></msub></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mn>2</mn></mfrac><mo>)</mo></mrow><mo>⁢</mo><msubsup><mi>ϵ</mi><mi>n</mi><mn>2</mn></msubsup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>&gt;</mo><mrow><mn>1</mn><mo>+</mo><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>n</mi><mn>2</mn></mfrac><mo>)</mo></mrow><mo>⁢</mo><msubsup><mi>ϵ</mi><mi>n</mi><mn>2</mn></msubsup></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac><mo>⁢</mo><msubsup><mi>ϵ</mi><mi>n</mi><mn>2</mn></msubsup></mrow></mrow></mrow></semantics></math></span> and therefore.....</p> <p><span class="math-container" id="12685833" visual_id="1889339"><math alttext="0&lt;\epsilon_{n}&lt;\sqrt{\frac{2(n-1)}{n(n+1)}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msub><mi>ϵ</mi><mi>n</mi></msub><mo>&lt;</mo><msqrt><mfrac><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></msqrt></mrow></semantics></math></span> But, what happens if we look at the limit as <span class="math-container" id="12685834" visual_id="1477"><math alttext="n\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>? Then, <span class="math-container" id="12685835" visual_id="1200361"><math alttext="\epsilon_{n}\to 0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ϵ</mi><mi>n</mi></msub><mo>→</mo><mn>0</mn></mrow></semantics></math></span>, and so <span class="math-container" id="12685836" visual_id="3833"><math alttext="n^{\frac{1}{n}}\to 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>→</mo><mn>1</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

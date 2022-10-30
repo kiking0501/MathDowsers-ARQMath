@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>$\int_{-\infty}^{+\infty} e^{-x^2} dx$ with complex analysis</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> <span class="math-container" id="359998" visual_id="687796"><math alttext="\int_{-\infty}^{+\infty}e^{-x^{2}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> with complex analysis </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="34767">
+<p>Inspired by <a href="https://math.stackexchange.com/questions/34699/int-e-x2dx">this</a> recently closed question, I'm curious whether there's a way to do the Gaussian integral using techniques in complex analysis such as contour integrals.</p> <p>I am aware of the calculation using polar coordinates and have seen other derivations. But I don't think I've ever seen it done with methods from complex analysis. I am ignorant enough about complex analysis to believe it can somehow be done without knowing how it would be done.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> complex-analysis </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="891082" id="answer">
+<p>An other way would be: </p> <p>we know that <span class="math-container" id="360106" visual_id="1746175"><math alttext="\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-\frac{x^{2}}{2}}dx=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span> (normale distribution). Then</p> <p><span class="math-container" id="360107" visual_id="1746176"><math alttext="\int_{-\infty}^{\infty}e^{-x^{2}}dx\underset{x=\frac{u}{\sqrt{2}}}{=}\frac{1}{% \sqrt{2}}\int_{-\infty}^{\infty}e^{-\frac{u^{2}}{2}}du=\sqrt{\pi}\underbrace{% \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-\frac{u^{2}}{2}}du}_{=1}=\sqrt% {\pi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow><mo>⁢</mo><munder accentunder="true"><mo>=</mo><mrow><mi>x</mi><mo>=</mo><mfrac><mi>u</mi><msqrt><mn>2</mn></msqrt></mfrac></mrow></munder><mo>⁢</mo><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mfrac><msup><mi>u</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><msqrt><mi>π</mi></msqrt><mo>⁢</mo><munder><munder accentunder="true"><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo movablelimits="false">⁢</mo><mi>π</mi></mrow></msqrt></mfrac><mo movablelimits="false">⁢</mo><mrow><msubsup><mo largeop="true" movablelimits="false" symmetric="true">∫</mo><mrow><mo movablelimits="false">-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo movablelimits="false">-</mo><mfrac><msup><mi>u</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></msup><mo movablelimits="false">⁢</mo><mrow><mo movablelimits="false" rspace="0pt">𝑑</mo><mi>u</mi></mrow></mrow></mrow></mrow><mo movablelimits="false">⏟</mo></munder><mrow><mi></mi><mo>=</mo><mn>1</mn></mrow></munder></mrow><mo>=</mo><msqrt><mi>π</mi></msqrt></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1893159"> if the person who put a downvote could explain why, it would be more constructive !! </td></tr><tr><td comment_id="3225826"> This is a compensatory upvote </td></tr><tr><td comment_id="3305384"> I'm guessing the downvote was in view of the obvious question: *how* do we know that fact about the normal distribution?  Well, often it's proved starting from the fact that the OP is asking about, in effect running the very elementary calculus manipulations in your answer in reverse order. Meanwhile, there are various ways we know this fact, as mentioned by the OP, but he's asking specifically for a reason based on contour integration. So it seems you are not answering the question that was asked. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1628962"> Residue calculus: <span class="math-container" id="15065247" visual_id="1221113"><math alttext="\int_{-\infty}^{\infty}e^{-x^{2}}\mathrm{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="34699"> <span class="math-container" id="359501" visual_id="78828"><math alttext="\int e^{-x^{2}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="35141"> Computing the integral of <span class="math-container" id="364353" visual_id="41339"><math alttext="e^{-x^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup></semantics></math></span> over the entire line </td></tr><tr><td post_id="66084"> Integral: <span class="math-container" id="732246" visual_id="8779757"><math alttext="\int_{-\infty}^{\infty}x^{2}e^{-x^{2}}\mathrm{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="122888"> Strange integrand </td></tr><tr><td post_id="163447"> Evaluating definite integrals </td></tr><tr><td post_id="188241"> How to prove <span class="math-container" id="2185461" visual_id="242413"><math alttext="\int_{0}^{\infty}e^{-x^{2}}\;dx=\frac{\sqrt{\pi}}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+2.8pt"><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow><mo>=</mo><mfrac><msqrt><mi>π</mi></msqrt><mn>2</mn></mfrac></mrow></semantics></math></span> without changing into polar coordinates? </td></tr><tr><td post_id="241814"> Which is the easier way to do integration by parts when there is an exponential term? </td></tr><tr><td post_id="264207"> Value of an integral related to Stirling's formula </td></tr><tr><td post_id="264746"> Prove the Wallis formula form <span class="math-container" id="2930548" visual_id="5785832"><math alttext="\left(4^{\zeta{(0)}}\cdot e^{-\zeta^{\prime}{(0)}}\right)^{2}=\frac{\pi}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>(</mo><mrow><msup><mn>4</mn><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⋅</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><msup><mi>ζ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></msup></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math></span> </td></tr><tr><td post_id="305916"> Complex Analytic Proof of the Gaussian Integral <span class="math-container" id="3319264" visual_id="2341640"><math alttext="\int_{-\infty}^{\infty}e^{-z^{2}}dz=\sqrt{\pi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>z</mi></mrow></mrow></mrow><mo>=</mo><msqrt><mi>π</mi></msqrt></mrow></semantics></math></span> </td></tr><tr><td post_id="396668"> Evaluating <span class="math-container" id="4202846" visual_id="6633056"><math alttext="\int_{0}^{\infty}e^{-\alpha x^{2}\cos\beta}\cos(\alpha x^{2}\sin\beta)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>α</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>β</mi></mrow></mrow></mrow></msup><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>β</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="552218"> How to compute the integral <span class="math-container" id="5721411" visual_id="561818"><math alttext="\int_{-\infty}^{\infty}e^{-x^{2}}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></semantics></math></span>? </td></tr><tr><td post_id="584111"> Integrating this complicated integral for statistics </td></tr><tr><td post_id="719963"> How to integrate <span class="math-container" id="7182366" visual_id="728315"><math alttext="\displaystyle 1-e^{-1/x^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></semantics></math></span>? </td></tr><tr><td post_id="761856"> <span class="math-container" id="7537245" visual_id="4547360"><math alttext="\sum_{n=-\infty}^{\infty}e^{-\alpha n^{2}+\beta n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mi>e</mi><mrow><mrow><mo>-</mo><mrow><mi>α</mi><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></mrow></semantics></math></span> </td></tr><tr><td post_id="890872"> The other ways to calculate <span class="math-container" id="8633727" visual_id="4173365"><math alttext="\int_{0}^{1}\frac{\ln(1-x^{2})}{x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1465128"> Computing the integral <span class="math-container" id="13569499" visual_id="2000580"><math alttext="\int e^{2i(a-b)x}e^{-\frac{1}{2}x^{2}}\mathrm{d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>x</mi></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </td></tr><tr><td post_id="1749978"> Improper integral with complex limits </td></tr><tr><td post_id="2292388"> Suitable contour for an integral (<span class="math-container" id="21179620" visual_id="148468"><math alttext="\Gamma(1/2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>) </td></tr><tr><td post_id="2820963"> Integral <span class="math-container" id="26046686" visual_id="7531426"><math alttext="\int_{0}^{\infty}\frac{e^{-x^{2}}}{a+b\cos{x}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finding an expected value</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finding an expected value </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3000485">
+<p>Below is a problem that I did from Chapter 4 of the book "Intoduction to Probability Theory". The book was written by Hoel, Port and Stone. The answer I got is wrong. I would like to know what I did wrong.<br/> Thanks,<br/> Bob  </p> <p>Problem: Let <span class="math-container" id="27787698" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> be a Poisson with parameter <span class="math-container" id="27787699" visual_id="664"><math alttext="\lambda" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi></semantics></math></span>. Compute the mean of <span class="math-container" id="27787700" visual_id="2837785"><math alttext="(1+X)^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span>.<br/> Answer:<br/> The density function for the Poisson distribution is:     <span class="math-container" id="27787701" visual_id="8314366"><math alttext="f(x)=\frac{\lambda^{x}e^{-x}}{x!}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msup><mi>λ</mi><mi>x</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow><mrow><mi>x</mi><mo>!</mo></mrow></mfrac></mrow></semantics></math></span> Let <span class="math-container" id="27787702" visual_id="506"><math alttext="u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi></semantics></math></span> be the mean that we seek. <span class="math-container" id="27787703" visual_id="286"><math alttext="\@@eqnarray\displaystyle u&amp;\displaystyle=&amp;\displaystyle\sum_{x=0}^{\infty}% \frac{\lambda^{x}e^{-x}}{x!((1+x))}=\sum_{x=0}^{\infty}\frac{\lambda^{x}e^{-x}% }{(x+1)!}\\ \displaystyle u&amp;\displaystyle=&amp;\displaystyle\sum_{x=1}^{\infty}\frac{\lambda^{% x}e^{-(x-1)}}{(x)!}\\ \displaystyle u&amp;\displaystyle=&amp;\displaystyle\sum_{x=1}^{\infty}\frac{\lambda^{% x}e^{-x+1}}{(x)!}\\ \displaystyle u&amp;\displaystyle=&amp;\displaystyle e\sum_{x=1}^{\infty}\frac{\lambda% ^{x}e^{-x}}{(x)!}\\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext class="ltx_eqn_eqnarray"></mtext></semantics></math></span> Observe that when <span class="math-container" id="27787704" visual_id="664"><math alttext="\lambda" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi></semantics></math></span> is very large that <span class="math-container" id="27787705" visual_id="506"><math alttext="u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi></semantics></math></span> is very large. Therefore, I conclude that I am already wrong. The books answer is: <span class="math-container" id="27787706" visual_id="2837786"><math alttext="\lambda^{-1}(1-e^{-\lambda})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>λ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6189497"> There are many books of this title. Who wrote it? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3000505" id="answer">
+<p>The <a href="https://en.wikipedia.org/wiki/Poisson_distribution" rel="nofollow noreferrer">Poisson distribution</a> is</p> <p><span class="math-container" id="27787707" visual_id="8314367"><math alttext="f(x)=\frac{\lambda^{x}e^{-{\color[rgb]{1,0,0}{\lambda}}}}{x!},x\in\mathbb{N}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msup><mi>λ</mi><mi>x</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi mathcolor="#FF0000">λ</mi></mrow></msup></mrow><mrow><mi>x</mi><mo>!</mo></mrow></mfrac></mrow><mo>,</mo><mrow><mi>x</mi><mo>∈</mo><mi>ℕ</mi></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Therefore, the expected value <span class="math-container" id="27787708" visual_id="506"><math alttext="u" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi></semantics></math></span> of <span class="math-container" id="27787709" visual_id="2837785"><math alttext="(1+X)^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is:</p> <p><span class="math-container" id="27787710" visual_id="8314368"><math alttext="u=\sum_{x=0}^{\infty}\frac{\lambda^{x}e^{-\lambda}}{x!(1+x)}=e^{-\lambda}\sum_% {x=0}^{\infty}\frac{\lambda^{x}}{(1+x)!}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>u</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><msup><mi>λ</mi><mi>x</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup></mrow><mrow><mrow><mi>x</mi><mo>!</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>λ</mi><mi>x</mi></msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mfrac></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>Now, do a substitution <span class="math-container" id="27787711" visual_id="1013939"><math alttext="t=x+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span>:</p> <p><span class="math-container" id="27787712" visual_id="8314369"><math alttext="u=e^{-\lambda}\sum_{t=1}^{\infty}\frac{\lambda^{t-1}}{t!}=\frac{e^{-\lambda}}{% \lambda}\sum_{t=1}^{\infty}\frac{\lambda^{t}}{t!}=\frac{e^{-\lambda}}{\lambda}% \left(\sum_{t=0}^{\infty}\frac{\lambda^{t}}{t!}-1\right)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>u</mi><mo>=</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>λ</mi><mrow><mi>t</mi><mo>-</mo><mn>1</mn></mrow></msup><mrow><mi>t</mi><mo>!</mo></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mi>λ</mi></mfrac><mo>⁢</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>λ</mi><mi>t</mi></msup><mrow><mi>t</mi><mo>!</mo></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mi>λ</mi></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>λ</mi><mi>t</mi></msup><mrow><mi>t</mi><mo>!</mo></mrow></mfrac></mrow><mo>-</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>It is well-known that:</p> <p><span class="math-container" id="27787713" visual_id="8314370"><math alttext="\sum_{t=0}^{\infty}\frac{\lambda^{t}}{t!}=e^{\lambda}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>λ</mi><mi>t</mi></msup><mrow><mi>t</mi><mo>!</mo></mrow></mfrac></mrow><mo>=</mo><msup><mi>e</mi><mi>λ</mi></msup></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>You can check this fact <a href="https://en.wikipedia.org/wiki/Taylor_series#Exponential_function" rel="nofollow noreferrer">here</a>.</p> <p>Finally:</p> <p><span class="math-container" id="27787714" visual_id="8314371"><math alttext="u=\frac{e^{-\lambda}}{\lambda}(e^{\lambda}-1)=\frac{1}{\lambda}(1-e^{-\lambda}% )=\lambda^{-1}(1-e^{-\lambda})." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>u</mi><mo>=</mo><mrow><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup><mi>λ</mi></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>λ</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>λ</mi></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>λ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>λ</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="497643"> Compute the mean of <span class="math-container" id="5219149" visual_id="2837785"><math alttext="(1+X)^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> where <span class="math-container" id="5219150" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is Poisson<span class="math-container" id="5219151" visual_id="268073"><math alttext="(\lambda)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

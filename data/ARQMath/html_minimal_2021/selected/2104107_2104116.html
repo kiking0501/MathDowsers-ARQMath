@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>How to compute the sum $\sum_{n=0}^\infty \tfrac{n^2}{2^n}$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> How to compute the sum <span class="math-container" id="19457443" visual_id="3830708"><math alttext="\sum_{n=0}^{\infty}\tfrac{n^{2}}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mstyle displaystyle="false"><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mstyle></mrow></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2104107">
+<blockquote> <p>How to find this sum :</p> <p><span class="math-container" id="19457444" visual_id="3830708"><math alttext="\sum_{n=0}^{\infty}\dfrac{n^{2}}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></semantics></math></span></p> </blockquote> <p><span class="math-container" id="19457445" visual_id="7767236"><math alttext="\sum_{n=0}^{\infty}\dfrac{n^{2}}{2^{n}}=\dfrac{1}{2}+\dfrac{4}{4}+\dfrac{9}{8}% +\dfrac{16}{16}+\dfrac{25}{32}+\dfrac{36}{64}+\dfrac{49}{128}+\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>9</mn><mn>8</mn></mfrac><mo>+</mo><mfrac><mn>16</mn><mn>16</mn></mfrac><mo>+</mo><mfrac><mn>25</mn><mn>32</mn></mfrac><mo>+</mo><mfrac><mn>36</mn><mn>64</mn></mfrac><mo>+</mo><mfrac><mn>49</mn><mn>128</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span></p> <p>Now <span class="math-container" id="19457446" visual_id="7767237"><math alttext="\sum_{n=0}^{\infty}\dfrac{n}{2^{n}}\leqslant\sum_{n=0}^{\infty}\dfrac{n^{2}}{2% ^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>⩽</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></mrow></semantics></math></span></p> <p>And I know that <span class="math-container" id="19457447" visual_id="7767238"><math alttext="\sum_{n=0}^{\infty}\dfrac{n}{2^{n}}=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math></span>.</p> <p>But how to find this sum ? I am confused.Please give some hints.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> sequences-and-series </span><span> convergence-divergence </span><span> summation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4326628"> No you are wrong @MathMajor </td></tr><tr><td comment_id="4326629"> Maple is evidently incorrect; c.f. the answer of Andre Nicolas here: http://math.stackexchange.com/questions/757263/how-to-find-answer-to-the-sum-of-series-sum-n-1-infty-fracn2n?rq=1 </td></tr><tr><td comment_id="4326637"> Start with <span class="math-container" id="19457448" visual_id="3848042"><math alttext="1+x+x^{2}+\cdots=1/(1-x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Differentiate. Multiply by <span class="math-container" id="19457449" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span>. Differentiate again. Plug in <span class="math-container" id="19457450" visual_id="16172"><math alttext="x=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>. All the steps valid, because we are well within the radius of convergence. Surprised if this is not a duplicate. </td></tr><tr><td comment_id="4326656"> @JyrkiLahtonen;what is meant by "well within radius ...";will you please explain </td></tr><tr><td comment_id="4326855"> It means that we are in an interval where the series and its derivatives converge uniformly, and termwise differentiation is thus justified (by the usual results on power series). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2104116" id="answer">
+<p><strong>Hint:</strong> For <span class="math-container" id="19457451" visual_id="3470"><math alttext="|x|&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span> \begin{align*} \sum_{n=0}^{\infty }n^{2}x^{n}&amp;=\sum_{n=0}^{\infty }n\left ( n+1 \right )x^{n}-\sum_{n=0}^{\infty }nx^{n} \\ &amp;=x\sum_{n=0}^{\infty }n\left ( n+1 \right )x^{n-1}-x\sum_{n=0}^{\infty }nx^{n-1}\\ &amp;=x\left ( \sum_{n=0}^{\infty }x^{n+1} \right )''-x\left ( \sum_{n=0}^{\infty }x^{n} \right )'\\ &amp;=-\frac{x\left ( x+1 \right )}{\left ( x-1 \right )^{3}} \end{align*} then let <span class="math-container" id="19457452" visual_id="14705"><math alttext="x=\dfrac{1}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math></span> you will get the answer.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4326658"> how is the last line obtained i.e. the derivative ?? </td></tr><tr><td comment_id="4326664"> @BenStokes Yes! Solve the inner series and take the derivative of its result. </td></tr><tr><td comment_id="4326670"> yes i got your point;One more question :why is <span class="math-container" id="19457453" visual_id="5452"><math alttext="|x|&lt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></semantics></math></span> needed? </td></tr><tr><td comment_id="4326702"> @Ben Stokes If <span class="math-container" id="19457454" visual_id="18720"><math alttext="|x|\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>x</mi><mo stretchy="false">|</mo></mrow><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>, both of the series are divergent. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="593996"> How to prove <span class="math-container" id="6076015" visual_id="7920902"><math alttext="\sum_{n=0}^{\infty}\frac{n^{2}}{2^{n}}=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="757263"> How to find answer to the sum of series <span class="math-container" id="7499078" visual_id="448948"><math alttext="\sum_{n=1}^{\infty}\frac{n}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

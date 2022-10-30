@@ -13,6 +13,7 @@ MathDowsers is a team of researchers from the University of *Water*loo who are i
 
 The math-aware search engine in use is <a href="https://cs.uwaterloo.ca/brushsearch/tangent-l/" target="_blank">Tangent-L</a>. More details of the supporting research project can be found in the <a href="https://cs.uwaterloo.ca/brushsearch/" target="_blank">BrushSearch</a> site.
 
+**ARQMath-3** With a new implemented engine <a href="https://github.com/andrewrkane/mtextsearch" target="_blank">mtextsearch</a>, the team simplifies experimentation, improves retrieval effectiveness, and shows that traditional text retrieval systems can easily be enhanced to become effective math-aware search engines.
 
 
 ## Demo
@@ -117,6 +118,8 @@ Yin Ki Ng (2021). Dowsing for Math Answers: Exploring MathCQA with a Math-aware 
 
 
 *Publications*:
+
+Andrew Kane, Yin Ki Ng, Frank Wm. Tompa. <i><a href="http://ceur-ws.org/Vol-3180/paper-03.pdf" target="_blank">Dowsing for Answers to Math Questions: Doing Better with Less</a></i>, in: CLEF 2022, volume 3180 of CEUR Workshop Proceddings, 2022
 
 Yin Ki NG, Dallas J. Fraser, Besat Kassaie, Frank Wm. Tompa. <i><a href="https://link.springer.com/chapter/10.1007/978-3-030-85251-1_16">Dowsing for Math Answers</a></i>, in: Candan K.S. et al. (eds) Experimental IR Meets Multilinguality, Multimodality, and Interaction. CLEF 2021. Lecture Notes in Computer Science, vol 12880. Springer, Cham. https://doi.org/10.1007/978-3-030-85251-1_16
 

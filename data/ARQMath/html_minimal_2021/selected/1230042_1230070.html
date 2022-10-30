@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Prove that $(n!)^{\frac{1}{n}} < ((n+1)!)^{\frac{1}{n+1}}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Prove that <span class="math-container" id="11493206" visual_id="8699598"><math alttext="(n!)^{\frac{1}{n}}&lt;((n+1)!)^{\frac{1}{n+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1230042">
+<p>I have been tasked with proving that <span class="math-container" id="11493207" visual_id="8699599"><math alttext="(n!)^{\frac{1}{n}}&lt;((n+1)!)^{\frac{1}{n+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup></mrow></semantics></math></span> for every integer <span class="math-container" id="11493208" visual_id="967"><math alttext="n\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>. My instinct is to use induction, but I have gotten stuck.</p> <p>Base Case - <span class="math-container" id="11493209" visual_id="1115"><math alttext="n=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>: <span class="math-container" id="11493210" visual_id="8699600"><math alttext="(1!)^{\frac{1}{1}}&lt;((1+1)!)^{\frac{1}{1+1}}\rightarrow 1&lt;2^{\frac{1}{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mn>1</mn></mfrac></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow></mfrac></msup><mo>→</mo><mn>1</mn><mo>&lt;</mo><msup><mn>2</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></msup></mrow></semantics></math></span>, which is of course true.</p> <p>Inductive Hypothesis - <span class="math-container" id="11493211" visual_id="8699601"><math alttext="((n-1)!)^{\frac{1}{n-1}}&lt;(n!)^{\frac{1}{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup></mrow></semantics></math></span></p> <p>Inductive Proof - WTS <span class="math-container" id="11493212" visual_id="8699599"><math alttext="(n!)^{\frac{1}{n}}&lt;((n+1)!)^{\frac{1}{n+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup></mrow></semantics></math></span></p> <p>I am trying to go about this by expanding <span class="math-container" id="11493213" visual_id="8699602"><math alttext="((n+1)!)^{\frac{1}{n+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup></semantics></math></span> to show that it must be greater than <span class="math-container" id="11493214" visual_id="877140"><math alttext="(n!)^{\frac{1}{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup></semantics></math></span>. Is this correct? It is where I have gotten stuck.</p> <p><span class="math-container" id="11493215" visual_id="8699603"><math alttext="((n+1)!)^{\frac{1}{n+1}}=((n+1)(n!))^{\frac{1}{n+1}}=(n+1)^{\frac{1}{n+1}}*(n!% )^{\frac{1}{n+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup><mo>*</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup></mrow></mrow></semantics></math></span></p> <p>I don't know where to go from here, or how to use my IH in this proof. I considered making my IH <span class="math-container" id="11493216" visual_id="8699599"><math alttext="(n!)^{\frac{1}{n}}&lt;((n+1)!)^{\frac{1}{n+1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup></mrow></semantics></math></span>, and trying to prove <span class="math-container" id="11493217" visual_id="8699604"><math alttext="((n+1)!)^{\frac{1}{n+1}}&lt;((n+2)!)^{\frac{1}{n+2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></mfrac></msup></mrow></semantics></math></span>, but I got just as stuck in the proof.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> proof-writing </span><span> induction </span><span> factorial </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2501545"> Note that the inequality is equivalent to the more tractable-looking <span class="math-container" id="11493218" visual_id="8699605"><math alttext="n!^{n+1}&lt;(n+1)!^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>&lt;</mo><msup><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mi>n</mi></msup></mrow></semantics></math></span>. </td></tr><tr><td comment_id="2501631"> The inequality says that the geometric mean of <span class="math-container" id="11493219" visual_id="11011"><math alttext="\{1,2,\dotsc,n\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></semantics></math></span> is strictly less than the geometric mean of <span class="math-container" id="11493220" visual_id="604449"><math alttext="\{1,2,\dotsc,n,n+1\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo>,</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></semantics></math></span>.  It might be easier to work out the analogous problem for the arithmetic mean as a warm-up.  (In fact, if you can solve the analogous problem for the arithmetic mean, you could just take logs.) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1230070" id="answer">
+<p>No need to use induction.</p> <p><span class="math-container" id="11493221" visual_id="8699606"><math alttext="(n!)^{\frac{1}{n}}&lt;((n+1)!)^{\frac{1}{n+1}}\impliedby n!&lt;((n+1)!)^{\frac{n}{n+% 1}}\impliedby(n!)^{n+1}&lt;((n+1)!)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup><mo>⟸</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mfrac><mi>n</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></msup><mo>⟸</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></semantics></math></span></p> <p>The last inequality holds since for all <span class="math-container" id="11493222" visual_id="3492"><math alttext="1\leq i\leq n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mi>n</mi></mrow></semantics></math></span> and <span class="math-container" id="11493223" visual_id="3691"><math alttext="i\in\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math></span> we have <span class="math-container" id="11493224" visual_id="7884373"><math alttext="i&lt;(n+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>&lt;</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2501650"> That makes so much more sense than what I was trying to do. Thanks a lot! </td></tr><tr><td comment_id="2501668"> You are most welcome. </td></tr><tr><td comment_id="2501724"> I really don't see why this is a proof. It is not any different than the question, it just pushes the problem around, but does not solve it, I would accept it, if you would add the proof for this inequality: <span class="math-container" id="11493226" visual_id="8699607"><math alttext="(n!)^{n+1}&lt;((n+1)!)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></semantics></math></span>  - also I don't see the usage of your last line. </td></tr><tr><td comment_id="2503383"> @Imago: The last line gi<span class="math-container" id="23157349">v</span>es the proof of the inequality <span class="math-container" id="11493226" visual_id="8699607"><math alttext="(n!)^{n+1}&lt;((n+1)!)^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>&lt;</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></semantics></math></span>. </td></tr><tr><td comment_id="2503675"> I see what you are referring to, though I find your proof to be kept too brief at that point. (One further transformation hadn't hurt) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

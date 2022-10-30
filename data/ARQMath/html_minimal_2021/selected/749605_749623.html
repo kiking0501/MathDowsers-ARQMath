@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Show that if $p$ is a prime number $> 3$ then $24 \mid p^2-1$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Show that if <span class="math-container" id="7433176" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is a prime number <span class="math-container" id="7433177" visual_id="403112"><math alttext="&gt;3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>&gt;</mo><mn>3</mn></mrow></semantics></math></span> then <span class="math-container" id="7433178" visual_id="4196775"><math alttext="24\mid p^{2}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>24</mn><mo lspace="2.5pt" rspace="2.5pt">∣</mo><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="749605">
+<p>Hi guys can someone help me with this ?(Without using Modular arithmetic)</p> <p>Show that if <span class="math-container" id="7433179" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is a prime number <span class="math-container" id="7433180" visual_id="8476"><math alttext="&gt;3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>&gt;</mo><mn>3</mn></mrow></semantics></math></span> then <span class="math-container" id="7433181" visual_id="4522"><math alttext="24" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>24</mn></semantics></math></span> <span class="math-container" id="7433182" visual_id="26481"><math alttext="\mid" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∣</mo></semantics></math></span> <span class="math-container" id="7433183" visual_id="76131"><math alttext="p^{2}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> number-theory </span><span> discrete-mathematics </span><span> arithmetic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1560908"> Have you tried anything? What can you say about <span class="math-container" id="7433204" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> modulo <span class="math-container" id="7433185" visual_id="340"><math alttext="6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn></semantics></math></span>? </td></tr><tr><td comment_id="1560916"> Note that modular arithmetic is the language mathematicians developed to analyse questions of divisibility. Whether or not you use the language, you will be using the ideas. </td></tr><tr><td comment_id="1560985"> Why was the title of this question changed from something clear and unambiguous to something difficult to parse and using nonstandard notation? </td></tr><tr><td comment_id="1561023"> it was done by someone else let me change it back </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="749623" id="answer">
+<p>Without (explicitly) using modular arithmetic:</p> <p><span class="math-container" id="7433186" visual_id="4513380"><math alttext="p^{2}-1=(p+1)(p-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Since <span class="math-container" id="7433187" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is odd, this is a product of two even numbers that differ by two, so one of them is in fact divisible by four, and their product is divisible by 8.</p> <p>Now, <span class="math-container" id="7433188" visual_id="1327"><math alttext="p-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span>, <span class="math-container" id="7433189" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> and <span class="math-container" id="7433190" visual_id="43108"><math alttext="p+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span> are three consecutive numbers, so 3 divides one of them. <span class="math-container" id="7433191" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is prime, so it's not divisible by three. Thus 3 certainly divides <span class="math-container" id="7433192" visual_id="159075"><math alttext="p^{2}-1=(p-1)(p+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>We conclude that since both 3 and 8 divide <span class="math-container" id="7433193" visual_id="76131"><math alttext="p^{2}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span>, so too does 24 (using the fact that 3 and 8 are coprime).</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1560932"> Hi I am fairly new to this, coul<span class="math-container" id="14415903">d</span> you please e<span class="math-container" id="14415904">x</span>plain to me how <span class="math-container" id="14415905">y</span>ou know that one of them is divisible by 4 and that their product is divisible by 8 and also how you know 3 certainly divides <span class="math-container" id="7433194" visual_id="941900"><math alttext="(p^{2}-1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></semantics></math></span> </td></tr><tr><td comment_id="1560934"> Note that 4 divides every other even number. So if you have two consecutive even numbers, then 4 has to divide one of them. Since 4 divides one of them, 2 divides the other one, we have that <span class="math-container" id="7433195" visual_id="272461"><math alttext="4*2=8" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>4</mn><mo>*</mo><mn>2</mn></mrow><mo>=</mo><mn>8</mn></mrow></semantics></math></span> must divide their product. </td></tr><tr><td comment_id="1560939"> To answer your second question, we know that 3 divides either <span class="math-container" id="7433196" visual_id="1327"><math alttext="p-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span> or <span class="math-container" id="7433197" visual_id="43108"><math alttext="p+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></semantics></math></span>. This means that 3 must divide <span class="math-container" id="7433198" visual_id="884048"><math alttext="(p-1)(p+1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. </td></tr><tr><td comment_id="1560946"> so is it true to conclude that for any integar a,b if a|c and b|c then ab|c seems wrong to me but thats kinda what your implying if 3|(p-1)(p+1) and 8|(p-1)(p+1) then 24|(p-1)(p+1) </td></tr><tr><td comment_id="1560961"> Sorry, I see what you are asking now. Your statement holds when <span class="math-container" id="7433199" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="7433200" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> are coprime (and 3 and 8 are certainly coprime). In general, if <span class="math-container" id="7433201" visual_id="47301"><math alttext="a|c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>c</mi></mrow></semantics></math></span> and <span class="math-container" id="7433202" visual_id="115646"><math alttext="b|c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>c</mi></mrow></semantics></math></span>, then <span class="math-container" id="7433203" visual_id="4513381"><math alttext="\text{lcm}(a,b)|c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mtext>lcm</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="2.5pt" rspace="2.5pt" stretchy="false">|</mo><mi>c</mi></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="855"> For any prime <span class="math-container" id="8692" visual_id="48281"><math alttext="p&gt;3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>3</mn></mrow></semantics></math></span>, why is <span class="math-container" id="8693" visual_id="76131"><math alttext="p^{2}-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></semantics></math></span> always divisible by 24? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

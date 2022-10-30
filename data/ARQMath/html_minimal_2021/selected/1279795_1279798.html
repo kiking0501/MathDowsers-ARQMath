@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Does all splitting fields have characteristic 0?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Does all splitting fields have characteristic 0? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1279795">
+<p>Does all splitting field have characteristic 0?</p> <p>This may be a bad question, but I am wondering because the author of a book I am reading summarises a lot of properties when he is about to start with Galois theory, one of the properties is:</p> <blockquote> <p>If E is a finite extension of F and is a separable splitting field   over F, then <span class="math-container" id="11916117" visual_id="5056141"><math alttext="|G(E/F)|=\{E:F\}=[E:F]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>G</mi><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>/</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">|</mo><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy="false">}</mo></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>.</p> </blockquote> <p>However in the relevant chapter I can not see this proved, the closest thing I find is:</p> <blockquote> <p>We have completed our aim, which was to show that field of   characteristic 0 and finite fields have only separable finite   extensions, that is, these fields are perfect. For finite extensions E   of such fields F, we then have <span class="math-container" id="11916118" visual_id="5056142"><math alttext="[E:F]=\{E:F\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>.</p> </blockquote> <p>Does the first sentence in some way follow from the second? It would if I could prove that all splitting fields are are either finite or have characteristic 0?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> group-theory </span><span> field-theory </span><span> galois-theory </span><span> extension-field </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2598696"> And the book you are reading is...? </td></tr><tr><td comment_id="2598698"> A first course in Abstract Algebrah, John B. Fraleigh, seventh edition </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1279798" id="answer">
+<p>A field <span class="math-container" id="11916119" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> over <span class="math-container" id="11916120" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is a splitting field if it is the smallest field extension of <span class="math-container" id="11916121" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> containing all the roots of some polynomial <span class="math-container" id="11916122" visual_id="427059"><math alttext="p\in F[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∈</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></semantics></math></span> (defined regardless of the characteristic of <span class="math-container" id="11916123" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>). Let <span class="math-container" id="11916124" visual_id="17219"><math alttext="\alpha_{1},\ldots,\alpha_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>α</mi><mi>n</mi></msub></mrow></semantics></math></span> be the roots of <span class="math-container" id="11916125" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> in an algebraic closure. Then the splitting field of <span class="math-container" id="11916126" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> over <span class="math-container" id="11916127" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is <span class="math-container" id="11916128" visual_id="17220"><math alttext="E=F(\alpha_{1},\ldots,\alpha_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>α</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> (smallest field containing <span class="math-container" id="11916129" visual_id="99"><math alttext="\alpha_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>α</mi><mi>i</mi></msub></semantics></math></span>). This is a finite extension of <span class="math-container" id="11916130" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> since each <span class="math-container" id="11916131" visual_id="99"><math alttext="\alpha_{i}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>α</mi><mi>i</mi></msub></semantics></math></span> is algebraic over <span class="math-container" id="11916132" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> (and any extension of <span class="math-container" id="11916133" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>). You can form a (finite) tower of finite extensions: <span class="math-container" id="11916134" visual_id="5056143"><math alttext="F\subset F(\alpha_{1})\subset F(\alpha_{1},\alpha_{2})\subset\ldots\subset E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⊂</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><msub><mi>α</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mi mathvariant="normal">…</mi><mo>⊂</mo><mi>E</mi></mrow></semantics></math></span>.</p> <p>Compare this with a normal extension, which may be infinite. One characterization of a normal extension <span class="math-container" id="11916135" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> over <span class="math-container" id="11916136" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> is that <span class="math-container" id="11916137" visual_id="777"><math alttext="E" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi></semantics></math></span> is the splitting field for a (possibly infinite) family of polynomials in <span class="math-container" id="11916138" visual_id="137"><math alttext="F[X]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>limit superior of uniformly integrable random variables is integrable?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> limit superior of uniformly integrable random variables is integrable? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="26602">
+<p>Let <span class="math-container" id="269422" visual_id="11974"><math alttext="(X_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> be a sequence of nonnegative uniformly integrable random variables. Is it true that <span class="math-container" id="269423" visual_id="8299865"><math alttext="\limsup X_{n}\in L_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo movablelimits="false">lim sup</mo><mo>⁡</mo><msub><mi>X</mi><mi>n</mi></msub></mrow><mo>∈</mo><msub><mi>L</mi><mn>1</mn></msub></mrow></semantics></math></span>? Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> probability-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="57161"> First, the question should be rephrased to avoid giving orders. Second, the result is false. </td></tr><tr><td comment_id="57166"> Can you give a counterexample? </td></tr><tr><td comment_id="57168"> Yes, I can. But did you read the first part of my comment? </td></tr><tr><td comment_id="57231"> Now that you modified your question, let us turn to the second part of my comment, saying that the result is false. Hint 1: any i.i.d. sequence of integrable random variables is uniformly integrable. Hint 2: what is the limsup of such a sequence? </td></tr><tr><td comment_id="57254"> what is the limsup of such a sequence? </td></tr><tr><td comment_id="57277"> @Didier, I think you need another condition on the sequence to get your hint to pan out. But, maybe that was intentionally left out. </td></tr><tr><td comment_id="57338"> @cardinal Such as *distribution of unbounded support*, maybe? And, yes that was intentional... :-) </td></tr><tr><td comment_id="57340"> @user7762 Consider for example <span class="math-container" id="269424" visual_id="11974"><math alttext="(X_{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></semantics></math></span> i.i.d. exponential with parameter <span class="math-container" id="269425" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> and <span class="math-container" id="269426" visual_id="3615332"><math alttext="Y=\limsup X_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><mo movablelimits="false">lim sup</mo><mo>⁡</mo><msub><mi>X</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span>. Can you write the event <span class="math-container" id="269427" visual_id="8299866"><math alttext="[Y\leq x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><mi>Y</mi><mo>≤</mo><mi>x</mi></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span> thanks to events like <span class="math-container" id="269428" visual_id="8299867"><math alttext="[X_{n}\leq x]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>≤</mo><mi>x</mi></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span>? You could then evaluate <span class="math-container" id="269429" visual_id="4218246"><math alttext="P(Y\leq x)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>≤</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>--and this would be a big step towards an answer to the question you asked. </td></tr><tr><td comment_id="57428"> @Didier, I figured. For a sequence of i.i.d random variables with arbitrary distribution <span class="math-container" id="269430" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span> of unbounded support, my first thought was to use the second Borel--Cantelli lemma. Is there an "easier" way? (That's pretty easy, I think.) </td></tr><tr><td comment_id="62028"> @cardinal (Sorry I missed your last comment.) BC2 is allright to me here. The alternatives I know more or less amount to rediscovering BC2 in a simple case, so they are not really worth the trouble. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="178439" id="answer">
+<p>Take <span class="math-container" id="269431" visual_id="12066"><math alttext="\{X_{n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> a sequence of i.i.d. , with a density of unbounded support, and integrable.</p> <ul> <li>The supremum in the definition of uniform integrability <span class="math-container" id="269432" visual_id="8299868"><math alttext="\sup_{n\in\mathbb{N}}\int_{\{|X_{n}|\geq R}|X_{n}|dP" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">sup</mo><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></munder><mo>⁡</mo><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo stretchy="false">{</mo><mo stretchy="false">|</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">|</mo><mo>≥</mo><mi>R</mi></mrow></msub><mrow><mrow><mo stretchy="false">|</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>P</mi></mrow></mrow></mrow></mrow></semantics></math></span> is actually <span class="math-container" id="269433" visual_id="8299869"><math alttext="\int_{\{|X_{1}|\geq R\}}|X_{1}|dP" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo stretchy="false">{</mo><mo stretchy="false">|</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">|</mo><mo>≥</mo><mi>R</mi><mo stretchy="false">}</mo></mrow></msub><mrow><mrow><mo stretchy="false">|</mo><msub><mi>X</mi><mn>1</mn></msub><mo stretchy="false">|</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>P</mi></mrow></mrow></mrow></semantics></math></span> which converges to <span class="math-container" id="269434" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> when <span class="math-container" id="269435" visual_id="76786"><math alttext="R\to+\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span>, using monotone convergence for example. </li> <li>Let <span class="math-container" id="269436" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span> a fixed integer, and <span class="math-container" id="269437" visual_id="8299870"><math alttext="E_{j,n}:=\{X_{n}\geq j\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>j</mi><mo>,</mo><mi>n</mi></mrow></msub><mo>:=</mo><mrow><mo stretchy="false">{</mo><msub><mi>X</mi><mi>n</mi></msub><mo>≥</mo><mi>j</mi><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>. Since the series <span class="math-container" id="269438" visual_id="8299871"><math alttext="\sum_{n\geq 1}P(E_{j,n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></munder><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>E</mi><mrow><mi>j</mi><mo>,</mo><mi>n</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> is divergent and the events <span class="math-container" id="269439" visual_id="8299872"><math alttext="\{E_{j,n}\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>E</mi><mrow><mi>j</mi><mo>,</mo><mi>n</mi></mrow></msub><mo stretchy="false">}</mo></mrow></semantics></math></span> are independent, by Borel-Cantelli lemma, <span class="math-container" id="269440" visual_id="8299873"><math alttext="P(\limsup_{n}E_{j,n})=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><munder><mo movablelimits="false">lim sup</mo><mi>n</mi></munder><mo>⁡</mo><msub><mi>E</mi><mrow><mi>j</mi><mo>,</mo><mi>n</mi></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math></span>. Hence for almost all <span class="math-container" id="269441" visual_id="4986"><math alttext="\omega" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi></semantics></math></span>, there exist <span class="math-container" id="269442" visual_id="8299874"><math alttext="S_{\omega,j}\subset\mathbb{N}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mrow><mi>ω</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>⊂</mo><mi>ℕ</mi></mrow></semantics></math></span> infinite such that for each element <span class="math-container" id="269443" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> of this set <span class="math-container" id="269444" visual_id="8299875"><math alttext="X_{n}(\omega)\geq j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mi>j</mi></mrow></semantics></math></span>. Hence <span class="math-container" id="269445" visual_id="8299876"><math alttext="\limsup_{n\to+\infty}X_{n}(\omega)\geq j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim sup</mo><mrow><mi>n</mi><mo>→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mo>⁡</mo><mrow><msub><mi>X</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≥</mo><mi>j</mi></mrow></semantics></math></span>. Since it's true for almost all <span class="math-container" id="269446" visual_id="4986"><math alttext="\omega" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi></semantics></math></span>, we conclude that <span class="math-container" id="269447" visual_id="8299877"><math alttext="\limsup_{n\to+\infty}X_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim sup</mo><mrow><mi>n</mi><mo>→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mo>⁡</mo><msub><mi>X</mi><mi>n</mi></msub></mrow></semantics></math></span> is not integrable. </li> </ul>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

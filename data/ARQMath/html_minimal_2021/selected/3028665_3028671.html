@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>For sufficiently large $n$, Which number is bigger, $2^n$ or $n^{1000}$?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> For sufficiently large <span class="math-container" id="28050479" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, Which number is bigger, <span class="math-container" id="28050480" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> or <span class="math-container" id="28050481" visual_id="1526022"><math alttext="n^{1000}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mn>1000</mn></msup></semantics></math></span>? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="3028665">
+<p>How do I determine which number is bigger as <span class="math-container" id="28050482" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> gets sufficiently large, <span class="math-container" id="28050483" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> or <span class="math-container" id="28050484" visual_id="1526022"><math alttext="n^{1000}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mn>1000</mn></msup></semantics></math></span>?</p> <p>It seems to me it is a limit problem so I tried to tackle it that way.</p> <p><span class="math-container" id="28050485" visual_id="8142030"><math alttext="\lim_{n\to\infty}\frac{2^{n}}{n^{1000}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><msup><mn>2</mn><mi>n</mi></msup><msup><mi>n</mi><mn>1000</mn></msup></mfrac></mrow></semantics></math></span></p> <p>My thoughts are that, after some <span class="math-container" id="28050486" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>, the numerator terms will be more than the terms in the denominator so we'll have something like <span class="math-container" id="28050487" visual_id="8142031"><math alttext="\frac{\overbrace{2\times 2\times\cdots\times 2}^{1000\text{ factors}}}{n\times n% \times\cdots\times n}\times 2^{n-1000}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mover><mover accent="true"><mrow><mn>2</mn><mo movablelimits="false">×</mo><mn>2</mn><mo movablelimits="false">×</mo><mi mathvariant="normal">⋯</mi><mo movablelimits="false">×</mo><mn>2</mn></mrow><mo movablelimits="false">⏞</mo></mover><mrow><mn>1000</mn><mo>⁢</mo><mtext> factors</mtext></mrow></mover><mrow><mi>n</mi><mo>×</mo><mi>n</mi><mo>×</mo><mi mathvariant="normal">⋯</mi><mo>×</mo><mi>n</mi></mrow></mfrac><mo>×</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>-</mo><mn>1000</mn></mrow></msup></mrow></semantics></math></span> At this point, I was thinking of using the fact that <span class="math-container" id="28050488" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> grows <s>faster</s> slower than <span class="math-container" id="28050489" visual_id="755"><math alttext="n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>!</mo></mrow></semantics></math></span> as <span class="math-container" id="28050490" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> gets larger so the limit, in this case, will be greater than <span class="math-container" id="28050491" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>, meaning <span class="math-container" id="28050492" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> is bigger than <span class="math-container" id="28050493" visual_id="1526022"><math alttext="n^{1000}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mn>1000</mn></msup></semantics></math></span> for sufficiently large <span class="math-container" id="28050494" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>. This conclusion is really just a surmise based on a non-concrete formulation. Therefore, I'd appreciate any input on how to tackle this problem.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span><span> number-theory </span><span> inequality </span><span> asymptotics </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="6244872"> Exponential terms grow faster than polynomial terms for sufficiently large <span class="math-container" id="28050503" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.  Also, <span class="math-container" id="28050504" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> does not grow faster than <span class="math-container" id="28050497" visual_id="755"><math alttext="n!" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>!</mo></mrow></semantics></math></span>. </td></tr><tr><td comment_id="6244877"> I mixed up the two, thanks. I'll edit it. </td></tr><tr><td comment_id="6245032"> See related [question/answers](https://math.stackexchange.com/questions/55468/how-to-prove-that-exponential-grows-faster-than-polynomial) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="3028671" id="answer">
+<p>Note that<span class="math-container" id="28050498" visual_id="8142032"><math alttext="\frac{2^{n+1}}{2^{n}}=2\text{ whereas }\frac{(n+1)^{1\,000}}{n^{1\,000}}=\left% (1+\frac{1}{n}\right)^{1\,000}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mtext> whereas </mtext><mo>⁢</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>1 000</mn></msup><msup><mi>n</mi><mn>1 000</mn></msup></mfrac></mrow><mo>=</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mn>1 000</mn></msup></mrow><mo>.</mo></mrow></semantics></math></span>Since<span class="math-container" id="28050499" visual_id="8142033"><math alttext="\lim_{n\to\infty}\left(1+\frac{1}{n}\right)^{1\,000}=1&lt;2," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mn>1 000</mn></msup></mrow><mo>=</mo><mn>1</mn><mo>&lt;</mo><mn>2</mn></mrow><mo>,</mo></mrow></semantics></math></span>you have that<span class="math-container" id="28050500" visual_id="8142034"><math alttext="\left(1+\frac{1}{n}\right)^{1\,000}&lt;\frac{3}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mn>1 000</mn></msup><mo>&lt;</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math></span>if <span class="math-container" id="28050501" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is large enough.It's not hard to deduce from this that <span class="math-container" id="28050502" visual_id="8142035"><math alttext="2^{n}&gt;n^{1\,000}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>&gt;</mo><msup><mi>n</mi><mn>1 000</mn></msup></mrow></semantics></math></span> if <span class="math-container" id="28050503" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> is large enough.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="6244933"> I'd like to clarify what the first line says about the two expressions. What I can deduce is that the purpose of the first line is to show that <span class="math-container" id="28050504" visual_id="268"><math alttext="2^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup></semantics></math></span> is increasing at a constant rate whereas <span class="math-container" id="28050505" visual_id="1526022"><math alttext="n^{1000}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mn>1000</mn></msup></semantics></math></span> starts to slow down in terms of increase rate. Is that so? </td></tr><tr><td comment_id="6244948"> It is more precise than that but, yes, it includes that. </td></tr><tr><td comment_id="6244963"> Well, what more does it say? I'm trying to understand your motivation for that approach. </td></tr><tr><td comment_id="6244968"> It says that, after a certain point, the sequence <span class="math-container" id="28050506" visual_id="8142036"><math alttext="(n^{1\,000})_{n\in\mathbb{N}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">(</mo><msup><mi>n</mi><mn>1 000</mn></msup><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub></semantics></math></span> grows **slower** than the sequence <span class="math-container" id="28050507" visual_id="6162575"><math alttext="(2^{n})_{n\in\mathbb{N}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mi>n</mi></msup><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="31934"> Proof of a binomial theorem based inequality? </td></tr><tr><td post_id="55468"> How to prove that exponential grows faster than polynomial? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

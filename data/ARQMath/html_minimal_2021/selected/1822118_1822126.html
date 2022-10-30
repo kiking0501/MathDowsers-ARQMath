@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Compute complex integral resulting from FT</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Compute complex integral resulting from FT </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1822118">
+<p>I obtain the following integral after doing a FT of a function</p> <p><span class="math-container" id="16848242" visual_id="3608545"><math alttext="\int_{-\infty}^{\infty}e^{-\pi(x+i\xi)^{2}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span></p> <p>I am not sure how to evaluate it. I tried change of variable <span class="math-container" id="16848243" visual_id="3608546"><math alttext="y=x+i\xi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow></mrow></semantics></math></span>. but what is the limit of this as <span class="math-container" id="16848244" visual_id="29333"><math alttext="x\to+\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></semantics></math></span> or <span class="math-container" id="16848245" visual_id="1628"><math alttext="-\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>? I know the Gaussian integral but I cant see how it is useful for this</p> <p>Help is much appreciated </p> <p>note: <span class="math-container" id="16848246" visual_id="3516"><math alttext="\xi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ξ</mi></semantics></math></span> is a real constant</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> complex-analysis </span><span> complex-numbers </span><span> fourier-transform </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1822126" id="answer">
+<p>Upon enforcing the substitution <span class="math-container" id="16848259" visual_id="3608551"><math alttext="x\to x-i\xi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>→</mo><mrow><mi>x</mi><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow></mrow></semantics></math></span>, we obtain</p> <p><span class="math-container" id="16848260" visual_id="3608552"><math alttext="\int_{-\infty}^{\infty}e^{-\pi(x+i\xi)^{2}}\,dx=\int_{-\infty-i\xi}^{\infty-i% \xi}e^{-\pi x^{2}}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mrow><mi mathvariant="normal">∞</mi><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></mrow></semantics></math></span></p> <p>Using <a href="https://en.wikipedia.org/wiki/Cauchy%27s_integral_theorem#Statement_of_theorem" rel="nofollow">Cauchy's Integral Theorem</a>, we assert that since <span class="math-container" id="16848261" visual_id="275287"><math alttext="e^{-\pi z^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mrow></msup></semantics></math></span> is an <a href="https://en.wikipedia.org/wiki/Entire_function" rel="nofollow">entire function</a> then </p> <p><span class="math-container" id="16848262" visual_id="3608553"><math alttext="\oint_{C}e^{-\pi z^{2}}\,dz=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mo largeop="true" symmetric="true">∮</mo><mi>C</mi></msub><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>z</mi></mrow></mpadded></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span></p> <p>for any closed contour <span class="math-container" id="16848263" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span>.  </p> <p>Take <span class="math-container" id="16848264" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> as comprised of the line segments (i) from <span class="math-container" id="16848265" visual_id="15310"><math alttext="-R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi>R</mi></mrow></semantics></math></span> to <span class="math-container" id="16848266" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>, (ii) from <span class="math-container" id="16848267" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> to <span class="math-container" id="16848268" visual_id="3608554"><math alttext="R-i\xi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow></semantics></math></span>, (iii) from <span class="math-container" id="16848269" visual_id="3608554"><math alttext="R-i\xi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow></semantics></math></span> to <span class="math-container" id="16848270" visual_id="3608555"><math alttext="-R-i\xi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mi>R</mi></mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow></semantics></math></span>, and (iv) from <span class="math-container" id="16848271" visual_id="3608555"><math alttext="-R-i\xi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mi>R</mi></mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow></semantics></math></span> to <span class="math-container" id="16848272" visual_id="15310"><math alttext="-R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mi>R</mi></mrow></semantics></math></span>.</p> <p>It is easy to show that the contributions to the right-hand side of <span class="math-container" id="16848273" visual_id="1757"><math alttext="(2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> from (ii) and (iv) vanish as <span class="math-container" id="16848274" visual_id="14935"><math alttext="R\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>.  Therefore, we find that</p> <p><span class="math-container" id="16848275" visual_id="3608556"><math alttext="\int_{-\infty-i\xi}^{\infty-i\xi}e^{-\pi x^{2}}\,dx=\int_{-\infty}^{\infty}e^{% -\pi x^{2}}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mrow><mi mathvariant="normal">∞</mi><mo>-</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></mrow></semantics></math></span></p> <p>Using <span class="math-container" id="16848276" visual_id="1034"><math alttext="(3)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> in <span class="math-container" id="16848277" visual_id="749"><math alttext="(1)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> yields</p> <blockquote> <p><span class="math-container" id="16848278" visual_id="3608557"><math alttext="\displaystyle\int_{-\infty}^{\infty}e^{-\pi(x+i\xi)^{2}}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></semantics></math></span></p> </blockquote> <hr/> <p><strong>NOTE:</strong></p> <p>In this note, we show that the contributions to the integral on the left-hand side of <span class="math-container" id="16848279" visual_id="1757"><math alttext="(2)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></semantics></math></span> from integrations over the vertical strips approach zero.  To that end, we note that</p> <p><span class="math-container" id="16848280" visual_id="3608558"><math alttext="\displaystyle\left|\int_{0}^{\xi}e^{-\pi(\pm R+iy)^{2}}\,i\,dy\right|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>|</mo><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>ξ</mi></msubsup></mstyle><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mo>±</mo><mi>R</mi></mrow><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mpadded width="+1.7pt"><mi>i</mi><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>y</mi></mrow></mpadded></mpadded></mrow></mrow><mo>|</mo></mrow></semantics></math></span></p> <p>as was to be shown!</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3725286"> It might be useful to add that the contributions of the integrals along the vertical edges are <span class="math-container" id="16848281" visual_id="3608559"><math alttext="O(e^{-\pi R^{2}})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>R</mi><mn>2</mn></msup></mrow></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> as <span class="math-container" id="16848282" visual_id="14935"><math alttext="R\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>. </td></tr><tr><td comment_id="3725320"> @kobe Sure.  I thought that that was evident.  But I will add as a note.  -Mark </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

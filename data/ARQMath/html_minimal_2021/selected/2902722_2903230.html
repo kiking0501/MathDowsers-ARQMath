@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Modus ponens as a rule of inference vs. tautology</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Modus ponens as a rule of inference vs. tautology </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2902722">
+<p>When I look up the mechanics of a propositional logic system <a href="https://en.wikipedia.org/wiki/Propositional_calculus#Generic_description_of_a_propositional_calculus" rel="nofollow noreferrer">here</a> we have a collection of both rules of inference (<span class="math-container" id="26858519" visual_id="320763"><math alttext="a\vdash b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⊢</mo><mi>b</mi></mrow></semantics></math></span>) and axioms (<span class="math-container" id="26858520" visual_id="4112080"><math alttext="\vdash b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>⊢</mo><mi>b</mi></mrow></semantics></math></span>), if I understand right.</p> <p>One such rule of inference is modus ponens, <span class="math-container" id="26858521" visual_id="4112081"><math alttext="p,(p\to q)\vdash q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>⊢</mo><mi>q</mi></mrow></semantics></math></span> which on a metalogical level is "from <span class="math-container" id="26858522" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> and <span class="math-container" id="26858523" visual_id="23296"><math alttext="p\to q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></semantics></math></span>, infer <span class="math-container" id="26858524" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span>".</p> <p>However I have also seen people "prove" it using truth tables or treating it as a tautology by stating it as <span class="math-container" id="26858525" visual_id="2749628"><math alttext="(p\land(p\to q))\to q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>q</mi></mrow></semantics></math></span>.</p> <p>Why do I see it stated these two ways if the latter is not technically modus ponens? Is it totally and utterly wrong to even ask the question how to "prove modus ponens" because it's considered a rule of inference, i.e. it has no proof since it's a metalogical assumption? Why do I sometimes see it stated the second way, if so, and how do we know that's the correct interpretation as a tautological claim? </p> <p>I know informally it makes sense as "if <span class="math-container" id="26858526" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> then <span class="math-container" id="26858527" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>" or "whenever <span class="math-container" id="26858528" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> is true, <span class="math-container" id="26858529" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span> is true" but the whole <span class="math-container" id="26858530" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> concept seems to be a little different from <span class="math-container" id="26858531" visual_id="7792"><math alttext="\to" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> (especially since <span class="math-container" id="26858532" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> is metalogical) and so I'm trying to understand what's going on here.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> proof-explanation </span><span> propositional-calculus </span><span> axioms </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5995988"> *NB:* <span class="math-container" id="26858533" visual_id="4085611"><math alttext="p\land(p\to q)\to q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>q</mi></mrow></semantics></math></span> is missing parentheses. </td></tr><tr><td comment_id="5996027"> Very relevant here: [What the tortoise said to Achilles](https://math.stackexchange.com/questions/351685/whats-the-problem-this-logic) </td></tr><tr><td comment_id="5996057"> In particular Peter Smith's _answer_ to the linked question is a good and complete answer to this one, too. </td></tr><tr><td comment_id="5996299"> @HenningMakholm reading that question and answer I'm still not sure I understand the problem. Sounds like he's just saying "just because you say it implies Z, I'm not convinced" until you make a specific rule that overrides that need to be convinced. Which to me is not directly addressing the difference between usage of implies and infers with respect to modus ponens </td></tr><tr><td comment_id="6000366"> To prove <span class="math-container" id="26858534" visual_id="2749628"><math alttext="(p\land(p\to q))\to q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>q</mi></mrow></semantics></math></span>. using truth tables, you have to use the truth table for material implication, which is usually presented simply as a definition. Each line of that truth table, however, can also be derived using well-known principles of logic including MP, direct proof (introducing <span class="math-container" id="26858592" visual_id="7792"><math alttext="\to" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span>), proof by contradiction and double negation. </td></tr><tr><td comment_id="6005082"> Modus ponens is usually the name of the *rule of inference* : "from <span class="math-container" id="26858536" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> and <span class="math-container" id="26858537" visual_id="117725"><math alttext="P\to Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mi>Q</mi></mrow></semantics></math></span>, derive <span class="math-container" id="26858538" visual_id="202"><math alttext="Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi></semantics></math></span>". But we may call *MP* also the tautology : <span class="math-container" id="26858539" visual_id="4112082"><math alttext="((P\land(P\to Q))\to Q)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>→</mo><mi>Q</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>Q</mi><mo stretchy="false">)</mo></mrow></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2903230" id="answer">
+<p>"Why do I see it stated these two ways if the latter is not technically modus ponens?"</p> <p>Because people don't think about this much or are confused.</p> <p>" Is it totally and utterly wrong to even ask the question how to "prove modus ponens" because it's considered a rule of inference, i.e. it has no proof since it's a metalogical assumption?"</p> <p>Given that "proof" means "formal proof" where a formal proof has every step being a well-formed formula, then yes.  Why?  Because {(p-&gt;q), p} <span class="math-container" id="26858605" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> q (I note in passing that {p, q} and {q, p} are the same set, so I referred to the same rule of inference as you did) is not a well-formed formula in the same context where "formal proof" applies to for propositional calculus.</p> <p>"Why do I sometimes see it stated the second way, if so, and how do we know that's the correct interpretation as a tautological claim?"</p> <p>At the very least, the well-formed formula (one you would parenthesize it) is just one well-formed formula.  The antecedent is a single well-formed <em>conjunction</em> also, and sometimes <em>conjunction</em> is not a primitive, and sometimes not even a defined connective, for a propositional calculus.  On the other hand, {(p-&gt;q), p} consists of a set of two well-formed formulas.</p> <p><span class="math-container" id="26858606" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> is not a connective between propositions.  If we where to write:</p> <p>"If p, if (p-&gt;q) also, then q" we would have stepped outside of propositional calculus, since "if", "then", "also, and "," are not part of the language for well-formed formulas in propositional calculus.  In other words, they are not part of the "formula language".</p> <p>However, "<span class="math-container" id="26858607" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span>" doesn't happen inside of the formula language.  If we wrote:</p> <p>"If p, if (p&gt;q) also, <span class="math-container" id="26858608" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> q"</p> <p>we haven't stepped outside of the meta-language where <span class="math-container" id="26858609" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> comes as permissible, since there doesn't exist any formation rules prescribing the correct or incorrect use of <span class="math-container" id="26858610" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> other than it gets used intelligibly.  So, as long as the above comes as comprehensible to the reader, it qualifies as correct.  That differs from the use of (well-formed) formulas, where every string used needs to follow the formation rules to stay in the language.  </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="351685"> What's the problem this logic </td></tr><tr><td post_id="2894648"> Is modus ponens a tautology? </td></tr><tr><td post_id="2903877"> <span class="math-container" id="26869994" visual_id="7792"><math alttext="\to" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> vs. <span class="math-container" id="26869995" visual_id="49997"><math alttext="\vdash" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⊢</mo></semantics></math></span> in logic </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

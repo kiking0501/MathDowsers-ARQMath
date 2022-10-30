@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why does adding a negative number to a positive number reduce the original positive number?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why does adding a negative number to a positive number reduce the original positive number? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="26004">
+<p>There's a question over on stack overflow about adding negative numbers to a negative number. The question surrounds why 10 - -5 is equal to 5.</p> <p>I'm very happy that the result is 5, but why is it 5 and not 15. It is philosophical or is there a concrete reason for it? </p> <p>The original question was asked here: <a href="https://stackoverflow.com/questions/5248734/odd-result-using-multiple-operator-in-c">https://stackoverflow.com/questions/5248734/odd-result-using-multiple-operator-in-c</a></p> <p><strong>UPDATE</strong></p> <p>So apart from the obvious transcription error, left in place for posterity, I think the original question stands. 10 - (-5) equals 15, fine, but at what point in mathematical history was this decided? In the same way the 0 wasn't always used there came a point in history when it was in common use. In the same way, when did a double negative become a positive in common mathematical parlance and more importantly why?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="55880"> Typically one write <span class="math-container" id="260840" visual_id="8297850"><math alttext="10+(-5)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> if one wants to add a negative number to a positive one. Your <span class="math-container" id="260841" visual_id="8297851"><math alttext="10--5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>-</mo><mo>-</mo><mn>5</mn></mrow></semantics></math></span> reads like <span class="math-container" id="260842" visual_id="8297852"><math alttext="10-(-5)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> which in language means subtracting a negative number from a positive one. </td></tr><tr><td comment_id="56013"> I'd like to see this question closed. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="26013" id="answer">
+<p>Below we prove  <span class="math-container" id="260843" visual_id="8297853"><math alttext="\rm\,\ 10\ -\ {-5}\ =\ 15\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded width="+5pt"><mn>  10</mn><mo rspace="7.5pt">-</mo><mo>-</mo><mpadded width="+5pt"><mn>5</mn><mo>=</mo><mpadded width="+5pt"><mn> 15</mn></mpadded></mpadded></mpadded></mrow></semantics></math></span> is correct (more generally, see the <a href="https://math.stackexchange.com/questions/9933/why-negative-times-negative-positive/9940#9940">Law of Signs).</a></p> <p><span class="math-container" id="260844" visual_id="8297854"><math alttext="\rm\qquad\qquad\&gt;n\ =\ 10\ \ -\ {-}5" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="42.2pt" width="+47.2pt"><mi mathvariant="normal">n</mi><mo>=</mo><mn> 10</mn><mo mathvariant="italic" separator="true"> </mo><mo rspace="7.5pt">-</mo><mo>-</mo><mn>5</mn></mpadded></mrow></semantics></math></span></p> <p><span class="math-container" id="260845" visual_id="8297855"><math alttext="\rm\quad\iff\ \ n\ +\ {-}5\ =\ 10\quad" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="12.5pt">⇔</mo><mo mathvariant="italic" separator="true"> </mo><mpadded width="+5pt"><mi mathvariant="normal">n</mi><mo rspace="7.5pt">+</mo><mo>-</mo><mpadded width="+5pt"><mn>5</mn><mo>=</mo><mn> 10</mn><mo mathvariant="italic" separator="true"> </mo></mpadded></mpadded></mrow></semantics></math></span> by adding <span class="math-container" id="260846" visual_id="14940"><math alttext="\,-5\&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="4.2pt">-</mo><mpadded width="+2.2pt"><mn>5</mn></mpadded></mrow></semantics></math></span> to both sides of above</p> <p><span class="math-container" id="260847" visual_id="8297856"><math alttext="\rm\quad\iff\ \ n\ =\ 10\ +\ 5\quad\ \ \ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo lspace="12.5pt">⇔</mo><mo mathvariant="italic" separator="true"> </mo><mpadded width="+5pt"><mi mathvariant="normal">n</mi></mpadded></mrow><mo>=</mo><mrow><mpadded width="+5pt"><mn> 10</mn><mo>+</mo><mn> 5</mn></mpadded></mrow></mrow><mo mathvariant="italic" separator="true">    </mo></mrow></semantics></math></span> by adding <span class="math-container" id="260848" visual_id="339"><math alttext="\,\ 5\ \ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>  5</mn><mo mathvariant="italic" separator="true"> </mo></mrow></semantics></math></span> to both sides of above</p> <p>Alternatively <span class="math-container" id="260849" visual_id="8297857"><math alttext="\rm\ -(-x)\ =\&gt;-(-x)+(-x+x)\ =\ (-(-x)+-x)+x\ =\ x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="7.5pt">-</mo><mrow><mo stretchy="false">(</mo><mo>-</mo><mi mathvariant="normal">x</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo rspace="4.7pt">=</mo><mo>-</mo><mrow><mo stretchy="false">(</mo><mo>-</mo><mi mathvariant="normal">x</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mo>-</mo><mi mathvariant="normal">x</mi><mo>+</mo><mi mathvariant="normal">x</mi><mo rspace="7.5pt" stretchy="false">)</mo></mrow><mo rspace="7.5pt">=</mo><mrow><mo stretchy="false">(</mo><mo>-</mo><mrow><mo stretchy="false">(</mo><mo>-</mo><mi mathvariant="normal">x</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mo>-</mo><mi mathvariant="normal">x</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mpadded width="+5pt"><mi mathvariant="normal">x</mi><mo rspace="7.5pt">=</mo><mi mathvariant="normal">x</mi></mpadded></mrow></semantics></math></span></p> <p>i.e. both <span class="math-container" id="260850" visual_id="67"><math alttext="\rm\&gt;x\&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="2.2pt" width="+4.4pt"><mi mathvariant="normal">x</mi></mpadded></semantics></math></span> and <span class="math-container" id="260851" visual_id="826803"><math alttext="\rm\&gt;-(-x)\&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo lspace="4.7pt">-</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi mathvariant="normal">x</mi></mrow><mo rspace="4.7pt" stretchy="false">)</mo></mrow></mrow></semantics></math></span> are inverses of <span class="math-container" id="260852" visual_id="17255"><math alttext="\rm-x\&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mpadded width="+2.2pt"><mi mathvariant="normal">x</mi></mpadded></mrow></semantics></math></span> so they are equal by <a href="https://math.stackexchange.com/a/878844/242">uniqueness of inverses.</a></p> <p>The proof uses only the basic laws of arithmetic, that addition is associative and commutative, and every integer <span class="math-container" id="260853" visual_id="177"><math alttext="\rm\&gt;n\&gt;" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mpadded lspace="2.2pt" width="+4.4pt"><mi mathvariant="normal">n</mi></mpadded></semantics></math></span> has an additive inverse <span class="math-container" id="260854" visual_id="5177017"><math alttext="\rm-n\&gt;,\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>-</mo><mpadded width="+2.2pt"><mi mathvariant="normal">n</mi></mpadded></mrow><mo rspace="7.5pt">,</mo></mrow></semantics></math></span> i.e. the integers comprise an additive abelian <a href="http://en.wikipedia.org/wiki/Group_(mathematics)" rel="nofollow noreferrer">group.</a> The laws for negative integers weren't "decided" - they are forced upon us by "persistence of form", i.e. by requiring the the enlargement from naturals to integers obeys the same laws as the original structure. In particular, if you follow the above link you will see how the law of signs follows from the ring axioms - most notably the <em>distributive</em> law. The notion of a ring axiomatizes these familiar arithmetic properties of the integers, rational, polynomials, etc. The ring abstraction allows us to generalize properties of integers to diverse algebraic structures that share essential algebraic "integer-like" properties - structures which, in turn, may allow us to more simply deduce properties of the integers, e.g. solving Diophantine equations by passing to Gaussian integers or algebraic number fields. That we can pull back results from the general to more specific structures is only because of said persistence of form - the laws are the same whether the number is positive or negative, rational or irrational, real or imaginary. Thus whatever ring theorems we deduce about integers will specialize to true theorems about naturals, and whatever ring-theoretic properties we deduce about Gaussian integers <span class="math-container" id="260855" visual_id="661510"><math alttext="\rm\ m+n\ i\ " class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded lspace="5pt" width="+5pt"><mi mathvariant="normal">m</mi><mo>+</mo><mrow><mpadded width="+5pt"><mi mathvariant="normal">n</mi><mo>⁢</mo><mpadded width="+5pt"><mi mathvariant="normal">i</mi></mpadded></mpadded></mrow></mpadded></mrow></semantics></math></span> will specialize to true properties of integers, simply because we invoked only ring laws that hold true <em>universally</em>, i.e. in every ring.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="9933"> Why is negative times negative = positive? </td></tr><tr><td post_id="878836"> Product of two negative numbers is positive </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Suppose $R$ is partial order, prove that $R^{-1}$ is also a partial order</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Suppose <span class="math-container" id="10393058" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is partial order, prove that <span class="math-container" id="10393059" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is also a partial order </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1101614">
+<blockquote> <p>Suppose <span class="math-container" id="10393060" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is partial order, prove that <span class="math-container" id="10393061" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is also a partial   order.</p> </blockquote> <p>A partial order is a binary relation that is reflexive, anti-symmetric and transitive.</p> <p>So if <span class="math-container" id="10393062" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> is a partial order, then it has the following properties:</p> <ol> <li><p><span class="math-container" id="10393063" visual_id="93118"><math alttext="\forall x\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo>∀</mo><mi>x</mi></mrow><mo>∈</mo><mi>S</mi></mrow></semantics></math></span>, then <span class="math-container" id="10393064" visual_id="123549"><math alttext="(x,x)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> (reflexivity)</p></li> <li><p><span class="math-container" id="10393065" visual_id="641731"><math alttext="\forall x,y\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>∀</mo><mi>x</mi></mrow><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>S</mi></mrow></semantics></math></span>, then if <span class="math-container" id="10393066" visual_id="6709045"><math alttext="((x,y)\in R\land(y,x)\in R)\rightarrow x=y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>x</mi><mo>=</mo><mi>y</mi></mrow></semantics></math></span> (anti-symmetry)</p></li> <li><p><span class="math-container" id="10393067" visual_id="656501"><math alttext="\forall x,y,z\in S" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo>∀</mo><mi>x</mi></mrow><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow><mo>∈</mo><mi>S</mi></mrow></semantics></math></span>, then if <span class="math-container" id="10393068" visual_id="6709046"><math alttext="((x,y)\in R\land(y,z)\in R)\rightarrow(x,z)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> (transitivity)</p></li> </ol> <p>To prove that <span class="math-container" id="10393069" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is reflexive was not so difficult:</p> <ol> <li><p><span class="math-container" id="10393070" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is reflexive:</p> <p>If <span class="math-container" id="10393071" visual_id="123549"><math alttext="(x,x)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span>, then <span class="math-container" id="10393072" visual_id="1679283"><math alttext="(x,x)\in R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span> by reflexivity of <span class="math-container" id="10393073" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span>. </p></li> <li><p><span class="math-container" id="10393074" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is anti-symmetric:</p> <p>This is a little bit more complicated, and I am not sure if it's correct.</p> <p>The key property I used is: <strong>if <span class="math-container" id="10393075" visual_id="9596"><math alttext="(x,y)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span>, then we know that <span class="math-container" id="10393076" visual_id="1990641"><math alttext="(y,x)\in R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span></strong>.</p> <p>In this expression: <span class="math-container" id="10393077" visual_id="6709047"><math alttext="\forall x,y\in S,\text{then if}((x,y)\in R\land(y,x)\in R)\rightarrow x=y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>∈</mo><mi>S</mi><mo>,</mo><mtext>then if</mtext><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>x</mi><mo>=</mo><mi>y</mi></mrow></semantics></math></span></p></li> </ol> <p>we can replace <span class="math-container" id="10393078" visual_id="9596"><math alttext="(x,y)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> with <span class="math-container" id="10393079" visual_id="1990641"><math alttext="(y,x)\in R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span>, and <span class="math-container" id="10393080" visual_id="350102"><math alttext="(y,x)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> with <span class="math-container" id="10393081" visual_id="1503641"><math alttext="(x,y)\in R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span>, we obtain:</p> <p><span class="math-container" id="10393082" visual_id="6709048"><math alttext="\forall x,y\in S,\text{then if}((y,x)\in R^{-1}\land(x,y)\in R^{-1})% \rightarrow x=y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>∈</mo><mi>S</mi><mo>,</mo><mtext>then if</mtext><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>x</mi><mo>=</mo><mi>y</mi></mrow></semantics></math></span></p> <p>which proves that <span class="math-container" id="10393083" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is anti-symmetric.</p> <ol start="3"> <li><p><span class="math-container" id="10393084" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is transitive:</p> <p>I think if I follow the same process and key of the point 2, then I will arrive to say that also <span class="math-container" id="10393085" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is transitive.</p></li> </ol> <p>Is my proof correct?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> proof-verification </span><span> relations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2246183"> Yes, you are correct. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1101643" id="answer">
+<p>Your proof of anti-symmetry of <span class="math-container" id="10393086" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is good.</p> <p>Concerning transitivity, assume that <span class="math-container" id="10393087" visual_id="1503641"><math alttext="(x,y)\in R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span> and that <span class="math-container" id="10393088" visual_id="6709049"><math alttext="(y,z)\in R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span>. Then by definition of <span class="math-container" id="10393089" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span>, you also have <span class="math-container" id="10393090" visual_id="350102"><math alttext="(y,x)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span> and <span class="math-container" id="10393091" visual_id="2071322"><math alttext="(z,y)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span>. Since R is transitive, we also have <span class="math-container" id="10393092" visual_id="1010902"><math alttext="(z,x)\in R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>R</mi></mrow></semantics></math></span>, and then <span class="math-container" id="10393093" visual_id="6709050"><math alttext="(x,z)\in R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></semantics></math></span>, proving that <span class="math-container" id="10393094" visual_id="4644"><math alttext="R^{-1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></semantics></math></span> is transitive.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2246412"> Nice, it seems plausible ;) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Associativity of logical connectives</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Associativity of logical connectives </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="12223">
+<p>According to <a href="http://en.wikipedia.org/wiki/Logical_connective#Order_of_precedence">the precedence of logical connectives</a>, operator <span class="math-container" id="113991" visual_id="7792"><math alttext="\rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> gets higher precedence than <span class="math-container" id="113992" visual_id="63823"><math alttext="\leftrightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>↔</mo></semantics></math></span> operator. But what about associativity of <span class="math-container" id="113993" visual_id="7792"><math alttext="\rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> operator?</p> <p>The implies operator (<span class="math-container" id="113994" visual_id="7792"><math alttext="\rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span>) does not have the associative property. That means that <span class="math-container" id="113995" visual_id="219410"><math alttext="(p\rightarrow q)\rightarrow r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi></mrow></semantics></math></span> is not equivalent to <span class="math-container" id="113996" visual_id="431558"><math alttext="p\rightarrow(q\rightarrow r)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>. Because of that, the question comes op how <span class="math-container" id="113997" visual_id="709603"><math alttext="p\rightarrow q\rightarrow r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>→</mo><mi>r</mi></mrow></semantics></math></span> should be interpreted.</p> <p>The proposition <span class="math-container" id="113998" visual_id="709603"><math alttext="p\rightarrow q\rightarrow r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>→</mo><mi>r</mi></mrow></semantics></math></span> can be defined in multiple ways that make sense:</p> <ul> <li><span class="math-container" id="113999" visual_id="219410"><math alttext="(p\rightarrow q)\rightarrow r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi></mrow></semantics></math></span> (left associativity)</li> <li><span class="math-container" id="114000" visual_id="431558"><math alttext="p\rightarrow(q\rightarrow r)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> (right associativity)</li> <li><span class="math-container" id="114001" visual_id="1052493"><math alttext="(p\rightarrow q)\land(q\rightarrow r)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></li> </ul> <p>Which one of these definitions is used?</p> <p>I could not locate any book/webpage that mentions about associativity of logical operators in discrete mathematics.</p> <p>Please also cite the reference (book/reliable webpage) that you use to answer my question (as I'm planning to add this to wikipedia page about 'logical connectives').</p> <p>Thanks.</p> <p>PS: I got this question when I saw this problem: Check if following compound  proposition is tautology or not:</p> <p><span class="math-container" id="114002" visual_id="8260547"><math alttext="\mathrm{p}\leftrightarrow(\mathrm{q}\wedge\mathrm{r})\rightarrow\neg\mathrm{r}% \rightarrow\neg\mathrm{p}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">p</mi><mo>↔</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">q</mi><mo>∧</mo><mi mathvariant="normal">r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi mathvariant="normal">r</mi></mrow><mo>→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi mathvariant="normal">p</mi></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> propositional-calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="26197"> The compound proposition in plaintext above in better typesetted form is here: http://mathbin.net/56026 </td></tr><tr><td comment_id="26286"> I've edited the proposition so it looks exactly like the one you link at. Note the difference between `\Rightarrow` (<span class="math-container" id="114053" visual_id="6076"><math alttext="\Rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇒</mo></semantics></math></span>) and `\rightarrow` (<span class="math-container" id="114037" visual_id="7792"><math alttext="\rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span>). The latter is the usual connective, the former is "logical implication"; as I understand it, people who work in Mathematical Logic make a clear distinction between the two (and get endlessly annoyed by those who don't...) </td></tr><tr><td comment_id="26306"> @Arturo: we certainly care about the difference between the two, but the notation varies greatly from one author to another, so that <span class="math-container" id="114053" visual_id="6076"><math alttext="\Rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇒</mo></semantics></math></span> is often used as a connective. In the most common setting of first-order logic, Goedel's completeness theorem implies that it's pretty safe to ignore the difference. </td></tr><tr><td comment_id="26426"> @Arturo: The book that I'm currently reading (Kenneth Rosen's 'Discrete mathematics and it's applications' (6e) uses <span class="math-container" id="114037" visual_id="7792"><math alttext="\rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> to represent logical implication. </td></tr><tr><td comment_id="4503284"> @CarlMummert I never realized the two symbols are not the same, what is the difference in their meaning? </td></tr><tr><td comment_id="4504872"> @Ovi: some authors use <span class="math-container" id="114004" visual_id="7792"><math alttext="\rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> for the logical connective (which could appear in a formula) and <span class="math-container" id="114003" visual_id="6076"><math alttext="\Rightarrow" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇒</mo></semantics></math></span> for logical implication at the meta level. Of course, in first-order logic, for sentences <span class="math-container" id="114009" visual_id="2716"><math alttext="\phi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi></semantics></math></span> and <span class="math-container" id="114010" visual_id="10393"><math alttext="\psi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ψ</mi></semantics></math></span>, we have <span class="math-container" id="114011" visual_id="79968"><math alttext="\phi\models\psi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>⊧</mo><mi>ψ</mi></mrow></semantics></math></span> if and only if <span class="math-container" id="114012" visual_id="1827897"><math alttext="\phi\vdash\psi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>⊢</mo><mi>ψ</mi></mrow></semantics></math></span> if and only if <span class="math-container" id="114013" visual_id="2575809"><math alttext="\vdash\phi\to\psi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>⊢</mo><mrow><mi>ϕ</mi><mo>→</mo><mi>ψ</mi></mrow></mrow></semantics></math></span>, so in that notation <span class="math-container" id="114014" visual_id="711590"><math alttext="\phi\Rightarrow\psi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>⇒</mo><mi>ψ</mi></mrow></semantics></math></span> is equivalent to <span class="math-container" id="114015" visual_id="79976"><math alttext="\phi\to\psi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>→</mo><mi>ψ</mi></mrow></semantics></math></span> being logically valid. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="877525" id="answer">
+<p>I think <span class="math-container" id="114072" visual_id="1052493"><math alttext="(p\rightarrow q)\land(q\rightarrow r)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is the most useful interpretation of <span class="math-container" id="114073" visual_id="709603"><math alttext="p\rightarrow q\rightarrow r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>→</mo><mi>r</mi></mrow></semantics></math></span>.  It corresponds to natural language when we say something like "A implies B, which implies C".</p> <p>A related convention is <span class="math-container" id="114074" visual_id="609131"><math alttext="x\lt y\lt z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>y</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>z</mi></mrow></semantics></math></span> meaning <span class="math-container" id="114075" visual_id="8260559"><math alttext="x\lt y\land y\lt z" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>y</mi></mrow><mo>∧</mo><mrow><mi>y</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>z</mi></mrow></mrow></semantics></math></span>.  The same three cases arise when <span class="math-container" id="114076" visual_id="1014"><math alttext="\lt" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror></semantics></math></span> is treated as a function yielding a boolean integer like in many programming languages.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1810405"> The most common convention I have seen is that <span class="math-container" id="114077" visual_id="709603"><math alttext="p\to q\to r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>→</mo><mi>r</mi></mrow></semantics></math></span> means <span class="math-container" id="114078" visual_id="431558"><math alttext="p\to(q\to r)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo>→</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> which is equivalent to <span class="math-container" id="114079" visual_id="23213"><math alttext="(p\land q)\to r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>r</mi></mrow></semantics></math></span>. This convention is very common in type theory, because it works well with the Curry-Howard isomorphism. Under this interpretation, <span class="math-container" id="114080" visual_id="23288"><math alttext="a\to b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>→</mo><mi>b</mi></mrow></semantics></math></span> is read as "we have<span class="math-container" id="114081" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span>function from <span class="math-container" id="114081" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> to <span class="math-container" id="114082" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>" and <span class="math-container" id="114083" visual_id="709603"><math alttext="p\to q\to r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>→</mo><mi>r</mi></mrow></semantics></math></span> means "we have a function that, given <span class="math-container" id="114084" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>, constructs a function from <span class="math-container" id="114085" visual_id="625"><math alttext="q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi></semantics></math></span> to <span class="math-container" id="114086" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span>.". </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="5564"> Why an inconsistent formal system can prove everything? </td></tr><tr><td post_id="2829703"> Left or right connective associativity </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

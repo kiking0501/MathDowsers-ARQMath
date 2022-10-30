@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>An integral related with the Riemann $\zeta$ function</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> An integral related with the Riemann <span class="math-container" id="16280508" visual_id="19763"><math alttext="\zeta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ζ</mi></semantics></math></span> function </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1762710">
+<p>I have to prove that: <span class="math-container" id="16280509" visual_id="1267779"><math alttext="\forall s&gt;1,\qquad\int_{0}^{\infty}\sum_{k=1}^{\infty}\frac{1}{(k^{s}+1)^{x}+k% ^{s}}dx=\zeta(s)." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mrow><mo>∀</mo><mi>s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow><mo rspace="22.5pt">,</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mn>1</mn><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>k</mi><mi>s</mi></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>x</mi></msup><mo>+</mo><msup><mi>k</mi><mi>s</mi></msup></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p> <p>I how do I find the closed form for this sum?</p> <p><span class="math-container" id="16280510" visual_id="1267780"><math alttext="\sum_{k=1}^{\infty}\frac{1}{(k^{s}+1)^{x}+k^{s}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>k</mi><mi>s</mi></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>x</mi></msup><mo>+</mo><msup><mi>k</mi><mi>s</mi></msup></mrow></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> riemann-zeta </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3596990"> Swap the order of summation <span class="math-container" id="16280511" visual_id="1267781"><math alttext="\int_{0}^{\infty}\sum_{k=1}^{\infty}=\sum_{k=1}^{\infty}\int_{0}^{\infty}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mrow></mrow></semantics></math></span> (why can you do this? Tonelli may help), then compute the integral [<span class="math-container" id="16280512" visual_id="1267782"><math alttext="\int_{0}^{\infty}\frac{1}{(a+1)^{x}+a}=\frac{1}{a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mfrac><mn>1</mn><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>x</mi></msup><mo>+</mo><mi>a</mi></mrow></mfrac></mrow><mo>=</mo><mfrac><mn>1</mn><mi>a</mi></mfrac></mrow></semantics></math></span>.](http://www.wolframalpha.com/input/?t=crmtb01&amp;i=Integrate%5B1%2F((a+%2B+1)%5Ex+%2B+a),+%7Bx,+0,+Infinity%7D,+Assumptions+-%3E+a+%3E+0%5D) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1762729" id="answer">
+<p>Just to complete Ron Gordon's excellent answer, notice that: <span class="math-container" id="16280513" visual_id="1267783"><math alttext="I(a,b)=\int_{0}^{+\infty}\frac{dx}{e^{x\log a}+b}=\frac{1}{\log a}\int_{0}^{+% \infty}\frac{dz}{e^{z}+b}=\frac{1}{\log a}\int_{1}^{+\infty}\frac{dt}{t(t+b)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mi>e</mi><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>a</mi></mrow></mrow></msup><mo>+</mo><mi>b</mi></mrow></mfrac></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>log</mi><mo>⁡</mo><mi>a</mi></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow><mrow><msup><mi>e</mi><mi>z</mi></msup><mo>+</mo><mi>b</mi></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>log</mi><mo>⁡</mo><mi>a</mi></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow><mrow><mi>t</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></mrow></mrow></semantics></math></span> and: <span class="math-container" id="16280514" visual_id="1267784"><math alttext="\int_{1}^{+\infty}\frac{dt}{t(t+b)}=\int_{0}^{1}\frac{du}{1+bu}=\frac{1}{b}% \int_{0}^{b}\frac{dv}{1+v}=\frac{\log(1+b)}{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow><mrow><mi>t</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mrow><mn>1</mn><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>u</mi></mrow></mrow></mfrac></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>b</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>b</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>v</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>v</mi></mrow></mfrac></mrow></mrow><mo>=</mo><mfrac><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>b</mi></mfrac></mrow></semantics></math></span> through the substitutions <span class="math-container" id="16280515" visual_id="1267785"><math alttext="x=\frac{z}{\log a}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mi>z</mi><mrow><mi>log</mi><mo>⁡</mo><mi>a</mi></mrow></mfrac></mrow></semantics></math></span>, <span class="math-container" id="16280516" visual_id="1267786"><math alttext="z=\log t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mrow><mi>log</mi><mo>⁡</mo><mi>t</mi></mrow></mrow></semantics></math></span>, <span class="math-container" id="16280517" visual_id="223685"><math alttext="t=\frac{1}{u}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mn>1</mn><mi>u</mi></mfrac></mrow></semantics></math></span> and <span class="math-container" id="16280518" visual_id="1267787"><math alttext="u=\frac{v}{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mfrac><mi>v</mi><mi>b</mi></mfrac></mrow></semantics></math></span>. That leads to: <span class="math-container" id="16280519" visual_id="1267788"><math alttext="\int_{0}^{+\infty}\sum_{k\geq 1}\frac{dx}{(k^{s}+1)^{x}+k^{s}}=\sum_{k\geq 1}% \frac{\log(1+k^{s})}{k^{s}\log(1+k^{s})}=\zeta(s)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></munder><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msup><mi>k</mi><mi>s</mi></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>x</mi></msup><mo>+</mo><msup><mi>k</mi><mi>s</mi></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></munder><mfrac><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>k</mi><mi>s</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>k</mi><mi>s</mi></msup><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>k</mi><mi>s</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow><mo>=</mo><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> as wanted.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="3597020"> Or <span class="math-container" id="16280520" visual_id="1267789"><math alttext="\int_{0}^{\infty}\frac{1}{e^{x\log(a)}+b}\,dx=\int_{0}^{\infty}\frac{e^{-x\log% (a)}}{be^{-x\log(a)}+1}\,dx=-\frac{1}{b\log(a)}\left.\log(1+be^{-x\log(a)})% \right|_{0}^{\infty}=\frac{\log(1+b)}{b\log(a)}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></msup><mo>+</mo><mi>b</mi></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mpadded width="+1.7pt"><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></msup><mrow><mrow><mi>b</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></msup></mrow><mo>+</mo><mn>1</mn></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow><mo>=</mo><mrow><mo>-</mo><msubsup><mrow><mrow><mfrac><mn>1</mn><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo fence="true">|</mo></mrow><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup></mrow><mo>=</mo><mfrac><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mfrac></mrow></semantics></math></span> </td></tr><tr><td comment_id="3597024"> @Dr.MV: that is a nice shortcut, thank you, Mark. </td></tr><tr><td comment_id="3597684"> Prego, Jacopo!  Il piacere è tutto mio. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

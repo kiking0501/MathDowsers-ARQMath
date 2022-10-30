@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>If the square root of two is irrational, why can it be created by dividing two numbers?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> If the square root of two is irrational, why can it be created by dividing two numbers? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1984005">
+<p>I'm doing pre-calculus and got a bit caught on this question… I looked online and it said that a number is rational if it can be the quotient of two integers. So I did this:</p> <p><img alt="Equation" src="https://i.stack.imgur.com/2n5cd.jpg"/></p> <p>I know that it is irrational because if this was actually rational, mathematicians would have figured out. So my question is, why is the square root of two irrational?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> irrational-numbers </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4073042"> You've found an approximation that is accurate to all the digits displayed. However, your quantity terminates at the ...237, while the actual sqrt(2) goes on forever. </td></tr><tr><td comment_id="4073045"> You only have an approximation of <span class="math-container" id="18377705" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span>. <span class="math-container" id="18377705" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> is a real number, hence has an infinite decimal expansion, which is non-repeating non-terminating by the fact that it is irrational. As for the reason why it is irrational, I want you to look up a famous proof by contradiction by Euclid (somebody should post it as an answer below in future). </td></tr><tr><td comment_id="4073082"> @астонвіллаолофмэллбэрг I have posted that proof below. </td></tr><tr><td comment_id="4073115"> @ParclyTaxel Thank you. I would have posted it, but I was having lunch elsewhere. </td></tr><tr><td comment_id="4073148"> @астонвіллаолофмэллбэрг does that mean all irrational numbers are infinite? </td></tr><tr><td comment_id="4073160"> @JakeWickham It is good that you have asked this question. The answer is : there is a difference between *having an infinite decimal expansion* and *being infinite*. The reason is very simple : The sum of infinitely many numbers can possibly be finite, and that is what is happening. <span class="math-container" id="18377651" visual_id="3171116"><math alttext="1.414213=1+\frac{4}{10}+\frac{1}{100}+\frac{4}{1000}+\ldots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.414213</mn><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>4</mn><mn>10</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>100</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>1000</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span>. You are adding infinitely many numbers, but the sum *remains finite*. To be *infinite* is , in some sense, to be *larger in absolute value than any natural number*, you could say. </td></tr><tr><td comment_id="4073164"> For example, the cardinality of the natural numbers is infinite, because it  is larger than any natural number you can think of. In our case, it is clear that the irrational number in question is smaller than <span class="math-container" id="18377664" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>, hence is finite. If you still do not see the difference, I can explain again, so make sure you are clear. </td></tr><tr><td comment_id="4073789"> Going off of @QuantumFool's comment, [here](http://apod.nasa.gov/htmltest/gifcity/sqrt2.10mil) are the first 10 million digits of <span class="math-container" id="18377705" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span>. And it keeps going past that... </td></tr><tr><td comment_id="4073978"> All irrational numbers have an infinite expansion (when expressed in a rational base). Suppose one had a finite decimal expansion then you could express it as an integer divided by a sufficiently large power of 10 - contradicting its irrationality. </td></tr><tr><td comment_id="4074047"> You forgot the ellipses.  Did you believe that your calculator was telling you that <span class="math-container" id="18377654" visual_id="3171117"><math alttext="\sqrt{2}=1.41421356237" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt><mo>=</mo><mn>1.41421356237</mn></mrow></semantics></math></span> (full stop) or <span class="math-container" id="18377655" visual_id="3171118"><math alttext="\sqrt{2}=1.41421356237\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt><mo>=</mo><mrow><mn>1.41421356237</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span>.  Your calculator meant the latter: more digits follow.  Equivalently, do you believe <span class="math-container" id="18377656" visual_id="3171119"><math alttext="1/3=0.33333333333" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow><mo>=</mo><mn>0.33333333333</mn></mrow></semantics></math></span> (full stop) or <span class="math-container" id="18377657" visual_id="3171120"><math alttext="=0.33333333333\dots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>=</mo><mrow><mn>0.33333333333</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></semantics></math></span>? </td></tr><tr><td comment_id="4074814"> Don't take calculator output literally. Calculator outputs are approximate; your calculator might give a terminating decimal result for <span class="math-container" id="18377649" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span>, but that's not the actual square root. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1984008" id="answer">
+<p>The square root of two cannot exactly be written out on a computer screen in decimal notation – the digits extend forever. You're looking at an approximation accurate to a lot of digits. The approximation itself, however, is rational, as you have demonstrated. If you expanded it out to more digits, however, you'd realize that your quantity has zeros extending out to infinity, while <span class="math-container" id="18377693" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> has more digits. Therefore your rational number does not contradict the proof given by the mathematical community that <span class="math-container" id="18377694" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> is irrational.</p> <p>Note: just because a number is irrational doesn't mean it can't be arbitrarily well approximated by rational numbers – every number, rational and irrational can, and that property is known as "the rational numbers are dense in the reals." For instance, for <span class="math-container" id="18377695" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span>: \begin{align} \frac{1}{1}, \frac{14}{10}, \frac{141}{100}, \frac{1414}{1000}, \frac{14142}{10000}, ... \end{align} get arbitrarily close to <span class="math-container" id="18377696" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span>, but none of them are equal to it.</p> <p>Related topic: if you're interested in rational numbers which quickly converge to irrational numbers, check out <a href="https://en.wikipedia.org/wiki/Continued_fraction" rel="nofollow">continued fractions</a>. They're really cool. Interesting numbers like <span class="math-container" id="18377697" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> often have <a href="http://www.cut-the-knot.org/proofs/SqContinuedFraction.shtml" rel="nofollow">continued fraction expansions with closed-form coefficients</a> – <span class="math-container" id="18377698" visual_id="700"><math alttext="\sqrt{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>2</mn></msqrt></semantics></math></span> can be represented by a continued fraction with first coefficient 1 and all following coefficients 2. You can do all sorts of weird things with this, like show that the Golden Ratio (which has a continued fraction expansion of all 1's) is (one of) the irrational number(s) which takes the longest to converge to, or in more plain concepts, the rational numbers used to approximate it require a really large denominator to do a good job. </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="4079903"> Was going to write that until I read your answer.. Very good ! +1 :) </td></tr><tr><td comment_id="4089996"> You can't write 1/7 in finite decimal notation either, it periodically repeats itself. </td></tr><tr><td comment_id="4090053"> @Erbureth Sure. Just because a number cannot be written in a finite number of digits base-10 doesn't make it irrational. However, the converse is false: a number that can be written in a finite number of decimal digits is not irrational. The OP thought he had written $ \sqrt{2} $ down in finitely many digits and therefore it was rational; I was explaining how that's only an approximation and therefore the irrationality of $ \sqrt{2} $ remains intact. This isn't a proof that $ \sqrt{2} $ is irrational, only that the OP's argument for why it should be rational is false. </td></tr><tr><td comment_id="4090267"> Right, sorry, I misunderstood your answer. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

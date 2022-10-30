@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Use Monotone Convergence Theorem</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Use Monotone Convergence Theorem </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2430791">
+<p>Let <span class="math-container" id="22511897" visual_id="4723099"><math alttext="\{x_{n}\}_{n\in\mathbb{N}}=\{2-\frac{1}{x_{n-1}}\}_{n\in\mathbb{N}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub><mo>=</mo><msub><mrow><mo stretchy="false">{</mo><mrow><mn>2</mn><mo>-</mo><mfrac><mn>1</mn><msub><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></mfrac></mrow><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub></mrow></semantics></math></span> be a sequence that satisfies <span class="math-container" id="22511898" visual_id="162349"><math alttext="x_{1}&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>.  Using MCT, prove that <span class="math-container" id="22511899" visual_id="124078"><math alttext="\{x_{n}\}_{n\in\mathbb{N}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub></semantics></math></span> converges.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> convergence-divergence </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5020745"> The notation is weird, but if <span class="math-container" id="22511900" visual_id="8329"><math alttext="(x_{n})_{n\in\mathbb{N}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></msub></semantics></math></span> is increasing then if it's bounded above then the sequence converge by MCT. </td></tr><tr><td comment_id="5025152"> @upvoters Please explain why you upvote such a naked PSQ by a repeating offender. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2430806" id="answer">
+<p>Note that the sequence <span class="math-container" id="22511901" visual_id="15156"><math alttext="(x_{n})_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mi>n</mi></msub></semantics></math></span> is strictly decreasing and bounded  below by <span class="math-container" id="22511902" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span>. In fact, <span class="math-container" id="22511903" visual_id="162349"><math alttext="x_{1}&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span> and if <span class="math-container" id="22511904" visual_id="483025"><math alttext="x_{n}&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span> then  <span class="math-container" id="22511905" visual_id="4723100"><math alttext="x_{n+1}=2-\frac{1}{x_{n}}&gt;2-1=1." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mn>2</mn><mo>-</mo><mfrac><mn>1</mn><msub><mi>x</mi><mi>n</mi></msub></mfrac></mrow><mo>&gt;</mo><mrow><mn>2</mn><mo>-</mo><mn>1</mn></mrow><mo>=</mo><mn>1</mn></mrow><mo>.</mo></mrow></semantics></math></span> Moreover  <span class="math-container" id="22511906" visual_id="4723101"><math alttext='x_{n+1}=2-\frac{1}{x_{n}}&lt;x_{n}\leftrightarrow\frac{(x_{n}-1)^{2}}{x_{n}}=""&gt;0% &lt;/x_{n}\leftrightarrow&gt;' class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>2</mn><mo>-</mo><mfrac><mn>1</mn><msub><mi>x</mi><mi>n</mi></msub></mfrac><mo>&lt;</mo><msub><mi>x</mi><mi>n</mi></msub><mo>↔</mo><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><msub><mi>x</mi><mi>n</mi></msub></mfrac><mo>=</mo><mi mathvariant="normal">"</mi><mi mathvariant="normal">"</mi><mo>&gt;</mo><mn>0</mn><mo>&lt;</mo><mo>/</mo><msub><mi>x</mi><mi>n</mi></msub><mo>↔</mo><mo>&gt;</mo></mrow></semantics></math></span> and the the last inequality holds. Hence, by MCT, the sequence <span class="math-container" id="22511907" visual_id="15156"><math alttext="(x_{n})_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mi>n</mi></msub></semantics></math></span> has a finite limit <span class="math-container" id="22511908" visual_id="32375"><math alttext="L\geq 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math></span>. </p> <p>Moreover, by taking the limit in the equation <span class="math-container" id="22511909" visual_id="709167"><math alttext="x_{n+1}=2-\frac{1}{x_{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mn>2</mn><mo>-</mo><mfrac><mn>1</mn><msub><mi>x</mi><mi>n</mi></msub></mfrac></mrow></mrow></semantics></math></span> we obtain <span class="math-container" id="22511910" visual_id="3920338"><math alttext="L=2-\frac{1}{L}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mrow><mn>2</mn><mo>-</mo><mfrac><mn>1</mn><mi>L</mi></mfrac></mrow></mrow></semantics></math></span> which implies that <span class="math-container" id="22511911" visual_id="8100"><math alttext="L=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="5020774"> How do you show that it is decreasing? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

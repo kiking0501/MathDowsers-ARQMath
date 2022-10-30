@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Adapting a proof on elements of order 2: from finite groups to infinite groups</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Adapting a proof on elements of order 2: from finite groups to infinite groups </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="221813">
+<p>Consider the following problem, appropriate for a first course in Group Theory:</p> <p><strong>Problem:</strong> Prove that there cannot be a group with exactly two elements of order <span class="math-container" id="2506429" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>.</p> <p><strong>General Proof:</strong> Suppose for the sake of contradiction that there are exactly two elements of order <span class="math-container" id="2506430" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>, and denote them by <span class="math-container" id="2506431" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="2506432" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>. Note <span class="math-container" id="2506433" visual_id="5212486"><math alttext="ab\neq a,b,e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo>≠</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>e</mi></mrow></mrow></semantics></math></span> so that <span class="math-container" id="2506434" visual_id="2436374"><math alttext="(ab)^{2}\neq e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>≠</mo><mi>e</mi></mrow></semantics></math></span> or else we'd have a third element of order <span class="math-container" id="2506435" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>. From here, one can show that <span class="math-container" id="2506436" visual_id="5212487"><math alttext="aba\neq a,b,e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>a</mi></mrow><mo>≠</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>e</mi></mrow></mrow></semantics></math></span>, and then observe that <span class="math-container" id="2506437" visual_id="5212488"><math alttext="(aba)^{2}=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mi>e</mi></mrow></semantics></math></span>, giving a third element of order <span class="math-container" id="2506438" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>. Contradiction.</p> <p><strong>Finite Group Proof:</strong> Given a finite group <span class="math-container" id="2506439" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>, we can prove the statement as follows:</p> <p>Suppose <span class="math-container" id="2506440" visual_id="1630"><math alttext="a,b\in G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>G</mi></mrow></semantics></math></span> are the only elements with order <span class="math-container" id="2506441" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span>. Observe <span class="math-container" id="2506442" visual_id="5212489"><math alttext="\{e,a\}\subset G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">{</mo><mi>e</mi><mo>,</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><mo>⊂</mo><mi>G</mi></mrow></semantics></math></span> is a subgroup with <span class="math-container" id="2506443" visual_id="358"><math alttext="2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn></semantics></math></span> elements, so (by Lagrange's Theorem) <span class="math-container" id="2506444" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> has an even number of elements.</p> <p>Create the Cayley table for <span class="math-container" id="2506445" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> and consider the NW/SE diagonal, on which <span class="math-container" id="2506446" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span> will appear exactly three times: <span class="math-container" id="2506447" visual_id="5212490"><math alttext="e*e,a*a," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>e</mi><mo>*</mo><mi>e</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>*</mo><mi>a</mi></mrow></mrow><mo>,</mo></mrow></semantics></math></span> and <span class="math-container" id="2506448" visual_id="478560"><math alttext="b*b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>*</mo><mi>b</mi></mrow></semantics></math></span>. For any other elements whose product is <span class="math-container" id="2506449" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span>, they will appear in the table in pairs: if <span class="math-container" id="2506450" visual_id="1671354"><math alttext="x*y=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>x</mi><mo>*</mo><mi>y</mi></mrow><mo>=</mo><mi>e</mi></mrow></semantics></math></span> for <span class="math-container" id="2506451" visual_id="254"><math alttext="x\neq y" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mi>y</mi></mrow></semantics></math></span> then <span class="math-container" id="2506452" visual_id="1671355"><math alttext="y*x=e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>y</mi><mo>*</mo><mi>x</mi></mrow><mo>=</mo><mi>e</mi></mrow></semantics></math></span> as well. </p> <p>Thus, the total number of <span class="math-container" id="2506453" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span>'s in the table is odd: the three in the diagonal plus the even number that come in pairs. But the number of <span class="math-container" id="2506454" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span>'s in the table should be even: one for each row, and we proved <span class="math-container" id="2506455" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> has an even number of elements. Contradiction.</p> <p><strong>Question:</strong> Can the latter approach be adapted to cover the case for infinite groups?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> group-theory </span><span> finite-groups </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="222216" id="answer">
+<p>You can show even more, namely:</p> <blockquote> <p>If a group <span class="math-container" id="2506460" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span> contains finitely many involutions, then it contains an odd number of them.</p> </blockquote> <p>Here, an involution is an element of order 2.</p> <p>The finite case is very well-known, and follows by trying to pair elements up with their inverses (and using the fact <span class="math-container" id="2506461" visual_id="28165"><math alttext="|G|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">|</mo><mi>G</mi><mo stretchy="false">|</mo></mrow></semantics></math></span> is even).</p> <p>The infinite case then follows from the finite case by using Dietzmann's lemma, which says that if <span class="math-container" id="2506462" visual_id="55544"><math alttext="X\subset G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>⊂</mo><mi>G</mi></mrow></semantics></math></span> is a finite set of finite-order elements, and <span class="math-container" id="2506463" visual_id="115"><math alttext="X" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi></semantics></math></span> is closed under conjugation in <span class="math-container" id="2506464" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>, then <span class="math-container" id="2506465" visual_id="141899"><math alttext="\langle X\rangle" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⟨</mo><mi>X</mi><mo stretchy="false">⟩</mo></mrow></semantics></math></span> is a finite subgroup of <span class="math-container" id="2506466" visual_id="673"><math alttext="G" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="504132"> Solve question using this hint </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

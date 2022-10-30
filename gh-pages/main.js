@@ -485,7 +485,7 @@ function updateResult(runName, page){
                         Math.ceil(topic_results.length / getPageK()).toString()
                 );
 
-                getHtmlFile(directory_list, relevancy_dict, topic_results, page);
+                getHtmlFile(directory_list, relevancy_dict, topic_results, page, arqmath_year);
             });
 
         });
@@ -493,22 +493,8 @@ function updateResult(runName, page){
     });
 }
 
-function getHtmlFile(directory_list, relevancy_dict, topic_results, page) {
+function getHtmlFile(directory_list, relevancy_dict, topic_results, page, arqmath_year) {
 
-    function checkDirectoryPath() {
-        if (i < directory_list.length) {
-            $.ajax({
-                url: "data/ARQMath/html_minimal_2021/2010-2018_3patterns" + directory_list[i][0] + "/" + topic_results[rank][1] + "/" + topic_results[rank][1] + "_" + topic_results[rank][2] + ".html",
-                type: 'get',
-                success: function(data) {
-                    thread2path[thread_id] = "data/ARQMath/html_minimal_2021" + directory_list[i][0];
-                },
-                error: function() {
-
-                }
-            });
-        }
-    }
     var thread2path = {};
     var relevancy_count = [0, 0, 0, 0, 0];
     var pageK = getPageK();
@@ -541,8 +527,9 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results, page) {
 
     } else {
         // Use for UW-CS homepage with all documents available
-            var st = (page - 1) * pageK;
-            var et = Math.min(page * pageK, topic_results.length);
+        var html_folder = arqmath_year == 2022? "html_minimal_2022/2010-2018" : "html_minimal_2021/2010-2018_3patterns"
+        var st = (page - 1) * pageK;
+        var et = Math.min(page * pageK, topic_results.length);
 
         for (var rank = st; rank < et; rank++) {
             var thread_id = topic_results[rank][1];
@@ -557,11 +544,11 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results, page) {
                     if (!(thread_id in thread2path)) {
                         if ((parseInt(thread_id) >= directory_list[i][1]) && (parseInt(thread_id) <= directory_list[i][2])) {
                             $.ajax({
-                                url: "data/ARQMath/html_minimal_2021/2010-2018_3patterns" + directory_list[i][0] + "/" + thread_id + "/" + thread_id + "_" + answer_id + ".html",
+                                url: "data/ARQMath/" + html_folder + directory_list[i][0] + "/" + thread_id + "/" + thread_id + "_" + answer_id + ".html",
                                 type: 'get',
                                 async:false,
                                 success: function (doc_str) {
-                                    thread2path[thread_id] = "data/ARQMath/html_minimal_2021/2010-2018_3patterns" + directory_list[i][0];
+                                    thread2path[thread_id] = "data/ARQMath/" + html_folder + directory_list[i][0];
                                     drawCard(rank, answer_id, thread_id, relevancy, doc_str);
                                     found = true;
                                 },

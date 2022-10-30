@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>sum of the series of real numbers of following.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> sum of the series of real numbers of following. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2148484">
+<p>Find the value of the series <span class="math-container" id="19856927" visual_id="6387667"><math alttext="\sum_{n=0}^{\infty}\frac{n^{2}}{2^{n}}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>.</mo></mrow></semantics></math></span> I tried the problem but not getting the sum. Please help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> real-analysis </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4419267"> http://math.stackexchange.com/questions/593996/how-to-prove-sum-n-0-infty-fracn22n-6 </td></tr><tr><td comment_id="4419271"> a good summary: https://en.wikipedia.org/wiki/Geometric_series </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2148546" id="answer">
+<p><span class="math-container" id="19856930" visual_id="6387669"><math alttext="S=\sum_{i=0}^{n}\frac{i^{2}}{2^{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mi>i</mi><mn>2</mn></msup><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856931" visual_id="6387670"><math alttext="S-\frac{S}{2}=\sum_{i=0}^{n}\frac{i^{2}}{2^{i}}-\sum_{i=0}^{n}\frac{i^{2}}{2^{% (i+1)}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>S</mi><mo>-</mo><mfrac><mi>S</mi><mn>2</mn></mfrac></mrow><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mi>i</mi><mn>2</mn></msup><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow><mo>-</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mi>i</mi><mn>2</mn></msup><msup><mn>2</mn><mrow><mo stretchy="false">(</mo><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msup></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856932" visual_id="6387671"><math alttext="\frac{S}{2}=\sum_{i=0}^{n}\frac{i^{2}}{2^{i}}-\sum_{i=0}^{n}\frac{i^{2}}{2^{(i% +1)}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>S</mi><mn>2</mn></mfrac><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mi>i</mi><mn>2</mn></msup><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow><mo>-</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><msup><mi>i</mi><mn>2</mn></msup><msup><mn>2</mn><mrow><mo stretchy="false">(</mo><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msup></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856933" visual_id="6387672"><math alttext="\frac{S}{2}=(\frac{1}{2}+\frac{4}{4}+\frac{9}{8}+\frac{16}{16}+...+\frac{n^{2}% }{2^{n}})-(\frac{1}{4}+\frac{4}{8}+\frac{9}{16}+\frac{16}{32}+...+\frac{n^{2}}% {2^{(n+1)}})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>S</mi><mn>2</mn></mfrac><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>9</mn><mn>8</mn></mfrac><mo>+</mo><mfrac><mn>16</mn><mn>16</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo stretchy="false">)</mo></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>8</mn></mfrac><mo>+</mo><mfrac><mn>9</mn><mn>16</mn></mfrac><mo>+</mo><mfrac><mn>16</mn><mn>32</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msup></mfrac></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856934" visual_id="6387673"><math alttext="\frac{S}{2}=(\frac{1}{2}+\frac{3}{4}+\frac{5}{8}+\frac{7}{16}+...+\frac{n^{2}-% ({n-1}^{2})}{2^{n}})-\frac{n^{2}}{2^{(n+1)}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>S</mi><mn>2</mn></mfrac><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>5</mn><mn>8</mn></mfrac><mo>+</mo><mfrac><mn>7</mn><mn>16</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><msup><mn>1</mn><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo stretchy="false">)</mo></mrow><mo>-</mo><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msup></mfrac></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856935" visual_id="6387674"><math alttext="\frac{S}{2}=(\frac{1}{2}+\frac{3}{4}+\frac{5}{8}+\frac{7}{16}+...+\frac{2n-1}{% 2^{n}})-\frac{n^{2}}{2^{(n+1)}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>S</mi><mn>2</mn></mfrac><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>5</mn><mn>8</mn></mfrac><mo>+</mo><mfrac><mn>7</mn><mn>16</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo stretchy="false">)</mo></mrow><mo>-</mo><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msup></mfrac></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856936" visual_id="6387675"><math alttext="\frac{S}{2}=\sum_{i=1}^{n}\frac{2i-1}{2^{i}}-\frac{n^{2}}{2^{(n+1)}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>S</mi><mn>2</mn></mfrac><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi></mrow><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow><mo>-</mo><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msup></mfrac></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856937" visual_id="6387676"><math alttext="\frac{S_{\infty}}{2}=\sum_{i=1}^{\infty}\frac{2i-1}{2^{i}}-\lim_{n\to\infty}% \frac{n^{2}}{2^{(n+1)}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>S</mi><mi mathvariant="normal">∞</mi></msub><mn>2</mn></mfrac><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi></mrow><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow><mo>-</mo><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msup></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856938" visual_id="6387677"><math alttext="\frac{S_{\infty}}{2}=\sum_{i=1}^{\infty}\frac{2i-1}{2^{i}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>S</mi><mi mathvariant="normal">∞</mi></msub><mn>2</mn></mfrac><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi></mrow><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856939" visual_id="6387678"><math alttext="\frac{S_{\infty}}{2}-\frac{S_{\infty}}{4}=\sum_{i=1}^{\infty}\frac{2i-1}{2^{i}% }-\sum_{i=1}^{\infty}\frac{2i-1}{2^{(i+1)}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><msub><mi>S</mi><mi mathvariant="normal">∞</mi></msub><mn>2</mn></mfrac><mo>-</mo><mfrac><msub><mi>S</mi><mi mathvariant="normal">∞</mi></msub><mn>4</mn></mfrac></mrow><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi></mrow><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>i</mi></msup></mfrac></mrow><mo>-</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi></mrow><mo>-</mo><mn>1</mn></mrow><msup><mn>2</mn><mrow><mo stretchy="false">(</mo><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></msup></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856940" visual_id="6387679"><math alttext="\frac{S_{\infty}}{4}=(\frac{1}{2}+\frac{3}{4}+\frac{5}{8}+...)-(\frac{1}{4}+% \frac{3}{8}+\frac{5}{16}+...)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>S</mi><mi mathvariant="normal">∞</mi></msub><mn>4</mn></mfrac><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>5</mn><mn>8</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo stretchy="false">)</mo></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>8</mn></mfrac><mo>+</mo><mfrac><mn>5</mn><mn>16</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856941" visual_id="6387680"><math alttext="\frac{S_{\infty}}{4}=\frac{1}{2}+(\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+...)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>S</mi><mi mathvariant="normal">∞</mi></msub><mn>4</mn></mfrac><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="19856942" visual_id="6387681"><math alttext="S_{\infty}=2+2(1+\frac{1}{2}+\frac{1}{4}+...)=2+4=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi mathvariant="normal">∞</mi></msub><mo>=</mo><mrow><mn>2</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>+</mo><mn>4</mn></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="593996"> How to prove <span class="math-container" id="6076015" visual_id="7920902"><math alttext="\sum_{n=0}^{\infty}\frac{n^{2}}{2^{n}}=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><msup><mi>n</mi><mn>2</mn></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math></span>? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

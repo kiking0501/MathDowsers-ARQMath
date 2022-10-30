@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Sheaf cohomology</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Sheaf cohomology </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="45897">
+<p>Let <span class="math-container" id="481716" visual_id="2303"><math alttext="\mathcal{F}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi></semantics></math></span> be a sheaf over, say, a paracompact differentiable manifold <span class="math-container" id="481717" visual_id="4"><math alttext="M" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi></semantics></math></span>. Then to compute the cohomology <span class="math-container" id="481718" visual_id="1783025"><math alttext="H(M,\mathcal{F})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℱ</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> of <span class="math-container" id="481719" visual_id="2303"><math alttext="\mathcal{F}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">ℱ</mi></semantics></math></span>, we can use any acyclic resolution or use Cech cohomology.</p> <p>Now, in an article I am reading, some cohomology is defined as the cohomology of a certain <em>complex</em> of sheaves <span class="math-container" id="481720" visual_id="1520957"><math alttext="\Omega^{\bullet}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">Ω</mi><mo>∙</mo></msup></semantics></math></span>, not just one sheaf. Does this mean that in order to compute such a cohomology, I need for instance an acyclic resolution for each <span class="math-container" id="481721" visual_id="1048178"><math alttext="\Omega^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup></semantics></math></span>?</p> <p>Please tell me if I am saying something wrong.</p> <p>Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sheaf-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="45903" id="answer">
+<p>I suspect (but am not sure) that your article may be referring to <a href="http://en.wikipedia.org/wiki/Hypercohomology">hypercohomology</a>. The point of hypercohomology is that, given a functor <span class="math-container" id="481722" visual_id="131303"><math alttext="F:\mathcal{A}\to\mathcal{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>→</mo><mi class="ltx_font_mathcaligraphic">ℬ</mi></mrow></mrow></semantics></math></span> (say, left-exact, like the global section functor; let's also assume <span class="math-container" id="481723" visual_id="6074"><math alttext="\mathcal{A}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi></semantics></math></span> has enough injectives), one can define the so-called "hyper-derived functors" <span class="math-container" id="481724" visual_id="1783026"><math alttext="\mathbf{R}^{i}F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>𝐑</mi><mi>i</mi></msup><mo>⁢</mo><mi>F</mi></mrow></semantics></math></span>, each of which is a functor from <em>complexes</em> on <span class="math-container" id="481725" visual_id="6074"><math alttext="\mathcal{A}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi></semantics></math></span> to <span class="math-container" id="481726" visual_id="4122"><math alttext="\mathcal{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi class="ltx_font_mathcaligraphic">ℬ</mi></semantics></math></span>. A short exact sequence of complexes leads to a long exact sequence of hypercohomology, just as with the ordinary derived functors.</p> <p>The more modern way to think of hypercohomology is to use the <a href="http://en.wikipedia.org/wiki/Derived_category">derived category</a>. The point is then that a functor <span class="math-container" id="481727" visual_id="131303"><math alttext="F:\mathcal{A}\to\mathcal{B}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>→</mo><mi class="ltx_font_mathcaligraphic">ℬ</mi></mrow></mrow></semantics></math></span> induces a total derived functor functor on the bounded-below derived categories <span class="math-container" id="481728" visual_id="1783027"><math alttext="\mathbf{D}^{+}(\mathcal{A})\to\mathbf{D}^{+}(\mathcal{B})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>𝐃</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi>𝐃</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> (you can think of the derived category as localizing the category of chain complexes with respect to quasi-isomorphisms, though it's better to go first through the homotopy category). Then the hypercohomology functors are just defined by taking the <span class="math-container" id="481729" visual_id="158"><math alttext="i" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi></semantics></math></span>th cohomology  of the total derived functor. </p> <p>To compute this, you start with a bounded-below complex <span class="math-container" id="481730" visual_id="636421"><math alttext="K^{\bullet}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>K</mi><mo>∙</mo></msup></semantics></math></span>, find a quasi-isomorphism <span class="math-container" id="481731" visual_id="1783028"><math alttext="K^{\bullet}\to I^{\bullet}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>K</mi><mo>∙</mo></msup><mo>→</mo><msup><mi>I</mi><mo>∙</mo></msup></mrow></semantics></math></span> where <span class="math-container" id="481732" visual_id="139326"><math alttext="I^{\bullet}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>I</mi><mo>∙</mo></msup></semantics></math></span> consists of <span class="math-container" id="481733" visual_id="75"><math alttext="F" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi></semantics></math></span>-acyclic (say, injective) objects, and take <span class="math-container" id="481734" visual_id="1783029"><math alttext="F(I^{\bullet})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>I</mi><mo>∙</mo></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> as the output of the derived functor.</p> <p>I could say more if you clarify that this is in fact what you are looking for!</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="102295"> In particular, to compute the hypercohomology groups of a complex like <span class="math-container" id="481735" visual_id="1520957"><math alttext="\Omega^{\bullet}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">Ω</mi><mo>∙</mo></msup></semantics></math></span> you need *more* than an acyclic resolution of each of the <span class="math-container" id="481737" visual_id="1048178"><math alttext="\Omega^{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup></semantics></math></span>. Usually this is done using what's called Cartan-Eilenberg resolutions. </td></tr><tr><td comment_id="102311"> @Akhil Mathew: Thank you very much, this is exactly what I was looking for! Thanks! </td></tr><tr><td comment_id="102341"> why do you restrict yourself to complexes which are bounded from one side? the current technology allows to derive a functor on the entire derived category. </td></tr><tr><td comment_id="102342"> @anonymous. Are you thinking about Spaltenstein, N. (1988), "Resolutions of unbounded complexes", Compositio Mathematica 65 (2): 121–154 ? Yes, there is no bounded hypothesis in this paper, but, if I'm not wrong, the "derived" functor Spaltenstein constructs is just well-defined on the derived category. I mean, if I didn't miss the point when I read it, Spaltenstein doesn't prove that *his* derived functors have the universal property they should have (to be Kan extensions, which is true for bounded complexes). </td></tr><tr><td comment_id="102571"> @Agustí: But this follows immediately from Spaltenstein's Proposition 1.4 (d) combined with the lemmas in Keller's section 14 in derived categories and their uses (link in my comment to your answer). </td></tr><tr><td comment_id="102583"> @Theo. Ok, you're right. So Spaltenstein's derived functors are *true* derived functors and I was wrong. Thank you very much for pointing it out to me and for your references. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

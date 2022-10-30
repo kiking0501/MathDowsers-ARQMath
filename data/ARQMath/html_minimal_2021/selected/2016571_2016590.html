@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Finite sum $\sum_{j=0}^{n-1} j^2$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Finite sum <span class="math-container" id="18668520" visual_id="9332962"><math alttext="\sum_{j=0}^{n-1}j^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></munderover><msup><mi>j</mi><mn>2</mn></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2016571">
+<p>How can I calculate this finite sum? Can someone help me?  </p> <blockquote> <p><span class="math-container" id="18668521" visual_id="9332962"><math alttext="\sum_{j=0}^{n-1}j^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></munderover><msup><mi>j</mi><mn>2</mn></msup></mrow></semantics></math></span></p> </blockquote>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> algebra-precalculus </span><span> summation </span><span> sums-of-squares </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="4139661"> See [square pyramidal numbers](https://en.wikipedia.org/wiki/Square_pyramidal_number). </td></tr><tr><td comment_id="4139663"> it just polynom of n of degree 3  f(1) = 0; f(2) = 1; f(3) = 5; f(4) = 14;  just interpolate it </td></tr><tr><td comment_id="4139664"> Check the first examples of [Faulhaber's forumula](https://en.wikipedia.org/wiki/Faulhaber%27s_formula). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2016590" id="answer">
+<p>Many ways to do this. The best way I think involves this lovely identity: <span class="math-container" id="18668550" visual_id="238522"><math alttext="n^{3}-(n-1)^{3}=3n^{2}-3n+1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>-</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow><mo>=</mo><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow></mrow></semantics></math></span></p> <p>Hence, we just do: \begin{split} n^3 &amp; = n^3-(n-1)^3+(n-1)^3-(n-2)^3 + \ldots + 1^3-0^3 \\ &amp; = (3n^2-3n+1) + (3(n-1)^2-3(n-1)+1) + \ldots + (3\cdot 1^2 -2\cdot 1 + 1) \\ &amp;= 3 \sum_{i=1}^n i^2 -3\sum_{i=1}^n i + n \end{split} Given that we know that <span class="math-container" id="18668551" visual_id="29445"><math alttext="\sum_{i=1}^{n}i=\frac{n(n+1)}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>i</mi></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac></mrow></semantics></math></span>, we get: <span class="math-container" id="18668552" visual_id="9332976"><math alttext="\sum_{i=1}^{n}i^{2}=\frac{n^{3}-n}{3}+\frac{n(n+1)}{2}=\frac{n(n+1)(2n+1)}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>i</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mfrac><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>-</mo><mi>n</mi></mrow><mn>3</mn></mfrac><mo>+</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></mrow></semantics></math></span> Now, a change of indices does it: put <span class="math-container" id="18668553" visual_id="1218319"><math alttext="j=i-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mrow><mi>i</mi><mo>-</mo><mn>1</mn></mrow></mrow></semantics></math></span>, then <span class="math-container" id="18668554" visual_id="182"><math alttext="j" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi></semantics></math></span> goes from <span class="math-container" id="18668555" visual_id="2775866"><math alttext="0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn></semantics></math></span> to <span class="math-container" id="18668556" visual_id="588"><math alttext="n-1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></semantics></math></span>: <span class="math-container" id="18668557" visual_id="9332977"><math alttext="\sum_{j=0}^{n-1}j^{2}=\frac{n(n-1)(2n-1)}{6}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></munderover><msup><mi>j</mi><mn>2</mn></msup></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>6</mn></mfrac></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="183316"> How to get to the formula for the sum of squares of first n numbers? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Why isn't reflexivity redundant in the definition of equivalence relation?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Why isn't reflexivity redundant in the definition of equivalence relation? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="440">
+<p>An equivalence relation is defined by three properties: reflexivity, symmetry and transitivity.</p> <p>Doesn't symmetry and transitivity implies reflexivity? Consider the following argument.</p> <p>For any <span class="math-container" id="4162" visual_id="159"><math alttext="a" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi></semantics></math></span> and <span class="math-container" id="4163" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>, <span class="math-container" id="4164" visual_id="16677"><math alttext="aRb" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>b</mi></mrow></semantics></math></span> implies <span class="math-container" id="4165" visual_id="66164"><math alttext="bRa" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>a</mi></mrow></semantics></math></span> by symmetry. Using transitivity, we have <span class="math-container" id="4166" visual_id="66159"><math alttext="aRa" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>a</mi></mrow></semantics></math></span>.</p> <p>Source: Exercise 8.46, P195 of <em>Mathematical Proofs</em>, 2nd (not 3rd) ed. by Chartrand et al</p>
+</div>
+<hr/>
+<div id="tags">
+<span> elementary-set-theory </span><span> relations </span><span> equivalence-relations </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="124536"> This is a good problem to pose in an introductory Discrete Math/Logic course. </td></tr><tr><td comment_id="1402315"> @LePressentiment Why would you add a random source to a three and half year old question?? This is a standard exercise that you can find in many many books. </td></tr><tr><td comment_id="1402331"> How do you know that <span class="math-container" id="4167" visual_id="16677"><math alttext="aRb" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>b</mi></mrow></semantics></math></span>? maybe there is no such <span class="math-container" id="4168" visual_id="368"><math alttext="b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi></semantics></math></span>. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="442" id="answer">
+<p>No.</p> <p>The missing condition is sometimes called  'seriality' -- for any x there must be an y such that x R y.</p> <p>If you add seriality to the symmetry and transitivity you get a reflexive relation again.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="751"> I googled seriality, not much came up. You sure it's spelled right? </td></tr><tr><td comment_id="753"> Perhaps I made up the noun form. If you google 'serial binary relation' it will come up. Although if you google 'seriality of binary relations' it will come up there too. </td></tr><tr><td comment_id="388749"> @ChaoXu ProofWiki uses the name [serial relation](http://www.proofwiki.org/wiki/Definition:Serial_Relation). </td></tr><tr><td comment_id="3576637"> @ChaoXu, <span class="math-container" id="4180" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> can also be called "total" or "entire". Note that <span class="math-container" id="4181" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> doesn't have to be an endorelation for totality to make sense. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="65102"> If a relation is symmetric and transitive, will it be reflexive? </td></tr><tr><td post_id="1129605"> There is relation that is symmetric and transitive but not reflexive? </td></tr><tr><td post_id="1484876"> Question about possible relations </td></tr><tr><td post_id="1808510"> Redundancy of reflexive property </td></tr><tr><td post_id="2054790"> How do I find the equivalence class of 0? I already wrote the proof. </td></tr><tr><td post_id="2106732"> Doesn't symmetry and transitivity imply reflexitivity? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="39233"> Dependence of Axioms of Equivalence Relation? </td></tr><tr><td post_id="152315"> Unnecessary property in definition of equivalence relation </td></tr><tr><td post_id="478946"> Is there relation that is symmetrical, transitive and non-reflexive? </td></tr><tr><td post_id="1429820"> Symmetric and transitive but not reflexive </td></tr><tr><td post_id="1592652"> Example of a relation that is symmetric and transitive, but not reflexive </td></tr><tr><td post_id="1849932"> Is every relation which is transitive and symmetric also reflexive? </td></tr><tr><td post_id="2905746"> Can a relation be transitive when it is symmetric but not reflexive? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Fastest way to determine if a conic section is an ellipse?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Fastest way to determine if a conic section is an ellipse? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2636609">
+<p>Given an arbitrary conic section in the form <span class="math-container" id="24372434" visual_id="215161"><math alttext="Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>D</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mi>F</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span> (Where the coefficients are real valued) is there a simple test which can determine whether or not a particular conic is an ellipse? I know that if a conic section is an ellipse, then <span class="math-container" id="24372435" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> and <span class="math-container" id="24372436" visual_id="505"><math alttext="C" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi></semantics></math></span> will have the same sign, however I am not sure if this is a sufficient condition as well.</p> <p>Edit: Forgot to include the "<span class="math-container" id="24372437" visual_id="5476454"><math alttext="...+F=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">…</mi><mo>+</mo><mi>F</mi></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>".</p>
+</div>
+<hr/>
+<div id="tags">
+<span> conic-sections </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5444806"> See https://en.wikipedia.org/wiki/Rotation_of_axes#Rotation_of_conic_sections </td></tr><tr><td comment_id="5444818"> @lab bhattacharjee from the link it says to evaluate <span class="math-container" id="24372451" visual_id="245389"><math alttext="B^{2}-4AC" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>B</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>C</mi></mrow></mrow></semantics></math></span> - do I need to rotate the conic section first though? </td></tr><tr><td comment_id="5444839"> Just check if <span class="math-container" id="24372439" visual_id="3312665"><math alttext="B^{2}-4AC&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>B</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>C</mi></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span> </td></tr><tr><td comment_id="5444840"> No, the quantity <span class="math-container" id="24372452" visual_id="245389"><math alttext="B^{2}-4AC" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>B</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>C</mi></mrow></mrow></semantics></math></span> is invariant under rotations. You might want to check this: it’s messy, but very satisfying to come out with the result. </td></tr><tr><td comment_id="5445151"> Your ellipse necessarily passes through the origin? </td></tr><tr><td comment_id="5447236"> @Bernard No, and what do you mean by "passes through"? </td></tr><tr><td comment_id="5447248"> The origin is a point of the ellipse. This is the case if there's no constant term in the equation. </td></tr><tr><td comment_id="5447252"> Ah, with the conics I have, this is not necessarily the case. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2637161" id="answer">
+<p>If  <span class="math-container" id="24372455" visual_id="6111117"><math alttext="I_{2}=B^{2}-4AC" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mrow><msup><mi>B</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>4</mn><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>C</mi></mrow></mrow></mrow></semantics></math></span> is negative then it is an ellipse whether or not (RHS being  zero ) it passes  through origin as special case.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

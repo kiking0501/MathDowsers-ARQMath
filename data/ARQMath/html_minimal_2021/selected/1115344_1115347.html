@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Convergence of $\sum\limits_{n=1}^\infty \frac {n+1}{2^n}$.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Convergence of <span class="math-container" id="10514291" visual_id="8406770"><math alttext="\sum\limits_{n=1}^{\infty}\frac{n+1}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></semantics></math></span>. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1115344">
+<p>Test Convergence of <span class="math-container" id="10514292" visual_id="853464"><math alttext="\sum\limits_{n=1}^{\infty}\dfrac{n+1}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></semantics></math></span></p> <p><strong>Attempt:</strong> <span class="math-container" id="10514293" visual_id="8406771"><math alttext="\sum\limits_{n=1}^{\infty}\dfrac{n+1}{2^{n}}=\sum\limits_{n=1}^{\infty}\dfrac{% n}{2^{n}}+\sum\limits_{n=1}^{\infty}\dfrac{1}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>=</mo><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>+</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></mrow></mrow></semantics></math></span></p> <p>The second summation is definitely convergent. So, we need to just investigate if the first summation is convergent or not. </p> <p>Let <span class="math-container" id="10514294" visual_id="8406772"><math alttext="X=\sum\limits_{n=1}^{\infty}\dfrac{n}{2^{n}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></mrow></semantics></math></span></p> <p>Is there a way to test convergence of this summation without the integral test?</p> <p>Thank you very much for your help.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> sequences-and-series </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="2275079"> Using <span class="math-container" id="10514295" visual_id="8406773"><math alttext="n\leq 2^{n/2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≤</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>/</mo><mn>2</mn></mrow></msup></mrow></semantics></math></span> for <span class="math-container" id="10514296" visual_id="24356"><math alttext="n\geq 4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>4</mn></mrow></semantics></math></span> and applying comparison test? unless you identify it as an AGP and evaluate it explicitly. </td></tr><tr><td comment_id="2275081"> The ratio test suffices. </td></tr><tr><td comment_id="2275084"> Oh okay.. well, I guess my book ( Calculus by Apostol ) is yet to introduce the Rabbe's Test or the ratio test. So, ... </td></tr><tr><td comment_id="2283535"> Display environments and display style are not appropriate for titles, please see meta. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1115347" id="answer">
+<p>Ratio test works fine, and so does the root test.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2275780"> Thank you!! I worked it out :) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

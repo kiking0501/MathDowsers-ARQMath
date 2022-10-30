@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Integral of $x^2 e^{-x^2}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Integral of <span class="math-container" id="15124282" visual_id="63506"><math alttext="x^{2}e^{-x^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1635412">
+<p>Like the title says, I'm trying to find</p> <p><span class="math-container" id="15124283" visual_id="5442355"><math alttext="\int_{0}^{r}x^{2}e^{-x^{2}}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>r</mi></msubsup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></semantics></math></span></p> <p>Where <span class="math-container" id="15124284" visual_id="180"><math alttext="r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi></semantics></math></span> is some finite value.</p> <p>I've done one step using integration by parts with <span class="math-container" id="15124285" visual_id="8688"><math alttext="u=x^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></semantics></math></span> and <span class="math-container" id="15124286" visual_id="5442356"><math alttext="dv=e^{-x^{2}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>v</mi></mrow><mo>=</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span>, which has left me with</p> <p><span class="math-container" id="15124287" visual_id="5442357"><math alttext="\left.x^{2}\int_{0}^{x}e^{-t^{2}}\,dt\,\right|_{0}^{r}-\int_{0}^{r}2x\int_{0}^% {x}e^{-t^{2}}\,dt\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mpadded width="+1.7pt"><mi>t</mi></mpadded></mrow></mpadded></mrow></mrow></mrow><mo fence="true">|</mo></mrow><mn>0</mn><mi>r</mi></msubsup><mo>-</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>r</mi></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mpadded width="+1.7pt"><mi>t</mi></mpadded></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>and more questions than answers. I'm aware that the integrals in <span class="math-container" id="15124288" visual_id="297"><math alttext="t" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi></semantics></math></span> are a scaling of the error function, and don't have a representation in elementary functions. For the second term in this I think I should try another integration by parts, but then I would need the integral of the error function, and am not sure how to get that either.</p> <p>Am I going about this the right way? What do I do next?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> integration </span><span> definite-integrals </span><span> exponential-function </span><span> error-function </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="3334720"> Wolfram says you don't need the integral of the error function, but I don't know what the derivation is. http://wolframalpha.com/input/?i=int+x%5E2+e%5E%28-x%5E2%29+dx&amp;x=0&amp;y=0 </td></tr><tr><td comment_id="3334721"> One trick is to take <span class="math-container" id="15124289" visual_id="5442358"><math alttext="I(r,t)=\int_{0}^{r}e^{-tx^{2}}{\rm d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>r</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span>. This function can be expressed via the error function (after a substitution). Now <span class="math-container" id="15124290" visual_id="5442359"><math alttext="\frac{\partial I}{\partial t}=-\int_{0}^{r}x^{2}e^{-tx^{2}}{\rm d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>I</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mo>-</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>r</mi></msubsup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></semantics></math></span> which for <span class="math-container" id="15124302" visual_id="3194"><math alttext="t=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> is your integral. </td></tr><tr><td comment_id="3334723"> @Winther that's a super cool trick! </td></tr><tr><td comment_id="3334758"> @StellaBiderman It's quite useful to know as it can be used to solve a whole number of integrals: for example <span class="math-container" id="15124292" visual_id="5442360"><math alttext="\int_{0}^{\infty}x^{k}e^{-x}{\rm d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> can be solved by evaluating <span class="math-container" id="15124293" visual_id="5442361"><math alttext="\int_{0}^{\infty}e^{-tx}{\rm d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> and differentiating <span class="math-container" id="15124294" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> times. See e.g. [this](https://web.williams.edu/Mathematics/lg5/Feynman.pdf) and [this](http://fy.chalmers.se/~tfkhj/FeynmanIntegration.pdf) for other examples. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1635420" id="answer">
+<p>One can solve the integral using a nice little trick (often called <a href="https://en.wikipedia.org/wiki/Differentiation_under_the_integral_sign">Feynman integration</a>). We generalize the problem by adding a free parameter to the exponential (the reason we do this is that <span class="math-container" id="15124295" visual_id="5442362"><math alttext="\frac{d}{dt}e^{-tx^{2}}=-x^{2}e^{-tx^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup></mrow><mo>=</mo><mrow><mo>-</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow></mrow></semantics></math></span> which for <span class="math-container" id="15124296" visual_id="3194"><math alttext="t=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> is the integrand we are trying to evaluate). We start by defining the function</p> <p><span class="math-container" id="15124297" visual_id="5442363"><math alttext="f(t,r)\equiv\int_{0}^{r}e^{-tx^{2}}{\rm d}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>r</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>Now observe that</p> <p><span class="math-container" id="15124298" visual_id="5442364"><math alttext="\frac{\partial f(t,r)}{\partial t}=-\int_{0}^{r}x^{2}e^{-tx^{2}}{\rm d}x% \implies\int_{0}^{r}x^{2}e^{-x^{2}}{\rm d}x=\left[-\frac{\partial f(t,r)}{% \partial t}\right]_{t=1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mo>-</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>r</mi></msubsup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>t</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>⟹</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>r</mi></msubsup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><msub><mrow><mo>[</mo><mrow><mo>-</mo><mfrac><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>t</mi></mrow></mfrac></mrow><mo>]</mo></mrow><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow></msub></mrow></semantics></math></span></p> <p>Substituting <span class="math-container" id="15124299" visual_id="5442365"><math alttext="y=\sqrt{t}x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><msqrt><mi>t</mi></msqrt><mo>⁢</mo><mi>x</mi></mrow></mrow></semantics></math></span> we can evaluate <span class="math-container" id="15124300" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> in terms of the <a href="https://en.wikipedia.org/wiki/Error_function">error function</a> as <span class="math-container" id="15124301" visual_id="5442366"><math alttext="f(t,r)=\frac{\sqrt{\pi}\text{erf}\left(r\sqrt{t}\right)}{2\sqrt{t}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><msqrt><mi>π</mi></msqrt><mo>⁢</mo><mtext>erf</mtext><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>r</mi><mo>⁢</mo><msqrt><mi>t</mi></msqrt></mrow><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>t</mi></msqrt></mrow></mfrac></mrow></semantics></math></span> </p> <p>and by differentiating and taking <span class="math-container" id="15124302" visual_id="3194"><math alttext="t=1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow></semantics></math></span> we get the result <span class="math-container" id="15124303" visual_id="5442367"><math alttext="\int_{0}^{r}x^{2}e^{-x^{2}}{\rm d}x=\frac{1}{4}\sqrt{\pi}\text{erf}(r)-\frac{1% }{2}e^{-r^{2}}r" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi>r</mi></msubsup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msqrt><mi>π</mi></msqrt><mo>⁢</mo><mtext>erf</mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></msup><mo>⁢</mo><mi>r</mi></mrow></mrow></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="2101912"> Evaluate <span class="math-container" id="19437557" visual_id="7760907"><math alttext="\int x^{2}e^{\frac{x^{2}}{2}}\,dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>e</mi><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></msup><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mpadded></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

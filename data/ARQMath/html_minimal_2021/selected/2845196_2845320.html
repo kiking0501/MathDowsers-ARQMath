@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Expected Number of coin flips for 2 consecutive heads for first time.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Expected Number of coin flips for 2 consecutive heads for first time. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2845196">
+<p>I was working on problems on expectation and found this one as a question from a well-known exam</p> <p>Assume that you are flipping a fair coin, i.e. probability of heads or tails is equal. Then the expected number of coin flips required to obtain two consecutive heads for the first time is.</p> <p>(A)4</p> <p>(B)3</p> <p>(C)6</p> <p>(D)10</p> <p>(E)5</p> <p>I worked up like Let N be the number of tosses required untill 2 consecutive heads are obtained for the first time.</p> <p>Let the probability of obtaining heads be p and tails be q and for a coin p=q=1-p=1-q.</p> <p>For N=2, the probability will be <span class="math-container" id="26291701" visual_id="7594"><math alttext="p^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mn>2</mn></msup></semantics></math></span></p> <p>For N=3, the probability will be <span class="math-container" id="26291702" visual_id="3361038"><math alttext="p^{2}.q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>.</mo><mi>q</mi></mrow></semantics></math></span></p> <p>For N=4, the probability will be <span class="math-container" id="26291703" visual_id="3361039"><math alttext="q^{2}.p^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mn>2</mn></msup><mo>.</mo><msup><mi>p</mi><mn>2</mn></msup></mrow></semantics></math></span></p> <p>For N=5, the probability will be <span class="math-container" id="26291704" visual_id="3361040"><math alttext="q^{3}.p^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mn>3</mn></msup><mo>.</mo><msup><mi>p</mi><mn>2</mn></msup></mrow></semantics></math></span></p> <p>and so on...</p> <p>Now, <span class="math-container" id="26291705" visual_id="3361041"><math alttext="E[N]=2(p^{2})+3(p^{2}.q)+4(q^{2}.p^{2})+5(q^{3}.p^{2})+......" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mrow><mo stretchy="false">[</mo><mi>N</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mn>2</mn><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>+</mo><mn>3</mn><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mn>2</mn></msup><mo>.</mo><mi>q</mi><mo stretchy="false">)</mo></mrow><mo>+</mo><mn>4</mn><mrow><mo stretchy="false">(</mo><msup><mi>q</mi><mn>2</mn></msup><mo>.</mo><msup><mi>p</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>+</mo><mn>5</mn><mrow><mo stretchy="false">(</mo><msup><mi>q</mi><mn>3</mn></msup><mo>.</mo><msup><mi>p</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mi mathvariant="normal">…</mi></mrow></semantics></math></span></p> <p>and this comes out to be <span class="math-container" id="26291706" visual_id="46074"><math alttext="\frac{3}{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>3</mn><mn>2</mn></mfrac></semantics></math></span> but it matches with none of the options.</p> <p>Please tell me where I am wrong and what should I do to reach the correct solution?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> expectation </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5868164"> The probability for <span class="math-container" id="26291707" visual_id="351"><math alttext="n=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></semantics></math></span> is actually <span class="math-container" id="26291708" visual_id="3361042"><math alttext="q^{2}p^{2}+qp^{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mi>q</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>p</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>q</mi><mo>⁢</mo><msup><mi>p</mi><mn>3</mn></msup></mrow></mrow></semantics></math></span>  You have overlooked the sequence HTHH.  You have made a similar mistake for <span class="math-container" id="26291709" visual_id="766960"><math alttext="n&gt;4." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo>&gt;</mo><mn>4</mn></mrow><mo>.</mo></mrow></semantics></math></span> </td></tr><tr><td comment_id="5868170"> One way to do this is with Markov chains.  Do you know about Markov chains? </td></tr><tr><td comment_id="5868172"> @Saulpatz-no I don't know about it </td></tr><tr><td comment_id="5868174"> Okay, there are other ways, but it will take me a bit longer to work out :-) </td></tr><tr><td comment_id="5868178"> @Saulpatx-I could have read about markov chains, but since I am preparing for a competitive exam, I have to stick to the syllabus and Markov chain is not there in it :( </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2845320" id="answer">
+<p>Let <span class="math-container" id="26291764" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> be the event that we get two consecutive heads for the first time. <span class="math-container" id="26291765" visual_id="3361056"><math alttext="E(A)=\frac{1}{2}\left(E(A/First\ toss\ was\ a\ tail)+1\right)+\frac{1}{2}\left% (\frac{1}{2}\left(E(A/Second\ toss\ was\ a\ tail)+2\right)+\frac{1}{2}*2\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mpadded width="+5pt"><mi>t</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mpadded width="+5pt"><mi>s</mi><mo>⁢</mo><mi>w</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mpadded width="+5pt"><mi>s</mi><mo>⁢</mo><mpadded width="+5pt"><mi>a</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>l</mi></mpadded></mpadded></mpadded></mpadded></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>A</mi><mo>/</mo><mi>S</mi></mrow><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mpadded width="+5pt"><mi>d</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mpadded width="+5pt"><mi>s</mi><mo>⁢</mo><mi>w</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mpadded width="+5pt"><mi>s</mi><mo>⁢</mo><mpadded width="+5pt"><mi>a</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>l</mi></mpadded></mpadded></mpadded></mpadded></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>*</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p> <p>Now, <span class="math-container" id="26291766" visual_id="3361057"><math alttext="E(A/First\ Toss\ was\ a\ tail)=E(A/Second\ toss\ was\ a\ tail)=E(A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mpadded width="+5pt"><mi>t</mi><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mpadded width="+5pt"><mi>s</mi><mo>⁢</mo><mi>w</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mpadded width="+5pt"><mi>s</mi><mo>⁢</mo><mpadded width="+5pt"><mi>a</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>l</mi></mpadded></mpadded></mpadded></mpadded></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>A</mi><mo>/</mo><mi>S</mi></mrow><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mpadded width="+5pt"><mi>d</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>s</mi><mo>⁢</mo><mpadded width="+5pt"><mi>s</mi><mo>⁢</mo><mi>w</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mpadded width="+5pt"><mi>s</mi><mo>⁢</mo><mpadded width="+5pt"><mi>a</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>l</mi></mpadded></mpadded></mpadded></mpadded></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, because getting a tail puts us back on square one, and we have to 'start over'</p> <p>Hence, <span class="math-container" id="26291767" visual_id="3361058"><math alttext="E(A)=\frac{1}{2}\left(E(A)+1\right)+\frac{1}{2}\left(\frac{1}{2}\left(E(A)+2% \right)+\frac{1}{2}*2\right)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>*</mo><mn>2</mn></mrow></mrow><mo>)</mo></mrow></mrow></mrow></mrow></semantics></math></span></p> <p><span class="math-container" id="26291768" visual_id="3361059"><math alttext="E(A)=6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

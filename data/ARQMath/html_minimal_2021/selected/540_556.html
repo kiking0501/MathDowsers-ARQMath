@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>What is the Riemann-Zeta function?</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> What is the Riemann-Zeta function? </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="540">
+<p>In laymen's terms, as much as possible: What is the Riemann-Zeta function, and why does it come up so often with relation to prime numbers?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> terminology </span><span> complex-analysis </span><span> prime-numbers </span><span> riemann-zeta </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="955"> A good example of a question that is asked by someone genuinely interested in math but is looking for an accessible way into more advanced number theory that he would otherwise have no other means of finding. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="556" id="answer">
+<p>Here there is another attempt at an explanation.</p> <p>We know that the sum of the inverse of the positive numbers, <span class="math-container" id="5387" visual_id="145318"><math alttext="1+1/2+1/3+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></semantics></math></span>, diverges. Euler shown that the sum of the inverse of the squares,  <span class="math-container" id="5388" visual_id="8230927"><math alttext="1/(1^{2})+1/(2^{2})+1/(3^{2})+\cdots" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><msup><mn>1</mn><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><msup><mn>3</mn><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></semantics></math></span>, has a finite sum, namely <span class="math-container" id="5389" visual_id="79439"><math alttext="\pi^{2}/6" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>π</mi><mn>2</mn></msup><mo>/</mo><mn>6</mn></mrow></semantics></math></span>. Mathematicians love to generalize things, so they thought at the function</p> <p><span class="math-container" id="5390" visual_id="3406205"><math alttext="\displaystyle f(x)=\sum_{n=1}^{\infty}\dfrac{1}{n^{x}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mi>x</mi></msup></mfrac></mrow></mrow></semantics></math></span></p> <p>which is defined for <span class="math-container" id="5391" visual_id="6149"><math alttext="x\gt 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\gt</mtext></merror><mo>⁢</mo><mn>1</mn></mrow></semantics></math></span>. But this was not enough: they decided that the variable could be a complex number and not a real one. There is a standard tecnique (<a href="http://mathworld.wolfram.com/AnalyticContinuation.html" rel="nofollow noreferrer">Analytic continuation</a>) which allows us to extend the function to nearly all the complex plane. So we now have a function which formally is </p> <p><span class="math-container" id="5392" visual_id="205446"><math alttext="\displaystyle\zeta(s)=\sum_{n=1}^{\infty}\dfrac{1}{n^{s}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mi>s</mi></msup></mfrac></mrow></mrow></semantics></math></span></p> <p>(the variable being <span class="math-container" id="5393" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span> and not <span class="math-container" id="5394" visual_id="67"><math alttext="x" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi></semantics></math></span> to show that we are dealing with complex numbers) but is not computed in this way. Just to make an example, <span class="math-container" id="5395" visual_id="551968"><math alttext="\zeta(0)=-1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></mrow></semantics></math></span>, and sum of an infinity of ones is not <span class="math-container" id="5396" visual_id="47213"><math alttext="-1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>. :-) </p> <p>It may be shown that for <span class="math-container" id="5397" visual_id="6290952"><math alttext="s=-2n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></mrow></semantics></math></span> (<span class="math-container" id="5398" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> positive integer) <span class="math-container" id="5399" visual_id="766912"><math alttext="\zeta(s)=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. But there are infinite other point <span class="math-container" id="5400" visual_id="8230928"><math alttext="s^{\prime}=(x,y)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mo>′</mo></msup><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> where <span class="math-container" id="5401" visual_id="8230929"><math alttext="\zeta(s^{\prime})=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ζ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>s</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math></span>. For all of these points, <span class="math-container" id="5402" visual_id="55509"><math alttext="0\lt x\lt 1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mi>x</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\lt</mtext></merror><mo>⁢</mo><mn>1</mn></mrow></semantics></math></span>; Riemann's hypothesis says that for all such points <span class="math-container" id="5403" visual_id="16172"><math alttext="x=1/2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></semantics></math></span>. If it were true, we could have the best asymptotic expression to count <span class="math-container" id="5404" visual_id="148026"><math alttext="\pi(n)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, that is the number of primes below <span class="math-container" id="5405" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>.</p> <p>Why does the function pop up when we talk about primes? I don't know, but in the case of integer values Euler proved that </p> <p><span class="math-container" id="5406" visual_id="6663253"><math alttext="\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^{s}}=\prod_{p\text{ prime}}\frac{1}% {1-p^{-s}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mi>s</mi></msup></mfrac></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>p</mi><mo>⁢</mo><mtext> prime</mtext></mrow></munder><mfrac><mn>1</mn><mrow><mn>1</mn><mo>-</mo><msup><mi>p</mi><mrow><mo>-</mo><mi>s</mi></mrow></msup></mrow></mfrac></mrow></mrow></semantics></math></span></p> <p>Maybe this could be a good start.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="983"> The product formula is valid for all <span class="math-container" id="5407" visual_id="706"><math alttext="s" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi></semantics></math></span> with <span class="math-container" id="5408" visual_id="105055"><math alttext="\Re(s)&gt;1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ℜ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>1</mn></mrow></semantics></math></span>; it's of *great* importance as to why the zeta-function (and its cousins the L-functions) relates to the distribution of prime numbers. </td></tr><tr><td comment_id="44006"> Correction: zeta(0) is -1/2, not 1/2.  Also, I think it is misleading to say analytic continuation is a "standard technique" to extend the zeta-function.  Whether a function has an analytic continuation to some larger region is a property, but checking where that property works often depends on special aspects of the particular function under consideration. </td></tr><tr><td comment_id="4242962"> @KCd =D Fixed the annoying little error. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="1180388"> What exactly *is* the Riemann zeta function? </td></tr><tr><td post_id="2337666"> What is the exact relation between prime numbers and the zeta function? </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="255"> Why does the series <span class="math-container" id="2618" visual_id="4097"><math alttext="\sum_{n=1}^{\infty}\frac{1}{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></semantics></math></span> not converge? </td></tr><tr><td post_id="7634"> You are standing at the origin of an "infinite forest" holding an "infinite bb-gun" </td></tr><tr><td post_id="7783"> Proving a known zero of the Riemann Zeta has real part exactly 1/2 </td></tr><tr><td post_id="92976"> Primes and Riemann zeta function. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

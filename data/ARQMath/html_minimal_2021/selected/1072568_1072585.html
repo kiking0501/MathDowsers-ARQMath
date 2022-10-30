@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Rectangle circumscribed to an ellipse of max area/perimeter</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Rectangle circumscribed to an ellipse of max area/perimeter </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="1072568">
+<p>I could solve the classical problem of maximizing the area (fixing the perimeter) or maximizing the perimeter (fixing the area) of an <em>inscribed</em> rectangle, but I don't know how to solve strightforwardly the problem of finding the rectangle <strong>circumscribed</strong> to an ellipse of max area (fixing the perimeter) or max perimeter (fixing the area). How can I set up the problem and solve it smoothly?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> geometry </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="1072585" id="answer">
+<p>The locus of points that see an ellipse under a right angle is a circle having radius <span class="math-container" id="10136127" visual_id="73987"><math alttext="\sqrt{a^{2}+b^{2}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></semantics></math></span>:<img alt="enter image description here" src="https://i.stack.imgur.com/Sr8QA.png"/></p> <p>Since the tangent to the ellipse in the point <span class="math-container" id="10136128" visual_id="1165703"><math alttext="P=(a\cos\theta,b\sin\theta)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is given by: <span class="math-container" id="10136129" visual_id="4294777"><math alttext="P+\lambda(-a\sin\theta,b\cos\theta)," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></semantics></math></span> by solving: <span class="math-container" id="10136130" visual_id="4294778"><math alttext="a^{2}(\cos\theta-\lambda\sin\theta)^{2}+b^{2}(\sin\theta+\lambda\cos\theta)^{2% }=a^{2}+b^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>-</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>+</mo><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>=</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mrow></semantics></math></span>  with respect to <span class="math-container" id="10136131" visual_id="664"><math alttext="\lambda" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi></semantics></math></span> we find two vertices of a circumscribed rectangle associated with <span class="math-container" id="10136132" visual_id="318"><math alttext="P" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi></semantics></math></span> (and the other two vertices are simply given by the symmetric with respect to the origin). Now our min/max problem depends just on <span class="math-container" id="10136133" visual_id="206"><math alttext="\theta" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="2181615"> Thanks for the hint. Can you prove the first statement: "The locus of points that see an ellipse under a right angle is a circle having radius ..." </td></tr><tr><td comment_id="2181625"> @mathlearner: it is a consequence of Poncelet's porism, but it can be proved also by imposing that the tangent lines in <span class="math-container" id="10136134" visual_id="4294779"><math alttext="P_{\theta}=(a\cos\theta,b\sin\theta)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>θ</mi></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo>,</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> and <span class="math-container" id="10136135" visual_id="3199513"><math alttext="Q_{\varphi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mi>φ</mi></msub></semantics></math></span> are orthogonal, with some calculations. </td></tr><tr><td comment_id="2181631"> Would you mind going in some more detail with the proof using Poncelet? </td></tr><tr><td comment_id="2181643"> @mathlearner: Poncelet's lemma gives that an <span class="math-container" id="10136144" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>-agon is inscribed in a conic <span class="math-container" id="10136142" visual_id="92690"><math alttext="\Gamma_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mn>1</mn></msub></semantics></math></span> and circumscribed to a conic <span class="math-container" id="10136141" visual_id="92691"><math alttext="\Gamma_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mn>2</mn></msub></semantics></math></span>, then starting from any point <span class="math-container" id="10136139" visual_id="4535"><math alttext="P_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mn>1</mn></msub></semantics></math></span> in <span class="math-container" id="10136142" visual_id="92690"><math alttext="\Gamma_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mn>1</mn></msub></semantics></math></span>, drawing a tangent to <span class="math-container" id="10136141" visual_id="92691"><math alttext="\Gamma_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mn>2</mn></msub></semantics></math></span> until intersecting <span class="math-container" id="10136142" visual_id="92690"><math alttext="\Gamma_{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Γ</mi><mn>1</mn></msub></semantics></math></span> in <span class="math-container" id="10136143" visual_id="4533"><math alttext="P_{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mn>2</mn></msub></semantics></math></span> and so on, the path closes and gives a <span class="math-container" id="10136144" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span>-agon. This is just the case <span class="math-container" id="10136145" visual_id="351"><math alttext="n=4" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></semantics></math></span>: it is sufficient to consider the circumscribed rectangle through the vertices of the ellipse. </td></tr><tr><td comment_id="2181685"> I didn't quite get that, could you please try to re-explain it? </td></tr><tr><td comment_id="2181688"> @mathlearner: http://mathworld.wolfram.com/PonceletsPorism.html </td></tr><tr><td comment_id="2181932"> @m<span class="math-container" id="20160705">a</span>thlearner: see also http://math.stackexchange.com/questions/33520/the-locus-of-two-perpendicular-tangents-to-a-given-ellipse (in particular Henry's answer). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="33520"> The locus of the intersection point of two perpendicular tangents to a given ellipse </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Sard's theorem for absolutely continuous function</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Sard's theorem for absolutely continuous function </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="354745">
+<p>Can anyone help me proving Sard's theorem where <span class="math-container" id="3794966" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> is a real valued absolutely continuous function on <span class="math-container" id="3794967" visual_id="3186"><math alttext="[a,b]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></semantics></math></span> that is to prove <span class="math-container" id="3794968" visual_id="4718"><math alttext="f(A)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is measure zero where <span class="math-container" id="3794969" visual_id="1465094"><math alttext="A=\{x\in[a,b]\ |\ f^{\prime}(x)=0\}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo rspace="7.5pt" stretchy="false">]</mo></mrow></mrow><mo rspace="7.5pt" stretchy="false">|</mo><mrow><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo stretchy="false">}</mo></mrow></mrow></semantics></math></span>  I need to use the definition of absolute continuity of real functions using estimates on sum and possibly properties like <span class="math-container" id="3794970" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span> being differentiable a.e , <span class="math-container" id="3794971" visual_id="893505"><math alttext="f^{\prime}\in L^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>∈</mo><msup><mi>L</mi><mn>1</mn></msup></mrow></semantics></math></span> and validity of fundamental theorem of calculus. I can't figure out ways to replicate or generalize the proof for continuously differentiable functions. </p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> real-analysis </span><span> measure-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="763012"> Do you know [Vitali's covering lemma](http://en.wikipedia.org/wiki/Vitali_covering_lemma#Vitali.27s_covering_theorem_for_the_Lebesgue_measure)? That allows you to almost cover <span class="math-container" id="3794980" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> by a finite collection of disjoint open intervals (the difference is a set of arbitrarily small measure). </td></tr><tr><td comment_id="763270"> @WillieWong Thanks! I got it... </td></tr><tr><td comment_id="764739"> Great! I highly encourage you to write up your solution and post it below. So other visitors can benefit too! </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="363208" id="answer">
+<p>Well its kind of weird to answer my own question but this is due to the visitors as pointed out by Willie Wong.  We can see here that for <span class="math-container" id="3794973" visual_id="1839"><math alttext="x\in A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>A</mi></mrow></semantics></math></span> there exists <span class="math-container" id="3794974" visual_id="191877"><math alttext="h_{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mi>x</mi></msub></semantics></math></span> such that <span class="math-container" id="3794975" visual_id="1465095"><math alttext="|f(y)-f(x)|\leq\epsilon|y-x|" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mi>ϵ</mi><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mrow><mi>y</mi><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow></semantics></math></span> for all <span class="math-container" id="3794976" visual_id="1465096"><math alttext="y\in[x,x+h_{x}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mrow><mi>x</mi><mo>+</mo><msub><mi>h</mi><mi>x</mi></msub></mrow><mo stretchy="false">]</mo></mrow></mrow></semantics></math></span>. We can show all such <span class="math-container" id="3794977" visual_id="1465097"><math alttext="[x,x+h_{x}]" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mrow><mi>x</mi><mo>+</mo><msub><mi>h</mi><mi>x</mi></msub></mrow><mo stretchy="false">]</mo></mrow></semantics></math></span> form a Vitali covering of <span class="math-container" id="3794978" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span>. So we have finitely many disjoint intervals <span class="math-container" id="3794979" visual_id="243581"><math alttext="I_{1},...,I_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>I</mi><mi>k</mi></msub></mrow></semantics></math></span> whose combined measure has very small difference with <span class="math-container" id="3794980" visual_id="188"><math alttext="A" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi></semantics></math></span> . So I estimate <span class="math-container" id="3794981" visual_id="1465098"><math alttext="\lambda(f(A))\leq\lambda(f(\cup_{k}I_{k}))+\lambda(f(A\setminus\cup_{k}I_{k}))" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mrow><mo stretchy="false">(</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>≤</mo><mi>λ</mi><mrow><mo stretchy="false">(</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><msub><mo>∪</mo><mi>k</mi></msub><msub><mi>I</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi>λ</mi><mrow><mo stretchy="false">(</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>∖</mo><msub><mo>∪</mo><mi>k</mi></msub><msub><mi>I</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> We can estimate both seperately where first one is obvious and second one by containing the set in a open set with small measure and using fundamental theorem of calculus and uniform integrability as for AC functions <span class="math-container" id="3794982" visual_id="893505"><math alttext="f^{\prime}\in L^{1}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>∈</mo><msup><mi>L</mi><mn>1</mn></msup></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

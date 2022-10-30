@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Solving for coefficients of a polynomial in terms of roots of another</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Solving for coefficients of a polynomial in terms of roots of another </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="543083">
+<p>This was a homework assignment a while back (already turned in) that I'm not totally sure how to approach. I think it might be simple but I can't wrap my mind around it. If someone could give me a tip that would be great.</p> <p>I'm given a polynomial <span class="math-container" id="5637722" visual_id="1614271"><math alttext="f=x^{3}+ax^{2}+bx+c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>c</mi></mrow></mrow></semantics></math></span> with roots <span class="math-container" id="5637723" visual_id="219106"><math alttext="\alpha_{1},\alpha_{2},\alpha_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><msub><mi>α</mi><mn>2</mn></msub><mo>,</mo><msub><mi>α</mi><mn>3</mn></msub></mrow></semantics></math></span>. How do I find the coefficients of the following two polynomials, <em>in terms of a,b, and c</em>:</p> <ol> <li>the monic cubic with roots <span class="math-container" id="5637724" visual_id="1614272"><math alttext="\alpha_{1}^{2},\alpha_{2}^{2},\alpha_{3}^{2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>α</mi><mn>1</mn><mn>2</mn></msubsup><mo>,</mo><msubsup><mi>α</mi><mn>2</mn><mn>2</mn></msubsup><mo>,</mo><msubsup><mi>α</mi><mn>3</mn><mn>2</mn></msubsup></mrow></semantics></math></span></li> <li>the monic cubic with roots <span class="math-container" id="5637725" visual_id="1614273"><math alttext="\alpha_{1}+\alpha_{2},\alpha_{1}+\alpha_{3},\alpha_{2}+\alpha_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>+</mo><msub><mi>α</mi><mn>2</mn></msub></mrow><mo>,</mo><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>+</mo><msub><mi>α</mi><mn>3</mn></msub></mrow><mo>,</mo><mrow><msub><mi>α</mi><mn>2</mn></msub><mo>+</mo><msub><mi>α</mi><mn>3</mn></msub></mrow></mrow></semantics></math></span></li> </ol> <p>What I know:</p> <p>I understand that by viete's formula, <span class="math-container" id="5637726" visual_id="1614274"><math alttext="a=\alpha_{1}+\alpha_{2}+\alpha_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>+</mo><msub><mi>α</mi><mn>2</mn></msub><mo>+</mo><msub><mi>α</mi><mn>3</mn></msub></mrow></mrow></semantics></math></span>, <span class="math-container" id="5637727" visual_id="1614275"><math alttext="b=\alpha_{1}\alpha_{2}+\alpha_{1}\alpha_{3}+\alpha_{2}\alpha_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mrow><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>α</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>α</mi><mn>3</mn></msub></mrow><mo>+</mo><mrow><msub><mi>α</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>α</mi><mn>3</mn></msub></mrow></mrow></mrow></semantics></math></span>, and <span class="math-container" id="5637728" visual_id="1614276"><math alttext="c=\alpha_{1}\alpha_{2}\alpha_{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>α</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>α</mi><mn>3</mn></msub></mrow></mrow></semantics></math></span>.  But is there an elegant way to solve for the relationship between the coefficients for (1) and (2) using the coefficients of <span class="math-container" id="5637729" visual_id="1"><math alttext="f" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi></semantics></math></span>? It seems resistant to a clean solution, since the relationship isn't necessarily linear.</p> <p>Cheers.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> abstract-algebra </span><span> field-theory </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="543098" id="answer">
+<p>Hint: <span class="math-container" id="5637730" visual_id="1614277"><math alttext="\alpha_{1}^{2}+\alpha_{2}^{2}+\alpha_{3}^{2}=(\alpha_{1}+\alpha_{2}+\alpha_{3}% )^{2}-2(\alpha_{1}\alpha_{2}+\alpha_{1}\alpha_{3}+\alpha_{2}\alpha_{3})=a^{2}-2b" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mi>α</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>α</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>α</mi><mn>3</mn><mn>2</mn></msubsup></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>+</mo><msub><mi>α</mi><mn>2</mn></msub><mo>+</mo><msub><mi>α</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>α</mi><mn>2</mn></msub></mrow><mo>+</mo><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>α</mi><mn>3</mn></msub></mrow><mo>+</mo><mrow><msub><mi>α</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>α</mi><mn>3</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>b</mi></mrow></mrow></mrow></semantics></math></span>; there's one of the coefficients for the first polynomial you want. By the way, your formulas for the coefficients are missing some minus signs.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

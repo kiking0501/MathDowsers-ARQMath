@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Improper Integral:$\int_{0}^{+\infty}\frac{\sin x}{x+\sin x}dx$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Improper Integral:<span class="math-container" id="4025235" visual_id="6578253"><math alttext="\int_{0}^{+\infty}\frac{\sin x}{x+\sin x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mrow><mi>x</mi><mo>+</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="378495">
+<p>I want show that this improper integral convergence: <span class="math-container" id="4025236" visual_id="6578253"><math alttext="\int_{0}^{+\infty}\frac{\sin x}{x+\sin x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mrow><mi>x</mi><mo>+</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> please help me.  </p>
+</div>
+<hr/>
+<div id="tags">
+<span> calculus </span><span> integration </span><span> improper-integrals </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="810606"> Different ways how to do it. Please observe that as a limit for x→0 the function is defined. So as a definite integral from, say (0,1] the integral is convergent. From (1,→), perform integration by parts. You then get behind the integral sign a (x+sinx)² in the denominator. Using Comparison theorem you can find that these integrals are convergent because x+sinx is greater than 0.5x </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="570061" id="answer">
+<p>The integral can be compared to the convergent integral <span class="math-container" id="4025279" visual_id="248183"><math alttext="\int_{0}^{\infty}{\sin(x)\over x}dx={\pi\over 2}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math></span>.  The difference is given by <span class="math-container" id="4025280" visual_id="6578272"><math alttext="\int_{0}^{\infty}{\sin^{2}(x)\over{x(x+\sin(x))}}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span>, which is absolutely convergent, so the integral converges.</p> <p>The convergence of <span class="math-container" id="4025281" visual_id="219187"><math alttext="\int_{0}^{\infty}{\sin(x)\over x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> is well-known, and can be established by splitting the integral up into integrals of the form <span class="math-container" id="4025282" visual_id="6578273"><math alttext="\int_{2k\pi}^{(2k+2)\pi}{\sin(x)\over x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>π</mi></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>π</mi></mrow></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span>, with <span class="math-container" id="4025283" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> a positive integer.  Each of these integrals has a positive and negative component, and it is clear that <span class="math-container" id="4025284" visual_id="6578274"><math alttext="|{\int_{(2k)\pi}^{(2k+2)\pi}{\sin(x)\over x}dx}|&lt;{2\over{(2k)\pi}}-{2\over{(2k% +1)\pi}}={1\over{k(2k+1)\pi}}\,." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>π</mi></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>π</mi></mrow></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mfrac><mn>2</mn><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>π</mi></mrow></mfrac><mo>-</mo><mfrac><mn>2</mn><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>π</mi></mrow></mfrac></mrow><mo>=</mo><mpadded width="+1.7pt"><mfrac><mn>1</mn><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>π</mi></mrow></mfrac></mpadded></mrow><mo>.</mo></mrow></semantics></math></span>  If the upper bound is not a multiple of <span class="math-container" id="4025285" visual_id="698"><math alttext="2\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></semantics></math></span>, then there will be an additional contribution of <span class="math-container" id="4025286" visual_id="6578275"><math alttext="\int_{2n\pi}^{R+2n\pi}{\sin(x)\over x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow><mrow><mi>R</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow></mrow></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span>, with <span class="math-container" id="4025287" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> the last positive integer for which the upper limit is smaller than <span class="math-container" id="4025288" visual_id="116478"><math alttext="2\pi n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>n</mi></mrow></semantics></math></span> and <span class="math-container" id="4025289" visual_id="277"><math alttext="R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi></semantics></math></span> smaller than <span class="math-container" id="4025290" visual_id="698"><math alttext="2\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></semantics></math></span>, but this integral is clearly less than <span class="math-container" id="4025291" visual_id="6578276"><math alttext="R\over{2n\pi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>R</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow></mfrac></semantics></math></span>.  The integral <span class="math-container" id="4025292" visual_id="6578277"><math alttext="\int_{0}^{R+2n\pi}{\sin(x)\over x}dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mrow><mi>R</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow></mrow></msubsup><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> is therefore smaller than <span class="math-container" id="4025293" visual_id="6578278"><math alttext="2\pi+\sum_{k=1}^{n}{1\over{k(2k+1)\pi}}+{R\over{2n\pi}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mo>+</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mn>1</mn><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>π</mi></mrow></mfrac></mrow><mo>+</mo><mfrac><mi>R</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>π</mi></mrow></mfrac></mrow></semantics></math></span>, with the <span class="math-container" id="4025294" visual_id="698"><math alttext="2\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></semantics></math></span> coming from the region from <span class="math-container" id="4025295" visual_id="2056"><math alttext="x=0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math></span> to <span class="math-container" id="4025296" visual_id="281627"><math alttext="x=2\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mrow></semantics></math></span>.  Since the sum is convergent as <span class="math-container" id="4025297" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> tends to <span class="math-container" id="4025298" visual_id="2076"><math alttext="\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">∞</mi></semantics></math></span> (limit comparison to the <span class="math-container" id="4025299" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span>-series with <span class="math-container" id="4025300" visual_id="656"><math alttext="p=2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>2</mn></mrow></semantics></math></span>) and the additional piece tends to zero in this limit, we can say for sure that this integral converges.  Showing that it is equal to <span class="math-container" id="4025301" visual_id="3713"><math alttext="\pi\over 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>π</mi><mn>2</mn></mfrac></semantics></math></span> is a different matter, but it can be done in multiple ways (contour integration and relation to the Gamma function are the two that come to mind, but I am sure there are others).  </p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="378547"> Evaluating <span class="math-container" id="4025649" visual_id="42254"><math alttext="\int_{0}^{\infty}\text{sinc}^{m}(x)dx" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mtext>sinc</mtext><mi>m</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">𝑑</mo><mi>x</mi></mrow></mrow></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Limit of $\prod_{i=1}^{k} i^{2^{-(i-1)}}$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Limit of <span class="math-container" id="7988581" visual_id="3861408"><math alttext="\prod_{i=1}^{k}i^{2^{-(i-1)}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><msup><mi>i</mi><msup><mn>2</mn><mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mi>i</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></msup></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="815192">
+<p>Consider the expression <span class="math-container" id="7988582" visual_id="3861409"><math alttext="P_{n}=\sqrt{2\sqrt{3\sqrt{4\sqrt{\ldots\sqrt{n}}}}},n\geq 2." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>=</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><msqrt><mrow><mn>3</mn><mo>⁢</mo><msqrt><mrow><mn>4</mn><mo>⁢</mo><msqrt><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><msqrt><mi>n</mi></msqrt></mrow></msqrt></mrow></msqrt></mrow></msqrt></mrow></msqrt></mrow><mo>,</mo><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow></mrow><mo>.</mo></mrow></semantics></math></span> I was trying to show that <span class="math-container" id="7988583" visual_id="3861410"><math alttext="P_{n}&lt;3,\,\forall n\geq 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>&lt;</mo><mn>3</mn></mrow><mo rspace="4.2pt">,</mo><mrow><mrow><mo>∀</mo><mi>n</mi></mrow><mo>≥</mo><mn>2</mn></mrow></mrow></semantics></math></span> (it's an old Putnam contest question) via induction, but I think the more interesting question is if we can find a closed form expression for the actual limit. Numerically, it seems that the answer is <span class="math-container" id="7988584" visual_id="3861411"><math alttext="2.7612..." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.7612</mn><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></semantics></math></span>.</p> <p>Define the sequence <span class="math-container" id="7988585" visual_id="3861412"><math alttext="a_{n}=n^{2^{-(n-1)}},n\geq 2" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msup><mi>n</mi><msup><mn>2</mn><mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></msup></mrow><mo>,</mo><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow></mrow></semantics></math></span>. Hence <span class="math-container" id="7988586" visual_id="3861413"><math alttext="a_{2}=2^{1/2}=\sqrt{2},a_{3}=3^{1/4}=\sqrt{\sqrt{3}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>=</mo><msup><mn>2</mn><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>=</mo><msqrt><mn>2</mn></msqrt></mrow><mo>,</mo><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>=</mo><msup><mn>3</mn><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></msup><mo>=</mo><msqrt><msqrt><mn>3</mn></msqrt></msqrt></mrow></mrow></semantics></math></span> and so on. Clearly, <span class="math-container" id="7988587" visual_id="2733"><math alttext="a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub></semantics></math></span> is decreasing and approaches <span class="math-container" id="7988588" visual_id="342"><math alttext="1" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn></semantics></math></span> in the limit. It seems that <span class="math-container" id="7988589" visual_id="3861414"><math alttext="P_{n}=\prod_{k=2}^{n}k^{2^{-(k-1)}}=\prod_{k=2}^{n}a_{k}\stackrel{{% \scriptstyle\qvar@construct{}}}{{=}}P_{n-1}a_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><msup><mn>2</mn><mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></msup></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><mi>n</mi></munderover><msub><mi>a</mi><mi>k</mi></msub></mrow><mover><mo movablelimits="false">=</mo><mi mathcolor="red" mathvariant="italic">qvar_</mi></mover><mrow><msub><mi>P</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow></semantics></math></span> How should one take it further from here to obtain <span class="math-container" id="7988590" visual_id="252562"><math alttext="\lim_{n\to\infty}P_{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><msub><mi>P</mi><mi>n</mi></msub></mrow></semantics></math></span>?</p>
+</div>
+<hr/>
+<div id="tags">
+<span> sequences-and-series </span><span> limits </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="1684848"> This is the square of [Somos' quadratic recurrence constant](http://en.wikipedia.org/wiki/Somos'_quadratic_recurrence_constant). </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="815203" id="answer">
+<p>Let <span class="math-container" id="7988591" visual_id="4790"><math alttext="P_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>k</mi></msub></semantics></math></span> be the product in question.  Then</p> <p><span class="math-container" id="7988592" visual_id="3861415"><math alttext="\log{P_{k}}=\sum_{i=1}^{k}\frac{\log{i}}{2^{i-1}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>log</mi><mo>⁡</mo><msub><mi>P</mi><mi>k</mi></msub></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mfrac><mrow><mi>log</mi><mo>⁡</mo><mi>i</mi></mrow><msup><mn>2</mn><mrow><mi>i</mi><mo>-</mo><mn>1</mn></mrow></msup></mfrac></mrow></mrow></semantics></math></span></p> <p>The sum converges as <span class="math-container" id="7988593" visual_id="431"><math alttext="k\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span>, but not to a familiar constant.</p> <p>I can prove the inequality by first observing that the sequence <span class="math-container" id="7988594" visual_id="3861416"><math alttext="\log{P_{k}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><msub><mi>P</mi><mi>k</mi></msub></mrow></semantics></math></span> and hence, <span class="math-container" id="7988595" visual_id="4790"><math alttext="P_{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>k</mi></msub></semantics></math></span>, increases monotonically.  Therefore <span class="math-container" id="7988596" visual_id="3861416"><math alttext="\log{P_{k}}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>log</mi><mo>⁡</mo><msub><mi>P</mi><mi>k</mi></msub></mrow></semantics></math></span> is bounded by the limit as <span class="math-container" id="7988597" visual_id="431"><math alttext="k\to\infty" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></semantics></math></span> for all <span class="math-container" id="7988598" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>.</p> <p>Also note that log is a concave function; therefore, the sum satisfies <a href="http://en.wikipedia.org/wiki/Jensen%27s_inequality" rel="nofollow">Jensen's inequality</a> as follows:</p> <p><span class="math-container" id="7988599" visual_id="3861417"><math alttext="\log{P_{k}}=\sum_{i=1}^{k}\frac{\log{i}}{2^{i-1}}=\sum_{i=2}^{k}\frac{\log{i}}% {2^{i-1}}\leq\log{\left[\sum_{i=2}^{k}\frac{i}{2^{i-1}}\right]}=\log{3}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>log</mi><mo>⁡</mo><msub><mi>P</mi><mi>k</mi></msub></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mfrac><mrow><mi>log</mi><mo>⁡</mo><mi>i</mi></mrow><msup><mn>2</mn><mrow><mi>i</mi><mo>-</mo><mn>1</mn></mrow></msup></mfrac></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><mi>k</mi></munderover><mfrac><mrow><mi>log</mi><mo>⁡</mo><mi>i</mi></mrow><msup><mn>2</mn><mrow><mi>i</mi><mo>-</mo><mn>1</mn></mrow></msup></mfrac></mrow><mo>≤</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>[</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><mi>k</mi></munderover><mfrac><mi>i</mi><msup><mn>2</mn><mrow><mi>i</mi><mo>-</mo><mn>1</mn></mrow></msup></mfrac></mrow><mo>]</mo></mrow></mrow><mo>=</mo><mrow><mi>log</mi><mo>⁡</mo><mn>3</mn></mrow></mrow></semantics></math></span></p> <p>Therefore <span class="math-container" id="7988600" visual_id="3861418"><math alttext="P_{k}\leq 3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>k</mi></msub><mo>≤</mo><mn>3</mn></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="1684782"> If <span class="math-container" id="7988601" visual_id="3861419"><math alttext="Li_{n}(z)=\sum_{k=1}^{\infty}z^{k}/k^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><msub><mi>i</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mi>z</mi><mi>k</mi></msup><mo>/</mo><msup><mi>k</mi><mi>n</mi></msup></mrow></mrow></mrow></semantics></math></span> denotes the polylogarithm function, and <span class="math-container" id="7988602" visual_id="3861420"><math alttext="M(n,z)=\frac{\partial}{\partial n}Li_{n}(z)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>M</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>n</mi></mrow></mfrac><mo>⁢</mo><mi>L</mi><mo>⁢</mo><msub><mi>i</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>, then <span class="math-container" id="7988603" visual_id="3861421"><math alttext="\lim_{k\to\infty}\log P_{k}=-2M(0,\frac{1}{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>k</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mi>log</mi><mo>⁡</mo><msub><mi>P</mi><mi>k</mi></msub></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>M</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span>. That's sort of a closed form... </td></tr><tr><td comment_id="1684790"> @GregMartin: I never said there was no closed form, I just said it wasn't in terms of a familiar constant.  I meant, <span class="math-container" id="7988604" visual_id="1294"><math alttext="\pi" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi></semantics></math></span>, <span class="math-container" id="7988605" visual_id="1073"><math alttext="e" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi></semantics></math></span>, <span class="math-container" id="7988606" visual_id="485"><math alttext="\gamma" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi></semantics></math></span>, and the like. </td></tr><tr><td comment_id="1684807"> That's more or less what I ended up with in proving the "<span class="math-container" id="7988607" visual_id="1031995"><math alttext="&lt;3" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi></mi><mo>&lt;</mo><mn>3</mn></mrow></semantics></math></span>" part; I was hoping that the limit is some constant that may have popped out in other kind of similar problems. </td></tr><tr><td comment_id="1684855"> The question is about how to obtain the limit, as opposed to simply showing &lt;3. </td></tr><tr><td comment_id="1687480"> @CalvinLin: I did answer the OP in telling him that the limit had, as far as I know, no well-known constants.  The whole inequality thing was just an aside. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

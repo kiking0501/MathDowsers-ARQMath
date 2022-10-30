@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Explain in simple terms : $P \to (Q \lor R) $ is equivalent to $P \land\lnot Q \to R$</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Explain in simple terms : <span class="math-container" id="25078404" visual_id="1129153"><math alttext="P\to(Q\lor R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Q</mi><mo>∨</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is equivalent to <span class="math-container" id="25078405" visual_id="7225945"><math alttext="P\land\lnot Q\to R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>Q</mi></mrow></mrow><mo>→</mo><mi>R</mi></mrow></semantics></math></span> </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2717115">
+<p>Can any body explain the logical statement in common terms:</p> <p><span class="math-container" id="25078406" visual_id="7225946"><math alttext="P\to(Q\lor R)~{}~{}\iff~{}~{}(P\land\lnot Q)\to R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Q</mi><mo>∨</mo><mi>R</mi></mrow><mo rspace="9.1pt" stretchy="false">)</mo></mrow></mrow><mo rspace="9.1pt">⇔</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>Q</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>R</mi></mrow></mrow></semantics></math></span></p> <ul> <li><span class="math-container" id="25078407" visual_id="16516"><math alttext="\lnot" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">¬</mi></semantics></math></span> negation ("not")</li> <li><span class="math-container" id="25078408" visual_id="23170"><math alttext="\land" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∧</mo></semantics></math></span> conjunction ("and")</li> <li><span class="math-container" id="25078409" visual_id="1189"><math alttext="\lor" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∨</mo></semantics></math></span> disjunction ("or")</li> <li><span class="math-container" id="25078410" visual_id="7792"><math alttext="\to" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo></semantics></math></span> condition ("implies")</li> <li><span class="math-container" id="25078411" visual_id="1183"><math alttext="\iff" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇔</mo></semantics></math></span> logical equivalence ("if and only if")</li> </ul>
+</div>
+<hr/>
+<div id="tags">
+<span> logic </span><span> propositional-calculus </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="5609356"> Does Q' mean Q is not real? </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2719453" id="answer">
+<p>You can get this from two simple equivalences:</p> <ol> <li><p><span class="math-container" id="25078469" visual_id="7225954"><math alttext="P\vee Q\Leftrightarrow\neg P\rightarrow Q" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>P</mi><mo>∨</mo><mi>Q</mi></mrow><mo>⇔</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>P</mi></mrow><mo>→</mo><mi>Q</mi></mrow></mrow></semantics></math></span></p></li> <li><p><span class="math-container" id="25078470" visual_id="7225955"><math alttext="(P\wedge Q)\rightarrow R\Leftrightarrow P\rightarrow(Q\rightarrow R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>P</mi><mo>∧</mo><mi>Q</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>R</mi><mo>⇔</mo><mi>P</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi>Q</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span></p></li> </ol> <p>Here <span class="math-container" id="25078471" visual_id="2321216"><math alttext="(P\wedge\neg Q)\rightarrow R" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>Q</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>→</mo><mi>R</mi></mrow></semantics></math></span> is equivalent (by 2) to <span class="math-container" id="25078472" visual_id="7225956"><math alttext="P\rightarrow(\neg Q\rightarrow R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">¬</mi><mi>Q</mi><mo>→</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is equivalent (by 1) to <span class="math-container" id="25078473" visual_id="1129153"><math alttext="P\rightarrow(Q\vee R)" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>→</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Q</mi><mo>∨</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

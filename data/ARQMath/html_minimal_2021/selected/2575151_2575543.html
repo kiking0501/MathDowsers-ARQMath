@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>The multiplicative property of the Sobolev spaces.</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> The multiplicative property of the Sobolev spaces. </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="2575151">
+<p>For every <span class="math-container" id="23805280" visual_id="21601"><math alttext="s\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span>, let us define <span class="math-container" id="23805281" visual_id="3661806"><math alttext="H^{s}(\mathbb{R}^{n})=\{u\in S^{\prime}(\mathbb{R}^{n}):(1+|\xi|^{2})^{s/2}% \hat{u}\in L^{2}(\mathbb{R}^{n})\}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><msup><mi>H</mi><mi>s</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>u</mi><mo>∈</mo><mrow><msup><mi>S</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>:</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mrow><mo stretchy="false">|</mo><mi>ξ</mi><mo stretchy="false">|</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>s</mi><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mover accent="true"><mi>u</mi><mo stretchy="false">^</mo></mover></mrow><mo>∈</mo><mrow><msup><mi>L</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow></semantics></math></span> where <span class="math-container" id="23805282" visual_id="3381096"><math alttext="S^{\prime}(\mathbb{R}^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> is the space of all tempered distributions on <span class="math-container" id="23805283" visual_id="1662"><math alttext="\mathbb{R}^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup></semantics></math></span>.</p> <p>I want to prove that if <span class="math-container" id="23805284" visual_id="54228"><math alttext="u\in H^{s}(\mathbb{R}^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∈</mo><mrow><msup><mi>H</mi><mi>s</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and <span class="math-container" id="23805285" visual_id="3381087"><math alttext="\phi\in S(\mathbb{R}^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>∈</mo><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> (space of rapidly decreasing functions), then <span class="math-container" id="23805286" visual_id="3661807"><math alttext="\phi u\in H^{s}(\mathbb{R}^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mi>u</mi></mrow><mo>∈</mo><mrow><msup><mi>H</mi><mi>s</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>.</p> <p>I know that I should apply an approximation argument (because of the density of <span class="math-container" id="23805287" visual_id="1051343"><math alttext="S(\mathbb{R}^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span> in <span class="math-container" id="23805288" visual_id="54248"><math alttext="H^{s}(\mathbb{R}^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>H</mi><mi>s</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>). So, suppose that <span class="math-container" id="23805289" visual_id="334068"><math alttext="u\in S(\mathbb{R}^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>∈</mo><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>. Then, <span class="math-container" id="23805290" visual_id="3661808"><math alttext="\widehat{(u\phi)}=\hat{u}*\hat{\phi}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mo stretchy="false">(</mo><mrow><mi>u</mi><mo>⁢</mo><mi>ϕ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>^</mo></mover><mo>=</mo><mrow><mover accent="true"><mi>u</mi><mo stretchy="false">^</mo></mover><mo>*</mo><mover accent="true"><mi>ϕ</mi><mo stretchy="false">^</mo></mover></mrow></mrow></semantics></math></span>. </p> <p>How can I proceed in order to show that <span class="math-container" id="23805291" visual_id="3661809"><math alttext="(1+|\xi|^{2})^{s/2}(\hat{u}*\hat{\phi})\in L^{2}(\mathbb{R}^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mrow><mo stretchy="false">|</mo><mi>ξ</mi><mo stretchy="false">|</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>s</mi><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mover accent="true"><mi>u</mi><mo stretchy="false">^</mo></mover><mo>*</mo><mover accent="true"><mi>ϕ</mi><mo stretchy="false">^</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><msup><mi>L</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span>?</p> <p>Than you.</p>
+</div>
+<hr/>
+<div id="tags">
+<span> functional-analysis </span><span> sobolev-spaces </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="2575543" id="answer">
+<p>They key ingredient is Peetre's inequality, which states that for any <span class="math-container" id="23805292" visual_id="21601"><math alttext="s\in\mathbb{R}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math></span> and <span class="math-container" id="23805293" visual_id="3661810"><math alttext="\xi,\eta\in\mathbb{R}^{n}," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi>ξ</mi><mo>,</mo><mi>η</mi></mrow><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><mo>,</mo></mrow></semantics></math></span> we have,</p> <p><span class="math-container" id="23805294" visual_id="3661811"><math alttext="(1+|\xi|^{2})^{s}\leq 2^{|s|}(1+|\xi-\eta|^{2})^{|s|}(|1+|\eta|^{2})^{s}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mo stretchy="false">|</mo><mi>ξ</mi><msup><mo stretchy="false">|</mo><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mi>s</mi></msup><mo>≤</mo><msup><mn>2</mn><mrow><mo stretchy="false">|</mo><mi>s</mi><mo stretchy="false">|</mo></mrow></msup><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mo stretchy="false">|</mo><mi>ξ</mi><mo>-</mo><mi>η</mi><msup><mo stretchy="false">|</mo><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mrow><mo stretchy="false">|</mo><mi>s</mi><mo stretchy="false">|</mo></mrow></msup><msup><mrow><mo stretchy="false">(</mo><mo stretchy="false">|</mo><mn>1</mn><mo>+</mo><mo stretchy="false">|</mo><mi>η</mi><msup><mo stretchy="false">|</mo><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><mi>s</mi></msup><mo>.</mo></mrow></semantics></math></span></p> <p>I will omit the details of the proof, but the idea is to note that <span class="math-container" id="23805295" visual_id="3661812"><math alttext="1+|\xi+\eta|^{2}\leq 2(1+|\xi|^{2})(1+|\eta|^{2})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><msup><mrow><mo stretchy="false">|</mo><mrow><mi>ξ</mi><mo>+</mo><mi>η</mi></mrow><mo stretchy="false">|</mo></mrow><mn>2</mn></msup></mrow><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mrow><mo stretchy="false">|</mo><mi>ξ</mi><mo stretchy="false">|</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mrow><mo stretchy="false">|</mo><mi>η</mi><mo stretchy="false">|</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></semantics></math></span> and take powers, treating the cases <span class="math-container" id="23805296" visual_id="4869"><math alttext="s&gt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math></span> and <span class="math-container" id="23805297" visual_id="42498"><math alttext="s&lt;0" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math></span> separately.</p> <p>We will also use Young's convolution inequality, which states that for <span class="math-container" id="23805298" visual_id="1135551"><math alttext="f\in L^{p}(\mathbb{R}^{n}),g\in L^{q}(\mathbb{R}^{n})" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>f</mi><mo>∈</mo><mrow><msup><mi>L</mi><mi>p</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mi>g</mi><mo>∈</mo><mrow><msup><mi>L</mi><mi>q</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></semantics></math></span> such that <span class="math-container" id="23805299" visual_id="3661813"><math alttext="\frac{1}{p}+\frac{1}{q}=\frac{1}{r}+1," class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>q</mi></mfrac></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>+</mo><mn>1</mn></mrow></mrow><mo>,</mo></mrow></semantics></math></span></p> <p><span class="math-container" id="23805300" visual_id="3661814"><math alttext="\lVert f\ast g\rVert_{L^{r}(\mathbb{R}^{n})}\leq\lVert f\rVert_{L^{p}(\mathbb{% R}^{n})}\lVert g\rVert_{L^{q}(\mathbb{R}^{n})}." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mrow><mo fence="true" stretchy="false">∥</mo><mrow><mi>f</mi><mo>∗</mo><mi>g</mi></mrow><mo fence="true" stretchy="false">∥</mo></mrow><mrow><msup><mi>L</mi><mi>r</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></msub><mo>≤</mo><mrow><msub><mrow><mo fence="true" stretchy="false">∥</mo><mi>f</mi><mo fence="true" stretchy="false">∥</mo></mrow><mrow><msup><mi>L</mi><mi>p</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></msub><mo>⁢</mo><msub><mrow><mo fence="true" stretchy="false">∥</mo><mi>g</mi><mo fence="true" stretchy="false">∥</mo></mrow><mrow><msup><mi>L</mi><mi>q</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></msub></mrow></mrow><mo>.</mo></mrow></semantics></math></span> </p> <p>Using Peetre, we obtain a pointwise estimate,</p> <p>\begin{align} (1+|\xi|^2)^{s/2} |(\hat u \ast \hat \phi)(\xi)| &amp;\leq \int_{\mathbb R^n} (1+|\xi|^2)^{s/2} |\hat u(\eta)||\hat\phi(\xi-\eta)| \,\mathrm{d}\eta \\ &amp;\leq 2^{|s|/2}  \int_{\mathbb R^n}\left((1+|\eta|^2)^{s/2}\hat u(\eta)\right)\left((1+|\xi-\eta|^2)^{|s|/2}\hat\phi(\xi-\eta)\right) \,\mathrm{d}\eta \\ &amp;\leq 2^{|s|/2} ((1+|\cdot|^2)^{s/2}\hat u) \ast ((1+|\cdot|^2)^{|s|/2}\hat \phi)(\xi) \end{align}</p> <p>Hence by Young,</p> <p>\begin{align} \lVert (1+|\xi|^2)^{s/2}(\hat u \ast \hat \phi)(\xi)\rVert_{L^2(\mathbb R^n)} &amp;\leq 2^{|s|/2} \lVert (1+|\xi|^2)^{s/2}\hat u(\xi)\rVert_{L^2(\mathbb R^n)}\lVert(1+|\xi|^2)^{|s|/2}\hat \phi(\xi)\rVert_{L^2(\mathbb R^n)}, \end{align}</p> <p>which establishes the required estimate, by noting <span class="math-container" id="23805301" visual_id="3661815"><math alttext="\mathcal{S}(\mathbb{R}^{n})\subset H^{|s|}(\mathbb{R}^{n})." class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒮</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mrow><msup><mi>H</mi><mrow><mo stretchy="false">|</mo><mi>s</mi><mo stretchy="false">|</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></semantics></math></span></p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

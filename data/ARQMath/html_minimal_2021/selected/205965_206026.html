@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Fast modulo operation</title>
+<link href="https://cdn.sstatic.net/Shared/stacks.css?v=079c5e1603be" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"> </script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<style>
+        .row {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width:50%;
+        }
+        tr {
+          border:1px solid lightgrey;
+        }
+        </style>
+</head>
+<body>
+<div>
+<div class="row" id="question-title">
+<h1> Fast modulo operation </h1>
+<hr/>
+</div>
+<div class="row">
+<div class="question">
+<div id="question" question_id="205965">
+<blockquote> <p><strong>Possible Duplicate:</strong><br/> <a href="https://math.stackexchange.com/questions/26722/calculating-ab-mod-c">calculating <span class="math-container" id="2358138" visual_id="70380"><math alttext="a^{b}\!\mod c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded width="-1.7pt"><msup><mi>a</mi><mi>b</mi></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>c</mi></mpadded></mrow></semantics></math></span></a> </p> </blockquote> <p>I have a number of form:  <span class="math-container" id="2358139" visual_id="5167955"><math alttext="p^{n}+p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>n</mi></msup><mo>+</mo><mi>p</mi></mrow></semantics></math></span>, where <span class="math-container" id="2358140" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> is a prime number and <span class="math-container" id="2358141" visual_id="177"><math alttext="n" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi></semantics></math></span> can be any large number, for example, say  <span class="math-container" id="2358142" visual_id="94871"><math alttext="10^{12}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mn>12</mn></msup></semantics></math></span>. </p> <p>What is the generic algorithm to compute <span class="math-container" id="2358143" visual_id="5167956"><math alttext="(p^{n}+p)\pmod{k}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>p</mi><mi>n</mi></msup><mo>+</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mspace width="veryverythickmathspace"></mspace><mrow><mo lspace="8.1pt" stretchy="false">(</mo><mrow><mo movablelimits="false">mod</mo><mi>k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></semantics></math></span>, where <span class="math-container" id="2358144" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> is a huge number say <span class="math-container" id="2358145" visual_id="5167957"><math alttext="k=1000000007" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1000000007</mn></mrow></semantics></math></span>.</p> <p>Thanks!</p>
+</div>
+<hr/>
+<div id="tags">
+<span> modular-arithmetic </span>
+</div>
+<hr/>
+<div id="question-comments">
+<table>
+<tbody>
+<tr><td comment_id="468316"> Since adding <span class="math-container" id="2358146" visual_id="74"><math alttext="p" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi></semantics></math></span> modulo <span class="math-container" id="2358149" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span> is about as easy as any operation can be, perhaps the generic question is about exponentiating <span class="math-container" id="2358153" visual_id="26708"><math alttext="p^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>n</mi></msup></semantics></math></span> modulo <span class="math-container" id="2358149" visual_id="83"><math alttext="k" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi></semantics></math></span>, a topic dealt with in previous questions. </td></tr><tr><td comment_id="468409"> Possible duplicate: [calculating <span class="math-container" id="2358150" visual_id="11674"><math alttext="a^{b}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>a</mi><mi>b</mi></msup></semantics></math></span> mod <span class="math-container" id="2358151" visual_id="146"><math alttext="c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi></semantics></math></span>](http://math.stackexchange.com/q/26722/3111).  Also two more times since then, [Modular exponentiation?](http://math.stackexchange.com/q/119374/3111) and [how to calculate <span class="math-container" id="2358152" visual_id="438226"><math alttext="f^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mi>x</mi></msup></semantics></math></span> using fast binary exponentiation?](http://math.stackexchange.com/q/91849/3111) </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div class="answer">
+<div answer_id="206026" id="answer">
+<p>As you already know (a+b)mod n = ((a mod n) + (b mod n)) mod n .  So I guess addition here is not a problem.</p> <p>The real question seems to be on <span class="math-container" id="2358153" visual_id="26708"><math alttext="p^{n}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>n</mi></msup></semantics></math></span> mod k  where n is large. For that, have a look at <a href="http://en.wikipedia.org/wiki/Modular_exponentiation" rel="nofollow">Modular Exponentiation</a> on wikipedia.</p>
+</div>
+<hr/>
+<div id="answer-comments">
+<table>
+<tbody>
+<tr><td comment_id="468491"> thank you , i will check it out. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr style="border-top: 3px double #8c8b8b"/>
+</div>
+<div class="row">
+<div id="duplicate">
+<table>
+<tbody>
+<tr><td post_id="26722"> calculating <span class="math-container" id="270732" visual_id="70380"><math alttext="a^{b}\!\mod c" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mpadded width="-1.7pt"><msup><mi>a</mi><mi>b</mi></msup><mo lspace="2.5pt" rspace="2.5pt">mod</mo><mi>c</mi></mpadded></mrow></semantics></math></span> </td></tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div id="related">
+<table>
+<tbody>
+<tr><td post_id="91849"> how to calculate <span class="math-container" id="1047824" visual_id="438226"><math alttext="f^{x}" class="ltx_Math" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mi>x</mi></msup></semantics></math></span> using fast binary exponentiation? </td></tr><tr><td post_id="119374"> Modular exponentiation by repeated squaring </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
