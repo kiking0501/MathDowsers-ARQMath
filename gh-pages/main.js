@@ -74,14 +74,6 @@ function askQuestion(target) {
         topic_id = target.split(",")[1];
     }
 
-    prepareRunSelectionDropdown();
-
-    // Prepare for selection panel: only show dropdown of runs in the proper year
-    $("#runSelection").html("");
-    $("#runSelection-template").find(".run" + arqmath_year).each(function (ind, option) {
-        $("#runSelection").append($(option).clone());
-    })
-
     function getQuestions(callback){
         var name = "task1-topics-" + arqmath_year;
         var formulaSuffix = ((getFormulaDisplayStyle() === "slt")? "-slt" : "");
@@ -121,6 +113,8 @@ function askQuestion(target) {
         writeQuestion(question_data, function(){
             reloadMathJax("qbox-placeholder");
         });
+
+        prepareRunSelectionDropdown(arqmath_year);
     });
 
     function getRandomKey(obj){
@@ -157,7 +151,7 @@ function askQuestion(target) {
         callback();
     }
 
-    function prepareRunSelectionDropdown(){
+    function prepareRunSelectionDropdown(arqmath_year){
         $("#runSelection").html("");
         $("#runSelection-template").find(".run" + arqmath_year).each(function (ind, option) {
             $("#runSelection").append($(option).clone());
@@ -450,6 +444,7 @@ function updateResult(runName, page){
     var rbox = $(".rbox");
     var arqmath_year = rbox.find(".qyear").text();
     var topic_id = rbox.find(".qtopic-id").text();
+    var corpus_year = (runName == "L8_a018" || (arqmath_year == 2022 && runName == "post-duplicate"))? 2022: 2021
 
     getDirectoryManifest(function (str) {
         var lines = str.split('\n');
@@ -485,7 +480,7 @@ function updateResult(runName, page){
                         Math.ceil(topic_results.length / getPageK()).toString()
                 );
 
-                getHtmlFile(directory_list, relevancy_dict, topic_results, page, arqmath_year);
+                getHtmlFile(directory_list, relevancy_dict, topic_results, page, corpus_year);
             });
 
         });
@@ -493,7 +488,7 @@ function updateResult(runName, page){
     });
 }
 
-function getHtmlFile(directory_list, relevancy_dict, topic_results, page, arqmath_year) {
+function getHtmlFile(directory_list, relevancy_dict, topic_results, page, corpus_year) {
 
     var thread2path = {};
     var relevancy_count = [0, 0, 0, 0, 0];
@@ -527,7 +522,7 @@ function getHtmlFile(directory_list, relevancy_dict, topic_results, page, arqmat
 
     } else {
         // Use for UW-CS homepage with all documents available
-        var html_folder = arqmath_year == 2022? "html_minimal_2022/2010-2018" : "html_minimal_2021/2010-2018_3patterns"
+        var html_folder = corpus_year == 2022? "html_minimal_2022/2010-2018" : "html_minimal_2021/2010-2018_3patterns"
         var st = (page - 1) * pageK;
         var et = Math.min(page * pageK, topic_results.length);
 
