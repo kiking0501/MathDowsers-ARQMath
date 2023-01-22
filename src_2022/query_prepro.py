@@ -19,7 +19,7 @@ from config import ARQM_EXPERIMENTS_PATH, TASK_FORMULA_FOLDER_CONFIG, ARQM_TASK1
 import xml.etree.ElementTree as ET
 from utility.dao import dump_json, load_json, sort_topic_ids, sort_formula_ids
 from dao_read_formula_tsv import read_task_formula_tsv
-from dao_replace_formula import create_formula_map, html_latex2slt
+from dao_replace_formula import create_formula_map, html_latex2slt, html_escape
 from tqdm import tqdm
 
 
@@ -131,7 +131,7 @@ def create_task2_topics_slt(year):
             task2_topics[task2_topic_id][k] = _clean_title_html(slt_html)
 
         query_formula_id = task2_topics[task2_topic_id]["Formula_Id"]
-        task2_topics[task2_topic_id]["Query_Formula"] = formulaTSVs["slt"][topic_id][query_formula_id][0]["formula"]
+        task2_topics[task2_topic_id]["Query_Formula"] = html_escape(formulaTSVs["slt"][topic_id][query_formula_id][0]["formula"])
 
     dump_json(task2_topics, TASK2_TOPICS[year].partition('.')[0] + "-slt" + ".json")
 

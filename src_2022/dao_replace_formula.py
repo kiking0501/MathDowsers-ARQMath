@@ -301,3 +301,6 @@ def html_latex2slt(html, thread_id, formulaTSVs, latex2slt_formulas,
         text = str(soup)
 
     return text
+
+def html_escape(text):
+    return str(BeautifulSoup(text, "html.parser"))
