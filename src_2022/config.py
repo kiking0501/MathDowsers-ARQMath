@@ -32,7 +32,7 @@ PKL_PATH = os.path.join(ARQM_PREPRO_PATH, "pkl")
 
 LOG_PATH = os.path.join(SRC_PATH, "log")
 os.makedirs(LOG_PATH, exist_ok=True)
-ARQM_OUTPUT_HTML_FOLDER = os.path.join(STORAGE_ARQM_DATA_PATH, "html_minimal_2022")
+ARQM_OUTPUT_HTML_FOLDER = os.path.join(ARQM_DATA_PATH, "html_minimal_2022")
 ARQM_OUTPUT_HTML_MINIMAL_PATH = os.path.join(ARQM_OUTPUT_HTML_FOLDER, "2010-2018_local")
 # ARQM_OUTPUT_FORMULAS_PATH = os.path.join(ARQM_OUTPUT_HTML_FOLDER, "formulas_2010-2018_local")
 ARQM_FINAL_HTML_MINIMAL_PATH = os.path.join(ARQM_OUTPUT_HTML_FOLDER, "2010-2018_3patterns")
