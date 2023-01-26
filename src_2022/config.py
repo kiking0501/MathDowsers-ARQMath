@@ -10,15 +10,14 @@ STORAGE_DATA_PATH = DATA_PATH
 
 ### raw data
 ARQM_DATA_PATH = os.path.join(DATA_PATH, "ARQMath")
-STORAGE_ARQM_DATA_PATH = ARQM_DATA_PATH
+STORAGE_ARQM_DATA_PATH = os.path.join(ARQM_DATA_PATH, "data-original")
 WIKI_DATA_PATH = os.path.join(DATA_PATH, "Wikipedia")
 
 ARQM_XML_PATH = os.path.join(STORAGE_ARQM_DATA_PATH, "Collections")
 ARQM_FORMULAS_PATH = os.path.join(STORAGE_ARQM_DATA_PATH, "Formulas")
-ARQM_TASK1_PATH = os.path.join(ARQM_DATA_PATH, "Task1")
-ARQM_TASK2_PATH = os.path.join(ARQM_DATA_PATH, "Task2")
-ARQM_THREADS_PATH = os.path.join(ARQM_DATA_PATH, "Thread_Files")
-ARQM_THREADS_YEAR_PATH = os.path.join(ARQM_THREADS_PATH, "Collection_By_Year")
+ARQM_THREADS_YEAR_PATH = os.path.join(STORAGE_ARQM_DATA_PATH, "Thread_Files", "Collection_By_Year")
+ARQM_TASK1_PATH = os.path.join(STORAGE_ARQM_DATA_PATH, "Task1")
+ARQM_TASK2_PATH = os.path.join(STORAGE_ARQM_DATA_PATH, "Task2")
 
 
 ### generated data
