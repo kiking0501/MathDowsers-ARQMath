@@ -20,31 +20,33 @@ from Entity_Parser_Record.user_parser_record import UserParser
 from Entity_Parser_Record.vote_parser_record import VoteParser
 
 from config import DATA_VERSIONS, ARQM_XML_PATH
+from preload import open_possible_gzip
 import os
 
 
 print("reading comments")
-comment_parser = CommentParser.load(
-    os.path.join(ARQM_XML_PATH, DATA_VERSIONS["comment"]))
+with open_possible_gzip(os.path.join(ARQM_XML_PATH, DATA_VERSIONS["comment"])) as f:
+    comment_parser = CommentParser.load(f)
 
 print("reading post links")
-post_link_parser = PostLinkParser.load(
-    os.path.join(ARQM_XML_PATH, DATA_VERSIONS["post_link"]))
+with open_possible_gzip(os.path.join(ARQM_XML_PATH, DATA_VERSIONS["post_link"])) as f:
+    post_link_parser = PostLinkParser.load(f)
 
 print("reading votes")
-vote_parser = VoteParser.load(
-    os.path.join(ARQM_XML_PATH, DATA_VERSIONS["vote"]))
+with open_possible_gzip(os.path.join(ARQM_XML_PATH, DATA_VERSIONS["vote"])) as f:
+    vote_parser = VoteParser.load(f)
 
 print("reading users")
-user_parser = UserParser.load(
-    os.path.join(ARQM_XML_PATH, DATA_VERSIONS["user"]),
-    os.path.join(ARQM_XML_PATH, DATA_VERSIONS["badge"]))
+with open_possible_gzip(os.path.join(ARQM_XML_PATH, DATA_VERSIONS["user"])) as f:
+    with open_possible_gzip(os.path.join(ARQM_XML_PATH, DATA_VERSIONS["badge"])) as g:
+        user_parser = UserParser.load(f, g)
 
 print("reading posts")
-post_parser = PostParser.load(
-    os.path.join(ARQM_XML_PATH, DATA_VERSIONS["post"]),
-    comment_parser.map_of_comments_for_post,
-    post_link_parser.map_related_posts,
-    post_link_parser.map_duplicate_posts,
-    vote_parser.map_of_votes, user_parser.map_of_user,
-    None)  # ignore post_history_file_path
+with open_possible_gzip(os.path.join(ARQM_XML_PATH, DATA_VERSIONS["post"])) as f:
+    post_parser = PostParser.load(
+        f,
+        comment_parser.map_of_comments_for_post,
+        post_link_parser.map_related_posts,
+        post_link_parser.map_duplicate_posts,
+        vote_parser.map_of_votes, user_parser.map_of_user,
+        None)  # ignore post_history_file_path

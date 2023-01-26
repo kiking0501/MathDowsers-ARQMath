@@ -1,5 +1,6 @@
 from config import ARQM_PREPRO_PATH, ARQM_FINAL_HTML_MINIMAL_PATH
 import os
+import gzip
 
 
 def get_html_manifest():
@@ -52,3 +53,9 @@ def html_folder_lookup(thread_id, directory=ARQM_FINAL_HTML_MINIMAL_PATH):
     if result is None:
         print("%s not found!" % thread_id)
     return result
+
+
+def open_possible_gzip(f):
+    if os.path.isfile(f+".gz"):
+        return gzip.open(f+".gz")
+    return open(f)
