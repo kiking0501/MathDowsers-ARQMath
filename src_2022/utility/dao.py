@@ -1,5 +1,7 @@
 import json
 import re
+import os
+import gzip
 from glob import glob
 
 
@@ -82,18 +84,24 @@ def load_json(file_path, keys=None, verbose=False):
         return {func(k): convert_keys(v, remain_keys[1:])
                 for k, v in d.items()}
 
-    with open(file_path) as f:
-        if verbose:
-            print("Loading %s..." % f.name)
-        d = json.load(f)
+    if verbose:
+        print("Loading %s..." % file_path)
+    if os.path.isfile(file_path):
+        with open(file_path, "r") as f:
+            d = json.load(f)
+    else:
+        with gzip.open(file_path+".gz", "rt") as f:
+            d = json.load(f)
     return convert_keys(d, keys)
 
 
-def dump_json(d, output_path, verbose=True):
-    with open(output_path, "w") as f:
+def dump_json(d, file_path, verbose=True):
+    if os.path.isfile(file_path):
+        os.remove(file_path)
+    with gzip.open(file_path+".gz", "wt") as f:
         json.dump(d, f, indent=2)
-        if verbose:
-            print("Finish dumping %s." % (f.name))
+    if verbose:
+        print("Finish dumping %s." % file_path)
 
 
 def get_recursive_paths(folder_path, extension):
