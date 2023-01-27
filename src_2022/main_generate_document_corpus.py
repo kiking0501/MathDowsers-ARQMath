@@ -40,6 +40,9 @@
         Keep latex formulas instead of converting to Presentation MathML:
             add "--keep_latex"
 
+        Output to single TRECDOC xml gzipped file per year.
+            add "--trecdoc"
+
         See all options:
             $ python main_generate_docment_corpus.py  -h
 """
@@ -345,12 +348,12 @@ class HTMLMinimalCreator:
             output_folder=ARQM_OUTPUT_HTML_MINIMAL_PATH,
             create_html_func="create_html_minimal",
             selected_thread_ids=None,
-            store_as_gzip=False):
+            store_as_trecdoc=False):
 
         def _generate_html_path(thread_id, answer_id, creation_date):
             folder_path = DATE2FOLDER_MAP[creation_date.year][creation_date.month]
             html_folder = os.path.join(output_folder + folder_path, str(thread_id))
-            if not store_as_gzip:
+            if not store_as_trecdoc:
                 os.makedirs(html_folder, exist_ok=True)
             return os.path.join(html_folder, "%s_%s.html" % (thread_id, answer_id))
 
@@ -359,10 +362,10 @@ class HTMLMinimalCreator:
             os.makedirs(html_folder, exist_ok=True)
             return os.path.join(html_folder, "%s_%s.html" % (thread_id, answer_id))
 
-        if not store_as_gzip:
+        if not store_as_trecdoc:
             os.makedirs(output_folder, exist_ok=True)
         else:
-            outf = gzip.open(output_folder + "/" + str(year) + "_data.xml.gz", "wt")  # AK: output to one xml file
+            outf = gzip.open(output_folder + "/task1_2022_data_" + str(year) + ".xml.gz", "wt")  # output to one xml file per year
 
         print("[create_year_htmls] Start:")
         if selected_thread_ids is not None:
@@ -392,8 +395,7 @@ class HTMLMinimalCreator:
                     output_path = _generate_html_path(
                         thread_id, answer_id, str2dt(map_questions[thread_id]['creation_date']))
 
-                if store_as_gzip:
-                    # AK: output to one xml file
+                if store_as_trecdoc:
                     outf.write("<DOC>\n<DOCNO>" + str(year) + "_" + str(thread_id) + "_" + str(answer_id) + "</DOCNO>\n" + new_html + "\n</DOC>\n")
                 else:
                     with open(output_path, "w") as f:
@@ -515,12 +517,12 @@ class HTMLMinimalMultiCreator(HTMLMinimalCreator):
             output_folder=ARQM_OUTPUT_HTML_MINIMAL_PATH,
             create_html_func="create_html_minimal",
             selected_thread_ids=None,
-            store_as_gzip=False):
+            store_as_trecdoc=False):
 
         def _generate_html_path(thread_id, answer_id, tuple_id, creation_date):
             folder_path = DATE2FOLDER_MAP[creation_date.year][creation_date.month]
             html_folder = os.path.join(output_folder + folder_path, str(thread_id))
-            if not store_as_gzip:
+            if not store_as_trecdoc:
                 os.makedirs(html_folder, exist_ok=True)
             return os.path.join(html_folder, "%s_%s_%s.html" % (thread_id, answer_id, tuple_id))
 
@@ -529,10 +531,10 @@ class HTMLMinimalMultiCreator(HTMLMinimalCreator):
             os.makedirs(html_folder, exist_ok=True)
             return os.path.join(html_folder, "%s_%s_%s.html" % (thread_id, answer_id, tuple_id))
 
-        if not store_as_gzip:
+        if not store_as_trecdoc:
             os.makedirs(output_folder, exist_ok=True)
         else:
-            outf = gzip.open(output_folder + "/" + str(year) + "_data.xml.gz", "wt")  # AK: output to one xml file
+            outf = gzip.open(output_folder + "/task1_2022_data_" + str(year) + ".xml.gz", "wt")  # output to one xml file per year
 
         print("[create_year_htmls] Start:")
         if selected_thread_ids is not None:
@@ -565,8 +567,7 @@ class HTMLMinimalMultiCreator(HTMLMinimalCreator):
                         output_path = _generate_html_path(
                             thread_id, answer_id, tuple_id, str2dt(map_questions[thread_id]['creation_date']))
 
-                    if store_as_gzip:
-                        # AK: output to one xml file
+                    if store_as_trecdoc:
                         outf.write("<DOC>\n<DOCNO>" + str(year) + "_" + str(thread_id) + "_" + str(answer_id) + "_" + str(tuple_id) + "</DOCNO>\n" + new_html + "\n</DOC>\n")
                     else:
                         with open(output_path, "w") as f:
@@ -616,6 +617,10 @@ if __name__ == '__main__':
     argparser.add_argument(
         "--keep_latex", action="store_true",
         help="Do not convert latex formulas to their Presentation MathML format."
+    )
+    argparser.add_argument(
+        "--trecdoc", action="store_true",
+        help="Output to single TRECDOC xml gzipped file per year."
     )
 
     args = argparser.parse_args()
@@ -675,7 +680,7 @@ if __name__ == '__main__':
             html_creator.generate_htmls_by_year(
                 year,
                 output_folder=output_folder,
-                store_as_gzip=False)
+                store_as_trecdoc=args.trecdoc)
 
     elif args.thread_id:
         thread_ids = sorted([int(tid) for tid in args.thread_id.split(",")])

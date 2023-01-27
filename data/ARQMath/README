@@ -1,7 +1,8 @@
-The input data files are stored in the data-original folder.  This can stored somewhere else with a simlink here or stored locally with the specified subdirectory tree.  Similarly, large intermediate files can be produced from ARQMath-3 code into the prepro_2022 directory which could also be a simlink.
+The input data files are stored in the data-original folder.  This can stored somewhere else with a symlink here or stored locally with the specified subdirectory tree.  Similarly, large intermediate files can be produced from ARQMath-3 code into the prepro_2022 & data-extracted directories which could also be a symlink.
 
 ln -s LOCATION data-original
 ln -s LOCATION prepro_2022
+ln -s LOCATION data-extracted
 
 mkdir data-original
 mkdir data-original/Collections
