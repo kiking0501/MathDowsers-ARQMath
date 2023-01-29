@@ -4,7 +4,7 @@
 from query_model import get_queries
 import xml.etree.ElementTree as ET
 import json
-from config import ARQM_TASK1_PATH, ARQM_EXPERIMENTS_PATH
+from config import ARQM_PREPRO_PATH
 import os
 import re
 from tqdm import tqdm
@@ -82,14 +82,14 @@ if __name__ == '__main__':
     args = argparser.parse_args()
 
     if args.output_folder is None:
-        location = os.path.join(ARQM_EXPERIMENTS_PATH, "topics", "ARQMath_2022")
+        location = ARQM_PREPRO_PATH
     else:
         location = args.output_folder
 
     ### task1
     query_method = "rewrite"
     for year in (2020,2021,2022):
-        task1_json = os.path.join(ARQM_EXPERIMENTS_PATH, "topics", "ARQMath_2022", "task1-topics-%d-slt.json" % year)
+        task1_json = os.path.join(ARQM_PREPRO_PATH, "task1-topics-%d-slt.json" % year)
         output_xml = os.path.join(location, "topics-task1-%d.xml" % year)
 
         question_dict = load_json(task1_json)
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     ### task2
     query_method = "rewrite"
     for year in (2020,2021,2022):
-        task2_json = os.path.join(ARQM_EXPERIMENTS_PATH, "topics", "ARQMath_2022", "task2-formula-%d-slt.json" % year)
+        task2_json = os.path.join(ARQM_PREPRO_PATH, "task2-formula-%d-slt.json" % year)
         output_xml = os.path.join(location, "topics-task2-%d.xml" % year)
 
         question_dict = load_json(task2_json)

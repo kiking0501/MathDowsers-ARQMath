@@ -15,7 +15,7 @@ Run by "python <name of this python file>.py"
 
 
 import os
-from config import ARQM_EXPERIMENTS_PATH, TASK_FORMULA_FOLDER_CONFIG, ARQM_TASK1_PATH, ARQM_TASK2_PATH
+from config import ARQM_PREPRO_PATH, TASK_FORMULA_FOLDER_CONFIG, ARQM_TASK1_PATH, ARQM_TASK2_PATH
 import xml.etree.ElementTree as ET
 from utility.dao import dump_json, load_json, sort_topic_ids, sort_formula_ids
 from dao_read_formula_tsv import read_task_formula_tsv
@@ -25,15 +25,15 @@ from tqdm import tqdm
 
 ### OUTPUT destinations
 TASK1_TOPICS = {
-    2020: os.path.join(ARQM_EXPERIMENTS_PATH, "topics", "ARQMath_2022", "task1-topics-2020.json"),
-    2021: os.path.join(ARQM_EXPERIMENTS_PATH, "topics", "ARQMath_2022", "task1-topics-2021.json"),
-    2022: os.path.join(ARQM_EXPERIMENTS_PATH, "topics", "ARQMath_2022", "task1-topics-2022.json")
+    2020: os.path.join(ARQM_PREPRO_PATH, "task1-topics-2020.json"),
+    2021: os.path.join(ARQM_PREPRO_PATH, "task1-topics-2021.json"),
+    2022: os.path.join(ARQM_PREPRO_PATH, "task1-topics-2022.json")
 }
 
 TASK2_TOPICS = {
-    2020: os.path.join(ARQM_EXPERIMENTS_PATH, "topics", "ARQMath_2022", "task2-formula-2020.json"),
-    2021: os.path.join(ARQM_EXPERIMENTS_PATH, "topics", "ARQMath_2022", "task2-formula-2021.json"),
-    2022: os.path.join(ARQM_EXPERIMENTS_PATH, "topics", "ARQMath_2022", "task2-formula-2022.json")
+    2020: os.path.join(ARQM_PREPRO_PATH, "task2-formula-2020.json"),
+    2021: os.path.join(ARQM_PREPRO_PATH, "task2-formula-2021.json"),
+    2022: os.path.join(ARQM_PREPRO_PATH, "task2-formula-2022.json")
 }
 
 def topics_xml2json(xml_path, output_file):

@@ -9,7 +9,6 @@ from query_filters import (
     STEMMER, TOKENIZER, is_stopword, tokenize, is_hyphenated_token, remove_punctuation,
     STEMMED_TAG_KEYWORDS, STEMMED_WIKI_KEYWORDS)
 from utility.dao import load_json
-from config import ARQM_EXPERIMENTS_PATH, ARQM_PREPRO_PATH
 
 
 def is_stopword_formula(formula):
