@@ -14,9 +14,20 @@ from dao_read_formula_tsv import simple_transform_slt
 csv.field_size_limit(sys.maxsize)
 
 if __name__ == '__main__':
+    import argparse
+    argparser = argparse.ArgumentParser(description="Generate data for indexing.")
+    argparser.add_argument(
+        "--output_folder", default=None,
+        help="(Optional) The path of the output folder (where the output file will be generated). Default paths will be used if not supplied."
+    )
+    args = argparser.parse_args()
+
     seen = set()
     sltdir = os.path.join(ARQM_FORMULAS_PATH, "slt_representation_v3/")
-    extfile = ARQM_OUTPUT_HTML_MINIMAL_PATH+"/formulas.xml.gz"
+    if args.output_folder is None:
+        extfile = ARQM_OUTPUT_HTML_MINIMAL_PATH+"/task2_2022_data.xml.gz"
+    else:
+        extfile = args.output_folder+"/task2_2022_data.xml.gz"
     print("output to "+extfile, file=sys.stderr)
     out = gzip.open(extfile, "wt")
     #out = open(sys.stdout.fileno(), mode='w', encoding='utf8')
