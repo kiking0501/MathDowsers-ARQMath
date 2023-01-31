@@ -45,23 +45,24 @@ data/ARQMath/data-indexed/task1_2022_L8.mindex: src_2022/mtextsearch src_2022/mt
 data/ARQMath/data-indexed/task1_2022_L8.mindex.meta: data/ARQMath/data-indexed/task1_2022_L8.mindex src_2022/mtextsearch/mencode.exe
 	src_2022/mtextsearch/mencode.exe data/ARQMath/data-indexed/task1_2022_L8.mindex
 
-data/ARQMath/data-indexed/task2_2022_L8.mindex: src_2022/mtextsearch src_2022/mtextsearch/minvert.exe data/ARQMath/data-extracted/task2_2022_L8.xml.gz
+data/ARQMath/data-indexed/task2_2022_latex_L8.mindex: src_2022/mtextsearch src_2022/mtextsearch/minvert.exe data/ARQMath/data-extracted/task2_2022_L8.xml.gz
 	gunzip -c data/ARQMath/data-extracted/task2_2022_L8.xml.gz \
-	  | src_2022/mtextsearch/minvert.exe -M > data/ARQMath/data-indexed/task2_2022_L8.mindex
+	  | python3 src_2022/latex_filter_stopwords.py -tsv data/ARQMath/data-original/Formulas/latex_representation_v3/ \
+	  | src_2022/mtextsearch/minvert.exe -M > data/ARQMath/data-indexed/task2_2022_latex_L8.mindex
 
-data/ARQMath/data-indexed/task2_2022_L8.mindex.meta: data/ARQMath/data-indexed/task2_2022_L8.mindex src_2022/mtextsearch/mencode.exe
-	src_2022/mtextsearch/mencode.exe data/ARQMath/data-indexed/task2_2022_L8.mindex
+data/ARQMath/data-indexed/task2_2022_latex_L8.mindex.meta: data/ARQMath/data-indexed/task2_2022_latex_L8.mindex src_2022/mtextsearch/mencode.exe
+	src_2022/mtextsearch/mencode.exe data/ARQMath/data-indexed/task2_2022_latex_L8.mindex
 
 index-task1: data/ARQMath/data-indexed/task1_2022_L8.mindex.meta
 
-index-task2: data/ARQMath/data-indexed/task2_2022_L8.mindex.meta
+index-task2: data/ARQMath/data-indexed/task2_2022_latex_L8.mindex.meta
 
 # ------------------ QUERY ------------------
 data/ARQMath/data-queried/topics-task1-2020.xml data/ARQMath/data-queried/topics-task1-2021.xml data/ARQMath/data-queried/topics-task1-2022.xml \
 data/ARQMath/data-queried/topics-task2-2020.xml data/ARQMath/data-queried/topics-task2-2021.xml data/ARQMath/data-queried/topics-task2-2022.xml: src_2022/query*.py
 	python3 src_2022/query_prepro.py; python3 src_2022/query_postpro.py --output_folder data/ARQMath/data-queried/
 
-data/ARQMath/data-queried/task1-%-L8_a018.tsv: data/ARQMath/data-queried/topics-task1-%.xml data/ARQMath/data-indexed/task1_2022_L8.mindex \
+data/ARQMath/data-queried/task1-%-L8_a018.tsv: data/ARQMath/data-queried/topics-task1-%.xml data/ARQMath/data-indexed/task1_2022_L8.mindex.meta \
   src_2022/mtextsearch src_2022/mtextsearch/mstrip.exe src_2022/mtextsearch/msearch.exe
 	cat data/ARQMath/data-queried/topics-task1-$(*).xml \
 	  | python3 src_2022/mathtuples/mathtuples/convert.py --context \
@@ -73,14 +74,15 @@ data/ARQMath/data-queried/task1-%-L8_a018.tsv: data/ARQMath/data-queried/topics-
 data/ARQMath/data-queried/trec-task1-%.tsv: data/ARQMath/data-queried/task1-%.tsv
 	awk 'BEGIN{OFS="\t"} {$$2="Q0\t"$$2; print}' data/ARQMath/data-queried/task1-$(*).tsv > data/ARQMath/data-queried/trec-task1-$(*).tsv
 
-data/ARQMath/data-queried/task2-%-L8.tsv: data/ARQMath/data-queried/topics-task2-%.xml data/ARQMath/data-indexed/task2_2022_L8.mindex \
+data/ARQMath/data-queried/task2-%-latex_L8_a040.tsv: data/ARQMath/data-queried/topics-task2-%.xml data/ARQMath/data-indexed/task2_2022_latex_L8.mindex.meta \
   src_2022/mtextsearch src_2022/mtextsearch/mstrip.exe src_2022/mtextsearch/msearch.exe
 	cat data/ARQMath/data-queried/topics-task2-$(*).xml \
+	  | python3 src_2022/latex_filter_stopwords.py -tsv inline \
 	  | python3 src_2022/mathtuples/mathtuples/convert.py --context \
 	  | ./src_2022/mtextsearch/mstrip.exe -q \
-	  | ./src_2022/mtextsearch/msearch.exe -k1000 -M -a0.18 data/ARQMath/data-indexed/task2_2022_L8.mindex \
-	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[1]"\t"a[2]; print $$0"\tL8"}' \
-	  > data/ARQMath/data-queried/task2-$(*)-L8.tsv
+	  | ./src_2022/mtextsearch/msearch.exe -k1000 -M -a0.40 data/ARQMath/data-indexed/task2_2022_latex_L8.mindex \
+	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[1]"\t"a[2]; print $$0"\tlatex_L8_a040"}' \
+	  > data/ARQMath/data-queried/task2-$(*)-latex_L8_a040.tsv
 
 data/ARQMath/data-queried/trec-task2-2020-%.tsv: data/ARQMath/data-queried/task2-2020-%.tsv
 	python3 src_2022/dedup_task2.py -qre data/ARQMath/experiments/qrels_official_2020/qrel_task2 -tsv data/ARQMath/data-original/Formulas/latex_representation_v3/ data/ARQMath/data-queried/task2-2020-*.tsv
@@ -93,27 +95,21 @@ data/ARQMath/data-queried/trec-task2-2022-%.tsv: data/ARQMath/data-queried/task2
 
 query-task1: data/ARQMath/data-queried/trec-task1-2020-L8_a018.tsv data/ARQMath/data-queried/trec-task1-2021-L8_a018.tsv data/ARQMath/data-queried/trec-task1-2022-L8_a018.tsv
 
-query-task2: data/ARQMath/data-queried/trec-task2-2020-L8.tsv data/ARQMath/data-queried/trec-task2-2021-L8.tsv data/ARQMath/data-queried/trec-task2-2022-L8.tsv
+query-task2: data/ARQMath/data-queried/trec-task2-2020-latex_L8_a040.tsv data/ARQMath/data-queried/trec-task2-2021-latex_L8_a040.tsv data/ARQMath/data-queried/trec-task2-2022-latex_L8_a040.tsv
 
 # ------------------ EVAL ------------------
 trec_eval:
 	git clone https://github.com/usnistgov/trec_eval.git; cd trec_eval; make
 
 eval-task1-%: query-task1 trec_eval
-	wc -l data/ARQMath/data-queried/trec-task1-2020-$(*).tsv; \
-	  ./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2020/qrel_task1 data/ARQMath/data-queried/trec-task1-2020-$(*).tsv; \
-	wc -l data/ARQMath/data-queried/trec-task1-2021-$(*).tsv; \
-	  ./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2021/qrel_task1 data/ARQMath/data-queried/trec-task1-2021-$(*).tsv; \
-	wc -l data/ARQMath/data-queried/trec-task1-2022-$(*).tsv; \
-	  ./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2022/qrel_task1 data/ARQMath/data-queried/trec-task1-2022-$(*).tsv
+	./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2020/qrel_task1 data/ARQMath/data-queried/trec-task1-2020-$(*).tsv; \
+	./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2021/qrel_task1 data/ARQMath/data-queried/trec-task1-2021-$(*).tsv; \
+	./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2022/qrel_task1 data/ARQMath/data-queried/trec-task1-2022-$(*).tsv
 
 eval-task2-%: query-task2 trec_eval
-	wc -l data/ARQMath/data-queried/trec-task2-2020-$(*).tsv; \
-	  ./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2020/qrel_task2 data/ARQMath/data-queried/trec-task2-2020-$(*).tsv; \
-	wc -l data/ARQMath/data-queried/trec-task2-2021-$(*).tsv; \
-	  ./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2021/qrel_task2 data/ARQMath/data-queried/trec-task2-2021-$(*).tsv; \
-	wc -l data/ARQMath/data-queried/trec-task2-2022-$(*).tsv; \
-	  ./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2022/qrel_task2 data/ARQMath/data-queried/trec-task2-2022-$(*).tsv
+	./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2020/qrel_task2 data/ARQMath/data-queried/trec-task2-2020-$(*).tsv; \
+	./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2021/qrel_task2 data/ARQMath/data-queried/trec-task2-2021-$(*).tsv; \
+	./trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J data/ARQMath/experiments/qrels_official_2022/qrel_task2 data/ARQMath/data-queried/trec-task2-2022-$(*).tsv
 
-eval: eval-task1-L8_a018 eval-task2-L8
+eval: eval-task1-L8_a018 eval-task2-latex_L8_a040
 
