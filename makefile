@@ -33,9 +33,12 @@ data/ARQMath/data-extracted/task2_2022_L8.xml.gz: data/ARQMath/data-extracted/ta
 
 # ------------------ INDEX ------------------
 src_2022/mtextsearch:
-	cd src_2022; git clone https://github.com/andrewrkane/mtextsearch.git; cd mtextsearch; make
+	cd src_2022; git clone https://github.com/andrewrkane/mtextsearch.git; cd mtextsearch
 
-data/ARQMath/data-indexed/task1_2022_L8.mindex: src_2022/mtextsearch src_2022/mtextsearch/minvert.exe \
+src_2022/mtextsearch/%.exe: src_2022/mtextsearch
+	cd src_2022/mtextsearch; make
+
+data/ARQMath/data-indexed/task1_2022_L8.mindex: src_2022/mtextsearch/minvert.exe \
   data/ARQMath/data-extracted/task1_2022_L8_2010.xml.gz data/ARQMath/data-extracted/task1_2022_L8_2018.xml.gz data/ARQMath/data-extracted/task1_2022_L8_2017.xml.gz \
   data/ARQMath/data-extracted/task1_2022_L8_2016.xml.gz data/ARQMath/data-extracted/task1_2022_L8_2015.xml.gz data/ARQMath/data-extracted/task1_2022_L8_2014.xml.gz \
   data/ARQMath/data-extracted/task1_2022_L8_2013.xml.gz data/ARQMath/data-extracted/task1_2022_L8_2012.xml.gz data/ARQMath/data-extracted/task1_2022_L8_2011.xml.gz
@@ -45,7 +48,7 @@ data/ARQMath/data-indexed/task1_2022_L8.mindex: src_2022/mtextsearch src_2022/mt
 data/ARQMath/data-indexed/task1_2022_L8.mindex.meta: data/ARQMath/data-indexed/task1_2022_L8.mindex src_2022/mtextsearch/mencode.exe
 	src_2022/mtextsearch/mencode.exe data/ARQMath/data-indexed/task1_2022_L8.mindex
 
-data/ARQMath/data-indexed/task2_2022_latex_L8.mindex: src_2022/mtextsearch src_2022/mtextsearch/minvert.exe data/ARQMath/data-extracted/task2_2022_L8.xml.gz
+data/ARQMath/data-indexed/task2_2022_latex_L8.mindex: src_2022/mtextsearch/minvert.exe data/ARQMath/data-extracted/task2_2022_L8.xml.gz
 	gunzip -c data/ARQMath/data-extracted/task2_2022_L8.xml.gz \
 	  | python3 src_2022/latex_filter_stopwords.py -tsv data/ARQMath/data-original/Formulas/latex_representation_v3/ \
 	  | src_2022/mtextsearch/minvert.exe -M > data/ARQMath/data-indexed/task2_2022_latex_L8.mindex
