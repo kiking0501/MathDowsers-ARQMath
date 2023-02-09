@@ -65,11 +65,15 @@ data/ARQMath/data-queried/topics-task1-2020.xml data/ARQMath/data-queried/topics
 data/ARQMath/data-queried/topics-task2-2020.xml data/ARQMath/data-queried/topics-task2-2021.xml data/ARQMath/data-queried/topics-task2-2022.xml: src_2022/query*.py
 	python3 src_2022/query_prepro.py; python3 src_2022/query_postpro.py --output_folder data/ARQMath/data-queried/
 
+data/ARQMath/prepro_2022/judged-query-names.txt: data/ARQMath/experiments/qrels_official_202*/qrel_task*
+	cat data/ARQMath/experiments/qrels_official_202*/qrel_task* | awk '{print $$1}' | sort -u > data/ARQMath/prepro_2022/judged-query-names.txt
+
 data/ARQMath/data-queried/task1-%-L8_a018.tsv: data/ARQMath/data-queried/topics-task1-%.xml data/ARQMath/data-indexed/task1_2022_L8.mindex.meta \
-  src_2022/mtextsearch src_2022/mtextsearch/mstrip.exe src_2022/mtextsearch/msearch.exe
+  src_2022/mtextsearch src_2022/mtextsearch/mstrip.exe src_2022/mtextsearch/msearch.exe data/ARQMath/prepro_2022/judged-query-names.txt
 	cat data/ARQMath/data-queried/topics-task1-$(*).xml \
 	  | python3 src_2022/mathtuples/mathtuples/convert.py --context \
 	  | ./src_2022/mtextsearch/mstrip.exe -q \
+	  | awk -F';' 'FNR==NR{a[$$1];next} $$1 in a' data/ARQMath/prepro_2022/judged-query-names.txt - \
 	  | ./src_2022/mtextsearch/msearch.exe -k1000 -M -a0.18 data/ARQMath/data-indexed/task1_2022_L8.mindex \
 	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[3]; print $$0"\tL8_a018"}' \
 	  > data/ARQMath/data-queried/task1-$(*)-L8_a018.tsv
@@ -78,11 +82,12 @@ data/ARQMath/data-queried/trec-task1-%.tsv: data/ARQMath/data-queried/task1-%.ts
 	awk 'BEGIN{OFS="\t"} {$$2="Q0\t"$$2; print}' data/ARQMath/data-queried/task1-$(*).tsv > data/ARQMath/data-queried/trec-task1-$(*).tsv
 
 data/ARQMath/data-queried/task2-%-latex_L8_a040.tsv: data/ARQMath/data-queried/topics-task2-%.xml data/ARQMath/data-indexed/task2_2022_latex_L8.mindex.meta \
-  src_2022/mtextsearch src_2022/mtextsearch/mstrip.exe src_2022/mtextsearch/msearch.exe
+  src_2022/mtextsearch src_2022/mtextsearch/mstrip.exe src_2022/mtextsearch/msearch.exe data/ARQMath/prepro_2022/judged-query-names.txt
 	cat data/ARQMath/data-queried/topics-task2-$(*).xml \
 	  | python3 src_2022/latex_filter_stopwords.py -tsv inline \
 	  | python3 src_2022/mathtuples/mathtuples/convert.py --context \
 	  | ./src_2022/mtextsearch/mstrip.exe -q \
+	  | awk -F';' 'FNR==NR{a[$$1];next} $$1 in a' data/ARQMath/prepro_2022/judged-query-names.txt - \
 	  | ./src_2022/mtextsearch/msearch.exe -k1000 -M -a0.40 data/ARQMath/data-indexed/task2_2022_latex_L8.mindex \
 	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[1]"\t"a[2]; print $$0"\tlatex_L8_a040"}' \
 	  > data/ARQMath/data-queried/task2-$(*)-latex_L8_a040.tsv
