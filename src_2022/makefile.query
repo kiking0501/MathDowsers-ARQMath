@@ -1,0 +1,85 @@
+# makefile to build indexes and run queries used in ARQMath-3.  To run things in parallel run: make -j #
+
+DO = ../data/ARQMath/data-original
+PP = ../data/ARQMath/prepro_2022
+DQ = ../data/ARQMath/data-queried
+DI = ../data/ARQMath/data-indexed
+EX = ../data/ARQMath/experiments
+
+all: eval
+
+# ------------------ QUERY ------------------
+mathtuples mathtuples/mathtuples/convert.py:
+	git clone https://github.com/fwtompa/mathtuples.git
+
+mtextsearch:
+	git clone https://github.com/andrewrkane/mtextsearch.git
+
+mtextsearch/%.exe: mtextsearch
+	$(MAKE) -C mtextsearch $(*).exe
+
+$(DQ)/topics-task1-2020.xml $(DQ)/topics-task1-2021.xml $(DQ)/topics-task1-2022.xml \
+$(DQ)/topics-task2-2020.xml $(DQ)/topics-task2-2021.xml $(DQ)/topics-task2-2022.xml: query*.py
+	python3 query_prepro.py; python3 query_postpro.py --output_folder $(DQ)/
+
+$(PP)/judged-query-names.txt: $(EX)/qrels_official_202*/qrel_task*
+	cat $(EX)/qrels_official_202*/qrel_task* | awk '{print $$1}' | sort -u > $(PP)/judged-query-names.txt
+
+$(DQ)/task1-%-L8_a018.tsv: $(DQ)/topics-task1-%.xml $(DI)/task1_2022_L8.mindex.meta \
+  mtextsearch/mstrip.exe mtextsearch/msearch.exe $(PP)/judged-query-names.txt
+	cat $(DQ)/topics-task1-$(*).xml \
+	  | python3 mathtuples/mathtuples/convert.py --context \
+	  | ./mtextsearch/mstrip.exe -q \
+	  | awk -F';' 'FNR==NR{a[$$1];next} $$1 in a' $(PP)/judged-query-names.txt - \
+	  | ./mtextsearch/msearch.exe -k1000 -M -a0.18 $(DI)/task1_2022_L8.mindex \
+	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[3]; print $$0"\tL8_a018"}' \
+	  > $(DQ)/task1-$(*)-L8_a018.tsv
+
+$(DQ)/trec-task1-%.tsv: $(DQ)/task1-%.tsv
+	awk 'BEGIN{OFS="\t"} {$$2="Q0\t"$$2; print}' $(DQ)/task1-$(*).tsv > $(DQ)/trec-task1-$(*).tsv
+
+$(DQ)/task2-%-latex_L8_a040.tsv: $(DQ)/topics-task2-%.xml $(DI)/task2_2022_latex_L8.mindex.meta \
+  mtextsearch/mstrip.exe mtextsearch/msearch.exe $(PP)/judged-query-names.txt
+	cat $(DQ)/topics-task2-$(*).xml \
+	  | python3 latex_filter_stopwords.py -tsv inline \
+	  | python3 mathtuples/mathtuples/convert.py --context \
+	  | ./mtextsearch/mstrip.exe -q \
+	  | awk -F';' 'FNR==NR{a[$$1];next} $$1 in a' $(PP)/judged-query-names.txt - \
+	  | ./mtextsearch/msearch.exe -k1000 -M -a0.40 $(DI)/task2_2022_latex_L8.mindex \
+	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[1]"\t"a[2]; print $$0"\tlatex_L8_a040"}' \
+	  > $(DQ)/task2-$(*)-latex_L8_a040.tsv
+
+$(DQ)/trec-task2-2020-%.tsv: $(DQ)/task2-2020-%.tsv
+	python3 dedup_task2.py -qre $(EX)/qrels_official_2020/qrel_task2 -tsv $(DO)/Formulas/latex_representation_v3/ $(DQ)/task2-2020-*.tsv
+
+$(DQ)/trec-task2-2021-%.tsv: $(DQ)/task2-2021-%.tsv
+	python3 dedup_task2.py -qre $(EX)/qrels_official_2021/qrel_task2 -tsv $(DO)/Formulas/latex_representation_v3/ $(DQ)/task2-2021-*.tsv
+
+$(DQ)/trec-task2-2022-%.tsv: $(DQ)/task2-2022-%.tsv
+	python3 dedup_task2.py -qre $(EX)/qrels_official_2022/qrel_task2 -tsv $(DO)/Formulas/latex_representation_v3/ $(DQ)/task2-2022-*.tsv
+
+query-task1: $(DQ)/trec-task1-2020-L8_a018.tsv $(DQ)/trec-task1-2021-L8_a018.tsv $(DQ)/trec-task1-2022-L8_a018.tsv
+
+query-task2: $(DQ)/trec-task2-2020-latex_L8_a040.tsv $(DQ)/trec-task2-2021-latex_L8_a040.tsv $(DQ)/trec-task2-2022-latex_L8_a040.tsv
+
+# ------------------ EVAL ------------------
+../trec_eval:
+	cd ..; git clone https://github.com/usnistgov/trec_eval.git
+
+../trec_eval/trec_eval:
+	$(MAKE) -C ../trec_eval
+
+eval-task1-%: query-task1 ../trec_eval/trec_eval
+	echo task1 2020, 2021, 2022; \
+	../trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J $(EX)/qrels_official_2020/qrel_task1 $(DQ)/trec-task1-2020-$(*).tsv; \
+	../trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J $(EX)/qrels_official_2021/qrel_task1 $(DQ)/trec-task1-2021-$(*).tsv; \
+	../trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J $(EX)/qrels_official_2022/qrel_task1 $(DQ)/trec-task1-2022-$(*).tsv
+
+eval-task2-%: query-task2 ../trec_eval/trec_eval
+	echo task2 2020, 2021, 2022; \
+	../trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J $(EX)/qrels_official_2020/qrel_task2 $(DQ)/trec-task2-2020-$(*).tsv; \
+	../trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J $(EX)/qrels_official_2021/qrel_task2 $(DQ)/trec-task2-2021-$(*).tsv; \
+	../trec_eval/trec_eval -l2 -m num_q -m ndcg -m P.10 -m map -J $(EX)/qrels_official_2022/qrel_task2 $(DQ)/trec-task2-2022-$(*).tsv
+
+eval: eval-task1-L8_a018 eval-task2-latex_L8_a040
+

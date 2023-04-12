@@ -1,0 +1,47 @@
+# makefile to build indexes and run queries used in ARQMath-3.  To run things in parallel run: make -j #
+
+PP = ../data/ARQMath/prepro_2022
+DE = ../data/ARQMath/data-extracted
+
+all: $(DE)/task1_2022_L8_2010.xml.gz $(DE)/task1_2022_L8_2011.xml.gz $(DE)/task1_2022_L8_2012.xml.gz \
+     $(DE)/task1_2022_L8_2013.xml.gz $(DE)/task1_2022_L8_2014.xml.gz $(DE)/task1_2022_L8_2015.xml.gz \
+     $(DE)/task1_2022_L8_2016.xml.gz $(DE)/task1_2022_L8_2017.xml.gz $(DE)/task1_2022_L8_2018.xml.gz \
+     $(DE)/task2_2022_L8.xml.gz
+
+# ------------------ PREPRO ------------------
+prepro_2022: $(PP)/question2title_latex2slt.json.gz
+
+$(PP)/question2title_latex2slt.json.gz: prepro*.py
+	sh main_preprocessor.sh
+
+# ------------------ EXTRACT ------------------
+$(DE)/task1_2022_data_%.xml.gz: main_generate_document_corpus.py preproc_2022
+	python3 main_generate_document_corpus.py --style minimal --year $* --output_folder $(DE)/ --trecdoc
+
+$(DE)/task2_2022_data.xml.gz: extract_formulas_task2.py
+	python3 extract_formulas_task2.py --output_folder $(DE)/
+
+# ------------------ CONVERT ------------------
+mathtuples mathtuples/mathtuples/convert.py:
+	git clone https://github.com/fwtompa/mathtuples.git
+
+mtextsearch::
+	git clone https://github.com/andrewrkane/mtextsearch.git
+
+mtextsearch/%.exe: mtextsearch
+	$(MAKE) -C mtextsearch
+
+# don't want to rerun every time mtextsearch/mstrip.exe is recompiled so leave out dependency...
+
+$(DE)/task1_2022_L8_%.xml.gz: $(DE)/task1_2022_data_%.xml.gz mathtuples/mathtuples/convert.py
+	gunzip -c $(DE)/task1_2022_data_$(*).xml.gz \
+	  | python3 mathtuples/mathtuples/convert.py --context 2>> _convert-errors.tmp \
+	  | ./mtextsearch/mstrip.exe \
+	  | gzip > $(DE)/task1_2022_L8_$(*).xml.gz
+
+$(DE)/task2_2022_L8.xml.gz: $(DE)/task2_2022_data.xml.gz mathtuples/mathtuples/convert.py
+	gunzip -c $(DE)/task2_2022_data.xml.gz \
+	  | python3 mathtuples/mathtuples/convert.py --context 2>> _convert-errors.tmp \
+	  | ./mtextsearch/mstrip.exe \
+	  | gzip > $(DE)/task2_2022_L8.xml.gz
+
