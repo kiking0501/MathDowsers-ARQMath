@@ -1,17 +1,10 @@
-# makefile to build indexes and run queries used in ARQMath-3.  To run things in parallel run: make -j #
-
-DE = ../data/ARQMath/data-extracted
-DI = ../data/ARQMath/data-indexed
+# makefile to build indexes for ARQMath-3.  To run things in parallel run: make -j #
 
 all: index-task1 index-task2
 
+include makefile.base
+
 # ------------------ INDEX ------------------
-mtextsearch:
-	git clone https://github.com/andrewrkane/mtextsearch.git
-
-mtextsearch/%.exe: mtextsearch
-	make -C mtextsearch
-
 $(DI)/task1_2022_L8.mindex: mtextsearch/minvert.exe \
   $(DE)/task1_2022_L8_2010.xml.gz $(DE)/task1_2022_L8_2018.xml.gz $(DE)/task1_2022_L8_2017.xml.gz \
   $(DE)/task1_2022_L8_2016.xml.gz $(DE)/task1_2022_L8_2015.xml.gz $(DE)/task1_2022_L8_2014.xml.gz \

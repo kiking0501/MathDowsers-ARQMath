@@ -1,0 +1,26 @@
+# common elements used by other makefiles
+
+DO = ../data/ARQMath/data-original
+PP = ../data/ARQMath/prepro_2022
+DE = ../data/ARQMath/data-extracted
+DI = ../data/ARQMath/data-indexed
+DQ = ../data/ARQMath/data-queried
+EX = ../data/ARQMath/experiments
+
+base:
+
+mathtuples mathtuples/mathtuples/convert.py:
+	git clone https://github.com/fwtompa/mathtuples.git
+
+mtextsearch:
+	git clone --branch ARQMath-3 https://github.com/andrewrkane/mtextsearch.git
+
+mtextsearch/%.exe: mtextsearch
+	$(MAKE) -C mtextsearch $(*).exe
+
+../trec_eval:
+	cd ..; git clone https://github.com/usnistgov/trec_eval.git
+
+../trec_eval/trec_eval:
+	$(MAKE) -C ../trec_eval
+
