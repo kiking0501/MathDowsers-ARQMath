@@ -15,7 +15,7 @@ mathtuples mathtuples/mathtuples/convert.py:
 mtextsearch:
 	git clone --branch ARQMath-3 https://github.com/andrewrkane/mtextsearch.git
 
-mtextsearch/%.exe: mtextsearch
+mtextsearch/%.exe: mtextsearch mtextsearch/src/*
 	$(MAKE) -C mtextsearch $(*).exe
 
 ../trec_eval:
