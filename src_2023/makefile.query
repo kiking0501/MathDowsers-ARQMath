@@ -11,6 +11,10 @@ include makefile.base
 $(PP)/keywords.txt: $(PP21)/MSE_tag_keywords.txt $(PP21)/wiki_keywords.txt
 	cat $(PP21)/MSE_tag_keywords.txt $(PP21)/wiki_keywords.txt | awk '{if (substr($$1,1,1)!="#") print $$2}' | sort -u > $(PP)/keywords.txt
 
+$(PP)/stopwords.txt: $(SW)/lucene_snowball_english_stop.txt $(SW)/manual_stopwords.txt $(SW)/nltk_stopwords.txt
+	printf "#(start)#\n#(end)#\n" | cat - $(SW)/lucene_snowball_english_stop.txt $(SW)/manual_stopwords.txt $(SW)/nltk_stopwords.txt \
+	  | awk -F'|' '{print $$1}' | awk '{if ($$1!="") print $$1}' | sort -u > $(PP)/stopwords.txt
+
 $(DQ)/topics-task1$T-2020.xml $(DQ)/topics-task1$T-2021.xml $(DQ)/topics-task1$T-2022.xml \
 $(DQ)/topics-task2$T-2020.xml $(DQ)/topics-task2$T-2021.xml $(DQ)/topics-task2$T-2022.xml: query*.py
 	python3 query_prepro.py; python3 query_postpro.py --output_folder $(DQ)/
@@ -19,12 +23,12 @@ $(PP)/judged-query-names.txt: $(EX)/qrels_official_202*/qrel_task*
 	cat $(EX)/qrels_official_202*/qrel_task* | awk '{print $$1}' | sort -u > $(PP)/judged-query-names.txt
 
 $(DQ)/task1$S-%-L8_a018.tsv: $(DQ)/topics-task1$T-%.xml $(DI)/task1_2022_L8.mindex.meta \
-  $(PP)/keywords.txt $(PP)/judged-query-names.txt mtextsearch/mstrip.exe mtextsearch/msearch.exe
+  $(PP)/keywords.txt $(PP)/stopwords.txt $(PP)/judged-query-names.txt mtextsearch/mstrip.exe mtextsearch/msearch.exe
 	cat $(DQ)/topics-task1$T-$(*).xml \
 	  | python3 mathtuples/mathtuples/convert.py --context \
 	  | ./mtextsearch/mstrip.exe -q \
 	  | awk -F';' 'FNR==NR{a[$$1];next} $$1 in a' $(PP)/judged-query-names.txt - \
-	  | ./mtextsearch/msearch.exe -T $(PP)/keywords.txt -k1000 -M -a0.18 $(DI)/task1_2022_L8.mindex \
+	  | ./mtextsearch/msearch.exe -T $(PP)/keywords.txt -S $(PP)/stopwords.txt -k1000 -M -a0.18 $(DI)/task1_2022_L8.mindex \
 	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[3]; print $$0"\tL8_a018"}' \
 	  > $(DQ)/task1$S-$(*)-L8_a018.tsv
 
@@ -34,13 +38,13 @@ $(DQ)/trec-task1$S-%.tsv: $(DQ)/task1$S-%.tsv
 .PRECIOUS: $(DQ)/task1$S-%-L8_a018.tsv $(DQ)/trec-task1$S-%.tsv
 
 $(DQ)/task2$S-%-latex_L8_a040.tsv: $(DQ)/topics-task2$T-%.xml $(DI)/task2_2022_latex_L8.mindex.meta latex_filter_stopwords.py \
-  $(PP)/judged-query-names.txt mtextsearch/mstrip.exe mtextsearch/msearch.exe
+  $(PP)/stopwords.txt $(PP)/judged-query-names.txt mtextsearch/mstrip.exe mtextsearch/msearch.exe
 	cat $(DQ)/topics-task2$T-$(*).xml \
 	  | python3 latex_filter_stopwords.py -tsv inline \
 	  | python3 mathtuples/mathtuples/convert.py --context \
 	  | ./mtextsearch/mstrip.exe -q \
 	  | awk -F';' 'FNR==NR{a[$$1];next} $$1 in a' $(PP)/judged-query-names.txt - \
-	  | ./mtextsearch/msearch.exe -k1000 -M -a0.40 $(DI)/task2_2022_latex_L8.mindex \
+	  | ./mtextsearch/msearch.exe -S $(PP)/stopwords.txt -k1000 -M -a0.40 $(DI)/task2_2022_latex_L8.mindex \
 	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[1]"\t"a[2]; print $$0"\tlatex_L8_a040"}' \
 	  > $(DQ)/task2$S-$(*)-latex_L8_a040.tsv
 
