@@ -17,7 +17,7 @@ Prerequisite & Effect for creating the word lists from scratch:
 
     The stopwords will be created at the folder "data/stopwords".
         Download the NLTK library corpus for creating the NLTK stopwords as "nltk_stopwords.txt".
-        Snowball stopwords "lucence_snowball_english_stop.txt" are manually extracted from the Lucence package.
+        Snowball stopwords "lucene_snowball_english_stop.txt" are manually extracted from the Lucene package.
         "manual_stopwords.txt" records stopwords from manual inspection.
 
     The mathy words will be created at the folder <ARQM_PREPRO_PATH>.
@@ -83,7 +83,7 @@ def read_nltk_stopwords(input_file="nltk_stopwords.txt"):
     return stopwords
 
 
-def read_lucene_stopwords(input_file="lucence_snowball_english_stop.txt"):
+def read_lucene_stopwords(input_file="lucene_snowball_english_stop.txt"):
     stopwords = []
     with open(os.path.join(STOPWORD_PATH, input_file)) as f:
         for l in f.readlines():
