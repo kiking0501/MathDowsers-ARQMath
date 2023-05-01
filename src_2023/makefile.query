@@ -18,11 +18,8 @@ $(DQ)/topics-task2$T-2020.xml $(DQ)/topics-task2$T-2021.xml $(DQ)/topics-task2$T
 $(PP)/judged-query-names.txt: $(EX)/qrels_official_202*/qrel_task*
 	cat $(EX)/qrels_official_202*/qrel_task* | awk '{print $$1}' | sort -u > $(PP)/judged-query-names.txt
 
-prequery: $(PP)/keywords.txt $(PP)/judged-query-names.txt mathtuples/mathtuples/convert.py mtextsearch/mstrip.exe mtextsearch/msearch.exe \
-  $(DQ)/topics-task1$T-2020.xml $(DQ)/topics-task1$T-2021.xml $(DQ)/topics-task1$T-2022.xml \
-  $(DQ)/topics-task2$T-2020.xml $(DQ)/topics-task2$T-2021.xml $(DQ)/topics-task2$T-2022.xml
-
-$(DQ)/task1$S-%-L8_a018.tsv: $(DQ)/topics-task1$T-%.xml $(DI)/task1_2022_L8.mindex.meta prequery
+$(DQ)/task1$S-%-L8_a018.tsv: $(DQ)/topics-task1$T-%.xml $(DI)/task1_2022_L8.mindex.meta \
+  $(PP)/keywords.txt $(PP)/judged-query-names.txt mtextsearch/mstrip.exe mtextsearch/msearch.exe
 	cat $(DQ)/topics-task1$T-$(*).xml \
 	  | python3 mathtuples/mathtuples/convert.py --context \
 	  | ./mtextsearch/mstrip.exe -q \
@@ -34,7 +31,10 @@ $(DQ)/task1$S-%-L8_a018.tsv: $(DQ)/topics-task1$T-%.xml $(DI)/task1_2022_L8.mind
 $(DQ)/trec-task1$S-%.tsv: $(DQ)/task1$S-%.tsv
 	awk 'BEGIN{OFS="\t"} {$$2="Q0\t"$$2; print}' $(DQ)/task1$S-$(*).tsv > $(DQ)/trec-task1$S-$(*).tsv
 
-$(DQ)/task2$S-%-latex_L8_a040.tsv: $(DQ)/topics-task2$T-%.xml $(DI)/task2_2022_latex_L8.mindex.meta latex_filter_stopwords.py prequery
+.PRECIOUS: $(DQ)/task1$S-%-L8_a018.tsv $(DQ)/trec-task1$S-%.tsv
+
+$(DQ)/task2$S-%-latex_L8_a040.tsv: $(DQ)/topics-task2$T-%.xml $(DI)/task2_2022_latex_L8.mindex.meta latex_filter_stopwords.py \
+  $(PP)/judged-query-names.txt mtextsearch/mstrip.exe mtextsearch/msearch.exe
 	cat $(DQ)/topics-task2$T-$(*).xml \
 	  | python3 latex_filter_stopwords.py -tsv inline \
 	  | python3 mathtuples/mathtuples/convert.py --context \
@@ -52,6 +52,8 @@ $(DQ)/trec-task2$S-2021-%.tsv: $(DQ)/task2$S-2021-%.tsv dedup_task2.py
 
 $(DQ)/trec-task2$S-2022-%.tsv: $(DQ)/task2$S-2022-%.tsv dedup_task2.py
 	python3 dedup_task2.py -qre $(EX)/qrels_official_2022/qrel_task2 -tsv $(DO)/Formulas/latex_representation_v3/ $(DQ)/task2$S-2022-*.tsv
+
+.PRECIOUS: $(DQ)/task2$S-%-L8_a018.tsv $(DQ)/trec-task2$S-%.tsv
 
 query-task1: $(DQ)/trec-task1$S-2020-L8_a018.tsv $(DQ)/trec-task1$S-2021-L8_a018.tsv $(DQ)/trec-task1$S-2022-L8_a018.tsv
 
