@@ -22,12 +22,15 @@ $(DQ)/topics-task2$T-2020.xml $(DQ)/topics-task2$T-2021.xml $(DQ)/topics-task2$T
 $(PP)/judged-query-names.txt: $(EX)/qrels_official_202*/qrel_task* | $(PP)
 	cat $(EX)/qrels_official_202*/qrel_task* | awk '{print $$1}' | sort -u > $(PP)/judged-query-names.txt
 
-$(DQ)/task1$S-%-L8_a018.tsv: $(DQ)/topics-task1$T-%.xml $(DI)/task1_2022_L8.mindex.meta \
-  $(PP)/keywords.txt $(PP)/stopwords.txt $(PP)/judged-query-names.txt mtextsearch/mstrip.exe mtextsearch/msearch.exe
+$(DQ)/queries-task1$T-%.txt: $(DQ)/topics-task1$T-%.xml mtextsearch/mstrip.exe $(PP)/judged-query-names.txt
 	cat $(DQ)/topics-task1$T-$(*).xml \
 	  | python3 mathtuples/mathtuples/convert.py --context \
 	  | ./mtextsearch/mstrip.exe -q \
 	  | awk -F';' 'FNR==NR{a[$$1];next} $$1 in a' $(PP)/judged-query-names.txt - \
+	  > $(DQ)/queries-task1$T-$(*).txt
+
+$(DQ)/task1$S-%-L8_a018.tsv: $(DQ)/queries-task1$T-%.txt $(DI)/task1_2022_L8.mindex.meta $(PP)/keywords.txt $(PP)/stopwords.txt mtextsearch/msearch.exe
+	cat $(DQ)/queries-task1$T-$(*).txt \
 	  | ./mtextsearch/msearch.exe -T $(PP)/keywords.txt -S $(PP)/stopwords.txt -k1000 -M -a0.18 $(DI)/task1_2022_L8.mindex \
 	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[3]; print $$0"\tL8_a018"}' \
 	  > $(DQ)/task1$S-$(*)-L8_a018.tsv
