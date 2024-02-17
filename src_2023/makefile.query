@@ -29,9 +29,10 @@ $(DQ)/queries-task1$T-%.txt: $(DQ)/topics-task1$T-%.xml mtextsearch/mstrip.exe $
 	  | awk -F';' 'FNR==NR{a[$$1];next} $$1 in a' $(PP)/judged-query-names.txt - \
 	  > $(DQ)/queries-task1$T-$(*).txt
 
-$(DQ)/task1$S-%-L8_a018.tsv: $(DQ)/queries-task1$T-%.txt $(DI)/task1_2022_L8.mindex.meta $(PP)/keywords.txt $(PP)/stopwords.txt mtextsearch/msearch.exe
+$(DQ)/task1$S-%-L8_a018.tsv: $(DQ)/queries-task1$T-%.txt $(DI)/task1_2022_L8.mindex.meta $(PP)/keywords.txt $(PP)/stopwords.txt mtextsearch/mtokenize.exe mtextsearch/msearch.exe
 	cat $(DQ)/queries-task1$T-$(*).txt \
-	  | ./mtextsearch/msearch.exe -T $(PP)/keywords.txt -S $(PP)/stopwords.txt -k1000 -M -a0.18 $(DI)/task1_2022_L8.mindex \
+	  | ./mtextsearch/mtokenize.exe -q -M -T $(PP)/keywords.txt -S $(PP)/stopwords.txt \
+	  | ./mtextsearch/msearch.exe -k1000 -M -a0.18 $(DI)/task1_2022_L8.mindex \
 	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[3]; print $$0"\tL8_a018"}' \
 	  > $(DQ)/task1$S-$(*)-L8_a018.tsv
 
@@ -41,13 +42,14 @@ $(DQ)/trec-task1$S-%.tsv: $(DQ)/task1$S-%.tsv
 .PRECIOUS: $(DQ)/task1$S-%-L8_a018.tsv $(DQ)/trec-task1$S-%.tsv
 
 $(DQ)/task2$S-%-latex_L8_a040.tsv: $(DQ)/topics-task2$T-%.xml $(DI)/task2_2022_latex_L8.mindex.meta latex_filter_stopwords.py \
-  $(PP)/stopwords.txt $(PP)/judged-query-names.txt mtextsearch/mstrip.exe mtextsearch/msearch.exe
+  $(PP)/stopwords.txt $(PP)/judged-query-names.txt mtextsearch/mstrip.exe mtextsearch/mtokenize.exe mtextsearch/msearch.exe
 	cat $(DQ)/topics-task2$T-$(*).xml \
 	  | python3 latex_filter_stopwords.py -tsv inline \
 	  | python3 mathtuples/mathtuples/convert.py --context \
 	  | ./mtextsearch/mstrip.exe -q \
 	  | awk -F';' 'FNR==NR{a[$$1];next} $$1 in a' $(PP)/judged-query-names.txt - \
-	  | ./mtextsearch/msearch.exe -S $(PP)/stopwords.txt -k1000 -M -a0.40 $(DI)/task2_2022_latex_L8.mindex \
+	  | ./mtextsearch/mtokenize.exe -q -M -S $(PP)/stopwords.txt \
+	  | ./mtextsearch/msearch.exe -k1000 -M -a0.40 $(DI)/task2_2022_latex_L8.mindex \
 	  | awk 'BEGIN{OFS="\t"} {split($$2,a,"_"); $$2=a[1]"\t"a[2]; print $$0"\tlatex_L8_a040"}' \
 	  > $(DQ)/task2$S-$(*)-latex_L8_a040.tsv
 

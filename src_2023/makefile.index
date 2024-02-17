@@ -1,0 +1,32 @@
+# makefile to build indexes for ARQMath-3.  To run things in parallel run: make -j #
+
+all: index-task1 index-task2
+
+include makefile.base
+
+# ------------------ INDEX ------------------
+$(DI)/task1_2022_L8.mindex: mtextsearch/minvert.exe \
+  $(DE)/task1_2022_L8_2010.xml.gz $(DE)/task1_2022_L8_2018.xml.gz $(DE)/task1_2022_L8_2017.xml.gz \
+  $(DE)/task1_2022_L8_2016.xml.gz $(DE)/task1_2022_L8_2015.xml.gz $(DE)/task1_2022_L8_2014.xml.gz \
+  $(DE)/task1_2022_L8_2013.xml.gz $(DE)/task1_2022_L8_2012.xml.gz $(DE)/task1_2022_L8_2011.xml.gz
+	gunzip -c $(DE)/task1_2022_L8_*.xml.gz \
+	  | mtextsearch/mtokenize.exe -M \
+	  | mtextsearch/minvert.exe > $(DI)/task1_2022_L8.mindex
+
+$(DI)/task1_2022_L8.mindex.meta: $(DI)/task1_2022_L8.mindex mtextsearch/mencode.exe
+	mtextsearch/mencode.exe $(DI)/task1_2022_L8.mindex
+
+$(DI)/task2_2022_latex_L8.mindex: mtextsearch/mtokenize.exe mtextsearch/minvert.exe $(DE)/task2_2022_L8.xml.gz
+	gunzip -c $(DE)/task2_2022_L8.xml.gz \
+	  | python3 latex_filter_stopwords.py -tsv ../data/ARQMath/data-original/Formulas/latex_representation_v3/ \
+	  | mtextsearch/mtokenize.exe -M \
+	  | mtextsearch/minvert.exe > $(DI)/task2_2022_latex_L8.mindex
+
+$(DI)/task2_2022_latex_L8.mindex.meta: $(DI)/task2_2022_latex_L8.mindex mtextsearch/mencode.exe
+	mtextsearch/mencode.exe $(DI)/task2_2022_latex_L8.mindex
+
+index-task1: $(DI)/task1_2022_L8.mindex.meta
+
+index-task2: $(DI)/task2_2022_latex_L8.mindex.meta
+
+
